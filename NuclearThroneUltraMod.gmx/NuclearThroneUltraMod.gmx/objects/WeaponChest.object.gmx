@@ -32,7 +32,7 @@ if random(4) &lt; Player.nochest
 curse = 0
 instance_change(BigWeaponChest,true)
 }
-else if random(7)&lt;1&amp;&amp;Player.hard&gt;2{//8
+else if random(16)&lt;1&amp;&amp;Player.hard&gt;2{//8
 curse = 0
 instance_change(EliteWeaponChest,true);
 }

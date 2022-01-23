@@ -192,6 +192,11 @@ image_angle -= 15*rotspeed
 
 if point_distance(x,y,Portal.x,Portal.y) &lt; 48
 persistent=true;
+if point_distance(x,y,Portal.x,Portal.y) &lt; 16
+{
+x = -50000
+y = -50000
+}
 }
 }
 

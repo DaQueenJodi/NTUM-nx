@@ -413,26 +413,25 @@ y = view_yview+view_hview-48
 
 if Menu.race = image_index
 {
-draw_sprite(sprSelected,-1,x,y+yy-Menu.widescreen)
-draw_sprite(sprite_index,-1,x+2,y+yy-2-Menu.widescreen)
-//if UberCont.ctot_dead[num] = 0 and num != 0
-//draw_sprite(sprNew,-1,x+2,y+yy-2-Menu.widescreen)
-
-if Menu.mouseover != image_index
-draw_sprite_ext(sprite_index,-1,x+2,y+yy-2-Menu.widescreen,1,1,0,c_black,0.05)
-
+    draw_sprite(sprSelected,-1,x,y+yy-Menu.widescreen)
+    draw_sprite(sprite_index,-1,x+2,y+yy-2-Menu.widescreen)
+    //if UberCont.ctot_dead[num] = 0 and num != 0
+    //draw_sprite(sprNew,-1,x+2,y+yy-2-Menu.widescreen)
+    
+    if Menu.mouseover != image_index
+    draw_sprite_ext(sprite_index,-1,x+2,y+yy-2-Menu.widescreen,1,1,0,c_black,0.05)
 }
 else
 {
-draw_sprite(sprite_index,-1,x,y+yy-Menu.widescreen)
-if UberCont.race_have[num] != 1
-draw_sprite(sprCharSelectLocked,num,x,y+yy-Menu.widescreen)
-
-if Menu.mouseover != image_index
-draw_sprite_ext(sprite_index,-1,x,y+yy-Menu.widescreen,1,1,0,c_black,0.3)
-
-if UberCont.race_have[num] =1 and UberCont.ctot_dead[num] = 0 and num != 0
-draw_sprite(sprNew,-1,x,y+yy-Menu.widescreen)
+    draw_sprite(sprite_index,-1,x,y+yy-Menu.widescreen)
+    if UberCont.race_have[num] != 1
+    draw_sprite(sprCharSelectLocked,num,x,y+yy-Menu.widescreen)
+    
+    if Menu.mouseover != image_index
+    draw_sprite_ext(sprite_index,-1,x,y+yy-Menu.widescreen,1,1,0,c_black,0.3)
+    
+    if UberCont.race_have[num] =1 and UberCont.ctot_dead[num] = 0 and num != 0
+    draw_sprite(sprNew,-1,x,y+yy-Menu.widescreen)
 
 }
 </string>

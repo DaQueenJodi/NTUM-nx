@@ -33,7 +33,7 @@ sprite_index = sprEliteWepChest
 scrWeapons()
 dir=0;
 
-wep=scrDecideWepElite(1);
+wep=scrDecideWepElite(6);
 </string>
           </argument>
         </arguments>

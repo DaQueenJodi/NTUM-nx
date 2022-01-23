@@ -619,24 +619,37 @@ snd_play(sndVenuz)
 
 if Player.area = 103
 {
-//Player.area = 3
-//Player.subarea = 2
-with WeaponChest
-{
-instance_create(x,y,GoldChest)
-instance_change(Wind,false)
-}
-with BigWeaponChest
-{
-instance_create(x,y,GoldChest)
-instance_change(Wind,false)
-}
-with EliteWeaponChest
-{
-instance_create(x,y,GoldChest)
-instance_change(Wind,false)
+    //Player.area = 3
+    //Player.subarea = 2
+    with WeaponChest
+    {
+    instance_create(x,y,GoldChest)
+    instance_change(Wind,false)
+    }
+    with BigWeaponChest
+    {
+    instance_create(x,y,GoldChest)
+    instance_change(Wind,false)
+    }
+    with EliteWeaponChest
+    {
+    instance_create(x,y,GoldChest)
+    instance_change(Wind,false)
+    }
 }
 
+if ( Player.area = 101 ) {
+    with WeaponChest
+    {
+    instance_create(x,y,EliteWeaponChest)
+    instance_change(Wind,false)
+    }
+    with BigWeaponChest
+    {
+    instance_create(x,y,EliteWeaponChest)
+    instance_create(x+1,y+1,EliteWeaponChest)
+    instance_change(Wind,false)
+    }
 }
 
 Player.x = 10016

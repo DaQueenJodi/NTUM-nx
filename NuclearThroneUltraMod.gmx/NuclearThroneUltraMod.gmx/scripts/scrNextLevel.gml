@@ -12,203 +12,203 @@ if area < 100
 lastarea = area
 else if subarea = 1 || area = 105 || area = 106 || area = 107 || area = 101 || area = 110 || area = 111 || area = 112 || area = 103 || area = 109 || area = 113 || area = 108
 {
-if area = 113 && subarea=2//banditland
-{
-area = 8//chesire cat
-subarea=3;
-exit;
-}
-
-if area = 103
-{
-    if subarea=1
+    if area = 113 && subarea=2//banditland
     {
-    subarea++;
+        area = 8//chesire cat
+        subarea=3;
+        exit;
     }
-    else// if subarea=2
+
+    if area = 103
     {
-    area = 3
+        if subarea=1
+        {
+        subarea++;
+        }
+        else// if subarea=2
+        {
+        area = 3
+        subarea=2;
+        }
+    }
+
+    if area = 102 || area = 105//bring to scrapyard
+    {
+        if inverted && area = 105 &&subarea<2
+        {
+        //inverted big bandit
+        area = 105
+        subarea=3;
+        //show_message("HEY");
+        inverted=false;
+        exit;
+        }
+        else
+        {
+        area = 3
+        subarea = 1
+        exit;
+        }
+        
+        
+    }
+    
+    if area = 106//inverted scrapyard
+    {
+        if inverted && subarea<2
+        {
+        //inverted big dog
+        area = 106
+        subarea = 3;
+        inverted=false;
+        exit;
+        }
+        else if subarea < 2
+        {
+        area=3;
+        subarea=3;
+        exit;
+        }
+        else
+        {
+        area=4;
+        subarea=1;
+        exit;
+        }
+    
+    }
+    
+    if area = 107//inv frozen citybring to lill cunter
+    {
+        if inverted && subarea<2
+        {
+        //inverted lil hunter
+        area = 107
+        subarea = 3;
+        inverted=false;
+        exit;
+        }
+        else if subarea<2
+        {
+        area=5;
+        subarea=3;
+        exit;
+        }
+        else
+        {
+        area=6;
+        subarea=1;
+        exit;
+        }
+    
+    }
+    
+    if area = 108//inv vulcano bring to dragon
+    {
+        if inverted && subarea<2
+        {
+        //inverted purple dragon
+        area = 108
+        subarea = 2;
+        inverted=false;
+        exit;
+        }
+        else if subarea<2
+        {
+        area=7;
+        subarea=2;
+        inverted=false;
+        exit;
+        }
+        else
+        {
+        area=8;
+        subarea=1;
+        exit;
+        }
+    
+    }
+    
+    if area = 109//inv wonderland bring to cheshire cat
+    {
+    
+    
+        if inverted && subarea<2
+        {
+        //inverted chesire cat
+        area = 109
+        subarea = 3;
+        inverted=true;
+        exit;
+        }
+        else if subarea<2
+        {
+        area=8;
+        subarea=3;
+        exit;
+        }
+        else
+        {//loop
+        area=8;
+        subarea=3;
+        }
+        
+    }
+    
+    if area = 110//inv sewers bring from sewers to mansion?
+    {
+    area=103;
     subarea=2;
-    }
-}
-
-if area = 102 || area = 105//bring to scrapyard
-{
-    if inverted && area = 105 &&subarea<2
-    {
-    //inverted big bandit
-    area = 105
-    subarea=3;
-    //show_message("HEY");
+    lastarea=3;
+    
     inverted=false;
-    exit;
-    }
-    else
-    {
-    area = 3
-    subarea = 1
     exit;
     }
     
-    
-}
-
-if area = 106//inverted scrapyard
-{
-    if inverted && subarea<2
-    {
-    //inverted big dog
-    area = 106
-    subarea = 3;
-    inverted=false;
-    exit;
-    }
-    else if subarea < 2
-    {
-    area=3;
-    subarea=3;
-    exit;
-    }
-    else
-    {
-    area=4;
-    subarea=1;
-    exit;
-    }
-
-}
-
-if area = 107//inv frozen citybring to lill cunter
-{
-    if inverted && subarea<2
-    {
-    //inverted lil hunter
-    area = 107
-    subarea = 3;
-    inverted=false;
-    exit;
-    }
-    else if subarea<2
-    {
-    area=5;
-    subarea=3;
-    exit;
-    }
-    else
-    {
-    area=6;
-    subarea=1;
-    exit;
-    }
-
-}
-
-if area = 108//inv vulcano bring to dragon
-{
-    if inverted && subarea<2
-    {
-    //inverted purple dragon
-    area = 108
-    subarea = 2;
-    inverted=false;
-    exit;
-    }
-    else if subarea<2
-    {
-    area=7;
-    subarea=2;
-    inverted=false;
-    exit;
-    }
-    else
-    {
-    area=8;
-    subarea=1;
-    exit;
-    }
-
-}
-
-if area = 109//inv wonderland bring to cheshire cat
-{
-
-
-    if inverted && subarea<2
-    {
-    //inverted chesire cat
-    area = 109
-    subarea = 3;
-    inverted=true;
-    exit;
-    }
-    else if subarea<2
-    {
-    area=8;
-    subarea=3;
-    exit;
-    }
-    else
-    {//loop
-    area=8;
-    subarea=3;
-    }
-    
-}
-
-if area = 110//inv sewers bring from sewers to mansion?
-{
-area=103;
-subarea=2;
-lastarea=3;
-
-inverted=false;
-exit;
-}
-
-if area = 111//inv crystal cavesbring from caves to lil hunter
-{
-
-area=5
-subarea=3;
-
-inverted=false;
-exit;
-}
-
-if area = 112//inv labs bring from labs to dragon
-{
-if inverted && subarea<2
+    if area = 111//inv crystal cavesbring from caves to lil hunter
     {
     
-    area = 112
-    subarea = 2;
+    area=5
+    subarea=3;
+    
     inverted=false;
     exit;
     }
-    else if subarea<2
+    
+    if area = 112//inv labs bring from labs to dragon
     {
-    area=6;
-    subarea=2;
+    if inverted && subarea<2
+        {
+        
+        area = 112
+        subarea = 2;
+        inverted=false;
+        exit;
+        }
+        else if subarea<2
+        {
+        area=6;
+        subarea=2;
+        exit;
+        }
+        else
+        {
+        area=7
+        subarea=1;
+        }
+    
+    }
+
+    if area=101 && subarea=2
+    {
+    area=107;
+    subarea=1;
+    oasis=false
+    hard+=3;
     exit;
     }
-    else
-    {
-    area=7
-    subarea=1;
-    }
-
-}
-
-if area=101 && subarea=2
-{
-area=107;
-subarea=1;
-oasis=false
-hard+=3;
-exit;
-}
-else if area=101
-hard+=2;
+    else if area=101
+    hard+=2;
 
 }
 if ( subarea < 3 and area != 2 and area != 4/* and area != 6 */and area != 105 and area != 106  && !(area = 6 && subarea > 1) )&&!(area=7&&subarea=2)

@@ -8,11 +8,8 @@
   <sounds name="sound">
     <sounds name="Weapons">
       <sounds name="Bullet">
-        <sound>sound\sndPistol</sound>
-        <sound>sound\sndPopgun</sound>
         <sound>sound\sndHeavyMachinegun</sound>
         <sound>sound\sndHeavyRevolver</sound>
-        <sound>sound\sndMachinegun</sound>
         <sound>sound\sndBouncerFire</sound>
         <sound>sound\sndBouncerHitWall</sound>
         <sound>sound\sndBouncerShotgun</sound>
@@ -20,96 +17,40 @@
         <sound>sound\sndFrostShot1</sound>
         <sound>sound\sndFrostShot2</sound>
         <sound>sound\sndBreakIce</sound>
-        <sound>sound\sndIncinerator</sound>
         <sound>sound\sndGyroBurst</sound>
-        <sound>sound\sndSwapSuperHot</sound>
       </sounds>
       <sounds name="Shell">
-        <sound>sound\sndShotgun</sound>
         <sound>sound\sndEraser</sound>
-        <sound>sound\sndShotReload</sound>
         <sound>sound\sndHeavySlugger</sound>
       </sounds>
       <sounds name="Energy">
         <sound>sound\sndAtomCrown</sound>
-        <sound>sound\sndSuperPlasmaCannon</sound>
-        <sound>sound\sndLightningPlasma2</sound>
-        <sound>sound\sndLightning1</sound>
-        <sound>sound\sndLightning2</sound>
-        <sound>sound\sndLightning3</sound>
-        <sound>sound\sndThunder</sound>
-        <sound>sound\sndSpark1</sound>
-        <sound>sound\sndSpark2</sound>
         <sounds name="plasma">
-          <sound>sound\sndPlasmaHit</sound>
-          <sound>sound\sndPlasmaBigUpg</sound>
-          <sound>sound\sndPlasmaReload</sound>
-          <sound>sound\sndPlasmaBigExplode</sound>
-          <sound>sound\sndPlasmaBig</sound>
-          <sound>sound\sndPlasma</sound>
-          <sound>sound\sndPlasmaUpg</sound>
-          <sound>sound\sndPlasmaBigExplodeUpg</sound>
           <sound>sound\sndDevestator</sound>
         </sounds>
-        <sound>sound\sndHyperLightning</sound>
         <sound>sound\sndGhettoBlast</sound>
       </sounds>
       <sounds name="Bolts">
         <sound>sound\sndHeavyCrossbow</sound>
         <sound>sound\sndBigSplinter</sound>
         <sound>sound\sndCrossbow</sound>
-        <sound>sound\sndSeekerShotgun</sound>
-        <sound>sound\sndSwarm</sound>
-        <sound>sound\sndSeekerPistol</sound>
-        <sound>sound\sndSeekerCannon</sound>
       </sounds>
       <sounds name="Melee">
         <sound>sound\sndGuitarHitWall</sound>
         <sound>sound\sndGuitarHit</sound>
-        <sound>sound\sndSledgeHitWall</sound>
-        <sound>sound\sndSledgeHit</sound>
         <sound>sound\sndHammer</sound>
-        <sound>sound\sndSword2</sound>
-        <sound>sound\sndSword1</sound>
-        <sound>sound\sndScrewdriver</sound>
         <sound>sound\sndGuitar</sound>
-        <sound>sound\sndSwapSword</sound>
       </sounds>
-      <sounds name="Explosive">
-        <sound>sound\sndSnowBlowerLoop</sound>
-        <sound>sound\sndWater1</sound>
-        <sound>sound\sndWater2</sound>
-      </sounds>
-      <sound>sound\sndPotato</sound>
-      <sound>sound\sndPartyHorn</sound>
       <sound>sound\sndCharge</sound>
       <sound>sound\sndDirector</sound>
       <sound>sound\sndGoldPickup</sound>
     </sounds>
-    <sounds name="Boss">
-      <sound>sound\sndNothingBeamStart</sound>
-      <sound>sound\sndNothingGenerators</sound>
-      <sound>sound\sndNothingHurtHigh</sound>
-      <sound>sound\sndNothingTaunt</sound>
-      <sound>sound\sndNothingBeamWarn</sound>
-      <sound>sound\sndOasisBossFire</sound>
-      <sound>sound\sndOasisBossHurt</sound>
-      <sound>sound\sndOasisBossIntro</sound>
-      <sound>sound\sndOasisBossHalfHP</sound>
-      <sound>sound\sndOasisBossMelee</sound>
-      <sound>sound\sndOasisBossDead</sound>
-    </sounds>
     <sound>sound\sndExplosion</sound>
     <sound>sound\sndGrenade</sound>
-    <sound>sound\sndLevelUp</sound>
-    <sound>sound\sndWeaponPickup</sound>
-    <sound>sound\sndRoll</sound>
     <sounds name="HitWall">
       <sound>sound\sndGrenadeHitWall</sound>
       <sound>sound\sndBoltHitWall</sound>
       <sound>sound\sndGrenadeStickWall</sound>
-      <sound>sound\sndMeleeWall</sound>
-      <sound>sound\sndShotgunHitWall</sound>
       <sound>sound\sndHitWall</sound>
     </sounds>
     <sound>sound\sndCrystalShield</sound>
@@ -117,40 +58,18 @@
     <sound>sound\sndHitPlant</sound>
     <sound>sound\sndEnemyDie</sound>
     <sound>sound\sndEnemyFire</sound>
-    <sound>sound\sndMeatExplo</sound>
     <sound>sound\sndEnemySlash</sound>
-    <sound>sound\sndRocket</sound>
     <sound>sound\sndCorpseExplo</sound>
-    <sound>sound\sndSniperTarget</sound>
-    <sound>sound\sndSniperFire</sound>
-    <sound>sound\sndPlayerHit</sound>
-    <sound>sound\sndPlayerDeath</sound>
-    <sound>sound\sndMutant0Slct</sound>
-    <sound>sound\sndMutant0Cnfm</sound>
-    <sound>sound\sndRestart</sound>
-    <sound>sound\sndSelectUp</sound>
-    <sound>sound\sndSkillPick</sound>
     <sounds name="Pickups">
       <sound>sound\sndEXPChest</sound>
       <sound>sound\sndChest</sound>
-      <sound>sound\sndRadPickup</sound>
       <sound>sound\sndEmpty</sound>
       <sound>sound\sndHealthPickup</sound>
       <sound>sound\sndAmmoPickup</sound>
     </sounds>
-    <sound>sound\sndVlambeer</sound>
-    <sound>sound\sndLaser</sound>
-    <sound>sound\sndSlugger</sound>
-    <sound>sound\sndMinigun</sound>
     <sound>sound\sndCrossReload</sound>
-    <sound>sound\sndLaserUpg</sound>
-    <sound>sound\sndLaserSword</sound>
-    <sound>sound\sndLaserSwordUpg</sound>
-    <sound>sound\sndShovel</sound>
     <sound>sound\sndDiscgun</sound>
     <sound>sound\sndDiscBounce</sound>
-    <sound>sound\sndRocketFly</sound>
-    <sound>sound\sndMeleeFlip</sound>
     <sound>sound\sndExplosionL</sound>
     <sound>sound\sndExplosionXL</sound>
     <sounds name="BigBandit">
@@ -165,7 +84,6 @@
       <sound>sound\sndBigBanditStartShoot</sound>
       <sound>sound\sndBigBanditStopShoot</sound>
     </sounds>
-    <sound>sound\sndSniperHit</sound>
     <sound>sound\sndBanditHit</sound>
     <sound>sound\sndBanditDie</sound>
     <sound>sound\sndBigDogDeath</sound>
@@ -179,45 +97,17 @@
     <sound>sound\sndHitMetal</sound>
     <sound>sound\sndHitFlesh</sound>
     <sound>sound\sndHitRock</sound>
-    <sound>sound\sndWallBreak</sound>
-    <sound>sound\sndLaserCrystalCharge</sound>
-    <sound>sound\sndLaserCrystalDeath</sound>
-    <sound>sound\sndLaserCrystalHit</sound>
     <sound>sound\sndBossWin</sound>
-    <sound>sound\sndRavenDie</sound>
-    <sound>sound\sndRavenHit</sound>
-    <sound>sound\sndRavenLand</sound>
-    <sound>sound\sndRavenScreech</sound>
-    <sound>sound\sndRavenLift</sound>
     <sound>sound\sndBigDogMissile</sound>
-    <sound>sound\sndSewerDrip</sound>
     <sound>sound\sndExplosionCar</sound>
-    <sound>sound\sndSplinterGun</sound>
-    <sound>sound\sndJackHammer</sound>
     <sound>sound\sndBloodLauncherExplo</sound>
     <sound>sound\sndBloodLauncher</sound>
-    <sound>sound\sndToxicBoltGas</sound>
-    <sound>sound\sndToxicBarrelGas</sound>
-    <sound>sound\sndScorpionDie</sound>
-    <sound>sound\sndScorpionHit</sound>
-    <sound>sound\sndScorpionMelee</sound>
-    <sound>sound\sndScorpionFire</sound>
-    <sound>sound\sndScorpionFireStart</sound>
-    <sound>sound\sndRatMelee</sound>
-    <sound>sound\sndRatDie</sound>
-    <sound>sound\sndRatHit</sound>
-    <sound>sound\sndRatKingDie</sound>
-    <sound>sound\sndRatKingHit</sound>
-    <sound>sound\sndRatKingVomit</sound>
     <sound>sound\sndFastRatMelee</sound>
     <sound>sound\sndFastRatDie</sound>
     <sound>sound\sndFastRatHit</sound>
     <sound>sound\sndFastRatExpire</sound>
     <sound>sound\sndGatorDie</sound>
     <sound>sound\sndGatorHit</sound>
-    <sound>sound\sndMaggotBite</sound>
-    <sound>sound\sndMaggotSpawnDie</sound>
-    <sound>sound\sndMaggotSpawnIdle</sound>
     <sound>sound\sndBigMaggotBite</sound>
     <sound>sound\sndBigMaggotBurrow</sound>
     <sound>sound\sndBigMaggotDie</sound>
@@ -232,49 +122,12 @@
     <sound>sound\sndAssassinHit</sound>
     <sound>sound\sndAssassinPretend</sound>
     <sound>sound\sndAssassinGetUp</sound>
-    <sound>sound\sndPlasmaReloadUpg</sound>
     <sound>sound\sndAmmoChest</sound>
     <sound>sound\sndHealthChest</sound>
-    <sound>sound\sndWeaponChest</sound>
     <sound>sound\sndBigWeaponChest</sound>
-    <sound>sound\sndSwapBow</sound>
-    <sound>sound\sndSwapEnergy</sound>
-    <sound>sound\sndSwapExplosive</sound>
-    <sound>sound\sndSwapHammer</sound>
-    <sound>sound\sndSwapMachinegun</sound>
-    <sound>sound\sndSwapMotorized</sound>
-    <sound>sound\sndSwapPistol</sound>
-    <sound>sound\sndSwapShotgun</sound>
     <sound>sound\sndExplosionS</sound>
     <sounds name="Fish">
-      <sound>sound\sndMutant1Cnfm</sound>
-      <sound>sound\sndMutant1Slct</sound>
-      <sound>sound\sndMutant1Dead</sound>
-      <sound>sound\sndMutant1LowA</sound>
-      <sound>sound\sndMutant1Hurt</sound>
-      <sound>sound\sndMutant1LowH</sound>
-      <sound>sound\sndMutant1Crwn</sound>
       <sound>sound\sndFishRollUpg</sound>
-      <sound>sound\sndMutant1Chst</sound>
-      <sound>sound\sndMutant1Wrld</sound>
-      <sound>sound\sndMutant1Valt</sound>
-      <sound>sound\sndMutant1Thrn</sound>
-    </sounds>
-    <sounds name="Crystal">
-      <sound>sound\sndMutant2Cnfm</sound>
-      <sound>sound\sndMutant2Dead</sound>
-      <sound>sound\sndMutant2Valt</sound>
-      <sound>sound\sndMutant2Thrn</sound>
-      <sound>sound\sndMutant2Wrld</sound>
-      <sound>sound\sndMutant2Hurt</sound>
-      <sound>sound\sndMutant2LowA</sound>
-      <sound>sound\sndMutant2LowH</sound>
-      <sound>sound\sndMutant2Chst</sound>
-      <sound>sound\sndMutant2Slct</sound>
-      <sound>sound\sndMutant2Crwn</sound>
-    </sounds>
-    <sounds name="Viking">
-      <sound>sound\sndVikingHit</sound>
     </sounds>
     <sounds name="GunSmith">
       <sound>sound\sndGunSmithHit</sound>
@@ -283,230 +136,29 @@
       <sound>sound\sndGunSmithLowHP</sound>
       <sound>sound\sndGunSmithStart</sound>
     </sounds>
-    <sounds name="Skeleton">
-      <sound>sound\sndMutant19Cnfm</sound>
-      <sound>sound\sndMutant19Dead</sound>
-      <sound>sound\sndMutant19LowH</sound>
-      <sound>sound\sndMutant19Thrn</sound>
-      <sound>sound\sndMutant19Valt</sound>
-      <sound>sound\sndMutant19Slct</sound>
-      <sound>sound\sndMutant19LowA</sound>
-      <sound>sound\sndMutant19Hurt</sound>
-      <sound>sound\sndMutant19Wrld</sound>
-      <sound>sound\sndMutant19Chst</sound>
-    </sounds>
-    <sounds name="Hunter">
-      <sound>sound\sndHunterHit</sound>
-    </sounds>
-    <sounds name="Salamander">
-      <sound>sound\sndSalamanderHurt</sound>
-      <sound>sound\sndSalamanderFireLoop</sound>
-      <sound>sound\sndSalamanderFire</sound>
-      <sound>sound\sndSalamanderEndFire</sound>
-      <sound>sound\sndSalamanderDead</sound>
-      <sound>sound\sndSalamanderCharge</sound>
-    </sounds>
-    <sounds name="Rogue">
-      <sound>sound\sndMutant22Cnfm</sound>
-      <sound>sound\sndMutant22Cptn</sound>
-      <sound>sound\sndMutant22Thrn</sound>
-      <sound>sound\sndMutant22Spch</sound>
-      <sound>sound\sndMutant22Slct</sound>
-      <sound>sound\sndMutant22LowH</sound>
-      <sound>sound\sndMutant22LowA</sound>
-      <sound>sound\sndMutant22Wrld</sound>
-      <sound>sound\sndMutant22Valt</sound>
-      <sound>sound\sndMutant22IDPDSpch</sound>
-      <sound>sound\sndMutant22IDPD</sound>
-      <sound>sound\sndMutant22Hurt</sound>
-      <sound>sound\sndMutant22Dead</sound>
-      <sound>sound\sndMutant22Crwn</sound>
-      <sound>sound\sndMutant22Chst</sound>
-      <sound>sound\sndRogueCanister</sound>
-      <sound>sound\sndRogueRifle</sound>
-      <sound>sound\sndRogueAim</sound>
-    </sounds>
-    <sounds name="Frog">
-      <sound>sound\sndMutant23Chst</sound>
-      <sound>sound\sndMutant23Cnfm</sound>
-      <sound>sound\sndMutant23Wrld</sound>
-      <sound>sound\sndMutant23Valt</sound>
-      <sound>sound\sndMutant23Thrn</sound>
-      <sound>sound\sndMutant23Spch</sound>
-      <sound>sound\sndMutant23Slct</sound>
-      <sound>sound\sndMutant23LowH</sound>
-      <sound>sound\sndMutant23LowA</sound>
-      <sound>sound\sndMutant23IDPD</sound>
-      <sound>sound\sndMutant23Hurt</sound>
-      <sound>sound\sndMutant23Dead</sound>
-      <sound>sound\sndMutant23Crwn</sound>
-      <sound>sound\sndMutant23Cptn</sound>
-    </sounds>
-    <sound>sound\sndMutant3Cnfm</sound>
-    <sound>sound\sndMutant3Dead</sound>
-    <sound>sound\sndMutant3Valt</sound>
-    <sound>sound\sndMutant3Thrn</sound>
-    <sound>sound\sndMutant3Wrld</sound>
-    <sound>sound\sndMutant3Hurt</sound>
-    <sound>sound\sndMutant3LowA</sound>
-    <sound>sound\sndMutant3LowH</sound>
-    <sound>sound\sndMutant3Chst</sound>
-    <sound>sound\sndMutant3Crwn</sound>
-    <sound>sound\sndMutant3Slct</sound>
     <sound>sound\sndEyesLoopUpg</sound>
-    <sound>sound\sndMutant4Cnfm</sound>
-    <sound>sound\sndMutant4Dead</sound>
-    <sound>sound\sndMutant4Valt</sound>
-    <sound>sound\sndMutant4Thrn</sound>
-    <sound>sound\sndMutant4Wrld</sound>
-    <sound>sound\sndMutant4Hurt</sound>
-    <sound>sound\sndMutant4LowA</sound>
-    <sound>sound\sndMutant4LowH</sound>
-    <sound>sound\sndMutant4Chst</sound>
-    <sound>sound\sndMutant4Crwn</sound>
-    <sound>sound\sndMutant4Slct</sound>
     <sound>sound\sndCorpseExploDead</sound>
     <sound>sound\sndCorpseExploUpg</sound>
-    <sound>sound\sndMutant7Cnfm</sound>
-    <sound>sound\sndMutant7Dead</sound>
     <sound>sound\sndMutant7Valt</sound>
     <sound>sound\sndMutant7Thrn</sound>
-    <sound>sound\sndMutant7Hurt</sound>
-    <sound>sound\sndMutant7LowA</sound>
     <sound>sound\sndMutant7LowH</sound>
-    <sound>sound\sndMutant7Chst</sound>
-    <sound>sound\sndMutant7Crwn</sound>
     <sound>sound\sndMutant7Slct</sound>
-    <sound>sound\sndSteroidsUpg</sound>
     <sound>sound\sndMutant7Wrld</sound>
-    <sound>sound\sndMutant8Cnfm</sound>
-    <sound>sound\sndMutant8Dead</sound>
-    <sound>sound\sndMutant8Valt</sound>
-    <sound>sound\sndMutant8Thrn</sound>
-    <sound>sound\sndMutant8Wrld</sound>
-    <sound>sound\sndMutant8Hurt</sound>
-    <sound>sound\sndMutant8LowA</sound>
-    <sound>sound\sndMutant8LowH</sound>
-    <sound>sound\sndMutant8Chst</sound>
-    <sound>sound\sndMutant8Crwn</sound>
-    <sound>sound\sndMutant8Slct</sound>
-    <sound>sound\sndRobotEatUpg</sound>
-    <sound>sound\sndRobotEat</sound>
     <sound>sound\sndChickenStart</sound>
     <sound>sound\sndChickenLoop</sound>
-    <sound>sound\sndMutant5Cnfm</sound>
-    <sound>sound\sndMutant5Dead</sound>
-    <sound>sound\sndMutant5Valt</sound>
-    <sound>sound\sndMutant5Thrn</sound>
-    <sound>sound\sndMutant5Wrld</sound>
-    <sound>sound\sndMutant5Crwn</sound>
-    <sound>sound\sndMutant5Hurt</sound>
-    <sound>sound\sndMutant5LowA</sound>
-    <sound>sound\sndMutant5LowH</sound>
-    <sound>sound\sndMutant5Chst</sound>
-    <sound>sound\sndMutant5Slct</sound>
-    <sound>sound\sndPlantPower</sound>
-    <sound>sound\sndSnowTankAim</sound>
-    <sound>sound\sndSnowTankHurt</sound>
-    <sound>sound\sndSnowTankCooldown</sound>
-    <sound>sound\sndSnowTankPreShoot</sound>
-    <sound>sound\sndSnowTankPreExplo</sound>
-    <sound>sound\sndSnowTankShoot</sound>
-    <sound>sound\sndSnowBotDead</sound>
-    <sound>sound\sndSnowBotHurt</sound>
-    <sound>sound\sndSnowBotSlideLoop</sound>
-    <sound>sound\sndSnowBotSlideStart</sound>
-    <sound>sound\sndSnowBotThrow</sound>
-    <sound>sound\sndMutant9Cnfm</sound>
-    <sound>sound\sndMutant9Dead</sound>
-    <sound>sound\sndMutant9Valt</sound>
-    <sound>sound\sndMutant9Thrn</sound>
-    <sound>sound\sndMutant9Wrld</sound>
-    <sound>sound\sndMutant9Hurt</sound>
-    <sound>sound\sndMutant9LowA</sound>
-    <sound>sound\sndMutant9LowH</sound>
-    <sound>sound\sndMutant9Crwn</sound>
-    <sound>sound\sndMutant9Slct</sound>
-    <sound>sound\sndMutant9Chst</sound>
     <sound>sound\sndChickenLoseHead</sound>
     <sound>sound\sndChickenHeadlessLoop</sound>
     <sound>sound\sndChickenRegenHead</sound>
-    <sound>sound\sndLilHunterAppear</sound>
-    <sound>sound\sndLilHunterDeath</sound>
-    <sound>sound\sndLilHunterFly</sound>
-    <sound>sound\sndLilHunterHurt</sound>
-    <sound>sound\sndLilHunterBreak</sound>
-    <sound>sound\sndLilHunterLaunch</sound>
-    <sound>sound\sndLilHunterLand</sound>
-    <sound>sound\sndLilHunterTaunt</sound>
     <sounds name="Player">
-      <sounds name="Panda">
-        <sound>sound\sndPanda</sound>
-        <sound>sound\sndPandaHit</sound>
-      </sounds>
-      <sounds name="YungCuz">
-        <sound>sound\sndMutant12Cnfm</sound>
-        <sound>sound\sndMutant12Chst</sound>
-        <sound>sound\sndMutant12Dead</sound>
-        <sound>sound\sndMutant12Thrn</sound>
-        <sound>sound\sndMutant12Valt</sound>
-        <sound>sound\sndMutant12Hurt</sound>
-        <sound>sound\sndMutant12LowA</sound>
-        <sound>sound\sndMutant12LowH</sound>
-        <sound>sound\sndMutant12Crwn</sound>
-        <sound>sound\sndMutant12Slct</sound>
-        <sound>sound\sndMutant12Wrld</sound>
-      </sounds>
-      <sounds name="YV">
-        <sound>sound\sndMutant6Cnfm</sound>
-        <sound>sound\sndMutant6Chst</sound>
-        <sound>sound\sndMutant6Dead</sound>
-        <sound>sound\sndMutant6Thrn</sound>
-        <sound>sound\sndMutant6Valt</sound>
-        <sound>sound\sndMutant6Hurt</sound>
-        <sound>sound\sndMutant6LowA</sound>
-        <sound>sound\sndMutant6LowH</sound>
-        <sound>sound\sndMutant6Crwn</sound>
-        <sound>sound\sndMutant6Slct</sound>
-        <sound>sound\sndMutant6Wrld</sound>
-        <sound>sound\sndPopPop</sound>
-        <sound>sound\sndPopPopUpg</sound>
-        <sound>sound\sndVenuz</sound>
-      </sounds>
       <sounds name="Horror">
         <sound>sound\sndHorrorPortal</sound>
         <sound>sound\sndHorrorLoopTB</sound>
         <sound>sound\sndHorrorLoop</sound>
         <sound>sound\sndHorrorEmpty</sound>
         <sound>sound\sndHorrorBeam</sound>
-        <sound>sound\sndMutant11Dead</sound>
-        <sound>sound\sndMutant11Crwn</sound>
-        <sound>sound\sndMutant11Cptn</sound>
-        <sound>sound\sndMutant11Cnfm</sound>
-        <sound>sound\sndMutant11Chst</sound>
-        <sound>sound\sndMutant11Slct</sound>
-        <sound>sound\sndMutant11LowH</sound>
-        <sound>sound\sndMutant11LowA</sound>
-        <sound>sound\sndMutant11IDPD</sound>
-        <sound>sound\sndMutant11Hurt</sound>
-        <sound>sound\sndMutant11Spch</sound>
-        <sound>sound\sndMutant11Thrn</sound>
-        <sound>sound\sndMutant11Valt</sound>
-        <sound>sound\sndMutant11Wrld</sound>
       </sounds>
       <sound>sound\sndAngelHit</sound>
     </sounds>
-    <sound>sound\sndSuperFrogExplode</sound>
-    <sound>sound\sndLastEnemy</sound>
-    <sound>sound\sndLilHunterHalfHP</sound>
-    <sound>sound\sndPortalAppear</sound>
-    <sound>sound\sndPortalClose</sound>
-    <sound>sound\sndPortalLoop</sound>
-    <sound>sound\sndPortalOpen</sound>
-    <sound>sound\sndStatueCharge</sound>
-    <sound>sound\sndStatueDead</sound>
-    <sound>sound\sndStatueHurt</sound>
-    <sound>sound\sndStatueXP</sound>
     <sound>sound\sndFlare</sound>
     <sound>sound\sndFlareExplode</sound>
     <sound>sound\sndFlamerStart</sound>
@@ -520,69 +172,12 @@
     <sound>sound\sndDragonLoop</sound>
     <sound>sound\sndDragonStart</sound>
     <sound>sound\sndBurn</sound>
-    <sound>sound\sndSwapFlame</sound>
-    <sound>sound\sndSwapDragon</sound>
-    <sound>sound\sndWolfRoll</sound>
-    <sound>sound\sndWolfDead</sound>
-    <sound>sound\sndWolfHurt</sound>
     <sound>sound\sndFreakMelee</sound>
     <sound>sound\sndFreakDead</sound>
     <sound>sound\sndFreakHurt</sound>
     <sound>sound\sndExploFreakHurt</sound>
     <sound>sound\sndExploFreakDead</sound>
     <sound>sound\sndExploFreakKillself</sound>
-    <sound>sound\sndRhinoFreakMelee</sound>
-    <sound>sound\sndRhinoFreakDead</sound>
-    <sound>sound\sndRhinoFreakHurt</sound>
-    <sound>sound\sndNecromancerDead</sound>
-    <sound>sound\sndNecromancerHurt</sound>
-    <sound>sound\sndNecromancerRevive</sound>
-    <sounds name="Mutations">
-      <sound>sound\sndMutLongArms</sound>
-      <sound>sound\sndMutRecycleGland</sound>
-      <sound>sound\sndMutRabbitPaw</sound>
-      <sound>sound\sndMutLuckyShot</sound>
-      <sound>sound\sndMutGammaGuts</sound>
-      <sound>sound\sndMutBoilingVeins</sound>
-      <sound>sound\sndMutShotGunShoulders</sound>
-      <sound>sound\sndMutSecondStomache</sound>
-      <sound>sound\sndMutPatience</sound>
-      <sound>sound\sndMutOpenMind</sound>
-      <sound>sound\sndMutLaserBrain</sound>
-      <sound>sound\sndMutHammerHead</sound>
-      <sound>sound\sndMutPluto</sound>
-      <sound>sound\sndMutEagleEyes</sound>
-      <sound>sound\sndMutExtraFeet</sound>
-      <sound>sound\sndMutBloodlust</sound>
-      <sound>sound\sndMutImpactWrists</sound>
-      <sound>sound\sndMutHeavyHeart</sound>
-      <sound>sound\sndMutBackMuscle</sound>
-      <sound>sound\sndMutSharpStress</sound>
-      <sound>sound\sndMutScarierFace</sound>
-      <sound>sound\sndMutRhinoSkin</sound>
-      <sound>sound\sndMutTriggerfingers</sound>
-      <sound>sound\sndMutEuphoria</sound>
-      <sound>sound\sndMutBoltMarrow</sound>
-      <sound>sound\sndMutStrongSpirit</sound>
-      <sound>sound\sndMutRage</sound>
-      <sound>sound\sndMutLastWish</sound>
-      <sound>sound\sndMutThronebutt</sound>
-      <sound>sound\sndMut</sound>
-      <sound>sound\sndMutHover</sound>
-    </sounds>
-    <sound>sound\sndMutant10Cnfm</sound>
-    <sound>sound\sndMutant10Dead</sound>
-    <sound>sound\sndMutant10Chst</sound>
-    <sound>sound\sndMutant10Valt</sound>
-    <sound>sound\sndMutant10Wrld</sound>
-    <sound>sound\sndMutant10Thrn</sound>
-    <sound>sound\sndMutant10Hurt</sound>
-    <sound>sound\sndMutant10LowA</sound>
-    <sound>sound\sndMutant10LowH</sound>
-    <sound>sound\sndMutant10Crwn</sound>
-    <sound>sound\sndMutant10Slct</sound>
-    <sound>sound\sndSpawnAlly</sound>
-    <sound>sound\sndSpawnSuperAlly</sound>
     <sound>sound\sndBloodPistol</sound>
     <sounds name="IDPD sounds">
       <sounds name="Grunt">
@@ -595,27 +190,6 @@
         <sound>sound\sndGruntFire</sound>
         <sound>sound\sndGruntThrowNadeF</sound>
         <sound>sound\sndGruntThrowNadeM</sound>
-      </sounds>
-      <sounds name="Inspector">
-        <sound>sound\sndInspectorDeadM</sound>
-        <sound>sound\sndInspectorDeadF</sound>
-        <sound>sound\sndInspectorStartM</sound>
-        <sound>sound\sndInspectorStartF</sound>
-        <sound>sound\sndInspectorHurtM</sound>
-        <sound>sound\sndInspectorHurtF</sound>
-        <sound>sound\sndInspectorEndM</sound>
-        <sound>sound\sndInspectorEndF</sound>
-      </sounds>
-      <sounds name="Shielder">
-        <sound>sound\sndShielderDeadM</sound>
-        <sound>sound\sndShielderDeflect</sound>
-        <sound>sound\sndShielderDeadF</sound>
-        <sound>sound\sndShielderEnterM</sound>
-        <sound>sound\sndShielderEnterF</sound>
-        <sound>sound\sndShielderHurtM</sound>
-        <sound>sound\sndShielderHurtF</sound>
-        <sound>sound\sndShielderShieldM</sound>
-        <sound>sound\sndShielderShieldF</sound>
       </sounds>
       <sounds name="Elite">
         <sounds name="EliteGrunt">
@@ -644,18 +218,8 @@
           <sound>sound\sndEliteShielderDead</sound>
         </sounds>
         <sound>sound\sndEliteIDPDPortalSpawn</sound>
-        <sound>sound\sndVanWarning</sound>
-        <sound>sound\sndVanPortal</sound>
-        <sound>sound\sndVanOpen</sound>
-        <sound>sound\sndVanHurt</sound>
       </sounds>
-      <sound>sound\sndIDPDNadeLoad</sound>
-      <sound>sound\sndIDPDNadeExplo</sound>
-      <sound>sound\sndNadeAlmost</sound>
-      <sound>sound\sndIDPDPortalSpawn</sound>
     </sounds>
-    <sound>sound\sndSheep</sound>
-    <sound>sound\sndSheepDead</sound>
     <sounds name="Music &amp; amb">
       <sound>sound\musThemeA</sound>
       <sound>sound\musThemeB</sound>

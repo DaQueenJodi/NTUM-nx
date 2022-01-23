@@ -1600,9 +1600,6 @@
           <sprite>sprites\sprSuperFrogWalk</sprite>
         </sprites>
       </sprites>
-      <sprites name="Palace">
-        <sprite>sprites\sprite2486</sprite>
-      </sprites>
       <sprite>sprites\sprSuperMimicDead</sprite>
       <sprite>sprites\sprSuperMimicFire</sprite>
       <sprite>sprites\sprSuperMimicHurt</sprite>

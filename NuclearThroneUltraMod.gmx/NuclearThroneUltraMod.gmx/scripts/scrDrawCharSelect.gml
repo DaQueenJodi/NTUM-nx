@@ -24,7 +24,7 @@ draw_set_halign(fa_left)//jezus christ this menu systemm is fked up
 draw_text_color(view_xview+6,view_yview+65,"GAMEMODE : "+gamemode[UberCont.opt_gamemode],c_black,c_black,c_black,c_black,1);
 draw_text_color(view_xview+7,view_yview+64,"GAMEMODE : "+gamemode[UberCont.opt_gamemode],c_white,c_white,c_white,c_white,1);
 
-//Day of the week
+/*//Day of the week
 
 var day;
 switch(current_weekday)
@@ -42,7 +42,7 @@ switch(current_weekday)
  //This read only variable will return the weekday as a value, where Sunday is 0 and Saturday is 6.
 draw_text_color(view_xview+6,view_yview+65,string(day),c_black,c_black,c_black,c_black,1);
 draw_text_color(view_xview+7,view_yview+64,string(day),c_white,c_white,c_white,c_white,1);
-
+*/
 
 draw_set_halign(fa_right)
 draw_text_color(view_xview+view_wview,view_yview+65,string(UberCont.completionpercentage)+"% COMPLETE",c_black,c_black,c_black,c_black,1);
