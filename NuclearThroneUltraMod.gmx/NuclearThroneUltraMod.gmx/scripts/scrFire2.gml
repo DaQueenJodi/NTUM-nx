@@ -4116,13 +4116,15 @@ direction=point_direction(x,y,mouse_x,mouse_y)
 repeat(10)
 {
 //move_contact_solid(ang,20)//44
+var iterations=0;
 var distancetravel=0;
 do{
 x+=lengthdir_x(2,ang);
 y+=lengthdir_y(2,ang);
 distancetravel+=2;
+iterations += 1;
 }
-until(!place_free(x+lengthdir_x(2,ang),y+lengthdir_y(2,ang)) || place_meeting(x+lengthdir_x(2,ang),y+lengthdir_y(2,ang),Wall)||distancetravel>18)
+until(iterations > 10000 || !place_free(x+lengthdir_x(2,ang),y+lengthdir_y(2,ang)) || place_meeting(x+lengthdir_x(2,ang),y+lengthdir_y(2,ang),Wall)||distancetravel>18)
 
 instance_create(x,y,Dust)
 
