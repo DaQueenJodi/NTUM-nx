@@ -147,7 +147,7 @@ else if skill = 21//bolt marrow
 {
 Player.betterboltmarrow=7;
 if Player.ultra_got[97]
-Player.betterlaserbrain=20;
+Player.betterboltmarrow=20;
 }
 else if skill = 18//last wish
 {
