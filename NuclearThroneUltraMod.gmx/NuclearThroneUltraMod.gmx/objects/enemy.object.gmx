@@ -128,9 +128,16 @@ Player.kills +=  1;
 
 if Player.ultra_got[50]==1{//Sheep Ultra B Just A Sheep
     if Player.justAsheep &amp;&amp; instance_number(enemy)&lt;BackCont.enemiesInStartLevel*0.7//if70% left enemies will notice you
-    {Player.justAsheep=false;
-    instance_create(x,y-16,Notice);
-    }}
+    {
+        Player.justAsheep=false;
+        instance_create(x-5,y-16,Notice);
+        instance_create(x+5,y-16,Notice);
+    }
+} else if (Player.justAsheep &amp;&amp; instance_number(enemy)&lt;BackCont.enemiesInStartLevel*0.9) {
+    Player.justAsheep = false;
+    instance_create(x-5,y-16,Notice);
+    instance_create(x+5,y-16,Notice);
+}
 
 }
 else{
