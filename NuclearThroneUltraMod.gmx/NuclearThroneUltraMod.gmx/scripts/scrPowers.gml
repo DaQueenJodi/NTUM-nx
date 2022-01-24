@@ -122,70 +122,70 @@ else if alarm[3]<1
 
 if race = 16 && armour>0 ||(ultra_got[63]&&my_health>2&& alarm[3]<1)//Viking
 {
-//63
-if ultra_got[63]=0
-armour--;
-else if armour<1 
-{
-my_health-=2;
-exception=true
-}
-snd_play(sndExplosion);
-
-scrBlankArmour();
-
-with instance_create(x,y,ArmourStrike)
-{image_angle = point_direction(x,y,mouse_x,mouse_y)
-Originalangle=image_angle;
-team = other.team
-ammo = 100;
-event_perform(ev_alarm,0)
-visible = 0
-with instance_create(x,y,ArmourStrikeStart)
-{
-image_angle = other.image_angle
-image_yscale=3;
-}}
-
-if ultra_got[61]//MEGA ARMOUR STRIKE
-{
-
-with instance_create(x,y,ArmourStrike)
-{image_angle = point_direction(x,y,mouse_x,mouse_y)-20
-Originalangle=image_angle;
-team = other.team
-ammo = 100;
-event_perform(ev_alarm,0)
-visible = 0
-with instance_create(x,y,ArmourStrikeStart)
-{
-image_angle = other.image_angle
-image_yscale=3;
-}}
-
-with instance_create(x,y,ArmourStrike)
-{image_angle = point_direction(x,y,mouse_x,mouse_y)+20
-Originalangle=image_angle;
-team = other.team
-ammo = 100;
-event_perform(ev_alarm,0)
-visible = 0
-with instance_create(x,y,ArmourStrikeStart)
-{
-image_angle = other.image_angle
-image_yscale=3;
-}}
-
-
-BackCont.viewx2 += lengthdir_x(-8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-BackCont.viewy2 += lengthdir_y(-8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-BackCont.shake += 22
-
-}
-
-BackCont.viewx2 += lengthdir_x(-6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-BackCont.viewy2 += lengthdir_y(-6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-BackCont.shake += 25
+    //63
+    if armour>0
+        armour--;
+    else if ultra_got[63]=1
+    {
+        my_health-=2;
+        exception=true
+    }
+    snd_play(sndExplosion);
+    
+    scrBlankArmour();
+    
+    with instance_create(x,y,ArmourStrike)
+    {image_angle = point_direction(x,y,mouse_x,mouse_y)
+    Originalangle=image_angle;
+    team = other.team
+    ammo = 100;
+    event_perform(ev_alarm,0)
+    visible = 0
+    with instance_create(x,y,ArmourStrikeStart)
+    {
+    image_angle = other.image_angle
+    image_yscale=3;
+    }}
+    
+    if ultra_got[61]//MEGA ARMOUR STRIKE
+    {
+    
+    with instance_create(x,y,ArmourStrike)
+    {image_angle = point_direction(x,y,mouse_x,mouse_y)-20
+    Originalangle=image_angle;
+    team = other.team
+    ammo = 100;
+    event_perform(ev_alarm,0)
+    visible = 0
+    with instance_create(x,y,ArmourStrikeStart)
+    {
+    image_angle = other.image_angle
+    image_yscale=3;
+    }}
+    
+    with instance_create(x,y,ArmourStrike)
+    {image_angle = point_direction(x,y,mouse_x,mouse_y)+20
+    Originalangle=image_angle;
+    team = other.team
+    ammo = 100;
+    event_perform(ev_alarm,0)
+    visible = 0
+    with instance_create(x,y,ArmourStrikeStart)
+    {
+    image_angle = other.image_angle
+    image_yscale=3;
+    }}
+    
+    
+    BackCont.viewx2 += lengthdir_x(-8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+    BackCont.viewy2 += lengthdir_y(-8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+    BackCont.shake += 22
+    
+    }
+    
+    BackCont.viewx2 += lengthdir_x(-6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+    BackCont.viewy2 += lengthdir_y(-6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+    BackCont.shake += 25
 
 }
 

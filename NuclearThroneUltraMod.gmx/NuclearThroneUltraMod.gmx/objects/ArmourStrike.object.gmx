@@ -207,7 +207,7 @@ frozen=true;
     xx=other.x
     yy=other.y
     }
-alarm[11]+=other.freezetime;
+alarm[11]+=60;
 }
 
 
