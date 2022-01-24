@@ -489,7 +489,7 @@ xx += lengthdir_x(1,dir);
 yy += lengthdir_y(1,dir);
 
 }
-until(xx &gt; view_xview+6 and xx &lt; view_xview+view_wview-6 and yy &gt; view_yview+6 and yy &lt; view_yview+view_hview-6)
+until((xx &gt; view_xview+6 and xx &lt; view_xview+view_wview-6 and yy &gt; view_yview+6 and yy &lt; view_yview+view_hview-6) || point_distance(x,y,xx,yy) &gt; point_distance(x,y,Player.x,Player.y))
 round(xx)
 round(yy)
 if inverted
