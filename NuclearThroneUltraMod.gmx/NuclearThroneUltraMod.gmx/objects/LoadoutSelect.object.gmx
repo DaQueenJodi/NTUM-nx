@@ -32,7 +32,10 @@ race=0;
 upscale=1;
 downscale=1;
 scale=1;
+wepopenscale=1;
 wep=0;
+
+wepmenuopen=false;
 
 skin=0;
 if instance_exists(Menu)
@@ -75,46 +78,50 @@ UberCont.skin[race]=skin;
 else
 UberCont.skin[race]=0;
 
-draw_sprite(sprLoadOutArrow,0,view_xview+148,view_yview+68);
-draw_sprite(sprLoadOutArrow,1,view_xview+148,view_yview+82);
-
-if mouse_x &gt; view_xview+148-10 and mouse_x &lt; view_xview+148+12 and mouse_y &gt; view_yview+70-12 and mouse_y &lt; view_yview+70+10
-{
-upscale=1.5;
-
-if mouse_check_button_pressed(mb_left)
-{
-
-wep++;
-if wep&gt;maxstartwep
-wep=0;
-
+if (wepmenuopen) {
+    var arrowx = 148;
+    var arrowy = 78;
+    var arrowseparate = 20;
+    
+    draw_sprite(sprLoadOutArrow,0,view_xview+arrowx,view_yview+arrowy);
+    draw_sprite(sprLoadOutArrow,1,view_xview+arrowx,view_yview+arrowy+arrowseparate);
+    
+    if mouse_x &gt; view_xview+arrowx-10 and mouse_x &lt; view_xview+arrowx+12 and mouse_y &gt; view_yview+arrowy-12 and mouse_y &lt; view_yview+arrowy+10
+    {
+    upscale=1.5;
+    
+    if mouse_check_button_pressed(mb_left)
+    {
+    var dir=0;
+    
+    wep--;
+    if wep&lt;0
+    wep=maxstartwep;
+    
+    }
+    
+    
+    }
+    else
+    upscale=1;
+    
+    if mouse_x &gt; view_xview+arrowx-10 and mouse_x &lt; view_xview+arrowx+12 and mouse_y &gt; view_yview+arrowy+arrowseparate-12 and mouse_y &lt; view_yview+arrowy+arrowseparate+10
+    {
+    downscale=1.5;
+    
+    if mouse_check_button_pressed(mb_left)
+    {
+    
+    wep++;
+    if wep&gt;maxstartwep
+    wep=0;
+    
+    }
+    
+    }
+    else
+    downscale=1;
 }
-
-
-}
-else
-upscale=1;
-
-if mouse_x &gt; view_xview+148-10 and mouse_x &lt; view_xview+148+12 and mouse_y &gt; view_yview+92-12 and mouse_y &lt; view_yview+92+10
-{
-downscale=1.5;
-
-if mouse_check_button_pressed(mb_left)
-{
-var dir=0;
-
-wep--;
-if wep&lt;0
-wep=maxstartwep;
-
-}
-
-
-}
-else
-downscale=1;
-
 
 
 //standard weapon
@@ -124,6 +131,23 @@ UberCont.start_wep[0]=race_swep[Menu.race];
 //Set the starting weapon
 if UberCont.start_wep_have[wep,race]=1
 UberCont.cwep[race]=UberCont.start_wep[wep];
+
+if mouse_x &gt; view_xview+300-10 and mouse_x &lt; view_xview+300+12 and mouse_y &gt; view_yview+43-12 and mouse_y &lt; view_yview+43+10
+{
+    wepopenscale=1.5;
+    
+    if mouse_check_button_pressed(mb_left)
+    {
+        if (wepmenuopen) {
+            wepmenuopen = false;
+        } else {
+            wepmenuopen = true;
+        }
+    }
+} else {
+    wepopenscale=1;
+}
+
 
 
 //SKIN-------------------------------------------______________________
@@ -202,20 +226,56 @@ scale=1;
             <kind>1</kind>
             <string>if !instance_exists(option)&amp;&amp;!instance_exists(option2)&amp;&amp;UpdateSelect.selected=0 &amp;&amp; race!=0
 {
-///draw starting weapon
 draw_set_halign(fa_left)//jezus christ this menu systemm is fked up
 
-draw_text_color(view_xview+6,view_yview+86,"STARTING WEAPON: ",c_black,c_black,c_black,c_black,1);
-draw_text_color(view_xview+7,view_yview+85,"STARTING WEAPON: ",c_white,c_white,c_white,c_white,1);
+if (wepmenuopen) {
+    draw_sprite(splash,0,view_xview+77,view_yview+49)
+    
+    
+    //draw_text_color(view_xview+6,view_yview+86,"STARTING WEAPON: ",c_black,c_black,c_black,c_black,1);
+    //draw_text_color(view_xview+7,view_yview+85,"STARTING WEAPON: ",c_white,c_white,c_white,c_white,1);
+    
+    var wepiter = 0;
+    var wepx = 170;
+    var wepy = 60;
+    var spritewidth = 0;
+    
+    do {
+        spritewidth = sprite_get_width(wep_sprt[UberCont.start_wep[wepiter]])
+        if wepx + spritewidth &gt; 310 {
+            wepx = 170;
+            wepy += 16;
+        }
+        
+        if UberCont.start_wep_have[wepiter,race]=1
+        if wepiter = wep {
+            draw_sprite_ext(wep_sprt[UberCont.start_wep[wepiter]],0,view_xview+wepx+2,view_yview+wepy-2,1,1,0,c_white,1);
+        } else {
+            draw_sprite(wep_sprt[UberCont.start_wep[wepiter]],0,view_xview+wepx,view_yview+wepy);
+        }
+        else
+        if wepiter = wep {
+            draw_sprite_ext(wep_sprt[UberCont.start_wep[wepiter]],0,view_xview+wepx+2,view_yview+wepy-2,1,1,0,make_colour_rgb(40, 40, 40),1);
+        } else {
+            draw_sprite_ext(wep_sprt[UberCont.start_wep[wepiter]],0,view_xview+wepx,view_yview+wepy,1,1,0,make_colour_rgb(40, 40, 40),1);
+        }
+        
+        wepx += 12 + spritewidth
+        wepiter++;
+    } until (wepiter = UberCont.maxstartwep)
+    
+    var arrowx = 148;
+    var arrowy = 78;
+    var arrowseparate = 20;
+    
+    draw_sprite_ext(sprLoadOutArrow,0,view_xview+arrowx,view_yview+arrowy,upscale,upscale,0,c_white,upscale-0.1);
+    draw_sprite_ext(sprLoadOutArrow,1,view_xview+arrowx,view_yview+arrowy+arrowseparate,downscale,downscale,0,c_white,downscale-0.1);
 
-if UberCont.start_wep_have[wep,race]=1
-draw_sprite(wep_sprt[UberCont.start_wep[wep]],0,view_xview+142,view_yview+80);
-else
-draw_sprite_ext(wep_sprt[UberCont.start_wep[wep]],0,view_xview+142,view_yview+80,1,1,0,c_black,1);
-
-draw_sprite_ext(sprLoadOutArrow,0,view_xview+148,view_yview+70,upscale,upscale,0,c_white,upscale-0.1);
-draw_sprite_ext(sprLoadOutArrow,1,view_xview+148,view_yview+92,downscale,downscale,0,c_white,downscale-0.1);
-
+    draw_sprite_ext(sprLoadOutArrow,0,view_xview+arrowx,view_yview+arrowy,upscale,upscale,0,c_white,upscale-0.1);
+    draw_sprite_ext(sprLoadOutArrow,0,view_xview+300,view_yview+43,wepopenscale,wepopenscale,0,c_white,wepopenscale-0.1);
+} else {
+    draw_sprite_ext(sprLoadOutArrow,1,view_xview+300,view_yview+43,wepopenscale,wepopenscale,0,c_white,wepopenscale-0.1);
+}
 
 
 

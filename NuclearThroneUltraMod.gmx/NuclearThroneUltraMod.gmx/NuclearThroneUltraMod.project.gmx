@@ -2040,6 +2040,7 @@
       <sprite>sprites\sprSelectMask</sprite>
       <sprite>sprites\mskPlayerMenu</sprite>
       <sprite>sprites\sprSkeletonChair</sprite>
+      <sprite>sprites\splash</sprite>
     </sprites>
     <sprite>sprites\mskBigRad</sprite>
     <sprite>sprites\mskBones</sprite>
@@ -3836,6 +3837,7 @@
       <object>objects\UltraIcon</object>
       <object>objects\UnlockPopup</object>
       <object>objects\LoadoutSelect</object>
+      <object>objects\SelectableWeapon</object>
     </objects>
     <object>objects\MakeGame</object>
     <object>objects\KeyCont</object>
