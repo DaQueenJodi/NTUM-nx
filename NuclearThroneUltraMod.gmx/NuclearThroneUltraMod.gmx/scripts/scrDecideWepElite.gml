@@ -18,7 +18,15 @@ do {
 }
 until ((wep_area[wep] != -1 and wep_area[wep] > Player.hard + argument0/2 and wep_area[wep] < Player.hard + argument0 + 1) || dir > 4000)
 
-if (dir > 4000 and Player.hard>16) { //if main search fails and player is far along just look for a weapon above area 16
+if (dir > 4000 and Player.hard>24) { //if main search fails and player is far along just look for a weapon above area 24
+    dir = 0;
+    do {
+    dir++;
+    wep = irandom(maxwep-1)+1;
+    } until (wep_area[wep]>24 || dir > 1000)
+}
+
+if (dir > 4000 and Player.hard>16) { //if secondary search fails or player is not so far just look for a weapon above area 16
     dir = 0;
     do {
     dir++;

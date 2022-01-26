@@ -3837,7 +3837,6 @@
       <object>objects\UltraIcon</object>
       <object>objects\UnlockPopup</object>
       <object>objects\LoadoutSelect</object>
-      <object>objects\SelectableWeapon</object>
     </objects>
     <object>objects\MakeGame</object>
     <object>objects\KeyCont</object>
