@@ -1,0 +1,136 @@
+if KeyCont.key_fire[p] = 1 and (mouse_x < x+16 and mouse_y < y+16 and mouse_x > x-16 and mouse_y > y-16)
+{
+    with UberCont///UNLOCK CROWN
+    {
+    crown_used[other.crown]=1;
+    scrSave();
+    }
+
+if crown = 0
+crown = ceil(random(crownmax-1)+1)
+oldcrown = Player.crown
+Player.crown = crown
+Player.crownpoints -= 1
+
+//RESET INVERTED CHANCE
+    with Player
+    {
+        invertedchance=7.5
+        if race=15
+        invertedchance=12;
+    }
+
+
+    
+//NONE
+if crown = 1
+{
+with Crown
+instance_destroy()
+}
+
+//UNDO STUFF
+
+//CROWN OF DESTINY
+if oldcrown = 8 
+Player.skillpoints -= 1
+//CROWN OF DEATH
+if oldcrown = 3
+Player.maxhealth += 1
+
+//DO STUFF
+
+
+if scrUsedEveryCrown()
+{
+with Player
+scrUnlockBSkin(18,"FOR TRYING EVERY CROWN",0);
+}
+
+//CROWN OF DESTINY
+if crown = 8 
+{
+Player.skillpoints += 1
+}
+//CROWN OF DEATH
+if crown = 3
+{
+Player.maxhealth -= 1
+if Player.my_health > Player.maxhealth
+Player.my_health = Player.maxhealth}
+
+if crown!=4//not crown of haste
+Player.rushcrownlevels=0;
+
+//CROWN OF DECAY
+if crown = 6
+Player.decay = 300
+
+//CROWN OF REINCARNATION
+if crown==11
+{
+
+with Player
+{
+skeletonlives=0;
+instance_destroy();
+}
+
+with WepPickup
+instance_destroy();
+
+with Corpse
+instance_destroy();
+
+instance_create(x,y,Player);
+
+with Player//Data to keep
+{
+race = other.race
+crown = other.crown
+lastarea = other.lastarea;
+area = other.area//other.lastarea;
+loops = other.loops;
+hard = other.hard;
+kills = other.kills;
+subarea=other.subarea;
+//event_perform(ev_other,ev_room_end);
+}
+/*with instance_create(x,y,GenCont)
+{race = other.race
+crown = other.crown}*/
+
+}
+
+//CROWN OF INVERSION
+if crown==12
+{
+    with Player
+    {
+    invertedchance=47.5//7.5
+    if race=15//ATOM
+    invertedchance=52;//12;
+    }
+}
+
+with CrownIcon
+instance_destroy()
+
+with LevCont
+instance_destroy()
+
+if Player.crownpoints > 0 or Player.skillpoints > 0//&& Player.ultra_got[0]=0
+{
+instance_create(x,y,LevCont)
+}
+else
+{
+with instance_create(x,y,GenCont)
+race = Player.race
+}
+
+snd_play(sndSkillPick)
+}
+
+/* */
+/*  */

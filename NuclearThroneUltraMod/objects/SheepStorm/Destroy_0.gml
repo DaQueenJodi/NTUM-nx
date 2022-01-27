@@ -1,0 +1,50 @@
+if instance_exists(Player){
+if Player.ultra_got[49]==1
+audio_stop_sound(sndDragonLoop);
+else
+audio_stop_sound(sndFlamerLoop);
+
+room_speed=30;
+
+with Player
+{
+
+meleeimmunity=10;
+
+if skill_got[2]==1//extra feet
+{
+maxspeed=4.5;
+}
+else
+{
+maxspeed=4;
+}
+
+}
+
+
+}
+else
+{
+audio_stop_sound(sndFlamerLoop);
+audio_stop_sound(sndDragonLoop);
+}
+
+with enemy
+{
+if point_distance(x,y,other.x,other.y)<72
+{
+motion_add(point_direction(x,y,other.x,other.y)+180,4);
+walk=4;
+move_contact_solid(point_direction(x,y,other.x,other.y)+180,8);
+}
+
+}
+
+repeat(16)
+{
+with instance_create(x+random(16)-8,y+random(30)-15,Dust)
+motion_add(random(360),random(3));
+
+}
+

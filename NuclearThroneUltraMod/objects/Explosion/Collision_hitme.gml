@@ -1,0 +1,21 @@
+if other.team != team && other.team!=2
+{
+with other
+{
+
+snd_play(snd_hurt)
+
+if instance_exists(Player)
+my_health -= 5+Player.ultra_got[57]*5//atom ultra
+else
+my_health-=5;
+
+sprite_index = spr_hurt
+image_index = 0
+motion_add(point_direction(other.x,other.y,x,y),6)
+Sleep(4)
+BackCont.shake += 2
+
+}
+}
+

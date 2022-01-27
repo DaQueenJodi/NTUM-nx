@@ -1,0 +1,78 @@
+if !instance_exists(Player){
+instance_destroy(); exit;}
+
+//WKICK
+if wkick > 0
+wkick -= 1
+if wkick < 0
+wkick += 1
+
+
+if walk > 0
+{
+walk -= 1
+motion_add(direction,0.8)
+}
+
+if point_distance(x,y,Player.x,Player.y) > 300//52
+mp_potential_step(Player.x,Player.y,1,false)
+
+
+    if (Player.reload>0)//my partner is shooting
+    {
+    alarm[4]=10;
+    protect=4;
+    }
+
+
+
+if speed > 4.5
+speed = 4.5
+
+if alarm[2]>0 &&reload<1 && target>0 && instance_exists(target)
+{
+
+with target
+{
+if place_meeting(x,y,PopoShield)
+{
+with other
+exit;
+}
+else if (object_index=CrownGuardian && canfire!=0)
+{
+with other
+exit;
+}
+}
+
+snd_play(sndEnemyFire)
+gunangle = point_direction(x,y,target.x,target.y)
+wkick = 4
+
+
+with instance_create(x,y,PartnerBullet)
+{
+motion_add(other.gunangle+random(32)-16,12)
+image_angle = direction
+team = other.team
+}
+reload+=2;
+}
+if reload>0
+{reload-=1;}
+else reload=0;
+
+if alarm[3]>0//move in circles
+{
+if point_distance(x,y,Player.x,Player.y)>60&random(150)<1//small chance partner comes back(stuck)
+mp_potential_step(Player.x,Player.y,0.8,false)
+
+Direction+=20;
+xx=Player.x+lengthdir_x(irandom_range(12,16),Direction);
+yy=Player.y+lengthdir_y(irandom_range(12,16),Direction);
+motion_add(point_direction(x,y,xx,yy),0.8);
+}
+
+
+

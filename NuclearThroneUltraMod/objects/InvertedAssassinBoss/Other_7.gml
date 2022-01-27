@@ -1,0 +1,3 @@
+if sprite_index=sprInvertedAssassinBossSit
+spr_idle=sprInvertedAssassinBossIdle;
+

@@ -1,0 +1,12 @@
+snd_play(sndGruntFire)
+wkick = 4
+
+with instance_create(x,y,IDPDBullet){
+motion_add(other.gunangle+random(20)-10,8)
+image_angle = direction
+team = other.team}
+
+ammo--;
+if ammo>0
+alarm[2]=3;
+

@@ -1,0 +1,2 @@
+spr_idle = sprSnowBotCarIdle
+
