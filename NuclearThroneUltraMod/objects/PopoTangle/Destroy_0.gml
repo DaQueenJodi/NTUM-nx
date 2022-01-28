@@ -1,0 +1,5 @@
+repeat(4)
+instance_create(x+random(12)-6,y+random(12)-6,Dust)
+
+instance_create(x,y,SlowFieldEnd);
+

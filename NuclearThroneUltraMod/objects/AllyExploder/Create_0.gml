@@ -1,0 +1,27 @@
+raddrop = 5
+maxhealth = 5
+meleedamage = 0
+size = 1
+target=-1;
+my_health=maxhealth;
+
+team = 2;
+
+spr_idle = sprAllyExploderIdle
+spr_walk = sprAllyExploderWalk
+spr_hurt = sprAllyExploderHurt
+spr_dead = sprAllyExploderDead
+
+
+snd_hurt = sndHitFlesh
+snd_mele = sndMaggotBite
+snd_dead = sndFrogExplode
+
+//behavior
+alarm[1] = 2+random(5)
+
+if instance_exists(enemy)
+motion_add(point_direction(instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y,x,y),1)
+
+close = 0
+

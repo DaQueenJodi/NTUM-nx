@@ -1,0 +1,109 @@
+direction = choose(0,90,180,270)
+
+
+styleb = choose(0,0,0,0,0,0,1)
+
+goal = 110//110
+
+if instance_exists(Player){
+if Player.area = 3 and Player.subarea = 3
+goal = 150//50
+else if (Player.area = 7||Player.area=108) and Player.subarea = 2
+goal = 50
+else if Player.area = 100
+goal = 40
+else if Player.area = 103
+goal = 130
+else if Player.area = 102
+goal = 50
+else if Player.area = 104
+goal = 10
+else if Player.area = 105
+goal = 145
+else if Player.area = 106
+goal = 120
+else if (Player.area = 6||Player.area=112) && Player.subarea=2//LABS BOSS
+goal=1;
+else if Player.area = 9
+goal = 120
+}
+
+if UberCont.opt_gamemode==6//small levels
+goal=30;
+
+if instance_exists(MenuGen)
+goal = 80//60
+ 
+/*
+if instance_number(Floor)<2
+{
+
+//safe spawns
+/*instance_create(x,y-32,Floor)
+instance_create(x-32,y-32,Floor)
+instance_create(x+32,y-32,Floor)
+instance_create(x,y-64,Floor)
+instance_create(x,y-96,Floor)
+instance_create(x+32,y-96,Floor)
+instance_create(x-32,y-96,Floor)
+instance_create(x-64,y-96,Floor)*/
+/*
+if !place_meeting(x-32,y,NOWALLSHEREPLEASE)// && Player.race = 16 && Player.skill_got[5]
+{
+myx = x-32+choose(0,16)
+myy = y-32+choose(0,16)
+instance_create(myx,myy,Wall)
+instance_create(x,y,NOWALLSHEREPLEASE)
+
+myx = x+32+choose(0,16)
+myy = y-32+choose(0,16)
+instance_create(myx,myy,Wall)
+instance_create(x,y,NOWALLSHEREPLEASE)
+
+myx = x-32+choose(0,16)
+myy = y+32+choose(0,16)
+instance_create(myx,myy,Wall)
+instance_create(x,y,NOWALLSHEREPLEASE)
+
+myx = x+32+choose(0,16)
+myy = y+32+choose(0,16)
+instance_create(myx,myy,Wall)
+instance_create(x,y,NOWALLSHEREPLEASE)
+
+
+
+
+myx = x-64+choose(0,16)
+myy = y-64+choose(0,16)
+instance_create(myx,myy,Wall)
+instance_create(x,y,NOWALLSHEREPLEASE)
+
+myx = x+64+choose(0,16)
+myy = y-64+choose(0,16)
+instance_create(myx,myy,Wall)
+instance_create(x,y,NOWALLSHEREPLEASE)
+
+myx = x-64+choose(0,16)
+myy = y+64+choose(0,16)
+instance_create(myx,myy,Wall)
+instance_create(x,y,NOWALLSHEREPLEASE)
+
+myx = x+64+choose(0,16)
+myy = y+64+choose(0,16)
+instance_create(myx,myy,Wall)
+instance_create(x,y,NOWALLSHEREPLEASE)
+}
+
+
+
+
+with GenCont{
+PlayerStartX=x;
+PlayerStartY=y-32;}
+
+}*/
+
+instance_create(x,y,Floor)
+
+/* */
+/*  */
