@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndInsomnia",
-  "duration": 0.0,
+  "duration": 2.867062,
   "parent": {
     "name": "Mutations",
     "path": "folders/Sounds/Mutations.yy",

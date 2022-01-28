@@ -14,7 +14,7 @@ function scrRaces() {
 	race_name[1] = "[FISH]"
 	race_pass[1] = "GETS MORE AMMO"
 	race_acti[1] = "DODGE ROLL"
-	race_butt[1] = "WATER BOOST#GETS EVEN MORE AMMO#FROM MINI AMMO CHESTS"
+	race_butt[1] = "WATER BOOST#GETS EVEN MORE AMMO#FROM AMMO PICKUPS"
 	race_lock[1] = "UNLOCKED FROM THE START"
 	race_have[1] = 1
 	race_swep[1] = 1

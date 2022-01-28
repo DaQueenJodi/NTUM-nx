@@ -113,7 +113,7 @@ function scrUltras() {
 	ultra_tips[25] = "big wep chests drop two duplicates"
 
 	ultra_name[26] = "GET LOADED"
-	ultra_text[26] = "AMMO CHESTS INCLUDE ALL AMMO TYPES#MINI AMMO CHESTS ALWAYS#GIVE YOU AMMO FOR YOUR PRIMARY"
+	ultra_text[26] = "AMMO CHESTS INCLUDE ALL AMMO TYPES#AMMO PICKUPS ALWAYS#GIVE YOU AMMO FOR YOUR PRIMARY"
 	ultra_tips[26] = "you should really try open mind"
 
 	ultra_name[27] = "MIRROR HANDS"

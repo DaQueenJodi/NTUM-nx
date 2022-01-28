@@ -3,7 +3,7 @@
   "compression": 0,
   "volume": 1.0,
   "preload": true,
-  "bitRate": 192,
+  "bitRate": 128,
   "sampleRate": 44100,
   "type": 0,
   "bitDepth": 1,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSuperFlakCannon",
-  "duration": 0.0,
+  "duration": 1.117813,
   "parent": {
     "name": "Shell",
     "path": "folders/Sounds/Weapons/Shell.yy",

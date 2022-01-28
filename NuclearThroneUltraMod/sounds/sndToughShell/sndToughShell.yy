@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndToughShell",
-  "duration": 0.0,
+  "duration": 3.406469,
   "parent": {
     "name": "Mutations",
     "path": "folders/Sounds/Mutations.yy",

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndMutRage",
-  "duration": 0.0,
+  "duration": 2.832041,
   "parent": {
     "name": "Mutations",
     "path": "folders/Sounds/Mutations.yy",

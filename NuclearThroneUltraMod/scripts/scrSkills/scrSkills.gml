@@ -193,7 +193,7 @@ function scrSkills() {
 	skill_tips[23] = "open Mind also includes rad cannisters"
 	skill_msnd[23] =  sndMutOpenMind
 
-	if random(1000)<1
+	if random(800)<1
 	skill_name[24] = "TRIGGER PRINGELS"
 	else
 	skill_name[24] = "TRIGGER FINGERS"
@@ -296,17 +296,23 @@ function scrSkills() {
 	skill_tips[31] = "damage reduction!"
 	skill_msnd[31] =  sndToughShell
 	}
-	skill_name[32] = "NOTHING"
-	skill_text[32] = "THERE ARE NO MORE MUTATIONS LEFT!"
-	skill_tips[32] = ""
+	
+	skill_name[32] = "ALKALINE SALIVA"
+	skill_text[32] = "FIRST HIT YOU TAKE IN A LEVEL#HEALS YOU INSTEAD"
+	skill_tips[32] = "yes pain yes gain"
 	skill_msnd[32] =  sndPartyHorn
+	
+	skill_name[33] = "NOTHING"
+	skill_text[33] = "THERE ARE NO MORE MUTATIONS LEFT!"
+	skill_tips[33] = ""
+	skill_msnd[33] =  sndPartyHorn
 
 	/*
 	skill_name[29] = "SHARP TEETH"
 	skill_text[29] = "WHENEVER YOU GET HIT DEAL DAMAGE TO EVERYTHING ON THE SCREEN, AND REDUCE DAMAGE TAKEN IN A SHORT PERIOD AFTER BEING HIT TO 1  
 	skill_tips[29] = "bite"*/
 
-	maxskill = 31;
+	maxskill = 32;
 
 
 	dir = 0

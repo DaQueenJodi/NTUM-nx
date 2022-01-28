@@ -478,31 +478,42 @@ owner=other.id;
 }
 }
 
+if (my_health<prevhealth)
+{
+	//Took a hit?
+	if skill_got[12]//euphoria resistance?
+	{
+		if !instance_exists(GenCont)&&!instance_exists(EuphoriaShield)&&!instance_exists(LevCont)&&exception=false
+		{
+		if skill_got[28]//rage
+		{
+		if my_health<prevhealth&&exception=false//I been hit
+		rage=0;
+		}
 
-if skill_got[12]//euphoria resistance?
-{
-if my_health<prevhealth&&!instance_exists(GenCont)&&!instance_exists(EuphoriaShield)&&!instance_exists(LevCont)&&exception=false
-{
-if skill_got[28]//rage
-{
-if my_health<prevhealth&&exception=false//I been hit
-rage=0;
+		prevhealth=my_health;
+		if race=25
+		alarm[3]=25;
+		else
+		alarm[3]=19;//duration
+		instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
+		}
+	}
+	if (skill_got[32] && isAlkaline)//Alkaline Savila
+	{
+		isAlkaline = false;
+		var damageTaken = prevhealth - my_health;
+		prevhealth=min(maxhealth,prevhealth+damageTaken);
+		instance_create(x,y,HealFX)
+		snd_play(sndHealthPickup)
+		var pt = instance_create(x,y,PopupText)
+		pt.mytext = "+"+string(num)+" HP";
+		if my_health = maxhealth
+			pt.mytext = "MAX HP";
+			
+		alarm[3]=10;//duration of iframes
+	}
 }
-
-prevhealth=my_health;
-if race=25
-alarm[3]=25;
-else
-alarm[3]=19;//duration
-instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
-}
-}
-/*else if skill_got[28]//rage
-{
-if my_health<prevhealth&&exception=false//I been hit
-rage=0;
-}
-
 
 /* */
 ///strong spirit justasheep
