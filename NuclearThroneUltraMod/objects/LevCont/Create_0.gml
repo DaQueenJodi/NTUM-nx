@@ -163,6 +163,12 @@ exit;
     until skill4 != skill1 and skill4 != skill2 and skill4 != skill3 and Player.skill_got[skill4] = 0
     else
     skill4=32
+	
+	if scrSkillLeft(skill4,skill3,skill2,skill1)  
+    do skill5 = ceil(random(maxskill))
+    until skill5 != skill1 and skill5 != skill2 and skill5 != skill3 and skill5 != skill4 and Player.skill_got[skill5] = 0
+    else
+    skill5=32
     
     }
     else{//*/
@@ -199,14 +205,20 @@ exit;
     else
     skill4=32
     
-    if Player.race=21//Horror
-    {
+    
     if scrSkillLeft(skill4,skill3,skill2,skill1) 
     do skill5 = ceil(random(maxskill))
     until skill5 != skill1 and skill5 != skill2 and skill5 != skill3 and skill5 != skill4 and Player.skill_got[skill5] = 0
     else
     skill5=32
     
+	if Player.race=21//Horror
+    {
+		if scrSkillLeft(skill5,skill4,skill3,skill2,skill1) 
+	    do skill6 = ceil(random(maxskill))
+	    until skill6 != skill1 and skill6 != skill2 and skill6 != skill3 and skill6 != skill4 and skill6 != skill5 and Player.skill_got[skill6] = 0
+	    else
+	    skill6=32
     }
     
     }
@@ -221,20 +233,24 @@ exit;
     if Player.race=21//Horror
     {
     
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-112,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
     skill = other.skill1
     
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-72,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
     skill = other.skill2
     
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
     skill = other.skill3
     
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
     skill = other.skill4
     
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+72,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
     skill = other.skill5
+	
+	
+	with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+112,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+    skill = other.skill6
     
     }
     else{
@@ -255,6 +271,9 @@ exit;
     
     with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+72,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
     skill = other.skill4
+	
+	with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+112,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+    skill = other.skill5
     }}
     else
     {

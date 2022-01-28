@@ -1,5 +1,5 @@
 raddrop = 4//original bandit 2
-maxhealth = 2
+maxhealth = 3
 
 if UberCont.loops>1
 maxhealth=4;

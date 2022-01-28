@@ -1,4 +1,4 @@
-function scrSkillLeft(argument0, argument1, argument2, argument3) {
+function scrSkillLeft(sk5 = 0, sk4, sk3, sk2, sk1) {
 	//Run in LevCont
 	//Checks if there are still skills that you haven't taken.
    
@@ -7,7 +7,7 @@ function scrSkillLeft(argument0, argument1, argument2, argument3) {
     
 	    repeat(maxskill)
 	    {
-	    if Player.skill_got[dirskill]=0 && dirskill!=argument0&&dirskill!=argument1&&dirskill!=argument2&&dirskill!=argument3//skill is not already selected skill
+	    if Player.skill_got[dirskill]=0 && dirskill!=sk4&&dirskill!=sk3&&dirskill!=sk2&&dirskill!=sk1&&dirskill!=sk5//skill is not already selected skill
 	    return true
     
 	    dirskill++;

@@ -460,4 +460,4 @@ onlyusemerevolver=true;
 else
 onlyusemerevolver=false;
 
-isAlkaline = false;
+isAlkaline = true;

@@ -2,7 +2,7 @@ friction = 0.45
 image_speed = 0.4
 
 hardshell=true;
-
+isAlkaline=false;
 //scrRaces()
 //scrSkills()
 //scrUltras()
@@ -106,13 +106,16 @@ if Player.ultra_got[45]//ultra git yer back
 maxhealth-=2;
 
 my_health = maxhealth
-lsthealth = maxhealth//lasthealth
+prevhealth = maxhealth//lasthealth
 
 if Player.skill_got[14]{
 skill_got[14] = 1}
 else{
 skill_got[14] = 0}//boiling veins
 
+
+if Player.skill_got[32]
+	isAlkaline = true;
 returntoplayer=0;
 returntoplayerfast=0;
 

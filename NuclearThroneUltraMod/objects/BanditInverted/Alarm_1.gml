@@ -1,4 +1,4 @@
-alarm[1] = 6+random(6)
+alarm[1] = 5+random(6)
 
 scrTarget()
 if target > 0

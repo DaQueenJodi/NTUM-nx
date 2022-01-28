@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Palace",
-    "path": "texturegroups/Palace",
-  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 24,
   "height": 32,
+  "textureGroupId": {
+    "name": "Palace",
+    "path": "texturegroups/Palace",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Palace",
-    "path": "folders/Sprites/Enviroment/Tiles/Palace.yy",
+    "name": "PalaceEnviroment",
+    "path": "folders/Palace/PalaceEnviroment.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprWall9Out",

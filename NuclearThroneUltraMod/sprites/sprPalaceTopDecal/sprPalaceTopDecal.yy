@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Palace",
-    "path": "folders/Sprites/Enviroment/Tiles/Palace.yy",
+    "name": "Props",
+    "path": "folders/Palace/PalaceEnviroment/Props.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprPalaceTopDecal",

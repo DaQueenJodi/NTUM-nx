@@ -715,7 +715,6 @@ function scrPowers() {
 
 	//YUNG CUZ
 	if race==12 && maxhealth/2 >=1 || (ultra_got[47] && my_health-2>0){
-
 	var xran;
 	var yran;
 	xran=random(22)-11;
@@ -755,7 +754,7 @@ function scrPowers() {
     
 	    //SPAWN BUDDY
 	        if ultra_got[46]==1&&instance_number(YungCuzDupe)<3{
-	        instance_create(x,y,YungCuzDupe);
+			instance_create(x,y,YungCuzDupe)
 	        snd_play(sndMutant12Wrld)
 	        Sleep(40)
 	        }

@@ -1,5 +1,6 @@
 if !instance_exists(Player){instance_destroy();exit;}
 //Copy Player
+prevhealth=my_health;
 triggerfinger=Player.triggerfinger;
 //strongspirit=Player.strongspirit;
 //strongspiritused=Player.strongspiritused;

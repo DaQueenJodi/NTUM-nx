@@ -499,17 +499,24 @@ if (my_health<prevhealth)
 		instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
 		}
 	}
-	if (skill_got[32] && isAlkaline)//Alkaline Savila
+	if (skill_got[32] && isAlkaline && exception=false)//Alkaline Savila
 	{
 		isAlkaline = false;
 		var damageTaken = prevhealth - my_health;
-		prevhealth=min(maxhealth,prevhealth+damageTaken);
-		instance_create(x,y,HealFX)
+		if (skill_got[9]) //Second stomache
+			damageTaken *= 2;
+		my_health=min(maxhealth,prevhealth+damageTaken);
+		prevhealth = my_health;
+		with instance_create(x,y,HealFX)
+		{
+			depth = other.depth - 1;	
+		}
 		snd_play(sndHealthPickup)
 		var pt = instance_create(x,y,PopupText)
-		pt.mytext = "+"+string(num)+" HP";
 		if my_health = maxhealth
 			pt.mytext = "MAX HP";
+		else
+			pt.mytext = "+"+string(damageTaken)+" HP";
 			
 		alarm[3]=10;//duration of iframes
 	}

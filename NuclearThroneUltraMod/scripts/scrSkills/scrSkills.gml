@@ -86,10 +86,20 @@ function scrSkills() {
 	skill_tips[8] = "skin glows"
 	skill_msnd[8] =  sndMutGammaGuts
 
+	if random(500)<1
+	{
+	skill_name[9] = "SECOND TUMMY"
+	skill_text[9] = "OMNOMNOMNOM"
+	skill_tips[9] = "omnomnomnom"
+	skill_msnd[9] =  sndMutSecondStomache
+	}
+	else
+	{
 	skill_name[9] = "SECOND STOMACH"
 	skill_text[9] = "MORE HP FROM MEDKITS"
 	skill_tips[9] = "stomach rumbles"
 	skill_msnd[9] =  sndMutSecondStomache
+	}
 
 	skill_name[10] = "BACK MUSCLE"
 	skill_text[10] = "HIGHER AMMO MAX"
@@ -298,9 +308,9 @@ function scrSkills() {
 	}
 	
 	skill_name[32] = "ALKALINE SALIVA"
-	skill_text[32] = "FIRST HIT YOU TAKE IN A LEVEL#HEALS YOU INSTEAD"
+	skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#HEALS YOU INSTEAD"
 	skill_tips[32] = "yes pain yes gain"
-	skill_msnd[32] =  sndPartyHorn
+	skill_msnd[32] =  sndInsomnia
 	
 	skill_name[33] = "NOTHING"
 	skill_text[33] = "THERE ARE NO MORE MUTATIONS LEFT!"

@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Palace",
-    "path": "texturegroups/Palace",
-  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 16,
   "height": 16,
+  "textureGroupId": {
+    "name": "Palace",
+    "path": "texturegroups/Palace",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -72,7 +72,7 @@
             {"id":"d07746bd-15dd-437c-b21b-032122d83b6a","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8602b8b8-093a-4588-be40-6433748d7e28","path":"sprites/sprWall9Trans/sprWall9Trans.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -97,8 +97,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Palace",
-    "path": "folders/Sprites/Enviroment/Tiles/Palace.yy",
+    "name": "PalaceEnviroment",
+    "path": "folders/Palace/PalaceEnviroment.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprWall9Trans",
