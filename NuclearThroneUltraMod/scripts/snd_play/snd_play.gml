@@ -1,4 +1,4 @@
-function snd_play(argument0) {
+function snd_play(argument0, randompitch = 0) {
 	//SS_Init();
 //TODO WTF
 	if argument0==sndHitWall||argument0==sndShotgunHitWall{
@@ -11,8 +11,5 @@ function snd_play(argument0) {
 	audio_stop_sound(argument0);
 
 
-	audio_play_sound(argument0,2,false);
-
-
-
+	audio_sound_pitch(audio_play_sound(argument0,2,false), 1 + (random(randompitch)*2 - randompitch));
 }
