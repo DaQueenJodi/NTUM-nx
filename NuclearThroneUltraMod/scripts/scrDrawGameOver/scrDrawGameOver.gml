@@ -7,11 +7,12 @@ function scrDrawGameOver() {
 	gameover = "YOU DID NOT REACH THE NUCLEAR THRONE##KILLS: "+string(BackCont.kills)+"#LEVEL: "+string(BackCont.area)+"_"+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
 	if BackCont.loops > 0
 	gameover += "#LOOPS: "+string(BackCont.loops)
+	/*
 	if UberCont.opt_shake != 1
 	gameover += "##PLAYING WITH "+string(round(UberCont.opt_shake*100))+"% SCREENSHAKE"
 	if UberCont.opt_freeze != 1
 	gameover += "##PLAYING WITH "+string(round(UberCont.opt_freeze*100))+"% FREEZEFRAMES"
-
+	*/
 	/*if UberCont.opt_gamemode = 0{
 	gamemode="NORMAL"}
 	else if UberCont.opt_gamemode = 1 {gamemode="ONE WEAPON ONLY"}//if we add gamemodes we have to change this in wep pickup&ubercont&scrdrawchar&Gameoverscreen

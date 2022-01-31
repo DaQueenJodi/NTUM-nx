@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndRegurgitate",
-  "duration": 0.0,
+  "duration": 0.402344,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

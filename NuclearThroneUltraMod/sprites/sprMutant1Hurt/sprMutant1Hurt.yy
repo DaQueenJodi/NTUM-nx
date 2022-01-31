@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 4,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 16,
   "height": 18,
+  "textureGroupId": {
+    "name": "PlayerCharacter",
+    "path": "texturegroups/PlayerCharacter",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -52,7 +52,7 @@
             {"id":"7c62a827-2b7c-4f40-ab6c-3a34c3f3ffd7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c253f863-9f18-4e8a-9745-b69d5e0f206e","path":"sprites/sprMutant1Hurt/sprMutant1Hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

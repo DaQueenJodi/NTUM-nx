@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSwapMotorized",
-  "duration": 0.0,
+  "duration": 0.805351,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

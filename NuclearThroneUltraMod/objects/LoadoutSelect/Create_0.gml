@@ -7,6 +7,7 @@ downscale=1;
 scale=1;
 wepopenscale=1;
 wep=0;
+imageIndex = 0;
 
 wepmenuopen=false;
 

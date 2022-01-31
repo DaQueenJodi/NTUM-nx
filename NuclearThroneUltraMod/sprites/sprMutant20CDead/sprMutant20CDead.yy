@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 26,
   "height": 23,
+  "textureGroupId": {
+    "name": "PlayerCharacter",
+    "path": "texturegroups/PlayerCharacter",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,

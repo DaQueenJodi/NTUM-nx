@@ -14,4 +14,3 @@ with instance_create(x,y,Portal) type = 1
 
 
 }
-

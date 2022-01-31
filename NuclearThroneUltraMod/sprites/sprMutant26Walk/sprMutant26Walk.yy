@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 16,
   "height": 23,
+  "textureGroupId": {
+    "name": "PlayerCharacter",
+    "path": "texturegroups/PlayerCharacter",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -64,7 +64,7 @@
             {"id":"bd335dce-da1a-4776-8f52-f232dee16043","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ef7ebb9-58c5-4d15-8d07-c75da6ac9cb3","path":"sprites/sprMutant26Walk/sprMutant26Walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

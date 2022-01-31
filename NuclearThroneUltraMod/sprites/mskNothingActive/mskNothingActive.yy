@@ -17,8 +17,8 @@
   "width": 256,
   "height": 200,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Palace",
+    "path": "texturegroups/Palace",
   },
   "swatchColours": null,
   "gridX": 0,

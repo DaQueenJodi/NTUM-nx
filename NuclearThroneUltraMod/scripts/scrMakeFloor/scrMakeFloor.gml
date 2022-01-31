@@ -9,7 +9,7 @@ function scrMakeFloor() {
 	{
 	area = Player.area
 	subarea=Player.subarea;}
-
+	
 	if area = 1|| area = 105 || area = 113{ if random(2) < 1
 	{instance_create(x,y,Floor)
 	instance_create(x+32,y,Floor)
@@ -405,20 +405,37 @@ function scrMakeFloor() {
 	else
 	instance_create(x,y,Floor);
 	}
-
+	//Palace
 	if area = 9{ if random(5) < 3
 	{instance_create(x,y,Floor)
 	instance_create(x+32,y,Floor)
 	instance_create(x-32,y,Floor)
-	instance_create(x+32,y+32,Floor)
 	instance_create(x,y+32,Floor)
 	instance_create(x,y-32,Floor)
+	instance_create(x+32,y+32,Floor)
+	instance_create(x+32,y-32,Floor)
+	instance_create(x-32,y-32,Floor)
+	instance_create(x-32,y+32,Floor)
+	x += lengthdir_x(32,direction)
+	y += lengthdir_y(32,direction)
 	}else 
 	{
 	instance_create(x,y,Floor)
-	instance_create(x+32,y,Floor)
+	instance_create(x,y+32,Floor)
 	}} 
+	/*
+		//Cool generation:
+		if area = 9{ if random(5) < 3
+		{instance_create(x,y,Floor)
+		instance_create(x+32,y,Floor)
+		instance_create(x-32,y,Floor)
 
+		}else 
+		{
+		instance_create(x,y,Floor)
+		instance_create(x,y+32,Floor)
+		}} 
+	*/
 	if area = 100 { if random(8) < 1//CROWN VAULT
 	{
 
@@ -475,8 +492,8 @@ function scrMakeFloor() {
 	trn= choose(-90,0,0,0,0,0,0,0,180,0,90);
 	if area = 8 || area = 109
 	trn = choose(0,0,0,0,0,180,0,0,90,90,-90,90,-90,180)
-	if area = 9 || area = 109
-	trn = choose(0,0,0,0,0,0,0,0,0,0,0,90,-90,90,-90,180)
+	if area = 9
+	trn = choose(0,0,0,0,0,0,0,0,0,90,-90,90,-90)
 	if area = 100
 	trn = choose(0,0,0,0,0,0,0,0,0,0,90,-90,180,180)
 	if area = 103
@@ -548,14 +565,14 @@ function scrMakeFloor() {
 
 	if area = 9
 	{
-	   if random(19+instance_number(FloorMaker)) > 20
+	   if random(10+instance_number(FloorMaker)) > 20
 	   {
 	   instance_destroy()
 	   if point_distance(x,y,10016,10016) > 48{
 	   instance_create(x+16,y+16,AmmoChest)
 	   instance_create(x,y,Floor)}
 	   }
-	   if random(9) < 1
+	   if random(7) < 1
 	   instance_create(x,y,FloorMaker)
 	}
 

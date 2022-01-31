@@ -333,35 +333,64 @@ function scrDrawHUD() {
 
 	//AMMO ICONS
 	img = 0
-	if Player.wep_type[Player.bwep] = 1 img = 1
-	if Player.wep_type[Player.wep] = 1 or (Player.race = 7 and Player.wep_type[Player.bwep] = 1) img = 2
+	if (Player.race == 26 && instance_exists(HumphryDiscipline) && Player.wep_type[Player.wep] != 1 && Player.wep_type[Player.bwep] != 1)
+	{
+		img = 3
+	}
+	else if Player.wep_type[Player.wep] = 1 or (Player.race = 7 and Player.wep_type[Player.bwep] = 1)
+	{img = 2}
+	else if Player.wep_type[Player.bwep] = 1
+	{img = 1}
 	draw_sprite(sprBulletIconBG,img,__view_get( e__VW.XView, 0 )+2,__view_get( e__VW.YView, 0 )+ammoheight)
-	draw_sprite(sprBulletIcon,7-ceil((Player.ammo[1]/Player.typ_amax[1])*7),__view_get( e__VW.XView, 0 )+2,__view_get( e__VW.YView, 0 )+ammoheight)//36
+	draw_sprite(sprBulletIcon,7-round((Player.ammo[1]/Player.typ_amax[1])*7),__view_get( e__VW.XView, 0 )+2,__view_get( e__VW.YView, 0 )+ammoheight)//36
 
 	img = 0
-	if Player.wep_type[Player.bwep] = 2 img = 1
-	if Player.wep_type[Player.wep] = 2 or (Player.race = 7 and Player.wep_type[Player.bwep] = 2) img = 2
+	if (Player.race == 26 && instance_exists(HumphryDiscipline) && Player.wep_type[Player.wep] != 2 && Player.wep_type[Player.bwep] != 2)
+	{
+		img = 3
+	}
+	else if Player.wep_type[Player.wep] = 2 or (Player.race = 7 and Player.wep_type[Player.bwep] = 2)
+	{img = 2}
+	else if Player.wep_type[Player.bwep] = 2
+	{img = 1}
 	draw_sprite(sprShotIconBG,img,__view_get( e__VW.XView, 0 )+12,__view_get( e__VW.YView, 0 )+ammoheight)
-	draw_sprite(sprShotIcon,7-ceil((Player.ammo[2]/Player.typ_amax[2])*7),__view_get( e__VW.XView, 0 )+12,__view_get( e__VW.YView, 0 )+ammoheight)
+	draw_sprite(sprShotIcon,7-round((Player.ammo[2]/Player.typ_amax[2])*7),__view_get( e__VW.XView, 0 )+12,__view_get( e__VW.YView, 0 )+ammoheight)
 
 	img = 0
-	if Player.wep_type[Player.bwep] = 3 img = 1
-	if Player.wep_type[Player.wep] = 3 or (Player.race = 7 and Player.wep_type[Player.bwep] = 3) img = 2
+	if (Player.race == 26 && instance_exists(HumphryDiscipline) && Player.wep_type[Player.wep] != 3 && Player.wep_type[Player.bwep] != 3)
+	{
+		img = 3
+	}
+	else if Player.wep_type[Player.wep] = 3 or (Player.race = 7 and Player.wep_type[Player.bwep] = 3)
+	{img = 2}
+	else if Player.wep_type[Player.bwep] = 3
+	{img = 1}
 	draw_sprite(sprBoltIconBG,img,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+ammoheight)
-	draw_sprite(sprBoltIcon,7-ceil((Player.ammo[3]/Player.typ_amax[3])*7),__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+ammoheight)
+	draw_sprite(sprBoltIcon,7-round((Player.ammo[3]/Player.typ_amax[3])*7),__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+ammoheight)
 
 	img = 0
-	if Player.wep_type[Player.bwep] = 4 img = 1
-	if Player.wep_type[Player.wep] = 4 or (Player.race = 7 and Player.wep_type[Player.bwep] = 4) img = 2
+	if (Player.race == 26 && instance_exists(HumphryDiscipline) && Player.wep_type[Player.wep] != 4 && Player.wep_type[Player.bwep] != 4)
+	{
+		img = 3
+	}
+	else if Player.wep_type[Player.wep] = 4 or (Player.race = 7 and Player.wep_type[Player.bwep] = 4)
+	{img = 2}
+	else if Player.wep_type[Player.bwep] = 4 
+	{img = 1}
 	draw_sprite(sprExploIconBG,img,__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.YView, 0 )+ammoheight)
-	draw_sprite(sprExploIcon,7-ceil((Player.ammo[4]/Player.typ_amax[4])*7),__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.YView, 0 )+ammoheight)
+	draw_sprite(sprExploIcon,7-round((Player.ammo[4]/Player.typ_amax[4])*7),__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.YView, 0 )+ammoheight)
 
 	img = 0
-	if Player.wep_type[Player.bwep] = 5 img = 1
-	if Player.wep_type[Player.wep] = 5 or (Player.race = 7 and Player.wep_type[Player.bwep] = 5) img = 2
+	if (Player.race == 26 && instance_exists(HumphryDiscipline) && Player.wep_type[Player.wep] != 5 && Player.wep_type[Player.bwep] != 5)
+	{
+		img = 3
+	}
+	else if Player.wep_type[Player.wep] = 5 or (Player.race = 7 and Player.wep_type[Player.bwep] = 5)
+	{img = 2}
+	else if Player.wep_type[Player.bwep] = 5 
+	{img = 1}
 	draw_sprite(sprEnergyIconBG,img,__view_get( e__VW.XView, 0 )+42,__view_get( e__VW.YView, 0 )+ammoheight)
-	draw_sprite(sprEnergyIcon,7-ceil((Player.ammo[5]/Player.typ_amax[5])*7),__view_get( e__VW.XView, 0 )+42,__view_get( e__VW.YView, 0 )+ammoheight)
-
+	draw_sprite(sprEnergyIcon,7-round((Player.ammo[5]/Player.typ_amax[5])*7),__view_get( e__VW.XView, 0 )+42,__view_get( e__VW.YView, 0 )+ammoheight)
 
 	//LOW AMMO WARNING
 

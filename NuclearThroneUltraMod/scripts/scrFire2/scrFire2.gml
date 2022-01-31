@@ -2552,7 +2552,7 @@ function scrFire2() {
 
 	instance_create(x,y,Dust)
 
-	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),EnergyHammerSlash)
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,ang),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,ang),EnergyHammerSlash)
 	{
 	longarms = 0
 	if instance_exists(Player)

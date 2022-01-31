@@ -133,8 +133,7 @@ scrSave();
 else
 scale=1;
 
-
 }
-
+imageIndex += 0.5;
 /* */
 /*  */

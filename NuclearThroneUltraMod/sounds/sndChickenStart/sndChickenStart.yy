@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndChickenStart",
-  "duration": 0.0,
+  "duration": 0.659093,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

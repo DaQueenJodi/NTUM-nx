@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndGammaGutsProc",
-  "duration": 0.0,
+  "duration": 0.730688,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

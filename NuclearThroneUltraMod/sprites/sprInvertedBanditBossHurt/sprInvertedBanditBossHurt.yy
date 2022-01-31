@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Desert",
-    "path": "texturegroups/Desert",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 32,
   "height": 32,
+  "textureGroupId": {
+    "name": "InvertedDesert",
+    "path": "texturegroups/InvertedDesert",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,

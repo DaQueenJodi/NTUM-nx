@@ -12,6 +12,7 @@ alarm[0]=4;
 image_angle=random(360);
 alarm[1]=55;
 snd_loop(sndDragonLoop);
+dmg = 16;
 
 /* */
 /*  */

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndRoll",
-  "duration": 0.0,
+  "duration": 0.251678,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

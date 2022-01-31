@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "CrownVault",
-    "path": "texturegroups/CrownVault",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 12,
   "height": 12,
+  "textureGroupId": {
+    "name": "MainMenu",
+    "path": "texturegroups/MainMenu",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,

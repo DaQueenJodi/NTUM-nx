@@ -17,8 +17,8 @@
   "width": 16,
   "height": 17,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "PlayerCharacter",
+    "path": "texturegroups/PlayerCharacter",
   },
   "swatchColours": null,
   "gridX": 0,

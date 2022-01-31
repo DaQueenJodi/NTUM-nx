@@ -17,8 +17,8 @@
   "width": 16,
   "height": 16,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Projectiles",
+    "path": "texturegroups/Projectiles",
   },
   "swatchColours": null,
   "gridX": 0,

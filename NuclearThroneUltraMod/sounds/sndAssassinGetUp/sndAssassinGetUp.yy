@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndAssassinGetUp",
-  "duration": 0.0,
+  "duration": 0.589342,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

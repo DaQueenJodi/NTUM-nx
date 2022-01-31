@@ -186,7 +186,7 @@ function scrTips() {
 	tip = choose("6b 69 6c 6c#61 6c 6c#68 75 6d 61 6e 73","72 6f 62 6f 74","3c 33","74 61 73 74 79","guns for breakfast","I'm afraid I can't let you do that","don't forget to eat weapons")
 
 	if Player.race = 9
-	tip = choose("remember the training","focus","go","never surrender","amateur hour is over","again")
+	tip = choose("remember the training","focus","go","never surrender","amateur hour is over","again","in cold shadows")
 
 	if Player.race = 10
 	tip = choose("forget the old days","change is coming","a new generation","it will get better","spawning new allies heals old ones","allies take damage over time")
@@ -268,9 +268,9 @@ function scrTips() {
 	"Try to stay close to radiation","don't do drugs kids","Doctor used to work in the labs","nasty experiments","The mutation doctor","every single mutation is better!")
 
 	if Player.race = 26//GOOD OL' HUMPHRY
-	tip = choose("Rusty old soldier","Grandpa","When Humphry pulls out a gun","The real deal","Old and experienced","Vietnam"
-	,"RUN! HUMPHRY RUN!","Thats a good sprint#for an old man","Every projectile in one shot#counts as one hit","When one of multiple projectiles#fire in one shot/burst#hits an enemy it counts as a hit"
-	,"Out of the fallout shelter")
+	tip = choose("Rusty old soldier","Grandpa","When Humphry pulls out a gun","The real deal","Old and experienced"
+	,"Any projectile in one shot#counts as one hit","When one of multiple projectiles#fire in one shot/burst#hits an enemy it counts as a hit"
+	,"Out of the fallout shelter","focus and discipline")
 	}
 
 	//WEAPONS

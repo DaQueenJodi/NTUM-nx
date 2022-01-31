@@ -22,7 +22,7 @@ scrUnlockGameMode(6,"FOR COMPLETING A LEVEL#IN UNDER 10 SECONDS")
 
 if seconds>600 &&!instance_exists(MenuGen) &&!instance_exists(Menu) && ( my_health>0 ||bleed>0 )
 {//AGORAPHOBIA GAMEMODE UNLOCK
-scrUnlockGameMode(20,"FOR TAKING MORE THE# TEN MINUTES TO FINISH THAT LEVEL")
+scrUnlockGameMode(20,"FOR TAKING MORE THAN# TEN MINUTES TO FINISH THAT LEVEL")
 }
 
 if movethislevel==false&&race=15 &&!instance_exists(MenuGen) &&!instance_exists(Menu) &&  !instance_exists(Vlambeer)
@@ -52,8 +52,8 @@ scrUnlockCSkin(21,"FOR COMPLETING A MAIN LEVEL ON#USING ONLY THE BEAM",0);
 if ( firedthislevel=false && race = 24 && area <100 && ( area>2 || loops>0 )  )
 scrUnlockCSkin(24,"FOR COMPLETING A MAIN LEVEL# AFTER THE SEWERS#WITHOUT FIRING AS ELEMENTOR",0);
 
-if ( missedthislevel=false && race = 26 && area <100 && ( area>2 || loops>0 )  )
-scrUnlockBSkin(26,"FOR COMPLETING A MAIN LEVEL# AFTER THE SEWERS#WITHOUT MISSING AS GOOD O'L HUMPHRY",0);
+if ( missedthislevel=false && race = 26 && area <100 && ( area>3 || loops>0 )  )
+scrUnlockBSkin(26,"FOR COMPLETING A MAIN LEVEL# AFTER THE SCRAPYARD#WITHOUT MISSING AS GOOD O'L HUMPHRY",0);
 
 
 

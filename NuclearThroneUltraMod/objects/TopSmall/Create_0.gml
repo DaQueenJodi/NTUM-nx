@@ -34,7 +34,7 @@ case 8:
 sprite_index=sprWall8Trans;
 break;
 case 9:
-sprite_index=sprWall8Trans;
+sprite_index=sprWall9Trans;
 break;
 case 100:
 sprite_index=sprWall100Trans;

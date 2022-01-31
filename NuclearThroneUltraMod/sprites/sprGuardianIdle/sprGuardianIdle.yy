@@ -17,8 +17,8 @@
   "width": 48,
   "height": 64,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "CrownVault",
+    "path": "texturegroups/CrownVault",
   },
   "swatchColours": null,
   "gridX": 0,

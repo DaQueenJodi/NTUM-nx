@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSaplingSpawn",
-  "duration": 0.0,
+  "duration": 0.826375,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

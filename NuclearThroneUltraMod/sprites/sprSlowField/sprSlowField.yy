@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 2,
   "collisionKind": 2,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 44,
   "height": 32,
+  "textureGroupId": {
+    "name": "IDPD",
+    "path": "texturegroups/IDPD",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -68,7 +68,7 @@
             {"id":"ad396c04-18f5-433d-ab96-87306465337c","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"521edbda-ad1c-43ad-a8fd-63a3b88ace5b","path":"sprites/sprSlowField/sprSlowField.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

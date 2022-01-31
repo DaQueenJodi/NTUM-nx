@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndChubbyEmuSong",
-  "duration": 0.0,
+  "duration": 76.61714,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

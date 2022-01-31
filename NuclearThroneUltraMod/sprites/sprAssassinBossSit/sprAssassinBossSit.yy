@@ -17,8 +17,8 @@
   "width": 19,
   "height": 19,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Scrapyard",
+    "path": "texturegroups/Scrapyard",
   },
   "swatchColours": null,
   "gridX": 0,

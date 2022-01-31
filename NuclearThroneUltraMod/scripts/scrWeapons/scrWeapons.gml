@@ -3258,7 +3258,7 @@ function scrWeapons() {
 	wep_load[295] = 34
 	wep_cost[295] = 1
 	wep_sprt[295] = sprChargeLaserGun
-	wep_area[295] = 4
+	wep_area[295] = 3
 	wep_text[295] = "wind it up"
 	wep_swap[295] = sndSwapEnergy
 	wep_rad[295] = 0;
@@ -3379,7 +3379,7 @@ function scrWeapons() {
 	wep_load[306] = 14
 	wep_cost[306] = 5
 	wep_sprt[306] = sprBulletDisperseGun
-	wep_area[306] = 3
+	wep_area[306] = 4
 	wep_text[306] = "no sense was made"
 	wep_swap[306] = sndSwapPistol
 	wep_rad[306] = 0;
@@ -3467,7 +3467,7 @@ function scrWeapons() {
 	wep_load[314] = 30
 	wep_cost[314] = 1
 	wep_sprt[314] = sprChargeSplinterGun
-	wep_area[314] = 5
+	wep_area[314] = 4
 	wep_text[314] = "infuse with blood"
 	wep_swap[314] = sndSwapShotgun
 	wep_rad[314] = 0;

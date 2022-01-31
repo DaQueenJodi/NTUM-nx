@@ -1,7 +1,54 @@
-/// @description /////SHIT PRESSED////////
+/// @description
 function scrPowers() {
+	/////SHIT PRESSED////////
 	if KeyCont.key_spec[p] = 1
 	{
+	if race = 26//Good O'l Humphry
+	{
+		var t1 = wep_type[wep];
+		var t2 = wep_type[bwep];
+		var al = 5;//weapon types total
+		var takePercentage = 0.0075;//0.75%
+		var insufficientFunds = true;
+		for (var i = 0; i < al; i++) {
+			if (i != t1 && i != t2)
+			{
+				if (ammo[i] > 1 && ammo[i] - typ_amax[i]*takePercentage > 0)
+				{
+					ammo[i] = round(max(1,ammo[i] - typ_amax[i]*takePercentage));
+					insufficientFunds = false;
+				}
+					
+			}
+		}
+		if (insufficientFunds)
+		{
+			snd_play(snd_lowa);
+		}
+		else
+		{
+			var effective = false;
+			with projectile
+			{
+				if (team!= other.team)
+				{
+					if (image_xscale > 0.15 && image_yscale > 0.15 && speed > 1)
+					{
+						image_xscale *= 0.75;
+						image_yscale *= 0.75;
+						effective = true;
+						speed *= 0.4;
+					}
+				}
+			}
+			if (effective)
+			{
+				Sleep(40);
+				snd_play(sndChickenStart);
+				instance_create(x,y,HumphryDiscipline);
+			}
+		}
+	}
 
 	if race = 23 //Frog
 	{
@@ -294,7 +341,7 @@ function scrPowers() {
 	scrFire();
 
 	    //gamble some blood
-	    if (    wep_cost[wep]/typ_ammo[wep_type[wep]] >random(1)*(1-(skill_got[5]*0.3333333333333333) )  )//(skill_got[5]*0.3333333333333333)  )//cost of shot divided by ammo pickup for weptype
+	    if (wep_cost[wep]/typ_ammo[wep_type[wep]] >random(1)*(1-(skill_got[5]*0.3333333333333333) )  )//(skill_got[5]*0.3333333333333333)  )//cost of shot divided by ammo pickup for weptype
 	    {//thronebutt adds 1/3 chance of not taking damage
 	    markforhpreduction=true;
     
@@ -1251,11 +1298,12 @@ function scrPowers() {
 	}
 
 	}
-
+	
 	////////SHIT HELD////////
 	if KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2
 	{
 
+/*
 	if race = 26//Good O'l Humphry
 	{
 	if ultra_got[104]
@@ -1285,7 +1333,7 @@ function scrPowers() {
 	}
 	image_speed=0.25;
 	}
-
+*/
 	if race = 23 //Frog
 	{
 
@@ -1938,7 +1986,7 @@ function scrPowers() {
 
 	toxicamount=0;
 
-	}
+	}/*
 	else if race = 26//humphry
 	{
 
@@ -1953,7 +2001,7 @@ function scrPowers() {
 
 	image_speed=0.4;
 
-	}
+	}*/
 	else if race==13 
 	{
 	if KeyCont.key_spec[p] != 1 && KeyCont.key_spec[p] != 2 || !instance_exists(SheepStorm)//Sheep reset speed

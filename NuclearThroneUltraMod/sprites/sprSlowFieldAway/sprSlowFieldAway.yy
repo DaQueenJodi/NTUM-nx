@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 2,
   "collisionKind": 2,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 44,
   "height": 32,
+  "textureGroupId": {
+    "name": "IDPD",
+    "path": "texturegroups/IDPD",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,

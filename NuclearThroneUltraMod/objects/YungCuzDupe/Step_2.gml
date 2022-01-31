@@ -153,6 +153,8 @@ if (my_health<prevhealth)
 		prevhealth = my_health;
 		with instance_create(x,y,HealFX)
 			depth = other.depth-1;
+		with instance_create(x,y,SharpTeeth)
+			owner=other.id;
 		snd_play(sndHealthPickup)
 		var pt = instance_create(x,y,PopupText)
 		if my_health = maxhealth
