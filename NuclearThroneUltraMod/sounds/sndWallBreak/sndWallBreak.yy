@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndWallBreak",
-  "duration": 0.0,
+  "duration": 1.034762,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -1,13 +1,13 @@
 if other.team != team and other.my_health > 0
 {
-if other.sprite_index != other.spr_hurt or random(35) < 1
+if other.sprite_index != other.spr_hurt or random(30) < 1
 {
 snd_play(sndBurn)
 with other
 {
 my_health -= other.dmg
 sprite_index = spr_hurt
-image_index = 0
+image_index = 1;
 motion_add(other.direction,0.5)
 }
 snd_play(other.snd_hurt)

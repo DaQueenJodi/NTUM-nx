@@ -270,7 +270,7 @@ function scrTips() {
 	if Player.race = 26//GOOD OL' HUMPHRY
 	tip = choose("Rusty old soldier","Grandpa","When Humphry pulls out a gun","The real deal","Old and experienced"
 	,"Any projectile in one shot#counts as one hit","When one of multiple projectiles#fire in one shot/burst#hits an enemy it counts as a hit"
-	,"Out of the fallout shelter","focus and discipline")
+	,"Out of the fallout shelter","focus and discipline","experience","shrink and slow projectiles","active costs unequiped weapon type ammo")
 	}
 
 	//WEAPONS

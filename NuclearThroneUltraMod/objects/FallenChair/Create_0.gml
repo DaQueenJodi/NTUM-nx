@@ -1,0 +1,14 @@
+maxhealth = 30
+my_health = maxhealth;
+size = 2;
+
+spr_idle = sprFallenChair;
+spr_hurt = sprFallenChairHurt;
+spr_dead = sprFallenChairDead;
+
+
+event_inherited()
+
+
+snd_hurt = sndHitRock
+
