@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Bursts",
-    "path": "folders/Objects/Projectiles/Bursts.yy",
+    "path": "folders/Objects/Ability/Bursts.yy",
   },
   "resourceVersion": "1.0",
   "name": "SnowBurst",

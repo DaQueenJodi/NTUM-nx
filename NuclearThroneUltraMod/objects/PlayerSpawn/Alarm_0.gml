@@ -1,10 +1,10 @@
 with Player
 {instance_destroy();}
-
 with instance_create(x,y,EuphoriaShield)
 image_speed=0.2;
 
-instance_create(x,y,Player);
+instance_create(myCorpse.x,myCorpse.y,Player);
+instance_destroy(myCorpse);
 snd_play(sndStatueCharge);
 with Player//Data to keep
 {
@@ -24,6 +24,7 @@ event_perform(ev_alarm,0);
 //event_perform(ev_other,ev_room_end);
 visible=true;
 snd_play(snd_wrld);
+wep = 0;
 }
 
 

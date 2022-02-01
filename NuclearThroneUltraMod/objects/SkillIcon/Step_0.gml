@@ -165,12 +165,12 @@ else if skill = 19{
 
 if Player.race=25
 {
-Player.accuracy = Player.standartAccuracy*0.3//in case you have build up rage use the standart
+Player.accuracy = Player.standartAccuracy*0.2//0.3//in case you have build up rage use the standart
 Player.standartAccuracy=Player.accuracy//new standart
 }
 else
 {
-Player.accuracy = Player.standartAccuracy*0.38//in case you have build up rage use the standart
+Player.accuracy = Player.standartAccuracy*0.28//0.38//in case you have build up rage use the standart
 Player.standartAccuracy=Player.accuracy//new standart
 }
 

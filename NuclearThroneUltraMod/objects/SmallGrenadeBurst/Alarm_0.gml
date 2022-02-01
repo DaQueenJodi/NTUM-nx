@@ -35,7 +35,7 @@ team = other.team
 
 BackCont.viewx2 += lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 BackCont.viewy2 += lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-BackCont.shake += 6
+BackCont.shake += 3
 creator.wkick = 6}
 
 

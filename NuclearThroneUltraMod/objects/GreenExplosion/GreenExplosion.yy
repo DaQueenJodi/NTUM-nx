@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "mskExplosion",
+    "path": "sprites/mskExplosion/mskExplosion.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "Explosion",

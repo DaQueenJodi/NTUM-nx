@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Shadows",
+    "path": "folders/Sprites/Shadows.yy",
   },
   "resourceVersion": "1.0",
   "name": "shd24",

@@ -468,7 +468,7 @@ function scrDrawHUD() {
 	draw_set_color(c_white)
 	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
 
-	txt= "######Player.ultra_got[76] #"+string(Player.ultra_got[76]);
+	txt= "######accuracy #"+string(Player.accuracy);
 
 	draw_set_halign(fa_left)
 	draw_set_color(c_black)
@@ -553,11 +553,11 @@ function scrDrawHUD() {
 	}
 	if Player.skeletonlives>0
 	{
+		dix --;
 	    repeat(Player.skeletonlives)
 	    {
 	    dix++;
-	    draw_sprite_ext(sprYungCuzLives,1,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+38,1,1,0,c_white,1);
-	    draw_sprite_ext(sprYungCuzLives,1,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+40,1,1,0,c_black,1);
+		draw_sprite_ext(sprExtraLivesHud,1,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-16*dix,__view_get( e__VW.YView, 0 )+40,1,1,0,c_white,1);
 	    }
 	}
 

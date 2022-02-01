@@ -137,9 +137,9 @@ if (my_health<prevhealth)
 
 		prevhealth=my_health;
 		if race=25
-		alarm[3]=25;
+		alarm[3]=35;
 		else
-		alarm[3]=19;//duration
+		alarm[3]=30;//duration
 		instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
 		}
 	}

@@ -35,7 +35,7 @@ meleeimmunity=22;
     if (skill_got[8] = 1)&&(other.my_health<=0)//gamma guts immunity?
     {
     }
-    else if !(KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2 && ultra_got[104]=1 && speed > 0){//Ultra D Humphry no contact damage
+    else if !(KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2){//Ultra D Humphry no contact damage
     //enemy deals damage to the player
     
     

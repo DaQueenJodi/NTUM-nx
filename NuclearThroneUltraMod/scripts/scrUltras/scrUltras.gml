@@ -100,7 +100,7 @@ function scrUltras() {
 	    ultra_tips[22] = "more pop"
     
 	    ultra_name[23] = "MAKE IT RAIN"
-	    ultra_text[23] = "REALLY HIGH SHOTGUN FIRE RATE#USED SHOTGUN AMMO CONVERTS TO BULLET AMMO"
+	    ultra_text[23] = "REALLY HIGH SHOTGUN FIRE RATE#USED SHOTGUN AMMO CONVERTS#TO BULLET AMMO"
 	    ultra_tips[23] = "shells and bullets <3"
     
 	    ultra_name[24] = "IT UR GOD: VEENY"
@@ -513,13 +513,17 @@ function scrUltras() {
 	    ultra_tips[102] = "quickdraw"
         
 	    ultra_name[103] = "PROTECTIVE FACIAL HAIR"
-	    ultra_text[103] = "WHEN YOU HAVE MORE THEN 20 SKILL#AND YOU DIE#YOUR DEATH WILL BE PREVENTED#AND YOUR SKILL WILL BE RESET#(this happens after#strong spirit was used)"
+	    ultra_text[103] = "WHEN YOU HAVE MORE THEN 50 SKILL#AND YOU DIE#YOUR DEATH WILL BE PREVENTED#AND YOUR SKILL WILL BE RESET#(this happens after#strong spirit was used)"
 	    ultra_tips[103] = "strong skillet"
         
+		ultra_name[104] = "DISCIPLINE"
+	    ultra_text[104] = "ACTIVE CAN SHRINK PROJECTILES#INTO NOTHINGNESS"
+	    ultra_tips[104] = "discipline those projectiles!"
+		/*
 	    ultra_name[104] = "FRUITS OF LABOR"
 	    ultra_text[104] = "INCREASED SPRINT SPEED#IMMUNE TO CONTACT DAMAGE#WHILE SPRINTING"
 	    ultra_tips[104] = "fast old man"
-    
+		*/
 	maxultra = 104;
 
 	dir = 0

@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "UnsortedProp",
+    "path": "folders/Sprites/UnsortedProp.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprEnergyIconBG",

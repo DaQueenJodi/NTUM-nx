@@ -3,8 +3,7 @@ if other.team != team and other.my_health > 0 && (other.team!=2 || image_index<5
 if other.sprite_index != other.spr_hurt or (random(30) < 1&&team==2)//the chance for extra damage only if team is player's
 {
 snd_play(sndBurn)
-sprite_index = spr_hurt
-image_index = 0
+
 with other
 {
 if other.team!=2&&other.sprite_index=sprFireLilHunter//infamous blue fire
@@ -12,6 +11,7 @@ my_health-=1
 else
 {
 my_health -= other.dmg;
+sprite_index = spr_hurt
 image_index = 1;
 }
 

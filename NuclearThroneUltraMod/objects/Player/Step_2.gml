@@ -500,9 +500,9 @@ if (my_health<prevhealth)
 
 		prevhealth=my_health;
 		if race=25
-		alarm[3]=25;
+			alarm[3]=35;
 		else
-		alarm[3]=19;//duration
+			alarm[3]=30;//duration
 		instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
 		}
 	}
@@ -549,7 +549,7 @@ if(my_health<=0 && maxhealth>0)
     strongspirit=false;
     }
     }
-    if ultra_got[103] && HumphrySkill>20 && (skill_got[25]=0||strongspiritused=true)//Humphry Protective mustache C
+    if ultra_got[103] && HumphrySkill>50 && (skill_got[25]=0||strongspiritused=true)//Humphry Protective mustache C
     {
     HumphrySkill=0;
     my_health=1;

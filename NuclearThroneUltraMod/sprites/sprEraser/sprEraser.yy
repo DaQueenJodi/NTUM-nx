@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 22,
   "height": 10,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprEraser","path":"sprites/sprEraser/sprEraser.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprEraser",
     "tags": [],
     "resourceType": "GMSequence",
   },

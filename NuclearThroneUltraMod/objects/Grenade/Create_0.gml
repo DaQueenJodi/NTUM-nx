@@ -5,6 +5,6 @@ alarm[0] = 60
 
 offx = random(2)-1
 offy = random(2)-1
-
+dmg = 15;
 typ = 1 
 

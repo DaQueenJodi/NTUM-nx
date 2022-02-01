@@ -3913,19 +3913,41 @@ function scrWeapons() {
 	wep_swap[354] = sndSwapExplosive
 	wep_rad[354] = 0;
 	
-	wep_name[354] = "COOKIE CANNON"
-	wep_type[354] = 1
-	wep_auto[354] = 0
-	wep_load[354] = 64
-	wep_cost[354] = 40
-	wep_sprt[354] = sprSuperBouncerFlakCannon
-	wep_area[354] = 12//5.3
-	wep_text[354] = "11/10"
-	wep_swap[354] = sndSwapMachinegun
-	wep_rad[354] = 0;
+	wep_name[355] = "JAWBREAKER"
+	wep_type[355] = 2
+	wep_auto[355] = 0
+	wep_load[355] = 16
+	wep_cost[355] = 1
+	wep_sprt[355] = sprJawbreaker
+	wep_area[355] = 0
+	wep_text[355] = "pincer attack"
+	wep_swap[355] = sndSwapShotgun
+	wep_rad[355] = 0;
+	
+	wep_name[356] = "HEAVY GRENADE LAUNCHER"
+	wep_type[356] = 4
+	wep_auto[356] = 0
+	wep_load[356] = 25
+	wep_cost[356] = 2
+	wep_sprt[356] = sprHeavyNader
+	wep_area[356] = 9
+	wep_text[356] = "green explosions"
+	wep_swap[356] = sndSwapExplosive
+	wep_rad[356] = 0;
+	
+	wep_name[357] = "AUTO HEAVY GRENADE LAUNCHER"
+	wep_type[357] = 4
+	wep_auto[357] = 1
+	wep_load[357] = 12
+	wep_cost[357] = 2
+	wep_sprt[357] = sprAutoHeavyNader
+	wep_area[357] = 13
+	wep_text[357] = "slimeballs"
+	wep_swap[357] = sndSwapExplosive
+	wep_rad[357] = 0;
 
 
-	maxwep = 354
+	maxwep = 357
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy
 	typ_ammo[0] = 333 typ_ammo[1] = 32 typ_ammo[2] = 8 typ_ammo[3] = 8 typ_ammo[4] = 6 typ_ammo[5] = 10

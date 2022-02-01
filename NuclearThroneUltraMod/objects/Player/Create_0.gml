@@ -12,6 +12,8 @@ meleeimmunity=0;
 hogpoints=2;//INVESTMENT ULTRA amount of ultra mutations you get
 markforhpreduction=false;//used by skeleton to bypass immunity frames
 raddrop = 0;
+hurtDuration = 15;//Additional iframes
+hurtTime = 0;
 
 if instance_exists(BackCont)
 BackCont.alarm[4]=10;

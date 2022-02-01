@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBulletShell","path":"sprites/sprBulletShell/sprBulletShell.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprBulletShell",
     "tags": [],
     "resourceType": "GMSequence",
   },

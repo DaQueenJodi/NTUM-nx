@@ -97,8 +97,14 @@ else
 {if sprite_index != spr_hurt
 sprite_index = spr_walk}
 if sprite_index = spr_hurt
-{if image_index > 2
-sprite_index = spr_idle}
+{	
+	hurtTime++;
+	if (image_index > 2 && hurtTime > hurtDuration)
+	{
+		sprite_index = spr_idle
+		hurtTime = 0;
+	}
+}
 
 if mouse_x < x
 right = -1

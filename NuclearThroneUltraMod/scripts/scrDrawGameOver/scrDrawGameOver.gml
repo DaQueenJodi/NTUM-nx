@@ -57,7 +57,7 @@ function scrDrawGameOver() {
 	room_restart()
 	exit;
 	}
-	if (keyboard_check_pressed(vk_enter) or KeyCont.key_fire[0] = 1 or mouse_check_button_pressed(mb_left)) and gameovertime > 40
+	if (keyboard_check_pressed(vk_enter) or mouse_check_button_pressed(mb_left)) and gameovertime > 40 && !instance_exists(PlayerSpawn)
 	{
 	//BACK TO MENU
 	snd_play(sndRestart)

@@ -67,8 +67,8 @@ if race=11
 instance_create(x,y,Explosion);
 }
 
-
-with instance_create(x,y,Corpse)
+var playerCorpse = instance_create(x,y,Corpse)
+with playerCorpse
 {
 size = 1
 mask_index = other.mask_index
@@ -248,6 +248,7 @@ loops = other.loops;
 hard = other.hard;
 kills = other.kills;
 subarea=other.subarea;
+myCorpse = playerCorpse;
 alarm[0]=50;
 //event_perform(ev_other,ev_room_end);
 }

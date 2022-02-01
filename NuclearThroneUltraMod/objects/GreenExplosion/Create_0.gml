@@ -4,3 +4,4 @@
 event_inherited();
 
 dmg = 12;
+BackCont.shake += 4;//On top of normal explo

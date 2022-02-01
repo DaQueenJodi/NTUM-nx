@@ -55,7 +55,7 @@ Cursor.image_index=UberCont.opt_crosshair;}
 paused = 0
 }
 //RETURN TO MENU
-if keyboard_check_pressed(vk_enter) or gamepad_button_check(0,gp_face4)
+if keyboard_check_pressed(vk_enter) or gamepad_button_check(0,gp_face4) && !instance_exists(PlayerSpawn)
 {
 instance_activate_all()
 paused = 0
