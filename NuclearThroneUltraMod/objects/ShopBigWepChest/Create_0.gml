@@ -6,25 +6,7 @@ drawx = x
 drawy = y
 
 
-if instance_exists(Player)
-{
-if Player.skill_got[5]
-{
-txt = "BIG WEAPON CHEST#RADS: 131";
-cost=131;
-}
-else
-{
-txt = "BIG WEAPON CHEST#RADS: 175";
-cost=175;
-}
-}
-else
-{
-txt = "BIG WEAPON CHEST#RADS: 175";
-cost=175;
-}
-
-
-
+cost=0.75;
+cost*=ShopWheel.discount;
+txt = "BIG WEAPON CHEST#RADS: "+string(cost*100)+"%";
 

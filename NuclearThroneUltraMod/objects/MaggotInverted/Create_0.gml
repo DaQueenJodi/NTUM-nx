@@ -1,4 +1,4 @@
-raddrop = choose(2,1,1,1,1)
+raddrop = 1;
 maxhealth = 2
 meleedamage = 1
 size = 0

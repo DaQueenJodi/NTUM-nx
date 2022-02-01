@@ -460,7 +460,7 @@ decay = 300
 
 if UberCont.opt_gamemode!=22
 {
-if (    rad > level*60+(300*ultra_got[77])+(600*ultra_got[83])  )
+if (rad >  GetPlayerMaxRad())
 {
 if level < maxlevel
 {
@@ -481,7 +481,7 @@ skillpoints += 1
 }
 else
 {
-rad = level*60+(300*ultra_got[77])+(600*ultra_got[83])
+rad = GetPlayerMaxRad();
 if ultra_got[83]
 scrUnlockBSkin(21,"FOR GAINING THE MAXIMUM AMOUNT#OF RADS AS HORROR",0);
 }

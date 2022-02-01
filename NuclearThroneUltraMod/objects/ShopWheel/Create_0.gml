@@ -1,5 +1,13 @@
 image_speed=0;
-//image_index=1;
+discount = 1;
+if instance_exists(Player)
+{
+	if Player.skill_got[5]
+	{
+	discount = 0.9;
+	}
+}
+
 instance_create(x,y,ShopAmmo);
 instance_create(x,y,ShopHP);
 instance_create(x,y,ShopWepChest);
@@ -25,4 +33,4 @@ if instance_exists(Player)
     
     }
 }
-
+depth = -99;

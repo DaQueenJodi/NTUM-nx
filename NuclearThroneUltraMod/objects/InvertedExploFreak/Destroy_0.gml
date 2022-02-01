@@ -9,6 +9,16 @@ instance_create(x+lengthdir_x(16,ang+240),y+lengthdir_y(8,ang+240),SmallExplosio
 
 instance_create(x,y,Explosion);
 
+repeat(8)
+{
+	with instance_create(x,y,Flame)
+	{motion_add(random(360),1+random(2))
+	team = other.team
+	move_contact_solid(direction,6)
+	image_speed=0.5+random(0.2);
+	sprite_index= sprFireLilHunter;}
+}
+
 event_inherited()
 
 

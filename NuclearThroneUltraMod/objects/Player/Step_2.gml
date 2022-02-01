@@ -455,7 +455,7 @@ sharpteeth=prevhealth-my_health;
 with enemy{
 if x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 {
-if sprite_index!=spr_hurt{
+//if sprite_index!=spr_hurt{
 snd_play(other.snd_hurt)
 Sleep(10)
 if other.race = 25
@@ -472,7 +472,7 @@ motion_add(other.direction,6)
 
 with instance_create(x,y,SharpTeeth)
 owner=other.id;
-}
+//}
 }}
 
 }

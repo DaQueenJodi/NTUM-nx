@@ -253,4 +253,12 @@ alarm[0]=50;
 }
 
 }
-
+else
+{
+	//Horror and atom bskin drop rads
+	if race == 21 || (race == 15 && bskin = 1)
+	{
+		raddrop = rad;
+		scrRaddrop();
+	}
+}

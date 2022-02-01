@@ -4283,9 +4283,27 @@ function scrFire2() {
 
 	break;
 
+	//BOUNCER FLAK CANNON
+	case 354:
+
+	snd_play(sndFlakCannon);
+	snd_play(sndWaveGun);
+
+	with instance_create(x,y,SuperBouncerFlakBullet)
+	{
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,5.1)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(32,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(32,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 16
+	wkick = 9
+
+	break;
 
 	}//end of switch part 2!
 
-
+	
 
 }

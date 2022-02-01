@@ -179,43 +179,58 @@ function scrPopEnemies() {
 	{
 	if subarea=2
 	{
-	if random(24) < 1
-	instance_create(x+16,y+16,choose(Freak,Freak,Freak,Freak,Freak,RhinoFreak));
+	if random(22) < 1
+	instance_create(x+16,y+16,choose(Freak,Freak,Freak,Freak,Turret,RhinoFreak));
 
 	}
 	else
 	{
-	if random(14) < 1
-	{
-
-	repeat(10)
-	instance_create(x+12+random(8),y+12+random(8),choose(Freak,Freak,Freak,Freak,Freak,Freak,Freak,Freak,Freak,Freak,ExploFreak,ExploFreak,RhinoFreak,Freak,Freak,Freak))
-	}
-	else if random(8) < 1
-	instance_create(x+16,y+16,choose(Necromancer,Necromancer,Necromancer,ExploFreak,RhinoFreak,Necromancer,Necromancer))
+		var ran = random(100);
+		if ran > 90
+		{
+		repeat(10)
+			instance_create(x+12+random(8),y+12+random(8),choose(Freak,Freak,Freak,Freak,Freak,Freak,Freak,Freak,Freak,Freak,ExploFreak,ExploFreak,RhinoFreak,Freak,Freak,Freak))
+		}
+		else if ran > 80
+		{
+			instance_create(x+16,y+16,choose(Necromancer,Necromancer,Necromancer,ExploFreak,RhinoFreak,Necromancer,Necromancer))
+		}
+		else if ran > 70 && !place_meeting(x,y,Turret)
+		{
+			instance_create(x+16,y+16,Turret);
+			instance_create(x+16,y+16,NOWALLSHEREPLEASE);
+		}
 	}
 	}
 
 	//INVERTED LABS
 	if spawnarea = 112
 	{
-	if subarea=2
-	{
-	if random(24) < 1
-	instance_create(x+16,y+16,choose(InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedRhinoFreak));
+		if subarea=2
+		{
+			if random(24) < 1
+				instance_create(x+16,y+16,choose(InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedTurret,InvertedRhinoFreak));
 
-	}
-	else
-	{
-	if random(14) < 1
-	{
-
-	repeat(10)
-	instance_create(x+12+random(8),y+12+random(8),choose(InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedExploFreak,InvertedExploFreak,InvertedRhinoFreak,InvertedFreak,InvertedFreak,InvertedFreak))
-	}
-	else if random(8) < 1
-	instance_create(x+16,y+16,choose(InvertedNecromancer,InvertedNecromancer,InvertedNecromancer,InvertedExploFreak,InvertedRhinoFreak,InvertedNecromancer,InvertedNecromancer))
-	}
+		}
+		else
+		{
+			var ran = random(100);
+			if ran > 90
+			{
+			repeat(10)
+				instance_create(x+12+random(8),y+12+random(8),choose(InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,
+				InvertedFreak,InvertedFreak,InvertedFreak,InvertedFreak,InvertedExploFreak,InvertedExploFreak,InvertedRhinoFreak,InvertedFreak,InvertedFreak,InvertedFreak))
+			}
+			else if ran > 80
+			{
+				instance_create(x+16,y+16,choose(InvertedNecromancer,InvertedNecromancer,InvertedNecromancer,InvertedExploFreak,InvertedRhinoFreak,InvertedNecromancer,InvertedNecromancer))
+			}
+			else if ran > 70 && !place_meeting(x,y,InvertedTurret)
+			{
+				instance_create(x+16,y+16,InvertedTurret);
+				instance_create(x+16,y+16,NOWALLSHEREPLEASE);
+			}
+		}
 	}
 
 	//VULCANO

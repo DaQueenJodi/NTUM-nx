@@ -279,7 +279,7 @@ else
     }
     
     //YOU?
-    if random(20000)<1
+    if Player.loops > 0 && random(25000)<1
     instance_create(x,y,You);
     
 }

@@ -27,28 +27,22 @@ if !(Player.area=1||Player.area=3||Player.area=5)
 canspawn=false
 with instance_create(x,y,PopupText)
 mytext = "CAN'T SPAWN PORTAL HERE";
+//But what if you can enter super super super secret dev area?
 }
 
 
 if canspawn=true
 {
 
-    if (Player.rad-cost>=0)
-    {
-    with Player
-    {
-    invertedportalcounter=1;
-    invertedportaldelay=5+random(30);
-    }
-    inverted=true;
-    Player.rad-=cost;
-    with instance_create(x,y,PopupText)
-    mytext = "-"+string(other.cost)+" RADS";
-    }
-    else
-    {
-    with instance_create(x,y,PopupText)
-    mytext = "NOT ENOUGH RADS";
+    if (HogSpend())
+	{
+	    with Player
+	    {
+	    invertedportalcounter=1;
+	    invertedportaldelay=5+random(30);
+	    }
+	    inverted=true;
+	    Player.rad-=cost;
     }
 }
     

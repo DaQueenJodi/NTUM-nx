@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprReviveArea",
-    "path": "sprites/sprReviveArea/sprReviveArea.yy",
+    "name": "sprReviveAreaInverted",
+    "path": "sprites/sprReviveAreaInverted/sprReviveAreaInverted.yy",
   },
   "solid": false,
   "visible": true,

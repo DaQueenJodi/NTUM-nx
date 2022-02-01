@@ -273,19 +273,24 @@ function scrDrawHUD() {
 
 
 	//BUSINES HOG MONYRAD
+	/*
 	if Player.race=20
 	{
-
-	txt = "RADS: "+string(Player.rad);
+	var rads = 0;
+	with Player
+	{
+		rads = floor((rad/GetPlayerMaxRad())*100);
+	}
+	txt = "RADS: "+string(rads)+"%";
 	draw_set_halign(fa_left)
 	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+1,__view_get( e__VW.YView, 0 )+50,string_hash_to_newline(string(txt)))
 	draw_text(__view_get( e__VW.XView, 0 )+1,__view_get( e__VW.YView, 0 )+51,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+2,__view_get( e__VW.YView, 0 )+51,string_hash_to_newline(string(txt)))
+	draw_text(__view_get( e__VW.XView, 0 )+1,__view_get( e__VW.YView, 0 )+52,string_hash_to_newline(string(txt)))
+	draw_text(__view_get( e__VW.XView, 0 )+2,__view_get( e__VW.YView, 0 )+53,string_hash_to_newline(string(txt)))
 	draw_set_color(c_white)
-	draw_text(__view_get( e__VW.XView, 0 )+2,__view_get( e__VW.YView, 0 )+50,string_hash_to_newline(string(txt)))
+	draw_text(__view_get( e__VW.XView, 0 )+2,__view_get( e__VW.YView, 0 )+51,string_hash_to_newline(string(txt)))
 
-	}
+	}*/
 
 	//GOOD O'L HUMPHRY SKILL
 	if Player.race=26

@@ -13,30 +13,22 @@ if place_meeting(x,y,ShopSelector)
 image_index=1;
 if KeyCont.key_spec[Player.p] != 1 && KeyCont.key_spec[Player.p] != 2
 {   
-    if (Player.rad-cost>=0)
-    {
     if Player.armour<Player.maxarmour
     {
     
-    
-    Player.armour++;
-    Player.rad-=cost;
-    with instance_create(x,y,PopupText)
-    mytext = "-"+string(other.cost)+" RADS";
-    
-    }
-    else
-    {
-    with instance_create(x,y,PopupText)
-    mytext = "ALREADY AT MAX ARMOUR";
-    }
-    
+		if (HogSpend())
+		{
+		    Player.armour++;
+		    Player.rad-=cost;
+		    with instance_create(x,y,PopupText)
+				mytext = "-"+string(other.cost)+" RADS";
+		}
     
     }
     else
     {
-    with instance_create(x,y,PopupText)
-    mytext = "NOT ENOUGH RADS";
+		with instance_create(x,y,PopupText)
+			mytext = "ALREADY AT MAX ARMOUR";
     }
 
 }
