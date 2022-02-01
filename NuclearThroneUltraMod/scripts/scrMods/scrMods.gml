@@ -1,6 +1,6 @@
 function scrMods() {
 	//List of mods here
-	return irandom_range(1,16);
+	return irandom_range(1,15);
 
 	/*
 	1. Toxic
