@@ -245,7 +245,7 @@ function scrTips() {
 
 	if Player.race = 20//BUSINESS HOG
 	tip = choose("post apocalyptic capitalism","delusional capitalist","mutated money","Making Nuclear Throne great again"
-	,"Gad dang hippies","dollar dollar bill y'all","pay to win","games as a service","nft (nuclear f*cking throne)")
+	,"Gad dang hippies","dollar dollar bill y'all","pay to win","games as a service","NFT (nuclear fucking throne)")
 
 	if Player.race = 21//HORROR
 	tip = choose("Enemies absorb the beam's rads",
@@ -265,7 +265,7 @@ function scrTips() {
 
 	if Player.race = 25//DOCTOR
 	tip = choose("Efficient rad intake","Underleveled?","Second opinion","Trust me,#I'm a doctor","You can use that extra limb#to walk faster","That mutation seems good to me",
-	"Try to stay close to radiation","don't do drugs kids","Doctor used to work in the labs","nasty experiments","The mutation doctor","every single mutation is better!")
+	"Try to stay close to radiation","don't do drugs kids","Doctor used to work in the labs","nasty experiments","The mutation doctor","every single mutation is better!","get vaccinated")
 
 	if Player.race = 26//GOOD OL' HUMPHRY
 	tip = choose("Rusty old soldier","Grandpa","When Humphry pulls out a gun","The real deal","Old and experienced"

@@ -312,6 +312,15 @@ function scrSkills() {
 	skill_tips[32] = "yes pain yes gain"
 	skill_msnd[32] =  sndInsomnia
 	
+	/*
+	skill_name[33] = "THRONE BACK"
+	skill_text[33] = "UPGRADES YOUR PASSIVE ABILITY"
+	if instance_exists(Player)
+	skill_text[33] = string(Player.race_name[Player.race])+" "+string(Player.race_back[Player.race])
+	skill_tips[33] = "rest on the throne"
+	skill_msnd[33] =  sndMutThronebutt
+	*/
+	
 	skill_name[33] = "NOTHING"
 	skill_text[33] = "THERE ARE NO MORE MUTATIONS LEFT!"
 	skill_tips[33] = ""

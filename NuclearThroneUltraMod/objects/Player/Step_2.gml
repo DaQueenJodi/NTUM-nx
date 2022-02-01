@@ -300,7 +300,14 @@ scrUnlockGoldWeapon();
 
 
 snd_play(wep_swap[wep])
-
+if (curse)
+{
+	snd_play(sndSwapCursed);
+}
+if (scrCheckGold(wep))
+{
+	snd_play(sndSwapGold);	
+}
 dir = instance_create(x,y,PopupText)
 dir.mytext = string(wep_name[wep])+"!"
 
@@ -503,6 +510,8 @@ if (my_health<prevhealth)
 	{
 		isAlkaline = false;
 		var damageTaken = prevhealth - my_health;
+		if race == 25//Doctor buff
+			damageTaken = ceil(damageTaken*1.25);
 		if (skill_got[9]) //Second stomache
 			damageTaken *= 2;
 		my_health=min(maxhealth,prevhealth+damageTaken);

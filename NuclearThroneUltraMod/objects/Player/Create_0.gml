@@ -469,3 +469,6 @@ else
 onlyusemerevolver=false;
 
 isAlkaline = true;
+
+if !instance_exists(PlayerWeaponFX)
+	instance_create(x,y,PlayerWeaponFX);

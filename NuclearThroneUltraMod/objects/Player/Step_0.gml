@@ -427,6 +427,14 @@ if ultra_got[27]//ROIDS MIRROR HANDS
 reload*=0.5
 
 snd_play(wep_swap[wep])
+if (curse)
+{
+	snd_play(sndSwapCursed);
+}
+if (scrCheckGold(wep))
+{
+	snd_play(sndSwapGold);	
+}
 if ultra_got[27]
 {
 bwepangle=wepangle;
@@ -731,26 +739,6 @@ else if area = 111 and !instance_exists(GenCont) and !instance_exists(LevCont) a
 if ((instance_nearest(x-16,y-16,Floor).styleb == 1)&&(skill_got[2]==0&&race!=18&&race!=24))//EXTRA FEET TEST
 speed+=1;
 }
-
-
-//cursed weps
-if curse = 1 and random(3) < 1
-{
-
-instance_create(x+lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y))+random(6)-3,
-y+lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y))+random(6)-3,Curse)
-
-}
-
-//golden weps
-    if scrCheckGold(wep) && random(8)<1
-    {
-    
-    with instance_create(x+lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y))+random(6)-3,
-    y+lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y))+random(6)-3,CaveSparkle){
-    image_angle=random(360);
-    depth=-8}
-    }
 
 
 if reload > 0

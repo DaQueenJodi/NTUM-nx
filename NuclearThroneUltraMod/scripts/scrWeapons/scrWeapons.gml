@@ -3051,7 +3051,7 @@ function scrWeapons() {
 	wep_sprt[276] = sprGoldenFlameThrower
 	wep_area[276] = 18
 	wep_text[276] = "shiny flames"
-	wep_swap[276] = sndSwapFlame
+	wep_swap[276] = sndSwapGold
 	wep_rad[276] = 0;
 
 	wep_name[277] = "GOLDEN SLEDGEHAMMER"
@@ -3911,6 +3911,17 @@ function scrWeapons() {
 	wep_area[354] = 12//5.3
 	wep_text[354] = "11/10"
 	wep_swap[354] = sndSwapExplosive
+	wep_rad[354] = 0;
+	
+	wep_name[354] = "COOKIE CANNON"
+	wep_type[354] = 1
+	wep_auto[354] = 0
+	wep_load[354] = 64
+	wep_cost[354] = 40
+	wep_sprt[354] = sprSuperBouncerFlakCannon
+	wep_area[354] = 12//5.3
+	wep_text[354] = "11/10"
+	wep_swap[354] = sndSwapMachinegun
 	wep_rad[354] = 0;
 
 
