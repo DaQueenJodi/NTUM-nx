@@ -11,7 +11,7 @@ if sprite_index!=spr_hurt
 my_health -= other.dmg
 sprite_index = spr_hurt
 image_index = 0
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 
 motion_add(other.direction,6)
 }

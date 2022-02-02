@@ -27,7 +27,7 @@ scrUnlockBSkin(24,"FOR BURNING AN ENEMY#THAT IS FROZEN AS ELEMENTOR",0);
 }
 
 }
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 
 if team!=2
 instance_destroy();

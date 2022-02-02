@@ -1,7 +1,7 @@
 if other.team != team
 {
 instance_destroy()
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 Sleep(50)
 with other
 {

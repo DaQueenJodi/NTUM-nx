@@ -23,7 +23,7 @@ if instance_exists(Player)
             }
         }
     }
-    snd_play(snd_hurt)
+    snd_play(snd_hurt, hurt_pitch_variation)
     }
 }
 

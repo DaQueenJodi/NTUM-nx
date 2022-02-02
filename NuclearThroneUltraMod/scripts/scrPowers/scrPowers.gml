@@ -157,7 +157,7 @@ function scrPowers() {
 	    //if my_health<1&&strongspirit
 	    image_index=0;
 	    sprite_index=spr_hurt;
-	    snd_play(snd_hurt);
+	    snd_play(snd_hurt, hurt_pitch_variation);
 
 	    var raddrop=16;//13 An ally drops 5 rads
 	    if skill_got[5]
@@ -356,7 +356,7 @@ function scrPowers() {
 	    //if my_health<1&&strongspirit
 	    image_index=0;
 	    sprite_index=spr_hurt;
-	    snd_play(snd_hurt);
+	    snd_play(snd_hurt, hurt_pitch_variation);
     
 	repeat(3)
 	{
@@ -412,7 +412,7 @@ function scrPowers() {
 	    if alarm[7]<1
 	    alarm[7]=12;//reset the exception in 12 steps
     
-	    snd_play(snd_hurt)
+	    snd_play(snd_hurt, hurt_pitch_variation)
 	    Sleep(40)
 	    }
 	    }
@@ -800,7 +800,7 @@ function scrPowers() {
         
 	        sprite_index = spr_hurt
 	        image_index = 0
-	        snd_play(snd_hurt)
+	        snd_play(snd_hurt, hurt_pitch_variation)
 	        Sleep(40)
 	        }
 	    }
@@ -832,7 +832,7 @@ function scrPowers() {
         
 	        sprite_index = spr_hurt
 	        image_index = 0
-	        snd_play(snd_hurt)
+	        snd_play(snd_hurt, hurt_pitch_variation)
 	        Sleep(40)
 	        }
     
@@ -1090,7 +1090,7 @@ function scrPowers() {
 
 
 
-	snd_play(snd_hurt)
+	snd_play(snd_hurt, hurt_pitch_variation)
 	Sleep(40)
 	instance_create(x,y,Dust)
 

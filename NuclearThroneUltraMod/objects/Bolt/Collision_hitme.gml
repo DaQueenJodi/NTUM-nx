@@ -1,6 +1,6 @@
 if candmg and other.team != team
 {
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 if other.my_health >= 10
 {
 instance_destroy()

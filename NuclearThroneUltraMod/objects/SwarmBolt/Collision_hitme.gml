@@ -9,7 +9,7 @@ sprite_index = spr_hurt
 image_index = 0
 motion_add(other.direction,4)
 other.hits-=1;
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 with other{
 motion_add(direction+180,8);
 //move_contact_solid(direction+180,8);

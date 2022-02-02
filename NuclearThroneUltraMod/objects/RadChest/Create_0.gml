@@ -26,6 +26,7 @@ spr_dead = sprRadChestCorpse
 snd_hurt = sndHitMetal
 }
 
+hurt_pitch_variation = 0;
 
 
 my_health = maxhealth

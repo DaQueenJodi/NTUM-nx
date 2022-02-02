@@ -10,7 +10,7 @@ sprite_index = spr_hurt
 image_index = 1;
 motion_add(other.direction,0.5)
 }
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 }
 x = (x+other.x)/2+random(6)-3
 y = (y+other.y)/2+random(6)-3

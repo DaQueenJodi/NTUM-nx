@@ -1,7 +1,7 @@
 if speed > 1 and other.team != team
 {
 hits-=1;
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 if other.my_health >= 10
 {
 instance_destroy()

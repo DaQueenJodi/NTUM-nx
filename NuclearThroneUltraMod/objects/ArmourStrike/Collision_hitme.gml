@@ -29,7 +29,7 @@ my_health -= 4;
 sprite_index = spr_hurt
 image_index = 0
 motion_add(other.image_angle,10)
-snd_play(snd_hurt)}
+snd_play(snd_hurt, hurt_pitch_variation)}
 }
 
 if other.my_health<1// && other.sprite_index!=other.spr_hurt

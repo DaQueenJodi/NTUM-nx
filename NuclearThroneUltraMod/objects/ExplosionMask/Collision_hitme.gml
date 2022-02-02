@@ -24,7 +24,7 @@ immunelimit=Player.maxhealth;
 
 if !(sprite_index = spr_hurt and immune = 1)
 {
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 
 if immune = 1
 {

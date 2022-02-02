@@ -10,7 +10,7 @@ sprite_index = spr_hurt
 image_index = 0
 motion_add(other.direction,4)
 }
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 with(instance_create(x,y,BulletHit))
 {image_blend = make_color_rgb(174,58,45);}
 

@@ -28,7 +28,7 @@ alarm[11]+=other.freezetime;
 }
 
 
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 
 }
 x = (x+other.x)/2+random(6)-3

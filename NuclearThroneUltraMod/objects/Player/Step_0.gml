@@ -309,7 +309,7 @@ ammo[wep_type[wep]] += wep_cost[wep]
 sprite_index = spr_hurt
 image_index = 0
 my_health -= 1
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 Sleep(40)
 alarm[3]=0;//remove immunity from bloodglove
 }
@@ -460,7 +460,7 @@ my_health -= 1
 
 sprite_index = spr_hurt
 image_index = 0
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 
 repeat(12)
 {with instance_create(x,y,Rad)
@@ -1192,7 +1192,7 @@ if race=18
     if flyduration>flymax
     {my_health--;
     flyduration=20;
-    snd_play(snd_hurt);
+    snd_play(snd_hurt, hurt_pitch_variation);
     image_index=0;
     sprite_index=spr_hurt;
     repeat(5+irandom(5) )
