@@ -99,7 +99,36 @@ function scrPopulate() {
 
 	with Floor
 	{
-	if spawnarea = 1 || spawnarea = 105
+	if spawnarea = 9
+	{
+		if instance_exists(GenCont){
+		if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
+		{
+		instance_create(x-64+16,y+16,TopDecal)
+		}
+
+		if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
+		{
+		instance_create(x+64+16,y+16,TopDecal)
+		}
+
+		if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
+		{
+		instance_create(x+16,y+64+16,TopDecal)
+		}
+
+		if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
+		{
+		instance_create(x+16,y-64+16,TopDecal)
+		}
+
+		}
+		with TopDecal
+		{
+			sprite_index = sprPalaceTopDecal;	
+		}
+	}
+	else if spawnarea = 1 || spawnarea = 105
 	{
 	if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
 	{
@@ -144,12 +173,6 @@ function scrPopulate() {
 	with TopDecal
 	sprite_index=sprInvertedDesertTopDecal;
 	}
-	if spawnarea = 9
-	{
-	with TopDecal
-	sprite_index=sprPalaceTopDecal;
-	}
-
 
 	//with Bones
 	//sprite_index = sprSewerDecal

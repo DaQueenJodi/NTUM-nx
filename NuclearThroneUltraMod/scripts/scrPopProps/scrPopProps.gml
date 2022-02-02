@@ -11,8 +11,9 @@ function scrPopProps() {
 	instance_create(x,y,NOWALLSHEREPLEASE)
 	}
 	//walls near the player for safer spawn
-	if random(4)<3  and !place_meeting(x,y,NOWALLSHEREPLEASE) && point_distance(x,y,Player.x,Player.y)<128 and Player.area != 100 and Player.area != 6 and Player.area != 112 and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104 and !(Player.area = 8 && Player.subarea=3)
+	if random(4)<3  and !place_meeting(x,y,NOWALLSHEREPLEASE) && point_distance(x,y,Player.x,Player.y)<128 and Player.area != 100 and Player.area != 6 and Player.area != 112 and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104 and !(Player.area = 8 && Player.subarea=3) and Player.area != 9
 	{
+		
 	myx = x+choose(0,16)
 	myy = y+choose(0,16)
 	if !place_meeting(myx,myy,prop)
@@ -30,7 +31,7 @@ function scrPopProps() {
 	instance_create(myx,myy,Wall)
 	instance_create(x,y,NOWALLSHEREPLEASE)
 	}//random(5)< 1
-	if random(4.7) < 1 and !place_meeting(x,y,NOWALLSHEREPLEASE) and Player.area != 100 and Player.area != 6 and Player.area != 112  and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104 and !(Player.area = 8 && Player.subarea=3)//lill walls
+	if random(4.7) < 1 and !place_meeting(x,y,NOWALLSHEREPLEASE) and Player.area != 100 and Player.area != 6 and Player.area != 9 and Player.area != 112  and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104 and !(Player.area = 8 && Player.subarea=3)//lill walls
 	{
 	myx = x+choose(0,16)
 	myy = y+choose(0,16)
@@ -47,14 +48,47 @@ function scrPopProps() {
 	instance_create(myx,myy,Trap)
 
 	}
-	if spawnarea = 101 && random(6) < 1 && !place_meeting(x,y,Wall)
+	if (spawnarea == 9)
 	{
-	if random(50)<1
+		var mask = mask_index;
+		mask_index = mskPalacePropChecker;
+		if (random(4) < 1 && !place_meeting(x,y,Wall))
+		{
+			var ran = random(100);
+			if (ran > 90)
+			{
+				instance_create(x,y,choose(Table1,Table2));
+			}
+			else if (ran > 80)
+			{
+				instance_create(x,y,FallenChair);
+			}
+			else if (ran > 70)
+			{
+				instance_create(x,y,Pillar);
+			}
+			else if (ran > 60)
+			{
+				instance_create(x,y,NuclearPillar);
+			}
+			else if (ran > 45)
+			{
+				instance_create(x,y,SmallGenerator);
+			}
+		}
+		mask_index = mask;
+	}
+	else if spawnarea = 101 && random(6) < 1 && !place_meeting(x,y,Wall)
+	{
+		var ran = random(100);
+	if ran>90
 	instance_create(x+16,y+16,Coral);
-	else if random(50) < 1
+	else if ran > 80
 	instance_create(x+16,y+16,Anchor);
-	else if random(10) < 1 and point_distance(x+16,y=16,Player.x,Player.y) > 64
+	else if ran > 70 and point_distance(x+16,y=16,Player.x,Player.y) > 64
 	instance_create(x+16,y+16,WaterMine)
+	else if ran > 60
+	instance_create(x+16,y+16,OasisBarrel)
 	else
 	instance_create(x+16,y+16,WaterPlant)
 	}

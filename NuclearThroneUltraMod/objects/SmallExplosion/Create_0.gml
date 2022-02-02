@@ -17,7 +17,7 @@ ang += 360/20
 }
 
 
-BackCont.shake += 3
+BackCont.shake += 2;
 
 team = -1
 if instance_exists(Player){

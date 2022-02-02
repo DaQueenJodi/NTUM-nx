@@ -97,8 +97,14 @@ else
 {if sprite_index != spr_hurt
 sprite_index = spr_walk}
 if sprite_index = spr_hurt
-{if image_index > 2
-sprite_index = spr_idle}
+{	
+	hurtTime++;
+	if (image_index > 2 && hurtTime > hurtDuration)
+	{
+		sprite_index = spr_idle
+		hurtTime = 0;
+	}
+}
 
 if mouse_x < x
 right = -1
@@ -427,6 +433,14 @@ if ultra_got[27]//ROIDS MIRROR HANDS
 reload*=0.5
 
 snd_play(wep_swap[wep])
+if (curse)
+{
+	snd_play(sndSwapCursed);
+}
+if (scrCheckGold(wep))
+{
+	snd_play(sndSwapGold);	
+}
 if ultra_got[27]
 {
 bwepangle=wepangle;
@@ -460,7 +474,7 @@ decay = 300
 
 if UberCont.opt_gamemode!=22
 {
-if (    rad > level*60+(300*ultra_got[77])+(600*ultra_got[83])  )
+if (rad >  GetPlayerMaxRad())
 {
 if level < maxlevel
 {
@@ -481,7 +495,7 @@ skillpoints += 1
 }
 else
 {
-rad = level*60+(300*ultra_got[77])+(600*ultra_got[83])
+rad = GetPlayerMaxRad();
 if ultra_got[83]
 scrUnlockBSkin(21,"FOR GAINING THE MAXIMUM AMOUNT#OF RADS AS HORROR",0);
 }
@@ -731,26 +745,6 @@ else if area = 111 and !instance_exists(GenCont) and !instance_exists(LevCont) a
 if ((instance_nearest(x-16,y-16,Floor).styleb == 1)&&(skill_got[2]==0&&race!=18&&race!=24))//EXTRA FEET TEST
 speed+=1;
 }
-
-
-//cursed weps
-if curse = 1 and random(3) < 1
-{
-
-instance_create(x+lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y))+random(6)-3,
-y+lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y))+random(6)-3,Curse)
-
-}
-
-//golden weps
-    if scrCheckGold(wep) && random(8)<1
-    {
-    
-    with instance_create(x+lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y))+random(6)-3,
-    y+lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y))+random(6)-3,CaveSparkle){
-    image_angle=random(360);
-    depth=-8}
-    }
 
 
 if reload > 0

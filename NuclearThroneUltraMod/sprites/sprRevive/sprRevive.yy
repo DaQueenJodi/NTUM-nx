@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 48,
   "height": 48,
+  "textureGroupId": {
+    "name": "Labs",
+    "path": "texturegroups/Labs",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -72,7 +72,7 @@
             {"id":"5d5491ca-3bb2-4804-be3a-0069df6c112c","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1bb58efc-5dad-42f0-82d8-25e2af8c9bd0","path":"sprites/sprRevive/sprRevive.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -88,7 +88,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprRevive","path":"sprites/sprRevive/sprRevive.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprRevive",
     "tags": [],
     "resourceType": "GMSequence",
   },

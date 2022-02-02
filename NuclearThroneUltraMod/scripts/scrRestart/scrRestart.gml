@@ -9,6 +9,4 @@ function scrRestart() {
 	}
 	room_goto(romGame)
 
-
-
 }

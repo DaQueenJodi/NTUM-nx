@@ -61,7 +61,7 @@ with instance_create(x,y,Portal) type = 1
 if keyboard_check_pressed(ord("3"))
 {
 area = 6
-subarea = 1
+subarea = 0
 inverted=false;
 with enemy
 my_health = 0
@@ -71,7 +71,7 @@ with instance_create(x,y,Portal) type = 1
 if keyboard_check_pressed(ord("4"))
 {
 area = 112
-subarea = 1
+subarea = 0;
 inverted = true;
 with enemy
 my_health = 0
@@ -79,7 +79,7 @@ with instance_create(x,y,Portal) type = 1
 }
 if keyboard_check_pressed(ord("5"))
 {
-area =4
+area = 4
 subarea = 0
 with enemy
 my_health = 0
@@ -151,7 +151,10 @@ instance_create(x,y,IDPDSpawn)
 
 if keyboard_check(ord("B"))
 {
-instance_create(x,y,BigRad)
+instance_create(x,y,BigRad);
+instance_create(x,y,BigRad);
+instance_create(x,y,BigRad);
+
 }
 
 }

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndMutHover",
-  "duration": 0.0,
+  "duration": 0.464014,
   "parent": {
     "name": "Mutations",
     "path": "folders/Sounds/Mutations.yy",

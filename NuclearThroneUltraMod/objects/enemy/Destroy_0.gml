@@ -28,7 +28,7 @@ if Player.ultra_got[16]
 Player.meltingd=object_index;
 }
 
-
+debug("looping???");
 snd_play(sndLastEnemy)
 //if MorphMe{
 //with instance_create(x,y,Corpse)
@@ -282,7 +282,7 @@ else
     }
     
     //YOU?
-    if random(20000)<1
+    if Player.loops > 0 && random(25000)<1
     instance_create(x,y,You);
     
 }

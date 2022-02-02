@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndLastEnemy",
-  "duration": 0.0,
+  "duration": 3.045351,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

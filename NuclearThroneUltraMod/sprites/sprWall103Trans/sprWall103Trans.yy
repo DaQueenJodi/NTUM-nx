@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Wonderland",
-    "path": "texturegroups/Wonderland",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 16,
   "height": 16,
+  "textureGroupId": {
+    "name": "YV Mansion",
+    "path": "texturegroups/YV Mansion",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,

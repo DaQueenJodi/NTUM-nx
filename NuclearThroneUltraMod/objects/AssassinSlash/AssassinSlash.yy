@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskSlash",
-    "path": "sprites/mskSlash/mskSlash.yy",
+    "name": "mskAssassinBossSlash",
+    "path": "sprites/mskAssassinBossSlash/mskAssassinBossSlash.yy",
   },
   "persistent": false,
   "parentObjectId": {

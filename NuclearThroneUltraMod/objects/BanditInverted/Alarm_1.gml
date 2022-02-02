@@ -1,4 +1,4 @@
-alarm[1] = 6+random(6)
+alarm[1] = 5+random(6)
 
 scrTarget()
 if target > 0
@@ -11,13 +11,13 @@ if random(2) < 1
 {
 snd_play(sndEnemyFire)
 wkick = 4
+gunangle = point_direction(x,y,target.x,target.y)
 with instance_create(x,y,EnemyBullet1)
 {
 motion_add(other.gunangle+random(20)-10,3.3)
 image_angle = direction
 team = other.team
 }
-gunangle = point_direction(x,y,target.x,target.y)
 alarm[1] = 3+random(6)}//20+random(5)
 else
 {direction = point_direction(x,y,target.x,target.y)+random(180)-90

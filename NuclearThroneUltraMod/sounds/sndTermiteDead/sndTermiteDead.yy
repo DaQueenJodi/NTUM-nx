@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndTermiteDead",
-  "duration": 0.0,
+  "duration": 0.505283,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

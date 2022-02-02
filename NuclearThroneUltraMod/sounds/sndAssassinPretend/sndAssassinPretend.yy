@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndAssassinPretend",
-  "duration": 0.0,
+  "duration": 1.466667,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

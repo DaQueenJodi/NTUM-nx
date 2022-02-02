@@ -2375,7 +2375,6 @@ function scrFire2() {
 
 	//GOLDEN PISTOLE
 	case 283:
-
 	with instance_create(x,y,PistoleBurst)
 	{
 	creator = other.id
@@ -2552,7 +2551,7 @@ function scrFire2() {
 
 	instance_create(x,y,Dust)
 
-	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),EnergyHammerSlash)
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,ang),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,ang),EnergyHammerSlash)
 	{
 	longarms = 0
 	if instance_exists(Player)
@@ -4283,9 +4282,112 @@ function scrFire2() {
 
 	break;
 
+	//BOUNCER FLAK CANNON
+	case 354:
+
+	snd_play(sndFlakCannon);
+	snd_play(sndWaveGun);
+
+	with instance_create(x,y,SuperBouncerFlakBullet)
+	{
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,5.1)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(32,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(32,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 16
+	wkick = 9
+
+	break;
+	
+	//JAWBREAKER
+	case 355:
+	var aimdir = point_direction(x,y,mouse_x,mouse_y);
+	var offset = 11 * accuracy;
+	var ldx = lengthdir_x(offset,aimdir+90);
+	var ldy = lengthdir_y(offset,aimdir+90);
+	snd_play(sndEraser)
+	if (collision_point(ldx,ldy,Wall,false,false))
+	{
+		ldx = 0;
+		ldy = 0;
+	}
+	with instance_create(x+ldx,y+ldy,EraserBurst)
+	{
+		mox=mouse_x + ldx;
+		moy=mouse_y + ldy;
+		creator = other.id
+		ammo = 2
+		time = 1
+		team = other.team
+		event_perform(ev_alarm,0) 
+	}
+	ldx = lengthdir_x(offset,aimdir-90);
+	ldy = lengthdir_y(offset,aimdir-90);
+	if (collision_point(ldx,ldy,Wall,false,false))
+	{
+		ldx = 0;
+		ldy = 0;
+	}
+	with instance_create(x+ldx,y+ldy,EraserBurst)
+	{
+		mox=mouse_x + ldx;
+		moy=mouse_y + ldy;
+		creator = other.id
+		ammo = 2
+		time = 1
+		team = other.team
+		event_perform(ev_alarm,0) 
+	}
+
+	BackCont.viewx2 += lengthdir_x(8,aimdir+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(8,aimdir+180)*UberCont.opt_shake
+	BackCont.shake += 7
+	wkick = 6
+
+	break;
+	
+	//HEAVY GRENADE LAUNCHER
+	case 356:
+
+	snd_play(sndGrenade)
+
+	with instance_create(x,y,HeavyGrenade)
+	{
+	sticky = 0
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy,10)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(14,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(14,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 5
+	wkick = 7
+
+	break;
+	
+	//AUTO HEAVY GRENADE LAUNCHER
+	case 357:
+
+	snd_play(sndGrenade)
+
+	with instance_create(x,y,HeavyGrenade)
+	{
+	sticky = 0
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(16)-8)*other.accuracy,12)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 3
+	wkick = 6
+
+	break;
 
 	}//end of switch part 2!
 
-
+	
 
 }

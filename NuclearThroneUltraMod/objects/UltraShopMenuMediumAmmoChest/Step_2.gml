@@ -13,18 +13,12 @@ if place_meeting(x,y,ShopSelector)
 image_index=1;
 if KeyCont.key_spec[Player.p] != 1 && KeyCont.key_spec[Player.p] != 2
 {
-    if (Player.rad-cost>=0)
-    {
-    Player.ultra_got[26]=1;
-    instance_create(Player.x,Player.y,AmmoChest);
-    Player.rad-=cost;
-    with instance_create(x,y,PopupText)
-    mytext = "-"+string(other.cost)+" RADS";
-    }
-    else
-    {
-    with instance_create(x,y,PopupText)
-    mytext = "NOT ENOUGH RADS";
+    if (HogSpend())
+	{
+		var hasRoidsUltra = Player.ultra_got[25];
+		Player.ultra_got[26]=1;
+		instance_create(Player.x,Player.y,AmmoChest);
+		Player.ultra_got[25]=hasRoidsUltra;
     }
 
 }

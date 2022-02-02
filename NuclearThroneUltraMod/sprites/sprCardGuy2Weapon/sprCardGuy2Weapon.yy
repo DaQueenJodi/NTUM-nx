@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 40,
   "height": 8,
+  "textureGroupId": {
+    "name": "Wonderland",
+    "path": "texturegroups/Wonderland",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,

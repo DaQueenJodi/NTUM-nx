@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 4,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 3,
   "height": 4,
+  "textureGroupId": {
+    "name": "Projectiles",
+    "path": "texturegroups/Projectiles",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBulletShell","path":"sprites/sprBulletShell/sprBulletShell.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprBulletShell",
     "tags": [],
     "resourceType": "GMSequence",
   },

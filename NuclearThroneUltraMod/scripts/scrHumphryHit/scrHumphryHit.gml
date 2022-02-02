@@ -25,8 +25,8 @@ function scrHumphryHit() {
 	    HumphrySkill+=2;
 	    else
 	    HumphrySkill++;
-	    if HumphrySkill>=69
-	    scrUnlockCSkin(26,"FOR REACHING 69 SKILL",0);
+	    if HumphrySkill>=100
+	    scrUnlockCSkin(26,"FOR REACHING 100 SKILL",0);
 	    }
     
 	    with Explosion

@@ -14,8 +14,8 @@
   "soundFile": "sndNecromancerRevive",
   "duration": 0.0,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Labs",
+    "path": "folders/Sounds/Labs.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndNecromancerRevive",

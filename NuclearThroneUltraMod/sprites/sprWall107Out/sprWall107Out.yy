@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "InvertedFrozenCity",
-    "path": "texturegroups/InvertedFrozenCity",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 24,
   "height": 32,
+  "textureGroupId": {
+    "name": "InvertedFrozenCity",
+    "path": "texturegroups/InvertedFrozenCity",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -48,7 +48,7 @@
             {"id":"5fba0273-2ab2-42c4-aaa6-fdc92e0d2979","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e1aa0323-6d25-4979-9721-b66920d6b95c","path":"sprites/sprWall107Out/sprWall107Out.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

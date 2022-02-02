@@ -300,7 +300,14 @@ scrUnlockGoldWeapon();
 
 
 snd_play(wep_swap[wep])
-
+if (curse)
+{
+	snd_play(sndSwapCursed);
+}
+if (scrCheckGold(wep))
+{
+	snd_play(sndSwapGold);	
+}
 dir = instance_create(x,y,PopupText)
 dir.mytext = string(wep_name[wep])+"!"
 
@@ -455,7 +462,7 @@ sharpteeth=prevhealth-my_health;
 with enemy{
 if x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 {
-if sprite_index!=spr_hurt{
+//if sprite_index!=spr_hurt{
 snd_play(other.snd_hurt)
 Sleep(10)
 if other.race = 25
@@ -472,37 +479,59 @@ motion_add(other.direction,6)
 
 with instance_create(x,y,SharpTeeth)
 owner=other.id;
-}
+//}
 }}
 
 }
 }
 
+if (my_health<prevhealth)
+{
+	//Took a hit?
+	if skill_got[12]//euphoria resistance?
+	{
+		if !instance_exists(GenCont)&&!instance_exists(EuphoriaShield)&&!instance_exists(LevCont)&&exception=false
+		{
+		if skill_got[28]//rage
+		{
+		if my_health<prevhealth&&exception=false//I been hit
+		rage=0;
+		}
 
-if skill_got[12]//euphoria resistance?
-{
-if my_health<prevhealth&&!instance_exists(GenCont)&&!instance_exists(EuphoriaShield)&&!instance_exists(LevCont)&&exception=false
-{
-if skill_got[28]//rage
-{
-if my_health<prevhealth&&exception=false//I been hit
-rage=0;
+		prevhealth=my_health;
+		if race=25
+			alarm[3]=35;
+		else
+			alarm[3]=30;//duration
+		instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
+		}
+	}
+	if (skill_got[32] && isAlkaline && exception=false)//Alkaline Savila
+	{
+		isAlkaline = false;
+		var damageTaken = prevhealth - my_health;
+		if race == 25//Doctor buff
+			damageTaken = ceil(damageTaken*1.25);
+		if (skill_got[9]) //Second stomache
+			damageTaken *= 2;
+		my_health=min(maxhealth,prevhealth+damageTaken);
+		prevhealth = my_health;
+		with instance_create(x,y,HealFX)
+		{
+			depth = other.depth - 1;	
+		}
+		with instance_create(x,y,SharpTeeth)
+		owner=other.id;
+		snd_play(sndHealthPickup)
+		var pt = instance_create(x,y,PopupText)
+		if my_health = maxhealth
+			pt.mytext = "MAX HP";
+		else
+			pt.mytext = "+"+string(damageTaken)+" HP";
+			
+		alarm[3]=10;//duration of iframes
+	}
 }
-
-prevhealth=my_health;
-if race=25
-alarm[3]=25;
-else
-alarm[3]=19;//duration
-instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
-}
-}
-/*else if skill_got[28]//rage
-{
-if my_health<prevhealth&&exception=false//I been hit
-rage=0;
-}
-
 
 /* */
 ///strong spirit justasheep
@@ -520,7 +549,7 @@ if(my_health<=0 && maxhealth>0)
     strongspirit=false;
     }
     }
-    if ultra_got[103] && HumphrySkill>20 && (skill_got[25]=0||strongspiritused=true)//Humphry Protective mustache C
+    if ultra_got[103] && HumphrySkill>50 && (skill_got[25]=0||strongspiritused=true)//Humphry Protective mustache C
     {
     HumphrySkill=0;
     my_health=1;

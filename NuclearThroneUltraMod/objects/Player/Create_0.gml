@@ -11,6 +11,9 @@ exit;
 meleeimmunity=0;
 hogpoints=2;//INVESTMENT ULTRA amount of ultra mutations you get
 markforhpreduction=false;//used by skeleton to bypass immunity frames
+raddrop = 0;
+hurtDuration = 15;//Additional iframes
+hurtTime = 0;
 
 if instance_exists(BackCont)
 BackCont.alarm[4]=10;
@@ -210,9 +213,16 @@ ammo[2] = 0
 ammo[3] = 0
 ammo[4] = 0
 ammo[5] = 0
-
-
-if UberCont.lastwishused=true
+if (race == 26)
+{
+	ammo[1] = typ_ammo[1];
+	ammo[2] = typ_ammo[2];
+	ammo[3] = typ_ammo[3];
+	ammo[4] = typ_ammo[4];
+	ammo[5] = typ_ammo[5];
+	ammo[wep_type[wep]] = typ_ammo[wep_type[wep]]*3
+}
+else if UberCont.lastwishused=true
 {
 ammo[1] = typ_ammo[1]*3
 ammo[2] = typ_ammo[2]*3
@@ -460,5 +470,7 @@ onlyusemerevolver=true;
 else
 onlyusemerevolver=false;
 
-/* */
-/*  */
+isAlkaline = true;
+
+if !instance_exists(PlayerWeaponFX)
+	instance_create(x,y,PlayerWeaponFX);

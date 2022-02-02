@@ -3051,7 +3051,7 @@ function scrWeapons() {
 	wep_sprt[276] = sprGoldenFlameThrower
 	wep_area[276] = 18
 	wep_text[276] = "shiny flames"
-	wep_swap[276] = sndSwapFlame
+	wep_swap[276] = sndSwapGold
 	wep_rad[276] = 0;
 
 	wep_name[277] = "GOLDEN SLEDGEHAMMER"
@@ -3258,7 +3258,7 @@ function scrWeapons() {
 	wep_load[295] = 34
 	wep_cost[295] = 1
 	wep_sprt[295] = sprChargeLaserGun
-	wep_area[295] = 4
+	wep_area[295] = 3
 	wep_text[295] = "wind it up"
 	wep_swap[295] = sndSwapEnergy
 	wep_rad[295] = 0;
@@ -3379,7 +3379,7 @@ function scrWeapons() {
 	wep_load[306] = 14
 	wep_cost[306] = 5
 	wep_sprt[306] = sprBulletDisperseGun
-	wep_area[306] = 3
+	wep_area[306] = 4
 	wep_text[306] = "no sense was made"
 	wep_swap[306] = sndSwapPistol
 	wep_rad[306] = 0;
@@ -3467,7 +3467,7 @@ function scrWeapons() {
 	wep_load[314] = 30
 	wep_cost[314] = 1
 	wep_sprt[314] = sprChargeSplinterGun
-	wep_area[314] = 5
+	wep_area[314] = 4
 	wep_text[314] = "infuse with blood"
 	wep_swap[314] = sndSwapShotgun
 	wep_rad[314] = 0;
@@ -3912,9 +3912,42 @@ function scrWeapons() {
 	wep_text[354] = "11/10"
 	wep_swap[354] = sndSwapExplosive
 	wep_rad[354] = 0;
+	
+	wep_name[355] = "JAWBREAKER"
+	wep_type[355] = 2
+	wep_auto[355] = 0
+	wep_load[355] = 16
+	wep_cost[355] = 1
+	wep_sprt[355] = sprJawbreaker
+	wep_area[355] = 0
+	wep_text[355] = "pincer attack"
+	wep_swap[355] = sndSwapShotgun
+	wep_rad[355] = 0;
+	
+	wep_name[356] = "HEAVY GRENADE LAUNCHER"
+	wep_type[356] = 4
+	wep_auto[356] = 0
+	wep_load[356] = 25
+	wep_cost[356] = 2
+	wep_sprt[356] = sprHeavyNader
+	wep_area[356] = 9
+	wep_text[356] = "green explosions"
+	wep_swap[356] = sndSwapExplosive
+	wep_rad[356] = 0;
+	
+	wep_name[357] = "AUTO HEAVY GRENADE LAUNCHER"
+	wep_type[357] = 4
+	wep_auto[357] = 1
+	wep_load[357] = 12
+	wep_cost[357] = 2
+	wep_sprt[357] = sprAutoHeavyNader
+	wep_area[357] = 13
+	wep_text[357] = "slimeballs"
+	wep_swap[357] = sndSwapExplosive
+	wep_rad[357] = 0;
 
 
-	maxwep = 354
+	maxwep = 357
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy
 	typ_ammo[0] = 333 typ_ammo[1] = 32 typ_ammo[2] = 8 typ_ammo[3] = 8 typ_ammo[4] = 6 typ_ammo[5] = 10

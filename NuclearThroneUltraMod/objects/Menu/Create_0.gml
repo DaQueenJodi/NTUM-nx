@@ -173,7 +173,7 @@ break;
 //char[17].sprite_index=sprMutant17Idle
 //break;
 case 18:
-char[18].sprite_index=sprMutant18Fly
+char[18].sprite_index=sprMutant18Idle
 char[18].depth--;
 break;
 case 19:
@@ -362,6 +362,7 @@ char[25].spr_from = sprMutationDoctorMenuDeselect
 char[25].spr_slct = sprMutationDoctorMenu}
 
 if UberCont.race_have[26] = 1{
+char[26].image_speed = 0.3;//Humphry is a slow man
 char[26].sprite_index = sprHumphryMenu
 char[26].spr_menu = sprHumphryMenuSelected
 char[26].spr_to = sprHumphryMenuSelect

@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Scrapyard",
-    "path": "texturegroups/Scrapyard",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 36,
   "height": 36,
+  "textureGroupId": {
+    "name": "InvertedScrapyard",
+    "path": "texturegroups/InvertedScrapyard",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,

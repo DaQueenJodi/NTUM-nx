@@ -86,10 +86,20 @@ function scrSkills() {
 	skill_tips[8] = "skin glows"
 	skill_msnd[8] =  sndMutGammaGuts
 
+	if random(500)<1
+	{
+	skill_name[9] = "SECOND TUMMY"
+	skill_text[9] = "OMNOMNOMNOM"
+	skill_tips[9] = "omnomnomnom"
+	skill_msnd[9] =  sndMutSecondStomache
+	}
+	else
+	{
 	skill_name[9] = "SECOND STOMACH"
 	skill_text[9] = "MORE HP FROM MEDKITS"
 	skill_tips[9] = "stomach rumbles"
 	skill_msnd[9] =  sndMutSecondStomache
+	}
 
 	skill_name[10] = "BACK MUSCLE"
 	skill_text[10] = "HIGHER AMMO MAX"
@@ -117,14 +127,14 @@ function scrSkills() {
 	if Player.race=25
 	{
 	skill_name[14] = "BOILING VEINS"
-	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE AND LAVA#WHEN UNDER 5HP HEALTH#EXCLUDING! BLUE FIRE"
+	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE AND LAVA#WHEN UNDER 5HP#EXCLUDING! BLUE FIRE"
 	skill_tips[14] = choose("temperature is rising","boiling veins does not#protect against#blue fire");
 	skill_msnd[14] =  sndMutBoilingVeins
 	}
 	else
 	{
 	skill_name[14] = "BOILING VEINS"
-	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE AND LAVA#WHEN UNDER 4HP HEALTH#EXCLUDING! BLUE FIRE"
+	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE AND LAVA#WHEN UNDER 4HP#EXCLUDING! BLUE FIRE"
 	skill_tips[14] = choose("temperature is rising","boiling veins does not#protect against#blue fire");
 	skill_msnd[14] =  sndMutBoilingVeins
 	}
@@ -133,7 +143,7 @@ function scrSkills() {
 	else
 	{
 	skill_name[14] = "BOILING VEINS"
-	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE AND LAVA#WHEN UNDER 4HP HEALTH#EXCLUDING! BLUE FIRE"
+	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE AND LAVA#WHEN UNDER 4HP#EXCLUDING! BLUE FIRE"
 	skill_tips[14] = choose("temperature is rising","boiling veins does not#protect against#blue fire");
 	skill_msnd[14] =  sndMutBoilingVeins
 	}
@@ -193,7 +203,7 @@ function scrSkills() {
 	skill_tips[23] = "open Mind also includes rad cannisters"
 	skill_msnd[23] =  sndMutOpenMind
 
-	if random(1000)<1
+	if random(800)<1
 	skill_name[24] = "TRIGGER PRINGELS"
 	else
 	skill_name[24] = "TRIGGER FINGERS"
@@ -296,17 +306,32 @@ function scrSkills() {
 	skill_tips[31] = "damage reduction!"
 	skill_msnd[31] =  sndToughShell
 	}
-	skill_name[32] = "NOTHING"
-	skill_text[32] = "THERE ARE NO MORE MUTATIONS LEFT!"
-	skill_tips[32] = ""
-	skill_msnd[32] =  sndPartyHorn
+	
+	skill_name[32] = "ALKALINE SALIVA"
+	skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#HEALS YOU INSTEAD"
+	skill_tips[32] = "yes pain yes gain"
+	skill_msnd[32] =  sndInsomnia
+	
+	/*
+	skill_name[33] = "THRONE BACK"
+	skill_text[33] = "UPGRADES YOUR PASSIVE ABILITY"
+	if instance_exists(Player)
+	skill_text[33] = string(Player.race_name[Player.race])+" "+string(Player.race_back[Player.race])
+	skill_tips[33] = "rest on the throne"
+	skill_msnd[33] =  sndMutThronebutt
+	*/
+	
+	skill_name[33] = "NOTHING"
+	skill_text[33] = "THERE ARE NO MORE MUTATIONS LEFT!"
+	skill_tips[33] = ""
+	skill_msnd[33] =  sndPartyHorn
 
 	/*
 	skill_name[29] = "SHARP TEETH"
 	skill_text[29] = "WHENEVER YOU GET HIT DEAL DAMAGE TO EVERYTHING ON THE SCREEN, AND REDUCE DAMAGE TAKEN IN A SHORT PERIOD AFTER BEING HIT TO 1  
 	skill_tips[29] = "bite"*/
 
-	maxskill = 31;
+	maxskill = 32;
 
 
 	dir = 0

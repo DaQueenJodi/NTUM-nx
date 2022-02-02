@@ -8,4 +8,3 @@ friction = 0.1
 sleepRate=15;
 snd_wallhit=sndMeleeWall;
 snd_hit=sndHitWall;
-

@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Palace",
-    "path": "texturegroups/Palace",
-  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 32,
   "height": 32,
+  "textureGroupId": {
+    "name": "Palace",
+    "path": "texturegroups/Palace",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -48,7 +48,7 @@
             {"id":"ae9438e7-e418-4238-8620-307f88b2a69a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f22edd5d-2e82-4ef8-8e0c-ba2e5168dfd7","path":"sprites/sprPalaceTopDecal/sprPalaceTopDecal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Palace",
-    "path": "folders/Sprites/Enviroment/Tiles/Palace.yy",
+    "name": "Props",
+    "path": "folders/Palace/PalaceEnviroment/Props.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprPalaceTopDecal",

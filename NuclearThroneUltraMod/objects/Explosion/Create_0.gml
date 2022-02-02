@@ -1,4 +1,5 @@
 image_speed = 0.4
+dmg = 5;
 //seperate mask for players
 if object_index!=ExplosionNonLethal
 instance_create(x,y,ExplosionMask);

@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -11,8 +7,8 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 2,
-  "bbox_right": 10,
+  "bbox_left": 0,
+  "bbox_right": 11,
   "bbox_top": 0,
   "bbox_bottom": 11,
   "HTile": false,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 12,
   "height": 12,
+  "textureGroupId": {
+    "name": "PlayerCharacter",
+    "path": "texturegroups/PlayerCharacter",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -33,6 +33,9 @@
     {"compositeImage":{"FrameId":{"name":"85ef0ba5-47a7-4ed7-a1b4-31eed12c1d7b","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"85ef0ba5-47a7-4ed7-a1b4-31eed12c1d7b","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"LayerId":{"name":"9c5e7156-68fe-4a47-a6b2-31775e976e4d","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprEnergyIconBG","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"resourceVersion":"1.0","name":"85ef0ba5-47a7-4ed7-a1b4-31eed12c1d7b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3c37f634-80a5-4ef5-88b0-9c1bf7614acc","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3c37f634-80a5-4ef5-88b0-9c1bf7614acc","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"LayerId":{"name":"9c5e7156-68fe-4a47-a6b2-31775e976e4d","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprEnergyIconBG","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"resourceVersion":"1.0","name":"3c37f634-80a5-4ef5-88b0-9c1bf7614acc","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprEnergyIconBG","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},
@@ -42,7 +45,7 @@
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -50,9 +53,10 @@
             {"id":"f12dc714-6e27-4c39-ae0a-aa46c698e017","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6e13268c-b5e4-4364-a746-38060e6cebf5","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bd10027c-35ce-4bd4-b52a-4204f7397fa8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"033c6a61-474a-4c60-b480-f0cd912720c2","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"73c5f4fd-aeb7-43f9-bb4f-20a48b8f775e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"85ef0ba5-47a7-4ed7-a1b4-31eed12c1d7b","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fc1af51a-a103-4ce3-8d87-224d31523c59","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c37f634-80a5-4ef5-88b0-9c1bf7614acc","path":"sprites/sprEnergyIconBG/sprEnergyIconBG.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -77,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "UnsortedProp",
+    "path": "folders/Sprites/UnsortedProp.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprEnergyIconBG",

@@ -1,14 +1,27 @@
 if other.team != team and other.my_health > 0
-{instance_destroy()
+{
+	instance_destroy()
 with other
 {
+	var dealDmg = false;
+	if other.object_index = Player
+	{
     if sprite_index!=spr_hurt
     {
-    my_health -= other.dmg
-    sprite_index = spr_hurt
-    image_index = 0
-    motion_add(other.direction,3)
+		dealDmg = true;
     }
+	}
+	else
+	{
+		dealDamage = true;
+	}
+	if (dealDamage)
+	{
+		my_health -= other.dmg
+	    sprite_index = spr_hurt
+	    image_index = 0
+	    motion_add(other.direction,3)	
+	}
 }
 snd_play(other.snd_hurt)
 with instance_create(x,y,BulletHit)

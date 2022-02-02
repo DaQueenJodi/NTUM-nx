@@ -120,7 +120,7 @@ room_speed=40;
     {
     Player.strongspiritused=false;
     }
-    
+    Player.isAlkaline = true;
     if Player.ultra_got[37]==1//Personal Guard REBEL ULTRA A
     {
     repeat(2)

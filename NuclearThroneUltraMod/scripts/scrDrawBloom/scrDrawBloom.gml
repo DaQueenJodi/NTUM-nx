@@ -113,6 +113,8 @@ function scrDrawBloom() {
 
 	with SuperFlakBullet
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,other.bloomAlpha+0.01)
+	with SuperBouncerFlakBullet
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,other.bloomAlpha+0.01)
 	with PlasmaBig
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,other.bloomAlpha+0.01)
 	with PlasmaHuge

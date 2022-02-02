@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndVaultBossWin",
-  "duration": 0.0,
+  "duration": 10.6069384,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

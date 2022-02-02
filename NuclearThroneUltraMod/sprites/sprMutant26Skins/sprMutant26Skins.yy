@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -20,16 +16,20 @@
   "For3D": false,
   "width": 17,
   "height": 20,
+  "textureGroupId": {
+    "name": "PlayerCharacter",
+    "path": "texturegroups/PlayerCharacter",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
   "frames": [
+    {"compositeImage":{"FrameId":{"name":"b3addd6d-1c02-4a7b-9689-48ed7c4e583d","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b3addd6d-1c02-4a7b-9689-48ed7c4e583d","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"LayerId":{"name":"96812d9e-8c1f-4f5d-9446-c7a5cd963146","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprMutant26Skins","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","name":"b3addd6d-1c02-4a7b-9689-48ed7c4e583d","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"737300b4-c836-492a-b6be-91d3a174648a","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"737300b4-c836-492a-b6be-91d3a174648a","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"LayerId":{"name":"96812d9e-8c1f-4f5d-9446-c7a5cd963146","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprMutant26Skins","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","name":"737300b4-c836-492a-b6be-91d3a174648a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"94754089-917f-4002-971e-92cd9d56fd29","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"94754089-917f-4002-971e-92cd9d56fd29","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"LayerId":{"name":"96812d9e-8c1f-4f5d-9446-c7a5cd963146","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprMutant26Skins","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","name":"94754089-917f-4002-971e-92cd9d56fd29","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"3b1bda2a-8fbe-496e-a946-f261ddaf3ca6","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"3b1bda2a-8fbe-496e-a946-f261ddaf3ca6","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"LayerId":{"name":"96812d9e-8c1f-4f5d-9446-c7a5cd963146","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprMutant26Skins","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","name":"3b1bda2a-8fbe-496e-a946-f261ddaf3ca6","tags":[],"resourceType":"GMSpriteFrame",},
@@ -47,12 +47,12 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a1e14c89-fe8f-4661-ab49-93d6527698ab","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"737300b4-c836-492a-b6be-91d3a174648a","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"b250b8c4-996d-42e5-a4c3-7d38eb1f65d8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"94754089-917f-4002-971e-92cd9d56fd29","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dd0cc0cb-974b-48e9-9f18-068dbe02141e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b3addd6d-1c02-4a7b-9689-48ed7c4e583d","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a1e14c89-fe8f-4661-ab49-93d6527698ab","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"737300b4-c836-492a-b6be-91d3a174648a","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d551b826-9736-4b55-b2cb-d62bbc843b3e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3b1bda2a-8fbe-496e-a946-f261ddaf3ca6","path":"sprites/sprMutant26Skins/sprMutant26Skins.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

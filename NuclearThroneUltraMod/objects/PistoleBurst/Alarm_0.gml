@@ -33,7 +33,7 @@ if (instance_exists(Player))//HUNTER
 
 BackCont.viewx2 += lengthdir_x(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 BackCont.viewy2 += lengthdir_y(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-BackCont.shake += 8
+BackCont.shake += 2
 wkick = 6
 }
 

@@ -13,27 +13,17 @@ if place_meeting(x,y,ShopSelector)
 image_index=1;
 if KeyCont.key_spec[Player.p] != 1 && KeyCont.key_spec[Player.p] != 2
 {
-    if (Player.rad-cost>=0)
-    {
-    with instance_create(Player.x,Player.y,TemporaryBuff)
-    {
-    maxhp=Player.maxhealth;
-    maxspeed=Player.maxspeed;
+    if (HogSpend())
+	{
+	    with instance_create(Player.x,Player.y,TemporaryBuff)
+	    {
+	    maxhp=Player.maxhealth;
+	    maxspeed=Player.maxspeed;
+	    }
+	    Player.maxhealth+=8;
+	    Player.my_health+=8;
+	    Player.maxspeed+=2;
     }
-    Player.maxhealth+=8;
-    Player.my_health+=8;
-    Player.maxspeed+=2;
-    
-    Player.rad-=cost;
-    with instance_create(x,y,PopupText)
-    mytext = "-"+string(other.cost)+" RADS";
-    }
-    else
-    {
-    with instance_create(x,y,PopupText)
-    mytext = "NOT ENOUGH RADS";
-    }
-
 }
 }
 else

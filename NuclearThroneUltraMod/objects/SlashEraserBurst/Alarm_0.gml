@@ -5,7 +5,7 @@ if instance_exists(creator)
 //x = creator.x
 //y = creator.y
 //FIRING
-snd_play(sndEraser)
+snd_play_cancel_prev(sndEraser)
 repeat(rate)
 {
 ammo -= 1

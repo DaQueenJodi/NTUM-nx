@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndFrogExplode",
-  "duration": 0.0,
+  "duration": 0.592358,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

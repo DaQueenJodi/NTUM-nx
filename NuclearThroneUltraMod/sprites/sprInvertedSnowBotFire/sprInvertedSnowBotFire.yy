@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 64,
   "height": 48,
+  "textureGroupId": {
+    "name": "InvertedFrozenCity",
+    "path": "texturegroups/InvertedFrozenCity",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,

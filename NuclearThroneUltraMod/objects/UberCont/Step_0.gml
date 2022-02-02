@@ -55,7 +55,7 @@ Cursor.image_index=UberCont.opt_crosshair;}
 paused = 0
 }
 //RETURN TO MENU
-if keyboard_check_pressed(vk_enter) or gamepad_button_check(0,gp_face4)
+if keyboard_check_pressed(vk_enter) or gamepad_button_check(0,gp_face4) && !instance_exists(PlayerSpawn)
 {
 instance_activate_all()
 paused = 0
@@ -78,7 +78,7 @@ else
 
 //NOT PAUSED
 
-if (keyboard_check_pressed(vk_escape)or KeyCont.key_paus[0] = 1 || (!instance_exists(Vlambeer)&&!window_has_focus()) ) and !instance_exists(GenCont)
+if (keyboard_check_pressed(vk_escape)or KeyCont.key_paus[0] = 1 || (!instance_exists(Vlambeer)&&(!window_has_focus()) && public == 1) ) and !instance_exists(GenCont)
 {
 if keyboard_check_pressed(vk_escape) and instance_exists(Menu)
 {

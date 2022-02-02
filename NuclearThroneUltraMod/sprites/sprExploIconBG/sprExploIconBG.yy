@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -11,8 +7,8 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 1,
-  "bbox_right": 10,
+  "bbox_left": 0,
+  "bbox_right": 11,
   "bbox_top": 0,
   "bbox_bottom": 11,
   "HTile": false,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 12,
   "height": 12,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -33,6 +33,9 @@
     {"compositeImage":{"FrameId":{"name":"e57fc15e-cbd7-4fe1-9cc6-eb7b21b72fdf","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"e57fc15e-cbd7-4fe1-9cc6-eb7b21b72fdf","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"LayerId":{"name":"32787de0-edd2-40f7-b0be-7e8771a7f4cb","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprExploIconBG","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"resourceVersion":"1.0","name":"e57fc15e-cbd7-4fe1-9cc6-eb7b21b72fdf","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f3bcb048-e7df-46d8-baa2-71095baa2f0b","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f3bcb048-e7df-46d8-baa2-71095baa2f0b","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"LayerId":{"name":"32787de0-edd2-40f7-b0be-7e8771a7f4cb","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprExploIconBG","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"resourceVersion":"1.0","name":"f3bcb048-e7df-46d8-baa2-71095baa2f0b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprExploIconBG","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},
@@ -42,7 +45,7 @@
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -50,9 +53,10 @@
             {"id":"06747ec9-7124-4ff2-a013-d2b37d8bb97e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cd397f99-e8a0-43d2-bc13-c452633fbc4d","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0ea4e017-b347-4927-bf52-b27353049194","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d4d8b79b-3ec3-4db0-b44d-b448eee2ce39","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d68d9045-5d42-4f09-9fbc-fcfd53a59b1f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e57fc15e-cbd7-4fe1-9cc6-eb7b21b72fdf","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"20af744a-2961-45ee-b325-83143e00c984","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f3bcb048-e7df-46d8-baa2-71095baa2f0b","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -77,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "UnsortedProp",
+    "path": "folders/Sprites/UnsortedProp.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprExploIconBG",

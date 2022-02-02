@@ -123,7 +123,7 @@ else if skin=2 && UberCont.race_cskin[race]=1
 UberCont.skin[race]=skin;
 else
 UberCont.skin[race]=0;
-
+snd_play(choose(sndMenuASkin,sndMenuBSkin));
 }
 
 with UberCont
@@ -133,8 +133,7 @@ scrSave();
 else
 scale=1;
 
-
 }
-
+imageIndex += 0.5;
 /* */
 /*  */
