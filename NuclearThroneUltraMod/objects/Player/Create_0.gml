@@ -421,6 +421,7 @@ maxarmour=-1;
 stormDirection=direction;
 sheepPower=0;
 sheepRight=1;
+sheepPowerToHaveEffect = 4;
 if race=13{
 justAsheep=true;}
 else{

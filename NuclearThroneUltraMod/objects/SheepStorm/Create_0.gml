@@ -24,3 +24,13 @@ snd_loop(sndDragonLoop);
 else
 snd_loop(sndFlamerLoop);
 
+alpha = 0;
+
+projectileHitBrake = 2;
+
+enemyHitbrake = 4;
+//TODO make this speed based
+/*
+	Where enemies and projectiles and walls slow you down
+*
+

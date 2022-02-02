@@ -28,7 +28,6 @@ if Player.ultra_got[16]
 Player.meltingd=object_index;
 }
 
-debug("looping???");
 snd_play(sndLastEnemy)
 //if MorphMe{
 //with instance_create(x,y,Corpse)

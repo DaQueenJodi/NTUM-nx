@@ -843,6 +843,7 @@ function scrPowers() {
 	if race==13
 	{
 	stormDirection=direction;
+	if !instance_exists(SheepStorm)
 	with instance_create(x,y,SheepStorm)
 	{
 	team=other.team;
@@ -1835,7 +1836,7 @@ function scrPowers() {
 	if race==13 && instance_exists(SheepStorm)
 	{
 	if sheepPower<10
-	{sheepPower+=0.52;}
+	{sheepPower+=0.4;}//0.52
 	//direction=stormDirection;
 	//speed=10;
 	if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
@@ -1849,7 +1850,8 @@ function scrPowers() {
 
 	//if speed<4//&&skill_got[5]=0
 	//{
-	motion_add(stormDirection,7-(skill_got[5]));
+	//motion_add(stormDirection,7-(skill_got[5]));
+	motion_add(direction,7-(skill_got[5]));
 	//}
 	//else 
 	if speed<5//&&skill_got[5]=1

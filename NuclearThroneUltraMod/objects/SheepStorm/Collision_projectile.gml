@@ -1,7 +1,12 @@
 if !instance_exists(Player)
 {instance_destroy() exit;}
+if Player.sheepPower < Player.sheepPowerToHaveEffect
+exit;
+
 if team != other.team
 {
+	Player.sheepPower -= projectileHitBrake;
+	Player.speed -=1;
 if other.typ = 2 or other.typ = 1 && Player.ultra_got[51]=0
 {
 Sleep(2);
@@ -13,10 +18,10 @@ with other{
 instance_destroy();}
 
 if projectileHits<1{
-instance_destroy();}
+instance_destroy();}//Dont destroy based on projectile amount yo
 
 if projectileHits<2
-room_speed=20;
+room_speed=20;//What yo
 
 projectileHits-=1;
 image_index+=1;

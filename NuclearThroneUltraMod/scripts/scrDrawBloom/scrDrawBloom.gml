@@ -188,9 +188,9 @@ function scrDrawBloom() {
 	with SheepStorm
 	{
 	if room_speed=20
-	draw_sprite_ext(sprSheepDashFX,1,x,y,(Player.sheepPower/10)+1.4,(Player.sheepPower/10)+1.4,image_angle,c_black,Player.sheepPower/40);
+	draw_sprite_ext(sprSheepDashFX,1,x,y,(Player.sheepPower/10)+1.4,(Player.sheepPower/10)+1.4,image_angle,c_black,clamp(alpha*0.3,0.05,0.3));
 
-	draw_sprite_ext(sprSheepDashFX,1,x,y,(Player.sheepPower/10)+1,(Player.sheepPower/10)+1,image_angle,c_white,Player.sheepPower/50);
+	draw_sprite_ext(sprSheepDashFX,1,x,y,(Player.sheepPower/10)+1,(Player.sheepPower/10)+1,image_angle,c_white,clamp(alpha*0.3,0.05,0.3));
 	}
 	if ( (Player.race==11)&&(Player.ultra_got[41]==1)   )
 	{
