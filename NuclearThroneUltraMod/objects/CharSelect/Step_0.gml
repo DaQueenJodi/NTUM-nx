@@ -100,7 +100,10 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
     
     }
     
-    snd_play(snd_cnfm)
+	with MusCont {
+		confirmSound = other.snd_cnfm;
+	}
+	
     UberCont.racepick = Menu.race
     if race = 0
     {do race = ceil(random(racemax)) until UberCont.race_have[race] = 1}

@@ -16,6 +16,10 @@ snd_loop(amb)
 alarm[0] = 1360
 snd_play(sndRestart)
 
+//variable used to allow confirmation sound to play
+//written to by the CharSelect object
+confirmSound = false;
+
 //if file_exists("nomusic.txt") or file_exists("NOMUSIC.txt") or file_exists("NOMUSIC.TXT") or file_exists("nomusic.TXT")
 //wantmusic = 0
 //JW HACK:
