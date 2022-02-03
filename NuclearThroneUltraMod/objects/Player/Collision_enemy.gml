@@ -29,13 +29,13 @@ with other
 }
 
 //if(alarm[0]<1){
-if other.meleedamage > 0 and other.team != team && meleeimmunity<1 && !instance_exists(SheepStorm)//is it a melee enemy?
+if other.meleedamage > 0 and other.team != team && meleeimmunity<1 && alarm[3] < 1//is it a melee enemy?
 {
-meleeimmunity=22;
+meleeimmunity=15;
     if (skill_got[8] = 1)&&(other.my_health<=0)//gamma guts immunity?
     {
     }
-    else if !(KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2){//Ultra D Humphry no contact damage
+    else {//if !(KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2){//Ultra D Humphry no contact damage
     //enemy deals damage to the player
     
     

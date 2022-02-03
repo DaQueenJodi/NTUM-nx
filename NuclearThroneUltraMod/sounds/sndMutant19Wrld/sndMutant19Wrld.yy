@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "Skeleton",
-    "path": "folders/Sounds/Skeleton.yy",
+    "path": "folders/Sounds/Player/Skeleton.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndMutant19Wrld",

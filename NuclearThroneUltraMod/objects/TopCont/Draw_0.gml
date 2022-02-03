@@ -97,8 +97,8 @@ with RavenFly
 draw_sprite_ext(sprite_index,-1,x,y+z,right,1,0,c_white,1)
 with Wall
 {
-if x < other.x+32 and x > other.x-32 and y > other.y and y < other.y+64
-draw_sprite(topspr,topindex,x,y-8)
+	if x < other.x+32 and x > other.x-32 and y > other.y and y < other.y+64
+	draw_sprite(topspr,topindex,x,y-8)
 }
 }
 with InvertedRavenFly

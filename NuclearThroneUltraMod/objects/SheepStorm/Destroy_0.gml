@@ -1,15 +1,12 @@
+audio_stop_sound(sndSheepLoopUpg);
+audio_stop_sound(sndSheepLoop);
 if instance_exists(Player){
-if Player.ultra_got[49]==1
-audio_stop_sound(sndDragonLoop);
-else
-audio_stop_sound(sndFlamerLoop);
+
 
 room_speed=30;
 
 with Player
 {
-
-meleeimmunity=10;
 
 if skill_got[2]==1//extra feet
 {
@@ -23,11 +20,6 @@ maxspeed=4;
 }
 
 
-}
-else
-{
-audio_stop_sound(sndFlamerLoop);
-audio_stop_sound(sndDragonLoop);
 }
 
 with enemy

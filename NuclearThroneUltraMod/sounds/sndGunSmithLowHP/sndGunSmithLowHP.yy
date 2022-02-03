@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "GunSmith",
-    "path": "folders/Sounds/GunSmith.yy",
+    "path": "folders/Sounds/Player/GunSmith.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndGunSmithLowHP",

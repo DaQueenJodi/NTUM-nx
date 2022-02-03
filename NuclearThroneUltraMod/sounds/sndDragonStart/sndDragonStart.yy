@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndDragonStart",
-  "duration": 0.0,
+  "duration": 0.288005,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

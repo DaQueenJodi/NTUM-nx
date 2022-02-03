@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "BusinessHog",
-    "path": "folders/Sounds/BusinessHog.yy",
+    "path": "folders/Sounds/Player/BusinessHog.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndMutant20Cnfm",

@@ -15,7 +15,7 @@ function scrShadows() {
 	with Wall
 	{
 	//if place_meeting(x,y+16,Floor)
-	if !place_meeting(x,y+16,Top) and !place_meeting(x,y+16,TopSmall)
+	if place_meeting(x,y+16,Floor)//!place_meeting(x,y+16,Top) and !place_meeting(x,y+16,TopSmall) && place_meeting(x,y+16,Floor)
 		draw_sprite_ext(outspr,outindex,x-__view_get( e__VW.XView, 0 ),y+2+16-__view_get( e__VW.YView, 0 ),1,-1,0,c_black,1)
 	}
 	with VikingWall

@@ -14,8 +14,8 @@
   "soundFile": "sndChickenStart",
   "duration": 0.659093,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndChickenStart",

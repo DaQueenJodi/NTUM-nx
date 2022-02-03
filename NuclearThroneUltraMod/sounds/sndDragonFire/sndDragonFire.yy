@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndDragonFire",
-  "duration": 0.0,
+  "duration": 0.584921,
   "parent": {
     "name": "Dragon",
     "path": "folders/Sounds/Dragon.yy",

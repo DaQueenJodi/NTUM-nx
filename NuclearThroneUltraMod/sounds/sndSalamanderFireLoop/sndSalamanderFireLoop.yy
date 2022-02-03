@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "Salamander",
-    "path": "folders/Sounds/Salamander.yy",
+    "path": "folders/Sounds/Player/Salamander.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndSalamanderFireLoop",

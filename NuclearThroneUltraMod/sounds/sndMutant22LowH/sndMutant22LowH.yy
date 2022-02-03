@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "Rogue",
-    "path": "folders/Sounds/Rogue.yy",
+    "path": "folders/Sounds/Player/Rogue.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndMutant22LowH",

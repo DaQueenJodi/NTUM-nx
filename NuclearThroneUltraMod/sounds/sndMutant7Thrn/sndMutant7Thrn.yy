@@ -14,8 +14,8 @@
   "soundFile": "sndMutant7Thrn",
   "duration": 0.0,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndMutant7Thrn",

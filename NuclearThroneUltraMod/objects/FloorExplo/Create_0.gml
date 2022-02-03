@@ -1,3 +1,8 @@
+if (place_meeting(x,y,FloorExplo))
+{
+	instance_destroy();
+	exit;
+}
 var area;
 if instance_exists(Player) area = Player.area
 else area = BackCont.area
@@ -82,22 +87,60 @@ break;
 }
 
 
+//Create the walls around it
+if !place_meeting(x-16,y,Floor)
+instance_create(x-16,y,Wall)
+
+
+if !place_meeting(x+16,y,Floor)
+instance_create(x+16,y,Wall)
+
+
+if !place_meeting(x,y+16,Floor)
+instance_create(x,y+16,Wall)
+
+
+if !place_meeting(x,y-16,Floor)
+instance_create(x,y-16,Wall)
+
+
+if !place_meeting(x-16,y+16,Floor)
+instance_create(x-16,y+16,Wall)
+
+
+if !place_meeting(x+16,y-16,Floor)
+instance_create(x+16,y-16,Wall)
+
+
+if !place_meeting(x+16,y+16,Floor)
+instance_create(x+16,y+16,Wall)
+
+
+if !place_meeting(x-16,y-16,Floor)
+instance_create(x-16,y-16,Wall)
 
 
 //Sleep(1) fk off
 image_speed = 0
 image_index = choose(1,2,3,4)
 
-//if !place_meeting(x-32,y,Floor)|| !place_meeting(x-32,y,Wall)
-instance_create(x-32,y,Top)
-instance_create(x,y-32,Top)
-instance_create(x,y+32,Top)
-instance_create(x+32,y,Top)
-
-instance_create(x-32,y-32,Top)
-instance_create(x+32,y-32,Top)
-instance_create(x-32,y+32,Top)
-instance_create(x+32,y+32,Top)
+if !place_meeting(x-32,y,Floor) && !place_meeting(x-32,y,Wall)
+	instance_create(x-32,y,Top)
+if !place_meeting(x,y-32,Floor) && !place_meeting(x,y-32,Wall)
+	instance_create(x,y-32,Top)
+if !place_meeting(x,y+32,Floor) && !place_meeting(x,y+32,Wall)
+	instance_create(x,y+32,Top)
+if !place_meeting(x+32,y,Floor) && !place_meeting(x+32,y,Wall)
+	instance_create(x+32,y,Top)
+	
+if !place_meeting(x-32,y-32,Floor) && !place_meeting(x-32,y-32,Wall)
+	instance_create(x-32,y-32,Top)
+if !place_meeting(x+32,y-32,Floor) && !place_meeting(x+32,y-32,Wall)
+	instance_create(x+32,y-32,Top)
+if !place_meeting(x-32,y+32,Floor) && !place_meeting(x-32,y+32,Wall)
+	instance_create(x-32,y+32,Top)
+if !place_meeting(x+32,y+32,Floor) && !place_meeting(x+32,y+32,Wall)
+	instance_create(x+32,y+32,Top)
 
 /*
 i=0;
@@ -188,37 +231,7 @@ i++;
 }
 //*/
 
-
-if !place_meeting(x-16,y,Floor)
-instance_create(x-16,y,Wall)
-
-
-if !place_meeting(x+16,y,Floor)
-instance_create(x+16,y,Wall)
-
-
-if !place_meeting(x,y+16,Floor)
-instance_create(x,y+16,Wall)
-
-
-if !place_meeting(x,y-16,Floor)
-instance_create(x,y-16,Wall)
-
-
-if !place_meeting(x-16,y+16,Floor)
-instance_create(x-16,y+16,Wall)
-
-
-if !place_meeting(x+16,y-16,Floor)
-instance_create(x+16,y-16,Wall)
-
-
-if !place_meeting(x+16,y+16,Floor)
-instance_create(x+16,y+16,Wall)
-
-
-if !place_meeting(x-16,y-16,Floor)
-instance_create(x-16,y-16,Wall)
+alarm[2] = 1;
 
 if UberCont.opt_highquality=1
 {
@@ -273,5 +286,8 @@ snd_play(sndWallBreak)
 
 styleb = 0
 
-/* */
-/*  */
+if(instance_exists(Player))
+{if Player.area=7{
+	alarm[1] = irandom(90);
+}
+}

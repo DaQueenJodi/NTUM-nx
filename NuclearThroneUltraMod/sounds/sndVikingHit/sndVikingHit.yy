@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "Viking",
-    "path": "folders/Sounds/Viking.yy",
+    "path": "folders/Sounds/Player/Viking.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndVikingHit",

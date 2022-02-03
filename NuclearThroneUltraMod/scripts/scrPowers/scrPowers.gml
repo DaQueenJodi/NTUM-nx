@@ -8,7 +8,7 @@ function scrPowers() {
 		var t1 = wep_type[wep];
 		var t2 = wep_type[bwep];
 		var al = 5;//weapon types total
-		var takePercentage = 0.0075;//0.75%
+		var takePercentage = 0.015//1.5%%//0.0075;//0.75%
 		var insufficientFunds = true;
 		for (var i = 0; i < al; i++) {
 			if (i != t1 && i != t2)
@@ -842,25 +842,43 @@ function scrPowers() {
 	// SHEEP
 	if race==13
 	{
-	stormDirection=direction;
-	if !instance_exists(SheepStorm)
-	with instance_create(x,y,SheepStorm)
-	{
-	team=other.team;
-	}
-	if hspeed>0
-	sheepright=1;
-	else
-	sheepright=-1;
-
-	if skill_got[2]==1//extra feet
-	{
-	maxspeed=7.5;
-	}
-	else
-	{
-	maxspeed=7;
-	}
+		if (ultra_got[49] && !instance_exists(SheepHyperDash))
+		{
+			takePercentage = 0.1;//10%
+			var cost = typ_amax[wep_type[wep]]*takePercentage;
+			if (ammo[wep_type[wep]] - cost > 0)
+			{
+				ammo[wep_type[wep]] =  round(ammo[wep_type[wep]] - cost);
+				var aimDir = point_direction(mouse_x,mouse_y,x,y);//Opposite of aimdir
+				BackCont.viewx2 += lengthdir_x(32,aimDir)*UberCont.opt_shake;
+				BackCont.viewy2 += lengthdir_y(32,aimDir)*UberCont.opt_shake;
+				BackCont.shake += 10;
+				snd_play(sndSheepHyperDash);
+				instance_create(x,y,SheepHyperDash);
+				Sleep(5);
+			}
+			else
+			{
+				snd_play(snd_lowa);
+				BackCont.shake += 5;
+			}
+		}
+		else
+		{
+		if !instance_exists(SheepStorm)
+		with instance_create(x,y,SheepStorm)
+		{
+		team=other.team;
+		}
+		if skill_got[2]==1//extra feet
+		{
+		maxspeed=8;
+		}
+		else
+		{
+		maxspeed=7;
+		}
+		}
 	}
 
 	//ROBOT
@@ -1833,36 +1851,36 @@ function scrPowers() {
 	}
 
 	//SHEEP
-	if race==13 && instance_exists(SheepStorm)
+	if race==13 && instance_exists(SheepStorm) && !ultra_got[49]
 	{
-	if sheepPower<10
-	{sheepPower+=0.4;}//0.52
-	//direction=stormDirection;
-	//speed=10;
-	if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
-	hspeed -= 1+(skill_got[5]*2)
-	if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
-	hspeed += 1+(skill_got[5]*2)
-	if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
-	vspeed -= 1+(skill_got[5]*2)
-	if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
-	vspeed += 1+(skill_got[5]*2)
-
-	//if speed<4//&&skill_got[5]=0
-	//{
-	//motion_add(stormDirection,7-(skill_got[5]));
-	motion_add(direction,7-(skill_got[5]));
-	//}
-	//else 
-	if speed<5//&&skill_got[5]=1
-	{speed=5;}
-	right=sheepright;
-
-	}
-	else if race = 13
-	room_speed=30;
-
-
+		var powerMax = 10 + (ultra_got[51] * 5) + (skill_got[5] * 2);
+		if sheepPower<powerMax
+		{sheepPower+=0.37;}
+		if (skill_got[5])
+		{
+			sheepPower += 0.09;
+		}
+		if (skill_got[2])
+		{
+			sheepPower += 0.04;	
+		}
+		if (ultra_got[51])
+		{
+			sheepPower += 0.14;
+		}
+		//speed=10;
+		var moveBoost = (skill_got[2]*2) + (skill_got[5]*2) + (ultra_got[5]*3);
+		//Move in opposite direction to reduce control
+		if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
+		hspeed += 2-moveBoost
+		if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
+		hspeed -= 2-moveBoost
+		if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
+		vspeed += 2-moveBoost
+		if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
+		vspeed -= 2+moveBoost
+		motion_add(direction,4);
+		}
 	}//END OF HOLD RMB
 	else if audio_is_playing(sndEyesLoop) or audio_is_playing(sndChickenLoop) or audio_is_playing(sndEyesLoopUpg) 
 	{
@@ -2031,13 +2049,5 @@ function scrPowers() {
 	}
 	}
 	}
-
-
-
 	}
-
-
-
-
-
 }

@@ -51,7 +51,8 @@ function scrDrawBloom() {
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,other.bloomAlpha+0.01)
 	with Flames
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,other.bloomAlpha+0.01)
-
+	with SheepHyperDashTrail
+	draw_sprite_ext(bloomSprite,-1,x,y,2,2,image_angle,c_white,(other.bloomAlpha+0.01)*image_alpha)
 	if instance_exists(Player)
 	{
 	with Rage{
@@ -187,10 +188,7 @@ function scrDrawBloom() {
 
 	with SheepStorm
 	{
-	if room_speed=20
-	draw_sprite_ext(sprSheepDashFX,1,x,y,(Player.sheepPower/10)+1.4,(Player.sheepPower/10)+1.4,image_angle,c_black,clamp(alpha*0.3,0.05,0.3));
-
-	draw_sprite_ext(sprSheepDashFX,1,x,y,(Player.sheepPower/10)+1,(Player.sheepPower/10)+1,image_angle,c_white,clamp(alpha*0.3,0.05,0.3));
+		draw_sprite_ext(bloomSprite,imageIndex,x,y,(Player.sheepPower/10)+1,(Player.sheepPower/10)+1,image_angle,c_white,clamp(alpha*0.3,0.05,0.3));
 	}
 	if ( (Player.race==11)&&(Player.ultra_got[41]==1)   )
 	{

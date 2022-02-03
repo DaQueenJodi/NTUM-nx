@@ -183,7 +183,7 @@ function scrRaces() {
 	race_name[13] = "[SHEEP]"
 	race_pass[13] = "ENEMIES DON'T#ENGAGE FIRE#UNTIL YOU DO"
 	race_acti[13] = "HOLD TO CHARGE"
-	race_butt[13] = "MORE CONTROL#AND MOVE THROUGH#EIGHT MORE PROJECTILES#WHILE CHARGING"
+	race_butt[13] = "BETTER CHARGE"
 	race_back[13] = "IDK MORPH DAMAGE";
 	race_lock[13] = "MORPH AN ENEMY"
 	race_have[13] = 0
