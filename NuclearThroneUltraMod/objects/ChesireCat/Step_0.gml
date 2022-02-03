@@ -1,3 +1,7 @@
+scrTarget();
+if (target == -1 || !instance_exists(target))
+	exit;
+	
 if drama{
 event_inherited()
 
