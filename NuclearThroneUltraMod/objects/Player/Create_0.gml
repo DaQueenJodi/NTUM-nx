@@ -14,6 +14,7 @@ markforhpreduction=false;//used by skeleton to bypass immunity frames
 raddrop = 0;
 hurtDuration = 15;//Additional iframes
 hurtTime = 0;
+lockoutElementor = false;//When no ammo lockout ability for elementor
 
 if instance_exists(BackCont)
 BackCont.alarm[4]=10;

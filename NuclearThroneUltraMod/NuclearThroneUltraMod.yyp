@@ -3281,6 +3281,7 @@
     {"id":{"name":"sndEliteGruntHurt","path":"sounds/sndEliteGruntHurt/sndEliteGruntHurt.yy",},"order":11,},
     {"id":{"name":"sndEliteInspectorStart","path":"sounds/sndEliteInspectorStart/sndEliteInspectorStart.yy",},"order":1,},
     {"id":{"name":"sndEliteInspectorHurt","path":"sounds/sndEliteInspectorHurt/sndEliteInspectorHurt.yy",},"order":3,},
+    {"id":{"name":"TargetWepTypeForAmmoConsumption","path":"scripts/TargetWepTypeForAmmoConsumption/TargetWepTypeForAmmoConsumption.yy",},"order":80,},
     {"id":{"name":"sndEliteInspectorFire","path":"sounds/sndEliteInspectorFire/sndEliteInspectorFire.yy",},"order":5,},
     {"id":{"name":"sndEliteInspectorEnter","path":"sounds/sndEliteInspectorEnter/sndEliteInspectorEnter.yy",},"order":7,},
     {"id":{"name":"sndEliteInspectorEnd","path":"sounds/sndEliteInspectorEnd/sndEliteInspectorEnd.yy",},"order":9,},

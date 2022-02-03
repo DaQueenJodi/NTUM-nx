@@ -15,7 +15,7 @@ function scrPowers() {
 			{
 				if (ammo[i] > 1 && ammo[i] - typ_amax[i]*takePercentage > 0)
 				{
-					ammo[i] = round(max(1,ammo[i] - typ_amax[i]*takePercentage));
+					ammo[i] = max(1,ammo[i] - typ_amax[i]*takePercentage);
 					insufficientFunds = false;
 				}
 					
@@ -844,11 +844,12 @@ function scrPowers() {
 	{
 		if (ultra_got[49] && !instance_exists(SheepHyperDash))
 		{
-			takePercentage = 0.1;//10%
-			var cost = typ_amax[wep_type[wep]]*takePercentage;
-			if (ammo[wep_type[wep]] - cost > 0)
+			var takePercentage = 0.1;//10%
+			var wepType = TargetWepTypeForAmmoConsumption(takePercentage);
+			var cost = typ_amax[wepType]*takePercentage;
+			if (wepType != 0 && ammo[wepType] - cost > 0)
 			{
-				ammo[wep_type[wep]] =  round(ammo[wep_type[wep]] - cost);
+				ammo[wepType] =  ammo[wepType] - cost;
 				var aimDir = point_direction(mouse_x,mouse_y,x,y);//Opposite of aimdir
 				BackCont.viewx2 += lengthdir_x(32,aimDir)*UberCont.opt_shake;
 				BackCont.viewy2 += lengthdir_y(32,aimDir)*UberCont.opt_shake;
@@ -1553,30 +1554,50 @@ function scrPowers() {
 	}
 
 
-	if race==24//Elementor
+	if race==24 && !lockoutElementor//Elementor
 	{
-	mask_index=mskWall;
-	var xx;
-	var yy;
-	xx=16*(mouse_x div 16);
-	yy=16*(mouse_y div 16);
-	if point_distance(x,y,mouse_x,mouse_y)>16{
-	    if place_meeting(xx,yy,Floor)&&place_free(xx,yy)&&!place_meeting(xx,yy,projectile)&&!place_meeting(xx,yy,enemy)&&!place_meeting(xx,yy,prop)&&!place_meeting(xx,yy,Sheep)&&!place_meeting(xx,yy,ExplosiveSheep)
-	    {
+		var takePercentage = 0.0075;//0.75%
+		if skill_got[5]
+		{
+			takePercentage = 0.005;//0.05%
+		}
+		var wepType = TargetWepTypeForAmmoConsumption(takePercentage);
+		var cost = typ_amax[wepType]*takePercentage;
+		if (wepType != 0 && ammo[wepType] - cost > 0)
+		{
+			var myMask = mask_index;
+			mask_index=mskWall;
+			var xx;
+			var yy;
+			xx=16*(mouse_x div 16);
+			yy=16*(mouse_y div 16);
+			if point_distance(x,y,mouse_x,mouse_y)>16{
+			    if place_meeting(xx,yy,Floor)&&place_free(xx,yy)&&!place_meeting(xx,yy,projectile)&&!place_meeting(xx,yy,enemy)&&!place_meeting(xx,yy,prop)&&!place_meeting(xx,yy,Sheep)&&!place_meeting(xx,yy,ExplosiveSheep)
+			    {
 
-	    //if place_meeting(xx+16,yy,Wall)||place_meeting(xx-16,yy,Wall)||place_meeting(xx,yy-16,Wall)||place_meeting(xx,yy+16,Wall)
-	    //{
-	    //here check if we don't block a path
-	    snd_play(sndStatueHurt);
+			    //if place_meeting(xx+16,yy,Wall)||place_meeting(xx-16,yy,Wall)||place_meeting(xx,yy-16,Wall)||place_meeting(xx,yy+16,Wall)
+			    //{
+			    //here check if we don't block a path
+			    snd_play(sndStatueHurt);
     
-	    with instance_create(xx,yy,VikingWall)
-	    alarm[0]=15;
-	    //}
-	    }
+			    with instance_create(xx,yy,VikingWall)
+			    alarm[0]=15;
+					
+				ammo[wepType] =  ammo[wepType] - cost;
+
+			    //}
+			    }
     
-	    //instance_create(xx,yy,Wall);
-	    }
-	mask_index=mskPlayer;
+			    //instance_create(xx,yy,Wall);
+			    }
+			mask_index=myMask;
+		}
+		else
+		{
+			lockoutElementor = true;
+			snd_play(snd_lowa);
+			BackCont.shake += 5;
+		}
 	}
 
 
@@ -2048,6 +2069,10 @@ function scrPowers() {
 	maxspeed=4;
 	}
 	}
+	}
+	else if race == 24 && KeyCont.key_spec[p] != 1 && KeyCont.key_spec[p] != 2
+	{
+		lockoutElementor = false;	
 	}
 	}
 }
