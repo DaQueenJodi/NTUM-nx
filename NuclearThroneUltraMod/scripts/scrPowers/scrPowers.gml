@@ -1869,16 +1869,16 @@ function scrPowers() {
 			sheepPower += 0.14;
 		}
 		//speed=10;
-		var moveBoost = (skill_got[2]*2) + (skill_got[5]*2) + (ultra_got[5]*3);
+		var moveBoost = (skill_got[2]*1.5) + (skill_got[5]*1.5) + (ultra_got[5]*2.5);
 		//Move in opposite direction to reduce control
 		if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
-		hspeed += 2-moveBoost
+		hspeed += 2.5-moveBoost
 		if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
-		hspeed -= 2-moveBoost
+		hspeed -= 2.5-moveBoost
 		if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
-		vspeed += 2-moveBoost
+		vspeed += 2.5-moveBoost
 		if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
-		vspeed -= 2+moveBoost
+		vspeed -= 2.5-moveBoost
 		motion_add(direction,4);
 		}
 	}//END OF HOLD RMB
