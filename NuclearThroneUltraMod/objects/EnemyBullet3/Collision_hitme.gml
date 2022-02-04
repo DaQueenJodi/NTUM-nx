@@ -23,7 +23,7 @@ with other
 	    motion_add(other.direction,3)	
 	}
 }
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 with instance_create(x,y,BulletHit)
 sprite_index = sprBullet2Disappear}
 

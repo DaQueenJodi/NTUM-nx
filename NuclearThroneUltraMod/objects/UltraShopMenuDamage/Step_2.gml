@@ -19,7 +19,7 @@ if KeyCont.key_spec[Player.p] != 1 && KeyCont.key_spec[Player.p] != 2
 			if x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 			{
 			//if sprite_index!=spr_hurt{
-			snd_play(snd_hurt)
+			snd_play(snd_hurt, hurt_pitch_variation)
 			Sleep(10)
 
 			my_health -= 22//damage

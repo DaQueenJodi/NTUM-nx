@@ -3,7 +3,7 @@ if other.team!=2//other.team != team  &&
 with other
 {
 
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 my_health -= 12
 sprite_index = spr_hurt
 image_index = 0
@@ -26,7 +26,7 @@ immune = 1
 
 if !(sprite_index = spr_hurt and immune = 1)
 {
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 
 if immune = 1
 {

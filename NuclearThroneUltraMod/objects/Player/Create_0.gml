@@ -6,6 +6,8 @@ exit;
 
 //scrn=0; //for screenshot taking character explain pic
 
+hurt_pitch_variation = 0;
+
 //show_message("hi")
 //if joystick_exists(0) joy = 0 else joy = 0
 meleeimmunity=0;

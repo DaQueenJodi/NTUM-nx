@@ -24,7 +24,7 @@ if instance_exists(Player){
     sprite_index = spr_hurt
     image_index = 0
     motion_add(other.direction,other.speed/2)
-    snd_play(snd_hurt)
+    snd_play(snd_hurt, hurt_pitch_variation)
     
     }
     Sleep(2*size*size)
@@ -57,7 +57,7 @@ my_health -= round(other.dmg+other.speed/5)
 sprite_index = spr_hurt
 image_index = 0
 motion_add(other.direction,other.speed/2)
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 }
 Sleep(2*size*size)
 speed /= 2

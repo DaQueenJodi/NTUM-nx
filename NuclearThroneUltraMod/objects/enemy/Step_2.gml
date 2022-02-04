@@ -16,7 +16,7 @@ y=yprevious;
 if sprite_index!=spr_hurt && Player.race=24//Elementor's passive
 {
 my_health-=0.5;
-snd_play(snd_hurt);
+snd_play(snd_hurt, hurt_pitch_variation);
 sprite_index=spr_hurt
 }
 

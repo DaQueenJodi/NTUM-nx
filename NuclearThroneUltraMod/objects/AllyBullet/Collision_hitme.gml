@@ -25,7 +25,7 @@ with other
 sprite_index = spr_hurt
 image_index = 0
 my_health -= other.dmg
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 motion_add(point_direction(other.x,other.y,x,y),4)
 Sleep(40)
 }
@@ -38,7 +38,7 @@ instance_destroy()
 
 with other
 {
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 my_health -= other.dmg
 sprite_index = spr_hurt
 image_index = 0

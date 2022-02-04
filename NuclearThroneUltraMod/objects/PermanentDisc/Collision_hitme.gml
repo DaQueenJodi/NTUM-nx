@@ -3,7 +3,7 @@ if other.team = 2
 {
 if sprite_index != spr_hurt
 {
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 my_health -= UberCont.opt_discdamage
 sprite_index = spr_hurt
 image_index = 0

@@ -15,7 +15,7 @@ immune = 1
 }
 if immune = 0
 {
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 my_health -= 4
 sprite_index = spr_hurt
 image_index = 0

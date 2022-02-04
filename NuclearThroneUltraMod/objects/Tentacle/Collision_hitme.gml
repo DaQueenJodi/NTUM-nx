@@ -93,7 +93,7 @@ mp_potential_step(other.creator.x,other.creator.y,3,false)
 
 
 
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 if random(2)<1
 instance_create(x,y,FishBoost)
 }

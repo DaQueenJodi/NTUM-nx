@@ -10,7 +10,7 @@ y = other.y+offy
 else
 {
 instance_destroy()
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 with other
 {
 my_health -= other.dmg

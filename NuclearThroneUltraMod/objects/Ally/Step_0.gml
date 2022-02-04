@@ -50,21 +50,21 @@ sprite_index = spr_idle}
 
 if walk > 0
 {
-walk -= 1
-motion_add(direction,0.8)
+	walk -= 1
+	motion_add(direction,0.8)
 }
 if instance_exists(Player)
 {
-if point_distance(x,y,Player.x,Player.y) > 52
-mp_potential_step(Player.x,Player.y,1,false)
+	if point_distance(x,y,Player.x,Player.y) > 52
+	motion_add(point_direction(x,y,Player.x,Player.y), 0.1)
 }
 
-if speed > 4.5
-speed = 4.5
+if speed > 5.5
+speed = 5.5
 
 if(alarm[0]>0)
 {
-sprite_index=sprAllyAppear;
+	sprite_index=sprAllyAppear;
 }
 
 

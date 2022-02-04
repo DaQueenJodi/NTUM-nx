@@ -24,7 +24,7 @@ image_index = 0
 motion_add(other.direction,8)
 }
 
-snd_play(other.snd_hurt)
+snd_play(other.snd_hurt, other.hurt_pitch_variation)
 instance_create(x,y,BulletHit)
 
 //RECYCLE GLAND
@@ -64,7 +64,7 @@ frozen+=other.freezetime;
 sprite_index = spr_hurt
 image_index = 0
 motion_add(other.direction,8)
-snd_play(snd_hurt)
+snd_play(snd_hurt, hurt_pitch_variation)
 }
 
 instance_create(x,y,BulletHit)

@@ -6,6 +6,7 @@ raddrop=0;
 team = 0
 
 snd_hurt = sndHitPlant
+hurt_pitch_variation = 0;
 
 image_xscale = choose(1,-1)
 
