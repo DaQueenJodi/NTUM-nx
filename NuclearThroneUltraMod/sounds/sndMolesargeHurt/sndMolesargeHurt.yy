@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndBossWin.ogg",
-  "duration": 72.74039,
+  "soundFile": "sndMolesargeHurt.ogg",
+  "duration": 0.303061,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sndBossWin",
+  "name": "sndMolesargeHurt",
   "tags": [],
   "resourceType": "GMSound",
 }

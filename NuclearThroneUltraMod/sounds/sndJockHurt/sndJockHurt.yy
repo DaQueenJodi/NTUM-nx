@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndBossWin.ogg",
-  "duration": 72.74039,
+  "soundFile": "sndJockHurt.ogg",
+  "duration": 0.226984,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sndBossWin",
+  "name": "sndJockHurt",
   "tags": [],
   "resourceType": "GMSound",
 }

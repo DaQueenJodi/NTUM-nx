@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndBossWin.ogg",
-  "duration": 72.74039,
+  "soundFile": "sndSuperFireballerHurt.ogg",
+  "duration": 0.652812,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sndBossWin",
+  "name": "sndSuperFireballerHurt",
   "tags": [],
   "resourceType": "GMSound",
 }

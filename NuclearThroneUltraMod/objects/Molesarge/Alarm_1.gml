@@ -10,7 +10,7 @@ if point_distance(target.x,target.y,x,y) < 120
 if random(3) < 1
 {
 gunangle = point_direction(x,y,target.x,target.y)+random(20)-10
-snd_play(sndEnemyFire)
+snd_play(sndMolesargeFire,0.05)
 wkick = 8
 motion_add(gunangle+180,3)
 

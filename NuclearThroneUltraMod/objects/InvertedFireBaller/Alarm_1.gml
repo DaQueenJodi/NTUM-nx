@@ -19,6 +19,7 @@ repeat(1+irandom(3))
     team = other.team
     }
 }
+snd_play(sndFireballerFire,0.05)
 image_index = 0
 sprite_index = spr_fire
 alarm[1] = 8
