@@ -123,7 +123,7 @@ function scrPowers() {
 	rad-=21;
 	}
 	else
-	scrEmptyRad();
+		scrEmptyRad();
 
 	}
 	else if alarm[3]<1 
@@ -147,10 +147,10 @@ function scrPowers() {
 	    strongspirit=false;
 	    }
 	    else
-	    scrUnlockCSkin(25,"HAHAHAHAHA!",0);
+			scrUnlockCSkin(25,"HAHAHAHAHA!",0);
 	    }
 	    else
-	    scrUnlockCSkin(25,"HAHAHAHAHA!",0);
+			scrUnlockCSkin(25,"HAHAHAHAHA!",0);
     
 	    }
     
@@ -292,8 +292,8 @@ function scrPowers() {
 
 	if rad<=0
 	{
-	snd_play(sndHorrorEmpty);
-	scrEmptyRad();
+		snd_play(sndHorrorEmpty);
+		scrEmptyRad();
 	}
 	else
 	{
@@ -330,7 +330,7 @@ function scrPowers() {
 	        image_angle = other.image_angle
 	        }
 	    }
-
+	rad = max(rad,0);
 	}
 
 	}
@@ -1217,7 +1217,9 @@ function scrPowers() {
 
 	if rad-(wep_rad[wep]*(2+Player.skill_got[5]*2))<0
 	{//not enough radiation
+	clicked = 0
 	scrEmptyRad();
+	other.wkick = -2
 	}
 
 	if ammo[wep_type[wep]] >= wep_cost[wep]*(2+Player.skill_got[5]*2) and rad>=wep_rad[wep]*(2+Player.skill_got[5]*2)
@@ -1877,6 +1879,10 @@ function scrPowers() {
 		var powerMax = 10 + (ultra_got[51] * 5) + (skill_got[5] * 2);
 		if sheepPower<powerMax
 		{sheepPower+=0.37;}
+		else
+		{
+			sheepPower = powerMax;
+		}
 		if (skill_got[5])
 		{
 			sheepPower += 0.09;

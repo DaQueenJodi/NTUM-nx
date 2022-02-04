@@ -1,4 +1,9 @@
 /// @description Fire
+if frozen
+{
+	sprite_index = spr_idle;
+	exit;
+}
 scrTarget()
 if target > 0
 {

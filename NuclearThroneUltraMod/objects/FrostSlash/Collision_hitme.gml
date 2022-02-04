@@ -22,6 +22,8 @@ frozen=true;
     yy=other.y
     }
 alarm[11]+=other.freezetime;
+alarm[1] += other.freezetime;
+
 }
 }}
 

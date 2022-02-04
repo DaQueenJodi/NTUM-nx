@@ -24,7 +24,9 @@ with other
             yy=other.y
             DebrisAmount=choose(1,2);
             }
-        alarm[11]+=35;//other.freezetime; bullets freeze for 30
+        alarm[11]+=20;
+		alarm[1] += 20;
+
         }
         
         }

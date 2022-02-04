@@ -24,11 +24,11 @@ function scrGameModes() {
 	gamemode_have[5] = 0;
 
 	gamemode[6] = "CLAUSTROFOBIA";//
-	gamemode_unlock[6] = "FINISH A LEVEL IN UNDER 10 SECONDS";
+	gamemode_unlock[6] = "FINISH AN AREA IN UNDER 10 SECONDS";
 	gamemode_have[6] = 0;
 
 	gamemode[7] = "ATOM TELEPORT ONLY#NO WALKING";//
-	gamemode_unlock[7] = "FINISH A LEVEL WITHOUT WALKING AS ATOM";
+	gamemode_unlock[7] = "FINISH AN AREA WITHOUT WALKING AS ATOM";
 	gamemode_have[7] = 0;
 
 	gamemode[8] = "CROWN START";//
@@ -39,8 +39,8 @@ function scrGameModes() {
 	gamemode_unlock[9] = "DIE ON 1-1";
 	gamemode_have[9] = 0;
 
-	gamemode[10] = "RANDOM LEVELS";//
-	gamemode_unlock[10] = "GO TO THREE SECRET LEVELS IN ONE RUN";
+	gamemode[10] = "RANDOM AREAS";//
+	gamemode_unlock[10] = "GO TO THREE SECRET AREAS IN ONE RUN";
 	gamemode_have[10] = 0;
 
 	gamemode[11] = "GUN GAME";//
@@ -80,7 +80,7 @@ function scrGameModes() {
 	gamemode_have[19] = 0;
 
 	gamemode[20] = "AGORAPHOBIA";
-	gamemode_unlock[20] = "TAKE MORE THAN TEN MINUTES#TO FINISH A LEVEL";
+	gamemode_unlock[20] = "TAKE MORE THAN TEN MINUTES#TO FINISH AN AREA";
 	gamemode_have[20] = 0;
 
 	gamemode[21] = "LOOP START";

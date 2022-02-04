@@ -3995,6 +3995,7 @@
     {"id":{"name":"InvertedRhinoFreak","path":"objects/InvertedRhinoFreak/InvertedRhinoFreak.yy",},"order":10,},
     {"id":{"name":"MutantTube","path":"objects/MutantTube/MutantTube.yy",},"order":11,},
     {"id":{"name":"InvertedMutantTube","path":"objects/InvertedMutantTube/InvertedMutantTube.yy",},"order":12,},
+    {"id":{"name":"sprWrenchBigEmoji","path":"sprites/sprWrenchBigEmoji/sprWrenchBigEmoji.yy",},"order":38,},
     {"id":{"name":"Bandit","path":"objects/Bandit/Bandit.yy",},"order":21,},
     {"id":{"name":"LaserBandit","path":"objects/LaserBandit/LaserBandit.yy",},"order":23,},
     {"id":{"name":"JungleBandit","path":"objects/JungleBandit/JungleBandit.yy",},"order":25,},

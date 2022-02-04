@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndHorrorLoop",
-  "duration": 0.0,
+  "duration": 2.250094,
   "parent": {
     "name": "Horror",
     "path": "folders/Sounds/Player/Horror.yy",
