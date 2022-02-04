@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndBloodPistol",
-  "duration": 0.0,
+  "duration": 0.329433,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
