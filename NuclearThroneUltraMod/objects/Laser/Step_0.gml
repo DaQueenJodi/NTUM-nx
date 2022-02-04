@@ -1,4 +1,4 @@
-image_yscale -= 0.25
+image_yscale -= 0.24
 if image_yscale < 0
 instance_destroy()
 

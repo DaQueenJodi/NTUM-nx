@@ -111,7 +111,7 @@ h = 20-r
 }
 
 */
-
+/*
 with Wall
 {
 if place_free(x-16,y)
@@ -148,7 +148,7 @@ else{
     h = 20-r
 }
 }
-
+*/
 
 //with WeaponChest
 //instance_create(x,y,DramaCamera)

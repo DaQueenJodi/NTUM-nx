@@ -243,7 +243,7 @@ else
 visible = 1
 }
 
-
+/*
 with Wall
 {
 if point_distance(x,y,other.x,other.y)<32
@@ -272,6 +272,7 @@ h = 20-r
 }
 
 }
+*/
 }
 //*/
 alarm[0]=1;
@@ -291,3 +292,4 @@ if(instance_exists(Player))
 	alarm[1] = irandom(90);
 }
 }
+depth = 50;

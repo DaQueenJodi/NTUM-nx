@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "PalaceProjectiles",
-    "path": "folders/Palace/PalaceProjectiles.yy",
+    "path": "folders/Sprites/Palace/PalaceProjectiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprExploGuardianBullet",

@@ -98,7 +98,7 @@
   "nineSlice": null,
   "parent": {
     "name": "PalaceEnviroment",
-    "path": "folders/Palace/PalaceEnviroment.yy",
+    "path": "folders/Sprites/Palace/PalaceEnviroment.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprWall9Top",

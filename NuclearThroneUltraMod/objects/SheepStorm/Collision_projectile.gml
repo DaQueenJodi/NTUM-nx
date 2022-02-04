@@ -11,7 +11,7 @@ if team != other.team
 	BackCont.viewx2 += lengthdir_x(1,direction)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(1,direction)*UberCont.opt_shake
 	BackCont.shake += 5
-	if other.typ = 2 or other.typ = 1 && Player.ultra_got[51]=0
+	if other.typ = 2 or (other.typ = 1 && Player.ultra_got[51]=0)
 	{
 
 		with other{

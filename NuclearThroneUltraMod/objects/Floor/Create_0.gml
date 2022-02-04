@@ -179,6 +179,25 @@ break;
 }
 }
 
+if !place_meeting(x-32,y,Floor) && !place_meeting(x-32,y,Wall)
+	instance_create(x-32,y,Top)
+if !place_meeting(x,y-32,Floor) && !place_meeting(x,y-32,Wall)
+	instance_create(x,y-32,Top)
+if !place_meeting(x,y+32,Floor) && !place_meeting(x,y+32,Wall)
+	instance_create(x,y+32,Top)
+if !place_meeting(x+32,y,Floor) && !place_meeting(x+32,y,Wall)
+	instance_create(x+32,y,Top)
+	
+if !place_meeting(x-32,y-32,Floor) && !place_meeting(x-32,y-32,Wall)
+	instance_create(x-32,y-32,Top)
+if !place_meeting(x+32,y-32,Floor) && !place_meeting(x+32,y-32,Wall)
+	instance_create(x+32,y-32,Top)
+if !place_meeting(x-32,y+32,Floor) && !place_meeting(x-32,y+32,Wall)
+	instance_create(x-32,y+32,Top)
+if !place_meeting(x+32,y+32,Floor) && !place_meeting(x+32,y+32,Wall)
+	instance_create(x+32,y+32,Top)
+	
+/*
 instance_create(x-32,y,Top)
 instance_create(x+32,y,Top)
 instance_create(x-32,y+32,Top)
@@ -187,16 +206,6 @@ instance_create(x-32,y-32,Top)
 instance_create(x+32,y-32,Top)
 instance_create(x,y+32,Top)
 instance_create(x,y-32,Top)
+*/
 
-//if place_meeting(x,y,Floor)
-//{
-    
-//}
-
-/*Collision floor event
-if other.id > id and other.object_index != FloorExplo
-instance_destroy()
-
-
-/* */
-/*  */
+depth = 10;

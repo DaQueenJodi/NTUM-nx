@@ -114,7 +114,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Palace",
-    "path": "folders/Palace.yy",
+    "path": "folders/Sprites/Palace.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBigPortalDisappear",
