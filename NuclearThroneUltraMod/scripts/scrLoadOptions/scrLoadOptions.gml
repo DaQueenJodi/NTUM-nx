@@ -8,6 +8,7 @@ function scrLoadOptions() {
 	//visual
 	opt_fulscrn = ini_read_real("OPTIONS","fulscrn",1);
 	opt_crosshair = ini_read_real("OPTIONS","crosshair",0);
+	opt_sideart = ini_read_real("OPTIONS","sideart",0);
 	opt_bloom = ini_read_real("OPTIONS","bloom",0.1);
 	opt_shadow = ini_read_real("OPTIONS","shadow",1);
 	opt_highquality = ini_read_real("OPTIONS","highquality",1);

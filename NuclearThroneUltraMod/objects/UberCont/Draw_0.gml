@@ -98,9 +98,9 @@ txt0 = "#OPTIONS#KILLS: "+string(kills)+"  "+infotxt+"#########################P
 
 
 
-txt1 = "####AUDIO#MUSIC VOLUME#MASTER VOLUME#AMBIENT VOLUME##VISUALS#FULL SCREEN#CROSSHAIR#BLOOM#SHADOWS#HIGH QUALITY##CONTROLS#GAMEPAD#GAMEPAD AUTOAIM##OTHER#SCREEN SHAKE#FREEZE FRAMES#LOADING SPEED#CAPTURE MOUSE#BOSS INTROS#TIMER"
-txt2 = "#####"+string(scrAddZero(round(UberCont.opt_musvol*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_sfxvol*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_ambvol*100),2))
-+"%###"+string(scrOnOff(UberCont.opt_fulscrn))+"#"+string(UberCont.opt_crosshair+1)+"#"+string(round(UberCont.opt_bloom*1000))+"%#"+string(scrOnOff(UberCont.opt_shadow))+"#"//
+txt1 = "###AUDIO#MUSIC VOLUME#MASTER VOLUME#AMBIENT VOLUME##VISUALS#FULL SCREEN#CROSSHAIR#SIDE ART#BLOOM#SHADOWS#HIGH QUALITY##CONTROLS#GAMEPAD#GAMEPAD AUTOAIM##OTHER#SCREEN SHAKE#FREEZE FRAMES#LOADING SPEED#CAPTURE MOUSE#BOSS INTROS#TIMER"
+txt2 = "####"+string(scrAddZero(round(UberCont.opt_musvol*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_sfxvol*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_ambvol*100),2))
++"%###"+string(scrOnOff(UberCont.opt_fulscrn))+"#"+string(UberCont.opt_crosshair+1)+"#"+string(UberCont.opt_sideart)+"#"+string(round(UberCont.opt_bloom*1000))+"%#"+string(scrOnOff(UberCont.opt_shadow))+"#"//
 +string(scrOnOff(UberCont.opt_highquality))+"###"+"AUTO ACTIVE#"+"AUTO ACTIVE"
 +"###"+string(scrAddZero(round(UberCont.opt_shake*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_freeze*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_loading*100),2))+"%#"+string(scrOnOff(UberCont.opt_mousecp))+"#"+string(bossintro)+"#"+string(timer)
 
@@ -108,7 +108,7 @@ txt2 = "#####"+string(scrAddZero(round(UberCont.opt_musvol*100),2))+"%#"+string(
 
 
 stxt0 = "#OPTIONS"
-stxt1 = "####AUDIO#####VISUALS#######CONTROLS####OTHER####"
+stxt1 = "###AUDIO#####VISUALS########CONTROLS####OTHER####"
 stxt2 = txt2
 
 
@@ -122,6 +122,8 @@ event_perform(ev_draw,0)
 with FullScreenToggle
 event_perform(ev_draw,0)
 with CursorUpDown
+event_perform(ev_draw,0)
+with SideArtUpDown
 event_perform(ev_draw,0)
 with BloomUpDown
 event_perform(ev_draw,0)

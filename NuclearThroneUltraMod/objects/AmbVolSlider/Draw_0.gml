@@ -48,5 +48,5 @@ audio_sound_gain(amb,max(0,sqrt(max(0,UberCont.opt_ambvol) )),0);
 }
 }
 x=round(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+8)
-y=round(__view_get( e__VW.YView, 0 )+56);
+y=round(__view_get( e__VW.YView, 0 )+48);
 

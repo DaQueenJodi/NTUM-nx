@@ -8,6 +8,7 @@ function scrSaveOptions() {
 	//visual
 	ini_write_real("OPTIONS","fulscrn",opt_fulscrn);
 	ini_write_real("OPTIONS","crosshair",opt_crosshair);
+	ini_write_real("OPTIONS","sideart",opt_sideart);
 	ini_write_real("OPTIONS","bloom",opt_bloom);
 	ini_write_real("OPTIONS","shadow",opt_shadow);
 	ini_write_real("OPTIONS","highquality",opt_highquality);
