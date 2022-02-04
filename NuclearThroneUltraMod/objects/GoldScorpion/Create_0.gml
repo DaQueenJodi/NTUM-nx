@@ -12,6 +12,7 @@ spr_dead = sprGoldScorpionDead
 spr_fire = sprGoldScorpionFire
 
 snd_hurt = sndHitMetal
+snd_dead = sndScorpionDie
 
 //behavior
 ammo = 10
