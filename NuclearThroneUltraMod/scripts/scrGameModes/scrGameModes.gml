@@ -91,6 +91,10 @@ function scrGameModes() {
 	gamemode_unlock[22] = "BEAT THE #INVERTED CHESHIRE CAT";
 	gamemode_have[22] = 0;
 	/*
+	gamemode[23] = "RANDOM CHARACTER#IN EACH AREA";
+	gamemode_unlock[23] = "HAVE 4 LIVES AT ONCE";
+	gamemode_have[23] = 0;*/
+	/*
 	gamemode[23] = "MASTERLUIGI452'S#10X MUTATIONS";
 	gamemode_unlock[23] = "INFECT AN ENEMY";
 	gamemode_have[23] = 0;*/
