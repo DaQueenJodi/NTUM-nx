@@ -9,6 +9,7 @@ function scrInitOptions() {
 	opt_fulscrn = 1
 	opt_niceshd = 1
 	opt_nicedrk = 1
+	opt_sideart = 0
 
 	//controls
 	//opt_gamepad = 0

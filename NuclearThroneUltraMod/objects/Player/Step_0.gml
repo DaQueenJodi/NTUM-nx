@@ -18,78 +18,141 @@ if alarm[4]>0//boiling veins
 {
 instance_create(x+random(12)-6,y+random(12)-6,Smoke);
 }
-if UberCont.public=0{
+if UberCont.public=0 {
 //hacks
-if keyboard_check(ord("R"))
-    repeat(50){
-    instance_create(Player.x,Player.y,Rad);
-    }
-if keyboard_check_pressed(ord("T"))
-    {
-    instance_create(Player.x,Player.y,Portal);
-    }
-if (keyboard_check_pressed(ord("F")))
-    {
-    if(wep<1)
-    {wep=maxwep;}
-    else{wep=wep-1;}
-    }
-if (keyboard_check_pressed(ord("G")))
-    {
-    if(wep<maxwep)
-    {wep=wep+1;}
-    else{wep=0}
-    }
-if (keyboard_check_pressed(ord("M")))
-    {
-    if(wep<maxwep)
-    {wep=wep+50;}
-    else{wep=0}
-    }
-if (keyboard_check_pressed(ord("H")))
-    {
-    repeat(3)
-    instance_create(Player.x,Player.y,AmmoPickup);
-    }
-if (keyboard_check_pressed(ord("J")))
-    {
-    repeat(3)
-    instance_create(Player.x,Player.y,HPPickup);
-    }
-if (keyboard_check_pressed(ord("K")))
-    {
-    instance_create(x+32,y,HealthChest);
-    }
-if (keyboard_check_pressed(ord("U")))
-    {
-    rage++
-    }
-if (keyboard_check_pressed(ord("Y")))
-    {    
-    wepmod1++
-    }
-    
-if (keyboard_check_pressed(ord("O")))
-    {
-    instance_create(x+64,y,IDPDVan);
-    }
-    
-if (keyboard_check_pressed(ord("I")))
-    {
-    instance_create(x+64,y,AssassinBoss);
-    }
-    
-if (keyboard_check_pressed(ord("L")))
-    {
-    instance_create(x+32,y,EliteWeaponChest);
-    }
-if (keyboard_check_pressed(ord("N")))
-    {
-    instance_create(x+32,y,EliteShielder);
-    }
-}
+	if keyboard_check_pressed(ord("R")) {
+	    thing = instance_create(x,y,PopupText)
+		thing.mytext = "RADS!";
+	}
+	if keyboard_check(ord("R")) {
+	    repeat(50) {
+			instance_create(Player.x,Player.y,Rad);
+	    }
+	}
+	if keyboard_check_pressed(ord("T")) {
+		instance_create(Player.x,Player.y,Portal);
+		thing = instance_create(x,y,PopupText)
+		thing.mytext = "PORTAL!";
+	}
+	if (keyboard_check_pressed(ord("1")))
+	    {
+		    if(wep < 1) {
+				wep = maxwep;
+			} else {
+				wep = wep - 1;
+			}
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
+	    }
+	if (keyboard_check_pressed(ord("2")))
+	    {
+		    if(wep == maxwep) {
+				wep = 0;
+			} else {
+				wep = wep + 1;
+			}
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
+	    }
+	if (keyboard_check_pressed(ord("3")))
+	    {
+		    if(wep - 50 < 0) {
+				wep = maxwep + wep - 50;
+			} else {
+				wep = wep - 50;
+			}
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
+	    }
+	if (keyboard_check_pressed(ord("4")))
+	    {
+		    if(wep + 50 > maxwep ) {
+				wep = 50 + wep - maxwep;
+			} else {
+				wep = wep + 50;
+			}
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
+	    }
+	if (keyboard_check_pressed(ord("F")))
+	    {
+	    repeat(3)
+	    instance_create(Player.x,Player.y,AmmoPickup);
+		thing = instance_create(x,y,PopupText)
+		thing.mytext = "AMMO!";
+	    }
+	if (keyboard_check_pressed(ord("Q")))
+	    {
+	    repeat(3)
+	    instance_create(Player.x,Player.y,HPPickup);
+		thing = instance_create(x,y,PopupText)
+		thing.mytext = "HEALTH!";
+	    }
+	if (keyboard_check_pressed(ord("H")))
+	    {
+		var angle = random(1)*360;
+	    instance_create(x + dcos(angle)*24,y + dsin(angle)*24,HealthChest);
+		thing = instance_create(x + dcos(angle)*24,y + dsin(angle)*24,PopupText);
+		thing.mytext = "MORE HEALTH!";
+	    }
+	if (keyboard_check_pressed(ord("Y")))
+	    {
+	    wepmod1++
+		thing = instance_create(x,y,PopupText)
+		thing.mytext = "WEAPON MOD "+string(wepmod1)+"!";
+	    }
+	if (keyboard_check_pressed(ord("O")))
+	    {
+	    instance_create(x+256,y,IDPDVan);
+		thing = instance_create(x,y,PopupText)
+		thing.mytext = "VAN?";
+	    }
+	if (keyboard_check_pressed(ord("L")))
+	    {
+		var angle = random(1)*360;
+	    instance_create(x + dcos(angle)*24,y + dsin(angle)*24,EliteWeaponChest);
+		thing = instance_create(x + dcos(angle)*24,y + dsin(angle)*24,PopupText);
+		thing.mytext = "ELITE WEAPON CHEST!";
+	    }
+	if (keyboard_check_pressed(ord("G")))
+	    {
+		var angle = random(1)*360;
+	    instance_create(x + dcos(angle)*32,y + dsin(angle)*32,BigWeaponChest);
+		thing = instance_create(x + dcos(angle)*32,y + dsin(angle)*32,PopupText);
+		thing.mytext = "WEAPON CHEST!";
+	    }
+	if (keyboard_check_pressed(vk_delete))
+	    {
+		repeat(15) {
+			var angle = random(1)*360;
+			var explosiondist = 40 + random(50);
+			instance_create(x + dcos(angle)*explosiondist,y + dsin(angle)*explosiondist,SmallExplosion);
+		}
+		repeat(10) {
+			var angle = random(1)*360;
+			var explosiondist = 64 + random(64);
+			instance_create(x + dcos(angle)*explosiondist,y + dsin(angle)*explosiondist,Explosion);
+			thing = instance_create(x + dcos(angle)*explosiondist,y + dsin(angle)*explosiondist,PopupText);
+			thing.mytext = "EXPLOSIONS!";
+		}
+		repeat(15) {
+			var angle = random(1)*360;
+			var explosiondist = 64 + random(80);
+			instance_create(x + dcos(angle)*explosiondist,y + dsin(angle)*explosiondist,Explosion);
+		}
+		repeat(10) {
+			var angle = random(1)*360;
+			var explosiondist = 80 + random(80);
+			instance_create(x + dcos(angle)*explosiondist,y + dsin(angle)*explosiondist,SmallExplosion);
+		}
+		snd_play(sndExplosionXL,0.05);
+		snd_play(sndExplosionL,0.05);
+		snd_play(sndExplosion,0.05);
+		snd_play(sndExplosionS,0.05);
+	}
 //*/    
-        
+}
+
 if speed = 0
 {if sprite_index != spr_hurt
 sprite_index = spr_idle}

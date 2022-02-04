@@ -10,7 +10,7 @@ if point_distance(target.x,target.y,x,y) > 96
 if random(4) < 1
 {
 gunangle = point_direction(x,y,target.x,target.y)
-snd_play(sndEnemyFire)
+snd_play(sndMolefishFire, 0.05)
 wkick = 4
 with instance_create(x,y,EnemyBullet1)
 {

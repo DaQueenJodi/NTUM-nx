@@ -12,7 +12,7 @@ gunangle = point_direction(x,y,target.x,target.y)
 if random(8-ammo) < 1 and ammo > 0
 {
 ammo -= 1
-snd_play(sndEnemyFire)
+snd_play(sndJockFire)
 image_index = 0
 sprite_index = spr_fire
 wkick = 4

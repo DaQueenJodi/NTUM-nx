@@ -10,8 +10,8 @@ spr_walk = sprMolesargeWalk
 spr_hurt = sprMolesargeHurt
 spr_dead = sprMolesargeDead
 
-snd_hurt = sndBanditHit
-snd_dead = sndBanditDie
+snd_hurt = sndMolesargeHurt
+snd_dead = sndMolesargeDie
 
 //behavior
 walk = 0

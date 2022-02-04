@@ -3,6 +3,8 @@ maxhealth = 4;
 meleedamage = 0
 size = 0
 
+hurt_pitch_variation = 0.25;
+
 idle=true;
 spr_idle = sprSheepIdleA
 spr_walk = sprSheepWalk

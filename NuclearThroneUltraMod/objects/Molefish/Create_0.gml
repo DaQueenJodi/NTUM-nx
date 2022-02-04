@@ -11,8 +11,8 @@ spr_hurt = sprMolefishHurt
 spr_dead = sprMolefishDead
 
 
-snd_hurt = sndBanditHit
-snd_dead = sndBanditDie
+snd_hurt = sndMolefishHurt
+snd_dead = sndMolefishDie
 
 //behavior
 walk = 0

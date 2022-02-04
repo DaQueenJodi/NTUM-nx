@@ -11,8 +11,8 @@ spr_hurt = sprJockHurt
 spr_dead = sprJockDead
 spr_fire = sprJockFire
 
-snd_hurt = sndBanditHit
-snd_dead = sndBanditDie
+snd_hurt = sndJockHurt
+snd_dead = sndJockDie
 
 //behavior
 walk = 0

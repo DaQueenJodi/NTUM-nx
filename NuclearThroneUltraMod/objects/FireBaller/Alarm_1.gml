@@ -15,6 +15,7 @@ sprite_index=sprFireBall;
 motion_add(other.direction+180+random(12)-6,3)
 image_angle = direction
 team = other.team
+snd_play(sndFireballerFire, 0.05)
 }
 image_index = 0
 sprite_index = spr_fire

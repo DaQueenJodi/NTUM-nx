@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "musBoss7",
-  "duration": 0.0,
+  "duration": 78.54547,
   "parent": {
     "name": "Music & amb",
     "path": "folders/Sounds/Music & amb.yy",

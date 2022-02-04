@@ -4,6 +4,7 @@ meleedamage = 0
 size = 1
 scrWeapons();
 
+hurt_pitch_variation = 0.1;
 
 raddrop=28;
 

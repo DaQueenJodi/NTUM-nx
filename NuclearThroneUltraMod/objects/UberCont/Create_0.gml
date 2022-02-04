@@ -1,6 +1,6 @@
 //VERSION STUFF ETC.
 win8 = 1;
-version = 000//23 is final probably
+version = 001//23 is final probably
 public = 0//1 is no cheats and release
 //if file_exists("icheat.txt") or file_exists("ICHEAT.txt") or file_exists("ICHEAT.TXT") or file_exists("icheat.TXT")
 //public = 0

@@ -14,8 +14,8 @@ spr_hurt = sprInvertedSuperFireBallerHurt
 spr_dead = sprInvertedSuperFireBallerDead
 spr_fire = sprInvertedSuperFireBallerFire
 
-
-snd_dead = sndFrogExplode
+snd_hurt = sndSuperFireballerHurt
+snd_dead = sndSuperFireballerDie
 
 //behavior
 alarm[1] = 30+random(60)

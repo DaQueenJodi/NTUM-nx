@@ -1,5 +1,7 @@
 raddrop = 4
 
+hurt_pitch_variation = 0;
+
 if instance_exists(Player)
 {
 if Player.ultra_got[37]==1//Rebel Ultra A Personal Guard

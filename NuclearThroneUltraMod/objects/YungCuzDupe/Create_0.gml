@@ -1,6 +1,8 @@
 friction = 0.45
 image_speed = 0.4
 
+hurt_pitch_variation = 0;
+
 hardshell=true;
 isAlkaline=false;
 //scrRaces()

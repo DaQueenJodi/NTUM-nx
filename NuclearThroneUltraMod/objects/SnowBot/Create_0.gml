@@ -20,5 +20,4 @@ walk = 0
 gunangle = random(360)
 alarm[1] = 80
 
-
-
+hurt_pitch_variation = 0.1
