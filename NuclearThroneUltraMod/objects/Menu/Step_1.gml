@@ -11,14 +11,17 @@ if alarm[0] > 0
 alarm[0] = 1
 }
 
-num = 0
+num = 14
 dix = 0
 diy = 0
 repeat(racemax+1)
 {
-with instance_create(0,0,CharSelect)
-num = other.num
-num += 1
+	with instance_create(0,0,CharSelect)
+	num = other.num
+	if (num == racemax) {
+		num = -1;
+	}
+	num += 1;
 }
 instance_create(x,y,LoadoutSelect);
 instance_create(x,y,CreditsSelect)
