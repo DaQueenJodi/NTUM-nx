@@ -14,8 +14,8 @@ if atk=2//BLUE BALL OF FIRE!
     image_index=0;
     sprite_index=spr_fire;
     alarm[1]=10;
-
-    direction = point_direction(x,y,target.x,target.y)//backup backup
+	if (target != -1 && instance_exists(target))
+		direction = point_direction(x,y,target.x,target.y)//backup backup
     BackCont.shake += 10
     snd_play(sndDragonStop)
     repeat(12)
@@ -43,8 +43,8 @@ appear=true;
     image_index=0;
     sprite_index=spr_fire;
     alarm[1]=11;
-
-    direction = point_direction(x,y,target.x,target.y)//BACK UP
+	if (target != -1 && instance_exists(target))
+		direction = point_direction(x,y,target.x,target.y)//BACK UP
     BackCont.shake += 10
     snd_play(sndDragonStop)
     repeat(12)

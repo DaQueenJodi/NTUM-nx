@@ -9,6 +9,7 @@ function scrCompletionPercentage() {
 
 	//gamemodes
 	everything+=(maxgamemode)*6//21
+	everything -= 6;//Final 100% unlock does not count
 
 	//characters
 	everything+=racemax*30;//characters are priority
@@ -20,26 +21,7 @@ function scrCompletionPercentage() {
 	everything+=racemax*12;
 
 	//golden weapons
-	everything+=(maxstartwep*racemax);//Starting weapons only count as 1/4th unlock
-	//everything-=racemax//Don't count the starting revolvers
-
-	//Golden weapons
-	/*var countrace=0;
-	var countstartwep=0;
-
-	repeat(racemax)
-	{
-	countstartwep=0;
-	repeat(maxstartwep)
-	{
-
-	everything+=0.25//starting weapons count less
-
-	countstartwep++;
-	}
-	countrace++;
-	}*/
-
+	everything+=((maxstartwep-1)*(racemax-1));//Starting weapons only count as 1/4th unlock
 
 
 	unlocked = 0;
@@ -47,15 +29,13 @@ function scrCompletionPercentage() {
 
 	//gamemodes
 	var countgamemode=1;
-
 	repeat(maxgamemode)
 	{
-	if gamemode_have[countgamemode] = 1
-	unlocked+=6
+	if gamemode_have[countgamemode] = 1 && countgamemode != 17
+		unlocked+=6
 
 	countgamemode++;
 	}
-
 
 	//characters
 	var countrace=1;
@@ -67,7 +47,6 @@ function scrCompletionPercentage() {
 
 	countrace++;
 	}
-
 	//skins
 
 	var countrace=1;
@@ -80,7 +59,6 @@ function scrCompletionPercentage() {
 
 	countrace++;
 	}
-
 	var countrace=1;
 
 	repeat(racemax)
@@ -91,54 +69,29 @@ function scrCompletionPercentage() {
 
 	countrace++;
 	}
-
-
-
 	//Golden weapons
 	var countrace=1;
 	var countstartwep=1;
-
-	repeat(racemax)
+	var totalStartWeps = 0;
+	repeat(racemax-1)
 	{
 	countstartwep=1;
-	repeat(maxstartwep)
+	repeat(maxstartwep-1)
 	{
 
-	if start_wep_have[countstartwep,countrace] = 1
-	unlocked+=1//starting weapons count less
-
+	if start_wep_have[countstartwep,countrace] == 1
+		unlocked+=1//starting weapons count less
+	
+	totalStartWeps++;
 	countstartwep++;
 	}
 	countrace++;
 	}
-	/*everything-=racemax*0.25;//Don't count the first starting weapons for each character
-	everything-=maxstartwep//dont count randoms starting weapons
-	//everything-=10//dont count random as a character
-	everything-=20;//Fish and Crystal are unlocked from the start
-	everything-=1;//Normal gamemode
-
-	//unlocked-=racemax*0.25;//Don't count the first starting weapons for each character
-	unlocked-=20;//Fish and Crystal are unlocked from the start
-	unlocked-=1;//Normal gamemode
-	*/
-	everything-=60;
-	unlocked-=60;
-
-	if (    ( (unlocked+1)/everything)*100>=100   )
-	{//100% unlock!
-	scrUnlockGameMode(17,"FOR UNLOCKING EVERYTHING!#CONGRATULATIONS! U R DA BEST! <3");
-	}
-
-	//everything-=7.75;
-
-	var percentage;//part divided by total = %
+	var percentage;
 	percentage=round( (unlocked/everything)*100 );
-
-	//5.75=(unlocked/338.75)*100
-
+	if (percentage>=100)
+	{//100% unlock!
+		scrUnlockGameMode(17,"FOR UNLOCKING EVERYTHING!#CONGRATULATIONS! U R DA BEST! <3");
+	}
 	return percentage;
-
-
-
-
 }

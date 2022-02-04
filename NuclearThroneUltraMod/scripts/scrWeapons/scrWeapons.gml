@@ -3377,9 +3377,9 @@ function scrWeapons() {
 	wep_type[306] = 1
 	wep_auto[306] = 0
 	wep_load[306] = 14
-	wep_cost[306] = 5
+	wep_cost[306] = 8
 	wep_sprt[306] = sprBulletDisperseGun
-	wep_area[306] = 4
+	wep_area[306] = 5
 	wep_text[306] = "no sense was made"
 	wep_swap[306] = sndSwapPistol
 	wep_rad[306] = 0;
@@ -3399,9 +3399,9 @@ function scrWeapons() {
 	wep_type[308] = 1
 	wep_auto[308] = 1
 	wep_load[308] = 4
-	wep_cost[308] = 9
+	wep_cost[308] = 10
 	wep_sprt[308] = sprBulletDisperseMachinegun
-	wep_area[308] = 8
+	wep_area[308] = 9
 	wep_text[308] = "rapid fire goodness"
 	wep_swap[308] = sndSwapPistol
 	wep_rad[308] = 0;
@@ -3410,9 +3410,9 @@ function scrWeapons() {
 	wep_type[309] = 1
 	wep_auto[309] = 0
 	wep_load[309] = 12
-	wep_cost[309] = 5
+	wep_cost[309] = 7
 	wep_sprt[309] = sprPopDisperseGun
-	wep_area[309] = 5
+	wep_area[309] = 6
 	wep_text[309] = "no sense was made"
 	wep_swap[309] = sndSwapShotgun
 	wep_rad[309] = 0;
@@ -3421,9 +3421,9 @@ function scrWeapons() {
 	wep_type[310] = 5
 	wep_auto[310] = 0
 	wep_load[310] = 12
-	wep_cost[310] = 5
+	wep_cost[310] = 6
 	wep_sprt[310] = sprLaserDisperseGun
-	wep_area[310] = 7
+	wep_area[310] = 8
 	wep_text[310] = "no sense was made"
 	wep_swap[310] = sndSwapEnergy
 	wep_rad[310] = 0;
@@ -3531,9 +3531,9 @@ function scrWeapons() {
 	wep_type[320] = 4
 	wep_auto[320] = 0
 	wep_load[320] = 46
-	wep_cost[320] = 10
+	wep_cost[320] = 12
 	wep_sprt[320] = sprDisperseBazooka
-	wep_area[320] = 9
+	wep_area[320] = 10
 	wep_text[320] = "medicinal herb gun"
 	wep_swap[320] = sndSwapExplosive
 	wep_rad[320] = 0;
@@ -3686,9 +3686,9 @@ function scrWeapons() {
 	wep_type[334] = 4
 	wep_auto[334] = 0
 	wep_load[334] = 11
-	wep_cost[334] = 1
+	wep_cost[334] = 2
 	wep_sprt[334] = sprIonBomb
-	wep_area[334] = 4
+	wep_area[334] = 6
 	wep_text[334] = "explosions out of nowhere"
 	wep_swap[334] = sndSwapExplosive
 	wep_rad[334] = 0;
@@ -3873,9 +3873,9 @@ function scrWeapons() {
 	wep_type[351] = 1
 	wep_auto[351] = 0
 	wep_load[351] = 14
-	wep_cost[351] = 20
+	wep_cost[351] = 22
 	wep_sprt[351] = sprBulletDisperseDisperseGun
-	wep_area[351] = 10
+	wep_area[351] = 12
 	wep_text[351] = "disperse it all!"
 	wep_swap[351] = sndSwapPistol
 	wep_rad[351] = 0;
@@ -3945,8 +3945,111 @@ function scrWeapons() {
 	wep_text[357] = "slimeballs"
 	wep_swap[357] = sndSwapExplosive
 	wep_rad[357] = 0;
+	
+	/*
+	wep_name[358] = "LASER BOMB"
+	wep_type[358] = 4
+	wep_auto[358] = 0
+	wep_load[358] = 25
+	wep_cost[358] = 4
+	wep_sprt[358] = sprHeavyNader
+	wep_area[358] = 14
+	wep_text[358] = "lime light show"
+	wep_swap[358] = sndSwapExplosive
+	wep_rad[358] = 0;
+	*/
+	
+	/*
+	wep_name[359] = "FLAIL"
+	wep_type[359] = 3
+	wep_auto[359] = 0
+	wep_load[359] = 25
+	wep_cost[359] = 4
+	wep_sprt[359] = sprHeavyNader
+	wep_area[359] = 8
+	wep_text[359] = "nuclearvenia"
+	wep_swap[359] = sndSwapBow
+	wep_rad[359] = 0;
+	*/
 
-
+	/*
+	wep_name[360] = "TRIPWIRE"
+	wep_type[360] = 5
+	wep_auto[360] = 0
+	wep_load[360] = 25
+	wep_cost[360] = 4
+	wep_sprt[360] = sprHeavyNader
+	wep_area[360] = 5
+	wep_text[360] = "connect the dots"
+	wep_swap[360] = sndSwapEnergy
+	wep_rad[360] = 0;
+	*/
+	
+	/*
+	wep_name[360] = "SPLINTER SHOTGUN"
+	wep_type[360] = 3
+	wep_auto[360] = 0
+	wep_load[360] = 25
+	wep_cost[360] = 4
+	wep_sprt[360] = sprHeavyNader
+	wep_area[360] = 0
+	wep_text[360] = "nailgun"
+	wep_swap[360] = sndSwapBow
+	wep_rad[360] = 0;
+	*/
+	
+	/*
+	wep_name[360] = "SPIKE BOMB"
+	wep_type[360] = 3
+	wep_auto[360] = 0
+	wep_load[360] = 25
+	wep_cost[360] = 1
+	wep_sprt[360] = sprHeavyNader
+	wep_area[360] = 3
+	wep_text[360] = "scrappy"
+	wep_swap[360] = sndSwapBow
+	wep_rad[360] = 0;
+	*/
+	
+	/*
+	wep_name[360] = "BOUNCER PISTOL"
+	wep_type[360] = 1
+	wep_auto[360] = 0
+	wep_load[360] = 25
+	wep_cost[360] = 1
+	wep_sprt[360] = sprHeavyNader
+	wep_area[360] = 0
+	wep_text[360] = "hey how you doing"
+	wep_swap[360] = sndSwapBullet
+	wep_rad[360] = 0;
+	*/
+	
+	/*
+	wep_name[360] = "OCEAN GRENADE"
+	wep_type[360] = 4
+	wep_auto[360] = 0
+	wep_load[360] = 25
+	wep_cost[360] = 1
+	wep_sprt[360] = sprHeavyNader
+	wep_area[360] = 4
+	wep_text[360] = "scrappy"
+	wep_swap[360] = sndSwapExplosive
+	wep_rad[360] = 0;
+	*/
+	
+	/*
+	wep_name[360] = "KRAKEN DISPERSE GUN"
+	wep_type[360] = 4
+	wep_auto[360] = 0
+	wep_load[360] = 25
+	wep_cost[360] = 1
+	wep_sprt[360] = sprHeavyNader
+	wep_area[360] = 9
+	wep_text[360] = "mobilize the kraken!"
+	wep_swap[360] = sndSwapExplosive
+	wep_rad[360] = 0;
+	*/
+	
 	maxwep = 357
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy

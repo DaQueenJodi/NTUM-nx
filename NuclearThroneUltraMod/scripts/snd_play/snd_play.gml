@@ -1,4 +1,5 @@
-function snd_play(argument0, randompitch = 0) {
+
+function snd_play(argument0, randompitch = 0, cancelPrev = false) {
 	//SS_Init();
 	if argument0==sndHitWall||argument0==sndShotgunHitWall{
 	if !sound_isplaying(argument0){
@@ -6,7 +7,7 @@ function snd_play(argument0, randompitch = 0) {
 	audio_play_sound(argument0,100,0)}
 	}
 
-	if UberCont.win8 = 1
+	if UberCont.win8 = 1 || cancelPrev
 	audio_stop_sound(argument0);
 
 

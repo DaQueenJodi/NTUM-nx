@@ -226,16 +226,16 @@ function scrUltras() {
     
 	//SHEEP 
 	ultra_name[49] = "UNSTOPPABLE"
-	ultra_text[49] = "ENEMIES DON'T STOP YOU#WHILE CHARGING#CHARGING DOES MORE DAMAGE"
-	ultra_tips[49] = "what a beast"
+	ultra_text[49] = "CHANGE CHARGE TO A POWERFULL HYPERDASH#THAT COSTS AMMO TO USE"
+	ultra_tips[49] = "the fluffy blur"
 
 	ultra_name[50] = "JUST A SHEEP"
 	ultra_text[50] = "ENEMIES DONT ATTACK UNTILL#MULTIPLE ENEMIES HAVE DIED"
 	ultra_tips[50] = "they're stoopid"
 
 	ultra_name[51] = "IMPENETRABLE"
-	ultra_text[51] = "CHARGING REFLECTS ENEMY PROJECTILES#MOVE THROUGH 10 MORE PROJECTILES"
-	ultra_tips[51] = "stacks with thronebutt"
+	ultra_text[51] = "BETTER CHARGE!#CHARGING REFLECTS ENEMY PROJECTILES"
+	ultra_tips[51] = "what a beast"
 
 	ultra_name[52] = "FLUFFY"//this is actually insane with impact wrists
 	ultra_text[52] = "CORPSES FLOAT#CORPSE COLLISION#CAN CAUSES BLOOD EXPLOSIONS#EVERYTHING THAT DIES#TURNS INTO A SHEEP"

@@ -446,6 +446,24 @@ function scrPopEnemies() {
 	instance_create(x+16,y+16,choose(Bandit,LaserBandit,EraserBandit,LaserBandit,BanditInverted,Thief,JungleBandit))}
 	}
 	}
+	
+	if spawnarea == 9
+	{
+		if styleb = 1
+		{
+		instance_create(x+16,y+16,choose(EraserBandit,Thief,Thief,Thief))
+		}
+		else
+		{
+			var ran = random(100);
+			
+			if ran > 80
+			{
+				instance_create(x+16,y+16,choose(PalaceGuardian,PalaceGuardian,PalaceGuardian,PalaceGuardian))	
+			}
+		}
+		
+	}
 
 
 

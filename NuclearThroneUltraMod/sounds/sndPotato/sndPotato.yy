@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndPotato",
-  "duration": 0.0,
+  "duration": 0.84619,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

@@ -16,6 +16,7 @@ markforhpreduction=false;//used by skeleton to bypass immunity frames
 raddrop = 0;
 hurtDuration = 15;//Additional iframes
 hurtTime = 0;
+lockoutElementor = false;//When no ammo lockout ability for elementor
 
 if instance_exists(BackCont)
 BackCont.alarm[4]=10;
@@ -420,9 +421,8 @@ maxarmour=-1;
 }
 
 //sheep
-stormDirection=direction;
 sheepPower=0;
-sheepRight=1;
+sheepPowerToHaveEffect = 4;
 if race=13{
 justAsheep=true;}
 else{

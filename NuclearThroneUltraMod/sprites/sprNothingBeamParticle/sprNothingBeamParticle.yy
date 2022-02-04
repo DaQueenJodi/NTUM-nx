@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "TheThrone",
-    "path": "folders/Palace/Palace Enemy/TheThrone.yy",
+    "path": "folders/Sprites/Palace/Palace Enemy/TheThrone.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprNothingBeamParticle",

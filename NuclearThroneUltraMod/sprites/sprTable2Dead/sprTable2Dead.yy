@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Props",
-    "path": "folders/Palace/PalaceEnviroment/Props.yy",
+    "path": "folders/Sprites/Palace/PalaceEnviroment/Props.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprTable2Dead",

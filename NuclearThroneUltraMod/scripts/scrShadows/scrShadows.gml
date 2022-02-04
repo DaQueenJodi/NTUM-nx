@@ -15,14 +15,14 @@ function scrShadows() {
 	with Wall
 	{
 	//if place_meeting(x,y+16,Floor)
-	if !place_meeting(x,y+16,Top) and !place_meeting(x,y+16,TopSmall)
-	draw_sprite_ext(outspr,outindex,x-__view_get( e__VW.XView, 0 ),y+2+16-__view_get( e__VW.YView, 0 ),1,-1,0,c_black,1)
+	if place_meeting(x,y+16,Floor)//!place_meeting(x,y+16,Top) and !place_meeting(x,y+16,TopSmall) && place_meeting(x,y+16,Floor)
+		draw_sprite_ext(outspr,outindex,x-__view_get( e__VW.XView, 0 ),y+2+16-__view_get( e__VW.YView, 0 ),1,-1,0,c_black,1)
 	}
 	with VikingWall
 	{
 	//if place_meeting(x,y+16,Floor)
-	if !place_meeting(x,y+16,Top) and !place_meeting(x,y+16,TopSmall)
-	draw_sprite_ext(outspr,outindex,x-__view_get( e__VW.XView, 0 ),y+2+16-__view_get( e__VW.YView, 0 ),1,-1,0,c_black,1)
+		if !place_meeting(x,y+16,Top) and !place_meeting(x,y+16,TopSmall)
+			draw_sprite_ext(outspr,outindex,x-__view_get( e__VW.XView, 0 ),y+2+16-__view_get( e__VW.YView, 0 ),1,-1,0,c_black,1)
 	}
 	with Bones
 	draw_sprite_ext(sprite_index,image_index,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+8,image_xscale,-1,0,c_black,1)
@@ -198,9 +198,12 @@ function scrShadows() {
 	with CampChar
 	{
 	if num = 17
-	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )-3)
+		draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )-3)
+	else if num == 20
+		draw_sprite(shd72,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )-16)
 	else if !(num = 15 && sprite_index=spr_slct )
-	draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+		draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+	
 	}
 	with prop
 	draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))

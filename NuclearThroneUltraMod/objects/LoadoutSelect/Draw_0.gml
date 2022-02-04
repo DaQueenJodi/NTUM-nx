@@ -59,7 +59,7 @@ if skin=1 && UberCont.race_bskin[race]=1
 {//you have this one
 draw_text_color(__view_get( e__VW.XView, 0 )+6,__view_get( e__VW.YView, 0 )+96,string_hash_to_newline("SKIN: B"),c_black,c_black,c_black,c_black,1);
 draw_text_color(__view_get( e__VW.XView, 0 )+7,__view_get( e__VW.YView, 0 )+95,string_hash_to_newline("SKIN: B"),c_white,c_white,c_white,c_white,1);
-drawMenuBSkin(skin,race);
+drawMenuBSkin(skin,race,c_white);
 }
 else if skin = 1
 {//you DONT have this one
@@ -70,15 +70,13 @@ draw_sprite(sprLocked,0,__view_get( e__VW.XView, 0 )+7+string_width(string_hash_
 
 draw_text_color(__view_get( e__VW.XView, 0 )+7,__view_get( e__VW.YView, 0 )+112+string_height(string_hash_to_newline(race_bskin_lock[race])),string_hash_to_newline(race_bskin_lock[race]),c_black,c_black,c_black,c_black,1);
 draw_text_color(__view_get( e__VW.XView, 0 )+7,__view_get( e__VW.YView, 0 )+110+string_height(string_hash_to_newline(race_bskin_lock[race])),string_hash_to_newline(race_bskin_lock[race]),c_white,c_white,c_white,c_white,1);
-draw_set_color(c_black);
-drawMenuBSkin(skin,race);
-draw_set_color(c_white);
+drawMenuBSkin(skin,race,c_black);
 }
 else if skin=2 && UberCont.race_cskin[race]=1
 {//you have this one
 draw_text_color(__view_get( e__VW.XView, 0 )+6,__view_get( e__VW.YView, 0 )+96,string_hash_to_newline("SKIN: C"),c_black,c_black,c_black,c_black,1);
 draw_text_color(__view_get( e__VW.XView, 0 )+7,__view_get( e__VW.YView, 0 )+95,string_hash_to_newline("SKIN: C"),c_white,c_white,c_white,c_white,1);
-drawMenuBSkin(skin,race);
+drawMenuBSkin(skin,race,c_white);
 }
 else if skin = 2
 {//you DONT have this one
@@ -90,9 +88,7 @@ draw_sprite(sprLocked,0,__view_get( e__VW.XView, 0 )+7+string_width(string_hash_
 draw_text_color(__view_get( e__VW.XView, 0 )+7,__view_get( e__VW.YView, 0 )+112+string_height(string_hash_to_newline(race_cskin_lock[race])),string_hash_to_newline(race_cskin_lock[race]),c_black,c_black,c_black,c_black,1);
 draw_text_color(__view_get( e__VW.XView, 0 )+7,__view_get( e__VW.YView, 0 )+110+string_height(string_hash_to_newline(race_cskin_lock[race])),string_hash_to_newline(race_cskin_lock[race]),c_white,c_white,c_white,c_white,1);
 
-draw_set_color(c_black);
-drawMenuBSkin(skin,race);
-draw_set_color(c_white);
+drawMenuBSkin(skin,race,c_black);
 }
 else
 {

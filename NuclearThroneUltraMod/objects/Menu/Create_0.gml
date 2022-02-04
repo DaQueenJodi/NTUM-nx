@@ -375,7 +375,7 @@ extra = 0
 alarm[0] = 20
 
 
-thanks = "VLAMBEER#EVERYONE THAT#WORKED ON #THE ORIGINAL#STREAMERS&YOUTUBERS#@yyLarsyy FOR SOME#SFX AND ART#REDDIT: #ULTRA MUTATION ART:#Lynzkar#skurleton#@BioOnPC#HUNTER ART#& CHICKEN BSKIN:#NotYourSagittarius#Lunarshards#ALL PLAYERS###"
+thanks = "VLAMBEER##MOD REVIVAL#STARTED BY:#base4/spencers145#BUGFIXES:#base4/spencers145##SFX AND ART#@larje100##REDDIT: #ULTRA MUTATION ART:#Lynzkar#skurleton#@BioOnPC#HUNTER ART#& CHICKEN BSKIN:#NotYourSagittarius#Lunarshards####FOLLOW ON TWITTER<3"
 
 alarm[1] = 20
 

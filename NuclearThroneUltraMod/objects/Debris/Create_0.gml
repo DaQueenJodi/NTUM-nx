@@ -17,6 +17,7 @@ case 5:sprite_index = sprDebris5; break;
 case 6:sprite_index = sprDebris6; break;
 case 7:sprite_index = sprDebris7; break;
 case 8:sprite_index = sprDebris8; break;
+case 9:sprite_index = sprDebris9; break;
 case 100:sprite_index = sprDebris100; break;
 case 102:sprite_index = sprDebris102; break;
 case 103:sprite_index = sprDebris103; break;

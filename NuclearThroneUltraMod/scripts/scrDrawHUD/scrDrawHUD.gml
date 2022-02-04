@@ -133,9 +133,10 @@ function scrDrawHUD() {
 	{
 	draw_set_halign(fa_left)
 	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+130,__view_get( e__VW.YView, 0 )+22,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.cwep]])))
-	draw_text(__view_get( e__VW.XView, 0 )+131,__view_get( e__VW.YView, 0 )+22,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.cwep]])))
-	draw_text(__view_get( e__VW.XView, 0 )+131,__view_get( e__VW.YView, 0 )+21,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.cwep]])))
+	var cAmmo = string(round(Player.ammo[Player.wep_type[Player.cwep]]));
+	draw_text(__view_get( e__VW.XView, 0 )+130,__view_get( e__VW.YView, 0 )+22,cAmmo)
+	draw_text(__view_get( e__VW.XView, 0 )+131,__view_get( e__VW.YView, 0 )+22,cAmmo)
+	draw_text(__view_get( e__VW.XView, 0 )+131,__view_get( e__VW.YView, 0 )+21,cAmmo)
 	if Player.wep_type[Player.wep] = Player.wep_type[Player.cwep]
 	draw_set_color(c_white)
 	else
@@ -147,9 +148,9 @@ function scrDrawHUD() {
 	else
 	draw_set_color(c_gray)
 	}
-	if Player.ammo[Player.wep_type[Player.cwep]] = 0
+	if Player.ammo[Player.wep_type[Player.cwep]] <= 0
 	draw_set_color(c_dkgray)
-	draw_text(__view_get( e__VW.XView, 0 )+130,__view_get( e__VW.YView, 0 )+21,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.cwep]])))
+	draw_text(__view_get( e__VW.XView, 0 )+130,__view_get( e__VW.YView, 0 )+21,cAmmo)
 	}
 	}}
 
@@ -190,9 +191,10 @@ function scrDrawHUD() {
 	{
 	draw_set_halign(fa_left)
 	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+86,__view_get( e__VW.YView, 0 )+22,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.bwep]])))
-	draw_text(__view_get( e__VW.XView, 0 )+87,__view_get( e__VW.YView, 0 )+22,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.bwep]])))
-	draw_text(__view_get( e__VW.XView, 0 )+87,__view_get( e__VW.YView, 0 )+21,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.bwep]])))
+	var bAmmo = string(round(Player.ammo[Player.wep_type[Player.bwep]]))
+	draw_text(__view_get( e__VW.XView, 0 )+86,__view_get( e__VW.YView, 0 )+22,bAmmo)
+	draw_text(__view_get( e__VW.XView, 0 )+87,__view_get( e__VW.YView, 0 )+22,bAmmo)
+	draw_text(__view_get( e__VW.XView, 0 )+87,__view_get( e__VW.YView, 0 )+21,bAmmo)
 	if Player.race = 7 or Player.wep_type[Player.wep] = Player.wep_type[Player.bwep]
 	draw_set_color(c_white)
 	else
@@ -204,9 +206,9 @@ function scrDrawHUD() {
 	else
 	draw_set_color(c_gray)
 	}
-	if Player.ammo[Player.wep_type[Player.bwep]] = 0
+	if Player.ammo[Player.wep_type[Player.bwep]] <= 0
 	draw_set_color(c_dkgray)
-	draw_text(__view_get( e__VW.XView, 0 )+86,__view_get( e__VW.YView, 0 )+21,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.bwep]])))
+	draw_text(__view_get( e__VW.XView, 0 )+86,__view_get( e__VW.YView, 0 )+21,bAmmo)
 	}
 	}
 
@@ -242,18 +244,19 @@ function scrDrawHUD() {
 
 	if Player.wep_type[Player.wep] != 0
 	{
+	var aAmmo = string(round(Player.ammo[Player.wep_type[Player.wep]]))
 	draw_set_halign(fa_left)
 	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+42,__view_get( e__VW.YView, 0 )+22,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.wep]])))
-	draw_text(__view_get( e__VW.XView, 0 )+43,__view_get( e__VW.YView, 0 )+22,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.wep]])))
-	draw_text(__view_get( e__VW.XView, 0 )+43,__view_get( e__VW.YView, 0 )+21,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.wep]])))
+	draw_text(__view_get( e__VW.XView, 0 )+42,__view_get( e__VW.YView, 0 )+22,aAmmo)
+	draw_text(__view_get( e__VW.XView, 0 )+43,__view_get( e__VW.YView, 0 )+22,aAmmo)
+	draw_text(__view_get( e__VW.XView, 0 )+43,__view_get( e__VW.YView, 0 )+21,aAmmo)
 
 	draw_set_color(c_white)
 	if Player.ammo[Player.wep_type[Player.wep]] <= Player.typ_ammo[Player.wep_type[Player.wep]]
 	draw_set_color(c_red)
-	if Player.ammo[Player.wep_type[Player.wep]] = 0
+	if Player.ammo[Player.wep_type[Player.wep]] <= 0
 	draw_set_color(c_dkgray)
-	draw_text(__view_get( e__VW.XView, 0 )+42,__view_get( e__VW.YView, 0 )+21,string_hash_to_newline(string(Player.ammo[Player.wep_type[Player.wep]])))
+	draw_text(__view_get( e__VW.XView, 0 )+42,__view_get( e__VW.YView, 0 )+21,aAmmo)
 	}
 
 

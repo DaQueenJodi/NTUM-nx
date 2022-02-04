@@ -4,7 +4,7 @@ with other
 {
 var immune;
 immune = 0
-if object_index=Player//optimise variable_local_exists("skill_got")
+if object_index=Player
 {
 if skill_got[14] = 1{
 immune = 1

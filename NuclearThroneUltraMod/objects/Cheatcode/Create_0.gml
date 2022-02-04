@@ -1,0 +1,12 @@
+/// @description Cheatcode
+hundredPercent = [];
+hundredPercent[0] = vk_up;
+hundredPercent[1] = vk_up;
+hundredPercent[2] = vk_down;
+hundredPercent[3] = vk_down;
+hundredPercent[4] = vk_left;
+hundredPercent[5] = vk_right;
+hundredPercent[6] = vk_left;
+hundredPercent[7] = vk_right;
+hundredPercentI = 0;
+sequenceDelay = 60;

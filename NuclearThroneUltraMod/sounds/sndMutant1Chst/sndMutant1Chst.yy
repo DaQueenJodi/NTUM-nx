@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "Fish",
-    "path": "folders/Sounds/Fish.yy",
+    "path": "folders/Sounds/Player/Fish.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndMutant1Chst",

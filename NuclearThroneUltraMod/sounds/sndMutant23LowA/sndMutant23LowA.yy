@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "Frog",
-    "path": "folders/Sounds/Frog.yy",
+    "path": "folders/Sounds/Player/Frog.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndMutant23LowA",

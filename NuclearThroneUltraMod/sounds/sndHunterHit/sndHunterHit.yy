@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "Hunter",
-    "path": "folders/Sounds/Hunter.yy",
+    "path": "folders/Sounds/Player/Hunter.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndHunterHit",

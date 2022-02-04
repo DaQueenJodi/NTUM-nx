@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Player Character",
+    "path": "folders/Scripts/Player Character.yy",
   },
   "resourceVersion": "1.0",
   "name": "scrHumphryHit",

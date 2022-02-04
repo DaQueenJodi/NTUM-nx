@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Palace Enemy",
-    "path": "folders/Palace/Palace Enemy.yy",
+    "path": "folders/Sprites/Palace/Palace Enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprDogGuardianCharge",

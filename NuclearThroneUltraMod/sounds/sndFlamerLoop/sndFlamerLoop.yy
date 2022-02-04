@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndFlamerLoop",
-  "duration": 0.0,
+  "duration": 5.900499,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

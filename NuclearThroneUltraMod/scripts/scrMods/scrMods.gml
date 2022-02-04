@@ -1,7 +1,6 @@
 function scrMods() {
 	//List of mods here
 	return irandom_range(1,15);
-
 	/*
 	1. Toxic
 	2. Flame
@@ -18,10 +17,5 @@ function scrMods() {
 	13. Homing
 	14. Radiation
 	15. Splinter
-	16. Morph
-
 	*/
-
-
-
 }

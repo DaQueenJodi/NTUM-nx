@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "Crystal",
-    "path": "folders/Sounds/Crystal.yy",
+    "path": "folders/Sounds/Player/Crystal.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndCrystalJuggerNaut",

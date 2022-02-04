@@ -55,7 +55,7 @@ function scrTips() {
 	choose("try new weapons",
 	"this mod has been build up#from update 19",
 	"don't be a dirty casual",
-	"humphry can run",
+	"humphry can't run",
 	"atom can teleport",
 	"fish can walk",
 	"be a nice person",
@@ -214,7 +214,8 @@ function scrTips() {
 	tip = choose("BAAHHH","farmville","don't mess with me"
 	,"BAAAA","BAHHH","moo?","silence of the lamb","just a sheep","peacefull"
 	,"shaun the sheep","sheeps don't harm people","shawarma","charge allows you#to move through#some projectiles",
-	"charge increases damage#the longer you charge it","while tackling#you don't take#contact damage","you are immune#while charging"
+	"charge increases damage#the longer you charge it","while charging#at high speed#you don't take#contact damage","you are immune#while charging#at high speed",
+	"extra feet and gamma guts#buff your charge","eat grass"
 	)
 
 	if Player.race = 14//panda

@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "Chicken",
-    "path": "folders/Sounds/Chicken.yy",
+    "path": "folders/Sounds/Player/Chicken.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndMutant9LowH",
