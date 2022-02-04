@@ -18,8 +18,15 @@ if alarm[4]>0//boiling veins
 {
 instance_create(x+random(12)-6,y+random(12)-6,Smoke);
 }
+
 if UberCont.public=0 {
 //hacks
+	if keyboard_check_pressed(ord("C")) {
+		var dangle = random(1)*360;
+	    instance_create(x + dcos(dangle)*48,y + dsin(dangle)*48,ExplosiveSheep);
+		thing = instance_create(x + dcos(dangle)*48,y + dsin(dangle)*48,PopupText);
+		thing.mytext = "SHEEP?";
+	}
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
 		thing.mytext = "RADS!";
@@ -90,9 +97,9 @@ if UberCont.public=0 {
 	    }
 	if (keyboard_check_pressed(ord("H")))
 	    {
-		var angle = random(1)*360;
-	    instance_create(x + dcos(angle)*24,y + dsin(angle)*24,HealthChest);
-		thing = instance_create(x + dcos(angle)*24,y + dsin(angle)*24,PopupText);
+		var dangle = random(1)*360;
+	    instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,HealthChest);
+		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
 		thing.mytext = "MORE HEALTH!";
 	    }
 	if (keyboard_check_pressed(ord("Y")))
@@ -109,41 +116,41 @@ if UberCont.public=0 {
 	    }
 	if (keyboard_check_pressed(ord("L")))
 	    {
-		var angle = random(1)*360;
-	    instance_create(x + dcos(angle)*24,y + dsin(angle)*24,EliteWeaponChest);
-		thing = instance_create(x + dcos(angle)*24,y + dsin(angle)*24,PopupText);
+		var dangle = random(1)*360;
+	    instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,EliteWeaponChest);
+		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
 		thing.mytext = "ELITE WEAPON CHEST!";
 	    }
 	if (keyboard_check_pressed(ord("G")))
 	    {
-		var angle = random(1)*360;
-	    instance_create(x + dcos(angle)*32,y + dsin(angle)*32,BigWeaponChest);
-		thing = instance_create(x + dcos(angle)*32,y + dsin(angle)*32,PopupText);
+		var dangle = random(1)*360;
+	    instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,BigWeaponChest);
+		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
 		thing.mytext = "WEAPON CHEST!";
 	    }
 	if (keyboard_check_pressed(vk_delete))
 	    {
 		repeat(15) {
-			var angle = random(1)*360;
+			var dangle = random(1)*360;
 			var explosiondist = 40 + random(50);
-			instance_create(x + dcos(angle)*explosiondist,y + dsin(angle)*explosiondist,SmallExplosion);
+			instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,SmallExplosion);
 		}
 		repeat(10) {
-			var angle = random(1)*360;
+			var dangle = random(1)*360;
 			var explosiondist = 64 + random(64);
-			instance_create(x + dcos(angle)*explosiondist,y + dsin(angle)*explosiondist,Explosion);
-			thing = instance_create(x + dcos(angle)*explosiondist,y + dsin(angle)*explosiondist,PopupText);
+			instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,Explosion);
+			thing = instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,PopupText);
 			thing.mytext = "EXPLOSIONS!";
 		}
 		repeat(15) {
-			var angle = random(1)*360;
+			var dangle = random(1)*360;
 			var explosiondist = 64 + random(80);
-			instance_create(x + dcos(angle)*explosiondist,y + dsin(angle)*explosiondist,Explosion);
+			instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,Explosion);
 		}
 		repeat(10) {
-			var angle = random(1)*360;
+			var dangle = random(1)*360;
 			var explosiondist = 80 + random(80);
-			instance_create(x + dcos(angle)*explosiondist,y + dsin(angle)*explosiondist,SmallExplosion);
+			instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,SmallExplosion);
 		}
 		snd_play(sndExplosionXL,0.05);
 		snd_play(sndExplosionL,0.05);
