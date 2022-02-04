@@ -5,6 +5,8 @@ size = 1
 target=-1;
 my_health=maxhealth;
 
+hurt_pitch_variation = 0;
+
 team = 2;
 
 spr_idle = sprAllyExploderIdle

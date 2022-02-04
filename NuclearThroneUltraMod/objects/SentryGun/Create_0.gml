@@ -4,6 +4,8 @@ meleedamage = 0
 size = 1
 ammo = 34
 
+hurt_pitch_variation = 0.1;
+
 snd_hurt = sndHitMetal
 
 //behavior
