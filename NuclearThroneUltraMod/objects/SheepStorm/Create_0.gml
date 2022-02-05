@@ -1,5 +1,5 @@
 image_speed=0;
-projectileHitBrake = 2;
+projectileHitBrake = 1.8;
 enemyHitbrake = 5;
 bloomSprite = sprSheepDashBloom;
 imageIndex = 0;

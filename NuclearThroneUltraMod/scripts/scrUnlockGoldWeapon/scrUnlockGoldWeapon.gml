@@ -8,7 +8,7 @@ function scrUnlockGoldWeapon() {
 	    {
     
 	    if scrCheckAllGold()//does a char have all gold weps
-	    scrUnlockBSkin(6,"FOR UNLOCKING ALL GOLDEN WEAPONS#ON ONE CHARACTER",0);
+			scrUnlockBSkin(6,"FOR UNLOCKING ALL GOLDEN WEAPONS#ON ONE CHARACTER",0);
     
 	    if scrCheckOneGold()//do all characters have at least one golden weapon
 	    scrUnlockCSkin(6,"FOR UNLOCKING ONE GOLDEN WEAPON#ON ALL CHARACTERS",0);

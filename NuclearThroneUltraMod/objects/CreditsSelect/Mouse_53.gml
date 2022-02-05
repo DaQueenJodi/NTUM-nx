@@ -1,4 +1,4 @@
-if mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y+24 and selected = 0
+if mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y+24 and selected = 0 && hasNoMenuOpen()
 {
 selected = 1
 with LoadoutSelect
@@ -9,5 +9,4 @@ with StartingWeaponUpDown
 instance_destroy()
 }
 else
-selected = 0
-
+alarm[0] = 2;

@@ -17,7 +17,7 @@ if instance_exists(Corpse)
 				}
 				with instance_create(x,y,Flame)
 				{motion_add(random(360),1+random(2))
-				team = other.team
+				team = 1;
 				move_contact_solid(direction,6)
 				image_speed=0.5+random(0.2);
 				sprite_index= sprFireLilHunter;}

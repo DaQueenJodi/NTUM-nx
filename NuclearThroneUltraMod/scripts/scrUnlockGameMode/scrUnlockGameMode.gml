@@ -1,11 +1,11 @@
-function scrUnlockGameMode(argument0, argument1) {
-	//GAMEMODE UNLOCKABLE argument0=gamemode
-	if UberCont.gamemode_have[argument0]=0 && (UberCont.opt_gamemode=0 || UberCont.opt_gamemode=8)
+function scrUnlockGameMode(gm, unlockText) {
+	//GAMEMODE UNLOCKABLE gm=gamemode
+	if UberCont.gamemode_have[gm]=0 && isValidGamemodeToUnlock(UberCont.gamemode)
 	{
-	UberCont.gamemode_have[argument0]=1
+	UberCont.gamemode_have[gm]=1
 
 	with instance_create(x,y,UnlockPopup)
-	mytext=UberCont.gamemode[argument0]+ "#GAMEMODE UNLOCKED!#"+argument1
+	mytext=UberCont.gamemode[gm]+ "#GAMEMODE UNLOCKED!#"+unlockText
 
 	with UberCont
 	scrSave();

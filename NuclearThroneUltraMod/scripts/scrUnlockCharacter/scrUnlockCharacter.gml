@@ -1,13 +1,13 @@
-function scrUnlockCharacter(argument0, argument1) {
-	//GAMEMODE UNLOCKABLE argument0=gamemode
-	if UberCont.race_have[argument0]=0 && (UberCont.opt_gamemode=0 || UberCont.opt_gamemode=8)
+function scrUnlockCharacter(raceIndex, unlockText) {
+	//GAMEMODE UNLOCKABLE raceIndex=gamemode
+	if UberCont.race_have[raceIndex]=0 && isValidGamemodeToUnlock(UberCont.gamemode)
 	{
-	UberCont.race_have[argument0]=1
+	UberCont.race_have[raceIndex]=1
 
 	with instance_create(x,y,UnlockPopup)
 	{
-	mytext=UberCont.race_name[argument0]+"#UNLOCKED#"
-	+argument1;
+	mytext=UberCont.race_name[raceIndex]+"#UNLOCKED#"
+	+unlockText;
 	}
 
 	with UberCont

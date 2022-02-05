@@ -24,23 +24,23 @@ function scrGameModes() {
 	gamemode_have[5] = 0;
 
 	gamemode[6] = "CLAUSTROFOBIA";//
-	gamemode_unlock[6] = "FINISH A LEVEL IN UNDER 10 SECONDS";
+	gamemode_unlock[6] = "FINISH AN AREA IN UNDER 10 SECONDS";
 	gamemode_have[6] = 0;
 
 	gamemode[7] = "ATOM TELEPORT ONLY#NO WALKING";//
-	gamemode_unlock[7] = "FINISH A LEVEL WITHOUT WALKING AS ATOM";
+	gamemode_unlock[7] = "FINISH AN AREA WITHOUT WALKING AS ATOM";
 	gamemode_have[7] = 0;
 
 	gamemode[8] = "CROWN START";//
 	gamemode_unlock[8] = "GET INTO A CROWN VAULT";
 	gamemode_have[8] = 0;
 
-	gamemode[9] = "EASY MODE";//
+	gamemode[9] = "CASUAL MODE";//
 	gamemode_unlock[9] = "DIE ON 1-1";
 	gamemode_have[9] = 0;
 
-	gamemode[10] = "RANDOM LEVELS";//
-	gamemode_unlock[10] = "GO TO THREE SECRET LEVELS IN ONE RUN";
+	gamemode[10] = "RANDOM AREAS";//
+	gamemode_unlock[10] = "GO TO THREE SECRET AREAS IN ONE RUN";
 	gamemode_have[10] = 0;
 
 	gamemode[11] = "GUN GAME";//
@@ -80,7 +80,7 @@ function scrGameModes() {
 	gamemode_have[19] = 0;
 
 	gamemode[20] = "AGORAPHOBIA";
-	gamemode_unlock[20] = "TAKE MORE THAN TEN MINUTES#TO FINISH A LEVEL";
+	gamemode_unlock[20] = "TAKE MORE THAN TEN MINUTES#TO FINISH AN AREA";
 	gamemode_have[20] = 0;
 
 	gamemode[21] = "LOOP START";
@@ -91,9 +91,45 @@ function scrGameModes() {
 	gamemode_unlock[22] = "BEAT THE #INVERTED CHESHIRE CAT";
 	gamemode_have[22] = 0;
 	/*
+	gamemode[23] = "RANDOM CHARACTER#IN EACH AREA";
+	gamemode_unlock[23] = "HAVE 4 LIVES AT ONCE";
+	gamemode_have[23] = 0;*/
+	/*
+	/*
+	gamemode[23] = "MELEE ONLY";
+	gamemode_description[23] = "YOU ONLY GET MELEE WEAPONS#ALWAYS GET LONG ARMS";
+	gamemode_unlock[23] = "HAVE 4 LIVES AT ONCE";
+	gamemode_have[23] = 0;*/
+	/*
 	gamemode[23] = "MASTERLUIGI452'S#10X MUTATIONS";
 	gamemode_unlock[23] = "INFECT AN ENEMY";
 	gamemode_have[23] = 0;*/
+
+	gamemodeOrder[0] = 0;
+	gamemodeOrder[1] = 8;
+	gamemodeOrder[2] = 3;
+	gamemodeOrder[3] = 1;
+	gamemodeOrder[4] = 2;
+	gamemodeOrder[5] = 9;
+	gamemodeOrder[6] = 5;
+	gamemodeOrder[7] = 6;
+	gamemodeOrder[8] = 20;
+	gamemodeOrder[9] = 4;
+	gamemodeOrder[10] = 10;
+	gamemodeOrder[11] = 11;
+	gamemodeOrder[12] = 12;
+	gamemodeOrder[13] = 13;
+	gamemodeOrder[14] = 14;
+	gamemodeOrder[15] = 15;
+	gamemodeOrder[16] = 16;
+	gamemodeOrder[17] = 18;
+	gamemodeOrder[18] = 19;
+	gamemodeOrder[19] = 7;
+	gamemodeOrder[20] = 21;
+	gamemodeOrder[21] = 22;
+	gamemodeOrder[22] = 17;
+
+
 
 	maxgamemode=22;
 	/*

@@ -2,7 +2,10 @@ if other.team != team and other.my_health > 0
 {
 ammo=0;
 with HorrorBeam
+{
 ammo=0;
+dropRad = false;
+}
 
 if other.sprite_index != other.spr_hurt
 {

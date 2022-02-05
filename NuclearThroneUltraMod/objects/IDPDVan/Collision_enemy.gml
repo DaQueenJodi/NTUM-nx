@@ -1,7 +1,4 @@
 /// @description overwrite enemy overlap code
-if other.team!=team
-{
-
 if other.sprite_index!=other.spr_hurt
 {
 
@@ -16,6 +13,3 @@ snd_play(snd_hurt, hurt_pitch_variation)
 }
 
 }
-
-}
-

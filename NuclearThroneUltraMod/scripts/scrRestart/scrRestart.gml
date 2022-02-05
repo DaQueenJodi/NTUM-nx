@@ -7,6 +7,10 @@ function scrRestart() {
 	instance_destroy()
 	}
 	}
+	with Player
+	{
+		restarted = true;	
+	}
 	room_goto(romGame)
 
 }

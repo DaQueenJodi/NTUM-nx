@@ -22,7 +22,7 @@ function scrDrawOptions2() {
 	scrGameModes();
 
 	if instance_exists(GameModeUpDown)
-	gamemodename=string(gamemode[GameModeUpDown.gamemodenr]);
+	gamemodename=string(gamemode[gamemodeOrder[GameModeUpDown.gamemodenr]]);
 	else
 	gamemodename=string(gamemode[UberCont.opt_gamemode]);
 	/*if UberCont.opt_gamemode = 0{
@@ -31,13 +31,21 @@ function scrDrawOptions2() {
 	else if UberCont.opt_gamemode = 2 {gamemode="FAVOURABLE BUILD"}
 	else {gamemode="NO HUD"}*/
 
-
-	txt0 = "#OPTIONS2#CLICK WITH LMB ON SQUARE THEN PRESS KEY######################YOU CAN ONLY UNLOCK THINGS IN#NORMAL/CROWN START MODE#UNLESS STATED OTHERWISE##PRESS [RIGHT CLICK] TO RETURN"
+	var canUnlock = "";
+	if isValidGamemodeToUnlock(gamemodeOrder[GameModeUpDown.gamemodenr])
+	{
+		canUnlock = "- ENABLED -";
+	}
+	else
+	{
+		canUnlock = "-DISABLED-";
+	}
+	txt0 = "#OPTIONS2#CLICK WITH LMB ON SQUARE THEN PRESS KEY####################UNLOCKABLES ARE#"+canUnlock+"#IN THIS GAMEMODE##PRESS [RIGHT CLICK] TO RETURN";
 	txt1 = "####CUSTOMIZE CONTROLS#UP#DOWN#LEFT#RIGHT#SWAP WEAPONS#PICKUP##GAMEMODE########"
 	txt2 = "#####"+up+"#"+down+"#"+left
 	+"#"+right+"#"+swap+"#"+pickup+"####"+string(gamemodename)+"######";
 
-	stxt0 = "#OPTIONS2"
+	stxt0 = "#OPTIONS2######################" + canUnlock;
 	stxt1 = "####CUSTOMIZE CONTROLS##### ####### #### ####"
 	stxt2 = txt2
 

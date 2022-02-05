@@ -4,14 +4,14 @@ with other
 {
 if sprite_index != spr_hurt
 {
-with other
-instance_destroy()
-snd_play(snd_hurt, hurt_pitch_variation)
-my_health -= other.dmg
-sprite_index = spr_hurt
-image_index = 0
-Sleep(10)
-BackCont.shake += 1
+	with other
+	instance_destroy()
+	snd_play(snd_hurt, hurt_pitch_variation)
+	my_health -= other.dmg
+	sprite_index = spr_hurt
+	image_index = 0
+	Sleep(10)
+	BackCont.shake += 1
 }
 }
 

@@ -388,7 +388,9 @@ scrEmpty()
 }
 if rad-wep_rad[wep]<0
 {//not enough radiation
+clicked = 0
 scrEmptyRad();
+other.wkick = -2
 }
 }
 

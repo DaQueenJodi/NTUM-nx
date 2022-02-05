@@ -4,7 +4,7 @@ if other.team != team and other.my_health > 0
 with other
 {
 	var dealDmg = false;
-	if other.object_index = Player
+	if object_index == Player
 	{
     if sprite_index!=spr_hurt
     {
@@ -13,9 +13,9 @@ with other
 	}
 	else
 	{
-		dealDamage = true;
+		dealDmg = true;
 	}
-	if (dealDamage)
+	if (dealDmg)
 	{
 		my_health -= other.dmg
 	    sprite_index = spr_hurt

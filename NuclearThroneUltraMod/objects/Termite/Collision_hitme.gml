@@ -1,7 +1,7 @@
 if other.team != team && team!=0
 {
 
-if other.sprite_index!=other.spr_hurt||random(20)<1
+if other.sprite_index!=other.spr_hurt||(random(20)<1&&other.team==1)
 {
 with instance_create(x,y,Dust)
 motion_add(random(360),random(3))

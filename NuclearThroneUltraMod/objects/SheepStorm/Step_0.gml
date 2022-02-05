@@ -6,10 +6,10 @@ alpha = clamp((sp-2)/Player.sheepPowerToHaveEffect,0.1,1);
 
 image_xscale=((sp)*0.1)+1;
 image_yscale=((sp)*0.1)+1;
-if image_xscale<1.7
+if image_xscale>1.7
 image_xscale=1.7;
 
-if image_yscale<1.7
+if image_yscale>1.7
 image_yscale=1.7;
 
 x=Player.x;
@@ -61,7 +61,7 @@ if (sp > Player.sheepPowerToHaveEffect)
 	}
 	with Player
 	{
-		//alarm[3]=6;//imunity
+		alarm[3]=2;//imunity
 		meleeimmunity = 9;
 	}
 }

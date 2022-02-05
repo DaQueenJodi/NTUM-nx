@@ -3250,10 +3250,19 @@ function scrFire() {
 	        {
 	            if(direction<point_direction(x,y,target.x,target.y)+30+(30*Player.skill_got[19]))
 	            {
-	            direction=point_direction(x,y,target.x,target.y)+(random(12)-6);
+					direction=point_direction(x,y,target.x,target.y)+(random(12)-6)*other.accuracy;
+					motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,16)
 	            }
 	       }
+		   else
+		   {
+				motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,16)   
+		   }
        
+	}
+	else
+	{
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,16)	
 	}
 
 	image_angle = direction
@@ -3279,7 +3288,6 @@ function scrFire() {
 	with instance_create(x,y,Bullet1)
 	{
 
-	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(20)-10)*other.accuracy,16)
 
 	var target;
 	target=instance_nearest(x+lengthdir_x(80,direction),y+lengthdir_y(80,direction),enemy);// nearest in direction of cursor
@@ -3290,10 +3298,18 @@ function scrFire() {
 	        {
 	            if(direction<point_direction(x,y,target.x,target.y)+30+(30*Player.skill_got[19]))
 	            {
-	            direction=point_direction(x,y,target.x,target.y)+(random(20)-10);
+	            direction=point_direction(x,y,target.x,target.y)+(random(20)-10)*other.accuracy;
+				motion_add(direction,16)
 	            }
 	       }
-       
+		   else
+		   {
+				motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(20)-10)*other.accuracy,16)
+		   }
+	}
+	else
+	{
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(20)-10)*other.accuracy,16)	
 	}
 
 	image_angle = direction

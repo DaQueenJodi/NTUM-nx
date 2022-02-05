@@ -1,10 +1,10 @@
 x=xx;
 y=yy;
-if instance_exists(enemy){
+if owner != -1 && instance_exists(owner){
 //first try check if enemies are further away then check frozen state
-if point_distance(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y)>8{
+if point_distance(x,y,owner.x,owner.y)>8{
 image_speed=1;}
-else if instance_nearest(x,y,enemy).frozen==false
+else if owner.frozen==false
 {
 image_speed=1;
 }

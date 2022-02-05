@@ -1,6 +1,6 @@
 if other.team != team and other.my_health > 0
 {
-if other.sprite_index != other.spr_hurt or (random(35) < 1)//the chance for extra damage only if team is player's
+if other.sprite_index != other.spr_hurt or (random(35) < 1 &&other.team==1)//the chance for extra damage only if team is player's
 {
 snd_play(sndBurn)
 with other
@@ -20,8 +20,11 @@ frozen=true;
     image_yscale=other.size;
     xx=other.x
     yy=other.y
+	owner=other.id;
     }
 alarm[11]+=other.freezetime;
+alarm[1] += other.freezetime;
+
 }
 
 
