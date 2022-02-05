@@ -2327,6 +2327,7 @@
     {"id":{"name":"sprBeamShotgun","path":"sprites/sprBeamShotgun/sprBeamShotgun.yy",},"order":70,},
     {"id":{"name":"sprErdeppolBigUltra","path":"sprites/sprErdeppolBigUltra/sprErdeppolBigUltra.yy",},"order":6,},
     {"id":{"name":"sprBlackHoleGeneration","path":"sprites/sprBlackHoleGeneration/sprBlackHoleGeneration.yy",},"order":71,},
+    {"id":{"name":"hasNoMenuOpen","path":"scripts/hasNoMenuOpen/hasNoMenuOpen.yy",},"order":26,},
     {"id":{"name":"sprBouncerFlakCannon","path":"sprites/sprBouncerFlakCannon/sprBouncerFlakCannon.yy",},"order":72,},
     {"id":{"name":"sprSuperBouncerFlakCannon","path":"sprites/sprSuperBouncerFlakCannon/sprSuperBouncerFlakCannon.yy",},"order":73,},
     {"id":{"name":"sprMoneyGun","path":"sprites/sprMoneyGun/sprMoneyGun.yy",},"order":74,},

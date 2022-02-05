@@ -12,7 +12,7 @@ function scrDrawCharSelect() {
 	if position_meeting(mouse_x,mouse_y,self)// and y > view_yview+48 and y < view_yview+view_hview-48
 	other.mouseover = num}
 
-	if (LoadoutSelect.wepmenuopen)
+	if (!instance_exists(LoadoutSelect) || LoadoutSelect.wepmenuopen)
 		return;
 	
 	if mouseover = race and race != 0

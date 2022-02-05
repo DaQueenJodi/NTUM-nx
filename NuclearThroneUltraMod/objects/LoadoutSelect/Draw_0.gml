@@ -1,4 +1,5 @@
-if !instance_exists(option)&&!instance_exists(option2)&&UpdateSelect.selected=0 && race!=0
+if (hasNoMenuOpen()
+ && race != 0)
 {
 draw_set_halign(fa_left)//jezus christ this menu systemm is fked up
 

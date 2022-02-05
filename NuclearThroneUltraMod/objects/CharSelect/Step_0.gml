@@ -219,6 +219,7 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
 		if other.num == 0
 			wepmenuopen = false;
     skin = UberCont.skin[Menu.race]
+	race = other.num;
 	}
     
     }

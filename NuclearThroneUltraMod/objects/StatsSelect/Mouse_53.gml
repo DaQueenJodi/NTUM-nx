@@ -1,8 +1,4 @@
-if mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y+24 and selected = 0
- && (instance_exists(OptionSelect) && OptionSelect.selected == 0)
- && (instance_exists(UpdateSelect) && UpdateSelect.selected == 0) 
- && (instance_exists(OptionSelect2) && OptionSelect2.selected == 0)
- && (instance_exists(CreditsSelect) && CreditsSelect.selected == 0)
+if mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y+24 and selected = 0 && hasNoMenuOpen()
 {
 selected = 1
 with LoadoutSelect
