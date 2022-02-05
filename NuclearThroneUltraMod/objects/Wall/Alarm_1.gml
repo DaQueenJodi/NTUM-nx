@@ -1,4 +1,15 @@
 /// @description Corners
+/*
+if place_meeting(x,y,Wall)
+{
+if other.id > id
+{
+instance_destroy()
+exit;
+}
+}
+
+*/
 if place_free(x-16,y)
 l = 0
 else

@@ -108,16 +108,6 @@ hardshell=true;
 
 /* */
 if !instance_exists(Player){instance_destroy();exit;}
-if Player.skill_got[25]//strong spirit
-    {
-    
-    if strongspiritused=false && my_health==maxhealth
-    {
-    //strongspiritused=false;
-    strongspirit=true;
-    }
-    
-    }
 
 /* */
 if !instance_exists(Player){instance_destroy();exit;}
@@ -174,7 +164,7 @@ if(my_health<=0)
     if strongspirit==true&&strongspiritused==false
     {
     my_health=1;
-    alarm[1]=10;
+    alarm[1]=20;
     strongspiritused=true;
     strongspirit=false;
     }

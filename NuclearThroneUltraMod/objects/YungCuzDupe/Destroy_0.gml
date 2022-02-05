@@ -20,4 +20,3 @@ creator = other.id
 }
 scrDrop(4,0)
 scrRaddrop();
-

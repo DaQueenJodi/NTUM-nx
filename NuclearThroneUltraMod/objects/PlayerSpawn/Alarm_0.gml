@@ -2,7 +2,8 @@ with Player
 {instance_destroy();}
 with instance_create(x,y,EuphoriaShield)
 image_speed=0.2;
-
+if (myCorpse == -1 || !instance_exists(myCorpse))
+	myCorpse = id;
 instance_create(myCorpse.x,myCorpse.y,Player);
 instance_destroy(myCorpse);
 snd_play(sndStatueCharge);

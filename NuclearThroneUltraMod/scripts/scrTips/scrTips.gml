@@ -67,7 +67,7 @@ function scrTips() {
 	"grab some coffee",
 	"grab some tea",
 	"ever changing",
-	"try out chaos mod aswell!",
+	"try out other mods aswell!",
 	"free!",
 	"kraken is a water element",
 	"let's have fun",

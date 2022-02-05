@@ -96,6 +96,6 @@ else if random(10) < 1
 	else if hspeed < 0
 	right = -1
 }
-
+if instance_exists(Player)
 if point_distance(x,y,Player.x,Player.y) > 52
 mp_potential_step(Player.x,Player.y,1,false)

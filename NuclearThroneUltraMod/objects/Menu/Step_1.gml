@@ -17,7 +17,9 @@ diy = 0
 repeat(racemax+1)
 {
 	with instance_create(0,0,CharSelect)
-	num = other.num
+	{
+		num = other.num
+	}
 	if (num == racemax) {
 		num = -1;
 	}
@@ -65,7 +67,7 @@ instance_destroy()
 logoin = 240
 mode = 0
 image_index = 0
-alarm[0] = 40
+alarm[0] = 10
 exit;
 }
 

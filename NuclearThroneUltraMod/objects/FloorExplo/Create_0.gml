@@ -37,6 +37,7 @@ sprite_index=sprFloor7Explo;
 break;
 case 8:
 sprite_index=sprFloor8Explo;
+break;
 case 9:
 sprite_index=sprFloor9Explo;
 break;

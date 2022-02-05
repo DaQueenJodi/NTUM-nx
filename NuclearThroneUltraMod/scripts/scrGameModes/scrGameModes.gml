@@ -35,7 +35,7 @@ function scrGameModes() {
 	gamemode_unlock[8] = "GET INTO A CROWN VAULT";
 	gamemode_have[8] = 0;
 
-	gamemode[9] = "EASY MODE";//
+	gamemode[9] = "CASUAL MODE";//
 	gamemode_unlock[9] = "DIE ON 1-1";
 	gamemode_have[9] = 0;
 
@@ -95,9 +95,41 @@ function scrGameModes() {
 	gamemode_unlock[23] = "HAVE 4 LIVES AT ONCE";
 	gamemode_have[23] = 0;*/
 	/*
+	/*
+	gamemode[23] = "MELEE ONLY";
+	gamemode_description[23] = "YOU ONLY GET MELEE WEAPONS#ALWAYS GET LONG ARMS";
+	gamemode_unlock[23] = "HAVE 4 LIVES AT ONCE";
+	gamemode_have[23] = 0;*/
+	/*
 	gamemode[23] = "MASTERLUIGI452'S#10X MUTATIONS";
 	gamemode_unlock[23] = "INFECT AN ENEMY";
 	gamemode_have[23] = 0;*/
+
+	gamemodeOrder[0] = 0;
+	gamemodeOrder[1] = 8;
+	gamemodeOrder[2] = 3;
+	gamemodeOrder[3] = 1;
+	gamemodeOrder[4] = 2;
+	gamemodeOrder[5] = 9;
+	gamemodeOrder[6] = 5;
+	gamemodeOrder[7] = 6;
+	gamemodeOrder[8] = 20;
+	gamemodeOrder[9] = 4;
+	gamemodeOrder[10] = 10;
+	gamemodeOrder[11] = 11;
+	gamemodeOrder[12] = 12;
+	gamemodeOrder[13] = 13;
+	gamemodeOrder[14] = 14;
+	gamemodeOrder[15] = 15;
+	gamemodeOrder[16] = 16;
+	gamemodeOrder[17] = 18;
+	gamemodeOrder[18] = 19;
+	gamemodeOrder[19] = 7;
+	gamemodeOrder[20] = 21;
+	gamemodeOrder[21] = 22;
+	gamemodeOrder[22] = 17;
+
+
 
 	maxgamemode=22;
 	/*

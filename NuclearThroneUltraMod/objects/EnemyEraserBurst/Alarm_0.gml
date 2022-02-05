@@ -14,7 +14,7 @@ yy=creator.y;
 //with instance_create(xx,yy,Shell)
 //motion_add(point_direction(x,y,mouse_x,mouse_y)+180+random(50)-25,2+random(2))
 
-repeat(4){
+//repeat(4){
 
 with instance_create(x,y,EnemyBullet3)
 {
@@ -23,7 +23,7 @@ image_angle = direction
 team = other.team
 }
 
-}
+//}
 }
 
 

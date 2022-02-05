@@ -10,7 +10,7 @@ else if UberCont.skin[race]=2 && UberCont.race_cskin[race]=1
 UberCont.skin[race]=skin;
 else
 UberCont.skin[race]=0;
-
+/*
 if (wepmenuopen) {
     var arrowx = 148;
     var arrowy = 78;
@@ -55,7 +55,7 @@ if (wepmenuopen) {
     else
     downscale=1;
 }
-
+*/
 
 //standard weapon
 if wep = 0
@@ -65,7 +65,7 @@ UberCont.start_wep[0]=race_swep[Menu.race];
 if UberCont.start_wep_have[wep,race]=1
 UberCont.cwep[race]=UberCont.start_wep[wep];
 
-if mouse_x > __view_get( e__VW.XView, 0 )+300-10 and mouse_x < __view_get( e__VW.XView, 0 )+300+12 and mouse_y > __view_get( e__VW.YView, 0 )+43-12 and mouse_y < __view_get( e__VW.YView, 0 )+43+10
+if mouse_x > __view_get( e__VW.XView, 0 )+300-10 and mouse_x < __view_get( e__VW.XView, 0 )+300+12 and mouse_y > __view_get( e__VW.YView, 0 )+arrowOpenerY-12 and mouse_y < __view_get( e__VW.YView, 0 )+arrowOpenerY+10
 {
     wepopenscale=1.5;
     
@@ -85,7 +85,7 @@ if mouse_x > __view_get( e__VW.XView, 0 )+300-10 and mouse_x < __view_get( e__VW
 
 //SKIN-------------------------------------------______________________
 
-if mouse_x > __view_get( e__VW.XView, 0 )+72-12 and mouse_x < __view_get( e__VW.XView, 0 )+72+12 and mouse_y > __view_get( e__VW.YView, 0 )+92-12 and mouse_y < __view_get( e__VW.YView, 0 )+92+12
+if mouse_x > __view_get( e__VW.XView, 0 )+72-12 and mouse_x < __view_get( e__VW.XView, 0 )+72+12 and mouse_y > __view_get( e__VW.YView, 0 )+60-12 and mouse_y < __view_get( e__VW.YView, 0 )+60+12
 {
 scale=1.4;
 
@@ -135,5 +135,3 @@ scale=1;
 
 }
 imageIndex += 0.5;
-/* */
-/*  */

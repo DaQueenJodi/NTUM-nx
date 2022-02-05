@@ -3,7 +3,7 @@ instance_create(0,0,Cursor);
 
 
 mode = 0
-
+mouseover = -1;
 image_speed = 0
 
 widescreen = 0

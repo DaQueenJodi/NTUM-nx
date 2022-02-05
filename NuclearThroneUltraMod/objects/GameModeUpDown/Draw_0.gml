@@ -19,7 +19,7 @@ gamemodenr=0;
 
 //draw_sprite(sprite_index,/*UberCont.opt_gamemode*/1,x,y)
 
-if (UberCont.opt_gamemode==1&&gamemodenr=1)
+if (UberCont.opt_gamemode==1&&gamemodeOrder[gamemodenr]==1)
 {
 if !instance_exists(StartingWeaponUpDown)
 instance_create(x,y+8,StartingWeaponUpDown);
@@ -34,7 +34,7 @@ with StartingWeaponUpDown
 instance_destroy()
 }
 
-if (UberCont.opt_gamemode==19&&gamemodenr=19)
+if (UberCont.opt_gamemode==19&&gamemodeOrder[gamemodenr]==19)
 {
 if !instance_exists(DiscDamageUpDown)
 instance_create(x,y+24,DiscDamageUpDown);
@@ -54,18 +54,18 @@ with DiscAmountUpDown
 instance_destroy()
 }
 
-if UberCont.gamemode_have[gamemodenr]=1
+if UberCont.gamemode_have[gamemodeOrder[gamemodenr]]=1
 {
-UberCont.opt_gamemode=gamemodenr;
+UberCont.opt_gamemode=gamemodeOrder[gamemodenr];
 }
 else
 {
 draw_sprite(sprLocked,0,x,y+48);
 
 draw_set_color(c_gray)
-draw_text(x-string_width(string_hash_to_newline(gamemode_unlock[gamemodenr]))*0.6,y+64,string_hash_to_newline(gamemode_unlock[gamemodenr]))
+draw_text(x-string_width(string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]))*0.6,y+64,string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]))
 draw_set_color(c_white)
-draw_text(x-string_width(string_hash_to_newline(gamemode_unlock[gamemodenr]))*0.6,y+64,string_hash_to_newline(gamemode_unlock[gamemodenr]))
+draw_text(x-string_width(string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]))*0.6,y+64,string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]))
 }
 
 

@@ -20,6 +20,7 @@ frozen=true;
     image_yscale=other.size;
     xx=other.x
     yy=other.y
+	owner=other.id;
     }
 alarm[11]+=other.freezetime;
 alarm[1] += other.freezetime;

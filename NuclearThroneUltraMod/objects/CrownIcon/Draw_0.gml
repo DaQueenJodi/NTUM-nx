@@ -45,17 +45,22 @@ draw_text(drawx+string_width(string_hash_to_newline(txt2))/2,drawy-14,string_has
 
 if UberCont.crown_used[crown]
 {
-draw_set_color(c_green)
+var col = make_color_rgb(72,156,8);
+draw_set_color(col)
 draw_text(drawx+string_width(string_hash_to_newline(txt2))/2-1,drawy-15-string_height(string_hash_to_newline(txt2))+string_height(string_hash_to_newline(crown_name[crown])),string_hash_to_newline(string(crown_name[crown])))
 draw_text(drawx+string_width(string_hash_to_newline(txt2))/2-1,drawy-13-string_height(string_hash_to_newline(txt2))+string_height(string_hash_to_newline(crown_name[crown])),string_hash_to_newline(string(crown_name[crown])))
 draw_text(drawx+string_width(string_hash_to_newline(txt2))/2+1,drawy-13-string_height(string_hash_to_newline(txt2))+string_height(string_hash_to_newline(crown_name[crown])),string_hash_to_newline(string(crown_name[crown])))
 draw_text(drawx+string_width(string_hash_to_newline(txt2))/2+1,drawy-15-string_height(string_hash_to_newline(txt2))+string_height(string_hash_to_newline(crown_name[crown])),string_hash_to_newline(string(crown_name[crown])))
-
 }
 draw_set_color(c_white)
 draw_text(drawx+string_width(string_hash_to_newline(txt2))/2,drawy-14-string_height(string_hash_to_newline(txt2))+string_height(string_hash_to_newline(crown_name[crown])),string_hash_to_newline(string(crown_name[crown])))
 
 
 
+}
+else if UberCont.crown_used[crown]
+{
+	var col = make_color_rgb(72,156,8);
+	draw_rectangle_color(x-12,y-16,x+11,y+15,col,col,col,col,true);	
 }
 

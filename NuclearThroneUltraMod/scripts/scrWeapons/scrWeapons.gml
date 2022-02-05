@@ -1146,7 +1146,7 @@ function scrWeapons() {
 	wep_load[103] = 6
 	wep_cost[103] = 2
 	wep_sprt[103] = sprFrostMachinegun
-	wep_area[103] = 3
+	wep_area[103] = 4
 	wep_text[103] = "freeze!"
 	wep_swap[103] = sndSwapMachinegun
 	wep_rad[103] = 0;
@@ -3710,7 +3710,7 @@ function scrWeapons() {
 	wep_load[336] = 14
 	wep_cost[336] = 6
 	wep_sprt[336] = sprFrostARifle
-	wep_area[336] = 5
+	wep_area[336] = 7
 	wep_text[336] = ""
 	wep_swap[336] = sndSwapMachinegun
 	wep_rad[336] = 0;
@@ -4069,6 +4069,13 @@ function scrWeapons() {
 
 	typ_name[0] = "MELEE" typ_name[1] = "BULLETS" typ_name[2] = "SHELLS" typ_name[3] = "BOLTS" typ_name[4] = "EXPLOSIVES" typ_name[5] = "ENERGY"
 
-
-
+	/*
+	Don't need this
+	highest_wep_tier = 0;
+	for (var i = 0; maxwep; i++) {
+	    // code here
+		if wep_area[i] > highest_wep_tier
+			highest_wep_tier = wep_area[i];
+	}
+	*/
 }

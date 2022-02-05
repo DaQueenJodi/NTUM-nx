@@ -4,9 +4,7 @@ if mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y+24 and selecte
  && (instance_exists(OptionSelect2) && OptionSelect2.selected == 0)
  && (instance_exists(CreditsSelect) && CreditsSelect.selected == 0)
 {
-	with option
-	instance_destroy()
-with GameModeUpDown
+with option2
 instance_destroy();
 
 selected = 1
