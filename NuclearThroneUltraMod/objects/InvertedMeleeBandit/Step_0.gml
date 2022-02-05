@@ -30,6 +30,6 @@ gunangle = direction
 }}
 
 
-if speed > 4
-speed = 4
+if speed > 3.5
+speed = 3.5
 
