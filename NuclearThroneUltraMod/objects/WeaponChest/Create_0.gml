@@ -13,8 +13,10 @@ else if ( instance_exists(Crown)||Player.wepmod1!=0||Player.bwepmod1!=0 ) and ra
 curse = 1
 else if Player.crown=14 && random(7)<5//Or you have a weapon mod
 curse = 1
+else if random(20) < 1
+curse = 1;
 else
-curse=0;
+curse = 0;
 
 }
 else if instance_exists(Crown) and random(7) < 1//Or you have a weapon mod
@@ -38,7 +40,7 @@ if (Player.ultra_got[25]==1)
 }
 
 scrWeapons()
-wep=scrDecideWep(1+other.curse)
+wep=scrDecideWep(1, other.curse)
 
 
     if (mediumchest==1)
