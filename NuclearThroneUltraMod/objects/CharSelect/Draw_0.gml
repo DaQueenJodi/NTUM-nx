@@ -102,6 +102,7 @@ if Menu.race = image_index
 {
     draw_sprite(sprSelected,-1,x,yyy)
     draw_sprite(sprite_index,-1,x+2,yyy-2)
+	depth = normalDepth - 1;
     
     if Menu.mouseover != image_index
     draw_sprite_ext(sprite_index,-1,x+2,yyy-2,1,1,0,c_black,0.05)
@@ -120,7 +121,7 @@ else
 		//var col = make_color_rgb(34,76,7); // darkest
 		if UberCont.ctot_loop[num]>0
 			draw_rectangle_color(x,yyy,x+15,yyy+23,col,col,col,col,true);
-		depth = normalDepth;
+		depth = normalDepth - 1;
 	}
 	else
 	{
