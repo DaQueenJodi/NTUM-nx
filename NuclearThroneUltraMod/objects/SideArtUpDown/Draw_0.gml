@@ -6,12 +6,12 @@ if mouse_check_button_pressed(mb_left) and mouse_x > x and mouse_x < x+8 and mou
 if UberCont.opt_sideart > 0
 UberCont.opt_sideart -= 1
 else
-UberCont.opt_sideart = sprite_get_number(sprSideArt);
+UberCont.opt_sideart = sprite_get_number(sprSideArt) - 1;
 
 }
 if mouse_check_button_pressed(mb_left) and mouse_x > x+10 and mouse_x < x+18 and mouse_y > y and mouse_y < y+8
 {
-if UberCont.opt_sideart < sprite_get_number(sprSideArt)
+if UberCont.opt_sideart < sprite_get_number(sprSideArt) - 1
 UberCont.opt_sideart += 1
 else
 UberCont.opt_sideart = 0;

@@ -1,6 +1,6 @@
 function scrUnlockCharacter(raceIndex, unlockText) {
 	//GAMEMODE UNLOCKABLE raceIndex=gamemode
-	if UberCont.race_have[raceIndex]=0 && isValidGamemodeToUnlock(UberCont.gamemode)
+	if UberCont.race_have[raceIndex]=0 && isValidGamemodeToUnlock(UberCont.opt_gamemode)
 	{
 	UberCont.race_have[raceIndex]=1
 

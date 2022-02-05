@@ -23,9 +23,9 @@ if UberCont.public=0 {
 //hacks
 	if keyboard_check_pressed(ord("C")) {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*48,y + dsin(dangle)*48,ExplosiveSheep);
+	    instance_create(x + dcos(dangle)*48,y + dsin(dangle)*48,MeleeBandit);
 		thing = instance_create(x + dcos(dangle)*48,y + dsin(dangle)*48,PopupText);
-		thing.mytext = "SHEEP?";
+		thing.mytext = "ASSASSIN?";
 	}
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
@@ -124,7 +124,7 @@ if UberCont.public=0 {
 	if (keyboard_check_pressed(ord("G")))
 	    {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,BigWeaponChest);
+	    instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,WeaponChest);
 		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
 		thing.mytext = "WEAPON CHEST!";
 	    }

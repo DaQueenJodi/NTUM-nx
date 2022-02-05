@@ -11,5 +11,5 @@ image_angle = other.gunangle
 motion_add(other.gunangle+random(10)-5,2)
 team = other.team
 }
-alarm[1] = 40+random(5)
+alarm[1] = 30+random(10)
 

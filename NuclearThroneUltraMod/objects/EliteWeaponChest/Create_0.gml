@@ -6,5 +6,5 @@ sprite_index = sprEliteWepChest
 scrWeapons()
 dir=0;
 
-wep=scrDecideWepElite(6);
+wep=scrDecideWepElite(2);
 
