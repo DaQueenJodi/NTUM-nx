@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndHyperLightning",
-  "duration": 0.0,
+  "duration": 0.892062,
   "parent": {
     "name": "Energy",
     "path": "folders/Sounds/Weapons/Energy.yy",

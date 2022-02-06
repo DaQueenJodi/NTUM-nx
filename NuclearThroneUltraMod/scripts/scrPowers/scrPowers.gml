@@ -556,102 +556,99 @@ function scrPowers() {
     
 	    if place_meeting(mouse_x,mouse_y,Floor)
 	    {
-	    if alarm[3]<1
-	    alarm[3]=4;//imunity
-	    instance_create(x,y,Teleport);
-	    snd_play(sndHyperLightning);
-	    repeat(5){
-	    with instance_create(x,y,Smoke)
-	    motion_add(random(360),1+random(3))}
+		    if alarm[3]<1
+		    alarm[3]=4;//imunity
+		    instance_create(x,y,Teleport);
+		    snd_play(sndHyperLightning);
+		    repeat(5){
+			    with instance_create(x,y,Smoke)
+			    motion_add(random(360),1+random(3))
+			}
     
-	    x=mouse_x;
-	    y=mouse_y;
-	    BackCont.viewx2 += lengthdir_x(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-	    BackCont.viewy2 += lengthdir_y(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-	    BackCont.shake += 2    
+		    x=mouse_x;
+		    y=mouse_y;
+		    BackCont.viewx2 += lengthdir_x(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		    BackCont.viewy2 += lengthdir_y(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		    BackCont.shake += 2    
     
-	    if skill_got[5]//thronebutt
-	    {
-	    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
-	    snd_play(sndLightning3);
+		    if skill_got[5]//thronebutt
+		    {
+			    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
+			    snd_play(sndLightning3);
 
-	    with instance_create(x,y,Lightning)
-	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
-	team = other.team
-	ammo = 6
-	event_perform(ev_alarm,0)
-	visible = 0
-	with instance_create(x,y,LightningSpawn)
-	image_angle = other.image_angle}
-
-
-
-	    }
+			    with instance_create(x,y,Lightning)
+					{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
+					team = other.team
+					ammo = 6
+					event_perform(ev_alarm,0)
+					visible = 0
+					with instance_create(x,y,LightningSpawn)
+					image_angle = other.image_angle}
+		    }
     
     
-	    repeat(5){
-	    with instance_create(x,y,Smoke)
-	    motion_add(random(360),1+random(3))}
+		    repeat(5) {
+			    with instance_create(x,y,Smoke)
+			    motion_add(random(360),1+random(3))
+			}
 	    }
 	    else
 	    {
-	    if alarm[3]<1
-	    alarm[3]=4;//imunity
-	    instance_create(x,y,Teleport);
-	    snd_play(sndHyperLightning);
-	    repeat(5){
-	    with instance_create(x,y,Smoke)
-	    motion_add(random(360),1+random(3))}
+		    if alarm[3]<1
+		    alarm[3]=4;//imunity
+			
+		    instance_create(x,y,Teleport);
+		    snd_play(sndHyperLightning);
+		    repeat(5){
+		    with instance_create(x,y,Smoke)
+		    motion_add(random(360),1+random(3))}
     
-	    var xx;
-	    var yy;
+		    var xx;
+		    var yy;
     
-	    xx=32*(mouse_x div 32);
-	    yy=32*(mouse_y div 32);
-    
-    
-	    instance_create(xx,yy,FloorExplo);
+		    xx=32*(mouse_x div 32);
+		    yy=32*(mouse_y div 32);
     
     
-	    instance_create(xx,yy,WallBreak);
+		    instance_create(xx,yy,FloorExplo);
     
     
-	    mask_index=mskPickupThroughWall;
+		    instance_create(xx,yy,WallBreak);
     
-	    alarm[8]=2;
     
-	    x=xx;;
-	    y=yy;;
-	    BackCont.viewx2 += lengthdir_x(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-	    BackCont.viewy2 += lengthdir_y(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-	    BackCont.shake += 2    
+		    mask_index=mskPickupThroughWall;
     
-	    if skill_got[5]//thronebutt
-	    {
-	    snd_play(sndLightning3);
-	    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
+		    alarm[8]=2;
+    
+		    x=xx;;
+		    y=yy;;
+		    BackCont.viewx2 += lengthdir_x(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		    BackCont.viewy2 += lengthdir_y(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		    BackCont.shake += 2    
+    
+		    if skill_got[5]//thronebutt
+		    {
+		    snd_play(sndLightning3);
+		    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
     
 
-	    with instance_create(x,y,Lightning)
-	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
-	team = other.team
-	ammo = 6
-	event_perform(ev_alarm,0)
-	visible = 0
-	with instance_create(x,y,LightningSpawn)
-	image_angle = other.image_angle}
+		    with instance_create(x,y,Lightning)
+			{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
+			team = other.team
+			ammo = 6
+			event_perform(ev_alarm,0)
+			visible = 0
+			with instance_create(x,y,LightningSpawn)
+			image_angle = other.image_angle}
 
 
+		    }
+    
+    
+		    repeat(5){
+		    with instance_create(x,y,Smoke)
+		    motion_add(random(360),1+random(3))}
 	    }
-    
-    
-	    repeat(5){
-	    with instance_create(x,y,Smoke)
-	    motion_add(random(360),1+random(3))}
-	    }
-
-    
-    
 	}
 	}
 	else if place_meeting(mouse_x,mouse_y,Floor) and !place_meeting(mouse_x,mouse_y,Wall)//REGULAR

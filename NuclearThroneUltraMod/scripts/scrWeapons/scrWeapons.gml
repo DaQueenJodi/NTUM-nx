@@ -3946,6 +3946,17 @@ function scrWeapons() {
 	wep_swap[357] = sndSwapExplosive
 	wep_rad[357] = 0;
 	
+	wep_name[358] = "ION TELEPORT"
+	wep_type[358] = 5
+	wep_auto[358] = 0
+	wep_load[358] = 20
+	wep_cost[358] = 5
+	wep_sprt[358] = sprLaserCannon
+	wep_area[358] = 16
+	wep_text[358] = "just like atom"
+	wep_swap[358] = sndSwapEnergy
+	wep_rad[358] = 0;
+	
 	/*
 	wep_name[358] = "LASER BOMB"
 	wep_type[358] = 4
@@ -4050,7 +4061,7 @@ function scrWeapons() {
 	wep_rad[360] = 0;
 	*/
 	
-	maxwep = 357
+	maxwep = 358
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy
 	typ_ammo[0] = 333 typ_ammo[1] = 32 typ_ammo[2] = 8 typ_ammo[3] = 8 typ_ammo[4] = 6 typ_ammo[5] = 10

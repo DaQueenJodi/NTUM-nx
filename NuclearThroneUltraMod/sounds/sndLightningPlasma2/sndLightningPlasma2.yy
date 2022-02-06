@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndLightningPlasma2",
-  "duration": 0.0,
+  "duration": 2.0,
   "parent": {
     "name": "Energy",
     "path": "folders/Sounds/Weapons/Energy.yy",

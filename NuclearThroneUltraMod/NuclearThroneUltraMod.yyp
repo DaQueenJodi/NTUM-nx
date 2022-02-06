@@ -1295,6 +1295,7 @@
     {"id":{"name":"sprMutant9Idle","path":"sprites/sprMutant9Idle/sprMutant9Idle.yy",},"order":9,},
     {"id":{"name":"sprMutant9HeadlessIdle","path":"sprites/sprMutant9HeadlessIdle/sprMutant9HeadlessIdle.yy",},"order":11,},
     {"id":{"name":"sprMutant9Walk","path":"sprites/sprMutant9Walk/sprMutant9Walk.yy",},"order":13,},
+    {"id":{"name":"sndLightningCannonEnd","path":"sounds/sndLightningCannonEnd/sndLightningCannonEnd.yy",},"order":299,},
     {"id":{"name":"sprMutant9HeadlessWalk","path":"sprites/sprMutant9HeadlessWalk/sprMutant9HeadlessWalk.yy",},"order":15,},
     {"id":{"name":"sprMutant9HeadIdle","path":"sprites/sprMutant9HeadIdle/sprMutant9HeadIdle.yy",},"order":17,},
     {"id":{"name":"sprMutant9HeadHurt","path":"sprites/sprMutant9HeadHurt/sprMutant9HeadHurt.yy",},"order":19,},
