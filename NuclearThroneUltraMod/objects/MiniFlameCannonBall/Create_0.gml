@@ -13,6 +13,6 @@ image_angle=random(360);
 
 alarm[1]=120;
 snd_loop(sndFlamerLoop);
-
+dmg = 8;
 /* */
 /*  */

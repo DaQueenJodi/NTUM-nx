@@ -35,7 +35,7 @@ image_index=4;
 }
 
 repeat(4){
-with instance_create(x-8,y-8,Flame)
+with instance_create(x-8,y-8,TrapFire)
     {
     sprite_index = sprFireLilHunter
     motion_add(other.direction+random(12)-6,3+random(7))

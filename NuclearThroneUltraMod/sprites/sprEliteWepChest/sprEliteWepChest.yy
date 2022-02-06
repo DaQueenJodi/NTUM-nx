@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprEliteWepChest","path":"sprites/sprEliteWepChest/sprEliteWepChest.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprEliteWepChest",
     "tags": [],
     "resourceType": "GMSequence",
   },

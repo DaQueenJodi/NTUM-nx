@@ -6,7 +6,7 @@ ammo -= 1
 alarm[2] = 1
 sprite_index = spr_fire
             
-            with instance_create(x/*-8*/,y,Flame)
+            with instance_create(x/*-8*/,y,TrapFire)
             {
             sprite_index = sprFireLilHunter
         

@@ -263,3 +263,7 @@ else
 		scrRaddrop();
 	}
 }
+with KeyCont {
+	key_fire[0] = 0;
+	key_spec[0] = 0;
+}

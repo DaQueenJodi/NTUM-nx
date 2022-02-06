@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 4,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 16,
   "height": 16,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprAmmoChestOpen","path":"sprites/sprAmmoChestOpen/sprAmmoChestOpen.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprAmmoChestOpen",
     "tags": [],
     "resourceType": "GMSequence",
   },

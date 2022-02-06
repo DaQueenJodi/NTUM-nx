@@ -30,7 +30,7 @@ alarm[5]=10;
 instance_create(x,y,WallBreak);
 repeat(10)
 {
-with instance_create(x,y,Flame)//Trapfire
+with instance_create(x,y,TrapFire)//Trapfire
 {
 sprite_index = sprFireLilHunter
 motion_add(random(360),2+random(0.2))

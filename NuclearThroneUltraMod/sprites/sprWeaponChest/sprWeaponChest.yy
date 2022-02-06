@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprWeaponChest","path":"sprites/sprWeaponChest/sprWeaponChest.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprWeaponChest",
     "tags": [],
     "resourceType": "GMSequence",
   },

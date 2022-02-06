@@ -4,7 +4,7 @@ if target > 0
 {
 	if collision_line(x,y,target.x,target.y,Wall,0,0) < 0 and random(2) < 1  && point_distance(target.x,target.y,x,y)<120
 	{
-		snd_play(sndScorpionFireStart)
+		snd_play(sndGoldScorpionFire)
 		ammo = 20
 		walk = 0
 		alarm[2] = 1

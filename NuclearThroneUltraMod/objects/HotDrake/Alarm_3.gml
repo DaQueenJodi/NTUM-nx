@@ -20,7 +20,7 @@ if atk=2//BLUE BALL OF FIRE!
     snd_play(sndDragonStop)
     repeat(12)
     {
-    with instance_create(x,y,Flame)
+    with instance_create(x,y,TrapFire)
     {
     sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,2+random(6))
@@ -49,7 +49,7 @@ appear=true;
     snd_play(sndDragonStop)
     repeat(12)
     {
-    with instance_create(x,y,Flame)
+    with instance_create(x,y,TrapFire)
     {
     sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,2+random(6))

@@ -10,9 +10,12 @@ pickedup=false;
 
 oneweponly=false
 
-if UberCont.opt_gamemode=1||UberCont.opt_gamemode=11||UberCont.opt_gamemode=13||UberCont.opt_gamemode=14{//one weapon only
-alarm[0]=1;
-oneweponly=true;}
+if isOneWeaponOnlyModes(){//one weapon only
+oneweponly=true;
+instance_destroy();
+instance_create(x,y,AmmoPickup);
+mask_index = mskPickupThroughWall;
+exit;}
 
 /*WEAPON MODS
 mod1[]

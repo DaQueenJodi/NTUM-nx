@@ -1,10 +1,11 @@
-/// @description xxx
-if sprite_index = spr_fire
+/// @description Animation state transitions
+if fire && sprite_index == spr_fire
 {
 	fire = false;
 	spr_idle = spr_normal;
 	spr_walk = spr_normal;
-	alarm[1] += 20;
+	sprite_index = spr_normal;
+	//alarm[1] += 20;
 }
 else if (sprite_index == spr_disappear)
 {
@@ -23,11 +24,16 @@ else if (sprite_index == spr_disappear)
 		snd_play(snd_appear);
 		image_index = 0;
 	}
+	else
+	{
+		image_speed = 0;
+		visible = false;
+	}
 }
 else if (sprite_index == spr_appear || sprite_index == spr_hurt)
 {
 	sprite_index = spr_normal;
 	spr_idle = spr_normal;
 	spr_walk = spr_normal;
-	alarm[1] += 20;
+	//alarm[1] += 20;
 }

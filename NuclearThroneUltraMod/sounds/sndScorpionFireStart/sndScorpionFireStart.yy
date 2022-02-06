@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndScorpionFireStart",
-  "duration": 0.0,
+  "duration": 0.799705,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

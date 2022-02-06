@@ -1,6 +1,6 @@
 repeat(14)
 {
-with instance_create(x,y,Flame)
+with instance_create(x,y,TrapFire)
 {motion_add(random(360),2+random(4))
 team = other.team
 move_contact_solid(direction,18)

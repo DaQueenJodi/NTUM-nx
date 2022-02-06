@@ -44,7 +44,7 @@ direction = point_direction(x,y,target.xprevious,target.yprevious)
     if Player.loops>0
     {//loopfire
         repeat(2){
-        with instance_create(x/*-8*/,y,Flame)
+        with instance_create(x/*-8*/,y,TrapFire)
             {
             sprite_index = sprFireLilHunter
         
@@ -57,7 +57,7 @@ direction = point_direction(x,y,target.xprevious,target.yprevious)
     else
     {//preloopfire
         repeat(2){
-        with instance_create(x/*-8*/,y,Flame)
+        with instance_create(x/*-8*/,y,TrapFire)
             {
             sprite_index = sprFireLilHunter
         

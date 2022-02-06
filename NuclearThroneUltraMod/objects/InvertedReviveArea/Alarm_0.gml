@@ -15,7 +15,7 @@ if instance_exists(Corpse)
 				{
 					sprite_index = sprReviveInverted;	
 				}
-				with instance_create(x,y,Flame)
+				with instance_create(x,y,TrapFire)
 				{motion_add(random(360),1+random(2))
 				team = 1;
 				move_contact_solid(direction,6)

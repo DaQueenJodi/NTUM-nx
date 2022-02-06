@@ -1,10 +1,21 @@
 with instance_create(x,y,ChestOpen)
 {
-
-if other.curse = 1
-sprite_index = sprCursedChestOpen
-else
-sprite_index = sprWeaponChestOpen
+	if other.oneweponly
+		sprite_index = sprWeaponChestReplaced;
+	else if other.curse = 1
+	{
+		if other.mediumchest
+			sprite_index = sprMediumCursedWeaponChestOpen;
+		else
+			sprite_index = sprCursedWeaponChestOpen
+	}
+	else
+	{
+		if other.mediumchest
+			sprite_index = sprMediumWeaponChestOpen;
+		else
+			sprite_index = sprWeaponChestOpen
+	}
 }
 instance_create(x,y,FXChestOpen)
 

@@ -11,8 +11,9 @@ spr_hurt = sprGoldScorpionHurt
 spr_dead = sprGoldScorpionDead
 spr_fire = sprGoldScorpionFire
 
-snd_hurt = sndHitMetal
-snd_dead = sndScorpionDie
+snd_hurt = sndGoldScorpionHurt;
+snd_dead = sndGoldScorpionDead;
+snd_mele = sndGoldScorpionMelee
 
 //behavior
 ammo = 10

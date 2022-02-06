@@ -6,7 +6,7 @@ team=0;
 if fire
 {
 
-        with instance_create(x/*-8*/,y,Flame)
+        with instance_create(x/*-8*/,y,TrapFire)
             {
             sprite_index = sprFireLilHunter
         

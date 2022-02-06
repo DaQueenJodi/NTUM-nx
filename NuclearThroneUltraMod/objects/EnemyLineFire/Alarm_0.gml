@@ -5,7 +5,7 @@ dir = 0
 do {dir += 1 x += lengthdir_x(4,direction) y += lengthdir_y(4,direction)
 
 
-with instance_create(x,y,Flame)
+with instance_create(x,y,TrapFire)
 {motion_add(random(360),random(0.4))
 team = other.team
 sprite_index = sprFireLilHunter

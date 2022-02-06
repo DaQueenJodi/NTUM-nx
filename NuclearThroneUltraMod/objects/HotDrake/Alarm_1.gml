@@ -35,7 +35,7 @@ alarm[1] = 4+random(5);
     snd_play(sndDragonFire)
     repeat(6)
     {
-    with instance_create(x,y,Flame)
+    with instance_create(x,y,TrapFire)
     {
     sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,4+random(6))
@@ -62,7 +62,7 @@ alarm[1] = 4+random(5);
     snd_play(sndDragonFire)
     repeat(8)
     {
-    with instance_create(x,y,Flame)
+    with instance_create(x,y,TrapFire)
     {
     sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,2+random(6))
@@ -97,7 +97,7 @@ alarm[1] = 4+random(5);
     snd_play(sndDragonFire)
     repeat(8)
     {
-    with instance_create(x,y,Flame)
+    with instance_create(x,y,TrapFire)
     {
     sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,3+random(6))
@@ -164,7 +164,7 @@ alarm[1] = 4+random(5);
     snd_play(sndDragonFire)
     repeat(6)
     {
-    with instance_create(x,y,Flame)
+    with instance_create(x,y,TrapFire)
     {
     sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,4+random(6))
@@ -191,7 +191,7 @@ alarm[1] = 4+random(5);
     snd_play(sndDragonFire)
     repeat(8)
     {
-    with instance_create(x,y,Flame)
+    with instance_create(x,y,TrapFire)
     {
     sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,2+random(6))

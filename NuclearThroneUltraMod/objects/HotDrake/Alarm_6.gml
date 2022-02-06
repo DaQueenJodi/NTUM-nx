@@ -1,7 +1,7 @@
 mask_index=mskHotDrake;
 direction=point_direction(x,y,target.x,target.y);
 repeat(50){//flame wall of death baby yes 
-with instance_create(x,y+96,Flame)
+with instance_create(x,y+96,TrapFire)
     {
     sprite_index = sprFireLilHunter
     motion_add(other.direction+random(180)-90,3+random(6))
