@@ -1,5 +1,5 @@
 /// @description xxx
-if fire && sprite_index = spr_fire
+if sprite_index = spr_fire
 {
 	fire = false;
 	spr_idle = spr_normal;
@@ -10,10 +10,10 @@ else if (sprite_index == spr_disappear)
 {
 	if instance_exists(Floor) && instance_exists(Player)
 	{
-		var dis = max(48,point_distance(x,y,Player.x,Player.y));
-		var dir = point_direction(x,y,Player.x,Player.y);
-		var xx = x+lengthdir_x(dis*0.5,dir);
-		var yy = y+lengthdir_y(dis*0.5,dir);
+		var dis = random(1)*64 + 48;
+		var angle = random(360);
+		var xx = Player.x+lengthdir_x(dis,angle);
+		var yy = Player.y+lengthdir_y(dis,angle);
 		var targetFloor = instance_nearest(xx,yy,Floor);
 		x = targetFloor.x;
 		y = targetFloor.y;
