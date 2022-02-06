@@ -278,7 +278,7 @@ function scrNextLevel() {
 	{area=110;
 	subarea=1;
 	inverted=false;
-	lastaera=3;}
+	lastarea=3;}
 
 
 	if race=6||race=12{//Yv's Crib? Yun cuz aswell
@@ -297,9 +297,9 @@ function scrNextLevel() {
 
 	if (area=105 || area=106|| area=107 || area = 108 || area = 109 | area = 110 || area = 111 || area = 112)&&subarea<2//inverted curse
 	{
-	hard+=2
+		hard+=1//Used to be +2
 	}
-	else
+	else if ((area != 7 && subarea == 1) && (area != 5 && subarea == 1))//Labs 1 and Vulcano 1 don't increase hard
 	hard += 1
 
 

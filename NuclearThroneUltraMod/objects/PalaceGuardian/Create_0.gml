@@ -1,7 +1,7 @@
 raddrop = 2
 maxhealth = 35
 meleedamage = 2;
-size = 3
+size = 4
 
 event_inherited()
 
@@ -24,4 +24,4 @@ fire = false;
 gunangle = 0;
 alarm[1] = 30+random(90)
 wkick = 0
-friction = 0.6;
+friction = 6;

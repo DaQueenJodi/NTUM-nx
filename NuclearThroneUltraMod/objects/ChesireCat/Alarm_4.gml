@@ -2,25 +2,27 @@
 //snd_play(sndDragonStop)
 snd_play(sndStatueHurt);
 mask_index=mskChesireCat;
-
+alarm[1] +=1;
 ammo-=1;
 ang = random(360)
-repeat(16)
+var ogAng = ang;
+var angStep = 360/10;
+repeat(10)
 {
 with instance_create(xprevious,yprevious,EnemyBullet1)
-{motion_add(other.ang,0.8+random(3))
+{motion_add(other.ang,2)
 image_angle = direction
 team = other.team}
-ang += 360/10
+ang += angStep;
 }
-
-repeat(16)
+ang = ogAng + (angStep*0.5);
+repeat(10)
 {
 with instance_create(xprevious,yprevious,EnemyBullet1)
-{motion_add(other.ang,3+random(3))
+{motion_add(other.ang,4)
 image_angle = direction
 team = other.team}
-ang += 360/10
+ang += angStep
 }
 if ammo>0
 alarm[4]=12;

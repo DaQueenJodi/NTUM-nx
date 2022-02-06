@@ -3467,7 +3467,7 @@ function scrWeapons() {
 	wep_load[314] = 30
 	wep_cost[314] = 0
 	wep_sprt[314] = sprChargeSplinterGun
-	wep_area[314] = 3
+	wep_area[314] = 5
 	wep_text[314] = "hold and hold longer"
 	wep_swap[314] = sndSwapShotgun
 	wep_rad[314] = 0;
@@ -3787,7 +3787,7 @@ function scrWeapons() {
 	wep_load[343] = 50
 	wep_cost[343] = 10
 	wep_sprt[343] = sprDimensionGenerator
-	wep_area[343] = 18
+	wep_area[343] = 14
 	wep_text[343] = "the tentacle universe"
 	wep_swap[343] = sndSwapDragon
 	wep_rad[343] = 0;
@@ -3919,7 +3919,7 @@ function scrWeapons() {
 	wep_load[355] = 16
 	wep_cost[355] = 1
 	wep_sprt[355] = sprJawbreaker
-	wep_area[355] = 0
+	wep_area[355] = 1
 	wep_text[355] = "pincer attack"
 	wep_swap[355] = sndSwapShotgun
 	wep_rad[355] = 0;

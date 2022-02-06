@@ -23,4 +23,4 @@ if target>0
 {
 gunangle = point_direction(x,y,target.xprevious,target.yprevious);
 }
-
+alarm[1] += 2;

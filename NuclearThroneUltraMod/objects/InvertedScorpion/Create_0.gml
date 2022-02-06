@@ -29,7 +29,7 @@ if random(30) < 1 and Player.subarea > 1
 {
 replace=true;
 instance_destroy()
-instance_create(x,y,GoldScorpion)
+instance_create(x,y,InvertedGoldScorpion)
 }
 }
 

@@ -28,7 +28,10 @@ with WepPickup
 instance_destroy();
 
 draw_texture_flush();//Free memory (removes all loadedness of texture pages, txp for all areas for example) meaning sprites for area 7 & others aren't loaded when you restart
-
+with Player
+{
+	restarted = true;	
+}
 room_restart()
 exit;
 }

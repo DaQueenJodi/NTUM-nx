@@ -5,22 +5,33 @@ mask_index=mskChesireCat;
 
 ammo-=1;
 ang = random(360)
-repeat(9)
+var ogAng = ang;
+var angStep = 360/10;
+repeat(10)
 {
 with instance_create(xprevious,yprevious,EnemyBullet1)
-{motion_add(other.ang,0.8+random(3))
+{motion_add(other.ang,1)
 image_angle = direction
 team = other.team}
-ang += 360/9
+ang += angStep;
 }
-
+ang = ogAng + (angStep*0.5);
+repeat(10)
+{
+with instance_create(xprevious,yprevious,EnemyBullet1)
+{motion_add(other.ang,3)
+image_angle = direction
+team = other.team}
+ang += angStep
+}
+angStep = 360/20;
 repeat(20)
 {
 with instance_create(xprevious,yprevious,EnemyBullet1)
-{motion_add(other.ang,3+random(4))
+{motion_add(other.ang,6)
 image_angle = direction
 team = other.team}
-ang += 360/6+random(6)
+ang +=angStep
 }
 if ammo>0
 alarm[4]=7;

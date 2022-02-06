@@ -488,24 +488,6 @@ owner=other.id;
 if (my_health<prevhealth)
 {
 	//Took a hit?
-	if skill_got[12]//euphoria resistance?
-	{
-		if !instance_exists(GenCont)&&!instance_exists(EuphoriaShield)&&!instance_exists(LevCont)&&exception=false
-		{
-		if skill_got[28]//rage
-		{
-		if my_health<prevhealth&&exception=false//I been hit
-		rage=0;
-		}
-
-		prevhealth=my_health;
-		if race=25
-			alarm[3]=35;
-		else
-			alarm[3]=30;//duration
-		instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
-		}
-	}
 	if (skill_got[32] && isAlkaline && exception=false)//Alkaline Savila
 	{
 		isAlkaline = false;
@@ -530,6 +512,24 @@ if (my_health<prevhealth)
 			pt.mytext = "+"+string(damageTaken)+" HP";
 			
 		alarm[3]=10;//duration of iframes
+	}
+	if skill_got[12]//euphoria resistance?
+	{
+		if !instance_exists(GenCont)&&!instance_exists(EuphoriaShield)&&!instance_exists(LevCont)&&exception=false
+		{
+		if skill_got[28]//rage
+		{
+		if my_health<prevhealth&&exception=false//I been hit
+		rage=0;
+		}
+
+		prevhealth=my_health;
+		if race=25
+			alarm[3]=35;
+		else
+			alarm[3]=30;//duration
+		instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
+		}
 	}
 }
 

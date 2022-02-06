@@ -48,3 +48,5 @@ other.cam=false;
 if cam
 instance_create(x,y,DramaCamera);
 
+friction = 0.8;
+

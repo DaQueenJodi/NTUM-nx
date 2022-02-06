@@ -1,13 +1,13 @@
 if candmg and other.team != team
 {
 snd_play(other.snd_hurt, other.hurt_pitch_variation)
-if other.my_health >= 10
+if other.my_health >= 10 && other.sprite_index != other.spr_hurt
 {
 instance_destroy()
 
 with other
 {
-my_health -= 20
+my_health -= other.dmg
 sprite_index = spr_hurt
 image_index = 0
 motion_add(other.direction,8)

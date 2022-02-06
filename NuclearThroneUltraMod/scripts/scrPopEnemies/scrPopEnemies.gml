@@ -53,7 +53,7 @@ function scrPopEnemies() {
 	instance_create(x+16+random(4),y+16+random(4),choose(BanditInverted,BanditInverted,BanditInverted,BanditInverted,BanditInverted,BigMaggotInverted))
 	}
 	if random(50)<1{
-	instance_create(x+16,y+16,choose(InvertedScorpion,GoldScorpion,BigMaggotInverted,InvertedScorpion,BigMaggotInverted))
+	instance_create(x+16,y+16,choose(InvertedScorpion,InvertedGoldScorpion,BigMaggotInverted,InvertedScorpion,BigMaggotInverted))
 	}
 	instance_create(x+16,y+16,choose(BanditInverted,BanditInverted,BanditInverted,BanditInverted,BigMaggotInverted,BanditInverted,BigMaggotInverted))}
 	}
@@ -236,73 +236,73 @@ function scrPopEnemies() {
 	//VULCANO
 	if spawnarea = 7
 	{
-	if styleb = 1//b style
-	{
-	if random(10) < 1
-	{
-	repeat(4)
-	instance_create(x+12+random(8),y+12+random(8),choose(LavaBallEnemy,LavaBallEnemy,LavaBallEnemy,LavaBallEnemy,LavaBallEnemy))
-	}
-	else if random(8) < 1
-	instance_create(x+16,y+16,choose(SuperFireBaller,Thief,SuperFireBaller,FireBat,Thief,FireBaller,FireBaller))
-	}
-	else//a style
-	{
-	if random(10) < 1
-	{
-	if instance_exists(Player){
-	if Player.subarea=2{
-	repeat(3)
-	instance_create(x+12+random(8),y+12+random(8),choose(FireBat,LavaBallEnemy,LavaBallEnemy,FireBaller,FireBat))
-	}
-	else{//not subarea 2
-	repeat(7)
-	instance_create(x+12+random(8),y+12+random(8),choose(FireBat,LavaBallEnemy,LavaBallEnemy,FireBaller,FireBat))}
-	}
-	else{//dead Player
-	repeat(7)
-	instance_create(x+12+random(8),y+12+random(8),choose(FireBat,LavaBallEnemy,LavaBallEnemy,FireBaller,FireBat))
-	}
-	}
-	else if random(8) < 1
-	instance_create(x+16,y+16,choose(FireBat,FireBat,LavaBallEnemy,SuperFireBaller,SuperFireBaller,FireBaller,ExploFreak))
-	}
+		if styleb = 1//b style
+		{
+		if random(10) < 1
+		{
+		repeat(2)
+		instance_create(x+12+random(8),y+12+random(8),choose(LavaBallEnemy,LavaBallEnemy,LavaBallEnemy,LavaBallEnemy,LavaBallEnemy,Salamander))
+		}
+		else if random(7) < 1
+		instance_create(x+16,y+16,choose(SuperFireBaller,Thief,SuperFireBaller,FireBat,Bandit,FireBaller,FireBaller))
+		}
+		else//a style
+		{
+		if random(10) < 1
+		{
+		if instance_exists(Player){
+		if Player.subarea=2{
+			repeat(3)
+			instance_create(x+12+random(8),y+12+random(8),choose(FireBat,LavaBallEnemy,LavaBallEnemy,FireBaller,FireBat,Salamander))
+		}
+		else{//not subarea 2
+		repeat(4)
+		instance_create(x+12+random(8),y+12+random(8),choose(FireBat,LavaBallEnemy,LavaBallEnemy,FireBaller,FireBat,Salamander,Bandit))}
+		}
+		else{//dead Player
+		repeat(2)
+		instance_create(x+12+random(8),y+12+random(8),choose(FireBat,LavaBallEnemy,LavaBallEnemy,FireBaller,FireBat,Salamander,Salamander,Bandit))
+		}
+		}
+		else if random(7) < 1
+		instance_create(x+16,y+16,choose(FireBat,FireBat,LavaBallEnemy,SuperFireBaller,SuperFireBaller,FireBaller,Salamander))
+		}
 	}
 
 	//INVERTED VULCANO
 	if spawnarea = 108
 	{
-	if styleb = 1//b style
-	{
-	if random(10) < 1
-	{
-	repeat(4)
-	instance_create(x+12+random(8),y+12+random(8),choose(InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedLavaBallEnemy,FireBaller,InvertedLavaBallEnemy,InvertedExploFreak))
-	}
-	else if random(8) < 1
-	instance_create(x+16,y+16,choose(InvertedSuperFireBaller,InvertedFireBaller,InvertedSuperFireBaller,InvertedFireBat,InvertedFireBaller,InvertedFireBaller,InvertedFireBaller,InvertedExploFreak))
-	}
-	else//a style
-	{
-	if random(10) < 1
-	{
-	if instance_exists(Player){
-	if Player.subarea=2{
-	repeat(3)
-	instance_create(x+12+random(8),y+12+random(8),choose(InvertedFireBat,InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedFireBaller,InvertedFireBat))
-	}
-	else{//not subarea 2
-	repeat(7)
-	instance_create(x+12+random(8),y+12+random(8),choose(InvertedFireBat,InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedFireBaller,InvertedFireBat))}
-	}
-	else{//dead Player
-	repeat(7)
-	instance_create(x+12+random(8),y+12+random(8),choose(InvertedFireBat,InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedFireBaller,InvertedFireBat))
-	}
-	}
-	else if random(8) < 1
-	instance_create(x+16,y+16,choose(InvertedFireBat,InvertedFireBat,InvertedLavaBallEnemy,InvertedSuperFireBaller,InvertedSuperFireBaller,InvertedFireBaller,InvertedExploFreak))
-	}
+		if styleb = 1//b style
+		{
+		if random(10) < 1
+		{
+		repeat(2)
+		instance_create(x+12+random(8),y+12+random(8),choose(InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedSalamander))
+		}
+		else if random(7) < 1
+		instance_create(x+16,y+16,choose(InvertedSuperFireBaller,Thief,InvertedSuperFireBaller,InvertedFireBat,BanditInverted,InvertedFireBaller,InvertedFireBaller))
+		}
+		else//a style
+		{
+		if random(10) < 1
+		{
+		if instance_exists(Player){
+		if Player.subarea=2{
+			repeat(3)
+			instance_create(x+12+random(8),y+12+random(8),choose(InvertedFireBat,InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedFireBaller,InvertedFireBat,InvertedSalamander))
+		}
+		else{//not subarea 2
+		repeat(4)
+		instance_create(x+12+random(8),y+12+random(8),choose(InvertedFireBat,InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedFireBaller,InvertedFireBat,InvertedSalamander,BanditInverted))}
+		}
+		else{//dead Player
+		repeat(2)
+		instance_create(x+12+random(8),y+12+random(8),choose(InvertedFireBat,InvertedLavaBallEnemy,InvertedLavaBallEnemy,InvertedFireBaller,InvertedFireBat,InvertedSalamander,InvertedSalamander,BanditInverted))
+		}
+		}
+		else if random(7) < 1
+		instance_create(x+16,y+16,choose(InvertedFireBat,InvertedFireBat,InvertedLavaBallEnemy,InvertedSuperFireBaller,InvertedSuperFireBaller,InvertedFireBaller,InvertedSalamander))
+		}
 	}
 
 	if spawnarea = 8//Wonderland
@@ -449,9 +449,9 @@ function scrPopEnemies() {
 	
 	if spawnarea == 9
 	{
-		if styleb = 1
+		if styleb = 1 && random(7) < 2
 		{
-		instance_create(x+16,y+16,choose(EraserBandit,Thief,Thief,Thief))
+		instance_create(x+16,y+16,choose(GuardianDog,GuardianDog,Thief,Thief))
 		}
 		else
 		{
@@ -459,7 +459,7 @@ function scrPopEnemies() {
 			
 			if ran > 80
 			{
-				instance_create(x+16,y+16,choose(PalaceGuardian,PalaceGuardian,PalaceGuardian,PalaceGuardian))	
+				instance_create(x+16,y+16,choose(PalaceGuardian,PalaceGuardian,PalaceGuardian,GuardianDog))	
 			}
 		}
 		
