@@ -23,9 +23,10 @@ if UberCont.public=0 {
 //hacks
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,PalaceGuardian);
-		thing = instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,PopupText);
-		thing.mytext = "GUARDIAN?";
+		var disttoplayer = 96;
+	    instance_create(x + dcos(dangle)*disttoplayer,y + dsin(dangle)*disttoplayer,GoldSnowTank);
+		thing = instance_create(x + dcos(dangle)*disttoplayer,y + dsin(dangle)*disttoplayer,PopupText);
+		thing.mytext = "GOLD TANK?";
 	}
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
