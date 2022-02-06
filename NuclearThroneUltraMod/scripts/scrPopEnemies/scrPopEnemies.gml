@@ -449,9 +449,9 @@ function scrPopEnemies() {
 	
 	if spawnarea == 9
 	{
-		if styleb = 1
+		if styleb = 1 && random(7) < 2
 		{
-		instance_create(x+16,y+16,choose(EraserBandit,Thief,Thief,Thief))
+		instance_create(x+16,y+16,choose(GuardianDog,GuardianDog,Thief,Thief))
 		}
 		else
 		{
@@ -459,7 +459,7 @@ function scrPopEnemies() {
 			
 			if ran > 80
 			{
-				instance_create(x+16,y+16,choose(PalaceGuardian,PalaceGuardian,PalaceGuardian,PalaceGuardian))	
+				instance_create(x+16,y+16,choose(PalaceGuardian,PalaceGuardian,PalaceGuardian,GuardianDog))	
 			}
 		}
 		

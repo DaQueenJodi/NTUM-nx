@@ -1,10 +1,17 @@
 /// @description Animation state transitions
-if fire && sprite_index == spr_fire
+if sprite_index = spr_hurt && !fire
+{
+	spr_idle = spr_normal;
+	spr_walk = spr_normal;
+	sprite_index = spr_normal;
+}
+else if fire && sprite_index == spr_fire
 {
 	fire = false;
 	spr_idle = spr_normal;
 	spr_walk = spr_normal;
 	sprite_index = spr_normal;
+	image_index = 0;
 	//alarm[1] += 20;
 }
 else if (sprite_index == spr_disappear)

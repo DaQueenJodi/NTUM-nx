@@ -24,4 +24,4 @@ fire = false;
 gunangle = 0;
 alarm[1] = 30+random(90)
 wkick = 0
-friction = 4;
+friction = 6;

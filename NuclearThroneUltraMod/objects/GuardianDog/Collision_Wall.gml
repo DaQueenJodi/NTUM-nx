@@ -1,5 +1,5 @@
-if jumpUp || jumpDown
-{
+//if jumpUp || jumpDown
+//{
 	move_bounce_solid(true)
 	jumpDir = direction;
-}
+//}

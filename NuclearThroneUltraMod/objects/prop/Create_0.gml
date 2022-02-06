@@ -9,4 +9,4 @@ snd_hurt = sndHitPlant
 hurt_pitch_variation = 0;
 frozen=false;
 image_xscale = choose(1,-1)
-
+shadowSprite = shd24;

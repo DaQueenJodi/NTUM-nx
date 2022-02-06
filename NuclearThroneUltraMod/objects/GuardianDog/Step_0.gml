@@ -1,7 +1,7 @@
 event_inherited()
 
-if speed < 1.5 && !fire
-	speed = 1.5;
+if speed < 2 && sprite_index != spr_fire
+	speed = 2;
 else if jumpUp || jumpDown
 {
 	motion_add(jumpDir,6);

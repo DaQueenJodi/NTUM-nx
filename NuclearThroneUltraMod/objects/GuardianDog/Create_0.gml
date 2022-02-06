@@ -15,7 +15,6 @@ spr_jump_up = sprDogGuardianJumpUp;
 spr_jump_down = sprDogGuardianJumpDown;
 //These are to stop iframes during jump
 spr_chrg = spr_jump_up;
-spr_fire = spr_jump_down;
 fire = false;
 charge = false;
 jumpUp = false;
@@ -24,4 +23,4 @@ jumpDir = 0;
 //behavior
 walk = 1
 alarm[1] = 30+random(90)
-friction = 2;
+friction = 1;

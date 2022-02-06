@@ -6,6 +6,8 @@ if sprite_index == spr_jump_down && alarm[3] < 1
 	spr_walk = spr_normal;
 	jumpDown = false;
 	charge = false;
+	fire = false;
+	alarm[1] += 10;
 	image_index = 0;
 	instance_create(x,y,WallBreak);
 	repeat(10)

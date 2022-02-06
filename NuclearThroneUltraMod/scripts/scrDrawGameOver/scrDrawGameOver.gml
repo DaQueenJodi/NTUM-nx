@@ -54,6 +54,11 @@ function scrDrawGameOver() {
 	with MusCont
 	instance_destroy()
 	instance_create(0,0,MusCont)
+	
+	with Player
+	{
+		restarted = true;	
+	}
 	room_restart()
 	exit;
 	}
