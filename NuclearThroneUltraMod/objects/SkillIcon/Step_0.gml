@@ -32,9 +32,16 @@ else
 Player.maxspeed += 0.5
 
 }
-else if skill = 3 && Player.race=25//Plutonium hunger
+else if skill = 3
 {
-Player.betterpluto+=10;
+	if Player.race=25//Plutonium hunger
+	{
+		Player.betterpluto = 80;
+	}
+	else
+	{
+		Player.betterpluto = 70;	
+	}
 }
 else if skill = 4 && Player.race=25//rabitpaw
 {

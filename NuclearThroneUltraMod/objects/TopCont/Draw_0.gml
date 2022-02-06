@@ -121,11 +121,11 @@ draw_sprite(topspr,topindex,x,y-8)
 }
 //Eagle eyes chest content
 if(instance_exists(Player)){
-if(Player.skill_got[19] || true){
+if(Player.skill_got[19]){
 with WeaponChest
 {
 	if(sprite_index!=sprWeaponChestBig){
-		draw_sprite_ext(wep_sprt[wep],0,x,y-14,1,1,0,c_white,0.75);
+		draw_sprite_ext(wep_sprt[wep],0,x-7,y-14,1,1,0,c_white,0.75);
 		/*
 		Also show tier, this is ugly man
 		draw_set_halign(fa_left);
@@ -147,9 +147,9 @@ with WeaponChest
 	}
 	else
 	{
-		draw_sprite_ext(wep_sprt[wep1],0,x-7,y-8,1,1,0,c_white,0.75);
-		draw_sprite_ext(wep_sprt[wep2],0,x-7,y-24,1,1,0,c_white,0.75);
-		draw_sprite_ext(wep_sprt[wep3],0,x-7,y-40,1,1,0,c_white,0.75);
+		draw_sprite_ext(wep_sprt[wep1],0,x-7,y-16,1,1,0,c_white,0.75);
+		draw_sprite_ext(wep_sprt[wep2],0,x-7,y-26,1,1,0,c_white,0.75);
+		draw_sprite_ext(wep_sprt[wep3],0,x-7,y-36,1,1,0,c_white,0.75);
 	}
 }
 }}

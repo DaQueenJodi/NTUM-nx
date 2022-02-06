@@ -3467,7 +3467,7 @@ function scrWeapons() {
 	wep_load[314] = 30
 	wep_cost[314] = 0
 	wep_sprt[314] = sprChargeSplinterGun
-	wep_area[314] = 3
+	wep_area[314] = 5
 	wep_text[314] = "hold and hold longer"
 	wep_swap[314] = sndSwapShotgun
 	wep_rad[314] = 0;

@@ -121,7 +121,7 @@ alarm[1]=walk+5+random(30);
 direction = point_direction(x,y,target.x,target.y)+random(20)-10}
 }//no target\/
 else if random(10)<2{
-motion_add(random(360),0.5)
+motion_add(random(360),0.8)
 walk=20+random(10)
 alarm[1]=walk;}
 
