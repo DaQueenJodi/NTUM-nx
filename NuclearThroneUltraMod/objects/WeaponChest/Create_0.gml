@@ -40,7 +40,7 @@ if (Player.ultra_got[25]==1)
 }
 
 scrWeapons()
-wep=scrDecideWep(1, 4, other.curse)
+wep=scrDecideWep(0, 4, other.curse)
 
 
     if (mediumchest==1)

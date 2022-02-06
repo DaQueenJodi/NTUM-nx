@@ -9,45 +9,35 @@ function scrDecideWep(wepTier, maxTries = 4, cursed = 0) {
 
 		}
 		else{
+			var maxAreaGoodEnough = 20;
+			var minWepArea = 0;
 			if Player.race = 8
 			{
 				wepTier += 1
 				maxTries += 1;
 			}
+			if Player.ultra_got[29]==1
+			{
+				minWepArea = 6;
+				maxTries += 5;
+			}
 			
 			if (cursed) {
-				do wep = round(random(maxwep-1)+1)
-				until (wep_area[wep] > Player.hard+wepTier or Player.hard > 20) and wep_area[wep] <= Player.hard+wepTier+5 and wep_area[wep] and ((wep != Player.wep and wep != Player.bwep) or Player.race = 7)
+				wepTier += 2;
+				maxTries += 2;
+				//do wep = round(random(maxwep-1)+1)
+				//until (wep_area[wep] > Player.hard+wepTier or Player.hard > 20) and wep_area[wep] <= Player.hard+wepTier+5 and wep_area[wep] and ((wep != Player.wep and wep != Player.bwep) or Player.race = 7)
 			}
-			
-			if Player.ultra_got[29]==1
-			{//DO UNTILL wep is above area 5 (3-1) REFINED TASTE
-				maxTries += 5;
-				var triesForSpecificTier = 0;
-				do {
-					wep=irandom(maxwep-1)+1;
-					triesForSpecificTier++;
-				}
-				until (
-				(wep_area[wep] == Player.hard+wepTier || triesForSpecificTier >= maxTries)
-				&& wep_area[wep] != -1 && wep_area[wep] <= Player.hard+wepTier
-				&& ( (wep != Player.wep and wep != Player.bwep) || Player.race == 7/*roids can dual wield*/)
-				&& wep_area[wep] > 5
-				)
+			var triesForSpecificTier = 0;
+			do {
+				wep=irandom(maxwep-1)+1;
+				triesForSpecificTier++;
 			}
-			else
-			{
-				var triesForSpecificTier = 0;
-				do {
-					wep=irandom(maxwep-1)+1;
-					triesForSpecificTier++;
-				}
-				until (
-				(wep_area[wep] == Player.hard+wepTier || triesForSpecificTier >= maxTries)
-				&& wep_area[wep] != -1 && wep_area[wep] <= Player.hard+wepTier
-				&& ( (wep != Player.wep and wep != Player.bwep) || Player.race == 7/*roids can dual wield*/) 
-				)
-			}
+			until (
+			(wep_area[wep] == Player.hard+wepTier || triesForSpecificTier >= maxTries || wep_area[wep] >= maxAreaGoodEnough)
+			&& wep_area[wep] >= minWepArea && wep_area[wep] <= Player.hard+wepTier
+			&& ( (wep != Player.wep and wep != Player.bwep) || Player.race == 7/*roids can dual wield*/) 
+			)
 		}
 	}
 	else
