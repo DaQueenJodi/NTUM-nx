@@ -1,5 +1,5 @@
 /// @description overwrite enemy overlap code
-if other.sprite_index!=other.spr_hurt
+if meleedamage > 0 && other.sprite_index!=other.spr_hurt
 {
 
 with other

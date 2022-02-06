@@ -639,6 +639,7 @@
     {"id":{"name":"sprLightningCrystalHurt","path":"sprites/sprLightningCrystalHurt/sprLightningCrystalHurt.yy",},"order":15,},
     {"id":{"name":"sprSpiderDead","path":"sprites/sprSpiderDead/sprSpiderDead.yy",},"order":17,},
     {"id":{"name":"sprSpiderHurt","path":"sprites/sprSpiderHurt/sprSpiderHurt.yy",},"order":19,},
+    {"id":{"name":"sprVanIndicator","path":"sprites/sprVanIndicator/sprVanIndicator.yy",},"order":48,},
     {"id":{"name":"sprSpiderIdle","path":"sprites/sprSpiderIdle/sprSpiderIdle.yy",},"order":21,},
     {"id":{"name":"sprSpiderWalk","path":"sprites/sprSpiderWalk/sprSpiderWalk.yy",},"order":23,},
     {"id":{"name":"sprDogGuardianCharge","path":"sprites/sprDogGuardianCharge/sprDogGuardianCharge.yy",},"order":6,},

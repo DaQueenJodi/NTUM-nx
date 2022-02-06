@@ -17,7 +17,7 @@ UberCont.opt_discs += 1
 else
 UberCont.opt_discs=1;
 }
-
+draw_set_valign(fa_top);
 draw_text_color(x+16,y,string_hash_to_newline(string(UberCont.opt_discs)),c_white,c_white,c_white,c_white,1);
 
 draw_text_color(x-128,y,string_hash_to_newline("AMOUNT OF DISCS: "),c_white,c_white,c_white,c_white,1)

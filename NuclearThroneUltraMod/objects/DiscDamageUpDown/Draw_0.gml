@@ -17,7 +17,7 @@ else
 UberCont.opt_discdamage=0;
 }
 
-
+draw_set_valign(fa_top);
 draw_text_color(x+16,y,string_hash_to_newline(string(UberCont.opt_discdamage)),c_white,c_white,c_white,c_white,1);
 
 draw_text_color(x-128,y,string_hash_to_newline("DISC DAMAGE: "),c_white,c_white,c_white,c_white,1)

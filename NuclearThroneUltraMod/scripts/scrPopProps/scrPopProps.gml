@@ -11,7 +11,7 @@ function scrPopProps() {
 	instance_create(x,y,NOWALLSHEREPLEASE)
 	}
 	//walls near the player for safer spawn
-	if random(4)<3  and !place_meeting(x,y,NOWALLSHEREPLEASE) && point_distance(x,y,Player.x,Player.y)<128 and Player.area != 100 and Player.area != 6 and Player.area != 112 and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104 and !(Player.area = 8 && Player.subarea=3) and Player.area != 9
+	if random(5)<2  and !place_meeting(x,y,NOWALLSHEREPLEASE) && point_distance(x,y,Player.x,Player.y)<128 and Player.area != 100 and Player.area != 6 and Player.area != 112 and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104 and !(Player.area = 8 && Player.subarea=3) and Player.area != 9
 	{
 		
 	myx = x+choose(0,16)

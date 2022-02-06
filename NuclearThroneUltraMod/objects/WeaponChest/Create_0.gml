@@ -1,4 +1,5 @@
 curse = 0;
+mediumchest = 0;
 if isOneWeaponOnlyModes()
 	oneweponly = true;
 else
@@ -10,8 +11,6 @@ event_inherited()
 
 if curse = 1
 sprite_index = sprCursedWeaponChest
-
-mediumchest=0;
 
 if instance_exists(Player)
 {
