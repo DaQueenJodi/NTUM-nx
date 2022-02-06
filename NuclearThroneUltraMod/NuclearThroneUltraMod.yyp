@@ -297,6 +297,7 @@
     {"id":{"name":"sprVanPortalClose","path":"sprites/sprVanPortalClose/sprVanPortalClose.yy",},"order":43,},
     {"id":{"name":"sprVanPortalStart","path":"sprites/sprVanPortalStart/sprVanPortalStart.yy",},"order":45,},
     {"id":{"name":"mskVan","path":"sprites/mskVan/mskVan.yy",},"order":47,},
+    {"id":{"name":"sprWepTier","path":"sprites/sprWepTier/sprWepTier.yy",},"order":34,},
     {"id":{"name":"sprRogueGruntIdle","path":"sprites/sprRogueGruntIdle/sprRogueGruntIdle.yy",},"order":1,},
     {"id":{"name":"sprRogueGruntHurt","path":"sprites/sprRogueGruntHurt/sprRogueGruntHurt.yy",},"order":3,},
     {"id":{"name":"sprRogueGruntDead","path":"sprites/sprRogueGruntDead/sprRogueGruntDead.yy",},"order":5,},

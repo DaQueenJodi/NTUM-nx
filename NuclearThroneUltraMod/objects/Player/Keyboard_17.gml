@@ -87,7 +87,7 @@ with instance_create(x,y,Portal) type = 1
 }
 if keyboard_check_pressed(ord("6"))
 {
-area = 106
+area = 6
 subarea = 0
 //inverted=false;
 with enemy

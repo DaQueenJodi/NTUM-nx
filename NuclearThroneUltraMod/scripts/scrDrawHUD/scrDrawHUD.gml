@@ -1,4 +1,9 @@
 function scrDrawHUD() {
+	with Player
+	{
+			draw_text(x,y-96,string(hard));
+	
+	}
 	if UberCont.opt_gamemode!=3{//NO HUD gamemode
 
 
@@ -95,7 +100,6 @@ function scrDrawHUD() {
 	draw_text(__view_get( e__VW.XView, 0 )+23+44,__view_get( e__VW.YView, 0 )+7,string_hash_to_newline(string(Player.my_health)+"/"+string(Player.maxhealth)))
 	}
 	var wepcolour = c_white;
-	var wep;
 
 
 	//TERTIARY WEAPON
@@ -319,21 +323,6 @@ function scrDrawHUD() {
 	draw_set_color(c_white)
 	}
 
-	//Eagle eyes weptier
-	if Player.skill_got[19]//eagle eyes
-	{
-
-	txt = "#TIER: "+string(Player.wep_area[Player.wep]);
-	draw_set_halign(fa_left)
-	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+1,__view_get( e__VW.YView, 0 )+50,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+1,__view_get( e__VW.YView, 0 )+51,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+2,__view_get( e__VW.YView, 0 )+51,string_hash_to_newline(string(txt)))
-	draw_set_color(c_white)
-	draw_text(__view_get( e__VW.XView, 0 )+2,__view_get( e__VW.YView, 0 )+50,string_hash_to_newline(string(txt)))
-
-	}
-
 
 	var ammoheight;
 	ammoheight=38;//34
@@ -425,90 +414,6 @@ function scrDrawHUD() {
 	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
 	}
 
-	//SHOW ME SOME TESTING VARIABLES
-	if UberCont.public=0{
-	if ( keyboard_check(ord("C")) )
-	{
-
-	with UberCont
-	{
-	draw_text_colour(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )+string_width(string_hash_to_newline(txttime)),__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )+string_height(string_hash_to_newline(txttime))-1,string_hash_to_newline(txttime),c_white
-	,c_white,c_white,c_white,1);
-
-	draw_text_colour(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )+string_width(string_hash_to_newline(txttime)),__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )+string_height(string_hash_to_newline(txttime))+1,string_hash_to_newline(txttime),c_black
-	,c_black,c_black,c_black,1);
-	}
-
-
-	txt = " prevhealth"+string(Player.prevhealth);
-
-	draw_set_halign(fa_left)
-	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_set_color(c_white)
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-
-
-	txt= "##HumphryTBcount"+string(Player.HumphryTBcount);
-
-	draw_set_halign(fa_left)
-	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_set_color(c_white)
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-
-	txt= "####banditland #"+string(Player.banditland);
-
-	draw_set_halign(fa_left)
-	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_set_color(c_white)
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-
-	txt= "######accuracy #"+string(Player.accuracy);
-
-	draw_set_halign(fa_left)
-	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_set_color(c_white)
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-
-	txt= "########skillsChosen #"+string(Player.skillsChosen);
-
-	draw_set_halign(fa_left)
-	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_set_color(c_white)
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-
-
-	txt= "###########hunter marked #"+string(Player.bigbanditmarked)+" BB#"
-	+string(Player.bigdogmarked)+" BD#"
-	+string(Player.lillhuntermarked)+" LH#"
-	+string(Player.bigmachinemarked)+" BM#"
-	+string(Player.dragonmarked)+" D#"
-	+string(Player.chesirecatmarked)+" CC";
-
-	draw_set_halign(fa_left)
-	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+55,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
-	draw_set_color(c_white)
-	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
-
-
-	}}
 
 	//LOW HP
 
@@ -607,14 +512,48 @@ function scrDrawHUD() {
 	draw_sprite(sprEnergyIconBG,2,x+7,y-21)
 	draw_sprite(sprEnergyIcon,7-ceil((Player.ammo[type]/Player.typ_amax[type])*7),x+7,y-21)}
 
+//wep_area[Player.wep]
+/*
 	draw_set_color(c_black)
 	draw_text(x,y-30,string_hash_to_newline(string(name)))
 	draw_text(x+1,y-30,string_hash_to_newline(string(name)))
 	draw_text(x+1,y-31,string_hash_to_newline(string(name)))
 	draw_set_color(c_white)
-	draw_text(x,y-31,string_hash_to_newline(string(name)))
+	draw_text(x,y-31,string_hash_to_newline(string(name)))*/
 	//draw_sprite(sprAmmoPointer,0,view_xview+5-10+type*10,view_yview+32+12)
-
+		//draw_set_halign(fa_left)
+	var ny = y-30;
+	//Eagle eyes weptier
+		if Player.skill_got[19]//eagle eyes
+		{
+			var tier = string(wep_area[wep]);
+			var spaceBetweenStarAndText = 4;
+			var ty = y-40;
+			var tierSprite = sprWepTier;
+			var sw = string_width(tier)+spaceBetweenStarAndText;
+			var tx = x-(sw*0.25)//string_width(string_hash_to_newline(string(name)));
+			var txa = tx + sw;
+			draw_set_color(c_black)
+			draw_text(x,ny,string_hash_to_newline(string(name)))
+			draw_text(x+1,ny,string_hash_to_newline(string(name)))
+			draw_text(tx,ty,tier)
+			draw_text(tx+1,ty,tier)
+			draw_text(tx+1,ty-1,tier)
+			draw_text(x+1,ny-1,string_hash_to_newline(string(name)))
+			draw_set_color(c_white)
+			draw_text(x,ny-1,string_hash_to_newline(string(name)))
+			draw_text(tx,ty-1,tier)
+			draw_sprite(tierSprite,0,txa,ty+1);
+		}
+		else
+		{
+			draw_set_color(c_black)
+			draw_text(x,ny,string_hash_to_newline(string(name)))
+			draw_text(x+1,ny,string_hash_to_newline(string(name)))
+			draw_text(x+1,ny-1,string_hash_to_newline(string(name)))
+			draw_set_color(c_white)
+			draw_text(x,ny-1,string_hash_to_newline(string(name)))
+		}
 	}
 	}
 	}}

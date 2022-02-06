@@ -23,7 +23,7 @@ if UberCont.public=0 {
 //hacks
 	if keyboard_check_pressed(ord("C")) {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,PalaceGuardian);
+	    instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,sprWeaponChestBig);
 		thing = instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,PopupText);
 		thing.mytext = "GUARDIAN?";
 	}

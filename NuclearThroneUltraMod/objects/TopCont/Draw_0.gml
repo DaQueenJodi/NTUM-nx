@@ -121,19 +121,36 @@ draw_sprite(topspr,topindex,x,y-8)
 }
 //Eagle eyes chest content
 if(instance_exists(Player)){
-if(Player.skill_got[19]){
-with BigWeaponChest
-{
-
-draw_sprite_ext(wep_sprt[wep1],0,x-7,y-8,1,1,0,c_white,0.75);
-draw_sprite_ext(wep_sprt[wep2],0,x-7,y-24,1,1,0,c_white,0.75);
-draw_sprite_ext(wep_sprt[wep3],0,x-7,y-40,1,1,0,c_white,0.75);
-}
-
+if(Player.skill_got[19] || true){
 with WeaponChest
 {
-if(sprite_index!=sprWeaponChestBig){
-draw_sprite_ext(wep_sprt[wep],0,x-7,y-14,1,1,0,c_white,0.75);}
+	if(sprite_index!=sprWeaponChestBig){
+		draw_sprite_ext(wep_sprt[wep],0,x,y-14,1,1,0,c_white,0.75);
+		/*
+		Also show tier, this is ugly man
+		draw_set_halign(fa_left);
+		var tier = string(wep_area[wep]);
+		var sw = string_width(tier) + 2 + (sprite_get_bbox_right(sprWepTier)*0.5);
+		var sprW = sprite_get_width(wep_sprt[wep]) + 6;
+		var tw = sprW + sw;
+		var tx = x - (tw*0.5);
+		var ty = y-14;
+		draw_sprite_ext(wep_sprt[wep],0,tx,y-14,1,1,0,c_white,0.75);
+		tx += sprW;
+		draw_text_color(tx,ty,tier,c_black,c_black,c_black,c_black,0.75)
+		draw_text_color(tx+1,ty,tier,c_black,c_black,c_black,c_black,0.75)
+		draw_text_color(tx+1,ty-1,tier,c_black,c_black,c_black,c_black,0.75)
+		draw_text_color(tx,ty-1,tier,c_white,c_white,c_white,c_white,0.75)
+		tx += sw;
+		draw_sprite_ext(sprWepTier,0,tx,ty+1,1,1,0,c_white,0.75);
+		*/
+	}
+	else
+	{
+		draw_sprite_ext(wep_sprt[wep1],0,x-7,y-8,1,1,0,c_white,0.75);
+		draw_sprite_ext(wep_sprt[wep2],0,x-7,y-24,1,1,0,c_white,0.75);
+		draw_sprite_ext(wep_sprt[wep3],0,x-7,y-40,1,1,0,c_white,0.75);
+	}
 }
 }}
 

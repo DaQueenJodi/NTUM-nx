@@ -3919,7 +3919,7 @@ function scrWeapons() {
 	wep_load[355] = 16
 	wep_cost[355] = 1
 	wep_sprt[355] = sprJawbreaker
-	wep_area[355] = 0
+	wep_area[355] = 1
 	wep_text[355] = "pincer attack"
 	wep_swap[355] = sndSwapShotgun
 	wep_rad[355] = 0;
