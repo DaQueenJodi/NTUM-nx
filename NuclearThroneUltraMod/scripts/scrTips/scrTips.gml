@@ -23,6 +23,7 @@ function scrTips() {
 	"watch out for dehydration",
 	"crystal can shield",
 	"fear is the mindkiller",
+	"square bullets are immune to melee",
 	/*these are rare*/ choose("no","bob and weave","airhorn.wav","danger zone","no sex jokes","in and about"
 	,"the purple dragon","golden frog anyone?","Y.V. mony rad","the flying cat head","myth of time","sheeps are a thing","feedback is much apreciated","follow @erdeppol","sorry bout bugs","I love you!")
 	),choose(

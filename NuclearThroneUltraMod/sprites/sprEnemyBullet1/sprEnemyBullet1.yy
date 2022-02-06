@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprEnemyBullet1","path":"sprites/sprEnemyBullet1/sprEnemyBullet1.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprEnemyBullet1",
     "tags": [],
     "resourceType": "GMSequence",
   },

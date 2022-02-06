@@ -18,9 +18,15 @@ if random(2) < 1 && point_distance(target.x,target.y,x,y) < 180
 gunangle = point_direction(x,y,target.x,target.y)
 snd_play(sndEnemyFire)
 wkick = 4
-with instance_create(x,y,EnemyBullet1)
+var bullet = EnemyBullet1;
+if (squareShooter)
+	bullet = EnemyBullet1Square;
+with instance_create(x,y,bullet)
 {
-motion_add(other.gunangle+random(20)-10,4.5)
+if other.EnemyBullet1Square
+	motion_add(other.gunangle+random(20)-10,5)
+else
+	motion_add(other.gunangle+random(20)-10,4.5)
 image_angle = direction
 team = other.team
 }
@@ -97,9 +103,15 @@ if random(4) < 1
 snd_play(sndEnemyFire)
 wkick = 4
 gunangle = point_direction(x,y,target.x,target.y)
-with instance_create(x,y,EnemyBullet1)
+var bullet = EnemyBullet1;
+if (squareShooter)
+	bullet = EnemyBullet1Square;
+with instance_create(x,y,bullet)
 {
-motion_add(other.gunangle+random(20)-10,4)
+	if (other.squareShooter)
+		motion_add(other.gunangle+random(20)-10,4.5)
+	else
+		motion_add(other.gunangle+random(20)-10,4)
 image_angle = direction
 team = other.team
 }
@@ -168,9 +180,15 @@ if random(4) < 1
 snd_play(sndEnemyFire)
 wkick = 4
 gunangle = point_direction(x,y,target.x,target.y)
-with instance_create(x,y,EnemyBullet1)
+var bullet = EnemyBullet1;
+if (squareShooter)
+	bullet = EnemyBullet1Square;
+with instance_create(x,y,bullet)
 {
-motion_add(other.gunangle+random(20)-10,4)
+	if (squareShooter)
+		motion_add(other.gunangle+random(20)-10,4.5)
+	else
+		motion_add(other.gunangle+random(20)-10,4)
 image_angle = direction
 team = other.team
 }

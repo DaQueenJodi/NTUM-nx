@@ -7,6 +7,8 @@ team = 0
 size = 2
 
 maxhealth = 4
+event_inherited();
+
 if instance_exists(Player)
 {
 

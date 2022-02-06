@@ -9,7 +9,7 @@ var ogAng = ang;
 var angStep = 360/10;
 repeat(10)
 {
-with instance_create(xprevious,yprevious,EnemyBullet1)
+with instance_create(xprevious,yprevious,EnemyBullet1Square)
 {motion_add(other.ang,2)
 image_angle = direction
 team = other.team}
