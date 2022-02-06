@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 1,
+  "compression": 3,
   "volume": 1.0,
   "preload": true,
   "bitRate": 160,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "musPurpleDragonBoss",
-  "duration": 0.0,
+  "duration": 102.347755,
   "parent": {
     "name": "Music & amb",
     "path": "folders/Sounds/Music & amb.yy",

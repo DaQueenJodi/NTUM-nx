@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mus106b",
-  "duration": 0.0,
+  "soundFile": "mus106b.ogg",
+  "duration": 73.8,
   "parent": {
     "name": "Music & amb",
     "path": "folders/Sounds/Music & amb.yy",

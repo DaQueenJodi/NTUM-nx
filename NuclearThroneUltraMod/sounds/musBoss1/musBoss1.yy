@@ -11,7 +11,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "musBoss1",
+  "soundFile": "musBoss1.ogg",
   "duration": 67.0588455,
   "parent": {
     "name": "Music & amb",

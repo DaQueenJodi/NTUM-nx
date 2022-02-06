@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "musBoss3",
-  "duration": 0.0,
+  "soundFile": "musBoss3.ogg",
+  "duration": 68.11551,
   "parent": {
     "name": "Music & amb",
     "path": "folders/Sounds/Music & amb.yy",

@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "amb101",
-  "duration": 0.0,
+  "soundFile": "amb101.ogg",
+  "duration": 44.0,
   "parent": {
     "name": "Music & amb",
     "path": "folders/Sounds/Music & amb.yy",

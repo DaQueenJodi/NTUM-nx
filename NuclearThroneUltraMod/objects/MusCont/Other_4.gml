@@ -59,7 +59,7 @@ if area = 110
 
 song = musInvertedSewers;
 
-amb = amb2;
+amb = amb102;
 }
 if area = 3
 {
@@ -100,12 +100,12 @@ if area = 7
 
 song = musVulcano;//mus5b;
 
-amb = amb0;
+amb = ambVulcano;
 }
 if area = 108 || area = 109//inverted vulcano inverted wonderland
 {
 
-song = mus7b;
+song = mus5b;
 
 amb = amb5;
 }
@@ -116,6 +116,13 @@ song = mus102
 
 amb = amb100;
 }
+if area = 9
+{
+
+song = mus7;
+
+amb = amb7;
+}
 if area = 100
 {
 
@@ -125,8 +132,10 @@ amb = amb100;
 }
 if area = 102
 {
-
-song = mus102;
+if (random(100) <1)
+	song = sndChubbyEmuSong;
+else
+	song = mus102;
 
 amb = amb102;
 }

@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "musThemeP",
-  "duration": 0.0,
+  "soundFile": "musThemeP.ogg",
+  "duration": 63.75,
   "parent": {
     "name": "Music & amb",
     "path": "folders/Sounds/Music & amb.yy",

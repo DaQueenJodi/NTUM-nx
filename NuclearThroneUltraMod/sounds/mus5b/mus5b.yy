@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mus5b",
-  "duration": 0.0,
+  "soundFile": "mus5b.ogg",
+  "duration": 111.780952,
   "parent": {
     "name": "Music & amb",
     "path": "folders/Sounds/Music & amb.yy",

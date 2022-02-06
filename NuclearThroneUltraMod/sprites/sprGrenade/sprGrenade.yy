@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprGrenade","path":"sprites/sprGrenade/sprGrenade.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprGrenade",
     "tags": [],
     "resourceType": "GMSequence",
   },

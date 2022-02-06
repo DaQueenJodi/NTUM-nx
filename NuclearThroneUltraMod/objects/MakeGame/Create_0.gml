@@ -74,6 +74,3 @@ instance_create(0,0,UberCont)
 
 room_goto(romGame)
 instance_destroy()
-
-/* */
-/*  */

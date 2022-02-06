@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mus100b",
-  "duration": 0.0,
+  "soundFile": "mus100b.ogg",
+  "duration": 76.8,
   "parent": {
     "name": "Music & amb",
     "path": "folders/Sounds/Music & amb.yy",

@@ -4351,7 +4351,7 @@ function scrFire2() {
 	//HEAVY GRENADE LAUNCHER
 	case 356:
 
-	snd_play(sndGrenade)
+	snd_play(sndHeavyNader)
 
 	with instance_create(x,y,HeavyGrenade)
 	{
@@ -4370,7 +4370,7 @@ function scrFire2() {
 	//AUTO HEAVY GRENADE LAUNCHER
 	case 357:
 
-	snd_play(sndGrenade)
+	snd_play(sndHeavyNader)
 
 	with instance_create(x,y,HeavyGrenade)
 	{
@@ -4460,6 +4460,25 @@ function scrFire2() {
 		ammo[wep_type[358]] += wep_cost[358];
 		snd_play(sndSpark1);
 	}
+
+	break;
+
+	//LASER BOMB
+	case 359:
+
+	snd_play(sndHeavyNader)
+
+	with instance_create(x,y,HeavyGrenade)
+	{
+	sticky = 0
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy,10)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(14,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(14,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 5
+	wkick = 7
 
 	break;
 
