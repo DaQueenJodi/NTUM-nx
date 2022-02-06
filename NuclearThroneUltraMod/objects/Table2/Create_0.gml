@@ -8,7 +8,8 @@ spr_dead = sprTable2Dead
 
 
 event_inherited()
-
+shadowSprite = shd48;
+shadowYoffset = -2;
 
 snd_hurt = sndHitRock
 

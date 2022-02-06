@@ -7,7 +7,7 @@ spr_dead = sprBigFishSkullDead
 
 
 event_inherited()
-
+shadowSprite = shd32;
 
 snd_hurt = sndHitRock
 alarm[1]=900//33 sec 900

@@ -9,6 +9,6 @@ spr_dead = sprPillarDead;
 
 event_inherited()
 
-
+shadowYoffset = 6;
 snd_hurt = sndHitRock
 

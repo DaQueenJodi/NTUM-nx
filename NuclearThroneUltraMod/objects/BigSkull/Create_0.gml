@@ -7,7 +7,7 @@ spr_dead = sprBigSkullDead
 
 
 event_inherited()
-
+shadowSprite = shd32;
 
 snd_hurt = sndHitRock
 

@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskEnemyBullet1",
-    "path": "sprites/mskEnemyBullet1/mskEnemyBullet1.yy",
+    "name": "mskEnemyBullet1Square",
+    "path": "sprites/mskEnemyBullet1Square/mskEnemyBullet1Square.yy",
   },
   "persistent": false,
   "parentObjectId": {

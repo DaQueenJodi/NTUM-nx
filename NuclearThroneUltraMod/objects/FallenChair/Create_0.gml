@@ -8,7 +8,7 @@ spr_dead = sprFallenChairDead;
 
 
 event_inherited()
-
+shadowSprite = shd32;
 
 snd_hurt = sndHitRock
 
