@@ -3245,7 +3245,7 @@ function scrWeapons() {
 	wep_type[294] = 2
 	wep_auto[294] = 0
 	wep_load[294] = 30
-	wep_cost[294] = 1
+	wep_cost[294] = 0
 	wep_sprt[294] = sprChargeShotgun
 	wep_area[294] = 3
 	wep_text[294] = "get a load of this"
@@ -3256,7 +3256,7 @@ function scrWeapons() {
 	wep_type[295] = 5
 	wep_auto[295] = 0
 	wep_load[295] = 34
-	wep_cost[295] = 1
+	wep_cost[295] = 0
 	wep_sprt[295] = sprChargeLaserGun
 	wep_area[295] = 3
 	wep_text[295] = "wind it up"
@@ -3267,7 +3267,7 @@ function scrWeapons() {
 	wep_type[296] = 2
 	wep_auto[296] = 0
 	wep_load[296] = 40
-	wep_cost[296] = 2
+	wep_cost[296] = 1
 	wep_sprt[296] = sprChargeFlakCannon
 	wep_area[296] = 7
 	wep_text[296] = "more pellets"
@@ -3465,10 +3465,10 @@ function scrWeapons() {
 	wep_type[314] = 3
 	wep_auto[314] = 0
 	wep_load[314] = 30
-	wep_cost[314] = 1
+	wep_cost[314] = 0
 	wep_sprt[314] = sprChargeSplinterGun
-	wep_area[314] = 4
-	wep_text[314] = "infuse with blood"
+	wep_area[314] = 3
+	wep_text[314] = "hold and hold longer"
 	wep_swap[314] = sndSwapShotgun
 	wep_rad[314] = 0;
 
