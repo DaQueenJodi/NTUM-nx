@@ -21,7 +21,7 @@ instance_create(x+random(12)-6,y+random(12)-6,Smoke);
 
 if UberCont.public=0 {
 //hacks
-	if keyboard_check_pressed(ord("C")) {
+	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
 	    instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,GuardianDog);
 		thing = instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,PopupText);
@@ -88,7 +88,7 @@ if UberCont.public=0 {
 		thing = instance_create(x,y,PopupText)
 		thing.mytext = "AMMO!";
 	    }
-	if (keyboard_check_pressed(ord("Q")))
+	if (keyboard_check_pressed(vk_tab))
 	    {
 	    repeat(3)
 	    instance_create(Player.x,Player.y,HPPickup);

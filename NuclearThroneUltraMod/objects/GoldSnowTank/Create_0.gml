@@ -10,8 +10,8 @@ spr_walk = sprGoldenSnowTankWalk
 spr_hurt = sprGoldenSnowTankHurt
 spr_dead = sprGoldenSnowTankDead
 
-snd_hurt = sndSnowTankHurt
-snd_dead = sndSnowTankPreExplo
+snd_hurt = sndGoldTankHurt
+snd_dead = sndGoldTankDead
 
 //behavior
 alarm[1] = 30+random(10)

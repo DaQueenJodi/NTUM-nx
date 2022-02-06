@@ -2,7 +2,7 @@ if ammo > 0
 {
 if ammo = 12
 {
-snd_play(sndSnowTankPreShoot)
+snd_play(sndGoldTankPreShoot)
 with instance_create(x,y,JockRocket)
 {
 sprite_index=sprGoldenRocket;
@@ -11,7 +11,7 @@ image_angle = direction
 team = other.team
 }
 }
-snd_play(sndSnowTankShoot)
+snd_play(sndGoldTankShoot)
 with instance_create(x,y,EnemyBullet4)
 {motion_add(other.gunangle+sin(other.wave)*20,12)
 team = other.team
@@ -26,7 +26,7 @@ ammo -= 1
 }
 else
 {
-snd_play(sndSnowTankCooldown)
+snd_play(sndGoldTankCooldown)
 rest = 1
 alarm[1] = 4/0.4
 sprite_index = spr_idle
