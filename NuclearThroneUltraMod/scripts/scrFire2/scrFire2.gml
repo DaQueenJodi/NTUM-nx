@@ -4385,6 +4385,83 @@ function scrFire2() {
 	wkick = 6
 
 	break;
+	
+	//TELEPORT GUN
+	case 358:
+	
+	if place_meeting(mouse_x,mouse_y,Floor) and not place_meeting(mouse_x, mouse_y, Wall) {
+		snd_play(sndHyperLightning);
+		if alarm[3]<1
+		alarm[3]=4;//imunity
+		instance_create(x,y,Teleport);
+		snd_play(sndHyperLightning);
+		repeat(5){
+			with instance_create(x,y,Smoke)
+			motion_add(random(360),1+random(3))
+		}
+    
+		x=mouse_x;
+		y=mouse_y;
+		BackCont.viewx2 += lengthdir_x(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 2    
+
+		var telepower = 1;
+		if (race == 15) { //atom, add some serious power to that teleport!
+			telepower = 5;
+			snd_play(sndLightningCannonEnd);
+			repeat(5) {
+				with instance_create(x,y,Lightning) {
+					image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
+					team = other.team
+					ammo = 6
+					event_perform(ev_alarm,0)
+					visible = 0
+					with instance_create(x,y,LightningSpawn)
+					image_angle = other.image_angle
+				}
+			}
+			if (skill_got[5]) { //we have throne butt too? time to kick it up a notch
+				snd_play(sndPlasmaBigExplode)
+				ang = random(360)
+				repeat(6)
+				{
+					with instance_create(x,y,PlasmaBall) {
+						motion_add(other.ang,2)
+						scrCanHumphry();
+						image_angle = direction
+						originalDirection=other.ang;
+						team = other.team
+					}
+					ang += 360/6
+				}
+			}
+		}
+		
+		snd_play(sndLightning3);
+		repeat(telepower) {
+			instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
+			
+			with instance_create(x,y,Lightning)
+				{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
+				team = other.team
+				ammo = 6
+				event_perform(ev_alarm,0)
+				visible = 0
+				with instance_create(x,y,LightningSpawn)
+				image_angle = other.image_angle}
+		}
+		
+		repeat(5) {
+			with instance_create(x,y,Smoke)
+			motion_add(random(360),1+random(3))
+		}
+	} else {
+		ammo[wep_type[358]] += wep_cost[358];
+		snd_play(sndSpark1);
+	}
+
+	break;
 
 	}//end of switch part 2!
 
