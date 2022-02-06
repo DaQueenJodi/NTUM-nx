@@ -1,7 +1,8 @@
-alarm[1] = 50+random(10)
+alarm[1] = 10+random(10)
 scrTarget()
 walk = 0
-
+if jumpUp || jumpDown || fire
+	exit;
 if target > 0
 {
 //GOT TARGET
@@ -9,21 +10,23 @@ if collision_line(x,y,target.x,target.y,Wall,0,0) < 0 and point_distance(x,y,tar
 {
 //CAN SEE
 direction = point_direction(x,y,target.x,target.y)+random(60)-30
+if (random(3) <1)
+{
+	fire = true;
+	sprite_index = spr_fire;
+	spr_idle = spr_fire;
+	spr_walk = spr_fire;
+	speed *= 0.2;
+	alarm[2] = 20;//chargeup time
+}
 
-if random(3) < 2
-walk = 50
-else
-alarm[1] /= 2
 }
 else
 {
-//CANT SEE
-direction = random(360)
+	//CANT SEE
+	direction = random(360)
 
-if random(4) < 1
-walk = 50
-else
-alarm[1] /= 2
+	alarm[1] *= 0.5
 }
 
 }

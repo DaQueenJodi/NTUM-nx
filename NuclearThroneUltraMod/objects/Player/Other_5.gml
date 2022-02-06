@@ -1,6 +1,7 @@
 /// @description Black sword? and UNLOCKABLES
 if restarted
 	exit;
+	
 if area = 1 && instance_exists(WepPickup)
 {
 with WepPickup

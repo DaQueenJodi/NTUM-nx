@@ -1,10 +1,11 @@
 function scrRestart() {
+	debug("RESTART SCRIPT");
 	with all
 	{
 	if id != UberCont.id and persistent = true
 	{
-	persistent = false
-	instance_destroy()
+		persistent = false
+		instance_destroy()
 	}
 	}
 	with Player
@@ -12,5 +13,4 @@ function scrRestart() {
 		restarted = true;	
 	}
 	room_goto(romGame)
-
 }
