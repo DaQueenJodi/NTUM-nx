@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskExplosion",
-    "path": "sprites/mskExplosion/mskExplosion.yy",
+    "name": "mskExplosion4Player",
+    "path": "sprites/mskExplosion4Player/mskExplosion4Player.yy",
   },
   "persistent": false,
   "parentObjectId": null,
