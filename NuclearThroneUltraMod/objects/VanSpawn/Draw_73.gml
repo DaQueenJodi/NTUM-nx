@@ -1,7 +1,6 @@
 /// @description Indicator
 var vx = camera_get_view_x(view_camera[0]);
 var vw = camera_get_view_width(view_camera[0]);
-draw_line(x,y,Player.x,Player.y);
 var xx = x;
 var xScale = 1;
 if x < vx

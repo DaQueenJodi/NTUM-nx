@@ -117,9 +117,7 @@ function scrDrawHUD() {
 	PlayerWep=Player.cwep
 	if Player.ccurse==1
 	col=make_colour_rgb(136,36,174);//curse
-
-	//gold
-	if (scrCheckGold(Player.cwep))
+	else if (scrCheckGold(Player.cwep))
 	col=make_colour_rgb(223,201,134);//gold
 
 	if round(Player.area/2) = Player.area/2 or col = c_white or Player.ccurse==1 or instance_exists(GenCont) or instance_exists(LevCont)
@@ -174,8 +172,7 @@ function scrDrawHUD() {
 	//wepon
 	if Player.bcurse==1
 	col=make_colour_rgb(136,36,174);//curse
-
-	if (scrCheckGold(Player.bwep))
+	else if (scrCheckGold(Player.bwep))
 	col=make_colour_rgb(223,201,134);//gold
 
 	if round(Player.area/2) = Player.area/2 or col = c_white or Player.bcurse==1 or instance_exists(GenCont) or instance_exists(LevCont)
@@ -228,8 +225,7 @@ function scrDrawHUD() {
 
 	if Player.curse==1
 	wepcolour=make_colour_rgb(136,36,174);//curse
-
-	if (scrCheckGold(Player.wep))
+	else if (scrCheckGold(Player.wep))
 	wepcolour=make_colour_rgb(223,201,134);//gold
 
 	draw_sprite_part_smart(spr,1,sprite_get_xoffset(spr),sprite_get_yoffset(spr)-8,wid,14,__view_get( e__VW.XView, 0 )+25,__view_get( e__VW.YView, 0 )+16,wepcolour,1)
@@ -632,5 +628,37 @@ function scrDrawHUD() {
 	}
 
 
-
+	if instance_exists(enemy) && instance_number(enemy) < 2
+	{
+		var xx = enemy.x;
+		var yy = enemy.y;
+		var vx = camera_get_view_x(view_camera[0]);
+		var vw = camera_get_view_width(view_camera[0]);
+		var shouldDraw = false;
+		if xx >  vx + vw
+		{
+			xx = vx + vw-5;
+			shouldDraw = true;
+		}
+		else if xx < vx
+		{
+			xx = vx+5;
+			shouldDraw = true;
+		}
+		var vy = camera_get_view_y(view_camera[0]);
+		var vh = camera_get_view_height(view_camera[0]);
+		if yy >  vy + vh
+		{
+			yy = vy + vh-5;
+			shouldDraw = true;
+		}
+		else if yy < vy
+		{
+			yy = vy+5;
+			shouldDraw = true;
+		}
+		if shouldDraw
+			draw_sprite(sprLastEnemyIndicator,0,xx,yy);
+	
+	}
 }

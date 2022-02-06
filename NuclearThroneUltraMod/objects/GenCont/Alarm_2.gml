@@ -85,6 +85,11 @@ with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/
 instance_create(x+16,y+16,BigMushroom)
 
 }
+if Player.area == 102
+{
+	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/5+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/5+random(128)-64+32,Floor)
+		instance_create(x+16,y+16,GoldenPipe)	
+}
 
 //Gun Smiths weapon modder ultra
 if Player.ultra_got[65] && Player.subarea=1 && Player.area !=100

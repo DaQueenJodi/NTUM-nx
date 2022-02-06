@@ -3946,29 +3946,29 @@ function scrWeapons() {
 	wep_swap[357] = sndSwapExplosive
 	wep_rad[357] = 0;
 	
-	wep_name[358] = "ION TELEPORT"
+	wep_name[358] = "ION TELEPORTER"
 	wep_type[358] = 5
 	wep_auto[358] = 0
 	wep_load[358] = 20
 	wep_cost[358] = 5
-	wep_sprt[358] = sprLaserCannon
-	wep_area[358] = 16
+	wep_sprt[358] = sprIonTeleporter
+	wep_area[358] = 15
 	wep_text[358] = "just like atom"
 	wep_swap[358] = sndSwapEnergy
 	wep_rad[358] = 0;
 	
-	/*
-	wep_name[358] = "LASER BOMB"
-	wep_type[358] = 4
-	wep_auto[358] = 0
-	wep_load[358] = 25
-	wep_cost[358] = 4
-	wep_sprt[358] = sprHeavyNader
-	wep_area[358] = 14
-	wep_text[358] = "lime light show"
-	wep_swap[358] = sndSwapExplosive
-	wep_rad[358] = 0;
-	*/
+	
+	wep_name[359] = "LASER BOMB LAUNCHER"
+	wep_type[359] = 4
+	wep_auto[359] = 0
+	wep_load[359] = 25
+	wep_cost[359] = 4
+	wep_sprt[359] = sprLaserBombLauncher
+	wep_area[359] = 11
+	wep_text[359] = "lime light show"
+	wep_swap[359] = sndSwapExplosive
+	wep_rad[359] = 0;
+	
 	
 	/*
 	wep_name[359] = "FLAIL"
@@ -4061,7 +4061,7 @@ function scrWeapons() {
 	wep_rad[360] = 0;
 	*/
 	
-	maxwep = 358
+	maxwep = 359
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy
 	typ_ammo[0] = 333 typ_ammo[1] = 32 typ_ammo[2] = 8 typ_ammo[3] = 8 typ_ammo[4] = 6 typ_ammo[5] = 10

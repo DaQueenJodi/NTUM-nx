@@ -93,8 +93,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "UnsortedProp",
-    "path": "folders/Sprites/UnsortedProp.yy",
+    "name": "Sewers",
+    "path": "folders/Sprites/Enviroment/Props/Sewers.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSlice",

@@ -1,6 +1,8 @@
 /// @description Curse & gold fx
 with Player
 {
+	other.x = x;
+	other.y = y;
 	//cursed weps
 	if curse = 1 and random(3) < 1
 	{

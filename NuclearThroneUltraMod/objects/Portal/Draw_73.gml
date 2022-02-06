@@ -1,26 +1,37 @@
 /// @description Portal position indication for the player
-if !(x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )) && instance_exists(Player)
-{//Am I within the view of the playa
-
-var xx=x;
-var yy=y;
-var dir = point_direction(x,y,Player.x,Player.y);
-do
+var xx = x;
+var yy = y;
+var vx = camera_get_view_x(view_camera[0]);
+var vw = camera_get_view_width(view_camera[0]);
+var shouldDraw = false;
+if xx >  vx + vw
 {
-
-xx += lengthdir_x(1,dir);
-yy += lengthdir_y(1,dir);
-
+	xx = vx + vw-5;
+	shouldDraw = true;
 }
-until((xx > __view_get( e__VW.XView, 0 )+6 and xx < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-6 and yy > __view_get( e__VW.YView, 0 )+6 and yy < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-6) || point_distance(x,y,xx,yy) > point_distance(x,y,Player.x,Player.y))
-round(xx)
-round(yy)
+else if xx < vx
+{
+	xx = vx+5;
+	shouldDraw = true;
+}
+var vy = camera_get_view_y(view_camera[0]);
+var vh = camera_get_view_height(view_camera[0]);
+if yy >  vy + vh
+{
+	yy = vy + vh-5;
+	shouldDraw = true;
+}
+else if yy < vy
+{
+	yy = vy+5;
+	shouldDraw = true;
+}
+if shouldDraw
+{
 if inverted
 draw_sprite(sprPortalIndicator,2,xx,yy);
 else if type = 1
 draw_sprite(sprPortalIndicator,0,xx,yy);
 else if type = 2
 draw_sprite(sprPortalIndicator,1,xx,yy);
-
 }
-

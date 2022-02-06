@@ -4386,7 +4386,7 @@ function scrFire2() {
 
 	break;
 	
-	//TELEPORT GUN
+	//ION TELEPORTER
 	case 358:
 	
 	if place_meeting(mouse_x,mouse_y,Floor) and not place_meeting(mouse_x, mouse_y, Wall) {
@@ -4463,12 +4463,12 @@ function scrFire2() {
 
 	break;
 
-	//LASER BOMB
+	//LASER BOMB LAUNCHER
 	case 359:
 
 	snd_play(sndHeavyNader)
 
-	with instance_create(x,y,HeavyGrenade)
+	with instance_create(x,y,LaserBomb)
 	{
 	sticky = 0
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy,10)

@@ -4,7 +4,7 @@
     "path": "sprites/sprExplosion/sprExplosion.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": {
     "name": "mskExplosion4Player",
     "path": "sprites/mskExplosion4Player/mskExplosion4Player.yy",

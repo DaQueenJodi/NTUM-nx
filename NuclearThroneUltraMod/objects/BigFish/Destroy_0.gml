@@ -33,7 +33,7 @@ with MusCont
 //optimise sound_discard(amb)
 
 audio_stop_sound(song);
-song = musBossDead
+song = sndBossWin
 snd_play(song)
 //snd_loop(amb)
 
@@ -46,5 +46,4 @@ audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 //audio_sound_gain(sndBossWin,max(0,sqrt(UberCont.opt_musvol)),0);
 
 }
-snd_play(sndBossWin);
 
