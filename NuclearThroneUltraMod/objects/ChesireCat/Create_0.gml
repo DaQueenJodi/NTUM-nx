@@ -1,7 +1,7 @@
 raddrop = 60
-maxhealth = 700
+maxhealth = 650
 meleedamage = 4
-size = 3
+size = 4
 
 event_inherited()
 if instance_exists(Player){
@@ -18,7 +18,6 @@ spr_fire = sprChesireCatPrepLaser
 snd_dead = sndBigBanditMeleeHit;
 snd_hurt = sndBigDogHit;
 snd_mele = sndRhinoFreakMelee;
-
 walk=0;
 //behavior
 alarm[2] = 60+random(120);
@@ -35,7 +34,7 @@ instance_create(x,y,ChesireCatTail);
 ammo=7;
 
 dodge=0;
-
+friction = 0.8;
 /*
 
 lasx = x

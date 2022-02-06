@@ -53,7 +53,7 @@ function scrPopEnemies() {
 	instance_create(x+16+random(4),y+16+random(4),choose(BanditInverted,BanditInverted,BanditInverted,BanditInverted,BanditInverted,BigMaggotInverted))
 	}
 	if random(50)<1{
-	instance_create(x+16,y+16,choose(InvertedScorpion,GoldScorpion,BigMaggotInverted,InvertedScorpion,BigMaggotInverted))
+	instance_create(x+16,y+16,choose(InvertedScorpion,InvertedGoldScorpion,BigMaggotInverted,InvertedScorpion,BigMaggotInverted))
 	}
 	instance_create(x+16,y+16,choose(BanditInverted,BanditInverted,BanditInverted,BanditInverted,BigMaggotInverted,BanditInverted,BigMaggotInverted))}
 	}

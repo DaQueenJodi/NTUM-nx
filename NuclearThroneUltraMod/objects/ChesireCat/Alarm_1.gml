@@ -1,4 +1,4 @@
-alarm[1] = 5+random(15)
+alarm[1] = 8+random(15)
 
 if instance_exists(Player)
 {
@@ -52,7 +52,7 @@ if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
     sprite_index = spr_fire
     alarm[1] = 55+random(15)
     
-    if random(3)<1
+    if random(5)<1
     scrDrop(90,0);
     }
     else if random(3)<1//quick burp
@@ -63,11 +63,24 @@ if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
     sprite_index = spr_fire
     walk = 4+random(4)
     alarm[1] = walk+4
-    repeat(4+irandom(8)){
-    with instance_create(xprevious,yprevious,EnemyBullet1)
-{motion_add(other.gunangle+random(60)-30,0.8+random(4.2))
-image_angle = direction
-team = other.team}}
+	var pa = 8;
+	var atkAngle = 60;
+	var angleStep = atkAngle / pa;
+	var spd = 1;
+	var speedIncrement = 0.6;
+	var leftRight = 1;
+    repeat(pa)
+	{
+	    with instance_create(xprevious,yprevious,EnemyBullet1)
+		{
+			motion_add(other.gunangle+(atkAngle*leftRight),spd)
+			image_angle = direction
+			team = other.team
+		}
+		atkAngle -= angleStep;
+		spd += speedIncrement;
+		leftRight*=-1;
+	}
 
     }
     else if random(4)<1//Missiles!
@@ -166,41 +179,30 @@ team = other.team}}
     {
     if random(14)>3 && point_distance(x,y,target.x,target.y)>32
     {
-    
-    motion_add(point_direction(x,y,target.x,target.y)+30-random(15),4);
+    var dir = point_direction(x,y,target.x,target.y)+30-random(15);
+	direction = dir;
+    motion_add(dir,2);
     //move_contact_solid(direction,3)
     alarm[1]=4+random(10);
     walk=alarm[1]+random(10);
-    }
-    else if random(13)<8//NOT ON LAND
-    {
-    walk=14+random(16);
-    alarm[1]=walk;
-    motion_add(point_direction(x,y,target.x,target.y)+random(90)-45,2)
-    move_contact_solid(direction,3)
-    }
-    else if random(14)<1
-    {
-    speed*=0.5;
-    alarm[1]=2+random(4);
     }
     else
     {
     walk=6+random(12);
     alarm[1]=walk+2+random(6);
-    direction = point_direction(x,y,target.x,target.y)+random(180)-90
+	motion_add(point_direction(x,y,target.x,target.y)+random(90)-45,5)
     }
     }
 }
 else//Far from player
 {
-walk=16+random(12);
+	walk=16+random(12);
     alarm[1]=walk+10;
-    motion_add(point_direction(x,y,target.x,target.y),4);
+    motion_add(point_direction(x,y,target.x,target.y),8);
 }
 }//no target\/
 else if random(10)<2{
-motion_add(random(360),0.5)
+motion_add(random(360),2)
 walk=30+random(10)
 alarm[1]=walk;}
 

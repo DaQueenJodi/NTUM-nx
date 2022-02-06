@@ -52,7 +52,7 @@ if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
     sprite_index = spr_fire
     alarm[1] = 60+random(30)
     
-    if random(3)<1
+    if random(7)<1
     scrDrop(90,0);
     }
     else if random(3)<1//quick burp
@@ -63,12 +63,31 @@ if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
     sprite_index = spr_fire
     walk = 4+random(4)
     alarm[1] = walk+2
-    repeat(4+irandom(8)){
-    with instance_create(xprevious,yprevious,EnemyBullet1)
-{motion_add(other.gunangle+random(60)-30,0.8+random(4.2))
-image_angle = direction
-team = other.team}}
-
+    var pa = 12;
+	var atkAngle = 60;
+	var angleStep = atkAngle / pa;
+	var spd = 0.75;
+	var speedIncrement = 0.65;
+	var leftRight = 1;
+    repeat(pa)
+	{
+	    with instance_create(xprevious,yprevious,EnemyBullet1)
+		{
+			motion_add(other.gunangle+(atkAngle*leftRight),spd)
+			image_angle = direction
+			team = other.team
+		}
+		atkAngle -= angleStep;
+		spd += speedIncrement;
+		leftRight*=-1;
+	}
+	//GOOI DR NOG MAAR EENTJE NA
+	with instance_create(xprevious,yprevious,EnemyBullet1)
+	{
+		motion_add(other.gunangle,8)
+		image_angle = direction
+		team = other.team
+	}
     }
     else if random(4)<1//Missiles!
     {

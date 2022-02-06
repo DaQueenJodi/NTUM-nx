@@ -24,7 +24,7 @@ if other.team != team and other.team != 0 && (other.team!=2 || image_index<5/*no
 	}
 
 
-	if sprite_index != spr_hurt && !dealtDamage
+	if sprite_index != spr_hurt && !other.dealtDamage
 	{
 	snd_play(snd_hurt, hurt_pitch_variation)
 
@@ -47,7 +47,7 @@ if other.team != team and other.team != 0 && (other.team!=2 || image_index<5/*no
 	BackCont.shake += 3
 	}
 	}
-	dealtDamage = true;
+	other.dealtDamage = true;
 }
 else if ignoreHitme==false
 {

@@ -3787,7 +3787,7 @@ function scrWeapons() {
 	wep_load[343] = 50
 	wep_cost[343] = 10
 	wep_sprt[343] = sprDimensionGenerator
-	wep_area[343] = 18
+	wep_area[343] = 14
 	wep_text[343] = "the tentacle universe"
 	wep_swap[343] = sndSwapDragon
 	wep_rad[343] = 0;

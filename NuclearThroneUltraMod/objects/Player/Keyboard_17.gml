@@ -96,8 +96,8 @@ with instance_create(x,y,Portal) type = 1
 }
 if keyboard_check_pressed(ord("7"))
 {
-area = 108
-subarea = 1
+area = 109
+subarea = 2
 inverted=true;
 with enemy
 my_health = 0
@@ -105,7 +105,7 @@ with instance_create(x,y,Portal) type = 1
 }if keyboard_check_pressed(ord("8"))
 {
 area = 8
-subarea = 1
+subarea = 2
 with enemy
 my_health = 0
 with instance_create(x,y,Portal) type = 1
