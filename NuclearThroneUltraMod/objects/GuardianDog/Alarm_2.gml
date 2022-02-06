@@ -10,11 +10,11 @@ scrTarget()
 if target > 0
 {
 	jumpDir = point_direction(x,y,target.x,target.y);
-	motion_add(jumpDir,5);
+	motion_add(jumpDir,7);
 }
 else
 {
 	jumpDir = direction;
-	motion_add(direction,5);
+	motion_add(direction,7);
 }
-alarm[3] = 20;
+alarm[3] = 12;

@@ -25,7 +25,7 @@ if UberCont.public=0 {
 		var dangle = random(1)*360;
 	    instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,GuardianDog);
 		thing = instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,PopupText);
-		thing.mytext = "GUARDIAN?";
+		thing.mytext = "DOGGY?";
 	}
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
