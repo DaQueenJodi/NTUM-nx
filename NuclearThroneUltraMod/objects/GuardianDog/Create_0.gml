@@ -24,5 +24,7 @@ jumpDir = 0;
 walk = 1
 alarm[1] = 30+random(90)
 friction = 1;
-snd_hurt = sndBanditHit
-snd_dead = sndBanditDie
+snd_hurt = sndDogGuardianHurt;
+snd_dead = sndDogGuardianDead;
+snd_mele = sndDogGuardianMelee;
+instance_create(x,y,WallBreak);

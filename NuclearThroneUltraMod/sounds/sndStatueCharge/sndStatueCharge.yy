@@ -14,8 +14,8 @@
   "soundFile": "sndStatueCharge",
   "duration": 0.0,
   "parent": {
-    "name": "Enviroment",
-    "path": "folders/Sounds/Enviroment.yy",
+    "name": "group1",
+    "path": "folders/Sounds/group1.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndStatueCharge",

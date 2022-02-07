@@ -7,6 +7,7 @@ spr_walk = spr_jump_up;
 image_index = 0;
 jumpUp = true;
 scrTarget()
+snd_play(sndDogGuardianJump);
 if target > 0
 {
 	jumpDir = point_direction(x,y,target.x,target.y);

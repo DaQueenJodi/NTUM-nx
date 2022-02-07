@@ -1550,7 +1550,7 @@ function scrPowers() {
 	audio_stop_sound(sndHorrorLoopTB);
 	snd_play(sndHorrorEmpty);
 	}
-
+	rad = max(rad,0);
 	}
 
 

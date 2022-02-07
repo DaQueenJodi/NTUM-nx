@@ -1,6 +1,7 @@
 /// @description Stop jumping
 if sprite_index == spr_jump_down && alarm[3] < 1
 {
+	snd_play(sndDogGuardianLand);
 	sprite_index = spr_normal;
 	spr_idle = spr_normal;
 	spr_walk = spr_normal;
