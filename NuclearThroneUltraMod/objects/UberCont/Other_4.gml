@@ -22,4 +22,5 @@ time_hours=0;
 if !instance_exists(Cursor)
 instance_create(0,0,Cursor);
 
-
+firstFloorMaker = true;
+seedOffset = 0;

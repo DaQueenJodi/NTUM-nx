@@ -4,7 +4,6 @@ if isOneWeaponOnlyModes()
 	oneweponly = true;
 else
 	oneweponly = false;
-
 curse = scrDecideCurse();
 
 event_inherited()
@@ -21,7 +20,7 @@ if (Player.ultra_got[25]==1)
 }
 
 scrWeapons()
-wep=scrDecideWep(0, 4, curse)
+wep=scrDecideWep(0, 6, curse)
 
 
     if (mediumchest==1)

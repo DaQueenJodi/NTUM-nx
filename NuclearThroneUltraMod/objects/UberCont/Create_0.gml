@@ -50,5 +50,8 @@ txttime="00:00:00:00";
 lastwishused=false;
 kills=0;
 
-
-
+useSeed = false;
+seed = 0;
+seedText = "";
+firstFloorMaker = true;
+seedOffset = 0;

@@ -1,10 +1,9 @@
 room_speed=30*UberCont.opt_loading;
+SetSeed();
 instance_create(10000,10000,FloorMaker)
 instance_create(0,0,TopCont)
 wave = 0
 
-PlayerStartX=x;
-PlayerStartY=y;
 
 if instance_exists(Player)
 {
@@ -193,6 +192,3 @@ kutgrap=true;
 kutgrap2=false;
 if random(300)<1
 kutgrap2=true;
-
-useSeed = false;
-seed = 0;

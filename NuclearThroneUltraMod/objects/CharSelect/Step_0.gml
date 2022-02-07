@@ -110,13 +110,23 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
     if crown = 0
     crown = ceil(random(crownmax))
     instance_create(x,y,SpiralCont)
+	draw_texture_flush();//mainly used to only remove the main menu texture page cause we don't need that while in game.
+	UberCont.race = race
     with instance_create(x,y,GenCont)
     {race = other.race
     crown = other.crown}
-    UberCont.race = race
     instance_create(x,y,Player)
-    
-    draw_texture_flush();//mainly used to only remove the main menu texture page cause we don't need that while in game.
+	with Player
+	{
+		restarted = true;	
+	}
+	with all
+	{
+		if persistent
+		{
+			debug("persistent obj: ",object_get_name(object_index));	
+		}
+	}
     room_restart()
     exit;
     }

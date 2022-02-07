@@ -1,7 +1,7 @@
 function scrInitOptions() {
 	//OPTIONS
 	//audio
-	opt_sfxvol = 1
+	opt_sfxvol = 0.5
 	opt_musvol = 0.8
 	opt_ambvol = 0.7
 

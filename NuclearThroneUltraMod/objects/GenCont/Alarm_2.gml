@@ -1,4 +1,10 @@
 /// @description BOSSES mods secret areas
+/*
+if (useSeed)
+{
+	random_set_seed(seed)
+	debug("set seed: ",seed);
+}*/
 if Player.area = 3 and Player.subarea = 3
 instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,BecomeScrapBoss)
 

@@ -21,6 +21,12 @@ instance_destroy()
 }
 else
 {
+if UberCont.firstFloorMaker
+{
+	debug("Should be first floormaker call:");
+	SetSeed();
+	UberCont.firstFloorMaker = false;
+}
 scrMakeFloor()
 
 with GenCont

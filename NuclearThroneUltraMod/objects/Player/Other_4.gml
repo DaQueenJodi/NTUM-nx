@@ -147,4 +147,3 @@ RogueHeat=true;
 
 
 friction = 0.45//reset friction
-

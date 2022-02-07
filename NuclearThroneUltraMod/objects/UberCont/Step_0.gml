@@ -19,18 +19,24 @@ if race = 0
 {do race = ceil(random(racemax)) until race_have[race] = 1}
 if crown = 0
 crown = ceil(random(crownmax))
+with WepPickup
+instance_destroy();
+draw_texture_flush();//Free memory (removes all loadedness of texture pages, txp for all areas for example) meaning sprites for area 7 & others aren't loaded when you restart
+
 with instance_create(x,y,GenCont)
 {race = other.race
 crown = other.crown}
 instance_create(x,y,Player)
-
-with WepPickup
-instance_destroy();
-
-draw_texture_flush();//Free memory (removes all loadedness of texture pages, txp for all areas for example) meaning sprites for area 7 & others aren't loaded when you restart
 with Player
 {
 	restarted = true;	
+}
+with all
+{
+	if persistent
+	{
+		debug("persistent obj: ",object_get_name(object_index));	
+	}
 }
 room_restart()
 exit;

@@ -1,6 +1,6 @@
 instance_create(0,0,BackCont)
 instance_create(0,0,TopCont)
-randomize();
+//randomize();
 dix = 32
 diy = 32
 

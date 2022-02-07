@@ -1,1 +1,2 @@
 scrSave()
+firstFloorMaker = true;

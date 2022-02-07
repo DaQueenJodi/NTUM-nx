@@ -1,4 +1,4 @@
-function scrDecideWep(wepTier, maxTries = 4, cursed = 0) {
+function scrDecideWep(wepTier, maxTries = 6, cursed = 0) {
 	if instance_exists(Player)
 	{
 		if UberCont.opt_gamemode=2{
@@ -14,17 +14,17 @@ function scrDecideWep(wepTier, maxTries = 4, cursed = 0) {
 			if Player.race = 8
 			{
 				wepTier += 1
-				maxTries += 1;
+				maxTries += 2;
 			}
 			if Player.ultra_got[29]==1
 			{
 				minWepArea = 6;
-				maxTries += 5;
+				maxTries += 8;
 			}
 			
 			if (cursed) {
 				wepTier += 2;
-				maxTries += 2;
+				maxTries += 5;
 				//do wep = round(random(maxwep-1)+1)
 				//until (wep_area[wep] > Player.hard+wepTier or Player.hard > 20) and wep_area[wep] <= Player.hard+wepTier+5 and wep_area[wep] and ((wep != Player.wep and wep != Player.bwep) or Player.race = 7)
 			}
