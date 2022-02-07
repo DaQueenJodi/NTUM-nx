@@ -23,7 +23,7 @@ alarm[1]=4;
 }
 }
 
-typ = 1
+typ = 3;//Cant be deflected or detroyed
 
 dmg=3;
 
