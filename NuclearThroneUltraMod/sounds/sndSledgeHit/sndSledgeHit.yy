@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSledgeHit",
-  "duration": 0.0,
+  "duration": 1.256031,
   "parent": {
     "name": "Melee",
     "path": "folders/Sounds/Weapons/Melee.yy",

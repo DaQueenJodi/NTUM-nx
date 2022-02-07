@@ -3970,18 +3970,18 @@ function scrWeapons() {
 	wep_rad[359] = 0;
 	
 	
-	/*
-	wep_name[359] = "FLAIL"
-	wep_type[359] = 3
-	wep_auto[359] = 0
-	wep_load[359] = 25
-	wep_cost[359] = 4
-	wep_sprt[359] = sprHeavyNader
-	wep_area[359] = 8
-	wep_text[359] = "nuclearvenia"
-	wep_swap[359] = sndSwapBow
-	wep_rad[359] = 0;
-	*/
+	
+	wep_name[360] = "FLAIL"
+	wep_type[360] = 0
+	wep_auto[360] = 0
+	wep_load[360] = 25
+	wep_cost[360] = 0
+	wep_sprt[360] = sprFlail
+	wep_area[360] = 6
+	wep_text[360] = "nuclearvenia"
+	wep_swap[360] = sndSwapSword
+	wep_rad[360] = 0;
+	
 
 	/*
 	wep_name[360] = "TRIPWIRE"
@@ -4061,7 +4061,7 @@ function scrWeapons() {
 	wep_rad[360] = 0;
 	*/
 	
-	maxwep = 359
+	maxwep = 360
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy
 	typ_ammo[0] = 333 typ_ammo[1] = 32 typ_ammo[2] = 8 typ_ammo[3] = 8 typ_ammo[4] = 6 typ_ammo[5] = 10

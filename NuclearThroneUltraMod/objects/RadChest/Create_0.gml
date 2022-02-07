@@ -1,5 +1,4 @@
 friction = 0.4
-image_speed = 0
 
 
 team = 0
@@ -7,6 +6,7 @@ size = 2
 
 maxhealth = 4
 event_inherited();
+image_speed = 0
 raddrop=25;
 
 if instance_exists(Player)

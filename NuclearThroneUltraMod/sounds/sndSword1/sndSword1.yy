@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSword1",
-  "duration": 0.0,
+  "duration": 0.365375,
   "parent": {
     "name": "Melee",
     "path": "folders/Sounds/Weapons/Melee.yy",

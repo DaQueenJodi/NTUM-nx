@@ -394,7 +394,7 @@ other.wkick = -2
 }
 }
 
-if can_shoot = 1 and ammo[wep_type[wep]] >= wep_cost[wep] and rad>=wep_rad[wep]
+if can_shoot = 1 and (ammo[wep_type[wep]] >= wep_cost[wep] || wep_type[wep] == 0) and rad>=wep_rad[wep]
 {
 if wep_auto[wep] = 0 and clicked = 1
 {

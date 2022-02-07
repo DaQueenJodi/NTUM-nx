@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndBloodHammer",
-  "duration": 0.0,
+  "duration": 1.162719,
   "parent": {
     "name": "Melee",
     "path": "folders/Sounds/Weapons/Melee.yy",

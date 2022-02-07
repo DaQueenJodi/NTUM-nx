@@ -387,7 +387,7 @@ function scrDrawHUD() {
 
 	//LOW AMMO WARNING
 
-	if Player.ammo[Player.wep_type[Player.wep]] <= Player.typ_ammo[Player.wep_type[Player.wep]] and sin(wave) > 0 and Player.drawempty > 0
+	if Player.wep_type[Player.wep] > 0 && Player.ammo[Player.wep_type[Player.wep]] <= Player.typ_ammo[Player.wep_type[Player.wep]] and sin(wave) > 0 and Player.drawempty > 0
 	{
 	if Player.drawempty = 10 and Player.ammo[Player.wep_type[Player.wep]] > Player.typ_ammo[Player.wep_type[Player.wep]]-Player.wep_cost[Player.wep]
 	snd_play(Player.snd_lowa)

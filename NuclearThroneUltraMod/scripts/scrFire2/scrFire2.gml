@@ -4481,6 +4481,34 @@ function scrFire2() {
 	wkick = 7
 
 	break;
+	
+	//FLAIL
+	case 360:
+
+	snd_play(sndFlail)
+
+	instance_create(x,y,Dust)
+
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),Flail)
+	{
+	dmg = 4
+	longarms = 0
+	if instance_exists(Player)
+	longarms = (Player.skill_got[13]+other.bettermelee)*3
+	motion_add(point_direction(x,y,mouse_x,mouse_y),2+longarms)
+	image_angle = direction
+	image_yscale = other.wepflip;//Line up animation with actual holding of weapon
+	team = other.team}
+
+	wepangle = -wepangle
+	motion_add(point_direction(x,y,mouse_x,mouse_y),2)
+	BackCont.viewx2 += lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.shake += 4
+	wkick = -5
+
+	break;
+
 
 	}//end of switch part 2!
 
