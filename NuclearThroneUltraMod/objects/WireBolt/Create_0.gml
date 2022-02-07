@@ -2,5 +2,5 @@
 
 // Inherit the parent event
 event_inherited();
-dmg = 5;
+dmg = 4;
 boltStick = TripwireStick;

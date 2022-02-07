@@ -3985,12 +3985,12 @@ function scrWeapons() {
 
 	
 	wep_name[361] = "REWIRER"
-	wep_type[361] = 3
+	wep_type[361] = 5
 	wep_auto[361] = 0
 	wep_load[361] = 10
-	wep_cost[361] = 2
-	wep_sprt[361] = sprHeavyNader
-	wep_area[361] = 5
+	wep_cost[361] = 3
+	wep_sprt[361] = sprRewirer
+	wep_area[361] = 12
 	wep_text[361] = "connect the dots"
 	wep_swap[361] = sndSwapBow
 	wep_rad[361] = 0;

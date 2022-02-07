@@ -3,29 +3,6 @@ if instance_exists(TripwireStick) && instance_number(TripwireStick) > 1
 {
 	var xx = x + lengthdir_x(18,image_angle+180);
 	var yy = y + lengthdir_y(18,image_angle+180);
-	/*
-	var targetStick = instance_nearest_notme(xx,yy,TripwireStick);
-	var xxx = targetStick.x + lengthdir_x(18,targetStick.image_angle+180);
-	var yyy = targetStick.y + lengthdir_y(18,targetStick.image_angle+180);
-	if collision_line(xx,yy,xxx,yyy,Wall,false,false) == noone
-	{
-		var dir = point_direction(xx,yy,xxx,yyy);
-		if instance_exists(Player) && Player.skill_got[17] == 1
-			snd_play(sndLaserUpg)
-		else
-			snd_play(sndLaser)
-
-		if instance_exists(Player)
-			dir = dir + (random(4)-2)*Player.accuracy
-		else
-			dir = dir + (random(4)-2)
-		with instance_create(xx,yy,Laser)
-		{
-			image_angle = dir
-			team = other.team
-			event_perform(ev_alarm,0)
-		}
-	}*/
 	with TripwireStick
 	{
 		if id != other.id
