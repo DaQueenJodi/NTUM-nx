@@ -2054,7 +2054,7 @@ function scrFire() {
 	//SPLINTER PISTOL
 	case 88:
 
-	snd_play(sndSplinterGun)
+	snd_play(sndSplinterPistol)
 
 	repeat(2)//4 splinters
 	{

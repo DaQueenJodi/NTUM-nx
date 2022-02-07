@@ -4508,6 +4508,23 @@ function scrFire2() {
 	wkick = -5
 
 	break;
+	
+	//REWIRER
+	case 361:
+
+	snd_play(sndTripwireLauncher)
+
+	with instance_create(x,y,WireBolt)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y),24)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 4
+	wkick = 4
+
+	break;
 
 
 	}//end of switch part 2!

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprBoltStick",
-    "path": "sprites/sprBoltStick/sprBoltStick.yy",
+    "name": "sprTripWire",
+    "path": "sprites/sprTripWire/sprTripWire.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,10 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":3,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +33,7 @@
     "path": "folders/Objects/Projectiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "BoltStick",
+  "name": "TripwireStick",
   "tags": [],
   "resourceType": "GMObject",
 }

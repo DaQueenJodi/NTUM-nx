@@ -3983,18 +3983,18 @@ function scrWeapons() {
 	wep_rad[360] = 0;
 	
 
-	/*
-	wep_name[360] = "TRIPWIRE"
-	wep_type[360] = 5
-	wep_auto[360] = 0
-	wep_load[360] = 25
-	wep_cost[360] = 4
-	wep_sprt[360] = sprHeavyNader
-	wep_area[360] = 5
-	wep_text[360] = "connect the dots"
-	wep_swap[360] = sndSwapEnergy
-	wep_rad[360] = 0;
-	*/
+	
+	wep_name[361] = "REWIRER"
+	wep_type[361] = 3
+	wep_auto[361] = 0
+	wep_load[361] = 10
+	wep_cost[361] = 2
+	wep_sprt[361] = sprHeavyNader
+	wep_area[361] = 5
+	wep_text[361] = "connect the dots"
+	wep_swap[361] = sndSwapBow
+	wep_rad[361] = 0;
+	
 	
 	/*
 	wep_name[360] = "SPLINTER SHOTGUN"
@@ -4061,7 +4061,7 @@ function scrWeapons() {
 	wep_rad[360] = 0;
 	*/
 	
-	maxwep = 360
+	maxwep = 361
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy
 	typ_ammo[0] = 333 typ_ammo[1] = 32 typ_ammo[2] = 8 typ_ammo[3] = 8 typ_ammo[4] = 6 typ_ammo[5] = 10

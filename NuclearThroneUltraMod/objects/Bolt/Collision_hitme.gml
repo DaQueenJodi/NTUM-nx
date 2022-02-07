@@ -13,10 +13,11 @@ image_index = 0
 motion_add(other.direction,8)
 }
 target = other.id
-with instance_create(x,y,BoltStick)
+with instance_create(x,y,boltStick)
 {
 image_angle = other.image_angle
 target = other.target
+team = other.team;
 }
 }
 else if other.my_health < 10 and (alarm[1]<1 || other.sprite_index != other.spr_hurt)//other.sprite_index != other.spr_hurt

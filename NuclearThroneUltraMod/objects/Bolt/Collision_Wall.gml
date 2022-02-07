@@ -5,4 +5,3 @@ speed = 0
 move_contact_solid(direction,16)
 instance_create(x,y,Dust)
 }
-
