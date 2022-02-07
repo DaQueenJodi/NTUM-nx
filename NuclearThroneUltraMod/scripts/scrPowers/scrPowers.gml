@@ -491,6 +491,7 @@ function scrPowers() {
 	   // bwep=0;
 	        //if random(5)<upgradechance
 	        //{
+			highesttier = min(highesttier,highest_wep_tier-2);//Cap it
 	        var dir=0;
 	        var newwep = wep;
 	            do

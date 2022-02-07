@@ -1,52 +1,55 @@
-function scrDrop(argument0, argument1) {
+function scrDrop(itemdrop, weapondrop) {
 	if instance_exists(Player)
 	{
 	if Player.crown = 5//crown of guns
-	argument1+=7;
+	{
+		weapondrop*=1.25;
+		weapondrop+=7;
+	}
 
 	if Player.skill_got[0] = 1//heavy heart
 	{
 
 	if Player.race=25
-	argument1=(argument1*2.1)+3;
+	weapondrop=(weapondrop*2.1)+3;
 	else
-	argument1=(argument1*2.1)+2;
+	weapondrop=(weapondrop*2.1)+2;
 
 	}
 	// adjusting for inflation ©2016
-	argument1 *= 1.13;//weapon
-	argument0 *=1.18;//1.16//item
+	weapondrop *= 1.13;//weapon
+	itemdrop *=1.18;//1.16//item
 	//calculate need
 
 	if Player.crown = 13//no rads higher droprate crown
 	{
-	argument1 *= 1.22;
-	argument0 *=1.22;
+	weapondrop *= 1.22;
+	itemdrop *=1.22;
 	}
 
 	if UberCont.opt_gamemode=2{
-	argument1+=100
-	argument0+=100}
+	weapondrop+=100
+	itemdrop+=100}
 
 	if instance_exists(Player)
 	{
 	if Player.loops>0
-	argument0*=0.9;
+	itemdrop*=0.9;
 
 	if Player.loops>1
-	argument0*=0.9;
+	itemdrop*=0.9;
 
 	if Player.loops>2
-	argument0*=0.8;
+	itemdrop*=0.8;
 
 	if Player.loops>3
-	argument0*=0.8;
+	itemdrop*=0.8;
 	}
 
 	if instance_exists(TemporaryBuff)
 	{
-	argument0*=2;
-	argument1*=2;
+	itemdrop*=2;
+	weapondrop*=2;
 	}
 
 	need = 0
@@ -80,7 +83,7 @@ function scrDrop(argument0, argument1) {
 	        }
 	    }
 	//drop items
-	if random(100) < argument0+2*(need+Player.skill_got[4]*(0.5+Player.betterrabbitpaw) +(Player.ultra_got[39]*instance_number(Ally)*0.3)+(Player.skill_got[28]*(Player.rage*0.0004)) )//0.6 before rabbit paw nerf
+	if itemdrop > 0 &&random(100) < itemdrop+2*(need+Player.skill_got[4]*(0.5+Player.betterrabbitpaw) +(Player.ultra_got[39]*instance_number(Ally)*0.3)+(Player.skill_got[28]*(Player.rage*0.0004)) )//0.6 before rabbit paw nerf
 	{//0.3 for each ally Rebel has REBEL ULTRA C?
 
 	if random(Player.maxhealth) > Player.my_health and random(3) < 2 and Player.crown != 2
@@ -88,7 +91,7 @@ function scrDrop(argument0, argument1) {
 	else if Player.crown != 5
 	instance_create(x+random(4)-2,y+random(4)-2,AmmoPickup)
 	}
-	else if random(100) < argument1*(1+Player.skill_got[4]*(0.5+Player.betterrabbitpaw) +(Player.ultra_got[39]*instance_number(Ally)*0.3)+(Player.skill_got[28]*(Player.rage*0.0004)) )//rage=0.001
+	else if random(100) < weapondrop*(1+Player.skill_got[4]*(0.5+Player.betterrabbitpaw) +(Player.ultra_got[39]*instance_number(Ally)*0.3)+(Player.skill_got[28]*(Player.rage*0.0004)) )//rage=0.001
 	{
 	//drop weps
 	with instance_create(x+random(4)-2,y+random(4)-2,WepPickup)

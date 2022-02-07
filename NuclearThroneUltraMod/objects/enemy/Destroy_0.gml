@@ -1,6 +1,11 @@
 if instance_exists(Player){
 Player.kills +=  1;
 
+if Player.race == 17
+{
+	scrDrop(0,3);
+}
+
 if Player.ultra_got[50]==1{//Sheep Ultra B Just A Sheep
     if Player.justAsheep && instance_number(enemy)<BackCont.enemiesInStartLevel*0.7//if70% left enemies will notice you
     {

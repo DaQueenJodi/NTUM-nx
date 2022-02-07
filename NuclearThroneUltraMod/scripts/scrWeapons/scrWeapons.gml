@@ -4058,7 +4058,8 @@ function scrWeapons() {
 	wep_rad[360] = 0;
 	*/
 	
-	maxwep = 362
+	maxwep = array_length(wep_rad);//362
+	debug("maxwep: ",maxwep);
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy
 	typ_ammo[0] = 333 typ_ammo[1] = 32 typ_ammo[2] = 8 typ_ammo[3] = 8 typ_ammo[4] = 6 typ_ammo[5] = 10
@@ -4077,13 +4078,12 @@ function scrWeapons() {
 
 	typ_name[0] = "MELEE" typ_name[1] = "BULLETS" typ_name[2] = "SHELLS" typ_name[3] = "BOLTS" typ_name[4] = "EXPLOSIVES" typ_name[5] = "ENERGY"
 
-	/*
-	Don't need this
+	
 	highest_wep_tier = 0;
 	for (var i = 0; maxwep; i++) {
 	    // code here
 		if wep_area[i] > highest_wep_tier
 			highest_wep_tier = wep_area[i];
 	}
-	*/
+	
 }
