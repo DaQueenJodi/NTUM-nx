@@ -14,8 +14,8 @@
   "soundFile": "sndWeaponChest",
   "duration": 0.0,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Pickups",
+    "path": "folders/Sounds/Pickups.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndWeaponChest",

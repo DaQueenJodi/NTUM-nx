@@ -14,8 +14,8 @@
   "soundFile": "sndHeavyNader.wav",
   "duration": 1.306688,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Weapons",
+    "path": "folders/Sounds/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndHeavyNader",

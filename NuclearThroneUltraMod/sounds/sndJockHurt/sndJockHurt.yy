@@ -14,8 +14,8 @@
   "soundFile": "sndJockHurt.ogg",
   "duration": 0.226984,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndJockHurt",

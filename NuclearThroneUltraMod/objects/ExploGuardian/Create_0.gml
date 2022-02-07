@@ -13,6 +13,7 @@ spr_dead = sprExploGuardianDead
 snd_hurt = sndBanditHit
 snd_dead = sndBanditDie
 
+fire = false;
 //behavior
 walk = 0
 gunangle = random(360)

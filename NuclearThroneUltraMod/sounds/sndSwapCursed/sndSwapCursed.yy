@@ -14,8 +14,8 @@
   "soundFile": "sndSwapCursed.wav",
   "duration": 1.978687,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Weapons",
+    "path": "folders/Sounds/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndSwapCursed",

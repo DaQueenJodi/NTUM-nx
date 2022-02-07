@@ -14,8 +14,8 @@
   "soundFile": "sndLevelUp",
   "duration": 0.0,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Mutations",
+    "path": "folders/Sounds/Mutations.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndLevelUp",

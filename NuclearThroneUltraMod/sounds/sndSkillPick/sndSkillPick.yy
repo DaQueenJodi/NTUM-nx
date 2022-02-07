@@ -14,8 +14,8 @@
   "soundFile": "sndSkillPick",
   "duration": 0.0,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Menu",
+    "path": "folders/Sounds/Menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndSkillPick",

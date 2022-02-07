@@ -14,8 +14,8 @@
   "soundFile": "sndGoldTankHurt.wav",
   "duration": 0.517281,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndGoldTankHurt",

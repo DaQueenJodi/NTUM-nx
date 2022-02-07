@@ -14,8 +14,8 @@
   "soundFile": "sndDragonStart",
   "duration": 0.288005,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Dragon",
+    "path": "folders/Sounds/Weapons/Dragon.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndDragonStart",

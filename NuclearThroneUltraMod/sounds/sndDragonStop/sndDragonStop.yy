@@ -14,8 +14,8 @@
   "soundFile": "sndDragonStop",
   "duration": 0.853333,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Dragon",
+    "path": "folders/Sounds/Weapons/Dragon.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndDragonStop",

@@ -14,8 +14,8 @@
   "soundFile": "sndGoldScorpionMelee.wav",
   "duration": 0.561562,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndGoldScorpionMelee",

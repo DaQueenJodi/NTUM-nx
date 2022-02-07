@@ -14,8 +14,8 @@
   "soundFile": "sndSuperFireballerHurt.ogg",
   "duration": 0.652812,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndSuperFireballerHurt",

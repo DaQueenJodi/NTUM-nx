@@ -14,8 +14,8 @@
   "soundFile": "sndRoll",
   "duration": 0.251678,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndRoll",

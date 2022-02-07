@@ -14,8 +14,8 @@
   "soundFile": "sndGoldTankCooldown.wav",
   "duration": 1.237375,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndGoldTankCooldown",

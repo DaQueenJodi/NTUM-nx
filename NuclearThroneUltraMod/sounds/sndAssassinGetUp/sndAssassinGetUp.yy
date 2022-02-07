@@ -14,8 +14,8 @@
   "soundFile": "sndAssassinGetUp",
   "duration": 0.589342,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndAssassinGetUp",

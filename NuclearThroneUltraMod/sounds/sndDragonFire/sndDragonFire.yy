@@ -15,7 +15,7 @@
   "duration": 0.584921,
   "parent": {
     "name": "Dragon",
-    "path": "folders/Sounds/Dragon.yy",
+    "path": "folders/Sounds/Weapons/Dragon.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndDragonFire",

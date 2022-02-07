@@ -14,8 +14,8 @@
   "soundFile": "sndLightningCannonEnd.wav",
   "duration": 1.134014,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Weapons",
+    "path": "folders/Sounds/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndLightningCannonEnd",

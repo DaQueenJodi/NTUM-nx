@@ -14,8 +14,8 @@
   "soundFile": "sndChubbyEmuSong",
   "duration": 76.61714,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music & amb",
+    "path": "folders/Sounds/Music & amb.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndChubbyEmuSong",

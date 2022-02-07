@@ -14,8 +14,8 @@
   "soundFile": "sndSaplingSpawn",
   "duration": 0.826375,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndSaplingSpawn",

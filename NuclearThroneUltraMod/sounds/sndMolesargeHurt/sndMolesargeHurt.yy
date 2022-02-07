@@ -14,8 +14,8 @@
   "soundFile": "sndMolesargeHurt.ogg",
   "duration": 0.303061,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemies",
+    "path": "folders/Sounds/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndMolesargeHurt",

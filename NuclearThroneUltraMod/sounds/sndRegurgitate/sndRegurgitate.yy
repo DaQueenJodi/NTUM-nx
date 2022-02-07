@@ -14,8 +14,8 @@
   "soundFile": "sndRegurgitate",
   "duration": 0.402344,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndRegurgitate",
