@@ -194,3 +194,5 @@ kutgrap2=false;
 if random(300)<1
 kutgrap2=true;
 
+useSeed = false;
+seed = 0;

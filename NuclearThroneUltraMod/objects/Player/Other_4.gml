@@ -2,9 +2,9 @@
 //if area=104
 //visitedCrib=true
 restarted = false;
-if !instance_exists(PlayerWeaponFX)
-	instance_create(x,y,PlayerWeaponFX);
-	
+if !instance_exists(PlayerAlarms)
+	instance_create(x,y,PlayerAlarms);
+
 if UberCont.opt_gamemode=1
 {
 if wep =0 

@@ -80,7 +80,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBanditDead","path":"sprites/sprBanditDead/sprBanditDead.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprBanditDead",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -16,6 +16,7 @@ if UberCont.opt_freeze!=4
 with Player
 freezeframe400=false;
 }
+draw_set_valign(fa_top);
 
 //jokes now
 if UberCont.paused=0
@@ -30,7 +31,7 @@ else if UberCont.opt_freeze >1
 draw_text(x+20,y,string_hash_to_newline("U SURE?"))
 else if UberCont.opt_freeze <0.1
 draw_text(x+20,y,string_hash_to_newline("HATE THESE?"))
-else if UberCont.opt_freeze <1
+else if UberCont.opt_freeze <0.3
 draw_text(x+20,y,string_hash_to_newline("I AGREE"))
 }
 

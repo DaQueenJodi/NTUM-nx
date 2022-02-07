@@ -23,7 +23,7 @@ if (squareShooter)
 	bullet = EnemyBullet1Square;
 with instance_create(x,y,bullet)
 {
-if other.EnemyBullet1Square
+if other.squareShooter
 	motion_add(other.gunangle+random(20)-10,5)
 else
 	motion_add(other.gunangle+random(20)-10,4.5)

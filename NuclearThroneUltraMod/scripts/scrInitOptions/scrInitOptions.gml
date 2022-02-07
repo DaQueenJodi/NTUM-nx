@@ -16,10 +16,10 @@ function scrInitOptions() {
 	//opt_autoaim = 1
 
 	//other
-	opt_shake = 1
+	opt_shake = 0.5
 	opt_mousecp = 0
-	opt_freeze = 1
-	opt_loading = 1
+	opt_freeze = 0.5
+	opt_loading = 3.5
 	opt_bossintro = 1
 	//Gamemode stuff that doesn't get saved.
 	opt_gamemode=0;

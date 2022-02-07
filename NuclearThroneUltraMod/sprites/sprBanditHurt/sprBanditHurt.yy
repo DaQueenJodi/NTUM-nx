@@ -68,7 +68,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBanditHurt","path":"sprites/sprBanditHurt/sprBanditHurt.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprBanditHurt",
     "tags": [],
     "resourceType": "GMSequence",
   },

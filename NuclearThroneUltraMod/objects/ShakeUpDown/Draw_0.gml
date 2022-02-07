@@ -16,7 +16,7 @@ if UberCont.opt_freeze!=4
 with Player
 screenshake400=false;
 }
-
+draw_set_valign(fa_top);
 //jokes now
 if UberCont.paused=0
 {
@@ -26,8 +26,10 @@ else if UberCont.opt_shake>3
 draw_text(x+20,y,string_hash_to_newline("U GOT BALLS"))
 else if UberCont.opt_shake>2
 draw_text(x+20,y,string_hash_to_newline("KEEP GOING"))
-else if UberCont.opt_shake >1
+else if UberCont.opt_shake >1.1
 draw_text(x+20,y,string_hash_to_newline("GO AHEAD"))
+else if UberCont.opt_shake == 1
+draw_text(x+20,y,string_hash_to_newline("VLAMBEER STYLE"))
 else if UberCont.opt_shake =0.4
 draw_text(x+20,y,string_hash_to_newline("JEZUS..."))
 else if UberCont.opt_shake =0.3
@@ -37,8 +39,8 @@ draw_text(x+20,y,string_hash_to_newline("HEY!"))
 else if UberCont.opt_shake =0.1
 draw_text(x+20,y,string_hash_to_newline("NO!"))
 else if UberCont.opt_shake =0.0
-draw_text(x+20,y,string_hash_to_newline("\\#LOSERSTYLE"))
-else if UberCont.opt_shake <1
+draw_text(x+20,y,string_hash_to_newline("OKE"))
+else if UberCont.opt_shake <0.4
 draw_text(x+20,y,string_hash_to_newline("CAN'T HANDLE"))
 }
 
