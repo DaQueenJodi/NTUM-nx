@@ -53,7 +53,7 @@ wkick = 4
 
 with instance_create(x,y,PartnerBullet)
 {
-motion_add(other.gunangle+random(32)-16,12)
+motion_add(other.gunangle+(random(32)-16)*Player.accuracy,12)
 image_angle = direction
 team = other.team
 }

@@ -3995,6 +3995,16 @@ function scrWeapons() {
 	wep_swap[361] = sndSwapBow
 	wep_rad[361] = 0;
 	
+	wep_name[362] = "SPLINTER BOMB"
+	wep_type[362] = 3
+	wep_auto[362] = 0
+	wep_load[362] = 24
+	wep_cost[362] = 1
+	wep_sprt[362] = sprSplinterBomb
+	wep_area[362] = 4
+	wep_text[362] = "scrappy"
+	wep_swap[362] = sndSwapBow
+	wep_rad[362] = 0;
 	
 	/*
 	wep_name[360] = "SPLINTER SHOTGUN"
@@ -4005,19 +4015,6 @@ function scrWeapons() {
 	wep_sprt[360] = sprHeavyNader
 	wep_area[360] = 0
 	wep_text[360] = "nailgun"
-	wep_swap[360] = sndSwapBow
-	wep_rad[360] = 0;
-	*/
-	
-	/*
-	wep_name[360] = "SPIKE BOMB"
-	wep_type[360] = 3
-	wep_auto[360] = 0
-	wep_load[360] = 25
-	wep_cost[360] = 1
-	wep_sprt[360] = sprHeavyNader
-	wep_area[360] = 3
-	wep_text[360] = "scrappy"
 	wep_swap[360] = sndSwapBow
 	wep_rad[360] = 0;
 	*/
@@ -4061,7 +4058,7 @@ function scrWeapons() {
 	wep_rad[360] = 0;
 	*/
 	
-	maxwep = 361
+	maxwep = 362
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy
 	typ_ammo[0] = 333 typ_ammo[1] = 32 typ_ammo[2] = 8 typ_ammo[3] = 8 typ_ammo[4] = 6 typ_ammo[5] = 10

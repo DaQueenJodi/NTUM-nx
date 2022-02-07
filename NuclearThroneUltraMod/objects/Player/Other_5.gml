@@ -1,7 +1,4 @@
 /// @description Black sword? and UNLOCKABLES
-if restarted
-	exit;
-	
 if area = 1 && instance_exists(WepPickup)
 {
 with WepPickup
@@ -10,62 +7,6 @@ if wep = 46
 other.canblacksword=true
 }
 }
-
-//UNLOCK GAME MODE CLAUSTROFOBIA
-if seconds<12&&!instance_exists(MenuGen) &&!instance_exists(Menu) && ( my_health>0 ||bleed>0 )
-{//CLAUSTROFOBIA GAMEMODE UNLOCK
-if instance_exists(Portal)
-{
-if Portal.type==1
-scrUnlockGameMode(6,"FOR COMPLETING A LEVEL#IN UNDER 10 SECONDS")
-}
-//else
-//scrUnlockGameMode(6,"FOR COMPLETING A LEVEL#IN UNDER 10 SECONDS")
-}
-
-if seconds>600 &&!instance_exists(MenuGen) &&!instance_exists(Menu) && ( my_health>0 ||bleed>0 )
-{//AGORAPHOBIA GAMEMODE UNLOCK
-scrUnlockGameMode(20,"FOR TAKING MORE THAN# TEN MINUTES TO FINISH AN AREA")
-}
-
-if movethislevel==false&&race=15 &&!instance_exists(MenuGen) &&!instance_exists(Menu) &&  !instance_exists(Vlambeer)
-{//ATOM TELEPORT ONLY GAMEMODE UNLOCK
-scrUnlockGameMode(7,"FOR COMPLETING A LEVEL WITHOUT WALKING")
-}
-if race = 11 && bigbanditmarked=true && bigdogmarked=true &&
-lillhuntermarked=true && bigmachinemarked=true &&
-dragonmarked=true && chesirecatmarked=true
-{//HUNTER MARK ONLY GM UNLOCK
-scrUnlockGameMode(12,"FOR KILLING EVERY MAIN BOSS#WHILE MARKING THEM")
-}
-
-//SKINS
-if ( firedthislevel=false && race = 10 && area <100 && ( area>6 || loops>0 )  )
-scrUnlockBSkin(10,"FOR COMPLETING A MAIN AREA# AFTER THE LABS#WITHOUT FIRING AS REBEL",0);
-
-if ( firedthislevel=false && race = 13 && area <100 && ( area>3 || loops>0 )  )
-scrUnlockCSkin(13,"FOR COMPLETING A MAIN AREA# AFTER THE SCRAPYARD#WITHOUT FIRING AS SHEEP",0);
-
-if ( firedthislevel=false && race = 15 && area <100 && ( area>2 || loops>0 )  )
-scrUnlockBSkin(15,"FOR COMPLETING A MAIN AREA# AFTER THE SEWERS#WITHOUT FIRING AS ATOM",0);
-
-if ( firedthislevel=false && race = 21 && loops>0 )
-scrUnlockCSkin(21,"FOR COMPLETING A MAIN AREA ON#USING ONLY THE BEAM",0);
-
-if ( firedthislevel=false && race = 24 && area <100 && ( area>2 || loops>0 )  )
-scrUnlockCSkin(24,"FOR COMPLETING A MAIN AREA# AFTER THE SEWERS#WITHOUT FIRING AS ELEMENTOR",0);
-
-if ( missedthislevel=false && race = 26 && area <100 && ( area>3 || loops>0 )  )
-scrUnlockBSkin(26,"FOR COMPLETING A MAIN AREA# AFTER THE SCRAPYARD#WITHOUT MISSING AS GOOD O'L HUMPHRY",0);
-
-
-
-if crown = 4 && area !=100 && race = 15
-rushcrownlevels++;
-
-if rushcrownlevels=5
-scrUnlockCSkin(15,"FOR COMPLETING 5 AREAS IN A ROW#USING CROWN OF HASTE AS ATOM",0);
-
 ///next level what procedure
 
 if ( loops mod 2 == 0  && loops>1)
@@ -446,5 +387,59 @@ subarea = 1
     
 }
 
-/* */
-/*  */
+if restarted
+	exit;
+//UNLOCK GAME MODE CLAUSTROFOBIA
+if seconds<12&&!instance_exists(MenuGen) &&!instance_exists(Menu) && ( my_health>0 ||bleed>0 )
+{//CLAUSTROFOBIA GAMEMODE UNLOCK
+if instance_exists(Portal)
+{
+if Portal.type==1
+scrUnlockGameMode(6,"FOR COMPLETING A LEVEL#IN UNDER 10 SECONDS")
+}
+//else
+//scrUnlockGameMode(6,"FOR COMPLETING A LEVEL#IN UNDER 10 SECONDS")
+}
+
+if seconds>600 &&!instance_exists(MenuGen) &&!instance_exists(Menu) && ( my_health>0 ||bleed>0 )
+{//AGORAPHOBIA GAMEMODE UNLOCK
+scrUnlockGameMode(20,"FOR TAKING MORE THAN# TEN MINUTES TO FINISH AN AREA")
+}
+
+if movethislevel==false&&race=15 &&!instance_exists(MenuGen) &&!instance_exists(Menu) &&  !instance_exists(Vlambeer)
+{//ATOM TELEPORT ONLY GAMEMODE UNLOCK
+scrUnlockGameMode(7,"FOR COMPLETING A LEVEL WITHOUT WALKING")
+}
+if race = 11 && bigbanditmarked=true && bigdogmarked=true &&
+lillhuntermarked=true && bigmachinemarked=true &&
+dragonmarked=true && chesirecatmarked=true
+{//HUNTER MARK ONLY GM UNLOCK
+scrUnlockGameMode(12,"FOR KILLING EVERY MAIN BOSS#WHILE MARKING THEM")
+}
+
+//SKINS
+if ( firedthislevel=false && race = 10 && area <100 && ( area>6 || loops>0 )  )
+scrUnlockBSkin(10,"FOR COMPLETING A MAIN AREA# AFTER THE LABS#WITHOUT FIRING AS REBEL",0);
+
+if ( firedthislevel=false && race = 13 && area <100 && ( area>3 || loops>0 )  )
+scrUnlockCSkin(13,"FOR COMPLETING A MAIN AREA# AFTER THE SCRAPYARD#WITHOUT FIRING AS SHEEP",0);
+
+if ( firedthislevel=false && race = 15 && area <100 && ( area>2 || loops>0 )  )
+scrUnlockBSkin(15,"FOR COMPLETING A MAIN AREA# AFTER THE SEWERS#WITHOUT FIRING AS ATOM",0);
+
+if ( firedthislevel=false && race = 21 && loops>0 )
+scrUnlockCSkin(21,"FOR COMPLETING A MAIN AREA ON#USING ONLY THE BEAM",0);
+
+if ( firedthislevel=false && race = 24 && area <100 && ( area>2 || loops>0 )  )
+scrUnlockCSkin(24,"FOR COMPLETING A MAIN AREA# AFTER THE SEWERS#WITHOUT FIRING AS ELEMENTOR",0);
+
+if ( missedthislevel=false && race = 26 && area <100 && ( area>3 || loops>0 )  )
+scrUnlockBSkin(26,"FOR COMPLETING A MAIN AREA# AFTER THE SCRAPYARD#WITHOUT MISSING AS GOOD O'L HUMPHRY",0);
+
+
+
+if crown = 4 && area !=100 && race = 15
+rushcrownlevels++;
+
+if rushcrownlevels=5
+scrUnlockCSkin(15,"FOR COMPLETING 5 AREAS IN A ROW#USING CROWN OF HASTE AS ATOM",0);

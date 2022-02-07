@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 4,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 22,
   "height": 10,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprNader","path":"sprites/sprNader/sprNader.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprNader",
     "tags": [],
     "resourceType": "GMSequence",
   },
