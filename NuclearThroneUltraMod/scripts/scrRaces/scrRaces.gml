@@ -177,7 +177,7 @@ function scrRaces() {
 	race_bskin[12] = 0
 	race_cskin[12] = 0
 	race_bskin_lock[12] = "GO TO THE CRIB"
-	race_cskin_lock[12] = "FIX VENUZ'S CAR#WITH A GOLDEN SCREWDRIVER"
+	race_cskin_lock[12] = "FIX VENUZ'S CAR#WITH A GOLDEN SCREWDRIVER#THIS WILL BE REPLACED"
 
 
 	race_name[13] = "[SHEEP]"

@@ -60,7 +60,7 @@ UberCont.opt_gamemode=gamemodeOrder[gamemodenr];
 }
 else
 {
-draw_sprite(sprLocked,0,x,y+48);
+draw_sprite(sprLocked,0,x,y+40);
 
 draw_set_color(c_gray)
 draw_text(x-string_width(string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]))*0.6,y+64,string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]))

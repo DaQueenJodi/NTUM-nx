@@ -7,7 +7,7 @@ instance_create(x,y,CarVenusFixed)
 instance_change(Wind,false)
 
 if Player.wep=230///yung cuz
-scrUnlockCSkin(12,"FOR FIXING VENUZ'S CAR#WITH A GOLDEN SCREWDRIVER",0)
+scrUnlockCSkin(12,"FOR FIXING VENUZ'S CAR#WITH A GOLDEN SCREWDRIVER#NO CHEATER THIS WILL BE REPLACED!",0)
 }
 }
 

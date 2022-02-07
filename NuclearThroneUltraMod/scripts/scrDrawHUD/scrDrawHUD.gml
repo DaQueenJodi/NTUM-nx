@@ -1,9 +1,4 @@
 function scrDrawHUD() {
-	with Player
-	{
-			draw_text(x,y-96,string(hard));
-	
-	}
 	if UberCont.opt_gamemode!=3{//NO HUD gamemode
 
 
