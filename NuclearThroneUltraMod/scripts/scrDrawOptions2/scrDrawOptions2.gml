@@ -10,8 +10,6 @@ function scrDrawOptions2() {
 	var swap;
 	var gamemodename;
 
-	var bossintro;
-
 	up=scrAsciiChar(UberCont.opt_up);
 	down=scrAsciiChar(UberCont.opt_down);
 	left=scrAsciiChar(UberCont.opt_left);

@@ -138,12 +138,19 @@ ultra_got[3]=1;
 oneweponlywep=0;
 //WEAPON STUFF!
 if UberCont.opt_gamemode=1{//one weapon only game mode yo
-if UberCont.opt_gm1wep=0
-wep=irandom(maxwep);
+	if UberCont.opt_gm1wep-1==0
+	{
+	wep=ceil(irandom(maxwep));
+	}
+	else
+	{
+	wep=UberCont.opt_gm1wep
+	}
+}
 else
-wep=UberCont.opt_gm1wep}
-else{
-wep = UberCont.cwep[race]}
+{
+wep = UberCont.cwep[race]
+}
 
 oneweponlywep=wep;
 

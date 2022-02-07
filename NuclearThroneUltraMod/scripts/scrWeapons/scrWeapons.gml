@@ -3178,7 +3178,7 @@ function scrWeapons() {
 	wep_name[288] = "GOLDEN SMG"
 	wep_type[288] = 1
 	wep_auto[288] = 1
-	wep_load[288] = 3
+	wep_load[288] = 2.75
 	wep_cost[288] = 1
 	wep_sprt[288] = sprGoldenSmg
 	wep_area[288] = 18
