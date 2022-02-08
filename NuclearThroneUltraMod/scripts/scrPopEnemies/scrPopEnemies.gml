@@ -462,7 +462,7 @@ function scrPopEnemies() {
 		{
 			var ran = random(100);
 			
-			if ran > 80
+			if ran > 78
 			{
 				instance_create(x+16,y+16,choose(PalaceGuardian,PalaceGuardian,ExploGuardian,ExploGuardian,GhostGuardian,GuardianDog))	
 			}

@@ -420,8 +420,16 @@ function scrMakeFloor() {
 	y += lengthdir_y(32,direction)
 	}else 
 	{
-	instance_create(x,y,Floor)
-	instance_create(x,y+32,Floor)
+		if random(3) < 1
+		{
+			instance_create(x,y,Floor)
+			instance_create(x,y+32,Floor)
+		}
+		else
+		{
+			instance_create(x,y,Floor)
+			instance_create(x,y-32,Floor)
+		}
 	}} 
 	/*
 		//Cool generation:
@@ -544,7 +552,7 @@ function scrMakeFloor() {
 
 	//instance_create(x,y,Floor)
 
-	if (trn = 180 or (abs(trn) = 90 and (area = 3 || area = 106))) and point_distance(x,y,10016,10016) > 48{
+	if (trn = 180 or (abs(trn) = 90 and (area = 3 || area = 106 || area == 9))) and point_distance(x,y,10016,10016) > 48{
 	instance_create(x,y,Floor)
 	instance_create(x+16,y+16,WeaponChest)}
 
@@ -565,11 +573,14 @@ function scrMakeFloor() {
 
 	if area = 9
 	{
-	   if random(10+instance_number(FloorMaker)) > 20
+	   if random(19+instance_number(FloorMaker)) > 20
 	   {
 	   instance_destroy()
 	   if point_distance(x,y,10016,10016) > 48{
-	   instance_create(x+16,y+16,AmmoChest)
+			if (random(4) <2)
+			instance_create(x+16,y+16,WeaponChest)
+			else
+			instance_create(x+16,y+16,AmmoChest)
 	   instance_create(x,y,Floor)}
 	   }
 	   if random(7) < 1

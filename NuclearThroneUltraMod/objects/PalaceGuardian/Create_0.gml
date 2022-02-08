@@ -26,3 +26,4 @@ alarm[1] = 30+random(90)
 wkick = 0
 friction = 6;
 instance_create(x,y,WallBreak);
+depth = -2;

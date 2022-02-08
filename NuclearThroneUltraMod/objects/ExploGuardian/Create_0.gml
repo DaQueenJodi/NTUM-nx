@@ -31,3 +31,4 @@ instance_create(x,y,WallBreak);
 projectileSpeed = 10;
 projectileSpeed += min(GetPlayerLoops(),3);
 direction = random(360);
+depth = -2;

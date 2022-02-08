@@ -25,7 +25,6 @@ function scrPopChests() {
 	gol = 0
 	}
 	}
-
 	if instance_exists(WeaponChest)
 	{do {with instance_nearest(Player.x+random(500)-250,Player.y+random(500)-250,WeaponChest) instance_destroy()}
 	until instance_number(WeaponChest) <= gol}
@@ -39,7 +38,6 @@ function scrPopChests() {
 	until instance_number(HealthChest) <= gol}
 	with ChestOpen
 	instance_destroy()
-
 	if instance_exists(Player)
 	{
 	if Player.crown = 9
