@@ -18,7 +18,7 @@ if alarm[4]>0//boiling veins
 {
 instance_create(x+random(12)-6,y+random(12)-6,Smoke);
 }
-
+var thing;
 if UberCont.public=0 {
 //hacks
 	if keyboard_check_pressed(ord("V")) {
@@ -97,10 +97,16 @@ if UberCont.public=0 {
 	    }
 	if (keyboard_check_pressed(ord("H")))
 	    {
+			
 		var dangle = random(1)*360;
+		/*
 	    instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,HealthChest);
 		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
 		thing.mytext = "MORE HEALTH!";
+		*/
+		loops++;
+		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
+		thing.mytext = "INCREASE LOOP! "+string(loops);
 	    }
 	if (keyboard_check_pressed(ord("Y")))
 	    {

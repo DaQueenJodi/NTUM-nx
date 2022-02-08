@@ -1,0 +1,17 @@
+/// @description dmg
+
+// Inherit the parent event
+event_inherited();
+dmg = 5;
+team = 1;
+typ = 2;
+image_speed = 0.4;
+image_angle = random(360);
+
+angleDir = choose(1,-1) * irandom(3);
+owner = -1;
+ownerAngle = 0;
+distance = 32;
+ownerAngleRotationSpeed = 4;
+rotationDirection = 1;
+depth = -12;

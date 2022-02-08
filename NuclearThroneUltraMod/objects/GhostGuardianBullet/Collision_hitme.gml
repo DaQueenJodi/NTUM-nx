@@ -1,4 +1,3 @@
-///@description Copy enembullet1
 if other.team != team and other.my_health > 0
 {
 	if other.object_index = Player

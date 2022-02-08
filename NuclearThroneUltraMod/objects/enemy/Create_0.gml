@@ -71,7 +71,8 @@ if UberCont.opt_gamemode==5//1HP gamemode
 my_health=1;
 maxhealth=my_health
 }
-
+//List of move through wall enemies
+if object_index!=HotDrake && object_index!=ChesireCat  && object_index!=InvertedHotDrake && object_index!=InvertedChesireCat && object_index != GhostGuardian
 alarm[10]=500;
 
 

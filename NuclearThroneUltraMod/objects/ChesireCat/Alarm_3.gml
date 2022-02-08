@@ -8,8 +8,8 @@ snd_play(sndLaserUpg)
 //sprite_index = spr_fire
 //repeat(4){
 with instance_create(x,y,EnemyLaser)
-{image_angle = other.gunangle+random(10)-5;
-image_yscale = 1.8;//1.25
+{image_angle = other.gunangle+random(4)-2;
+image_yscale = 1.7;//1.25
 team = other.team
 event_perform(ev_alarm,0)}//}
 }

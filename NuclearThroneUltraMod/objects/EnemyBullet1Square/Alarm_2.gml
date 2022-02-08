@@ -1,0 +1,2 @@
+///@description end anim
+ApplyEuphoria();

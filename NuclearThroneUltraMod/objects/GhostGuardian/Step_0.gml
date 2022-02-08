@@ -1,11 +1,15 @@
 event_inherited()
 
-if target > 0
+if target > 0 && goForIt
 {
-	//motion_add(point_direction(x,y,target.x,target.y),4);
-	MoveDirection(point_direction(x,y,target.x,target.y),2);
+	motion_add(point_direction(x,y,target.xprevious,target.yprevious),acc);
 }
-
-CapSpeed(3);
-x += xSpd+hspeed;
-y += ySpd+vspeed;
+if speed > maxSpeed
+	speed = maxSpeed
+else if speed < 2
+	speed = 2;
+	
+if (hspeed > 0)
+		right = 1;
+	else
+		right = -1;

@@ -1,5 +1,5 @@
 /// @description safety first enemy outside level
-if !place_meeting(x,y,Floor) && !place_meeting(x,y,FloorExplo) && object_index!=HotDrake && object_index!=ChesireCat  && object_index!=InvertedHotDrake && object_index!=InvertedChesireCat
+if !place_meeting(x,y,Floor) && !place_meeting(x,y,FloorExplo)
 instance_destroy();
 
 if !instance_exists(GenCont){

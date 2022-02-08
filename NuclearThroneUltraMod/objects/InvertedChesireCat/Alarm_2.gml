@@ -1,7 +1,6 @@
 /// @description Let the battle begin!
 sprite_index=sprInvertedChesireCatIntro;
 mask_index=mskPickupThroughWall;
-alarm[6]=60;
 alarm[1]=70;
 image_index=0;
 visible=true;

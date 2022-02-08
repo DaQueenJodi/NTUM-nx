@@ -20,143 +20,96 @@ if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
 {
     if collision_line(x,y,target.x,target.y,Wall,0,0) < 0//ON LAND
     {
-    if random(6) < 1//laser
-    {
-    //instance_create(x,y,ExplosionNonLethal);
-    //direction = point_direction(x,y,target.x,target.y)+180
+	    if random(7) < 1//laser
+	    {
+	    //instance_create(x,y,ExplosionNonLethal);
+	    //direction = point_direction(x,y,target.x,target.y)+180
     
-    ammo = 5
-    alarm[3] = 18
-    snd_play(sndLaserCrystalCharge)
-    gunangle = point_direction(x,y,target.x,target.y)
-    sprite_index = spr_fire
-    alarm[1] = 38+random(10)
+	    ammo = 5
+	    alarm[3] = 18
+	    snd_play(sndLaserCrystalCharge)
+	    gunangle = point_direction(x,y,target.x,target.y)
+	    sprite_index = spr_fire
+	    alarm[1] = 38+random(10)
     
-    if random(4)<1
-    scrDrop(100,0);
-    //mask_index=mskChesireCat;
+	    if random(5)<1
+	    scrDrop(50,0);
+	    //mask_index=mskChesireCat;
     
-    /*speed*=0.4;
-    image_index = 0
-    sprite_index = spr_fire
-    alarm[2]=5+random(30);
-    walk = alarm[2]+20;
-    alarm[1] = alarm[2]+20;*/
-    }
-    else if random(6)<1//spin
-    {
-    ammo=4;
-    alarm[4] = 16
-    snd_play(sndBigBanditMeleeHit)
-    gunangle = point_direction(x,y,target.x,target.y)
-    sprite_index = spr_fire
-    alarm[1] = 55+random(15)
+	    /*speed*=0.4;
+	    image_index = 0
+	    sprite_index = spr_fire
+	    alarm[2]=5+random(30);
+	    walk = alarm[2]+20;
+	    alarm[1] = alarm[2]+20;*/
+	    }
+	    else if random(6)<1.2//spin
+	    {
+			event_user(1)
+	    }
+	    else if random(3)<1//quick burp
+	    {
+		    event_user(0);
+	    }
+	    else if random(4)<1//Missiles!
+	    {
+		    //snd_play(sndDragonStart)
+		    gunangle = point_direction(x,y,target.x,target.y)
+		    sprite_index = spr_fire
+		    alarm[1] = 5+random(5)
     
-    if random(5)<1
-    scrDrop(90,0);
-    }
-    else if random(3)<1//quick burp
-    {
-    snd_play(sndBigBanditMeleeHit);
-    snd_play(sndMinigun);
-    gunangle = point_direction(x,y,target.x,target.y)
-    sprite_index = spr_fire
-    walk = 4+random(4)
-    alarm[1] = walk+4
-	var pa = 8;
-	var atkAngle = 60;
-	var angleStep = atkAngle / pa;
-	var spd = 1;
-	var speedIncrement = 0.6;
-	var leftRight = 1;
-    repeat(pa)
-	{
-	    with instance_create(xprevious,yprevious,EnemyBullet1)
-		{
-			motion_add(other.gunangle+(atkAngle*leftRight),spd)
-			image_angle = direction
-			team = other.team
-		}
-		atkAngle -= angleStep;
-		spd += speedIncrement;
-		leftRight*=-1;
-	}
+		    snd_play(sndRocket)
 
-    }
-    else if random(4)<1//Missiles!
-    {
-    //snd_play(sndDragonStart)
-    gunangle = point_direction(x,y,target.x,target.y)
-    sprite_index = spr_fire
-    alarm[1] = 5+random(5)
-    
-    snd_play(sndRocket)
+		    with instance_create(x+8+random(8),y,TeaPotMissile)
+		    motion_add(other.gunangle,6)
+		    with instance_create(x-8-random(8),y,TeaPotMissile)
+		    motion_add(other.gunangle,6)
 
-    with instance_create(x+8+random(8),y,TeaPotMissile)
-    motion_add(other.gunangle,6)
-    with instance_create(x-8-random(8),y,TeaPotMissile)
-    motion_add(other.gunangle,6)
-
-    }
-    else if random(3)<1//Minions senpai
-    {
-     if random(2)<1
-    scrDrop(80,0);
-    //snd_play(sndDragonStart)
-    repeat(10)
-    {
-    with instance_create(x,y,Smoke)
-    {motion_add(random(360),1+random(4))
-    image_speed=0.3+random(0.2);}
-    }
-    walk=10;
-    alarm[1] = walk+random(6)
-    with instance_create(x,y,choose(CardGuy,CardGuy2,CardGuy,CardGuy2,CardGuy,CardGuy2,TeaPot))
-    {
-    alarm[1]=5+random(10);//significantly reduced waiting time before attacking
-    }
-    }
-    else if random(3)<1{
+	    }
+	    else if random(3)<1//Minions senpai
+	    {
+		    //snd_play(sndDragonStart)
+		    repeat(10)
+		    {
+		    with instance_create(x,y,Smoke)
+		    {motion_add(random(360),1+random(4))
+		    image_speed=0.3+random(0.2);}
+		    }
+		    walk=10;
+		    alarm[1] = walk+random(6)
+		    with instance_create(x,y,choose(CardGuy,CardGuy2,CardGuy,CardGuy2,CardGuy,CardGuy2,TeaPot))
+		    {
+		    alarm[1]=5+random(10);//significantly reduced waiting time before attacking
+		    }
+	    }
+	    else if random(3)<1{
     
-    if random(2)<1
-    scrDrop(80,0);
+	    if random(5)<1
+	    scrDrop(80,0);
     
-    walk=14+random(12);
-    alarm[1]=walk;
-    direction = point_direction(x,y,target.x,target.y)+random(20)-10
-    }
-    else if random(4)<2{
-    direction=random(360);
-    walk=12+random(10);
-    alarm[1]=walk;
-    }
-    else if random(8)<1{
-    direction=point_direction(x,y,target.x,target.y)+180+random(60)-30;
-    walk=12+random(10);
-    alarm[1]=walk;
-    }
-    else{
-    speed=0;
-    walk=10+random(30);
-    alarm[1]=walk+10+random(20);
-    }
+	    walk=14+random(12);
+	    alarm[1]=walk;
+	    direction = point_direction(x,y,target.x,target.y)+random(20)-10
+	    }
+	    else if random(4)<2{
+	    direction=random(360);
+	    walk=12+random(10);
+	    alarm[1]=walk;
+	    }
+	    else if random(8)<1{
+	    direction=point_direction(x,y,target.x,target.y)+180+random(60)-30;
+	    walk=12+random(10);
+	    alarm[1]=walk;
+	    }
+	    else{
+	    speed=0;
+	    walk=10+random(30);
+	    alarm[1]=walk+10+random(20);
+	    }
     }//wall in between\/
-    else if random(20)<1//Missiles!
+    else if random(20)<1//Burp square!
     {
-    if random(5)<1
-    scrDrop(90,0);
-    //snd_play(sndDragonStart)
-    gunangle = point_direction(x,y,target.x,target.y)
-    sprite_index = spr_fire
-    alarm[1] = 10+random(10)
-    
-    snd_play(sndRocket)
-
-    with instance_create(x+8+random(8),y,TeaPotMissile)
-    motion_add(other.gunangle,6)
-    with instance_create(x-8-random(8),y,TeaPotMissile)
-    motion_add(other.gunangle,6)
-
+		event_user(3);
     }
     else if random(8)<1{
     walk=10+random(10);

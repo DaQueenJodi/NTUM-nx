@@ -9,7 +9,7 @@ alarm[1] = 10+random(15);
 scrTarget()
 if target > 0
 {
-if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
+if squareShooter || collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 {
 if point_distance(target.x,target.y,x,y) > 32
 {
@@ -94,7 +94,7 @@ alarm[1] = 20+random(10)
 scrTarget()
 if target > 0
 {
-if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
+if squareShooter || collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 {
 if point_distance(target.x,target.y,x,y) > 48
 {
@@ -171,7 +171,7 @@ alarm[1] = 20+random(10)
 scrTarget()
 if target > 0
 {
-if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
+if squareShooter || collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 {
 if point_distance(target.x,target.y,x,y) > 48
 {
