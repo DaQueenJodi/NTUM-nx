@@ -1,7 +1,7 @@
 with instance_create(x,y,ChestOpen)
 {
 	if other.oneweponly
-		sprite_index = sprWeaponChestReplaced;
+		sprite_index = sprWeaponChestReplacedOpen;
 	else if other.curse = 1
 	{
 		if other.mediumchest
