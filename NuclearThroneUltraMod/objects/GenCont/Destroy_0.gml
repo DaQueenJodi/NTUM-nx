@@ -97,8 +97,12 @@ room_speed=40;
     }    
     if skill_got[26]//HAMMER HEAD
     {
-    hammerheadcounter=0;
-    //hammerheadtimer=0 no real need for this it wont occur that you touch the wall 10 steps before leaving level    
+		hammerheadcounter = 30;
+		if race=25
+		{
+			hammerheadcounter += 5;
+		}
+	
     }
     if ultra_got[3]//FISH's BROTHER
     {
@@ -110,18 +114,18 @@ room_speed=40;
     lag=3;
     }
     
-    if Player.ultra_got[2]=1//fish ultra B gun warrant
+    if ultra_got[2]=1//fish ultra B gun warrant
     {
     instance_create(x,y,GunWarrant);
     alarm[2]=300;
     }
     
-    if Player.skill_got[25]//strong spirit
+    if skill_got[25]//strong spirit
     {
-    Player.strongspiritused=false;
+    strongspiritused=false;
     }
-    Player.isAlkaline = true;
-    if Player.ultra_got[37]==1//Personal Guard REBEL ULTRA A
+    isAlkaline = true;
+    if ultra_got[37]==1//Personal Guard REBEL ULTRA A
     {
     repeat(2)
     instance_create(x,y,Ally);
@@ -164,7 +168,7 @@ room_speed=40;
     }
     
     
-        with WepPickup
+    with WepPickup
     {
     if persistent = true
     {

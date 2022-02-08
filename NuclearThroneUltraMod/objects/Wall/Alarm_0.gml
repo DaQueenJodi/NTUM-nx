@@ -1,9 +1,9 @@
 if place_meeting(x,y,Wall)
 {
-if other.id > id
-{
-	instance_destroy()
-	exit;
-}
+	if other.id > id
+	{
+		instance_destroy()
+		exit;
+	}
 }
 

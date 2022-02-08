@@ -328,6 +328,7 @@ instance_destroy()
 
 /* */
 ///tough shell
+var damageReduced = 0;
 if (skill_got[31])
 {
 if ( prevhealth > my_health && hardshell == true )
@@ -336,11 +337,13 @@ if ( prevhealth > my_health && hardshell == true )
     if (( prevhealth-my_health > 4 ) && ( prevhealth-4 != 0 ) && race = 25  )
     {
     my_health+=2;
+	damageReduced += 2;
     hardshell=false;
     }
     else if (( prevhealth-my_health > 2 ) && ( prevhealth-2 != 0 )  )
     {
     my_health+=1;
+	damageReduced += 1;
     hardshell=false;
     }
     
@@ -466,9 +469,9 @@ if x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_
 snd_play(other.snd_hurt, other.hurt_pitch_variation)
 Sleep(10)
 if other.race = 25
-my_health -= other.sharpteeth*1.3//Sharp teeth's damage!
+my_health -= other.sharpteeth*2*2//Sharp teeth's damage!
 else
-my_health -= other.sharpteeth*1.2//Sharp teeth's damage!
+my_health -= other.sharpteeth*2//Sharp teeth's damage!
 sprite_index = spr_hurt
 image_index = 0
 motion_add(other.direction,6)
@@ -491,7 +494,7 @@ if (my_health<prevhealth)
 	if (skill_got[32] && isAlkaline && exception=false)//Alkaline Savila
 	{
 		isAlkaline = false;
-		var damageTaken = prevhealth - my_health;
+		var damageTaken = prevhealth - my_health - damageReduced;
 		if race == 25//Doctor buff
 			damageTaken = ceil(damageTaken*1.25);
 		if (skill_got[9]) //Second stomache

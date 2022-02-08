@@ -36,6 +36,7 @@ with Player
 	randomlySelected = ranChar;
 	restarted = true;	
 }
+debug("BIG CHUNK RESTART");
 room_restart()
 exit;
 }

@@ -64,6 +64,8 @@ function scrDrawGameOver() {
 		randomlySelected = ranChar;
 		restarted = true;	
 	}
+	debug("GAMEOVER RESTART");
+
 	room_restart()
 	exit;
 	}

@@ -270,7 +270,10 @@ hard = other.hard;
 kills = other.kills;
 subarea=other.subarea;
 myCorpse = playerCorpse;
-alarm[0]=50;
+level = other.level;
+alarm[0]=60;
+alarm[1] = 5;
+alarm[2] = 3;
 //event_perform(ev_other,ev_room_end);
 }
 

@@ -122,10 +122,11 @@ if UberCont.public=0 {
 	    }
 	if (keyboard_check_pressed(ord("L")))
 	    {
-		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,EliteWeaponChest);
-		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
-		thing.mytext = "ELITE WEAPON CHEST!";
+					var dangle = random(1)*360;
+
+			invertedportalcounter = invertedportaldelay
+			thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
+			thing.mytext = "INVERTED PORTAL!";
 	    }
 	if (keyboard_check_pressed(ord("G")))
 	    {
@@ -557,7 +558,8 @@ if (rad >  GetPlayerMaxRad())
 if level < maxlevel
 {
 snd_play(sndLevelUp)
-rad -= level*60
+//rad -= level*60
+rad = 0;
 level += 1
 
 if level=8 && area < 4 && race = 25
@@ -1400,6 +1402,52 @@ alarm[1]=8;
 }
 
 }
+wave += 0.4;//Looping animations
 
-/* */
-/*  */
+//Hammer head
+if hammerheadcounter > 0
+{
+	var msk = mask_index;
+	mask_index = WallBreak;
+	if place_meeting(x,y,Wall)
+	{
+		nearWall = true;
+		if (speed > 0)
+		{
+			hammerheadtimer += 1;
+
+			alarm[5]=12;//timer before hammerhead continuation stops
+			
+			if hammerheadtimer > 8
+			{
+				hammerheadcounter --;
+				var debrisAmount = 4;
+				var debrisMultiply = 2;
+				if (hammerheadcounter > 0)
+				{
+					snd_play(sndHammerHeadProc);
+					scrDrop(1,0.5);
+				}
+				else
+				{
+					snd_play(sndHammerHeadEnd);
+					scrDrop(20,10);
+					nearWall = false;
+					debrisAmount += 2;
+					debrisMultiply += 2;
+				}
+				instance_create(x,y,WallBreak);
+				//More debris
+				repeat(debrisAmount)
+				with instance_create(x+8+random(8)-4,y+8+random(8)-4,Debris)
+					speed *= debrisMultiply;
+				
+				scrRaddrop(1);
+			}
+		}
+	}
+	else
+		nearWall = false;
+	
+	mask_index = msk;
+}

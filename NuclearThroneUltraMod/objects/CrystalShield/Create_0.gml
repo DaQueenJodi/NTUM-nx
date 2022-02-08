@@ -21,8 +21,8 @@ if(Player.ultra_got[7]==1)
 {
 time += 160
 }
-else{
-Player.visible=false;}
+//else{
+//Player.visible=false;}
 
 if Player.ultra_got[6]=1
 snd_play(sndCrystalJuggerNaut)

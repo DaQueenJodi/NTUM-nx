@@ -19,7 +19,7 @@ raddrop = 0;
 hurtDuration = 17;//Additional iframes
 hurtTime = 0;
 lockoutElementor = false;//When no ammo lockout ability for elementor
-
+boostLevel = 0;
 if instance_exists(BackCont)
 BackCont.alarm[4]=10;
 canblacksword=false;
@@ -371,6 +371,7 @@ strongspirit=false;
 strongspiritused=false;
 hammerheadtimer=0;
 hammerheadcounter=0;
+nearWall = false;
 lag=-1;
 hardshell=true;
 

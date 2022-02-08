@@ -64,21 +64,21 @@ if endgame < 100
 endgame -= 1
 if endgame < 0 and (sprite_index = sprPortal or sprite_index = sprProtoPortal or sprite_index = sprPortalInverted)
 {
-image_index = 0
-if type = 1
-{
-sprite_index = sprPortalDisappear
-if inverted
-sprite_index= sprPortalInvertedDisappear
-}
-if type = 3
-sprite_index = sprProtoPortalDisappear
-with Player
-{
-visible = 0
-roll = 0
-angle = 0
-}
+	image_index = 0
+	if type = 1
+	{
+	sprite_index = sprPortalDisappear
+	if inverted
+	sprite_index= sprPortalInvertedDisappear
+	}
+	if type = 3
+	sprite_index = sprProtoPortalDisappear
+	with Player
+	{
+	visible = 0
+	roll = 0
+	angle = 0
+	}
 }
 }
 if !instance_exists(Player)

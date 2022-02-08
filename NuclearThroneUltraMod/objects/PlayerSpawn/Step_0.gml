@@ -1,2 +1,2 @@
-BackCont.shake += 60-alarm[0];
+BackCont.shake += 52-alarm[0];
 

@@ -260,7 +260,11 @@ function scrDrawHUD() {
 	draw_set_halign(fa_center)
 	if Player.skillpoints > 0
 	draw_sprite(sprExpBarLevel,0,__view_get( e__VW.XView, 0 )+4,__view_get( e__VW.YView, 0 )+4)
-	draw_sprite(sprExpBar,(Player.rad/(60*Player.level))*16,__view_get( e__VW.XView, 0 )+4,__view_get( e__VW.YView, 0 )+4)
+	with Player
+	{
+		var maxRad = GetPlayerMaxRad();	
+	}
+	draw_sprite(sprExpBar,(Player.rad/maxRad)*16,__view_get( e__VW.XView, 0 )+4,__view_get( e__VW.YView, 0 )+4)
 	draw_set_color(c_black)
 	draw_text(__view_get( e__VW.XView, 0 )+11,__view_get( e__VW.YView, 0 )+17-string_height(string_hash_to_newline("A"))/2,string_hash_to_newline(string(Player.level)))
 	draw_text(__view_get( e__VW.XView, 0 )+12,__view_get( e__VW.YView, 0 )+17-string_height(string_hash_to_newline("A"))/2,string_hash_to_newline(string(Player.level)))

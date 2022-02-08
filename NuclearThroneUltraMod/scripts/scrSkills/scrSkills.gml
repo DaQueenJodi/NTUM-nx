@@ -238,8 +238,8 @@ function scrSkills() {
 	}
 
 	skill_name[26] = "HAMMER HEAD"
-	skill_text[26] = "BREAK THROUGH SOME WALLS#AMOUNT RESETS EACH LEVEL"
-	skill_tips[26] = "break more walls than#in the retail game"
+	skill_text[26] = "BREAK THROUGH SOME WALLS#AMOUNT RESETS EACH AREA#DIGGING GIVES RADS#AND SOMETIMES ITEMS & WEAPONS"
+	skill_tips[26] = "hello welcome to my minecraft let's play"
 	skill_msnd[26] =  sndMutHammerHead
 
 	if instance_exists(Player)
@@ -310,7 +310,7 @@ function scrSkills() {
 	skill_name[32] = "ALKALINE SALIVA"
 	skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#HEALS YOU INSTEAD"
 	skill_tips[32] = "yes pain yes gain"
-	skill_msnd[32] =  sndInsomnia
+	skill_msnd[32] =  sndMutAlkalineSaliva
 	
 	/*
 	skill_name[33] = "THRONE BACK"

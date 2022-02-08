@@ -12,13 +12,23 @@ sprite_index = sprProtoPortal
 }
 if sprite_index = sprPortalDisappear or sprite_index = sprProtoPortalDisappear or sprite_index = sprPortalInvertedDisappear
 {
-with Player
-{
-reload = 0
-breload = 0
-}
-audio_stop_sound(sndPortalLoop)
-room_restart()
-instance_destroy()
+	var canRestart = false;
+	with Player
+	{
+	reload = 0
+	breload = 0
+	if my_health >= 0
+		canRestart = true;
+	}
+	audio_stop_sound(sndPortalLoop)
+	if canRestart
+	{
+		room_restart()
+		instance_destroy()
+	}
+	else
+	{
+		endgame = 100;	
+	}
 }
 

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndHealthChest",
-  "duration": 0.0,
+  "duration": 0.757347,
   "parent": {
     "name": "Pickups",
     "path": "folders/Sounds/Pickups.yy",

@@ -14,8 +14,8 @@
   "soundFile": "sndHitFlesh",
   "duration": 0.0,
   "parent": {
-    "name": "group1",
-    "path": "folders/Sounds/group1.yy",
+    "name": "Enviroment",
+    "path": "folders/Sounds/Enviroment.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndHitFlesh",

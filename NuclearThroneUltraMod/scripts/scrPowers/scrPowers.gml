@@ -1970,7 +1970,6 @@ function scrPowers() {
 	if place_free(x,y+lengthdir_y(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y)+180))
 	y += lengthdir_y(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y)+180)}}
 
-	draw_sprite_ext(sprMindPower,wave*0.4,x,y,right,1,0,c_white,1)
 
 	}
 	else if KeyCont.key_spec[p] != 1 and KeyCont.key_spec[p] != 2

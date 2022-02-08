@@ -71,7 +71,7 @@ if wep = 63 || wep = 343//Blackhole/Dimension Generator
 {
 if can_shoot = 1 and ammo[wep_type[wep]] >= wep_cost[wep]{
 
-draw_sprite_ext(sprBlackHoleGeneration,wave*0.4,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
+draw_sprite_ext(sprBlackHoleGeneration,wave,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
 }}
 }
 if instance_exists(Decoy)
@@ -89,18 +89,18 @@ draw_sprite_ext(wep_sprt[wep],triggerfinger,x+lengthdir_x(-wkick,point_direction
 if wep = 63 || wep = 343//Blackhole/Dimension Generator
 {
 if can_shoot = 1 and ammo[wep_type[wep]] >= wep_cost[wep]{
-draw_sprite_ext(sprBlackHoleGeneration,wave*0.4,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
+draw_sprite_ext(sprBlackHoleGeneration,wave,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
 }}
 }
 
 
 if race = 3 and (KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2)
 {
-draw_sprite_ext(sprMindPower,wave*0.4,x,y,right,1,0,c_white,1)
+draw_sprite_ext(sprMindPower,wave,x,y,right,1,0,c_white,1)
 }
 else if ultra_got[10]=1
 {
-draw_sprite_ext(sprMonsterStyle,wave*0.4,x,y,right,1,0,c_white,1)
+draw_sprite_ext(sprMonsterStyle,wave,x,y,right,1,0,c_white,1)
 }
 //else if ultra_got[11]=1// keep the animations goin on brainwashed enemies
 //{wave+=1;}
@@ -109,7 +109,7 @@ if skill_got[25]=1//strong spirit draw this behind weps
 {
 if strongspiritused==false&&strongspirit
 {
-draw_sprite_ext(sprStrongSpirit,wave*0.2,x,y,right,1,0,c_white,1);
+draw_sprite_ext(sprStrongSpirit,wave*0.4,x,y,right,1,0,c_white,1);
 }
 }
 
@@ -118,6 +118,7 @@ if ultra_got[48]//yung cuz lives
 draw_sprite_ext(sprYungCuzLives,lag,x,y-8,1,1,0,c_white,1);
 }
 
+/*
 draw_set_blend_mode(bm_add)
 
 if skill_got[8]//gamma guts
@@ -126,7 +127,7 @@ draw_sprite_ext(sprGammaGuts,wave*0.4,x,y,1.1,1.1,image_angle,c_white,0.1)
 }
 
 draw_set_blend_mode(bm_normal)
-wave += 1
+*/
 
 if wkick > 0
 wkick -= 1
@@ -140,4 +141,8 @@ bwkick -= 1
 if bwkick < 0
 bwkick += 1
 }
+draw_text(x,y-32,string(alarm[3]));
+draw_text(x,y-48,string(meleeimmunity));
 
+if nearWall
+	draw_sprite(sprHammerHeadNear,wave,x,y-16);

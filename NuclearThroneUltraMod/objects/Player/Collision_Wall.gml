@@ -38,16 +38,7 @@ if !place_free(x,y+vspeed)vspeed = 0}
 else {move_bounce_solid(true);}
 
 }
-if skill_got[26] && ( (hammerheadcounter < 30 && race != 25) || (hammerheadcounter < 40 && race=25 ) ){
-hammerheadtimer+=1;
 
-alarm[5]=12;//timer before hammerhead continuation stops
-if hammerheadtimer>8{
-hammerheadcounter+=1;
-with other
-{instance_destroy();
-instance_create(x,y,FloorExplo);}}
-}
 
 if !instance_exists(GenCont)&&race!=18{
 if collision_point(x+random(4)-2,y+random(4)-2,Wall,false,true)//this may be a little intense
