@@ -43,8 +43,12 @@ function scrDrawGameOver() {
 	}
 	scrRaces()
 	scrCrowns()
+	var ranChar = false;
 	if race = 0
-	{do race = ceil(random(racemax)) until race_have[race] = 1}
+	{
+		ranChar = true;
+		do race = ceil(random(racemax)) until race_have[race] = 1
+	}
 	if crown = 0
 	crown = ceil(random(crownmax))
 	with instance_create(x,y,GenCont)
@@ -57,6 +61,7 @@ function scrDrawGameOver() {
 	
 	with Player
 	{
+		randomlySelected = ranChar;
 		restarted = true;	
 	}
 	room_restart()

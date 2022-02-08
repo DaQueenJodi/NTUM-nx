@@ -105,8 +105,12 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
 	}
 	
     UberCont.racepick = Menu.race
+	var ranChar = false;
     if race = 0
-    {do race = ceil(random(racemax)) until UberCont.race_have[race] = 1}
+    {
+		ranChar = true;
+		do race = ceil(random(racemax)) until UberCont.race_have[race] = 1
+	}
     if crown = 0
     crown = ceil(random(crownmax))
     instance_create(x,y,SpiralCont)
@@ -118,14 +122,8 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
     instance_create(x,y,Player)
 	with Player
 	{
-		restarted = true;	
-	}
-	with all
-	{
-		if persistent
-		{
-			debug("persistent obj: ",object_get_name(object_index));	
-		}
+		restarted = true;
+		randomlySelected = ranChar;
 	}
     room_restart()
     exit;

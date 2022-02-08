@@ -16,4 +16,3 @@ wave = 0
 fogscroll = 0
 
 bloomAlpha=UberCont.opt_bloom;
-

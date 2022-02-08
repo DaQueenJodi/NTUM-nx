@@ -13,17 +13,6 @@ spr_dead = sprBanditDead
 snd_hurt = sndBanditHit
 snd_dead = sndBanditDie
 
-squareShooter = false;
-if (random(3) < 1)
-{
-	squareShooter = true;
-	spr_gun = sprBanditGunSquare;
-}
-else
-{
-	squareShooter = false;
-	spr_gun = sprBanditGun;
-}
 //behavior
 walk = 0
 gunangle = random(360)

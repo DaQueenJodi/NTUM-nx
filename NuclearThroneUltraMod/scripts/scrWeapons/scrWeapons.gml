@@ -3718,7 +3718,7 @@ function scrWeapons() {
 	wep_name[337] = "MINI LIGHTNING PISTOL"
 	wep_type[337] = 5
 	wep_auto[337] = 0
-	wep_load[337] = 6
+	wep_load[337] = 8
 	wep_cost[337] = 1
 	wep_sprt[337] = sprMiniLightningPistol
 	wep_area[337] = 1

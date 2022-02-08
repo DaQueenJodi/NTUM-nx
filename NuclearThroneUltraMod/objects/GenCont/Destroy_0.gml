@@ -200,3 +200,5 @@ room_speed=40;
 }
 
 
+with UberCont
+	wallsBroken = 0;

@@ -110,7 +110,7 @@ BackCont.loops = loops
 
 with UberCont
 {
-ctot_kill[other.race]=other.kills
+ctot_kill[other.race]+=other.kills
 //ctot_time[other.race]+=time;
 if other.my_health<1
 ctot_dead[other.race] += 1
@@ -129,6 +129,27 @@ cbst_diff[other.race]=other.hard
 if other.loops> cbst_loop[other.race]
 cbst_loop[other.race]=other.loops
 
+if other.randomlySelected
+{
+	ctot_kill[0]+=other.kills
+	//ctot_time[other.race]+=time;
+	if other.my_health<1
+	ctot_dead[0] += 1
+
+	ctot_loop[0]+=other.loops;
+
+	//best kills
+	if other.kills > cbst_kill[0]
+		cbst_kill[0] = other.kills
+
+	//best difficulty
+	if other.hard>cbst_diff[0]
+		cbst_diff[0]=other.hard
+
+	//best loops
+	if other.loops> cbst_loop[0]
+		cbst_loop[0]=other.loops
+}
 
 scrSave();
 }

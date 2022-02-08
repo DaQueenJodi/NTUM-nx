@@ -19,6 +19,8 @@ function scrLoadStats() {
 	cbst_loop[dir] = ini_read_real("STATS","cbstloop"+string(dir),0);
 	dir +=1;}
 
+	ctot_walls_destroyed = ini_read_real("STATS","ctotwallsdestroyed",0);
+
 
 	tot_time = real(string_digits(ini_read_real("STATS","tottime",0)));
 	debug("tot time: ",tot_time);

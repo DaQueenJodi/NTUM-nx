@@ -1,5 +1,4 @@
 function scrRestart() {
-	debug("RESTART SCRIPT");
 	with all
 	{
 	if id != UberCont.id and persistent = true

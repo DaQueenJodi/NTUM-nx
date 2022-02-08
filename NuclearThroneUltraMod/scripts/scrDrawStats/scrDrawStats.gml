@@ -10,6 +10,7 @@ function scrDrawStats() {
 	kills = 0
 	deaths = 0
 	loops = 0
+	wallkill = 0;
 	bkills = 0
 	rkills = 0
 	bdiff = 0
@@ -26,24 +27,25 @@ function scrDrawStats() {
 	deaths += UberCont.ctot_dead[dir]
 	loops += UberCont.ctot_loop[dir]
 
-	if UberCont.cbst_kill[dir] > bkills{
+	if UberCont.cbst_kill[dir] > bkills && dir != 0{
 	bkills = UberCont.cbst_kill[dir]
 	rkills = dir}
 
-	if UberCont.cbst_diff[dir] > bdiff{
+	if UberCont.cbst_diff[dir] > bdiff && dir != 0{
 	bdiff = UberCont.cbst_diff[dir]
 	rdiff = dir}
 
-	if UberCont.cbst_loop[dir] > bloop{
+	if UberCont.cbst_loop[dir] > bloop && dir != 0{
 	bloop = UberCont.cbst_loop[dir]
 	rloop = dir}
-
+	
+	wallkill = UberCont.ctot_walls_destroyed;
 	//if UberCont.cbst_time[UberCont.dir] = 999999999
 	//besttimestring="NO TIME YET"
 	//else
 	//{
 
-	if UberCont.cbst_time[dir] < btime{
+	if UberCont.cbst_time[dir] < btime && dir != 0{
 	btime = scrTime(UberCont.cbst_time[dir],false)
 	rtime = dir
 	}
@@ -58,14 +60,14 @@ function scrDrawStats() {
 	if btime = 999999999
 	btime="NO TIME YET"
 
-	race_name[0]="|"
+	race_name[0]="RANDOM"
 
 	txt0 = "#STATISTICS"
-	txt1 = "####TOTAL#TIME#KILLS#DEATHS#LOOPS##BEST#TIME#KILLS#DIFFICULTY#LOOPS##"+string(race_name[Menu.race])+"#KILLS#TOTAL KILLS#DEATHS#LOOPS"//+string(race_name[Menu.race])
-	txt2 = "#####"+string(time)+"#"+string(kills)+"#"+string(deaths)+"#"+string(loops)+"###"+string(btime)+" "+string(race_name[rtime])+"#"+string(bkills)+" "+string(race_name[rkills])+"#"+string(bdiff)+" "+string(race_name[rdiff])+"#"+string(bloop)+" "+string(race_name[rloop])
+	txt1 = "####TOTAL#TIME#KILLS#DEATHS#LOOPS#WALLS DESTROYED##BEST#TIME#KILLS#DIFFICULTY#LOOPS##"+string(race_name[Menu.race])+"#BEST KILLS#TOTAL KILLS#DEATHS#LOOPS"//+string(race_name[Menu.race])
+	txt2 = "#####"+string(time)+"#"+string(kills)+"#"+string(deaths)+"#"+string(loops)+"#"+string(wallkill)+"###"+string(btime)+" "+string(race_name[rtime])+"#"+string(bkills)+" "+string(race_name[rkills])+"#"+string(bdiff)+" "+string(race_name[rdiff])+"#"+string(bloop)+" "+string(race_name[rloop])
 	+"###"+string(UberCont.cbst_kill[Menu.race])+"#"+string(UberCont.ctot_kill[Menu.race])+"#"+string(UberCont.ctot_dead[Menu.race])+"#"+string(UberCont.ctot_loop[Menu.race])
 	stxt0 = "#STATISTICS"
-	stxt1 = "####TOTAL######BEST######"+string(race_name[Menu.race])
+	stxt1 = "####TOTAL#######BEST######"+string(race_name[Menu.race])
 	stxt2 = ""
 
 

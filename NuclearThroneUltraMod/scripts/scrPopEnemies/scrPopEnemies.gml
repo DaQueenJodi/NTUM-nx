@@ -2,23 +2,28 @@ function scrPopEnemies() {
 	//DESERT
 	if spawnarea = 1 or spawnarea = 0// or spawnarea = 100
 	{
-	if styleb = 1
-	{
-	instance_create(x+16,y+16,choose(MaggotSpawn,BigMaggot,BigMaggot,Maggot))
-	}
-	else
-	{
-	if random(7) < 1 
-	instance_create(x+16,y+16,choose(MaggotSpawn,Scorpion))
-	else
-	{if random(30) < 1
-	{instance_create(x+16,y+16,Barrel)
-	instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)
-	instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)
-	instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)}
-	else
-	instance_create(x+16,y+16,choose(Bandit,Bandit,Bandit,Bandit,Bandit,Bandit,Maggot,Scorpion))}
-	}
+		var theBandit = Bandit;
+		if (subarea > 1)
+		{
+			theBandit = choose(Bandit,Bandit,Bandit,BanditSquare);	
+		}
+		if styleb = 1
+		{
+		instance_create(x+16,y+16,choose(MaggotSpawn,BigMaggot,BigMaggot,Maggot))
+		}
+		else
+		{
+		if random(7) < 1 
+		instance_create(x+16,y+16,choose(MaggotSpawn,Scorpion))
+		else
+		{if random(30) < 1
+		{instance_create(x+16,y+16,Barrel)
+		instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)
+		instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)
+		instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)}
+		else
+			instance_create(x+16,y+16,choose(theBandit,theBandit,theBandit,theBandit,theBandit,theBandit,Maggot,Scorpion))}
+		}
 	}
 
 	if spawnarea = 101//Oasis
@@ -109,7 +114,7 @@ function scrPopEnemies() {
 	//instance_create(x+16+random(4)-2,y+16+random(4)-2,Raven)
 	instance_create(x+16+random(4)-2,y+16+random(4)-2,Raven)}
 	else
-	instance_create(x+16,y+16,choose(Raven,Raven,Bandit))}
+	instance_create(x+16,y+16,choose(Raven,Raven,Bandit,BanditSquare))}
 	}
 	}
 
@@ -163,7 +168,7 @@ function scrPopEnemies() {
 	if spawnarea = 5
 	{
 	if random(3) < 2
-	instance_create(x+16,y+16,choose(SnowBot,SnowBot,SnowBot,SnowTank,Wolf,Wolf,DiscGuy))
+	instance_create(x+16,y+16,choose(SnowBot,SnowBot,SnowBot,SnowTank,Wolf,Wolf,DiscGuy,BanditSquare))
 	}
 
 	//INVERTED FROZEN CITY
@@ -244,7 +249,7 @@ function scrPopEnemies() {
 		instance_create(x+12+random(8),y+12+random(8),choose(LavaBallEnemy,LavaBallEnemy,LavaBallEnemy,LavaBallEnemy,LavaBallEnemy,Salamander))
 		}
 		else if random(7) < 1
-		instance_create(x+16,y+16,choose(SuperFireBaller,Thief,SuperFireBaller,FireBat,Bandit,FireBaller,FireBaller))
+		instance_create(x+16,y+16,choose(SuperFireBaller,Thief,SuperFireBaller,FireBat,Bandit,BanditSquare,FireBaller,FireBaller))
 		}
 		else//a style
 		{
@@ -257,11 +262,11 @@ function scrPopEnemies() {
 		}
 		else{//not subarea 2
 		repeat(4)
-		instance_create(x+12+random(8),y+12+random(8),choose(FireBat,LavaBallEnemy,LavaBallEnemy,FireBaller,FireBat,Salamander,Bandit))}
+		instance_create(x+12+random(8),y+12+random(8),choose(FireBat,LavaBallEnemy,LavaBallEnemy,FireBaller,FireBat,Salamander,Bandit,BanditSquare))}
 		}
 		else{//dead Player
 		repeat(2)
-		instance_create(x+12+random(8),y+12+random(8),choose(FireBat,LavaBallEnemy,LavaBallEnemy,FireBaller,FireBat,Salamander,Salamander,Bandit))
+		instance_create(x+12+random(8),y+12+random(8),choose(FireBat,LavaBallEnemy,LavaBallEnemy,FireBaller,FireBat,Salamander,Salamander,Bandit,BanditSquare))
 		}
 		}
 		else if random(7) < 1
@@ -422,28 +427,28 @@ function scrPopEnemies() {
 	{
 	if styleb = 1
 	{
-	instance_create(x+16,y+16,choose(EraserBandit,Thief,Thief,Thief))
+	instance_create(x+16,y+16,choose(EraserBandit,Thief,Thief,Thief,))
 	}
 	else
 	{
 	if random(20) < 1
 	{
 	repeat(1+irandom(3))
-	instance_create(x+16+irandom(4)-2,y+16+irandom(4)-2,choose(Bandit,JungleBandit,LaserBandit,EraserBandit,BanditInverted))
+	instance_create(x+16+irandom(4)-2,y+16+irandom(4)-2,choose(Bandit,JungleBandit,LaserBandit,EraserBandit,BanditInverted,BanditSquare))
 	}
 	else
 	{if random(30) < 1
 	{instance_create(x+16,y+16,Barrel)
-	instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(Bandit,JungleBandit,LaserBandit,EraserBandit,BanditInverted))
-	instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(Bandit,JungleBandit,LaserBandit,EraserBandit,BanditInverted))
-	instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(Bandit,JungleBandit,LaserBandit,EraserBandit,BanditInverted))}
+	instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(Bandit,JungleBandit,LaserBandit,EraserBandit,BanditInverted,BanditSquare))
+	instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(Bandit,JungleBandit,LaserBandit,EraserBandit,BanditInverted,BanditSquare))
+	instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(Bandit,JungleBandit,LaserBandit,EraserBandit,BanditInverted,BanditSquare))}
 	else if random(20) < 1
 	{
 	repeat(2+irandom(6))
 	instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)
 	}
 	else
-	instance_create(x+16,y+16,choose(Bandit,LaserBandit,EraserBandit,LaserBandit,BanditInverted,Thief,JungleBandit))}
+	instance_create(x+16,y+16,choose(Bandit,LaserBandit,EraserBandit,LaserBandit,BanditInverted,Thief,JungleBandit,BanditSquare))}
 	}
 	}
 	

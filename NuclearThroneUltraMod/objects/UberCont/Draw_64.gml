@@ -1,7 +1,6 @@
 var wratio = window_get_width()/room_width;
 var hratio = window_get_height()/room_height;
 var lplusratio = wratio/hratio;
-
 if (lplusratio > 1) {
 	var newwidth = room_width * lplusratio;
 	var excesswidth = newwidth - room_width;

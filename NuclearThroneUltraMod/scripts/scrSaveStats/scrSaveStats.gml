@@ -17,8 +17,10 @@ function scrSaveStats() {
 	ini_write_real("STATS","cbstdiff"+string(dir),cbst_diff[dir]);
 
 	ini_write_real("STATS","cbstloop"+string(dir),cbst_loop[dir]);
+	
 	dir +=1;}
-
+	
+	ini_write_real("STATS","ctotwallsdestroyed",ctot_walls_destroyed);
 
 	ini_write_real("STATS","tottime",string(tot_time));
 }

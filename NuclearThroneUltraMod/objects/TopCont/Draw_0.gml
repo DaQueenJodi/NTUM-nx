@@ -1,6 +1,5 @@
 wave += 1
 
-scrDrawBloom()
 
 with BoltTrail
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,colour,1);
@@ -330,5 +329,4 @@ draw_sprite_ext(sprite_index,-1,__view_get( e__VW.XView, 0 )+x,__view_get( e__VW
 }
 
 
-/* */
-/*  */
+scrDrawBloom()

@@ -1,7 +1,7 @@
 /// @description Stay in same place
 if instance_exists(owner)
 {
-	x = owner.y;
+	x = owner.x;
 	y = owner.y;
 }
 else
