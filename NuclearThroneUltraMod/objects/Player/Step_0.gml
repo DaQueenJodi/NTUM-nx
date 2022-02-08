@@ -23,9 +23,9 @@ if UberCont.public=0 {
 //hacks
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,ExploGuardian);
+	    instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,GhostGuardian);
 		thing = instance_create(x + dcos(dangle)*64,y + dsin(dangle)*64,PopupText);
-		thing.mytext = "ExploGuardian?";
+		thing.mytext = "GhostGuardian?";
 	}
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
