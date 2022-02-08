@@ -36,8 +36,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "CrownVault",
+    "path": "folders/Objects/CrownVault.yy",
   },
   "resourceVersion": "1.0",
   "name": "GuardianDeflect",

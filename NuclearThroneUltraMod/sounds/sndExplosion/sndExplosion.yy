@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndExplosion",
-  "duration": 0.0,
+  "duration": 0.625011,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

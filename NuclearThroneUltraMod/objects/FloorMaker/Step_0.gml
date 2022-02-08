@@ -13,8 +13,10 @@ if Player.race=22
 if Player.area!=104 && Player.area!=100 && !instance_exists(RogueAmmoChest)
 instance_create(x+16,y+16,RogueAmmoChest)
 }
-else if Player.area!=104 && Player.race!=25//Not mutation smith
+else if Player.area!=104 && Player.race!=25 && !(Player.area == 9 && Player.subarea ==3)//Not mutation smith
 instance_create(x+16,y+16,RadChest)
+else if (Player.area == 9 && Player.subarea ==3)
+instance_create(x+16,y+16,Carpet);
 }
 }
 instance_destroy()
@@ -23,9 +25,16 @@ else
 {
 if UberCont.firstFloorMaker
 {
-	debug("Should be first floormaker call:");
 	SetSeed();
 	UberCont.firstFloorMaker = false;
+	if instance_exists(Player) && Player.area == 9 && Player.subarea == 3
+	{
+		other.x = 10016;
+		other.y = 10016;
+		Player.x = other.x;
+		Player.y = other.y;
+		direction = 90;
+	}
 }
 scrMakeFloor()
 

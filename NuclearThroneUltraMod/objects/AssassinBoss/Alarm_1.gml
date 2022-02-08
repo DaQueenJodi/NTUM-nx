@@ -12,9 +12,9 @@ move_contact_solid(direction+choose(90,-90),1+irandom(3))
 }
 if point_distance(target.x,target.y,x,y) < 80
 {//SMACK THAT
-alarm[2]=6//the delay that everyone wants
+alarm[2]=12//Larger delay when smacking through a wall
 instance_create(x,y,Notice);
-alarm[1]=10;
+alarm[1]=15;
 }
 else
 {
@@ -30,7 +30,7 @@ right = 1
 }
 else if point_distance(target.x,target.y,x,y) < 70
 {//SMACK THAT ANYWAYS WE CAN GO THROUGH WALLS FK THAT SHIT
-alarm[2]=8//the delay that everyone wants its longer here cause you wont expect this
+alarm[2]=7//the delay that everyone wants its longer here cause you wont expect this
 instance_create(x,y,Notice);
 alarm[1]=12;
 }

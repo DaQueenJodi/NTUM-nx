@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "CrownVault",
-    "path": "texturegroups/CrownVault",
-  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 8,
   "height": 10,
+  "textureGroupId": {
+    "name": "CrownVault",
+    "path": "texturegroups/CrownVault",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -112,7 +112,7 @@
             {"id":"33faf1d7-eff4-4554-b78e-8d9c3dbc3680","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0198de7-cf53-46eb-ab04-9af13bdffb08","path":"sprites/sprWeaponModIcon/sprWeaponModIcon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

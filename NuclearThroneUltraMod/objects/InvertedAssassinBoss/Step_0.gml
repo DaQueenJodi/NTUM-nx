@@ -15,7 +15,8 @@ if dodge > 0
 {
 sprite_index=spr_walk;
 move_contact_solid(direction,12)
-dodge -= 1
+dodge -= 1.2
+alarm[1] +=1;
 }
 
 //hes firing at me!

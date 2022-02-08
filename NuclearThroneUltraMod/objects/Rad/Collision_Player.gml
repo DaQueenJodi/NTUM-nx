@@ -1,6 +1,8 @@
 if speed = 0
 {instance_destroy()
 other.rad += 1
+if other.crown == 4
+rad += 0.25;
 snd_play(sndRadPickup)
 
 if other.skill_got[3]//Pluto

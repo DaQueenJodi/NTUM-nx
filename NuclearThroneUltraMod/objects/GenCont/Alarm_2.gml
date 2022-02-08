@@ -104,12 +104,19 @@ instance_create(instance_nearest(Player.x,Player.y,Floor).x+16, instance_nearest
 }
 
 //safe corridors pls
-instance_create(Player.x,Player.y,WallBreak);
-instance_create(Player.x+16,Player.y+16,WallBreak);
-instance_create(Player.x+16,Player.y-16,WallBreak);
-instance_create(Player.x-16,Player.y+16,WallBreak);
-instance_create(Player.x-16,Player.y-16,WallBreak);
-
+if !(Player.area == 9 && Player.subarea == 3)
+{
+	instance_create(Player.x,Player.y,WallBreak);
+	instance_create(Player.x+16,Player.y+16,WallBreak);
+	instance_create(Player.x+16,Player.y-16,WallBreak);
+	instance_create(Player.x-16,Player.y+16,WallBreak);
+	instance_create(Player.x-16,Player.y-16,WallBreak);
+}
+else
+{
+	Player.x += 16;
+	Player.y -= 32;
+}
 
 //safe spawns?
 //Player.x=PlayerStartX;

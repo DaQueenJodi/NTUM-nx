@@ -12,9 +12,9 @@ move_contact_solid(direction+choose(90,-90),1+irandom(4))
 }
 if point_distance(target.x,target.y,x,y) < 90
 {//SMACK THAT
-alarm[2]=6//the delay that everyone wants
+alarm[2]=10;
 instance_create(x,y,Notice);
-alarm[1]=9;
+alarm[1]=10;
 }
 else if random(8)<1
 {
@@ -42,9 +42,9 @@ right = 1
 }
 else if point_distance(target.x,target.y,x,y) < 74
 {//SMACK THAT THROUGH WALLS
-alarm[2]=6//the delay that everyone wants
+alarm[2]=7//the delay that everyone wants
 instance_create(x,y,Notice);
-alarm[1]=8;
+alarm[1]=10;
 }
 else if random(4) < 1
 {

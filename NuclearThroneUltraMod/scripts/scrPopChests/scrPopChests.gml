@@ -2,6 +2,7 @@ function scrPopChests() {
 	var gol=choose(1,1,1,1,1,1,1,1,2);
 	if instance_exists(Player)
 	{
+		
 	if(Player.skill_got[23]){//OPEN MIND
 
 	if Player.race=25
@@ -36,6 +37,22 @@ function scrPopChests() {
 	until instance_number(AmmoChest) <= gol}
 	{do {with instance_nearest(Player.x+random(500)-250,Player.y+random(500)-250,HealthChest) instance_destroy()}
 	until instance_number(HealthChest) <= gol}
+	
+	if Player.area == 9 && Player.subarea == 3
+	{
+		var xx = Player.x;
+		var yy = Player.y;
+		xx = 10016+16;
+		yy = 10016+16;
+		instance_create(xx-48,yy-64,WeaponChest);
+		instance_create(xx+48,yy-64,AmmoChest);
+		if Player.skill_got[23]
+		{
+			instance_create(xx-96,yy-64,WeaponChest);
+			instance_create(xx+06,yy-64,AmmoChest);
+		}
+	}
+	
 	with ChestOpen
 	instance_destroy()
 	if instance_exists(Player)

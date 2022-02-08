@@ -186,8 +186,6 @@ function scrPowers() {
 	        my_health-=2;
 	        exception=true
 	    }
-	    snd_play(sndExplosion);
-    
 	    scrBlankArmour();
     
 	    with instance_create(x,y,ArmourStrike)
@@ -236,8 +234,10 @@ function scrPowers() {
 	    BackCont.viewx2 += lengthdir_x(-8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	    BackCont.viewy2 += lengthdir_y(-8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	    BackCont.shake += 22
-    
+		snd_play(sndVikingArmourStrikeUpg);
 	    }
+		else
+			snd_play(sndVikingArmourStrike);
     
 	    BackCont.viewx2 += lengthdir_x(-6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	    BackCont.viewy2 += lengthdir_y(-6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake

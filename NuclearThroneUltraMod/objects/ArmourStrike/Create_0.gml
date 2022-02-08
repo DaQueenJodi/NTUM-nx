@@ -10,10 +10,15 @@ typ = 0 //0 = normal, 1 = deflectable, 2 = destructable, 3 = deflects
 
 
 image_speed = 0.4
-image_yscale=3;
+image_yscale=4;
 target=enemy;
 Originalangle=image_angle;
 amountofenemies=0;
-
+dmg = 5;
+if instance_exists(Player) && Player.ultra_got[63]
+{
+	dmg += 1;
+	image_yscale += 2;
+}
 /* */
 /*  */

@@ -33,7 +33,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Sewer",
-    "path": "folders/Objects/Sewer.yy",
+    "path": "folders/Objects/props/Sewer.yy",
   },
   "resourceVersion": "1.0",
   "name": "GoldenPipe",

@@ -568,13 +568,12 @@ function scrMakeFloor() {
 
 	//instance_create(x,y,Floor)
 
-	if (trn = 180 or (abs(trn) = 90 and (area = 3 || area = 106 || area == 9))) and point_distance(x,y,10016,10016) > 48{
+	if (trn = 180 or (abs(trn) = 90 and (area = 3 || area = 106 || (area == 9 && !subarea == 3)))) and point_distance(x,y,10016,10016) > 48{
 	instance_create(x,y,Floor)
 	instance_create(x+16,y+16,WeaponChest)}
 
 
 	//BRANCHES
-	if !(area == 9 && subarea == 3)
 	if area = 1 || area = 105 || area = 101
 	{
 	if random(19+instance_number(FloorMaker)) > 20

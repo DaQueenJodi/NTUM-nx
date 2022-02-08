@@ -24,8 +24,10 @@ else if Player.area = 106
 goal = 120
 else if (Player.area = 6||Player.area=112) && Player.subarea=2//LABS BOSS
 goal=1;
-else if Player.area = 9
+else if Player.area = 9 && Player.subarea < 2
 goal = 130
+else if Player.area == 9 && Player.subarea == 3
+goal = 250;
 }
 
 if UberCont.opt_gamemode==6//small levels

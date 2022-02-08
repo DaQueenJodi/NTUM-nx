@@ -5,7 +5,7 @@ with other
 {
 if instance_exists(Player)
 {
-my_health -= 4*Player.level
+my_health -= other.dmg*(Player.level*0.75)
 
 //freeze bitch!
 if alarm[11]<1&&my_health>0&&Player.ultra_got[63]{
@@ -25,7 +25,7 @@ alarm[11]+=60;
 
 }
 else
-my_health -= 4;
+my_health -= other.dmg;
 
 sprite_index = spr_hurt
 image_index = 0
