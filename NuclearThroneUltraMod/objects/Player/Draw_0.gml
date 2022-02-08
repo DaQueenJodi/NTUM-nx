@@ -141,8 +141,5 @@ bwkick -= 1
 if bwkick < 0
 bwkick += 1
 }
-draw_text(x,y-32,string(alarm[3]));
-draw_text(x,y-48,string(meleeimmunity));
-
 if nearWall
 	draw_sprite(sprHammerHeadNear,wave,x,y-16);

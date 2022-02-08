@@ -48,28 +48,66 @@ if Player.ultra_got[6]=1{
 mask_index=mskMovingShield;
 
 if place_meeting(x+hspeed,y+vspeed,Wall){
-
-move_contact_solid(direction,max(1,min(Player.maxspeed,speed)))
-if !place_free(x+hspeed,y){
-	hspeed *= 0.5
-	var inwall = place_meeting(x,y,Wall);
-	if !place_free(x+hspeed,y)
-	{
-		if inwall
-		x-= sign(hspeed);
-		hspeed = 0
+	move_contact_solid(direction,max(1,min(Player.maxspeed,speed)))
+	if !place_free(x+hspeed,y){
+		hspeed *= 0.5
+		//var inwall = place_meeting(x,y,Wall);
+		if !place_free(x+hspeed,y)
+		{
+			//if inwall
+			//x-= sign(hspeed);
+			hspeed = 0
+		}
 	}
-}
-if !place_free(x,y+vspeed){
-	vspeed *= 0.5
-	var inwall = place_meeting(x,y,Wall);
-	if !place_free(x,y+vspeed)
-	{
-		if inwall
-		y-= sign(vspeed);
-		vspeed = 0
+	if !place_free(x,y+vspeed){
+		vspeed *= 0.5
+		//var inwall = place_meeting(x,y,Wall);
+		if !place_free(x,y+vspeed)
+		{
+			//if inwall
+			//y-= sign(vspeed);
+			vspeed = 0
+		}
 	}
-}
+	if place_meeting(x,y,Wall)
+	{
+		/*
+			You should never have to do this
+			but lets move the player OUT of a wall
+		*/
+		var xx = x;
+		var yy = y;
+		var tryStepsX = []; 
+		tryStepsX[0] = x;
+		tryStepsX[1]  = x;
+		tryStepsX[2] = x + 2;
+		tryStepsX[3] = x - 2;
+		tryStepsX[4] = x + 2;
+		tryStepsX[5] = x - 2;
+		tryStepsX[6] = x + 2;
+		tryStepsX[7] = x - 2;
+		var tryStepsY = [];
+		tryStepsY[0] = y + 2;
+		tryStepsY[1]  = y - 2;
+		tryStepsY[2] = y;
+		tryStepsY[3] = y;
+		tryStepsY[4] = y + 2;
+		tryStepsY[5]  = y - 2;
+		tryStepsY[6]  = y - 2;
+		tryStepsY[7] = y + 2;
+		var al = array_length(tryStepsX);
+		for (var i = 0; i < al; i++) {
+		    // code here
+			xx = tryStepsX[i];
+			yy = tryStepsY[i];
+			if !place_meeting(xx,yy,Wall)
+			{
+				x = xx;
+				y = yy;
+				i = al;
+			}
+		}
+	}
 }
 mask_index=mskShield;
 }}

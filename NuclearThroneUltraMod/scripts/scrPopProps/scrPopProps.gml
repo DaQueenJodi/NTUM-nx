@@ -48,7 +48,7 @@ function scrPopProps() {
 	instance_create(myx,myy,Trap)
 
 	}
-	if (spawnarea == 9)
+	if (spawnarea == 9 && subarea != 3)
 	{
 		var mask = mask_index;
 		mask_index = mskPalacePropChecker;

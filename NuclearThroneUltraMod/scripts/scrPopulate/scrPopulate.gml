@@ -376,25 +376,27 @@ function scrPopulate() {
 	}
 	}*/
 
-	if Player.area < 5 or Player.area >= 100
+	if !(Player.area == 9 && Player.subarea == 3)
 	{
-	with WeaponChest
-	instance_create(x,y,Bandit)
-	with RadChest
-	instance_create(x,y,Bandit)
-	with AmmoChest
-	instance_create(x,y,Bandit)
+		if Player.area < 5 or Player.area >= 100
+		{
+		with WeaponChest
+		instance_create(x,y,Bandit)
+		with RadChest
+		instance_create(x,y,Bandit)
+		with AmmoChest
+		instance_create(x,y,Bandit)
+		}
+		else
+		{
+		with WeaponChest
+		instance_create(x,y,Grunt)
+		//with RadChest
+		//instance_create(x,y,Grunt)
+		with AmmoChest
+		instance_create(x,y,Grunt)
+		}
 	}
-	else
-	{
-	with WeaponChest
-	instance_create(x,y,Grunt)
-	//with RadChest
-	//instance_create(x,y,Grunt)
-	with AmmoChest
-	instance_create(x,y,Grunt)
-	}
-
 	//populate pizza sewers
 	if Player.area = 102
 	{

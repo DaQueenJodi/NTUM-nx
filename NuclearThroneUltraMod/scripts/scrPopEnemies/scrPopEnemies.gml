@@ -452,7 +452,7 @@ function scrPopEnemies() {
 	}
 	}
 	
-	if spawnarea == 9
+	if spawnarea == 9 && subarea != 3
 	{
 		if styleb = 1 && random(7) < 2
 		{

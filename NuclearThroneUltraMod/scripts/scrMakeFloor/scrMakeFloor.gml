@@ -316,8 +316,7 @@ function scrMakeFloor() {
 	instance_create(x,y,Floor)
 	instance_create(x,y-32,Floor);
 	}
-	if(instance_exists(Player)){
-	if Player.subarea=2||area=104{//Volcanic boss battleground
+	if subarea=2||area=104 {//Volcanic boss battleground
 	if(instance_number(Floor)>=goal){
 
 	var xx;
@@ -358,7 +357,6 @@ function scrMakeFloor() {
 	    }
     
 	    }}
-	}
 
 	}
 
@@ -406,31 +404,48 @@ function scrMakeFloor() {
 	instance_create(x,y,Floor);
 	}
 	//Palace
-	if area = 9{ if random(5) < 3
-	{instance_create(x,y,Floor)
-	instance_create(x+32,y,Floor)
-	instance_create(x-32,y,Floor)
-	instance_create(x,y+32,Floor)
-	instance_create(x,y-32,Floor)
-	instance_create(x+32,y+32,Floor)
-	instance_create(x+32,y-32,Floor)
-	instance_create(x-32,y-32,Floor)
-	instance_create(x-32,y+32,Floor)
-	x += lengthdir_x(32,direction)
-	y += lengthdir_y(32,direction)
-	}else 
-	{
-		if random(3) < 1
+	if area = 9 {
+		if subarea < 2
+		{
+		if random(5) < 3
 		{
 			instance_create(x,y,Floor)
+			instance_create(x+32,y,Floor)
+			instance_create(x-32,y,Floor)
 			instance_create(x,y+32,Floor)
+			instance_create(x,y-32,Floor)
+			instance_create(x+32,y+32,Floor)
+			instance_create(x+32,y-32,Floor)
+			instance_create(x-32,y-32,Floor)
+			instance_create(x-32,y+32,Floor)
+			x += lengthdir_x(32,direction)
+			y += lengthdir_y(32,direction)
+		}
+		else {
+			if random(3) < 1
+			{
+				instance_create(x,y,Floor)
+				instance_create(x,y+32,Floor)
+			}
+			else
+			{
+				instance_create(x,y,Floor)
+				instance_create(x,y-32,Floor)
+			}
+		}
 		}
 		else
 		{
+			//Oke lets go guys
 			instance_create(x,y,Floor)
-			instance_create(x,y-32,Floor)
+			instance_create(x+32,y,Floor)
+			instance_create(x-32,y,Floor)
+			instance_create(x+64,y,Floor)
+			instance_create(x-64,y,Floor)
+			instance_create(x+96,y,Floor)
+			instance_create(x-96,y,Floor)
 		}
-	}} 
+	} 
 	/*
 		//Cool generation:
 		if area = 9{ if random(5) < 3
@@ -500,19 +515,20 @@ function scrMakeFloor() {
 	trn= choose(-90,0,0,0,0,0,0,0,180,0,90);
 	if area = 8 || area = 109
 	trn = choose(0,0,0,0,0,180,0,0,90,90,-90,90,-90,180)
-	if area = 9
+	if area = 9 && subarea < 3
 	trn = choose(0,0,0,0,0,0,0,0,0,90,-90,90,-90)
+	else if area = 9 && subarea == 3
+	trn = 0;
 	if area = 100
 	trn = choose(0,0,0,0,0,0,0,0,0,0,90,-90,180,180)
 	if area = 103
 	trn = choose(0,0,0,90,-90,180)
 
 	direction += trn
-	if(instance_exists(Player)){//VOLCANO BOSS
-	if ((area=7||area=108) && Player.subarea=2) || area=104
-	direction=0;
-	}
-
+	if ((area=7||area=108) && subarea=2) || area=104
+		direction=0;
+	else if area == 9 && subarea == 3
+		direction = 90;
 
 
 	if abs(trn) = 90 and (area = 6 || area = 112) and random(2) < 1
@@ -558,6 +574,7 @@ function scrMakeFloor() {
 
 
 	//BRANCHES
+	if !(area == 9 && subarea == 3)
 	if area = 1 || area = 105 || area = 101
 	{
 	if random(19+instance_number(FloorMaker)) > 20
@@ -571,7 +588,7 @@ function scrMakeFloor() {
 	instance_create(x,y,FloorMaker)
 	}
 
-	if area = 9
+	if area = 9 && subarea < 3
 	{
 	   if random(19+instance_number(FloorMaker)) > 20
 	   {

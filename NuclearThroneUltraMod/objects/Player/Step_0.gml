@@ -1412,8 +1412,11 @@ if hammerheadcounter > 0
 	if place_meeting(x,y,Wall)
 	{
 		nearWall = true;
-		if (speed > 0)
+		//if (speed > 0)
+		mask_index = msk;
+		if place_meeting(x+hspeed,y+vspeed,Wall)
 		{
+			
 			hammerheadtimer += 1;
 
 			alarm[5]=12;//timer before hammerhead continuation stops

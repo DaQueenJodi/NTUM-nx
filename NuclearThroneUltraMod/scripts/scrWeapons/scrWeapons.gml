@@ -3988,7 +3988,7 @@ function scrWeapons() {
 	wep_type[361] = 5
 	wep_auto[361] = 0
 	wep_load[361] = 10
-	wep_cost[361] = 3
+	wep_cost[361] = 4
 	wep_sprt[361] = sprRewirer
 	wep_area[361] = 12
 	wep_text[361] = "connect the dots"
