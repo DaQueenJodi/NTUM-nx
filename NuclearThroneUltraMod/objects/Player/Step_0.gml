@@ -630,10 +630,18 @@ if ultra_got[21]//ULTRA A
 if skill_got[22] = 1
 {
 //nerves of steel g  STRESS
-if race = 25
-reload -= (1-(my_health/maxhealth))*0.62
-else
-reload -= (1-(my_health/maxhealth))*0.68//*1//0.35 the original has 80% boost
+var reduction = 0;
+	if race = 25
+	{
+		reduction = (1-(my_health/maxhealth))*0.62
+	}
+	else
+	{
+		reduction = (1-(my_health/maxhealth))*0.68//*1//0.35 the original has 80% boost
+	}
+	reload -= reduction
+	breload -= reduction;
+	creload -= reduction;
 }
 
 if race=25
@@ -645,7 +653,10 @@ if skill_got[28] = 1
 {
 //rage
 var rageAccuracy;
-reload -= rage*0.0054//0.01//0.009 when cap is 100
+var reduction = rage*0.0054;
+reload -= reduction//0.01//0.009 when cap is 100
+breload -= reduction;
+creload -= reduction;
 
 rageAccuracy = rage*0.001//0.0011// caps at 0.10 increase when cap = 100
 accuracy=standartAccuracy+rageAccuracy;//standartAccuracy will be changed by eagle eyes so this scales with that.
