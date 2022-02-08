@@ -3521,6 +3521,7 @@
     {"id":{"name":"scrPopEnemies","path":"scripts/scrPopEnemies/scrPopEnemies.yy",},"order":5,},
     {"id":{"name":"scrPopChests","path":"scripts/scrPopChests/scrPopChests.yy",},"order":7,},
     {"id":{"name":"scrPopProps","path":"scripts/scrPopProps/scrPopProps.yy",},"order":9,},
+    {"id":{"name":"sndSplinterMinigun","path":"sounds/sndSplinterMinigun/sndSplinterMinigun.yy",},"order":16,},
     {"id":{"name":"scrPopulate","path":"scripts/scrPopulate/scrPopulate.yy",},"order":11,},
     {"id":{"name":"scrTips","path":"scripts/scrTips/scrTips.yy",},"order":13,},
     {"id":{"name":"scrDrawSpiral","path":"scripts/scrDrawSpiral/scrDrawSpiral.yy",},"order":15,},

@@ -4548,7 +4548,7 @@ function scrFire2() {
 	//SPLINTER MINIGUN
 	case 363:
 	
-	snd_play(sndCrossReload)
+	snd_play(sndSplinterMinigun)
 
 	with instance_create(x,y,Splinter)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(26)-13)*other.accuracy,20)

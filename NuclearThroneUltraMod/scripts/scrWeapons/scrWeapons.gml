@@ -4012,7 +4012,7 @@ function scrWeapons() {
 	wep_load[363] = 2
 	wep_cost[363] = 1
 	wep_sprt[363] = sprMinigun
-	wep_area[363] = 11
+	wep_area[363] = 9
 	wep_text[363] = "like a swarm of bees"
 	wep_swap[363] = sndSwapMachinegun
 	wep_rad[363] = 0;
