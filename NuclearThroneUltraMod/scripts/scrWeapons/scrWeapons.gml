@@ -4006,6 +4006,17 @@ function scrWeapons() {
 	wep_swap[362] = sndSwapBow
 	wep_rad[362] = 0;
 	
+	wep_name[363] = "SPLINTER MINIGUN"
+	wep_type[363] = 1
+	wep_auto[363] = 1
+	wep_load[363] = 2
+	wep_cost[363] = 1
+	wep_sprt[363] = sprMinigun
+	wep_area[363] = 9
+	wep_text[363] = "like a swarm of bees"
+	wep_swap[363] = sndSwapMachinegun
+	wep_rad[363] = 0;
+	
 	/*
 	wep_name[360] = "SPLINTER SHOTGUN"
 	wep_type[360] = 3
