@@ -55,3 +55,4 @@ seed = 0;
 seedText = "";
 firstFloorMaker = true;
 seedOffset = 0;
+wallsBroken = 0;

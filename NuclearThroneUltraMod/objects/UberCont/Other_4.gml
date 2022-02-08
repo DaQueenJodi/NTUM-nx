@@ -24,3 +24,4 @@ instance_create(0,0,Cursor);
 
 firstFloorMaker = true;
 seedOffset = 0;
+wallsBroken = 0;

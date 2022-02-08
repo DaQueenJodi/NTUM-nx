@@ -4553,13 +4553,11 @@ function scrFire2() {
 	with instance_create(x,y,Splinter)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(26)-13)*other.accuracy,20)
 	image_angle = direction
-	team = other.team
-	dmg = 3;}
+	team = other.team}
 	with instance_create(x,y,Splinter)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(26)-13)*other.accuracy,20)
 	image_angle = direction
-	team = other.team
-	dmg = 3;}
+	team = other.team}
 	
 	BackCont.viewx2 += lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
