@@ -48,12 +48,9 @@ if other.team != team and other.team != 0 && (other.team!=2 || image_index<5/*no
 	}
 	}
 	other.dealtDamage = true;
-}
+}/*
 else if ignoreHitme==false
 {
 x = xprevious
 y = yprevious
-}
-
-/* */
-/*  */
+}*/

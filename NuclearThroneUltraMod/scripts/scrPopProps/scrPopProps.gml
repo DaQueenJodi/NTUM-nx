@@ -52,7 +52,7 @@ function scrPopProps() {
 	{
 		var mask = mask_index;
 		mask_index = mskPalacePropChecker;
-		if (random(4) < 1 && !place_meeting(x,y,Wall))
+		if (random(6) < 1 && !place_meeting(x,y,Wall))
 		{
 			var ran = random(100);
 			if (ran > 90)

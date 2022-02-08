@@ -6,6 +6,6 @@ if (sprite_index == spr_fire)
 	sprite_index = spr_normal;
 	spr_idle = spr_normal;
 	spr_hurt = spr_normal_hurt;
-	alarm[1] += 3;
+	alarm[1] += 4;
 	motion_add(direction,2);
 }

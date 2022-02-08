@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"80c4e71a-57d5-4c10-9d8d-4037cf10819f","path":"sprites/mskShopGiantGoldenWepChest/mskShopGiantGoldenWepChest.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"80c4e71a-57d5-4c10-9d8d-4037cf10819f","path":"sprites/mskShopGiantGoldenWepChest/mskShopGiantGoldenWepChest.yy",},"LayerId":{"name":"56f5b4f1-42eb-450b-a9a8-db8249b50072","path":"sprites/mskShopGiantGoldenWepChest/mskShopGiantGoldenWepChest.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"mskShopGiantGoldenWepChest","path":"sprites/mskShopGiantGoldenWepChest/mskShopGiantGoldenWepChest.yy",},"resourceVersion":"1.0","name":"80c4e71a-57d5-4c10-9d8d-4037cf10819f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"80c4e71a-57d5-4c10-9d8d-4037cf10819f","path":"sprites/mskShopBuff/mskShopBuff.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"80c4e71a-57d5-4c10-9d8d-4037cf10819f","path":"sprites/mskShopBuff/mskShopBuff.yy",},"LayerId":{"name":"56f5b4f1-42eb-450b-a9a8-db8249b50072","path":"sprites/mskShopBuff/mskShopBuff.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mskShopBuff","path":"sprites/mskShopBuff/mskShopBuff.yy",},"resourceVersion":"1.0","name":"80c4e71a-57d5-4c10-9d8d-4037cf10819f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"mskShopGiantGoldenWepChest","path":"sprites/mskShopGiantGoldenWepChest/mskShopGiantGoldenWepChest.yy",},
+    "spriteId": {"name":"mskShopBuff","path":"sprites/mskShopBuff/mskShopBuff.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8bb8b742-dbfe-4a5f-be74-a7747de44698","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80c4e71a-57d5-4c10-9d8d-4037cf10819f","path":"sprites/mskShopGiantGoldenWepChest/mskShopGiantGoldenWepChest.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8bb8b742-dbfe-4a5f-be74-a7747de44698","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80c4e71a-57d5-4c10-9d8d-4037cf10819f","path":"sprites/mskShopBuff/mskShopBuff.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 65,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"mskShopGiantGoldenWepChest","path":"sprites/mskShopGiantGoldenWepChest/mskShopGiantGoldenWepChest.yy",},
+    "parent": {"name":"mskShopBuff","path":"sprites/mskShopBuff/mskShopBuff.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "mskShopBuff",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Player/Custom/BusinessHog.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mskShopGiantGoldenWepChest",
+  "name": "mskShopBuff",
   "tags": [],
   "resourceType": "GMSprite",
 }

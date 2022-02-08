@@ -389,8 +389,8 @@ function scrPopulate() {
 	{
 	with WeaponChest
 	instance_create(x,y,Grunt)
-	with RadChest
-	instance_create(x,y,Grunt)
+	//with RadChest
+	//instance_create(x,y,Grunt)
 	with AmmoChest
 	instance_create(x,y,Grunt)
 	}

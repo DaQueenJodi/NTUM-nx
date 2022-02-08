@@ -219,7 +219,7 @@ function scrShadows() {
 	//with prop
 	//draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with chestprop
-	draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )-1)
+	draw_sprite(shadowSprite,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )-1)
 	with Mimic
 	draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with BigWeaponChest

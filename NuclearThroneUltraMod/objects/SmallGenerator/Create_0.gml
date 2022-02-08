@@ -1,6 +1,6 @@
 maxhealth = 40
 my_health = maxhealth;
-size = 3
+size = 2
 
 spr_idle = sprSmallGenerator;
 spr_hurt = sprSmallGeneratorHurt;

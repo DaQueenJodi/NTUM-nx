@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "sprShopMenuGiantGoldenWeaponChest",
-    "path": "sprites/sprShopMenuGiantGoldenWeaponChest/sprShopMenuGiantGoldenWeaponChest.yy",
+    "name": "sprUltraShopMenuGiantGoldenChest",
+    "path": "sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskShopGiantGoldenWepChest",
-    "path": "sprites/mskShopGiantGoldenWepChest/mskShopGiantGoldenWepChest.yy",
+    "name": "mskShopBuff",
+    "path": "sprites/mskShopBuff/mskShopBuff.yy",
   },
   "persistent": false,
   "parentObjectId": {
@@ -39,7 +39,7 @@
     "path": "folders/Objects/Ability/Shops.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ShopBigGoldChest",
+  "name": "UltraShopBigGoldChest",
   "tags": [],
   "resourceType": "GMObject",
 }

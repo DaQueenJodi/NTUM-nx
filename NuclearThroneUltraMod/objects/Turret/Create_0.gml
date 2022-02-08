@@ -1,6 +1,6 @@
 maxhealth = 40
-event_inherited();
 raddrop = 2
+event_inherited();
 meleedamage = 0
 size = 2
 
@@ -11,7 +11,7 @@ spr_appear = sprTurretAppear;
 spr_normal = sprTurretIdle;
 spr_idle = spr_appear
 spr_hurt = sprTurretHurt
-spr_dead = sprTurretDead
+spr_dead = sprTaurretDead
 sprite_index = spr_appear;
 image_index = 0;
 snd_hurt = sndTurretHurt

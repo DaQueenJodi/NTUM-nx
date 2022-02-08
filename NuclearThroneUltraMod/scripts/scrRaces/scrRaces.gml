@@ -281,7 +281,7 @@ function scrRaces() {
 	race_name[20] = "[BUSINESS HOG]"
 	race_pass[20] = "BOSSES DROP GOLDEN#WEAPON CHESTS"
 	race_acti[20] = "SHOP"
-	race_butt[20] = "10% DISCOUNT"
+	race_butt[20] = "20% DISCOUNT"
 	race_back[20] = "WEAPON CHESTS SOMETIME BECOME#GOLDEN WEAPON CHESTS";
 	race_lock[20] = "GRAB A GOLDEN WEAPON"
 	race_have[20] = 0

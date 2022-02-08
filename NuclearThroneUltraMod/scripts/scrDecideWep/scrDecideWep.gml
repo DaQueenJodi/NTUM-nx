@@ -1,4 +1,4 @@
-function scrDecideWep(wepTier, maxTries = 6, cursed = 0) {
+function scrDecideWep(wepTier, maxTries = 10, cursed = 0) {
 	if instance_exists(Player)
 	{
 		if UberCont.opt_gamemode=2{

@@ -9,7 +9,7 @@ function scrPopEnemies() {
 		}
 		if styleb = 1
 		{
-		instance_create(x+16,y+16,choose(MaggotSpawn,BigMaggot,BigMaggot,Maggot))
+		instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(MaggotSpawn,BigMaggot,BigMaggot,Maggot))
 		}
 		else
 		{
@@ -22,7 +22,7 @@ function scrPopEnemies() {
 		instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)
 		instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)}
 		else
-			instance_create(x+16,y+16,choose(theBandit,theBandit,theBandit,theBandit,theBandit,theBandit,Maggot,Scorpion))}
+			instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(theBandit,theBandit,theBandit,theBandit,theBandit,theBandit,Maggot,Scorpion))}
 		}
 	}
 
@@ -40,12 +40,12 @@ function scrPopEnemies() {
 	{
 	if styleb = 1
 	{
-	instance_create(x+16,y+16,choose(BanditInverted,BigMaggotInverted,BigMaggotInverted,BigMaggotInverted,BanditInverted,InvertedScorpion))
+	instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(BanditInverted,BigMaggotInverted,BigMaggotInverted,BigMaggotInverted,BanditInverted,InvertedScorpion))
 	}
 	else
 	{
 	if random(7) < 1 
-	instance_create(x+16,y+16,choose(BanditInverted,InvertedScorpion))
+	instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(BanditInverted,InvertedScorpion))
 	else
 	{if random(30) < 1
 	{instance_create(x+16,y+16,Barrel)
@@ -58,9 +58,9 @@ function scrPopEnemies() {
 	instance_create(x+16+random(4),y+16+random(4),choose(BanditInverted,BanditInverted,BanditInverted,BanditInverted,BanditInverted,BigMaggotInverted))
 	}
 	if random(50)<1{
-	instance_create(x+16,y+16,choose(InvertedScorpion,InvertedGoldScorpion,BigMaggotInverted,InvertedScorpion,BigMaggotInverted))
+	instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(InvertedScorpion,InvertedGoldScorpion,BigMaggotInverted,InvertedScorpion,BigMaggotInverted))
 	}
-	instance_create(x+16,y+16,choose(BanditInverted,BanditInverted,BanditInverted,BanditInverted,BigMaggotInverted,BanditInverted,BigMaggotInverted))}
+	instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(BanditInverted,BanditInverted,BanditInverted,BanditInverted,BigMaggotInverted,BanditInverted,BigMaggotInverted))}
 	}
 
 	}

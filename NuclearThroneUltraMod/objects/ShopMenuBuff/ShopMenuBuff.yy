@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "sprUltraShopMenuBuff",
-    "path": "sprites/sprUltraShopMenuBuff/sprUltraShopMenuBuff.yy",
+    "name": "sprShopMenuBuff",
+    "path": "sprites/sprShopMenuBuff/sprShopMenuBuff.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskUltraShopMenuBuff",
-    "path": "sprites/mskUltraShopMenuBuff/mskUltraShopMenuBuff.yy",
+    "name": "mskUltraShopMenuGiantGoldenChest",
+    "path": "sprites/mskUltraShopMenuGiantGoldenChest/mskUltraShopMenuGiantGoldenChest.yy",
   },
   "persistent": false,
   "parentObjectId": {
@@ -39,7 +39,7 @@
     "path": "folders/Objects/Ability/Shops.yy",
   },
   "resourceVersion": "1.0",
-  "name": "UltraShopMenuBuff",
+  "name": "ShopMenuBuff",
   "tags": [],
   "resourceType": "GMObject",
 }

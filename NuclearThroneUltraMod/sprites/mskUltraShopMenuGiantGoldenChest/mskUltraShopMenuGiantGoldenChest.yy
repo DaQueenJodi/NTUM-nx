@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6e545e3a-7866-4af2-a343-842dcbbeb9f5","path":"sprites/mskUltraShopMenuBuff/mskUltraShopMenuBuff.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6e545e3a-7866-4af2-a343-842dcbbeb9f5","path":"sprites/mskUltraShopMenuBuff/mskUltraShopMenuBuff.yy",},"LayerId":{"name":"6c9f2c44-8960-4f54-887a-c5dbafe966b0","path":"sprites/mskUltraShopMenuBuff/mskUltraShopMenuBuff.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"mskUltraShopMenuBuff","path":"sprites/mskUltraShopMenuBuff/mskUltraShopMenuBuff.yy",},"resourceVersion":"1.0","name":"6e545e3a-7866-4af2-a343-842dcbbeb9f5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6e545e3a-7866-4af2-a343-842dcbbeb9f5","path":"sprites/mskUltraShopMenuGiantGoldenChest/mskUltraShopMenuGiantGoldenChest.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6e545e3a-7866-4af2-a343-842dcbbeb9f5","path":"sprites/mskUltraShopMenuGiantGoldenChest/mskUltraShopMenuGiantGoldenChest.yy",},"LayerId":{"name":"6c9f2c44-8960-4f54-887a-c5dbafe966b0","path":"sprites/mskUltraShopMenuGiantGoldenChest/mskUltraShopMenuGiantGoldenChest.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mskUltraShopMenuGiantGoldenChest","path":"sprites/mskUltraShopMenuGiantGoldenChest/mskUltraShopMenuGiantGoldenChest.yy",},"resourceVersion":"1.0","name":"6e545e3a-7866-4af2-a343-842dcbbeb9f5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"mskUltraShopMenuBuff","path":"sprites/mskUltraShopMenuBuff/mskUltraShopMenuBuff.yy",},
+    "spriteId": {"name":"mskUltraShopMenuGiantGoldenChest","path":"sprites/mskUltraShopMenuGiantGoldenChest/mskUltraShopMenuGiantGoldenChest.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"834ab50e-92dc-49ec-bb8f-e1a4f0f89653","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6e545e3a-7866-4af2-a343-842dcbbeb9f5","path":"sprites/mskUltraShopMenuBuff/mskUltraShopMenuBuff.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"834ab50e-92dc-49ec-bb8f-e1a4f0f89653","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6e545e3a-7866-4af2-a343-842dcbbeb9f5","path":"sprites/mskUltraShopMenuGiantGoldenChest/mskUltraShopMenuGiantGoldenChest.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 83,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"mskUltraShopMenuBuff","path":"sprites/mskUltraShopMenuBuff/mskUltraShopMenuBuff.yy",},
+    "parent": {"name":"mskUltraShopMenuGiantGoldenChest","path":"sprites/mskUltraShopMenuGiantGoldenChest/mskUltraShopMenuGiantGoldenChest.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "mskUltraShopMenuGiantGoldenChest",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Player/Custom/BusinessHog.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mskUltraShopMenuBuff",
+  "name": "mskUltraShopMenuGiantGoldenChest",
   "tags": [],
   "resourceType": "GMSprite",
 }

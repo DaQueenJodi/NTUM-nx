@@ -1,4 +1,4 @@
-if other.team != team and other.my_health > 0
+if other.team != team and other.team != 0 and other.my_health > 0//also ignore props
 {
 	if other.object_index = Player
 	{

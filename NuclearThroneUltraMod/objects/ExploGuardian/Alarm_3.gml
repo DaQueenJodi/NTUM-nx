@@ -14,5 +14,5 @@ repeat(amount)
 	angle += angleStep;
 }
 motion_add(direction,1);
-alarm[1] += 3;
+alarm[1] += 4;
 fire = false;

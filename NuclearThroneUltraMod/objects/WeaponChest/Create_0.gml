@@ -1,5 +1,6 @@
 curse = 0;
 mediumchest = 0;
+shadowSprite = shd24;
 if isOneWeaponOnlyModes()
 	oneweponly = true;
 else
@@ -20,7 +21,7 @@ if (Player.ultra_got[25]==1)
 }
 
 scrWeapons()
-wep=scrDecideWep(0, 6, curse)
+wep=scrDecideWep(0, 10, curse)
 
 
     if (mediumchest==1)
@@ -34,6 +35,8 @@ wep=scrDecideWep(0, 6, curse)
 	else if oneweponly
 	{
 		sprite_index = sprWeaponChestReplaced;
+		shadowSprite = shd16;
+		wep = 0;
 		curse = 0;
 	}
 
