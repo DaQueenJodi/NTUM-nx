@@ -445,7 +445,7 @@ armour=maxarmour;
 }
 
 }
-if alarm[3]>0/*|| lag>0 */&&my_health!=maxhealth
+if alarm[3]>0/*|| lag>0 */&&my_health!=maxhealth&& !exception
 {
 if prevhealth>my_health
 my_health=prevhealth;
