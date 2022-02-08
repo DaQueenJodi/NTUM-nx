@@ -19,6 +19,15 @@ if (point_distance(x,y,target.x,target.y) < 128 && random(3) <1)
 	speed *= 0.2;
 	alarm[2] = 20;//chargeup time
 }
+else if (point_distance(x,y,target.x,target.y) < 96 && random(4) <3 && justjumped)
+{
+	fire = true;
+	sprite_index = spr_fire;
+	spr_idle = spr_fire;
+	spr_walk = spr_fire;
+	speed *= 0.2;
+	alarm[2] = 20;//chargeup time
+}
 else
 {
 	motion_add(point_direction(x,y,target.x,target.y),2);	
@@ -39,3 +48,4 @@ else
 	alarm[1]  += 10;
 }
 
+justjumped = false;

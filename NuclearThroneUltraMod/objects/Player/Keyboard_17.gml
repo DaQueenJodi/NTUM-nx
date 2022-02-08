@@ -157,5 +157,9 @@ instance_create(x,y,BigRad);
 
 }
 
+if keyboard_check_pressed(vk_add) {
+	hard += 1
+}
+
 }
 

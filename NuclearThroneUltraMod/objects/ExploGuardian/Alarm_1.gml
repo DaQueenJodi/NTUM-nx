@@ -18,11 +18,11 @@ motion_add(direction,1);
 			snd_play(sndExploGuardianCharge);
 			image_index = 0;
 			
-			alarm[2] = 20;
-			alarm[1] = 30;
+			alarm[2] = 50;
+			alarm[1] = 60;
 			var loops = min(GetPlayerLoops(),3)
-			alarm[2] -= 3*loops;
-			alarm[1] -= 3*loops;
+			alarm[2] -= 5*loops;
+			alarm[1] -= 5*loops;
 		}
 		else
 		{

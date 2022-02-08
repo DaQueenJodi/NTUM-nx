@@ -32,13 +32,6 @@ if target > 0
 		else if target.x > x
 			right = 1
 	}
-	else
-	{
-		if (random(2) < 1)
-		{
-			alarm[2] = 15;
-		}
-	}
 }
 
 }
