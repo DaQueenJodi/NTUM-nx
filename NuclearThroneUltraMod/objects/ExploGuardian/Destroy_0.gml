@@ -2,14 +2,14 @@ scrDrop(20,0)
 
 if (charge || fire)
 {
-	var amount = 13;
+	var amount = 14;
 	var angle = random(360);
 	var angleStep = 360/amount;
 	repeat(amount)
 	{
 		with instance_create(x,y,ExploGuardianBullet)
 		{
-			motion_add(angle,other.projectileSpeed);
+			motion_add(angle,other.projectileSpeed/3);
 			image_angle = direction
 			team = other.team
 		}

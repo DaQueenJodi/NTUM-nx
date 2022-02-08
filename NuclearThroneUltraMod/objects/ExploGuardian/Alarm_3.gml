@@ -1,5 +1,5 @@
 /// @description Minor delay to fire bullets during fire animation
-var amount = 13;
+var amount = 26;
 var angle = random(360);
 var angleStep = 360/amount;
 snd_play(sndExploGuardianFire);

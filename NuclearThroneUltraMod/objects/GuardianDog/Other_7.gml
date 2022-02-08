@@ -8,7 +8,7 @@ if sprite_index == spr_jump_down && alarm[3] < 1
 	jumpDown = false;
 	charge = false;
 	fire = false;
-	alarm[1] += 10;
+	alarm[1] += 5;
 	image_index = 0;
 	instance_create(x,y,WallBreak);
 	repeat(10)
@@ -18,5 +18,5 @@ if sprite_index == spr_jump_down && alarm[3] < 1
 		depth=other.depth +1;
 		}
 	}
-	
+	justjumped = true;
 }
