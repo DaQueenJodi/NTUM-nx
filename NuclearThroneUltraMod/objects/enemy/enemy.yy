@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "hitme",
+    "path": "objects/hitme/hitme.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 0,
