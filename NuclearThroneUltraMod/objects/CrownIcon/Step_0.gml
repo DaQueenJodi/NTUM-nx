@@ -73,6 +73,7 @@ if crown==11
 with Player
 {
 skeletonlives=0;
+var boost = level;
 instance_destroy();
 }
 
@@ -94,6 +95,7 @@ loops = other.loops;
 hard = other.hard;
 kills = other.kills;
 subarea=other.subarea;
+boostLevel = boost;
 //event_perform(ev_other,ev_room_end);
 }
 /*with instance_create(x,y,GenCont)
