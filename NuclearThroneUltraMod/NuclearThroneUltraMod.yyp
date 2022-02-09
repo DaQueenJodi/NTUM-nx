@@ -4646,6 +4646,7 @@
     {"folderPath":"folders/Objects/FX.yy","order":69,"resourceVersion":"1.0","name":"FX","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/CrownVault/NewVault.yy","order":21,"resourceVersion":"1.0","name":"NewVault","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/CrownVault.yy","order":51,"resourceVersion":"1.0","name":"CrownVault","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Enemies/Boss/NuclearThrone.yy","order":78,"resourceVersion":"1.0","name":"NuclearThrone","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

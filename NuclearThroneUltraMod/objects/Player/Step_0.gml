@@ -48,6 +48,8 @@ if UberCont.public=0 {
 			} else {
 				wep = wep - 1;
 			}
+			var type = wep_type[wep];
+			ammo[type] = typ_amax[type];
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
@@ -58,6 +60,8 @@ if UberCont.public=0 {
 			} else {
 				wep = wep + 1;
 			}
+			var type = wep_type[wep];
+			ammo[type] = typ_amax[type];
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
@@ -68,6 +72,8 @@ if UberCont.public=0 {
 			} else {
 				wep = wep - 50;
 			}
+			var type = wep_type[wep];
+			ammo[type] = typ_amax[type];
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
@@ -78,6 +84,8 @@ if UberCont.public=0 {
 			} else {
 				wep = wep + 50;
 			}
+			var type = wep_type[wep];
+			ammo[type] = typ_amax[type];
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
