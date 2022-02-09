@@ -155,26 +155,7 @@ if Player.race=25//Mutation smith is op
     dir.mytext = "MAX "+string(Player.typ_name[type])
     }
     
-    
-        //SOME KILLS REGENERATE HEALTH
-    if Player.skill_got[7] = 1 and random(100) <  7.89//7.69% chance
-    {
-    
-    with instance_create(Player.x,Player.y-8,HealFX)
-    {
-    sprite_index=sprBloodlust;
-    }
-    
-    num = 1
-    Player.my_health += num
-    if Player.my_health > Player.maxhealth
-    Player.my_health = Player.maxhealth
-    
-    dir = instance_create(x,y,PopupText)
-    dir.mytext = "+"+string(num)+" HP"
-    if Player.my_health = Player.maxhealth
-    dir.mytext = "MAX HP"
-    }
+    BloodLust();
     
     //TRIGGER FINGERS
     if Player.skill_got[24]
@@ -244,25 +225,7 @@ else
     dir.mytext = "MAX "+string(Player.typ_name[type])
     }
     
-    //SOME KILLS REGENERATE HEALTH
-    if Player.skill_got[7] = 1 and random(100) <  7.7//7.69% chance
-    {
-    
-    with instance_create(Player.x,Player.y-8,HealFX)
-    {
-    sprite_index=sprBloodlust;
-    }
-    
-    num = 1
-    Player.my_health += num
-    if Player.my_health > Player.maxhealth
-    Player.my_health = Player.maxhealth
-    
-    dir = instance_create(x,y,PopupText)
-    dir.mytext = "+"+string(num)+" HP"
-    if Player.my_health = Player.maxhealth
-    dir.mytext = "MAX HP"
-    }
+    BloodLust();
     
     //TRIGGER FINGERS
     if Player.skill_got[24]

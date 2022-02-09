@@ -125,7 +125,6 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
 		restarted = true;
 		randomlySelected = ranChar;
 	}
-	debug("CHAR SELECT RESTART");
     room_restart()
     exit;
     }

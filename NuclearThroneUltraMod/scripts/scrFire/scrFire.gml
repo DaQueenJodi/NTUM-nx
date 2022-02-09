@@ -1090,7 +1090,7 @@ function scrFire() {
 	team = other.team}
 
 	wepangle = -wepangle
-	speed = -speed*0.5
+	speed = +speed*0.5;
 	BackCont.viewx2 += lengthdir_x(8,ang)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(8,ang)*UberCont.opt_shake
 	BackCont.shake += 1

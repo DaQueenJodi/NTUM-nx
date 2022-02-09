@@ -1408,7 +1408,7 @@ wave += 0.4;//Looping animations
 if hammerheadcounter > 0
 {
 	var msk = mask_index;
-	mask_index = WallBreak;
+	mask_index = mskWallBreak;
 	if place_meeting(x,y,Wall)
 	{
 		nearWall = true;

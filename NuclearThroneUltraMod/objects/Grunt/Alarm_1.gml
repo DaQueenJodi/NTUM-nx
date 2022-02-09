@@ -42,7 +42,9 @@ if target==Player
     with instance_create(x,y,IDPDBullet){
     motion_add(other.gunangle+random(6)-3,8)
     image_angle = direction
-    team = other.team}
+    team = other.team
+	if team == 2
+		sprite_index = sprIDPDBulletRogue}
     
     alarm[1] = 3+random(2)
     }
@@ -87,7 +89,9 @@ if target==Player
     with instance_create(x,y,PopoNade){
     motion_add(other.gunangle+random(20)-10,10)
     image_angle = direction
-    team = other.team}
+    team = other.team
+	if team == 2
+		sprite_index = sprPopoNadeRogue}
     }
     
     }

@@ -48,7 +48,7 @@ bwep = Player.bwep
 //bcurse = 0
 reload = 0//Player.reload
 breload = 0//Player.breload
-team = 3//Player.team
+team = 4//Player.team
 size = 2;
 
 

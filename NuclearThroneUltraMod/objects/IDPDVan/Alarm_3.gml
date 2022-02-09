@@ -1,7 +1,9 @@
 /// @description Spawn popo
 size=0;
+if team != 2
 team=3;
-
+else
+team = 0;
     repeat(3+irandom(UberCont.loops))
     {
 if random(3)<1 //elite

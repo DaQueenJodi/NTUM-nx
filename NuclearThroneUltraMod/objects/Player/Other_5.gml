@@ -84,10 +84,16 @@ UberCont.cbst_diff[race] = hard
 
 //CROWN OF LIFE
 if crown = 2
-my_health = maxhealth;
+{
+	var toHeal = maxhealth - min(my_health,maxhealth);
+	my_health = maxhealth;
+	var overheal = (maxhealth - toHeal) * 0.5;
+	my_health = maxhealth + overheal;
+	/*
 if my_health > maxhealth
 my_health = maxhealth
-
+*/
+}
 
 //NOCHEST SHIT
 if (instance_exists(WeaponChest) or instance_exists(BigWeaponChest))// and !(area = 1 and subarea = 1)

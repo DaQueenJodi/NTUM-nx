@@ -131,7 +131,7 @@ else
 		depth = normalDepth - 100;
 	}
     
-    if UberCont.race_have[num] =1 and UberCont.ctot_dead[num] = 0 and num != 0
+    if UberCont.race_have[num] =1 and UberCont.ctot_played[num] = 0 and num != 0
     draw_sprite(sprNew,-1,x,yyy)
 
 }

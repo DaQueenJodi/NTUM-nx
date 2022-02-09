@@ -180,7 +180,7 @@ if skill == 76//skelly ultra D
     }
     else//ULTIMATE GAMBLE
     {
-    if random(4+skill_got[5])<1//Better odds with thronebutt
+    if random(4+Player.skill_got[5])<1//Better odds with thronebutt
     {//you will die now
     
     with GenCont

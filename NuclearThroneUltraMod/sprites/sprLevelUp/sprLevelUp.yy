@@ -120,7 +120,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprLevelUp","path":"sprites/sprLevelUp/sprLevelUp.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprLevelUp",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -4,7 +4,9 @@ wkick = 4
 with instance_create(x,y,IDPDBullet){
 motion_add(other.gunangle+random(20)-10,8)
 image_angle = direction
-team = other.team}
+team = other.team
+if team == 2
+	sprite_index = sprIDPDBulletRogue}
 
 ammo--;
 if ammo>0

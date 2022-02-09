@@ -1,4 +1,8 @@
 
 snd_play(sndExplosion)
-instance_create(x,y,PopoExplosion)
+with instance_create(x,y,PopoExplosion)
+{
+	if team == 2
+		sprite_index =sprPopoExploRogue;	
+}
 

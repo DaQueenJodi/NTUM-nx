@@ -7,6 +7,8 @@ function scrLoadStats() {
 	ctot_time[dir] = ini_read_real("STATS","ctottime"+string(dir),0);
 
 	ctot_dead[dir] = ini_read_real("STATS","ctotdead"+string(dir),0);
+	
+	ctot_played[dir] = ini_read_real("STATS","ctotplayed"+string(dir),0);
 
 	ctot_loop[dir] = ini_read_real("STATS","ctotloop"+string(dir),0);
 

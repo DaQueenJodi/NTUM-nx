@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprPopoSlugDisappear","path":"sprites/sprPopoSlugDisappear/sprPopoSlugDisappear.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprPopoSlugDisappear",
     "tags": [],
     "resourceType": "GMSequence",
   },

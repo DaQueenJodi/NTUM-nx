@@ -92,9 +92,9 @@ function scrGameModes() {
 	gamemode_have[22] = 0;
 	
 	gamemode[23] = "RANDOM CHARACTER#IN EACH AREA";
-	gamemode_unlock[23] = "GAIN AN ULTRA MUTATION#FROM ANOTHER CHARACTER";
+	gamemode_unlock[23] = "PLAY EVERY CHARACTER";
 	gamemode_have[23] = 0;
-	
+	/*
 	gamemode[24] = "SURVIVAL ARENA";
 	gamemode_unlock[24] = "JE MAPPEL ASSHOLE";
 	gamemode_have[24] = 0;

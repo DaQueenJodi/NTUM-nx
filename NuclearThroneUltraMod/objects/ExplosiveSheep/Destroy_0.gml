@@ -80,18 +80,7 @@ if instance_exists(Player)
     }
     
     //SOME KILLS REGENERATE HEALTH
-    if Player.skill_got[7] = 1 and random(14) < 1
-    {
-    num = 1
-    Player.my_health += num
-    if Player.my_health > Player.maxhealth
-    Player.my_health = Player.maxhealth
-    
-    dir = instance_create(x,y,PopupText)
-    dir.mytext = "+"+string(num)+" HP"
-    if Player.my_health = Player.maxhealth
-    dir.mytext = "MAX HP"
-    }
+    BloodLust();
     
     //TRIGGER FINGERS
     if Player.skill_got[24]
