@@ -128,7 +128,7 @@ else
 		var col = make_color_rgb(72,253,8);
 		if UberCont.ctot_loop[num]>0
 			draw_rectangle_color(x,yyy,x+15,yyy+23,col,col,col,col,true);
-		depth = normalDepth - 100;
+		depth = normalDepth - 200;
 	}
     
     if UberCont.race_have[num] =1 and UberCont.ctot_played[num] = 0 and num != 0
