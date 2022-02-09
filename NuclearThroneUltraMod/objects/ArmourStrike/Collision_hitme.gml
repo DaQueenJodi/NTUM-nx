@@ -3,9 +3,9 @@ if other.team != team and other.my_health > 0
 with other
 {if sprite_index != spr_hurt || random(35)<1
 {
+my_health -= other.dmg;
 if instance_exists(Player)
 {
-my_health -= other.dmg*(Player.level*0.75)
 
 //freeze bitch!
 if alarm[11]<1&&my_health>0&&Player.ultra_got[63]{
@@ -24,9 +24,6 @@ alarm[11]+=60;
 
 
 }
-else
-my_health -= other.dmg;
-
 sprite_index = spr_hurt
 image_index = 0
 motion_add(other.image_angle,10)

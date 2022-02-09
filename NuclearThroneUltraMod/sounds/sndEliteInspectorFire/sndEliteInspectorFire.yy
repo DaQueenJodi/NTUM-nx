@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndEliteInspectorFire",
-  "duration": 0.0,
+  "duration": 0.820094,
   "parent": {
     "name": "EliteInspector",
     "path": "folders/Sounds/IDPD sounds/Elite/EliteInspector.yy",

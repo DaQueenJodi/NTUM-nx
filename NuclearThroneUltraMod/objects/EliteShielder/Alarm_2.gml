@@ -18,7 +18,9 @@ motion_add(gunangle+180,0.8)
 with instance_create(x,y,PopoPlasmaBall){
 motion_add(other.gunangle+random(40)-20,2)
 image_angle = direction
-team = other.team}
+team = other.team
+if team == 2
+	sprite_index = sprPlasmaBall;}
 
 
 

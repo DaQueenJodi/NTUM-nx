@@ -31,8 +31,8 @@ function scrDrawHUD() {
 	//HEALTH BAR
 	draw_sprite(sprHealthBar,2,__view_get( e__VW.XView, 0 )+20,__view_get( e__VW.YView, 0 )+4)
 	if Player.maxhealth!=0{
-	draw_sprite_ext(sprHealthFill,2,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,max(0,84*(Player.lsthealth/Player.maxhealth)),1,0,c_white,1)
-	draw_sprite_ext(sprHealthFill,1,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,max(0,84*(Player.my_health/Player.maxhealth)),1,0,c_white,1)
+	draw_sprite_ext(sprHealthFill,2,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,max(0,84*(min(Player.lsthealth,Player.maxhealth)/Player.maxhealth)),1,0,c_white,1)
+	draw_sprite_ext(sprHealthFill,1,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,max(0,84*(min(Player.my_health,Player.maxhealth)/Player.maxhealth)),1,0,c_white,1)
 
 	if ((Player.sprite_index = Player.spr_hurt and Player.image_index < 1 and !instance_exists(Portal)) or Player.lsthealth < Player.my_health) and !instance_exists(GenCont) and !instance_exists(LevCont)
 	draw_sprite_ext(sprHealthFill,0,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,max(0,84*(Player.my_health/Player.maxhealth)),1,0,c_white,1)
@@ -265,12 +265,20 @@ function scrDrawHUD() {
 		var maxRad = GetPlayerMaxRad();	
 	}
 	draw_sprite(sprExpBar,(Player.rad/maxRad)*16,__view_get( e__VW.XView, 0 )+4,__view_get( e__VW.YView, 0 )+4)
-	draw_set_color(c_black)
-	draw_text(__view_get( e__VW.XView, 0 )+11,__view_get( e__VW.YView, 0 )+17-string_height(string_hash_to_newline("A"))/2,string_hash_to_newline(string(Player.level)))
-	draw_text(__view_get( e__VW.XView, 0 )+12,__view_get( e__VW.YView, 0 )+17-string_height(string_hash_to_newline("A"))/2,string_hash_to_newline(string(Player.level)))
-	draw_text(__view_get( e__VW.XView, 0 )+12,__view_get( e__VW.YView, 0 )+16-string_height(string_hash_to_newline("A"))/2,string_hash_to_newline(string(Player.level)))
-	draw_set_color(c_white)
-	draw_text(__view_get( e__VW.XView, 0 )+11,__view_get( e__VW.YView, 0 )+16-string_height(string_hash_to_newline("A"))/2,string_hash_to_newline(string(Player.level)))
+	var lvl = Player.level
+	if lvl != 10
+	{
+		draw_set_color(c_black)
+		draw_text(__view_get( e__VW.XView, 0 )+11,__view_get( e__VW.YView, 0 )+17-string_height(string_hash_to_newline("A"))/2,string_hash_to_newline(string(lvl)))
+		draw_text(__view_get( e__VW.XView, 0 )+12,__view_get( e__VW.YView, 0 )+17-string_height(string_hash_to_newline("A"))/2,string_hash_to_newline(string(lvl)))
+		draw_text(__view_get( e__VW.XView, 0 )+12,__view_get( e__VW.YView, 0 )+16-string_height(string_hash_to_newline("A"))/2,string_hash_to_newline(string(lvl)))
+		draw_set_color(c_white)
+		draw_text(__view_get( e__VW.XView, 0 )+11,__view_get( e__VW.YView, 0 )+16-string_height(string_hash_to_newline("A"))/2,string_hash_to_newline(string(lvl)))
+	}
+	else
+	{
+		draw_sprite(sprUltraLevel,0,__view_get( e__VW.XView, 0 )+11,__view_get( e__VW.YView, 0 )+16);
+	}
 
 
 

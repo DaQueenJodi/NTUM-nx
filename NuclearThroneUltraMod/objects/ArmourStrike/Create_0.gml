@@ -19,6 +19,7 @@ if instance_exists(Player) && Player.ultra_got[63]
 {
 	dmg += 1;
 	image_yscale += 2;
+	dmg*=(Player.level*0.6);
 }
 /* */
 /*  */

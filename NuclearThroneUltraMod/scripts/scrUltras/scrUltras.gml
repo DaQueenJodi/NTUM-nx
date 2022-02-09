@@ -300,7 +300,7 @@ function scrUltras() {
 	    }
     
 	    ultra_name[63] = "COLD HEARTH"
-	    ultra_text[63] = "ARMOUR STRIKE FREEZES ENEMIES#AND DELAS MORE DAMAGE#WHEN YOU HAVE NO MORE ARMOUR#YOU CAN USE 2HP TO USE AN ARMOUR STRIKE"
+	    ultra_text[63] = "ARMOUR STRIKE FREEZES ENEMIES#AND DEALS MORE DAMAGE#WHEN YOU HAVE NO MORE ARMOUR#YOU CAN USE 2HP TO USE AN ARMOUR STRIKE"
 	    ultra_tips[63] = "hearth strike"
     
 	    ultra_name[64] = "BLANK ARMOUR"
@@ -356,7 +356,7 @@ function scrUltras() {
 
 	if instance_exists(Player)
 	{
-	    if Player.ultimategamble==false
+	    if Player.ultimategamble==true
 	    {
 	    ultra_name[76] = "THE ULTIMATE GAMBLE"
 	    ultra_text[76] = "50% CHANCE TO DIE OR TO GET#THREE RANDOM ULTRA MUTATIONS#FROM ANOTHER CHARACTER#DOESN'T INCLUDE THINGS YOU CAN'T USE#(such as plant's snare related ultras)"

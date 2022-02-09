@@ -230,10 +230,6 @@ fogscroll += 0.5
 if fogscroll > 480
 fogscroll -= 480
 
-if darkness = 1 && surface_exists(dark)
-{draw_set_blend_mode(bm_subtract)
-draw_surface(dark,__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 ))
-draw_set_blend_mode(bm_normal)}
 
 with Notice{draw_self();}
 with EuphoriaShield{draw_self();}
@@ -318,6 +314,14 @@ if(point_distance(x,y,Player.x,Player.y)<100)
 draw_sprite_ext(sprWall1Bot,-1,x,y,1,1,0,c_black,0.2)*/
 
 
+scrDrawBloom()
+
+if darkness = 1 && surface_exists(dark)
+{draw_set_blend_mode(bm_subtract)
+draw_surface(dark,__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 ))
+draw_set_blend_mode(bm_normal)}
+
+
 if !instance_exists(MenuGen)
 {
 with Spiral
@@ -327,6 +331,3 @@ draw_sprite_ext(sprite_index,-1,__view_get( e__VW.XView, 0 )+x,__view_get( e__VW
 }
 //scrDrawHUD()
 }
-
-
-scrDrawBloom()

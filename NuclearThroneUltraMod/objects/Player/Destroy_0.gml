@@ -115,6 +115,8 @@ ctot_kill[other.race]+=other.kills
 if other.my_health<1
 ctot_dead[other.race] += 1
 
+ctot_played[other.race] += 1;
+
 ctot_loop[other.race]+=other.loops;
 
 //best kills
@@ -135,7 +137,9 @@ if other.randomlySelected
 	//ctot_time[other.race]+=time;
 	if other.my_health<1
 	ctot_dead[0] += 1
-
+	
+	ctot_played[0] += 1;
+	
 	ctot_loop[0]+=other.loops;
 
 	//best kills
@@ -151,9 +155,22 @@ if other.randomlySelected
 		cbst_loop[0]=other.loops
 }
 
-scrSave();
+var playedWithAll = true;
+	for (var i = 0; i <= racemax; i++) {
+	    // code here
+		if !ctot_played[i]
+		{
+			playedWithAll = false;
+			i = racemax + 1;
+		}
+	}
+	if (playedWithAll)
+	{
+		debug("UNLOCK ALL");
+		scrUnlockGameMode(23,"UNLOCKED FOR PLAYING#EVERY CHARACTER");
+	}
+	scrSave();
 }
-
 
 
 
@@ -255,28 +272,6 @@ with projectile
 if team!=other.team
 instance_destroy();
 }
-
-with instance_create(x,y,PlayerSpawn)//Data to keep
-{
-//alarm[3]=300;//immunity
-ultimategamble=other.ultimategamble;//in case you picked unstoppable ultra which will h
-skeletonlives=other.skeletonlives-1;
-race = other.race
-crown = other.crown
-lastarea = other.lastarea;
-area = other.area//other.lastarea;
-loops = other.loops;
-hard = other.hard;
-kills = other.kills;
-subarea=other.subarea;
-myCorpse = playerCorpse;
-level = other.level;
-alarm[0]=60;
-alarm[1] = 5;
-alarm[2] = 3;
-//event_perform(ev_other,ev_room_end);
-}
-
 }
 else
 {

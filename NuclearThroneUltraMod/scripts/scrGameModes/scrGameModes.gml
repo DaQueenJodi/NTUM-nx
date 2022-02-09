@@ -90,16 +90,21 @@ function scrGameModes() {
 	gamemode[22] = "CHAOS MOD'S#INFINITE LEVELS#SLOW LEVELING";
 	gamemode_unlock[22] = "BEAT THE #INVERTED CHESHIRE CAT";
 	gamemode_have[22] = 0;
-	/*
+	
 	gamemode[23] = "RANDOM CHARACTER#IN EACH AREA";
-	gamemode_unlock[23] = "HAVE 4 LIVES AT ONCE";
-	gamemode_have[23] = 0;*/
+	gamemode_unlock[23] = "PLAY EVERY CHARACTER";
+	gamemode_have[23] = 0;
+	/*
+	gamemode[24] = "SURVIVAL ARENA";
+	gamemode_unlock[24] = "JE MAPPEL ASSHOLE";
+	gamemode_have[24] = 0;
 	/*
 	/*
 	gamemode[23] = "MELEE ONLY";
 	gamemode_description[23] = "YOU ONLY GET MELEE WEAPONS#ALWAYS GET LONG ARMS";
 	gamemode_unlock[23] = "HAVE 4 LIVES AT ONCE";
 	gamemode_have[23] = 0;*/
+
 	/*
 	gamemode[23] = "MASTERLUIGI452'S#10X MUTATIONS";
 	gamemode_unlock[23] = "INFECT AN ENEMY";
@@ -128,6 +133,7 @@ function scrGameModes() {
 	gamemodeOrder[20] = 21;
 	gamemodeOrder[21] = 22;
 	gamemodeOrder[22] = 17;
+	gamemodeOrder[23] = 23;
 
 
 

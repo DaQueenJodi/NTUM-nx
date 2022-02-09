@@ -9,7 +9,11 @@ scrUnlockGameMode(18,"FOR DESTROYING A VAN");
 snd_play(sndExplosionL)
 repeat(3)
 {
-instance_create(x+lengthdir_x(8,ang),y+lengthdir_y(8,ang),PopoExplosion)
+with instance_create(x+lengthdir_x(8,ang),y+lengthdir_y(8,ang),PopoExplosion)
+{
+	if team == 2
+		sprite_index =sprPopoExploRogue;	
+}
 ang+=360/3;
 }
 

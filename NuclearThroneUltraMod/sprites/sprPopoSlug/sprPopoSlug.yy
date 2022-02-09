@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprPopoSlug","path":"sprites/sprPopoSlug/sprPopoSlug.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprPopoSlug",
     "tags": [],
     "resourceType": "GMSequence",
   },

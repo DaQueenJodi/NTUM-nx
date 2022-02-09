@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndRogueAim",
-  "duration": 0.0,
+  "duration": 0.664031,
   "parent": {
     "name": "Rogue",
     "path": "folders/Sounds/Player/Rogue.yy",

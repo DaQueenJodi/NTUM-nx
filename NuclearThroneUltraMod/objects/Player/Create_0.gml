@@ -77,6 +77,14 @@ race=UltraIcon.race;
 }
 else if instance_exists(PlayerSpawn)
 race=PlayerSpawn.race;
+else if instance_exists(RaceCopier)
+{	
+	race = RaceCopier.race;
+	with RaceCopier
+	{
+		instance_destroy();	
+	}
+}
 else
 race=19;
 
@@ -214,7 +222,7 @@ else
 RogueHeat=false;
 
 
-rogueammo=0;
+rogueammo=1;
 rogueammomax=3;
 toxicamount=0;
 maxtoxicamount=120;

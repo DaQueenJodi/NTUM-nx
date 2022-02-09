@@ -8,6 +8,7 @@ spr_idle = sprRogueVanOpen
 spr_walk = sprRogueVanDrive
 spr_hurt = sprRogueVanHurt
 spr_dead = sprRogueVanDead
+team = 2;
 }
 
 }

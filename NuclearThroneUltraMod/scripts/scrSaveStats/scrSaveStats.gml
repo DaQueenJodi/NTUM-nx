@@ -6,7 +6,9 @@ function scrSaveStats() {
 
 	ini_write_real("STATS","ctottime"+string(dir),ctot_time[dir]);
 
-	ini_write_real("STATS","ctotdead"+string(dir),ctot_kill[dir]);
+	ini_write_real("STATS","ctotdead"+string(dir),ctot_dead[dir]);
+	
+	ini_write_real("STATS","ctotplayed"+string(dir),ctot_played[dir]);
 
 	ini_write_real("STATS","ctotloop"+string(dir),ctot_loop[dir]);
 

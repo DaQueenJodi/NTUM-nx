@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprIDPDBulletHit","path":"sprites/sprIDPDBulletHit/sprIDPDBulletHit.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprIDPDBulletHit",
     "tags": [],
     "resourceType": "GMSequence",
   },

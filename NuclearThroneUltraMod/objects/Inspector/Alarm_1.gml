@@ -33,7 +33,9 @@ snd_play(sndGruntFire)
 with instance_create(x,y,PopoSlug)
 {motion_add(other.gunangle+random(12)-6,14)
 image_angle = direction
-team = other.team}
+team = other.team
+if team == 2
+	sprite_index = sprPopoSlugRogue}
 
 BackCont.shake += 3
 wkick = 8

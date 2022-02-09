@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprIDPDBullet","path":"sprites/sprIDPDBullet/sprIDPDBullet.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprIDPDBullet",
     "tags": [],
     "resourceType": "GMSequence",
   },

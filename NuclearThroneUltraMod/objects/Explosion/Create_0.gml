@@ -28,7 +28,17 @@ team = -1
 if instance_exists(Player){
 if Player.ultra_got[57]//atom bomb
 {
-instance_create(x+random(32)-16,y+random(32)-16,ExplosionStop);}}
+instance_create(x+random(32)-16,y+random(32)-16,ExplosionStop);}
+if Player.crown == 3//Crown of death
+{
+	repeat(2)
+	{
+		var dir = random(360);
+		var dis = 24 + random(16);
+		instance_create(x+lengthdir_x(dis,dir),y+lengthdir_y(dis,dir),SmallExplosion);
+	}
+}
+}
 
 alarm[0]=3;
 if instance_exists(Player)

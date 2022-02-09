@@ -88,7 +88,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprPopoExplo","path":"sprites/sprPopoExplo/sprPopoExplo.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprPopoExplo",
     "tags": [],
     "resourceType": "GMSequence",
   },

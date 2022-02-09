@@ -1,12 +1,12 @@
 motion_add(point_direction(other.x,other.y,x,y),other.size*0.5)
-if other.team!=team
+if other.team != team
 {
 
-if skill_got[8] = 1//Dealing the damage with gamma guts
+if skill_got[8] = 1 && other.team != 0//Dealing the damage with gamma guts
 {
 	snd_play(sndGammaGutsProc);
 	with other
-	    {
+	   {
 	    if Player.race=25
 	    my_health -= 8//dmg dealt by gamma guts
 	    else

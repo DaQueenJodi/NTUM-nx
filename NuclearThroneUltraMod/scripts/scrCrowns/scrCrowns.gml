@@ -10,12 +10,13 @@ function scrCrowns() {
 	crown_tips[1] = ""
 
 	crown_name[2] = "[CROWN OF LIFE]"//THIS ONE SUCKS
-	crown_text[2] = "RESET LIFE TO MAX HP# AT THE END OF EACH LEVEL#NO HP DROPS"
+	//crown_text[2] = "RESET LIFE TO MAX HP# AT THE END OF EACH LEVEL#NO HP DROPS"
+	crown_text[2] = "REGAIN MAX HP#AT THE END OF EACH AREA#OVERHEAL FOR HALVE"
 	crown_used[2] = 0
 	crown_tips[2] = "life"
 
 	crown_name[3] = "[CROWN OF DEATH]"
-	crown_text[3] = "-1 MAX HP#REVENGE"
+	crown_text[3] = "-1 MAX HP#BIGGER EXPLOSIONS"
 	crown_used[3] = 0
 	crown_tips[3] = "nothing goes unpunished"
 
@@ -50,7 +51,7 @@ function scrCrowns() {
 	crown_tips[9] = "you really like these weapons"
 
 	crown_name[10] = "[CROWN OF DIFFICULTY]"
-	crown_text[10] = "THE DIFFICULTY INCREASES#TWICE AS MUCH EACH LEVEL"
+	crown_text[10] = "THE DIFFICULTY & WEAPON TIER INCREASES#TWICE AS MUCH EACH LEVEL"
 	crown_used[10] = 0
 	crown_tips[10] = "acceleration"
 

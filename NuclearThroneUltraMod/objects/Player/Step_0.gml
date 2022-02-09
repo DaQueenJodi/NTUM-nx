@@ -48,6 +48,8 @@ if UberCont.public=0 {
 			} else {
 				wep = wep - 1;
 			}
+			var type = wep_type[wep];
+			ammo[type] = typ_amax[type];
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
@@ -58,6 +60,8 @@ if UberCont.public=0 {
 			} else {
 				wep = wep + 1;
 			}
+			var type = wep_type[wep];
+			ammo[type] = typ_amax[type];
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
@@ -68,6 +72,8 @@ if UberCont.public=0 {
 			} else {
 				wep = wep - 50;
 			}
+			var type = wep_type[wep];
+			ammo[type] = typ_amax[type];
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
@@ -78,6 +84,8 @@ if UberCont.public=0 {
 			} else {
 				wep = wep + 50;
 			}
+			var type = wep_type[wep];
+			ammo[type] = typ_amax[type];
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
@@ -1408,7 +1416,7 @@ wave += 0.4;//Looping animations
 if hammerheadcounter > 0
 {
 	var msk = mask_index;
-	mask_index = WallBreak;
+	mask_index = mskWallBreak;
 	if place_meeting(x,y,Wall)
 	{
 		nearWall = true;

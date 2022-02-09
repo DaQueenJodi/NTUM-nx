@@ -45,7 +45,7 @@ my_health=round( (1+(Player.loops*0.14))*my_health )//bandit loop 1: 1.1*4= 5(ro
 
 if Player.crown==10//crown of difficulty
 {
-my_health*=1.8;
+my_health*=1.2;
 }
 
 maxhealth=my_health;

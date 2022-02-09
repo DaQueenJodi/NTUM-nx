@@ -1,4 +1,5 @@
 mediumchest=0;
+shadowSprite = shd24;
 if instance_exists(Player)
 {
 if random(4) < 1 && !place_meeting(x,y,Player) && !(Player.area == 9 && Player.subarea == 3) 

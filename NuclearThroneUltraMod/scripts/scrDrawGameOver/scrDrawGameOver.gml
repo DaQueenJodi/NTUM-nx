@@ -44,7 +44,7 @@ function scrDrawGameOver() {
 	scrRaces()
 	scrCrowns()
 	var ranChar = false;
-	if race = 0
+	if race = 0 || UberCont.opt_gamemode == 23
 	{
 		ranChar = true;
 		do race = ceil(random(racemax)) until race_have[race] = 1

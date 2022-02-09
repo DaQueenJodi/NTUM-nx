@@ -23,6 +23,7 @@ function scrTips() {
 	"watch out for dehydration",
 	"crystal can shield",
 	"fear is the mindkiller",
+	"there is a cheatcode#to unlock everything",
 	"square bullets are immune to melee",
 	/*these are rare*/ choose("no","bob and weave","airhorn.wav","danger zone","no sex jokes","in and about"
 	,"the purple dragon","golden frog anyone?","Y.V. mony rad","the flying cat head","myth of time","sheeps are a thing","feedback is much apreciated","follow @erdeppol","sorry bout bugs","I love you!")
@@ -150,7 +151,7 @@ function scrTips() {
 	tip = choose("last day before retirement","duty calls","it's ok to eat","gills on your neck","like kevin costner")
 
 	if Player.race = 2
-	tip = choose("crystal can handle this","family","crystal does not like cheese")
+	tip = choose("crystal can handle this","family","crystal does not like cheese#actually we've been lieing all these years#crystal does like cheese!")
 
 	if Player.race = 3
 	tip = choose("eyes sees everything","don't blink","all these thoughts","eyes can't speak","telekinesis pushes bullets away")

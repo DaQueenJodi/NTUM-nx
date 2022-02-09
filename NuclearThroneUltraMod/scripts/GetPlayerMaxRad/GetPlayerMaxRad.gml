@@ -1,7 +1,6 @@
 ///GetPlayerMaxRad();
 // /@description Gets maximum rads player can have need to run in player for access to variables
 function GetPlayerMaxRad(){
-	//Todo if we died and respawn level up quicker untill lvl 9
 	if (level < boostLevel)
 	{
 		return level*30;

@@ -1,13 +1,15 @@
+
 if !instance_exists(GenCont)
 {
 
 
 var num = 1;
 
-if other.ultra_got[85]=1//ROGUE SUPER PORTAL STRIKE ULTRA
-num+=1;
+
 if other.crown = 4
 num += 1
+if other.ultra_got[85]=1//ROGUE SUPER PORTAL STRIKE ULTRA
+num*=2;
 other.rogueammo+=num;
 if other.rogueammo > other.rogueammomax
 other.rogueammo = other.rogueammomax

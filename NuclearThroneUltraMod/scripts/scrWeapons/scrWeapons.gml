@@ -2375,7 +2375,7 @@ function scrWeapons() {
 	wep_name[215] = "VIKING AXE"
 	wep_type[215] = 0
 	wep_auto[215] = 0
-	wep_load[215] = 30
+	wep_load[215] = 29
 	wep_cost[215] = 0
 	wep_sprt[215] = sprVikingSmallAxe
 	wep_area[215] = -1
@@ -3376,8 +3376,8 @@ function scrWeapons() {
 	wep_name[306] = "BULLET DISPERSE GUN"
 	wep_type[306] = 1
 	wep_auto[306] = 0
-	wep_load[306] = 14
-	wep_cost[306] = 8
+	wep_load[306] = 18
+	wep_cost[306] = 10
 	wep_sprt[306] = sprBulletDisperseGun
 	wep_area[306] = 5
 	wep_text[306] = "no sense was made"
@@ -3398,8 +3398,8 @@ function scrWeapons() {
 	wep_name[308] = "BULLET DISPERSE MACHINEGUN"
 	wep_type[308] = 1
 	wep_auto[308] = 1
-	wep_load[308] = 4
-	wep_cost[308] = 10
+	wep_load[308] = 8
+	wep_cost[308] = 12
 	wep_sprt[308] = sprBulletDisperseMachinegun
 	wep_area[308] = 9
 	wep_text[308] = "rapid fire goodness"
@@ -3410,7 +3410,7 @@ function scrWeapons() {
 	wep_type[309] = 1
 	wep_auto[309] = 0
 	wep_load[309] = 12
-	wep_cost[309] = 7
+	wep_cost[309] = 11
 	wep_sprt[309] = sprPopDisperseGun
 	wep_area[309] = 6
 	wep_text[309] = "no sense was made"
@@ -3420,7 +3420,7 @@ function scrWeapons() {
 	wep_name[310] = "LASER DISPERSE GUN"
 	wep_type[310] = 5
 	wep_auto[310] = 0
-	wep_load[310] = 12
+	wep_load[310] = 14
 	wep_cost[310] = 6
 	wep_sprt[310] = sprLaserDisperseGun
 	wep_area[310] = 8
@@ -3530,8 +3530,8 @@ function scrWeapons() {
 	wep_name[320] = "DISPERSE BAZOOKA"
 	wep_type[320] = 4
 	wep_auto[320] = 0
-	wep_load[320] = 46
-	wep_cost[320] = 12
+	wep_load[320] = 40
+	wep_cost[320] = 16
 	wep_sprt[320] = sprDisperseBazooka
 	wep_area[320] = 10
 	wep_text[320] = "medicinal herb gun"
@@ -3872,7 +3872,7 @@ function scrWeapons() {
 	wep_name[351] = "BULLET DISPERSE DISPERSE GUN"
 	wep_type[351] = 1
 	wep_auto[351] = 0
-	wep_load[351] = 14
+	wep_load[351] = 18
 	wep_cost[351] = 22
 	wep_sprt[351] = sprBulletDisperseDisperseGun
 	wep_area[351] = 12
