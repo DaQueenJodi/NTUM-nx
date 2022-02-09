@@ -1,4 +1,53 @@
 /// @description Black sword? and UNLOCKABLES
+if UberCont.opt_gamemode == 23 && !instance_exists(Menu) && instance_number(Player) == 1//Random character!
+{
+	var iWillBecome = 0;
+	do 
+	{
+		iWillBecome = ceil(random(racemax));
+		debug("choosing");
+	} until (UberCont.race_have[iWillBecome] = 1 && iWillBecome != 0);
+	instance_destroy(id,false);
+	with instance_create(x,y,RaceCopier)
+	{
+		race = iWillBecome;
+	}
+	with instance_create(x,y,Player)
+	{
+		//Copy it all!
+		ultimategamble=other.ultimategamble;
+		skeletonlives=other.skeletonlives
+		race = iWillBecome;
+		crown = other.crown
+		lastarea = other.lastarea;
+		area = other.area
+		subarea=other.subarea;
+		loops = other.loops;
+		hard = other.hard;
+		kills = other.kills;
+		subarea=other.subarea;
+		level = other.level;
+		rad = other.rad;
+		visible=true;
+		snd_play(snd_wrld);
+		wep = other.wep;
+		bwep = other.bwep;
+		cwep = other.cwep;
+		ammo = other.ammo;
+		curse=other.curse;
+	    bcurse=other.bcurse;
+	    ccurse=other.ccurse;
+		var dir = 0;
+		repeat(maxskill+1)
+		{skill_got[dir] = other.skill_got[dir]
+		dir += 1}
+		dir = 0
+		repeat(maxultra+1)
+		{ultra_got[dir] = other.ultra_got[dir]
+		dir += 1}
+	}
+}
+
 if area = 1 && instance_exists(WepPickup)
 {
 with WepPickup
@@ -386,6 +435,7 @@ sprite_index = wep_sprt[wep]
 subarea = 1
     
 }
+
 
 if restarted
 	exit;

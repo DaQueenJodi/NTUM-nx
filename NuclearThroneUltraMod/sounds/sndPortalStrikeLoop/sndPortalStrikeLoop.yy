@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndPortalStrikeLoop",
-  "duration": 0.0,
+  "duration": 1.634188,
   "parent": {
     "name": "Rogue",
     "path": "folders/Sounds/Player/Rogue.yy",

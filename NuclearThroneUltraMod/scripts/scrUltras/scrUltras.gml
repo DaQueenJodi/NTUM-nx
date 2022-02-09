@@ -343,36 +343,36 @@ function scrUltras() {
     
 	//SKELETON 
 	ultra_name[73] = "REDEMPTION"
-	ultra_text[73] = "REROLL ALL YOUR MUTATIONS#GET PATIENCE AS AN EXTRA#CHOICE EVERY TIME."
+	ultra_text[73] = "REROLL ALL YOUR MUTATIONS#GET PATIENCE AS AN EXTRA#CHOICE EVERY TIME.#MORE BLOOD WEAPON DAMAGE"
 	ultra_tips[73] = "specific taste in mutations"
 
 	ultra_name[74] = "DAMNATION"
-	ultra_text[74] = "FIRING A WEAPON WITH BLOOD GAMBLE#WILL REDUCE ITS RELOADING TIME"//by 80%
+	ultra_text[74] = "FIRING A WEAPON WITH BLOOD GAMBLE#WILL REDUCE ITS RELOADING TIME#MORE BLOOD WEAPON DAMAGE"//by 80%
 	ultra_tips[74] = "damn son!"
 
 	ultra_name[75] = "THE BIG GAMBLE"
-	ultra_text[75] = "GET A RANDOM ULTRA MUTATION#FROM ANOTHER CHARACTER#DOESN'T INCLUDE THINGS YOU CAN'T USE#(such as plant's snare related ultras)"
+	ultra_text[75] = "GET A RANDOM ULTRA MUTATION#FROM ANOTHER CHARACTER#DOESN'T INCLUDE THINGS YOU CAN'T USE#(such as plant's snare related ultras)#MORE BLOOD WEAPON DAMAGE"
 	ultra_tips[75] = "hybrid character"
 
 	if instance_exists(Player)
 	{
-	    if Player.ultimategamble==false
+	    if Player.ultimategamble==true
 	    {
 	    ultra_name[76] = "THE ULTIMATE GAMBLE"
-	    ultra_text[76] = "50% CHANCE TO DIE OR TO GET#THREE RANDOM ULTRA MUTATIONS#FROM ANOTHER CHARACTER#DOESN'T INCLUDE THINGS YOU CAN'T USE#(such as plant's snare related ultras)"
+	    ultra_text[76] = "50% CHANCE TO DIE OR TO GET#THREE RANDOM ULTRA MUTATIONS#FROM ANOTHER CHARACTER#DOESN'T INCLUDE THINGS YOU CAN'T USE#(such as plant's snare related ultras)#MORE BLOOD WEAPON DAMAGE"
 	    ultra_tips[76] = "that went well!"
 	    }
 	    else
 	    {
 	    ultra_name[76] = "UNSTOPPABLE"
-	    ultra_text[76] = "GAIN THREE LIVES"
+	    ultra_text[76] = "GAIN THREE LIVES#MORE BLOOD WEAPON DAMAGE"
 	    ultra_tips[76] = "never dead"
 	    }
 	}
 	else
 	{
 	ultra_name[76] = "UNSTOPPABLE"
-	ultra_text[76] = "GAIN THREE LIVES"
+	ultra_text[76] = "GAIN THREE LIVES#MORE BLOOD WEAPON DAMAGE"
 	ultra_tips[76] = "never dead"
 	}
 
