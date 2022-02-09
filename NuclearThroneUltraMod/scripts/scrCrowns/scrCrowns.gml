@@ -16,7 +16,7 @@ function scrCrowns() {
 	crown_tips[2] = "life"
 
 	crown_name[3] = "[CROWN OF DEATH]"
-	crown_text[3] = "-1 MAX HP#REVENGE"
+	crown_text[3] = "-1 MAX HP#BIGGER EXPLOSIONS"
 	crown_used[3] = 0
 	crown_tips[3] = "nothing goes unpunished"
 
