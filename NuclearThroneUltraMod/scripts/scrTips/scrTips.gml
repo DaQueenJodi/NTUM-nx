@@ -45,7 +45,7 @@ function scrTips() {
 	"kraken pulls enemies towards you",
 	"doing alright",
 	"there are other worlds out there",
-	/*more rares*/choose("try not to get mad","be kind"
+	/*more rares*/choose("try not to get mad","be kind",
 	"maybe you should play better","if you ever get stuck#outside a level#walk far away#from the level to get teleported back","use wasd to move","don't get baited by items","ask and ye shall receive","you smell that?","sick build bro","what does your gun tell you?","don't get baited by items"
 	,"thematically inconsistent!","if you reach loop 2#your level cap increases by 1","skeleton has#a fifth ultra mutation","don't be afraid to pick up new weapons",choose("28 EGGS FOR BREAKFAST","shit on my tits","never pick hanzo","microtransactions","if you are seeing this#you are fucking aswesome")/*super rare*/
 	)
