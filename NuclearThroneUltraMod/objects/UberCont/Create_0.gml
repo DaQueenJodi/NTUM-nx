@@ -18,7 +18,6 @@ paused = 0
 alarm[0] = 30
 	//Init variable that we load
 tot_time = 0;
-scrInit();
 opt_gamepad=0;//for interaction sprites
 
 with KeyCont
@@ -30,13 +29,9 @@ area=1;
 subarea=1;
 loops=0;
 
-window_set_fullscreen(UberCont.opt_fulscrn)
 
-window_set_min_height(480);
-window_set_min_width(640);
-
-window_set_max_height(1440);
-window_set_max_width(1920);
+//window_set_max_height(1440);
+//window_set_max_width(1920);
 
 time_microseconds=0;
 microseconds=""//string for microseconds
@@ -56,3 +51,11 @@ seedText = "";
 firstFloorMaker = true;
 seedOffset = 0;
 wallsBroken = 0;
+
+scrInit();
+
+window_set_fullscreen(opt_fulscrn)
+window_set_min_width(640);
+window_set_min_height(480);
+if !opt_fulscrn
+	window_set_size(640*2,480*2);

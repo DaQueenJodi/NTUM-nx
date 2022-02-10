@@ -435,6 +435,8 @@ race = Player.race
 snd_play(sndMut);
 instance_destroy()
 }
-
-/* */
-/*  */
+with UberCont
+{
+	ctot_ultra_taken[other.skill] += 1;
+	scrSave();//Don't necesserily have to save here
+}

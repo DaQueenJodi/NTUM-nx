@@ -319,6 +319,10 @@ skill = other.otherchosenskill
         image_index=0;
         }
     }
-    
+    if (UberCont.opt_gamemode == 24)
+	{
+		with SkillIcon
+			skill = 22;//SHARPSTRESS	
+	}
     }
 }

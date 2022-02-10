@@ -26,7 +26,8 @@ function scrTips() {
 	"there is a cheatcode#to unlock everything",
 	"square bullets are immune to melee",
 	/*these are rare*/ choose("no","bob and weave","airhorn.wav","danger zone","no sex jokes","in and about"
-	,"the purple dragon","golden frog anyone?","Y.V. mony rad","the flying cat head","myth of time","sheeps are a thing","feedback is much apreciated","follow @erdeppol","sorry bout bugs","I love you!")
+	,"the purple dragon","golden frog anyone?","Y.V. mony rad","the flying cat head","myth of time","sheeps are a thing","feedback is much apreciated","follow @erdeppol","sorry bout bugs","I love you!",
+	"be nice#get bitches")
 	),choose(
 	"the I.D.P.D. is looking for you",
 	"try hitting grenades for extra range",
@@ -44,13 +45,13 @@ function scrTips() {
 	"kraken pulls enemies towards you",
 	"doing alright",
 	"there are other worlds out there",
-	/*more rares*/choose("try not to get mad",
+	/*more rares*/choose("try not to get mad","be kind"
 	"maybe you should play better","if you ever get stuck#outside a level#walk far away#from the level to get teleported back","use wasd to move","don't get baited by items","ask and ye shall receive","you smell that?","sick build bro","what does your gun tell you?","don't get baited by items"
-	,"thematically inconsistent!","if you reach loop 2#your level cap increases by 1","skeleton has#a fifth ultra mutation","don't be afraid to pick up new weapons",choose("28 EGGS FOR BREAKFAST","shit on my tits","stop whining about#offscreen bullets","never pick hanzo","","")/*super rare*/
+	,"thematically inconsistent!","if you reach loop 2#your level cap increases by 1","skeleton has#a fifth ultra mutation","don't be afraid to pick up new weapons",choose("28 EGGS FOR BREAKFAST","shit on my tits","never pick hanzo","microtransactions","if you are seeing this#you are fucking aswesome")/*super rare*/
 	)
 	),choose(
 	"don't worry about long-term effects","when near a portal you#don't take damage","don't die","nice",
-	"yung cuz definitely exists","venuz patrol","boiling veins does#NOT protect against#blue fire","all mutations are#up to date",
+	"yung cuz definitely exists","venuz patrol","boiling veins does#NOT protect against#blue fire",
 	"should not have done that","","thank you for playing","Some unused mutations are buffed","visit crownvaults twice#for weapon mods","death is near","good luck"
 	,"you can change the direction#of director projectiles#by clicking after firing")
 	,
@@ -60,7 +61,7 @@ function scrTips() {
 	"humphry can't run",
 	"atom can teleport",
 	"fish can walk",
-	"be a nice person",
+	"git gut!",
 	"don't trust fortune cookies",
 	"picking up a weapon#resets your reload time",
 	"gloves and kraken weapons#give you invincibility frames",
@@ -118,6 +119,8 @@ function scrTips() {
 	tip = choose("sweet","wonderland","evil cards","play your cards right","teapots of doom","cotton candy floors","do not eat the mushrooms","I'm not even a fan of#alice in wonderland")
 	if Player.area = 9
 	tip = choose("The palace","This place is old");
+	if Player.area = 10
+	tip = choose("dry grass","savanna");
 	if Player.area = 106
 	tip = choose("inverted darkness","back to the other dimension","pls explain","inverted world are a benefit","oh no, the question marks!","good luck getting through this"
 	,"white ravens")
@@ -137,6 +140,8 @@ function scrTips() {
 	tip = choose("buttons","balls","labs are now inverted")
 	if Player.area = 113
 	tip = choose("welcome to banditland","bandits with erasers","laserbandits","when the night falls","tonight bandit party","be afraid of the bandit")
+	if Player.area = 114
+	tip = choose("jungle","ugga bugga","wet grass")
 	}
 
 

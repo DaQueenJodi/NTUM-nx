@@ -220,4 +220,12 @@ race = Player.race;}
 snd_play(skill_msnd[skill])//skill_msnd no more array sorry but memory
 
 }
-
+with UberCont
+{
+	ctot_skill_taken[other.skill] += 1;
+	if other.skill == 22 && ctot_skill_taken[other.skill] >= 10
+	{
+		scrUnlockGameMode(24,"FOR TAKING STRESS 10 TIMES");
+	}
+	scrSave();//Don't necesserily have to save here
+}

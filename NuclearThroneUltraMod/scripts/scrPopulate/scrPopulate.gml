@@ -5,7 +5,8 @@ function scrPopulate() {
 	{
 	subarea=Player.subarea;
 	if Player.loops = 0 or Player.area = 100
-	{spawnarea = 0
+	{
+		spawnarea = Player.area/*
 	if Player.area = 1 spawnarea = 1
 	if Player.area = 2 spawnarea = 2
 	if Player.area = 3 spawnarea = 3
@@ -28,7 +29,7 @@ function scrPopulate() {
 	if Player.area = 110 spawnarea = 110//inverted sewers
 	if Player.area = 111 spawnarea = 111//inverted caves
 	if Player.area = 112 spawnarea = 112//inverted labs
-	if Player.area = 113 spawnarea = 113//Banditland
+	if Player.area = 113 spawnarea = 113//Banditland*/
 	}
 	else{ //spawnarea = choose(1,2,3,4,5,6,7,8,105,102,103)
 
@@ -176,6 +177,47 @@ function scrPopulate() {
 
 	//with Bones
 	//sprite_index = sprSewerDecal
+
+	}
+	else if spawnarea == 10
+	{
+	if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
+	{
+	instance_create(x,y,Bones)
+	instance_create(x,y+16,Bones)
+	with instance_create(x+32,y,Bones)
+	image_xscale = -1
+	with instance_create(x+32,y+16,Bones)
+	image_xscale = -1
+	
+	with Bones
+		sprite_index = sprSavannaBones;
+	}
+
+
+	if instance_exists(GenCont){
+	if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
+	{
+	instance_create(x-64+16,y+16,TopDecal)
+	}
+
+	if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
+	{
+	instance_create(x+64+16,y+16,TopDecal)
+	}
+
+	if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
+	{
+	instance_create(x+16,y+64+16,TopDecal)
+	}
+
+	if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
+	{
+	instance_create(x+16,y-64+16,TopDecal)
+	}
+	with TopDecal
+		sprite_index = sprSavannaTopDecal;
+	}
 
 	}
 	if spawnarea = 3 || spawnarea = 106

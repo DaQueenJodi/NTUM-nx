@@ -65,9 +65,13 @@ function scrSkills() {
 	skill_text[5] = "UPGRADES YOUR SPECIAL ABILITY"
 	if instance_exists(Player)
 	skill_text[5] = string(Player.race_name[Player.race])+" "+string(Player.race_butt[Player.race])
+	if instance_exists(Player)
+	{
 	if Player.race=1{
 	skill_tips[5] = "Fish's throne butt is good now!"}
 	else{
+	skill_tips[5] = "sit on the throne"}
+	}else{
 	skill_tips[5] = "sit on the throne"}
 	skill_msnd[5] =  sndMutThronebutt
 
@@ -194,7 +198,14 @@ function scrSkills() {
 	skill_msnd[21] =  sndMutBoltMarrow
 
 	skill_name[22] = "SHARP STRESS"
-	skill_text[22] = "WHENEVER YOU TAKE DAMAGE#DEAL DAMAGE TO ALL ENEMIES ON SCREEN#HIGHER RATE OF FIRE#AS HP GETS LOWER"
+	if UberCont.opt_gamemode == 24
+	{
+		skill_text[22] = "FUCK YEA SHARP STRESS!#IT STACKS!"
+	}
+	else
+	{
+		skill_text[22] = "WHENEVER YOU TAKE DAMAGE#DEAL DAMAGE TO ALL ENEMIES ON SCREEN#HIGHER RATE OF FIRE#AS HP GETS LOWER"
+	}
 	skill_tips[22] = "ultimate low health hybrid"
 	skill_msnd[22] =  sndMutSharpStress
 

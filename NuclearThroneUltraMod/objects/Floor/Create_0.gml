@@ -54,6 +54,9 @@ break;
 case 9:
 sprite_index=sprFloor9B;
 break;
+case 10:
+sprite_index=sprFloor10B;
+break;
 case 100:
 sprite_index=sprFloor100B;
 break;
@@ -93,6 +96,9 @@ break;
 case 113:
 sprite_index=sprFloor0B;
 break;
+case 114:
+sprite_index=sprFloor114B;
+break;
 
 default:
 sprite_index=sprFloor0B;
@@ -102,6 +108,8 @@ break;
 }
 else
 {
+	depth = 10;
+
 switch (area)
 {
 case 0:
@@ -133,6 +141,9 @@ sprite_index=sprFloor8;
 break;
 case 9:
 sprite_index=sprFloor9;
+break;
+case 10:
+sprite_index=sprFloor10;
 break;
 case 100:
 sprite_index=sprFloor100;
@@ -173,6 +184,9 @@ break;
 case 113:
 sprite_index=sprFloor0;
 break;
+case 114:
+sprite_index=sprFloor114;
+break;
 default:
 sprite_index=sprFloor0;
 break;
@@ -207,5 +221,3 @@ instance_create(x+32,y-32,Top)
 instance_create(x,y+32,Top)
 instance_create(x,y-32,Top)
 */
-
-depth = 10;

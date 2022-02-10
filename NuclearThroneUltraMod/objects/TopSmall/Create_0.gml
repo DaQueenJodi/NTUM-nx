@@ -36,6 +36,9 @@ break;
 case 9:
 sprite_index=sprWall9Trans;
 break;
+case 10:
+sprite_index=sprWall10Trans;
+break;
 case 100:
 sprite_index=sprWall100Trans;
 break;
@@ -71,6 +74,9 @@ sprite_index=sprWall111Trans;
 break;
 case 112:
 sprite_index=sprWall112Trans;
+break;
+case 114:
+sprite_index=sprWall114Trans;
 break;
 default:
 sprite_index=sprWall0Trans;

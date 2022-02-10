@@ -23,6 +23,19 @@ function scrSaveStats() {
 	dir +=1;}
 	
 	ini_write_real("STATS","ctotwallsdestroyed",ctot_walls_destroyed);
+	
+	dir = 0;
+	repeat(maxskill+1)
+	{
+		ini_write_real("STATS","ctotskilltaken" + string(dir),ctot_skill_taken[dir]);
+		dir ++;
+	}
+	dir = 0;
+	repeat(maxultra+1)
+	{
+		ini_write_real("STATS","ctotultrataken" + string(dir),ctot_ultra_taken[dir]);
+		dir ++;
+	}
 
 	ini_write_real("STATS","tottime",string(tot_time));
 }

@@ -94,6 +94,10 @@ function scrGameModes() {
 	gamemode[23] = "RANDOM CHARACTER#IN EACH AREA";
 	gamemode_unlock[23] = "PLAY EVERY CHARACTER";
 	gamemode_have[23] = 0;
+	
+	gamemode[24] = "SHARP STRESS";
+	gamemode_unlock[24] = "SHARP STRESS x10";
+	gamemode_have[24] = 0;
 	/*
 	gamemode[24] = "SURVIVAL ARENA";
 	gamemode_unlock[24] = "JE MAPPEL ASSHOLE";
@@ -134,6 +138,7 @@ function scrGameModes() {
 	gamemodeOrder[21] = 22;
 	gamemodeOrder[22] = 17;
 	gamemodeOrder[23] = 23;
+	gamemodeOrder[24] = 24;
 
 
 

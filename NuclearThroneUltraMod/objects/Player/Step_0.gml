@@ -649,6 +649,9 @@ var reduction = 0;
 	{
 		reduction = (1-(my_health/maxhealth))*0.68//*1//0.35 the original has 80% boost
 	}
+	if UberCont.opt_gamemode == 24//SHARP STRESS GAMEMODE
+		reduction *= level;
+	reduction = max(reduction,0);
 	reload -= reduction
 	breload -= reduction;
 	creload -= reduction;

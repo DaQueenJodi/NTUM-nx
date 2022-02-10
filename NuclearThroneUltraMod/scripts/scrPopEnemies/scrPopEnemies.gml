@@ -25,6 +25,27 @@ function scrPopEnemies() {
 			instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(theBandit,theBandit,theBandit,theBandit,theBandit,theBandit,Maggot,Scorpion))}
 		}
 	}
+	if spawnarea = 10
+	{
+		theBandit = choose(Bandit,Bandit,Bandit,BanditSquare);	
+		if styleb = 1
+		{
+		instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(MaggotSpawn,BigMaggot,BigMaggot,Maggot))
+		}
+		else
+		{
+		if random(7) < 1 
+		instance_create(x+16,y+16,choose(MaggotSpawn,Scorpion))
+		else
+		{if random(30) < 1
+		{instance_create(x+16,y+16,Barrel)
+		instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)
+		instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)
+		instance_create(x+16+random(4)-2,y+16+random(4)-2,Bandit)}
+		else
+			instance_create(x+16+random(4)-2,y+16+random(4)-2,choose(theBandit,theBandit,theBandit,theBandit,theBandit,theBandit,Maggot,Scorpion))}
+		}
+	}
 
 	if spawnarea = 101//Oasis
 	{

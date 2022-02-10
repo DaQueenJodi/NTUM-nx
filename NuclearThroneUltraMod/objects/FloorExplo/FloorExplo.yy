@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprFloor1Explo",
-    "path": "sprites/sprFloor1Explo/sprFloor1Explo.yy",
+    "name": "sprFloor10Explo",
+    "path": "sprites/sprFloor10Explo/sprFloor10Explo.yy",
   },
   "solid": false,
   "visible": true,

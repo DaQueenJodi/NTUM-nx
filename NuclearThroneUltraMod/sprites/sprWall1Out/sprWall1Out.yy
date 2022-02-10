@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 24,
   "height": 32,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprWall1Out","path":"sprites/sprWall1Out/sprWall1Out.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprWall1Out",
     "tags": [],
     "resourceType": "GMSequence",
   },

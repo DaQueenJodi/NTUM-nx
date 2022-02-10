@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 36,
   "height": 36,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFloor1B","path":"sprites/sprFloor1B/sprFloor1B.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprFloor1B",
     "tags": [],
     "resourceType": "GMSequence",
   },
