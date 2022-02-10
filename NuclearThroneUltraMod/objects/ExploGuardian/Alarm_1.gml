@@ -8,7 +8,7 @@ motion_add(direction,1);
 	{
 	if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 	{
-		if point_distance(x,y,target.x,target.y) < 200 && random(2) < 1
+		if x > Player.x - 160 && x < Player.x + 160 && y > Player.y - 120 && y < Player.y + 120 && random(2) < 1
 		{
 			speed *= 0.1;
 			charge = true;
