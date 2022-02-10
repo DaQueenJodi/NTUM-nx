@@ -9,4 +9,4 @@ fire=true
 else
 fire=false;
 
-maxSpeed = random_range(1,5);
+maxSpeed = random_range(1,4.5);

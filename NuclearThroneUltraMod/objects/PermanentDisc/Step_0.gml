@@ -12,11 +12,11 @@ if fire
         
             motion_add(other.direction+180+random(16)-6,random(4))
             image_angle = direction
+			image_xscale -= 0.2;
+			image_yscale -= 0.2;
             team = 1
             }
 
 }
 if speed > maxSpeed
 	speed = maxSpeed;
-/* */
-/*  */
