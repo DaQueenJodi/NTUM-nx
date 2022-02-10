@@ -11,7 +11,7 @@ audio_play_sound(sndBouncerHitWall,100,0)
 
 
 hitWall+=1;
-if hitWall>2{
+if hitWall>maxWallHits{
 instance_destroy();
 instance_create(x,y,Dust);}
 

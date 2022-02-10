@@ -22,6 +22,19 @@ function scrLoadStats() {
 	dir +=1;}
 
 	ctot_walls_destroyed = ini_read_real("STATS","ctotwallsdestroyed",0);
+	
+	dir = 0;
+	repeat(maxskill+1)
+	{
+		ctot_skill_taken[dir] = ini_read_real("STATS","ctotskilltaken" + string(dir),0);
+		dir ++;
+	}
+	dir = 0;
+	repeat(maxultra+1)
+	{
+		ctot_ultra_taken[dir] = ini_read_real("STATS","ctotultrataken" + string(dir),0);
+		dir ++;
+	}
 
 
 	tot_time = real(string_digits(ini_read_real("STATS","tottime",0)));

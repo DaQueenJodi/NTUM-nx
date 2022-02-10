@@ -1473,10 +1473,10 @@ function scrWeapons() {
 	wep_name[133] = "AUTO SPLINTER GUN"
 	wep_type[133] = 3
 	wep_auto[133] = 1
-	wep_load[133] = 10
+	wep_load[133] = 12
 	wep_cost[133] = 1
 	wep_sprt[133] = sprAutoSplinterGun
-	wep_area[133] = 7
+	wep_area[133] = 9
 	wep_text[133] = "225 splinters per minute"
 	wep_swap[133] = sndSwapBow
 	wep_rad[133] = 0;
@@ -2078,7 +2078,7 @@ function scrWeapons() {
 	wep_name[188] = "GRENADE PISTOL"
 	wep_type[188] = 4
 	wep_auto[188] = 0
-	wep_load[188] = 10
+	wep_load[188] = 11
 	wep_cost[188] = 1
 	wep_sprt[188] = sprGrenadePistol
 	wep_area[188] = 0
@@ -2859,7 +2859,7 @@ function scrWeapons() {
 	wep_name[259] = "BULLET POPPER"
 	wep_type[259] = 1
 	wep_auto[259] = 1
-	wep_load[259] = 4
+	wep_load[259] = 5
 	wep_cost[259] = 1
 	wep_sprt[259] = sprBulletPopper1
 	wep_area[259] = 3
@@ -3685,10 +3685,10 @@ function scrWeapons() {
 	wep_name[334] = "ION BOMB"
 	wep_type[334] = 4
 	wep_auto[334] = 0
-	wep_load[334] = 11
-	wep_cost[334] = 2
+	wep_load[334] = 16
+	wep_cost[334] = 1
 	wep_sprt[334] = sprIonBomb
-	wep_area[334] = 6
+	wep_area[334] = 5
 	wep_text[334] = "explosions out of nowhere"
 	wep_swap[334] = sndSwapExplosive
 	wep_rad[334] = 0;
@@ -4017,31 +4017,40 @@ function scrWeapons() {
 	wep_swap[363] = sndSwapMachinegun
 	wep_rad[363] = 0;
 	
-	/*
-	wep_name[360] = "SPLINTER SHOTGUN"
-	wep_type[360] = 3
-	wep_auto[360] = 0
-	wep_load[360] = 25
-	wep_cost[360] = 4
-	wep_sprt[360] = sprHeavyNader
-	wep_area[360] = 0
-	wep_text[360] = "nailgun"
-	wep_swap[360] = sndSwapBow
-	wep_rad[360] = 0;
-	*/
+	wep_name[364] = "KRAKEN DISPERSE GUN"
+	wep_type[364] = 4
+	wep_auto[364] = 1
+	wep_load[364] = 30
+	wep_cost[364] = 20
+	wep_sprt[364] = sprKrakenGun
+	wep_area[364] = 10
+	wep_text[364] = "mobilize the kraken!"
+	wep_swap[364] = sndSwapExplosive
+	wep_rad[364] = 0;
 	
-	/*
-	wep_name[360] = "BOUNCER PISTOL"
-	wep_type[360] = 1
-	wep_auto[360] = 0
-	wep_load[360] = 25
-	wep_cost[360] = 1
-	wep_sprt[360] = sprHeavyNader
-	wep_area[360] = 0
-	wep_text[360] = "hey how you doing"
-	wep_swap[360] = sndSwapBullet
-	wep_rad[360] = 0;
-	*/
+	
+	wep_name[365] = "SPLINTER SHOTGUN"
+	wep_type[365] = 3
+	wep_auto[365] = 0
+	wep_load[365] = 25
+	wep_cost[365] = 2
+	wep_sprt[365] = sprHeavyNader
+	wep_area[365] = 7
+	wep_text[365] = "nailgun"
+	wep_swap[365] = sndSwapBow
+	wep_rad[365] = 0;
+	
+	
+	wep_name[366] = "BOUNCER REVOLVER"
+	wep_type[366] = 1
+	wep_auto[366] = 0
+	wep_load[366] = 9
+	wep_cost[366] = 1
+	wep_sprt[366] = sprHeavyNader
+	wep_area[366] = 1
+	wep_text[366] = "hey how you doing"
+	wep_swap[366] = sndSwapPistol
+	wep_rad[366] = 0;
 	
 	/*
 	wep_name[360] = "OCEAN GRENADE"
@@ -4057,19 +4066,10 @@ function scrWeapons() {
 	*/
 	
 	/*
-	wep_name[360] = "KRAKEN DISPERSE GUN"
-	wep_type[360] = 4
-	wep_auto[360] = 0
-	wep_load[360] = 25
-	wep_cost[360] = 1
-	wep_sprt[360] = sprHeavyNader
-	wep_area[360] = 9
-	wep_text[360] = "mobilize the kraken!"
-	wep_swap[360] = sndSwapExplosive
-	wep_rad[360] = 0;
+	
 	*/
 	
-	maxwep = array_length(wep_rad)-1;//362
+	maxwep = array_length(wep_name)-1;
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy
 	typ_ammo[0] = 333 typ_ammo[1] = 32 typ_ammo[2] = 8 typ_ammo[3] = 8 typ_ammo[4] = 6 typ_ammo[5] = 10

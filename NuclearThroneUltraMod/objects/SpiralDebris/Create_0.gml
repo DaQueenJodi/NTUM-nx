@@ -24,6 +24,7 @@ case 6:sprite_index = sprDebris6; break;
 case 7:sprite_index = sprDebris7; break;
 case 8:sprite_index = sprDebris8; break;
 case 9:sprite_index = sprDebris9; break;
+case 10:sprite_index = sprDebris10; break;
 case 100:sprite_index = sprDebris100; break;
 case 102:sprite_index = sprDebris102; break;
 case 103:sprite_index = sprDebris103; break;
@@ -36,6 +37,7 @@ case 108:sprite_index = sprDebris108; break;
 case 110:sprite_index = sprDebris110; break;
 case 111:sprite_index = sprDebris111; break;
 case 112:sprite_index = sprDebris112; break;
+case 114:sprite_index = sprDebris114; break;
 default: sprite_index = sprDebris0; break;
 }
 
@@ -59,17 +61,32 @@ sprite_index = sprFrozenCar
 if Player.area = 6
 sprite_index = sprFreak1Hurt
 
+if Player.area = 7
+sprite_index = sprFreak1Hurt
+
 if Player.area = 102
 sprite_index = sprSlice
 
+if random(10) < 1
+{
+	sprite_index = sprSkillIcon
+	image_index = 22;
+}
+
 image_index = 1
-rotspeed = (10+random(20))*choose(1,-1)}
+rotspeed = (10+random(20))*choose(1,-1)
 
 }
 
+	
+}
+if UberCont.opt_gamemode == 24
+{
+	sprite_index = sprSkillIcon
+	image_index = 22;
+}
 image_xscale = 0
 image_yscale = 0
 grow = 0
 
 image_angle = random(360)
-

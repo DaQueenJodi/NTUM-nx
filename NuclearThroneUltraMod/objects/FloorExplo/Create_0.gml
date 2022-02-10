@@ -41,6 +41,9 @@ break;
 case 9:
 sprite_index=sprFloor9Explo;
 break;
+case 10:
+sprite_index=sprFloor10Explo;
+break;
 case 100:
 sprite_index=sprFloor100Explo;
 break;
@@ -80,6 +83,9 @@ sprite_index=sprFloor112Explo;
 break;
 case 113:
 sprite_index=sprFloor0Explo;
+break;
+case 114:
+sprite_index=sprFloor114Explo;
 break;
 
 default:

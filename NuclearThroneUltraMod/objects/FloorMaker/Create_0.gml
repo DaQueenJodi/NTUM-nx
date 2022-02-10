@@ -26,6 +26,11 @@ else if (Player.area = 6||Player.area=112) && Player.subarea=2//LABS BOSS
 goal=1;
 else if Player.area = 9 && Player.subarea < 2
 goal = 130
+else if Player.area = 10
+{
+	styleb = choose(0,0,0,0,0,0,1,1)//Slightly higher chance for B tiles
+	goal = 130
+}
 else if Player.area == 9 && Player.subarea == 3
 goal = 250;
 }

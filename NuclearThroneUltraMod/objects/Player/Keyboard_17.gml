@@ -40,7 +40,7 @@ my_health=0;
 
 if keyboard_check_pressed(ord("1"))
 {
-area = 113
+area = 10
 subarea = 0
 //inverted=true
 with enemy
@@ -50,7 +50,7 @@ with instance_create(x,y,Portal) type = 1
 
 if keyboard_check_pressed(ord("2"))
 {
-area = 3
+area = 114
 //inverted=true;
 subarea = 0
 with enemy

@@ -15,7 +15,7 @@ function scrMakeFloor() {
 	instance_create(x+32,y,Floor)
 	instance_create(x+32,y+32,Floor)
 	instance_create(x,y+32,Floor)
-	}else instance_create(x,y,Floor)} 
+	}else instance_create(x,y,Floor)}
 
 	if area=101 { if random(2) < 1.4
 	{instance_create(x,y,Floor)
@@ -446,19 +446,43 @@ function scrMakeFloor() {
 			instance_create(x-96,y,Floor)
 		}
 	} 
-	/*
-		//Cool generation:
-		if area = 9{ if random(5) < 3
-		{instance_create(x,y,Floor)
-		instance_create(x+32,y,Floor)
-		instance_create(x-32,y,Floor)
+	
+	//savanna
+	if area = 10{ if random(5) < 3
+	{instance_create(x,y,Floor)
+	instance_create(x+32,y,Floor)
+	instance_create(x-32,y,Floor)
 
-		}else 
+	}else 
+	{
+	instance_create(x,y,Floor)
+	instance_create(x,y+32,Floor)
+	}}
+	
+	//jungle
+	if area = 114{
+		if random(5) < 2
 		{
-		instance_create(x,y,Floor)
-		instance_create(x,y+32,Floor)
-		}} 
-	*/
+			instance_create(x,y,Floor)
+			instance_create(x+32,y,Floor)
+			instance_create(x-32,y,Floor)
+			instance_create(x,y+32,Floor)
+			instance_create(x,y-32,Floor)
+			instance_create(x+32,y+32,Floor)
+			instance_create(x+32,y-32,Floor)
+			instance_create(x-32,y-32,Floor)
+			instance_create(x-32,y+32,Floor)
+		} if random (3) < 1
+		{
+			instance_create(x,y,Floor)
+		}
+		else 
+		{
+			instance_create(x,y,Floor)
+			instance_create(x,y+32,Floor)
+		}
+	} 
+	
 	if area = 100 { if random(8) < 1//CROWN VAULT
 	{
 
@@ -519,10 +543,12 @@ function scrMakeFloor() {
 	trn = choose(0,0,0,0,0,0,0,0,0,90,-90,90,-90)
 	else if area = 9 && subarea == 3
 	trn = 0;
-	if area = 100
+	else if area = 100
 	trn = choose(0,0,0,0,0,0,0,0,0,0,90,-90,180,180)
-	if area = 103
+	else if area = 103
 	trn = choose(0,0,0,90,-90,180)
+	else if area == 114
+	trn = choose(0,0,0,0,0,90,-90,180)
 
 	direction += trn
 	if ((area=7||area=108) && subarea=2) || area=104
@@ -574,7 +600,7 @@ function scrMakeFloor() {
 
 
 	//BRANCHES
-	if area = 1 || area = 105 || area = 101
+	if area = 1 || area = 105 || area = 101 || area == 10 || area == 114
 	{
 	if random(19+instance_number(FloorMaker)) > 20
 	{

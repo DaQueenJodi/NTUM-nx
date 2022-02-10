@@ -4282,7 +4282,7 @@ function scrFire2() {
 
 	break;
 
-	//BOUNCER FLAK CANNON
+	//SUPER BOUNCER FLAK CANNON
 	case 354:
 
 	snd_play(sndFlakCannon);
@@ -4564,6 +4564,78 @@ function scrFire2() {
 	BackCont.shake += 4
 	wkick = 5
 	
+	break;
+	
+	//KRAKEN DISPERSE GUN
+	case 364:
+
+	snd_play(sndRoll);
+	snd_play(sndBloodCannon);
+
+	snd_play(choose(sndWater1,sndWater2) );
+	snd_loop(sndBloodCannonLoop);
+	
+	with instance_create(x,y,DisperseKraken)
+	{
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,10)
+		image_angle = direction
+		team = other.team
+		time=2;
+		owner = other.id;
+		event_perform(ev_alarm,0)
+	}
+
+	BackCont.viewx2 += lengthdir_x(9,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(9,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 8
+	wkick = 5
+
+	break;
+	
+	//SPLINTER SHOTGUN
+	case 365:
+
+	snd_play(sndSplinterShotgun)
+
+	repeat(3)
+	{
+	with instance_create(x,y,Splinter)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-20)*other.accuracy,15+random(10))
+	image_angle = direction
+	team = other.team}
+	}
+	repeat(8)
+	{
+	with instance_create(x,y,Splinter)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(50)-25)*other.accuracy,15+random(10))
+	image_angle = direction
+	team = other.team}
+	}
+
+	BackCont.viewx2 += lengthdir_x(16,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(16,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 8
+	wkick -= 5
+
+	break;
+	
+	//BOUNCER REVOLVER
+	case 366:
+
+	snd_play(sndBouncerPistol)
+	with instance_create(x,y,Shell)
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(60)-30,2+random(2))
+
+	with instance_create(x,y,Bullet3)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(20)-10)*other.accuracy,6.0)//5.5)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(6.5,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(6.5,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 5
+	wkick = 2.2
+
 	break;
 
 	}//end of switch part 2!

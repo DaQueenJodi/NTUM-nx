@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enviroment",
-    "path": "folders/Sprites/Enviroment.yy",
+    "name": "Desert",
+    "path": "folders/Sprites/Enviroment/Tiles/Desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprInvertedDesertTopDecal",

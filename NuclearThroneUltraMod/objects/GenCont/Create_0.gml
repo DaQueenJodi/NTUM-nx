@@ -103,6 +103,8 @@ else if Player.area = 8//Candyland
 __background_set_colour( make_color_rgb(162,111,220) )
 else if Player.area = 9//Palace
 __background_set_colour( make_color_rgb(112,50,50) )
+else if Player.area = 10//savanna
+__background_set_colour( make_color_rgb(160,95,61) )
 else if Player.area = 106//Inverted scrapyard
 __background_set_colour( make_color_rgb(194,176,163) )
 else if Player.area = 107//Inverted Frozen City
@@ -117,6 +119,8 @@ else if Player.area = 111//inverted caves
 __background_set_colour( make_color_rgb(138,186,79) )
 else if Player.area = 112//inverted labs
 __background_set_colour( make_color_rgb(246,228,224) )
+else if Player.area = 114//Jungle bungle wungle fungle fuck ass
+__background_set_colour( make_color_rgb(42,144,12) )
 }
 else
 __background_set_colour( make_color_rgb(106,122,175) )
@@ -157,6 +161,8 @@ if Player.area = 8
 goal = 130
 if Player.area = 9//Palace
 goal = 120
+if Player.area = 10//savanna
+goal = 120
 if Player.area = 109//inverted Wonderland
 goal=150;
 if Player.area = 3
@@ -169,6 +175,8 @@ if (Player.area = 6 || Player.area = 112) && Player.subarea=2//LABS BOSS
 goal=1;
 if Player.area - 113//Banditland
 goal=70;
+if Player.area - 114//jungle
+goal=100;
 
 
 if UberCont.opt_gamemode==6 && !((Player.area = 6 || Player.area = 112) && Player.subarea=2)//small levels
