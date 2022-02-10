@@ -149,7 +149,7 @@ function scrSkills() {
 	}
 
 	skill_name[15] = "SHOTGUN SHOULDERS"
-	skill_text[15] = "SHELLS BOUNCE FURTHER"
+	skill_text[15] = "SHELLS BOUNCE FURTHER"//#BOUNCER BULLETS CAN BOUNCE#ONE ADDITIONAL TIME" effect is minor no need to tell?
 	skill_tips[15] = "shells are friends"
 	skill_msnd[15] =  sndMutShotGunShoulders
 

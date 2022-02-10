@@ -3,6 +3,7 @@
 ///@param
 function BloodLust(){
 	//SOME KILLS REGENERATE HEALTH
+	snd_play(sndBloodlustProc);
 	var chance = 7.7
 	if Player.race == 25
 		chance = 7.89;

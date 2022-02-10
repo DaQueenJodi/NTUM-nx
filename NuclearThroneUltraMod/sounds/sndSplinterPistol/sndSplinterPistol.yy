@@ -14,8 +14,8 @@
   "soundFile": "sndSplinterPistol.wav",
   "duration": 0.426687,
   "parent": {
-    "name": "Weapons",
-    "path": "folders/Sounds/Weapons.yy",
+    "name": "Bolts",
+    "path": "folders/Sounds/Weapons/Bolts.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndSplinterPistol",

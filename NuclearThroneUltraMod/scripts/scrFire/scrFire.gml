@@ -2148,7 +2148,7 @@ function scrFire() {
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(60)-30,2+random(2))
 
 	with instance_create(x,y,Bullet3)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(34)-17)*other.accuracy,5.1)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(34)-17)*other.accuracy,5.5)
 	image_angle = direction
 	team = other.team}
 
@@ -2168,31 +2168,31 @@ function scrFire() {
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+180,2)
 
 	with instance_create(x,y,Bullet3)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy,5.1)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy,5.5)
 	image_angle = direction
 	team = other.team}
 	with instance_create(x,y,Bullet3)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+10*other.accuracy+(random(8)-4)*other.accuracy,5.1)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+10*other.accuracy+(random(8)-4)*other.accuracy,5.5)
 	image_angle = direction
 	team = other.team}
 	with instance_create(x,y,Bullet3)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+20*other.accuracy+(random(8)-4)*other.accuracy,5.1)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+20*other.accuracy+(random(8)-4)*other.accuracy,5.5)
 	image_angle = direction
 	team = other.team}
 	with instance_create(x,y,Bullet3)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)-10*other.accuracy+(random(8)-4)*other.accuracy,5.1)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)-10*other.accuracy+(random(8)-4)*other.accuracy,5.5)
 	image_angle = direction
 	team = other.team}
 	with instance_create(x,y,Bullet3)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)-20*other.accuracy+(random(8)-4)*other.accuracy,5.1)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)-20*other.accuracy+(random(8)-4)*other.accuracy,5.5)
 	image_angle = direction
 	team = other.team}
 	with instance_create(x,y,Bullet3)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)-30*other.accuracy+(random(8)-4)*other.accuracy,5.1)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)-30*other.accuracy+(random(8)-4)*other.accuracy,5.5)
 	image_angle = direction
 	team = other.team}
 	with instance_create(x,y,Bullet3)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+30*other.accuracy+(random(8)-4)*other.accuracy,5.1)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+30*other.accuracy+(random(8)-4)*other.accuracy,5.5)
 	image_angle = direction
 	team = other.team}
 
