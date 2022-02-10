@@ -3685,10 +3685,10 @@ function scrWeapons() {
 	wep_name[334] = "ION BOMB"
 	wep_type[334] = 4
 	wep_auto[334] = 0
-	wep_load[334] = 11
-	wep_cost[334] = 2
+	wep_load[334] = 16
+	wep_cost[334] = 1
 	wep_sprt[334] = sprIonBomb
-	wep_area[334] = 6
+	wep_area[334] = 5
 	wep_text[334] = "explosions out of nowhere"
 	wep_swap[334] = sndSwapExplosive
 	wep_rad[334] = 0;
