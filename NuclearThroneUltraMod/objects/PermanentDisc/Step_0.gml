@@ -12,8 +12,7 @@ if fire
         
             motion_add(other.direction+180+random(16)-6,random(4))
             image_angle = direction
-			image_xscale -= 0.2;
-			image_yscale -= 0.2;
+			image_speed += 0.3;
             team = 1
             }
 
