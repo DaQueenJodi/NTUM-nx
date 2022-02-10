@@ -17,4 +17,3 @@ draw_set_blend_mode(bm_normal)
 }
 else
 instance_destroy();
-
