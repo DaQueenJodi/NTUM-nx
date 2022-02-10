@@ -16,6 +16,7 @@ if fire
             }
 
 }
-
+if speed > maxSpeed
+	speed = maxSpeed;
 /* */
 /*  */

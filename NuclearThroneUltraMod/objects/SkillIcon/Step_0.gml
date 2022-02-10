@@ -219,7 +219,6 @@ race = Player.race;}
 }
 snd_play(skill_msnd[skill])//skill_msnd no more array sorry but memory
 
-}
 with UberCont
 {
 	ctot_skill_taken[other.skill] += 1;
@@ -229,3 +228,5 @@ with UberCont
 	}
 	scrSave();//Don't necesserily have to save here
 }
+}
+
