@@ -151,6 +151,10 @@ with WeaponChest
 		draw_sprite_ext(wep_sprt[wep3],0,x-7,y-36,1,1,0,c_white,0.75);
 	}
 }
+with GoldChest
+{
+	draw_sprite_ext(wep_sprt[wep],0,x-7,y-14,1,1,0,c_white,0.75);
+}
 }}
 
 with StreetLight

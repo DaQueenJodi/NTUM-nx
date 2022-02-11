@@ -30,12 +30,14 @@ if UberCont.public=0 {
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
 		thing.mytext = "RADS!";
+		rad = GetPlayerMaxRad() + 1;
 	}
+	/*
 	if keyboard_check(ord("R")) {
-	    repeat(50) {
+	    /*repeat(50) {
 			instance_create(Player.x,Player.y,Rad);
-	    }
-	}
+	    }*/
+	//}
 	if keyboard_check_pressed(ord("T")) {
 		instance_create(Player.x,Player.y,Portal);
 		thing = instance_create(x,y,PopupText)
@@ -559,11 +561,9 @@ decay = 300
 }
 
 
-if UberCont.opt_gamemode!=22
-{
 if (rad >  GetPlayerMaxRad())
 {
-if level < maxlevel
+if level < maxlevel || UberCont.opt_gamemode == 22
 {
 snd_play(sndLevelUp)
 //rad -= level*60
@@ -587,30 +587,6 @@ rad = GetPlayerMaxRad();
 if ultra_got[83]
 scrUnlockBSkin(21,"FOR GAINING THE MAXIMUM AMOUNT#OF RADS AS HORROR",0);
 }
-}
-}
-else//inifite level gamemode
-{
-
-if rad > level*180
-{
-
-snd_play(sndLevelUp)
-rad -= level*180
-level += 1
-
-repeat(level-6)
-instance_create(x,y,IDPDSpawn)
-with instance_create(x,y,PopupText)
-mytext = "LEVEL "+string(other.level)+"!"
-instance_create(x,y,LevelUp)
-skillpoints += 1
-
-
-
-}
-
-
 }
 
 //reload stuff

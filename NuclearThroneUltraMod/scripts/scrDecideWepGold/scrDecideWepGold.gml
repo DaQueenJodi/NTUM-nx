@@ -17,7 +17,6 @@ function scrDecideWepGold(argument0) {
 	}
 	else
 	wep = choose(40,41,42,43,44,45,280,281,283,284,285,286,287,288,290,315)
-
-
-
+	
+	return wep;
 }

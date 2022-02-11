@@ -87,7 +87,7 @@ function scrGameModes() {
 	gamemode_unlock[21] = "REACH L1 2-1";
 	gamemode_have[21] = 0;
 
-	gamemode[22] = "CHAOS MOD'S#INFINITE LEVELS#SLOW LEVELING";
+	gamemode[22] = "INFINITE LEVELS#SLOW LEVELING";
 	gamemode_unlock[22] = "BEAT THE #INVERTED CHESHIRE CAT";
 	gamemode_have[22] = 0;
 	

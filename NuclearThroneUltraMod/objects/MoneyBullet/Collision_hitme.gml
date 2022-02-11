@@ -6,7 +6,7 @@ with other
 {
     if sprite_index!=spr_hurt
     {
-    my_health -= 1
+    my_health -= other.dmg
     if instance_exists(Player){
     if Player.ultra_got[28]//roids ultra d
     {my_health -=1;}}

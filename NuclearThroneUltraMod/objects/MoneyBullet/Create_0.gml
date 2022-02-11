@@ -10,7 +10,7 @@ typ = 1 //0 = normal, 1 = deflectable, 2 = destructable, 3 = deflectable
 
 
 friction=0.1;
-
+dmg = 2;
 image_angle=random(360);
 
 rotationdir=choose(false,true);

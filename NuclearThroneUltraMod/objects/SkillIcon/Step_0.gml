@@ -219,6 +219,7 @@ race = Player.race;}
 }
 snd_play(skill_msnd[skill])//skill_msnd no more array sorry but memory
 
+if skill != maxskill + 1
 with UberCont
 {
 	ctot_skill_taken[other.skill] += 1;

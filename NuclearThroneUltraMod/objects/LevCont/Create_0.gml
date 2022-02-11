@@ -41,8 +41,9 @@ scrUnlockCSkin(20,"FOR SUCCESFULLY USING THE INVESTMENT ULTRA",0);
     
     exit;
 }
-else if (Player.skillsChosen>7)&&(Player.ultra_got[75]==0)//ULTRA! Player.level>9 not skelly redemption ultra a
-    {
+else if (Player.skillsChosen>7)&&(Player.ultra_got[75]==0)//ULTRA! Player.level>9 not skelly redemption ultra a Player.skillsChosen>7
+   {
+	Player.skillsChosen = 0;
     //UNLOCK MUTATION DOCTOR/SMITH
     scrUnlockCharacter(25,"FOR GETTING AN ULTRA MUTATION");
 
@@ -60,40 +61,56 @@ else
     skill3 = 3+((Player.race-1)*4);
     skill4 = 4+((Player.race-1)*4);
     //}
-    
+    if Player.ultra_got[skill1] + Player.ultra_got[skill2] + Player.ultra_got[skill3] + Player.ultra_got[skill4] > 3
+	{
+		if ((Player.race == 21 && Player.ultra_got[0] == 1) || Player.race != 21)
+		{
+			instance_create(x,y,LevCont);
+			instance_destroy();
+			exit;	
+		}
+	}
     
     if Player.crown != 8
 {
     if Player.race=21//horror
     {
-    
+    if (Player.ultra_got[skill1] == 0)
     with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
     skill = other.skill1
-    
+	
+    if (Player.ultra_got[skill2] == 0)
     with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
     skill = other.skill2
-    
+	
+    if (Player.ultra_got[skill3] == 0)
     with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
     skill = other.skill3
-    
+	
+    if (Player.ultra_got[skill4] == 0)
     with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
     skill = other.skill4
-    
+	
+    if (Player.ultra_got[0] == 0)
     with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
     skill = 0
     
     }
     else
     {
+	if (Player.ultra_got[skill1] == 0)
     with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-72,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
     skill = other.skill1
     
+	if (Player.ultra_got[skill2] == 0)
     with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
     skill = other.skill2
     
+	if (Player.ultra_got[skill3] == 0)
     with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
     skill = other.skill3
     
+	if (Player.ultra_got[skill4] == 0)
     with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+72,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
     skill = other.skill4
     }
@@ -103,20 +120,23 @@ else
 //CROWN OF DESTINYYYYYYY
 if Player.race=21//horror
 {
+do {
 chosenskill=choose(skill1,skill2,skill3,skill4)
+} until (Player.ultra_got[chosenskill] == 0)
 
 with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
 {
 skill = other.chosenskill}
+ 
+if (Player.ultra_got[skill1] + Player.ultra_got[skill2] + Player.ultra_got[skill3] + Player.ultra_got[skill4] > 1)
+{
+	do{
+	otherchosenskill=choose(skill1,skill2,skill3,skill4)
+	}until (otherchosenskill!=chosenskill && Player.ultra_got[otherchosenskill] == 0 )
 
-
-do{
-otherchosenskill=choose(skill1,skill2,skill3,skill4)
-}until (otherchosenskill!=chosenskill)
-
-with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-skill = other.otherchosenskill
-
+	with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+	skill = other.otherchosenskill
+}
 
 }
 else
@@ -140,46 +160,58 @@ exit;
     skill0=27;//patience
 
     
-    if scrSkillLeft(0,0,0,0)  
+    if scrSkillLeft(0,0,0,0) 
+	{
     do skill1 = ceil(random(maxskill))
     until Player.skill_got[skill1] = 0
+	}
     else
-    skill1=32
+    skill1=maxskill+1
     
-    if scrSkillLeft(0,0,0,skill1)  
+    if scrSkillLeft(0,0,0,skill1)
+	{
     do skill2 = ceil(random(maxskill))
     until skill2 != skill1 and Player.skill_got[skill2] = 0
+	}
     else
-    skill2=32
+    skill2=maxskill+1
     
-    if scrSkillLeft(0,0,skill2,skill1)  
+    if scrSkillLeft(0,0,skill2,skill1)
+	{
     do skill3 = ceil(random(maxskill))
     until skill3 != skill1 and skill3 != skill2 and Player.skill_got[skill3] = 0
+	}
     else
-    skill3=32
+    skill3=maxskill+1
     
-    if scrSkillLeft(0,skill3,skill2,skill1)  
+    if scrSkillLeft(0,skill3,skill2,skill1)
+	{
     do skill4 = ceil(random(maxskill))
     until skill4 != skill1 and skill4 != skill2 and skill4 != skill3 and Player.skill_got[skill4] = 0
+	}
     else
-    skill4=32
+    skill4=maxskill+1
 	
 	if scrSkillLeft(skill4,skill3,skill2,skill1)  
+	{
     do skill5 = ceil(random(maxskill))
     until skill5 != skill1 and skill5 != skill2 and skill5 != skill3 and skill5 != skill4 and Player.skill_got[skill5] = 0
+	}
     else
-    skill5=32
+    skill5=maxskill+1
     
     }
     else{//*/
     
     scrSkills()//maybe dont run this when ultra
     
-    if scrSkillLeft(0,0,0,0)  
+    if scrSkillLeft(0,0,0,0) 
+	{
     do skill1 = ceil(random(maxskill))
     until Player.skill_got[skill1] = 0
+	}
     else
-    skill1=32
+    skill1=maxskill+1
     
     if Player.heavyheart=3
     {
@@ -187,38 +219,48 @@ exit;
     Player.heavyheart=-999;//never again
     }
     
-    if scrSkillLeft(0,0,0,skill1) 
+    if scrSkillLeft(0,0,0,skill1)
+	{
     do skill2 = ceil(random(maxskill))
     until skill2 != skill1 and Player.skill_got[skill2] = 0
+	}
     else
-    skill2=32
+    skill2=maxskill+1
     
-    if scrSkillLeft(0,0,skill2,skill1) 
+    if scrSkillLeft(0,0,skill2,skill1)
+	{
     do skill3 = ceil(random(maxskill))
     until skill3 != skill1 and skill3 != skill2 and Player.skill_got[skill3] = 0
+	}
     else
-    skill3=32
+    skill3=maxskill+1
     
     if scrSkillLeft(0,skill3,skill2,skill1) 
+	{
     do skill4 = ceil(random(maxskill))
     until skill4 != skill1 and skill4 != skill2 and skill4 != skill3 and Player.skill_got[skill4] = 0
+	}
     else
-    skill4=32
+    skill4=maxskill+1
     
     
     if scrSkillLeft(skill4,skill3,skill2,skill1) 
+	{
     do skill5 = ceil(random(maxskill))
     until skill5 != skill1 and skill5 != skill2 and skill5 != skill3 and skill5 != skill4 and Player.skill_got[skill5] = 0
+	}
     else
-    skill5=32
+    skill5=maxskill+1
     
 	if Player.race=21//Horror
     {
 		if scrSkillLeft(skill5,skill4,skill3,skill2,skill1) 
+		{
 	    do skill6 = ceil(random(maxskill))
 	    until skill6 != skill1 and skill6 != skill2 and skill6 != skill3 and skill6 != skill4 and skill6 != skill5 and Player.skill_got[skill6] = 0
+		}
 	    else
-	    skill6=32
+	    skill6=maxskill+1
     }
     
     }
