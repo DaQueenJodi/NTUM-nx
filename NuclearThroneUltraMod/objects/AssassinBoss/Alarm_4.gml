@@ -2,6 +2,14 @@
 
 with instance_nearest(instance_furthest(x+random(120)-60,y+random(120)-60,Floor).x,instance_furthest(x+random(120)-60,y+random(120)-60,Floor).y,Floor)
 {
+	with other {
+		if place_meeting(other.x + 16, other.y + 16, Wall) {
+			alarm[1] = 1;
+			alarm[2] = 0;
+			exit;
+		}
+	}
+	
 	var assx = other.x;
 	var assy = other.y;
 	other.x = x+16;

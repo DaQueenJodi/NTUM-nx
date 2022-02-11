@@ -27,6 +27,12 @@ if UberCont.public=0 {
 		thing = instance_create(x + dcos(dangle)*128,y + dsin(dangle)*64,PopupText);
 		thing.mytext = "FISH?";
 	}
+	if keyboard_check_pressed(vk_decimal) {
+		var dangle = random(1)*360;
+	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*128,AssassinBoss);
+		thing = instance_create(x + dcos(dangle)*128,y + dsin(dangle)*128,PopupText);
+		thing.mytext = "ASS?";
+	}
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
 		thing.mytext = "RADS!";

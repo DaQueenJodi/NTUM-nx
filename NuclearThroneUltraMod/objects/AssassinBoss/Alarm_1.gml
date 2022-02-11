@@ -10,11 +10,11 @@ if target > 0
 		}
 		
 		if point_distance(target.x,target.y,x,y) < 80 && alarm[5] < 1 {//SMACK THAT
-			alarm[2]=15//Larger delay when smacking through a wall
+			alarm[2]=18
 			instance_create(x,y,Notice);
 			instance_create(x+5,y,Notice);
 			instance_create(x-5,y,Notice);
-			alarm[1]=18;
+			alarm[1]=25;
 		}
 		else
 		{
@@ -30,11 +30,11 @@ if target > 0
 	}
 	else if point_distance(target.x,target.y,x,y) < 70 && alarm[5] < 1
 	{//SMACK THAT ANYWAYS WE CAN GO THROUGH WALLS FK THAT SHIT
-		alarm[2]=9//the delay that everyone wants its longer here cause you wont expect this
+		alarm[2]=26//the delay that everyone wants its longer here cause you wont expect this
 		instance_create(x,y,Notice);
 		instance_create(x+5,y,Notice);
 		instance_create(x-5,y,Notice);
-		alarm[1]=14;
+		alarm[1]=30;
 	}
 	else if random(4) < 1
 	{

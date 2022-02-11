@@ -1,5 +1,5 @@
 raddrop = 20
-maxhealth = 210
+maxhealth = 500
 meleedamage = 0
 size = 1
 bloodempty=0
@@ -32,6 +32,7 @@ alarm[1] = 20+random(40)
 alarm[3] = alarm[1];//change sprite to normal idle
 wepangle = choose(-140,140)
 wepflip = 1
+aggression = 0;
 
 dodge=0;
 dodgethis=-1;
