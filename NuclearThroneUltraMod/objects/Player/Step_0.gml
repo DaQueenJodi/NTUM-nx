@@ -118,6 +118,19 @@ if UberCont.public=0 {
 		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
 		thing.mytext = "INCREASE LOOP! "+string(loops);
 	    }
+		if (keyboard_check_pressed(ord("H")))
+	    {
+			
+		var dangle = random(1)*360;
+		/*
+	    instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,HealthChest);
+		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
+		thing.mytext = "MORE HEALTH!";
+		*/
+		hard++;
+		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
+		thing.mytext = "INCREASE TIER/DIFFICULTY! "+string(hard);
+	    }
 	if (keyboard_check_pressed(ord("Y")))
 	    {
 	    wepmod1++

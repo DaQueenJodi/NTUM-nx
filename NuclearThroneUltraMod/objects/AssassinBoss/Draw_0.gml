@@ -17,12 +17,3 @@ if gunangle > 180
 draw_sprite_ext(sprAssassinBossSword,-1,x,y,1,wepflip,gunangle+wepangle,c_white,1)
 
 }
-
-
-if speed>1
-{
-draw_set_blend_mode(bm_add);
-draw_sprite_ext(sprAssassinBossDash,image_index-1,xprevious,yprevious,right,1,0,c_white,0.6);
-draw_set_blend_mode(bm_normal);
-}
-

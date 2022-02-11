@@ -60,8 +60,8 @@ with instance_create(x,y,Portal) type = 1
 
 if keyboard_check_pressed(ord("3"))
 {
-area = 4
-subarea = 2
+area = 3
+subarea = 0
 inverted=false;
 with enemy
 my_health = 0
