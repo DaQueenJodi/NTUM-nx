@@ -68,8 +68,12 @@ function scrBusinessHogInvestment() {
 
 
 	Player.hogpoints-=1
-
-
-
-
+/*
+	if Player.hogpoints > 1 || Player.skillpoints > 0
+	{
+		with LevCont
+			instance_destroy();
+		instance_create(x,y,LevCont);
+	}
+*/
 }

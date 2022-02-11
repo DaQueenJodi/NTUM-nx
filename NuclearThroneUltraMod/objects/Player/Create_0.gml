@@ -13,7 +13,9 @@ randomlySelected = false;
 //show_message("hi")
 //if joystick_exists(0) joy = 0 else joy = 0
 meleeimmunity=0;
-hogpoints=2;//INVESTMENT ULTRA amount of ultra mutations you get
+usedHogInvestment = false;
+hogpoints=0;//INVESTMENT ULTRA amount of ultra mutations you get
+horrorEtaken = false;
 markforhpreduction=false;//used by skeleton to bypass immunity frames
 raddrop = 0;
 hurtDuration = 17;//Additional iframes

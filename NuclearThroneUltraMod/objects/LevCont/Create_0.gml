@@ -24,30 +24,20 @@ dir += 1}
 }
 else
 {
-if Player.ultra_got[79] && Player.loops>1// && Player.area=105 && Player.subarea=1
+if Player.hogpoints > 1// && Player.area=105 && Player.subarea=1
 {
-scrUnlockCSkin(20,"FOR SUCCESFULLY USING THE INVESTMENT ULTRA",0);
+	scrUnlockCSkin(20,"FOR SUCCESFULLY USING THE INVESTMENT ULTRA",0);
     scrUltras()
-    //skill1=79;
-    /*Player.ultra_got[79]=0;
-    with instance_create(view_xview+view_wview/2,view_yview+view_hview-24,UltraIcon)
-    {skill = 79//other.skill1
-    ultimategamble=2;
-    exceptionclick=true;
-    }*/
     scrBusinessHogInvestment();
-    if Player.hogpoints<1
-    Player.ultra_got[79]=0;
     
     exit;
 }
-else if (Player.skillsChosen>7)&&(Player.ultra_got[75]==0)//ULTRA! Player.level>9 not skelly redemption ultra a Player.skillsChosen>7
-   {
-	Player.skillsChosen = 0;
+else if (Player.skillsChosen>7 || (Player.ultra_got[0] && Player.skillpoints < 2 && !Player.horrorEtaken))&&(Player.ultra_got[75]==0)//ULTRA! Player.level>9 not skelly redemption ultra a Player.skillsChosen>7
+{
     //UNLOCK MUTATION DOCTOR/SMITH
     scrUnlockCharacter(25,"FOR GETTING AN ULTRA MUTATION");
 
-if Player.ultra_got[0]=1//&&(Player.skillsChosen>7)
+if Player.ultra_got[0]=1 && !Player.horrorEtaken//&&(Player.skillsChosen>7)
 {
 
 scrUltraEHorror();

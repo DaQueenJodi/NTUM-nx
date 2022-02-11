@@ -202,18 +202,18 @@ rnglevelloop+=1;
 subarea=choose(1,2,3);
 }
 
-if ultra_got[79]&&loops=2&&area==1&&subarea==1
-{skillpoints+=1
-skillsChosen=10;}
-
 if race==21
 {
 audio_stop_sound(sndHorrorLoopTB);
 audio_stop_sound(sndHorrorLoop);
 horrorcharge=origincharge;
 }
-
-
+/*
+if ultra_got[0] && !horrorEtaken
+{
+	skillpoints++;
+}*/
+/*
 //Horror ultra E
 if ultra_got[0]
 {
@@ -237,7 +237,7 @@ skillsChosen=10;
 }
 
 }
-
+*/
 oasis=false;
 
 /* */
@@ -504,3 +504,5 @@ rushcrownlevels++;
 
 if rushcrownlevels=5
 scrUnlockCSkin(15,"FOR COMPLETING 5 AREAS IN A ROW#USING CROWN OF HASTE AS ATOM",0);
+
+	StartHogInvestment();

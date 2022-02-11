@@ -1,9 +1,10 @@
 if ( KeyCont.key_fire[p] = 1 and (mouse_x < x+22 and mouse_y < y+22 and mouse_x > x-22 and mouse_y > y-22) && (alarm[0]<1) ) || (exceptionclick && (alarm[0]<1))
 {
+	if Player.ultra_got[0] == 1
+		Player.horrorEtaken = true;
 var regularprocedure=true;
 Player.ultra_got[skill] = 1
 Player.skillpoints -= 1
-Player.skillsChosen+=1;
 
 if skill = 0
 {
@@ -114,55 +115,59 @@ if skill==78//business hog more options armour
 if skill == 73//REDEMPTION Skeleton Ultra A
 {
 
-with Player
-{instance_destroy();
-}
+
 
 
 with GenCont
 race=Player.race;
 
-with Corpse
-instance_destroy();
+
 
 instance_create(x,y,Player);
-
-with Player//Data to keep
+with Player
 {
-race = other.race
-crown = other.crown
-lastarea = other.lastarea;
-area = other.area//other.lastarea;
-loops = other.loops;
-hard = other.hard;
-kills = other.kills;
-subarea=other.subarea;
-ultra_got[75]=1;//you picked redemption
-skillpoints=10;
-level=10;
+	instance_destroy();
 
-wep=other.wep
-bwep=other.bwep
+	with Player//Data to keep
+	{
+	race = other.race
+	crown = other.crown
+	lastarea = other.lastarea;
+	area = other.area//other.lastarea;
+	loops = other.loops;
+	hard = other.hard;
+	kills = other.kills;
+	subarea=other.subarea;
+	ultra_got[75]=1;//you picked redemption
+	skillpoints=other.level;
+	level=other.level;
 
-wepmod1=other.wepmod1
-wepmod2=other.wepmod2
-wepmod3=other.wepmod3
-wepmod4=other.wepmod4
+	wep=other.wep
+	bwep=other.bwep
 
-bwepmod1=other.bwepmod1
-bwepmod2=other.bwepmod2
-bwepmod3=other.bwepmod3
-bwepmod4=other.bwepmod4
+	wepmod1=other.wepmod1
+	wepmod2=other.wepmod2
+	wepmod3=other.wepmod3
+	wepmod4=other.wepmod4
+
+	bwepmod1=other.bwepmod1
+	bwepmod2=other.bwepmod2
+	bwepmod3=other.bwepmod3
+	bwepmod4=other.bwepmod4
 
 
-//give the ammos
-ammo[1] = typ_amax[1];
-ammo[2] = typ_amax[2];
-ammo[3] = typ_amax[3];
-ammo[4] = typ_amax[4];
-ammo[5] = typ_amax[5];
-//event_perform(ev_other,ev_room_end);
+	//give the ammos
+	ammo[1] = typ_amax[1];
+	ammo[2] = typ_amax[2];
+	ammo[3] = typ_amax[3];
+	ammo[4] = typ_amax[4];
+	ammo[5] = typ_amax[5];
+	//event_perform(ev_other,ev_room_end);
+	}
 }
+
+with Corpse
+instance_destroy();
 
 }
 
@@ -187,51 +192,47 @@ if skill == 76//skelly ultra D
     race=Player.race;
     
     with Player
-    {instance_destroy();
-    }
+    {
+		instance_destroy();
+		with instance_create(x,y,Player)//Data to keep
+		{
+		bskin = other.bskin
+		race = other.race
+		crown = other.crown
+		lastarea = other.lastarea;
+		area = other.area//other.lastarea;
+		loops = other.loops;
+		hard = other.hard;
+		kills = other.kills;
+		subarea=other.subarea;
+		boostLevel = other.level;
 
+		skeletonlives=other.skeletonlives;
 
+		wep=other.wep
+		bwep=other.bwep
+
+		wepmod1=other.wepmod1
+		wepmod2=other.wepmod2
+		wepmod3=other.wepmod3
+		wepmod4=other.wepmod4
+
+		bwepmod1=other.bwepmod1
+		bwepmod2=other.bwepmod2
+		bwepmod3=other.bwepmod3
+		bwepmod4=other.bwepmod4
+
+		//give the ammos
+		ammo[1] = typ_amax[1];
+		ammo[2] = typ_amax[2];
+		ammo[3] = typ_amax[3];
+		ammo[4] = typ_amax[4];
+		ammo[5] = typ_amax[5];
+		//event_perform(ev_other,ev_room_end);
+		}
+	}
     with Corpse
     instance_destroy();
-    
-
-	with instance_create(x,y,Player)//Data to keep
-	{
-	bskin = other.bskin
-	race = other.race
-	crown = other.crown
-	lastarea = other.lastarea;
-	area = other.area//other.lastarea;
-	loops = other.loops;
-	hard = other.hard;
-	kills = other.kills;
-	subarea=other.subarea;
-	boostLevel = other.level;
-
-	skeletonlives=other.skeletonlives;
-
-	wep=other.wep
-	bwep=other.bwep
-
-	wepmod1=other.wepmod1
-	wepmod2=other.wepmod2
-	wepmod3=other.wepmod3
-	wepmod4=other.wepmod4
-
-	bwepmod1=other.bwepmod1
-	bwepmod2=other.bwepmod2
-	bwepmod3=other.bwepmod3
-	bwepmod4=other.bwepmod4
-
-	//give the ammos
-	ammo[1] = typ_amax[1];
-	ammo[2] = typ_amax[2];
-	ammo[3] = typ_amax[3];
-	ammo[4] = typ_amax[4];
-	ammo[5] = typ_amax[5];
-	//event_perform(ev_other,ev_room_end);
-	}
-    
     }
     else//pick out ultras
     {

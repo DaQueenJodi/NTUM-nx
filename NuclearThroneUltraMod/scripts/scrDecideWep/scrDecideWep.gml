@@ -18,7 +18,7 @@ function scrDecideWep(wepTier, maxTries = 10, cursed = 0) {
 			}
 			if Player.ultra_got[29]==1
 			{
-				minWepArea = 6;
+				minWepArea = min(6,Player.hard+wepTier);
 				maxTries += 8;
 			}
 			

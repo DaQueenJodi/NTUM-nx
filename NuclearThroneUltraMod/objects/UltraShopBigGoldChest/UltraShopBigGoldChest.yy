@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskShopBuff",
-    "path": "sprites/mskShopBuff/mskShopBuff.yy",
+    "name": "mskUltraShopMenuGiantGoldenChest",
+    "path": "sprites/mskUltraShopMenuGiantGoldenChest/mskUltraShopMenuGiantGoldenChest.yy",
   },
   "persistent": false,
   "parentObjectId": {

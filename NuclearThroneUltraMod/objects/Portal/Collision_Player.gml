@@ -8,7 +8,7 @@ endgame = 30;
 //ROBOT
     if Player.race = 8
     {
-    if (Player.ultra_got[29]==1||Player.ultra_got[30]==1||Player.ultra_got[31]==1||Player.ultra_got[32]==1)
+    if (Player.race == 8 && (Player.ultra_got[29]==1||Player.ultra_got[30]==1||Player.ultra_got[31]==1||Player.ultra_got[32]==1))
     {
     with WepPickup
     {

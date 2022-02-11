@@ -3033,6 +3033,7 @@
     {"id":{"name":"sndFishRollUpg","path":"sounds/sndFishRollUpg/sndFishRollUpg.yy",},"order":15,},
     {"id":{"name":"sndMutant1Chst","path":"sounds/sndMutant1Chst/sndMutant1Chst.yy",},"order":17,},
     {"id":{"name":"sndMutant1Wrld","path":"sounds/sndMutant1Wrld/sndMutant1Wrld.yy",},"order":19,},
+    {"id":{"name":"StartHogInvestment","path":"scripts/StartHogInvestment/StartHogInvestment.yy",},"order":48,},
     {"id":{"name":"sndMutant1Valt","path":"sounds/sndMutant1Valt/sndMutant1Valt.yy",},"order":21,},
     {"id":{"name":"sndMutant1Thrn","path":"sounds/sndMutant1Thrn/sndMutant1Thrn.yy",},"order":23,},
     {"id":{"name":"sndMutant2Cnfm","path":"sounds/sndMutant2Cnfm/sndMutant2Cnfm.yy",},"order":1,},
