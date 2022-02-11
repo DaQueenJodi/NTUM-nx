@@ -3,6 +3,8 @@ maxhealth = 115
 meleedamage = 3
 size = 3
 
+shooting = false;
+sucking = false;
 
 event_inherited();
 
@@ -16,7 +18,8 @@ spr_walk = sprOasisBossWalk
 spr_hurt = sprOasisBossHurt
 spr_dead = sprOasisBossDead
 spr_fire = sprOasisBossFire
-
+spr_startfire = sprOasisBossFireStart
+spr_endfire = sprOasisBossFireEnd
 
 snd_dead = sndOasisBossDead;
 snd_hurt = sndOasisBossHurt;

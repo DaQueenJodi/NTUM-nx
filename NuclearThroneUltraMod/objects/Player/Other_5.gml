@@ -29,7 +29,7 @@ if UberCont.opt_gamemode == 23 && !instance_exists(Menu) && instance_number(Play
 		level = other.level;
 		rad = other.rad;
 		visible=true;
-		snd_play(snd_wrld);
+		snd_play(snd_wrld, 0, false, false);
 		wep = other.wep;
 		bwep = other.bwep;
 		cwep = other.cwep;

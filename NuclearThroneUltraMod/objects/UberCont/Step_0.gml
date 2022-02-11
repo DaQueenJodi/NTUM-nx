@@ -10,7 +10,7 @@ if instance_exists(Player)
 kills=Player.kills
 with Player
 instance_destroy()
-snd_play(sndMutant0Cnfm)
+snd_play(sndMutant0Cnfm, 0, false, false)
 race = UberCont.racepick
 crown = 1
 //scrRaces()

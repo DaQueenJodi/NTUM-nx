@@ -23,9 +23,9 @@ if UberCont.public=0 {
 //hacks
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*64,ExploGuardian);
+	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*64,BigFish);
 		thing = instance_create(x + dcos(dangle)*128,y + dsin(dangle)*64,PopupText);
-		thing.mytext = "boom?";
+		thing.mytext = "FISH?";
 	}
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
@@ -787,7 +787,7 @@ lsthealth += 1
 if sprite_index != spr_hurt and lsthealth > my_health
 {
 if drawlowhp < 30 and my_health <= 4
-snd_play(snd_lowh)
+snd_play(snd_lowh, 0, false, false)
 drawlowhp = 30
 lsthealth -= 0.5
 
