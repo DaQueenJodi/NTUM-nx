@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enviroment",
-    "path": "folders/Sprites/Enviroment.yy",
+    "name": "Crystal Caves",
+    "path": "folders/Sprites/Enviroment/Tiles/Crystal Caves.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprCaveDecal",

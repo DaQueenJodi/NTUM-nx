@@ -24,7 +24,8 @@ if skill_got[8] = 1 && other.team != 0//Dealing the damage with gamma guts
 	    }
 	    if (other.my_health<=0)//gamma guts kill?
 	    {
-	    snd_play(sndGammaGutsKill);
+			snd_play(sndGammaGutsKill);
+			instance_create(x,y,GammaGutsBlast);
 	    }
 	}
 

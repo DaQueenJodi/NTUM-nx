@@ -129,7 +129,36 @@ function scrPopulate() {
 			sprite_index = sprPalaceTopDecal;	
 		}
 	}
-	else if spawnarea = 1 || spawnarea = 105
+	else if spawnarea = 114//Jungle
+	{
+		if instance_exists(GenCont){
+		if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
+		{
+		instance_create(x-64+16,y+16,TopDecal)
+		}
+
+		if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
+		{
+		instance_create(x+64+16,y+16,TopDecal)
+		}
+
+		if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
+		{
+		instance_create(x+16,y+64+16,TopDecal)
+		}
+
+		if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
+		{
+		instance_create(x+16,y-64+16,TopDecal)
+		}
+
+		}
+		with TopDecal
+		{
+			sprite_index = sprJungleDecal;	
+		}
+	}
+	else if spawnarea = 1 || spawnarea = 105 || spawnarea == 113
 	{
 	if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
 	{
@@ -174,6 +203,14 @@ function scrPopulate() {
 	with TopDecal
 	sprite_index=sprInvertedDesertTopDecal;
 	}
+	else if spawnarea == 113
+	{
+		with Bones
+		sprite_index = sprNightBones;
+
+		with TopDecal
+		sprite_index=sprNightDesertTopDecal;
+	}
 
 	//with Bones
 	//sprite_index = sprSewerDecal
@@ -195,26 +232,7 @@ function scrPopulate() {
 	}
 
 
-	if instance_exists(GenCont){
-	if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
-	{
-	instance_create(x-64+16,y+16,TopDecal)
-	}
-
-	if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
-	{
-	instance_create(x+64+16,y+16,TopDecal)
-	}
-
-	if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
-	{
-	instance_create(x+16,y+64+16,TopDecal)
-	}
-
-	if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
-	{
-	instance_create(x+16,y-64+16,TopDecal)
-	}
+	TopDecals();
 	with TopDecal
 		sprite_index = sprSavannaTopDecal;
 	}
@@ -222,71 +240,79 @@ function scrPopulate() {
 	}
 	if spawnarea = 3 || spawnarea = 106
 	{
-	if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
-	{
-	if random(7) < 1
-	instance_create(x,y,Bones)
-	if random(7) < 1
-	instance_create(x,y+16,Bones)
-	if random(7) < 1
-	{
-	with instance_create(x+32,y,Bones)
-	image_xscale = -1}
-	if random(7) < 1{
-	with instance_create(x+32,y+16,Bones)
-	image_xscale = -1}
+		if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
+		{
+		if random(7) < 1
+		instance_create(x,y,Bones)
+		if random(7) < 1
+		instance_create(x,y+16,Bones)
+		if random(7) < 1
+		{
+		with instance_create(x+32,y,Bones)
+		image_xscale = -1}
+		if random(7) < 1{
+		with instance_create(x+32,y+16,Bones)
+		image_xscale = -1}
+		}
+		TopDecals();
+		
+		with TopDecal
+		sprite_index = sprScrapTopDecal;
+		with Bones
+		sprite_index = sprScrapDecal
 	}
-	with Bones
-	sprite_index = sprScrapDecal
-	}
+	
 	if spawnarea = 5
 	{
-	if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
-	{
-	if random(7) < 1
-	instance_create(x,y,Bones)
-	if random(7) < 1
-	instance_create(x,y+16,Bones)
-	if random(7) < 1
-	{
-	with instance_create(x+32,y,Bones)
-	image_xscale = -1}
-	if random(7) < 1{
-	with instance_create(x+32,y+16,Bones)
-	image_xscale = -1}
-	}
-	with Bones
-	sprite_index = sprIceDecal
+		if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
+		{
+		if random(7) < 1
+		instance_create(x,y,Bones)
+		if random(7) < 1
+		instance_create(x,y+16,Bones)
+		if random(7) < 1
+		{
+		with instance_create(x+32,y,Bones)
+		image_xscale = -1}
+		if random(7) < 1{
+		with instance_create(x+32,y+16,Bones)
+		image_xscale = -1}
+		}
+		with Bones
+		sprite_index = sprIceDecal
 	}
 	if spawnarea = 4 || spawnarea = 111
 	{
-	if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
-	{
-	if random(9) < 1
-	instance_create(x,y,Bones)
-	if random(9) < 1
-	instance_create(x,y+16,Bones)
-	if random(9) < 1
-	{
-	with instance_create(x+32,y,Bones)
-	image_xscale = -1}
-	if random(9) < 1{
-	with instance_create(x+32,y+16,Bones)
-	image_xscale = -1}
-	}
-	with Bones
-	sprite_index = sprCaveDecal
+		if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
+		{
+		if random(9) < 1
+		instance_create(x,y,Bones)
+		if random(9) < 1
+		instance_create(x,y+16,Bones)
+		if random(9) < 1
+		{
+		with instance_create(x+32,y,Bones)
+		image_xscale = -1}
+		if random(9) < 1{
+		with instance_create(x+32,y+16,Bones)
+		image_xscale = -1}
+		}
+		with Bones
+		sprite_index = sprCaveDecal
 	}
 	if spawnarea = 2
 	{
-	if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y) and random(10) < 1
-	{
-	instance_create(x,y+16,Bones)
-	with instance_create(x+32,y+16,Bones)
-	image_xscale = -1
-	}
-	with Bones
-	sprite_index = sprSewerDecal
+		if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y) and random(10) < 1
+		{
+		instance_create(x,y+16,Bones)
+		with instance_create(x+32,y+16,Bones)
+		image_xscale = -1
+		}
+		TopDecals();
+		with TopDecal
+		sprite_index = sprSewerTopDecal
+		with Bones
+		sprite_index = sprSewerDecal
 	}
 	if spawnarea = 7|| spawnarea=108//CUSTOM
 	{

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enviroment",
-    "path": "folders/Sprites/Enviroment.yy",
+    "name": "Sewers",
+    "path": "folders/Sprites/Enviroment/Tiles/Sewers.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSewerDecal",
