@@ -128,7 +128,6 @@ betterrabbitpaw=0.14;
 betterrecyclegland=0.1;
 betterboltmarrow=0;
 
-
 scrRaces()
 scrSkills()
 scrUltras()

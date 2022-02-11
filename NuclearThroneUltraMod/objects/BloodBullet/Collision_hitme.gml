@@ -18,10 +18,7 @@ with(instance_create(x,y,BulletHit))
 if instance_exists(Player){
 if Player.skill_got[16] = 1 and random(3) < 2+Player.betterrecyclegland
 {Player.ammo[1] += 1
-dir = instance_create(x,y,PopupText)
-dir.mytext = "+1";
-dir.alarm[1]=5;
-dir.time=5;}}
+instance_create(x,y,RecycleGland);}}
 
 }
 

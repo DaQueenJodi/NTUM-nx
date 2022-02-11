@@ -18,9 +18,7 @@ sprite_index=sprHeavyBulletHit;
 if instance_exists(Player){
 if Player.skill_got[16] = 1 and random(3) < 0.6 +(Player.betterrecyclegland*0.4)//2.2
 {Player.ammo[1] += 4
-dir = instance_create(x,y,PopupText)
-dir.mytext = "+4"
-dir.alarm[1]=5;}}
+instance_create(x,y,RecycleGland);}}
 
 if other.team!=0
 hits--;

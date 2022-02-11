@@ -15,10 +15,7 @@ motion_add(other.direction,6)
 if instance_exists(Player){
 if Player.skill_got[16] = 1 and random(3) < 1.2 + Player.betterrecyclegland
 {Player.ammo[1] += 10
-dir = instance_create(x,y,PopupText)
-dir.mytext = "+10"
-dir.alarm[1]=5;
-dir.time=5;}}
+instance_create(x,y,RecycleGland);}}
 
 }
 
