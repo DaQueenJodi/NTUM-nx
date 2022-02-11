@@ -25,7 +25,7 @@ with Player//Data to keep
 	event_perform(ev_alarm,0);
 	//event_perform(ev_other,ev_room_end);
 	visible=true;
-	snd_play(snd_wrld);
+	snd_play(snd_wrld, 0, false, false);
 	wep = 0;
 }
 

@@ -18,7 +18,7 @@ deaths += UberCont.ctot_dead[dir]
 audio_stop_all()
 
 if (confirmSound) {
-	snd_play(confirmSound);
+	snd_play(confirmSound, 0, false, false);
 	confirmSound = false;
 }
 

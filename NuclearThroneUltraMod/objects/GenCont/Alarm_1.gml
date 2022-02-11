@@ -12,9 +12,9 @@ instance_create(x,y,IDPDSpawn)
 }
 }
 if Player.area = 100{
-snd_play(Player.snd_valt)}
+snd_play(Player.snd_valt, 0, false, false)}
 else if Player.subarea = 1{
-snd_play(Player.snd_wrld)}
+snd_play(Player.snd_wrld, 0, false, false)}
 if Player.race = 6
 {
 

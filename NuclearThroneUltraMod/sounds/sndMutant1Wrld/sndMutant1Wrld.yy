@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndMutant1Wrld",
-  "duration": 0.0,
+  "duration": 1.306667,
   "parent": {
     "name": "Fish",
     "path": "folders/Sounds/Player/Fish.yy",

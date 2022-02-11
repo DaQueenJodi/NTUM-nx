@@ -16,6 +16,7 @@ spr_idle = sprAssassinBossSit
 spr_walk = sprAssassinBossDash
 spr_hurt = sprAssassinBossHurt
 spr_dead = sprAssassinBossDead
+spr_stunned = sprAssassinBossStunned
 
 
 
