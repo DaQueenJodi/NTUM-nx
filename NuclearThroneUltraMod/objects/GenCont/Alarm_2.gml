@@ -43,8 +43,12 @@ instance_create(x+16,y+16,RogueAmmoChest);
 
 }
 
-
-if Player.area = 100
+if UberCont.opt_gamemode == 25
+{
+	Player.x = SurvivalArenaStarter.x;
+	Player.y = SurvivalArenaStarter.y;	
+}
+else if Player.area = 100
 {
 with instance_furthest(Player.x,Player.y,Floor)
 {

@@ -47,9 +47,5 @@ function scrDecideWep(wepTier, maxTries = 10, cursed = 0) {
 		}
 		until (wep_area[wep] != -1)
 	}
-
 	return wep;
-
-
-
 }

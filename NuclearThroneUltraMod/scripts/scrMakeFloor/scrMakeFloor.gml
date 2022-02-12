@@ -482,8 +482,32 @@ function scrMakeFloor() {
 			instance_create(x,y+32,Floor)
 		}
 	} 
-	
-	if area = 100 { if random(8) < 1//CROWN VAULT
+	if UberCont.opt_gamemode == 25 //Survival Arena
+	{
+		//instance_create(x,y,Floor)
+		
+		var xx = x;
+		var yy = y;
+		var circleHeight = 10;
+		var circleWidth = 10;
+		for (var iy = 0; iy < circleHeight; iy ++) {
+			for (var ix = 0; ix < circleWidth; ix ++) {
+				if !(iy == 0 && ix == 0) &&
+				!(iy == circleHeight -1 && ix == circleWidth - 1) &&
+				!(iy == circleHeight -1 && ix == 0) &&
+				!(iy == 0 && ix == circleWidth - 1)
+				{
+					instance_create(x + (32*ix),
+					y + (32*iy),Floor);
+					if (iy == circleHeight*0.5 && ix == circleWidth*0.5)
+					{
+						instance_create(x + (32*ix),y + (32*iy),SurvivalArenaStarter);
+					}
+				}
+			}
+		}
+	}
+	else if area = 100 { if random(8) < 1//CROWN VAULT
 	{
 
 	dir = choose(1,2)

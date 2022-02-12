@@ -98,11 +98,11 @@ function scrGameModes() {
 	gamemode[24] = "SHARP STRESS";
 	gamemode_unlock[24] = "SHARP STRESS x10";
 	gamemode_have[24] = 0;
-	/*
-	gamemode[24] = "SURVIVAL ARENA";
-	gamemode_unlock[24] = "SURVIVE TO LOOP 3 OR SOMETHING";
-	gamemode_have[24] = 0;
-	/*
+	
+	gamemode[25] = "SURVIVAL ARENA";
+	gamemode_unlock[25] = "SURVIVE TO LOOP 3 OR SOMETHING";
+	gamemode_have[25] = 0;
+	
 	/*
 	gamemode[23] = "MELEE ONLY";
 	gamemode_description[23] = "YOU ONLY GET MELEE WEAPONS#ALWAYS GET LONG ARMS";
@@ -136,9 +136,10 @@ function scrGameModes() {
 	gamemodeOrder[19] = 7;
 	gamemodeOrder[20] = 21;
 	gamemodeOrder[21] = 22;
-	gamemodeOrder[22] = 17;
+	gamemodeOrder[22] = 25;
 	gamemodeOrder[23] = 23;
 	gamemodeOrder[24] = 24;
+	gamemodeOrder[25] = 17;
 
 
 

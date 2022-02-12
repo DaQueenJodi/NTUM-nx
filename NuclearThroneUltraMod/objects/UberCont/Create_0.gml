@@ -1,8 +1,8 @@
 //VERSION STUFF ETC.
 win8 = 1;
 version = 000//23 is final probably
-public = 1//1 is no cheats and release
-defaultPublic = 1;
+public = 0//1 is no cheats and release
+defaultPublic = 0;
 //if file_exists("icheat.txt") or file_exists("ICHEAT.txt") or file_exists("ICHEAT.TXT") or file_exists("icheat.TXT")
 //public = 0
 	show_debug_overlay(true);
