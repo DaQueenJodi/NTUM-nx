@@ -19,8 +19,8 @@ if Player.race=23
 {
 team = 2;
 //the normal scale
-image_xscale += 0.1
-image_yscale += 0.1
+image_xscale += 0.2
+image_yscale += 0.2
 }
 }
 
@@ -30,7 +30,7 @@ if instance_exists(Player)
 {
 //FROG POTENCY
 if Player.ultra_got[92]
-dmg=4;
+dmg=5;
 
 }
 

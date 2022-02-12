@@ -2031,7 +2031,7 @@ function scrPowers() {
 
 	with instance_create(x,y,ToxicGas)
 	{
-	motion_add(random(360),0.3+random(1)+(other.skill_got[5]*2));
+		motion_add(random(360),1.3+random(2)+(other.skill_got[5]*2));
 	}
 
 	}

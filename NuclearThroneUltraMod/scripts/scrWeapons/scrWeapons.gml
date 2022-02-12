@@ -2796,7 +2796,7 @@ function scrWeapons() {
 	wep_load[253] = 12
 	wep_cost[253] = 2
 	wep_sprt[253] = sprShankGun
-	wep_area[253] = 9
+	wep_area[253] = 8
 	wep_text[253] = "long arms, bolt marrow and shotgun shoulders#all work on this gun"
 	wep_swap[253] = sndSwapSword
 	wep_rad[253] = 0;
@@ -3016,7 +3016,7 @@ function scrWeapons() {
 	wep_load[273] = 50
 	wep_cost[273] = 30
 	wep_sprt[273] = sprGyroBurster
-	wep_area[273] = 14
+	wep_area[273] = 11
 	wep_text[273] = "bwbwpebffpwefnowobfo"
 	wep_swap[273] = sndSwapPistol
 	wep_rad[273] = 0;

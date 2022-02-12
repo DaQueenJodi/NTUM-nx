@@ -38,3 +38,11 @@ snd_play(sndFrogClose)
 if my_health<1
 instance_destroy();
 
+if instance_exists(enemy)
+{
+	var nearest = instance_nearest(x,y,enemy);
+	if collision_line(x,y,nearest.x,nearest.y,Wall,false,false) < 0
+	{
+	motion_add(point_direction(x,y,nearest.x,nearest.y),0.8);
+	}
+}

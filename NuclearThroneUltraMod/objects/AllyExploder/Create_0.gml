@@ -1,3 +1,5 @@
+event_inherited();
+image_speed = 0.4;
 raddrop = 5
 maxhealth = 5
 meleedamage = 0
