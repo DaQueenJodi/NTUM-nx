@@ -8,5 +8,5 @@ image_speed = 0
 
 visible = 1
 
-normalDepth = depth;
-lowerDepth = depth-100;
+normalDepth = depth - 1;
+lowerDepth = depth;
