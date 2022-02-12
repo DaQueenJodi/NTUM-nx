@@ -1,5 +1,6 @@
 event_inherited()
 
+
 if (alarm[4] < 0) {
 	aggression += 1;
 	
@@ -118,14 +119,16 @@ if (alarm[4] < 0) {
 				alarm[6] += 2
 		    }
 	    }
-	} else if aggression > 300 && instance_exists(Player) && point_distance(x, y, Player.x, Player.y) > 100 {
-		with instance_nearest(Player.x + (random(2) - 1) * (random(16)+16),Player.y + (random(2) - 1) * (random(16)+16),Floor)
+	} else if aggression > 300 && target > 0 && point_distance(x, y, target.x, target.y) > 100 {
+		do
+		{
+			with instance_nearest(target.x + (random(2) - 1) * (random(32)+64),target.y + (random(2) - 1) * (random(32)+64),Floor)
 			{
 				with other {
 					if place_meeting(other.x + 16, other.y + 16, Wall) {
 						alarm[1] = 1;
 						alarm[2] = 0;
-						exit;
+						continue;
 					}
 				}
 				var assx = other.x;
@@ -139,7 +142,25 @@ if (alarm[4] < 0) {
 					motion_add(random(360),1+random(3))
 				}
 			}
+		}
+		until (point_distance(x,y,target.x,target.y) > 64)
 	}
 } else if sprite_index != spr_hurt {
 	sprite_index = spr_stunned;
+}
+if target > 0
+{
+	if target.x < x
+		right = -1;
+	else
+		right = 1;
+}
+if alarm[2] > 0 && alarm[2] < 20
+{
+	speed *= 0.1;
+	if (target > 0)
+	{
+		var dir = point_direction(x,y,target.x,target.y);
+		motion_add(dir,1);
+	}
 }

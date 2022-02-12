@@ -4,7 +4,7 @@ if speed > 2
 	ds_list_insert(afterImage,0,{
 		sp : sprite_index,
 		ii: image_index,
-		xs: image_xscale,
+		xs: right,
 		time: afterImageDuration,
 		xx: x,
 		yy: y
