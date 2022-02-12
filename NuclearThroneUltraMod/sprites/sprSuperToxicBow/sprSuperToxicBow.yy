@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 4,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 26,
   "height": 14,
+  "textureGroupId": {
+    "name": "Weapons",
+    "path": "texturegroups/Weapons",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,

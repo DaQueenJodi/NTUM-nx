@@ -17,8 +17,8 @@
   "width": 18,
   "height": 13,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Weapons",
+    "path": "texturegroups/Weapons",
   },
   "swatchColours": null,
   "gridX": 0,

@@ -4611,7 +4611,7 @@ function scrFire2() {
 	repeat(8)
 	{
 	with instance_create(x,y,Splinter)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(50)-25)*other.accuracy,15+random(10))
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(70)-35)*other.accuracy,15+random(10))
 	image_angle = direction
 	team = other.team}
 	}
@@ -4641,6 +4641,26 @@ function scrFire2() {
 	wkick = 2.2
 
 	break;
+	
+	//NADER
+	case 367:
+
+	snd_play(sndGrenade)
+
+	with instance_create(x,y,DirectorGrenade)
+	{
+	sticky = 0
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*other.accuracy,5)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 4
+	wkick = 6
+
+	break;
+
 
 	}//end of switch part 2!
 

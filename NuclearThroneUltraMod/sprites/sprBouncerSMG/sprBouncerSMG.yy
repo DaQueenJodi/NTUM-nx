@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 18,
   "height": 11,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBouncerSMG","path":"sprites/sprBouncerSMG/sprBouncerSMG.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprBouncerSMG",
     "tags": [],
     "resourceType": "GMSequence",
   },

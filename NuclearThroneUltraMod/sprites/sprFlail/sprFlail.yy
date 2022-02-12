@@ -17,16 +17,16 @@
   "width": 32,
   "height": 24,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Weapons",
+    "path": "texturegroups/Weapons",
   },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"ae87d1ae-d29d-43a5-8faa-d81de4073143","path":"sprites/sprFlail/sprFlail.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ae87d1ae-d29d-43a5-8faa-d81de4073143","path":"sprites/sprFlail/sprFlail.yy",},"LayerId":{"name":"d6e91860-3bbd-4ab7-bdfe-6f89f5e142ed","path":"sprites/sprFlail/sprFlail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"ae87d1ae-d29d-43a5-8faa-d81de4073143","path":"sprites/sprFlail/sprFlail.yy",},"LayerId":{"name":"a118e9fd-3c8f-479f-be06-a4609f337be4","path":"sprites/sprFlail/sprFlail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"ae87d1ae-d29d-43a5-8faa-d81de4073143","path":"sprites/sprFlail/sprFlail.yy",},"LayerId":{"name":"d6e91860-3bbd-4ab7-bdfe-6f89f5e142ed","path":"sprites/sprFlail/sprFlail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprFlail","path":"sprites/sprFlail/sprFlail.yy",},"resourceVersion":"1.0","name":"ae87d1ae-d29d-43a5-8faa-d81de4073143","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"36906461-ff7a-4934-97af-8c66cc3b6680","path":"sprites/sprFlail/sprFlail.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"36906461-ff7a-4934-97af-8c66cc3b6680","path":"sprites/sprFlail/sprFlail.yy",},"LayerId":{"name":"a118e9fd-3c8f-479f-be06-a4609f337be4","path":"sprites/sprFlail/sprFlail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

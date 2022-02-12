@@ -3988,7 +3988,7 @@ function scrWeapons() {
 	wep_type[361] = 5
 	wep_auto[361] = 0
 	wep_load[361] = 10
-	wep_cost[361] = 4
+	wep_cost[361] = 3
 	wep_sprt[361] = sprRewirer
 	wep_area[361] = 12
 	wep_text[361] = "connect the dots"
@@ -4011,7 +4011,7 @@ function scrWeapons() {
 	wep_auto[363] = 1
 	wep_load[363] = 2
 	wep_cost[363] = 1
-	wep_sprt[363] = sprMinigun
+	wep_sprt[363] = sprSplinterMinigun
 	wep_area[363] = 8
 	wep_text[363] = "like a swarm of bees"
 	wep_swap[363] = sndSwapMachinegun
@@ -4022,7 +4022,7 @@ function scrWeapons() {
 	wep_auto[364] = 1
 	wep_load[364] = 30
 	wep_cost[364] = 20
-	wep_sprt[364] = sprKrakenGun
+	wep_sprt[364] = sprDisperseKrakenGun
 	wep_area[364] = 10
 	wep_text[364] = "mobilize the kraken!"
 	wep_swap[364] = sndSwapExplosive
@@ -4034,7 +4034,7 @@ function scrWeapons() {
 	wep_auto[365] = 0
 	wep_load[365] = 25
 	wep_cost[365] = 2
-	wep_sprt[365] = sprHeavyNader
+	wep_sprt[365] = sprSplinterShotgun
 	wep_area[365] = 7
 	wep_text[365] = "nailgun"
 	wep_swap[365] = sndSwapBow
@@ -4046,11 +4046,22 @@ function scrWeapons() {
 	wep_auto[366] = 0
 	wep_load[366] = 9
 	wep_cost[366] = 1
-	wep_sprt[366] = sprHeavyNader
+	wep_sprt[366] = sprBouncerRevolver
 	wep_area[366] = 1
 	wep_text[366] = "hey how you doing"
 	wep_swap[366] = sndSwapPistol
 	wep_rad[366] = 0;
+	
+	wep_name[367] = "DIRECTOR GRENADE LAUNCHER"
+	wep_type[367] = 4
+	wep_auto[367] = 0
+	wep_load[367] = 25
+	wep_cost[367] = 1
+	wep_sprt[367] = sprDirectorGrenadeLauncher
+	wep_area[367] = 3
+	wep_text[367] = "I am the director"
+	wep_swap[367] = sndSwapExplosive
+	wep_rad[367] = 0;
 	
 	/*
 	wep_name[360] = "OCEAN GRENADE"
@@ -4065,6 +4076,18 @@ function scrWeapons() {
 	wep_rad[360] = 0;
 	*/
 	
+	/*
+	wep_name[360] = "DIRECTOR GRENADE LAUNCHER"
+	wep_type[360] = 4
+	wep_auto[360] = 0
+	wep_load[360] = 25
+	wep_cost[360] = 1
+	wep_sprt[360] = sprHeavyNader
+	wep_area[360] = 4
+	wep_text[360] = "I am the director"
+	wep_swap[360] = sndSwapExplosive
+	wep_rad[360] = 0;
+	*/
 	/*
 	
 	*/

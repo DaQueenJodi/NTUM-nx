@@ -45,6 +45,10 @@ function scrDrawBloom() {
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with Bullet7//DIRECTOR
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
+	with DirectorGrenade//DIRECTOR
+	draw_sprite_ext(sprDirectorGrenadeBloom,0,x,y,2,2,image_angle,c_white,ba+0.01)
+	with RedirectFX//DIRECTOR
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with Bullet9//FLAME DIRECTOR PELLETS
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with Bullet5
@@ -106,7 +110,14 @@ function scrDrawBloom() {
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with FrostFlakBullet
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
-
+	with AssassinBoss
+	{
+		var size = ds_list_size(afterImage);
+		for (var i = 0; i <  size; i++) {
+			var img = afterImage[| i];
+			draw_sprite_ext(img.sp,img.ii,img.xx,img.yy,img.xs,1,0,c_white,1);
+		}	
+	}
 	if instance_exists(Player){
 	with BouncerFlakBullet
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
@@ -187,7 +198,10 @@ function scrDrawBloom() {
 		}
 	}
 	}
-
+	with GammaGutsBlast
+	{
+		draw_sprite_ext(sprite_index,-1,x,y,1.1,1.1,image_angle,c_white,ba+0.01)
+	}
 	if instance_exists(Player){
 
 	with SheepStorm

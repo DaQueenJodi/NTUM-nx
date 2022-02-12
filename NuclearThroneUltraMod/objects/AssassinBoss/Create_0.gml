@@ -54,4 +54,8 @@ instance_create(x-16,y-16,WallBreak);
 instance_create(x,y,DramaCamera);
 
 
-
+afterImage = ds_list_create();
+afterImageMax = 10;
+afterImageDelay = 4;
+afterImageDuration = afterImageDelay;
+alarm[7] = afterImageDelay;

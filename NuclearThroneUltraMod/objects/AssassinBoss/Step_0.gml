@@ -143,4 +143,3 @@ if (alarm[4] < 0) {
 } else if sprite_index != spr_hurt {
 	sprite_index = spr_stunned;
 }
-
