@@ -1,12 +1,11 @@
 with instance_create(x,y,WepPickup)
 {
-scrWeapons()
-scrDecideWepGold(1)
-name = wep_name[wep]
-type = wep_type[wep]
+	scrWeapons()
+name = wep_name[other.wep]
+type = wep_type[other.wep]
 curse = 0
 ammo = 50
-sprite_index = wep_sprt[wep]
+sprite_index = wep_sprt[other.wep]
 }
 
 snd_play(sndWeaponChest)
