@@ -235,7 +235,6 @@ function scrPopulate() {
 	TopDecals();
 	with TopDecal
 		sprite_index = sprSavannaTopDecal;
-	}
 
 	}
 	if spawnarea = 3 || spawnarea = 106
