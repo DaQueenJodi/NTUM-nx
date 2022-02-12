@@ -2437,7 +2437,7 @@ function scrFire2() {
 	{
 	sprite_index=sprGoldenSlash
 	ang = other.ang
-	dmg = 7
+	dmg = 8
 	longarms = 0
 	if instance_exists(Player)
 	longarms = (Player.skill_got[13]+other.bettermelee)*3
@@ -4307,8 +4307,10 @@ function scrFire2() {
 	var offset = 11 * accuracy;
 	var ldx = lengthdir_x(offset,aimdir+90);
 	var ldy = lengthdir_y(offset,aimdir+90);
+	var cldx = lengthdir_x(offset+9,aimdir+90);
+	var cldy = lengthdir_y(offset+9,aimdir+90);
 	snd_play(sndEraser)
-	if (collision_point(ldx,ldy,Wall,false,false))
+	if (collision_point(cldx,cldy,Wall,false,false))
 	{
 		ldx = 0;
 		ldy = 0;
@@ -4325,7 +4327,9 @@ function scrFire2() {
 	}
 	ldx = lengthdir_x(offset,aimdir-90);
 	ldy = lengthdir_y(offset,aimdir-90);
-	if (collision_point(ldx,ldy,Wall,false,false))
+	cldx = lengthdir_x(offset+9,aimdir+90);
+	cldy = lengthdir_y(offset+9,aimdir+90);
+	if (collision_point(cldx,cldy,Wall,false,false))
 	{
 		ldx = 0;
 		ldy = 0;

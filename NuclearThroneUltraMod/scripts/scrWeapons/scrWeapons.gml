@@ -1198,7 +1198,7 @@ function scrWeapons() {
 	wep_name[108] = "DEAD GLOVE"
 	wep_type[108] = 4
 	wep_auto[108] = 0
-	wep_load[108] = 23
+	wep_load[108] = 24
 	wep_cost[108] = 1
 	wep_sprt[108] = sprDeadGlove
 	wep_area[108] = 4
@@ -1913,10 +1913,10 @@ function scrWeapons() {
 	wep_name[173] = "DIRECTOR RIFLE"
 	wep_type[173] = 1
 	wep_auto[173] = 0
-	wep_load[173] = 18
+	wep_load[173] = 20
 	wep_cost[173] = 5
 	wep_sprt[173] = sprDirectorRifle
-	wep_area[173] = 1
+	wep_area[173] = 2
 	wep_text[173] = "click to change direction!"
 	wep_swap[173] = sndSwapMachinegun
 	wep_rad[173] = 0;
@@ -3156,7 +3156,7 @@ function scrWeapons() {
 	wep_name[286] = "GOLDEN GLOVE"
 	wep_type[286] = 4
 	wep_auto[286] = 0
-	wep_load[286] = 20
+	wep_load[286] = 21
 	wep_cost[286] = 1
 	wep_sprt[286] = sprGoldenGlove
 	wep_area[286] = 18

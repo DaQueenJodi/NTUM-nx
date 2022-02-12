@@ -100,7 +100,7 @@ function scrGameModes() {
 	gamemode_have[24] = 0;
 	/*
 	gamemode[24] = "SURVIVAL ARENA";
-	gamemode_unlock[24] = "JE MAPPEL ASSHOLE";
+	gamemode_unlock[24] = "SURVIVE TO LOOP 3 OR SOMETHING";
 	gamemode_have[24] = 0;
 	/*
 	/*
