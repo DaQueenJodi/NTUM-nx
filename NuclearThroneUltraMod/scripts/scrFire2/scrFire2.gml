@@ -2437,7 +2437,7 @@ function scrFire2() {
 	{
 	sprite_index=sprGoldenSlash
 	ang = other.ang
-	dmg = 9
+	dmg = 7
 	longarms = 0
 	if instance_exists(Player)
 	longarms = (Player.skill_got[13]+other.bettermelee)*3

@@ -33,6 +33,12 @@ with Player
 	    if (enem.my_health<=0)//gamma guts kill?
 	    {
 	    snd_play(sndGammaGutsKill);
+			with instance_create(x,y,GammaGutsBlast)
+			{
+				image_xscale = 1.5;
+				image_yscale = 1.5;
+			}
+
 	    }
 	}
 }
