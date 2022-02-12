@@ -17,7 +17,7 @@ if instance_exists(Player) {
                             team = other.team
                         }
 					}
-                    if random(2) < 1 && point_distance(target.x, target.y, x, y) < 180 {
+                    if random(4) < 1 && point_distance(target.x, target.y, x, y) < 180 {
                         gunangle = point_direction(x, y, target.x, target.y)
                         alarm[1] = 5 + random(5)
                     }
