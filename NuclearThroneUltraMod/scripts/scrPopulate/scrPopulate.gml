@@ -1,258 +1,251 @@
 function scrPopulate() {
-	//setting area and spawning some enemies
+	//setting so we dont just crash immediately
+	subarea = Player.subarea;
+	spawnarea = Player.area
 
 	with Floor
 	{
-	subarea=Player.subarea;
-	if Player.loops = 0 or Player.area = 100
-	{
-		spawnarea = Player.area/*
-	if Player.area = 1 spawnarea = 1
-	if Player.area = 2 spawnarea = 2
-	if Player.area = 3 spawnarea = 3
-	if Player.area = 4 spawnarea = 4
-	if Player.area = 5 spawnarea = 5
-	if Player.area = 6 spawnarea = 6
-	if Player.area = 7 spawnarea = 7
-	if Player.area = 8 spawnarea = 8
-	if Player.area = 9 spawnarea = 9
-	if Player.area = 100 spawnarea = 100
-	if Player.area = 102 spawnarea = 102
-	if Player.area = 103 spawnarea = 103
-	if Player.area = 104 spawnarea = 104//crib
-	if Player.area = 105 spawnarea = 105
-	if Player.area = 106 spawnarea = 106//inverted scrapyard
-	if Player.area = 107 spawnarea = 107
-	if Player.area = 101 spawnarea = 101//oasis
-	if Player.area = 108 spawnarea = 108//inverted vulcano
-	if Player.area = 109 spawnarea = 109//inverted wonderland
-	if Player.area = 110 spawnarea = 110//inverted sewers
-	if Player.area = 111 spawnarea = 111//inverted caves
-	if Player.area = 112 spawnarea = 112//inverted labs
-	if Player.area = 113 spawnarea = 113//Banditland*/
-	}
-	else{ //spawnarea = choose(1,2,3,4,5,6,7,8,105,102,103)
+		subarea=Player.subarea;
+		if Player.loops = 0 or Player.area = 100
+		{
+			spawnarea = Player.area/*
+		if Player.area = 1 spawnarea = 1
+		if Player.area = 2 spawnarea = 2
+		if Player.area = 3 spawnarea = 3
+		if Player.area = 4 spawnarea = 4
+		if Player.area = 5 spawnarea = 5
+		if Player.area = 6 spawnarea = 6
+		if Player.area = 7 spawnarea = 7
+		if Player.area = 8 spawnarea = 8
+		if Player.area = 9 spawnarea = 9
+		if Player.area = 100 spawnarea = 100
+		if Player.area = 102 spawnarea = 102
+		if Player.area = 103 spawnarea = 103
+		if Player.area = 104 spawnarea = 104//crib
+		if Player.area = 105 spawnarea = 105
+		if Player.area = 106 spawnarea = 106//inverted scrapyard
+		if Player.area = 107 spawnarea = 107
+		if Player.area = 101 spawnarea = 101//oasis
+		if Player.area = 108 spawnarea = 108//inverted vulcano
+		if Player.area = 109 spawnarea = 109//inverted wonderland
+		if Player.area = 110 spawnarea = 110//inverted sewers
+		if Player.area = 111 spawnarea = 111//inverted caves
+		if Player.area = 112 spawnarea = 112//inverted labs
+		if Player.area = 113 spawnarea = 113//Banditland*/
+		} else { //spawnarea = choose(1,2,3,4,5,6,7,8,105,102,103)
+			if random(2)<1.65
+			spawnarea=Player.area;
+			else
+			spawnarea = choose(1,2,3,4,5,6,7,8,9,choose(105,102,103,106,107,101,112,111,108,109,113),choose(105,102,103,106,107,101,112,111,108,109,113),choose(105,102,103,106,107,101,112,111,108,109,113));
+		}
 
-	if random(2)<1.65
-	spawnarea=Player.area;
-	else
-	spawnarea = choose(1,2,3,4,5,6,7,8,9,choose(105,102,103,106,107,101,112,111,108,109,113),choose(105,102,103,106,107,101,112,111,108,109,113),choose(105,102,103,106,107,101,112,111,108,109,113));
+		instance_exists(Player){//112inv lab
+		if Player.area = 104||(Player.area==6&&Player.subarea==2&&Player.loops>0)||(Player.area==112&&Player.subarea==2){
+		exit;}}
 
-	}
-
-	instance_exists(Player){//112inv lab
-	if Player.area = 104||(Player.area==6&&Player.subarea==2&&Player.loops>0)||(Player.area==112&&Player.subarea==2){
-	exit;}}
-
-	if random(10+Player.hard) < Player.hard and point_distance(x,y,Player.x,Player.y) > 160/*110*/ and !place_meeting(x,y,RadChest) and !place_meeting(x,y,AmmoChest) and !place_meeting(x,y,WeaponChest) and ((x+16 != Player.x and y+16 != Player.y) or point_distance(x,y,Player.x,Player.y) > 300)//240
-	    {
-	    if ((spawnarea=3 || spawnarea=106) && Player.subarea=3) || ( (spawnarea=5 || spawnarea=112) && Player.subarea=3) || (spawnarea = 7 && Player.subarea=2)
-	    {
-	        if random(3)<1
-	        {
-	            if UberCont.opt_gamemode = 9//easy mode
-	            {
-	            if random(4)<1
-	            scrPopEnemies()
-	            }
-	        else
-	        scrPopEnemies()
-	        }
+		if random(10+Player.hard) < Player.hard and point_distance(x,y,Player.x,Player.y) > 160/*110*/ and !place_meeting(x,y,RadChest) and !place_meeting(x,y,AmmoChest) and !place_meeting(x,y,WeaponChest) and ((x+16 != Player.x and y+16 != Player.y) or point_distance(x,y,Player.x,Player.y) > 300)//240
+		{
+		    if ((spawnarea=3 || spawnarea=106) && Player.subarea=3) || ( (spawnarea=5 || spawnarea=112) && Player.subarea=3) || (spawnarea = 7 && Player.subarea=2)
+		    {
+		        if random(3)<1
+		        {
+		            if UberCont.opt_gamemode = 9//easy mode
+		            {
+		            if random(4)<1
+		            scrPopEnemies()
+		            }
+		        else
+		        scrPopEnemies()
+		        }
         
-	        //spawn some more enemies on loop 2 cause you need to die man.
-	        if Player.loops>2
-	        scrPopEnemies();
+		        //spawn some more enemies on loop 2 cause you need to die man.
+		        if Player.loops>2
+		        scrPopEnemies();
         
-	    }
-	    else
-	    {
-	    if UberCont.opt_gamemode = 9//easy mode
-	            {
-	            if random(4)<1
-	            scrPopEnemies()
-	            }
-	        else
-	        {//normal procedure
-	        scrPopEnemies()
+		    }
+		    else
+		    {
+				if UberCont.opt_gamemode = 9//easy mode
+		        {
+			        if random(4)<1
+			        scrPopEnemies()
+		        }
+		        else
+		        {//normal procedure
+					scrPopEnemies()
         
+			        //spawn some more enemies on loop 2 cause you need to die man.
+			        if Player.loops>2&&random(2)<1
+			        scrPopEnemies();
         
-	        //spawn some more enemies on loop 2 cause you need to die man.
-	        if Player.loops>2&&random(2)<1
-	        scrPopEnemies();
+			        if Player.loops>4
+			        scrPopEnemies();
         
-	        if Player.loops>4
-	        scrPopEnemies();
-        
-	        if (Player.loops mod 2 == 0  && Player.loops>1)
-	        {
-	        //even thus inverted
-	        }
-	        else if(random(3)<1)
-	        scrPopEnemies();
-        
-	        }
-	    }
-    
-	    }
+			        if (Player.loops mod 2 == 0  && Player.loops>1)
+			        {
+			        //even thus inverted
+			        }
+			        else if(random(3)<1)
+			        scrPopEnemies();
+		        }
+		    }
+		}
 	}
 
 	//COOL BONES
 
 	with Floor
 	{
-	if spawnarea = 9
-	{
-		if instance_exists(GenCont){
-		if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
+		if spawnarea = 9
 		{
-		instance_create(x-64+16,y+16,TopDecal)
-		}
+			if instance_exists(GenCont) {
+				if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x-64+16,y+16,TopDecal)
+				}
 
-		if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
+				if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x+64+16,y+16,TopDecal)
+				}
+
+				if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x+16,y+64+16,TopDecal)
+				}
+
+				if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x+16,y-64+16,TopDecal)
+				}
+			}
+			with TopDecal
+			{
+				sprite_index = sprPalaceTopDecal;	
+			}
+		}
+		else if spawnarea = 114//Jungle
 		{
-		instance_create(x+64+16,y+16,TopDecal)
-		}
+			if instance_exists(GenCont){
+				if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x-64+16,y+16,TopDecal)
+				}
 
-		if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
+				if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x+64+16,y+16,TopDecal)
+				}
+
+				if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x+16,y+64+16,TopDecal)
+				}
+
+				if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x+16,y-64+16,TopDecal)
+				}
+			}
+			with TopDecal
+			{
+				sprite_index = sprJungleDecal;	
+			}
+		}
+		else if spawnarea = 1 || spawnarea = 105 || spawnarea == 113
 		{
-		instance_create(x+16,y+64+16,TopDecal)
-		}
+			if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
+			{
+				instance_create(x,y,Bones)
+				instance_create(x,y+16,Bones)
+				with instance_create(x+32,y,Bones)
+				image_xscale = -1
+				with instance_create(x+32,y+16,Bones)
+				image_xscale = -1
+			}
 
-		if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
+
+			if instance_exists(GenCont) {
+				if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x-64+16,y+16,TopDecal)
+				}
+
+				if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x+64+16,y+16,TopDecal)
+				}
+
+				if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x+16,y+64+16,TopDecal)
+				}
+
+				if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
+				{
+					instance_create(x+16,y-64+16,TopDecal)
+				}
+			}
+
+			if spawnarea = 105
+			{
+				with Bones
+				sprite_index = sprBonesInverted;
+
+				with TopDecal
+				sprite_index=sprInvertedDesertTopDecal;
+			}
+			else if spawnarea == 113
+			{
+				with Bones
+				sprite_index = sprNightBones;
+
+				with TopDecal
+				sprite_index=sprNightDesertTopDecal;
+			}
+
+			//with Bones
+			//sprite_index = sprSewerDecal
+
+		}
+		else if spawnarea == 10
 		{
-		instance_create(x+16,y-64+16,TopDecal)
-		}
-
-		}
-		with TopDecal
-		{
-			sprite_index = sprPalaceTopDecal;	
-		}
-	}
-	else if spawnarea = 114//Jungle
-	{
-		if instance_exists(GenCont){
-		if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
-		{
-		instance_create(x-64+16,y+16,TopDecal)
-		}
-
-		if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
-		{
-		instance_create(x+64+16,y+16,TopDecal)
-		}
-
-		if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
-		{
-		instance_create(x+16,y+64+16,TopDecal)
-		}
-
-		if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
-		{
-		instance_create(x+16,y-64+16,TopDecal)
-		}
-
-		}
-		with TopDecal
-		{
-			sprite_index = sprJungleDecal;	
-		}
-	}
-	else if spawnarea = 1 || spawnarea = 105 || spawnarea == 113
-	{
-	if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
-	{
-	instance_create(x,y,Bones)
-	instance_create(x,y+16,Bones)
-	with instance_create(x+32,y,Bones)
-	image_xscale = -1
-	with instance_create(x+32,y+16,Bones)
-	image_xscale = -1
-	}
-
-
-	if instance_exists(GenCont){
-	if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
-	{
-	instance_create(x-64+16,y+16,TopDecal)
-	}
-
-	if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
-	{
-	instance_create(x+64+16,y+16,TopDecal)
-	}
-
-	if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
-	{
-	instance_create(x+16,y+64+16,TopDecal)
-	}
-
-	if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
-	{
-	instance_create(x+16,y-64+16,TopDecal)
-	}
-
-	}
-
-
-	if spawnarea = 105
-	{
-	with Bones
-	sprite_index = sprBonesInverted;
-
-	with TopDecal
-	sprite_index=sprInvertedDesertTopDecal;
-	}
-	else if spawnarea == 113
-	{
-		with Bones
-		sprite_index = sprNightBones;
-
-		with TopDecal
-		sprite_index=sprNightDesertTopDecal;
-	}
-
-	//with Bones
-	//sprite_index = sprSewerDecal
-
-	}
-	else if spawnarea == 10
-	{
-	if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
-	{
-	instance_create(x,y,Bones)
-	instance_create(x,y+16,Bones)
-	with instance_create(x+32,y,Bones)
-	image_xscale = -1
-	with instance_create(x+32,y+16,Bones)
-	image_xscale = -1
+			if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
+			{
+				instance_create(x,y,Bones)
+				instance_create(x,y+16,Bones)
+				with instance_create(x+32,y,Bones)
+				image_xscale = -1
+				with instance_create(x+32,y+16,Bones)
+				image_xscale = -1
 	
-	with Bones
-		sprite_index = sprSavannaBones;
+				with Bones
+					sprite_index = sprSavannaBones;
+			}
+			TopDecals();
+			with TopDecal
+			sprite_index = sprSavannaTopDecal;
+		}
 	}
 
 
-	TopDecals();
-	with TopDecal
-		sprite_index = sprSavannaTopDecal;
-	}
-
-	}
 	if spawnarea = 3 || spawnarea = 106
 	{
 		if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
 		{
-		if random(7) < 1
-		instance_create(x,y,Bones)
-		if random(7) < 1
-		instance_create(x,y+16,Bones)
-		if random(7) < 1
-		{
-		with instance_create(x+32,y,Bones)
-		image_xscale = -1}
-		if random(7) < 1{
-		with instance_create(x+32,y+16,Bones)
-		image_xscale = -1}
+			if random(7) < 1
+			instance_create(x,y,Bones)
+			if random(7) < 1
+			instance_create(x,y+16,Bones)
+			if random(7) < 1
+			{
+				with instance_create(x+32,y,Bones)
+				image_xscale = -1
+			}
+			if random(7) < 1 {
+				with instance_create(x+32,y+16,Bones)
+				image_xscale = -1
+			}
 		}
 		TopDecals();
 		
@@ -261,22 +254,24 @@ function scrPopulate() {
 		with Bones
 		sprite_index = sprScrapDecal
 	}
-	
+
 	if spawnarea = 5
 	{
 		if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
 		{
-		if random(7) < 1
-		instance_create(x,y,Bones)
-		if random(7) < 1
-		instance_create(x,y+16,Bones)
-		if random(7) < 1
-		{
-		with instance_create(x+32,y,Bones)
-		image_xscale = -1}
-		if random(7) < 1{
-		with instance_create(x+32,y+16,Bones)
-		image_xscale = -1}
+			if random(7) < 1
+			instance_create(x,y,Bones)
+			if random(7) < 1
+			instance_create(x,y+16,Bones)
+			if random(7) < 1
+			{
+				with instance_create(x+32,y,Bones)
+				image_xscale = -1
+			}
+			if random(7) < 1 {
+				with instance_create(x+32,y+16,Bones)
+				image_xscale = -1
+			}
 		}
 		with Bones
 		sprite_index = sprIceDecal
@@ -285,17 +280,19 @@ function scrPopulate() {
 	{
 		if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
 		{
-		if random(9) < 1
-		instance_create(x,y,Bones)
-		if random(9) < 1
-		instance_create(x,y+16,Bones)
-		if random(9) < 1
-		{
-		with instance_create(x+32,y,Bones)
-		image_xscale = -1}
-		if random(9) < 1{
-		with instance_create(x+32,y+16,Bones)
-		image_xscale = -1}
+			if random(9) < 1
+			instance_create(x,y,Bones)
+			if random(9) < 1
+			instance_create(x,y+16,Bones)
+			if random(9) < 1
+			{
+				with instance_create(x+32,y,Bones)
+				image_xscale = -1
+			}
+			if random(9) < 1 {
+				with instance_create(x+32,y+16,Bones)
+				image_xscale = -1
+			}
 		}
 		with Bones
 		sprite_index = sprCaveDecal
@@ -324,7 +321,6 @@ function scrPopulate() {
 	image_xscale = -1
 	with instance_create(x+32,y+16,Bones)
 	image_xscale = -1
-	}
 	}
 	}
 
@@ -500,7 +496,4 @@ function scrPopulate() {
 	do {with instance_nearest(10016+random(240)-120,10016+random(240)-120,PizzaEntrance) instance_destroy()}
 	until instance_number(PizzaEntrance) <= 1
 	}
-
-
-
 }
