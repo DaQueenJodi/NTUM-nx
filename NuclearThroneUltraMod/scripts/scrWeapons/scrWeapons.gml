@@ -2774,7 +2774,7 @@ function scrWeapons() {
 	wep_load[251] = 14
 	wep_cost[251] = 2
 	wep_sprt[251] = sprYoyoGun
-	wep_area[251] = 2
+	wep_area[251] = 3
 	wep_text[251] = "away! and return!"
 	wep_swap[251] = sndSwapBow
 	wep_rad[0251] = 0;
@@ -3765,7 +3765,7 @@ function scrWeapons() {
 	wep_load[341] = 55
 	wep_cost[341] = 7
 	wep_sprt[341] = sprUltraKrakenCannon
-	wep_area[341] = 11
+	wep_area[341] = 21
 	wep_text[341] = "true power of the ocean"
 	wep_swap[341] = sndSwapDragon
 	wep_rad[341] = 30;
