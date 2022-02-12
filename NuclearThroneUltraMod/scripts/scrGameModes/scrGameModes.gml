@@ -106,7 +106,7 @@ function scrGameModes() {
 	/*
 	gamemode[23] = "MELEE ONLY";
 	gamemode_description[23] = "YOU ONLY GET MELEE WEAPONS#ALWAYS GET LONG ARMS";
-	gamemode_unlock[23] = "HAVE 4 LIVES AT ONCE";
+	gamemode_unlock[23] = "HAVE 3 MELEE WEAPONS EQUIPED AT ONCE";
 	gamemode_have[23] = 0;*/
 
 	/*

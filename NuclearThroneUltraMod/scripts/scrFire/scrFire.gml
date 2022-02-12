@@ -7,8 +7,11 @@ function scrFire() {
 	can_shoot = 0
 	reload = wep_load[wep]
 	if (Player.alarm[2]<1)//alarm = Fish Ultra B
-	{ammo[wep_type[wep]] -= wep_cost[wep]
-	rad-=wep_rad[wep]}
+	{
+		rad = max(0,rad);
+		ammo[wep_type[wep]] -= wep_cost[wep]
+		rad-=wep_rad[wep]
+	}
 
 	if Player.ultra_got[4]//FISH ULTRA D rolling is good
 	{
