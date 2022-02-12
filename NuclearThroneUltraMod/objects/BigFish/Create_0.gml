@@ -35,7 +35,7 @@ motion_add(point_direction(Player.x,Player.y,x,y),3)
 
 intro=1;
 suckstrength=0;
-maxspeed=4
+maxspeed=2
 
 snd_play(sndOasisBossIntro);    
 
