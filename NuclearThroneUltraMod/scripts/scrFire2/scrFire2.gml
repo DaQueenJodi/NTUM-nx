@@ -2708,7 +2708,9 @@ function scrFire2() {
 
 
 	///GOLDEN OOPS GUN
-
+	case 298:
+		scrRestart();
+	break;
 	//ULTRA WAVE GUN
 	case 299:
 
