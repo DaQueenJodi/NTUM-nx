@@ -13,7 +13,8 @@ function scrCompletionPercentage() {
 
 	//characters
 	everything+=racemax*30;//characters are priority
-
+	everything -= 60;//Don't count the first two characters
+	
 	//bskins
 	everything+=racemax*12;
 
@@ -47,6 +48,7 @@ function scrCompletionPercentage() {
 
 	countrace++;
 	}
+	unlocked -= 60;//Don't count the first two characters
 	//skins
 
 	var countrace=1;

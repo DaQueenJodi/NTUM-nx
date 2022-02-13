@@ -16,4 +16,13 @@ function scrInit() {
 	scrUltras();
 	
 	scrLoad()
+	encrypted_data = {
+		ctot_dailies_score_seed: [],
+		ctot_dailies_score_score: [],
+		dailies_score_day: [],
+		ctot_dailies_race_seed: [],
+		ctot_dailies_race_time: [],
+		dailies_race_day: [],
+	};
+	scrLoadEncrypted();
 }

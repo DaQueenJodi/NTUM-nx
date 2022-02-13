@@ -103,6 +103,14 @@ function scrGameModes() {
 	gamemode_unlock[25] = "SURVIVE TO LOOP 3 OR SOMETHING";
 	gamemode_have[25] = 0;
 	
+	gamemode[26] = "DAILY RACE";
+	gamemode_unlock[26] = "i dunno";
+	gamemode_have[26] = 1;
+	
+	gamemode[27] = "DAILY SCORE";
+	gamemode_unlock[27] = "i dunno";
+	gamemode_have[27] = 1;
+	
 	/*
 	gamemode[23] = "MELEE ONLY";
 	gamemode_description[23] = "YOU ONLY GET MELEE WEAPONS#ALWAYS GET LONG ARMS";
@@ -110,7 +118,7 @@ function scrGameModes() {
 	gamemode_have[23] = 0;*/
 
 	/*
-	gamemode[23] = "MASTERLUIGI452'S#10X MUTATIONS";
+	gamemode[23] = "MASTERLUIGI452'S#10X MUTATIONS"; I don't think I'll ever make this theres too many mutations
 	gamemode_unlock[23] = "INFECT AN ENEMY";
 	gamemode_have[23] = 0;*/
 
@@ -140,6 +148,9 @@ function scrGameModes() {
 	gamemodeOrder[23] = 23;
 	gamemodeOrder[24] = 24;
 	gamemodeOrder[25] = 17;
+	gamemodeOrder[26] = 26;
+	gamemodeOrder[27] = 27;
+
 
 
 

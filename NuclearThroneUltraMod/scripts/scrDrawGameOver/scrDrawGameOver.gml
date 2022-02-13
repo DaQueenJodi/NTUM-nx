@@ -22,13 +22,24 @@ function scrDrawGameOver() {
 	if UberCont.public = 0
 	gameover += "##MODDED EARLY ACCESS DEVELOPMENT BUILD"
 	if UberCont.public = 1
-	gameover += "##MODDED EARLY ACCESS BUILD#0.09";
+	gameover += "##MODDED EARLY ACCESS BUILD";
 
 	gameover += "##GAME MODE : "+UberCont.gamemode[UberCont.opt_gamemode];
-	if gameovertime > 30 gameover += "##[R] QUICK RESTART#[LEFT CLICK] MENU"
+	
+	if gameovertime > 30
+	{
+		if UberCont.canRestart
+		{
+			gameover += "##[LEFT CLICK] MENU";
+		}
+		else
+		{
+			gameover += "##[R] QUICK RESTART#[LEFT CLICK] MENU";
+		}
+	}
 
 
-	if (keyboard_check_pressed(ord("R")) or KeyCont.key_back[0] = 1) and gameovertime > 25
+	if (UberCont.canRestart && keyboard_check_pressed(ord("R")) or KeyCont.key_back[0] = 1) and gameovertime > 25
 	{//QUICK RESTART
 	snd_play(sndMutant0Cnfm)
 	race = UberCont.racepick

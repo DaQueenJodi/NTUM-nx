@@ -56,9 +56,29 @@ freezeframe400=false
 
 if UberCont.opt_shake!=4
 screenshake400=false
-
-if UberCont.opt_gamemode=17//CHEATS
-UberCont.public=1
+with UberCont
+{
+	if opt_gamemode=17//CHEATS
+	public=1
+	//Daily
+	if opt_gamemode == 26
+	{
+		canRestart = false;
+		var al = array_length(encrypted_data.ctot_dailies_race_seed);
+		encrypted_data.ctot_dailies_race_seed[al] = seed;
+		encrypted_data.ctot_dailies_race_time[al] = -1;
+		encrypted_data.dailies_race_day[al] = today;
+	}
+	else if opt_gamemode == 27
+	{
+		debug("START GM");
+		canRestart = false;
+		var al = array_length(encrypted_data.ctot_dailies_race_seed);
+		encrypted_data.ctot_dailies_score_seed[al] = seed;
+		encrypted_data.ctot_dailies_score_score[al] = 0;
+		encrypted_data.dailies_score_day[al] = today;
+	}
+}
 
 bigbanditmarked=false;
 bigdogmarked=false;

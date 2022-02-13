@@ -1,7 +1,7 @@
 if paused = 1
 {
 //QUICK RESTART
-if ( keyboard_check_pressed(ord("R")) || gamepad_button_check(0,gp_face3) )//(gamepad_button_check(0,gp_stickl) && gamepad_button_check(0,gp_stickr)) )
+if (canRestart && keyboard_check_pressed(ord("R")) || gamepad_button_check(0,gp_face3) )//(gamepad_button_check(0,gp_stickl) && gamepad_button_check(0,gp_stickr)) )
 {
 instance_activate_all()
 audio_stop_all();

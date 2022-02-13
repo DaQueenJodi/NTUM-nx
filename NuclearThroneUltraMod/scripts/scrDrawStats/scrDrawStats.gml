@@ -126,9 +126,32 @@ function scrDrawStats() {
 	+ ultraWhiteEnter;
 	stxt2 = ""
 
-	var xOffset = 120;
+	var xOffset = 130;
 	var yOffset = string_height(txt1)*25//190;//string_height(txt1);
-
+	
+	var scoreDayList = UberCont.encrypted_data.dailies_score_day;
+	var scoreScoreList = UberCont.encrypted_data.ctot_dailies_score_score;
+	var al = array_length(scoreDayList);
+	var stxt1c = "DAILY SCORE#"
+	var txt1c = "#"
+	var txt2c = "#"
+	if (al < 1)
+	{
+		stxt1b += "#";
+		txt1c += "NO SCORE"
+		txt2c += "YET"
+	}	
+	for (var i = al - 1; i >= 0; i--) {
+		stxt1b += "#";
+		txt1c += string(scoreDayList[i]);
+		txt2c += string(scoreScoreList[i]);
+	}
+	stxt1c += "##DAILY RACE#";
+	txt1c += "###COMING";
+	txt2c += "###SOON";
+	
+	var xOffsetL = -64;
+	
 	draw_set_font(fntM)
 	draw_set_valign(fa_top)
 	draw_set_halign(fa_center)
@@ -148,15 +171,21 @@ function scrDrawStats() {
 	draw_text(xx-8,yy+1,string_hash_to_newline(string(txt1)))
 	draw_text(xx-7,yy+1,string_hash_to_newline(string(txt1)))
 	draw_text(xx-7,yy,string_hash_to_newline(string(txt1)))
-	draw_text(xx+xOffset-8,yy+yOffset+1,string_hash_to_newline(string(txt1b)))
-	draw_text(xx+xOffset-7,yy+yOffset+1,string_hash_to_newline(string(txt1b)))
-	draw_text(xx+xOffset-7,yy+yOffset,string_hash_to_newline(string(txt1b)))
+	draw_text(xx+xOffset-4,yy+yOffset+1,string_hash_to_newline(string(txt1b)))
+	draw_text(xx+xOffset-5,yy+yOffset+1,string_hash_to_newline(string(txt1b)))
+	draw_text(xx+xOffset-5,yy+yOffset,string_hash_to_newline(string(txt1b)))
+	draw_text(xx+xOffsetL-4,yy+yOffset+1,string_hash_to_newline(string(txt1c)))
+	draw_text(xx+xOffsetL-5,yy+yOffset+1,string_hash_to_newline(string(txt1c)))
+	draw_text(xx+xOffsetL-5,yy+yOffset,string_hash_to_newline(string(txt1c)))
 	draw_set_color(c_gray)
 	draw_text(xx-8,yy,string_hash_to_newline(string(txt1)))
-	draw_text(xx+xOffset-8,yy+yOffset,string_hash_to_newline(string(txt1b)))
+	draw_text(xx+xOffset-4,yy+yOffset,string_hash_to_newline(string(txt1b)))
+	draw_text(xx+xOffsetL-4,yy+yOffset,string_hash_to_newline(string(txt1c)))
 	draw_set_color(c_white)
 	draw_text(xx-8,yy,string_hash_to_newline(string(stxt1)))
-	draw_text(xx+xOffset-8,yy+yOffset,string_hash_to_newline(string(stxt1b)))
+	draw_text(xx+xOffset-4,yy+yOffset,string_hash_to_newline(string(stxt1b)))
+	draw_text(xx+xOffsetL-4,yy+yOffset,string_hash_to_newline(string(stxt1c)))
+
 
 	
 
@@ -167,15 +196,21 @@ function scrDrawStats() {
 	draw_text(xx+8,yy+1,string_hash_to_newline(string(txt2)))
 	draw_text(xx+9,yy+1,string_hash_to_newline(string(txt2)))
 	draw_text(xx+9,yy,string_hash_to_newline(string(txt2)))
-	draw_text(xx+xOffset+8,yy+yOffset+1,string_hash_to_newline(string(txt2b)))
-	draw_text(xx+xOffset+9,yy+yOffset+1,string_hash_to_newline(string(txt2b)))
-	draw_text(xx+xOffset+9,yy+yOffset,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffset+4,yy+yOffset+1,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffset+5,yy+yOffset+1,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffset+5,yy+yOffset,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffsetL+4,yy+yOffset+1,string_hash_to_newline(string(txt2c)))
+	draw_text(xx+xOffsetL+5,yy+yOffset+1,string_hash_to_newline(string(txt2c)))
+	draw_text(xx+xOffsetL+5,yy+yOffset,string_hash_to_newline(string(txt2c)))
 	draw_set_color(c_gray)
 	draw_text(xx+8,yy,string_hash_to_newline(string(txt2)))
-	draw_text(xx+xOffset+8,yy+yOffset,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffset+4,yy+yOffset,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffsetL+4,yy+yOffset,string_hash_to_newline(string(txt2c)))
 	draw_set_color(c_white)
 	draw_text(xx+8,yy,string_hash_to_newline(string(stxt2)))
-	draw_text(xx+xOffset+8,yy+yOffset,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffset+4,yy+yOffset,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffsetL+4,yy+yOffset,string_hash_to_newline(string(txt2c)))
+
 
 
 

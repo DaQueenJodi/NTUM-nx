@@ -3,7 +3,7 @@ seedI++;
 alarm[1] = sequenceDelay;
 if (seedI) >= array_length(seed)
 {
-	var inputSeed = get_string("LEVEL GENERATION SEED","GIVE ME YOUR SEED SENPAI");
+	var inputSeed = get_string("LEVEL GENERATION SEED","GIVE ME YOUR SEED");
 	seedI = 0;
 	UberCont.useSeed = true;
 	var byteSeed = 0;

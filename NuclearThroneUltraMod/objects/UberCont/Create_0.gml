@@ -47,9 +47,18 @@ txttime="00:00:00:00";
 lastwishused=false;
 kills=0;
 
+var todaysSeedName = current_day+current_month+current_year;
+var byteSeed = 0;
+var byteSize = string_byte_length(todaysSeedName);
+for (var i = 0; i < byteSize; i++) {
+	byteSeed = (byteSeed + string_byte_at(todaysSeedName, i)) << 1;
+}
+todaysSeed = byteSeed;
+today = string(current_day) + "-" + string(current_month) + "-"+ string(current_year);
 useSeed = false;
 seed = 0;
 seedText = "";
+
 firstFloorMaker = true;
 seedOffset = 0;
 wallsBroken = 0;
@@ -61,3 +70,5 @@ window_set_min_width(640);
 window_set_min_height(480);
 if !opt_fulscrn
 	window_set_size(640*2,480*2);
+	
+canRestart = true;

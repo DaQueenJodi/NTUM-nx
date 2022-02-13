@@ -8,6 +8,7 @@ gamemodenr -= 1
 else
 gamemodenr = maxgamemode
 
+event_user(0);
 }
 if mouse_check_button_pressed(mb_left) and mouse_x > x+10 and mouse_x < x+18 and mouse_y > y and mouse_y < y+8
 {
@@ -15,10 +16,11 @@ if gamemodenr < maxgamemode
 gamemodenr += 1
 else
 gamemodenr=0;
+
+event_user(0);
 }
 
 //draw_sprite(sprite_index,/*UberCont.opt_gamemode*/1,x,y)
-
 if (UberCont.opt_gamemode==1&&gamemodeOrder[gamemodenr]==1)
 {
 if !instance_exists(StartingWeaponUpDown)
@@ -54,18 +56,37 @@ with DiscAmountUpDown
 instance_destroy()
 }
 
-if UberCont.gamemode_have[gamemodeOrder[gamemodenr]]=1
+var yy = y+64;
+if (UberCont.gamemode_have[gamemodeOrder[gamemodenr]]=1 && !dailyDone)
 {
-UberCont.opt_gamemode=gamemodeOrder[gamemodenr];
+	UberCont.opt_gamemode=gamemodeOrder[gamemodenr];
 }
 else
 {
 draw_sprite(sprLocked,0,x,y+40);
-
+var str;
+if dailyDone && UberCont.gamemode_have[gamemodeOrder[gamemodenr]]=1
+{
+	/*
+	if ((gamemodeOrder[gamemodenr] == 26 && array_length(UberCont.encrypted_data.ctot_dailies_race_seed) == 1)
+	|| (gamemodeOrder[gamemodenr] == 27 && array_length(UberCont.encrypted_data.ctot_dailies_score_seed) == 1))
+	{
+		str = "YOU NEED TO WAIT A DAY BEFORE\nYOU CAN START YOUR FIRST DAILY";//In case we cant verify through network.
+		yy += 4;
+	}
+	else
+	{*/
+		str = "DAILY ALREADY DONE";
+	//}
+}
+else
+{
+	str = string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]);
+}
 draw_set_color(c_gray)
-draw_text(x-string_width(string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]))*0.6,y+64,string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]))
+draw_text(x-string_width(str)*0.6,yy,str)
 draw_set_color(c_white)
-draw_text(x-string_width(string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]))*0.6,y+64,string_hash_to_newline(gamemode_unlock[gamemodeOrder[gamemodenr]]))
+draw_text(x-string_width(str)*0.6,yy,str)
 }
 
 

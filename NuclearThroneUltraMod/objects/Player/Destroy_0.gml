@@ -100,93 +100,6 @@ if crown = 3
 {if x > __view_get( e__VW.XView, 0 ) and y > __view_get( e__VW.YView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 my_health = 0}}
 
-//SAVE STUFF
-
-BackCont.kills = kills
-BackCont.area = area
-BackCont.subarea = subarea
-BackCont.hard = hard
-BackCont.loops = loops
-
-with UberCont
-{
-ctot_kill[other.race]+=other.kills
-//ctot_time[other.race]+=time;
-if other.my_health<1
-ctot_dead[other.race] += 1
-
-ctot_played[other.race] += 1;
-
-ctot_loop[other.race]+=other.loops;
-
-//best kills
-if other.kills > cbst_kill[other.race]
-cbst_kill[other.race] = other.kills
-
-//best difficulty
-if other.hard>cbst_diff[other.race]
-cbst_diff[other.race]=other.hard
-
-//best loops
-if other.loops> cbst_loop[other.race]
-cbst_loop[other.race]=other.loops
-
-if other.randomlySelected
-{
-	ctot_kill[0]+=other.kills
-	//ctot_time[other.race]+=time;
-	if other.my_health<1
-	ctot_dead[0] += 1
-	
-	ctot_played[0] += 1;
-	
-	ctot_loop[0]+=other.loops;
-
-	//best kills
-	if other.kills > cbst_kill[0]
-		cbst_kill[0] = other.kills
-
-	//best difficulty
-	if other.hard>cbst_diff[0]
-		cbst_diff[0]=other.hard
-
-	//best loops
-	if other.loops> cbst_loop[0]
-		cbst_loop[0]=other.loops
-}
-
-var playedWithAll = true;
-	for (var i = 0; i <= racemax; i++) {
-	    // code here
-		if !ctot_played[i]
-		{
-			playedWithAll = false;
-			i = racemax + 1;
-		}
-	}
-	if (playedWithAll)
-	{
-		debug("UNLOCK ALL");
-		scrUnlockGameMode(23,"UNLOCKED FOR PLAYING#EVERY CHARACTER");
-	}
-	scrSave();
-}
-
-
-
-//Lets unlock some shit
-if my_health<=0
-scrUnlockCharacter(4,"FOR DYING");//MELTING
-
-if race = 4 && area = 6//SKELETON
-scrUnlockCharacter(19,"FOR DIEING IN THE LABS AS MELTING");
-
-if UberCont.ctot_kill[race]>=100//UNLOCK PLANT
-scrUnlockCharacter(5,"FOR GETTING OVER 100 KILLS");
-
-if kills>=2000 && race = 5
-scrUnlockCSkin(5,"FOR GETTING 2.000 KILLS#IN ONE RUN AS PLANT",0);
-
 
 
 snd_play(snd_dead)
@@ -303,6 +216,99 @@ else
 		raddrop = rad;
 		scrRaddrop();
 	}
+	//SAVE STUFF
+	BackCont.kills = kills
+	BackCont.area = area
+	BackCont.subarea = subarea
+	BackCont.hard = hard
+	BackCont.loops = loops
+
+	with UberCont
+	{
+	ctot_kill[other.race]+=other.kills
+	//ctot_time[other.race]+=time;
+	if other.my_health<1
+	ctot_dead[other.race] += 1
+
+	ctot_played[other.race] += 1;
+
+	ctot_loop[other.race]+=other.loops;
+
+	//best kills
+	if other.kills > cbst_kill[other.race]
+	cbst_kill[other.race] = other.kills
+
+	//best difficulty
+	if other.hard>cbst_diff[other.race]
+	cbst_diff[other.race]=other.hard
+
+	//best loops
+	if other.loops> cbst_loop[other.race]
+	cbst_loop[other.race]=other.loops
+
+	if other.randomlySelected
+	{
+		ctot_kill[0]+=other.kills
+		//ctot_time[other.race]+=time;
+		if other.my_health<1
+		ctot_dead[0] += 1
+	
+		ctot_played[0] += 1;
+	
+		ctot_loop[0]+=other.loops;
+
+		//best kills
+		if other.kills > cbst_kill[0]
+			cbst_kill[0] = other.kills
+
+		//best difficulty
+		if other.hard>cbst_diff[0]
+			cbst_diff[0]=other.hard
+
+		//best loops
+		if other.loops> cbst_loop[0]
+			cbst_loop[0]=other.loops
+		
+	}
+
+	var playedWithAll = true;
+		for (var i = 0; i <= racemax; i++) {
+		    // code here
+			if !ctot_played[i]
+			{
+				playedWithAll = false;
+				i = racemax + 1;
+			}
+		}
+		if (playedWithAll)
+		{
+			debug("UNLOCK ALL");
+			scrUnlockGameMode(23,"UNLOCKED FOR PLAYING#EVERY CHARACTER");
+		}
+		
+		if (opt_gamemode == 27)
+		{
+			encrypted_data.ctot_dailies_score_score[
+			array_length(encrypted_data.ctot_dailies_score_score)-1] = other.kills;
+			scrSaveEncrypted();
+		}
+		
+		scrSave();
+	}
+
+
+	//Lets unlock some shit
+	if my_health<=0
+	scrUnlockCharacter(4,"FOR DYING");//MELTING
+
+	if race = 4 && area = 6//SKELETON
+	scrUnlockCharacter(19,"FOR DIEING IN THE LABS AS MELTING");
+
+	if UberCont.ctot_kill[race]>=100//UNLOCK PLANT
+	scrUnlockCharacter(5,"FOR GETTING OVER 100 KILLS");
+
+	if kills>=2000 && race = 5
+	scrUnlockCSkin(5,"FOR GETTING 2.000 KILLS#IN ONE RUN AS PLANT",0);
 }
 with KeyCont {
 	key_fire[0] = 0;
