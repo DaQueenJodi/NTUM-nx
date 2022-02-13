@@ -44,6 +44,8 @@ function scrDrawGameOver() {
 	scrRaces()
 	scrCrowns()
 	var ranChar = false;
+	with Player
+		nochest = 0;
 	if race = 0 || UberCont.opt_gamemode == 23
 	{
 		ranChar = true;
