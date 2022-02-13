@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndBigBanditMeleeHit",
-  "duration": 0.0,
+  "duration": 2.25,
   "parent": {
     "name": "BigBandit",
     "path": "folders/Sounds/Enemies/BigBandit.yy",

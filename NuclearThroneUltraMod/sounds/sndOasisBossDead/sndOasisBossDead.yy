@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndOasisBossDead",
-  "duration": 0.0,
+  "duration": 1.369344,
   "parent": {
     "name": "Boss",
     "path": "folders/Sounds/Boss.yy",

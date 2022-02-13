@@ -1,9 +1,8 @@
 raddrop = 64
-maxhealth = 115
+maxhealth = 175
 meleedamage = 3
 size = 3
 
-shooting = false;
 sucking = false;
 
 event_inherited();
@@ -25,6 +24,7 @@ snd_dead = sndOasisBossDead;
 snd_hurt = sndOasisBossHurt;
 snd_fire = sndOasisBossFire;
 snd_mele = sndOasisBossMelee;
+snd_tackle = sndOasisBossTackle;
 
 walk=0;
 //behavior
@@ -36,6 +36,7 @@ motion_add(point_direction(Player.x,Player.y,x,y),3)
 intro=1;
 suckstrength=0;
 maxspeed=2
+persistent_direction = 0;
 
 snd_play(sndOasisBossIntro);    
 
@@ -53,3 +54,7 @@ instance_create(x,y,DramaCamera);
 
 friction = 0.8;
 
+
+if Player.loops > 0 {
+	maxhealth *= 3;
+}

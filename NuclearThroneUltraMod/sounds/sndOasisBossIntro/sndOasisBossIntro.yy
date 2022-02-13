@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndOasisBossIntro",
-  "duration": 0.0,
+  "duration": 2.090688,
   "parent": {
     "name": "Boss",
     "path": "folders/Sounds/Boss.yy",

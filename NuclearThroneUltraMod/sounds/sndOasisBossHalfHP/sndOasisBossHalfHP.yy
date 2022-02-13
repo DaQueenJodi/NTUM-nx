@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndOasisBossHalfHP",
-  "duration": 0.0,
+  "duration": 1.24,
   "parent": {
     "name": "Boss",
     "path": "folders/Sounds/Boss.yy",

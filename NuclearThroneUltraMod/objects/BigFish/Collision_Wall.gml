@@ -5,5 +5,5 @@ instance_destroy()
 instance_create(x,y,FloorExplo)
 }
 
-BackCont.shake += 1;
+BackCont.shake += 0.8;
 
