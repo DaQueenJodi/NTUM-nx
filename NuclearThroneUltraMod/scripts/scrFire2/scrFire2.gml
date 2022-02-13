@@ -4309,10 +4309,10 @@ function scrFire2() {
 	var offset = 11 * accuracy;
 	var ldx = lengthdir_x(offset,aimdir+90);
 	var ldy = lengthdir_y(offset,aimdir+90);
-	var cldx = lengthdir_x(offset+12,aimdir+90);
-	var cldy = lengthdir_y(offset+12,aimdir+90);
+	var cldx = x+lengthdir_x(offset+8,aimdir+90);
+	var cldy = y+lengthdir_y(offset+8,aimdir+90);
 	snd_play(sndEraser)
-	if (collision_point(cldx,cldy,Wall,false,false))
+	if (collision_line(x,y,cldx,cldy,Wall,false,false) > 0)
 	{
 		ldx = 0;
 		ldy = 0;
@@ -4329,9 +4329,9 @@ function scrFire2() {
 	}
 	ldx = lengthdir_x(offset,aimdir-90);
 	ldy = lengthdir_y(offset,aimdir-90);
-	cldx = lengthdir_x(offset+12,aimdir+90);
-	cldy = lengthdir_y(offset+12,aimdir+90);
-	if (collision_point(cldx,cldy,Wall,false,false))
+	cldx = x+lengthdir_x(offset+8,aimdir-90);
+	cldy = y+lengthdir_y(offset+8,aimdir-90);
+	if (collision_line(x,y,cldx,cldy,Wall,false,false) > 0)
 	{
 		ldx = 0;
 		ldy = 0;
