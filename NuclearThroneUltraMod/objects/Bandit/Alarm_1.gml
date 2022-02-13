@@ -69,7 +69,7 @@ if instance_exists(Player) {
         scrTarget()
         if target > 0 {
             if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {
-                if point_distance(target.x, target.y, x, y) > 48 {
+                if point_distance(target.x, target.y, x, y) > 52 {
                     if random(4) < 1 {
                         snd_play(sndEnemyFire)
                         wkick = 4
@@ -130,7 +130,7 @@ else { //PRE LOOP
     scrTarget()
     if target > 0 {
         if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {
-            if point_distance(target.x, target.y, x, y) > 48 {
+            if point_distance(target.x, target.y, x, y) > 52 {
                 if random(4) < 1 {
                     snd_play(sndEnemyFire)
                     wkick = 4

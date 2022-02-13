@@ -9,6 +9,7 @@ spr_dead = sprInvertedSnowTankDead;
 right=other.right;
 sprite_index=sprInvertedSnowTankHurt;//inverted
 my_health=other.my_health;
+alarm[0] = 8;
 }
 /*
 //scrDrop(50,0)

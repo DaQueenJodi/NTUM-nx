@@ -783,7 +783,7 @@ function scrWeapons() {
 	wep_load[70] = 7
 	wep_cost[70] = 1
 	wep_sprt[70] = sprMorphORay
-	wep_area[70] = 8
+	wep_area[70] = 7
 	wep_text[70] = "Eagle eyes also increases#MORPH-O-RAY's range"
 	wep_swap[70] = sndSwapEnergy
 	wep_rad[70] = 0;
