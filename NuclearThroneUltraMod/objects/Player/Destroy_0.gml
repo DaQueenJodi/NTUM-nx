@@ -286,11 +286,19 @@ else
 			scrUnlockGameMode(23,"UNLOCKED FOR PLAYING#EVERY CHARACTER");
 		}
 		
+		//DAILY RUN
 		if (opt_gamemode == 27)
 		{
 			encrypted_data.ctot_dailies_score_score[
 			array_length(encrypted_data.ctot_dailies_score_score)-1] = other.kills;
 			scrSaveEncrypted();
+			opt_gamemode = 0;
+			useSeed = false;
+		}
+		if (opt_gamemode == 26)
+		{
+			opt_gamemode = 0;
+			useSeed = false;
 		}
 		
 		scrSave();

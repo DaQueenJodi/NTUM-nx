@@ -40,6 +40,8 @@ goal=30;
 
 if instance_exists(MenuGen)
 goal = 80//60
+
+endPieceSpawned = false;
  
 /*
 if instance_number(Floor)<2

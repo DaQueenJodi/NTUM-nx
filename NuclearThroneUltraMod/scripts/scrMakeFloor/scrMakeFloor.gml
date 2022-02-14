@@ -316,47 +316,7 @@ function scrMakeFloor() {
 	instance_create(x,y,Floor)
 	instance_create(x,y-32,Floor);
 	}
-	if subarea=2||area=104 {//Volcanic boss battleground
-	if(instance_number(Floor)>=goal){
-
-	var xx;
-	var yy;
-	    for(xx=0;xx<10;xx+=1){
-	    instance_create(x+32*xx,y,Floor);//BOSS VULCANO/////////////////////////////<------------
-        
-	        for(yy=0;yy<10;yy+=1){
-	        if (area==7||area=108) && xx>4
-	        {
-	        instance_create(x+32*xx,y+32*yy,FloorLava)//This is the bos's area
-        
-	        if xx==8 && yy==5
-	        {
-	        if area = 7
-	        instance_create(x+32*xx,y+32*yy,HotDrake);//the boss
-	        else if area = 108
-	        instance_create(x+32*xx,y+32*yy,InvertedHotDrake);//the INVERTED boss
-	        }
-        
-        
-	        }else{
-	        instance_create(x+32*xx,y+32*yy,Floor)}
-        
-	        if area==104 && xx==2 && yy==2
-	        {
-	        instance_create(x+32*xx,y+32*yy,GiantGoldenWeaponChest)//crown of love?
-	        }
-	        if area==104 && xx==6 && yy==2
-	        {
-	        instance_create(x+32*xx,y+32*yy,GiantGoldenWeaponChest)
-	        }
-	        if area==104 && xx==4 && yy==9
-	        {
-	        instance_create(x+32*xx,y+32*yy,CarVenusFixed)
-	        }
-	        }
-	    }
-    
-	    }}
+	
 
 	}
 

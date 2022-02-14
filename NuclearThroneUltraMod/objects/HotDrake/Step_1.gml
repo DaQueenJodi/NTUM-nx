@@ -1,4 +1,6 @@
 if instance_number(enemy) <= 2&&!instance_exists(GenCont){
+		debug("WAKE!?");;
+
 if awake=false{
 x=xstart
 y=ystart

@@ -13,20 +13,30 @@ x += lengthdir_x(12,point_direction(x,y,ProtoStatue.x,ProtoStatue.y))
 y += lengthdir_y(12,point_direction(x,y,ProtoStatue.x,ProtoStatue.y))
 }else if speed = 0
 {
-if point_distance(x,y,Player.x,Player.y) < 75+Player.betterpluto or instance_exists(Portal)
-{
-x += lengthdir_x(12,point_direction(x,y,Player.x,Player.y))
-y += lengthdir_y(12,point_direction(x,y,Player.x,Player.y))
-}
+	var dis = point_distance(x,y,Player.x,Player.y);
+	if dis < 75+Player.betterpluto or instance_exists(Portal)
+	{
+	x += lengthdir_x(12,point_direction(x,y,Player.x,Player.y))
+	y += lengthdir_y(12,point_direction(x,y,Player.x,Player.y))
+		if dis > 75
+		{
+			
+		}
+	}
 }
 
 }
 else if speed = 0
 {
-if point_distance(x,y,Player.x,Player.y) < 75+Player.betterpluto or instance_exists(Portal)
+	var dis = point_distance(x,y,Player.x,Player.y);
+if dis < 75+Player.betterpluto or instance_exists(Portal)
 {
 x += lengthdir_x(12,point_direction(x,y,Player.x,Player.y))
 y += lengthdir_y(12,point_direction(x,y,Player.x,Player.y))
+	if dis > 75
+	{
+		
+	}
 }
 else if instance_exists(Implosion) and speed = 0
     {
