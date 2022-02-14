@@ -143,3 +143,6 @@ bwkick += 1
 }
 if nearWall
 	draw_sprite(sprHammerHeadNear,wave,x,y-16);
+
+if skill_got[32] && isAlkaline && my_health < maxhealth
+	draw_sprite_ext(sprAlkalineSaliva,wave,x,y,right,1,0,c_white,1);

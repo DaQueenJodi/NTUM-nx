@@ -617,6 +617,29 @@ scrUnlockBSkin(21,"FOR GAINING THE MAXIMUM AMOUNT#OF RADS AS HORROR",0);
 }
 
 //reload stuff
+if (reload > 0 || breload > 0 || creload > 0)
+{
+	if skill_got[22] = 1
+	{
+	//nerves of steel g  STRESS
+	var reduction = 0;
+		if race = 25
+		{
+			reduction = (1-(my_health/maxhealth))*0.62
+		}
+		else
+		{
+			reduction = (1-(my_health/maxhealth))*0.68//*1//0.35 the original has 80% boost
+		}
+		if UberCont.opt_gamemode == 24//SHARP STRESS GAMEMODE
+			reduction *= level;
+		reduction = max(reduction,0);
+		reload -= reduction
+		breload -= reduction;
+		creload -= reduction;
+	}	
+}
+
 if reload > 0
 {
 reload -= 1
@@ -639,26 +662,6 @@ if ultra_got[21]//ULTRA A
         reload -=0.64;
         }
     }
-
-if skill_got[22] = 1
-{
-//nerves of steel g  STRESS
-var reduction = 0;
-	if race = 25
-	{
-		reduction = (1-(my_health/maxhealth))*0.62
-	}
-	else
-	{
-		reduction = (1-(my_health/maxhealth))*0.68//*1//0.35 the original has 80% boost
-	}
-	if UberCont.opt_gamemode == 24//SHARP STRESS GAMEMODE
-		reduction *= level;
-	reduction = max(reduction,0);
-	reload -= reduction
-	breload -= reduction;
-	creload -= reduction;
-}
 
 if race=25
 {
