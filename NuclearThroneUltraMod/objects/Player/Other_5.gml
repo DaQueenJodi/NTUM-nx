@@ -86,9 +86,9 @@ UberCont.cbst_diff[race] = hard
 if crown = 2
 {
 	var toHeal = maxhealth - min(my_health,maxhealth);
-	my_health = maxhealth;
+	//my_health = maxhealth;
 	var overheal = (maxhealth - toHeal) * 0.5;
-	my_health = maxhealth + overheal;
+	my_health = max(maxhealth,my_health + overheal);
 	/*
 if my_health > maxhealth
 my_health = maxhealth
