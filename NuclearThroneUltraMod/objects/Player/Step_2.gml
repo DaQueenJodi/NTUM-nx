@@ -83,7 +83,7 @@ speed *= 0.9}
 
 if KeyCont.key_pick[p] = 1
 {
-	KeyCont.key_pick[p] = 0;
+	KeyCont.key_pick[p] = 2;
 if curse = 0||targetPickup.curse==curse or bwep = 0 || (cwep = 0 && ultra_got[31])//SWITCH OUR MODS DATA ASWELL!
 {
 instance_create(x,y,WepSwap)
@@ -494,28 +494,32 @@ if (my_health<prevhealth)
 	//Took a hit?
 	if (skill_got[32] && isAlkaline && exception=false)//Alkaline Savila
 	{
-		isAlkaline = false;
 		var damageTaken = prevhealth - my_health - damageReduced;
-		if race == 25//Doctor buff
-			damageTaken = ceil(damageTaken*1.25);
-		if (skill_got[9]) //Second stomache
-			damageTaken *= 2;
-		my_health=min(maxhealth,prevhealth+damageTaken);
-		prevhealth = my_health;
-		with instance_create(x,y,HealFX)
+		//Needs to be healable or lethal
+		if (prevhealth < maxhealth || my_health <= 0)
 		{
-			depth = other.depth - 1;	
-		}
-		with instance_create(x,y,SharpTeeth)
-			owner=other.id;
-		snd_play(sndHealthPickup)
-		var pt = instance_create(x,y,PopupText)
-		if my_health = maxhealth
-			pt.mytext = "MAX HP";
-		else
-			pt.mytext = "+"+string(damageTaken)+" HP";
+			isAlkaline = false;
+			if race == 25//Doctor buff
+				damageTaken = ceil(damageTaken*1.25);
+			if (skill_got[9]) //Second stomache
+				damageTaken *= 2;
+			my_health=min(maxhealth,prevhealth+damageTaken);
+			prevhealth = my_health;
+			with instance_create(x,y,HealFX)
+			{
+				depth = other.depth - 1;	
+			}
+			with instance_create(x,y,SharpTeeth)
+				owner=other.id;
+			snd_play(sndHealthPickup)
+			var pt = instance_create(x,y,PopupText)
+			if my_health = maxhealth
+				pt.mytext = "MAX HP";
+			else
+				pt.mytext = "+"+string(damageTaken)+" HP";
 			
-		alarm[3]=10;//duration of iframes
+			alarm[3]=10;//duration of iframes
+		}
 	}
 	if skill_got[12]//euphoria resistance?
 	{

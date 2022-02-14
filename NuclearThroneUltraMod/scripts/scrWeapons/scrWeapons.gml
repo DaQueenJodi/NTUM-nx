@@ -2078,7 +2078,7 @@ function scrWeapons() {
 	wep_name[188] = "GRENADE PISTOL"
 	wep_type[188] = 4
 	wep_auto[188] = 0
-	wep_load[188] = 11
+	wep_load[188] = 13
 	wep_cost[188] = 1
 	wep_sprt[188] = sprGrenadePistol
 	wep_area[188] = 0
