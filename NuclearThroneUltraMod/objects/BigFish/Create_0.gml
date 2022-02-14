@@ -7,9 +7,9 @@ sucking = false;
 
 event_inherited();
 
-if instance_exists(Player){
-my_health=round( (1+(Player.loops*0.3))*my_health )//bandit loop 1: 1.1*4= 5(rounded up)
-maxhealth=my_health;
+if Player.loops > 0 {
+	maxhealth *= 2;
+	my_health = maxhealth;
 }
 
 spr_idle = sprOasisBossIdle
@@ -53,8 +53,3 @@ if cam
 instance_create(x,y,DramaCamera);
 
 friction = 0.8;
-
-
-if Player.loops > 0 {
-	maxhealth *= 3;
-}

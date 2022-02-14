@@ -87,7 +87,12 @@ if target > 0 && alarm[6] < 1 && alarm[7] < 1 {
 					}
 				}
 				
-		        if fish < 2 && (point_distance(x, y, Player.x, Player.y) > 75) {
+				var maxfish = 2
+				if instance_exists(Player) {
+					maxfish += Player.loops*5
+				}
+				
+		        if fish < maxfish && (point_distance(x, y, Player.x, Player.y) > 75) {
 		            image_index = 0
 		            sprite_index = spr_startfire
 		            alarm[3] = 15;
