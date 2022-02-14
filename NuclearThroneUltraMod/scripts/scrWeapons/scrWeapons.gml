@@ -4063,34 +4063,17 @@ function scrWeapons() {
 	wep_swap[367] = sndSwapExplosive
 	wep_rad[367] = 0;
 	
-	/*
-	wep_name[360] = "OCEAN GRENADE"
-	wep_type[360] = 4
-	wep_auto[360] = 0
-	wep_load[360] = 25
-	wep_cost[360] = 1
-	wep_sprt[360] = sprHeavyNader
-	wep_area[360] = 4
-	wep_text[360] = "scrappy"
-	wep_swap[360] = sndSwapExplosive
-	wep_rad[360] = 0;
-	*/
-	
-	/*
-	wep_name[360] = "DIRECTOR GRENADE LAUNCHER"
-	wep_type[360] = 4
-	wep_auto[360] = 0
-	wep_load[360] = 25
-	wep_cost[360] = 1
-	wep_sprt[360] = sprHeavyNader
-	wep_area[360] = 4
-	wep_text[360] = "I am the director"
-	wep_swap[360] = sndSwapExplosive
-	wep_rad[360] = 0;
-	*/
-	/*
-	
-	*/
+	wep_name[368] = "KRAKEN GRENADE LAUNCHER"
+	wep_type[368] = 4
+	wep_auto[368] = 0
+	wep_load[368] = 25
+	wep_cost[368] = 1
+	wep_sprt[368] = sprDisperseKrakenGun
+	wep_area[368] = 5
+	wep_text[368] = "ocean bomb!"
+	wep_swap[368] = sndSwapExplosive
+	wep_rad[368] = 0;
+
 	
 	maxwep = array_length(wep_name)-1;
 

@@ -375,8 +375,15 @@ extra = 0
 alarm[0] = 20
 
 
-thanks = "VLAMBEER##MOD REVIVAL#STARTED BY:#base4/spencers145#BUGFIXES:#base4/spencers145##SFX AND ART#@larje100##REDDIT: #ULTRA MUTATION ART:#Lynzkar#skurleton#@BioOnPC#HUNTER ART#& CHICKEN BSKIN:#NotYourSagittarius#Lunarshards####FOLLOW ON TWITTER<3"
+thanks = "#MOD REVIVAL#STARTED BY:#base4/spencers145#ADDITIONAL CODE:#base4/spencers145##Q&A GODDESS#AgentCucco##SFX AND ART#@larje100##ULTRA MUTATION ART:#@tilde_bee#Lynzkar#skurleton#Lunarshards##MORE ART#NotYourSagittarius##@ideaot/jasmine"
+stxt2 = "####AWESOME MOD PEOPLE:##MOD REVIVAL#STARTED BY:##ADDITIONAL CODE:###Q&A GODDESS###SFX AND ART###ULTRA MUTATION ART:######MORE ART####FOLLOW ON TWITTER<3"
+txt0 = "#NUCLEAR THRONE#A GAME BY VLAMBEER#MOD BY ERDEPPOL"
+txt1 = "####DIRECTOR:#JAN WILLEM NIJMAN##PRODUCER:#RAMI ISMAIL##ART & ORIGINAL#CHARACTER DESIGN:#PAUL VEER##MUSIC:#JUKIO KALLIO##SOUND DESIGN:#JOONAS TURNER##PROMOTIONAL ART:#JUSTIN CHAN##VOICE OF MR. VENUZ:#DOSEONE###MODDED BY"
+txt2 = "####AWESOME MOD PEOPLE:#"+string(thanks)
+stxt0 = "#NUCLEAR THRONE"
+stxt1 = "####DIRECTOR:###PRODUCER:###ART & ORIGINAL#CHARACTER DESIGN:###MUSIC:###SOUND DESIGN:###PROMOTIONAL ART:###VOICE OF MR. VENUZ:#####JUUL @Erdeppol"
 
+//Lunarshards
 alarm[1] = 20
 
 img = 0
@@ -395,6 +402,3 @@ joy_init()
 joyaim = UberCont.opt_gamepad
 if joyaim = 1
 display_mouse_set(view_xview+16+22*pick,view_yview+view_hview-36+12)//optimise?
-
-/* */
-/*  */

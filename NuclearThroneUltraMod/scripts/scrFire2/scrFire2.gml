@@ -4644,7 +4644,7 @@ function scrFire2() {
 
 	break;
 	
-	//NADER
+	//DIRECTOR GRENADE LAUNCHER
 	case 367:
 
 	snd_play(sndGrenade)
@@ -4660,6 +4660,29 @@ function scrFire2() {
 	BackCont.viewy2 += lengthdir_y(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.shake += 4
 	wkick = 6
+
+	break;
+	
+	//KRAKEN GRENADE LAUNCHER
+	case 368:
+
+	snd_play(sndGrenade);
+	snd_play(sndRoll);
+	//snd_play(sndBloodLauncher);
+
+	snd_play(choose(sndWater1,sndWater2) );
+
+	with instance_create(x,y,OceanBomb)
+	{
+	sticky = 0
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*other.accuracy,10)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(11,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(11,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 4
+	wkick = 6.5
 
 	break;
 

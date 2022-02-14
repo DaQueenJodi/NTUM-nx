@@ -81,9 +81,13 @@ alarm[0]=3;
 }
 if instance_exists(other.creator){
 direction=point_direction(x,y,other.creator.x,other.creator.y);
-motion_add(point_direction(x,y,other.creator.x,other.creator.y),0.8);
+motion_add(point_direction(x,y,other.creator.x,other.creator.y),0.4);
 mp_potential_step(other.creator.x,other.creator.y,3,false)
 //move_contact_solid(direction,2+random(2))
+if place_meeting(x,y,Wall)
+{	x = xprevious;
+	y = yprevious;	
+}
 }
 }
 
