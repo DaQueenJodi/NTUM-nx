@@ -101,15 +101,20 @@ if (Player.skill_got[31])
 if ( prevhealth > my_health && hardshell == true )
 {
 
-if (( prevhealth-my_health > 2 ) && ( prevhealth-2 != 0 )  )
+	if (( prevhealth-my_health > 1 ) && ( prevhealth-1 != 0 )  )
     {
-    my_health+=1;
-    hardshell=false;
+	    my_health+=1;
+	    hardshell=false;
+		snd_play(sndHitRock);
+		repeat(3)
+		with instance_create(x,y,Debris)
+		{
+			motion_add(random(360),3+random(4));	
+		}
     }
     
     if my_health>maxhealth
     my_health=maxhealth;
-
 }
 
 if (sprite_index!=spr_hurt)

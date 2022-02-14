@@ -332,29 +332,34 @@ instance_destroy()
 var damageReduced = 0;
 if (skill_got[31])
 {
-if ( prevhealth > my_health && hardshell == true )
-{
+	if ( prevhealth > my_health && hardshell == true )
+	{
+	var dmgTaken = prevhealth-my_health;
+	    if (( dmgTaken > 4 ) && ( prevhealth-4 != 0 ) && race = 25  )
+	    {
+	    my_health+=2;
+		damageReduced += 2;
+	    hardshell=false;
+	    }
+	    else if (( dmgTaken > 1 ) && ( prevhealth-1 != 0 )  )
+	    {
+	    my_health+=1;
+		damageReduced += 1;
+	    hardshell=false;
+	    }
+		if damageReduced > 0
+		{
+			snd_play(sndHitRock);
+			repeat(3)
+			with instance_create(x,y,Debris)
+			{
+				motion_add(random(360),3+random(4));	
+			}
+		}
+	}
 
-    if (( prevhealth-my_health > 4 ) && ( prevhealth-4 != 0 ) && race = 25  )
-    {
-    my_health+=2;
-	damageReduced += 2;
-    hardshell=false;
-    }
-    else if (( prevhealth-my_health > 2 ) && ( prevhealth-2 != 0 )  )
-    {
-    my_health+=1;
-	damageReduced += 1;
-    hardshell=false;
-    }
-    
-    if my_health>maxhealth
-    my_health=maxhealth;
-    
-}
-
-if (sprite_index!=spr_hurt)
-hardshell=true;
+	if (sprite_index!=spr_hurt)
+		hardshell=true;
 }
 
 /* */
@@ -462,7 +467,7 @@ if skill_got[22]//Stress Sharp teeth part
 if my_health<prevhealth&&alarm[10]<1//I been hit
 {
 alarm[10]=60;
-sharpteeth=prevhealth-my_health;
+sharpteeth=prevhealth-my_health-damageReduced;
 var multiplier = 2.5;
 if race = 25
 multiplier*=1.25//Sharp teeth's damage!
