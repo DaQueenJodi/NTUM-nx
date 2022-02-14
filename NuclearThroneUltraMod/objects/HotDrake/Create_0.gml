@@ -2,7 +2,6 @@ raddrop = 80
 maxhealth = 4000
 meleedamage = 0
 size = 2
-debug("I am dragon");
 event_inherited()
 /* THIS IN BEGIN STEP!
 if instance_exists(Player){
