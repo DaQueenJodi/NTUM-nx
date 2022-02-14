@@ -19,15 +19,18 @@ sprite_index = spr_hurt
 image_index = 0
 //motion_add(other.image_angle,4)}
 //with Player
-motion_add(other.image_angle,8)
+motion_add(other.image_angle,4)
 
 
 //speed=0;
 if instance_exists(other.creator){
 direction=point_direction(x,y,other.creator.x,other.creator.y);
 motion_add(point_direction(x,y,other.creator.x,other.creator.y),0.8);
-mp_potential_step(other.creator.x,other.creator.y,4,false)
-
+mp_potential_step(other.creator.x,other.creator.y,3,false)
+if place_meeting(x,y,Wall)
+{	x = xprevious;
+	y = yprevious;	
+}
 //move_contact_solid(direction,2+random(2))
 }
 
@@ -82,7 +85,7 @@ alarm[0]=3;
 if instance_exists(other.creator){
 direction=point_direction(x,y,other.creator.x,other.creator.y);
 motion_add(point_direction(x,y,other.creator.x,other.creator.y),0.4);
-mp_potential_step(other.creator.x,other.creator.y,3,false)
+mp_potential_step(other.creator.x,other.creator.y,2,false)
 //move_contact_solid(direction,2+random(2))
 if place_meeting(x,y,Wall)
 {	x = xprevious;

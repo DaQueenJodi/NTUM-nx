@@ -6,7 +6,6 @@ function scrDrawBloom() {
 	//exit;
 
 	draw_set_blend_mode(bm_add)
-
 	if instance_exists(Player){
 	with Bullet1
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
@@ -24,6 +23,9 @@ function scrDrawBloom() {
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
 
 	}
+	with PlutoFX
+	draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale,image_angle,c_white,ba+0.01)
+	
 	with HorrorBullet
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3))//roids ultra d
 

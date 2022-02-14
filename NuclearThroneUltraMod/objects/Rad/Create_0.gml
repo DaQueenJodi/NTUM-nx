@@ -1,6 +1,7 @@
 friction = 0.2
 image_angle = random(360)
 
+isGettingSucked = false;
 
 blink = 30
 alarm[0] = 150+random(30)
@@ -26,10 +27,10 @@ motion_add(random(360),0.3+random(1)+(Player.skill_got[5]*2));
 }
 
 }
-
 }
 
 
 image_index = random(7)
 image_speed = 0
 
+event_inherited();
