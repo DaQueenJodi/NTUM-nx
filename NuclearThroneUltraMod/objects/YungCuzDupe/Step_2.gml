@@ -106,10 +106,10 @@ if ( prevhealth > my_health && hardshell == true )
 	    my_health+=1;
 	    hardshell=false;
 		snd_play(sndHitRock);
-		repeat(3)
+		repeat(4)
 		with instance_create(x,y,Debris)
 		{
-			motion_add(random(360),3+random(4));	
+			speed *= 1.6;
 		}
     }
     
