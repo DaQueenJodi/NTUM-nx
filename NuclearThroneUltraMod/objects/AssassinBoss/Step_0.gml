@@ -68,7 +68,7 @@ if (alarm[4] < 0) {
 		    //direction = point_direction(target.x+lengthdir_x(point_distance(x,y,target.x,target.y)*0.95,point_direction(x,y,forwardprojectilex,forwardprojectiley)),target.y+lengthdir_y(point_distance(x,y,target.x,target.y)*0.95,point_direction(x,y,forwardprojectilex,forwardprojectiley)),x,y)+random(60)-30
 		    var projectiledir = point_direction(x,y,dodgethis.x,dodgethis.y);
     
-		    if point_distance(Player.x, Player.y, x, y) > 80 && (random(8)<1 || alarm[6] > 20 && random(2) < 1 || aggression > 180 && random(2) < 1) && alarm[5] < 1 && (alarm[0]<1 || alarm[6] > 20) && alarm[2]<1 && projectiledir < gunangle+100 && projectiledir > gunangle-100 && dodgethis.typ!=0
+		    if point_distance(Player.x, Player.y, x, y) > 80 && random(2) < 1 && alarm[5] < 1 && (alarm[0]<1 || alarm[6] > 20) && alarm[2]<1 && projectiledir < gunangle+100 && projectiledir > gunangle-100 && dodgethis.typ!=0
 		    {//SMACK THAT PROJETILE BACK
 				//if (alarm[6] > 30) {
 					//var bro = instance_create(x,y,PopupText);
@@ -88,7 +88,7 @@ if (alarm[4] < 0) {
 		        wepangle = -wepangle
 		        motion_add(projectiledir,6)
 		    }
-		    else if random(12)<1 && alarm[2] < 1 && aggression <= 180
+		    else if random(12)<1 && alarm[2] < 1 && aggression < 300
 		    {//TELEPORT
 			    with instance_nearest(x + (random(2) - 1) * (random(64)+64),y + (random(2) - 1) * (random(64)+64),Floor)
 			    {
@@ -111,7 +111,7 @@ if (alarm[4] < 0) {
 					}
 			    }
 		    }
-		    else if alarm[2] < 1 && aggression <= 180
+		    else if alarm[2] < 1 && aggression < 300
 		    {//dodge it
 			    direction=point_direction(x,y,forwardprojectilex,forwardprojectiley)+180+random(30)-15;
 			    dodge = 4;
@@ -126,8 +126,6 @@ if (alarm[4] < 0) {
 			{
 				with other {
 					if place_meeting(other.x + 16, other.y + 16, Wall) {
-						alarm[1] = 1;
-						alarm[2] = 0;
 						continue;
 					}
 				}

@@ -9,13 +9,22 @@ if target > 0
 			move_contact_solid(direction+choose(90,-90),1+irandom(3))
 		}
 		
-		if point_distance(target.x,target.y,x,y) < 80 && alarm[5] < 1 {//SMACK THAT
-			alarm[2]=18
-			instance_create(x,y,Notice);
-			instance_create(x+5,y,Notice);
-			instance_create(x-5,y,Notice);
-			alarm[1]=25;
-			speed *= 0.5;
+		if point_distance(target.x,target.y,x,y) < 80 {//SMACK THAT
+			if alarm[5] < 1 {
+				alarm[2]=18
+				instance_create(x,y,Notice);
+				instance_create(x+5,y,Notice);
+				instance_create(x-5,y,Notice);
+				alarm[1]=25;
+				speed *= 0.5;
+			} else {
+				alarm[2]=25
+				instance_create(x,y,Notice);
+				instance_create(x+5,y,Notice);
+				instance_create(x-5,y,Notice);
+				alarm[1]=40;
+				speed *= 0.5;
+			}
 		}
 		else
 		{
@@ -31,11 +40,20 @@ if target > 0
 	}
 	else if point_distance(target.x,target.y,x,y) < 70 && alarm[5] < 1
 	{//SMACK THAT ANYWAYS WE CAN GO THROUGH WALLS FK THAT SHIT
-		alarm[2]=22//the delay that everyone wants its longer here cause you wont expect this
-		instance_create(x,y,Notice);
-		instance_create(x+5,y,Notice);
-		instance_create(x-5,y,Notice);
-		alarm[1]=30;
+		if alarm[5] < 1 {
+			alarm[2]=22//the delay that everyone wants its longer here cause you wont expect this
+			instance_create(x,y,Notice);
+			instance_create(x+5,y,Notice);
+			instance_create(x-5,y,Notice);
+			alarm[1]=30;
+		} else {
+			alarm[2]=30
+			instance_create(x,y,Notice);
+			instance_create(x+5,y,Notice);
+			instance_create(x-5,y,Notice);
+			alarm[1]=40;
+		}
+		
 	}
 	else if random(4) < 1
 	{
