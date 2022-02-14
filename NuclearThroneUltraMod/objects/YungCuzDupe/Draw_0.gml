@@ -84,3 +84,5 @@ wkick -= 1
 if wkick < 0
 wkick += 1
 
+if nearWall
+	draw_sprite(sprHammerHeadNear,wave,x,y-16);
