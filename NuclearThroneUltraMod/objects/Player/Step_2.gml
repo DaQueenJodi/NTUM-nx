@@ -523,7 +523,7 @@ if (my_health<prevhealth)
 	}
 	if skill_got[12]//euphoria resistance?
 	{
-		if !instance_exists(GenCont)&&!instance_exists(EuphoriaShield)&&!instance_exists(LevCont)&&exception=false
+		if !instance_exists(GenCont)&&(!instance_exists(myShield) || myShield == -1)&&!instance_exists(LevCont)&&exception=false
 		{
 		if skill_got[28]//rage
 		{
@@ -536,7 +536,11 @@ if (my_health<prevhealth)
 			alarm[3]=35;
 		else
 			alarm[3]=30;//duration
-		instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
+		myShield = instance_create(x,y,EuphoriaShield);
+		with myShield
+		{
+			owner = other.id;
+		}
 		}
 	}
 }

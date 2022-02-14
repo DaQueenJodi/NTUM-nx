@@ -517,3 +517,4 @@ else
 onlyusemerevolver=false;
 
 isAlkaline = true;
+myShield = -1;

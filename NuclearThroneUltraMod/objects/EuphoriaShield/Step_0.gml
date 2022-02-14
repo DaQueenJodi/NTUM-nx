@@ -1,7 +1,9 @@
-if instance_exists(Player)
+if instance_exists(owner)
 {
-x=Player.x;
-y=Player.y;
+	x=owner.x;
+	y=owner.y;
 }
-else{instance_destroy();}
-
+else{
+	instance_destroy();
+	
+}

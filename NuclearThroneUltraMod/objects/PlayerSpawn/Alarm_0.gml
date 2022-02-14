@@ -1,7 +1,6 @@
 with Player
 {instance_destroy();}
-with instance_create(x,y,EuphoriaShield)
-image_speed=0.2;
+
 if (myCorpse == -1 || !instance_exists(myCorpse))
 	myCorpse = id;
 instance_create(myCorpse.x,myCorpse.y,Player);
@@ -27,6 +26,12 @@ with Player//Data to keep
 	visible=true;
 	snd_play(snd_wrld, 0, false, false);
 	wep = 0;
+	myShield = instance_create(x,y,EuphoriaShield)
+	with myShield
+	{
+		owner = other.id
+		image_speed=0.2;
+	}
 }
 
 

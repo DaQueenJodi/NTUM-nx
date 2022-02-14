@@ -121,4 +121,6 @@ if Player.skill_got[32]
 returntoplayer=0;
 returntoplayerfast=0;
 
+depth = Player.depth + 1;
 
+myShield = -1;

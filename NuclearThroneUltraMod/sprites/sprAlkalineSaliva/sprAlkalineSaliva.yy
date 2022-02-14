@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 0,
-  "bbox_top": 0,
-  "bbox_bottom": 0,
+  "bbox_left": 7,
+  "bbox_right": 18,
+  "bbox_top": 7,
+  "bbox_bottom": 20,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -27,6 +27,27 @@
     {"compositeImage":{"FrameId":{"name":"79fb85fa-9ea3-4f80-bee4-933938801e63","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"79fb85fa-9ea3-4f80-bee4-933938801e63","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":{"name":"3965d79b-0b7d-4e15-8e30-0966ed555342","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprAlkalineSaliva","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"79fb85fa-9ea3-4f80-bee4-933938801e63","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"03d33c56-e48c-47b0-a9fe-edd41f67c349","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"03d33c56-e48c-47b0-a9fe-edd41f67c349","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":{"name":"3965d79b-0b7d-4e15-8e30-0966ed555342","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprAlkalineSaliva","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"03d33c56-e48c-47b0-a9fe-edd41f67c349","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"faecd24f-7da1-4708-8c11-51dfe7dbe717","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"faecd24f-7da1-4708-8c11-51dfe7dbe717","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":{"name":"3965d79b-0b7d-4e15-8e30-0966ed555342","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprAlkalineSaliva","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"faecd24f-7da1-4708-8c11-51dfe7dbe717","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"040ac99b-b75a-470c-895e-400cb063cf1f","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"040ac99b-b75a-470c-895e-400cb063cf1f","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":{"name":"3965d79b-0b7d-4e15-8e30-0966ed555342","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprAlkalineSaliva","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"040ac99b-b75a-470c-895e-400cb063cf1f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"daac5ff0-ca16-445a-83c7-83d4e2a50f98","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"daac5ff0-ca16-445a-83c7-83d4e2a50f98","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":{"name":"3965d79b-0b7d-4e15-8e30-0966ed555342","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprAlkalineSaliva","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"daac5ff0-ca16-445a-83c7-83d4e2a50f98","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fc561a43-73bc-43f2-a899-0a9e0b188387","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fc561a43-73bc-43f2-a899-0a9e0b188387","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":{"name":"3965d79b-0b7d-4e15-8e30-0966ed555342","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprAlkalineSaliva","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"fc561a43-73bc-43f2-a899-0a9e0b188387","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"33019f23-a086-46de-8b15-02b48d6294b0","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"33019f23-a086-46de-8b15-02b48d6294b0","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":{"name":"3965d79b-0b7d-4e15-8e30-0966ed555342","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprAlkalineSaliva","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"33019f23-a086-46de-8b15-02b48d6294b0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"83060386-a0da-439f-9255-49f68bfdb2d9","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"83060386-a0da-439f-9255-49f68bfdb2d9","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"LayerId":{"name":"3965d79b-0b7d-4e15-8e30-0966ed555342","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprAlkalineSaliva","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","name":"83060386-a0da-439f-9255-49f68bfdb2d9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprAlkalineSaliva","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},
@@ -36,12 +57,19 @@
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 8.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"cf8c4075-5384-497e-84aa-f6a2bebb621e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"79fb85fa-9ea3-4f80-bee4-933938801e63","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"521362d1-2c22-422a-9ce6-a0f8150f8ccd","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"03d33c56-e48c-47b0-a9fe-edd41f67c349","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fbad02d5-acd4-4bfb-a243-5b1defc13b9f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"faecd24f-7da1-4708-8c11-51dfe7dbe717","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8975e0d8-f0f3-4d72-99c8-154f93ca4298","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"040ac99b-b75a-470c-895e-400cb063cf1f","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"245b30b0-5406-4a71-a3b2-592b49e0d014","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"daac5ff0-ca16-445a-83c7-83d4e2a50f98","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0c2974f2-66f3-4b41-a707-e120e03c51a3","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fc561a43-73bc-43f2-a899-0a9e0b188387","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"635520fd-3c84-4844-9c84-dbb30e4062f7","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"33019f23-a086-46de-8b15-02b48d6294b0","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8e3a8969-0736-4fda-ad30-a37c2bbebfea","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"83060386-a0da-439f-9255-49f68bfdb2d9","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
