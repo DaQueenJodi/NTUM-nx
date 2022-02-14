@@ -1,6 +1,7 @@
 /// @description Go to banditland
 if KeyCont.key_pick[other.p] = 1
 {
+	KeyCont.key_pick[Player.p] = 0;
 snd_play(other.snd_thrn);
 
 with other

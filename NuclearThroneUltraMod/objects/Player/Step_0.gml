@@ -164,6 +164,14 @@ if UberCont.public=0 {
 		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
 		thing.mytext = "WEAPON CHEST!";
 	    }
+	if (keyboard_check_pressed(ord("I")))
+	    {
+		var dangle = random(1)*360;
+	    invertedportalcounter=1;
+	    invertedportaldelay=5+random(30);
+		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
+		thing.mytext = "INVERTED PORTAL!";
+	    }
 	if (keyboard_check_pressed(vk_delete))
 	    {
 		repeat(15) {
@@ -1179,7 +1187,16 @@ microseconds=0;
 ///spawn inverted portal
     if (invertedportalcounter>invertedportaldelay)&&instance_exists(Floor)
     {
-    with instance_create(instance_furthest(x,y,Floor).x+16, instance_furthest(x,y,Floor).y+16,Portal)
+		var targetFloor;
+		if !instance_exists(Portal)
+		{
+			targetFloor = instance_furthest(x,y,Floor);
+		}
+		else
+		{
+			targetFloor = instance_furthest(Portal.x,Portal.y,Floor);
+		}
+    with instance_create(targetFloor.x+16, targetFloor.y+16,Portal)
     {inverted=true;
     depth=0;
     }

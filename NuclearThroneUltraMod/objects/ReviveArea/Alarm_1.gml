@@ -1,5 +1,5 @@
 /// @description Kill revive circle when owner died
-if (owner != -1 && !instance_exists(owner))
+if (owner == -1 || !instance_exists(owner))
 {
 	instance_destroy();	
 }

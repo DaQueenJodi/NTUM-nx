@@ -83,6 +83,7 @@ speed *= 0.9}
 
 if KeyCont.key_pick[p] = 1
 {
+	KeyCont.key_pick[p] = 0;
 if curse = 0||targetPickup.curse==curse or bwep = 0 || (cwep = 0 && ultra_got[31])//SWITCH OUR MODS DATA ASWELL!
 {
 instance_create(x,y,WepSwap)
