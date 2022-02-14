@@ -22,3 +22,4 @@ repeat(amount)
 		motion_add(angle,random_range(0.5,2));
 	angle += angleStep;
 }
+BackCont.shake += 5;

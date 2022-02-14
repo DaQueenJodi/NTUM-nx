@@ -1,5 +1,5 @@
 /// @description YUNG CUZ C SKIN UNLOCK
-instance_exists(Player)
+if instance_exists(Player)
 {
 	if (Player.maxhealth < 2)
 	{

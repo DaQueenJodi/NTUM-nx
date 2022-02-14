@@ -1763,38 +1763,25 @@ function scrPowers() {
 	x += lengthdir_x(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))
 	if place_free(x,y+lengthdir_y(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y)))
 	y += lengthdir_y(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))}}
-	with HPPickup
-	{if x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
+	with AmmoHPPickup
 	{
+		if x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
+		{
 
-	if Player.ultra_got[12]==1{//Ultra D don't care about the walls +increase speed
-	x += lengthdir_x(2+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))//shouldnt it be more efficient
-	y += lengthdir_y(2+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))//if I do this cehck outside of the with
-	}
-	else{
-	if place_free(x+lengthdir_x(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y)),y)
-	x += lengthdir_x(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))
-	if place_free(x,y+lengthdir_y(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y)))
-	y += lengthdir_y(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))
-	}
+		if Player.ultra_got[12]==1{//Ultra D don't care about the walls +increase speed
+		x += lengthdir_x(2+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))//shouldnt it be more efficient
+		y += lengthdir_y(2+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))//if I do this cehck outside of the with
+		}
+		else{
+		if place_free(x+lengthdir_x(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y)),y)
+		x += lengthdir_x(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))
+		if place_free(x,y+lengthdir_y(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y)))
+		y += lengthdir_y(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))
+		}
 
-	}}
-	with AmmoPickup
-	{if x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
-	{
-
-	if Player.ultra_got[12]==1{//Ultra D don't care about the walls
-	x += lengthdir_x(2+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))
-	y += lengthdir_y(2+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))
+		}
 	}
-	else{
-	if place_free(x+lengthdir_x(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y)),y)
-	x += lengthdir_x(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))
-	if place_free(x,y+lengthdir_y(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y)))
-	y += lengthdir_y(1+Player.skill_got[5],point_direction(x,y,Player.x,Player.y))
-	}
-
-	}}
+	
 	with WepPickup
 	{if x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 	{

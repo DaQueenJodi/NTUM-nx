@@ -39,3 +39,4 @@ repeat(4)
 image_index = random(7)
 image_speed = 0
 
+event_inherited();

@@ -42,6 +42,16 @@ if can_shoot = 1 and Player.ammo[wep_type[wep]] >= wep_cost[wep] and Player.rad>
     Player.ammo[wep_type[wep]] -= wep_cost[wep]
     Player.rad -= wep_rad[wep]
     }
+	if Player.skill_got[22]//STRESS
+	{
+		with instance_create(x+random_range(-9,9),y-6-random(7),Sweat)
+		{
+			depth = other.depth-1;
+			vspeed = -1 - random(3);
+			hspeed = (2 + random(3))*(-other.right);
+			image_yscale = random_range(0.75,1);
+		}	
+	}
 clicked = 0
 }
 if wep_auto[wep] = 1 and (KeyCont.key_fire[Player.p] = 1 or KeyCont.key_fire[Player.p] = 2 or Player.keyfire > 0)
@@ -91,15 +101,20 @@ if (Player.skill_got[31])
 if ( prevhealth > my_health && hardshell == true )
 {
 
-if (( prevhealth-my_health > 2 ) && ( prevhealth-2 != 0 )  )
+	if (( prevhealth-my_health > 1 ) && ( prevhealth-1 != 0 )  )
     {
-    my_health+=1;
-    hardshell=false;
+	    my_health+=1;
+	    hardshell=false;
+		snd_play(sndHitRock);
+		repeat(4)
+		with instance_create(x,y,Debris)
+		{
+			speed *= 1.6;
+		}
     }
     
     if my_health>maxhealth
     my_health=maxhealth;
-
 }
 
 if (sprite_index!=spr_hurt)
@@ -117,7 +132,7 @@ if (my_health<prevhealth)
 	//Took a hit?
 	if Player.skill_got[12]//euphoria resistance?
 	{
-		if !instance_exists(GenCont)&&!instance_exists(EuphoriaShield)&&!instance_exists(LevCont)
+		if !instance_exists(GenCont)&&(!instance_exists(myShield) || myShield == -1)&&!instance_exists(LevCont)
 		{
 		if Player.skill_got[28]//rage
 		{
@@ -130,29 +145,35 @@ if (my_health<prevhealth)
 		alarm[3]=35;
 		else
 		alarm[3]=30;//duration
-		instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
+		myShield = instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
+		with myShield
+			owner = other.id;
 		}
 	}
 	if (isAlkaline)//Alkaline Savila
 	{
-		isAlkaline = false;
 		var damageTaken = prevhealth - my_health;
-		if (skill_got[9]) //Second stomache
-			damageTaken *= 2;
-		my_health=min(maxhealth,prevhealth+damageTaken);
-		prevhealth = my_health;
-		with instance_create(x,y,HealFX)
-			depth = other.depth-1;
-		with instance_create(x,y,SharpTeeth)
-			owner=other.id;
-		snd_play(sndHealthPickup)
-		var pt = instance_create(x,y,PopupText)
-		if my_health = maxhealth
-			pt.mytext = "MAX HP";
-		else
-			pt.mytext = "+"+string(damageTaken)+" HP";
+		//Needs to be healable or lethal
+		if (prevhealth < maxhealth || my_health <= 0)
+		{
+			isAlkaline = false;
+			if (skill_got[9]) //Second stomache
+				damageTaken *= 2;
+			my_health=min(maxhealth,prevhealth+damageTaken);
+			prevhealth = my_health;
+			with instance_create(x,y,HealFX)
+				depth = other.depth-1;
+			with instance_create(x,y,SharpTeeth)
+				owner=other.id;
+			snd_play(sndHealthPickup)
+			var pt = instance_create(x,y,PopupText)
+			if my_health = maxhealth
+				pt.mytext = "MAX HP";
+			else
+				pt.mytext = "+"+string(damageTaken)+" HP";
 			
-		alarm[3]=10;//duration of iframes
+			alarm[3]=10;//duration of iframes
+		}
 	}
 }
 

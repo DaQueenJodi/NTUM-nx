@@ -36,7 +36,12 @@ if can_shoot = 1 and ammo[wep_type[wep]] >= wep_cost[wep]{
 draw_sprite_ext(sprBlackHoleGeneration,wave*0.4,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
 }}
 }
-draw_sprite_ext(sprite_index,-1,x,y,right,1,angle,c_white,1)
+draw_sprite_ext(sprite_index,-1,x,y,right,1,angle,c_white,1);
+
+//Alkaline Saliva
+if isAlkaline && my_health < maxhealth
+	draw_sprite_ext(sprAlkalineSaliva,wave,x,y,right,1,0,c_white,0.8);
+	
 if triggerfinger>0
 triggerfinger+=1;
 
@@ -79,3 +84,5 @@ wkick -= 1
 if wkick < 0
 wkick += 1
 
+if nearWall
+	draw_sprite(sprHammerHeadNear,wave,x,y-16);

@@ -202,7 +202,8 @@ room_speed=40;
     
     
 }
-
+with PlayerAlarms//Recheck alarms for certain skills
+	event_user(0);
 
 with UberCont
 	wallsBroken = 0;

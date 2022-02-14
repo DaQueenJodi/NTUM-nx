@@ -83,6 +83,7 @@ speed *= 0.9}
 
 if KeyCont.key_pick[p] = 1
 {
+	KeyCont.key_pick[p] = 2;
 if curse = 0||targetPickup.curse==curse or bwep = 0 || (cwep = 0 && ultra_got[31])//SWITCH OUR MODS DATA ASWELL!
 {
 instance_create(x,y,WepSwap)
@@ -331,29 +332,34 @@ instance_destroy()
 var damageReduced = 0;
 if (skill_got[31])
 {
-if ( prevhealth > my_health && hardshell == true )
-{
+	if ( prevhealth > my_health && hardshell == true )
+	{
+	var dmgTaken = prevhealth-my_health;
+	    if (( dmgTaken > 4 ) && ( prevhealth-4 != 0 ) && race = 25  )
+	    {
+	    my_health+=2;
+		damageReduced += 2;
+	    hardshell=false;
+	    }
+	    else if (( dmgTaken > 1 ) && ( prevhealth-1 != 0 )  )
+	    {
+	    my_health+=1;
+		damageReduced += 1;
+	    hardshell=false;
+	    }
+		if damageReduced > 0
+		{
+			snd_play(sndHitRock);
+			repeat(4)
+			with instance_create(x,y,Debris)
+			{
+				speed *= 1.6;
+			}
+		}
+	}
 
-    if (( prevhealth-my_health > 4 ) && ( prevhealth-4 != 0 ) && race = 25  )
-    {
-    my_health+=2;
-	damageReduced += 2;
-    hardshell=false;
-    }
-    else if (( prevhealth-my_health > 2 ) && ( prevhealth-2 != 0 )  )
-    {
-    my_health+=1;
-	damageReduced += 1;
-    hardshell=false;
-    }
-    
-    if my_health>maxhealth
-    my_health=maxhealth;
-    
-}
-
-if (sprite_index!=spr_hurt)
-hardshell=true;
+	if (sprite_index!=spr_hurt)
+		hardshell=true;
 }
 
 /* */
@@ -461,7 +467,7 @@ if skill_got[22]//Stress Sharp teeth part
 if my_health<prevhealth&&alarm[10]<1//I been hit
 {
 alarm[10]=60;
-sharpteeth=prevhealth-my_health;
+sharpteeth=prevhealth-my_health-damageReduced;
 var multiplier = 2.5;
 if race = 25
 multiplier*=1.25//Sharp teeth's damage!
@@ -493,32 +499,36 @@ if (my_health<prevhealth)
 	//Took a hit?
 	if (skill_got[32] && isAlkaline && exception=false)//Alkaline Savila
 	{
-		isAlkaline = false;
 		var damageTaken = prevhealth - my_health - damageReduced;
-		if race == 25//Doctor buff
-			damageTaken = ceil(damageTaken*1.25);
-		if (skill_got[9]) //Second stomache
-			damageTaken *= 2;
-		my_health=min(maxhealth,prevhealth+damageTaken);
-		prevhealth = my_health;
-		with instance_create(x,y,HealFX)
+		//Needs to be healable or lethal
+		if (prevhealth < maxhealth || my_health <= 0)
 		{
-			depth = other.depth - 1;	
-		}
-		with instance_create(x,y,SharpTeeth)
-			owner=other.id;
-		snd_play(sndHealthPickup)
-		var pt = instance_create(x,y,PopupText)
-		if my_health = maxhealth
-			pt.mytext = "MAX HP";
-		else
-			pt.mytext = "+"+string(damageTaken)+" HP";
+			isAlkaline = false;
+			if race == 25//Doctor buff
+				damageTaken = ceil(damageTaken*1.25);
+			if (skill_got[9]) //Second stomache
+				damageTaken *= 2;
+			my_health=min(maxhealth,prevhealth+damageTaken);
+			prevhealth = my_health;
+			with instance_create(x,y,HealFX)
+			{
+				depth = other.depth - 1;	
+			}
+			with instance_create(x,y,SharpTeeth)
+				owner=other.id;
+			snd_play(sndHealthPickup)
+			var pt = instance_create(x,y,PopupText)
+			if my_health = maxhealth
+				pt.mytext = "MAX HP";
+			else
+				pt.mytext = "+"+string(damageTaken)+" HP";
 			
-		alarm[3]=10;//duration of iframes
+			alarm[3]=10;//duration of iframes
+		}
 	}
 	if skill_got[12]//euphoria resistance?
 	{
-		if !instance_exists(GenCont)&&!instance_exists(EuphoriaShield)&&!instance_exists(LevCont)&&exception=false
+		if !instance_exists(GenCont)&&(!instance_exists(myShield) || myShield == -1)&&!instance_exists(LevCont)&&exception=false
 		{
 		if skill_got[28]//rage
 		{
@@ -531,7 +541,11 @@ if (my_health<prevhealth)
 			alarm[3]=35;
 		else
 			alarm[3]=30;//duration
-		instance_create(x,y,EuphoriaShield);//make sure you change speed of animation aswell when changing duration
+		myShield = instance_create(x,y,EuphoriaShield);
+		with myShield
+		{
+			owner = other.id;
+		}
 		}
 	}
 }

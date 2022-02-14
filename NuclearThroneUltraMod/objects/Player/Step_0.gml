@@ -164,6 +164,14 @@ if UberCont.public=1 {
 		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
 		thing.mytext = "WEAPON CHEST!";
 	    }
+	if (keyboard_check_pressed(ord("I")))
+	    {
+		var dangle = random(1)*360;
+	    invertedportalcounter=1;
+	    invertedportaldelay=5+random(30);
+		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
+		thing.mytext = "INVERTED PORTAL!";
+	    }
 	if (keyboard_check_pressed(vk_delete))
 	    {
 		repeat(15) {
@@ -609,6 +617,29 @@ scrUnlockBSkin(21,"FOR GAINING THE MAXIMUM AMOUNT#OF RADS AS HORROR",0);
 }
 
 //reload stuff
+if (reload > 0 || breload > 0 || creload > 0)
+{
+	if skill_got[22] = 1
+	{
+	//nerves of steel g  STRESS
+	var reduction = 0;
+		if race = 25
+		{
+			reduction = (1-(my_health/maxhealth))*0.62
+		}
+		else
+		{
+			reduction = (1-(my_health/maxhealth))*0.68//*1//0.35 the original has 80% boost
+		}
+		if UberCont.opt_gamemode == 24//SHARP STRESS GAMEMODE
+			reduction *= level;
+		reduction = max(reduction,0);
+		reload -= reduction
+		breload -= reduction;
+		creload -= reduction;
+	}	
+}
+
 if reload > 0
 {
 reload -= 1
@@ -631,26 +662,6 @@ if ultra_got[21]//ULTRA A
         reload -=0.64;
         }
     }
-
-if skill_got[22] = 1
-{
-//nerves of steel g  STRESS
-var reduction = 0;
-	if race = 25
-	{
-		reduction = (1-(my_health/maxhealth))*0.62
-	}
-	else
-	{
-		reduction = (1-(my_health/maxhealth))*0.68//*1//0.35 the original has 80% boost
-	}
-	if UberCont.opt_gamemode == 24//SHARP STRESS GAMEMODE
-		reduction *= level;
-	reduction = max(reduction,0);
-	reload -= reduction
-	breload -= reduction;
-	creload -= reduction;
-}
 
 if race=25
 {
@@ -1179,7 +1190,16 @@ microseconds=0;
 ///spawn inverted portal
     if (invertedportalcounter>invertedportaldelay)&&instance_exists(Floor)
     {
-    with instance_create(instance_furthest(x,y,Floor).x+16, instance_furthest(x,y,Floor).y+16,Portal)
+		var targetFloor;
+		if !instance_exists(Portal)
+		{
+			targetFloor = instance_furthest(x,y,Floor);
+		}
+		else
+		{
+			targetFloor = instance_furthest(Portal.x,Portal.y,Floor);
+		}
+    with instance_create(targetFloor.x+16, targetFloor.y+16,Portal)
     {inverted=true;
     depth=0;
     }

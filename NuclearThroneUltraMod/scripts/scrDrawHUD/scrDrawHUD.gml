@@ -31,11 +31,11 @@ function scrDrawHUD() {
 	//HEALTH BAR
 	draw_sprite(sprHealthBar,2,__view_get( e__VW.XView, 0 )+20,__view_get( e__VW.YView, 0 )+4)
 	if Player.maxhealth!=0{
-	draw_sprite_ext(sprHealthFill,2,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,max(0,84*(min(Player.lsthealth,Player.maxhealth)/Player.maxhealth)),1,0,c_white,1)
-	draw_sprite_ext(sprHealthFill,1,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,max(0,84*(min(Player.my_health,Player.maxhealth)/Player.maxhealth)),1,0,c_white,1)
+	draw_sprite_ext(sprHealthFill,2,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,clamp(84*(Player.lsthealth/Player.maxhealth),0,84),1,0,c_white,1)
+	draw_sprite_ext(sprHealthFill,1,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,clamp(84*(Player.lsthealth/Player.maxhealth),0,84),1,0,c_white,1)
 
 	if ((Player.sprite_index = Player.spr_hurt and Player.image_index < 1 and !instance_exists(Portal)) or Player.lsthealth < Player.my_health) and !instance_exists(GenCont) and !instance_exists(LevCont)
-	draw_sprite_ext(sprHealthFill,0,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,max(0,84*(Player.my_health/Player.maxhealth)),1,0,c_white,1)
+	draw_sprite_ext(sprHealthFill,0,__view_get( e__VW.XView, 0 )+22,__view_get( e__VW.YView, 0 )+7,clamp(84*(Player.lsthealth/Player.maxhealth),0,84),1,0,c_white,1)
 	}
 	draw_set_font(fntM)
 

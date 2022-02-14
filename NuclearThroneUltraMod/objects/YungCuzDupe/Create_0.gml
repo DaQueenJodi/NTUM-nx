@@ -5,6 +5,19 @@ hurt_pitch_variation = 0;
 
 hardshell=true;
 isAlkaline=false;
+hammerheadtimer=0;
+hammerheadcounter=0;
+if Player.skill_got[26]//HAMMER HEAD
+{
+	hammerheadcounter = 30;
+	if Player.race=25//Doctor but that doesn't really work right
+	{
+		hammerheadcounter += 5;
+	}
+	
+}
+	
+nearWall = false;
 //scrRaces()
 //scrSkills()
 //scrUltras()
@@ -121,4 +134,6 @@ if Player.skill_got[32]
 returntoplayer=0;
 returntoplayerfast=0;
 
+depth = Player.depth + 1;
 
+myShield = -1;

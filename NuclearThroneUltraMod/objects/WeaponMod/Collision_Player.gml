@@ -1,5 +1,6 @@
 if KeyCont.key_pick[Player.p] = 1
 {
+	KeyCont.key_pick[Player.p] = 2;
 //get your weapon mod 
 if other.wep!=0{
 with Player{

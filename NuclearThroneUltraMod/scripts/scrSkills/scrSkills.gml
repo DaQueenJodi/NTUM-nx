@@ -305,7 +305,7 @@ function scrSkills() {
 	else
 	{
 	skill_name[31] = "TOUGH SHELL"
-	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 2 DAMAGE#DEALS ONE LESS DAMAGE"
+	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 1 DAMAGE#DEALS ONE LESS DAMAGE"
 	skill_tips[31] = "damage reduction!"
 	skill_msnd[31] =  sndToughShell
 	}
@@ -319,7 +319,7 @@ function scrSkills() {
 	}
 	
 	skill_name[32] = "ALKALINE SALIVA"
-	skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#HEALS YOU INSTEAD"
+	skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#WHILE BELOW MAX HP#HEALS YOU INSTEAD"
 	skill_tips[32] = "yes pain yes gain"
 	skill_msnd[32] =  sndMutAlkalineSaliva
 	

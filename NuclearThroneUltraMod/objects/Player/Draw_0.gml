@@ -63,7 +63,6 @@ if ultra_got[27]=1//copy primary
 bwep=twep;//and return weapon
 }
 //DRAW DA GUNZ
-
 if back = 1 and (!(IsShielding)||(ultra_got[7]==1)){
 draw_sprite_ext(wep_sprt[wep],triggerfinger,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
 
@@ -78,6 +77,11 @@ if instance_exists(Decoy)
 draw_sprite_ext(sprite_index,-1,x,y,right,1,angle,c_white,0.4)//CHICKEN VANISHED OPACITY
 else
 draw_sprite_ext(sprite_index,-1,x,y,right,1,angle,c_white,1)//PLAYER GETS DRAWN HERE
+
+//Alkaline Saliva
+if skill_got[32] && isAlkaline && my_health < maxhealth
+	draw_sprite_ext(sprAlkalineSaliva,wave,x,y,right,1,0,c_white,0.8);
+
 if triggerfinger>0
 triggerfinger+=1;
 

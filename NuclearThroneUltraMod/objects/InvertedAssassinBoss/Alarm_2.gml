@@ -1,4 +1,5 @@
 /// @description SMACK THAT! all on da floor
+if alarm[11] > 1
 alarm[0] = 15
 snd_play(sndAssassinAttack)
 wepangle = -wepangle

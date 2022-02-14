@@ -5,13 +5,15 @@ function scrDrawCredits() {
 	if widescreen > 0
 	widescreen -= 8
 
+	thanks = "#ADDITIONAL CODE:#base4/spencers145##Q&A GODDESS#AgentCucco##SFX AND ART#@larje100##ULTRA MUTATION ART:#@tilde_bee#Lynzkar#skurleton#Lunarshards##MORE ART#NotYourSagittarius###Jodi#@ideaot/jasmine"
+	stxt2 = "####AWESOME MOD PEOPLE:##ADDITIONAL CODE:###Q&A GODDESS###SFX AND ART###ULTRA MUTATION ART:######MORE ART###OTHER PEOPLE####FOLLOW ON TWITTER<3"
 	txt0 = "#NUCLEAR THRONE#A GAME BY VLAMBEER#MOD BY ERDEPPOL"
 	txt1 = "####DIRECTOR:#JAN WILLEM NIJMAN##PRODUCER:#RAMI ISMAIL##ART & ORIGINAL#CHARACTER DESIGN:#PAUL VEER##MUSIC:#JUKIO KALLIO##SOUND DESIGN:#JOONAS TURNER##PROMOTIONAL ART:#JUSTIN CHAN##VOICE OF MR. VENUZ:#DOSEONE###MODDED BY"
-	txt2 = "####SPECIAL THANKS:#"+string(thanks)
+	txt2 = "####AWESOME MOD PEOPLE:#"+string(thanks)
 	stxt0 = "#NUCLEAR THRONE"
 	stxt1 = "####DIRECTOR:###PRODUCER:###ART & ORIGINAL#CHARACTER DESIGN:###MUSIC:###SOUND DESIGN:###PROMOTIONAL ART:###VOICE OF MR. VENUZ:#####JUUL @Erdeppol"
-	stxt2 = "####SPECIAL THANKS:"
 
+	
 	draw_set_font(fntM)
 	draw_set_valign(fa_top)
 	draw_set_halign(fa_center)

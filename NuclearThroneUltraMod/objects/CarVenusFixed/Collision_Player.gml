@@ -1,6 +1,7 @@
 /// @description Go to space
 if KeyCont.key_pick[other.p] = 1
 {
+	KeyCont.key_pick[Player.p] = 2;
 	with other
 	{
 		if area !=104

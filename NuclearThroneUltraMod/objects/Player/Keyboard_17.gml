@@ -79,7 +79,7 @@ with instance_create(x,y,Portal) type = 1
 }
 if keyboard_check_pressed(ord("5"))
 {
-area = 4
+area = 6
 subarea = 0
 with enemy
 my_health = 0
