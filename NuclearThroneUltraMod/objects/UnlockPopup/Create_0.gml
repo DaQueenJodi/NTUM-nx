@@ -4,7 +4,7 @@ image_speed=0.4;
 
 mytext="";
 
-alarm[0]=120;
+alarm[0]=150;
 drawtext=false;
 
 yy=0;

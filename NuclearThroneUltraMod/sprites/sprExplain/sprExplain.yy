@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "MainMenu",
-    "path": "texturegroups/MainMenu",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 95,
   "height": 27,
+  "textureGroupId": {
+    "name": "MainMenu",
+    "path": "texturegroups/MainMenu",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -148,7 +148,7 @@
             {"id":"c21e6a93-58e8-4068-97ff-97f012e5c152","Key":26.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a3e81c07-d90d-477c-8dde-a697bae8b698","path":"sprites/sprExplain/sprExplain.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

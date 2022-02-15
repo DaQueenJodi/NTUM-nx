@@ -1,6 +1,7 @@
 scrWeapons();
 scrRaces();
 scrStartingWeapons();
+scrCrowns();
 race=0;
 scale=1;
 wepopenscale=1;
@@ -16,3 +17,4 @@ race=Menu.race;
 skin=UberCont.skin[race];
 }
 arrowOpenerY = 59;
+crownIcons = [];

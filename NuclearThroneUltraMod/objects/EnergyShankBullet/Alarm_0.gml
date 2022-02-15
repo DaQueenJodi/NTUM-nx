@@ -1,4 +1,12 @@
-snd_play(sndScrewdriver);
+if instance_exists(Player)
+{
+if Player.skill_got[17] = 1
+snd_play(sndEnergyScrewdriverUpg)
+else
+snd_play(sndEnergyScrewdriver)
+}
+else
+{snd_play(sndEnergyScrewdriver)}
 
 instance_create(x,y,Dust)
 

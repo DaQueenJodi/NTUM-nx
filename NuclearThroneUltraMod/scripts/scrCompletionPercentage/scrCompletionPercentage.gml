@@ -12,8 +12,8 @@ function scrCompletionPercentage() {
 	everything -= 6;//Final 100% unlock does not count
 
 	//characters
-	everything+=racemax*30;//characters are priority
-	everything -= 60;//Don't count the first two characters
+	everything+=racemax*33;//characters are priority (also includes crownstart (2))
+	everything -= 66;//Don't count the first two characters
 	
 	//bskins
 	everything+=racemax*12;
@@ -46,9 +46,12 @@ function scrCompletionPercentage() {
 	if race_have[countrace] = 1
 	unlocked+=30//10 instead of 1 because these should count more into the completion shit
 
+	if ctot_all_crowns_taken[countrace] > 0//Unlocked crownstart
+		unlocked += 3;
+
 	countrace++;
 	}
-	unlocked -= 60;//Don't count the first two characters
+	unlocked -= 66;//Don't count the first two characters and there crownstart (3points each)
 	//skins
 
 	var countrace=1;

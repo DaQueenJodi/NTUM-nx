@@ -11,7 +11,7 @@ function scrEndBoss() {
 	with UberCont
 	{
 
-	if opt_gamemode=0||opt_gamemode=8
+	if isValidGamemodeToUnlock(opt_gamemode) && opt_gamemode != 6
 	{
 
 	//in seconds

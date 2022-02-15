@@ -2,11 +2,12 @@ function scrLoadData() {
 	//races starting weps & unlocked
 	var dir; dir = 1
 	repeat(racemax){
-	cwep[dir] = ini_read_real("DATA","cwep"+string(dir),race_swep[dir]);
+	selected_start_wep[dir] = ini_read_real("DATA","selected_start_wep"+string(dir),0);
 	race_have[dir] = ini_read_real("DATA","race_have"+string(dir),race_have[dir]);
 	race_bskin[dir] = ini_read_real("DATA","bskin"+string(dir),race_bskin[dir]);
 	race_cskin[dir] = ini_read_real("DATA","cskin"+string(dir),race_cskin[dir]);
 	skin[dir] = ini_read_real("DATA","skin"+string(dir),0);
+	crown_start[dir] = ini_read_real("DATA","crown_start"+string(dir),false);
 
 	dir += 1;}
 
@@ -45,7 +46,7 @@ function scrLoadData() {
 	oneweponly214 = ini_read_real("DATA","oneweponly214",0);
 	oneweponly316 = ini_read_real("DATA","oneweponly316",0);
  
-	var racedir=0;
+	var racedir=1;
 
 	repeat(racemax)
 	{

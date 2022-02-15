@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndUltraShovel",
-  "duration": 0.0,
+  "duration": 1.256031,
   "parent": {
     "name": "Ultra",
     "path": "folders/Sounds/Weapons/Ultra.yy",

@@ -1,4 +1,4 @@
-maxhealth = 90//80
+maxhealth = 80//80
 spawnhp = maxhealth*0.8-5
 size = 2
 rad = Player.crownrad

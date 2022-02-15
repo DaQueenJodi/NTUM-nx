@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndThunder",
-  "duration": 0.0,
+  "duration": 1.921344,
   "parent": {
     "name": "Energy",
     "path": "folders/Sounds/Weapons/Energy.yy",

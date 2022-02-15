@@ -22,6 +22,10 @@ else
 txt = " UPDATES"
 txt2 = "INSTALL "}
 
+var xx = __view_get( e__VW.XView, 0 )+(__view_get( e__VW.WView, 0 )*0.5);
+var yy = __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-46;
+draw_sprite(sprMutationSplat,image_index,xx,yy);
+
 draw_set_color(c_black)
 draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+47,string_hash_to_newline("LEVEL UP!#"+string(txt2)+string(Player.skillpoints)+string(txt)))
 draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+47,string_hash_to_newline("LEVEL UP!#"+string(txt2)+string(Player.skillpoints)+string(txt)))

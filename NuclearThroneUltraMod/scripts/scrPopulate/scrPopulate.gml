@@ -131,29 +131,21 @@ function scrPopulate() {
 	}
 	else if spawnarea = 114//Jungle
 	{
-		if instance_exists(GenCont){
-		if !place_free(x-32,y) and !place_free(x-64,y) and place_free(x,y) and random(5) < 1
+		if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
 		{
-		instance_create(x-64+16,y+16,TopDecal)
+		instance_create(x,y,Bones)
+		instance_create(x,y+16,Bones)
+		with instance_create(x+32,y,Bones)
+		image_xscale = -1
+		with instance_create(x+32,y+16,Bones)
+		image_xscale = -1
 		}
-
-		if !place_free(x+32,y) and !place_free(x+64,y) and place_free(x,y) and random(5) < 1
-		{
-		instance_create(x+64+16,y+16,TopDecal)
-		}
-
-		if !place_free(x,y+32) and !place_free(x,y+64) and place_free(x,y) and random(5) < 1
-		{
-		instance_create(x+16,y+64+16,TopDecal)
-		}
-
-		if !place_free(x,y-32) and !place_free(x,y-64) and place_free(x,y) and random(5) < 1
-		{
-		instance_create(x+16,y-64+16,TopDecal)
-		}
-
-		}
+		TopDecals();
 		with TopDecal
+		{
+			sprite_index = sprJungleTopDecal;
+		}
+		with Bones
 		{
 			sprite_index = sprJungleDecal;	
 		}

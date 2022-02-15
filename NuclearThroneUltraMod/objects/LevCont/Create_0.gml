@@ -360,3 +360,4 @@ skill = other.otherchosenskill
 	}
     }
 }
+image_speed = 0.4;

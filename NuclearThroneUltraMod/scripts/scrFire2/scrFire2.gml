@@ -4685,6 +4685,32 @@ function scrFire2() {
 	wkick = 6.5
 
 	break;
+	
+	//ULTRA SCREWDRIVER
+	case 369:
+
+	snd_play(sndUltraScrewdriver)
+
+	instance_create(x,y,Smoke)
+	instance_create(x,y,Dust)
+
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*10,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*10,point_direction(x,y,mouse_x,mouse_y)),UltraShank)
+	{
+	longarms = 0
+	if instance_exists(Player)
+	longarms = (Player.skill_got[13]+other.bettermelee)*3
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,9+longarms)
+	image_angle = direction
+	team = other.team}
+
+	wepangle = -wepangle
+	motion_add(point_direction(x,y,mouse_x,mouse_y),3)
+	BackCont.viewx2 += lengthdir_x(13,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(13,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.shake += 3
+	wkick = -10
+
+	break;
 
 
 	}//end of switch part 2!

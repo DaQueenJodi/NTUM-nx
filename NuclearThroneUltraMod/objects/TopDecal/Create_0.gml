@@ -2,7 +2,7 @@ image_speed = 0
 alarm[0] = 1;
 image_xscale=choose(1,-1);
 
-depth = -y;
+depth = -abs(y);
 
 if place_meeting(x,y,prop)
 instance_destroy();

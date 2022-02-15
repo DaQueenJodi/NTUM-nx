@@ -183,7 +183,7 @@ function scrUltras() {
     
 	    ultra_name[39] = "EVERONE GET IN HERE"
 	    ultra_text[39] = "THE MORE ALLIES YOU HAVE#THE HIGHER YOUR DROP RATE IS#ALLIES HAVE A SIGNIFICANT#INCREASE IN DROPRATE"
-	    ultra_tips[39] = "\\#blizplsnerf"//#lolhearthstonememesxd
+	    ultra_tips[39] = "hurt stone"
     
 	    ultra_name[40] = "DEFENSE"
 	    ultra_text[40] = "PORTALS HEAL ALL YOUR HEALTH#WHENEVER YOU TAKE DAMAGE YOU#SPAWN DEFENSIVE BULLETS#MORE ALLY BULLET DAMAGE"
@@ -309,7 +309,7 @@ function scrUltras() {
     
 	//GUNSMITH 
 	ultra_name[65] = "WEAPON MODDER"
-	ultra_text[65] = "AT THE START OF EVERY NEW AREA#A WEAPON MOD SPAWNS#(so 1-1,2-1,3-1 etc.)"
+	ultra_text[65] = "AT THE START OF EVERY AREA#A WEAPON MOD SPAWNS#(so 1-1,2-1,3-1 etc.)"
 	ultra_tips[65] = "MODDERator"
 
 	ultra_name[66] = "ARMOUR SMITH"
@@ -430,7 +430,7 @@ function scrUltras() {
 	    ultra_tips[87] = "rogue leader"
     
 	    ultra_name[88] = "ULTRA POPO"
-	    ultra_text[88] = "ULTRA WEAPONS COST LESS RADS"
+	    ultra_text[88] = "ULTRA WEAPONS COST LESS RADS#NO MORE PORTAL STRIKE AMMO#PORTAL STRIKE COSTS RADS#BLAST ARMOUR PRODUCES RADS"//This sucks lets change it
 	    ultra_tips[88] = "I can do that better"
     
     

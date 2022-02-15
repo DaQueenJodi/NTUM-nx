@@ -56,7 +56,30 @@ if (wepmenuopen) {
         wepx += 8 + spritewidth
         wepiter++;
     } until (wepiter = UberCont.maxstartwep)
-    
+	var xx = __view_get( e__VW.XView, 0 )+300;
+	var yy = __view_get( e__VW.YView, 0 )+170;
+	var o = 10;
+	if UberCont.ctot_all_crowns_taken[Menu.race] > 0
+	{
+		if (mouse_x > xx-o && mouse_x < xx+o && mouse_y > yy-o && mouse_y < yy+o)
+		{
+			if mouse_check_button_pressed(mb_left)
+			{
+				UberCont.crown_start[Menu.race] = !UberCont.crown_start[Menu.race];
+			}
+			draw_sprite_ext(sprCrown1Idle,0,xx,yy,2.5,2.5,0,c_white,1);
+		}
+		else if (UberCont.crown_start[Menu.race])
+			draw_sprite_ext(sprCrown1Idle,0,xx,yy,2,2,0,c_white,1);
+		else
+			draw_sprite_ext(sprCrown1Idle,0,xx,yy,2,2,0,make_colour_rgb(150, 150, 150),1);
+	}
+	else
+	{
+		draw_sprite_ext(sprUltraLevel,0,xx,yy,1.5,1.5,0,c_gray,1);
+		//draw_sprite_ext(sprLocked,0,xx,yy,0.75,0.75,0,c_white,1);
+	}
+		
 }// else {
     draw_sprite_ext(sprLoadOutArrow,1,__view_get( e__VW.XView, 0 )+300,__view_get( e__VW.YView, 0 )+arrowOpenerY,wepopenscale,wepopenscale,0,c_white,wepopenscale-0.1);
 //}

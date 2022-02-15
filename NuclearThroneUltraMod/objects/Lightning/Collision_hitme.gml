@@ -9,7 +9,14 @@ if Player.race=24//Elementor's passive
 my_health -= other.dmg+2;
 else
 my_health -= other.dmg
+
+if Player.skill_got[17] && team == 2
+	snd_play(sndSpark2);
+else
+	snd_play(sndSpark1);
 }
+else
+	snd_play(sndSpark1);
 sprite_index = spr_hurt
 image_index = 0
 motion_add(other.image_angle,4)}

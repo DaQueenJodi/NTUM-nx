@@ -46,7 +46,8 @@ time_hours=0;
 txttime="00:00:00:00";
 
 lastwishused=false;
-kills=0;
+kills = 0;
+hard = 0;
 
 var todaysSeedName = current_day+current_month+current_year;
 var byteSeed = 0;

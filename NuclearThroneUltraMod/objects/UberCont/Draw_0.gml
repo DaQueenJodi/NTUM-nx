@@ -46,42 +46,6 @@ timer="ON"
 else
 timer="OFF"
 
-/*if instance_exists(Player)
-{
-var infotxt
-if Player.loops>0
-    {
-    infotxt="L"+string(Player.loops)+" ";
-    }
-
-if Player.area > 99
-infotxt = infotxt+"???";
-else
-infotxt = infotxt+string(Player.area)+"_"+string(Player.subarea);
-
-
-txt0 = "#OPTIONS#KILLS: "+string(Player.kills)+"  "+infotxt+"#########################PRESS [RIGHT CLICK] TO RETURN"
-
-}
-else
-{
-
-var infotxt
-if BackCont.loops>0
-    {
-    infotxt="L"+string(BackCont.loops)+" ";
-    }
-
-if BackCont.area > 99
-infotxt = infotxt+"???";
-else
-infotxt = infotxt+string(BackCont.area)+"_"+string(BackCont.subarea);
-
-
-txt0 = "#OPTIONS#KILLS: "+string(BackCont.kills)+"  "+infotxt+"#########################PRESS [RIGHT CLICK] TO RETURN"
-
-
-}*/
 var infotxt="";
 
 if loops>0
@@ -91,11 +55,17 @@ if loops>0
 
 if area > 99
 infotxt = infotxt+"???";
+else if area == 10
+{
+	infotxt = infotxt+"1B_"+string(subarea);
+}
 else
-infotxt = infotxt+string(area)+"_"+string(subarea);
+{
+	infotxt = infotxt+string(area)+"_"+string(subarea);
+}
+d = " DIFFICULTY: "+string(hard);
 
-
-txt0 = "#OPTIONS#KILLS: "+string(kills)+"  "+infotxt+"#########################PRESS [RIGHT CLICK] TO RETURN#PRESS [ENTER] FOR MAIN MENU"
+txt0 = "#OPTIONS#KILLS: "+string(kills)+"  "+infotxt+d+"#########################PRESS [RIGHT CLICK] TO RETURN#PRESS [ENTER] FOR MAIN MENU"
 
 
 

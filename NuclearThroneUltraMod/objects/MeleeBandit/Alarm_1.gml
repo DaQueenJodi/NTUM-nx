@@ -22,7 +22,6 @@ if target > 0
 		{
 		    if Player.loops>0
 		    {alarm[2] = 5;
-		    instance_create(x,y,Notice);
 		    alarm[1] = 6;
 		    }
 		}

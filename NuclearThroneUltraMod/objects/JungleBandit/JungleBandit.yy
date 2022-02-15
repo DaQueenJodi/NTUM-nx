@@ -36,8 +36,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "Jungle",
+    "path": "folders/Objects/Enemies/Jungle.yy",
   },
   "resourceVersion": "1.0",
   "name": "JungleBandit",

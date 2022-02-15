@@ -1036,7 +1036,7 @@ function scrWeapons() {
 	wep_load[93] = 3
 	wep_cost[93] = 1
 	wep_sprt[93] = sprBouncerSMG
-	wep_area[93] = 4
+	wep_area[93] = 6
 	wep_text[93] = "first reddit requested"
 	wep_swap[93] = sndSwapPistol
 	wep_rad[93] = 0;
@@ -1047,7 +1047,7 @@ function scrWeapons() {
 	wep_load[94] = 19
 	wep_cost[94] = 7
 	wep_sprt[94] = sprBouncerShotgun
-	wep_area[94] = 5
+	wep_area[94] = 6
 	wep_text[94] = "pop pop diz"
 	wep_swap[94] = sndSwapShotgun
 	wep_rad[94] = 0;
@@ -4068,12 +4068,35 @@ function scrWeapons() {
 	wep_auto[368] = 0
 	wep_load[368] = 25
 	wep_cost[368] = 1
-	wep_sprt[368] = sprDisperseKrakenGun
+	wep_sprt[368] = sprKrakenNader
 	wep_area[368] = 5
 	wep_text[368] = "ocean bomb!"
 	wep_swap[368] = sndSwapExplosive
 	wep_rad[368] = 0;
-
+	
+	wep_name[369] = "ULTRA SCREWDRIVER"
+	wep_type[369] = 0
+	wep_auto[369] = 0
+	wep_load[369] = 6//11
+	wep_cost[369] = 0
+	wep_sprt[369] = sprUltraScrewDriver
+	wep_area[369] = 19
+	wep_text[369] = "ultra shanking"
+	wep_swap[369] = sndSwapSword
+	wep_rad[369] = 5;
+	
+	/*
+	wep_name[369] = "LIGHTNING CANNON"
+	wep_type[369] = 5
+	wep_auto[369] = 0
+	wep_load[369] = 6//11
+	wep_cost[369] = 0
+	wep_sprt[369] = sprGoldenScrewdriver
+	wep_area[369] = 19
+	wep_text[369] = "ultra shanking"
+	wep_swap[369] = sndSwapSword
+	wep_rad[369] = 5;
+	*/
 	
 	maxwep = array_length(wep_name)-1;
 

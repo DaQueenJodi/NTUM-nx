@@ -117,26 +117,24 @@ function scrDrawOptions2() {
 	{
 	//scrWeapons();
 	with StartingWeaponUpDown{
-	if wep=0
-	{draw_text_color(x,y+16,string_hash_to_newline("RANDOM"),c_white,c_white,c_white,c_white,1);}
-	else if (   (   wep !=298 && wep!=311  && wep!=315  && wep!=329  && wep!=177  && wep!=192  && wep!=69  && wep!=75  && wep!=264  && wep!=328
-	  && wep!=231  && wep!=263  && wep!=214  && wep!=316    ) || (  wep=298 && UberCont.oneweponly298=1 || wep=311 && UberCont.oneweponly311=1
-	   || wep=315 && UberCont.oneweponly315=1 || wep=329 && UberCont.oneweponly329=1 || wep=177 && UberCont.oneweponly177=1 || wep=192 && UberCont.oneweponly192=1
-	    || wep=69 && UberCont.oneweponly69=1 || wep=75 && UberCont.oneweponly75=1 || wep=264 && UberCont.oneweponly264=1 || wep=328 && UberCont.oneweponly328=1
-	     || wep=231 && UberCont.oneweponly231=1 || wep=263 && UberCont.oneweponly263=1 || wep=214 && UberCont.oneweponly214=1 || wep=316 && UberCont.oneweponly316=1    )   )
-	     {
-	     draw_sprite(wep_sprt[StartingWeaponUpDown.wep],0,x,y+32);
-	draw_text_color(x,y+16,string_hash_to_newline(string(StartingWeaponUpDown.wep)),c_white,c_white,c_white,c_white,1);
-	draw_text_color(x-string_width(string_hash_to_newline(string(StartingWeaponUpDown.wep_name[wep])))*0.5,y+16,string_hash_to_newline("####"+string(StartingWeaponUpDown.wep_name[wep])),c_white,c_white,c_white,c_white,1);
-	UberCont.opt_gm1wep=wep;
-	}
-	else
-	{
-	draw_text_color(x,y+16,string_hash_to_newline(string(StartingWeaponUpDown.wep)),c_white,c_white,c_white,c_white,1);
-	draw_text_color(x-string_width(string_hash_to_newline(string("????")))*0.5,y+16,string_hash_to_newline("####"+"????"),c_white,c_white,c_white,c_white,1);
-	}
-
-
+		if wep=0
+		{draw_text_color(x,y+16,string_hash_to_newline("RANDOM"),c_white,c_white,c_white,c_white,1);}
+		else if (   (   wep !=298 && wep!=311  && wep!=315  && wep!=329  && wep!=177  && wep!=192  && wep!=69  && wep!=75  && wep!=264  && wep!=328
+		  && wep!=231  && wep!=263  && wep!=214  && wep!=316    ) || (  wep=298 && UberCont.oneweponly298=1 || wep=311 && UberCont.oneweponly311=1
+		   || wep=315 && UberCont.oneweponly315=1 || wep=329 && UberCont.oneweponly329=1 || wep=177 && UberCont.oneweponly177=1 || wep=192 && UberCont.oneweponly192=1
+		    || wep=69 && UberCont.oneweponly69=1 || wep=75 && UberCont.oneweponly75=1 || wep=264 && UberCont.oneweponly264=1 || wep=328 && UberCont.oneweponly328=1
+		     || wep=231 && UberCont.oneweponly231=1 || wep=263 && UberCont.oneweponly263=1 || wep=214 && UberCont.oneweponly214=1 || wep=316 && UberCont.oneweponly316=1    )   )
+		     {
+		     draw_sprite(wep_sprt[StartingWeaponUpDown.wep],0,x,y+32);
+		draw_text_color(x,y+16,string_hash_to_newline(string(StartingWeaponUpDown.wep)),c_white,c_white,c_white,c_white,1);
+		draw_text_color(x-string_width(string_hash_to_newline(string(StartingWeaponUpDown.wep_name[wep])))*0.5,y+16,string_hash_to_newline("####"+string(StartingWeaponUpDown.wep_name[wep])),c_white,c_white,c_white,c_white,1);
+		UberCont.opt_gm1wep=wep;
+		}
+		else
+		{
+		draw_text_color(x,y+16,string_hash_to_newline(string(StartingWeaponUpDown.wep)),c_white,c_white,c_white,c_white,1);
+		draw_text_color(x-string_width(string_hash_to_newline(string("????")))*0.5,y+16,string_hash_to_newline("####"+"????"),c_white,c_white,c_white,c_white,1);
+		}
 	}
 	}
 

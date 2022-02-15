@@ -201,6 +201,13 @@ song = musThemeP
 
 amb=amb0b
 }
+
+if area = 114//Jungle bugnle flungle drums yaya
+{
+song = mus105
+
+amb=amb105
+}
 snd_loop(song)
 snd_loop(amb)
 

@@ -1,7 +1,7 @@
 function scrSaveStats() {
 
 	var dir; dir=0
-	repeat(racemax){
+	repeat(racemax+1){
 	ini_write_real("STATS","ctotkill"+string(dir),ctot_kill[dir]);
 
 	ini_write_real("STATS","ctottime"+string(dir),ctot_time[dir]);
@@ -19,6 +19,18 @@ function scrSaveStats() {
 	ini_write_real("STATS","cbstdiff"+string(dir),cbst_diff[dir]);
 
 	ini_write_real("STATS","cbstloop"+string(dir),cbst_loop[dir]);
+	
+	var cir = 0;
+	ctot_all_crowns_taken[dir] = 0;
+	repeat(crownmax)
+	{
+		ini_write_real("STATS","ctotcrownstaken"+string(dir)+"-"+string(cir),ctot_crown_taken[dir,cir]);
+		if (cir > 1)
+		{
+			ctot_all_crowns_taken[dir] += ctot_crown_taken[dir,cir];
+		}
+		cir ++;
+	}
 	
 	dir +=1;}
 	

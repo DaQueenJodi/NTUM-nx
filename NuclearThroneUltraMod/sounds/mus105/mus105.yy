@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mus105.ogg",
-  "duration": 122.483444,
+  "duration": 118.153877,
   "parent": {
     "name": "Music & amb",
     "path": "folders/Sounds/Music & amb.yy",
