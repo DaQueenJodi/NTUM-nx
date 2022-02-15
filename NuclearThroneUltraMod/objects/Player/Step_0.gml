@@ -19,14 +19,15 @@ if alarm[4]>0//boiling veins
 instance_create(x+random(12)-6,y+random(12)-6,Smoke);
 }
 var thing;
-if UberCont.public=1 {
+if UberCont.public==0 {
 //hacks
+/*currently busted
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
 	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*64,BigFish);
 		thing = instance_create(x + dcos(dangle)*128,y + dsin(dangle)*64,PopupText);
 		thing.mytext = "FISH?";
-	}
+	}*/
 	if keyboard_check_pressed(vk_decimal) {
 		var dangle = random(1)*360;
 	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*128,AssassinBoss);

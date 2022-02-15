@@ -14,6 +14,6 @@ wepmod1++;
 //if scrn_take = 1
 
 
-//screen_save("NTULTRA"+string(scrn)+".png");
-//scrn += 1
+screen_save("NTULTRA"+string(scrn)+".png");
+scrn += 1
 
