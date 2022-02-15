@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndOasisBossFire",
-  "duration": 0.0,
+  "duration": 1.605375,
   "parent": {
     "name": "Boss",
     "path": "folders/Sounds/Boss.yy",

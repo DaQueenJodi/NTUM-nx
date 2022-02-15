@@ -1,16 +1,15 @@
 raddrop = 64
-maxhealth = 115
+maxhealth = 175
 meleedamage = 3
 size = 3
 
-shooting = false;
 sucking = false;
 
 event_inherited();
 
-if instance_exists(Player){
-my_health=round( (1+(Player.loops*0.3))*my_health )//bandit loop 1: 1.1*4= 5(rounded up)
-maxhealth=my_health;
+if Player.loops > 0 {
+	maxhealth = 300;
+	my_health = maxhealth;
 }
 
 spr_idle = sprOasisBossIdle
@@ -25,6 +24,7 @@ snd_dead = sndOasisBossDead;
 snd_hurt = sndOasisBossHurt;
 snd_fire = sndOasisBossFire;
 snd_mele = sndOasisBossMelee;
+snd_tackle = sndOasisBossTackle;
 
 walk=0;
 //behavior
@@ -36,6 +36,7 @@ motion_add(point_direction(Player.x,Player.y,x,y),3)
 intro=1;
 suckstrength=0;
 maxspeed=2
+persistent_direction = 0;
 
 snd_play(sndOasisBossIntro);    
 
@@ -52,4 +53,3 @@ if cam
 instance_create(x,y,DramaCamera);
 
 friction = 0.8;
-

@@ -41,6 +41,7 @@ snd_hurt=Player.snd_hurt;
 snd_dead=Player.snd_dead;
 snd_wrld=Player.snd_wrld;
 
+hurt_pitch_variation = 0;
 
 wep = Player.wep
 bwep = Player.bwep

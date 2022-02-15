@@ -1,1 +1,1 @@
-/// @description you may not swing dummy
+/// @description you may only swing slow

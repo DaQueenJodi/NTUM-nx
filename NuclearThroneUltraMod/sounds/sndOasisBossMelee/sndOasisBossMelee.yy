@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndOasisBossMelee",
-  "duration": 0.0,
+  "duration": 0.441656,
   "parent": {
     "name": "Boss",
     "path": "folders/Sounds/Boss.yy",

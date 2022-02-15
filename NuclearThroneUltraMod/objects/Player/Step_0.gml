@@ -19,7 +19,7 @@ if alarm[4]>0//boiling veins
 instance_create(x+random(12)-6,y+random(12)-6,Smoke);
 }
 var thing;
-if UberCont.public=0 {
+if UberCont.public=1 {
 //hacks
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
