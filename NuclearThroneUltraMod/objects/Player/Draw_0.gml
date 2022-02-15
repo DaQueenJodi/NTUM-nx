@@ -80,7 +80,7 @@ draw_sprite_ext(sprite_index,-1,x,y,right,1,angle,c_white,1)//PLAYER GETS DRAWN 
 
 //Alkaline Saliva
 if skill_got[32] && isAlkaline && my_health < maxhealth
-	draw_sprite_ext(sprAlkalineSaliva,wave,x,y,right,1,0,c_white,0.8);
+	draw_sprite_ext(sprAlkalineSaliva,wave,x,y,right,1,0,c_white,0.75);
 
 if triggerfinger>0
 triggerfinger+=1;

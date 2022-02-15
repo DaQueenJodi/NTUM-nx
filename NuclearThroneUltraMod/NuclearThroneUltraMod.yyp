@@ -3830,6 +3830,7 @@
     {"id":{"name":"PopoTangle","path":"objects/PopoTangle/PopoTangle.yy",},"order":14,},
     {"id":{"name":"RogueExplosion","path":"objects/RogueExplosion/RogueExplosion.yy",},"order":15,},
     {"id":{"name":"Marker","path":"objects/Marker/Marker.yy",},"order":16,},
+    {"id":{"name":"sprMutationSplat","path":"sprites/sprMutationSplat/sprMutationSplat.yy",},"order":45,},
     {"id":{"name":"FishBoost","path":"objects/FishBoost/FishBoost.yy",},"order":17,},
     {"id":{"name":"Ally","path":"objects/Ally/Ally.yy",},"order":18,},
     {"id":{"name":"Infect","path":"objects/Infect/Infect.yy",},"order":19,},

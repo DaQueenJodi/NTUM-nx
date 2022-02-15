@@ -31,7 +31,7 @@ function scrGameModes() {
 	gamemode_unlock[7] = "FINISH AN AREA WITHOUT WALKING AS ATOM";
 	gamemode_have[7] = 0;
 
-	gamemode[8] = "REMOVE OR REPLACE THIS CROWN START";//
+	gamemode[8] = "ULTRA HARD MODE#NOTHING HERE YET";//
 	gamemode_unlock[8] = "GET INTO A CROWN VAULT#THIS NO LONGER EXISTS";
 	gamemode_have[8] = 0;
 
