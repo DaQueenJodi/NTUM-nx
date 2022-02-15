@@ -17,7 +17,7 @@ gunangle = point_direction(x,y,target.x,target.y)
 else if point_distance(target.x,target.y,x,y) < 96
 {
 //Fire
-if random(5) < 4.4
+if random(5) < 4.4 && ammo > 0
 {
 wkick = 3
 
@@ -33,6 +33,11 @@ team = other.team}
 
 
 alarm[1] = 3}
+else
+{
+	alarm[1] = 10;
+	ammo = maxAmmo;
+}
 
 }
 else
