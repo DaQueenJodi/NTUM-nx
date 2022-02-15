@@ -2919,13 +2919,13 @@ function scrFire() {
 	break;
 
 
-	//LIGHTING HAMMER
+	//LIGHTNING HAMMER
 	case 124:
 
 	if Player.skill_got[17] = 1
-	snd_play(sndLaserSwordUpg)
-	else
-	snd_play(sndLaserSword)
+		snd_play(sndLaserSwordUpg);
+	
+	snd_play(sndLightningHammer);
 
 	instance_create(x,y,Dust)
 
