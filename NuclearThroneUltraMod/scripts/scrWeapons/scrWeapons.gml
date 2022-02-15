@@ -4073,6 +4073,17 @@ function scrWeapons() {
 	wep_text[368] = "ocean bomb!"
 	wep_swap[368] = sndSwapExplosive
 	wep_rad[368] = 0;
+	
+	wep_name[369] = "ULTRA SCREWDRIVER"
+	wep_type[369] = 0
+	wep_auto[369] = 0
+	wep_load[369] = 6//11
+	wep_cost[369] = 0
+	wep_sprt[369] = sprGoldenScrewdriver
+	wep_area[369] = 19
+	wep_text[369] = "ultra shanking"
+	wep_swap[369] = sndSwapSword
+	wep_rad[369] = 5;
 
 	
 	maxwep = array_length(wep_name)-1;

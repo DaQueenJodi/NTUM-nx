@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprShank","path":"sprites/sprShank/sprShank.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprShank",
     "tags": [],
     "resourceType": "GMSequence",
   },
