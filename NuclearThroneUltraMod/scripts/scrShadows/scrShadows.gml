@@ -150,13 +150,13 @@ function scrShadows() {
 	with CrownPed
 	draw_sprite(shd64B,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+8)
 	with Ratking
-	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView+2, 0 ))
+	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+2)
 	with RatkingRage
-	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView+2, 0 ))
+	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+2)
 	with InvertedRatking
-	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView+2, 0 ))
+	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+2)
 	with InvertedRatkingRage
-	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView+2, 0 ))
+	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+2)
 	with CardGuy
 	draw_sprite(shd16,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+12)
 	with CardGuy2

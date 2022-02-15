@@ -183,7 +183,7 @@ function scrUltras() {
     
 	    ultra_name[39] = "EVERONE GET IN HERE"
 	    ultra_text[39] = "THE MORE ALLIES YOU HAVE#THE HIGHER YOUR DROP RATE IS#ALLIES HAVE A SIGNIFICANT#INCREASE IN DROPRATE"
-	    ultra_tips[39] = "\\#blizplsnerf"//#lolhearthstonememesxd
+	    ultra_tips[39] = "hurt stone"
     
 	    ultra_name[40] = "DEFENSE"
 	    ultra_text[40] = "PORTALS HEAL ALL YOUR HEALTH#WHENEVER YOU TAKE DAMAGE YOU#SPAWN DEFENSIVE BULLETS#MORE ALLY BULLET DAMAGE"

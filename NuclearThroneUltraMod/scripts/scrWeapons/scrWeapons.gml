@@ -4068,7 +4068,7 @@ function scrWeapons() {
 	wep_auto[368] = 0
 	wep_load[368] = 25
 	wep_cost[368] = 1
-	wep_sprt[368] = sprDisperseKrakenGun
+	wep_sprt[368] = sprKrakenNader
 	wep_area[368] = 5
 	wep_text[368] = "ocean bomb!"
 	wep_swap[368] = sndSwapExplosive

@@ -8,3 +8,4 @@ motion_add(other.ang,3)
 ang += 36}
 
 instance_create(x,y,GreenExplosion);
+scrRaddrop(5);
