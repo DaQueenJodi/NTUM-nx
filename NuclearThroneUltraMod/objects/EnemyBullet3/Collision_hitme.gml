@@ -17,7 +17,7 @@ with other
 	}
 	if (dealDmg)
 	{
-		snd_play(other.snd_hurt, other.hurt_pitch_variation)
+		snd_play(snd_hurt, hurt_pitch_variation)
 		my_health -= other.dmg
 	    sprite_index = spr_hurt
 	    image_index = 0
