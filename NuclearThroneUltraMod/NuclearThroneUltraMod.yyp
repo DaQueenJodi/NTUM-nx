@@ -1545,6 +1545,7 @@
     {"id":{"name":"sprMutant18skins","path":"sprites/sprMutant18skins/sprMutant18skins.yy",},"order":11,},
     {"id":{"name":"sprAngelFeather","path":"sprites/sprAngelFeather/sprAngelFeather.yy",},"order":13,},
     {"id":{"name":"sprAngelTranquility","path":"sprites/sprAngelTranquility/sprAngelTranquility.yy",},"order":15,},
+    {"id":{"name":"sndOasisBossTackle","path":"sounds/sndOasisBossTackle/sndOasisBossTackle.yy",},"order":22,},
     {"id":{"name":"sprMutant19Dead","path":"sprites/sprMutant19Dead/sprMutant19Dead.yy",},"order":1,},
     {"id":{"name":"sprMutant19Hurt","path":"sprites/sprMutant19Hurt/sprMutant19Hurt.yy",},"order":3,},
     {"id":{"name":"mskNothing2","path":"sprites/mskNothing2/mskNothing2.yy",},"order":31,},
