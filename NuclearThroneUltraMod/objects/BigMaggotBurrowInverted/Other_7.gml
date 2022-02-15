@@ -6,6 +6,6 @@ visible = 0
 }
 else
 {
-instance_change(BigMaggot,false)
+instance_change(BigMaggotInverted,false)
 }
 

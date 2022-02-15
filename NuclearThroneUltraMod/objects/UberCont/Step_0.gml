@@ -7,7 +7,10 @@ instance_activate_all()
 audio_stop_all();
 paused = 0
 if instance_exists(Player)
+{
 kills=Player.kills
+hard = Player.hard;
+}
 with Player
 instance_destroy()
 snd_play(sndMutant0Cnfm, 0, false, false)
@@ -104,6 +107,7 @@ game_end()
 else if instance_exists(Player)///PAUSE IN-GAME
 {
 kills=Player.kills
+hard=Player.hard;
 pauseimg = sprite_create_from_surface(application_surface,0,0,surface_get_width(application_surface),surface_get_height(application_surface),0,0,0,0)
 //cursor_sprite=sprCrosshair
 //with Cursor

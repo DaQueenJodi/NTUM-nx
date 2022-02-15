@@ -15,7 +15,10 @@ UberCont.start_wep[0]=race_swep[Menu.race];
 
 //Set the starting weapon
 if UberCont.start_wep_have[wep,race]=1
+{
 UberCont.cwep[race]=UberCont.start_wep[wep];
+UberCont.selected_start_wep[race] = wep;
+}
 
 if race != 0 && mouse_x > __view_get( e__VW.XView, 0 )+300-10 and mouse_x < __view_get( e__VW.XView, 0 )+300+12 and mouse_y > __view_get( e__VW.YView, 0 )+arrowOpenerY-12 and mouse_y < __view_get( e__VW.YView, 0 )+arrowOpenerY+10
 {
@@ -25,16 +28,59 @@ if race != 0 && mouse_x > __view_get( e__VW.XView, 0 )+300-10 and mouse_x < __vi
     {
         if (wepmenuopen) {
             wepmenuopen = false;
+			crownIcons = [];
+			/*
+			with CrownIcon
+				instance_destroy();
+				
+			with CharSelect
+				visible = true;
+				*/
         } else {
             wepmenuopen = true;
+			//BackCont.viewx2 = (Menu.char[Menu.race].x-__view_get( e__VW.WView, 0 )/2);
+			//BackCont.viewy2 = (Menu.char[Menu.race].y-__view_get( e__VW.HView, 0 )/2);
+			/*
+			var dir = 0
+			repeat(crownmax+1)
+			{
+			if dir<10
+			{crownIcons[dir] = instance_create(__view_get( e__VW.XView, 0 )+18+dir*32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-50,CrownIcon)//24
+			with crownIcons[dir]
+				crown = dir
+			}
+			else
+			{crownIcons[dir] = instance_create(__view_get( e__VW.XView, 0 )+18+(dir-9)*32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-16,CrownIcon)//24
+			with crownIcons[dir]
+				crown = dir
+			}
+			dir += 1}
+			with CharSelect
+				visible = false;*/
         }
     }
 } else {
     wepopenscale=1;
 }
-
-
-
+/*
+if wepmenuopen
+{
+	var dir = 0
+		repeat(crownmax+1)
+		{
+		if dir<10
+		{
+			crownIcons[dir].x=__view_get( e__VW.XView, 0 )+18+dir*32;
+			crownIcons[dir].y=__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-50
+		}
+		else
+		{
+			crownIcons[dir].x=__view_get( e__VW.XView, 0 )+18+(dir-9)*32;
+			crownIcons[dir].y=__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-16
+		}
+		dir += 1}	
+}
+*/
 //SKIN-------------------------------------------______________________
 
 if race != 0 && mouse_x > __view_get( e__VW.XView, 0 )+72-12 and mouse_x < __view_get( e__VW.XView, 0 )+72+12 and mouse_y > __view_get( e__VW.YView, 0 )+60-12 and mouse_y < __view_get( e__VW.YView, 0 )+60+12

@@ -5,9 +5,12 @@ if KeyCont.key_fire[p] = 1 and (mouse_x < x+16 and mouse_y < y+16 and mouse_x > 
     crown_used[other.crown]=1;
     scrSave();
     }
-
+var usedRandom = false;
 if crown = 0
-crown = ceil(random(crownmax-1)+1)
+{
+	usedRandom = true;
+	crown = ceil(random(crownmax-1)+1)
+}
 oldcrown = Player.crown
 Player.crown = crown
 Player.crownpoints -= 1
@@ -28,7 +31,12 @@ if crown = 1
 with Crown
 instance_destroy()
 }
-
+with UberCont
+{
+	ctot_crown_taken[Player.race,0] ++;
+	ctot_crown_taken[Player.race,other.crown] ++;
+	scrSave();
+}
 //UNDO STUFF
 
 //CROWN OF DESTINY

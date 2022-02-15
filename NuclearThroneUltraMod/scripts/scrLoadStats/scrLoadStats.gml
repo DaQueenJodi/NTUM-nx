@@ -1,6 +1,6 @@
 function scrLoadStats() {
-	var dir; dir=1
-	repeat(racemax){
+	var dir; dir=0;
+	repeat(racemax+1){
 	//Stats per character yes we love stats #thronebutt.com
 	ctot_kill[dir] = ini_read_real("STATS","ctotkill"+string(dir),0);
 
@@ -19,6 +19,17 @@ function scrLoadStats() {
 	cbst_diff[dir] = ini_read_real("STATS","cbstdiff"+string(dir),0);
 
 	cbst_loop[dir] = ini_read_real("STATS","cbstloop"+string(dir),0);
+	var cir = 0;
+	ctot_all_crowns_taken[dir] = 0;
+	repeat(crownmax)
+	{
+		ctot_crown_taken[dir,cir] = ini_read_real("STATS","ctotcrownstaken"+string(dir)+"-"+string(cir),0);
+		if (cir > 1)
+		{
+			ctot_all_crowns_taken[dir] += ctot_crown_taken[dir,cir];
+		}
+		cir ++;
+	}
 	dir +=1;}
 
 	ctot_walls_destroyed = ini_read_real("STATS","ctotwallsdestroyed",0);

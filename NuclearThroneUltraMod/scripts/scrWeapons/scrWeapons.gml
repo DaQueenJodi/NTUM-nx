@@ -1036,7 +1036,7 @@ function scrWeapons() {
 	wep_load[93] = 3
 	wep_cost[93] = 1
 	wep_sprt[93] = sprBouncerSMG
-	wep_area[93] = 4
+	wep_area[93] = 6
 	wep_text[93] = "first reddit requested"
 	wep_swap[93] = sndSwapPistol
 	wep_rad[93] = 0;
@@ -1047,7 +1047,7 @@ function scrWeapons() {
 	wep_load[94] = 19
 	wep_cost[94] = 7
 	wep_sprt[94] = sprBouncerShotgun
-	wep_area[94] = 5
+	wep_area[94] = 6
 	wep_text[94] = "pop pop diz"
 	wep_swap[94] = sndSwapShotgun
 	wep_rad[94] = 0;

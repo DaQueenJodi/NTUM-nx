@@ -309,7 +309,7 @@ oasisskip=-1;
 
 
 crownvisits = 0
-if UberCont.opt_gamemode=8{
+if UberCont.crown_start[race]{
 area=100;
 hard=-1;
 crownvisits=-1;}

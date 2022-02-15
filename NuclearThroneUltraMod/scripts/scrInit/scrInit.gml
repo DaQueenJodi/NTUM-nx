@@ -16,6 +16,7 @@ function scrInit() {
 	scrUltras();
 	
 	scrLoad()
+	//Hey don't read this
 	encrypted_data = {
 		ctot_dailies_score_seed: [],
 		ctot_dailies_score_score: [],

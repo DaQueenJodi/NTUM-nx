@@ -60,7 +60,7 @@ instance_create(x+16,y+16,CrownPickup)
     }
 }
 }
-else if (Player.area > 2 or Player.loops > 0) and Player.subarea = 2 && Player.area!=105 && Player.area!=101&&Player.area!=6&&Player.area!=8&&Player.area!=7&&Player.area!=108&&Player.area!=112&&Player.area!=103&&Player.area!=104&& Player.area!=113//not inverted desert ...and Player.loops >= Player.crownvisits 
+else if (Player.area > 2 or Player.loops > 0) and Player.subarea = 2 && Player.area != 9 && Player.area!=105 && Player.area!=101&&Player.area!=6&&Player.area!=8&&Player.area!=7&&Player.area!=108&&Player.area!=112&&Player.area!=103&&Player.area!=104&& Player.area!=113//not inverted desert ...and Player.loops >= Player.crownvisits 
 {
 
 with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/3+random(128)-64,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/3+random(128)-64,Floor){

@@ -1,6 +1,5 @@
 /// @description (re)-Init
 alarm[0] = checkDelay;
-debug("check for stresss")
 if instance_exists(Player)
 {
 	if Player.race == 12

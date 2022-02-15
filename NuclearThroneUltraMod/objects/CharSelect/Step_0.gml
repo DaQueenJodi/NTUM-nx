@@ -1,4 +1,4 @@
-if KeyCont.key_fire[p] = 1 and OptionSelect.selected = 0 and OptionSelect2.selected = 0 and StatsSelect.selected = 0 and CreditsSelect.selected = 0
+if visible && KeyCont.key_fire[p] = 1 and OptionSelect.selected = 0 and OptionSelect2.selected = 0 and StatsSelect.selected = 0 and CreditsSelect.selected = 0
 {
 if button = 0
 button = 1
@@ -119,7 +119,12 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
     with instance_create(x,y,GenCont)
     {race = other.race
     crown = other.crown}
-    instance_create(x,y,Player)
+    instance_create(x,y,Player);
+	//Start settings save
+	with UberCont
+	{
+		scrSave();
+	}
 	with Player
 	{
 		restarted = true;
@@ -131,9 +136,6 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
     }
     else
     {
-    with LoadoutSelect {
-        wep=0;
-    }
     switch (num)
     {
     case 0:
@@ -226,8 +228,11 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
 	{
 		if other.num == 0
 			wepmenuopen = false;
-    skin = UberCont.skin[Menu.race]
-	race = other.num;
+		skin = UberCont.skin[other.num]
+		race = other.num;
+		wep = UberCont.selected_start_wep[race];
+		UberCont.cwep[race]=UberCont.start_wep[wep];
+		UberCont.start_wep[0]=race_swep[Menu.race];//Starting weapon 0 is different for each character
 	}
     
     }

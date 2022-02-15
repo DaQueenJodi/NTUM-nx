@@ -430,7 +430,7 @@ function scrUltras() {
 	    ultra_tips[87] = "rogue leader"
     
 	    ultra_name[88] = "ULTRA POPO"
-	    ultra_text[88] = "ULTRA WEAPONS COST LESS RADS"
+	    ultra_text[88] = "ULTRA WEAPONS COST LESS RADS#NO MORE PORTAL STRIKE AMMO#PORTAL STRIKE COSTS RADS#BLAST ARMOUR PRODUCES RADS"//This sucks lets change it
 	    ultra_tips[88] = "I can do that better"
     
     
