@@ -309,7 +309,7 @@ function scrUltras() {
     
 	//GUNSMITH 
 	ultra_name[65] = "WEAPON MODDER"
-	ultra_text[65] = "AT THE START OF EVERY NEW AREA#A WEAPON MOD SPAWNS#(so 1-1,2-1,3-1 etc.)"
+	ultra_text[65] = "AT THE START OF EVERY AREA#A WEAPON MOD SPAWNS#(so 1-1,2-1,3-1 etc.)"
 	ultra_tips[65] = "MODDERator"
 
 	ultra_name[66] = "ARMOUR SMITH"
