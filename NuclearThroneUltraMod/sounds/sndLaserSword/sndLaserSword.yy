@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndLaserSword",
-  "duration": 0.0,
+  "duration": 0.41068,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

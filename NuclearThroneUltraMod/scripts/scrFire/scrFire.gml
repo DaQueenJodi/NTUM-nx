@@ -581,9 +581,9 @@ function scrFire() {
 
 
 	if Player.skill_got[17] = 1
-	snd_play(sndLaserSwordUpg)
+	snd_play(sndEnergySwordUpg)
 	else
-	snd_play(sndLaserSword)
+	snd_play(sndEnergySword)
 	instance_create(x,y,Dust)
 
 	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),EnergySlash)
@@ -865,9 +865,9 @@ function scrFire() {
 
 
 	if Player.skill_got[17] = 1
-	snd_play(sndLaserSwordUpg)
+	snd_play(sndEnergyHammerUpg)
 	else
-	snd_play(sndLaserSword)
+	snd_play(sndEnergyHammer)
 	instance_create(x,y,Dust)
 
 	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),EnergyHammerSlash)
@@ -1233,7 +1233,10 @@ function scrFire() {
 	//ENERGY SCREWDRIVER
 	case 53:
 
-	snd_play(sndScrewdriver)
+	if Player.skill_got[17] = 1
+	snd_play(sndEnergyScrewdriverUpg)
+	else
+	snd_play(sndEnergyScrewdriver)
 
 	instance_create(x,y,Dust)
 
