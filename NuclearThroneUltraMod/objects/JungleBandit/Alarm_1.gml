@@ -1,5 +1,5 @@
 //PRE LOOP
-alarm[1] = 4+random(6)
+alarm[1] = 4+random(4)
 
 scrTarget()
 if target > 0
@@ -14,10 +14,10 @@ walk = 10+random(10)
 gunangle = point_direction(x,y,target.x,target.y)
 
 }
-else if point_distance(target.x,target.y,x,y)<64
+else if point_distance(target.x,target.y,x,y) < 96
 {
 //Fire
-if random(5) < 4
+if random(5) < 4.4
 {
 wkick = 3
 
@@ -32,7 +32,7 @@ image_angle = direction
 team = other.team}
 
 
-alarm[1] = 2}
+alarm[1] = 3}
 
 }
 else

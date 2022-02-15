@@ -8,10 +8,10 @@ meleedamage = 0
 size = 1
 image_speed = 0.4
 
-spr_idle = sprMeleeIdle
-spr_walk = sprMeleeWalk
-spr_hurt = sprMeleeHurt
-spr_dead = sprMeleeDead
+spr_idle = sprJungleAssassinIdle
+spr_walk = sprJungleAssassinWalk
+spr_hurt = sprJungleAssassinHurt
+spr_dead = sprJungleAssassinDead
 
 //behavior
 walk = 0
@@ -19,7 +19,7 @@ gunangle = random(360)
 alarm[1] = 30+random(40)
 wepangle = choose(-140,140)
 wepflip = 1
-instance_change(MeleeBandit,false)
+instance_change(JungleAssassin,false)
 }
 }
 
@@ -27,9 +27,9 @@ if image_index < 1
 image_index += random(0.02)
 else
 {
-if !sound_isplaying(sndAssassinPretend) and random(12) < 1 and x > __view_get( e__VW.XView, 0 ) and y > __view_get( e__VW.YView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
+if !sound_isplaying(sndJungleAssassinPretend) and random(12) < 1 and x > __view_get( e__VW.XView, 0 ) and y > __view_get( e__VW.YView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 {
-snd_play(sndAssassinPretend)
+snd_play(sndJungleAssassinPretend)
 }
 image_index += 0.4
 }

@@ -22,6 +22,8 @@ else if Player.area = 105
 goal = 145
 else if Player.area = 106
 goal = 120
+else if Player.area = 114
+goal = 125
 else if (Player.area = 6||Player.area=112) && Player.subarea=2//LABS BOSS
 goal=1;
 else if Player.area = 9 && Player.subarea < 2
