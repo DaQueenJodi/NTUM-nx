@@ -136,6 +136,9 @@ function scrPopProps() {
 
 	if spawnarea = 112 and random(4) < 1 && !place_meeting(x,y,Wall)
 	instance_create(x+16,y+16,choose(InvertedTube,InvertedTube,InvertedTube,InvertedTube,InvertedMutantTube))
+	
+	if spawnarea = 114 && !place_meeting(x,y,Wall)//Jungle
+	instance_create(x+16,y+16,choose(Bush,Bush,BigFlower))
 
 	    if spawnarea = 7 || spawnarea = 108 && !place_meeting(x,y,Wall){ //CUSTOM
 	    if random(60) < 1{

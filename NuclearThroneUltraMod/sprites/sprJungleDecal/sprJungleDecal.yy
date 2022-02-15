@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "JungleEnemy",
-    "path": "folders/Sprites/Enviroment/Tiles/Jungle/JungleEnemy.yy",
+    "name": "Jungle",
+    "path": "folders/Sprites/Enviroment/Tiles/Jungle.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprJungleDecal",

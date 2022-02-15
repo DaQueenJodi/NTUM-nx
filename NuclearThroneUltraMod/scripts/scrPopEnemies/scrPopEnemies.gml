@@ -473,6 +473,24 @@ function scrPopEnemies() {
 	}
 	}
 	
+	//JUNGLE
+	if spawnarea = 114
+	{
+
+	if styleb = 1 && random(2)<1
+	{
+	instance_create(x+16,y+16,choose(JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,Salamander,Salamander,Salamander))
+	}
+	else{
+	if random(4) < 1
+	instance_create(x+16,y+16,choose(JungleAssassin,JungleBandit,JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,JungleBandit,JungleBandit,JungleBandit,Salamander))
+	else
+	{
+	instance_create(x+16,y+16,JungleBandit)}
+	}
+	}
+	
+	
 	if spawnarea == 9 && subarea != 3
 	{
 		if styleb = 1 && random(7) < 2
