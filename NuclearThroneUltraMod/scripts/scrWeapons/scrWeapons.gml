@@ -4079,7 +4079,7 @@ function scrWeapons() {
 	wep_auto[369] = 0
 	wep_load[369] = 6//11
 	wep_cost[369] = 0
-	wep_sprt[369] = sprGoldenScrewdriver
+	wep_sprt[369] = sprUltraScrewDriver
 	wep_area[369] = 19
 	wep_text[369] = "ultra shanking"
 	wep_swap[369] = sndSwapSword

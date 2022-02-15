@@ -421,7 +421,7 @@ function scrMakeFloor() {
 	
 	//jungle
 	if area = 114{
-		if random(5) < 2
+		if random(6) < 1
 		{
 			instance_create(x,y,Floor)
 			instance_create(x+32,y,Floor)
@@ -435,6 +435,7 @@ function scrMakeFloor() {
 		} if random (3) < 1
 		{
 			instance_create(x,y,Floor)
+			instance_create(x,y-32,Floor)
 		}
 		else 
 		{

@@ -1,4 +1,4 @@
-alarm[1] = 4+random(4)
+alarm[1] = 3+random(4)
 if instance_exists(Player)
 {
 	if Player.loops>0
@@ -12,11 +12,11 @@ if target > 0
 		if point_distance(target.x,target.y,x,y) < 64
 		{
 		walk = 2;
-		alarm[2]=8//the delay that everyone wants
+		alarm[2]=7//the delay that everyone wants
 		instance_create(x-5,y,Notice);
 		instance_create(x,y,Notice);
 		instance_create(x+5,y,Notice);
-		alarm[1]=12;
+		alarm[1]=11;
 
 		if instance_exists(Player)
 		{

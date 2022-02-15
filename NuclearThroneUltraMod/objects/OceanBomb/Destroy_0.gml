@@ -7,7 +7,7 @@ if instance_exists(Player)
 }
 var amount = 14;
 var angle = image_angle;
-var angleStep = 360/14;
+var angleStep = 360/8;
 snd_play(sndRoll);
 snd_play(sndBloodLauncher);
 
