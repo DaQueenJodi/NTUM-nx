@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprCrystalProp",
-    "path": "sprites/sprCrystalProp/sprCrystalProp.yy",
+    "name": "sprCrystalPropOld",
+    "path": "sprites/sprCrystalPropOld/sprCrystalPropOld.yy",
   },
   "solid": false,
   "visible": true,

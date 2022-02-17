@@ -2,7 +2,7 @@ function scrLoadOptions() {
 	//OPTIONS
 	//audio
 	opt_sfxvol=ini_read_real("OPTIONS","sfxvol",0.5);
-	opt_musvol = ini_read_real("OPTIONS","musvol",0.8);
+	opt_musvol = ini_read_real("OPTIONS","musvol",0.9);
 	opt_ambvol = ini_read_real("OPTIONS","ambvol",0.7);
 
 	//visual

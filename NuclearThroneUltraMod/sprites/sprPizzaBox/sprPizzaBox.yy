@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Enemies.yy",
+    "name": "Sewers",
+    "path": "folders/Sprites/Enemies/Sewers.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprPizzaBox",

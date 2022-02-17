@@ -272,24 +272,27 @@ function scrPopulate() {
 		with Bones
 		sprite_index = sprIceDecal
 	}
-	if spawnarea = 4 || spawnarea = 111
+	if spawnarea = 4// || spawnarea = 111
 	{
-		if !place_free(x-32,y) and !place_free(x+32,y) and place_free(x,y)
-		{
-		if random(9) < 1
-		instance_create(x,y,Bones)
-		if random(9) < 1
-		instance_create(x,y+16,Bones)
-		if random(9) < 1
-		{
-		with instance_create(x+32,y,Bones)
-		image_xscale = -1}
-		if random(9) < 1{
-		with instance_create(x+32,y+16,Bones)
-		image_xscale = -1}
-		}
+		TopDecals();
+		GenBones();
 		with Bones
-		sprite_index = sprCaveDecal
+		sprite_index = sprCaveDecal;
+		with TopDecal
+		{
+			sprite_index = sprTopDecalCave;	
+		}
+	}
+	if spawnarea = 115
+	{
+		TopDecals();
+		GenBones();
+		with Bones
+		sprite_index = sprCursedCaveDecal;
+		with TopDecal
+		{
+			sprite_index = sprTopDecalCursedCave;	
+		}
 	}
 	if spawnarea = 2
 	{

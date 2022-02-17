@@ -142,6 +142,8 @@ function scrTips() {
 	tip = choose("welcome to banditland","bandits with erasers","laserbandits","when the night falls","tonight bandit party","be afraid of the bandit")
 	if Player.area = 114
 	tip = choose("jungle","ugga bugga","wet grass")
+	if Player.area = 115
+	tip = choose("cheese caves","cursed caves","gouda")//Fun fact I used to live in Gouda
 	}
 
 

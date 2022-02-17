@@ -39,7 +39,7 @@ function scrMakeFloor() {
 	instance_create(x-32,y+32,Floor)
 	}else instance_create(x,y,Floor)} 
 
-	if area = 4|| area = 111//caves?
+	if area = 4|| area = 111 || area = 115//caves?
 	instance_create(x,y,Floor)
 
 	if area = 5 || area = 107 { if ( (random(10) < 1) || (subarea=3&&random(40)<1 ) )//frozzen city 11
@@ -514,7 +514,7 @@ function scrMakeFloor() {
 	trn = choose(0,0,0,0,0,0,0,0,90,-90,90,-90,180)
 	if area = 3 || area = 106
 	trn = choose(0,0,0,0,90,-90)
-	if area = 4 || area = 111
+	if area = 4 || area = 111 || area = 115
 	trn = choose(0,0,0,0,90,-90,180)
 	if area = 5 || area = 107
 	trn = choose(0,0,0,0,180,180)//0 0 0 0 0 180
@@ -640,7 +640,7 @@ function scrMakeFloor() {
 	if random(25) < 1
 	instance_create(x,y,FloorMaker)
 	}
-	if area = 4 || area = 111
+	if area = 4 || area = 111 || area == 115
 	{
 	if random(9+instance_number(FloorMaker)) > 10
 	{

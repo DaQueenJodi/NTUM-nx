@@ -171,7 +171,11 @@ function scrPopEnemies() {
 	instance_create(x+16,y+16,FireBat)
 	else
 	instance_create(x+16,y+16,choose(Spider,Spider,Spider,Spider,LaserCrystal))
-
+	}
+	//CHEESE CAVES
+	if spawnarea = 115
+	{
+	instance_create(x+16,y+16,choose(CursedSpider,CursedSpider,CursedSpider,CursedSpider,CursedCrystal))
 	}
 
 

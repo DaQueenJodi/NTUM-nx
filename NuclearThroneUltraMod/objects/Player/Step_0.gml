@@ -840,7 +840,7 @@ friction = 0.1
 else
 friction = 0.45
 }
-else if area = 4 and !instance_exists(GenCont) and !instance_exists(LevCont) and !instance_exists(FloorMaker)
+else if (area == 4 || area == 115) and !instance_exists(GenCont) and !instance_exists(LevCont) and !instance_exists(FloorMaker)
 {
 //SPIDERWEBS
 if ((instance_nearest(x-16,y-16,Floor).styleb == 1)&&(skill_got[2]==0&&race!=18&&race!=24))//EXTRA FEET TEST

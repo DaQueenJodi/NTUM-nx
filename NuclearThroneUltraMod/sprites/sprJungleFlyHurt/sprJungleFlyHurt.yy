@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "JungleEnemy",
-    "path": "folders/Sprites/Enviroment/Tiles/Jungle/JungleEnemy.yy",
+    "path": "folders/Sprites/Enemies/JungleEnemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprJungleFlyHurt",
