@@ -6,8 +6,8 @@ if BigMachine.alarm[3]<1
 {
     with proj
     {
-    if team!=1
-    instance_destroy();
+	    if team!=1 && object_index != Laser && object_index != MegaLaser && object_index != Lightning && object_index != Tentacle
+	    instance_destroy();
     }
 	//Reduced damage
 	with BigMachine
@@ -29,7 +29,7 @@ if InvertedBigMachine.alarm[3]<1
 {
     with proj
     {
-		if team!=1
+		if team!=1 && object_index != Laser && object_index != MegaLaser && object_index != Lightning && object_index != Tentacle
 		instance_destroy();
     }
 	//Reduced damage

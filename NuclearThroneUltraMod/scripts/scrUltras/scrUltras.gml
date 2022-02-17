@@ -264,7 +264,7 @@ function scrUltras() {
 	ultra_tips[57] = "NUCLEAR BOMB!"
 
 	ultra_name[58] = "PROTON"
-	ultra_text[58] = "ENEMIES HAVE EVEN LESS HEALTH#DEAL DAMAGE TO ENEMIES NEAR YOU"
+	ultra_text[58] = "YOU DEAL MORE CONTACT DAMAGE#DEAL DAMAGE TO ENEMIES NEAR YOU"
 	ultra_tips[58] = "always positive"
 
 	ultra_name[59] = "ELECTRON"

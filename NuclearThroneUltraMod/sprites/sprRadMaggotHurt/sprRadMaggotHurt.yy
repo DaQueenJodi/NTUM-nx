@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Enemies.yy",
+    "name": "Maggots",
+    "path": "folders/Sprites/Enemies/Maggots.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprRadMaggotHurt",

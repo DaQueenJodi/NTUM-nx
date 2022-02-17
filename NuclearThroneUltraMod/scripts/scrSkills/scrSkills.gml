@@ -111,9 +111,13 @@ function scrSkills() {
 	skill_msnd[10] =  sndMutBackMuscle
 
 	skill_name[11] = "SCARIER FACE"
-	skill_text[11] = "LESS ENEMY HP"
+	skill_text[11] = "18% LESS ENEMY HP"
 	skill_tips[11] = "mirrors will break"
 	skill_msnd[11] =  sndMutScarierFace
+	if instance_exists(Player) && Player.race = 25
+	{
+		skill_text[11] = "20% LESS ENEMY HP"
+	}
 
 	skill_name[12] = "EUPHORIA"
 	skill_text[12] = "SLOWER ENEMY BULLETS#WHEN YOU GET HIT YOU GAIN#INVINCIBILITY FOR A SHORT MOMENT"
@@ -323,6 +327,23 @@ function scrSkills() {
 	skill_tips[32] = "yes pain yes gain"
 	skill_msnd[32] =  sndMutAlkalineSaliva
 	
+	skill_name[33] = "GLASS ARM CANNON"//Metroid reference I guess
+	skill_text[33] = "25% LESS ENEMY HP#-2 MAX HP"
+	skill_tips[33] = "fragile"
+	skill_msnd[33] =  sndMutGlassArmCannon
+	if instance_exists(Player) 
+	{
+		if Player.race = 25
+		{
+			skill_text[33] = "25% LESS ENEMY HP#-2 MAX HP"
+		}
+		/*
+		if (Player.race == 3 && Player.maxhealth <= 2 && UberCont.ctot_skill_taken[33] <= 0)
+		{
+			skill_text[33] = "25% LESS ENEMY HP#-2 MAX HP#TAKING THIS WONT KILL YOU <3"	
+		}*/
+	}
+	
 	/*
 	skill_name[33] = "THRONE BACK"
 	skill_text[33] = "UPGRADES YOUR PASSIVE ABILITY"
@@ -332,17 +353,17 @@ function scrSkills() {
 	skill_msnd[33] =  sndMutThronebutt
 	*/
 	
-	skill_name[33] = "NOTHING"
-	skill_text[33] = "THERE ARE NO MORE MUTATIONS LEFT!"
-	skill_tips[33] = ""
-	skill_msnd[33] =  sndPartyHorn
+	skill_name[34] = "NOTHING"
+	skill_text[34] = "THERE ARE NO MORE MUTATIONS LEFT!"
+	skill_tips[34] = ""
+	skill_msnd[34] =  sndPartyHorn
 
 	/*
 	skill_name[29] = "SHARP TEETH"
 	skill_text[29] = "WHENEVER YOU GET HIT DEAL DAMAGE TO EVERYTHING ON THE SCREEN, AND REDUCE DAMAGE TAKEN IN A SHORT PERIOD AFTER BEING HIT TO 1  
 	skill_tips[29] = "bite"*/
 
-	maxskill = 32;
+	maxskill = 33;
 
 
 	dir = 0

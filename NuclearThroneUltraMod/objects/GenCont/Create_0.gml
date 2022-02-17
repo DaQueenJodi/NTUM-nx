@@ -32,18 +32,19 @@ if race==10//Rebel pasive
     }
     else if race=12//yung cuz reset max HP
     {
-    if skill_got[1]{//rhino skin
-    maxhealth=12;}
-    else{
-    maxhealth=8;}
+	    if skill_got[1]{//rhino skin
+	    maxhealth=12;}
+	    else{
+	    maxhealth=8;}
+		if skill_got[33]//Glass arm cannon
+			maxhealth-=2;
+	    if ultra_got[47]//SPAM basicly rebel
+	    {
     
-    if ultra_got[47]//SPAM basicly rebel
-    {
+	    if my_health<maxhealth
+	    my_health+=round((maxhealth-my_health)/2);
     
-    if my_health<maxhealth
-    my_health+=round((maxhealth-my_health)/2);
-    
-    }
+	    }
     
     }
     

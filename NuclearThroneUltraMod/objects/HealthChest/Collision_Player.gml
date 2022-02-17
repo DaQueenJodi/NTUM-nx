@@ -11,24 +11,28 @@ instance_create(x,y,HealFX)
 
 instance_destroy()
 
-if other.race==9 || other.race=12//Chicken & Yung Cuz maxhealth regain
-{
-if other.maxhealth<8 || (other.skill_got[1]==1&&other.maxhealth<12)
-{
-other.maxhealth+=2;
-if other.skill_got[1]==1//rhino skin
-{
-if other.maxhealth>12
-other.maxhealth=12;
-}
-else if other.maxhealth>8
-other.maxhealth=8;
-}
+var  maxHpIncrease = 2;
+with other {
+	if race==9 other.race=12//Chicken maxhealth regain
+	{
+		var targetHealth = 8;
+		if skill_got[1] == 1//Rhino skin
+			targetHealth += 4;
+		if skill_got[33]//Glass arm cannon
+			targetHealth -= 2;
+		if skill_got[9] 
+			maxHpIncrease *= 2;
+	    if maxhealth<targetHealth
+	    {
+		    maxhealth = min(maxhealth + maxHpIncrease,targetHealth);
+	    }
+	}
+	if my_health + other.num <= maxhealth
+		my_health += other.num
+	else// if other.crown != 2
+		my_health = max(my_health,maxhealth);
 }
 
-other.my_health += num
-if other.my_health > other.maxhealth
-other.my_health = other.maxhealth
 
 
 dir = instance_create(x,y,PopupText)

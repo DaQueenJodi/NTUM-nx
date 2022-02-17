@@ -15,3 +15,4 @@ spr_dead = sprMaggotDead
 //behavior
 alarm[1] = 10+random(10)
 
+charge = false;

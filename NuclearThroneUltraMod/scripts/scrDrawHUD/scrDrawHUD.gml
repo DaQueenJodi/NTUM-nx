@@ -527,9 +527,9 @@ function scrDrawHUD() {
 		//draw_set_halign(fa_left)
 	var ny = y-30;
 	//Eagle eyes weptier
-		if Player.skill_got[19]//eagle eyes
+		var tier = string(wep_area[wep]);
+		if Player.skill_got[19] && tier >= 0//eagle eyes
 		{
-			var tier = string(wep_area[wep]);
 			var spaceBetweenStarAndText = 4;
 			var ty = y-40;
 			var tierSprite = sprWepTier;

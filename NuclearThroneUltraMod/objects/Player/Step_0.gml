@@ -23,9 +23,10 @@ if UberCont.public==0 {
 //hacks
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*64,JungleFly);
-		thing = instance_create(x + dcos(dangle)*128,y + dsin(dangle)*64,PopupText);
-		thing.mytext = "FISH?";
+		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
+	    instance_create(f.x + 16,f.y + 16,JungleFly);
+		thing = instance_create(f.x + 16,f.y + 16,PopupText);
+		thing.mytext = "FLY";
 	}
 	if keyboard_check_pressed(vk_decimal) {
 		var dangle = random(1)*360;

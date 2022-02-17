@@ -47,7 +47,7 @@ function scrShadows() {
 	with BecomeInvertedScrapBoss
 	draw_sprite(shd96,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with Maggot
-	draw_sprite(shd16,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+	draw_sprite_ext(shd16,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),1,1,image_angle,c_white,1)
 	with DoomGrenade
 	draw_sprite(shd8,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with Termite
@@ -61,7 +61,7 @@ function scrShadows() {
 	with InvertedFireBat
 	draw_sprite(shd16,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+10)
 	with MaggotInverted
-	draw_sprite(shd16,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+	draw_sprite_ext(shd16,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),1,1,image_angle,c_white,1)
 	with Scorpion
 	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with InvertedScorpion
@@ -249,7 +249,7 @@ function scrShadows() {
 	with JungleAssassin
 		draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with JungleFly
-		draw_sprite(shd32,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+2)
+		draw_sprite(shd32,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+4)
 	with Thief
 		draw_sprite_ext(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),1,1,0,c_white,alpha);
 	with BoneFish
