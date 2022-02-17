@@ -12,10 +12,10 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndNothingGenerators",
-  "duration": 0.0,
+  "duration": 6.8,
   "parent": {
-    "name": "Boss",
-    "path": "folders/Sounds/Boss.yy",
+    "name": "TheThrone",
+    "path": "folders/Sounds/Palace/TheThrone.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndNothingGenerators",

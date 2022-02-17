@@ -135,7 +135,10 @@ if Player.area = 101
 name = "BIG FISH"
 }
 
-
+if Player.area == 9
+{
+	name = "THE NUCLEAR THRONE";	
+}
 
 }
 with instance_create(x,y,Drama)

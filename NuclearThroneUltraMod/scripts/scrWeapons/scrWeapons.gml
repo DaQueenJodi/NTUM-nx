@@ -1135,7 +1135,7 @@ function scrWeapons() {
 	wep_load[102] = 10
 	wep_cost[102] = 2
 	wep_sprt[102] = sprFrostPistol
-	wep_area[102] = 1
+	wep_area[102] = 2
 	wep_text[102] = "frozen enemies #move while frozen"
 	wep_swap[102] = sndSwapPistol
 	wep_rad[102] = 0;

@@ -15,7 +15,7 @@ if instance_exists(Player)
     
     if Player.skill_got[5] = 1
     {
-    if my_health <= maxhealth/2
+    if my_health <= maxhealth*0.35//Plant thronebutt
     {
     with instance_create(x,y,PlantThronebutt)
     image_angle=random(360);
