@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Enemies.yy",
+    "name": "Mansion",
+    "path": "folders/Sprites/Enemies/Mansion.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprJockFire",

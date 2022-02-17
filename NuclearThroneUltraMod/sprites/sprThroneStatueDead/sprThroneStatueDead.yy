@@ -117,8 +117,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "TheThrone",
-    "path": "folders/Sprites/Palace/Palace Enemy/TheThrone.yy",
+    "name": "Throne1",
+    "path": "folders/Sprites/Palace/Palace Enemy/TheThrone/Throne1.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprThroneStatueDead",

@@ -1,7 +1,7 @@
 if instance_exists(Player){
 if instance_exists(ProtoStatue) and speed = 0
 {
-if point_distance(x,y,ProtoStatue.x,ProtoStatue.y) < 170 and (Player.ultra_got[12] == 1 || collision_line(x,y,ProtoStatue.x,ProtoStatue.y,Wall,0,0) < 0)
+if point_distance(x,y,ProtoStatue.x,ProtoStatue.y) < 180 and (Player.ultra_got[12] == 1 || collision_line(x,y,ProtoStatue.x,ProtoStatue.y,Wall,0,0) < 0)
 {
 if place_free(x+lengthdir_x(12,point_direction(x,y,ProtoStatue.x,ProtoStatue.y)),y)
 x += lengthdir_x(12,point_direction(x,y,ProtoStatue.x,ProtoStatue.y))

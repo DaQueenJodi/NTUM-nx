@@ -115,18 +115,20 @@ Player.ammo[3] += 60
 Player.ammo[4] += 60
 Player.ammo[5] += 60
 }
-
-if Player.race==9||Player.race==12//Chicken maxhealth regain
+with Player
 {
-if Player.maxhealth<8 || (Player.skill_got[1]==1&&Player.maxhealth<12)
-{
-if Player.skill_got[1]==1//rhino skin
-{
-Player.maxhealth=12;
-}
-else
-Player.maxhealth=8;
-}
+	if race==9 || race==12//Chicken maxhealth regain
+    {
+		var targetHealth = 8;
+		if skill_got[1] == 1//Rhino skin
+			targetHealth += 4;
+		if skill_got[33]//Glass arm cannon
+			targetHealth -= 2;
+        if maxhealth<targetHealth
+        {
+	        maxhealth = targetHealth;
+        }
+    }	
 }
 
 Player.my_health = Player.maxhealth
@@ -195,7 +197,25 @@ Player.skillpoints++;
 else
 Player.patience++;
 }
+else if skill == 33 //GLASS ARM CANNON
+{
 
+	if Player.race=25
+	{
+		Player.maxhealth -= 1
+		if Player.my_health > Player.maxhealth
+			Player.my_health -= 1
+	}
+	else
+	{
+		Player.maxhealth -= 2
+		if Player.my_health > Player.maxhealth
+			Player.my_health -= 2
+	}
+	//Dont die on me friend
+	Player.maxhealth = max(Player.maxhealth, 1);
+	Player.my_health = max(Player.my_health, 1);
+}
 if skill==13||skill==14||skill==15||skill==16||skill==17||skill==21//wep specific
 {Player.heavyheart++;}
 

@@ -32,18 +32,19 @@ if race==10//Rebel pasive
     }
     else if race=12//yung cuz reset max HP
     {
-    if skill_got[1]{//rhino skin
-    maxhealth=12;}
-    else{
-    maxhealth=8;}
+	    if skill_got[1]{//rhino skin
+	    maxhealth=12;}
+	    else{
+	    maxhealth=8;}
+		if skill_got[33]//Glass arm cannon
+			maxhealth-=2;
+	    if ultra_got[47]//SPAM basicly rebel
+	    {
     
-    if ultra_got[47]//SPAM basicly rebel
-    {
+	    if my_health<maxhealth
+	    my_health+=round((maxhealth-my_health)/2);
     
-    if my_health<maxhealth
-    my_health+=round((maxhealth-my_health)/2);
-    
-    }
+	    }
     
     }
     
@@ -121,14 +122,14 @@ else if Player.area = 112//inverted labs
 __background_set_colour( make_color_rgb(246,228,224) )
 else if Player.area = 114//Jungle bungle wungle fungle fuck ass
 __background_set_colour( make_color_rgb(42,144,12) )
+else if Player.area = 115//cheese cave
+__background_set_colour( make_color_rgb(255,156,35) )
 }
 else
 __background_set_colour( make_color_rgb(106,122,175) )
 
 
 
-//test 4
-//background_color = make_color_rgb(93,77,168)
 
 scrTips()
 

@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Bursts",
-    "path": "folders/Objects/Ability/Bursts.yy",
+    "path": "folders/Objects/Player/Ability/Bursts.yy",
   },
   "resourceVersion": "1.0",
   "name": "FlameSound",

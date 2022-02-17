@@ -71,7 +71,7 @@ function scrRaces() {
 	race_name[5] = "[PLANT]"
 	race_pass[5] = "IS FASTER"
 	race_acti[5] = "SNARE GROWTH"
-	race_butt[5] = "SNARE FINISHES ENEMIES#UNDER 50% HP"
+	race_butt[5] = "SNARE FINISHES ENEMIES#UNDER 35% HP"
 	race_back[5] = "ENEMIES KILLED WHILE SNARED GIVE MORE DROPS THIS IS AN ULTRA ";
 	race_lock[5] = "KILL 100 ENEMIES TO UNLOCK"
 	race_have[5] = 0
@@ -209,9 +209,9 @@ function scrRaces() {
 
 
 	race_name[15] = "[ATOM]"
-	race_pass[15] = "ITEMS DESPAWN QUICKER#LESS ENEMY HEALTH"
+	race_pass[15] = "ITEMS DESPAWN QUICKER#YOU DEAL CONTACT DAMAGE"
 	race_acti[15] = "TELEPORT"
-	race_butt[15] = "TELEPORTATION CAUSES#PLASMA EXPLOSION AND LIGHTNING"
+	race_butt[15] = "EXPLOSIVE TELEPORTATION"
 	race_back[15] = "SHORT IMMUNITY TO CONTACT DAMAGE#AFTER TELEPORTING";
 	race_lock[15] = "TAKE CRYSTAL'S THRONEBUTT"
 	race_have[15] = 0

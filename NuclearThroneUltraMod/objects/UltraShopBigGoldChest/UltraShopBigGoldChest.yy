@@ -36,7 +36,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shops",
-    "path": "folders/Objects/Ability/Shops.yy",
+    "path": "folders/Objects/Player/Ability/Shops.yy",
   },
   "resourceVersion": "1.0",
   "name": "UltraShopBigGoldChest",

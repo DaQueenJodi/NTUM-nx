@@ -50,7 +50,7 @@ img += 1
 }
 
 //drop IDKWID?
-if(random(50)<1){
+if(random(200)<1){
 with instance_create(x,y,WepPickup)
 {
 scrWeapons()

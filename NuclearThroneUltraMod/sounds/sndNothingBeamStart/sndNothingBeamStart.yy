@@ -12,10 +12,10 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndNothingBeamStart",
-  "duration": 0.0,
+  "duration": 5.857375,
   "parent": {
-    "name": "Boss",
-    "path": "folders/Sounds/Boss.yy",
+    "name": "TheThrone",
+    "path": "folders/Sounds/Palace/TheThrone.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndNothingBeamStart",

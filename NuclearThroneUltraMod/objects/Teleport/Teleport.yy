@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Ability",
-    "path": "folders/Objects/Ability.yy",
+    "path": "folders/Objects/Player/Ability.yy",
   },
   "resourceVersion": "1.0",
   "name": "Teleport",

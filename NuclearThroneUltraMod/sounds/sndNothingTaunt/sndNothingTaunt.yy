@@ -12,10 +12,10 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndNothingTaunt",
-  "duration": 0.0,
+  "duration": 7.674688,
   "parent": {
-    "name": "Boss",
-    "path": "folders/Sounds/Boss.yy",
+    "name": "TheThrone",
+    "path": "folders/Sounds/Palace/TheThrone.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndNothingTaunt",

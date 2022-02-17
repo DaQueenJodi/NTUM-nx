@@ -1135,7 +1135,7 @@ function scrWeapons() {
 	wep_load[102] = 10
 	wep_cost[102] = 2
 	wep_sprt[102] = sprFrostPistol
-	wep_area[102] = 1
+	wep_area[102] = 2
 	wep_text[102] = "frozen enemies #move while frozen"
 	wep_swap[102] = sndSwapPistol
 	wep_rad[102] = 0;
@@ -3732,7 +3732,7 @@ function scrWeapons() {
 	wep_load[338] = 11//10
 	wep_cost[338] = 1
 	wep_sprt[338] = sprKrakenPistol
-	wep_area[338] = 1
+	wep_area[338] = 3
 	wep_text[338] = "kraken gives you iframes"
 	wep_swap[338] = sndSwapDragon
 	wep_rad[338] = 0;
@@ -4088,6 +4088,17 @@ function scrWeapons() {
 	/*
 	wep_name[369] = "LIGHTNING CANNON"
 	wep_type[369] = 5
+	wep_auto[369] = 0
+	wep_load[369] = 6//11
+	wep_cost[369] = 0
+	wep_sprt[369] = sprGoldenScrewdriver
+	wep_area[369] = 19
+	wep_text[369] = "ultra shanking"
+	wep_swap[369] = sndSwapSword
+	wep_rad[369] = 5;
+	
+	wep_name[369] = "CLUSTER GRENADE LAUNCHER"
+	wep_type[369] = 4
 	wep_auto[369] = 0
 	wep_load[369] = 6//11
 	wep_cost[369] = 0

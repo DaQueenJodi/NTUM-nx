@@ -23,9 +23,10 @@ if UberCont.public==0 {
 //hacks
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*64,JungleFly);
-		thing = instance_create(x + dcos(dangle)*128,y + dsin(dangle)*64,PopupText);
-		thing.mytext = "FISH?";
+		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
+	    instance_create(f.x + 16,f.y + 16,JungleFly);
+		thing = instance_create(f.x + 16,f.y + 16,PopupText);
+		thing.mytext = "FLY";
 	}
 	if keyboard_check_pressed(vk_decimal) {
 		var dangle = random(1)*360;
@@ -839,7 +840,7 @@ friction = 0.1
 else
 friction = 0.45
 }
-else if area = 4 and !instance_exists(GenCont) and !instance_exists(LevCont) and !instance_exists(FloorMaker)
+else if (area == 4 || area == 115) and !instance_exists(GenCont) and !instance_exists(LevCont) and !instance_exists(FloorMaker)
 {
 //SPIDERWEBS
 if ((instance_nearest(x-16,y-16,Floor).styleb == 1)&&(skill_got[2]==0&&race!=18&&race!=24))//EXTRA FEET TEST

@@ -33,11 +33,8 @@ right = choose(1,-1)
 my_health = maxhealth
 prevhealth=my_health;
 
-if instance_exists(Player)
-{
-if Player.skill_got[11] = 1
-my_health = round(my_health*0.8)
-}
+EnemyHealthAdjustments();
+
 
 
 team = 1

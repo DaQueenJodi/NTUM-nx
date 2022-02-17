@@ -117,7 +117,7 @@ function scrPopProps() {
 	}
 	if spawnarea = 0 || spawnarea = 113 && !place_meeting(x,y,Wall)
 	instance_create(x+16,y+16,NightCactus)
-	if spawnarea = 4 && !place_meeting(x,y,Wall)
+	if (spawnarea = 4 || spawnarea == 115) && !place_meeting(x,y,Wall)
 	instance_create(x+16,y+16,choose(Crystal,Crystal,Cocoon))
 	if spawnarea = 3||spawnarea = 106 && !place_meeting(x,y,Wall)
 	instance_create(x+16,y+16,choose(Tires,Car))

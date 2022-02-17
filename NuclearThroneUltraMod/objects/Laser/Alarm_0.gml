@@ -40,8 +40,8 @@ until (place_meeting(x,y,hitme) and dir > 16) or place_meeting(x,y,Wall) or plac
     }
 }
 else
-{
-    with instance_create(x,y,Laser)
+{	//bouncy laser
+    with instance_create(x - lengthdir_x(4,image_angle),y - lengthdir_y(4,image_angle),Laser)
     {image_angle = other.image_angle*-1;
     team = other.team
     laserhit=other.laserhit-1;

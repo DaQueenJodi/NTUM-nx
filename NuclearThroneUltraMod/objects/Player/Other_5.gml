@@ -270,22 +270,20 @@ looping=false;
     //if !instance_exists(Crown)
     //instance_create(x,y,Crown)
     UberCont.ctot_loop[race] += 1
-    {loops += 1
+    loops += 1
         
-        if race==9//Chicken maxhealth regain
+        if race==9//Chicken maxhealth regain on loop
+        {
+			var targetHealth = 8;
+			if skill_got[1] == 1//Rhino skin
+				targetHealth += 4;
+			if skill_got[33]//Glass arm cannon
+				targetHealth -= 2;
+            if maxhealth<targetHealth
             {
-            if maxhealth<8 || (skill_got[1]==1&&maxhealth<12)
-            {
-            maxhealth+=2;
-            if skill_got[1]==1//rhino skin
-            {
-            if maxhealth>12
-            maxhealth=12;
+	            maxhealth = min(maxhealth + 2,targetHealth);
             }
-            else if maxhealth>8
-            maxhealth=8;
-            }
-            }
+        }
             
         if loops=2&&UberCont.opt_gamemode != 15//not no mutations gamemode
         {
@@ -296,7 +294,7 @@ looping=false;
         
         skillsChosen=0;
         }
-    }
+    
     
     //uncurse some shit
     curse=0;

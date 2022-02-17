@@ -13,9 +13,17 @@ if walk > 0
 walk -= 1
 motion_add(direction,0.8)
 }
-
-if point_distance(x,y,Player.x,Player.y) > 300//52
-mp_potential_step(Player.x,Player.y,1,false)
+var dis = point_distance(x,y,Player.x,Player.y)
+if dis > 128//52
+{
+	if dis > 300
+	{
+		x = Player.x;
+		y = Player.y;
+	}
+	else
+		mp_potential_step(Player.x,Player.y,1,false)
+}
 
 
     if (Player.reload>0)//my partner is shooting
@@ -57,7 +65,7 @@ motion_add(other.gunangle+(random(32)-16)*Player.accuracy,12)
 image_angle = direction
 team = other.team
 }
-reload+=2;
+reload+=3;
 }
 if reload>0
 {reload-=1;}

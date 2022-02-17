@@ -228,11 +228,10 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
 	{
 		if other.num == 0
 			wepmenuopen = false;
-		skin = UberCont.skin[other.num]
-		race = other.num;
+		race = Menu.race;
+		skin = UberCont.skin[race]
 		wep = UberCont.selected_start_wep[race];
-		UberCont.cwep[race]=UberCont.start_wep[wep];
-		UberCont.start_wep[0]=race_swep[Menu.race];//Starting weapon 0 is different for each character
+		UberCont.start_wep[0]=race_swep[race];//Starting weapon 0 is different for each character
 	}
     
     }

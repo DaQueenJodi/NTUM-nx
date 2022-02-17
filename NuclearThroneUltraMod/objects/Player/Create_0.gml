@@ -178,7 +178,7 @@ if UberCont.opt_gamemode=1{//one weapon only game mode yo
 }
 else
 {
-wep = UberCont.cwep[race]
+	wep = UberCont.start_wep[UberCont.selected_start_wep[race]];
 }
 
 oneweponlywep=wep;

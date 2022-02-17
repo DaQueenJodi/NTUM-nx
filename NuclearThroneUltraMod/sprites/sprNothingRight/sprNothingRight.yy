@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "TheThrone",
-    "path": "folders/Sprites/Palace/Palace Enemy/TheThrone.yy",
+    "name": "Pieces",
+    "path": "folders/Sprites/Palace/Palace Enemy/TheThrone/Throne1/Pieces.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprNothingRight",

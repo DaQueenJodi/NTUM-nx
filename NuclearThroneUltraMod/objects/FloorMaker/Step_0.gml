@@ -16,7 +16,10 @@ instance_create(x+16,y+16,RogueAmmoChest)
 else if Player.area!=104 && Player.race!=25 && !(Player.area == 9 && Player.subarea ==3)//Not mutation smith
 instance_create(x+16,y+16,RadChest)
 else if (Player.area == 9 && Player.subarea ==3)
-instance_create(x+16,y+16,Carpet);
+{
+	instance_create(x+16,y+16,Carpet);
+	instance_create(x,y,NuclearThrone1);
+}
 }
 }
 //End piece

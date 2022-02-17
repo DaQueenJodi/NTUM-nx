@@ -1,5 +1,5 @@
 raddrop = 9
-maxhealth = 230
+maxhealth = 262
 meleedamage = 20
 size = 4
 RogueIDPD=false;

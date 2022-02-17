@@ -14,7 +14,7 @@ room_speed=40;
     }
     
     if ultra_got[58]
-    alarm[9]=60;
+		alarm[9]=60;
     
     if ultra_got[79]==1&&race=21//Horror Ultra E
     {

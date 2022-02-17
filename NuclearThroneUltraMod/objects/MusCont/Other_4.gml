@@ -202,11 +202,18 @@ song = musThemeP
 amb=amb0b
 }
 
-if area = 114//Jungle bugnle flungle drums yaya
+if area = 114 || area = 10//Jungle bugnle flungle drums yaya temp savanna
 {
 song = mus105
 
 amb=amb105
+}
+
+if area = 115//cheese caves
+{
+song = mus104
+
+amb=amb104
 }
 snd_loop(song)
 snd_loop(amb)

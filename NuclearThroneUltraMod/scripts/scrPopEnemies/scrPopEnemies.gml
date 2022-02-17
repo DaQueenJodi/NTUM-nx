@@ -171,7 +171,11 @@ function scrPopEnemies() {
 	instance_create(x+16,y+16,FireBat)
 	else
 	instance_create(x+16,y+16,choose(Spider,Spider,Spider,Spider,LaserCrystal))
-
+	}
+	//CHEESE CAVES
+	if spawnarea = 115
+	{
+	instance_create(x+16,y+16,choose(CursedSpider,CursedSpider,CursedSpider,CursedSpider,CursedCrystal))
 	}
 
 
@@ -479,11 +483,11 @@ function scrPopEnemies() {
 
 	if styleb = 1 && random(2)<1
 	{
-	instance_create(x+16,y+16,choose(JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,Salamander,Salamander,Salamander))
+	instance_create(x+16,y+16,choose(JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,JungleFly,JungleFly,JungleFly))
 	}
 	else{
 	if random(4) < 1
-	instance_create(x+16,y+16,choose(JungleAssassin,JungleBandit,JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,JungleBandit,JungleBandit,JungleBandit,Salamander))
+	instance_create(x+16,y+16,choose(JungleAssassin,JungleBandit,JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,JungleBandit,JungleBandit,JungleBandit,JungleFly))
 	else
 	{
 		if random(30) < 1
@@ -495,7 +499,7 @@ function scrPopEnemies() {
 		}
 		else
 		{
-			instance_create(x+16,y+16,choose(Salamander,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit));
+			instance_create(x+16,y+16,choose(JungleFly,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit));
 		}
 	}
 	}

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Enemies.yy",
+    "name": "Crown",
+    "path": "folders/Sprites/Enemies/Crown.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprGuardianStatue",
