@@ -499,7 +499,7 @@ function scrPopEnemies() {
 		}
 		else
 		{
-			instance_create(x+16,y+16,choose(Salamander,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit));
+			instance_create(x+16,y+16,choose(JungleFly,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit));
 		}
 	}
 	}
