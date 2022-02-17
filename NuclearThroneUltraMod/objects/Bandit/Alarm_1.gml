@@ -102,7 +102,6 @@ with instance_create(x,y,EnemyBullet1)
 motion_add(other.gunangle+random(20)-10,4)
 image_angle = direction
 team = other.team
->>>>>>> parent of ee3a49cd9 (Changed Bandit AI to be More Comparable to Retail (they dumber))
 }
 alarm[1] = 20+random(5)}
 else
