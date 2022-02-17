@@ -81,7 +81,8 @@ if random(4) < 1
 {
 snd_play(sndEnemyFire)
 wkick = 4
-gunangle = point_direction(x,y,target.x,target.y)
+if choose(false,true)
+	gunangle = point_direction(x,y,target.x,target.y)
 with instance_create(x,y,EnemyBullet1Square)
 {
 motion_add(other.gunangle+random(20)-10,4)
@@ -139,7 +140,8 @@ if random(4) < 1
 {
 snd_play(sndEnemyFire)
 wkick = 4
-gunangle = point_direction(x,y,target.x,target.y)
+if choose(false,true)
+	gunangle = point_direction(x,y,target.x,target.y)
 with instance_create(x,y,EnemyBullet1Square)
 {
 motion_add(other.gunangle+random(20)-10,4)

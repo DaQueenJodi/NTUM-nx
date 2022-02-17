@@ -1,7 +1,8 @@
 /// @description intro step 2 first beam
 sprite_index = sprNothingActivate;
+spr_idle = sprNothingActivate;
+spr_hurt = sprNothingActivate;
 mask_index = mskNothingActive;
-event_user(5);
 instance_create(x,y,ThronePipes);
 alarm[3] = 30;
 repeat(8)
@@ -11,4 +12,12 @@ repeat(8)
 		vspeed = random_range(8,16);
 		hspeed = random_range(-6,6);
 	}
+}
+
+snd_play(sndNothingBeamStart);
+snd_loop(sndNothingBeamLoop);
+with instance_create(x,y+48,ThroneBeam)
+{
+	depth = other.depth - 1;
+	team = other.team;
 }

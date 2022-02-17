@@ -7,7 +7,8 @@ if immune
 	if !active
 	{
 		speed = 0;
-		if (camera_get_view_y(view_camera[0]) < y + 32) 
+		if instance_exists(Player)
+		if (Player.y < y + 128) 
 		{
 			debug("IMMUNE FALSE");
 			immune = false;
@@ -23,6 +24,9 @@ if !active
 	{
 		immune = true;
 		intro = true;
+		spr_idle = sprNothingOff;
+		spr_hurt = sprNothingOff;
+		sprite_index = sprNothingOff;
 		with ThroneFlame
 		{
 			image_index = 0;

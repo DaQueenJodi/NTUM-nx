@@ -2,7 +2,7 @@
 if instance_exists(Player) {
     if Player.loops > 0 { //LOOP
 
-        alarm[1] = 10 + random(15);
+        alarm[1] = 12 + random(15);
 
         scrTarget()
         if target > 0 {
@@ -11,6 +11,7 @@ if instance_exists(Player) {
 					if random(7) < 1 && point_distance(target.x, target.y, x, y) < 180 {
 						snd_play(sndEnemyFire)
                         wkick = 4
+						gunangle = point_direction(x, y, target.x, target.y)
                         with instance_create(x, y, EnemyBullet1) {
                             motion_add(other.gunangle + random(20) - 10, 4.5)
                             image_angle = direction
@@ -73,7 +74,8 @@ if instance_exists(Player) {
                     if random(4) < 1 {
                         snd_play(sndEnemyFire)
                         wkick = 4
-                        gunangle = point_direction(x, y, target.x, target.y)
+						if choose(false,true)
+							gunangle = point_direction(x, y, target.x, target.y)
                         with instance_create(x, y, EnemyBullet1) {
                             motion_add(other.gunangle + random(20) - 10, 4)
                             image_angle = direction
@@ -134,7 +136,8 @@ else { //PRE LOOP
                 if random(4) < 1 {
                     snd_play(sndEnemyFire)
                     wkick = 4
-                    gunangle = point_direction(x, y, target.x, target.y)
+					if choose(true,false)
+						gunangle = point_direction(x, y, target.x, target.y)
                     with instance_create(x, y, EnemyBullet1) {
                         motion_add(other.gunangle + random(20) - 10, 4)
                         image_angle = direction

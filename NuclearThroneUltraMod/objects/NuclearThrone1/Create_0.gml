@@ -14,13 +14,13 @@ y += 16;
 y += 64;
 maxhealth = 1500
 size = 10
-friction = 2;
+friction = 6;
 meleedamage = 0;
 active = false;
 immune = true;
 intro = false;
-spr_idle = sprNothingOn
-spr_hurt = sprNothingMiddleHurt
+spr_idle = sprNothingOn;
+spr_hurt = sprNothingOn;
 spr_dead = sprNothingDeath;
 spr_l = sprNothingLeft;
 spr_r = sprNothingRight;
@@ -35,23 +35,23 @@ sprite_index = spr_idle;
 
 with instance_create(x,y,ThroneFlame)
 {
-	xOffset = -96;
+	xOffset = -81;
 	yOffset = -48;
 }
 with instance_create(x,y,ThroneFlame)
 {
-	xOffset = 96;
+	xOffset = 81;
 	yOffset = -48;
 }
 with instance_create(x,y,ThroneFlame)
 {
-	xOffset = -96;
-	yOffset = 0
+	xOffset = -81;
+	yOffset = -3;
 }
 with instance_create(x,y,ThroneFlame)
 {
-	xOffset = 96;
-	yOffset = 0;
+	xOffset = 81;
+	yOffset = -3;
 }
 with ThroneFlame
 {
