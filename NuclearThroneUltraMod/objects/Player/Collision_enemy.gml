@@ -15,7 +15,11 @@ if other.team != 0//Dealing the damage with gamma guts
 			
 	}
 	if race == 15 //Atom
+	{
 		contactDmg += 1;
+		if ultra_got[58]
+			contactDmg += 5;
+	}
 	if contactDmg > 0
 	{
 		snd_play(sndGammaGutsProc);
