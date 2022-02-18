@@ -10,7 +10,8 @@ spr_walk = sprInvSpiderWalk
 spr_hurt = sprInvSpiderHurt
 spr_dead = sprInvSpiderDead
 
-snd_hurt = sndHitRock
+snd_hurt = choose(sndSalamanderHurt, sndGatorHit, sndRavenHit, sndBanditHit, sndSniperHit, sndScorpionHit, sndRatHit)
+snd_dead = choose(sndBanditDie, sndRatDie, sndRavenDie, sndScorpionDie, sndBigMaggotDie, sndGatorDie, sndSalamanderDead)
 
 //behavior
 walk = 0
@@ -23,3 +24,5 @@ if Player.loops>0
 maxspeed = 5
 }
 
+alarm[2] = 5
+generation = 0;

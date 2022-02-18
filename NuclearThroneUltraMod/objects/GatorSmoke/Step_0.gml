@@ -1,36 +1,19 @@
 scrTarget()
-if target > 0
-{
-if (point_distance(x,y,target.x,target.y) < 128 or collision_line(x,y,target.x,target.y,Wall,0,0) < 0) and !instance_exists(Portal) 
-timer += 1
-if timer > 60
-{
-raddrop = 8
-meleedamage = 0
-size = 1
-image_speed = 0.4
+if target > 0 {
+    if (point_distance(x, y, target.x, target.y) < 128 || collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0) && !instance_exists(Portal)
+    timer += 1
+    if alarm[2] < 1 && timer > 30 {
+		alarm[2] = 12
 
-spr_idle = sprGatorIdle
-spr_walk = sprGatorWalk
-spr_hurt = sprGatorHurt
-spr_dead = sprGatorDead
-
-//behavior
-walk = 0
-gunangle = random(360)
-alarm[1] = 10+random(30)
-wepangle = choose(-140,140)
-wepflip = 1
-instance_change(Gator,true)
-
-with instance_create(x,y,Shell)
-sprite_index = sprCigarette
-
-}
+        with instance_create(x, y, Shell) {
+			sprite_index = sprCigarette
+			motion_add(random(360), 2)
+		}
+        
+    }
 }
 
 if image_index < 1
 image_index += random(0.02)
 else
-image_index += 0.4
-
+    image_index += 0.4

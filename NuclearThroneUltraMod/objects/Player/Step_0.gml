@@ -28,6 +28,22 @@ if UberCont.public==0 {
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
 		thing.mytext = "FLY";
 	}
+	if keyboard_check_pressed(vk_end) {
+		repeat(3) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+		    instance_create(f.x + 16,f.y + 16,CursedSpider);
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "GRAPES";
+		}
+	}
+	if keyboard_check_pressed(vk_pageup) {
+		var dangle = random(1)*360;
+		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*128,Floor);
+		instance_create(f.x + 16,f.y + 16,CursedCrystal);
+		thing = instance_create(f.x + 16,f.y + 16,PopupText);
+		thing.mytext = "PURPLE POP ROCK";
+	}
 	if keyboard_check_pressed(vk_decimal) {
 		var dangle = random(1)*360;
 	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*128,AssassinBoss);
