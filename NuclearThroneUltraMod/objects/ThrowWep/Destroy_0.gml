@@ -31,6 +31,7 @@ with Player
     }
 
 }
+
             with instance_create(x,y,WepPickup)
             {
             oneweponly=false;

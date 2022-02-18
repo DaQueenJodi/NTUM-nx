@@ -243,7 +243,7 @@ function scrUltras() {
 
 	    //PANDA 
 	    ultra_name[53] = "TURNING BADASS"
-	    ultra_text[53] = "THROWS PIERCE AND DEFLECT PROJECTILES#MORE THROW DAMAGE"
+	    ultra_text[53] = "THROWS PIERCE AND DEFLECT PROJECTILES#MORE THROW DAMAGE#THROWS BOUNCE TOWARDS ENEMIES"
 	    ultra_tips[53] = "strong arms!"
     
 	    ultra_name[54] = "DELIBERATE REINCARNATION"
@@ -498,7 +498,7 @@ function scrUltras() {
 	ultra_text[99] = "YOUR ACTIVE CHANGES INTO#REVIVE CORPSES INTO ALLY FREAKS"
 	ultra_tips[99] = "doctor necromancer"
     
-	ultra_name[100] = "NARCOTICS"
+	ultra_name[100] = "SEDATIVES"
 	ultra_text[100] = "YOUR PROJECTILES PUT ENEMIES TO SLEEP#FOR A SHORT MOMENT"
 	ultra_tips[100] = "sleeping enemies don't react#for a moment"
 

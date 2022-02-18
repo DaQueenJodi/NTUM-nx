@@ -714,42 +714,41 @@ function scrPowers() {
 	snd_play(sndEnemySlash);
 	    with instance_create(x,y,ThrowWep)
 	    {
-	    team=other.team;
-	    motion_add(point_direction(x,y,mouse_x,mouse_y),16);
-	    scrWeapons()
-	    if other.ultra_got[54]=1
-	{
-	    //primary
-	    var prevwep;
+		    team=other.team;
+		    motion_add(point_direction(x,y,mouse_x,mouse_y),16);
+		    scrWeapons()
+		    if other.ultra_got[54]=1
+			{
+			    //primary
+			    var prevwep;
     
-	    if wep_area[other.wep]=99//handling starting weapons
-	    wep_area[other.wep]=1
+			    if wep_area[other.wep]=99//handling starting weapons
+			    wep_area[other.wep]=1
     
-	    prevwep=other.wep;
+			    prevwep=other.wep;
     
-	    do {wep = round(random(maxwep-1)+1)}
-	    until (wep_area[wep] = wep_area[prevwep])
+			    do {wep = round(random(maxwep-1)+1)}
+			    until (wep_area[wep] = wep_area[prevwep])
 
-	    curse = other.curse
-	    wepmod1=other.wepmod1;
-	    wepmod2=other.wepmod2;
-	    wepmod3=other.wepmod3;
-	    wepmod4=other.wepmod4;
+			    curse = other.curse
+			    wepmod1=other.wepmod1;
+			    wepmod2=other.wepmod2;
+			    wepmod3=other.wepmod3;
+			    wepmod4=other.wepmod4;
     
-	}
-	else{
-	    wep=other.wep;}
-    
-	    name = wep_name[wep]
-	    //ammo = 50
-	    type = wep_type[wep]
-	    curse = other.curse
-	    wepmod1=other.wepmod1;
-	    wepmod2=other.wepmod2;
-	    wepmod3=other.wepmod3;
-	    wepmod4=other.wepmod4;
-	    sprite_index = wep_sprt[wep]
-    
+			}
+			else{
+		    wep=other.wep;
+			}
+		    name = wep_name[wep]
+		    //ammo = 50
+		    type = wep_type[wep]
+		    curse = other.curse
+		    wepmod1=other.wepmod1;
+		    wepmod2=other.wepmod2;
+		    wepmod3=other.wepmod3;
+		    wepmod4=other.wepmod4;
+		    sprite_index = wep_sprt[wep]
 	    }
 	    BackCont.viewx2 += lengthdir_x(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	    BackCont.viewy2 += lengthdir_y(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake

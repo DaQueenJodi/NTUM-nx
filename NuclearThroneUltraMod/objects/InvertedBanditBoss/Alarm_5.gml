@@ -6,7 +6,7 @@ spr_dead = sprInvertedBanditBossDead
 spr_fire = sprInvertedBanditBossFire
 charge = 0
 
-alarm[1] = 10+random(30)
+alarm[1] = 10;
 
 if intro = 0
 {

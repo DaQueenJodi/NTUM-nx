@@ -4085,6 +4085,17 @@ function scrWeapons() {
 	wep_swap[369] = sndSwapSword
 	wep_rad[369] = 5;
 	
+	wep_name[370] = "OBSIDIAN THROWING KNIFE"
+	wep_type[370] = 0
+	wep_auto[370] = 0
+	wep_load[370] = 6//11
+	wep_cost[370] = 0
+	wep_sprt[370] = sprUltraScrewDriver
+	wep_area[370] = 2
+	wep_text[370] = "toss me"
+	wep_swap[370] = sndSwapSword
+	wep_rad[370] = 0;
+	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"
 	wep_type[369] = 5

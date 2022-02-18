@@ -10,7 +10,19 @@ image_angle += rotspeed*speed
 //instance_create(x+random(8)-4,y+random(8)-4,Curse)
 if instance_exists(Player)
 {
-    if speed<2 && alarm[0]<1
+	if returnFX && speed < 3 && alarm[0] < 4
+	{
+		returnFX = false;
+		if instance_exists(Player) && !dontteleport
+		{
+			with instance_create(x,y,ThrowWepReturnFX)
+			{
+				owner = Player.id;
+				depth = other.depth - 1;
+			}
+		}	
+	}
+    if speed<stopSpeed && alarm[0]<1
     {
         instance_destroy()
         /*
