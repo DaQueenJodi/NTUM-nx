@@ -1,0 +1,2 @@
+/// @description reload
+ammo = maxammo;
