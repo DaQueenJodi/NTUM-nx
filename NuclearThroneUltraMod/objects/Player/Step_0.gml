@@ -50,6 +50,17 @@ if UberCont.public==0 {
 		thing = instance_create(x + dcos(dangle)*128,y + dsin(dangle)*128,PopupText);
 		thing.mytext = "ASS?";
 	}
+	if keyboard_check_pressed(vk_numpad0) {
+		if alarm[1] > 30 {
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "NOT UNKILLABLE!";
+			alarm[1] = 1;
+		} else {
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "UNKILLABLE!";
+			alarm[1] = 9999999;
+		}
+	}
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
 		thing.mytext = "RADS!";
