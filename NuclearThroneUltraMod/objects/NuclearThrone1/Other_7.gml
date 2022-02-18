@@ -11,6 +11,19 @@ if (sprite_index == sprNothingActivate)
 	spr_idle = sprNothingMiddle;
 	spr_hurt = sprNothingMiddleHurt;
 	mask_index = mskNothingMiddle;
+	debug("MAKE SIDES VISIBLE");
+	with leftSide
+	{
+		visible = true;
+		meleedamage = 10;
+		mask_index = mskNothingSide;
+	}
+	with rightSide
+	{
+		visible = true;
+		meleedamage = 10;
+		mask_index = mskNothingSide;
+	}
 	active = true;
 	immune = false;
 }

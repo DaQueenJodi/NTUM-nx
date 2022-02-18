@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 1,
-  "bbox_right": 67,
-  "bbox_top": 1,
-  "bbox_bottom": 125,
+  "bbox_left": 0,
+  "bbox_right": 68,
+  "bbox_top": 0,
+  "bbox_bottom": 126,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fca3a7dc-7e48-4932-bdf6-f67c23df4a7e","path":"sprites/sprNothingLeftDeactivated/sprNothingLeftDeactivated.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fca3a7dc-7e48-4932-bdf6-f67c23df4a7e","path":"sprites/sprNothingLeftDeactivated/sprNothingLeftDeactivated.yy",},"LayerId":{"name":"f4518aaf-3265-456a-ada3-94e4210390e3","path":"sprites/sprNothingLeftDeactivated/sprNothingLeftDeactivated.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprNothingLeftDeactivated","path":"sprites/sprNothingLeftDeactivated/sprNothingLeftDeactivated.yy",},"resourceVersion":"1.0","name":"fca3a7dc-7e48-4932-bdf6-f67c23df4a7e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fca3a7dc-7e48-4932-bdf6-f67c23df4a7e","path":"sprites/mskNothingSide/mskNothingSide.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fca3a7dc-7e48-4932-bdf6-f67c23df4a7e","path":"sprites/mskNothingSide/mskNothingSide.yy",},"LayerId":{"name":"f4518aaf-3265-456a-ada3-94e4210390e3","path":"sprites/mskNothingSide/mskNothingSide.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mskNothingSide","path":"sprites/mskNothingSide/mskNothingSide.yy",},"resourceVersion":"1.0","name":"fca3a7dc-7e48-4932-bdf6-f67c23df4a7e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprNothingLeftDeactivated","path":"sprites/sprNothingLeftDeactivated/sprNothingLeftDeactivated.yy",},
+    "spriteId": {"name":"mskNothingSide","path":"sprites/mskNothingSide/mskNothingSide.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fa04a310-d1de-4e2a-9db2-47b7c7d9c804","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fca3a7dc-7e48-4932-bdf6-f67c23df4a7e","path":"sprites/sprNothingLeftDeactivated/sprNothingLeftDeactivated.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"612fb311-a841-44aa-a63d-368695994b6a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fca3a7dc-7e48-4932-bdf6-f67c23df4a7e","path":"sprites/mskNothingSide/mskNothingSide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 98,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprNothingLeftDeactivated","path":"sprites/sprNothingLeftDeactivated/sprNothingLeftDeactivated.yy",},
+    "parent": {"name":"mskNothingSide","path":"sprites/mskNothingSide/mskNothingSide.yy",},
     "resourceVersion": "1.3",
-    "name": "sprNothingLeftDeactivated",
+    "name": "mskNothingSide",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Palace/Palace Enemy/TheThrone/Throne1/Pieces.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprNothingLeftDeactivated",
+  "name": "mskNothingSide",
   "tags": [],
   "resourceType": "GMSprite",
 }

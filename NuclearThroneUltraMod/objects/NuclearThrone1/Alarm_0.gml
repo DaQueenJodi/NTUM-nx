@@ -1,5 +1,4 @@
 /// @description intro step 1
-snd_play(sndNothingStart);
 sprite_index = sprNothingSwitchOn;
 spr_idle = sprNothingSwitchOn;
 spr_hurt = sprNothingSwitchOn;
