@@ -22,15 +22,21 @@ extra+=other.typ_ammo[type]*(instance_number(YungCuzDupe)*0.5);
 if Player.race=12 && Player.skill_got[5]=1//Yung Cuz Thronebutt
 extra+=other.typ_ammo[type]*(instance_number(YungCuzDupe));
 
+var gain_multiplier = 1
 
-other.ammo[type] += other.typ_ammo[type]+extra
+if cursed
+gain_multiplier += 0.5
+if supercursed
+gain_multiplier += 0.5
+
+other.ammo[type] += floor((other.typ_ammo[type]+extra) * gain_multiplier)
 
 if other.ammo[type] > other.typ_amax[type]
 other.ammo[type] = other.typ_amax[type]
 
 
 dir = instance_create(x,y,PopupText)
-dir.mytext = "+"+string(other.typ_ammo[type]+extra)+" "+string(other.typ_name[type])
+dir.mytext = "+"+string(floor((other.typ_ammo[type]+extra) * gain_multiplier))+" "+string(other.typ_name[type])
 if other.ammo[type] = other.typ_amax[type]
 dir.mytext = "MAX "+string(other.typ_name[type])
 

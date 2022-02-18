@@ -1035,6 +1035,7 @@
     {"id":{"name":"sprFloor105B","path":"sprites/sprFloor105B/sprFloor105B.yy",},"order":1,},
     {"id":{"name":"sprWall105Bot","path":"sprites/sprWall105Bot/sprWall105Bot.yy",},"order":2,},
     {"id":{"name":"sprFloor105Explo","path":"sprites/sprFloor105Explo/sprFloor105Explo.yy",},"order":3,},
+    {"id":{"name":"sprSuperCursedAmmo","path":"sprites/sprSuperCursedAmmo/sprSuperCursedAmmo.yy",},"order":41,},
     {"id":{"name":"sprWall105Top","path":"sprites/sprWall105Top/sprWall105Top.yy",},"order":4,},
     {"id":{"name":"sprDebris105","path":"sprites/sprDebris105/sprDebris105.yy",},"order":6,},
     {"id":{"name":"sprWall105Trans","path":"sprites/sprWall105Trans/sprWall105Trans.yy",},"order":7,},

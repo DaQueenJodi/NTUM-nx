@@ -152,7 +152,7 @@ if UberCont.public==0 {
 		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
 		thing.mytext = "INCREASE LOOP! "+string(loops);
 	    }
-		if (keyboard_check_pressed(ord("H")))
+	if (keyboard_check_pressed(ord("H")))
 	    {
 			
 		var dangle = random(1)*360;
@@ -179,11 +179,10 @@ if UberCont.public==0 {
 	    }
 	if (keyboard_check_pressed(ord("L")))
 	    {
-					var dangle = random(1)*360;
-
-			invertedportalcounter = invertedportaldelay
-			thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
-			thing.mytext = "INVERTED PORTAL!";
+		var dangle = random(1)*360;
+		invertedportalcounter = invertedportaldelay
+		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
+		thing.mytext = "INVERTED PORTAL!";
 	    }
 	if (keyboard_check_pressed(ord("G")))
 	    {
