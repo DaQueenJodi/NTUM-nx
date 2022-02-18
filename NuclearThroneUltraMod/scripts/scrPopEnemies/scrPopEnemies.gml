@@ -483,11 +483,11 @@ function scrPopEnemies() {
 
 	if styleb = 1 && random(2)<1
 	{
-	instance_create(x+16,y+16,choose(JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,JungleFly,JungleFly,JungleFly))
+	instance_create(x+16,y+16,choose(JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,JungleFly))
 	}
 	else{
 	if random(4) < 1
-	instance_create(x+16,y+16,choose(JungleAssassin,JungleBandit,JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,JungleBandit,JungleBandit,JungleBandit,JungleFly))
+	instance_create(x+16,y+16,choose(JungleAssassin,JungleBandit,JungleAssassinFake,JungleAssassinFake,JungleAssassinFake,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleFly))
 	else
 	{
 		if random(30) < 1
@@ -499,7 +499,7 @@ function scrPopEnemies() {
 		}
 		else
 		{
-			instance_create(x+16,y+16,choose(JungleFly,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit));
+			instance_create(x+16,y+16,choose(JungleFly,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit,JungleBandit));
 		}
 	}
 	}
