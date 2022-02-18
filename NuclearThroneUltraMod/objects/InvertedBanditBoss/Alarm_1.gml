@@ -4,7 +4,7 @@ if Player.loops>0
 {
 
 //POST LOOP
-alarm[1] = 10+random(25)//30+random(60)
+alarm[1] = 5+random(25)//30+random(60)
 
 meleedamage = 0
 
@@ -95,7 +95,7 @@ right = -1
 else{
 
 //PRE LOOP
-alarm[1] = 20+random(40)
+alarm[1] = 10+random(40)
 
 meleedamage = 0
 
@@ -188,7 +188,7 @@ right = -1
 else{
 
 //PRE LOOP
-alarm[1] = 20+random(40)
+alarm[1] = 10+random(40)
 
 meleedamage = 0
 

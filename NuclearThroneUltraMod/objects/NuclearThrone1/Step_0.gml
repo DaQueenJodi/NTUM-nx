@@ -4,12 +4,12 @@ if intro
 if immune
 {
 	my_health = maxhealth;
-	if !active
+	if !active && !intro
 	{
 		speed = 0;
-		if (camera_get_view_y(view_camera[0]) < y + 32) 
+		if instance_exists(Player)
+		if (Player.y < y + 128) 
 		{
-			debug("IMMUNE FALSE");
 			immune = false;
 		}
 		
@@ -23,6 +23,9 @@ if !active
 	{
 		immune = true;
 		intro = true;
+		spr_idle = sprNothingOff;
+		spr_hurt = sprNothingOff;
+		sprite_index = sprNothingOff;
 		with ThroneFlame
 		{
 			image_index = 0;
@@ -31,9 +34,13 @@ if !active
 		alarm[0] = 30;//Become active time
 	}
 }
+else
+{
+	
+		
+}
 if (my_health <= 0)
 {
 	//This is the death event
-	//This piece will remain down here
 	
 }

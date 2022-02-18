@@ -984,7 +984,7 @@ function scrFire2() {
 	instance_create(x,y,Dust)
 
 	ang = point_direction(x,y,mouse_x,mouse_y)
-	move_contact_solid(ang,3)
+	move_contact_solid(ang,1)
 
 	instance_create(x,y,Dust)
 
@@ -1002,7 +1002,7 @@ function scrFire2() {
 	team = other.team}
 
 	wepangle = -wepangle
-	speed = -speed*0.5
+	speed = -speed*0.9
 	BackCont.viewx2 += lengthdir_x(12,ang)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(12,ang)*UberCont.opt_shake
 	BackCont.shake += 2
@@ -4711,10 +4711,33 @@ function scrFire2() {
 	wkick = -10
 
 	break;
+	
+	//OBSIDIAN THROWING KNIFE
+	case 370:
+	snd_play(sndEnemySlash);
+	with instance_create(x,y,ThrowWepNoReturn)
+	{
+		team=other.team;
+		motion_add(point_direction(x,y,mouse_x,mouse_y),16);
+		scrWeapons()
+		wep=other.wep;
+		name = wep_name[wep]
+		//ammo = 50
+		type = wep_type[wep]
+		curse = other.curse
+		wepmod1=other.wepmod1;
+		wepmod2=other.wepmod2;
+		wepmod3=other.wepmod3;
+		wepmod4=other.wepmod4;
+		sprite_index = wep_sprt[wep]
+	}
+	BackCont.viewx2 += lengthdir_x(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 1
+	scrSwapWeps()
+	bwep = 0
+	break;
 
 
 	}//end of switch part 2!
-
-	
-
 }

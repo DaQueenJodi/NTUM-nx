@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "UnsortedProp",
-    "path": "folders/Sprites/UnsortedProp.yy",
+    "path": "folders/Sprites/Enviroment/UnsortedProp.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprToxicBarrel",

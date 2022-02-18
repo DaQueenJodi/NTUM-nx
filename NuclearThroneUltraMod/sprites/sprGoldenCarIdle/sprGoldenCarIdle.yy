@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Cars",
-    "path": "folders/Sprites/Cars.yy",
+    "path": "folders/Sprites/Enviroment/Cars.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprGoldenCarIdle",

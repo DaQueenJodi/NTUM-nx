@@ -3,11 +3,10 @@
 instance_destroy()
 exit;
 }*/
-
 //scrn=0; //for screenshot taking character explain pic
 restarted = false;
 hurt_pitch_variation = 0;
-
+audio_listener_orientation(0,0,-1,0,1,0);
 yungCuzCskin = 0;
 randomlySelected = false;
 //show_message("hi")
