@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 32,
   "height": 32,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Cars",
-    "path": "folders/Sprites/Cars.yy",
+    "path": "folders/Sprites/Enviroment/Cars.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprVenusCarFixedHurt",

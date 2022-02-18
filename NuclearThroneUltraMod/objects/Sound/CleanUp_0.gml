@@ -1,2 +1,3 @@
 /// @description Free emitter from memory
-audio_emitter_free(emitter);
+if (audio_emitter_exists(emitter))
+	audio_emitter_free(emitter);

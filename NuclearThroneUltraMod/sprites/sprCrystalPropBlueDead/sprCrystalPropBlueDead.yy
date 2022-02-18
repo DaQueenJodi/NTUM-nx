@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "CaveProp",
-    "path": "folders/Sprites/CaveProp.yy",
+    "path": "folders/Sprites/Enviroment/CaveProp.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprCrystalPropBlueDead",

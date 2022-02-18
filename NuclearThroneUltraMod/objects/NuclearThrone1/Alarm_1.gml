@@ -5,7 +5,8 @@ spr_hurt = sprNothingActivate;
 mask_index = mskNothingActive;
 image_index = 1;
 instance_create(x,y,ThronePipes);
-alarm[3] = 90;
+meleedamage = 10;
+alarm[2] = 90;
 repeat(8)
 {
 	with instance_create(x+random_range(32,-32),y,Debris)

@@ -984,7 +984,7 @@ function scrFire2() {
 	instance_create(x,y,Dust)
 
 	ang = point_direction(x,y,mouse_x,mouse_y)
-	move_contact_solid(ang,3)
+	move_contact_solid(ang,1)
 
 	instance_create(x,y,Dust)
 
@@ -1002,7 +1002,7 @@ function scrFire2() {
 	team = other.team}
 
 	wepangle = -wepangle
-	speed = -speed*0.5
+	speed = -speed*0.9
 	BackCont.viewx2 += lengthdir_x(12,ang)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(12,ang)*UberCont.opt_shake
 	BackCont.shake += 2

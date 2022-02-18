@@ -13,18 +13,18 @@ x += 16;
 y += 16;
 y += 64;
 maxhealth = 1500
-size = 10
+size = 8;
 friction = 6;
 meleedamage = 0;
 active = false;
 immune = true;
 intro = false;
 spr_idle = sprNothingOn;
-spr_hurt = sprNothingOn;
+spr_hurt = sprNothingOff;
 spr_dead = sprNothingDeath;
-spr_l = sprNothingLeft;
-spr_r = sprNothingRight;
 dropRad = 200;
+disable = false;
+prevImageIndex = 0;
 
 event_inherited()
 
@@ -56,21 +56,24 @@ with instance_create(x,y,ThroneFlame)
 with ThroneFlame
 {
 	owner=other.id;
-	depth = other.depth - 1;	
+	depth = other.depth - 10;	
 }
 	
 leftSide = instance_create(x,y,NuclearThrone1Side);
 rightSide = instance_create(x,y,NuclearThrone1Side);
 with leftSide {
-	xOffset = -64;	
+	xOffset = -64;
 }
 with rightSide {
 	xOffset = 64;
 	spr_idle = sprNothingRight;
 	spr_hurt = sprNothingRightHurt;
+	isLeft = false;
 }
 with NuclearThrone1Side
 {
-	owner = other.id;	
+	team = other.team;
+	owner = other.id;
+	depth = other.depth-1;
 }
 image_speed = 0;

@@ -4,13 +4,12 @@ if intro
 if immune
 {
 	my_health = maxhealth;
-	if !active
+	if !active && !intro
 	{
 		speed = 0;
 		if instance_exists(Player)
 		if (Player.y < y + 128) 
 		{
-			debug("IMMUNE FALSE");
 			immune = false;
 		}
 		
@@ -35,9 +34,13 @@ if !active
 		alarm[0] = 30;//Become active time
 	}
 }
+else
+{
+	
+		
+}
 if (my_health <= 0)
 {
 	//This is the death event
-	//This piece will remain down here
 	
 }
