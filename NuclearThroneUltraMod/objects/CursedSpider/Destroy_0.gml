@@ -1,6 +1,6 @@
 scrDrop(30,1)
 
-if random(5) > 4 + generation/3 {
+if random(4) > 3 + generation/3 {
 	snd_dead = sndSwapCursed //artistic liberty: on duplication they don't play normal death noise
 
 	repeat(2) {
