@@ -1,4 +1,17 @@
 scrDrop(30,1)
 
-event_inherited()
+if random(5) > 4 + generation/3 {
+	snd_dead = sndSwapCursed //artistic liberty: on duplication they don't play normal death noise
 
+	repeat(2) {
+		var ang = random(360)
+
+		var dx = lengthdir_x(3, ang)
+		var dy = lengthdir_y(3, ang)
+		with instance_create(x + dx, y + dy, CursedSpider) {
+			generation = 1 + other.generation;
+			raddrop = 0;
+		}
+	}
+}
+event_inherited()
