@@ -11,7 +11,7 @@ if oooimgonnashoot {
 		alarm[3] = 30;
 	}
 	
-	if !target || ammo < 1 || collision_line(target.x, target.y, x, y, Wall, 0, 0) >= 0 {
+	if !instance_exists(target) || ammo < 1 || collision_line(target.x, target.y, x, y, Wall, 0, 0) >= 0 {
 		oooimgonnashoot = false;
 		exit;
 	}
