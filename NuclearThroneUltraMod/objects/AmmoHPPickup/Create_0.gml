@@ -15,3 +15,5 @@ if Player.race = 15{ alarm[0] /= 2}//atom
 image_speed = 0
 
 event_inherited();
+
+supercursed = false;

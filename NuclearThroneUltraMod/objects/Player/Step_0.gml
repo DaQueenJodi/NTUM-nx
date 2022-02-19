@@ -19,7 +19,7 @@ if alarm[4]>0//boiling veins
 instance_create(x+random(12)-6,y+random(12)-6,Smoke);
 }
 var thing;
-if UberCont.public==0 {
+if UberCont.public==0 && !keyboard_check(vk_control) {
 //hacks
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
@@ -28,7 +28,7 @@ if UberCont.public==0 {
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
 		thing.mytext = "FLY";
 	}
-	if keyboard_check_pressed(vk_end) {
+	if keyboard_check_pressed(vk_numpad1) {
 		repeat(3) {
 			var dangle = random(1)*360;
 			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
@@ -37,18 +37,84 @@ if UberCont.public==0 {
 			thing.mytext = "GRAPES";
 		}
 	}
-	if keyboard_check_pressed(vk_pageup) {
+	if keyboard_check_pressed(vk_numpad2) {
 		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*128,Floor);
-		instance_create(f.x + 16,f.y + 16,CursedCrystal);
+		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+		instance_create(f.x + 16,f.y + 16,MeleeBandit);
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "PURPLE POP ROCK";
+		thing.mytext = "ASS";
 	}
-	if keyboard_check_pressed(vk_decimal) {
+	if keyboard_check_pressed(vk_numpad3) {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*128,AssassinBoss);
-		thing = instance_create(x + dcos(dangle)*128,y + dsin(dangle)*128,PopupText);
-		thing.mytext = "ASS?";
+		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+		instance_create(f.x + 16,f.y + 16,BoneFish);
+		thing = instance_create(f.x + 16,f.y + 16,PopupText);
+		thing.mytext = "FISH";
+	}
+	if keyboard_check_pressed(vk_numpad4) {
+		var dangle = random(1)*360;
+		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+		instance_create(f.x + 16,f.y + 16,JungleFly);
+		thing = instance_create(f.x + 16,f.y + 16,PopupText);
+		thing.mytext = "FLY";
+	}
+	if keyboard_check_pressed(vk_numpad5) {
+		var dangle = random(1)*360;
+		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+		instance_create(f.x + 16,f.y + 16,PalaceGuardian);
+		thing = instance_create(f.x + 16,f.y + 16,PopupText);
+		thing.mytext = "GUARDIAN";
+	}
+	if keyboard_check_pressed(vk_numpad6) {
+		var dangle = random(1)*360;
+		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+		instance_create(f.x + 16,f.y + 16,ExploGuardian);
+		thing = instance_create(f.x + 16,f.y + 16,PopupText);
+		thing.mytext = "EXPLODER";
+	}
+	if keyboard_check_pressed(vk_numpad7) {
+		repeat(2) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*56,y + dsin(dangle)*56,Floor);
+			instance_create(f.x + 16,f.y + 16,Bandit);
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+			instance_create(f.x + 16,f.y + 16,SavannaBandit);
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*72,y + dsin(dangle)*72,Floor);
+			instance_create(f.x + 16,f.y + 16,EraserBandit);
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*80,y + dsin(dangle)*80,Floor);
+			instance_create(f.x + 16,f.y + 16,LaserBandit);
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*88,y + dsin(dangle)*88,Floor);
+			instance_create(f.x + 16,f.y + 16,JungleBandit);
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*96,y + dsin(dangle)*96,Floor);
+			instance_create(f.x + 16,f.y + 16,BanditSquare);
+		}
+		thing = instance_create(x,y,PopupText);
+		thing.mytext = "BANDITLAND PROBABLY";
+	}
+	if keyboard_check_pressed(vk_numpad8) {
+		var dangle = random(1)*360;
+		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+		instance_create(f.x + 16,f.y + 16,IDPDSpawn);
+		thing = instance_create(f.x + 16,f.y + 16,PopupText);
+		thing.mytext = "POPO";
+	}
+	if keyboard_check_pressed(vk_numpad0) {
+		if alarm[1] > 30 {
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "NOT UNKILLABLE!";
+			alarm[1] = 1;
+			snd_play(sndStrongSpiritLost)
+		} else {
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "UNKILLABLE!";
+			alarm[1] = 9999999;
+			snd_play(sndStrongSpiritGain)
+		}
 	}
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
@@ -137,19 +203,6 @@ if UberCont.public==0 {
 		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
 		thing.mytext = "MORE HEALTH!";
 		*/
-		loops++;
-		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
-		thing.mytext = "INCREASE LOOP! "+string(loops);
-	    }
-		if (keyboard_check_pressed(ord("H")))
-	    {
-			
-		var dangle = random(1)*360;
-		/*
-	    instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,HealthChest);
-		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
-		thing.mytext = "MORE HEALTH!";
-		*/
 		hard++;
 		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
 		thing.mytext = "INCREASE TIER/DIFFICULTY! "+string(hard);
@@ -160,19 +213,12 @@ if UberCont.public==0 {
 		thing = instance_create(x,y,PopupText)
 		thing.mytext = "WEAPON MOD "+string(wepmod1)+"!";
 	    }
-	if (keyboard_check_pressed(ord("O")))
-	    {
-	    instance_create(x+256,y,IDPDVan);
-		thing = instance_create(x,y,PopupText)
-		thing.mytext = "VAN?";
-	    }
 	if (keyboard_check_pressed(ord("L")))
 	    {
-					var dangle = random(1)*360;
-
-			invertedportalcounter = invertedportaldelay
-			thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
-			thing.mytext = "INVERTED PORTAL!";
+		var dangle = random(1)*360;
+		invertedportalcounter = invertedportaldelay
+		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
+		thing.mytext = "INVERTED PORTAL!";
 	    }
 	if (keyboard_check_pressed(ord("G")))
 	    {

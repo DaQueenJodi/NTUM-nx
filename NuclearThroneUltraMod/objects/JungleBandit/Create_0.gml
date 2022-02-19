@@ -18,6 +18,10 @@ walk = 0
 gunangle = random(360)
 alarm[1] = 20+random(90)
 wkick = 0
-maxAmmo = 5;
+maxAmmo = 8;
 ammo = maxAmmo;
 maxAmmo += min(GetPlayerLoops(),4);
+
+gonnashoot = 0
+
+alarm[2] = 1

@@ -6,6 +6,6 @@ walk -= 1
 motion_add(direction,0.8)
 }
 
-if speed > 3
-speed = 3
+if speed > 3.5
+speed = 3.5
 
