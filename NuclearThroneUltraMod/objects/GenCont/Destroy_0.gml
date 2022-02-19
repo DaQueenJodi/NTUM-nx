@@ -141,16 +141,31 @@ room_speed=40;
     {
     with enemy
     {
-    if alarm[1]>0
-    alarm[1]+=324;
+	    if alarm[1]>0
+		{
+	    alarm[1]+=300;
+	
+			with instance_create(x,y,Snooze)
+			{
+				owner = other.id;
+				yoffset = other.sprite_height*0.5 - 4;
+			}
+		}
     }
     }
     else
     {
     with enemy
     {
-    if alarm[1]>0
-    alarm[1]+=265;
+	    if alarm[1]>0
+		{
+	    alarm[1]+=265;
+			with instance_create(x,y,Snooze)
+			{
+				owner = other.id;
+				yoffset = other.sprite_height*0.5 - 4;
+			}
+		}
     }
     }
     

@@ -1,11 +1,16 @@
 direction = choose(0,90,180,270)
 
-
 styleb = choose(0,0,0,0,0,0,1)
 
 goal = 110//110
 
 if instance_exists(Player){
+	if Player.crown == 19
+	{
+		//Crown of opposite onto crown of disco
+		styleb = choose(1,1,1,1,1,1,0)
+	}
+	
 if Player.area = 3 and Player.subarea = 3
 goal = 150//50
 else if (Player.area = 7||Player.area=108) and Player.subarea = 2

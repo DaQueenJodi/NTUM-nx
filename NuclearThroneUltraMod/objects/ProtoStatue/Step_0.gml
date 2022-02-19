@@ -1,4 +1,4 @@
-if rad > 32 and spr_idle = sprProtoStatueCharge
+if rad > 25 and spr_idle = sprProtoStatueCharge
 {
 snd_play(sndStatueCharge)
 repeat(2)
@@ -12,7 +12,7 @@ else if rad > 0 and spr_idle != sprProtoStatueDone and spr_idle != sprProtoStatu
 {
 spr_idle = sprProtoStatueCharge
 }
-
+/* what is this?
 if my_health < spawnhp and rad > 0
 {
 spawnhp = spawnhp*0.8-10

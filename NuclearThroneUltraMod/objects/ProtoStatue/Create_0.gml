@@ -1,12 +1,19 @@
-maxhealth = 80//80
-spawnhp = maxhealth*0.8-5
+maxhealth = 75//80
+//spawnhp = maxhealth*0.8-5 I don't know what this is
 size = 2
-rad = Player.crownrad
-close=false;
-///crown of natural selection no rads more items
-if Player.crown==13
-rad=40
-
+if instance_exists(Player)
+{
+	rad = Player.crownrad
+	close=false;
+	///crown of natural selection no rads more items
+	if Player.crown==13
+	rad=40
+}
+else
+{
+	rad = 0;
+	close = false;
+}
 spr_idle = sprProtoStatueIdle
 spr_hurt = sprProtoStatueHurt
 spr_dead = sprProtoStatueDoneDie

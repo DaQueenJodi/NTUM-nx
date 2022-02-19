@@ -36,7 +36,7 @@ function scrCrowns() {
 	crown_tips[6] = "something is wrong"
 
 	crown_name[7] = "[CROWN OF BLOOD]"
-	crown_text[7] = "MORE ENEMIES#SLIGHTLY LESS RADS"
+	crown_text[7] = "MORE ENEMIES#LESS RADS"
 	crown_used[7] = 0
 	crown_tips[7] = "bring it"
 
@@ -56,7 +56,7 @@ function scrCrowns() {
 	crown_tips[10] = "acceleration"
 
 	crown_name[11] = "[CROWN OF REINCARNATION]"
-	crown_text[11] = "RESET YOUR LEVEL, WEAPONS AND MUTATIONS"
+	crown_text[11] = "DIE AND BE REBORN"
 	crown_used[11] = 0
 	crown_tips[11] = "new born"
 
@@ -74,12 +74,17 @@ function scrCrowns() {
 	crown_text[14] = "MORE CURSED CHESTS"
 	crown_used[14] = 0
 	crown_tips[14] = "something strange"
-
+	
+	crown_name[15] = "[CROWN OF CHOICE]"
+	crown_text[15] = "TAKE ONE LESS	EQUIPPED WEAPON #HROUGH A PORTAL#MORE CHESTS#INCREASED WEAPON DROPRATE"
+	crown_used[15] = 0
+	crown_tips[15] = "this crown used to be in the game"
+/*
 	crown_name[15] = "[CROWN OF MASSACRE]"
 	crown_text[15] = "EVEN MORE ENEMIES#EVEN LESS RADS"
 	crown_used[15] = 0
 	crown_tips[15] = "double crown of blood"
-
+*/
 	crown_name[16] = "[CROWN OF POPO]"
 	crown_text[16] = "AN EXTRA VAN SPAWNS EACH LEVEL"
 	crown_used[16] = 0
@@ -94,7 +99,12 @@ function scrCrowns() {
 	crown_text[18] = "DANCE BABY DANCE!"
 	crown_used[18] = 0
 	crown_tips[18] = "bullet disco!"
-
+	/*
+	crown_name[19] = "[CROWN OF DARKNESS]"
+	crown_text[19] = "EVERY AREA IS DARK#SOMETHING GOOD?"
+	crown_used[19] = 0
+	crown_tips[19] = "bullet disco!"
+*/
 	crownmax = 18
 
 
