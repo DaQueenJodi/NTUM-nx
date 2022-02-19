@@ -3,8 +3,13 @@ function scrDrop(itemdrop, weapondrop) {
 	{
 	if Player.crown = 5//crown of guns
 	{
-		weapondrop*=1.25;
-		weapondrop+=7;
+		weapondrop*=1.3;
+		weapondrop+=8;
+	}
+	else if Player.crown == 15 //Crown of choice
+	{
+		weapondrop*=1.15;
+		weapondrop+=4;
 	}
 
 	if Player.skill_got[0] = 1//heavy heart

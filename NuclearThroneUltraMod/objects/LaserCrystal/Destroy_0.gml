@@ -1,5 +1,5 @@
 if replace{exit;}
-scrDrop(0,5)
+scrDrop(5,5)
 
 event_inherited()
 

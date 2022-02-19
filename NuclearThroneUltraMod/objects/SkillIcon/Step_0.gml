@@ -12,16 +12,16 @@ scrUnlockCharacter(24,"FOR TAKING HEAVY HEART")
 if skill = 1
 {
 
-if Player.race=25
-{
-Player.maxhealth += 5
-Player.my_health += 5
-}
-else
-{
-Player.maxhealth += 4
-Player.my_health += 4
-}
+	if Player.race=25
+	{
+		Player.maxhealth += 5
+		Player.my_health += 5
+	}
+	else
+	{
+		Player.maxhealth += 4
+		Player.my_health += 4
+	}
 
 }
 else if skill = 2

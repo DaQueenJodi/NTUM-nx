@@ -530,11 +530,12 @@ if (my_health<prevhealth)
 	{
 		if !instance_exists(GenCont)&&(!instance_exists(myShield) || myShield == -1)&&!instance_exists(LevCont)&&exception=false
 		{
+			/*
 		if skill_got[28]//rage
 		{
 		if my_health<prevhealth&&exception=false//I been hit
 		rage=0;
-		}
+		}*/
 
 		prevhealth=my_health;
 		if race=25
@@ -607,3 +608,5 @@ my_health--;
 
 // Audio
 audio_listener_position(x, y, depth);
+
+exception = false;

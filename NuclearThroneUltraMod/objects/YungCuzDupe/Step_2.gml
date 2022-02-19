@@ -197,39 +197,40 @@ if(my_health<=0)
     }
 }
 
-
-if instance_exists(Player)
+var dis = point_distance(x,y,Player.x,Player.y)
+if dis >= 300
 {
-if point_distance(x,y,Player.x,Player.y)>100
-{
-returntoplayer=30;
-returntoplayerfast=0;
+	x = Player.x;
+	y = Player.y;
 }
+else
+	{
+	if dis > 100
+	{
+	returntoplayer=30;
+	returntoplayerfast=0;
+	}
 
-if (Player.speed=0)&&point_distance(x,y,Player.x,Player.y)>32&&random(10)<1
-{
-returntoplayerfast=20;
-returntoplayer=0;
+	if (Player.speed=0)&&dis>32&&random(10)<1
+	{
+	returntoplayerfast=20;
+	returntoplayer=0;
+	}
+
+	if dis<32
+	returntoplayerfast=0;
+
+	if returntoplayer>0
+	{//motion_add(point_direction(x,y,Player.x,Player.y),3);
+	mp_potential_step(Player.x,Player.y,1,false)
+	returntoplayer--;
+	motion_add(direction,0.8);
+	}
+
+	if returntoplayerfast>0
+	{//motion_add(point_direction(x,y,Player.x,Player.y),3);
+	mp_potential_step(Player.x,Player.y,3,false)
+	returntoplayerfast--;
+	motion_add(direction,0.8);
+	}
 }
-
-if point_distance(x,y,Player.x,Player.y)<32
-returntoplayerfast=0;
-
-if returntoplayer>0
-{//motion_add(point_direction(x,y,Player.x,Player.y),3);
-mp_potential_step(Player.x,Player.y,1,false)
-returntoplayer--;
-motion_add(direction,0.8);
-}
-
-if returntoplayerfast>0
-{//motion_add(point_direction(x,y,Player.x,Player.y),3);
-mp_potential_step(Player.x,Player.y,3,false)
-returntoplayerfast--;
-motion_add(direction,0.8);
-}
-
-}
-
-/* */
-/*  */

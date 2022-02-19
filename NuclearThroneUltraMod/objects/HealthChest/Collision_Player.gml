@@ -13,6 +13,14 @@ instance_destroy()
 
 var  maxHpIncrease = 2;
 with other {
+	//OVERHEAL
+	my_health += other.num;
+	/*
+	if my_health + other.num <= maxhealth
+		my_health += other.num
+	else// if other.crown != 2
+		my_health = max(my_health,maxhealth);
+	*/
 	if race==9 other.race=12//Chicken maxhealth regain
 	{
 		var targetHealth = 8;
@@ -27,10 +35,6 @@ with other {
 		    maxhealth = min(maxhealth + maxHpIncrease,targetHealth);
 	    }
 	}
-	if my_health + other.num <= maxhealth
-		my_health += other.num
-	else// if other.crown != 2
-		my_health = max(my_health,maxhealth);
 }
 
 
@@ -39,6 +43,8 @@ dir = instance_create(x,y,PopupText)
 dir.mytext = "+"+string(num)+" HP"
 if other.my_health = other.maxhealth
 dir.mytext = "MAX HP"
+else if other.my_health > other.maxhealth
+dir.mytext = "+"+string(num)+" HP#OVERHEAL!"
 
 snd_play(sndHealthChest)
 instance_destroy()

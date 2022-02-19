@@ -766,7 +766,7 @@ function scrPowers() {
 	}
 
 	//YUNG CUZ
-	if race==12 && maxhealth/2 >=1 || (ultra_got[47] && my_health-2>0){
+	if race==12 && maxhealth*0.75 >=1 || (ultra_got[47] && my_health-2>0){
 	var xran;
 	var yran;
 	xran=random(22)-11;
@@ -787,13 +787,15 @@ function scrPowers() {
 	    alarm[7]=12;//reset the exception in two steps
     
 	        if ultra_got[47]{
-	        my_health-=2//1/8--->0.875
+				my_health-=2//1/8--->0.875
 	        }
 	        else{
-	        maxhealth=floor(maxhealth*0.75);//0.5
+				var percMax = floor(maxhealth*0.75);
+				var lostHp = maxhealth - percMax;
+				debug("lostHP: ", lostHp);
+				maxhealth=percMax;//0.5
+				my_health = max(1,my_health-lostHp);
 	        }
-	        if my_health>maxhealth
-	        {my_health=maxhealth;}
         
 	        sprite_index = spr_hurt
 	        image_index = 0

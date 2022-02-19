@@ -89,10 +89,6 @@ if crown = 2
 	//my_health = maxhealth;
 	var overheal = (maxhealth - toHeal) * 0.5;
 	my_health = max(maxhealth,my_health + overheal);
-	/*
-if my_health > maxhealth
-my_health = maxhealth
-*/
 }
 
 //NOCHEST SHIT
@@ -101,7 +97,13 @@ if (instance_exists(WeaponChest) or instance_exists(BigWeaponChest))// and !(are
 nochest += 1
 }
 
-
+if crown == 15
+{
+	if bcurse == 0
+	{
+		bwep = 0;	
+	}
+}
 if race=14//PANDA
 {
     if level!=1 && ultra_got[56]=0
@@ -141,48 +143,10 @@ if race=14//PANDA
         else if wepangle = 0
         wepangle = choose(120,-120)
         
-        
         }
-        
-        /*
-        //secondary
-        if bwep!=0{
-        
-        if wep_area[bwep]=99//handling starting weapons
-        wep_area[bwep]=1;//Doesn't this add panda stick to the regular pool of weapons?
-        
-        prevwep=bwep;
-        
-        //handling golden weapons
-        if string_copy(wep_name[prevwep],0,4) = "GOLD"&&loops<1
-        prevwep=9//minigun tier 6
-
-    
-        var dir = 0;
-        //do {bwep = round(random(maxwep-1)+1);dir++;}
-        //until ( (wep_area[bwep] = wep_area[prevwep])||(dir>1000) )
-        
-        if ultra_got[55]
-        {
-        do {bwep = round(random(maxwep-1)+1);dir+=1;
-        if dir >999
-        bwep=prevwep;}
-        until ( ( (wep_area[bwep] = wep_area[prevwep]) || (wep_area[bwep] = wep_area[prevwep+1]) || (wep_area[bwep] = wep_area[prevwep+2]) )||(dir>1000) )
-        }
-        else{
-        do {bwep = round(random(maxwep-1)+1);dir++;
-        if dir >999
-        bwep=prevwep;}
-        until ( (wep_area[bwep] = wep_area[prevwep])||(dir>1000) )
-        }
-        
-        }*/
         //dont start empty handed
         if ( ammo[wep_type[wep]] < typ_ammo[wep_type[wep]]*3 )//if ammo below three times an ammo drop
         {ammo[wep_type[wep]]=typ_ammo[wep_type[wep]]*3;}
-        
-        //if ( ammo[wep_type[bwep]] < typ_ammo[wep_type[bwep]]*3 )
-        //{ammo[wep_type[bwep]]=typ_ammo[wep_type[bwep]]*3;}
     }
 }
 

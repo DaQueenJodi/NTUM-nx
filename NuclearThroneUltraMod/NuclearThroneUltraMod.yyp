@@ -3704,6 +3704,7 @@
     {"id":{"name":"scrHorrorUltraE","path":"scripts/scrHorrorUltraE/scrHorrorUltraE.yy",},"order":31,},
     {"id":{"name":"scrEndBoss","path":"scripts/scrEndBoss/scrEndBoss.yy",},"order":32,},
     {"id":{"name":"scrCanHumphry","path":"scripts/scrCanHumphry/scrCanHumphry.yy",},"order":33,},
+    {"id":{"name":"scrCreateMissingChest","path":"scripts/scrCreateMissingChest/scrCreateMissingChest.yy",},"order":25,},
     {"id":{"name":"scrYouFire","path":"scripts/scrYouFire/scrYouFire.yy",},"order":34,},
     {"id":{"name":"scrSkillLeft","path":"scripts/scrSkillLeft/scrSkillLeft.yy",},"order":35,},
     {"id":{"name":"scrRaddrop","path":"scripts/scrRaddrop/scrRaddrop.yy",},"order":36,},

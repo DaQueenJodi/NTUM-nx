@@ -13,28 +13,23 @@ function scrDrawGameOver() {
 	if UberCont.opt_freeze != 1
 	gameover += "##PLAYING WITH "+string(round(UberCont.opt_freeze*100))+"% FREEZEFRAMES"
 	*/
-	/*if UberCont.opt_gamemode = 0{
-	gamemode="NORMAL"}
-	else if UberCont.opt_gamemode = 1 {gamemode="ONE WEAPON ONLY"}//if we add gamemodes we have to change this in wep pickup&ubercont&scrdrawchar&Gameoverscreen
-	else if UberCont.opt_gamemode = 2 {gamemode="FAVOURABLE BUILD"}
-	else {gamemode="NO HUD"}*/
-
+/*
 	if UberCont.public = 0
 	gameover += "##MODDED EARLY ACCESS DEVELOPMENT BUILD"
 	if UberCont.public = 1
 	gameover += "##MODDED EARLY ACCESS BUILD";
-
+*/
 	gameover += "##GAME MODE : "+UberCont.gamemode[UberCont.opt_gamemode];
 	
 	if gameovertime > 30
 	{
 		if UberCont.canRestart
 		{
-			gameover += "##[LEFT CLICK] MENU";
+			gameover += "##[R] QUICK RESTART#[LEFT CLICK] MENU";
 		}
 		else
 		{
-			gameover += "##[R] QUICK RESTART#[LEFT CLICK] MENU";
+			gameover += "##[LEFT CLICK] MENU";
 		}
 	}
 

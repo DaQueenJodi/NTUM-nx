@@ -76,9 +76,9 @@ function scrCrowns() {
 	crown_tips[14] = "something strange"
 	
 	crown_name[15] = "[CROWN OF CHOICE]"
-	crown_text[15] = "TAKE ONE LESS	EQUIPPED WEAPON #HROUGH A PORTAL#MORE CHESTS#INCREASED WEAPON DROPRATE"
+	crown_text[15] = "REMOVE YOUR SECONDARY WEAPON#WHEN YOU GO THROUGH A PORTAL#MORE CHESTS#SLIGHTLY MORE WEAPON DROPS"
 	crown_used[15] = 0
-	crown_tips[15] = "this crown used to be in the game"
+	crown_tips[15] = "this crown used to be in the game#but without the increased weapon droprate"
 /*
 	crown_name[15] = "[CROWN OF MASSACRE]"
 	crown_text[15] = "EVEN MORE ENEMIES#EVEN LESS RADS"
@@ -86,7 +86,7 @@ function scrCrowns() {
 	crown_tips[15] = "double crown of blood"
 */
 	crown_name[16] = "[CROWN OF POPO]"
-	crown_text[16] = "AN EXTRA VAN SPAWNS EACH LEVEL"
+	crown_text[16] = "AN EXTRA VAN SPAWNS EACH LEVEL#POPO DROP RADS"
 	crown_used[16] = 0
 	crown_tips[16] = "in love with da popo"
 

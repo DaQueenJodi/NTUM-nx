@@ -351,13 +351,14 @@ function scrPopulate() {
 	scrPopEnemies()}
 
 	//CROWN OF MASSACRE
+	/*
 	if instance_exists(Player){
 	if (Player.crown = 15 and random(8+Player.hard) < Player.hard and point_distance(x,y,Player.x,Player.y) > 210 and !place_meeting(x,y,RadChest) and !place_meeting(x,y,AmmoChest) and !place_meeting(x,y,WeaponChest) and ((x+16 != Player.x and y+16 != Player.y) or point_distance(x,y,Player.x,Player.y) > 280))
 
 	repeat(2)
 	scrPopEnemies()
 
-	}
+	}*/
 
 	//CROWN OF APOCALYPSE
 	 if instance_exists(Player){

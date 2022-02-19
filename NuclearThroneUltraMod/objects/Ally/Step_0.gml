@@ -55,8 +55,20 @@ if walk > 0
 }
 if instance_exists(Player)
 {
-	if point_distance(x,y,Player.x,Player.y) > 52
-	motion_add(point_direction(x,y,Player.x,Player.y), 0.1)
+	var dis = point_distance(x,y,Player.x,Player.y)
+	if dis > 52
+	{
+		if dis >= 300
+		{
+			x = Player.x;
+			y = Player.y;
+		}
+		else
+		{
+			motion_add(point_direction(x,y,Player.x,Player.y), 0.1)
+		}
+	}
+
 }
 
 if speed > 5.5
