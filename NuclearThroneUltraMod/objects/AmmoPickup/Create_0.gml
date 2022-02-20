@@ -15,11 +15,7 @@ if sprite_index == sprAmmo {
 		}
 	}
 
-	if curselevel == 1 {
-		if random(25) < 1 {
-			cursed = true;
-		}
-	} else if curselevel == 2 {
+	if curselevel == 2 {
 		if random(2) < 1 {
 			cursed = true;
 		}
