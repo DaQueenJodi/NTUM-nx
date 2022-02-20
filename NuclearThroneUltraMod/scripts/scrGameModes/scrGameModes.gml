@@ -111,6 +111,10 @@ function scrGameModes() {
 	gamemode_unlock[27] = "i dunno";
 	gamemode_have[27] = 1;
 	
+	gamemode[28] = "ALL MUTATION#CHOICES";
+	gamemode_unlock[28] = "i dunno";
+	gamemode_have[28] = 1;
+	
 	/*
 	gamemode[23] = "MELEE ONLY";
 	gamemode_description[23] = "YOU ONLY GET MELEE WEAPONS#ALWAYS GET LONG ARMS";
@@ -147,9 +151,10 @@ function scrGameModes() {
 	gamemodeOrder[22] = 25;
 	gamemodeOrder[23] = 23;
 	gamemodeOrder[24] = 24;
-	gamemodeOrder[25] = 17;
-	gamemodeOrder[26] = 26;
-	gamemodeOrder[27] = 27;
+	gamemodeOrder[25] = 28;
+	gamemodeOrder[26] = 17;
+	gamemodeOrder[27] = 26;
+	gamemodeOrder[28] = 27;
 
 
 

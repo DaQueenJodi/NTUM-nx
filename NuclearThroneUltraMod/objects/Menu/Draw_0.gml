@@ -74,7 +74,7 @@ draw_rectangle(__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 )+__view_
 	draw_set_valign(fa_top);
 
 	//draw_text_color(gx,__view_get( e__VW.YView, 0 )+16 + widescreen,string_hash_to_newline("GAMEMODE : "+gamemode[UberCont.opt_gamemode]),c_black,c_black,c_black,c_black,1);
-	draw_text_color(__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.YView, 0 )-34 + widescreen,string_hash_to_newline("GAMEMODE:#"+gamemode[UberCont.opt_gamemode]),c_white,c_white,c_white,c_white,1);
+	draw_text_color(__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.YView, 0 )-40 + widescreen,string_hash_to_newline("GAMEMODE:#"+gamemode[UberCont.opt_gamemode]),c_white,c_white,c_white,c_white,1);
 
 	//draw_set_halign(fa_right)
 	//draw_text_color(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ),__view_get( e__VW.YView, 0 )+65,string_hash_to_newline(string(UberCont.completionpercentage)+"% COMPLETE"),c_black,c_black,c_black,c_black,1);

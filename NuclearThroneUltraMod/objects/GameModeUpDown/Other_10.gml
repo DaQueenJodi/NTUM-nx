@@ -30,6 +30,6 @@ else if (gamemodeOrder[gamemodenr] == 27)
 else
 {
 	dailyDone = false;
-	useSeed = false;
+	UberCont.useSeed = false;
 	UberCont.canRestart = true;	
 }

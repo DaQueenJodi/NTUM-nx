@@ -36,113 +36,134 @@ if Player.hogpoints > 1// && Player.area=105 && Player.subarea=1
 }
 else if (Player.skillsChosen>7 || (Player.ultra_got[0] && Player.skillpoints < 2 && !Player.horrorEtaken))&&(Player.ultra_got[75]==0)//ULTRA! Player.level>9 not skelly redemption ultra a Player.skillsChosen>7
 {
-    //UNLOCK MUTATION DOCTOR/SMITH
-    scrUnlockCharacter(25,"FOR GETTING AN ULTRA MUTATION");
+	//UNLOCK MUTATION DOCTOR/SMITH
+	scrUnlockCharacter(25,"FOR GETTING AN ULTRA MUTATION");
 
-if Player.ultra_got[0]=1 && !Player.horrorEtaken//&&(Player.skillsChosen>7)
-{
-
-scrUltraEHorror();
-  
-}
-else
-{
-    scrUltras()
-    skill1 = 1+((Player.race-1)*4);
-    skill2 = 2+((Player.race-1)*4);
-    skill3 = 3+((Player.race-1)*4);
-    skill4 = 4+((Player.race-1)*4);
-    //}
-    if Player.ultra_got[skill1] + Player.ultra_got[skill2] + Player.ultra_got[skill3] + Player.ultra_got[skill4] > 3
+	if Player.ultra_got[0]=1 && !Player.horrorEtaken//&&(Player.skillsChosen>7)
 	{
-		if ((Player.race == 21 && Player.ultra_got[0] == 1) || Player.race != 21)
+
+	scrUltraEHorror();
+  
+	}
+	else
+	{
+	    scrUltras()
+	    skill1 = 1+((Player.race-1)*4);
+	    skill2 = 2+((Player.race-1)*4);
+	    skill3 = 3+((Player.race-1)*4);
+	    skill4 = 4+((Player.race-1)*4);
+	    //}
+	    if Player.ultra_got[skill1] + Player.ultra_got[skill2] + Player.ultra_got[skill3] + Player.ultra_got[skill4] > 3
 		{
-			instance_create(x,y,LevCont);
-			instance_destroy();
-			exit;	
+			if ((Player.race == 21 && Player.ultra_got[0] == 1) || Player.race != 21)
+			{
+				instance_create(x,y,LevCont);
+				instance_destroy();
+				exit;	
+			}
+		}
+		if UberCont.opt_gamemode == 28 //ALL MUTATION CHOICES
+		{
+			var xx = __view_get( e__VW.XView, 0 )+16;
+			var yy = __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24;
+			var step = 30;
+			scrollWidth = (-(__view_get( e__VW.WView, 0 ))) - 8
+			scroll = 0;
+			for (var i = 0; i <= maxultra; i++) {
+				if (Player.ultra_got[i] = 0)
+				{
+					with instance_create(xx,yy,UltraIcon)
+					{
+						skill = i;
+					}
+					xx += step;
+					scrollWidth += step;
+				}
+				else
+				{
+					i++;
+				}
+			}
+		}
+	    else if Player.crown != 8
+		{
+		    if Player.race=21//horror
+		    {
+		    if (Player.ultra_got[skill1] == 0)
+		    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+		    skill = other.skill1
+	
+		    if (Player.ultra_got[skill2] == 0)
+		    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+		    skill = other.skill2
+	
+		    if (Player.ultra_got[skill3] == 0)
+		    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+		    skill = other.skill3
+	
+		    if (Player.ultra_got[skill4] == 0)
+		    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+		    skill = other.skill4
+	
+		    if (Player.ultra_got[0] == 0)
+		    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+		    skill = 0
+    
+		    }
+		    else
+		    {
+			if (Player.ultra_got[skill1] == 0)
+		    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-72,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+		    skill = other.skill1
+    
+			if (Player.ultra_got[skill2] == 0)
+		    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+		    skill = other.skill2
+    
+			if (Player.ultra_got[skill3] == 0)
+		    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+		    skill = other.skill3
+    
+			if (Player.ultra_got[skill4] == 0)
+		    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+72,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+		    skill = other.skill4
+		    }
+		}
+		else
+		{
+			//CROWN OF DESTINYYYYYYY
+			if Player.race=21//horror
+			{
+			do {
+			chosenskill=choose(skill1,skill2,skill3,skill4)
+			} until (Player.ultra_got[chosenskill] == 0)
+
+			with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+			{
+			skill = other.chosenskill}
+ 
+			if (Player.ultra_got[skill1] + Player.ultra_got[skill2] + Player.ultra_got[skill3] + Player.ultra_got[skill4] > 1)
+			{
+				do{
+				otherchosenskill=choose(skill1,skill2,skill3,skill4)
+				}until (otherchosenskill!=chosenskill && Player.ultra_got[otherchosenskill] == 0 )
+
+				with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+				skill = other.otherchosenskill
+			}
+
+			}
+			else
+			{
+			with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
+			skill = choose(other.skill1,other.skill2,other.skill3,other.skill4);
+			}
 		}
 	}
-    
-    if Player.crown != 8
-{
-    if Player.race=21//horror
-    {
-    if (Player.ultra_got[skill1] == 0)
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-    skill = other.skill1
-	
-    if (Player.ultra_got[skill2] == 0)
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-    skill = other.skill2
-	
-    if (Player.ultra_got[skill3] == 0)
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-    skill = other.skill3
-	
-    if (Player.ultra_got[skill4] == 0)
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-    skill = other.skill4
-	
-    if (Player.ultra_got[0] == 0)
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-    skill = 0
-    
-    }
-    else
-    {
-	if (Player.ultra_got[skill1] == 0)
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-72,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-    skill = other.skill1
-    
-	if (Player.ultra_got[skill2] == 0)
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-    skill = other.skill2
-    
-	if (Player.ultra_got[skill3] == 0)
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-    skill = other.skill3
-    
-	if (Player.ultra_got[skill4] == 0)
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+72,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-    skill = other.skill4
-    }
-}
-else
-{
-//CROWN OF DESTINYYYYYYY
-if Player.race=21//horror
-{
-do {
-chosenskill=choose(skill1,skill2,skill3,skill4)
-} until (Player.ultra_got[chosenskill] == 0)
 
-with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-{
-skill = other.chosenskill}
- 
-if (Player.ultra_got[skill1] + Player.ultra_got[skill2] + Player.ultra_got[skill3] + Player.ultra_got[skill4] > 1)
-{
-	do{
-	otherchosenskill=choose(skill1,skill2,skill3,skill4)
-	}until (otherchosenskill!=chosenskill && Player.ultra_got[otherchosenskill] == 0 )
-
-	with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-	skill = other.otherchosenskill
-}
-
-}
-else
-{
-with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,UltraIcon)
-skill = choose(other.skill1,other.skill2,other.skill3,other.skill4);
-}
-
-}
-}
-
-pick = 0//ehm not necessary
-canmove = 1    
-exit;    
+	pick = 0//ehm not necessary
+	canmove = 1    
+	exit;    
     
     }//end of the ultra code
     else if Player.ultra_got[75]{//*/ Skelly ultra A redemption patience all da time
@@ -260,8 +281,30 @@ exit;
 
 //}
 
-
-    if Player.crown != 8
+	if UberCont.opt_gamemode == 28 //ALL MUTATION CHOICES
+	{
+		var xx = __view_get( e__VW.XView, 0 )+16;
+		var yy = __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24;
+		var step = 30;
+		scrollWidth = (-(__view_get( e__VW.WView, 0 ))) - 8
+		scroll = 0;
+		for (var i = 0; i <= maxskill; i++) {
+			if (Player.skill_got[i] = 0)
+			{
+				with instance_create(xx,yy,SkillIcon)
+				{
+					skill = i;
+				}
+				xx += step;
+				scrollWidth += step;
+			}
+			else
+			{
+				i++;
+			}
+		}
+	}
+    else if Player.crown != 8
     {
     
     if Player.race=21//Horror
@@ -288,58 +331,59 @@ exit;
     
     }
     else{
-    if Player.ultra_got[75]//Melting ultra A patience
-    {
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-96,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
-    skill = other.skill0
-    }
+	    if Player.ultra_got[75]//Melting ultra A patience
+	    {
+	    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-96,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+	    skill = other.skill0
+	    }
     
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
-    skill = other.skill1
+	    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+	    skill = other.skill1
     
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
-    skill = other.skill2
+	    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+	    skill = other.skill2
     
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
-    skill = other.skill3
+	    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+	    skill = other.skill3
     
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
-    skill = other.skill4
+	    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+	    skill = other.skill4
 	
-	with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
-    skill = other.skill5
-    }}
+		with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+64,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+	    skill = other.skill5
+	    }
+	}
     else
     {
     //CROWN OF DESTINYYYYYYY
     if Player.race=21
     {//horror
     
-chosenskill=choose(skill1,skill2,skill3,skill4)
+	chosenskill=choose(skill1,skill2,skill3,skill4)
 
-with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
-skill = other.chosenskill
+	with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+	skill = other.chosenskill
 
-do{
-otherchosenskill=choose(skill1,skill2,skill3,skill4)
-}until (otherchosenskill!=chosenskill||otherchosenskill=32)
+	do{
+	otherchosenskill=choose(skill1,skill2,skill3,skill4)
+	}until (otherchosenskill!=chosenskill||otherchosenskill=32)
 
-with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
-skill = other.otherchosenskill
+	with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+	skill = other.otherchosenskill
 
-    }
-    else  
-    {
+	    }
+	    else  
+	    {
     
-    if Player.ultra_got[75]//Melting ultra A patience
-    {
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
-    skill = other.skill0
-    }
+	    if Player.ultra_got[75]//Melting ultra A patience
+	    {
+	    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+24,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+	    skill = other.skill0
+	    }
     
-    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
-    skill = choose(other.skill1,other.skill2,other.skill3,other.skill4);
-    }
+	    with instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-24,SkillIcon)
+	    skill = choose(other.skill1,other.skill2,other.skill3,other.skill4);
+	    }
     
     }
     if instance_exists(Player)//EXTRA WINGS JOKE!
