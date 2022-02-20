@@ -60,19 +60,19 @@ char[4].num = 4
 
 if UberCont.race_have[9] = 1
 {
-char[9] = instance_create(116,16,CampChar)
+char[9] = instance_create(124,32,CampChar)
 char[9].sprite_index = sprChickenMenu
 char[9].spr_menu = sprChickenMenuSelected
 char[9].spr_to = sprChickenMenuSelect
 char[9].spr_from = sprChickenMenuDeselect
 char[9].spr_slct = sprChickenMenu
 with char[9]
-instance_create(x,y-32,TV)
+instance_create(x,y-24,TV)
 }
 
 if UberCont.race_have[24] = 1//Elementor
 {
-char[24] = instance_create(104,32,CampChar)
+char[24] = instance_create(150,36,CampChar)
 char[24].sprite_index = sprElementorMenuSelect
 char[24].spr_menu = sprElementorMenuSelected
 char[24].spr_to = sprElementorMenuSelect
@@ -84,7 +84,7 @@ char[24].depth--;
 
 if UberCont.race_have[20] = 1//BusinessHog
 {
-char[20] = instance_create(104,156,CampChar)
+char[20] = instance_create(150,124,CampChar)
 char[20].sprite_index = sprBusinessHogMenu
 char[20].spr_menu = sprBusinessHogMenuSelected
 char[20].spr_to = sprBusinessHogMenuSelect
@@ -214,24 +214,32 @@ until !collision_ellipse(x-14,y-14,x+14,y+14,CampChar,1,1)&&!collision_ellipse(x
 dir += 1
 }
 if UberCont.race_have[5] = 1{
+char[5].x = 0;
+char[5].y = 0;
 char[5].sprite_index = sprPlantMenu
 char[5].spr_menu = sprPlantMenuSelected
 char[5].spr_to = sprPlantMenuSelect
 char[5].spr_from = sprPlantMenuDeselect
 char[5].spr_slct = sprPlantMenu}
 if UberCont.race_have[6] = 1{
+char[6].x = 16;
+char[6].y = 96;
 char[6].sprite_index = sprVenuzMenu
 char[6].spr_menu = sprVenuzMenuSelected
 char[6].spr_to = sprVenuzMenuSelect
 char[6].spr_from = sprVenuzMenuDeselect
 char[6].spr_slct = sprVenuzMenu}
 if UberCont.race_have[7] = 1{
+char[7].x = 96;
+char[7].y = 32;
 char[7].sprite_index = sprSteroidsMenu
 char[7].spr_menu = sprSteroidsMenuSelected
 char[7].spr_to = sprSteroidsMenuSelect
 char[7].spr_from = sprSteroidsMenuDeselect
 char[7].spr_slct = sprSteroidsMenu}
 if UberCont.race_have[8] = 1{
+char[8].x = 128;
+char[8].y = 48;
 char[8].sprite_index = sprRobotMenu
 char[8].spr_menu = sprRobotMenuSelected
 char[8].spr_to = sprRobotMenuSelect
@@ -248,6 +256,8 @@ with char[9]
 instance_create(x,y-32,TV)
 }*/
 if UberCont.race_have[10] = 1{
+char[10].x = 20;
+char[10].y = 40;
 char[10].sprite_index = sprRebelMenu
 char[10].spr_menu = sprRebelMenuSelected
 char[10].spr_to = sprRebelMenuSelect
@@ -255,6 +265,8 @@ char[10].spr_from = sprRebelMenuDeselect
 char[10].spr_slct = sprRebelMenu}
 
 if UberCont.race_have[11] = 1{//Hunter
+char[11].x = -0;
+char[11].y = 74;
 char[11].sprite_index = sprHunterMenu
 char[11].spr_menu = sprHunterMenuSelected
 char[11].spr_to = sprHunterMenuSelect//Select?
@@ -262,6 +274,8 @@ char[11].spr_from = sprHunterMenuDeselect//Deselect?
 char[11].spr_slct = sprHunterMenu}
 
 if UberCont.race_have[12] = 1{//Yung Cuz
+char[12].x = 96;
+char[12].y = 80;
 char[12].sprite_index = sprYungCuzMenu
 char[12].spr_menu = sprYungCuzMenuSelected
 char[12].spr_to = sprYungCuzMenuSelect
@@ -269,6 +283,8 @@ char[12].spr_from = sprYungCuzMenuDeselect
 char[12].spr_slct = sprYungCuzMenu}
 
 if UberCont.race_have[13] = 1{//Sheep
+char[13].x = 200;
+char[13].y = 0;
 char[13].sprite_index = sprSheepMenu
 char[13].spr_menu = sprSheepIdleA
 char[13].spr_to = sprSheepMenuSelect
@@ -276,6 +292,8 @@ char[13].spr_from = sprSheepMenuDeselect
 char[13].spr_slct = sprSheepMenu}
 
 if UberCont.race_have[14] = 1{//Panda
+char[14].x = 28;
+char[14].y = 82;
 char[14].sprite_index = sprPandaMenu
 char[14].spr_menu = sprPandaMenuSelected
 char[14].spr_to = sprPandaMenuSelect
@@ -283,6 +301,8 @@ char[14].spr_from = sprPandaMenuDeselect
 char[14].spr_slct = sprPandaMenu}
 
 if UberCont.race_have[15] = 1{//Atom
+char[15].x = 96;
+char[15].y = 128;
 char[15].sprite_index = sprAtomMenu
 char[15].spr_menu = sprMutant15Idle
 char[15].spr_to = sprAtomMenuSelect
@@ -290,20 +310,17 @@ char[15].spr_from = sprAtomMenuDeselect
 char[15].spr_slct = sprAtomMenu}
 
 if UberCont.race_have[16] = 1{//Viking
+char[16].x = 58;
+char[16].y = 130;
 char[16].sprite_index = sprVikingMenu
 char[16].spr_menu = sprVikingMenuSelected
 char[16].spr_to = sprVikingMenuSelect
 char[16].spr_from = sprVikingMenuDeselect
 char[16].spr_slct = sprVikingMenu}
-/*
-if UberCont.race_have[17] = 1{//GUNSMITH
-char[17].sprite_index = sprWeaponSmithMenu
-char[17].spr_menu = sprWeaponSmithMenuSelected
-char[17].spr_to = sprWeaponSmithMenuSelect
-char[17].spr_from = sprWeaponSmithMenuDeselect
-char[17].spr_slct = sprWeaponSmithMenu}*/
 
 if UberCont.race_have[18] = 1{//ANGEL
+char[18].x = 32;
+char[18].y = 160;
 char[18].sprite_index = sprAngelMenu
 char[18].spr_menu = sprAngelMenuSelected
 char[18].spr_to = sprAngelMenuSelect
@@ -311,6 +328,8 @@ char[18].spr_from = sprAngelMenuDeselect
 char[18].spr_slct = sprAngelMenu}
 
 if UberCont.race_have[19] = 1{//SKELETON
+char[19].x = 64;
+char[19].y = 155;
 char[19].sprite_index = sprMutant19Sit
 char[19].spr_menu = sprMutant19Idle
 char[19].spr_to = sprMutant19StandUp
@@ -319,14 +338,9 @@ char[19].spr_slct = sprMutant19Sit
 with char[19]
 instance_create(x,y+2,SkeletonChair)}
 
-/*if UberCont.race_have[20] = 1{//BUSINESS HOG
-char[20].sprite_index = sprBusinessHogMenu
-char[20].spr_menu = sprBusinessHogMenuSelected
-char[20].spr_to = sprBusinessHogMenuSelect
-char[20].spr_from = sprBusinessHogMenuDeselect
-char[20].spr_slct = sprBusinessHogMenu}*/
-
 if UberCont.race_have[21] = 1{//Horror
+char[21].x = 90;
+char[21].y = 140;
 char[21].sprite_index = sprHorrorMenu
 char[21].spr_menu = sprHorrorMenuSelected
 char[21].spr_to = sprHorrorMenuSelect
@@ -334,6 +348,8 @@ char[21].spr_from = sprHorrorMenuDeselect
 char[21].spr_slct = sprHorrorMenu}
 
 if UberCont.race_have[22] = 1{//Rogue
+char[22].x = 120;
+char[22].y = 96;
 char[22].sprite_index = sprRogueMenu
 char[22].spr_menu = sprRogueMenuSelected
 char[22].spr_to = sprRogueMenuSelect
@@ -341,20 +357,17 @@ char[22].spr_from = sprRogueMenuDeselect
 char[22].spr_slct = sprRogueMenu}
 
 if UberCont.race_have[23] = 1{//Frog
+char[23].x = 166;
+char[23].y = 55;
 char[23].sprite_index = sprMutant23Sit
 char[23].spr_menu = sprMutant23Idle
 char[23].spr_to = sprFrogStandUp
 char[23].spr_from = sprMutant23GoSit
 char[23].spr_slct = sprMutant23Sit}
 
-/*if UberCont.race_have[24] = 1{
-char[24].sprite_index = sprElementorMenu
-char[24].spr_menu = sprElementorMenuSelected
-char[24].spr_to = sprElementorMenuSelect
-char[24].spr_from = sprElementorMenuDeselect
-char[24].spr_slct = sprElementorMenu}*/
-
 if UberCont.race_have[25] = 1{
+char[25].x = 180;
+char[25].y = 32;
 char[25].sprite_index = sprMutationDoctorMenu
 char[25].spr_menu = sprMutationDoctorMenuSelected
 char[25].spr_to = sprMutationDoctorMenuSelect
@@ -362,6 +375,8 @@ char[25].spr_from = sprMutationDoctorMenuDeselect
 char[25].spr_slct = sprMutationDoctorMenu}
 
 if UberCont.race_have[26] = 1{
+char[26].x = 48;
+char[26].y = 8;
 char[26].image_speed = 0.3;//Humphry is a slow man
 char[26].sprite_index = sprHumphryMenu
 char[26].spr_menu = sprHumphryMenuSelected
@@ -375,8 +390,8 @@ extra = 0
 alarm[0] = 20
 
 
-thanks = "#MOD REVIVAL#STARTED BY:#base4/spencers145#ADDITIONAL CODE:#base4/spencers145##Q&A GODDESS#AgentCucco##SFX AND ART#@larje100##ULTRA MUTATION ART:#@tilde_bee#Lynzkar#skurleton#Lunarshards##MORE ART#NotYourSagittarius##@ideaot/jasmine"
-stxt2 = "####AWESOME MOD PEOPLE:##MOD REVIVAL#STARTED BY:##ADDITIONAL CODE:###Q&A GODDESS###SFX AND ART###ULTRA MUTATION ART:######MORE ART####FOLLOW ON TWITTER<3"
+thanks = "#MOD REVIVAL#STARTED BY:#base4/spencers145#ADDITIONAL CODE:#base4/spencers145##QA GODDESS#AgentCucco##SFX AND ART#@larje100##ULTRA MUTATION ART:#@tilde_bee#Lynzkar#skurleton#Lunarshards##MORE ART#NotYourSagittarius##@ideaot/jasmine"
+stxt2 = "####AWESOME MOD PEOPLE:##MOD REVIVAL#STARTED BY:##ADDITIONAL CODE:###QA GODDESS###SFX AND ART###ULTRA MUTATION ART:######MORE ART####FOLLOW ON TWITTER<3"
 txt0 = "#NUCLEAR THRONE#A GAME BY VLAMBEER#MOD BY ERDEPPOL"
 txt1 = "####DIRECTOR:#JAN WILLEM NIJMAN##PRODUCER:#RAMI ISMAIL##ART & ORIGINAL#CHARACTER DESIGN:#PAUL VEER##MUSIC:#JUKIO KALLIO##SOUND DESIGN:#JOONAS TURNER##PROMOTIONAL ART:#JUSTIN CHAN##VOICE OF MR. VENUZ:#DOSEONE###MODDED BY"
 txt2 = "####AWESOME MOD PEOPLE:#"+string(thanks)

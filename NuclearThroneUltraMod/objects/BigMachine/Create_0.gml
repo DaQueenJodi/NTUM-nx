@@ -1,6 +1,6 @@
 raddrop = 30
 maxhealth = 320;//280
-meleedamage = 0
+meleedamage = 1;
 size = 3
 
 event_inherited()

@@ -1,6 +1,6 @@
 raddrop = 50
 maxhealth = 230//180
-meleedamage = 0
+meleedamage = 2;
 size = 3
 
 if UberCont.loops>1

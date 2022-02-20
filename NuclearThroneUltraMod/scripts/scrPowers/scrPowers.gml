@@ -23,7 +23,7 @@ function scrPowers() {
 		}
 		if (insufficientFunds)
 		{
-			snd_play(snd_lowa);
+			snd_play_2d(snd_lowa);
 		}
 		else
 		{
@@ -52,7 +52,7 @@ function scrPowers() {
 			if (effective)
 			{
 				Sleep(40);
-				snd_play(sndChickenStart);
+				snd_play_2d(sndChickenStart);
 				instance_create(x,y,HumphryDiscipline);
 			}
 		}
@@ -62,12 +62,12 @@ function scrPowers() {
 	{
 	if skill_got[5]=1
 	{
-	snd_play(sndFrogStartButt);
+	snd_play_2d(sndFrogStartButt);
 	snd_loop(sndFrogLoopButt);
 	}
 	else
 	{
-	snd_play(sndFrogStart);
+	snd_play_2d(sndFrogStart);
 	snd_loop(sndFrogLoop);
 	}
 	}
@@ -80,7 +80,7 @@ function scrPowers() {
     
 	if instance_exists(Corpse)
 	{
-	//snd_play(sndNecromancerRevive)
+	//snd_play_2d(sndNecromancerRevive)
 	        //audio_stop_sound(sndBouncerHitWall)
         
 	    with Corpse
@@ -140,7 +140,7 @@ function scrPowers() {
 	    {
 	    if strongspirit==true&&strongspiritused==false
 	    {
-	    snd_play(sndStrongSpiritLost);
+	    snd_play_2d(sndStrongSpiritLost);
 	    my_health=1;
 	    alarm[1]=20;//invincibility 
 	    strongspiritused=true;
@@ -157,7 +157,7 @@ function scrPowers() {
 	    //if my_health<1&&strongspirit
 	    image_index=0;
 	    sprite_index=spr_hurt;
-	    snd_play(snd_hurt, hurt_pitch_variation);
+	    snd_play_2d(snd_hurt, hurt_pitch_variation);
 
 	    var raddrop=16;//13 An ally drops 5 rads
 	    if skill_got[5]
@@ -234,10 +234,10 @@ function scrPowers() {
 	    BackCont.viewx2 += lengthdir_x(-8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	    BackCont.viewy2 += lengthdir_y(-8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	    BackCont.shake += 22
-		snd_play(sndVikingArmourStrikeUpg);
+		snd_play_2d(sndVikingArmourStrikeUpg);
 	    }
 		else
-			snd_play(sndVikingArmourStrike);
+			snd_play_2d(sndVikingArmourStrike);
     
 	    BackCont.viewx2 += lengthdir_x(-6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	    BackCont.viewy2 += lengthdir_y(-6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
@@ -269,13 +269,13 @@ function scrPowers() {
 
 	}
 
-	snd_play(sndRogueAim);
+	snd_play_2d(sndRogueAim);
 
 	}
 	else
 	{
 
-	snd_play(sndPortalStrikeEmpty);
+	snd_play_2d(sndPortalStrikeEmpty);
 
 	with instance_create(x,y,PopupText)
 	{mytext = "NOT ENOUGH#PORTAL STRIKE AMMO"
@@ -292,7 +292,7 @@ function scrPowers() {
 
 	if rad<=0
 	{
-		snd_play(sndHorrorEmpty);
+		snd_play_2d(sndHorrorEmpty);
 		scrEmptyRad();
 	}
 	else
@@ -344,7 +344,7 @@ function scrPowers() {
 	if race = 19&&wep_type[wep]!=0&&can_shoot=1 //&& my_health > 1//SKELETON
 	{
 
-	snd_play(sndBloodGamble);
+	snd_play_2d(sndBloodGamble);
 
 	scrFire();
 
@@ -356,7 +356,7 @@ function scrPowers() {
 	    //if my_health<1&&strongspirit
 	    image_index=0;
 	    sprite_index=spr_hurt;
-	    snd_play(snd_hurt, hurt_pitch_variation);
+	    snd_play_2d(snd_hurt, hurt_pitch_variation);
     
 	repeat(3)
 	{
@@ -412,7 +412,7 @@ function scrPowers() {
 	    if alarm[7]<1
 	    alarm[7]=12;//reset the exception in 12 steps
     
-	    snd_play(snd_hurt, hurt_pitch_variation)
+	    snd_play_2d(snd_hurt, hurt_pitch_variation)
 	    Sleep(40)
 	    }
 	    }
@@ -437,7 +437,7 @@ function scrPowers() {
 	        if Player.crown = 4
 	        num += 1
         
-	        snd_play(sndHealthPickup)
+	        snd_play_2d(sndHealthPickup)
 	        my_health += num
 	        if my_health > maxhealth
 	        my_health = maxhealth
@@ -452,14 +452,14 @@ function scrPowers() {
 	    }
 	    else if my_health<maxhealth
 	    {
-	    snd_play(sndEmpty);
+	    snd_play_2d(sndEmpty);
 	    dir = instance_create(x,y,PopupText);
 	    dir.mytext = "NOT ENOUGH AMMO";
 	    }
 	}
 	else
 	{
-	snd_play(sndEmpty);
+	snd_play_2d(sndEmpty);
 	    dir = instance_create(x,y,PopupText);
 	    dir.mytext = "THIS DOESN'T USE AMMO";
 	}
@@ -522,7 +522,7 @@ function scrPowers() {
 	        if ammo[wep_type[bwep]] < typ_ammo[wep_type[bwep]]*3
 	        {ammo[wep_type[bwep]]+=typ_ammo[wep_type[bwep]]*3;}
         
-	            //snd_play(sndHitMetal);
+	            //snd_play_2d(sndHitMetal);
 	        //}
 	    if ultra_got[66]
 	    armour+=2;
@@ -560,7 +560,7 @@ function scrPowers() {
 		    if alarm[3]<1
 		    alarm[3]=4;//imunity
 		    instance_create(x,y,Teleport);
-		    snd_play(sndHyperLightning);
+		    snd_play_2d(sndHyperLightning);
 		    repeat(5){
 			    with instance_create(x,y,Smoke)
 			    motion_add(random(360),1+random(3))
@@ -575,7 +575,7 @@ function scrPowers() {
 		    if skill_got[5]//thronebutt
 		    {
 			    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
-			    snd_play(sndLightning3);
+			    snd_play_2d(sndLightning3);
 
 			    with instance_create(x,y,Lightning)
 					{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
@@ -599,7 +599,7 @@ function scrPowers() {
 		    alarm[3]=4;//imunity
 			
 		    instance_create(x,y,Teleport);
-		    snd_play(sndHyperLightning);
+		    snd_play_2d(sndHyperLightning);
 		    repeat(5){
 		    with instance_create(x,y,Smoke)
 		    motion_add(random(360),1+random(3))}
@@ -629,7 +629,7 @@ function scrPowers() {
     
 		    if skill_got[5]//thronebutt
 		    {
-		    snd_play(sndLightning3);
+		    snd_play_2d(sndLightning3);
 		    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
     
 
@@ -657,7 +657,7 @@ function scrPowers() {
 	if alarm[3]<1
 	alarm[3]=4;//imunity
 	instance_create(x,y,Teleport);
-	snd_play(sndHyperLightning);
+	snd_play_2d(sndHyperLightning);
 	repeat(5){
 	with instance_create(x,y,Smoke)
 	motion_add(random(360),1+random(3))}
@@ -669,7 +669,7 @@ function scrPowers() {
   
 	    if skill_got[5]//thronebutt
 	    {
-	    snd_play(sndLightning3);
+	    snd_play_2d(sndLightning3);
 	    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
     
 	    if ultra_got[59]=1
@@ -711,7 +711,7 @@ function scrPowers() {
 	{
 	if curse=0&&wep!=0{
 
-	snd_play(sndEnemySlash);
+	snd_play_2d(sndEnemySlash);
 	    with instance_create(x,y,ThrowWep)
 	    {
 		    team=other.team;
@@ -775,7 +775,7 @@ function scrPowers() {
 	    {//SPAWN BUDDY
 	        if ultra_got[46]==1&&instance_number(YungCuzDupe)<3{
 	        instance_create(x+xran,y+yran,YungCuzDupe);
-	        snd_play(sndMutant12Wrld)
+	        snd_play_2d(sndMutant12Wrld)
 	        Sleep(40)
 	        }
 	        else if ultra_got[46]==0{
@@ -799,17 +799,17 @@ function scrPowers() {
         
 	        sprite_index = spr_hurt
 	        image_index = 0
-	        snd_play(snd_hurt, hurt_pitch_variation)
+	        snd_play_2d(snd_hurt, hurt_pitch_variation)
 	        Sleep(40)
 	        }
 	    }
 	    else{//no place
-	    //snd_play(sndMutant12Slct)
+	    //snd_play_2d(sndMutant12Slct)
     
 	    //SPAWN BUDDY
 	        if ultra_got[46]==1&&instance_number(YungCuzDupe)<3{
 			instance_create(x,y,YungCuzDupe)
-	        snd_play(sndMutant12Wrld)
+	        snd_play_2d(sndMutant12Wrld)
 	        Sleep(40)
 	        }
 	        else if ultra_got[46]==0{
@@ -831,7 +831,7 @@ function scrPowers() {
         
 	        sprite_index = spr_hurt
 	        image_index = 0
-	        snd_play(snd_hurt, hurt_pitch_variation)
+	        snd_play_2d(snd_hurt, hurt_pitch_variation)
 	        Sleep(40)
 	        }
     
@@ -853,13 +853,13 @@ function scrPowers() {
 				BackCont.viewx2 += lengthdir_x(32,aimDir)*UberCont.opt_shake;
 				BackCont.viewy2 += lengthdir_y(32,aimDir)*UberCont.opt_shake;
 				BackCont.shake += 10;
-				snd_play(sndSheepHyperDash);
+				snd_play_2d(sndSheepHyperDash);
 				instance_create(x,y,SheepHyperDash);
 				Sleep(5);
 			}
 			else
 			{
-				snd_play(snd_lowa);
+				snd_play_2d(snd_lowa);
 				BackCont.shake += 5;
 			}
 		}
@@ -980,11 +980,11 @@ function scrPowers() {
 
 	if skill_got[5] = 1
 	{
-	snd_play(sndRobotEatUpg)
+	snd_play_2d(sndRobotEatUpg)
 	instance_create(x,y,AmmoPickup)
 	}
 	else
-	snd_play(sndRobotEat)
+	snd_play_2d(sndRobotEat)
 
 	breload = 0
 	instance_create(x,y,Smoke)
@@ -994,7 +994,7 @@ function scrPowers() {
 	{
 	    if random(100)<55//original 43% chance
 	    {
-	    snd_play(sndRegurgitate);
+	    snd_play_2d(sndRegurgitate);
 	        var dir;
 	        dir=random(100);
 	        {
@@ -1021,7 +1021,7 @@ function scrPowers() {
 	/*if ultra_got[32] // Robot lightning ULTRA D
 	{
 
-	snd_play(choose(sndSpark1,sndSpark2));
+	snd_play_2d(choose(sndSpark1,sndSpark2));
 	repeat(40)//16 is one ultra lazerpistol ammo
 	{
 	with instance_create(x,y,Rad)
@@ -1058,10 +1058,10 @@ function scrPowers() {
 	direction = point_direction(x,y,mouse_x,mouse_y)
 	speed = 4
 	roll = 1
-	snd_play(sndRoll)
+	snd_play_2d(sndRoll)
 
 	if skill_got[5] = 1
-	snd_play(sndFishRollUpg)
+	snd_play_2d(sndFishRollUpg)
 
 	instance_create(x,y,Dust)
 	}
@@ -1080,9 +1080,9 @@ function scrPowers() {
 
 
 	if skill_got[5] = 1
-	snd_play(sndSpawnSuperAlly)
+	snd_play_2d(sndSpawnSuperAlly)
 	else
-	snd_play(sndSpawnAlly)
+	snd_play_2d(sndSpawnAlly)
 	with Ally
 	{
 	instance_create(x,y,HealFX)
@@ -1109,7 +1109,7 @@ function scrPowers() {
 
 
 
-	snd_play(snd_hurt, hurt_pitch_variation)
+	snd_play_2d(snd_hurt, hurt_pitch_variation)
 	Sleep(40)
 	instance_create(x,y,Dust)
 
@@ -1132,12 +1132,12 @@ function scrPowers() {
 	MorphMe=true;
 
 
-	snd_play(sndExplosion)
+	snd_play_2d(sndExplosion)
 
 	if Player.skill_got[5] = 1
-	snd_play(sndCorpseExploUpg)
+	snd_play_2d(sndCorpseExploUpg)
 	else
-	snd_play(sndCorpseExplo)
+	snd_play_2d(sndCorpseExplo)
 
 	instance_destroy()
 	with instance_create(x,y,BloodStreak)
@@ -1158,12 +1158,12 @@ function scrPowers() {
 	{if image_speed = 0 and (instance_number(enemy) > 0 or instance_exists(Portal)) and x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 	{
 
-	snd_play(sndExplosion)
+	snd_play_2d(sndExplosion)
 
 	if Player.skill_got[5] = 1
-	snd_play(sndCorpseExploUpg)
+	snd_play_2d(sndCorpseExploUpg)
 	else
-	snd_play(sndCorpseExplo)
+	snd_play_2d(sndCorpseExplo)
 
 	instance_destroy()
 	with instance_create(x,y,BloodStreak)
@@ -1241,9 +1241,9 @@ function scrPowers() {
 	can_shoot = 0
 
 	if Player.skill_got[5] = 1{
-	snd_play(sndPopPopUpg);}
+	snd_play_2d(sndPopPopUpg);}
 	else
-	snd_play(sndPopPop)
+	snd_play_2d(sndPopPop)
 
 
 	if Player.ultra_got[24]=1//YV ULTRA D
@@ -1267,9 +1267,9 @@ function scrPowers() {
 	scrSwapWeps()
 
 	if Player.skill_got[5] = 1{
-	snd_play(sndPopPopUpg);}
+	snd_play_2d(sndPopPopUpg);}
 	else
-	snd_play(sndPopPop)
+	snd_play_2d(sndPopPop)
 
 	}
 	reload *= 1.9+Player.skill_got[5]*1.4//added reload time
@@ -1289,7 +1289,7 @@ function scrPowers() {
 	if Player.ultra_got[44]=1{//Hunter Ultra D CRACKSHOT
 	if(instance_exists(enemy)){
 	if(point_distance(mouse_x,mouse_y,instance_nearest(mouse_x,mouse_y,enemy).x,instance_nearest(mouse_x,mouse_y,enemy).y)<48){
-	    snd_play(sndSniperTarget);
+	    snd_play_2d(sndSniperTarget);
 
 	    with instance_create(mouse_x,mouse_y,Marker){
 	    target=instance_nearest(x,y,enemy);
@@ -1317,7 +1317,7 @@ function scrPowers() {
 	}
 	else if(instance_exists(enemy)){
 	if(point_distance(mouse_x,mouse_y,instance_nearest(mouse_x,mouse_y,enemy).x,instance_nearest(mouse_x,mouse_y,enemy).y)<48){
-	    snd_play(sndSniperTarget);
+	    snd_play_2d(sndSniperTarget);
 	    with instance_create(mouse_x,mouse_y,Marker){
 	    target=instance_nearest(x,y,enemy);
 	        }
@@ -1400,7 +1400,7 @@ function scrPowers() {
 	{
 
 	if horrorcharge=origincharge
-	snd_play(sndHorrorBeam);
+	snd_play_2d(sndHorrorBeam);
 
 	if horrorcharge<maxcharge
 	horrorcharge+=0.18+(skill_got[5]*0.3);
@@ -1549,7 +1549,7 @@ function scrPowers() {
 	{
 	audio_stop_sound(sndHorrorLoop);
 	audio_stop_sound(sndHorrorLoopTB);
-	snd_play(sndHorrorEmpty);
+	snd_play_2d(sndHorrorEmpty);
 	}
 	rad = max(rad,0);
 	}
@@ -1579,7 +1579,7 @@ function scrPowers() {
 			    //if place_meeting(xx+16,yy,Wall)||place_meeting(xx-16,yy,Wall)||place_meeting(xx,yy-16,Wall)||place_meeting(xx,yy+16,Wall)
 			    //{
 			    //here check if we don't block a path
-			    snd_play(sndStatueHurt);
+			    snd_play_2d(sndStatueHurt);
     
 			    with instance_create(xx,yy,VikingWall)
 			    alarm[0]=15;
@@ -1596,7 +1596,7 @@ function scrPowers() {
 		else
 		{
 			lockoutElementor = true;
-			snd_play(snd_lowa);
+			snd_play_2d(snd_lowa);
 			BackCont.shake += 5;
 		}
 	}
@@ -1658,7 +1658,7 @@ function scrPowers() {
 	}
 
 
-	if !audio_is_playing(sndChickenLoop) {snd_play(sndChickenStart) snd_loop(sndChickenLoop)}
+	if !audio_is_playing(sndChickenLoop) {snd_play_2d(sndChickenStart) snd_loop(sndChickenLoop)}
 	/*
 	if reload > 0 and skill_got[5] = 0
 	reload += 0.5
@@ -1938,13 +1938,13 @@ function scrPowers() {
 
 	if skill_got[5]=1
 	{
-	snd_play(sndFrogEndButt);
-	snd_play(sndFrogGasReleaseButt);
+	snd_play_2d(sndFrogEndButt);
+	snd_play_2d(sndFrogGasReleaseButt);
 	}
 	else
 	{
-	snd_play(sndFrogEnd);
-	snd_play(sndFrogGasRelease);
+	snd_play_2d(sndFrogEnd);
+	snd_play_2d(sndFrogGasRelease);
 	}
 
 	}
@@ -1983,9 +1983,9 @@ function scrPowers() {
 	{
 
 	if other.skill_got[5]
-	snd_play(sndPortalStrikeFireTB);
+	snd_play_2d(sndPortalStrikeFireTB);
 	else
-	snd_play(sndPortalStrikeFire);
+	snd_play_2d(sndPortalStrikeFire);
 
 	    if alarm[0]<0
 	    {

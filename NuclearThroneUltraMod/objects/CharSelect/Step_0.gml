@@ -221,7 +221,7 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
     break;
     
     }
-    snd_play(snd_slct)
+    snd_play_2d(snd_slct)
     Menu.race = num
     
     with LoadoutSelect

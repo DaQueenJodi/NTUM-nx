@@ -433,7 +433,7 @@ with instance_create(x,y,GenCont)
 race = Player.race
 }
 
-snd_play(sndMut);
+snd_play_2d(sndMut);
 instance_destroy();
 with UberCont
 {

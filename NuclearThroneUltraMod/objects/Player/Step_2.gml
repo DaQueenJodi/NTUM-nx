@@ -607,6 +607,6 @@ my_health--;
 }
 
 // Audio
-audio_listener_position(x, y, depth);
+audio_listener_position(x, y, depth*10);
 
 exception = false;
