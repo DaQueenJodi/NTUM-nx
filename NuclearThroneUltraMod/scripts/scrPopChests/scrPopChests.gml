@@ -1,6 +1,6 @@
 function scrPopChests() {
 	var gol = 1;
-	var healthChestGol = choose(0,0,0,0,0,0,0,1);
+	var healthChestGol = choose(0,0,0,0,0,0,0,0,1);
 	var wepChestGol = gol;
 	
 	

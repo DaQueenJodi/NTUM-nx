@@ -10,5 +10,5 @@ UberCont.opt_fulscrn = 0
 window_set_fullscreen(UberCont.opt_fulscrn)
 }
 x=round(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_width(string_hash_to_newline("OFF")))
-y=round(__view_get( e__VW.YView, 0 )+72)
+y=round(__view_get( e__VW.YView, 0 )+80)
 

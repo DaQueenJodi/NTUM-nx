@@ -36,5 +36,5 @@ draw_text(x+20,y,string_hash_to_newline("I AGREE"))
 }
 
 x=round(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_width(string_hash_to_newline("100%")))
-y=round(__view_get( e__VW.YView, 0 )+174)
+y=round(__view_get( e__VW.YView, 0 )+152)
 

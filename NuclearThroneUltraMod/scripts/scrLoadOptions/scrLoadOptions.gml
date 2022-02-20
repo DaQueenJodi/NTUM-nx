@@ -4,6 +4,7 @@ function scrLoadOptions() {
 	opt_sfxvol=ini_read_real("OPTIONS","sfxvol",0.5);
 	opt_musvol = ini_read_real("OPTIONS","musvol",0.9);
 	opt_ambvol = ini_read_real("OPTIONS","ambvol",0.7);
+	opt_3d_audio = ini_read_real("OPTIONS","3daudio",1);
 
 	//visual
 	opt_fulscrn = ini_read_real("OPTIONS","fulscrn",1);
@@ -23,7 +24,7 @@ function scrLoadOptions() {
 	opt_mousecp = ini_read_real("OPTIONS","mousecp",0);
 	opt_freeze = ini_read_real("OPTIONS","freeze",0.5);
 	opt_loading = ini_read_real("OPTIONS","loading",3.5);
-	opt_bossintro = ini_read_real("OPTIONS","bossintro",1);
+	opt_bossintro = ini_read_real("OPTIONS","bossintro",0);
 	opt_timer = ini_read_real("OPTIONS","timer",0);
 
 	//custom controls (ASCII)
