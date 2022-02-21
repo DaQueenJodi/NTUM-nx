@@ -383,7 +383,7 @@ function scrMakeFloor() {
 		}
 		else
 		{
-			//Oke lets go guys
+			//Oke lets go guys throne room
 			instance_create(x,y,Floor)
 			instance_create(x+32,y,Floor)
 			instance_create(x-32,y,Floor)
@@ -391,6 +391,8 @@ function scrMakeFloor() {
 			instance_create(x-64,y,Floor)
 			instance_create(x+96,y,Floor)
 			instance_create(x-96,y,Floor)
+			instance_create(x+128,y,Floor)
+			instance_create(x-128,y,Floor)
 		}
 	} 
 	

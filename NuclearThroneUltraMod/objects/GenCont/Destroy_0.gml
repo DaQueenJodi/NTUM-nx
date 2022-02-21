@@ -143,12 +143,13 @@ room_speed=40;
     {
 	    if alarm[1]>0
 		{
-	    alarm[1]+=300;
+			alarm[1]+=300;
 	
 			with instance_create(x,y,Snooze)
 			{
 				owner = other.id;
 				yoffset = other.sprite_height*0.5 - 4;
+				depth = other.depth - 1;
 			}
 		}
     }

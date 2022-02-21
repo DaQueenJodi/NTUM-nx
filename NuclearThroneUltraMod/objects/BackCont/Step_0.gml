@@ -35,6 +35,10 @@ viewx = (((Tangle.x+Player.x*1.5)/2.5-__view_get( e__VW.WView, 0 )/2)*(viewdist-
 viewy = (((Tangle.y+Player.y*1.5)/2.5-__view_get( e__VW.HView, 0 )/2)*(viewdist-1)+(mouse_y-__view_get( e__VW.HView, 0 )/2))/viewdist
 }
 }
+if Player.area == 9 && Player.subarea == 3
+{
+	viewy -= 32;	
+}
 /*if instance_exists(Portal)
 {
 //viewx = ((( (Portal.x) +Player.x*3)/4-view_wview/2)*(viewdist-1)+(mouse_x-view_wview) )/viewdist//viewx = (((Portal.x+Player.x*3)/4-view_wview/2)*(viewdist-1)+(mouse_x-view_wview/2))/viewdist

@@ -16,5 +16,14 @@ if my_health <= 0
 if owner > -1 && instance_exists(owner)
 {
 	x = owner.x + xOffset;
-	y = owner.y;
+	y = owner.y + yOffset;
+	if owner.walk > 0
+	{
+		walk += 0.9;
+		if walk > sprite_get_number(sprNothingLeg)
+		{
+			walk = 0;
+			snd_play(sndNothingFootstep);
+		}
+	}
 }

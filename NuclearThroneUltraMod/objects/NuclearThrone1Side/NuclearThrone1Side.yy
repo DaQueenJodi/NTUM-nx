@@ -11,8 +11,8 @@
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "enemyCollisionWall",
-    "path": "objects/enemyCollisionWall/enemyCollisionWall.yy",
+    "name": "enemy",
+    "path": "objects/enemy/enemy.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

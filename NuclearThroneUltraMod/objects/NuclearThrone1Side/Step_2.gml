@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 
-hspeed *= 0.1;
+hspeed = 0;
 vspeed *= 0.1;
 
 if (my_health < prevhealth)

@@ -2177,7 +2177,7 @@
     {"id":{"name":"sprNothingBeam","path":"sprites/sprNothingBeam/sprNothingBeam.yy",},"order":9,},
     {"id":{"name":"sprCactus3Hurt","path":"sprites/sprCactus3Hurt/sprCactus3Hurt.yy",},"order":20,},
     {"id":{"name":"sprCactusB","path":"sprites/sprCactusB/sprCactusB.yy",},"order":21,},
-    {"id":{"name":"sprNothingLeg","path":"sprites/sprNothingLeg/sprNothingLeg.yy",},"order":27,},
+    {"id":{"name":"sprNothingLeg","path":"sprites/sprNothingLeg/sprNothingLeg.yy",},"order":23,},
     {"id":{"name":"sprCactusB2","path":"sprites/sprCactusB2/sprCactusB2.yy",},"order":22,},
     {"id":{"name":"sprCactusB2Dead","path":"sprites/sprCactusB2Dead/sprCactusB2Dead.yy",},"order":23,},
     {"id":{"name":"sprCactusB2Hurt","path":"sprites/sprCactusB2Hurt/sprCactusB2Hurt.yy",},"order":24,},

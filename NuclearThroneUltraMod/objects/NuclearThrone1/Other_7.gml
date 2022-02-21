@@ -29,7 +29,7 @@ if (sprite_index == sprNothingActivate)
 		sprite_index = sprThroneFlameStart;
 		image_index = 0;
 		visible = true;
-		yOffset -= 26;
+		//yOffset -= 26;
 		if x > other.x
 			xOffset += 11;
 		else

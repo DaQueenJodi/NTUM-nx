@@ -12,7 +12,6 @@ if immune
 		{
 			immune = false;
 		}
-		
 	}
 	exit;
 }
@@ -28,6 +27,7 @@ if !active
 		sprite_index = sprNothingOff;
 		with ThroneFlame
 		{
+			yOffset -= 10;
 			image_index = 0;
 			sprite_index = sprThroneFlameEnd;
 		}
@@ -36,8 +36,14 @@ if !active
 }
 else
 {
-	
+	if walk > 0
+	{
+		walk --;
+		vspeed += walkDir*3;
 		
+		if speed > 5
+		speed = 5;
+	}
 }
 if (my_health <= 0)
 {

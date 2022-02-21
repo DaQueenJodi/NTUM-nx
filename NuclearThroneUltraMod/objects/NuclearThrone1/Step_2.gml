@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 
-hspeed = 0.1;
+hspeed = 0;
 vspeed *= 0.1;
 if (intro && image_speed > 0)
 {
@@ -11,7 +11,6 @@ if (intro && image_speed > 0)
 	debug(sprite_get_name(sprite_index));
 	prevImageIndex += image_speed
 	image_index = prevImageIndex;
-	debug("FORCE ANIM ",prevImageIndex);
 }
 else if active
 {

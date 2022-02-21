@@ -11,3 +11,7 @@ snd_hurt = sndNothingHurtHigh;
 owner = -1;
 xOffset = 0;
 isLeft = true;
+
+walk = 0;
+spriteXscale = 1;
+legXoffset = 0;
