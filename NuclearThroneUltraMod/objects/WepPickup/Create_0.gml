@@ -35,7 +35,7 @@ if instance_exists(Player)
 {
 if Player.skill_got[30]//power craving
 {
-wepmod1=irandom_range(1,12);
+wepmod1=scrMods();
 }
 }
 wepmod2=0;

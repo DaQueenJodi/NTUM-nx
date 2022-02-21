@@ -1,6 +1,16 @@
 image_speed=0;
 
 wepmod=scrMods();
+if instance_exists(WeaponMod)
+{
+	with instance_nearest_notme(WeaponMod)
+	{
+		while wepmod == other.wepmod
+		{
+		 wepmod += scrMods();
+		}
+	}
+}
 
 wepmod1=0;
 wepmod2=0;
@@ -55,6 +65,12 @@ modname="[RADIATION]"
 break;
 case 15:
 modname="[SPLINTER]"
+break;
+case 16:
+modname="[MORPH]"
+break;
+case 17:
+modname="[AMMO]"
 break;
 default:
 modname="UNKNOWN MOD?#IF YOU SEE THIS SOMETHING IS WRONG#PLS REPORT @ERDEPPOL"

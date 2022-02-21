@@ -5,12 +5,12 @@ if KeyCont.key_pick[Player.p] = 1
 if other.wep!=0{
 with Player{
 
-
+/*
 if ( wepmod1!=0&&wepmod2!=0&&wepmod3!=0&& (skill_got[30]==0||wepmod4!=0) ){
 other.name="CAN'T BE MODIFIED#ALREADY FULLY MODDED";
 other.alarm[1]=40;
 exit;
-}
+}*/
 
 //unlock weapon smith
 scrUnlockCharacter(17,"FOR MODDING A WEAPON")

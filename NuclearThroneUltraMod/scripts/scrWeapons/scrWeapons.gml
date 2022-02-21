@@ -2566,7 +2566,7 @@ function scrWeapons() {
 	wep_cost[232] = 2
 	wep_sprt[232] = sprHeavyCrossbow
 	wep_area[232] = 4
-	wep_text[232] = "heavy bolts homeing is good with bolt marrow"
+	wep_text[232] = "heavy bolts homeing is#good with bolt marrow"
 	wep_swap[232] = sndSwapBow
 	wep_rad[232] = 0;
 

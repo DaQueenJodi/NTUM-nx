@@ -2,7 +2,7 @@ raddrop = 0
 maxhealth = 50
 meleedamage = 0
 size = 1
-
+scrCrownOfPopoRad(4);
 event_inherited()
 
 spr_idle = sprShielderIdle

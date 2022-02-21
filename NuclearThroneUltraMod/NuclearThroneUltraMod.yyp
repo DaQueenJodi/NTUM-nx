@@ -4217,6 +4217,7 @@
     {"id":{"name":"UltraBolt","path":"objects/UltraBolt/UltraBolt.yy",},"order":125,},
     {"id":{"name":"snd_play_cancel_prev","path":"scripts/snd_play_cancel_prev/snd_play_cancel_prev.yy",},"order":15,},
     {"id":{"name":"SeekerBolt","path":"objects/SeekerBolt/SeekerBolt.yy",},"order":126,},
+    {"id":{"name":"scrCrownOfPopoRad","path":"scripts/scrCrownOfPopoRad/scrCrownOfPopoRad.yy",},"order":7,},
     {"id":{"name":"SwarmBolt","path":"objects/SwarmBolt/SwarmBolt.yy",},"order":127,},
     {"id":{"name":"Missile","path":"objects/Missile/Missile.yy",},"order":128,},
     {"id":{"name":"EnemyMissile","path":"objects/EnemyMissile/EnemyMissile.yy",},"order":129,},
