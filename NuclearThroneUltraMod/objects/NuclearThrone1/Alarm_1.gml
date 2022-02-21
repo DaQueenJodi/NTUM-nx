@@ -1,5 +1,6 @@
 /// @description AI
 alarm[1] = 10+random(10);
+fireTriShot = false;
 var beamL = x - 20;
 var beamR = x + 20;
 scrTarget();
@@ -22,5 +23,10 @@ if target > 0
 	{
 		//In center
 		event_user(0);//BEAM START
+	}
+	else
+	{
+		//Tri shot
+		event_user(1);
 	}
 }

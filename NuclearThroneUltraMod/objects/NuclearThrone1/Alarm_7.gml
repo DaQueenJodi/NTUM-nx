@@ -7,6 +7,7 @@ image_index = 1;
 instance_create(x,y,ThronePipes);
 meleedamage = 10;
 alarm[2] = 90;
+beamY = y;
 repeat(8)
 {
 	with instance_create(x+random_range(32,-32),y,Debris)

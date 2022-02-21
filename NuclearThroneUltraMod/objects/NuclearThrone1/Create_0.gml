@@ -86,3 +86,6 @@ with NuclearThrone1Side
 }
 image_speed = 0;
 walkDir = 0;
+
+beamY = y;
+fireTriShot = false;

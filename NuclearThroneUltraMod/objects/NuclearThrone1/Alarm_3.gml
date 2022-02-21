@@ -5,7 +5,7 @@ image_speed = 0.5;
 prevImageIndex = 1;
 image_index = 1;
 //insomnia start slower
-alarm[1] = 30;
+alarm[1] = 100;
 if instance_exists(Player)
 {
 	if Player.skill_got[29]//insomnia

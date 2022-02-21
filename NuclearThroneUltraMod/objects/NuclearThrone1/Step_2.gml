@@ -4,7 +4,12 @@
 event_inherited();
 
 hspeed = 0;
+x = xstart;
 vspeed *= 0.1;
+if instance_exists(ThroneBeam)
+{
+	y = beamY;	
+}
 if (intro && image_speed > 0)
 {
 	//Bullets can set image_index to 0 canceling our beautifull intro
