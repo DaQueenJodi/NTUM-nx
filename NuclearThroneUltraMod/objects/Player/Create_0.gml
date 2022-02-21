@@ -148,7 +148,11 @@ scrWeapons()
 scrCrowns()
 
 bskin = UberCont.skin[race];
-
+gunY = 0;
+if race == 7 && bskin == 2
+{
+	gunY = 4;
+}
 //RACE STUFF
 scrLoadRace();
 

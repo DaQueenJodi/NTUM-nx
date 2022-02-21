@@ -49,12 +49,12 @@ lasd = 0
 do {lasd += 1 lasx += lengthdir_x(2,point_direction(x,y,mouse_x,mouse_y)) lasy += lengthdir_y(2,point_direction(x,y,mouse_x,mouse_y))}
 until position_meeting(lasx,lasy,Wall) or lasd > 1000
 draw_sprite_ext(sprLaserSightPlayer,-1,x,y-4,point_distance(x,y,lasx,lasy)/2+2,1,point_direction(x,y,mouse_x,mouse_y),c_white,1)
-}draw_sprite_ext(wep_sprt[bwep],triggerfinger,x+lengthdir_x(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),y-4+lengthdir_y(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),1,-bwepright,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20)),c_white,1)
+}draw_sprite_ext(wep_sprt[bwep],triggerfinger,x+lengthdir_x(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),y+gunY-4+lengthdir_y(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),1,-bwepright,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20)),c_white,1)
 if bwep = 63 || wep = 343//Blackhole/Dimension Generator
 {
 if can_shoot = 1 and ammo[wep_type[wep]] >= wep_cost[wep]{
 
-draw_sprite_ext(sprBlackHoleGeneration,triggerfinger,x+lengthdir_x(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),y-4+lengthdir_y(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),1,-bwepright,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20)),c_white,1)}}
+draw_sprite_ext(sprBlackHoleGeneration,triggerfinger,x+lengthdir_x(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),y+gunY-4+lengthdir_y(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),1,-bwepright,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20)),c_white,1)}}
 
 }
 
@@ -64,13 +64,13 @@ bwep=twep;//and return weapon
 }
 //DRAW DA GUNZ
 if back = 1 and (!(IsShielding)||(ultra_got[7]==1)){
-draw_sprite_ext(wep_sprt[wep],triggerfinger,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
+draw_sprite_ext(wep_sprt[wep],triggerfinger,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+gunY+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
 
 if wep = 63 || wep = 343//Blackhole/Dimension Generator
 {
 if can_shoot = 1 and ammo[wep_type[wep]] >= wep_cost[wep]{
 
-draw_sprite_ext(sprBlackHoleGeneration,wave,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
+draw_sprite_ext(sprBlackHoleGeneration,wave,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+gunY+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
 }}
 }
 if instance_exists(Decoy)
@@ -89,11 +89,11 @@ if triggerfinger>7
 triggerfinger=0;
 
 if back = -1 and !(IsShielding){
-draw_sprite_ext(wep_sprt[wep],triggerfinger,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
+draw_sprite_ext(wep_sprt[wep],triggerfinger,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+gunY+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
 if wep = 63 || wep = 343//Blackhole/Dimension Generator
 {
 if can_shoot = 1 and ammo[wep_type[wep]] >= wep_cost[wep]{
-draw_sprite_ext(sprBlackHoleGeneration,wave,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
+draw_sprite_ext(sprBlackHoleGeneration,wave,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+gunY+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
 }}
 }
 
