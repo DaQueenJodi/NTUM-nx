@@ -766,76 +766,87 @@ function scrPowers() {
 	}
 
 	//YUNG CUZ
-	if race==12 && maxhealth*0.75 >=1 || (ultra_got[47] && my_health-2>0){
-	var xran;
-	var yran;
-	xran=random(22)-11;
-	yran=random(22)-11;
-	    if !place_meeting(x+xran,y+yran,Wall)
-	    {//SPAWN BUDDY
-	        if ultra_got[46]==1&&instance_number(YungCuzDupe)<3{
-	        instance_create(x+xran,y+yran,YungCuzDupe);
-	        snd_play_2d(sndMutant12Wrld)
-	        Sleep(40)
-	        }
-	        else if ultra_got[46]==0{
-	        instance_create(x+xran,y+yran,YungCuzDupe);
+	if race==12
+	{
+		var canSpawn = true;
+		if ultra_got[47] == 1
+		{
+			canSpawn = my_health-2 > 0;	
+		}
+		else
+		{
+			canSpawn = (maxhealth*0.75 >= 1);
+		}
+		if canSpawn {
+		var xran;
+		var yran;
+		xran=random(22)-11;
+		yran=random(22)-11;
+		    if !place_meeting(x+xran,y+yran,Wall)
+		    {//SPAWN BUDDY
+		        if ultra_got[46]==1&&instance_number(YungCuzDupe)<3{
+		        instance_create(x+xran,y+yran,YungCuzDupe);
+		        snd_play_2d(sndMutant12Wrld)
+		        Sleep(40)
+		        }
+		        else if ultra_got[46]==0{
+		        instance_create(x+xran,y+yran,YungCuzDupe);
     
-	    //for rage and euphoria
-	    exception=true;
-	    if alarm[7]<1
-	    alarm[7]=12;//reset the exception in two steps
+		    //for rage and euphoria
+		    exception=true;
+		    if alarm[7]<1
+		    alarm[7]=12;//reset the exception in two steps
     
-	        if ultra_got[47]{
-				my_health-=2//1/8--->0.875
-	        }
-	        else{
-				var percMax = floor(maxhealth*0.75);
-				var lostHp = maxhealth - percMax;
-				debug("lostHP: ", lostHp);
-				maxhealth=percMax;//0.5
-				my_health = max(1,my_health-lostHp);
-	        }
+		        if ultra_got[47]{
+					my_health-=2//1/8--->0.875
+		        }
+		        else{
+					var percMax = floor(maxhealth*0.75);
+					var lostHp = maxhealth - percMax;
+					maxhealth=percMax;//0.5
+					my_health = max(1,my_health-lostHp);
+		        }
         
-	        sprite_index = spr_hurt
-	        image_index = 0
-	        snd_play_2d(snd_hurt, hurt_pitch_variation)
-	        Sleep(40)
-	        }
-	    }
-	    else{//no place
-	    //snd_play_2d(sndMutant12Slct)
+		        sprite_index = spr_hurt
+		        image_index = 0
+		        snd_play_2d(snd_hurt, hurt_pitch_variation)
+		        Sleep(40)
+		        }
+		    }
+		    else{//no place
+		    //snd_play_2d(sndMutant12Slct)
     
-	    //SPAWN BUDDY
-	        if ultra_got[46]==1&&instance_number(YungCuzDupe)<3{
-			instance_create(x,y,YungCuzDupe)
-	        snd_play_2d(sndMutant12Wrld)
-	        Sleep(40)
-	        }
-	        else if ultra_got[46]==0{
-	        instance_create(x,y,YungCuzDupe);
+		    //SPAWN BUDDY
+		        if ultra_got[46]==1&&instance_number(YungCuzDupe)<3{
+				instance_create(x,y,YungCuzDupe)
+		        snd_play_2d(sndMutant12Wrld)
+		        Sleep(40)
+		        }
+		        else if ultra_got[46]==0{
+		        instance_create(x,y,YungCuzDupe);
     
-	    //for rage and euphoria
-	    exception=true;
-	    if alarm[7]<1
-	    alarm[7]=12;//reset the exception in two steps
+		    //for rage and euphoria
+		    exception=true;
+		    if alarm[7]<1
+		    alarm[7]=12;//reset the exception in two steps
     
-	        if ultra_got[47]{
-	        maxhealth=floor(maxhealth*0.875);//1/8
-	        }
-	        else{
-	        maxhealth=floor(maxhealth*0.5);
-	        }
-	        if my_health>maxhealth
-	        {my_health=maxhealth;}
+		        if ultra_got[47]{
+		        maxhealth=floor(maxhealth*0.875);//1/8
+		        }
+		        else{
+		        maxhealth=floor(maxhealth*0.5);
+		        }
+		        if my_health>maxhealth
+		        {my_health=maxhealth;}
         
-	        sprite_index = spr_hurt
-	        image_index = 0
-	        snd_play_2d(snd_hurt, hurt_pitch_variation)
-	        Sleep(40)
-	        }
+		        sprite_index = spr_hurt
+		        image_index = 0
+		        snd_play_2d(snd_hurt, hurt_pitch_variation)
+		        Sleep(40)
+		        }
     
-	    }
+		    }
+		}
 	}
 
 	// SHEEP

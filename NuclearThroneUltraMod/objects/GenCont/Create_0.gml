@@ -8,46 +8,9 @@ wave = 0
 if instance_exists(Player)
 {
 
-with Player{
-
-if race=16
-    {
-    armour++;
-    if skill_got[5]
-    armour++;
-    
-    }
-if ultra_got[62]//Viking armour up ultra
-    armour++;
+with Player {
 
 
-if race==10//Rebel pasive
-    {
-    //(maxhealth-my_health)/2
-    if my_health<maxhealth
-    my_health+=round((maxhealth-my_health)/2);
-    if ultra_got[40]=1{//Rebel Ultra D
-    my_health=maxhealth;
-    }
-    }
-    else if race=12//yung cuz reset max HP
-    {
-	    if skill_got[1]{//rhino skin
-	    maxhealth=12;}
-	    else{
-	    maxhealth=8;}
-		if skill_got[33]//Glass arm cannon
-			maxhealth-=2;
-	    if ultra_got[47]//SPAM basicly rebel
-	    {
-    
-	    if my_health<maxhealth
-	    my_health+=round((maxhealth-my_health)/2);
-    
-	    }
-    
-    }
-    
     
 x = 10016
 y = 10016

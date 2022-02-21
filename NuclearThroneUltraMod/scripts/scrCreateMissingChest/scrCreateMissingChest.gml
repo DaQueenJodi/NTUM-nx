@@ -17,6 +17,5 @@ function scrCreateMissingChest(typeOfChest, gol){
 			{
 				instance_create(x+16,y+16,typeOfChest);
 			}
-			debug("created a missing chest: ",object_get_name(typeOfChest));
 		}
 }

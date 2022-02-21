@@ -44,12 +44,12 @@ function scrPopChests() {
 		with instance_furthest(Player.x,Player.y,WeaponChest)
 		instance_create(x,y,ProtoChest)}
 		gol = 0
+		wepChestGol = 0;
+		healthChestGol = 0;
 		}
 	
 	}
-	debug("I want this many healthchests: ",healthChestGol);
 	if instance_exists(HealthChest)
-	debug("and I currently have: ",instance_number(HealthChest));
 	var totalWepsChests=0,totalRadChests=0,totalAmmoChests=0,totalHealthChests=0;
 	if instance_exists(WeaponChest)
 	{
@@ -78,22 +78,18 @@ function scrPopChests() {
 	}
 	if (totalWepsChests < wepChestGol)
 	{
-		debug("WeaponChest");
 		scrCreateMissingChest(WeaponChest,wepChestGol);	
 	}
 	if (totalRadChests < gol)
 	{
-		debug("RadChest");
 		scrCreateMissingChest(RadChest,gol);	
 	}
 	if (totalAmmoChests < gol)
 	{
-		debug("AmmoChest");
 		scrCreateMissingChest(AmmoChest,gol);	
 	}
 	if (totalHealthChests < healthChestGol)
 	{
-		debug("HPCHEST");
 		scrCreateMissingChest(HealthChest,healthChestGol);	
 	}
 	

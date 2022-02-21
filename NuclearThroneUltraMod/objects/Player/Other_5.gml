@@ -82,6 +82,39 @@ invertedportalcounter=0;
 if hard > UberCont.cbst_diff[race]
 UberCont.cbst_diff[race] = hard
 
+//Health manipulation!
+if race=16
+    {
+    armour++;
+    if skill_got[5]
+		armour++;
+    
+    }
+if ultra_got[62]//Viking armour up ultra
+    armour++;
+
+if race==10//Rebel pasive
+{
+	//(maxhealth-my_health)/2
+	if my_health<maxhealth
+		my_health += round((maxhealth-my_health)*0.5);
+}
+else if race=12//yung cuz reset max HP
+{
+	if skill_got[1]{//rhino skin
+		maxhealth=12;
+	}
+	else{
+		maxhealth=8;
+	}
+	if skill_got[33]//Glass arm cannon
+		maxhealth-=2;
+	
+}
+if ultra_got[40] = 1 || ultra_got[47] {//Rebel Ultra D YUNG CUZ ULTRA C
+	my_health=max(my_health,maxhealth);
+}
+
 //CROWN OF LIFE
 if crown = 2
 {
@@ -407,6 +440,7 @@ subarea = 1
 
 if restarted
 	exit;
+	
 //UNLOCK GAME MODE CLAUSTROFOBIA
 if seconds<12&&!instance_exists(MenuGen) &&!instance_exists(Menu) && ( my_health>0 ||bleed>0 )
 {//CLAUSTROFOBIA GAMEMODE UNLOCK

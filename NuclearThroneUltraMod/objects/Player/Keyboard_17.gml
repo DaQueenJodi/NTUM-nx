@@ -62,7 +62,7 @@ if UberCont.public = 0 {
     }
 
     if keyboard_check_pressed(ord("4")) {
-        area = 112
+        area = 100
         subarea = 0;
         inverted = true;
         with enemy
