@@ -1,3 +1,4 @@
+//SHOULD PROBABLY NOT USE ROOM size but instead viewport
 var wratio = window_get_width()/room_width;
 var hratio = window_get_height()/room_height;
 var lplusratio = wratio/hratio;

@@ -4,6 +4,7 @@ function scrSaveOptions() {
 	ini_write_real("OPTIONS","sfxvol",opt_sfxvol);
 	ini_write_real("OPTIONS","musvol",opt_musvol);
 	ini_write_real("OPTIONS","ambvol",opt_ambvol);
+	ini_write_real("OPTIONS","3daudio",opt_3d_audio);
 
 	//visual
 	ini_write_real("OPTIONS","fulscrn",opt_fulscrn);
