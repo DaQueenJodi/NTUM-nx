@@ -1861,6 +1861,7 @@
     {"id":{"name":"mskDisc","path":"sprites/mskDisc/mskDisc.yy",},"order":3,},
     {"id":{"name":"sprGyroBurst","path":"sprites/sprGyroBurst/sprGyroBurst.yy",},"order":5,},
     {"id":{"name":"mskGyroBurst","path":"sprites/mskGyroBurst/mskGyroBurst.yy",},"order":7,},
+    {"id":{"name":"sprExtraFeetCloseDodge","path":"sprites/sprExtraFeetCloseDodge/sprExtraFeetCloseDodge.yy",},"order":26,},
     {"id":{"name":"sprGyroBurstStart","path":"sprites/sprGyroBurstStart/sprGyroBurstStart.yy",},"order":9,},
     {"id":{"name":"sprGyroBurstEnd","path":"sprites/sprGyroBurstEnd/sprGyroBurstEnd.yy",},"order":11,},
     {"id":{"name":"sprEnemyDisc","path":"sprites/sprEnemyDisc/sprEnemyDisc.yy",},"order":13,},

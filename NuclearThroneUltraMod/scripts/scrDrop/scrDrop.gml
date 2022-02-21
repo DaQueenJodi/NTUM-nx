@@ -84,15 +84,21 @@ function scrDrop(itemdrop, weapondrop) {
 	        if (random(100) < 10+(Player.skill_got[4]*0.5)+(Player.skill_got[28]*(Player.rage*0.0004)) )//rage=0.001
 	        {
 	        if random(Player.maxhealth) > Player.my_health and random(3) < 2 and Player.crown != 2
+			{
 	        instance_create(x+random(4)-2,y+random(4)-2,HealthChest)
+			return true;
+			}
 	        else if Player.crown != 5
+			{
 	        instance_create(x+random(4)-2,y+random(4)-2,AmmoChest)
+			return true;
+			}
 	        exit;
 	        }
 	        else if random(100) < 10*(Player.skill_got[4]*0.6)+(Player.skill_got[28]*(Player.rage*0.0004)) //rage=0.001
 	        {
 	        instance_create(x+random(4)-2,y+random(4)-2,WeaponChest);
-	        exit;
+			return true;
 	        }
 	    }
 	//drop items
@@ -100,9 +106,15 @@ function scrDrop(itemdrop, weapondrop) {
 	{//0.3 for each ally Rebel has REBEL ULTRA C?
 
 	if random(Player.maxhealth) > Player.my_health and random(3) < 2 and Player.crown != 2
+	{
 	instance_create(x+random(4)-2,y+random(4)-2,HPPickup)
+	return true;
+	}
 	else if Player.crown != 5
+	{
 	instance_create(x+random(4)-2,y+random(4)-2,AmmoPickup)
+	return true;
+	}
 	}
 	else if random(100) < weapondrop*(1+Player.skill_got[4]*(0.5+Player.betterrabbitpaw) +(Player.ultra_got[39]*instance_number(Ally)*0.3)+(Player.skill_got[28]*(Player.rage*0.0004)) )//rage=0.001
 	{
@@ -117,12 +129,7 @@ function scrDrop(itemdrop, weapondrop) {
 	curse = 0
 	sprite_index = wep_sprt[wep]
 	}
-
-    
-
+	return true;
 	}
 	}
-
-
-
 }

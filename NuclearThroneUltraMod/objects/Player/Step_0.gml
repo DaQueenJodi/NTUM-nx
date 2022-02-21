@@ -1220,12 +1220,18 @@ if extrafeetalarm==1 && extrafeetdodged
 {
 if race=25
 {
-instance_create(x,y-10,Notice);
+with instance_create(x+10,y+5,RedirectFX)
+{
+	sprite_index = sprExtraFeetCloseDodge;	
+}
 scrDrop(55,0);
 }
 else
 {
-instance_create(x,y-10,Notice);
+with instance_create(x+10,y+5,RedirectFX)
+{
+	sprite_index = sprExtraFeetCloseDodge;	
+}
 scrDrop(50,0);
 }
 
