@@ -31,6 +31,7 @@ walk = 0;
 alarm[1] = 0;
 
 snd_hurt = sndNothingHurtHigh;
+snd_dead = sndNothingDeath1
 
 sprite_index = spr_idle;
 
@@ -89,3 +90,8 @@ walkDir = 0;
 
 beamY = y;
 fireTriShot = false;
+
+aTime = 10;
+difficultyStep = 0;
+
+xStart = x;

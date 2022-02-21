@@ -3189,7 +3189,7 @@ function scrWeapons() {
 	wep_name[289] = "ULTRA SLUGGER"
 	wep_type[289] = 2
 	wep_auto[289] = 0
-	wep_load[289] = 15//22
+	wep_load[289] = 13//22
 	wep_cost[289] = 2
 	wep_sprt[289] = sprUltraSlugger
 	wep_area[289] = 18

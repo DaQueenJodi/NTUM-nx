@@ -1,5 +1,5 @@
 
-function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = true, priority = 2) {
+function snd_play(sndId, randompitch = 0, cancelPrev = true, usesLocation = true, priority = 2) {
 	//SS_Init();
 	if UberCont.opt_3d_audio == 0
 	{

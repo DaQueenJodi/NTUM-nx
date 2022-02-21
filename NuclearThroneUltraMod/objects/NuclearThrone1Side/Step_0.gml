@@ -1,29 +1,34 @@
 /// @description Check if I die so disable me
-if my_health <= 0
+if my_health <= 0 && !disable
 {
 	disable = true;
+	debug("GOT EM");
 	if isLeft
 	{
 		spr_idle = sprNothingLeftDeactivated;
 		spr_hurt = sprNothingLeftDeactivatedHurt;
+		with NuclearThrone1
+		{
+			aTime = max(aTime-1,1);
+			with rightSide
+			{
+				firerate = max(firerate - 1, 1);
+				maxAmmo = max(maxAmmo - 2, 3);
+			}
+		}
 	}
 	else
 	{
 		spr_idle = sprNothingRightDeactivated;
 		spr_hurt = sprNothingRightDeactivatedHurt;
-	}
-}
-if owner > -1 && instance_exists(owner)
-{
-	x = owner.x + xOffset;
-	y = owner.y + yOffset;
-	if owner.walk > 0
-	{
-		walk += 0.9;
-		if walk > sprite_get_number(sprNothingLeg)
+		with NuclearThrone1
 		{
-			walk = 0;
-			snd_play(sndNothingFootstep);
+			aTime = max(aTime-1,1);
+			with rightSide
+			{
+				firerate = max(firerate - 1, 1);
+				maxAmmo = max(maxAmmo - 2, 3);
+			}
 		}
 	}
 }

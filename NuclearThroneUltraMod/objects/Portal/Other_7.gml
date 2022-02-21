@@ -10,7 +10,11 @@ sprite_index = sprPortalInverted
 if type = 3
 sprite_index = sprProtoPortal
 }
-if sprite_index = sprPortalDisappear or sprite_index = sprProtoPortalDisappear or sprite_index = sprPortalInvertedDisappear
+if sprite_index == sprBigPortalSpawn
+{
+	sprite_index = sprBigPortal;	
+}
+if sprite_index = sprPortalDisappear or sprite_index = sprProtoPortalDisappear or sprite_index = sprPortalInvertedDisappear || sprite_index = sprBigPortalDisappear
 {
 	var canRestart = false;
 	with Player

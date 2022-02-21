@@ -64,3 +64,21 @@ if (my_health < prevhealth)
 		}
 	}
 }
+//Ignore collision when moving
+var msk = mask_index;
+mask_index = mskPickupThroughWall;
+if owner > -1 && instance_exists(owner)
+{
+	x = owner.x + xOffset;
+	y = owner.y + yOffset;
+	if owner.walk > 0
+	{
+		walk += 0.9;
+		if walk > sprite_get_number(sprNothingLeg)
+		{
+			walk = 0;
+			snd_play(sndNothingFootstep);
+		}
+	}
+}
+mask_index = msk;

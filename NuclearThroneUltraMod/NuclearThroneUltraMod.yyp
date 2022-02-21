@@ -1626,6 +1626,7 @@
     {"id":{"name":"sndSheepLoop","path":"sounds/sndSheepLoop/sndSheepLoop.yy",},"order":0,},
     {"id":{"name":"sprUltraShopMenuMediumWepChest","path":"sprites/sprUltraShopMenuMediumWepChest/sprUltraShopMenuMediumWepChest.yy",},"order":15,},
     {"id":{"name":"mskUltraShopMenuMediumWepChest","path":"sprites/mskUltraShopMenuMediumWepChest/mskUltraShopMenuMediumWepChest.yy",},"order":17,},
+    {"id":{"name":"ThroneExplo","path":"objects/ThroneExplo/ThroneExplo.yy",},"order":5,},
     {"id":{"name":"sprUltraShopMenuMediumAmmoChest","path":"sprites/sprUltraShopMenuMediumAmmoChest/sprUltraShopMenuMediumAmmoChest.yy",},"order":19,},
     {"id":{"name":"sprUltraShopMenuDamage","path":"sprites/sprUltraShopMenuDamage/sprUltraShopMenuDamage.yy",},"order":21,},
     {"id":{"name":"mskUltraShopMenuDamage","path":"sprites/mskUltraShopMenuDamage/mskUltraShopMenuDamage.yy",},"order":23,},

@@ -1,10 +1,12 @@
 /// @description Tri shot
+if disable
+	exit;
 if owner > -1 && owner.fireTriShot
 {
 	alarm[1] = firerate;
 	if isLeft
 		snd_play(sndNothingFire);
-	var angleStep = 40;
+	var angleStep = 20;
 	var angle = gunangle[angleI] - angleStep;
 	repeat(3)
 	{

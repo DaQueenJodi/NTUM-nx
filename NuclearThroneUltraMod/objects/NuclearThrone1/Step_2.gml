@@ -4,7 +4,7 @@
 event_inherited();
 
 hspeed = 0;
-x = xstart;
+x = xStart;
 vspeed *= 0.1;
 if instance_exists(ThroneBeam)
 {

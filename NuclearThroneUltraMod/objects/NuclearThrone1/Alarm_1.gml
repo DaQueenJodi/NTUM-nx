@@ -1,5 +1,5 @@
 /// @description AI
-alarm[1] = 10+random(10);
+alarm[1] = aTime+random(10);
 fireTriShot = false;
 var beamL = x - 20;
 var beamR = x + 20;

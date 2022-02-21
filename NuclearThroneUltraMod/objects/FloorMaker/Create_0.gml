@@ -39,11 +39,15 @@ else if Player.area = 10
 	goal = 130
 }
 else if Player.area == 9 && Player.subarea == 3
-goal = 260;
+goal = 350;
 }
 
 if UberCont.opt_gamemode==6//small levels
+{
 goal=30;
+if Player.area == 9 && Player.subarea == 3
+goal = 290;
+}
 
 if instance_exists(MenuGen)
 goal = 80//60

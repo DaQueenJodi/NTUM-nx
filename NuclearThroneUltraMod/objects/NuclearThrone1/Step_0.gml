@@ -3,7 +3,7 @@ if intro
 		BackCont.shake = max(BackCont.shake, 8);
 if immune
 {
-	my_health = maxhealth;
+	my_health = maxhealth;//TODO APPLY ENEMY HEALTH CHANGES
 	if !active && !intro
 	{
 		speed = 0;
@@ -45,8 +45,39 @@ else
 		speed = 5;
 	}
 }
+if my_health < maxhealth*0.6 && difficultyStep < 1
+{
+	difficultyStep ++;
+	snd_play(sndNothingMidHP);
+	snd_hurt = sndNothingHurtMid;
+	aTime = max(aTime-1,1);
+	with NuclearThrone1Side
+	{
+		snd_hurt = sndNothingHurtMid;
+		firerate = max(firerate - 1, 1);
+		maxAmmo = max(maxAmmo - 2, 3);
+	}
+}
+if my_health < maxhealth*0.2 && difficultyStep < 2
+{
+	difficultyStep ++;
+	snd_play(sndNothingLowHP);
+	snd_hurt = sndNothingHurtLow;
+	aTime = max(aTime-1,1);
+	with NuclearThrone1Side
+	{
+		snd_hurt = sndNothingHurtLow;
+		firerate = max(firerate - 1, 1);
+		maxAmmo = max(maxAmmo - 2, 3);
+	}
+}
 if (my_health <= 0)
 {
 	//This is the death event
+	with NuclearThrone1Side
+	{
+		instance_destroy();	
+	}
+	instance_destroy();
 	
 }
