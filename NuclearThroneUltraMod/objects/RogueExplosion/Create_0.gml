@@ -30,3 +30,4 @@ if Player.bskin=2
 sprite_index=sprRogueCExplosion;
 }
 
+dmg = 5;

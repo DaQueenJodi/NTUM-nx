@@ -1001,7 +1001,7 @@ function scrWeapons() {
 	wep_type[90] = 1
 	wep_auto[90] = 0
 	wep_load[90] = 8
-	wep_cost[90] = 2
+	wep_cost[90] = 0
 	wep_sprt[90] = sprAPistol
 	wep_area[90] = 1
 	wep_text[90] = ""
@@ -3244,7 +3244,7 @@ function scrWeapons() {
 	wep_name[294] = "CHARGE SHOTGUN"
 	wep_type[294] = 2
 	wep_auto[294] = 0
-	wep_load[294] = 30
+	wep_load[294] = 28
 	wep_cost[294] = 0
 	wep_sprt[294] = sprChargeShotgun
 	wep_area[294] = 3
@@ -3255,7 +3255,7 @@ function scrWeapons() {
 	wep_name[295] = "CHARGE LASER"
 	wep_type[295] = 5
 	wep_auto[295] = 0
-	wep_load[295] = 34
+	wep_load[295] = 32
 	wep_cost[295] = 0
 	wep_sprt[295] = sprChargeLaserGun
 	wep_area[295] = 3
@@ -4090,7 +4090,7 @@ function scrWeapons() {
 	wep_auto[370] = 0
 	wep_load[370] = 6//11
 	wep_cost[370] = 0
-	wep_sprt[370] = sprUltraScrewDriver
+	wep_sprt[370] = sprObsidianThrowingKnife
 	wep_area[370] = 2
 	wep_text[370] = "toss me"
 	wep_swap[370] = sndSwapSword

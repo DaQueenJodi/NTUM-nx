@@ -1,4 +1,4 @@
 event_inherited();
-rate=0;
+rate=1;
 snd_play(sndCharge);
 

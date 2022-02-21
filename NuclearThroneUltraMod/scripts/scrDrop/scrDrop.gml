@@ -1,6 +1,14 @@
 function scrDrop(itemdrop, weapondrop) {
 	if instance_exists(Player)
 	{
+		var lps = Player.loops;
+		if lps > 0
+		{
+			repeat (min(lps,4))
+			{
+				itemdrop *= 0.9;
+			}
+		}
 	if Player.crown = 5//crown of guns
 	{
 		weapondrop*=1.3;

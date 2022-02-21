@@ -3,7 +3,7 @@ if other.team != team and other.team != 0 && (other.team!=2 || image_index<5/*no
 	with other
 	{
 
-	var immunelimit = 4;
+	var immunelimit = 5;
 
 	var immune;
 	immune = 0
@@ -14,7 +14,7 @@ if other.team != team and other.team != 0 && (other.team!=2 || image_index<5/*no
 			immune = 1
 
 			if race=25
-			immunelimit=5;
+			immunelimit=6;
 			
 			if immunelimit>maxhealth
 			immunelimit=maxhealth;

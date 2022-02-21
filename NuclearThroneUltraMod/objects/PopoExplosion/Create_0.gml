@@ -20,6 +20,8 @@ BackCont.shake += 7
 
 team = 3
 
+dmg = 4;
+
 Humphry=false;//gets assigned true when playing as humphry and firing
 HumphryNr=0;
 HumphryHit=0;

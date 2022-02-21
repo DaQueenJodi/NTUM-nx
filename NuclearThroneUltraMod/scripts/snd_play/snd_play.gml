@@ -1,5 +1,5 @@
 
-function snd_play(sndId, randompitch = 0, cancelPrev = true, usesLocation = true, priority = 2) {
+function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = true, priority = 2) {
 	//SS_Init();
 	if UberCont.opt_3d_audio == 0
 	{
@@ -30,7 +30,7 @@ function snd_play(sndId, randompitch = 0, cancelPrev = true, usesLocation = true
 				if nearest.mySound == sndId
 				{
 					audio_stop_sound(sndId);
-					if nearest.alarm[0] > 10
+					if nearest.alarm[0] > 20
 					{
 						playSound = false;
 						instance_destroy();

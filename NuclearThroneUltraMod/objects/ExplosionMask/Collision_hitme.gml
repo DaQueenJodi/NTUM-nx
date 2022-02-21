@@ -3,7 +3,7 @@ if other.team = 2 && instance_exists(Player)
 with other
 {
 
-var immunelimit = 4;
+var immunelimit = 5;
 
 var immune;
 immune = 0
@@ -11,10 +11,10 @@ if Player.skill_got[14] = 1{
 immune = 1
 
 if Player.race=25//Mutation smith
-immunelimit=5;
+immunelimit=6;
 
 if Player.ultra_got[97]//Mutation Doctor Ultra A
-immunelimit=7;
+immunelimit=8;
 //alarm[4]=120;
 
 if immunelimit>Player.maxhealth
@@ -28,17 +28,17 @@ snd_play(snd_hurt, hurt_pitch_variation)
 
 if immune = 1
 {
-alarm[4]=50;
-if my_health > immunelimit
-{
-if my_health-5 < immunelimit
-my_health = immunelimit
-else
-my_health -= 5
+	alarm[4]=50;
+	if my_health > immunelimit
+	{
+	if my_health-other.dmg < immunelimit
+	my_health = immunelimit
+	else
+	my_health -= other.dmg
+	}
 }
-}
 else
-my_health-=5;
+	my_health-=other.dmg;
 
 sprite_index = spr_hurt
 image_index = 0

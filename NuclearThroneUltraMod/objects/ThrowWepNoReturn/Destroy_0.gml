@@ -3,7 +3,7 @@
 with instance_create(x,y,WepPickup)
 {
 	oneweponly=false;
-    image_angle=other.image_angle;
+    image_angle=other.direction;
     scrWeapons()
     wep=other.wep
     name = wep_name[wep]

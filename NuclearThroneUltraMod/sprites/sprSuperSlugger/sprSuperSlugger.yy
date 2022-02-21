@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Weapons",
-    "path": "folders/Sprites/Weapons.yy",
+    "name": "Existing",
+    "path": "folders/Sprites/Weapons/Existing.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSuperSlugger",
