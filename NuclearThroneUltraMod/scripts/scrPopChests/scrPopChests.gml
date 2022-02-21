@@ -49,7 +49,6 @@ function scrPopChests() {
 		}
 	
 	}
-	if instance_exists(HealthChest)
 	var totalWepsChests=0,totalRadChests=0,totalAmmoChests=0,totalHealthChests=0;
 	if instance_exists(WeaponChest)
 	{
