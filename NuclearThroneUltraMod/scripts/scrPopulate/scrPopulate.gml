@@ -41,8 +41,16 @@ function scrPopulate() {
 	}
 
 	instance_exists(Player){//112inv lab
-	if Player.area = 104||(Player.area==6&&Player.subarea==2&&Player.loops>0)||(Player.area==112&&Player.subarea==2){
-	exit;}}
+		if	(Player.area==112&&Player.subarea==2)
+		{
+			scrPopChests();
+			exit;
+		}
+		if Player.area = 104||(Player.area==6&&Player.subarea==2&&Player.loops>0)
+		{
+			exit;
+		}
+	}
 
 	if random(10+Player.hard) < Player.hard and point_distance(x,y,Player.x,Player.y) > 160/*110*/ and !place_meeting(x,y,RadChest) and !place_meeting(x,y,AmmoChest) and !place_meeting(x,y,WeaponChest) and ((x+16 != Player.x and y+16 != Player.y) or point_distance(x,y,Player.x,Player.y) > 300)//240
 	    {

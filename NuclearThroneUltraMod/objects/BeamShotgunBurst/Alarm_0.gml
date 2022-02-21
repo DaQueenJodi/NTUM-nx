@@ -7,7 +7,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-snd_play(sndShotgun)
+snd_play_2d(sndShotgun)
 if (instance_exists(Player))
 {
     repeat(2)

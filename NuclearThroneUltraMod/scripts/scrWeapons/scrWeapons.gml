@@ -1641,7 +1641,7 @@ function scrWeapons() {
 	wep_load[148] = 30
 	wep_cost[148] = 2
 	wep_sprt[148] = sprPistole
-	wep_area[148] = 1
+	wep_area[148] = 0
 	wep_text[148] = "shotgun pistol yo"
 	wep_swap[148] = sndSwapPistol
 	wep_rad[148] = 0;
@@ -4077,7 +4077,7 @@ function scrWeapons() {
 	wep_name[369] = "ULTRA SCREWDRIVER"
 	wep_type[369] = 0
 	wep_auto[369] = 0
-	wep_load[369] = 6//11
+	wep_load[369] = 5
 	wep_cost[369] = 0
 	wep_sprt[369] = sprUltraScrewDriver
 	wep_area[369] = 19

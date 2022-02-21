@@ -301,4 +301,4 @@ if(instance_exists(Player))
 	alarm[1] = irandom(90);
 }
 }
-depth = 50;
+depth = 8;

@@ -1,7 +1,7 @@
 raddrop = 50
 maxhealth = 230//180
-meleedamage = 2;
-size = 3
+meleedamage = 0;
+size = 5
 
 if UberCont.loops>1
 maxhealth=230;
@@ -55,7 +55,6 @@ instance_create(x+16,y-16,InvertedBigMachineTurret);
 }
 }
 
-lasthealth=my_health;
 
 instance_create(x,y,BigMachineMask);
 

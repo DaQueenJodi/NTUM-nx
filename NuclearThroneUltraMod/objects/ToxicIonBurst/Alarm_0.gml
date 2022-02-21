@@ -8,7 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-snd_play(sndToxicBoltGas);
+snd_play_2d(sndToxicBoltGas);
 
 if place_meeting(mouse_x,mouse_y,Floor)
 {

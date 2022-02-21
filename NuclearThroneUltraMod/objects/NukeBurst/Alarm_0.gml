@@ -8,7 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y-4+(ammo*4)//-4+8=4 -4+4=0 -4+0=-4
 //FIRING
-snd_play(sndNukeFire)
+snd_play_2d(sndNukeFire)
 
 
 with instance_create(x,y,Nuke)

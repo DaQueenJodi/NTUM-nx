@@ -1,7 +1,7 @@
 raddrop = 30
-maxhealth = 320;//280
-meleedamage = 1;
-size = 3
+maxhealth = 300;//280
+meleedamage = 0;
+size = 5
 
 event_inherited()
 
@@ -52,7 +52,6 @@ instance_create(x+16,y-16,BigMachineTurret);
 }
 }
 
-lasthealth=my_health;
 
 instance_create(x,y,BigMachineMask);
 

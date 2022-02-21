@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndFiretrap",
-  "duration": 0.0,
+  "duration": 2.506667,
   "parent": {
     "name": "Enviroment",
     "path": "folders/Sounds/Enviroment.yy",

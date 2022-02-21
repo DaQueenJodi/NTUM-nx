@@ -217,11 +217,14 @@ else
 		scrRaddrop();
 	}
 	//SAVE STUFF
-	BackCont.kills = kills
-	BackCont.area = area
-	BackCont.subarea = subarea
-	BackCont.hard = hard
-	BackCont.loops = loops
+	if instance_exists(BackCont)
+	{
+		BackCont.kills = kills
+		BackCont.area = area
+		BackCont.subarea = subarea
+		BackCont.hard = hard
+		BackCont.loops = loops
+	}
 
 	with UberCont
 	{

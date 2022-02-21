@@ -8,7 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-snd_play(sndGrenade)
+snd_play_2d(sndGrenade)
 
 
 with instance_create(x,y,DoomGrenade)

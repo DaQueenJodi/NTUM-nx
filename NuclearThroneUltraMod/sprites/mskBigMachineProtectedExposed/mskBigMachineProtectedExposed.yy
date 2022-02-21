@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6b95fdb8-0926-4d8e-a324-410ea50bcf6d","path":"sprites/maskBigMachineProtectedExposed/maskBigMachineProtectedExposed.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6b95fdb8-0926-4d8e-a324-410ea50bcf6d","path":"sprites/maskBigMachineProtectedExposed/maskBigMachineProtectedExposed.yy",},"LayerId":{"name":"bacf0010-e238-459b-a1a7-6b67d383c842","path":"sprites/maskBigMachineProtectedExposed/maskBigMachineProtectedExposed.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"maskBigMachineProtectedExposed","path":"sprites/maskBigMachineProtectedExposed/maskBigMachineProtectedExposed.yy",},"resourceVersion":"1.0","name":"6b95fdb8-0926-4d8e-a324-410ea50bcf6d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6b95fdb8-0926-4d8e-a324-410ea50bcf6d","path":"sprites/mskBigMachineProtectedExposed/mskBigMachineProtectedExposed.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6b95fdb8-0926-4d8e-a324-410ea50bcf6d","path":"sprites/mskBigMachineProtectedExposed/mskBigMachineProtectedExposed.yy",},"LayerId":{"name":"bacf0010-e238-459b-a1a7-6b67d383c842","path":"sprites/mskBigMachineProtectedExposed/mskBigMachineProtectedExposed.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mskBigMachineProtectedExposed","path":"sprites/mskBigMachineProtectedExposed/mskBigMachineProtectedExposed.yy",},"resourceVersion":"1.0","name":"6b95fdb8-0926-4d8e-a324-410ea50bcf6d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"maskBigMachineProtectedExposed","path":"sprites/maskBigMachineProtectedExposed/maskBigMachineProtectedExposed.yy",},
+    "spriteId": {"name":"mskBigMachineProtectedExposed","path":"sprites/mskBigMachineProtectedExposed/mskBigMachineProtectedExposed.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -41,10 +41,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3f371529-2a75-446c-b4b8-501c5dbd70c4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b95fdb8-0926-4d8e-a324-410ea50bcf6d","path":"sprites/maskBigMachineProtectedExposed/maskBigMachineProtectedExposed.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3f371529-2a75-446c-b4b8-501c5dbd70c4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b95fdb8-0926-4d8e-a324-410ea50bcf6d","path":"sprites/mskBigMachineProtectedExposed/mskBigMachineProtectedExposed.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -58,9 +58,9 @@
     "yorigin": 62,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"maskBigMachineProtectedExposed","path":"sprites/maskBigMachineProtectedExposed/maskBigMachineProtectedExposed.yy",},
+    "parent": {"name":"mskBigMachineProtectedExposed","path":"sprites/mskBigMachineProtectedExposed/mskBigMachineProtectedExposed.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "mskBigMachineProtectedExposed",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Enemies/Boss/Technomancer.yy",
   },
   "resourceVersion": "1.0",
-  "name": "maskBigMachineProtectedExposed",
+  "name": "mskBigMachineProtectedExposed",
   "tags": [],
   "resourceType": "GMSprite",
 }

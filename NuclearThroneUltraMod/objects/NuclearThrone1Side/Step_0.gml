@@ -1,7 +1,6 @@
 /// @description Check if I die so disable me
 if my_health <= 0
 {
-	debug("health below 0");
 	disable = true;
 	if isLeft
 	{

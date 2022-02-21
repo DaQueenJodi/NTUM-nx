@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Vulcano",
-    "path": "texturegroups/Vulcano",
-  },
   "bboxMode": 1,
   "collisionKind": 1,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 18,
   "height": 18,
+  "textureGroupId": {
+    "name": "Vulcano",
+    "path": "texturegroups/Vulcano",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -56,7 +56,7 @@
             {"id":"d168b928-d628-4a9f-81c9-45a498d9c67b","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"01bcf57a-d8a9-4833-898f-97b976ad1ddc","path":"sprites/sprFloor7Explo/sprFloor7Explo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

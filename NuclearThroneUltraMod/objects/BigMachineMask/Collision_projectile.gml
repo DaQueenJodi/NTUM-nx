@@ -10,6 +10,7 @@ if BigMachine.alarm[3]<1
 	    instance_destroy();
     }
 	//Reduced damage
+	if proj.team != 1
 	with BigMachine
 	{
 		my_health -= proj.dmg*0.2;
@@ -33,6 +34,7 @@ if InvertedBigMachine.alarm[3]<1
 		instance_destroy();
     }
 	//Reduced damage
+	if proj.team != 1
 	with InvertedBigMachine
 	{
 		my_health -= proj.dmg*0.18;

@@ -475,30 +475,32 @@ wep_auto[wep] = 1 wep_auto[bwep] = 1}
 if (KeyCont.key_fire[p] = 1 or keyfire = 1) and wep_auto[wep] = 0 and ((wep_type[wep] = 0 or wep_type[wep] = 1) or can_shoot = 1) and reload < 15
 clicked = 1
 
-if (KeyCont.key_fire[p] = 1 or keyfire = 1) and wep_type[wep] != 0
-{//this could be done better
-if  ammo[wep_type[wep]] < wep_cost[wep]
+if (KeyCont.key_fire[p] = 1 or keyfire = 1)
 {
-if wep == 29|| wep==60 || wep==61 || wep==83 || wep==84 || wep==132//|| wep==109//ALL THE BLOOD WEAPONS!
-{//glove is not included because that shits just to buggy
-//BLOOD LAUNCHER,Pistol,Shotgun,rifle,triple,bulletshotty
-ammo[wep_type[wep]] += wep_cost[wep]
-sprite_index = spr_hurt
-image_index = 0
-my_health -= 1
-snd_play(snd_hurt, hurt_pitch_variation)
-Sleep(40)
-alarm[3]=0;//remove immunity from bloodglove
-}
-else
-scrEmpty()
-}
-if rad-wep_rad[wep]<0
-{//not enough radiation
-clicked = 0
-scrEmptyRad();
-other.wkick = -2
-}
+	if  ammo[wep_type[wep]] < wep_cost[wep] && wep_type[wep] != 0
+	{
+	if wep == 29|| wep==60 || wep==61 || wep==83 || wep==84 || wep==132//|| wep==109//ALL THE BLOOD WEAPONS!
+	{//glove is not included because that shits just to buggy
+	//BLOOD LAUNCHER,Pistol,Shotgun,rifle,triple,bulletshotty
+	ammo[wep_type[wep]] += wep_cost[wep]
+	sprite_index = spr_hurt
+	image_index = 0
+	my_health -= 1
+	snd_play(snd_hurt, hurt_pitch_variation)
+	Sleep(40)
+	alarm[3]=0;//remove immunity from bloodglove
+	}
+	else
+	scrEmpty()
+	}
+	if rad-wep_rad[wep] < 0
+	{
+		//not enough radiation
+		debug("not enuf rad");
+		clicked = 0
+		scrEmptyRad();
+		other.wkick = -2
+	}
 }
 
 if can_shoot = 1 and (ammo[wep_type[wep]] >= wep_cost[wep] || wep_type[wep] == 0) and rad>=wep_rad[wep]
@@ -543,8 +545,8 @@ if wep_auto[wep] = 0 and clicked = 1
     if instance_number(Marker)>0
             reload*=instance_number(Marker)*0.5;
     
-        }
-    else{
+    }
+    else {
     
     scrFire()
     }

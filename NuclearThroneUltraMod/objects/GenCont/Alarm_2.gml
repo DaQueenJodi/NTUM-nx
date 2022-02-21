@@ -1,10 +1,4 @@
 /// @description BOSSES mods secret areas
-/*
-if (useSeed)
-{
-	random_set_seed(seed)
-	debug("set seed: ",seed);
-}*/
 if Player.area = 3 and Player.subarea = 3
 instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,BecomeScrapBoss)
 
@@ -52,7 +46,7 @@ else if Player.area = 100
 {
 with instance_furthest(Player.x,Player.y,Floor)
 {
-instance_create(x+16,y+16,CrownPickup)
+	instance_create(x+16,y+16,CrownPickup)
     if Player.crownvisits>1{
     instance_create(x-32,y-64,WeaponMod)
     with instance_create(x+64,y-64,WeaponMod)
@@ -84,7 +78,7 @@ if ((Player.area = 105||Player.area = 106||Player.area = 107||Player.area = 108|
 with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
 instance_create(x+16,y+16,WeaponMod)
 
-}//instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,WeaponMod);
+}
 
 
 //MUSHROOM WONDERLAND BANDITLAND
@@ -108,7 +102,7 @@ instance_create(instance_nearest(Player.x,Player.y,Floor).x+16, instance_nearest
 }
 
 //safe corridors pls
-if !(Player.area == 9 && Player.subarea == 3)
+if !(Player.area == 9 && Player.subarea == 3 || ((Player.area == 6 || Player.area == 112) && Player.subarea == 2))
 {
 	instance_create(Player.x,Player.y,WallBreak);
 	instance_create(Player.x+16,Player.y+16,WallBreak);
@@ -121,13 +115,3 @@ else
 	Player.x += 16;
 	Player.y -= 32;
 }
-
-//safe spawns?
-//Player.x=PlayerStartX;
-//Player.y=PlayerStartY;
-//Player.x=instance_nearest(10016,10016,Wall);
-//Player.y=instance_nearest(10016,10016,Wall);
-//instance_create(Player.x,Player.y,WallBreak);
-
-/* */
-/*  */

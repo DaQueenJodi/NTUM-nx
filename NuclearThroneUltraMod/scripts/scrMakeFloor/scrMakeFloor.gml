@@ -91,76 +91,68 @@ function scrMakeFloor() {
         
 	        for(yy=-1;yy<10;yy+=1){
         
+				if xx==4 && yy==0
+					instance_create(x+32*xx,y+32*yy,BigMachine);//the boss
+        
+		        if xx==0 && yy==0
+		        {
+		        instance_create(x+32*xx+16,y+32*yy+16,BigMachineLaser);
+		        }
         
         
-	        if xx==4 && yy==0
-	        instance_create(x+32*xx,y+32*yy,BigMachine);//the boss
+		        if xx==7 && yy==9
+		        {
+		        with instance_create(x+32*xx+16,y+32*yy-16,BigMachineLaser)
+		        image_xscale=-1;
+		        }
         
+		        if instance_exists(Player)
+		        {
+		        if Player.loops>0
+		        {//LOOP
+		        if xx==7 && yy==0
+		        {
+		        with instance_create(x+32*xx+16,y+32*yy-16,BigMachineLaser)
+		        image_xscale=-1;
+		        }
+		        }
+		        if Player.loops>1
+		        {//LOOP 2
+		        if xx==0 && yy==9
+		        {
+		        instance_create(x+32*xx+16,y+32*yy-16,BigMachineLaser)
         
-	        if xx==0 && yy==0
-	        {
-	        instance_create(x+32*xx+16,y+32*yy+16,BigMachineLaser);
-	        }
+		        }
+		        }
         
+		        if Player.loops>3
+		        {//LOOP 3
+		        if xx==0 && yy==4
+		        {
+		        instance_create(x+32*xx+16,y+32*yy-16,BigMachineLaser)
         
-	        if xx==7 && yy==9
-	        {
-	        with instance_create(x+32*xx+16,y+32*yy-16,BigMachineLaser)
-	        image_xscale=-1;
-	        }
-        
-	        if xx==4 && yy==7
-	        {
-	        instance_create(x+32*xx+16,y+32*yy+16,WeaponChest);
-	        }
-        
-	        if instance_exists(Player)
-	        {
-	        if Player.loops>0
-	        {//LOOP
-	        if xx==7 && yy==0
-	        {
-	        with instance_create(x+32*xx+16,y+32*yy-16,BigMachineLaser)
-	        image_xscale=-1;
-	        }
-	        }
-	        if Player.loops>1
-	        {//LOOP 2
-	        if xx==0 && yy==9
-	        {
-	        instance_create(x+32*xx+16,y+32*yy-16,BigMachineLaser)
-        
-	        }
-	        }
-        
-	        if Player.loops>3
-	        {//LOOP 3
-	        if xx==0 && yy==4
-	        {
-	        instance_create(x+32*xx+16,y+32*yy-16,BigMachineLaser)
-        
-	        }
-	        if xx==7 && yy==4
-	        {
-	        with instance_create(x+32*xx+16,y+32*yy-16,BigMachineLaser)
-	        image_xscale=-1;
-	        }
-	        }
-	        }
+		        }
+		        if xx==7 && yy==4
+		        {
+		        with instance_create(x+32*xx+16,y+32*yy-16,BigMachineLaser)
+		        image_xscale=-1;
+		        }
+		        }
+		        }
         
         
         
-	        with instance_create(x+32*xx,y+32*yy,Floor)
-	        {styleb=1;
-	        event_inherited();
-	        }
+		        with instance_create(x+32*xx,y+32*yy,Floor)
+		        {styleb=1;
+		        event_inherited();
+		        }
         
         
-	        if xx==0 && yy==-1
-	        instance_create(x+32*xx,y+32*yy+16,LabTrap);
+		        if xx==0 && yy==-1
+		        instance_create(x+32*xx,y+32*yy+16,LabTrap);
         
-	        if xx==7 && yy==-1
-	        instance_create(x+32*xx+16,y+32*yy+16,LabTrap)
+		        if xx==7 && yy==-1
+		        instance_create(x+32*xx+16,y+32*yy+16,LabTrap)
         
         
 	        }
@@ -204,12 +196,7 @@ function scrMakeFloor() {
 	        with instance_create(x+32*xx+16,y+32*yy-16,InvertedBigMachineLaser)
 	        image_xscale=-1;
 	        }
-        
-	        if xx==3 && yy==6
-	        {
-	        instance_create(x+32*xx+16,y+32*yy+16,WeaponChest);
-	        }
-        
+ 
 	        if instance_exists(Player)
 	        {
 	        if Player.loops>0

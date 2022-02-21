@@ -150,7 +150,7 @@
     {"id":{"name":"mskBigMachineExposed","path":"sprites/mskBigMachineExposed/mskBigMachineExposed.yy",},"order":31,},
     {"id":{"name":"mskBigMachine","path":"sprites/mskBigMachine/mskBigMachine.yy",},"order":33,},
     {"id":{"name":"sprUltraBanditWalk","path":"sprites/sprUltraBanditWalk/sprUltraBanditWalk.yy",},"order":66,},
-    {"id":{"name":"maskBigMachineProtectedExposed","path":"sprites/maskBigMachineProtectedExposed/maskBigMachineProtectedExposed.yy",},"order":35,},
+    {"id":{"name":"mskBigMachineProtectedExposed","path":"sprites/mskBigMachineProtectedExposed/mskBigMachineProtectedExposed.yy",},"order":35,},
     {"id":{"name":"sprBigMachineTurret","path":"sprites/sprBigMachineTurret/sprBigMachineTurret.yy",},"order":37,},
     {"id":{"name":"sprBigMachineTurretFire","path":"sprites/sprBigMachineTurretFire/sprBigMachineTurretFire.yy",},"order":39,},
     {"id":{"name":"sprBigMachineLaser","path":"sprites/sprBigMachineLaser/sprBigMachineLaser.yy",},"order":41,},

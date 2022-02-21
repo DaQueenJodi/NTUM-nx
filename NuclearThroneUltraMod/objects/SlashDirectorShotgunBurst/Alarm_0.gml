@@ -5,7 +5,7 @@ if instance_exists(creator)
 //x = creator.x
 //y = creator.y
 //FIRING
-snd_play(sndMachinegun)
+snd_play_2d(sndMachinegun)
 repeat(rate)
 {
 ammo -= 1

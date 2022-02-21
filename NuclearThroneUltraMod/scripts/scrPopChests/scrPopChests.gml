@@ -1,4 +1,51 @@
 function scrPopChests() {
+	//Special cases:
+	if instance_exists(Player)
+	{
+
+		if ((Player.area == 6 || Player.area == 112) && Player.subarea == 2)
+		{
+			with RadChest
+				instance_destroy(id,false);
+			with AmmoChest
+				instance_destroy(id,false);
+			with WeaponChest
+				instance_destroy(id,false);
+			var xx = 10096;
+			var yy = 10132;
+			instance_create(xx,yy+32,WeaponChest);
+			instance_create(xx+48,yy+32,AmmoChest);
+			if Player.skill_got[23]//OPEN MIND
+			{
+				instance_create(xx,yy+64,WeaponChest);
+				instance_create(xx+48,yy+64,AmmoChest);
+			}
+			if Player.crown == 15//CROWN OF CHOICE
+			{
+				instance_create(xx+24,yy+16,WeaponChest);
+			}
+			return;
+		}
+		if (Player.area == 9 && Player.subarea == 3)
+		{
+			var xx = Player.x;
+			var yy = Player.y;
+			xx = 10016+16;
+			yy = 10016+16;
+			instance_create(xx-48,yy-64,WeaponChest);
+			instance_create(xx+48,yy-64,AmmoChest);
+			if Player.skill_got[23]//OPEN MIND
+			{
+				instance_create(xx-96,yy-64,WeaponChest);
+				instance_create(xx+06,yy-64,AmmoChest);
+			}
+			if Player.crown == 15//CROWN OF CHOICE
+			{
+				instance_create(xx-72,yy-64,WeaponChest);
+			}
+			return;
+		}
+	}
 	var gol = 1;
 	var healthChestGol = choose(0,0,0,0,0,0,0,0,1);
 	var wepChestGol = gol;
@@ -79,32 +126,23 @@ function scrPopChests() {
 	{
 		scrCreateMissingChest(WeaponChest,wepChestGol);	
 	}
-	if (totalRadChests < gol)
-	{
-		scrCreateMissingChest(RadChest,gol);	
-	}
 	if (totalAmmoChests < gol)
 	{
 		scrCreateMissingChest(AmmoChest,gol);	
 	}
+	//LABS BOSS? no rad cannister
+	if instance_exists(Player) && ((Player.area == 6 || Player.area == 112) && Player.subarea == 2)
+	{
+		gol = 0;
+	}
+		
+	if (totalRadChests < gol)
+	{
+		scrCreateMissingChest(RadChest,gol);	
+	}
 	if (totalHealthChests < healthChestGol)
 	{
 		scrCreateMissingChest(HealthChest,healthChestGol);	
-	}
-	
-	if Player.area == 9 && Player.subarea == 3
-	{
-		var xx = Player.x;
-		var yy = Player.y;
-		xx = 10016+16;
-		yy = 10016+16;
-		instance_create(xx-48,yy-64,WeaponChest);
-		instance_create(xx+48,yy-64,AmmoChest);
-		if Player.skill_got[23]
-		{
-			instance_create(xx-96,yy-64,WeaponChest);
-			instance_create(xx+06,yy-64,AmmoChest);
-		}
 	}
 	
 	with ChestOpen

@@ -1,8 +1,6 @@
 /// @description collision
 with other{
-
-//if race != 18//Angel can fly over props
-motion_add(direction+180,other.speed+1)
-
+	var dir = point_direction(other.x,other.y,x,y)
+	motion_add(dir,10)
 }
 

@@ -3,4 +3,4 @@ sprite_index = sprNothingSwitchOn;
 spr_idle = sprNothingSwitchOn;
 spr_hurt = sprNothingSwitchOn;
 image_index = 0;
-alarm[1] = 60;
+alarm[7] = 60;
