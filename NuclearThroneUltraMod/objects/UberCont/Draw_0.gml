@@ -67,13 +67,16 @@ d = " DIFFICULTY: "+string(hard);
 
 txt0 = "#OPTIONS#KILLS: "+string(kills)+"  "+infotxt+d+"#########################PRESS [RIGHT CLICK] TO RETURN#PRESS [ENTER] FOR MAIN MENU"
 
-
+if UberCont.opt_loading == 4
+	var loadspeed = "MAX#"
+else
+	var loadspeed = string(scrAddZero(round(UberCont.opt_loading*100),2))+"%#";
 
 txt1 = "###AUDIO#MUSIC VOLUME#MASTER VOLUME#AMBIENT VOLUME#3D AUDIO##VISUALS#FULL SCREEN#CROSSHAIR#SIDE ART#BLOOM#SHADOWS#HIGH QUALITY##OTHER#SCREEN SHAKE#FREEZE FRAMES#LOADING SPEED#CAPTURE MOUSE#BOSS INTROS#TIMER"
 txt2 = "####"+string(scrAddZero(round(UberCont.opt_musvol*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_sfxvol*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_ambvol*100),2))
 +"%#"+string(scrOnOff(UberCont.opt_3d_audio))+"###"+string(scrOnOff(UberCont.opt_fulscrn))+"#"+string(UberCont.opt_crosshair+1)+"#"+string(UberCont.opt_sideart)+"#"+string(round(UberCont.opt_bloom*1000))+"%#"+string(scrOnOff(UberCont.opt_shadow))+"#"//
 +string(scrOnOff(UberCont.opt_highquality))+
-"###"+string(scrAddZero(round(UberCont.opt_shake*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_freeze*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_loading*100),2))+"%#"+string(scrOnOff(UberCont.opt_mousecp))+"#"+string(bossintro)+"#"+string(timer)
+"###"+string(scrAddZero(round(UberCont.opt_shake*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_freeze*100),2))+"%#"+loadspeed+string(scrOnOff(UberCont.opt_mousecp))+"#"+string(bossintro)+"#"+string(timer)
 
 
 
