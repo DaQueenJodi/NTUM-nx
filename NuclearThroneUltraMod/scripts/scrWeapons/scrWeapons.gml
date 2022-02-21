@@ -1641,7 +1641,7 @@ function scrWeapons() {
 	wep_load[148] = 30
 	wep_cost[148] = 2
 	wep_sprt[148] = sprPistole
-	wep_area[148] = 0
+	wep_area[148] = -1
 	wep_text[148] = "shotgun pistol yo"
 	wep_swap[148] = sndSwapPistol
 	wep_rad[148] = 0;
@@ -2136,7 +2136,7 @@ function scrWeapons() {
 	wep_load[193] = 30
 	wep_cost[193] = 25//8
 	wep_sprt[193] = sprUltraBladeGun
-	wep_area[193] = 28
+	wep_area[193] = 22
 	wep_text[193] = "ultra sharp"
 	wep_swap[193] = sndSwapBow
 	wep_rad[193] = 40;
@@ -2202,7 +2202,7 @@ function scrWeapons() {
 	wep_load[199] = 16
 	wep_cost[199] = 2
 	wep_sprt[199] = sprUltraSeekerPistol
-	wep_area[199] = 18
+	wep_area[199] = 19
 	wep_text[199] = "I see green"
 	wep_swap[199] = sndSwapBow
 	wep_rad[199] = 22;
@@ -2697,7 +2697,7 @@ function scrWeapons() {
 	wep_load[244] = 50
 	wep_cost[244] = 12
 	wep_sprt[244] = sprUltraMegaLaserPistol
-	wep_area[244] = 28
+	wep_area[244] = 24
 	wep_text[244] = "the tam gun"
 	wep_swap[244] = sndSwapEnergy
 	wep_rad[244] = 26;
@@ -2741,7 +2741,7 @@ function scrWeapons() {
 	wep_load[248] = 2
 	wep_cost[248] = 1
 	wep_sprt[248] = sprUltraPopGun
-	wep_area[248] = 17
+	wep_area[248] = 18
 	wep_text[248] = ""
 	wep_swap[248] = sndSwapMachinegun
 	wep_rad[248] = 2;
@@ -4095,6 +4095,17 @@ function scrWeapons() {
 	wep_text[370] = "toss me"
 	wep_swap[370] = sndSwapSword
 	wep_rad[370] = 0;
+	
+	wep_name[371] = "ULTRA MINIGUN"
+	wep_type[371] = 1
+	wep_auto[371] = 1
+	wep_load[371] = 1
+	wep_cost[371] = 1
+	wep_sprt[371] = sprUltraMinigun
+	wep_area[371] = 22
+	wep_text[371] = "time to rain bullets"
+	wep_swap[371] = sndSwapMachinegun
+	wep_rad[371] = 6;
 	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"

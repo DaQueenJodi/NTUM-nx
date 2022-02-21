@@ -95,6 +95,7 @@
     {"id":{"name":"sprInvertedScrapBossIntro","path":"sprites/sprInvertedScrapBossIntro/sprInvertedScrapBossIntro.yy",},"order":39,},
     {"id":{"name":"sprInvertedScrapBossSleep","path":"sprites/sprInvertedScrapBossSleep/sprInvertedScrapBossSleep.yy",},"order":41,},
     {"id":{"name":"sprInvertedScrapBossSleepHurt","path":"sprites/sprInvertedScrapBossSleepHurt/sprInvertedScrapBossSleepHurt.yy",},"order":43,},
+    {"id":{"name":"sprUltraMinigun","path":"sprites/sprUltraMinigun/sprUltraMinigun.yy",},"order":22,},
     {"id":{"name":"sprScrapBossMissileIdle","path":"sprites/sprScrapBossMissileIdle/sprScrapBossMissileIdle.yy",},"order":45,},
     {"id":{"name":"sprScrapBossMissileHurt","path":"sprites/sprScrapBossMissileHurt/sprScrapBossMissileHurt.yy",},"order":47,},
     {"id":{"name":"mskScrapBossMissile","path":"sprites/mskScrapBossMissile/mskScrapBossMissile.yy",},"order":49,},

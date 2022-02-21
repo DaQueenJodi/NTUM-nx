@@ -493,6 +493,7 @@ if (KeyCont.key_fire[p] = 1 or keyfire = 1)
 	else
 	scrEmpty()
 	}
+	rad = max(rad,0);
 	if rad-wep_rad[wep] < 0
 	{
 		//not enough radiation

@@ -8,7 +8,6 @@ function scrFire() {
 	reload = wep_load[wep]
 	if (Player.alarm[2]<1)//alarm = Fish Ultra B
 	{
-		rad = max(0,rad);
 		ammo[wep_type[wep]] -= wep_cost[wep]
 		rad-=wep_rad[wep]
 	}

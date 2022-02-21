@@ -4715,6 +4715,7 @@ function scrFire2() {
 	//OBSIDIAN THROWING KNIFE
 	case 370:
 	snd_play_2d(sndEnemySlash);
+	clicked = 0;
 	with instance_create(x,y,ThrowWepNoReturn)
 	{
 		team=other.team;
@@ -4736,6 +4737,27 @@ function scrFire2() {
 	BackCont.shake += 1
 	scrSwapWeps()
 	bwep = 0
+	break;
+	
+	//ULTRA MINIGUN
+	case 371:
+
+	snd_play_2d(sndMinigun)
+	snd_play_2d(sndUltraPistol)
+
+	with instance_create(x,y,Shell)
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
+
+	with instance_create(x,y,Bullet4)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(26)-13)*other.accuracy,16)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(7,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(7,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 5
+	wkick = 4
+
 	break;
 
 

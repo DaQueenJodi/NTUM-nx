@@ -135,7 +135,7 @@ function scrTips() {
 	if Player.area = 110
 	tip = choose("not sure what the smell is","blue toxic?","glitchy","things are going wrong")
 	if Player.area = 111
-	tip = choose("not cursed caves","green & blue","caves part 2","weird","odd")
+	tip = choose("not cursed caves","green & blue","caves part 2","weird","odd","spinach caves","brocolli")
 	if Player.area = 112
 	tip = choose("buttons","balls","labs are now inverted")
 	if Player.area = 113
