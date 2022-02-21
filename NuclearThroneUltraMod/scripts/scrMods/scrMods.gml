@@ -1,6 +1,16 @@
 function scrMods() {
 	//List of mods here
-	return irandom_range(1,15);
+	var notToxi = 10;
+	if instance_exists(Player) && Player.race == 23//Frog is oke with toxic!
+	notToxi = -1;
+	var choice;
+	do 
+	{
+		choice = irandom_range(1,15);
+		notToxi--;
+	}
+	until (choice != 1 || notToxi < 0)
+	return choice;
 	/*
 	1. Toxic
 	2. Flame
@@ -17,5 +27,7 @@ function scrMods() {
 	13. Homing
 	14. Radiation
 	15. Splinter
+	16. Morph
+	17. ammo consumption
 	*/
 }

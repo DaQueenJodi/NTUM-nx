@@ -11,7 +11,7 @@ if target > 0
 if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 {
 //CAN SEE
-if random(3) < 1
+if random(3) < 2
 {
 //FIRE
 direction = point_direction(x,y,target.x,target.y)+180
