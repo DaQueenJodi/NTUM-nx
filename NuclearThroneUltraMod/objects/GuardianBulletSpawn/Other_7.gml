@@ -8,6 +8,7 @@ repeat(3)
 {
 	with instance_create(x,y,GuardianBullet)
 	{	
+		team = other.team;
 		x += lengthdir_x(24 - 8*(motiondiff % 2), dir);
 		y += lengthdir_y(24 - 8*(motiondiff % 2), dir);
 		motion_add(dir+angle,1.8 - (motiondiff % 2));

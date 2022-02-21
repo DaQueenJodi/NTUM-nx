@@ -1,3 +1,4 @@
+/// @description Tri shot
 if !fireTriShot
 {
 	with NuclearThrone1Side

@@ -28,6 +28,12 @@ function scrPopChests() {
 		}
 		if (Player.area == 9 && Player.subarea == 3)
 		{
+			with RadChest
+				instance_destroy(id,false);
+			with AmmoChest
+				instance_destroy(id,false);
+			with WeaponChest
+				instance_destroy(id,false);
 			var xx = Player.x;
 			var yy = Player.y;
 			xx = 10016+16;

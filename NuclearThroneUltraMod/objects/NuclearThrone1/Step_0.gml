@@ -10,6 +10,7 @@ if immune
 		if instance_exists(Player)
 		if (Player.y < y + 128) 
 		{
+			snd_loop(sndBecomeNothingIdle);
 			immune = false;
 		}
 	}
@@ -24,7 +25,10 @@ if !active
 		intro = true;
 		spr_idle = sprNothingOff;
 		spr_hurt = sprNothingOff;
+		snd_hurt = sndNothingHurtHigh;
 		sprite_index = sprNothingOff;
+		if audio_is_playing(sndBecomeNothingIdle)
+				audio_stop_sound(sndBecomeNothingIdle);
 		with ThroneFlame
 		{
 			yOffset -= 10;
@@ -80,4 +84,9 @@ if (my_health <= 0)
 	}
 	instance_destroy();
 	
+}
+if firstEntry && alarm[1] < 15
+{
+	firstEntry = true;
+	snd_play(sndBecomeNothingStartup);
 }

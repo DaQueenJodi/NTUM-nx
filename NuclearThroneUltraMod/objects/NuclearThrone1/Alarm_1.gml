@@ -1,32 +1,49 @@
 /// @description AI
 alarm[1] = aTime+random(10);
-fireTriShot = false;
 var beamL = x - 20;
 var beamR = x + 20;
 scrTarget();
+
 if target > 0
 {
 	var ran = random(100);
+	if target.x < x - 128 || target.x > x + 128
+	{
+		fireTriShot = false;
+		event_user(2);
+	}
 	if target.y < y && ran > 50
 	{
 		//Above me
 		walk = alarm[1];
 		walkDir = -1.5;
+		fireTriShot = false;
+		bigballs = false;
 	}
 	else if target.y - y > 128 && ran > 80
 	{
 		//Far below me
 		walk = alarm[1];
 		walkDir = 1;
+		fireTriShot = false;
+		bigballs = false;
 	}
 	else if target.x > beamL && target.x < beamR && ran > 70
 	{
 		//In center
+		bigballs = false;
+		fireTriShot = false;
 		event_user(0);//BEAM START
+	}
+	else if ran > 40
+	{
+		//Tri shot
+		bigballs = false;
+		event_user(1);
 	}
 	else
 	{
-		//Tri shot
-		event_user(1);
+		fireTriShot = false;
+		event_user(2);
 	}
 }

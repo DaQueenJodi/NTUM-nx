@@ -5,7 +5,8 @@ if owner > -1 && owner.fireTriShot
 {
 	alarm[1] = firerate;
 	if isLeft
-		snd_play(sndNothingFire);
+		snd_play(sndNothingSmallball);
+		
 	var angleStep = 20;
 	var angle = gunangle[angleI] - angleStep;
 	repeat(3)

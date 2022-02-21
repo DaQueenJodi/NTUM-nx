@@ -24,13 +24,14 @@ spr_hurt = sprNothingOff;
 spr_dead = sprNothingDeath;
 dropRad = 200;
 disable = false;
+firstEntry = false;
 prevImageIndex = 0;
 
 event_inherited()
 walk = 0;
 alarm[1] = 0;
 
-snd_hurt = sndNothingHurtHigh;
+snd_hurt = sndBecomeNothingHurt;
 snd_dead = sndNothingDeath1
 
 sprite_index = spr_idle;
@@ -90,8 +91,9 @@ walkDir = 0;
 
 beamY = y;
 fireTriShot = false;
+bigballs = false;
 
-aTime = 10;
+aTime = 20;
 difficultyStep = 0;
 
 xStart = x;
