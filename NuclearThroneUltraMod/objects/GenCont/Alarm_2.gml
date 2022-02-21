@@ -72,7 +72,7 @@ instance_create(x+16,y+16,BigFishSkull)
 
 
 
-if ((Player.area = 105||Player.area = 106||Player.area = 107||Player.area = 108|| Player.area = 109 || Player.area = 110 || Player.area = 111 || (Player.area = 112 && Player.subarea<2) && !( Player.loops mod 2 == 0  && Player.loops>1/*even*/)) && random(2)<1)
+if ((Player.area = 105||Player.area = 106||Player.area = 107||Player.area = 108|| Player.area = 109 || Player.area = 110 || Player.area = 111 || (Player.area = 112 && Player.subarea<2) && !( Player.loops mod 2 == 0  && Player.loops>1/*even*/)) && random(4)<3)
 {
 
 with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
