@@ -3856,6 +3856,7 @@
     {"id":{"name":"MenuCrown","path":"objects/MenuCrown/MenuCrown.yy",},"order":85,},
     {"id":{"name":"CrownIcon","path":"objects/CrownIcon/CrownIcon.yy",},"order":87,},
     {"id":{"name":"sprThroneFlameEnd","path":"sprites/sprThroneFlameEnd/sprThroneFlameEnd.yy",},"order":35,},
+    {"id":{"name":"sprInvertedAssassinBossStunned","path":"sprites/sprInvertedAssassinBossStunned/sprInvertedAssassinBossStunned.yy",},"order":25,},
     {"id":{"name":"Vlambeer","path":"objects/Vlambeer/Vlambeer.yy",},"order":91,},
     {"id":{"name":"CharSelect","path":"objects/CharSelect/CharSelect.yy",},"order":93,},
     {"id":{"name":"SkillIcon","path":"objects/SkillIcon/SkillIcon.yy",},"order":95,},

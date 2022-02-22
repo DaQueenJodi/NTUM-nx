@@ -1,9 +1,9 @@
 raddrop = 40
-maxhealth = 180
+maxhealth = 120
 meleedamage = 0
 size = 1
 bloodempty=0
-
+aggression = 0
 
 event_inherited()
 
@@ -16,8 +16,7 @@ spr_idle = sprInvertedAssassinBossSit
 spr_walk = sprInvertedAssassinBossDash
 spr_hurt = sprInvertedAssassinBossHurt
 spr_dead = sprInvertedAssassinBossDead
-
-
+spr_stunned = sprInvertedAssassinBossStunned
 
 snd_hurt = sndAssassinHit
 snd_dead = sndAssassinDie
@@ -51,3 +50,8 @@ instance_create(x-16,y-16,WallBreak);
 
 instance_create(x,y,DramaCamera);
 
+afterImage = ds_list_create();
+afterImageMax = 10;
+afterImageDelay = 4;
+afterImageDuration = afterImageDelay;
+alarm[7] = afterImageDelay;

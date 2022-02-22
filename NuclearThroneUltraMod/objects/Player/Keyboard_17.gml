@@ -154,9 +154,9 @@ if UberCont.public = 0 {
 	}
 	if keyboard_check_pressed(vk_numpad2) {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*128,AssassinBoss);
+	    instance_create(x + dcos(dangle)*128,y + dsin(dangle)*128,InvertedAssassinBoss);
 		thing = instance_create(x + dcos(dangle)*128,y + dsin(dangle)*128,PopupText);
-		thing.mytext = "BIG ASS";
+		thing.mytext = "INVERTED BIG ASS";
 	}
 	if keyboard_check_pressed(vk_numpad3) {
 		var dangle = random(1)*360;
