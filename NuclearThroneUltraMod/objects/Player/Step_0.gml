@@ -663,8 +663,8 @@ snd_play(sndLevelUp)
 rad = 0;
 level += 1
 
-if level=8 && area < 4 && race = 25
-scrUnlockBSkin(25,"FOR REACHING LEVEL 8#BEFORE THE CRYSTAL CAVES#AS MUTATION DOCTOR",0);
+if level=7 && area < 4 && race = 25
+scrUnlockBSkin(25,"FOR REACHING LEVEL 7#BEFORE THE CRYSTAL CAVES#AS MUTATION DOCTOR",0);
 
 repeat(level-6)
 instance_create(x,y,IDPDSpawn)

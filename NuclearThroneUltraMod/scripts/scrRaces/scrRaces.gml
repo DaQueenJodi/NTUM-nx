@@ -358,7 +358,7 @@ function scrRaces() {
 	race_swep[25] = 1
 	race_bskin[25] = 0
 	race_cskin[25] = 0
-	race_bskin_lock[25] = "REACH LEVEL 8 BEFORE THE CRYSTAL CAVES#AS DOCTOR"
+	race_bskin_lock[25] = "REACH LEVEL 7 BEFORE THE CRYSTAL CAVES#AS DOCTOR"
 	race_cskin_lock[25] = "KILL YOURSELF USING YOUR ACTIVE#AS DOCTOR"
 
 
