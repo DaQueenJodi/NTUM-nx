@@ -58,7 +58,7 @@ scrUnlockBSkin(18,"FOR TRYING EVERY CROWN",0);
 if crown == 2
 {
 	var toHeal = Player.maxhealth - min(Player.my_health,Player.maxhealth);
-	var overheal = (Player.maxhealth - toHeal) * 0.5;
+	var overheal = (Player.maxhealth - toHeal);
 	Player.my_health = max(Player.maxhealth,Player.my_health + overheal);
 }
 //CROWN OF DESTINY
