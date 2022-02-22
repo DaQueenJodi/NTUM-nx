@@ -4,7 +4,7 @@ event_inherited()
 if (alarm[4] < 0) {
 	aggression += 1;
 	
-	if aggression > 180 || (instance_exists(Player) && point_distance(Player.x,Player.y,x,y) < 64) {
+	if (instance_exists(Player) && point_distance(Player.x,Player.y,x,y) < 80) {
 		dodge = 0;
 	}
 	
@@ -101,10 +101,17 @@ if (alarm[4] < 0) {
 					}
 					var assx = other.x;
 					var assy = other.y;
+					
+					if point_distance(x + 16, y + 16,other.target.x,other.target.y) <= 64
+					continue;
+					
 				    other.x = x+16;
 				    other.y = y+16;
 					other.alarm[5] = 15;
-					instance_create(assx,assy,AssassinTeleport);
+					with instance_create(assx,assy,AssassinTeleport) {
+						self.assx = other.x+16;
+						self.assy = other.y+16;
+					}
 				    repeat(5){
 					    with instance_create(other.x,other.y,Smoke)
 					    motion_add(random(360),1+random(3))
@@ -119,10 +126,10 @@ if (alarm[4] < 0) {
 				alarm[6] += 2
 		    }
 	    }
-	} else if aggression > 300 && target > 0 && point_distance(x, y, target.x, target.y) > 100 {
+	} else if aggression > 180 && target > 0 && point_distance(x, y, target.x, target.y) > 200 {
 		do
 		{
-			with instance_nearest(target.x + (random(2) - 1) * (random(32)+64),target.y + (random(2) - 1) * (random(32)+64),Floor)
+			with instance_nearest(target.x + (random(2) - 1) * (random(32)+96),target.y + (random(2) - 1) * (random(32)+96),Floor)
 			{
 				with other {
 					if place_meeting(other.x + 16, other.y + 16, Wall) {
@@ -131,10 +138,17 @@ if (alarm[4] < 0) {
 				}
 				var assx = other.x;
 				var assy = other.y;
+				
+				if point_distance(x + 16, y + 16,other.target.x,other.target.y) <= 64
+				continue;
+				
 				other.x = x+16;
 				other.y = y+16;
 				other.alarm[5] = 15;
-				instance_create(assx,assy,AssassinTeleport);
+				with instance_create(assx,assy,AssassinTeleport) {
+					self.assx = other.x+16;
+					self.assy = other.y+16;
+				}
 				repeat(5){
 					with instance_create(other.x,other.y,Smoke)
 					motion_add(random(360),1+random(3))
@@ -155,7 +169,8 @@ if target > 0
 }
 if alarm[2] > 0 && alarm[2] < 20
 {
-	speed *= 0.1;
+	walk = 0;
+	speed *= 0;
 	if (target > 0)
 	{
 		var dir = point_direction(x,y,target.x,target.y);

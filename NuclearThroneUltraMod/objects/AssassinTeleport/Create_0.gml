@@ -7,12 +7,3 @@ xx3 = x + random_range(-16,16);
 yy1 = y + random_range(-16,16);
 yy2 = y + random_range(-16,16);
 yy3 = y + random_range(-16,16);
-if instance_exists(AssassinBoss)
-{
-	with AssassinBoss {
-		other.assx = x;
-		other.assy = y;
-	}
-} else {
-	instance_destroy();
-}

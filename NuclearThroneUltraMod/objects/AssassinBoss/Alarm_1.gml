@@ -9,21 +9,21 @@ if target > 0
 			move_contact_solid(direction+choose(90,-90),1+irandom(3))
 		}
 		
-		if point_distance(target.x,target.y,x,y) < 80 {//SMACK THAT
+		if point_distance(target.x,target.y,x,y) < 70 && point_distance(target.x,target.y,x,y) > 24 {//SMACK THAT
 			if alarm[5] < 1 {
-				alarm[2]=18
+				alarm[2]=17
 				instance_create(x,y,Notice);
 				instance_create(x+5,y,Notice);
 				instance_create(x-5,y,Notice);
 				alarm[1]=25;
-				speed *= 0.5;
+				speed *= 0.1;
 			} else {
-				alarm[2]=25
+				alarm[2]=24
 				instance_create(x,y,Notice);
 				instance_create(x+5,y,Notice);
 				instance_create(x-5,y,Notice);
 				alarm[1]=40;
-				speed *= 0.5;
+				speed *= 0.1;
 			}
 		}
 		else
@@ -41,7 +41,7 @@ if target > 0
 	else if point_distance(target.x,target.y,x,y) < 70 && alarm[5] < 1
 	{//SMACK THAT ANYWAYS WE CAN GO THROUGH WALLS FK THAT SHIT
 		if alarm[5] < 1 {
-			alarm[2]=22//the delay that everyone wants its longer here cause you wont expect this
+			alarm[2]=21//the delay that everyone wants its longer here cause you wont expect this
 			instance_create(x,y,Notice);
 			instance_create(x+5,y,Notice);
 			instance_create(x-5,y,Notice);

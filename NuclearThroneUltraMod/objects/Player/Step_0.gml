@@ -40,9 +40,9 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if keyboard_check_pressed(vk_numpad2) {
 		var dangle = random(1)*360;
 		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		instance_create(f.x + 16,f.y + 16,MeleeBandit);
+		instance_create(f.x + 16,f.y + 16,AssassinBoss);
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "ASS";
+		thing.mytext = "BIG ASS";
 	}
 	if keyboard_check_pressed(vk_numpad3) {
 		var dangle = random(1)*360;
