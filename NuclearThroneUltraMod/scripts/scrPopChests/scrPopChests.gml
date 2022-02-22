@@ -159,19 +159,19 @@ function scrPopChests() {
 	{
 	with RadChest
 	{image_speed = 0.4
-	instance_change(Wind,false)
+	instance_destroy(id,false);
 	instance_create(x,y,AmmoChest)}
 	with AmmoChestMystery
 	{image_speed = 0.4
-	instance_change(Wind,false)
+	instance_destroy(id,false);
 	instance_create(x,y,AmmoChest)}
 	with WeaponChest
 	{image_speed = 0.4
-	instance_change(Wind,false)
+	instance_destroy(id,false);
 	instance_create(x,y,AmmoChest)}
 	with HealthChest
 	{image_speed = 0.4
-	instance_change(Wind,false)
+	instance_destroy(id,false);
 	instance_create(x,y,AmmoChest)}
 	}
 	with AmmoChest
@@ -180,7 +180,7 @@ function scrPopChests() {
 	{
 	instance_create(x,y,Mimic)
 	image_speed = 0.4
-	instance_change(Wind,false)
+	instance_destroy(id,false);
 	}
 	}
 
@@ -191,7 +191,7 @@ function scrPopChests() {
 	{
 	instance_create(x,y,SuperMimic)
 	image_speed = 0.4
-	instance_change(Wind,false)
+	instance_destroy(id,false);
 	}
 	}
 	}
