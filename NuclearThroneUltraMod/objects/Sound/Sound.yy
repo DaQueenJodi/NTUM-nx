@@ -1,7 +1,10 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "mskEnemyBullet1",
+    "path": "sprites/mskEnemyBullet1/mskEnemyBullet1.yy",
+  },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

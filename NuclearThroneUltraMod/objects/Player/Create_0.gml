@@ -6,7 +6,9 @@ exit;
 //scrn=0; //for screenshot taking character explain pic
 restarted = false;
 hurt_pitch_variation = 0;
+//3D audio
 audio_listener_orientation(0, 0, -1, 0, 1, 0);
+audio_falloff_set_model(audio_falloff_linear_distance);
 yungCuzCskin = 0;
 randomlySelected = false;
 //show_message("hi")
