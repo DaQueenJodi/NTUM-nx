@@ -109,7 +109,7 @@ if (alarm[4] < 0) {
 				var assx = other.x;
 				var assy = other.y;
 				
-				if point_distance(x + 16, y + 16,other.target.x,other.target.y) > 64
+				if point_distance(x + 16, y + 16,other.target.x,other.target.y) <= 64
 				continue;
 				
 				other.x = x+16;
@@ -118,8 +118,8 @@ if (alarm[4] < 0) {
 				with instance_create(assx,assy,AssassinTeleport) {
 					self.assx = other.x+16;
 					self.assy = other.y+16;
-					c1 = make_color_rgb(56,0,106);
-					c2 = make_color_rgb(145,148,255);
+					c1 = make_color_hsv(123,9,92);
+					c2 = make_color_hsv(123,21,83);
 				}
 				repeat(5){
 					with instance_create(other.x,other.y,Smoke)
