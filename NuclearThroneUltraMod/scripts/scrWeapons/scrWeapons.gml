@@ -3977,7 +3977,7 @@ function scrWeapons() {
 	wep_load[360] = 25
 	wep_cost[360] = 0
 	wep_sprt[360] = sprFlail
-	wep_area[360] = 6
+	wep_area[360] = 9
 	wep_text[360] = "nuclearvenia"
 	wep_swap[360] = sndSwapSword
 	wep_rad[360] = 0;
