@@ -513,7 +513,7 @@ function scrUltras() {
 	    ultra_tips[102] = "quickdraw"
         
 	    ultra_name[103] = "PROTECTIVE FACIAL HAIR"
-	    ultra_text[103] = "WHEN YOU HAVE MORE THEN 50 SKILL#AND YOU DIE#YOUR DEATH WILL BE PREVENTED#AND YOUR SKILL WILL BE RESET#(this happens after#strong spirit was used)"
+	    ultra_text[103] = "WHEN YOU HAVE MORE THEN 50 SKILL#AND YOU DIE#YOUR DEATH WILL BE PREVENTED#AND YOUR SKILL WILL BE RESET"
 	    ultra_tips[103] = "strong skillet"
         
 		ultra_name[104] = "DISCIPLINE"

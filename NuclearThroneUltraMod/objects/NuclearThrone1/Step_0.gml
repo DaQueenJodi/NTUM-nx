@@ -88,5 +88,12 @@ if (my_health <= 0)
 if firstEntry && alarm[1] < 15
 {
 	firstEntry = true;
+	my_health = maxhealth;
+	EnemyHealthAdjustments();
+	with NuclearThrone1Side
+	{
+		my_health = maxhealth;
+		EnemyHealthAdjustments();	
+	}
 	snd_play(sndBecomeNothingStartup);
 }

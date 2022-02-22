@@ -70,7 +70,10 @@ case 16:
 modname="[MORPH]"
 break;
 case 17:
-modname="[AMMO]"
+modname="[PICKUPS DROP]"
+break;
+case 18:
+modname="[WEAPONS DROP]"
 break;
 default:
 modname="UNKNOWN MOD?#IF YOU SEE THIS SOMETHING IS WRONG#PLS REPORT @ERDEPPOL"

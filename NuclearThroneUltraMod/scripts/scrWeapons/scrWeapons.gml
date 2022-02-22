@@ -750,7 +750,7 @@ function scrWeapons() {
 	wep_load[67] = 12
 	wep_cost[67] = 2
 	wep_sprt[67] = sprSwordGun
-	wep_area[67] = 10
+	wep_area[67] = 8
 	wep_text[67] = "have you tried sword gun#with bolt marrow?#Or shotgun shoulders?"
 	wep_swap[67] = sndSwapSword
 	wep_rad[67] = 0;
@@ -827,7 +827,7 @@ function scrWeapons() {
 	wep_load[74] = 2
 	wep_cost[74] = 2
 	wep_sprt[74] = sprTriplePopGun
-	wep_area[74] = 11
+	wep_area[74] = 4
 	wep_text[74] = "rapid fire!"
 	wep_swap[74] = sndSwapMachinegun
 	wep_rad[74] = 0;
@@ -3002,7 +3002,7 @@ function scrWeapons() {
 	wep_name[272] = "GHOST BLADE"
 	wep_type[272] = 0
 	wep_auto[272] = 0
-	wep_load[272] = 41
+	wep_load[272] = 38
 	wep_cost[272] = 0
 	wep_sprt[272] = sprGhostBlade
 	wep_area[272] = 13
@@ -3035,7 +3035,7 @@ function scrWeapons() {
 	wep_name[275] = "GHOST SHOVEL"
 	wep_type[275] = 0
 	wep_auto[275] = 0
-	wep_load[275] = 56
+	wep_load[275] = 52
 	wep_cost[275] = 0
 	wep_sprt[275] = sprGhostShovel
 	wep_area[275] = 16//4 originally?

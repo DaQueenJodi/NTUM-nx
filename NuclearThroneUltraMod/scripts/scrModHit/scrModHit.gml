@@ -35,10 +35,10 @@ function scrModHit() {
 	    if moddelay<1
 	    {
     
-	    if skill_got[30]//power craving
-	    moddelay=15;
-	    else
-	    moddelay=27;
+		    if skill_got[30]//power craving
+				moddelay=13;
+		    else
+				moddelay=27;
     
 	    }
 	}
@@ -212,15 +212,25 @@ function scrModHit() {
 	break;
 
 	case 16://MORPH
-
+	debug("MORPHING");
 	with instance_create(x,y,Morph)
-	            scrCanHumphry();
+		scrCanHumphry();
+
+	break;
+	
+	case 17://DROPS
+		debug("drops");
+		scrDrop(9,0);
+
+	break;
+	
+	case 18://GUNS
+		debug("gans");
+		scrDrop(0,6);
 
 	break;
 
 	}
-
-
 
 
 
@@ -407,9 +417,21 @@ function scrModHit() {
 
 
 	case 16://MORPH
-
+	debug("MORPHING");
 	with instance_create(x,y,Morph)
-	            scrCanHumphry();
+		scrCanHumphry();
+
+	break;
+	
+	case 17://DROPS
+		
+		scrDrop(9,0);
+
+	break;
+	
+	case 18://GUNS
+		
+		scrDrop(0,6);
 
 	break;
 
@@ -602,9 +624,21 @@ function scrModHit() {
 
 
 	case 16://MORPH
-
+	debug("MORPHING");
 	with instance_create(x,y,Morph)
-	            scrCanHumphry();
+		scrCanHumphry();
+
+	break;
+	
+	case 17://DROPS
+		
+		scrDrop(9,0);
+
+	break;
+	
+	case 18://GUNS
+		
+		scrDrop(0,6);
 
 	break;
 
@@ -798,9 +832,21 @@ function scrModHit() {
 
 
 	case 16://MORPH
-
+	debug("MORPHING");
 	with instance_create(x,y,Morph)
-	            scrCanHumphry();
+		scrCanHumphry();
+
+	break;
+	
+	case 17://DROPS
+		
+		scrDrop(9,0);
+
+	break;
+	
+	case 18://GUNS
+		
+		scrDrop(0,6);
 
 	break;
 

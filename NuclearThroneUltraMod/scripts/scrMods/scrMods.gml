@@ -6,7 +6,7 @@ function scrMods() {
 	var choice;
 	do 
 	{
-		choice = irandom_range(1,15);
+		choice = irandom_range(1,18);
 		notToxi--;
 	}
 	until (choice != 1 || notToxi < 0)
@@ -28,6 +28,7 @@ function scrMods() {
 	14. Radiation
 	15. Splinter
 	16. Morph
-	17. ammo consumption
+	17. Pickups
+	18. Gundrops
 	*/
 }
