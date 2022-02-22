@@ -1,9 +1,9 @@
 maxhealth = 20
 size = 1
 
-spr_idle = sprTorch
-spr_hurt = sprTorchHurt
-spr_dead = sprTorchDead
+spr_idle = sprTorchNew
+spr_hurt = sprTorchNewHurt
+spr_dead = sprTorchNewDead
 
 event_inherited()
 

@@ -1,7 +1,7 @@
 image_speed=0;
 
 wepmod=scrMods();
-if instance_exists(WeaponMod)
+if instance_exists(WeaponMod) && instance_number(WeaponMod) > 1
 {
 	var nearest = instance_nearest_notme(WeaponMod);
 	if nearest != noone

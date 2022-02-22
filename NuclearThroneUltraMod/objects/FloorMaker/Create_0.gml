@@ -48,12 +48,15 @@ goal=30;
 if Player.area == 9 && Player.subarea == 3
 goal = 290;
 }
-
+if UberCont.opt_gamemode == 25 //Survival arena
+{
+	goal = 1;
+}
 if instance_exists(MenuGen)
 goal = 80//60
 
 endPieceSpawned = false;
- 
+ debug("GOAL: ",goal);
 /*
 if instance_number(Floor)<2
 {

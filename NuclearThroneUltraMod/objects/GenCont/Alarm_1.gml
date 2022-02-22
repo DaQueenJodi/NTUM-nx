@@ -59,8 +59,12 @@ if ( Player.area = 101 ) {
 
 Player.x = 10016
 Player.y = 10016
-
-if Player.subarea==2 && (Player.area==6 || Player.area == 112)//Labs boss
+if UberCont.opt_gamemode == 25
+{
+	Player.x = SurvivalArenaStarter.x;
+	Player.y = SurvivalArenaStarter.y;	
+}
+else if Player.subarea==2 && (Player.area==6 || Player.area == 112)//Labs boss
 {
 Player.x = 10016+96;
 Player.y = 10016+96;

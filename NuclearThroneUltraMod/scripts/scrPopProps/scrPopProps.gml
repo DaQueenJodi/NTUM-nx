@@ -11,7 +11,8 @@ function scrPopProps() {
 	instance_create(x,y,NOWALLSHEREPLEASE)
 	}
 	//walls near the player for safer spawn
-	if random(5)<1  and !place_meeting(x,y,NOWALLSHEREPLEASE) && !place_meeting(x,y,prop) && point_distance(x,y,Player.x,Player.y)<128 and Player.area != 100 and Player.area != 6 and Player.area != 112 and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104 and !(Player.area = 8 && Player.subarea=3) and Player.area != 9 and Player.area != 114
+	if random(5)<1  and !place_meeting(x,y,NOWALLSHEREPLEASE) && !place_meeting(x,y,prop) && point_distance(x,y,Player.x,Player.y)<128 and Player.area != 100 and Player.area != 6 and Player.area != 112 and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104 and !(Player.area = 8 && Player.subarea=3)
+	and Player.area != 9 and Player.area != 114 and Player.area != 116
 	{
 		
 	myx = x+choose(0,16)
@@ -31,7 +32,8 @@ function scrPopProps() {
 	instance_create(myx,myy,Wall)
 	instance_create(x,y,NOWALLSHEREPLEASE)
 	}//random(5)< 1
-	if random(6) < 1 and !place_meeting(x,y,NOWALLSHEREPLEASE) && !place_meeting(x,y,prop) and Player.area != 100 and Player.area != 6 and Player.area != 9 and Player.area != 112  and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104 and !(Player.area = 8 && Player.subarea=3)//lill walls
+	if random(6) < 1 and !place_meeting(x,y,NOWALLSHEREPLEASE) && !place_meeting(x,y,prop) and Player.area != 100 and Player.area != 6 and Player.area != 9 and Player.area != 112  and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104
+	and !(Player.area = 8 && Player.subarea=3) and Player.area != 116//lill walls
 	{
 	myx = x+choose(0,16)
 	myy = y+choose(0,16)
@@ -153,6 +155,8 @@ function scrPopProps() {
 	}
 	if spawnarea = 100 && !place_meeting(x,y,Wall)
 	instance_create(x+16,y+16,Torch)
+	if spawnarea = 116 && !place_meeting(x,y,Wall)
+	instance_create(x+16,y+16,OldTorch)
 	if spawnarea = 103 && !place_meeting(x,y,Wall)
 	{
 	if instance_exists(Player)&&random(6)<1

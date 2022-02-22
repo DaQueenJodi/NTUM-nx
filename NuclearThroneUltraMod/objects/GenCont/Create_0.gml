@@ -103,8 +103,6 @@ goal = 110//110
 if instance_exists(Player){
 if Player.area = 3 and Player.subarea = 3
 goal = 50
-if UberCont.opt_gamemode == 25
-goal = 1;
 else if Player.area = 100
 goal = 40
 if Player.area = 103
@@ -154,7 +152,8 @@ if UberCont.opt_gamemode==20 && !((Player.area = 6 || Player.area = 112) && Play
 goal=300;
 
 }
-
+if UberCont.opt_gamemode == 25//Survival Arena
+goal = 1;
 
 if instance_exists(MenuGen)
 goal = 80//60

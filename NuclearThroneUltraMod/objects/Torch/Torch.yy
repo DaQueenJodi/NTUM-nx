@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprTorch",
-    "path": "sprites/sprTorch/sprTorch.yy",
+    "name": "sprTorchNew",
+    "path": "sprites/sprTorchNew/sprTorchNew.yy",
   },
   "solid": false,
   "visible": true,

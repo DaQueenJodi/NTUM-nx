@@ -309,7 +309,7 @@ if UberCont.crown_start[race] {
 }
 
 if UberCont.opt_gamemode == 25 {
-    area = 100;
+    area = 116;
 }
 
 if UberCont.opt_gamemode = 21 { //loop start

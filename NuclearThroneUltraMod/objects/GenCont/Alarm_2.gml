@@ -37,12 +37,8 @@ instance_create(x+16,y+16,RogueAmmoChest);
 
 }
 
-if UberCont.opt_gamemode == 25
-{
-	Player.x = SurvivalArenaStarter.x;
-	Player.y = SurvivalArenaStarter.y;	
-}
-else if Player.area = 100
+
+if Player.area = 100
 {
 with instance_furthest(Player.x,Player.y,Floor)
 {
@@ -101,9 +97,10 @@ if Player.ultra_got[65] && Player.area !=100
 instance_create(instance_nearest(Player.x,Player.y,Floor).x+16, instance_nearest(Player.x,Player.y,Floor).y+16,WeaponMod);
 }
 
-//safe corridors pls
-if !(Player.area == 9 && Player.subarea == 3 || ((Player.area == 6 || Player.area == 112) && Player.subarea == 2))
+
+if !(Player.area == 9 && Player.subarea == 3 || ((Player.area == 6 || Player.area == 112) && Player.subarea == 2) || UberCont.opt_gamemode == 25)
 {
+	//safe corridors pls
 	instance_create(Player.x,Player.y,WallBreak);
 	instance_create(Player.x+16,Player.y+16,WallBreak);
 	instance_create(Player.x+16,Player.y-16,WallBreak);
@@ -115,3 +112,4 @@ else
 	Player.x += 16;
 	Player.y -= 32;
 }
+

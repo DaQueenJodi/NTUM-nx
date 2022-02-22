@@ -144,6 +144,8 @@ function scrTips() {
 	tip = choose("jungle","ugga bugga","wet grass")
 	if Player.area = 115
 	tip = choose("cheese caves","cursed caves","gouda")//Fun fact I used to live in Gouda
+	if Player.area = 116
+	tip = choose("survival arena")
 	}
 
 

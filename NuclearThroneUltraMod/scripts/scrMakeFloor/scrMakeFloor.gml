@@ -1,5 +1,4 @@
 function scrMakeFloor() {
-
 	x += lengthdir_x(32,direction)
 	y += lengthdir_y(32,direction)
 
@@ -432,10 +431,13 @@ function scrMakeFloor() {
 			instance_create(x,y+32,Floor)
 		}
 	} 
-	if UberCont.opt_gamemode == 25 //Survival Arena
+	if UberCont.opt_gamemode == 25//Survival Arena
 	{
 		//instance_create(x,y,Floor)
-		
+		with Floor
+		{
+			instance_destroy(id,false);	
+		}
 		var xx = x;
 		var yy = y;
 		var circleHeight = 10;

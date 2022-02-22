@@ -1,5 +1,15 @@
 function scrPopChests() {
 	//Special cases:
+	if UberCont.opt_gamemode == 25
+	{
+		with RadChest
+			instance_destroy(id,false);
+		with AmmoChest
+			instance_destroy(id,false);
+		with WeaponChest
+			instance_destroy(id,false);
+		return false;	
+	}
 	if instance_exists(Player)
 	{
 
