@@ -28,8 +28,13 @@ function scrDecideWep(wepTier, maxTries = 10, cursed = 0, minWepArea = 0) {
 				//until (wep_area[wep] > Player.hard+wepTier or Player.hard > 20) and wep_area[wep] <= Player.hard+wepTier+5 and wep_area[wep] and ((wep != Player.wep and wep != Player.bwep) or Player.race = 7)
 			}
 			var triesForSpecificTier = 0;
+			var maxValidTierWep = 0;
 			do {
 				wep=irandom(maxwep-1)+1;
+				if wep_area[wep]  <= Player.hard+wepTier && wep_area[wep] > wep_area[maxValidTierWep]
+				{
+					maxValidTierWep = wep;
+				}
 				triesForSpecificTier++;
 			}
 			until (
@@ -37,6 +42,11 @@ function scrDecideWep(wepTier, maxTries = 10, cursed = 0, minWepArea = 0) {
 			&& wep_area[wep] >= minWepArea && wep_area[wep] <= Player.hard+wepTier
 			&& ( (wep != Player.wep and wep != Player.bwep) || Player.race == 7/*roids can dual wield*/) 
 			)
+			//Found a higher option than our result? Take that one
+			if (wep_area[maxValidTierWep] > wep_area[wep])
+			{
+				wep = maxValidTierWep;
+			}
 		}
 	}
 	else
