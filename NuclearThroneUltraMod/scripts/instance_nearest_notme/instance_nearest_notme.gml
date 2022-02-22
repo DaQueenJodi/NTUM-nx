@@ -15,7 +15,4 @@ function instance_nearest_notme() {
 	    }
 	return nearest;
 	}
-
-
-
 }

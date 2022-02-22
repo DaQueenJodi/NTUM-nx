@@ -3,11 +3,15 @@ image_speed=0;
 wepmod=scrMods();
 if instance_exists(WeaponMod)
 {
-	with instance_nearest_notme(WeaponMod)
+	var nearest = instance_nearest_notme(WeaponMod);
+	if nearest != noone
 	{
-		while wepmod == other.wepmod
+		with instance_nearest_notme(WeaponMod)
 		{
-		 wepmod += scrMods();
+			while wepmod == other.wepmod
+			{
+			 wepmod += scrMods();
+			}
 		}
 	}
 }
