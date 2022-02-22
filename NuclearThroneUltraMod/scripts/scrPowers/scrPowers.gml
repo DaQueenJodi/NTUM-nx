@@ -116,11 +116,18 @@ function scrPowers() {
 
 	if rad>21
 	{
-	audio_stop_sound(sndMutant0Slct)
-	audio_sound_pitch(sndMutant0Slct,random_range(0.6,0.9))
-	audio_play_sound(sndMutant0Slct,90,0)
-	instance_create(mouse_x,mouse_y,Infect);
-	rad-=21;
+		audio_stop_sound(sndMutant0Slct)
+		audio_sound_pitch(sndMutant0Slct,random_range(0.6,0.9))
+		audio_play_sound(sndMutant0Slct,90,0)
+		instance_create(mouse_x,mouse_y,Infect);
+		if skill_got[5]
+		{
+			rad -= 10;
+		}
+		else
+		{
+			rad-=18;
+		}
 	}
 	else
 		scrEmptyRad();

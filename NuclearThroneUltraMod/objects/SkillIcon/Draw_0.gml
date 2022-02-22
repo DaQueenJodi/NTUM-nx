@@ -5,11 +5,23 @@ if mouse_x > x-16 and mouse_x < x+16 and mouse_y > y-20 and mouse_y < y+20
 {
 draw_sprite(sprSkillSelected,-1,x,y)
 draw_sprite(sprite_index,skill,x+2,y-2)
+if UberCont.ctot_skill_taken[skill] > 0
+{
+	var col = make_color_rgb(72,156,8);
+	draw_rectangle_color(x-12,y-17,x+12,y+15,col,col,col,col,true);	
+}
+
 }
 else
 {
 draw_sprite(sprite_index,skill,x,y)
 draw_sprite_ext(sprite_index,skill,x,y,1,1,0,c_black,0.05)
+if UberCont.ctot_skill_taken[skill] > 0
+{
+	var col = make_color_rgb(72,156,8);
+	draw_rectangle_color(x-12,y-16,x+11,y+15,col,col,col,col,true);	
+}
+
 }
 
 draw_set_font(fntM)
@@ -46,4 +58,3 @@ draw_set_color(c_white)
 draw_text(drawx+string_width(string_hash_to_newline(txt2))/2,drawy-14-string_height(string_hash_to_newline(txt2))+string_height(string_hash_to_newline(skill_name[skill])),string_hash_to_newline(string(skill_name[skill])))
 }
 //draw_text(x,y-32,string(skill)); // just to show the skillnumber
-

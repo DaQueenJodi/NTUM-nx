@@ -491,15 +491,15 @@ function scrUltras() {
 	ultra_tips[97] = "delicacy"
     
 	ultra_name[98] = "PLAGUE DOCTOR"
-	ultra_text[98] = "YOUR ACTIVE CHANGES INTO#INFEST ENEMIES USING RADS"
+	ultra_text[98] = "YOUR ACTIVE CHANGES INTO#INFEST ENEMIES USING RADS#THRONEBUTT DECREASES RAD COST"
 	ultra_tips[98] = "I am here to heal you"
     
 	ultra_name[99] = "NECROMANCER"
-	ultra_text[99] = "YOUR ACTIVE CHANGES INTO#REVIVE CORPSES INTO ALLY FREAKS"
+	ultra_text[99] = "YOUR ACTIVE CHANGES INTO#REVIVE CORPSES INTO ALLY FREAKS#THRONEBUTT INCREASES THE DAMAGE#THEY DEAL"
 	ultra_tips[99] = "doctor necromancer"
     
 	ultra_name[100] = "SEDATIVES"
-	ultra_text[100] = "YOUR PROJECTILES PUT ENEMIES TO SLEEP#FOR A SHORT MOMENT"
+	ultra_text[100] = "YOUR PROJECTILES PUT ENEMIES TO SLEEP#FOR A SHORT MOMENT#THRONEBUTT INCREASES THE SLEEP DURATION"
 	ultra_tips[100] = "sleeping enemies don't react#for a moment"
 
 

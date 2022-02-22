@@ -247,6 +247,17 @@ with UberCont
 	{
 		scrUnlockGameMode(24,"FOR TAKING STRESS 10 TIMES");
 	}
+	var gotEmAll = true;
+	var dir = 0;
+	repeat(maxskill+1)
+	{
+		if ctot_skill_taken[dir] <= 0
+		gotEmAll = false;
+	}
+	if gotEmAll
+	{
+		scrUnlockGameMode(28,"FOR TAKING EVERY REGULAR MUTATION");
+	}
 	scrSave();//Don't necesserily have to save here
 }
 }

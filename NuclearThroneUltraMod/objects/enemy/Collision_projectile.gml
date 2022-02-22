@@ -84,7 +84,9 @@ walk=0;
 if alarm[1]<90
 {
 alarm[1]+=30;
-
+if Player.skill_got[5]
+	alarm[1] += 20;
+	
 if my_health>0
 instance_create(x,y-6,SleepFX);
 

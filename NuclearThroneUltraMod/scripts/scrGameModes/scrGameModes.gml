@@ -99,9 +99,9 @@ function scrGameModes() {
 	gamemode_unlock[24] = "SHARP STRESS x10";
 	gamemode_have[24] = 0;
 	
-	gamemode[25] = "SURVIVAL ARENA";
+	gamemode[25] = "SURVIVAL ARENA#STILL WORK IN PROGRESS";
 	gamemode_unlock[25] = "SURVIVE TO LOOP 3 OR SOMETHING";
-	gamemode_have[25] = 0;
+	gamemode_have[25] = 1;
 	
 	gamemode[26] = "DAILY RACE";
 	gamemode_unlock[26] = "i dunno";
@@ -112,8 +112,14 @@ function scrGameModes() {
 	gamemode_have[27] = 1;
 	
 	gamemode[28] = "ALL MUTATION#CHOICES";
-	gamemode_unlock[28] = "i dunno";
-	gamemode_have[28] = 1;
+	gamemode_unlock[28] = "TAKE EVERY REGULAR MUTATION#ATLEAST ONCE";
+	gamemode_have[28] = 0;
+	
+	/*
+	gamemode[23] = "SEEDED";
+	gamemode_description[23] = "YOU ONLY GET MELEE WEAPONS#ALWAYS GET LONG ARMS";
+	gamemode_unlock[23] = "USE SNARE AGAINST A WALL RAPIDLY";
+	gamemode_have[23] = 0;*/
 	
 	/*
 	gamemode[23] = "MELEE ONLY";

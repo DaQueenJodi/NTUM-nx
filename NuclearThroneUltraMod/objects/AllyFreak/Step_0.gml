@@ -79,7 +79,7 @@ if(instance_exists(enemy)){
     {
         if instance_exists(target)
         {
-        motion_add(point_direction(x,y,target.x,target.y),3);
+		 motion_add(point_direction(x,y,target.x,target.y),4);
         }
     }
 }

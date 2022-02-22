@@ -2299,7 +2299,7 @@ function scrWeapons() {
 	wep_type[208] = 5
 	wep_auto[208] = 0
 	wep_load[208] = 18
-	wep_cost[208] = 5
+	wep_cost[208] = 4
 	wep_sprt[208] = sprMiniPlasmaShotgun
 	wep_area[208] = 7
 	wep_text[208] = "as requested"
