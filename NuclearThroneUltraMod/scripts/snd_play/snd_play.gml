@@ -29,7 +29,7 @@ function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = tru
 		{
 			if nearest.mySound == sndId
 			{
-				if nearest.alarm[0] > 20
+				if nearest.alarm[0] < 5
 				{
 					playSound = false;
 				}
@@ -47,7 +47,7 @@ function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = tru
 				mySound = sndId;
 				emitter = audio_emitter_create();
 				audio_emitter_position(emitter,x,y,depth);
-				audio_emitter_falloff(emitter, 40, 320, 1);
+				audio_emitter_falloff(emitter, 50, 400, 1);
 				audio_play_sound_on(emitter,sndId,false,priority);
 				alarm[0] = room_speed * audio_sound_length(sndId);
 			}

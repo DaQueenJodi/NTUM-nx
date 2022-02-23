@@ -1,12 +1,13 @@
-function scrCheckGold(argument0) {
-	if (argument0==39 || argument0==40 || argument0 == 41 || argument0 == 42 || argument0 == 43 || argument0 == 44 || argument0 == 45
-	||argument0==224||argument0==225||argument0==226||argument0==227||argument0==228||argument0==229||argument0==230||argument0==276
-	||argument0==277||argument0==278||argument0==279||argument0==280||argument0==281||argument0==282||argument0==283||argument0==284
-	||argument0==285||argument0==286||argument0==287||argument0==288||argument0==290)
+function scrCheckGold(targetWep) {/*
+	if (targetWep==39 || targetWep==40 || targetWep == 41 || targetWep == 42 || targetWep == 43 || targetWep == 44 || targetWep == 45
+	||targetWep==224||targetWep==225||targetWep==226||targetWep==227||targetWep==228||targetWep==229||targetWep==230||targetWep==276
+	||targetWep==277||targetWep==278||targetWep==279||targetWep==280||targetWep==281||targetWep==282||targetWep==283||targetWep==284
+	||targetWep==285||targetWep==286||targetWep==287||targetWep==288||targetWep==290)
 	return true
 	else
 	return false
-
-
+*/
+//This is the golden oops gun: 298
+	return string_copy(wep_name[targetWep],0,4) == "GOLD"
 
 }

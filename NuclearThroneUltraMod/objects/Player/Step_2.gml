@@ -7,6 +7,10 @@ if point_distance(x,y,instance_nearest(x,y,WepPickup).x,instance_nearest(x,y,Wep
 targetPickup=instance_nearest(x,y,WepPickup);
 
 
+//UNLOCK GOLDEN WEAPON
+if scrCheckGold(targetPickup.wep)
+	scrUnlockGoldWeapon(targetPickup.wep);
+
 //first get ammo
 if ultra_got[68]=0
 {
@@ -295,9 +299,6 @@ reload = 0
 
 if wep=298//golden oops gun
 game_end();
-
-//UNLOCK GOLDEN WEAPON
-scrUnlockGoldWeapon();
 
 
 snd_play(wep_swap[wep])

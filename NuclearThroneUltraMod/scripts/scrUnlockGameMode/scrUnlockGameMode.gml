@@ -11,7 +11,4 @@ function scrUnlockGameMode(gm, unlockText) {
 	scrSave();
 
 	}
-
-
-
 }

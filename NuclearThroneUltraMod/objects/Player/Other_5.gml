@@ -154,7 +154,10 @@ if race=14//PANDA
         
         //handling golden weapons
         if string_copy(wep_name[prevwep],0,4) = "GOLD"&&loops<1
-        prevwep=9//minigun tier 6
+		{
+			prevwep=9//minigun tier 6
+			scrUnlockBSkin(14,"FOR CONVERTING A GOLDEN WEAPON",0)
+		}
         
         if ultra_got[55]
         {
