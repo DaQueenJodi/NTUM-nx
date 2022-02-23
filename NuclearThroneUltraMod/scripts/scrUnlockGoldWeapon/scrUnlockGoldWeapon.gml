@@ -1,6 +1,6 @@
 function scrUnlockGoldWeapon() {
 	/*save golden weapon*/
-	if UberCont.opt_gamemode=0||UberCont.opt_gamemode=8{//Don't save starting wep when you're playing one weapon only
+	if isValidGamemodeToUnlock(UberCont.opt_gamemode){//Don't save starting wep when you're playing one weapon only
 
 	with UberCont
 	{
