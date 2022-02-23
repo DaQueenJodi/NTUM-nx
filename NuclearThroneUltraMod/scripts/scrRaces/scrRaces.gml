@@ -297,7 +297,7 @@ function scrRaces() {
 	race_acti[21] = "RADIATION BEAM"//"PORTAL STRIKE"
 	race_butt[21] = "BEAM CHARGES QUICKER#BEAM HEALS#SOMETIMES MISSED BEAM#WILL DROP RADS"//"STRONGER PORTAL STRIKE"
 	//race_back[21] = "BEAM CHARGES QUICKER#GIVES AMMO";
-	race_lock[21] = "REACH THE VOLCANO"//"REACH PALACE"
+	race_lock[21] = "REACH THE WONDERLAND"//"REACH PALACE"
 	race_have[21] = 0
 	race_swep[21] = 1
 	race_bskin[21] = 0
@@ -311,7 +311,7 @@ function scrRaces() {
 	race_acti[22] = "PORTAL STRIKE"//"GASS, TOXIC IMMUNITY"
 	race_butt[22] = "STRONGER PORTAL STRIKE#MORE PORTAL STRIKE AMMO SPAWNS"//"GASS SPREADS FASTER"
 	//race_back[22] = "INCREASE MAXIMUM PORTAL STRIKE AMMO (this is an ult)";
-	race_lock[22] = "REACH WONDERLAND"//"CREATE 3 TOXIC BALLGUYS IN 1 LEVEL"
+	race_lock[22] = "REACH THE PALACE"//"CREATE 3 TOXIC BALLGUYS IN 1 LEVEL"
 	race_have[22] = 0
 	race_swep[22] = 312//ROGUE RIFLE
 	race_bskin[22] = 0

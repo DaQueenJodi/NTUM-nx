@@ -67,11 +67,11 @@ scrUnlockCharacter(8,"FOR REACHING THE SCRAPYARD");
 if area = 5//UNLOCK REBEL
 scrUnlockCharacter(10,"FOR REACHING THE FROZEN CITY");
 
-if area = 7//UNLOCK HORROR
-scrUnlockCharacter(21,"FOR REACHING THE VOLCANO");
+if area = 8//UNLOCK HORROR
+scrUnlockCharacter(21,"FOR REACHING WONDERLAND");
 
-if area = 8//UNLOCK ROGUE
-scrUnlockCharacter(22,"FOR REACHING WONDERLAND");
+if area = 9//UNLOCK ROGUE
+scrUnlockCharacter(22,"FOR REACHING THE PALACE");
 
 
 //SKINS
