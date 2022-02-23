@@ -27,6 +27,13 @@ function scrDecideWep(wepTier, maxTries = 10, cursed = 0, minWepArea = 0) {
 				//do wep = round(random(maxwep-1)+1)
 				//until (wep_area[wep] > Player.hard+wepTier or Player.hard > 20) and wep_area[wep] <= Player.hard+wepTier+5 and wep_area[wep] and ((wep != Player.wep and wep != Player.bwep) or Player.race = 7)
 			}
+			else if instance_exists(Player)
+			{
+				if (wepTier == 17 || wepTier == 24 || wepTier == 30) && UberCont.start_wep_have_all[Player.race]//THE GOLDEN TIER(s)
+				{
+					return scrDecideWepGold();	
+				}
+			}
 			var triesForSpecificTier = 0;
 			var maxValidTierWep = 0;
 			do {

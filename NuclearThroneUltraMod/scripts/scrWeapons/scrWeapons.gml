@@ -3854,7 +3854,7 @@ function scrWeapons() {
 	wep_cost[349] = 2
 	wep_sprt[349] = sprGoldFrogBlaster
 	wep_area[349] = -1
-	wep_text[349] = "automatic burping"
+	wep_text[349] = "classy farts"
 	wep_swap[349] = sndSwapPistol
 	wep_rad[349] = 0;
 

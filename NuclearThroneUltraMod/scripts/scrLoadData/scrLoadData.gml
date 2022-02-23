@@ -51,11 +51,15 @@ function scrLoadData() {
 	repeat(racemax)
 	{
 	dir=0;
+	var gottaCatchYamal = true;
 	repeat(maxstartwep+1)
 	{
-	start_wep_have[dir,racedir] = ini_read_real("DATA","start_wep_have"+string(dir)+string(racedir),start_wep_have[dir,racedir]);
-	dir++;
+		start_wep_have[dir,racedir] = ini_read_real("DATA","start_wep_have"+string(dir)+string(racedir),start_wep_have[dir,racedir]);
+		if start_wep_have[dir,racedir] == 0
+			gottaCatchYamal = false;
+		dir++;
 	}
+	start_wep_have_all[racedir] = gottaCatchYamal;
 	racedir++;
 	}
 

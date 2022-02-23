@@ -14,11 +14,12 @@ function scrUnlockGoldWeapon(target) {
 				{
 					scrUnlockCSkin(6,"FOR UNLOCKING ONE GOLDEN WEAPON#ON ALL CHARACTERS",0);
 				}
-    
-			    cwep[other.race] = target 
-    
-			    if target != 298 && scrCheckStartingWepUnlocked(target,other.race)
+				
+				var goldIndex = scrCheckStartingWepUnlocked(target,other.race)
+			    if target != 298 && target != 349 && goldIndex > -1//No golden frog pistol and no golden oops gun
 			    {
+					//Unlock the gun!
+					start_wep_have[goldIndex,other.race]=1;
 					with instance_create(x,y,UnlockPopup)
 					mytext=Player.wep_name[Player.wep]+ "#UNLOCKED!";
 					scrSave();
