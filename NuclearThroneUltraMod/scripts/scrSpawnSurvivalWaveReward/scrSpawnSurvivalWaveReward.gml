@@ -13,8 +13,8 @@ function scrSpawnSurvivalWaveReward(){
 		if Player.skill_got[23]//OPEN MIND IN SURVIVAL ARENA
 		{
 			instance_create(x+64,y,WeaponChest);
-			instance_create(x+64,y+64,AmmoChest);
-			instance_create(x+64,y-64,RadChest);
+			instance_create(x+70,y+64,AmmoChest);
+			instance_create(x+70,y-64,RadChest);
 		}
 	}
 	/*
