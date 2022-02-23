@@ -434,20 +434,26 @@ function scrMakeFloor() {
 	if UberCont.opt_gamemode == 25//Survival Arena
 	{
 		//instance_create(x,y,Floor)
-		with Floor
-		{
-			instance_destroy(id,false);	
-		}
+		x = 0;
+		y = 0;
 		var xx = x;
 		var yy = y;
 		var circleHeight = 10;
 		var circleWidth = 10;
+		//Elementor thronebutt generate more cover
+		var genExtraCover = instance_exists(Player) && Player.race == 24 && Player.skill_got[5];
 		for (var iy = 0; iy < circleHeight; iy ++) {
 			for (var ix = 0; ix < circleWidth; ix ++) {
 				if !(iy == 0 && ix == 0) &&
 				!(iy == circleHeight -1 && ix == circleWidth - 1) &&
 				!(iy == circleHeight -1 && ix == 0) &&
-				!(iy == 0 && ix == circleWidth - 1)
+				!(iy == 0 && ix == circleWidth - 1) &&
+				(!genExtraCover || (
+					!(iy == round(circleHeight*0.2) && ix == round(circleWidth*0.2)) &&
+					!(iy == floor(circleHeight*0.8) && ix == round(circleWidth*0.2)) &&
+					!(iy == floor(circleHeight*0.8) && ix == floor(circleWidth*0.8)) &&
+					!(iy == round(circleHeight*0.2) && ix == floor(circleWidth*0.8)))
+				)
 				{
 					instance_create(x + (32*ix),
 					y + (32*iy),Floor);
@@ -458,6 +464,8 @@ function scrMakeFloor() {
 				}
 			}
 		}
+		instance_destroy();
+		return;
 	}
 	else if area = 100 { if random(8) < 1//CROWN VAULT
 	{

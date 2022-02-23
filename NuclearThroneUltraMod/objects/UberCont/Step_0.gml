@@ -3,6 +3,8 @@ if paused = 1
 //QUICK RESTART
 if (canRestart && paused == 1 && !instance_exists(PlayerSpawn) && (keyboard_check_pressed(ord("R")) || gamepad_button_check(0,gp_face3)) )//(gamepad_button_check(0,gp_stickl) && gamepad_button_check(0,gp_stickr)) )
 {
+	with SurvivalWave
+		instance_destroy();
 instance_activate_all()
 audio_stop_all();
 paused = 0

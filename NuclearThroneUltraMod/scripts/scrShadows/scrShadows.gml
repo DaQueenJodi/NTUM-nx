@@ -32,6 +32,10 @@ function scrShadows() {
 	{
 		draw_sprite(shadowSprite,0,x-__view_get( e__VW.XView, 0 )+shadowXoffset,y-__view_get( e__VW.YView, 0 )+shadowYoffset)
 	}
+	with SurvivalArenaStarter
+	{
+		draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+	}
 	with CrownPickup
 	draw_sprite(shd16,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+3)
 	with ScrapBossMissile

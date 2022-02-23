@@ -99,9 +99,9 @@ function scrGameModes() {
 	gamemode_unlock[24] = "SHARP STRESS x10";
 	gamemode_have[24] = 0;
 	
-	gamemode[25] = "SURVIVAL ARENA#STILL W.I.P.";
-	gamemode_unlock[25] = "SURVIVE TO LOOP 3 OR SOMETHING";
-	gamemode_have[25] = 1;
+	gamemode[25] = "SURVIVAL ARENA";
+	gamemode_unlock[25] = "GET RESURRECTED";
+	gamemode_have[25] = 0;
 	
 	gamemode[26] = "DAILY RACE";
 	gamemode_unlock[26] = "i dunno";

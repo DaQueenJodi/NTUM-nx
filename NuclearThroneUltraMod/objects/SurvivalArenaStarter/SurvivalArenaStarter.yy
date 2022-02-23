@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprDebugshit",
-    "path": "sprites/sprDebugshit/sprDebugshit.yy",
+    "name": "sprWaveStarterButton",
+    "path": "sprites/sprWaveStarterButton/sprWaveStarterButton.yy",
   },
   "solid": false,
   "visible": true,
@@ -22,12 +22,14 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Player","path":"objects/Player/Player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "LevelGen",
-    "path": "folders/Objects/LevelGen.yy",
+    "name": "SurvivalArena",
+    "path": "folders/Objects/SurvivalArena.yy",
   },
   "resourceVersion": "1.0",
   "name": "SurvivalArenaStarter",

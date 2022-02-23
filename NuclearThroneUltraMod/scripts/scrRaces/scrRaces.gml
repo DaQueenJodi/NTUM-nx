@@ -3,7 +3,7 @@ function scrRaces() {
 	race_pass[0] = "???"
 	race_acti[0] = "???"
 	race_butt[0] = ""
-	race_back[0] = "";
+	//race_back[0] = "";
 	race_lock[0] = ""
 	race_have[0] = 1
 	race_bskin[0] = 0
@@ -16,7 +16,7 @@ function scrRaces() {
 	race_pass[1] = "GETS MORE AMMO"
 	race_acti[1] = "DODGE ROLL"
 	race_butt[1] = "WATER BOOST#GETS EVEN MORE AMMO#FROM AMMO PICKUPS";
-	race_back[1] = "IF YOUR AMMO IS ABOVE 75%#INCREASE FIRE RATE#AND RELOAD SPEED";
+	//race_back[1] = "IF YOUR AMMO IS ABOVE 75%#INCREASE FIRE RATE#AND RELOAD SPEED";
 	race_lock[1] = "UNLOCKED FROM THE START"
 	race_have[1] = 1
 	race_swep[1] = 1
@@ -30,7 +30,7 @@ function scrRaces() {
 	race_pass[2] = "HAS MORE HP"
 	race_acti[2] = "CRYSTAL SHIELD"
 	race_butt[2] = "LONGER SHIELD"
-	race_back[2] = "DAMAGE REDUCTION WHILE STANDING STILL";
+	//race_back[2] = "DAMAGE REDUCTION WHILE STANDING STILL";
 	race_lock[2] = "UNLOCKED FROM THE START"
 	race_have[2] = 1
 	race_swep[2] = 1
@@ -44,7 +44,7 @@ function scrRaces() {
 	race_pass[3] = "SEES IN THE DARK"
 	race_acti[3] = "TELEKINESIS"
 	race_butt[3] = "STRONGER TELEKINESIS"
-	race_back[3] = "ENEMIES CLOSE TO YOU TAKE DAMAGE";
+	//race_back[3] = "ENEMIES CLOSE TO YOU TAKE DAMAGE";
 	race_lock[3] = "REACH SEWERS TO UNLOCK"
 	race_have[3] = 0
 	race_swep[3] = 1
@@ -58,7 +58,7 @@ function scrRaces() {
 	race_pass[4] = "HAS LESS HP, GETS MORE RADS"
 	race_acti[4] = "EXPLOSIVE REVENGE"
 	race_butt[4] = "BIGGER CORPSE EXPLOSIONS"
-	race_back[4] = "CORPSE EXPLOSIONS CAN GIVE DROPS";
+	//race_back[4] = "CORPSE EXPLOSIONS CAN GIVE DROPS";
 	race_lock[4] = "DIE TO UNLOCK"
 	race_have[4] = 0
 	race_swep[4] = 1
@@ -72,7 +72,7 @@ function scrRaces() {
 	race_pass[5] = "IS FASTER"
 	race_acti[5] = "SNARE GROWTH"
 	race_butt[5] = "SNARE FINISHES ENEMIES#UNDER 35% HP"
-	race_back[5] = "ENEMIES KILLED WHILE SNARED GIVE MORE DROPS THIS IS AN ULTRA ";
+	//race_back[5] = "ENEMIES KILLED WHILE SNARED GIVE MORE DROPS THIS IS AN ULTRA ";
 	race_lock[5] = "KILL 100 ENEMIES TO UNLOCK"
 	race_have[5] = 0
 	race_swep[5] = 1
@@ -86,7 +86,7 @@ function scrRaces() {
 	race_pass[6] = "FIRES FASTER"
 	race_acti[6] = "POP POP"
 	race_butt[6] = "BRRRAP"
-	race_back[0] = "ADDITIONAL PROJECTILES FROM ACTIVE#PIERCE ENEMIES";
+	//race_back[0] = "ADDITIONAL PROJECTILES FROM ACTIVE#PIERCE ENEMIES";
 	race_lock[6] = "REACH YV'S MANSION TO UNLOCK"
 	race_have[6] = 0
 	race_swep[6] = 39
@@ -100,7 +100,7 @@ function scrRaces() {
 	race_pass[7] = "IS LESS ACCURATE#ALL WEAPONS FULLY AUTOMATIC"
 	race_acti[7] = "DUAL WIELDING"
 	race_butt[7] = "FIRING WITH ONE WEAPON#HAS A CHANCE TO#GIVE AMMO FOR THE OTHER#MORE EFFECTIVE WHEN#FIRING BOTH WEAPONS"
-	race_back[7] = "MISSING INCREASES#FIRE RATE AND RELOAD SPEED";
+	//race_back[7] = "MISSING INCREASES#FIRE RATE AND RELOAD SPEED";
 	race_lock[7] = "REACH LABS TO UNLOCK"
 	race_have[7] = 0
 	race_swep[7] = 1
@@ -114,7 +114,7 @@ function scrRaces() {
 	race_pass[8] = "FINDS BETTER TECH"
 	race_acti[8] = "EAT GUNS"
 	race_butt[8] = "BETTER GUN NUTRITION"
-	race_back[8] = "FIND EVEN BETTER WEAPONS";
+	//race_back[8] = "FIND EVEN BETTER WEAPONS";
 	race_lock[8] = "REACH SCRAPYARD TO UNLOCK"
 	race_have[8] = 0
 	race_swep[8] = 1
@@ -128,7 +128,7 @@ function scrRaces() {
 	race_pass[9] = "HARD TO KILL"
 	race_acti[9] = "SLOW MOTION"
 	race_butt[9] = "NORMAL MOVEMENT SPEED#DURING SLOWMOTION"//"NORMAL RATE OF FIRE#DURING SLOW MOTION"
-	race_back[9] = "NORMAL RATE OF FIRE#DURING SLOW MOTION (this IS AN ULTRA MAKE CHANGE)";
+	//race_back[9] = "NORMAL RATE OF FIRE#DURING SLOW MOTION (this IS AN ULTRA MAKE CHANGE)";
 	race_lock[9] = "OPEN A BIG HP CHEST"
 	race_have[9] = 0
 	race_swep[9] = 46
@@ -142,7 +142,7 @@ function scrRaces() {
 	race_pass[10] = "PORTALS HEAL"
 	race_acti[10] = "ALLIES"
 	race_butt[10] = "HIGHER ALLY RATE OF FIRE"
-	race_back[10] = "FASTER ALLIES#ALLIES TELEPORT TO YOU#WHEN LOST";
+	//race_back[10] = "FASTER ALLIES#ALLIES TELEPORT TO YOU#WHEN LOST";
 	race_lock[10] = "REACH FROZEN CITY TO UNLOCK"
 	race_have[10] = 0
 	race_swep[10] = 1
@@ -156,7 +156,7 @@ function scrRaces() {
 	race_pass[11] = "HIGHER PROJECTILE VELOCITY"
 	race_acti[11] = "MARK"
 	race_butt[11] = "MARKED ENEMIES#TAKE MORE DAMAGE"
-	race_back[11] = "MARKED ENEMIES THAT DIE#HAVE A HIGHER DROPRATE(this is an ultra?) MARKED ENEMIES THAT DIE#DECREATE RELOAD";
+	//race_back[11] = "MARKED ENEMIES THAT DIE#HAVE A HIGHER DROPRATE(this is an ultra?) MARKED ENEMIES THAT DIE#DECREATE RELOAD";
 	race_lock[11] = "DEFLECT A SNIPER SHOT#INTO THE SNIPER"
 	race_have[11] = 0
 	race_swep[11] = 80//sniper rifle
@@ -170,7 +170,7 @@ function scrRaces() {
 	race_pass[12] = "MORE BUDDIES MEANS#MORE AMMO FROM PICKUPS#FIND MORE HP CHESTS"
 	race_acti[12] = "LIL BUDDY"
 	race_butt[12] = "GAIN EVEN MORE AMMO#DEPENDING ON NUMBER OF BUDDIES"
-	race_back[12] = "DECREASE COST OF BUDDY";
+	//race_back[12] = "DECREASE COST OF BUDDY";
 	race_lock[12] = "KILL A MIMIC"
 	race_have[12] = 0
 	race_swep[12] = 39//golden revolver
@@ -184,7 +184,7 @@ function scrRaces() {
 	race_pass[13] = "ENEMIES DON'T#ENGAGE FIRE#UNTIL YOU DO"
 	race_acti[13] = "HOLD TO CHARGE"
 	race_butt[13] = "BETTER CHARGE"
-	race_back[13] = "IDK MORPH DAMAGE";
+	//race_back[13] = "IDK MORPH DAMAGE";
 	race_lock[13] = "MORPH AN ENEMY"
 	race_have[13] = 0
 	race_swep[13] = 0//nothing
@@ -198,7 +198,7 @@ function scrRaces() {
 	race_pass[14] = "WEAPONS ARE RANDOMIZED#TO ONE OF THE SAME TIER#EACH TIME YOU EXIT A PORTAL"
 	race_acti[14] = "THROW WEAPONS"
 	race_butt[14] = "SHORTER TELEPORT DELAY#MORE THROW DAMAGE"
-	race_back[14] = "NO LONGER GET RANDOM WEP(is ultra change)";
+	//race_back[14] = "NO LONGER GET RANDOM WEP(is ultra change)";
 	race_lock[14] = "LOOP WITH CHICKEN"
 	race_have[14] = 0
 	race_swep[14] = 200//panda stick
@@ -212,7 +212,7 @@ function scrRaces() {
 	race_pass[15] = "ITEMS DESPAWN QUICKER#YOU DEAL CONTACT DAMAGE"
 	race_acti[15] = "TELEPORT"
 	race_butt[15] = "EXPLOSIVE TELEPORTATION"
-	race_back[15] = "SHORT IMMUNITY TO CONTACT DAMAGE#AFTER TELEPORTING";
+	//race_back[15] = "SHORT IMMUNITY TO CONTACT DAMAGE#AFTER TELEPORTING";
 	race_lock[15] = "TAKE CRYSTAL'S THRONEBUTT"
 	race_have[15] = 0
 	race_swep[15] = 19//laser pistol
@@ -226,7 +226,7 @@ function scrRaces() {
 	race_pass[16] = "PORTALS GIVE ARMUOR#TWO ARMOUR MAXIMUM"
 	race_acti[16] = "ARMOUR STRIKE"//ARMOUR STRIKE
 	race_butt[16] = "INCREASE MAX ARMOUR BY ONE#GAIN ONE EXTRA ARMOUR#AT THE START OF A LEVEL"
-	race_back[16] = "ARMOUR NOW GETS TAKEN WHEN#SUFFERING LETHAL DAMAGE";
+	//race_back[16] = "ARMOUR NOW GETS TAKEN WHEN#SUFFERING LETHAL DAMAGE";
 	race_lock[16] = "REGAIN STRONG SPIRIT 4 TIMES#IN ONE RUN"//"BREAK X AMOUNT OF WALLS"
 	race_have[16] = 0
 	race_swep[16] = 215//MDRFKIN AXE BITCHES
@@ -240,7 +240,7 @@ function scrRaces() {
 	race_pass[17] = "START WITH#A RANDOM WEAPON MOD#ENEMIES DROP MORE WEAPONS"
 	race_acti[17] = "COMBINE WEAPONS INTO#HIGHER TIER ONES"
 	race_butt[17] = "GET AN EVEN HIGHER#TIER WEAPON WHEN COMBINING WEAPONS"
-	race_back[17] = "THE FIRST TIME YOU COMBINE#A WEAPON IN AN AREA#YOU DON'T LOSE THEM BUT INSTEAD DROP IT";
+	//race_back[17] = "THE FIRST TIME YOU COMBINE#A WEAPON IN AN AREA#YOU DON'T LOSE THEM BUT INSTEAD DROP IT";
 	race_lock[17] = "MODIFY A WEAPON"
 	race_have[17] = 0
 	race_swep[17] = 1
@@ -254,7 +254,7 @@ function scrRaces() {
 	race_pass[18] = "FLY OVER WALLS"
 	race_acti[18] = "HEAL AT THE COST OF AMMO"
 	race_butt[18] = "CHEAPER HEALING"
-	race_back[18] = "FLYING OVER WALLS DRAINS AMMO#INSTEAD OF HP";
+	//race_back[18] = "FLYING OVER WALLS DRAINS AMMO#INSTEAD OF HP";
 	race_lock[18] = "HAVE A SINGLE RUN WITH#SECOND STOMACH, BLOODLUST, RHINO SKIN AND STRONG SPIRIT"
 	race_have[18] = 0
 	race_swep[18] = 56
@@ -268,7 +268,7 @@ function scrRaces() {
 	race_pass[19] = "HAS ONLY 4HP#SLOWER#LESS ACCURATE"
 	race_acti[19] = "BLOOD GAMBLE"
 	race_butt[19] = "BETTER BLOOD GAMBLE ODDS"
-	race_back[19] = "THE SLOWER YOU MOVE#THE FASTER YOU FIRE";
+	//race_back[19] = "THE SLOWER YOU MOVE#THE FASTER YOU FIRE";
 	race_lock[19] = "DIE IN THE LABS AS MELTING"
 	race_have[19] = 0
 	race_swep[19] = 56//allright we'll do a character with a rusty revolver
@@ -282,7 +282,7 @@ function scrRaces() {
 	race_pass[20] = "BOSSES DROP GOLDEN#WEAPON CHESTS"
 	race_acti[20] = "SHOP"
 	race_butt[20] = "20% DISCOUNT"
-	race_back[20] = "WEAPON CHESTS SOMETIME BECOME#GOLDEN WEAPON CHESTS";
+	//race_back[20] = "WEAPON CHESTS SOMETIME BECOME#GOLDEN WEAPON CHESTS";
 	race_lock[20] = "GRAB A GOLDEN WEAPON"
 	race_have[20] = 0
 	race_swep[20] = 42//golden shotgun
@@ -296,7 +296,7 @@ function scrRaces() {
 	race_pass[21] = "EXTRA MUTATION CHOICE"//"BLAST ARMOUR, HEAT"
 	race_acti[21] = "RADIATION BEAM"//"PORTAL STRIKE"
 	race_butt[21] = "BEAM CHARGES QUICKER#BEAM HEALS#SOMETIMES MISSED BEAM#WILL DROP RADS"//"STRONGER PORTAL STRIKE"
-	race_back[21] = "BEAM CHARGES QUICKER#GIVES AMMO";
+	//race_back[21] = "BEAM CHARGES QUICKER#GIVES AMMO";
 	race_lock[21] = "REACH THE VOLCANO"//"REACH PALACE"
 	race_have[21] = 0
 	race_swep[21] = 1
@@ -310,7 +310,7 @@ function scrRaces() {
 	race_pass[22] = "BLAST ARMOUR#HEAT"//"WALK FOREVER"
 	race_acti[22] = "PORTAL STRIKE"//"GASS, TOXIC IMMUNITY"
 	race_butt[22] = "STRONGER PORTAL STRIKE#MORE PORTAL STRIKE AMMO SPAWNS"//"GASS SPREADS FASTER"
-	race_back[22] = "INCREASE MAXIMUM PORTAL STRIKE AMMO (this is an ult)";
+	//race_back[22] = "INCREASE MAXIMUM PORTAL STRIKE AMMO (this is an ult)";
 	race_lock[22] = "REACH WONDERLAND"//"CREATE 3 TOXIC BALLGUYS IN 1 LEVEL"
 	race_have[22] = 0
 	race_swep[22] = 312//ROGUE RIFLE
@@ -324,7 +324,7 @@ function scrRaces() {
 	race_pass[23] = "IMMUNE TO TOXIC"
 	race_acti[23] = "TOXIC GAS"
 	race_butt[23] = "TOXIC SPREADS FASTER#HOMING TOXIC"
-	race_back[23] = "TOXIC GASS DEALS MORE DAMAGE (this is an ulta)";
+	//race_back[23] = "TOXIC GASS DEALS MORE DAMAGE (this is an ulta)";
 	race_lock[23] = "HAVE 2 SUPER BALLGUYS RUNNING AROUND#AT THE SAME TIME"
 	race_have[23] = 0
 	race_swep[23] = 348//FROG BLASTER
@@ -338,7 +338,7 @@ function scrRaces() {
 	race_pass[24] = "STRONGER LIGHTNING,#FROST, FLAME AND KRAKEN"//STRONGER LIGHTNING, FROST AND FLAME
 	race_acti[24] = "TERRAFORM AT THE COST OF AMMO"//TERRAFORM
 	race_butt[24] = "CHEAPER TERRAFORM#LEVELS GENERATE MORE COVER#WALLS DEFLECT ENEMY PROJECTILES"
-	race_back[24] = "INCREASED CHANCE OF FINDING ELEMENTAL WEAPONS#LEVELS GENERATE MORE COVER";
+	//race_back[24] = "INCREASED CHANCE OF FINDING ELEMENTAL WEAPONS#LEVELS GENERATE MORE COVER";
 	race_lock[24] = "TAKE HEAVY HEART"//TAKE HEAVY HEART
 	race_have[24] = 0
 	race_swep[24] = 337//MINI LIGHTNING PISTOL//102//FROST PISTOL
@@ -352,7 +352,7 @@ function scrRaces() {
 	race_pass[25] = "SLIGHTLY UPGRADED MUTATIONS#GETS LESS RADIATION"//SLIGHTLY BETTER MUTATIONS# LEVELS SLOWER
 	race_acti[25] = "CONVERT LIFE TO RADS"
 	race_butt[25] = "MORE RADS FROM ACTIVE"
-	race_back[25] = "LESS HP COST?";
+	//race_back[25] = "LESS HP COST?";
 	race_lock[25] = "REACH LEVEL ULTRA"//REACH LEVEL ULTRA
 	race_have[25] = 0
 	race_swep[25] = 1
@@ -366,7 +366,7 @@ function scrRaces() {
 	race_pass[26] = "HITTING SHOTS BUILDS SKILL#MISSING RESETS SKILL#SKILL INCREASES DAMAGE#SKILL INCREASES ACCURACY"
 	race_acti[26] = "WARZONE CONTROL"//"SLOW AND SHRINK#ENEMY PROJECTILES#AT THE COST OF#UNEQUIPED AMMO"//DISCIPLINE those bullets
 	race_butt[26] = "#SKILL DECREASES SLOWLY#INSTEAD OF IMMEDIATELY#AND HEALS YOU OVER TIME##THIS EFFECT STOPS#WHEN YOU HIT A SHOT AGAIN"
-	race_back[26] = "DECREASE COST OF ACTIVE";
+	//race_back[26] = "DECREASE COST OF ACTIVE";
 	race_lock[26] = "BEAT BIG FISH"
 	race_have[26] = 0
 	race_swep[26] = 1

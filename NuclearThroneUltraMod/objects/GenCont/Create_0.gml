@@ -36,7 +36,7 @@ __background_set_colour( make_color_rgb(180,189,197) )
 else if Player.area = 6//labs
 __background_set_colour( make_color_rgb(9,28,32) )
 else if Player.area = 100//crownvault
-__background_set_colour( make_color_rgb(43,35,23) )
+__background_set_colour( make_color_rgb(55,44,29) )//make_color_rgb(67,53,35) )
 else if Player.area = 102//pizza sewers
 __background_set_colour( make_color_rgb(160,75,99) )
 else if Player.area = 103//yv mansion
@@ -89,6 +89,8 @@ else if Player.area = 114//Jungle bungle wungle fungle fuck ass
 __background_set_colour( make_color_rgb(42,144,12) )
 else if Player.area = 115//cheese cave
 __background_set_colour( make_color_rgb(255,156,35) )
+else if Player.area = 116//SURVIVAL ARENA
+__background_set_colour( make_color_rgb(43,35,23) )
 }
 else
 __background_set_colour( make_color_rgb(106,122,175) )

@@ -33,7 +33,7 @@ with Player//Data to keep
 		image_speed=0.2;
 	}
 }
-
+scrUnlockGameMode(25,"FOR GETTING RESURRECTED");
 
 
 instance_destroy();

@@ -73,7 +73,8 @@ function scrDrawGameOver() {
 		restarted = true;	
 	}
 	debug("GAMEOVER RESTART");
-
+	with SurvivalWave
+		instance_destroy();
 	room_restart()
 	exit;
 	}

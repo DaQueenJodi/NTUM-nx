@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprTorch","path":"sprites/sprTorch/sprTorch.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sprTorch",
     "tags": [],
     "resourceType": "GMSequence",
   },

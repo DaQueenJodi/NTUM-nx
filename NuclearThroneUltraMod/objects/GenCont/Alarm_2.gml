@@ -31,9 +31,15 @@ instance_create(instance_furthest(Player.x,Player.y,Floor).x+132, instance_furth
 if (Player.race=22 && Player.area!=100 && Player.area!=104 )
 {
 
-if instance_number(RogueAmmoChest)<1+Player.skill_got[23]+Player.skill_got[5]
-with instance_furthest(Player.x+random(128)-64,Player.y+random(128)-64,Floor)
-instance_create(x+16,y+16,RogueAmmoChest);
+var ammoWant = 1+Player.skill_got[23]+Player.skill_got[5];
+while (instance_number(RogueAmmoChest) < ammoWant)
+{
+	with instance_furthest(Player.x+random(128)-64,Player.y+random(128)-64,Floor)
+	{
+		if !collision_point(x,y,RogueAmmoChest,false,false)
+			instance_create(x+16,y+16,RogueAmmoChest);
+	}
+}
 
 }
 
@@ -51,7 +57,7 @@ with instance_furthest(Player.x,Player.y,Floor)
 }
 }
 else if (Player.area > 2 or Player.loops > 0) and Player.subarea = 2 && Player.area != 9 && Player.area!=105 && Player.area!=101&&Player.area!=6&&Player.area!=8&&Player.area!=7&&Player.area!=108
-&&Player.area!=112&&Player.area!=103&&Player.area!=104&& Player.area!=113 && Player.area!=114//not inverted desert ...and Player.loops >= Player.crownvisits 
+&&Player.area!=112&&Player.area!=103&&Player.area!=104&& Player.area!=113 && Player.area!=114 && UberCont.opt_gamemode != 25
 {
 
 with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/3+random(128)-64,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/3+random(128)-64,Floor){

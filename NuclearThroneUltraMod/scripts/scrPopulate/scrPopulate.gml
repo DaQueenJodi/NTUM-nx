@@ -1,6 +1,7 @@
 function scrPopulate() {
 	//setting area and spawning some enemies
-
+	if UberCont.opt_gamemode == 25
+	return;
 	with Floor
 	{
 	subarea=Player.subarea;

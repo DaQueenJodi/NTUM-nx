@@ -1,3 +1,4 @@
+if UberCont.opt_gamemode != 25
 with MusCont
 {
 //optimise sound_discard(song)

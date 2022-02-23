@@ -215,6 +215,14 @@ song = mus104
 
 amb=amb104
 }
+
+if UberCont.opt_gamemode == 25 && Player.subarea == 1
+{
+	song = mus100;
+
+	amb = amb100;
+}
+
 snd_loop(song)
 snd_loop(amb)
 

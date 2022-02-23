@@ -1,4 +1,4 @@
-if UberCont.opt_bossintro=0{
+if UberCont.opt_bossintro=0 || UberCont.opt_gamemode == 25{
 instance_destroy();
 exit;}
 
@@ -10,7 +10,7 @@ alarm[0] = 2;
 widescreen = 0
 
 
-name="UNKNOWN STRING!#PLS REPORT @ERDEPPOL#HAS SOMETHING TO DO WITH BOSSES"
+name="BOSS"
 
 if instance_exists(Player)
 {

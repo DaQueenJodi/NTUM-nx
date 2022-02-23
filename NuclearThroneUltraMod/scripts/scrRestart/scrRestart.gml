@@ -11,5 +11,7 @@ function scrRestart() {
 	{
 		restarted = true;	
 	}
+	with SurvivalWave
+		instance_destroy();
 	room_goto(romGame)
 }

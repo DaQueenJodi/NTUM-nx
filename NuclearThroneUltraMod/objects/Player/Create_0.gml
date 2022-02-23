@@ -515,3 +515,7 @@ else
 
 isAlkaline = true;
 myShield = -1;
+if UberCont.opt_gamemode == 25 && !instance_exists(SurvivalWave)
+{
+	instance_create(x,y,SurvivalWave);	
+}

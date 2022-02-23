@@ -66,6 +66,18 @@ outspr=sprWall8Out;
 sprite_index=sprWall8Bot;
 break;
 
+case 9:
+topspr=sprWall9Top;
+outspr=sprWall9Out;
+sprite_index=sprWall9Bot;
+break;
+
+case 10:
+topspr=sprWall10Top;
+outspr=sprWall10Out;
+sprite_index=sprWall10Bot;
+break;
+
 case 100:
 topspr=sprWall100Top;
 outspr=sprWall100Out;
@@ -142,6 +154,24 @@ case 113:
 topspr=sprWall0Top;
 outspr=sprWall0Out;
 sprite_index=sprWall0Bot;
+break;
+
+case 114:
+topspr=sprWall114Top;
+outspr=sprWall114Out;
+sprite_index=sprWall114Bot;
+break;
+
+case 115:
+topspr=sprWall115Top;
+outspr=sprWall115Out;
+sprite_index=sprWall115Bot;
+break;
+
+case 116:
+topspr=sprWall116Top;
+outspr=sprWall116Out;
+sprite_index=sprWall116Bot;
 break;
 
 default:
