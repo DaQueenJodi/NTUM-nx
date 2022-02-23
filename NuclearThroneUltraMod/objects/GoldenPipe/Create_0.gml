@@ -1,4 +1,4 @@
-maxhealth = 10
+maxhealth = 50
 size = 1
 
 spr_idle = sprSewerGoldenPipe

@@ -1,4 +1,4 @@
-maxhealth = 150
+maxhealth = 500
 size = 1
 
 spr_idle = sprBigMushroom
@@ -12,6 +12,6 @@ if !place_free(x,y+12)
 move_contact_solid(random(90)+45,random(12))
 
 name = "EAT MUSHROOM?"
-
+instance_create(x,y,WallBreak);
 //snd_hurt = sndHitRock
 

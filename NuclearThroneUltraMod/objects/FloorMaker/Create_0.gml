@@ -56,7 +56,6 @@ if instance_exists(MenuGen)
 goal = 80//60
 
 endPieceSpawned = false;
- debug("GOAL: ",goal);
 /*
 if instance_number(Floor)<2
 {

@@ -292,9 +292,7 @@ hard = 0
 inverted = false; //for when entering inverted portals
 invertedportalcounter = 0;
 invertedportaldelay = 10;
-invertedchance = 8; //7.5
-if race = 15
-invertedchance = 12;
+invertedchance = 8;
 
 
 oasis = false;

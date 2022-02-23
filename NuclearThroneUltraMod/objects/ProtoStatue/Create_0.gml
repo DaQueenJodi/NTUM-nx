@@ -1,5 +1,4 @@
 maxhealth = 75//80
-//spawnhp = maxhealth*0.8-5 I don't know what this is
 size = 2
 if instance_exists(Player)
 {

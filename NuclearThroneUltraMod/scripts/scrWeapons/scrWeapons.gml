@@ -4069,7 +4069,7 @@ function scrWeapons() {
 	wep_load[368] = 25
 	wep_cost[368] = 1
 	wep_sprt[368] = sprKrakenNader
-	wep_area[368] = 5
+	wep_area[368] = 12
 	wep_text[368] = "ocean bomb!"
 	wep_swap[368] = sndSwapExplosive
 	wep_rad[368] = 0;

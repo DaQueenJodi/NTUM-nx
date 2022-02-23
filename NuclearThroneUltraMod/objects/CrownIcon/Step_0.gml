@@ -18,9 +18,7 @@ Player.crownpoints -= 1
 //RESET INVERTED CHANCE
     with Player
     {
-        invertedchance=7.5
-        if race=15
-        invertedchance=12;
+        invertedchance = 8;
     }
 
 
@@ -123,9 +121,7 @@ if crown==12
 {
     with Player
     {
-    invertedchance=47.5//7.5
-    if race=15//ATOM
-    invertedchance=52;//12;
+    invertedchance = 50;
     }
 }
 
@@ -145,6 +141,6 @@ with instance_create(x,y,GenCont)
 race = Player.race
 }
 
-snd_play(sndSkillPick)
+snd_play_2d(sndSkillPick)
 }
 

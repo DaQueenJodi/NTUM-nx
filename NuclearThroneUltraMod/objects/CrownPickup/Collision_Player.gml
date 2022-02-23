@@ -1,5 +1,8 @@
+with Crown
+{
+	instance_destroy();	
+}
 instance_change(Crown,true)
-
 Player.crownpoints += 1
 if Player.curse = 1 or Player.bcurse = 1
 {

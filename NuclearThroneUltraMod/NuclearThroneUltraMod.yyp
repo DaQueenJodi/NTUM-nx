@@ -4363,6 +4363,7 @@
     {"id":{"name":"InvertedLavaBallEnemy","path":"objects/InvertedLavaBallEnemy/InvertedLavaBallEnemy.yy",},"order":9,},
     {"id":{"name":"InvertedSuperFireBaller","path":"objects/InvertedSuperFireBaller/InvertedSuperFireBaller.yy",},"order":11,},
     {"id":{"name":"InvertedFireBaller","path":"objects/InvertedFireBaller/InvertedFireBaller.yy",},"order":13,},
+    {"id":{"name":"JungleFrozenPlant","path":"objects/JungleFrozenPlant/JungleFrozenPlant.yy",},"order":33,},
     {"id":{"name":"BigGuardianBullet","path":"objects/BigGuardianBullet/BigGuardianBullet.yy",},"order":4,},
     {"id":{"name":"InvertedFireBat","path":"objects/InvertedFireBat/InvertedFireBat.yy",},"order":15,},
     {"id":{"name":"Necromancer","path":"objects/Necromancer/Necromancer.yy",},"order":0,},
