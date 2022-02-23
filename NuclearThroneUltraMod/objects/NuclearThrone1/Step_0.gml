@@ -11,6 +11,7 @@ if immune
 		if (Player.y < y + 128) 
 		{
 			immune = false;
+			scrUnlockCharacter(22,"FOR REACHING THE THRONE#HAVE A SEAT");
 		}
 	}
 	exit;

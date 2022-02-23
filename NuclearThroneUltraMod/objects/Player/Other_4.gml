@@ -70,10 +70,6 @@ scrUnlockCharacter(10,"FOR REACHING THE FROZEN CITY");
 if area = 8//UNLOCK HORROR
 scrUnlockCharacter(21,"FOR REACHING WONDERLAND");
 
-if area = 9//UNLOCK ROGUE
-scrUnlockCharacter(22,"FOR REACHING THE PALACE");
-
-
 //SKINS
 if area = 111 && race = 2
 scrUnlockBSkin(2,"FOR REACHING INVERTED CRYSTAL CAVES#AS CRYSTAL",0);

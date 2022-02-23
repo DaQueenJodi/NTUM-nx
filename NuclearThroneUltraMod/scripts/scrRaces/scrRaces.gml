@@ -311,7 +311,7 @@ function scrRaces() {
 	race_acti[22] = "PORTAL STRIKE"//"GASS, TOXIC IMMUNITY"
 	race_butt[22] = "STRONGER PORTAL STRIKE#MORE PORTAL STRIKE AMMO SPAWNS"//"GASS SPREADS FASTER"
 	//race_back[22] = "INCREASE MAXIMUM PORTAL STRIKE AMMO (this is an ult)";
-	race_lock[22] = "REACH THE PALACE"//"CREATE 3 TOXIC BALLGUYS IN 1 LEVEL"
+	race_lock[22] = "REACH THE THRONE"//"CREATE 3 TOXIC BALLGUYS IN 1 LEVEL"
 	race_have[22] = 0
 	race_swep[22] = 312//ROGUE RIFLE
 	race_bskin[22] = 0
