@@ -118,11 +118,11 @@ scrUnlockBSkin(9,"FOR PICKING UP THE BLACK SWORD",0);
 if targetPickup.wep=329//Dark sword
 scrUnlockCSkin(9,"FOR TOUCHING DEATH ITSELF",0);
 
-if scrToxicWeapons(targetPickup.wep) &&targetPickup.pickedup=false && race = 23
+if scrToxicWeapons(targetPickup.wep) && targetPickup.pickedup=false && race = 23
 {
 toxicweaponsfound++;
-if toxicweaponsfound>=4
-scrUnlockCSkin(23,"BY USING 4 TOXIC WEAPONS#IN ONE RUN AS FROG",0)
+if toxicweaponsfound>=3
+scrUnlockCSkin(23,"BY USING 3 TOXIC WEAPONS#IN ONE RUN AS FROG",0)
 }
 
 //some one wep only unlocks that odont really count as unlockables

@@ -13,7 +13,4 @@ function scrUnlockCharacter(raceIndex, unlockText) {
 	with UberCont
 	scrSave();
 	}
-
-
-
 }

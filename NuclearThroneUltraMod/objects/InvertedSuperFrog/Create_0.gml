@@ -31,6 +31,5 @@ repeat(16)
 instance_create(x,y,ToxicGas)
 
 //Unlock Frog
-if instance_number(SuperFrog) > 1 || instance_number(InvertedSuperFrog) > 1 
-scrUnlockCharacter(23,"FOR HAVING TWO SUPERFROGS#AT THE SAME TIME")
+scrUnlockCharacter(23,"FOR HAVING A SUPER FROG#ARUNNING AROUND")
 
