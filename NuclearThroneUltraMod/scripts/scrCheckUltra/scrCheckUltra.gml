@@ -1,3 +1,3 @@
-function scrCheckUltra(targetWep) {
-	return string_copy(wep_name[targetWep],0,4) == "ULTRA";
+function scrCheckUltra(targetWepName) {
+	return string_copy(targetWepName,0,4) == "ULTRA";
 }
