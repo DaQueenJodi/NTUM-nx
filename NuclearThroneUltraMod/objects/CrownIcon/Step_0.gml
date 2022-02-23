@@ -88,7 +88,7 @@ skeletonlives=0;
 var boost = level;
 instance_destroy();
 }
-
+scrUnlockGameMode(25,"FOR GETTING RESURRECTED");
 with WepPickup
 instance_destroy();
 
