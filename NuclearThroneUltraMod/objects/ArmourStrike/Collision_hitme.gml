@@ -20,6 +20,8 @@ frozen=true;
 	owner=other.id;
     }
 alarm[11]+=60;
+if alarm[1] > 0
+	alarm[1] += 60;
 }
 
 

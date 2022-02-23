@@ -134,6 +134,10 @@ if Player.race=25//Mutation smith is op
     var bwepammo = Player.wep_type[Player.bwep]
     else
     var bwepammo=choose(1,2,3,4,5);
+	if Player.cwep!=0
+    var cwepammo = Player.wep_type[Player.cwep]
+    else
+    var cwepammo=choose(wepammo,bwepammo);
     
     //melee
     if wepammo=0
@@ -141,8 +145,14 @@ if Player.race=25//Mutation smith is op
     
     if bwepammo=0
     bwepammo=choose(1,2,3,4,5);
+	
+	if cwepammo=0
+    cwepammo=choose(1,2,3,4,5);
     
-    type = choose(1,2,3,4,5,wepammo,wepammo,bwepammo,1,2,3,4,5 )
+    type = choose(1,2,3,4,5,
+	wepammo,wepammo,wepammo,wepammo,
+	bwepammo,bwepammo,
+	cwepammo,cwepammo)
     
     Player.ammo[type] += round(Player.typ_ammo[type]/2)
     if Player.ammo[type] > Player.typ_amax[type]
@@ -199,6 +209,10 @@ else
     var bwepammo = Player.wep_type[Player.bwep]
     else
     var bwepammo=choose(1,2,3,4,5);
+	if Player.cwep!=0
+    var cwepammo = Player.wep_type[Player.cwep]
+    else
+    var cwepammo=choose(wepammo,bwepammo);
     
     //melee
     if wepammo=0
@@ -206,8 +220,14 @@ else
     
     if bwepammo=0
     bwepammo=choose(1,2,3,4,5);
+	
+	if cwepammo=0
+    cwepammo=choose(1,2,3,4,5);
     
-    type = choose(1,2,3,4,5,wepammo,wepammo,bwepammo,1,2,3,4,5 )
+    type = choose(1,2,3,4,5,
+	wepammo,wepammo,wepammo,wepammo,
+	bwepammo,bwepammo,
+	cwepammo,cwepammo)
     
     Player.ammo[type] += round(Player.typ_ammo[type]/2)
     if Player.ammo[type] > Player.typ_amax[type]

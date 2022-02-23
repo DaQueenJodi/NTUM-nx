@@ -1,9 +1,9 @@
 /// @description Big balls
-if owner > -1 && !disable
+if owner > -1 && instance_exists(Player)
 {
 	if owner.bigballs
 	{
-		snd_play(sndNothingFire);
+		snd_play_2d(sndNothingFire);
 		with instance_create(x,y,BigGuardianBulletSpawn)
 		{
 			team = other.team

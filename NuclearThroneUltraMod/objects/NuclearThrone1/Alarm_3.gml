@@ -1,10 +1,17 @@
 /// @description step 4
-snd_play(sndNothingRise);
+snd_play_2d(sndNothingRise);
 image_speed = 0.5;
 prevImageIndex = 1;
 image_index = 1;
 //insomnia start slower
-alarm[1] = 60;
+alarm[1] = 30;
+my_health = maxhealth;
+EnemyHealthAdjustments();
+with NuclearThrone1Side
+{
+	my_health = maxhealth;
+	EnemyHealthAdjustments();	
+}
 if instance_exists(Player)
 {
 	if Player.skill_got[29]//insomnia

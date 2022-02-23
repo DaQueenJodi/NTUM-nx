@@ -15,5 +15,5 @@ if sprite_index == spr_hurt
 		else
 			spr_hurt = sprNothingRightHurt;	
 	}
-	sprite_index = spr_idle;	
+	sprite_index = spr_idle;
 }

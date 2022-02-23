@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprNothingOff",
-    "path": "sprites/sprNothingOff/sprNothingOff.yy",
+    "name": "sprNothingOn",
+    "path": "sprites/sprNothingOn/sprNothingOn.yy",
   },
   "solid": false,
   "visible": true,

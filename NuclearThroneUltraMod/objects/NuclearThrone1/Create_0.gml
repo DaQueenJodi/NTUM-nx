@@ -93,7 +93,8 @@ beamY = y;
 fireTriShot = false;
 bigballs = false;
 
-aTime = 20;
+aTime = 30;
 difficultyStep = 0;
+snd_loop(sndBecomeNothingIdle);
 
 xStart = x;

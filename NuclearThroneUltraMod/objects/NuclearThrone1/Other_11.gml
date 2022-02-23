@@ -1,6 +1,6 @@
 /// @description Tri shot
-if !fireTriShot
-{
+//if !fireTriShot
+//{
 	with NuclearThrone1Side
 	{
 		ammo = maxAmmo;
@@ -9,4 +9,4 @@ if !fireTriShot
 		
 	fireTriShot = true;
 	alarm[1] += NuclearThrone1Side.firerate*NuclearThrone1Side.maxAmmo;
-}
+//}

@@ -16,8 +16,8 @@ repeat(8)
 		hspeed = random_range(-6,6);
 	}
 }
-snd_play(sndNothingStart);
-snd_play(sndNothingBeamStart);
+snd_play_2d(sndNothingStart);
+snd_play_2d(sndNothingBeamStart);
 snd_loop(sndNothingBeamLoop);
 with instance_create(x,y+24,ThroneBeam)
 {

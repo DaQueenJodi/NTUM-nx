@@ -7,7 +7,7 @@ repeat(30)
 instance_create(x+random(300)-150,y+random(400)-200,GreenExplosion)
 
 
-snd_play(sndNothingDeath2);
+snd_play_2d(sndNothingDeath2);
 
 alarm[2] = 0;
 alarm[1] = 0;

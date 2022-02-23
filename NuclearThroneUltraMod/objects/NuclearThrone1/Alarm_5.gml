@@ -1,6 +1,6 @@
 /// @description START BEAM
 alarm[6] = 70;//Beam duration
-snd_play(sndNothingBeamStart);
+snd_play_2d(sndNothingBeamStart);
 snd_loop(sndNothingBeamLoop);
 vspeed = 0;
 beamY = y;

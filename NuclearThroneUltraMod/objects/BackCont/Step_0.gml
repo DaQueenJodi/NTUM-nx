@@ -1,3 +1,5 @@
+var vw = __view_get( e__VW.WView, 0 )*0.5;
+var vh = __view_get( e__VW.HView, 0 )*0.5;
 if instance_exists(Player)
 {
 if !instance_exists(GenCont)
@@ -13,11 +15,10 @@ viewdist = 8
 if(Player.skill_got[19])&&!instance_exists(Marker){//EAGLE EYES
 viewdist-=5;}
 
-
 //if Player.my_health > 0
 //{
-viewx = ((Player.x-__view_get( e__VW.WView, 0 )/2)*(viewdist-1)+(mouse_x-__view_get( e__VW.WView, 0 )/2))/viewdist
-viewy = ((Player.y-__view_get( e__VW.HView, 0 )/2)*(viewdist-1)+(mouse_y-__view_get( e__VW.HView, 0 )/2))/viewdist
+viewx = ((Player.x-vw)*(viewdist-1)+(mouse_x-vw))/viewdist
+viewy = ((Player.y-vh)*(viewdist-1)+(mouse_y-vh))/viewdist
 //}
 if (instance_exists(Tangle) or instance_exists(TangleSeed)) and mouse_check_button(mb_right) && Player.ultra_got[20]=0//stereo snares confusion
 {
@@ -25,20 +26,25 @@ if instance_exists(TangleSeed)
 {
 if point_distance(Player.x,Player.y,TangleSeed.x,TangleSeed.y)>128
 {
-viewx = (((TangleSeed.x+Player.x*2)/3-__view_get( e__VW.WView, 0 )/2)*(viewdist-1)+(mouse_x-__view_get( e__VW.WView, 0 )/2))/viewdist
-viewy = (((TangleSeed.y+Player.y*2)/3-__view_get( e__VW.HView, 0 )/2)*(viewdist-1)+(mouse_y-__view_get( e__VW.HView, 0 )/2))/viewdist
+viewx = (((TangleSeed.x+Player.x*2)/3-vw)*(viewdist-1)+(mouse_x-vw))/viewdist
+viewy = (((TangleSeed.y+Player.y*2)/3-vh)*(viewdist-1)+(mouse_y-vh))/viewdist
 }
 }
 else
 {
-viewx = (((Tangle.x+Player.x*1.5)/2.5-__view_get( e__VW.WView, 0 )/2)*(viewdist-1)+(mouse_x-__view_get( e__VW.WView, 0 )/2))/viewdist
-viewy = (((Tangle.y+Player.y*1.5)/2.5-__view_get( e__VW.HView, 0 )/2)*(viewdist-1)+(mouse_y-__view_get( e__VW.HView, 0 )/2))/viewdist
+viewx = (((Tangle.x+Player.x*1.5)/2.5-vw)*(viewdist-1)+(mouse_x-vw))/viewdist
+viewy = (((Tangle.y+Player.y*1.5)/2.5-vh)*(viewdist-1)+(mouse_y-vh))/viewdist
 }
 }
 if Player.area == 9 && Player.subarea == 3
 {
-	viewy -= 32;	
+	viewy -= 24;
+	if instance_exists(NuclearThrone1)
+	{
+		viewx += (viewx - NuclearThrone1.x) * 0.1;
+	}
 }
+
 /*if instance_exists(Portal)
 {
 //viewx = ((( (Portal.x) +Player.x*3)/4-view_wview/2)*(viewdist-1)+(mouse_x-view_wview) )/viewdist//viewx = (((Portal.x+Player.x*3)/4-view_wview/2)*(viewdist-1)+(mouse_x-view_wview/2))/viewdist
@@ -57,8 +63,8 @@ if instance_exists(DramaCamera)
 cam = instance_nearest(x,y,DramaCamera)
 if cam.visible = 1
 {
-viewx = (viewx+cam.x*cam.urgent)/(1+cam.urgent)-__view_get( e__VW.WView, 0 )/2
-viewy = (viewy+cam.y*cam.urgent)/(1+cam.urgent)-__view_get( e__VW.HView, 0 )/2
+viewx = (viewx+cam.x*cam.urgent)/(1+cam.urgent)-vw
+viewy = (viewy+cam.y*cam.urgent)/(1+cam.urgent)-vh
 }
 }
 }
@@ -69,14 +75,20 @@ if instance_exists(Menu)
 {
     if UberCont.race_have[Menu.race]
     {
-    viewx2 = viewx2-(viewx2-(Menu.char[Menu.race].x-__view_get( e__VW.WView, 0 )/2))*0.1
-    viewy2 = viewy2-(viewy2-(Menu.char[Menu.race].y-__view_get( e__VW.HView, 0 )/2))*0.1
+    viewx2 = viewx2-(viewx2-(Menu.char[Menu.race].x-vw))*0.1
+    viewy2 = viewy2-(viewy2-(Menu.char[Menu.race].y-vh))*0.1
     }
 }
 else
 {
 viewx2 = viewx2-(viewx2-viewx)*0.4
 viewy2 = viewy2-(viewy2-viewy)*0.4
+	if !instance_exists(DramaCamera) && instance_exists(Player)
+	{
+		//Always keep player on the screen
+		viewx2 = clamp(viewx2,Player.x - (vw*2),Player.x);
+		viewy2 = clamp(viewy2,Player.y - (vh*2),Player.y);
+	}
 }
 
 __view_set( e__VW.XView, 0, round(viewx2+(random(shake)-shake/2)*UberCont.opt_shake) );

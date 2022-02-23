@@ -12,7 +12,7 @@ snd_play(sndRoll);
 snd_play(sndBloodLauncher);
 
 snd_play(choose(sndWater1,sndWater2) );
-with instance_create(x+lengthdir_x(24,ang+240),y+lengthdir_y(24,ang+240),MeatExplosion)
+with instance_create(x,y,MeatExplosion)
 scrCanHumphry();
 repeat(amount)
 {

@@ -49,7 +49,7 @@ if other.team != 0//Dealing the damage with gamma guts
 	if other.meleedamage > 0 and other.team != team && meleeimmunity<1 && alarm[3] < 1//is it a melee enemy?
 	{
 	meleeimmunity=15;
-	    if (skill_got[8] = 1)&&(other.my_health<=0)//gamma guts immunity?
+	    if (other.my_health<=0)
 	    {
 	    }
 	    else {//if !(KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2){//Ultra D Humphry no contact damage

@@ -7,7 +7,7 @@ scrTarget();
 if target > 0
 {
 	var ran = random(100);
-	if target.x < x - 128 || target.x > x + 128
+	if target.x < x - 128 || target.x > x + 128 && ran > 50
 	{
 		fireTriShot = false;
 		event_user(2);
@@ -20,7 +20,7 @@ if target > 0
 		fireTriShot = false;
 		bigballs = false;
 	}
-	else if target.y - y > 128 && ran > 80
+	else if target.y - y > 128 && ran > 70
 	{
 		//Far below me
 		walk = alarm[1];
@@ -28,14 +28,14 @@ if target > 0
 		fireTriShot = false;
 		bigballs = false;
 	}
-	else if target.x > beamL && target.x < beamR && ran > 70
+	else if target.x > beamL && target.x < beamR && ran > 60
 	{
 		//In center
 		bigballs = false;
 		fireTriShot = false;
 		event_user(0);//BEAM START
 	}
-	else if ran > 40
+	else if ran > 45
 	{
 		//Tri shot
 		bigballs = false;

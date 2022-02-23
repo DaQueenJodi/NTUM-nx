@@ -26,8 +26,8 @@ with other
 			owner=other.id;
             }
         alarm[11]+=20;
-		alarm[1] += 20;
-
+		if alarm[1] > 0
+				alarm[1] += 20;
         }
         
         }

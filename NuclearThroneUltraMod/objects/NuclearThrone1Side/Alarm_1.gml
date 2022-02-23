@@ -1,11 +1,10 @@
 /// @description Tri shot
 if disable
 	exit;
-if owner > -1 && owner.fireTriShot
+if owner > -1 && owner.fireTriShot && instance_exists(Player)
 {
 	alarm[1] = firerate;
-	if isLeft
-		snd_play(sndNothingSmallball);
+	snd_play_2d(sndNothingSmallball,random_range(0.99,1.01),true,true,2);
 		
 	var angleStep = 20;
 	var angle = gunangle[angleI] - angleStep;
@@ -20,9 +19,10 @@ if owner > -1 && owner.fireTriShot
 		angle += angleStep;
 	}
 	ammo -= 1;
-	if ammo <0
+	if ammo < 0
 	{
 		alarm[1] += firerate;
+		ammo = maxAmmo;
 		angleI = irandom(array_length(gunangle)-1)
 		debug("angleI: ",angleI);
 	}

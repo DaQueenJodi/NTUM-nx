@@ -1,5 +1,5 @@
 /// @description Init
-maxhealth = 400;
+maxhealth = 470;
 disable = false;
 size = 8;
 meleedamage = 0;
@@ -16,7 +16,7 @@ walk = 0;
 spriteXscale = 1;
 legXoffset = 0;
 projectileSpeed = 6;
-firerate = 6;
+firerate = 7;
 maxAmmo = 8
 ammo = maxAmmo;
 gunangle[0] = 270;

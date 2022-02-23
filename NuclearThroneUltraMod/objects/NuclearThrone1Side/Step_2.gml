@@ -77,7 +77,7 @@ if owner > -1 && instance_exists(owner)
 		if walk > sprite_get_number(sprNothingLeg)
 		{
 			walk = 0;
-			snd_play(sndNothingFootstep);
+			snd_play_2d(sndNothingFootstep);
 		}
 	}
 }

@@ -10,7 +10,6 @@ if immune
 		if instance_exists(Player)
 		if (Player.y < y + 128) 
 		{
-			snd_loop(sndBecomeNothingIdle);
 			immune = false;
 		}
 	}
@@ -52,7 +51,7 @@ else
 if my_health < maxhealth*0.6 && difficultyStep < 1
 {
 	difficultyStep ++;
-	snd_play(sndNothingMidHP);
+	snd_play_2d(sndNothingMidHP);
 	snd_hurt = sndNothingHurtMid;
 	aTime = max(aTime-1,1);
 	with NuclearThrone1Side
@@ -65,7 +64,7 @@ if my_health < maxhealth*0.6 && difficultyStep < 1
 if my_health < maxhealth*0.2 && difficultyStep < 2
 {
 	difficultyStep ++;
-	snd_play(sndNothingLowHP);
+	snd_play_2d(sndNothingLowHP);
 	snd_hurt = sndNothingHurtLow;
 	aTime = max(aTime-1,1);
 	with NuclearThrone1Side
@@ -85,15 +84,8 @@ if (my_health <= 0)
 	instance_destroy();
 	
 }
-if firstEntry && alarm[1] < 15
+if !firstEntry && alarm[1] < 15
 {
 	firstEntry = true;
-	my_health = maxhealth;
-	EnemyHealthAdjustments();
-	with NuclearThrone1Side
-	{
-		my_health = maxhealth;
-		EnemyHealthAdjustments();	
-	}
-	snd_play(sndBecomeNothingStartup);
+	snd_play_2d(sndBecomeNothingStartup);
 }

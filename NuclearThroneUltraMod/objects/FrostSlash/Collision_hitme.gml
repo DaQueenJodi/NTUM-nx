@@ -23,7 +23,8 @@ frozen=true;
 	owner=other.id;
     }
 alarm[11]+=other.freezetime;
-alarm[1] += other.freezetime;
+if alarm[1] > 0
+	alarm[1] += other.freezetime;
 
 }
 }}

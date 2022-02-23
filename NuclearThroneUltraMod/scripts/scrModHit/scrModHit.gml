@@ -91,6 +91,8 @@ function scrModHit() {
 	        DebrisAmount=3;
 	        }
 	    alarm[11]+=10;//30 for freezebullets
+		if alarm[1] > 0
+			alarm[1] += 10;
 	    }}
 	newfrost=false;
 	break;
@@ -283,6 +285,8 @@ function scrModHit() {
 	        }
     
 	    alarm[11]+=10;//30 for freezebullets
+		if alarm[1] > 0
+			alarm[1] += 10;
 	    }}
 	    newfrost=false;
 	}
@@ -291,7 +295,11 @@ function scrModHit() {
 	with FrozenEnemy
 	DebrisAmount+=3;
 	with other
-	alarm[11]+=10;
+	{
+		alarm[11]+=10;
+		if alarm[1] > 0
+				alarm[1] += 10;
+	}
 	}
 	break;
 
@@ -490,6 +498,8 @@ function scrModHit() {
 	        }
     
 	    alarm[11]+=10;//30 for freezebullets
+		if alarm[1] > 0
+			alarm[1] += 10;
 	    }}
 	    newfrost=false;
 	}
@@ -498,7 +508,11 @@ function scrModHit() {
 	with FrozenEnemy
 	debrisAmount+=3;
 	with other
-	alarm[11]+=10;
+	{
+		alarm[11]+=10;
+		if alarm[1] > 0
+				alarm[1] += 10;
+	}
 	}
 	break;
 
@@ -698,6 +712,8 @@ function scrModHit() {
 	        }
     
 	    alarm[11]+=10;//30 for freezebullets
+		if alarm[1] > 0
+			alarm[1] += 10;
 	    }}
 	    newfrost=false;
 	}
@@ -706,7 +722,11 @@ function scrModHit() {
 	with FrozenEnemy
 	debrisAmount+=3;
 	with other
-	alarm[11]+=10;
+	{
+		alarm[11]+=10;
+		if alarm[1] > 0
+				alarm[1] += 10;
+	}
 	}
 	break;
 
