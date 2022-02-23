@@ -4867,7 +4867,7 @@ function scrFire() {
 	}
 	if Player.ultra_got[80]//business hog gold digger
 	{
-	if scrCheckGold(wep)//string_copy(wep_name[wep],0,4) = "GOLD"&&loops<1
+	if scrCheckGold(wep_name[wep])//string_copy(wep_name[wep],0,4) = "GOLD"&&loops<1
 	reload*=0.4;
 	}
 

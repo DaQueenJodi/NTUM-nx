@@ -13,7 +13,7 @@ with Player
 	}
 
 	//golden weps
-	if random(5)<1 &&scrCheckGold(wep)
+	if random(5)<1 &&scrCheckGold(wep_name[wep])
 	{
 	with instance_create(x+lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y))+random(6)-3,
 	y+lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y))+random(6)-3,CaveSparkle){

@@ -15,12 +15,6 @@ audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 //audio_sound_gain(sndBossWin,max(0,sqrt(UberCont.opt_musvol)),0);
 }
 
-with Player
-{
-if race = 2 &&curse=1||bcurse=1
-scrUnlockCSkin(2,"FOR DEFEATING BIG DOG#USING A CURSED WEAPON#AS CRYSTAL",0);
-}
-
 scrDrop(0,100)
 scrDrop(0,50)
 scrBusinessHogGoldChest();

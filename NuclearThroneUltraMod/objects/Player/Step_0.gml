@@ -620,7 +620,7 @@ if (curse)
 {
 	snd_play(sndSwapCursed);
 }
-if (scrCheckGold(wep))
+if (scrCheckGold(wep_name[wep]))
 {
 	snd_play(sndSwapGold);	
 }

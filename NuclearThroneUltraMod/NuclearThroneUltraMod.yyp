@@ -3494,6 +3494,7 @@
     {"id":{"name":"sndLilHunterHalfHP","path":"sounds/sndLilHunterHalfHP/sndLilHunterHalfHP.yy",},"order":49,},
     {"id":{"name":"sndPortalAppear","path":"sounds/sndPortalAppear/sndPortalAppear.yy",},"order":7,},
     {"id":{"name":"sndPortalClose","path":"sounds/sndPortalClose/sndPortalClose.yy",},"order":8,},
+    {"id":{"name":"scrCheckUltra","path":"scripts/scrCheckUltra/scrCheckUltra.yy",},"order":49,},
     {"id":{"name":"sndPortalLoop","path":"sounds/sndPortalLoop/sndPortalLoop.yy",},"order":9,},
     {"id":{"name":"sndPortalOpen","path":"sounds/sndPortalOpen/sndPortalOpen.yy",},"order":10,},
     {"id":{"name":"sndStatueCharge","path":"sounds/sndStatueCharge/sndStatueCharge.yy",},"order":7,},

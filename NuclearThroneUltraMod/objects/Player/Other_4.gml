@@ -70,6 +70,11 @@ scrUnlockCharacter(10,"FOR REACHING THE FROZEN CITY");
 if area = 8//UNLOCK HORROR
 scrUnlockCharacter(21,"FOR REACHING WONDERLAND");
 
+if area == 115 && race == 2
+{
+	scrUnlockCSkin(2,"FOR REACHING CHEESE CAVES#AS CRYSTAL",0);	
+}
+
 //SKINS
 if area = 111 && race = 2
 scrUnlockBSkin(2,"FOR REACHING INVERTED CRYSTAL CAVES#AS CRYSTAL",0);
