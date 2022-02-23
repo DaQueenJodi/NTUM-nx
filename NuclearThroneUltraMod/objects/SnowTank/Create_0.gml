@@ -23,11 +23,11 @@ wave = 0
 replace=false;
 if instance_exists(Player)
 {
-if random(30) < 1 and Player.subarea > 1//random 30
-{
-replace=true;
-instance_destroy()
-instance_create(x,y,GoldSnowTank)
-}
+	if random(30) < 1 + Player.loops * 4 and (Player.subarea > 1 || Player.loops > 0) //random 30
+	{
+		replace=true;
+		instance_destroy()
+		instance_create(x,y,GoldSnowTank)
+	}
 }
 
