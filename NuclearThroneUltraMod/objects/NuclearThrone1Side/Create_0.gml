@@ -3,6 +3,7 @@ maxhealth = 470;
 disable = false;
 size = 8;
 meleedamage = 0;
+raddrop = 0;
 // Inherit the parent event
 event_inherited();
 spr_idle = sprNothingLeft;
