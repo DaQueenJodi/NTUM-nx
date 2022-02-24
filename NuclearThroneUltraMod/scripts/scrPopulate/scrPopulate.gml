@@ -441,8 +441,4 @@ function scrPopulate() {
         }
         until instance_number(PizzaEntrance) <= 1
     }
->>>>>>> 03c22023064cdd311075754a9dbb4757527294f5
-
-
-
 }
