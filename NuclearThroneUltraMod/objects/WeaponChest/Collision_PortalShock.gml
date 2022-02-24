@@ -22,7 +22,7 @@ repeat(10)
 instance_create(x+random(16)-8,y+random(16)-8,Curse)
 }
 if !oneweponly
-	snd_play(sndBigWeaponChest);
+	snd_play(sndWeaponChest);
 else
 	snd_play(sndAmmoChest);
 instance_destroy()

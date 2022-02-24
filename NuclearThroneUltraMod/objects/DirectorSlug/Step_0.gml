@@ -1,7 +1,7 @@
 image_angle = direction
 
 
-if speed < 3 and sprite_index != sprDirectorSlugDisappear
+if speed < 2.5 and sprite_index != sprDirectorSlugDisappear
 {
 sprite_index = sprDirectorSlugDisappear
 image_index = 0

@@ -4715,7 +4715,6 @@ function scrFire2() {
 	//OBSIDIAN THROWING KNIFE
 	case 370:
 	snd_play_2d(sndEnemySlash);
-	clicked = 0;
 	with instance_create(x,y,ThrowWepNoReturn)
 	{
 		team=other.team;
@@ -4735,7 +4734,11 @@ function scrFire2() {
 	BackCont.viewx2 += lengthdir_x(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.shake += 1
-	scrSwapWeps()
+	if curse
+		my_health -= 7;
+	//TOSSING CURSED WEAPONS!?
+	scrSwapWeps();
+	clicked = 0;
 	bwep = 0
 	break;
 	

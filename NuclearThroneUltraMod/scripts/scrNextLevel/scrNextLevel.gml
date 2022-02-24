@@ -11,7 +11,7 @@ function scrNextLevel() {
 	//show_message("inverted: "+ string(inverted)+"#area :"+string(area));
 	if area < 100
 	lastarea = area
-	else if subarea = 1 || area = 105 || area = 106 || area = 107 || area = 101 || area = 110 || area = 111 || area = 112 || area = 103 || area = 109 || area = 113 || area == 114 || area = 108
+	else if subarea = 1 || area = 105 || area = 106 || area = 107 || area = 101 || area = 110 || area = 111 || area = 112 || area = 103 || area = 109 || area = 113 || area == 114 || area = 108 || area == 115
 	{
 	    if area = 113 && subarea=2//banditland
 	    {
@@ -217,6 +217,13 @@ function scrNextLevel() {
 	    }
 	    else if area=101
 	    hard+=2;
+		
+		//Cursed caves
+		if area == 115
+		{
+			area = 5;
+			subarea = 0;
+		}
 
 	}
 	if ( subarea < 3 and area != 2 and area != 4/* and area != 6 */and area != 105 and area != 106  && !(area = 6 && subarea > 1) )&&!(area=7&&subarea=2)
@@ -229,6 +236,10 @@ function scrNextLevel() {
 	        {
 	        area += 1
 	        subarea=1
+				if area == 4 && curse || bcurse || ccurse
+				{
+					area = 115;	
+				}
 	        }
 	    }
 	    else//WE LOOP HERE!
@@ -298,18 +309,6 @@ function scrNextLevel() {
 	    hard -= 1;
 	    }
 	}
-	}
-	
-	
-	//Cursed caves
-	if area == 115
-	{
-		area = 5;
-		subarea = 1;
-	}
-	else if area == 4 && curse || bcurse || ccurse
-	{
-		area = 115;	
 	}
 
 

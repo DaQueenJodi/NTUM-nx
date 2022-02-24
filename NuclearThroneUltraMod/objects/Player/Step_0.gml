@@ -224,7 +224,8 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if (keyboard_check_pressed(ord("G")))
 	    {
 		var dangle = random(1)*360;
-	    instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,WeaponChest);
+	    with instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,WeaponChest)
+		curse = 1;
 		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
 		thing.mytext = "WEAPON CHEST!";
 	    }
