@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "musBoss4B.ogg",
-  "duration": 100.173943,
+  "duration": 67.2,
   "parent": {
     "name": "Music & amb",
     "path": "folders/Sounds/Music & amb.yy",

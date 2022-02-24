@@ -1,4 +1,4 @@
-/// @description step 4
+/// @description step 4 vulnerable
 snd_play_2d(sndNothingRise);
 image_speed = 0.5;
 prevImageIndex = 1;

@@ -33,6 +33,10 @@ if !active
 		spr_hurt = sprNothingOff;
 		snd_hurt = sndNothingHurtHigh;
 		sprite_index = sprNothingOff;
+		with MusCont
+		{
+			audio_stop_sound(song);	
+		}
 		if audio_is_playing(sndBecomeNothingIdle)
 				audio_stop_sound(sndBecomeNothingIdle);
 		with ThroneFlame

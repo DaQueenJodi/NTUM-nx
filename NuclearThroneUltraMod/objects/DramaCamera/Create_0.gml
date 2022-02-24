@@ -169,7 +169,12 @@ if instance_exists(Player)
     if Player.area = 7 || Player.area = 108
     song = musPurpleDragonBoss;
     if Player.area = 8 || Player.area = 109
-    song = musBoss6B;
+	{
+		if (random(100) <1)
+			song = sndChubbyEmuSong;
+		else
+			song = musBoss6B;
+	}
     if Player.area = 101 || Player.area = 2
     song = musBoss1;
     snd_loop(song)

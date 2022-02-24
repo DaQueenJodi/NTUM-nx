@@ -1,4 +1,9 @@
 /// @description intro step 2 first beam
+with MusCont
+{
+	song = musBoss4A	
+	snd_loop(song);
+}
 sprite_index = sprNothingActivate;
 spr_idle = sprNothingActivate;
 spr_hurt = sprNothingActivate;
