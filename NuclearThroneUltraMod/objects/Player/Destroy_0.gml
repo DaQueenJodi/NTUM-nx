@@ -1,5 +1,5 @@
 //UNLOCK EASY MODE
-if area=1 && subarea=1 && loops=0 && my_health<1
+if area=1 && subarea=1 && loops=0
 scrUnlockGameMode(9,"FOR PLAYING LIKE SHIT")
 
 if scrCheckLoopAll()

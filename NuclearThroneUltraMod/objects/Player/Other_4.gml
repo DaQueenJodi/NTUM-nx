@@ -110,12 +110,6 @@ if secretlevelcount=3
 scrUnlockGameMode(10,"FOR GOING TO THREE SECRET LEVELS")
 }
 
-if area=8 && onlyusemerevolver
-{//ONE WEAPON ONLY UNLOCK!
-scrUnlockGameMode(1,"FOR REACHING THE WONDERLAND#USING ONLY A REVOLVER");
-}
-
-
 seconds=0;
 microseconds=0;
 

@@ -63,7 +63,7 @@ if (UberCont.gamemode_have[gamemodeOrder[gamemodenr]]=1 && !dailyDone)
 }
 else
 {
-draw_sprite(sprLocked,0,x,y+40);
+draw_sprite(sprLocked,0,x,y+38);
 var str;
 if dailyDone && UberCont.gamemode_have[gamemodeOrder[gamemodenr]]=1
 {

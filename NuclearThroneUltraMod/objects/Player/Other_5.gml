@@ -120,7 +120,7 @@ if crown = 2
 {
 	var toHeal = maxhealth - min(my_health,maxhealth);
 	//my_health = maxhealth;
-	var overheal = (maxhealth - toHeal) * 0.5;
+	var overheal = (maxhealth - toHeal) * 0.25;
 	my_health = max(maxhealth,my_health + overheal);
 }
 
