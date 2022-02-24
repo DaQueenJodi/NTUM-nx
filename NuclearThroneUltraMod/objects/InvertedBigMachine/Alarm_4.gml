@@ -23,5 +23,5 @@ image_angle = direction}
 ammo--;
 
 if ammo>0
-alarm[4]=5;
+alarm[4]=6;
 

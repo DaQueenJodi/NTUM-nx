@@ -14,7 +14,7 @@ event_perform(ev_alarm,0)}
 else
 {
 sprite_index=spr_idle;
-alarm[1]=35+random(20);
+alarm[1]=60;
 ammo=4;
 
 if random(7)

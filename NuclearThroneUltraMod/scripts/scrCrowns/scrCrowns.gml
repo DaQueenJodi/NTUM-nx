@@ -11,7 +11,7 @@ function scrCrowns() {
 
 	crown_name[2] = "[CROWN OF LIFE]"
 	//crown_text[2] = "RESET LIFE TO MAX HP# AT THE END OF EACH LEVEL#NO HP DROPS"
-	crown_text[2] = "GAIN MAX HP#AT THE END OF EACH AREA#THIS CAN OVERHEAL"
+	crown_text[2] = "GAIN MAX HP#AT THE END OF EACH AREA#OVERHEAL FOR HALF"
 	crown_used[2] = 0
 	crown_tips[2] = "life"
 
