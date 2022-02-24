@@ -8,7 +8,7 @@ targetPickup=instance_nearest(x,y,WepPickup);
 
 
 //UNLOCK GOLDEN WEAPON
-if scrCheckGold(targetPickup.wep)
+if scrCheckGold(wep_name[targetPickup.wep])
 	scrUnlockGoldWeapon(targetPickup.wep);
 
 //first get ammo

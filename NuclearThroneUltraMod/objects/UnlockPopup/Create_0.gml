@@ -8,4 +8,3 @@ alarm[0]=150;
 drawtext=false;
 
 yy=0;
-

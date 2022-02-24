@@ -3,7 +3,7 @@ function scrUnlockGoldWeapon(target) {
 	if isValidGamemodeToUnlock(UberCont.opt_gamemode){//Don't save starting wep when you're playing one weapon only
 		with UberCont
 		{
-		    if scrCheckGold(wep_name[target])
+		    if scrCheckGold(Player.wep_name[target])
 		    {
 			    if scrCheckAllGold()//does a char have all gold weps
 				{
@@ -21,7 +21,7 @@ function scrUnlockGoldWeapon(target) {
 					//Unlock the gun!
 					start_wep_have[goldIndex,other.race]=1;
 					with instance_create(x,y,UnlockPopup)
-					mytext=Player.wep_name[Player.wep]+ "#UNLOCKED!";
+					mytext=Player.wep_name[target]+ "#UNLOCKED FOR#"+string_replace(string_replace(string(Player.race_name[Player.race]),"[",""),"]","");
 					scrSave();
 
 			    }

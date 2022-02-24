@@ -15,7 +15,7 @@ if aditionalwep != 0
 	with instance_create(x,y,WepPickup)
 	{
 		scrWeapons()
-		wep = other.wep;
+		wep = other.aditionalwep;
 		name = wep_name[other.aditionalwep]
 		ammo = 50
 		type = wep_type[other.aditionalwep]
