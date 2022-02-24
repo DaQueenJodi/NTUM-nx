@@ -330,7 +330,7 @@ function scrUltras() {
 	    ultra_tips[69] = "guardian"
     
 	    ultra_name[70] = "DESCENT"
-	    ultra_text[70] = "YOUR ACTIVE CHANGES INTO:#GET AMMO FOR YOUR PRIMARY#AT THE COST OF HEALTH#THRONEBUTT DOUBLES THE AMMO"
+	    ultra_text[70] = "YOUR ACTIVE CHANGES INTO#GET AMMO FOR YOUR PRIMARY#AT THE COST OF HEALTH#THRONEBUTT DOUBLES THE AMMO"
 	    ultra_tips[70] = "emo style"
     
 	    ultra_name[71] = "TRANQUILITY"
