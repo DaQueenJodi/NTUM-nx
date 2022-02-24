@@ -391,6 +391,7 @@ wepright = 1
 back = 1
 wave = 0
 roll = 0
+rollIframe = 0;
 drawempty = 0
 drawlowhp = 0
 canrebel = 1

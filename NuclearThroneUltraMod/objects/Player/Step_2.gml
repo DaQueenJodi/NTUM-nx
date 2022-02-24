@@ -611,3 +611,22 @@ my_health--;
 audio_listener_position(x, y, depth*10);
 
 exception = false;
+if rollIframe > 0
+{
+	rollIframe --;
+	mask_index = mskPlayer;
+	if place_meeting(x,y,Wall)
+	{
+		move_outside_solid(direction+180,8);
+		move_contact_solid(direction,max(1,min(maxspeed,speed)))
+		if !place_free(x+hspeed,y){hspeed /= 2
+		if !place_free(x+hspeed,y) hspeed = 0}
+		if !place_free(x,y+vspeed){vspeed /= 2
+		if !place_free(x,y+vspeed)vspeed = 0}
+		//speed  = 0;
+	}
+	if rollIframe > 0
+	{
+		mask_index = mskPickupThroughWall;	
+	}
+}

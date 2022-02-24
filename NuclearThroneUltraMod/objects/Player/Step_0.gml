@@ -298,58 +298,60 @@ scrPowers()
 }
 else
 {
-//rolling
-speed = 6.3+skill_got[2]*0.5//the rolling speed code is far below
-angle += 50*right
+	//rolling
+	speed = 6.3+skill_got[2]*0.5//the rolling speed code is far below
+	angle += 50*right
 
-if speed = 0
-{if sprite_index != spr_hurt
-sprite_index = spr_idle}
-else
-{if sprite_index != spr_hurt
-sprite_index = spr_walk}
-if sprite_index = spr_hurt
-{if image_index > 2
-sprite_index = spr_idle}
+	if speed = 0
+	{if sprite_index != spr_hurt
+	sprite_index = spr_idle}
+	else
+	{if sprite_index != spr_hurt
+	sprite_index = spr_walk}
+	if sprite_index = spr_hurt
+	{if image_index > 2
+	sprite_index = spr_idle}
 
-if skill_got[5] = 1
-{
-if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
-hspeed -= 3
-if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
-hspeed += 3
-if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
-vspeed -= 3
-if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
-vspeed += 3
-instance_create(x,y,FishBoost)
-
-
-/*if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
-hspeed -= 3
-if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
-hspeed += 3
-if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
-vspeed -= 3
-if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
-vspeed += 3*/
-if ( (angle > 360 or -angle > 360) && !(KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2) )
-{
-angle = 0
-roll = 0
+	if skill_got[5] = 1
+	{
+		var spd = speed;
+		speed = 0;
+		if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
+		hspeed -= 3
+		if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
+		hspeed += 3
+		if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
+		vspeed -= 3
+		if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
+		vspeed += 3
+		instance_create(x,y,FishBoost)
+		speed += spd;
+		/*if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
+		hspeed -= 3
+		if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
+		hspeed += 3
+		if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
+		vspeed -= 3
+		if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
+		vspeed += 3*/
+		if (angle > 360 or -angle > 360) 
+		{
+			if !(KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2)
+			{
+				angle = 0
+				roll = 0
+			}
+		}
+	}
+	else{
+	instance_create(x+random(6)-3,y+random(6),Dust)
+		if angle > 360 or -angle > 360
+		{
+			angle = 0
+			roll = 0
+		}
+	}
 }
-
-}
-else{
-instance_create(x+random(6)-3,y+random(6),Dust)
-
-if angle > 360 or -angle > 360
-{
-angle = 0
-roll = 0
-}}
-}
-
 
 
 if bleed > 0 and my_health > 0
@@ -895,8 +897,11 @@ if speed > maxspeed
 speed = maxspeed
 
 if roll = 1
+{
 speed = 6.3+skill_got[2]*0.5//xtra feet rolling
-
+if mask_index == mskPickupThroughWall
+	instance_create(x,y,Dust);
+}
 
 if ((area = 5 || area = 107) and !instance_exists(GenCont) and !instance_exists(LevCont) and !instance_exists(FloorMaker))
 {

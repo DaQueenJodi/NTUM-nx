@@ -8,7 +8,7 @@ if other.team != team
     my_health -= 8//6
     sprite_index = spr_hurt
     image_index = 0
-    motion_add(other.direction,8)
+    motion_add(other.direction,4)
     BackCont.shake += 2
 if other.split>0
 {

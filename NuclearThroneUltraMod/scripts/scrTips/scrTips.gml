@@ -13,7 +13,7 @@ function scrTips() {
 	"melee weapons can deflect bullets",
 	"shotguns are great for close combat",
 	"assassins can pretend they're dead",
-	"fish can roll",
+	"fish can dodge roll",
 	"always keep one eye on your ammo",
 	"robots can digest anything",
 	"bandits like camping near explosives",

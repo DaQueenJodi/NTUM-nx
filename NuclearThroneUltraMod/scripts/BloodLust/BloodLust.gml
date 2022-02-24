@@ -10,21 +10,19 @@ function BloodLust(){
     if Player.skill_got[7] = 1 and random(100) <  chance//7.69% chance
     {
     
-    with instance_create(Player.x,Player.y-8,HealFX)
-    {
-    sprite_index=sprBloodlust;
-    }
+	    with instance_create(Player.x,Player.y-8,HealFX)
+	    {
+	    sprite_index=sprBloodlust;
+	    }
     
-    num = 1
-    Player.my_health += num
-    if Player.my_health > Player.maxhealth && Player.crown != 2
-    Player.my_health = Player.maxhealth
+	    num = 1
+	    Player.my_health = max(Player.my_health,min(Player.my_health + num,Player.maxhealth));
     
-    dir = instance_create(x,y,PopupText)
-    dir.mytext = "+"+string(num)+" HP"
-    if Player.my_health = Player.maxhealth
-    dir.mytext = "MAX HP"
-	else if Player.my_health > Player.maxhealth
-	dir.mytext = "OVER MAX HP"
+	    dir = instance_create(x,y,PopupText)
+	    dir.mytext = "+"+string(num)+" HP"
+	    if Player.my_health = Player.maxhealth
+	    dir.mytext = "MAX HP"
+		else if Player.my_health > Player.maxhealth
+		dir.mytext = "OVER MAX HP"
     }
 }

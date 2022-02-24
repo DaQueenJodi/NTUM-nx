@@ -73,7 +73,7 @@ if can_shoot = 1 and ammo[wep_type[wep]] >= wep_cost[wep]{
 draw_sprite_ext(sprBlackHoleGeneration,wave,x+lengthdir_x(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),y+gunY+lengthdir_y(-wkick,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20))),1,wepright,point_direction(x,y,mouse_x,mouse_y)+(wepangle*(1-wkick/20)),c_white,1)
 }}
 }
-if instance_exists(Decoy)
+if instance_exists(Decoy) || rollIframe > 0 
 draw_sprite_ext(sprite_index,-1,x,y,right,1,angle,c_white,0.4)//CHICKEN VANISHED OPACITY
 else
 draw_sprite_ext(sprite_index,-1,x,y,right,1,angle,c_white,1)//PLAYER GETS DRAWN HERE

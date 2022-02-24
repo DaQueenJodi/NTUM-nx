@@ -5,7 +5,7 @@ BackCont.shake += 2
 image_xscale-=0.3;
 image_yscale-=0.3;
 if alarm[0]<3
-{Sleep(10)
+{Sleep(4)
 with other
 {
 

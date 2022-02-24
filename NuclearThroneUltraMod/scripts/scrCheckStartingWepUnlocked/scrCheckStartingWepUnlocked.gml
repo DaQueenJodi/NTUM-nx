@@ -1,18 +1,21 @@
 function scrCheckStartingWepUnlocked(argument0, char) {
-	//run this in ubercont object
-	var dir=0;
-	repeat(maxstartwep+1)
+	with UberCont
 	{
-		//you have not unlocked this weapon?
-		if start_wep_have[dir,char]==0
+		//run this in ubercont object
+		var dir=0;
+		repeat(maxstartwep+1)
 		{
-		    //if that weapon is the one I am targeting
-		    if start_wep[dir]=argument0
-		    {
-				return dir;
-		    }
+			//you have not unlocked this weapon?
+			if start_wep_have[dir,char]==0
+			{
+			    //if that weapon is the one I am targeting
+			    if start_wep[dir]=argument0
+			    {
+					return dir;
+			    }
+			}
+			dir++;
 		}
-		dir++;
+		return -1;
 	}
-	return -1;
 }
