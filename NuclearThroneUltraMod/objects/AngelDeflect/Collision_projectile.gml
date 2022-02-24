@@ -12,9 +12,9 @@ with instance_create(other.x,other.y,Deflect)
 image_angle = other.direction
 sprite_index=sprGuardianDeflect;
 }
-if Player.area=100
+if Player.area=100 && instance_exists(CrownGuardian)
 {
-scrUnlockCSkin(18,"FOR REFLECTING A PROJECTILE#THAT IS REFLECTED BY A CROWN GUARDIAN#AS ANGEL",0);
+	scrUnlockCSkin(18,"FOR REFLECTING A PROJECTILE#THAT IS REFLECTED BY A CROWN GUARDIAN#AS ANGEL",0);
 }
 
 }
