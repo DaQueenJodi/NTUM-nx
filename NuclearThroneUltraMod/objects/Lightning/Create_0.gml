@@ -12,7 +12,7 @@ accuracy=24;
 
 image_speed = 0.4
 target=enemy;
-dmg=5;
+dmg=4;
 if instance_exists(Player){
 if Player.skill_got[17] = 1{
 image_speed = 0.3-(Player.betterlaserbrain*0.06)}

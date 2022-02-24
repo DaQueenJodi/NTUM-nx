@@ -76,9 +76,9 @@ if UberCont.public = 0 {
         with instance_create(x, y, Portal) type = 1
     }
     if keyboard_check_pressed(ord("6")) {
-        area = 5
+        area = 109
         subarea = 1
-        inverted=false;
+        inverted=true;
         with enemy
         my_health = 0
         with instance_create(x, y, Portal) type = 1

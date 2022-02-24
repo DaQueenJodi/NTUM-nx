@@ -4,12 +4,12 @@ if other.team != team and other.my_health > 0&&other.id != creator//the thing I 
 
 with other//enemy
 {
-if sprite_index != spr_hurt || random(30) < 1
+if sprite_index != spr_hurt || random(35) < 1
 {
 	if instance_exists(Player)
 	{
 		if Player.race=24//Elementor's passive
-			my_health -= other.dmg+2;
+			my_health -= other.dmg+1;
 		else
 			my_health -= other.dmg
 	}

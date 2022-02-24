@@ -1,11 +1,11 @@
 
 if instance_exists(Player)
 {
-if Player.loops>1&&speed>4.5
-speed=4.5
-else if speed > 3.8
-speed = 3.8
+if Player.loops>1&&speed>4.2
+speed=4.2
+else if speed > 3.6
+speed = 3.6
 }
-else if speed > 3.8
-speed = 3.8
+else if speed > 3.6
+speed = 3.6
 

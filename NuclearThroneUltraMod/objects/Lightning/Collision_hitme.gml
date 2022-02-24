@@ -6,7 +6,7 @@ with other
 if instance_exists(Player)
 {
 if Player.race=24//Elementor's passive
-my_health -= other.dmg+2;
+my_health -= other.dmg+1;
 else
 my_health -= other.dmg
 

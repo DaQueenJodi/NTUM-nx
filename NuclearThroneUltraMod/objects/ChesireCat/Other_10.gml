@@ -9,7 +9,7 @@ var pa = 8;
 var atkAngle = 60;
 var angleStep = atkAngle / pa;
 var spd = 1;
-var speedIncrement = 0.6;
+var speedIncrement = 0.5;
 var leftRight = 1;
 repeat(pa)
 {
@@ -23,3 +23,4 @@ repeat(pa)
 	spd += speedIncrement;
 	leftRight*=-1;
 }
+alarm[1] +=3;;

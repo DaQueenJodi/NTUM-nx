@@ -1,4 +1,4 @@
-alarm[1] = 8+random(15)
+alarm[1] = 15+random(15)
 
 if instance_exists(Player)
 {
@@ -14,11 +14,17 @@ scrTarget()
 mask_index=mskChesireCat;
 if target > 0
 {
-if point_distance(x,y,target.x,target.y)<240
+	var dis = point_distance(x,y,target.x,target.y)
+if dis<240
 {
 if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
 {
-    if collision_line(x,y,target.x,target.y,Wall,0,0) < 0//ON LAND
+    if dis < 70
+	{
+		direction = point_direction(x,y,target.x,target.y)+180;
+		alarm[1] +=5;
+	}
+    else if collision_line(x,y,target.x,target.y,Wall,0,0) < 0//ON LAND
     {
 	    if random(7) < 1//laser
 	    {

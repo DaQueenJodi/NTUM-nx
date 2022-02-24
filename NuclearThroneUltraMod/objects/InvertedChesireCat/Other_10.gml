@@ -5,11 +5,11 @@ snd_play(sndBigBanditMeleeHit);
     sprite_index = spr_fire
     walk = 4+random(4)
     alarm[1] = walk+2
-    var pa = 12;
+    var pa = 9;
 	var atkAngle = 60;
 	var angleStep = atkAngle / pa;
-	var spd = 0.75;
-	var speedIncrement = 0.65;
+	var spd = 0.8;
+	var speedIncrement = 0.52;
 	var leftRight = 1;
     repeat(pa)
 	{
@@ -26,7 +26,7 @@ snd_play(sndBigBanditMeleeHit);
 	//GOOI DR NOG MAAR EENTJE NA
 	with instance_create(xprevious,yprevious,EnemyBullet1Square)
 	{
-		motion_add(other.gunangle,8)
+		motion_add(other.gunangle,5.5)
 		image_angle = direction
 		team = other.team
 	}

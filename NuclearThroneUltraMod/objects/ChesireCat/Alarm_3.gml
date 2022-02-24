@@ -3,7 +3,7 @@ mask_index=mskChesireCat;
 if ammo > 0
 {
 ammo -= 1
-alarm[3] = 9
+alarm[3] = 10
 snd_play(sndLaserUpg)
 //sprite_index = spr_fire
 //repeat(4){
