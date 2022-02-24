@@ -38,7 +38,7 @@ if my_health <= 0 && !disable
 			with rightSide
 			{
 				firerate = max(firerate - 1, 1);
-				maxAmmo = max(maxAmmo - 2, 3);
+				maxAmmo = max(maxAmmo - 1, 3);
 				gunangle[array_length(gunangle)] = 340;//Add in a rightshot
 				if disable {
 					other.my_health -= 100;
@@ -56,7 +56,7 @@ if my_health <= 0 && !disable
 			with leftSide
 			{
 				firerate = max(firerate - 1, 1);
-				maxAmmo = max(maxAmmo - 2, 3);
+				maxAmmo = max(maxAmmo - 1, 3);
 				gunangle[array_length(gunangle)] = 200;//Add in a leftshot
 				if disable {
 					other.my_health -= 100;

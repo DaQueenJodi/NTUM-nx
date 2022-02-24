@@ -93,7 +93,8 @@ beamY = y;
 fireTriShot = false;
 bigballs = false;
 
-aTime = 30;
+aTime = 40;
+aTime -= min(GetPlayerLoops()*2,10);
 difficultyStep = 0;
 snd_loop(sndBecomeNothingIdle);
 
