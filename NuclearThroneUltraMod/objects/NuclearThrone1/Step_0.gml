@@ -9,6 +9,7 @@ if intro
 if immune
 {
 	my_health = maxhealth;//TODO APPLY ENEMY HEALTH CHANGES
+	sprite_index = spr_idle;
 	if !active && !intro
 	{
 		speed = 0;

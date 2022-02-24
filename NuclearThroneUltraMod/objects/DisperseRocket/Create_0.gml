@@ -7,9 +7,9 @@ their type can be 0, DEFLECTABLE, DESTRUCTABLE or DEFLECTORS
 they have a FORCE and can be 0 or DIRECTIONAL */
 
 typ = 1 //0 = normal, 1 = deflectable, 2 = destructable, 3 = deflectable
-alarm[0]=5;
 alarm[1]=8;
-time=1;
+time=4;
+alarm[0]=5;
 
 /* */
 /*  */

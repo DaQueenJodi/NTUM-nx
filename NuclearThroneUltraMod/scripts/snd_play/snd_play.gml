@@ -5,6 +5,8 @@ function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = tru
 		return false;
 	if UberCont.opt_3d_audio == 0
 	{
+		snd_play_2d(sndId,randompitch,cancelPrev,usesLocation,priority);
+		/*
 		if sndId==sndHitWall||sndId==sndShotgunHitWall{
 			if !sound_isplaying(sndId){
 			audio_sound_pitch(sndId,random_range(0.8,1.2))
@@ -19,23 +21,26 @@ function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = tru
 			audio_sound_pitch(audio_play_sound_at(sndId,Player.x - x,Player.y - y,0,0,360,1,false,2), 1 + (random(randompitch)*2 - randompitch));
 		} else {
 			audio_sound_pitch(audio_play_sound(sndId,2,false), 1 + (random(randompitch)*2 - randompitch));
-		}
+		}*/
 	}
 	else
 	{
 		var playSound = true;
-		var nearest = instance_nearest(x,y,Sound)
-		if instance_exists(nearest) && point_distance(x,y,nearest.x,nearest.y) < 32
+		if audio_is_playing(sndId)
 		{
-			if nearest.mySound == sndId
+			var nearest = instance_nearest(x,y,Sound)
+			if instance_exists(nearest) && point_distance(x,y,nearest.x,nearest.y) < 32
 			{
-				if nearest.alarm[0] < 5
+				if nearest.mySound == sndId
 				{
-					playSound = false;
-				}
-				else
-				{
-					audio_stop_sound(sndId);
+					if nearest.alarm[0] < 10
+					{
+						playSound = false;
+					}
+					else
+					{
+						audio_stop_sound(sndId);
+					}
 				}
 			}
 		}
