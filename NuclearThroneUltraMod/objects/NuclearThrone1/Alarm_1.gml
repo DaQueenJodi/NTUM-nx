@@ -7,9 +7,12 @@ scrTarget();
 if target > 0
 {
 	var ran = random(100);
+	badboyBuff = 1;
 	if target.x < x - 128 || target.x > x + 128 && ran > 50
 	{
 		fireTriShot = false;
+		badboyBuff = 0.5; //Player is a bad boy double the firerate
+		aTime *=0.5;
 		event_user(2);
 	}
 	if target.y < y && ran > 50

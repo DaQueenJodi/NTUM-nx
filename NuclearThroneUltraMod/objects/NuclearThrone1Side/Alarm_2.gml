@@ -8,6 +8,6 @@ if owner > -1 && instance_exists(Player)
 		{
 			team = other.team
 		}
-		alarm[2] = firerate * 10
+		alarm[2] = (firerate*badboyBuff) * 10
 	}
 }

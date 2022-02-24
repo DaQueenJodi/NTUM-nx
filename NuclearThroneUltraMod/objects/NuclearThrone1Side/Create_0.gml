@@ -24,3 +24,4 @@ gunangle[0] = 270;
 gunangle[1] = 240;
 gunangle[2] = 300;
 angleI = random(array_length(gunangle)-1);
+badboyBuff = 1;
