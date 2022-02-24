@@ -1,4 +1,9 @@
 /// @description El chunko libre
+if sprite_index == sprNothingActivate && image_speed > 0
+{
+	imageIndex += 0.5;
+	my_health = maxhealth;
+}
 if intro
 		BackCont.shake = max(BackCont.shake, 8);
 if immune
@@ -80,6 +85,11 @@ if (my_health <= 0)
 	//This is the death event
 	with NuclearThrone1Side
 	{
+		instance_destroy();	
+	}
+	with ThroneBeam
+	{
+		snd_play_2d(sndNothingBeamEnd);
 		instance_destroy();	
 	}
 	instance_destroy();

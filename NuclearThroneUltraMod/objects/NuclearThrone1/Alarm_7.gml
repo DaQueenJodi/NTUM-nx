@@ -2,8 +2,10 @@
 sprite_index = sprNothingActivate;
 spr_idle = sprNothingActivate;
 spr_hurt = sprNothingActivate;
+my_health = maxhealth;
 //mask_index = mskNothingActive;
 image_index = 1;
+imageIndex = 1;
 instance_create(x,y,ThronePipes);
 meleedamage = 10;
 alarm[2] = 90;
