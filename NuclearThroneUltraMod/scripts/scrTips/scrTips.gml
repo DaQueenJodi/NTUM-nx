@@ -30,6 +30,7 @@ function scrTips() {
 	"be nice#get bitches")
 	),choose(
 	"the I.D.P.D. is looking for you",
+	"gold weapons don't count towards#your progression percentage",
 	"try hitting grenades for extra range",
 	"pick your mutations wisely",
 	"if only you could talk to the monsters",

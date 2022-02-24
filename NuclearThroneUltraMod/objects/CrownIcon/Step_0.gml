@@ -26,14 +26,27 @@ Player.crownpoints -= 1
 //NONE
 if crown = 1
 {
-with Crown
-instance_destroy()
+	with Crown
+		instance_destroy()
 }
 with UberCont
 {
-	ctot_crown_taken[Player.race,0] ++;
+	if usedRandom
+		ctot_crown_taken[Player.race,0] ++;
 	ctot_crown_taken[Player.race,other.crown] ++;
+	var firstCrown
+	if UberCont.ctot_all_crowns_taken[Player.race] == 0
+	{
+		firstCrown = true;
+	}
 	scrSave();
+	if firstCrown && UberCont.ctot_all_crowns_taken[Player.race] == 1
+	{
+		with instance_create(x,y,UnlockPopup)
+		{
+			mytext="CROWN START UNLOCKED FOR#" + UberCont.race_name[Player.race];
+		}
+	}
 }
 //UNDO STUFF
 
