@@ -292,11 +292,11 @@ repeat(1+loops)
 				time: 130
 			};
 			i++;
-			i++;
 			wave[i] = {
 				obj: Gator,
 				time: 10
 			};
+			i++;
 			wave[i] = {
 				obj: AmmoChest,
 				time: 160,
