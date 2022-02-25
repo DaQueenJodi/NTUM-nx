@@ -66,6 +66,66 @@ switch (waveNumber)
 				sprite_index = sprFloor2;
 		}
 	break;
+	case 4:
+		song = mus4;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor4B;
+			else
+				sprite_index = sprFloor4;
+		}
+	break;
+	case 5:
+		song = mus5;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor5B;
+			else
+				sprite_index = sprFloor5;
+		}
+	break;
+	case 6:
+		song = mus6;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor6B;
+			else
+				sprite_index = sprFloor6;
+		}
+	break;
+	case 7:
+		song = musVulcano;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor7B;
+			else
+				sprite_index = sprFloor7;
+		}
+	break;
+	case 8:
+		song = mus102;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor8B;
+			else
+				sprite_index = sprFloor8;
+		}
+	break;
+	case 9:
+		song = mus7;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor9B;
+			else
+				sprite_index = sprFloor9;
+		}
+	break;
 }
 #endregion
 #region waves
@@ -74,7 +134,7 @@ repeat(1+loops)
 {
 	switch (waveNumber)
 	{
-		#region wave 1
+		#region wave 1 desert
 		case 1:
 		var cx = centerX - 128
 			wave[i] = {
@@ -194,7 +254,7 @@ repeat(1+loops)
 			};
 		break;
 		#endregion
-		#region wave 2
+		#region wave 2 sewers
 		case 2:
 			repeat(5)
 			{
@@ -222,7 +282,7 @@ repeat(1+loops)
 			repeat(3)
 			{
 				wave[i] = {
-					obj: Bandit,
+					obj: Gator,
 					time: 10
 				};
 				i++;
@@ -232,11 +292,21 @@ repeat(1+loops)
 				time: 130
 			};
 			i++;
+			i++;
+			wave[i] = {
+				obj: Gator,
+				time: 10
+			};
 			wave[i] = {
 				obj: AmmoChest,
 				time: 160,
 				xx: centerX,
 				yy: centerY+32
+			};
+			i++;
+			wave[i] = {
+				obj: Gator,
+				time: 10
 			};
 			i++;
 			wave[i] = {
@@ -317,7 +387,153 @@ repeat(1+loops)
 			}
 		break;
 		#endregion
-		
+		#region wave 3 scrapyard
+		case 3:
+			repeat(3)
+			{
+				wave[i] = {
+					obj: Raven,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Raven,
+				time: 120
+			};
+			i++;
+			wave[i] = {
+				obj: Salamander,
+				time: 30
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 4
+			};
+			i++;
+			wave[i] = {
+				obj: Salamander,
+				time: 60
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: Raven,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Raven,
+				time: 120
+			};
+			i++;
+			wave[i] = {
+				obj: Thief,
+				time: 4
+			};
+			i++;
+			wave[i] = {
+				obj: Exploder,
+				time: 120
+			};
+			i++;
+			wave[i] = {
+				obj: AmmoChest,
+				time: 200
+				xx: centerX,
+				yy: centerY+32
+			};
+			i++;
+			wave[i] = {
+				obj: Salamander,
+				time: 10
+			};
+			i++;
+			wave[i] = {
+				obj: Exploder,
+				time: 10
+			};
+			i++;
+			wave[i] = {
+				obj: Salamander,
+				time: 10
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 4
+			};
+			i++;
+			wave[i] = {
+				obj: BanditSquare,
+				time: 4
+			};
+			i++;
+			wave[i] = {
+				obj: Thief,
+				time: 4
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 150
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: Sniper,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Sniper,
+				time: 120
+			};
+			i++;
+			wave[i] = {
+				obj: Salamander,
+				time: 4
+			};
+			i++;
+			wave[i] = {
+				obj: Thief,
+				time: 4
+			};
+			i++;
+			wave[i] = {
+				obj: BanditSquare,
+				time: 10
+			};
+			i++;
+			wave[i] = {
+				obj: Sniper,
+				time: 200
+			};
+			i++;
+			wave[i] = {
+				obj: ScrapBoss,
+				time: 10,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: Sniper,
+				time: 60
+			};
+			i++;
+			wave[i] = {
+				obj: Sniper,
+				time: 30
+			};
+			i++;
+		break;
+		#endregion
 		default:
 			//loops
 			waveNumberOffset += waveNumber-1

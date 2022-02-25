@@ -11,7 +11,7 @@ with instance_create(xx,yy,obj)
 		{
 			if alarm[1]>0
 			{
-				alarm[1]+=300;
+				alarm[1]+=290;
 	
 				with instance_create(x,y,Snooze)
 				{
