@@ -34,7 +34,7 @@ with UberCont
 	if usedRandom
 		ctot_crown_taken[Player.race,0] ++;
 	ctot_crown_taken[Player.race,other.crown] ++;
-	var firstCrown
+	var firstCrown = false;
 	if UberCont.ctot_all_crowns_taken[Player.race] == 0
 	{
 		firstCrown = true;
