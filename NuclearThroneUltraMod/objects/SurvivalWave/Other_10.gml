@@ -442,7 +442,7 @@ repeat(1+loops)
 			i++;
 			wave[i] = {
 				obj: AmmoChest,
-				time: 200
+				time: 200,
 				xx: centerX,
 				yy: centerY+32
 			};
