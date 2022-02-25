@@ -22,7 +22,7 @@ if canSpawn
 		var pspd = 2;
 		repeat(4 + loops)
 		{
-		with instance_create(x+lengthdir_x(offset,angle),y+lengthdir_y(offset,angle),GuardianBullet)
+		with instance_create(x+lengthdir_x(offset,angle),y+lengthdir_y(offset,angle),GuardianBulletSpawn)
 		{
 			motion_add(angle,pspd);
 			image_angle = direction

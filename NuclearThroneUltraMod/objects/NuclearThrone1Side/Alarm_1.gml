@@ -4,7 +4,7 @@ if disable
 if owner > -1 && owner.fireTriShot && instance_exists(Player)
 {
 	alarm[1] = firerate;
-	snd_play_2d(sndNothingSmallball,random_range(00,0.004),true,true,2);
+	snd_play_2d(sndNothingFire,random_range(00,0.004),true,true,2);
 		
 	var angleStep = 20;
 	var angle = gunangle[angleI] - angleStep;
