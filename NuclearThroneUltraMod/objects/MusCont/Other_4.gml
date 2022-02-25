@@ -1,4 +1,24 @@
 oldarea = area
+if UberCont.opt_gamemode == 25// && Player.subarea == 1
+{
+	audio_stop_sound(song);
+	song = mus100;
+	amb = amb100;
+	if !audio_is_playing(song)
+		snd_loop(song)
+	if !audio_is_playing(amb)
+		snd_loop(amb)
+
+
+audio_master_gain(max(0,sqrt(UberCont.opt_sfxvol)))
+
+audio_sound_gain(song,max(0,sqrt(UberCont.opt_musvol)),0);
+
+audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
+
+audio_sound_gain(sndBossWin,max(0,sqrt(UberCont.opt_musvol)),0);
+exit;
+}
 if instance_exists(Player)
 {
 area = Player.area
@@ -216,12 +236,6 @@ song = mus104
 amb=amb104
 }
 
-if UberCont.opt_gamemode == 25 && Player.subarea == 1
-{
-	song = mus100;
-
-	amb = amb100;
-}
 
 snd_loop(song)
 snd_loop(amb)

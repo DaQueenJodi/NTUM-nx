@@ -10,6 +10,27 @@ styleb = instance_nearest(x,y,FloorMaker).styleb
 else
 styleb = 0
 
+if UberCont.opt_gamemode == 25
+{
+	var nearestFloor = instance_nearest_notme(x,y,Floor);
+	var l = 0;
+	if instance_exists(nearestFloor)
+	{
+		l = nearestFloor.styleb;
+	}
+	var b = 1
+	if l == 1
+		b = 0
+	styleb = choose(l,l,l,l,l,l,b,0,0);
+	if instance_exists(Player){
+		if Player.crown == 19
+		{
+			//Crown of opposite onto crown of disco
+			styleb = choose(b,b,b,b,b,b,l)
+		}
+	}
+}
+
 var area;
 if instance_exists(Player) area = Player.area 
 else area = BackCont.area

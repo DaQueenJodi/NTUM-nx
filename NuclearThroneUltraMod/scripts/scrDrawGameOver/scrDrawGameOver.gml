@@ -36,6 +36,8 @@ function scrDrawGameOver() {
 
 	if (UberCont.canRestart && keyboard_check_pressed(ord("R")) or KeyCont.key_back[0] = 1) and gameovertime > 25
 	{//QUICK RESTART
+	with SurvivalWave
+		instance_destroy();
 	snd_play(sndMutant0Cnfm)
 	race = UberCont.racepick
 	crown = 1
@@ -73,8 +75,7 @@ function scrDrawGameOver() {
 		restarted = true;	
 	}
 	debug("GAMEOVER RESTART");
-	with SurvivalWave
-		instance_destroy();
+	
 	room_restart()
 	exit;
 	}

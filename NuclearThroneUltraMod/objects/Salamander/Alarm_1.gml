@@ -2,12 +2,16 @@ alarm[1] = 30+random(20)
 scrTarget()
 if target > 0
 {
-if collision_line(x,y,target.x,target.y,Wall,0,0) < 0 and random(5) < 1
+if collision_line(x,y,target.x,target.y,Wall,0,0) < 0 and random(5) < 2
 {
 ammo = 60
 alarm[2] = 10
 gunangle = point_direction(x,y,target.xprevious,target.yprevious)
 angleleft=choose(true,false);
+if angleleft
+gunangle -= 30;
+else
+gunangle += 30;
 alarm[1] = 64+random(20)
 snd_play(sndSalamanderCharge)
 walk=0;
