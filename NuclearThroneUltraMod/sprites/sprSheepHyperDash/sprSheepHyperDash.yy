@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSheepHyperDash","path":"sprites/sprSheepHyperDash/sprSheepHyperDash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSheepHyperDash",
     "tags": [],
     "resourceType": "GMSequence",

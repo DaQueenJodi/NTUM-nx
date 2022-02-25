@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprInvertedHotDrakeSplitBallBloom","path":"sprites/sprInvertedHotDrakeSplitBallBloom/sprInvertedHotDrakeSplitBallBloom.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

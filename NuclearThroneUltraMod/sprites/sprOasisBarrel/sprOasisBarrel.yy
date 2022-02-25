@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprOasisBarrel","path":"sprites/sprOasisBarrel/sprOasisBarrel.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprOasisBarrel",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprIDPDBulletHitRogue","path":"sprites/sprIDPDBulletHitRogue/sprIDPDBulletHitRogue.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprIDPDBulletHitRogue",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprThrone2Bullet","path":"sprites/sprThrone2Bullet/sprThrone2Bullet.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprThrone2Bullet",
     "tags": [],
     "resourceType": "GMSequence",

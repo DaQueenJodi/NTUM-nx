@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskSheepHyperDash","path":"sprites/mskSheepHyperDash/mskSheepHyperDash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskSheepHyperDash",
     "tags": [],
     "resourceType": "GMSequence",

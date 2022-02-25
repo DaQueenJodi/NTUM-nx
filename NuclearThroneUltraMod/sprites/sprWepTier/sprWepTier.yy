@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWepTier","path":"sprites/sprWepTier/sprWepTier.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWepTier",
     "tags": [],
     "resourceType": "GMSequence",

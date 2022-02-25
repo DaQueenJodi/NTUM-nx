@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprHeavyNader","path":"sprites/sprHeavyNader/sprHeavyNader.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprHeavyNader",
     "tags": [],
     "resourceType": "GMSequence",

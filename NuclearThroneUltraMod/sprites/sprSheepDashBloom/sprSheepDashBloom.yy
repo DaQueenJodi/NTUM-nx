@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSheepDashBloom","path":"sprites/sprSheepDashBloom/sprSheepDashBloom.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSheepDashBloom",
     "tags": [],
     "resourceType": "GMSequence",

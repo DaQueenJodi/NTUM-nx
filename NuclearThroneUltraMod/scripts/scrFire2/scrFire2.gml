@@ -4762,6 +4762,22 @@ function scrFire2() {
 	wkick = 4
 
 	break;
+	
+	case 372:
+	
+		snd_play_2d(sndPopgun);
+		snd_play_2d(sndPlasmaHit);
+		
+		with instance_create(x,y,VanCannon)
+		{
+			image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(16)-8)*other.accuracy;
+			team = other.team;
+		}
+		BackCont.viewx2 += lengthdir_x(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 30
+		wkick = 8
+	break;
 
 
 	}//end of switch part 2!

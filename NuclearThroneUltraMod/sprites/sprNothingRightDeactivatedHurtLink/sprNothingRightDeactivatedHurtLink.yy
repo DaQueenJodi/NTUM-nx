@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingRightDeactivatedHurtLink","path":"sprites/sprNothingRightDeactivatedHurtLink/sprNothingRightDeactivatedHurtLink.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingRightDeactivatedHurtLink",
     "tags": [],
     "resourceType": "GMSequence",

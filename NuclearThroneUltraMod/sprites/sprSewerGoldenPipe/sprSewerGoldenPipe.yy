@@ -123,7 +123,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSewerGoldenPipe","path":"sprites/sprSewerGoldenPipe/sprSewerGoldenPipe.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSewerGoldenPipe",
     "tags": [],
     "resourceType": "GMSequence",

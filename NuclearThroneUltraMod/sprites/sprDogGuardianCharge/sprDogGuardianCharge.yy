@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDogGuardianCharge","path":"sprites/sprDogGuardianCharge/sprDogGuardianCharge.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprDogGuardianCharge",
     "tags": [],
     "resourceType": "GMSequence",

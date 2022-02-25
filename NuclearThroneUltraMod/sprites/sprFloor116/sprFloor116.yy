@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor116","path":"sprites/sprFloor116/sprFloor116.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprFloor116",
     "tags": [],
     "resourceType": "GMSequence",

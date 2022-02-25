@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprAlkalineSaliva","path":"sprites/sprAlkalineSaliva/sprAlkalineSaliva.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprAlkalineSaliva",
     "tags": [],
     "resourceType": "GMSequence",

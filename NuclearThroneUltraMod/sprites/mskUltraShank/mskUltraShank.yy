@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskUltraShank","path":"sprites/mskUltraShank/mskUltraShank.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskUltraShank",
     "tags": [],
     "resourceType": "GMSequence",

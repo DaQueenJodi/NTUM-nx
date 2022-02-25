@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprErdeppolBigUltra","path":"sprites/sprErdeppolBigUltra/sprErdeppolBigUltra.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprErdeppolBigUltra",
     "tags": [],
     "resourceType": "GMSequence",

@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprRetailExplain","path":"sprites/sprRetailExplain/sprRetailExplain.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprRetailExplain",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprGoldScorpionDead","path":"sprites/sprGoldScorpionDead/sprGoldScorpionDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprGoldScorpionDead",
     "tags": [],
     "resourceType": "GMSequence",

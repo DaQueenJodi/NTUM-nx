@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "MainMenu",
-    "path": "texturegroups/MainMenu",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 7,
   "height": 8,
+  "textureGroupId": {
+    "name": "MainMenu",
+    "path": "texturegroups/MainMenu",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprRMBIcon","path":"sprites/sprRMBIcon/sprRMBIcon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

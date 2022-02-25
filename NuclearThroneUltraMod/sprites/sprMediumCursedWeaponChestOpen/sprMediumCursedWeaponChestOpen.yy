@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMediumCursedWeaponChestOpen","path":"sprites/sprMediumCursedWeaponChestOpen/sprMediumCursedWeaponChestOpen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMediumCursedWeaponChestOpen",
     "tags": [],
     "resourceType": "GMSequence",

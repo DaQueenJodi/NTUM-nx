@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSheepDashBloomExtraFeet","path":"sprites/sprSheepDashBloomExtraFeet/sprSheepDashBloomExtraFeet.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSheepDashBloomExtraFeet",
     "tags": [],
     "resourceType": "GMSequence",

@@ -163,7 +163,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothing2Appear","path":"sprites/sprNothing2Appear/sprNothing2Appear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothing2Appear",
     "tags": [],
     "resourceType": "GMSequence",

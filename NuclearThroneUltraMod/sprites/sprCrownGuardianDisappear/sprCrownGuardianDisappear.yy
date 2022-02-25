@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCrownGuardianDisappear","path":"sprites/sprCrownGuardianDisappear/sprCrownGuardianDisappear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCrownGuardianDisappear",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSheepDashBloomGammaGuts","path":"sprites/sprSheepDashBloomGammaGuts/sprSheepDashBloomGammaGuts.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSheepDashBloomGammaGuts",
     "tags": [],
     "resourceType": "GMSequence",

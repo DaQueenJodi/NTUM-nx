@@ -199,7 +199,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSkillIconHUD","path":"sprites/sprSkillIconHUD/sprSkillIconHUD.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSkillIconHUD",
     "tags": [],
     "resourceType": "GMSequence",

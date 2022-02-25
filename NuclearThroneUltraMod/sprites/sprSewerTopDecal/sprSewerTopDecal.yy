@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSewerTopDecal","path":"sprites/sprSewerTopDecal/sprSewerTopDecal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSewerTopDecal",
     "tags": [],
     "resourceType": "GMSequence",

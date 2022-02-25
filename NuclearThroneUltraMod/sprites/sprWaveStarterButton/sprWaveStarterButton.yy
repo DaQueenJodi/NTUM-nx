@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWaveStarterButton","path":"sprites/sprWaveStarterButton/sprWaveStarterButton.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWaveStarterButton",
     "tags": [],
     "resourceType": "GMSequence",

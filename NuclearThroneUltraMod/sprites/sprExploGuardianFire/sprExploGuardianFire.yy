@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprExploGuardianFire","path":"sprites/sprExploGuardianFire/sprExploGuardianFire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprExploGuardianFire",
     "tags": [],
     "resourceType": "GMSequence",

@@ -80,7 +80,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFlailSlash","path":"sprites/sprFlailSlash/sprFlailSlash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprFlailSlash",
     "tags": [],
     "resourceType": "GMSequence",

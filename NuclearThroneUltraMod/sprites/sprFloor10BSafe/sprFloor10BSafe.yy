@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor10BSafe","path":"sprites/sprFloor10BSafe/sprFloor10BSafe.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprFloor10BSafe",
     "tags": [],
     "resourceType": "GMSequence",

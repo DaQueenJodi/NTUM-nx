@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCursedEliteWeaponChest","path":"sprites/sprCursedEliteWeaponChest/sprCursedEliteWeaponChest.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCursedEliteWeaponChest",
     "tags": [],
     "resourceType": "GMSequence",

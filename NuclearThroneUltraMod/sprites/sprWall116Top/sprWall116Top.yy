@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWall116Top","path":"sprites/sprWall116Top/sprWall116Top.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWall116Top",
     "tags": [],
     "resourceType": "GMSequence",

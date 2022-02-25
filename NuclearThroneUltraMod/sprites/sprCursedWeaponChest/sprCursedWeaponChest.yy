@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCursedWeaponChest","path":"sprites/sprCursedWeaponChest/sprCursedWeaponChest.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCursedWeaponChest",
     "tags": [],
     "resourceType": "GMSequence",

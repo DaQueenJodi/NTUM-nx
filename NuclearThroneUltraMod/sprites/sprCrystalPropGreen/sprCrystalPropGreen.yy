@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCrystalPropGreen","path":"sprites/sprCrystalPropGreen/sprCrystalPropGreen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCrystalPropGreen",
     "tags": [],
     "resourceType": "GMSequence",

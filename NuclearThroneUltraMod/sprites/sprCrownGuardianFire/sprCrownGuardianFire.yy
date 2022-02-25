@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCrownGuardianFire","path":"sprites/sprCrownGuardianFire/sprCrownGuardianFire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCrownGuardianFire",
     "tags": [],
     "resourceType": "GMSequence",

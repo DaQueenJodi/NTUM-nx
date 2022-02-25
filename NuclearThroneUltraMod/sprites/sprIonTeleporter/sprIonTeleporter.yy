@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprIonTeleporter","path":"sprites/sprIonTeleporter/sprIonTeleporter.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprIonTeleporter",
     "tags": [],
     "resourceType": "GMSequence",

@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprLevelUp","path":"sprites/sprLevelUp/sprLevelUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprLevelUp",
     "tags": [],
     "resourceType": "GMSequence",

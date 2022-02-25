@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprVanIndicator","path":"sprites/sprVanIndicator/sprVanIndicator.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprVanIndicator",
     "tags": [],
     "resourceType": "GMSequence",

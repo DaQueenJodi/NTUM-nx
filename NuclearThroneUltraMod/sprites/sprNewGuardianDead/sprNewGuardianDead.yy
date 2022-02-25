@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNewGuardianDead","path":"sprites/sprNewGuardianDead/sprNewGuardianDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNewGuardianDead",
     "tags": [],
     "resourceType": "GMSequence",

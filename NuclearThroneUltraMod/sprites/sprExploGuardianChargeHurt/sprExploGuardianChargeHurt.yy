@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprExploGuardianChargeHurt","path":"sprites/sprExploGuardianChargeHurt/sprExploGuardianChargeHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprExploGuardianChargeHurt",
     "tags": [],
     "resourceType": "GMSequence",

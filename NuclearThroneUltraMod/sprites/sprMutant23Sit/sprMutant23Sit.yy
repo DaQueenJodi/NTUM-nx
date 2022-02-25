@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant23Sit","path":"sprites/sprMutant23Sit/sprMutant23Sit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant23Sit",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingDeathLoop","path":"sprites/sprNothingDeathLoop/sprNothingDeathLoop.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingDeathLoop",
     "tags": [],
     "resourceType": "GMSequence",

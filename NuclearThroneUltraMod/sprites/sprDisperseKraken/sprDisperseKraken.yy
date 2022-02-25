@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDisperseKraken","path":"sprites/sprDisperseKraken/sprDisperseKraken.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprDisperseKraken",
     "tags": [],
     "resourceType": "GMSequence",

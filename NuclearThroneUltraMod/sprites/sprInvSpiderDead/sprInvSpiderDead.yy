@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprInvSpiderDead","path":"sprites/sprInvSpiderDead/sprInvSpiderDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprInvSpiderDead",
     "tags": [],
     "resourceType": "GMSequence",

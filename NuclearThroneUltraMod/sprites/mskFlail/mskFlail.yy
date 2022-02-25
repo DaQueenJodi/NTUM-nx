@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskFlail","path":"sprites/mskFlail/mskFlail.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskFlail",
     "tags": [],
     "resourceType": "GMSequence",

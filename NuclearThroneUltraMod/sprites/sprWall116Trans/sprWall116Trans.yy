@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWall116Trans","path":"sprites/sprWall116Trans/sprWall116Trans.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWall116Trans",
     "tags": [],
     "resourceType": "GMSequence",

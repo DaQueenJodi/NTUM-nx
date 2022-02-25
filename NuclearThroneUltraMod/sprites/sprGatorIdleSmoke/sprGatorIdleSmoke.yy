@@ -183,7 +183,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprGatorIdleSmoke","path":"sprites/sprGatorIdleSmoke/sprGatorIdleSmoke.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSheepHyperDashThroneButt","path":"sprites/sprSheepHyperDashThroneButt/sprSheepHyperDashThroneButt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSheepHyperDashThroneButt",
     "tags": [],
     "resourceType": "GMSequence",

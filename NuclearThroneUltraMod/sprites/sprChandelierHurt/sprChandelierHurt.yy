@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChandelierHurt","path":"sprites/sprChandelierHurt/sprChandelierHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChandelierHurt",
     "tags": [],
     "resourceType": "GMSequence",

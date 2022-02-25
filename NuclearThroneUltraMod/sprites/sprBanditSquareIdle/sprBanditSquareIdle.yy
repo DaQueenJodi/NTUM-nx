@@ -25,20 +25,20 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"48b4dd87-63f1-47c1-b738-a5f59bc3b93d","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"48b4dd87-63f1-47c1-b738-a5f59bc3b93d","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"a9d89186-b0e0-49f1-8eb3-b4386317acd6","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"48b4dd87-63f1-47c1-b738-a5f59bc3b93d","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"9044bac1-4bb9-4b9e-8684-cee397e09f0f","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"48b4dd87-63f1-47c1-b738-a5f59bc3b93d","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"a9d89186-b0e0-49f1-8eb3-b4386317acd6","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprBanditSquareIdle","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"48b4dd87-63f1-47c1-b738-a5f59bc3b93d","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"ac3e51f9-e852-4a7d-927d-e6c9c45122e4","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ac3e51f9-e852-4a7d-927d-e6c9c45122e4","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"a9d89186-b0e0-49f1-8eb3-b4386317acd6","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"ac3e51f9-e852-4a7d-927d-e6c9c45122e4","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"9044bac1-4bb9-4b9e-8684-cee397e09f0f","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"ac3e51f9-e852-4a7d-927d-e6c9c45122e4","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"a9d89186-b0e0-49f1-8eb3-b4386317acd6","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprBanditSquareIdle","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"ac3e51f9-e852-4a7d-927d-e6c9c45122e4","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"26f840e5-ed61-4f20-9b83-e954425e42d1","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"26f840e5-ed61-4f20-9b83-e954425e42d1","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"a9d89186-b0e0-49f1-8eb3-b4386317acd6","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"26f840e5-ed61-4f20-9b83-e954425e42d1","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"9044bac1-4bb9-4b9e-8684-cee397e09f0f","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"26f840e5-ed61-4f20-9b83-e954425e42d1","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"a9d89186-b0e0-49f1-8eb3-b4386317acd6","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprBanditSquareIdle","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"26f840e5-ed61-4f20-9b83-e954425e42d1","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"c9ec3aae-6bd9-497b-9941-0a9a55926e28","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c9ec3aae-6bd9-497b-9941-0a9a55926e28","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"a9d89186-b0e0-49f1-8eb3-b4386317acd6","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"c9ec3aae-6bd9-497b-9941-0a9a55926e28","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"9044bac1-4bb9-4b9e-8684-cee397e09f0f","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"c9ec3aae-6bd9-497b-9941-0a9a55926e28","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"LayerId":{"name":"a9d89186-b0e0-49f1-8eb3-b4386317acd6","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprBanditSquareIdle","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},"resourceVersion":"1.0","name":"c9ec3aae-6bd9-497b-9941-0a9a55926e28","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBanditSquareIdle","path":"sprites/sprBanditSquareIdle/sprBanditSquareIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBanditSquareIdle",
     "tags": [],
     "resourceType": "GMSequence",

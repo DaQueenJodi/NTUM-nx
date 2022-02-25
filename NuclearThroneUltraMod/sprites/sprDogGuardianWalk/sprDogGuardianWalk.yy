@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDogGuardianWalk","path":"sprites/sprDogGuardianWalk/sprDogGuardianWalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprDogGuardianWalk",
     "tags": [],
     "resourceType": "GMSequence",

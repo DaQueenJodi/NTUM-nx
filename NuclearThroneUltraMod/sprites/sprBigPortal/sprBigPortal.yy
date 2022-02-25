@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBigPortal","path":"sprites/sprBigPortal/sprBigPortal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBigPortal",
     "tags": [],
     "resourceType": "GMSequence",

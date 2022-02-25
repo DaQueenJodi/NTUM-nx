@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor10Explo","path":"sprites/sprFloor10Explo/sprFloor10Explo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprFloor10Explo",
     "tags": [],
     "resourceType": "GMSequence",

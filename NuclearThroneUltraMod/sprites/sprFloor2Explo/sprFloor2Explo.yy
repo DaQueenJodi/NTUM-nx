@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Sewers",
-    "path": "texturegroups/Sewers",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 18,
   "height": 18,
+  "textureGroupId": {
+    "name": "Sewers",
+    "path": "texturegroups/Sewers",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor2Explo","path":"sprites/sprFloor2Explo/sprFloor2Explo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

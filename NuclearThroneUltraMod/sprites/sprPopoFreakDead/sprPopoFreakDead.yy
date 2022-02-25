@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPopoFreakDead","path":"sprites/sprPopoFreakDead/sprPopoFreakDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPopoFreakDead",
     "tags": [],
     "resourceType": "GMSequence",

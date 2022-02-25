@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprJungleDecal","path":"sprites/sprJungleDecal/sprJungleDecal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprJungleDecal",
     "tags": [],
     "resourceType": "GMSequence",

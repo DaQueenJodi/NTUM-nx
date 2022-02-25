@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprTurretDead","path":"sprites/sprTurretDead/sprTurretDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprTurretDead",
     "tags": [],
     "resourceType": "GMSequence",

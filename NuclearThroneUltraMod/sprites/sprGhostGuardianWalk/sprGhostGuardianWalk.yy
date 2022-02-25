@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprGhostGuardianWalk","path":"sprites/sprGhostGuardianWalk/sprGhostGuardianWalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprGhostGuardianWalk",
     "tags": [],
     "resourceType": "GMSequence",

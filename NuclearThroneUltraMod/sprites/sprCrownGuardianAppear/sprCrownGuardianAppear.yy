@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCrownGuardianAppear","path":"sprites/sprCrownGuardianAppear/sprCrownGuardianAppear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCrownGuardianAppear",
     "tags": [],
     "resourceType": "GMSequence",

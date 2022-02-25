@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingSwitchOn","path":"sprites/sprNothingSwitchOn/sprNothingSwitchOn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingSwitchOn",
     "tags": [],
     "resourceType": "GMSequence",

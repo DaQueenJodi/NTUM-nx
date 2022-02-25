@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBanditGun","path":"sprites/sprBanditGun/sprBanditGun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBanditGun",
     "tags": [],
     "resourceType": "GMSequence",

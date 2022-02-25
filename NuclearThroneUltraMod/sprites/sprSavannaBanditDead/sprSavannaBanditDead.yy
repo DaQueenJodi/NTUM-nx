@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSavannaBanditDead","path":"sprites/sprSavannaBanditDead/sprSavannaBanditDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSavannaBanditDead",
     "tags": [],
     "resourceType": "GMSequence",

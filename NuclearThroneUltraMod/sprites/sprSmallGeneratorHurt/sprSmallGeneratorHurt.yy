@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSmallGeneratorHurt","path":"sprites/sprSmallGeneratorHurt/sprSmallGeneratorHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSmallGeneratorHurt",
     "tags": [],
     "resourceType": "GMSequence",

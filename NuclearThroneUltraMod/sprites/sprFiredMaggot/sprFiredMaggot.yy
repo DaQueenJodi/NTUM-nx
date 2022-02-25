@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFiredMaggot","path":"sprites/sprFiredMaggot/sprFiredMaggot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprFiredMaggot",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprJungleShadow","path":"sprites/sprJungleShadow/sprJungleShadow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprJungleShadow",
     "tags": [],
     "resourceType": "GMSequence",

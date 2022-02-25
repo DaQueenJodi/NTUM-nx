@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSavannaBones","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSavannaBones",
     "tags": [],
     "resourceType": "GMSequence",

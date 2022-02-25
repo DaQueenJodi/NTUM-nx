@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDebris115","path":"sprites/sprDebris115/sprDebris115.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprDebris115",
     "tags": [],
     "resourceType": "GMSequence",

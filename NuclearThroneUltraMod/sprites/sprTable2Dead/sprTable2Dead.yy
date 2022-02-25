@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprTable2Dead","path":"sprites/sprTable2Dead/sprTable2Dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprTable2Dead",
     "tags": [],
     "resourceType": "GMSequence",

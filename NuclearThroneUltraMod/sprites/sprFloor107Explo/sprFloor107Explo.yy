@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "InvertedFrozenCity",
-    "path": "texturegroups/InvertedFrozenCity",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 18,
   "height": 18,
+  "textureGroupId": {
+    "name": "InvertedFrozenCity",
+    "path": "texturegroups/InvertedFrozenCity",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor107Explo","path":"sprites/sprFloor107Explo/sprFloor107Explo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPlasmaBallHugeAnimated","path":"sprites/sprPlasmaBallHugeAnimated/sprPlasmaBallHugeAnimated.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

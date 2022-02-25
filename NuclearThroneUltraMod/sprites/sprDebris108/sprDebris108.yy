@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Vulcano",
-    "path": "texturegroups/Vulcano",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 8,
   "height": 8,
+  "textureGroupId": {
+    "name": "Vulcano",
+    "path": "texturegroups/Vulcano",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDebris108","path":"sprites/sprDebris108/sprDebris108.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCursedAmmo","path":"sprites/sprCursedAmmo/sprCursedAmmo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCursedAmmo",
     "tags": [],
     "resourceType": "GMSequence",

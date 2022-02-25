@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNuclearPillar","path":"sprites/sprNuclearPillar/sprNuclearPillar.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNuclearPillar",
     "tags": [],
     "resourceType": "GMSequence",

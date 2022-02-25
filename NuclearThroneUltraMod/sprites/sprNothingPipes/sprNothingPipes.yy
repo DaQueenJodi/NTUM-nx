@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingPipes","path":"sprites/sprNothingPipes/sprNothingPipes.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingPipes",
     "tags": [],
     "resourceType": "GMSequence",

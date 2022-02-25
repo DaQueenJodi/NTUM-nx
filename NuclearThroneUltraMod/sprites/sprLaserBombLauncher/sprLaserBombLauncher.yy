@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprLaserBombLauncher","path":"sprites/sprLaserBombLauncher/sprLaserBombLauncher.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprLaserBombLauncher",
     "tags": [],
     "resourceType": "GMSequence",

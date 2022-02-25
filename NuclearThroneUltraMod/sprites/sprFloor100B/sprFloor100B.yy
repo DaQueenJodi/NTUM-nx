@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor100B","path":"sprites/sprFloor100B/sprFloor100B.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprFloor100B",
     "tags": [],
     "resourceType": "GMSequence",

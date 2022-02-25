@@ -219,7 +219,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprJungleAssassinHide","path":"sprites/sprJungleAssassinHide/sprJungleAssassinHide.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprJungleAssassinHide",
     "tags": [],
     "resourceType": "GMSequence",

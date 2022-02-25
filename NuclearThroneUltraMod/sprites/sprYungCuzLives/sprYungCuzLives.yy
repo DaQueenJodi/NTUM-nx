@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprYungCuzLives","path":"sprites/sprYungCuzLives/sprYungCuzLives.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprYungCuzLives",
     "tags": [],
     "resourceType": "GMSequence",

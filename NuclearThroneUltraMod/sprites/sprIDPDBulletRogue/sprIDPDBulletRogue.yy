@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprIDPDBulletRogue","path":"sprites/sprIDPDBulletRogue/sprIDPDBulletRogue.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprIDPDBulletRogue",
     "tags": [],
     "resourceType": "GMSequence",

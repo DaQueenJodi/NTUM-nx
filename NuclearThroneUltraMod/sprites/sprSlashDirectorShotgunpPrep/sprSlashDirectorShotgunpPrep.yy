@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSlashDirectorShotgunpPrep","path":"sprites/sprSlashDirectorShotgunpPrep/sprSlashDirectorShotgunpPrep.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

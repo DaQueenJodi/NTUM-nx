@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSpikeGrenade","path":"sprites/sprSpikeGrenade/sprSpikeGrenade.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSpikeGrenade",
     "tags": [],
     "resourceType": "GMSequence",

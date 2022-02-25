@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprHyperCrystalShard","path":"sprites/sprHyperCrystalShard/sprHyperCrystalShard.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprHyperCrystalShard",
     "tags": [],
     "resourceType": "GMSequence",

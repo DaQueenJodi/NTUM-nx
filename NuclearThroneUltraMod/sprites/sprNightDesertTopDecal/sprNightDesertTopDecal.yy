@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNightDesertTopDecal","path":"sprites/sprNightDesertTopDecal/sprNightDesertTopDecal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNightDesertTopDecal",
     "tags": [],
     "resourceType": "GMSequence",

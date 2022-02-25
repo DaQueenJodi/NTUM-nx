@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothing2Part","path":"sprites/sprNothing2Part/sprNothing2Part.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothing2Part",
     "tags": [],
     "resourceType": "GMSequence",

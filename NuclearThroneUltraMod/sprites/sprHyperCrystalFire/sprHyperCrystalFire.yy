@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprHyperCrystalFire","path":"sprites/sprHyperCrystalFire/sprHyperCrystalFire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprHyperCrystalFire",
     "tags": [],
     "resourceType": "GMSequence",

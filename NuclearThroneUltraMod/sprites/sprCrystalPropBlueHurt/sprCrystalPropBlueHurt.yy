@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCrystalPropBlueHurt","path":"sprites/sprCrystalPropBlueHurt/sprCrystalPropBlueHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCrystalPropBlueHurt",
     "tags": [],
     "resourceType": "GMSequence",

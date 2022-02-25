@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDogGuardianLand","path":"sprites/sprDogGuardianLand/sprDogGuardianLand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprDogGuardianLand",
     "tags": [],
     "resourceType": "GMSequence",

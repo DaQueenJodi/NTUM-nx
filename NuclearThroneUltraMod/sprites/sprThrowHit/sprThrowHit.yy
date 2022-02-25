@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprThrowHit","path":"sprites/sprThrowHit/sprThrowHit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprThrowHit",
     "tags": [],
     "resourceType": "GMSequence",

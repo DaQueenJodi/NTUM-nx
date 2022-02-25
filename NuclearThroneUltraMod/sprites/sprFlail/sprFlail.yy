@@ -90,7 +90,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFlail","path":"sprites/sprFlail/sprFlail.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprFlail",
     "tags": [],
     "resourceType": "GMSequence",

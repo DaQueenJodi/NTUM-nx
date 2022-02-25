@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant4DHurt","path":"sprites/sprMutant4DHurt/sprMutant4DHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant4DHurt",
     "tags": [],
     "resourceType": "GMSequence",

@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCrownGuardianDead","path":"sprites/sprCrownGuardianDead/sprCrownGuardianDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCrownGuardianDead",
     "tags": [],
     "resourceType": "GMSequence",

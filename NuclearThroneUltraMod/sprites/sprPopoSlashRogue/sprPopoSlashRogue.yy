@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPopoSlashRogue","path":"sprites/sprPopoSlashRogue/sprPopoSlashRogue.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPopoSlashRogue",
     "tags": [],
     "resourceType": "GMSequence",

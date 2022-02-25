@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprRevive","path":"sprites/sprRevive/sprRevive.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprRevive",
     "tags": [],
     "resourceType": "GMSequence",

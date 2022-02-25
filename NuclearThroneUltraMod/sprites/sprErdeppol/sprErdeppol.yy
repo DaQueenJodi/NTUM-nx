@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprErdeppol","path":"sprites/sprErdeppol/sprErdeppol.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprErdeppol",
     "tags": [],
     "resourceType": "GMSequence",

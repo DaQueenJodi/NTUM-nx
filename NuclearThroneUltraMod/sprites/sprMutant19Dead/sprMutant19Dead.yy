@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant19Dead","path":"sprites/sprMutant19Dead/sprMutant19Dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant19Dead",
     "tags": [],
     "resourceType": "GMSequence",

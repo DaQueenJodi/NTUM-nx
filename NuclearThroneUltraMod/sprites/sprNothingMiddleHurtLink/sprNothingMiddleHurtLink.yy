@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingMiddleHurtLink","path":"sprites/sprNothingMiddleHurtLink/sprNothingMiddleHurtLink.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingMiddleHurtLink",
     "tags": [],
     "resourceType": "GMSequence",

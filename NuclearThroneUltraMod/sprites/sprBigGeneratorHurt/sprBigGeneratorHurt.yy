@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBigGeneratorHurt","path":"sprites/sprBigGeneratorHurt/sprBigGeneratorHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBigGeneratorHurt",
     "tags": [],
     "resourceType": "GMSequence",

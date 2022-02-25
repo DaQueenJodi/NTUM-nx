@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBigFlowerDead","path":"sprites/sprBigFlowerDead/sprBigFlowerDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBigFlowerDead",
     "tags": [],
     "resourceType": "GMSequence",

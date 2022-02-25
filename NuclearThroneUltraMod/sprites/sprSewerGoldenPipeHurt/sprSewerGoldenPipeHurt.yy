@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSewerGoldenPipeHurt","path":"sprites/sprSewerGoldenPipeHurt/sprSewerGoldenPipeHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSewerGoldenPipeHurt",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprRedirectFX","path":"sprites/sprRedirectFX/sprRedirectFX.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprRedirectFX",
     "tags": [],
     "resourceType": "GMSequence",

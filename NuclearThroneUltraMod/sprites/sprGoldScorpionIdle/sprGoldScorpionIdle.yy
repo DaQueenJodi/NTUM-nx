@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprGoldScorpionIdle","path":"sprites/sprGoldScorpionIdle/sprGoldScorpionIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprGoldScorpionIdle",
     "tags": [],
     "resourceType": "GMSequence",

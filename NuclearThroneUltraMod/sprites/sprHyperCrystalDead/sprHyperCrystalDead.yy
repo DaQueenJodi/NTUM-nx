@@ -147,7 +147,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprHyperCrystalDead","path":"sprites/sprHyperCrystalDead/sprHyperCrystalDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprHyperCrystalDead",
     "tags": [],
     "resourceType": "GMSequence",

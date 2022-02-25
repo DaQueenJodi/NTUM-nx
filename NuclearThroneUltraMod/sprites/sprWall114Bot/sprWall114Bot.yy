@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWall114Bot","path":"sprites/sprWall114Bot/sprWall114Bot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWall114Bot",
     "tags": [],
     "resourceType": "GMSequence",

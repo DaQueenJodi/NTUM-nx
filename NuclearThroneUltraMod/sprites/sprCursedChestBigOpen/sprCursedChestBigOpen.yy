@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCursedChestBigOpen","path":"sprites/sprCursedChestBigOpen/sprCursedChestBigOpen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCursedChestBigOpen",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNightBones","path":"sprites/sprNightBones/sprNightBones.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNightBones",
     "tags": [],
     "resourceType": "GMSequence",

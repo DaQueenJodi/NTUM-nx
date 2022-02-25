@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSplinter","path":"sprites/sprSplinter/sprSplinter.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSplinter",
     "tags": [],
     "resourceType": "GMSequence",

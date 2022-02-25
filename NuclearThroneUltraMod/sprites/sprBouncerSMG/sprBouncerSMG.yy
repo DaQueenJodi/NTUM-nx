@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBouncerSMG","path":"sprites/sprBouncerSMG/sprBouncerSMG.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBouncerSMG",
     "tags": [],
     "resourceType": "GMSequence",

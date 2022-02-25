@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "MainMenu",
-    "path": "texturegroups/MainMenu",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 16,
   "height": 24,
+  "textureGroupId": {
+    "name": "MainMenu",
+    "path": "texturegroups/MainMenu",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -163,7 +163,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCharSelectLocked","path":"sprites/sprCharSelectLocked/sprCharSelectLocked.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

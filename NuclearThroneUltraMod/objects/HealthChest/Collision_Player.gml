@@ -21,7 +21,7 @@ with other {
 	else// if other.crown != 2
 		my_health = max(my_health,maxhealth);
 	*/
-	if race==9 other.race=12//Chicken maxhealth regain
+	if race==9 || other.race=12//Chicken maxhealth regain
 	{
 		var targetHealth = 8;
 		if skill_got[1] == 1//Rhino skin

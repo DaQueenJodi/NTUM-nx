@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNewGuardianHurt","path":"sprites/sprNewGuardianHurt/sprNewGuardianHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNewGuardianHurt",
     "tags": [],
     "resourceType": "GMSequence",

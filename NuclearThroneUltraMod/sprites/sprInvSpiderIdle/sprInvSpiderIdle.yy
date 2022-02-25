@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprInvSpiderIdle","path":"sprites/sprInvSpiderIdle/sprInvSpiderIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprInvSpiderIdle",
     "tags": [],
     "resourceType": "GMSequence",

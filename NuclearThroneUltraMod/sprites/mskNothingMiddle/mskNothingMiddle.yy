@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskNothingMiddle","path":"sprites/mskNothingMiddle/mskNothingMiddle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskNothingMiddle",
     "tags": [],
     "resourceType": "GMSequence",

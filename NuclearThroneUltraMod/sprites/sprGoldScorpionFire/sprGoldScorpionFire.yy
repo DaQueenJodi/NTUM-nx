@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprGoldScorpionFire","path":"sprites/sprGoldScorpionFire/sprGoldScorpionFire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprGoldScorpionFire",
     "tags": [],
     "resourceType": "GMSequence",

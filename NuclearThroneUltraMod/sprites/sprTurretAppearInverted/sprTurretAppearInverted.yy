@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprTurretAppearInverted","path":"sprites/sprTurretAppearInverted/sprTurretAppearInverted.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprTurretAppearInverted",
     "tags": [],
     "resourceType": "GMSequence",

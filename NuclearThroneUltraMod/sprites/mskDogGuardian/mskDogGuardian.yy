@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskDogGuardian","path":"sprites/mskDogGuardian/mskDogGuardian.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskDogGuardian",
     "tags": [],
     "resourceType": "GMSequence",

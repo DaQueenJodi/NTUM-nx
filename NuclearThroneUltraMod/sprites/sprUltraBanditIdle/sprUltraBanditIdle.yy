@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprUltraBanditIdle","path":"sprites/sprUltraBanditIdle/sprUltraBanditIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprUltraBanditIdle",
     "tags": [],
     "resourceType": "GMSequence",

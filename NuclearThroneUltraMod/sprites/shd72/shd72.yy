@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"shd72","path":"sprites/shd72/shd72.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "shd72",
     "tags": [],
     "resourceType": "GMSequence",

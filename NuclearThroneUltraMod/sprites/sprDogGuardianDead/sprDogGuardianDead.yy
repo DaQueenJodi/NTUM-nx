@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDogGuardianDead","path":"sprites/sprDogGuardianDead/sprDogGuardianDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprDogGuardianDead",
     "tags": [],
     "resourceType": "GMSequence",

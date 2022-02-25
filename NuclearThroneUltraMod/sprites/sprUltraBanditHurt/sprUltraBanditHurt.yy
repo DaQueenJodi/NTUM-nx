@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprUltraBanditHurt","path":"sprites/sprUltraBanditHurt/sprUltraBanditHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprUltraBanditHurt",
     "tags": [],
     "resourceType": "GMSequence",

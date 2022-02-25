@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprKrakenCannon","path":"sprites/sprKrakenCannon/sprKrakenCannon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprKrakenCannon",
     "tags": [],
     "resourceType": "GMSequence",
