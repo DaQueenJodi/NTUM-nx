@@ -1,5 +1,9 @@
 room_speed=30;
-
+if UberCont.opt_gamemode == 8
+{
+	instance_create(x,y,VanFan);
+	exit;
+}
 if instance_exists(Player)
 {
 if Player.crown=18//DISCOOOO CROWN

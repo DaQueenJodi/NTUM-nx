@@ -360,6 +360,7 @@
     {"id":{"name":"sprRogueSegwayIDPDHurt","path":"sprites/sprRogueSegwayIDPDHurt/sprRogueSegwayIDPDHurt.yy",},"order":5,},
     {"id":{"name":"sprRogueSegwayIDPDDead","path":"sprites/sprRogueSegwayIDPDDead/sprRogueSegwayIDPDDead.yy",},"order":7,},
     {"id":{"name":"sprMediumWeaponChestOpen","path":"sprites/sprMediumWeaponChestOpen/sprMediumWeaponChestOpen.yy",},"order":29,},
+    {"id":{"name":"VanFan","path":"objects/VanFan/VanFan.yy",},"order":0,},
     {"id":{"name":"sndHyperCrystalRelease","path":"sounds/sndHyperCrystalRelease/sndHyperCrystalRelease.yy",},"order":4,},
     {"id":{"name":"sprSegwayIDPDIdle","path":"sprites/sprSegwayIDPDIdle/sprSegwayIDPDIdle.yy",},"order":9,},
     {"id":{"name":"sprSegwayIDPDHurt","path":"sprites/sprSegwayIDPDHurt/sprSegwayIDPDHurt.yy",},"order":11,},
@@ -1001,6 +1002,7 @@
     {"id":{"name":"mskFloor","path":"sprites/mskFloor/mskFloor.yy",},"order":10,},
     {"id":{"name":"sprFloor100","path":"sprites/sprFloor100/sprFloor100.yy",},"order":0,},
     {"id":{"name":"sprWall100Bot","path":"sprites/sprWall100Bot/sprWall100Bot.yy",},"order":1,},
+    {"id":{"name":"romVan","path":"rooms/romVan/romVan.yy",},"order":5,},
     {"id":{"name":"sprWall100Trans","path":"sprites/sprWall100Trans/sprWall100Trans.yy",},"order":2,},
     {"id":{"name":"sndDogGuardianDead","path":"sounds/sndDogGuardianDead/sndDogGuardianDead.yy",},"order":6,},
     {"id":{"name":"sprWall100Out","path":"sprites/sprWall100Out/sprWall100Out.yy",},"order":3,},
@@ -4619,6 +4621,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"romInit","path":"rooms/romInit/romInit.yy",},},
     {"roomId":{"name":"romGame","path":"rooms/romGame/romGame.yy",},},
+    {"roomId":{"name":"romVan","path":"rooms/romVan/romVan.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -4937,6 +4940,7 @@
     {"folderPath":"folders/Sprites/Weapons/Existing.yy","order":111,"resourceVersion":"1.0","name":"Existing","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Enviroment/Tiles/CrownVault/OldVault.yy","order":11,"resourceVersion":"1.0","name":"OldVault","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/SurvivalArena.yy","order":69,"resourceVersion":"1.0","name":"SurvivalArena","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/VanFan.yy","order":71,"resourceVersion":"1.0","name":"VanFan","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
