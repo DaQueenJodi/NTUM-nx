@@ -1,6 +1,11 @@
 /// @description areas regular
 function scrNextLevel() {
-
+	if UberCont.opt_gamemode == 25//Survival
+	{
+		subarea ++;
+		hard++;
+		exit;
+	}
 
 	if area = 104//YV CRIB
 	{

@@ -1076,7 +1076,9 @@ function scrPowers() {
 	direction = point_direction(x,y,mouse_x,mouse_y)
 	speed = 4
 	roll = 1
-	rollIframe = 6;
+	rollIframe = 5;
+	if skill_got[5]
+		rollIframe = 8;
 	alarm[3] += rollIframe;
 	snd_play_2d(sndRoll)
 	mask_index = mskPickupThroughWall;

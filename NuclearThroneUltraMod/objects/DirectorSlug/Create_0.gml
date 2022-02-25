@@ -1,5 +1,5 @@
 event_inherited();
-friction = 0.8
+friction = 0.7;
 
 image_speed=0.3;
 

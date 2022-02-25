@@ -23,5 +23,5 @@ else
 	}
 }
 scrWeapons()
-wep=scrDecideWep(2, 200, curse)
+wep=scrDecideWep(2, 1000, curse)
 //wep=scrDecideWepElite(2);

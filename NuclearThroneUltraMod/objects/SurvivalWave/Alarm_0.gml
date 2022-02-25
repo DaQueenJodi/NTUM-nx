@@ -7,7 +7,7 @@ with instance_create(xx,yy,obj)
 	#region insomnia
 	if instance_exists(Player) && Player.skill_got[29]//Insomnia
 	{
-		if race = 25
+		if Player.race = 25
 		{
 			if alarm[1]>0
 			{

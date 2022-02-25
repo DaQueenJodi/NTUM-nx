@@ -66,6 +66,16 @@ switch (waveNumber)
 				sprite_index = sprFloor2;
 		}
 	break;
+	case 3:
+		song = mus3;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor3B;
+			else
+				sprite_index = sprFloor3;
+		}
+	break;
 	case 4:
 		song = mus4;
 		with Floor
@@ -236,7 +246,22 @@ repeat(1+loops)
 			i++;
 			wave[i] = {
 					obj: BigMaggot,
-					time: 60,
+					time: 50,
+				};
+			i++;
+			wave[i] = {
+					obj: Scorpion,
+					time: 20,
+				};
+			i++;
+			wave[i] = {
+					obj: Scorpion,
+					time: 20,
+				};
+			i++;
+			wave[i] = {
+					obj: Bandit,
+					time: 80,
 				};
 			i++;
 			wave[i] = {
@@ -244,13 +269,6 @@ repeat(1+loops)
 				time: 30,
 				xx: centerX,
 				yy: centerY
-			};
-			i++;
-			wave[i] = {
-				obj: AmmoChest,
-				time: 30,
-				xx: centerX,
-				yy: centerY+32
 			};
 		break;
 		#endregion
@@ -271,7 +289,7 @@ repeat(1+loops)
 				i++;
 			wave[i] = {
 				obj: Ratking,
-				time: 140
+				time: 100
 			};
 			i++;
 			wave[i] = {
@@ -417,17 +435,17 @@ repeat(1+loops)
 				time: 60
 			};
 			i++;
-			repeat(3)
+			repeat(6)
 			{
 				wave[i] = {
 					obj: Raven,
-					time: 10
+					time: 6
 				};
 				i++;
 			}
 			wave[i] = {
 				obj: Raven,
-				time: 120
+				time: 100
 			};
 			i++;
 			wave[i] = {
@@ -437,12 +455,12 @@ repeat(1+loops)
 			i++;
 			wave[i] = {
 				obj: Exploder,
-				time: 120
+				time: 110
 			};
 			i++;
 			wave[i] = {
-				obj: AmmoChest,
-				time: 200,
+				obj: ToxicBarrel,
+				time: 100,
 				xx: centerX,
 				yy: centerY+32
 			};
@@ -463,6 +481,11 @@ repeat(1+loops)
 			};
 			i++;
 			wave[i] = {
+				obj: Sniper,
+				time: 10
+			};
+			i++;
+			wave[i] = {
 				obj: Bandit,
 				time: 4
 			};
@@ -479,7 +502,7 @@ repeat(1+loops)
 			i++;
 			wave[i] = {
 				obj: Bandit,
-				time: 150
+				time: 120
 			};
 			i++;
 			repeat(3)
@@ -497,12 +520,12 @@ repeat(1+loops)
 			i++;
 			wave[i] = {
 				obj: Salamander,
-				time: 4
+				time: 6
 			};
 			i++;
 			wave[i] = {
 				obj: Thief,
-				time: 4
+				time: 6
 			};
 			i++;
 			wave[i] = {
@@ -511,8 +534,23 @@ repeat(1+loops)
 			};
 			i++;
 			wave[i] = {
+				obj: Raven,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Raven,
+				time: 5
+			};
+			i++;
+			wave[i] = {
 				obj: Sniper,
-				time: 200
+				time: 150
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 5
 			};
 			i++;
 			wave[i] = {
@@ -532,8 +570,222 @@ repeat(1+loops)
 				time: 30
 			};
 			i++;
+			wave[i] = {
+				obj: Raven,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Sniper,
+				time: 1
+			};
+			i++;
+			wave[i] = {
+				obj: Raven,
+				time: 5
+			};
+			wave[i] = {
+				obj: Sniper,
+				time: 1
+			};
+			i++;
+			wave[i] = {
+				obj: Raven,
+				time: 5
+			};
+			wave[i] = {
+				obj: Sniper,
+				time: 10
+			};
+			i++;
+			wave[i] = {
+				obj: Raven,
+				time: 10
+			};
 		break;
 		#endregion
+		#region wave 4
+		case 4:
+			repeat(5)
+			{
+				wave[i] = {
+					obj: Spider,
+					time: 6
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Cocoon,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+					obj: LaserCrystal,
+					time: 190
+				};
+				i++;
+			wave[i] = {
+				obj: FireBat,
+				time: 40
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: Spider,
+					time: 6
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: LaserCrystal,
+				time: 20,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: Cocoon,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: LightningCrystal,
+				time: 40,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: LaserCrystal,
+				time: 100
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: Spider,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: LaserCrystal,
+				time: 180
+			};
+			i++;
+			wave[i] = {
+				obj: Cocoon,
+				time: 5,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+					obj: Spider,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: FireBat,
+				time: 60
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: LaserCrystal,
+					time: 15
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: LightningCrystal,
+				time: 200,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: EliteWeaponChest,
+				time: 5,
+				xx: centerX,
+				yy: centerY+32
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+					obj: Spider,
+					time: 5
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: LightningCrystal,
+				time: 170
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: LaserCrystal,
+					time: 10
+				};
+				i++;
+			}
+			repeat(6)
+			{
+				wave[i] = {
+					obj: Spider,
+					time: 2
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: FireBat,
+				time: 80
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: LaserCrystal,
+					time: 2
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: LightningCrystal,
+				time: 10
+			};
+			i++;
+		break;
+		#endregion
+		#region wave 5
+		case 5:
+		break;
+		#endregion
+		#region wave 6
+		case 6:
+		break;
+		#endregion
+		#region wave 7
+		case 7:
+		break;
+		#endregion
+		#region wave 8
+		case 8:
+		break;
+		#endregion
+		#region wave 9
+		case 9:
+		break;
+		#endregion
+		#region loop
 		default:
 			//loops
 			waveNumberOffset += waveNumber-1
@@ -542,6 +794,7 @@ repeat(1+loops)
 			event_user(0);
 			exit;
 		break;
+		#endregion
 	}
 }
 #endregion
