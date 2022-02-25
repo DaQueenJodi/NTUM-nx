@@ -5,7 +5,7 @@ function scrSpawnSurvivalWaveReward(){
 	var wave = Player.subarea;
 	
 	//Default chestspawn:
-	if wave > 1
+	if wave > 0
 	{
 		instance_create(x,y-64,WeaponChest);
 		instance_create(x,y+64,RadChest);

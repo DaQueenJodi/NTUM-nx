@@ -1,22 +1,45 @@
 /// @description Spawner
 var obj = wave[spawnI].obj;
-var xx = centerX + spawnX[posI]+random_range(24,-24);
-var yy = centerY + spawnY[posI]+random_range(24,-24);
-if variable_struct_exists(wave[spawnI],"xx")
+var xx = wave[spawnI].xx;
+var yy = wave[spawnI].yy;
+with instance_create(xx,yy,obj)
 {
-	xx = wave[spawnI].xx;
+	#region insomnia
+	if instance_exists(Player) && Player.skill_got[29]//Insomnia
+	{
+		if race = 25
+		{
+			if alarm[1]>0
+			{
+				alarm[1]+=300;
+	
+				with instance_create(x,y,Snooze)
+				{
+					owner = other.id;
+					yoffset = other.sprite_height*0.5 - 4;
+					depth = other.depth - 1;
+				}
+			}
+		}
+		else
+		{
+			if alarm[1]>0
+			{
+		    alarm[1]+=265;
+				with instance_create(x,y,Snooze)
+				{
+					owner = other.id;
+					yoffset = other.sprite_height*0.5 - 4;
+				}
+			}
+		}
+	}
+	#endregion
 }
-if variable_struct_exists(wave[spawnI],"yy")
-{
-	yy = wave[spawnI].yy;
-}
-instance_create(xx,yy,obj);
-instance_create(xx,yy,SurvivalPortal);
-instance_create(xx,yy,WallBreak);
 spawnI ++;
 if spawnI >= waveLength
 {
-	alarm[1] = 10;	
+	alarm[1] = 10;
 }
 else
 {
