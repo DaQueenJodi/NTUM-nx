@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndVenuz",
-  "duration": 0.0,
+  "duration": 1.827687,
   "parent": {
     "name": "YV",
     "path": "folders/Sounds/Player/YV.yy",

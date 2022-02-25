@@ -3,7 +3,7 @@ function scrNextLevel() {
 	if UberCont.opt_gamemode == 25//Survival
 	{
 		subarea ++;
-		hard++;
+		hard+=1.25;
 		exit;
 	}
 
