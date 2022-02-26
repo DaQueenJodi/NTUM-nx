@@ -5,6 +5,18 @@ scrUnlockGameMode(9,"FOR PLAYING LIKE SHIT")
 if scrCheckLoopAll()
 scrUnlockCSkin(1,"FOR LOOPING WITH EVERY CHARACTER",0);
 
+if UberCont.opt_gamemode == 8
+{
+	with VanFan
+	{
+		time_microseconds=UberCont.time_microseconds;
+		time_seconds=UberCont.time_seconds;
+		time_minutes=UberCont.time_minutes;
+		time_hours=UberCont.time_hours;
+		txttime = UberCont.minutesstring+":"+UberCont.secondsstring+":"+UberCont.microseconds;
+	}
+}
+
 if skill_got[18]//Last wish
 {
 with UberCont

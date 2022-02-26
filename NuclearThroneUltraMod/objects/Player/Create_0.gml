@@ -506,6 +506,17 @@ if UberCont.opt_gamemode = 11 //GUN GAME
 
 }
 
+if UberCont.opt_gamemode == 8 { //VAN FAN
+    area = 117;
+	if race != 13 // Sheep gets no fanpusher
+	{
+		wep = 373;//The vanpusher
+		if race == 7
+			bwep = wep;
+		ammo[wep_type[wep]] = typ_ammo[wep_type[wep]] * 3
+	}
+}
+
 looping = false; //you are now looping
 //invertedchance=100;
 

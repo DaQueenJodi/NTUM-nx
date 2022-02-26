@@ -1,8 +1,23 @@
 room_speed=30;
 if UberCont.opt_gamemode == 8
 {
+	with Floor
+	{
+		instance_destroy(id,false);	
+	}
+	with Wall
+	{
+		instance_destroy(id,false);	
+	}
+	with Top
+	{
+		instance_destroy(id,false);	
+	}
+	with TopSmall
+	{
+		instance_destroy(id,false);	
+	}
 	instance_create(x,y,VanFan);
-	exit;
 }
 if instance_exists(Player)
 {

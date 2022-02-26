@@ -1,16 +1,7 @@
 room_speed=30*UberCont.opt_loading;
 if UberCont.opt_loading == 4
 	room_speed = 999999;
-if UberCont.opt_gamemode == 8
-{
-	room_goto(romVan);
-	instance_destroy();
-	if !instance_exists(TopCont)
-	{
-		instance_create(0,0,TopCont)	
-	}
-	exit;
-}
+
 SetSeed();
 instance_create(10000,10000,FloorMaker)
 instance_create(0,0,TopCont)

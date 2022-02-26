@@ -4778,6 +4778,34 @@ function scrFire2() {
 		BackCont.shake += 30
 		wkick = 8
 	break;
+	
+	//VAN PUSHER
+	case 373:
+
+	snd_play_2d(sndGhettoBlast)
+	snd_play_2d(sndPlasmaHit);
+
+	instance_create(x,y,Dust)
+
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),VanPusher)
+	{
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,5)
+		longarms = 0
+		if instance_exists(Player)
+			longarms = (Player.skill_got[13]+other.bettermelee)*3
+		motion_add(point_direction(x,y,mouse_x,mouse_y),3+longarms)
+		image_angle = direction
+		team = other.team
+	}
+
+	wepangle = -wepangle
+	motion_add(point_direction(x,y,mouse_x,mouse_y),-6)
+	BackCont.viewx2 += lengthdir_x(5,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(5,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.shake += 16
+	wkick = -8
+
+	break;
 
 
 	}//end of switch part 2!

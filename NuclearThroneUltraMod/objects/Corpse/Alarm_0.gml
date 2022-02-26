@@ -55,7 +55,7 @@ if instance_number(becomenemy) = 0 and !instance_exists(Menu) and !instance_exis
 	        }
 	    }
 	}
-    else if !instance_exists(Portal)
+    else if !instance_exists(Portal) && instance_exists(Floor)
     {
         if !instance_exists(CrownPickup)
         {

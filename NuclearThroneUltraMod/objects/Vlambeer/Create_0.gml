@@ -22,7 +22,7 @@ if instance_exists(MusCont)
 with MusCont
 instance_destroy()
 }
-instance_create(x,y,MusCont)
+instance_create(x,y,MusCont);
 
 mode = 0
 snd_play(sndVlambeer)

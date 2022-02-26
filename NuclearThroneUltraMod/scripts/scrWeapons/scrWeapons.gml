@@ -4118,6 +4118,17 @@ function scrWeapons() {
 	wep_swap[372] = sndSwapExplosive
 	wep_rad[372] = 0;
 	
+	wep_name[373] = "VAN PUSHER"
+	wep_type[373] = 5
+	wep_auto[373] = 0
+	wep_load[373] = 8
+	wep_cost[373] = 0
+	wep_sprt[373] = sprVanCannon
+	wep_area[373] = -1
+	wep_text[373] = "push away da popo"
+	wep_swap[373] = sndSwapEnergy
+	wep_rad[373] = 0;
+	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"
 	wep_type[369] = 5

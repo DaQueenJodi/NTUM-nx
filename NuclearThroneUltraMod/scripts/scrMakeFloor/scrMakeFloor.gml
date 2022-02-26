@@ -430,7 +430,9 @@ function scrMakeFloor() {
 			instance_create(x,y,Floor)
 			instance_create(x,y+32,Floor)
 		}
-	} 
+	}
+	if UberCont.opt_gamemode == 8
+		instance_destroy();
 	if UberCont.opt_gamemode == 25//Survival Arena
 	{
 		//instance_create(x,y,Floor)

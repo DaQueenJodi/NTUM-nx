@@ -5,9 +5,10 @@ public = 0//1 is no cheats and release0
 defaultPublic = public;
 //if file_exists("icheat.txt") or file_exists("ICHEAT.txt") or file_exists("ICHEAT.TXT") or file_exists("icheat.TXT")
 //public = 0
+/*
 if public == 0
 	show_debug_overlay(true);
-
+*/
 //DEBUG STUFF
 scrn = 0
 scrn_take = 0

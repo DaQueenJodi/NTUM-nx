@@ -110,7 +110,7 @@ instance_create(instance_nearest(Player.x,Player.y,Floor).x+16, instance_nearest
 }
 
 
-if !(Player.area == 9 && Player.subarea == 3 || ((Player.area == 6 || Player.area == 112) && Player.subarea == 2) || UberCont.opt_gamemode == 25)
+if !(Player.area == 9 && Player.subarea == 3 || ((Player.area == 6 || Player.area == 112) && Player.subarea == 2) || UberCont.opt_gamemode == 25 || UberCont.opt_gamemode == 8)
 {
 	//safe corridors pls
 	instance_create(Player.x,Player.y,WallBreak);
