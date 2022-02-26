@@ -199,7 +199,7 @@ function scrRaces() {
 	race_acti[14] = "THROW WEAPONS"
 	race_butt[14] = "SHORTER TELEPORT DELAY#MORE THROW DAMAGE"
 	//race_back[14] = "NO LONGER GET RANDOM WEP(is ultra change)";
-	race_lock[14] = "LOOP WITH CHICKEN"
+	race_lock[14] = "VISIT THE JUNGLE"
 	race_have[14] = 0
 	race_swep[14] = 200//panda stick
 	race_bskin[14] = 0
@@ -297,7 +297,7 @@ function scrRaces() {
 	race_acti[21] = "RADIATION BEAM"//"PORTAL STRIKE"
 	race_butt[21] = "BEAM CHARGES QUICKER#BEAM HEALS#SOMETIMES MISSED BEAM#WILL DROP RADS"//"STRONGER PORTAL STRIKE"
 	//race_back[21] = "BEAM CHARGES QUICKER#GIVES AMMO";
-	race_lock[21] = "REACH THE WONDERLAND"//"REACH PALACE"
+	race_lock[21] = "REACH WONDERLAND"//"REACH PALACE"
 	race_have[21] = 0
 	race_swep[21] = 1
 	race_bskin[21] = 0

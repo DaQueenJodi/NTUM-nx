@@ -32,7 +32,7 @@ function scrGameModes() {
 	gamemode_have[7] = 0;
 
 	gamemode[8] = "VAN FAN";//
-	gamemode_unlock[8] = "GET HIT BY A VAN#AND SURVIVE";
+	gamemode_unlock[8] = "GET HIT BY A VAN";
 	gamemode_have[8] = 0;
 
 	gamemode[9] = "CASUAL MODE";//
@@ -80,7 +80,7 @@ function scrGameModes() {
 	gamemode_have[19] = 0;
 
 	gamemode[20] = "AGORAPHOBIA";
-	gamemode_unlock[20] = "BREAK MORE THAN 300 WALLS IN A SINGLE AREA"//"TAKE MORE THAN TEN MINUTES#TO FINISH AN AREA";
+	gamemode_unlock[20] = "BREAK MORE THAN 300 WALLS#IN A SINGLE AREA"//"TAKE MORE THAN TEN MINUTES#TO FINISH AN AREA";
 	gamemode_have[20] = 0;
 
 	gamemode[21] = "LOOP START";

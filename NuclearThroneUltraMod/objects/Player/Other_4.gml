@@ -47,11 +47,6 @@ if area=4 && screenshake400=true
 scrUnlockGameMode(16,"FOR REACHING CRYSTAL CAVES ON 400% SCREENSHAKE");
 }
 
-if area = 100
-{//CROWN START
-scrUnlockGameMode(8,"FOR GETTING INTO A CROWNVAULT")
-}
-
 if area = 2//UNLOCK EYES
 scrUnlockCharacter(3,"FOR REACHING THE SEWERS");
 
@@ -69,6 +64,12 @@ scrUnlockCharacter(10,"FOR REACHING THE FROZEN CITY");
 
 if area = 8//UNLOCK HORROR
 scrUnlockCharacter(21,"FOR REACHING WONDERLAND");
+
+//UNLOCK PANDA
+if area == 114
+{
+	scrUnlockCharacter(14,"FOR VISITING THE JUNGLE");
+}
 
 if area == 115 && race == 2
 {

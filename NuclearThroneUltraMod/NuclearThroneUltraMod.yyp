@@ -1856,6 +1856,7 @@
     {"id":{"name":"sprGhostEffect3","path":"sprites/sprGhostEffect3/sprGhostEffect3.yy",},"order":23,},
     {"id":{"name":"sprGhostEffect1","path":"sprites/sprGhostEffect1/sprGhostEffect1.yy",},"order":25,},
     {"id":{"name":"sprHeavySlash","path":"sprites/sprHeavySlash/sprHeavySlash.yy",},"order":27,},
+    {"id":{"name":"sprUltraLogo","path":"sprites/sprUltraLogo/sprUltraLogo.yy",},"order":7,},
     {"id":{"name":"sprGhostSlash","path":"sprites/sprGhostSlash/sprGhostSlash.yy",},"order":29,},
     {"id":{"name":"sprBigSlash","path":"sprites/sprBigSlash/sprBigSlash.yy",},"order":31,},
     {"id":{"name":"sprAxeSlash","path":"sprites/sprAxeSlash/sprAxeSlash.yy",},"order":33,},

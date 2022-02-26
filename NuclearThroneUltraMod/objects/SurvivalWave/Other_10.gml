@@ -1218,6 +1218,7 @@ repeat(1+loops)
 			i++;
 		break;
 		#endregion
+		/*
 		#region wave 7
 		case 7:
 		break;
@@ -1229,7 +1230,9 @@ repeat(1+loops)
 		#region wave 9
 		case 9:
 		break;
+		
 		#endregion
+		*/
 		#region loop
 		default:
 			//loops

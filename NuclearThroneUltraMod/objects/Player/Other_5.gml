@@ -247,8 +247,6 @@ if looping
 
 if race = 11 && weaponspickedup<1
 scrUnlockBSkin(11,"FOR LOOPING#WITHOUT PICKING UP A WEAPON#AS HUNTER",0);
-if race = 9 //UNLOCK PANDA (LOOP WITH CHICKEN)
-scrUnlockCharacter(14,"FOR LOOPING WITH CHICKEN");
 
 //SKINNS
 if race =3 && skill_got[19]
