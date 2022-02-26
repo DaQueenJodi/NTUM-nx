@@ -2867,6 +2867,7 @@
     {"id":{"name":"sndQuadMachinegun","path":"sounds/sndQuadMachinegun/sndQuadMachinegun.yy",},"order":35,},
     {"id":{"name":"sndIntroFadeIn","path":"sounds/sndIntroFadeIn/sndIntroFadeIn.yy",},"order":0,},
     {"id":{"name":"sndSwapSuperHot","path":"sounds/sndSwapSuperHot/sndSwapSuperHot.yy",},"order":37,},
+    {"id":{"name":"sprVanPusher","path":"sprites/sprVanPusher/sprVanPusher.yy",},"order":236,},
     {"id":{"name":"sndDoubleMinigun","path":"sounds/sndDoubleMinigun/sndDoubleMinigun.yy",},"order":39,},
     {"id":{"name":"sndFireShotgun","path":"sounds/sndFireShotgun/sndFireShotgun.yy",},"order":1,},
     {"id":{"name":"sprBigPortal","path":"sprites/sprBigPortal/sprBigPortal.yy",},"order":4,},

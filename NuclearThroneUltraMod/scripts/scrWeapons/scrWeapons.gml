@@ -4123,7 +4123,7 @@ function scrWeapons() {
 	wep_auto[373] = 0
 	wep_load[373] = 8
 	wep_cost[373] = 0
-	wep_sprt[373] = sprVanCannon
+	wep_sprt[373] = sprVanPusher
 	wep_area[373] = -1
 	wep_text[373] = "push away da popo"
 	wep_swap[373] = sndSwapEnergy
@@ -4141,6 +4141,17 @@ function scrWeapons() {
 	wep_text[374] +="#aaaaaaaaaaaaaaaaa#";
 	wep_swap[374] = sndSwapEnergy
 	wep_rad[374] = 0;
+	
+	wep_name[375] = "INVERSION MAGNET"
+	wep_type[375] = 5
+	wep_auto[375] = 0
+	wep_load[375] = 8
+	wep_cost[375] = 1
+	wep_sprt[375] = sprVanCannon
+	wep_area[375] = 30
+	wep_text[375] = "100% inversion"
+	wep_swap[375] = sndSwapEnergy
+	wep_rad[375] = 0;
 	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"
