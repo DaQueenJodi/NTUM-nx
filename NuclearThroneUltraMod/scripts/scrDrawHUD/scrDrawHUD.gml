@@ -225,7 +225,7 @@ function scrDrawHUD() {
 	else if (scrCheckGold(Player.wep_name[Player.wep]))
 	wepcolour=make_colour_rgb(223,201,134);//gold
 	else if (scrCheckUltra(Player.wep_name[Player.wep]))
-	col=make_colour_rgb(72,253,8);//ultra baby
+	wepcolour=make_colour_rgb(72,253,8);//ultra baby
 
 	draw_sprite_part_smart(spr,1,sprite_get_xoffset(spr),sprite_get_yoffset(spr)-8,wid,14,__view_get( e__VW.XView, 0 )+25,__view_get( e__VW.YView, 0 )+16,wepcolour,1)
 	draw_sprite_part_smart(spr,1,sprite_get_xoffset(spr),sprite_get_yoffset(spr)-8,wid,14,__view_get( e__VW.XView, 0 )+23,__view_get( e__VW.YView, 0 )+16,wepcolour,1)

@@ -501,7 +501,6 @@ if (KeyCont.key_fire[p] = 1 or keyfire = 1)
 	if rad-wep_rad[wep] < 0 && Player.alarm[2] < 1//alarm = Fish Ultra B
 	{
 		//not enough radiation
-		debug("not enuf rad");
 		clicked = 0
 		scrEmptyRad();
 		other.wkick = -2
