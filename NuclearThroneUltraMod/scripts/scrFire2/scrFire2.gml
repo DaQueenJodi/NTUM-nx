@@ -122,14 +122,15 @@ function scrFire2() {
 	Sleep(30);
 
 	snd_play_2d(sndSuperPlasmaCannon)
+	snd_play_2d(sndSuperPlasmaCannon)
 
 	with instance_create(x,y,PlasmaHuge)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)+16*other.accuracy,2)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)+12*other.accuracy,2)
 	image_angle = direction
 	team = other.team}
 
 	with instance_create(x,y,PlasmaHuge)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)-16*other.accuracy,2)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)-12*other.accuracy,2)
 	image_angle = direction
 	team = other.team}
 
@@ -4806,7 +4807,45 @@ function scrFire2() {
 	wkick = -8
 
 	break;
+	
+	//QUADRUPLE SUPER PLASMA CANNON
+	case 374:
 
+	Sleep(30);
+	snd_play_2d(sndSuperPlasmaCannon)
+	snd_play_2d(sndPlasmaHit)
+	snd_play_2d(sndSuperPlasmaCannon)
+	snd_play_2d(sndExplosionXXL)
+	Sleep(10);
 
+	with instance_create(x,y,PlasmaHuge)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)+12*other.accuracy,2)
+	image_angle = direction
+	team = other.team}
+
+	with instance_create(x,y,PlasmaHuge)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)-12*other.accuracy,2)
+	image_angle = direction
+	team = other.team}
+	
+	with instance_create(x,y,PlasmaHuge)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)+24*other.accuracy,2)
+	image_angle = direction
+	team = other.team}
+
+	with instance_create(x,y,PlasmaHuge)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)-24*other.accuracy,2)
+	image_angle = direction
+	team = other.team}
+
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+180,24)
+	BackCont.viewx2 += lengthdir_x(45,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(45,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 60
+	wkick = 30
+	resetSpeed=false;
+
+	break;
+	
 	}//end of switch part 2!
 }

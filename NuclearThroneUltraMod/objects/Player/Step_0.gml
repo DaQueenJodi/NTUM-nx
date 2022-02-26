@@ -24,7 +24,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
 		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
-	    with instance_create(f.x + 16,f.y + 16,VanSpawn)
+	    with instance_create(f.x + 16,f.y + 16,WeaponChest)
 			curse = 1;
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
 		thing.mytext = "VAN";
@@ -481,7 +481,7 @@ clicked = 1
 
 if (KeyCont.key_fire[p] = 1 or keyfire = 1)
 {
-	if  ammo[wep_type[wep]] < wep_cost[wep] && wep_type[wep] != 0
+	if  ammo[wep_type[wep]] < wep_cost[wep] && wep_type[wep] != 0  && alarm[2] < 1//alarm = Fish Ultra B
 	{
 	if wep == 29|| wep==60 || wep==61 || wep==83 || wep==84 || wep==132//|| wep==109//ALL THE BLOOD WEAPONS!
 	{//glove is not included because that shits just to buggy
@@ -498,7 +498,7 @@ if (KeyCont.key_fire[p] = 1 or keyfire = 1)
 	scrEmpty()
 	}
 	rad = max(rad,0);
-	if rad-wep_rad[wep] < 0
+	if rad-wep_rad[wep] < 0 && Player.alarm[2] < 1//alarm = Fish Ultra B
 	{
 		//not enough radiation
 		debug("not enuf rad");
@@ -508,7 +508,7 @@ if (KeyCont.key_fire[p] = 1 or keyfire = 1)
 	}
 }
 
-if can_shoot = 1 and (ammo[wep_type[wep]] >= wep_cost[wep] || wep_type[wep] == 0) and rad>=wep_rad[wep]
+if can_shoot = 1 and (ammo[wep_type[wep]] >= wep_cost[wep] || wep_type[wep] == 0) and rad>=wep_rad[wep] || alarm[2]>0//alarm = Fish Ultra B
 {
 if wep_auto[wep] = 0 and clicked = 1
 {

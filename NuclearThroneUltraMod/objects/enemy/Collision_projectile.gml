@@ -81,7 +81,7 @@ gunangle=random(360)
 target=-1;
 walk=0;
 
-if alarm[1]<90
+if alarm[1]<90 && alarm[1] > 0
 {
 alarm[1]+=30;
 if Player.skill_got[5]

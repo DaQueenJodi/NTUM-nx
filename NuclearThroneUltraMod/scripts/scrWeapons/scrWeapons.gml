@@ -4129,6 +4129,19 @@ function scrWeapons() {
 	wep_swap[373] = sndSwapEnergy
 	wep_rad[373] = 0;
 	
+	wep_name[374] = "QUADRUPLE SUPER PLASMA CANNON"
+	wep_type[374] = 5
+	wep_auto[374] = 0
+	wep_load[374] = 1300//670//350
+	wep_cost[374] = 90// 48//24
+	wep_sprt[374] = sprQuadruppleSuperPlasmaCannon
+	wep_area[374] = 30//thats the last weapon
+	wep_text[374] ="aaaaaaaaaaaaaaaaa#";
+	repeat(40)
+	wep_text[374] +="#aaaaaaaaaaaaaaaaa#";
+	wep_swap[374] = sndSwapEnergy
+	wep_rad[374] = 0;
+	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"
 	wep_type[369] = 5

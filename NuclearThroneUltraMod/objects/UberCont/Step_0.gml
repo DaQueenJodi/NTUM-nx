@@ -114,7 +114,6 @@ pauseimg = sprite_create_from_surface(application_surface,0,0,surface_get_width(
 //cursor_sprite=sprCrosshair
 //with Cursor
 //instance_destroy();
-debug("deact all");
 instance_deactivate_all(1)
 instance_activate_object(BackCont);
 instance_activate_object(MusCont);

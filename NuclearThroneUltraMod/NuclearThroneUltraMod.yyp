@@ -3090,6 +3090,7 @@
     {"id":{"name":"sprNewGuardianDisappear","path":"sprites/sprNewGuardianDisappear/sprNewGuardianDisappear.yy",},"order":1,},
     {"id":{"name":"sndBigDogTaunt","path":"sounds/sndBigDogTaunt/sndBigDogTaunt.yy",},"order":96,},
     {"id":{"name":"sndBigDogWalk","path":"sounds/sndBigDogWalk/sndBigDogWalk.yy",},"order":97,},
+    {"id":{"name":"sprQuadruppleSuperPlasmaCannon","path":"sprites/sprQuadruppleSuperPlasmaCannon/sprQuadruppleSuperPlasmaCannon.yy",},"order":235,},
     {"id":{"name":"sndBigBanditMeleeStart","path":"sounds/sndBigBanditMeleeStart/sndBigBanditMeleeStart.yy",},"order":98,},
     {"id":{"name":"sndFiretrap","path":"sounds/sndFiretrap/sndFiretrap.yy",},"order":0,},
     {"id":{"name":"sndHitMetal","path":"sounds/sndHitMetal/sndHitMetal.yy",},"order":1,},

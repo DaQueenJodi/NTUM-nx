@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprDoubleSuperPlasmaCannon","path":"sprites/sprDoubleSuperPlasmaCannon/sprDoubleSuperPlasmaCannon.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprDoubleSuperPlasmaCannon",
     "tags": [],
     "resourceType": "GMSequence",
   },
