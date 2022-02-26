@@ -8,7 +8,7 @@ draw_set_font(fntM)
 draw_set_halign(fa_center)
 draw_set_valign(fa_center)
 draw_set_color(c_white)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,string_hash_to_newline("This mod of Nuclear Throne is#based on update 19 from back in the day#This is a mod made by Juul# you can follow progress on#twitter: @Erdeppol#you must have a valid copy of Nuclear Throne#in order to play this mod!#be wary of flashing lights!"))
+draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,string_hash_to_newline("This mod of Nuclear Throne is#based on update 19#This is a mod made by Juul# you can follow#twitter: @Erdeppol#you must have a valid copy#of Nuclear Throne#in order to play this mod!#be wary of flashing lights!"))
 
 }
 if mode = 1

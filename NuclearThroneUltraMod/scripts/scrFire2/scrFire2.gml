@@ -4847,5 +4847,31 @@ function scrFire2() {
 
 	break;
 	
+	//INVERSION MAGNET
+	case 375:
+
+	snd_play_2d(sndScrewdriver)
+
+	instance_create(x,y,Dust)
+
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*8,point_direction(x,y,mouse_x,mouse_y)),Shank)
+	{
+		dmg = 3;
+		
+	longarms = 0
+	if instance_exists(Player)
+	longarms = (Player.skill_got[13]+other.bettermelee)*3
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,2+longarms)
+	image_angle = direction
+	team = other.team}
+
+	wepangle = -wepangle
+	BackCont.viewx2 += lengthdir_x(2,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(2,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.shake += 1
+	wkick = -2
+
+	break;
+	
 	}//end of switch part 2!
 }

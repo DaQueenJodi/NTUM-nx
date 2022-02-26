@@ -4143,14 +4143,14 @@ function scrWeapons() {
 	wep_rad[374] = 0;
 	
 	wep_name[375] = "INVERSION MAGNET"
-	wep_type[375] = 5
+	wep_type[375] = 0
 	wep_auto[375] = 0
-	wep_load[375] = 8
+	wep_load[375] = 10
 	wep_cost[375] = 1
-	wep_sprt[375] = sprVanCannon
+	wep_sprt[375] = sprInversionMagnet
 	wep_area[375] = 30
 	wep_text[375] = "100% inversion"
-	wep_swap[375] = sndSwapEnergy
+	wep_swap[375] = sndSwapSword
 	wep_rad[375] = 0;
 	
 	/*

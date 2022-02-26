@@ -4101,6 +4101,7 @@
     {"id":{"name":"SuperIonBurst","path":"objects/SuperIonBurst/SuperIonBurst.yy",},"order":111,},
     {"id":{"name":"ChargeShotgun","path":"objects/ChargeShotgun/ChargeShotgun.yy",},"order":1,},
     {"id":{"name":"ChargeSplinterGun","path":"objects/ChargeSplinterGun/ChargeSplinterGun.yy",},"order":3,},
+    {"id":{"name":"sprInversionMagnet","path":"sprites/sprInversionMagnet/sprInversionMagnet.yy",},"order":237,},
     {"id":{"name":"ChargeFlakCannon","path":"objects/ChargeFlakCannon/ChargeFlakCannon.yy",},"order":5,},
     {"id":{"name":"ChargeLaser","path":"objects/ChargeLaser/ChargeLaser.yy",},"order":7,},
     {"id":{"name":"WeaponCharge","path":"objects/WeaponCharge/WeaponCharge.yy",},"order":9,},
