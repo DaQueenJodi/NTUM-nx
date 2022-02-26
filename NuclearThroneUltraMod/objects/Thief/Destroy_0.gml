@@ -21,6 +21,7 @@ if wep!=0
             wepmod1=other.wepmod1;
             wepmod2=other.wepmod2;
             wepmod3=other.wepmod3;
+			wepmod4=other.wepmod4;
             sprite_index = wep_sprt[wep]
             
             }

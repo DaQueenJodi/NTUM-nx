@@ -48,9 +48,9 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if keyboard_check_pressed(vk_numpad3) {
 		var dangle = random(1)*360;
 		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		instance_create(f.x + 16,f.y + 16,BoneFish);
+		instance_create(f.x + 16,f.y + 16,Thief);
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "FISH";
+		thing.mytext = "Thief";
 	}
 	if keyboard_check_pressed(vk_numpad4) {
 		var dangle = random(1)*360;

@@ -12,7 +12,7 @@ with Portal
 }
 if canSpawn
 {
-	var loops = min(GetPlayerLoops(),4);
+	var loops = min(GetPlayerLoops(),3);
 	var amount = 7 + loops;
 	var angle = image_angle;
 	var angleStep = 360/amount;
