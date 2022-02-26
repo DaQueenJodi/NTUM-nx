@@ -133,8 +133,6 @@ skillsChosen = 0; //To check for ultra mutation (always last)
 skeletonlives = 0;
 
 ultimategamble = false;
-if race = 19
-ultimategamble = true;
 
 
 bettermelee = 0;

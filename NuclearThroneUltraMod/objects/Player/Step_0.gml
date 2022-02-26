@@ -1471,7 +1471,7 @@ damageboostdelay--;
 if ultra_got[95]
 {
 with instance_create(x,y,Flame)
-{motion_add(other.direction+180+random(40)-20,0.2+random(2))
+{motion_add(other.direction+180+random(60)-30,0.4+random(2.5))
 team = other.team
 depth=-1;}
 

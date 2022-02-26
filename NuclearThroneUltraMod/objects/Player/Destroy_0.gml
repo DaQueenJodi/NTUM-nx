@@ -200,7 +200,7 @@ instance_destroy();
 with instance_create(x,y,PlayerSpawn)//Data to keep
 {
 //alarm[3]=300;//immunity
-ultimategamble=other.ultimategamble;//in case you picked unstoppable ultra which will h
+ultimategamble=true;
 skeletonlives=other.skeletonlives-1;
 race = other.race
 crown = other.crown

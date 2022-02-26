@@ -112,16 +112,17 @@ instance_create(x,y,Player);
 
 with Player//Data to keep
 {
-race = other.race
-crown = other.crown
-lastarea = other.lastarea;
-area = other.area//other.lastarea;
-loops = other.loops;
-hard = other.hard;
-kills = other.kills;
-subarea=other.subarea;
-boostLevel = boost;
-//event_perform(ev_other,ev_room_end);
+	ultimategamble = true;
+	race = other.race
+	crown = other.crown
+	lastarea = other.lastarea;
+	area = other.area//other.lastarea;
+	loops = other.loops;
+	hard = other.hard;
+	kills = other.kills;
+	subarea=other.subarea;
+	boostLevel = boost;
+	//event_perform(ev_other,ev_room_end);
 }
 /*with instance_create(x,y,GenCont)
 {race = other.race
