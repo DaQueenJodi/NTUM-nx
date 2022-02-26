@@ -12,7 +12,7 @@ oasisskip=-1;
 
 //with BanditBoss
 //oasis=false;
-if spr_idle == sprBigFishSkull
+if spr_idle == sprBigFishSkullOpen
 {
 	//Drop the inversion magnet
 	with instance_create(x,y,WepPickup)
