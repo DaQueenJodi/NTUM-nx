@@ -83,7 +83,7 @@ if wepmenuopen
 */
 //SKIN-------------------------------------------______________________
 
-if race != 0 && mouse_x > __view_get( e__VW.XView, 0 )+72-12 and mouse_x < __view_get( e__VW.XView, 0 )+72+12 and mouse_y > __view_get( e__VW.YView, 0 )+60-12 and mouse_y < __view_get( e__VW.YView, 0 )+60+12
+if race != 0 && mouse_x > sx-24 and mouse_x < sx and mouse_y > __view_get( e__VW.YView, 0 )+60-12 and mouse_y < __view_get( e__VW.YView, 0 )+60+12
 {
 scale=1.4;
 
@@ -132,4 +132,5 @@ else
 scale=1;
 
 }
+sx = __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-135;
 imageIndex += 0.5;
