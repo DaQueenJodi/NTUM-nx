@@ -1,6 +1,8 @@
 scrDrop(50,1)
 scrDrop(30,0)
 scrDrop(30,0)
+speed = 0;
+my_health = 0;
 event_inherited()
 
 //GAMEMODE UNLOCKABLE NO ELITE POPO
