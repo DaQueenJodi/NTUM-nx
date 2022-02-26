@@ -13,3 +13,5 @@ scrRaddrop();
 scrDrop(100,100);
 scrDrop(100,10);
 scrDrop(20,0);
+scrEndBoss();
+Sleep(200)

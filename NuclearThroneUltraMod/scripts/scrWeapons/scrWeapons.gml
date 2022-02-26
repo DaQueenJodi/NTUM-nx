@@ -4142,7 +4142,7 @@ function scrWeapons() {
 	wep_swap[374] = sndSwapEnergy
 	wep_rad[374] = 0;
 	
-	wep_name[375] = "INVERSION MAGNET"
+	wep_name[375] = "INVERSION MAGNET"//Probably the worst weapon in the game
 	wep_type[375] = 0
 	wep_auto[375] = 0
 	wep_load[375] = 10
