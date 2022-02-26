@@ -5,6 +5,11 @@ if instance_exists(Player)
 {
 	if Player.onlyusemerevolver
 	{//ONE WEAPON ONLY UNLOCK!
-	scrUnlockGameMode(1,"FOR REACHING THE WONDERLAND#USING ONLY A REVOLVER");
+	scrUnlockGameMode(1,"FOR REACHING AND#BEATING THE THRONE#USING ONLY A REVOLVER");
 	}
 }
+
+scrRaddrop();
+scrDrop(100,100);
+scrDrop(100,10);
+scrDrop(20,0);

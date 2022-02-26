@@ -1052,7 +1052,7 @@ with projectile
 if skill_got[25]//strong spirit
     {
     
-    if ( strongspiritused=false && my_health=maxhealth || ( strongspiritused=false && my_health > round(maxhealth*0.75) && race = 25 ) )
+    if ( strongspiritused=false && my_health >= maxhealth || ( strongspiritused=false && my_health > round(maxhealth*0.75) && race = 25 ) )
     {
     //strongspiritused=false;
     if strongspirit=false

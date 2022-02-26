@@ -271,13 +271,19 @@ looping=false;
     //instance_create(x,y,Crown)
     UberCont.ctot_loop[race] += 1
     loops += 1
-        
+    if (ultra_got[75] == 1)
+	{
+		ultra_got[75] = 0;
+		skillpoints ++
+		ultraNow = true;
+		skillsChosen --;
+	}
         if race==9//Chicken maxhealth regain on loop
         {
 			var targetHealth = 8;
 			if skill_got[1] == 1//Rhino skin
 				targetHealth += 4;
-			if skill_got[33]//Glass arm cannon
+			if skill_got[33] == 1//Glass arm cannon
 				targetHealth -= 2;
             if maxhealth<targetHealth
             {

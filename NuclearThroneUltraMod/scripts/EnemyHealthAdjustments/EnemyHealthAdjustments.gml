@@ -22,7 +22,7 @@ function EnemyHealthAdjustments(){
 		
 		if UberCont.opt_gamemode = 9//easy mode
 		{
-		hpReduction += round(maxhealth*0.2);
+			hpReduction += round(maxhealth*0.2);
 		}
 		
 		my_health = max(1,maxhealth - hpReduction);

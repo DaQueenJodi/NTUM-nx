@@ -4,7 +4,7 @@ function scrGameModes() {
 	gamemode_have[0] = 1;
 
 	gamemode[1] = "ONE WEAPON ONLY";//
-	gamemode_unlock[1] = "BEAT THE THRONE USING ONLY A REVOLVER";
+	gamemode_unlock[1] = "REACH AND BEAT THE THRONE#USING ONLY A REVOLVER";
 	gamemode_have[1] = 0;
 
 	gamemode[2] = "FAVOURABLE BUILD";//
