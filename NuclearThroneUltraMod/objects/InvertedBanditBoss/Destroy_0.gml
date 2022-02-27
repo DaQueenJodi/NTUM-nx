@@ -4,8 +4,8 @@ with MusCont
 //optimise sound_discard(amb)
 
 audio_stop_sound(song);
-song = sndBossWin
-snd_play(song)
+song = musBossWin
+snd_play_2d(song)
 //snd_loop(amb)
 
 audio_master_gain(max(0,sqrt(UberCont.opt_sfxvol)))

@@ -1,4 +1,7 @@
 /// @description Spectacular
+with MusCont {
+	audio_stop_sound(song)
+}
 snd_play_2d(sndNothingDeath1);
 instance_create(x,y,ThroneExplo);
 if instance_exists(Player)
