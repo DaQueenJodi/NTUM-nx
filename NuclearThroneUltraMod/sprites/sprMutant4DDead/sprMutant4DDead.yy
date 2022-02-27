@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant4DDead","path":"sprites/sprMutant4DDead/sprMutant4DDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant4DDead",
     "tags": [],
     "resourceType": "GMSequence",

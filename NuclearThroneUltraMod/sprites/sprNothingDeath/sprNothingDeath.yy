@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingDeath","path":"sprites/sprNothingDeath/sprNothingDeath.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingDeath",
     "tags": [],
     "resourceType": "GMSequence",

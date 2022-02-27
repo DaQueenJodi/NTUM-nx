@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskGhostGuardian","path":"sprites/mskGhostGuardian/mskGhostGuardian.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskGhostGuardian",
     "tags": [],
     "resourceType": "GMSequence",

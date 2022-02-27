@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprInvertedRhinoFreakIdle","path":"sprites/sprInvertedRhinoFreakIdle/sprInvertedRhinoFreakIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

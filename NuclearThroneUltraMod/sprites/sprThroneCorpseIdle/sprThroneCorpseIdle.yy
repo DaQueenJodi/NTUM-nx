@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprThroneCorpseIdle","path":"sprites/sprThroneCorpseIdle/sprThroneCorpseIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprThroneCorpseIdle",
     "tags": [],
     "resourceType": "GMSequence",

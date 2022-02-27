@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprInvertedScrapBossSleepHurt","path":"sprites/sprInvertedScrapBossSleepHurt/sprInvertedScrapBossSleepHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

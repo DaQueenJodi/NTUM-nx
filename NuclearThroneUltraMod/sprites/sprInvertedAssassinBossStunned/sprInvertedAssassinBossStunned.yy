@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprInvertedAssassinBossStunned","path":"sprites/sprInvertedAssassinBossStunned/sprInvertedAssassinBossStunned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprInvertedAssassinBossStunned",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWall114Out","path":"sprites/sprWall114Out/sprWall114Out.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWall114Out",
     "tags": [],
     "resourceType": "GMSequence",

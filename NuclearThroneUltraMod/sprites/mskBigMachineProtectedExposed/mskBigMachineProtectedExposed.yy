@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskBigMachineProtectedExposed","path":"sprites/mskBigMachineProtectedExposed/mskBigMachineProtectedExposed.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskBigMachineProtectedExposed",
     "tags": [],
     "resourceType": "GMSequence",

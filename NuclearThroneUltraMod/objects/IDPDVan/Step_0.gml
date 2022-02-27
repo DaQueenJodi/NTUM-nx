@@ -17,8 +17,9 @@ image_index=0;
 snd_play(sndVanOpen);
 meleedamage=0;
 }
+/*
 if (team == 0)
 {
 	if speed>4
 		speed=4;	
-}
+}*/

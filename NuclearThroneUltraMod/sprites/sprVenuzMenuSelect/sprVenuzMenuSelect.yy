@@ -175,7 +175,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprVenuzMenuSelect","path":"sprites/sprVenuzMenuSelect/sprVenuzMenuSelect.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

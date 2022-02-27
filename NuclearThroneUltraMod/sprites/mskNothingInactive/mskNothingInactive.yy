@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskNothingInactive","path":"sprites/mskNothingInactive/mskNothingInactive.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskNothingInactive",
     "tags": [],
     "resourceType": "GMSequence",

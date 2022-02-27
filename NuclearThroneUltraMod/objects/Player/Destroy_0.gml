@@ -5,6 +5,18 @@ scrUnlockGameMode(9,"FOR PLAYING LIKE SHIT")
 if scrCheckLoopAll()
 scrUnlockCSkin(1,"FOR LOOPING WITH EVERY CHARACTER",0);
 
+if UberCont.opt_gamemode == 8
+{
+	with VanFan
+	{
+		time_microseconds=UberCont.time_microseconds;
+		time_seconds=UberCont.time_seconds;
+		time_minutes=UberCont.time_minutes;
+		time_hours=UberCont.time_hours;
+		txttime = UberCont.minutesstring+":"+UberCont.secondsstring+":"+UberCont.microseconds;
+	}
+}
+
 if skill_got[18]//Last wish
 {
 with UberCont
@@ -103,7 +115,6 @@ my_health = 0}}
 
 
 snd_play(snd_dead)
-
 with instance_create(x,y,WepPickup)
 {
 scrWeapons()
@@ -189,7 +200,7 @@ instance_destroy();
 with instance_create(x,y,PlayerSpawn)//Data to keep
 {
 //alarm[3]=300;//immunity
-ultimategamble=other.ultimategamble;//in case you picked unstoppable ultra which will h
+ultimategamble=true;
 skeletonlives=other.skeletonlives-1;
 race = other.race
 crown = other.crown

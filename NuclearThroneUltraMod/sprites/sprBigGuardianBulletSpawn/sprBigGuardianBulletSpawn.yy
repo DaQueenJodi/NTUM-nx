@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBigGuardianBulletSpawn","path":"sprites/sprBigGuardianBulletSpawn/sprBigGuardianBulletSpawn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBigGuardianBulletSpawn",
     "tags": [],
     "resourceType": "GMSequence",

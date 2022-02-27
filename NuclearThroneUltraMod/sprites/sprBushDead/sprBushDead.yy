@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBushDead","path":"sprites/sprBushDead/sprBushDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBushDead",
     "tags": [],
     "resourceType": "GMSequence",

@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDirectorGrenadeLauncher","path":"sprites/sprDirectorGrenadeLauncher/sprDirectorGrenadeLauncher.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprDirectorGrenadeLauncher",
     "tags": [],
     "resourceType": "GMSequence",

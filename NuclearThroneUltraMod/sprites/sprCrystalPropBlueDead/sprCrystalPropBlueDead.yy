@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCrystalPropBlueDead","path":"sprites/sprCrystalPropBlueDead/sprCrystalPropBlueDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCrystalPropBlueDead",
     "tags": [],
     "resourceType": "GMSequence",

@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprRewirer","path":"sprites/sprRewirer/sprRewirer.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprRewirer",
     "tags": [],
     "resourceType": "GMSequence",

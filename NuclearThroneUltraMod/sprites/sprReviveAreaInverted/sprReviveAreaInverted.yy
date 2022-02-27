@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprReviveAreaInverted","path":"sprites/sprReviveAreaInverted/sprReviveAreaInverted.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprReviveAreaInverted",
     "tags": [],
     "resourceType": "GMSequence",

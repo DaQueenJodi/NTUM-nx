@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant6CHurt","path":"sprites/sprMutant6CHurt/sprMutant6CHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant6CHurt",
     "tags": [],
     "resourceType": "GMSequence",

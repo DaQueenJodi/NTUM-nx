@@ -3,5 +3,3 @@ if !instance_exists(MenuGen)
 {
 scrDrawHUD()
 }
-
-

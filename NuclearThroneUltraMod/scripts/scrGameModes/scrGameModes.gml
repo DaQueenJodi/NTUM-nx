@@ -4,7 +4,7 @@ function scrGameModes() {
 	gamemode_have[0] = 1;
 
 	gamemode[1] = "ONE WEAPON ONLY";//
-	gamemode_unlock[1] = "BEAT THE THRONE USING ONLY A REVOLVER";
+	gamemode_unlock[1] = "REACH AND BEAT THE THRONE#USING ONLY A REVOLVER";
 	gamemode_have[1] = 0;
 
 	gamemode[2] = "FAVOURABLE BUILD";//
@@ -31,8 +31,8 @@ function scrGameModes() {
 	gamemode_unlock[7] = "FINISH AN AREA WITHOUT WALKING AS ATOM";
 	gamemode_have[7] = 0;
 
-	gamemode[8] = "ULTRA HARD MODE#NOTHING HERE YET";//
-	gamemode_unlock[8] = "GET INTO A CROWN VAULT#THIS NO LONGER EXISTS";
+	gamemode[8] = "VAN FAN";//
+	gamemode_unlock[8] = "GET HIT BY A VAN";
 	gamemode_have[8] = 0;
 
 	gamemode[9] = "CASUAL MODE";//
@@ -80,7 +80,7 @@ function scrGameModes() {
 	gamemode_have[19] = 0;
 
 	gamemode[20] = "AGORAPHOBIA";
-	gamemode_unlock[20] = "BREAK MORE THAN 300 WALLS IN A SINGLE AREA"//"TAKE MORE THAN TEN MINUTES#TO FINISH AN AREA";
+	gamemode_unlock[20] = "BREAK MORE THAN 300 WALLS#IN A SINGLE AREA"//"TAKE MORE THAN TEN MINUTES#TO FINISH AN AREA";
 	gamemode_have[20] = 0;
 
 	gamemode[21] = "LOOP START";

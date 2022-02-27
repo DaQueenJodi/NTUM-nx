@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWall10Top","path":"sprites/sprWall10Top/sprWall10Top.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWall10Top",
     "tags": [],
     "resourceType": "GMSequence",

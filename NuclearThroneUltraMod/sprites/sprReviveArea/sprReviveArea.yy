@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprReviveArea","path":"sprites/sprReviveArea/sprReviveArea.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprReviveArea",
     "tags": [],
     "resourceType": "GMSequence",

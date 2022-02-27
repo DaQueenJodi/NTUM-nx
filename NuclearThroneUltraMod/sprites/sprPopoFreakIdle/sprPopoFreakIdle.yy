@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPopoFreakIdle","path":"sprites/sprPopoFreakIdle/sprPopoFreakIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPopoFreakIdle",
     "tags": [],
     "resourceType": "GMSequence",

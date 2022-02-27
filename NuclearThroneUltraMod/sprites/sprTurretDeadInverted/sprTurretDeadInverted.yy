@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprTurretDeadInverted","path":"sprites/sprTurretDeadInverted/sprTurretDeadInverted.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprTurretDeadInverted",
     "tags": [],
     "resourceType": "GMSequence",

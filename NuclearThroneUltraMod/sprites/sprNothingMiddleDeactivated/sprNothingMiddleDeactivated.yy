@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingMiddleDeactivated","path":"sprites/sprNothingMiddleDeactivated/sprNothingMiddleDeactivated.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingMiddleDeactivated",
     "tags": [],
     "resourceType": "GMSequence",

@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprJungleFlyDead","path":"sprites/sprJungleFlyDead/sprJungleFlyDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprJungleFlyDead",
     "tags": [],
     "resourceType": "GMSequence",

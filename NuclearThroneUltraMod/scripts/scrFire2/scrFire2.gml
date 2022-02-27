@@ -122,14 +122,15 @@ function scrFire2() {
 	Sleep(30);
 
 	snd_play_2d(sndSuperPlasmaCannon)
+	snd_play_2d(sndSuperPlasmaCannon)
 
 	with instance_create(x,y,PlasmaHuge)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)+16*other.accuracy,2)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)+12*other.accuracy,2)
 	image_angle = direction
 	team = other.team}
 
 	with instance_create(x,y,PlasmaHuge)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)-16*other.accuracy,2)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)-12*other.accuracy,2)
 	image_angle = direction
 	team = other.team}
 
@@ -1002,7 +1003,6 @@ function scrFire2() {
 	team = other.team}
 
 	wepangle = -wepangle
-	speed = -speed*0.9
 	BackCont.viewx2 += lengthdir_x(12,ang)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(12,ang)*UberCont.opt_shake
 	BackCont.shake += 2
@@ -4762,7 +4762,115 @@ function scrFire2() {
 	wkick = 4
 
 	break;
+	
+	case 372:
+	
+		snd_play_2d(sndPopgun);
+		snd_play_2d(sndPlasmaHit);
+		
+		with instance_create(x,y,VanCannon)
+		{
+			image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(16)-8)*other.accuracy;
+			team = other.team;
+		}
+		BackCont.viewx2 += lengthdir_x(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 30
+		wkick = 8
+	break;
+	
+	//VAN PUSHER
+	case 373:
 
+	snd_play_2d(sndGhettoBlast)
+	snd_play_2d(sndPlasmaHit);
 
+	instance_create(x,y,Dust)
+
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),VanPusher)
+	{
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,5)
+		longarms = 0
+		if instance_exists(Player)
+			longarms = (Player.skill_got[13]+other.bettermelee)*3
+		motion_add(point_direction(x,y,mouse_x,mouse_y),3+longarms)
+		image_angle = direction
+		team = other.team
+	}
+
+	wepangle = -wepangle
+	motion_add(point_direction(x,y,mouse_x,mouse_y),-6)
+	BackCont.viewx2 += lengthdir_x(5,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(5,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.shake += 16
+	wkick = -8
+
+	break;
+	
+	//QUADRUPLE SUPER PLASMA CANNON
+	case 374:
+
+	Sleep(30);
+	snd_play_2d(sndSuperPlasmaCannon)
+	snd_play_2d(sndPlasmaHit)
+	snd_play_2d(sndSuperPlasmaCannon)
+	snd_play_2d(sndExplosionXXL)
+	Sleep(10);
+
+	with instance_create(x,y,PlasmaHuge)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)+12*other.accuracy,2)
+	image_angle = direction
+	team = other.team}
+
+	with instance_create(x,y,PlasmaHuge)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)-12*other.accuracy,2)
+	image_angle = direction
+	team = other.team}
+	
+	with instance_create(x,y,PlasmaHuge)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)+24*other.accuracy,2)
+	image_angle = direction
+	team = other.team}
+
+	with instance_create(x,y,PlasmaHuge)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)-24*other.accuracy,2)
+	image_angle = direction
+	team = other.team}
+
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+180,24)
+	BackCont.viewx2 += lengthdir_x(45,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(45,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 60
+	wkick = 30
+	resetSpeed=false;
+
+	break;
+	
+	//INVERSION MAGNET
+	case 375:
+
+	snd_play_2d(sndScrewdriver)
+
+	instance_create(x,y,Dust)
+
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*8,point_direction(x,y,mouse_x,mouse_y)),Shank)
+	{
+		dmg = 3;
+		
+	longarms = 0
+	if instance_exists(Player)
+	longarms = (Player.skill_got[13]+other.bettermelee)*3
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,2+longarms)
+	image_angle = direction
+	team = other.team}
+
+	wepangle = -wepangle
+	BackCont.viewx2 += lengthdir_x(2,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(2,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.shake += 1
+	wkick = -2
+
+	break;
+	
 	}//end of switch part 2!
 }

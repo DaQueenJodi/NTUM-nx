@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskCrownPedNew","path":"sprites/mskCrownPedNew/mskCrownPedNew.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskCrownPedNew",
     "tags": [],
     "resourceType": "GMSequence",

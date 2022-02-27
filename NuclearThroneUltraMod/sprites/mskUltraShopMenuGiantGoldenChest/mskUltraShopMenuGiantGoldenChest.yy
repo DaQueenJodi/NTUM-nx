@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskUltraShopMenuGiantGoldenChest","path":"sprites/mskUltraShopMenuGiantGoldenChest/mskUltraShopMenuGiantGoldenChest.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskUltraShopMenuGiantGoldenChest",
     "tags": [],
     "resourceType": "GMSequence",

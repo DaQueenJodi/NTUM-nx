@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFallenChairHurt","path":"sprites/sprFallenChairHurt/sprFallenChairHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprFallenChairHurt",
     "tags": [],
     "resourceType": "GMSequence",

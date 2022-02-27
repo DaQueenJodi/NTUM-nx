@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWeaponChestReplaced","path":"sprites/sprWeaponChestReplaced/sprWeaponChestReplaced.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWeaponChestReplaced",
     "tags": [],
     "resourceType": "GMSequence",

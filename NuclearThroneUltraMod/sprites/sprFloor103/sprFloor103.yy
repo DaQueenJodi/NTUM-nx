@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "YV Mansion",
-    "path": "texturegroups/YV Mansion",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 32,
   "height": 32,
+  "textureGroupId": {
+    "name": "YV Mansion",
+    "path": "texturegroups/YV Mansion",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor103","path":"sprites/sprFloor103/sprFloor103.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

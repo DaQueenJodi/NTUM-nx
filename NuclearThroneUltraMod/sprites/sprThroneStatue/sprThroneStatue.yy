@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprThroneStatue","path":"sprites/sprThroneStatue/sprThroneStatue.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprThroneStatue",
     "tags": [],
     "resourceType": "GMSequence",

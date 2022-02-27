@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBanditIdle","path":"sprites/sprBanditIdle/sprBanditIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBanditIdle",
     "tags": [],
     "resourceType": "GMSequence",

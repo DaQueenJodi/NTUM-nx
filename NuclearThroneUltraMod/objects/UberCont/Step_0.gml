@@ -114,7 +114,6 @@ pauseimg = sprite_create_from_surface(application_surface,0,0,surface_get_width(
 //cursor_sprite=sprCrosshair
 //with Cursor
 //instance_destroy();
-
 instance_deactivate_all(1)
 instance_activate_object(BackCont);
 instance_activate_object(MusCont);
@@ -163,20 +162,20 @@ time_microseconds+=02;
 
 if time_microseconds>=60
 {
-time_seconds+=1;
-time_microseconds=00;
+	time_seconds+=1;
+	time_microseconds=00;
 }
 
 if time_seconds>=60
 {
-time_minutes+=1;
-time_seconds=0;
+	time_minutes+=1;
+	time_seconds=0;
 }
 
 if time_minutes>=60
 {
-time_hours+=1;
-time_minutes=0;
+	time_hours+=1;
+	time_minutes=0;
 }
 
 }

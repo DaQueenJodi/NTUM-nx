@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSplinterShotgun","path":"sprites/sprSplinterShotgun/sprSplinterShotgun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSplinterShotgun",
     "tags": [],
     "resourceType": "GMSequence",

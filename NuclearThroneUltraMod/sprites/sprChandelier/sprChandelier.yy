@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChandelier","path":"sprites/sprChandelier/sprChandelier.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChandelier",
     "tags": [],
     "resourceType": "GMSequence",

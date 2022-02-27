@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprJungleAssassinWalk","path":"sprites/sprJungleAssassinWalk/sprJungleAssassinWalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprJungleAssassinWalk",
     "tags": [],
     "resourceType": "GMSequence",

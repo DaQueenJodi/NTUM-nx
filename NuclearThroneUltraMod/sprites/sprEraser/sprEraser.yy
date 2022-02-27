@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprEraser","path":"sprites/sprEraser/sprEraser.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprEraser",
     "tags": [],
     "resourceType": "GMSequence",

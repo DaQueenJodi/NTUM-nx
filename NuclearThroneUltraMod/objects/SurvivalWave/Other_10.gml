@@ -711,7 +711,7 @@ repeat(1+loops)
 			i++;
 			wave[i] = {
 				obj: EliteWeaponChest,
-				time: 5,
+				time: 10,
 				xx: centerX,
 				yy: centerY+32
 			};
@@ -733,7 +733,7 @@ repeat(1+loops)
 			{
 				wave[i] = {
 					obj: LaserCrystal,
-					time: 10
+					time: 11
 				};
 				i++;
 			}
@@ -741,7 +741,7 @@ repeat(1+loops)
 			{
 				wave[i] = {
 					obj: Spider,
-					time: 2
+					time: 3
 				};
 				i++;
 			}
@@ -767,12 +767,458 @@ repeat(1+loops)
 		#endregion
 		#region wave 5
 		case 5:
+			repeat(3)
+			{
+				wave[i] = {
+					obj: SnowBot,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: SnowBot,
+				time: 40
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: Wolf,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Wolf,
+				time: 40
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 5
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: DiscGuy,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: DiscGuy,
+				time: 50
+			};
+			i++;
+			wave[i] = {
+				obj: BanditSquare,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: SnowTank,
+				time: 60,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: SnowBot,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Wolf,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: DiscGuy,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: BanditSquare,
+				time: 40
+			};
+			i++;
+			wave[i] = {
+				obj: EliteWeaponChest,
+				time: 5,
+				xx: centerX-32,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: SnowTank,
+				time: 70,
+				xx: centerX+32,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: SnowBot,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Wolf,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: DiscGuy,
+				time: 120
+			};
+			i++;
+			wave[i] = {
+				obj: GoldSnowTank,
+				time: 120,
+				xx: centerX+32,
+				yy: centerY
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: SnowTank,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: SnowTank,
+				time: 60
+			};
+			i++;
+			wave[i] = {
+				obj: SnowBot,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: BanditSquare,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Wolf,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: SnowBot,
+				time: 200
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: GoldSnowTank,
+					time: 15
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: GoldSnowTank,
+				time: 300
+			};
+			i++;
+			wave[i] = {
+				obj: SnowBot,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Wolf,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: BanditSquare,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 5
+			};
+			i++;
+			wave[i] = {
+				obj: DiscGuy,
+				time: 200
+			};
+			i++;
+			wave[i] = {
+				obj: HealthChest,
+				time: 10,
+				xx: centerX - 32,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: LilHunter,
+				time: 60,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: IDPDSpawn,
+				time: 60,
+				xx: centerX,
+				yy: centerY
+			};
+			wave[i] = {
+				obj: VanSpawn,
+				time: 60,
+				xx: centerX-128,
+				yy: centerY
+			};
+			i++;
 		break;
 		#endregion
 		#region wave 6
 		case 6:
+			repeat(8)
+			{
+				wave[i] = {
+					obj: Freak,
+					time: 2
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: RhinoFreak,
+				time: 2,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: Necromancer,
+				time: 60,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(8)
+			{
+				wave[i] = {
+					obj: Freak,
+					time: 2
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: RhinoFreak,
+				time: 20
+			};
+			i++;
+			wave[i] = {
+				obj: RhinoFreak,
+				time: 20
+			};
+			i++;
+			wave[i] = {
+				obj: Necromancer,
+				time: 120,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: Turret,
+					time: 2
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Turret,
+				time: 10
+			};
+			i++;
+			wave[i] = {
+				obj: Necromancer,
+				time: 90,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: ExploFreak,
+				time: 80,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(20)
+			{
+				wave[i] = {
+					obj: Freak,
+					time: 1
+				};
+				i++;
+			}
+			repeat(3)
+			{
+				wave[i] = {
+					obj: Necromancer,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Necromancer,
+				time: 200,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: ExploFreak,
+					time: 1
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: ExploFreak,
+				time: 1
+			};
+			i++;
+			wave[i] = {
+				obj: RhinoFreak,
+				time: 100,
+				xx: centerX,
+				yy: centerY
+			};
+			//Big machine
+			i++;
+			wave[i] = {
+				obj: WallBreak,
+				time: 1,
+				xx: centerX-64,
+				yy: centerY-160
+			};
+			i++;
+			wave[i] = {
+				obj: WallBreak,
+				time: 1,
+				xx: centerX-32,
+				yy: centerY-160
+			};
+			i++;
+			wave[i] = {
+				obj: WallBreak,
+				time: 1,
+				xx: centerX+32,
+				yy: centerY-160
+			};
+			i++;
+			wave[i] = {
+				obj: WallBreak,
+				time: 1,
+				xx: centerX+64,
+				yy: centerY-160
+			};
+			i++;
+			wave[i] = {
+				obj: WallBreak,
+				time: 1,
+				xx: centerX,
+				yy: centerY-192
+			};
+			i++;
+			wave[i] = {
+				obj: WallBreak,
+				time: 1,
+				xx: centerX-64,
+				yy: centerY-192
+			};
+			i++;
+			wave[i] = {
+				obj: WallBreak,
+				time: 1,
+				xx: centerX-32,
+				yy: centerY-192
+			};
+			i++;
+			wave[i] = {
+				obj: WallBreak,
+				time: 1,
+				xx: centerX+64,
+				yy: centerY-160
+			};
+			i++;
+			wave[i] = {
+				obj: WallBreak,
+				time: 1,
+				xx: centerX+32,
+				yy: centerY-160
+			};
+			i++;
+			wave[i] = {
+				obj: BigMachine,
+				time: 10,
+				xx: centerX,
+				yy: centerY-160
+			};
+			i++;
+			wave[i] = {
+				obj: BigMachineLaser,
+				time: 2,
+				xx: centerX-128,
+				yy: centerY-96
+			};
+			i++;
+			wave[i] = {
+				obj: BigMachineLaser,
+				time: 2,
+				xx: centerX+128,
+				yy: centerY-96
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: RhinoFreak,
+					time: 1
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: RhinoFreak,
+				time: 1
+			};
+			i++;
 		break;
 		#endregion
+		/*
 		#region wave 7
 		case 7:
 		break;
@@ -784,7 +1230,9 @@ repeat(1+loops)
 		#region wave 9
 		case 9:
 		break;
+		
 		#endregion
+		*/
 		#region loop
 		default:
 			//loops

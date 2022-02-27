@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprChandelierDead","path":"sprites/sprChandelierDead/sprChandelierDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprChandelierDead",
     "tags": [],
     "resourceType": "GMSequence",

@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Vulcano",
-    "path": "texturegroups/Vulcano",
-  },
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 8,
   "height": 8,
+  "textureGroupId": {
+    "name": "Vulcano",
+    "path": "texturegroups/Vulcano",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprLavaBubble2","path":"sprites/sprLavaBubble2/sprLavaBubble2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

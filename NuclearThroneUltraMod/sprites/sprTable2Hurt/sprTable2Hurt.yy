@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprTable2Hurt","path":"sprites/sprTable2Hurt/sprTable2Hurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprTable2Hurt",
     "tags": [],
     "resourceType": "GMSequence",

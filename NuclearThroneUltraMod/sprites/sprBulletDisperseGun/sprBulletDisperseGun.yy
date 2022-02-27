@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBulletDisperseGun","path":"sprites/sprBulletDisperseGun/sprBulletDisperseGun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBulletDisperseGun",
     "tags": [],
     "resourceType": "GMSequence",

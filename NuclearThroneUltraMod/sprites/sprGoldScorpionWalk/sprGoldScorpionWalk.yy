@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprGoldScorpionWalk","path":"sprites/sprGoldScorpionWalk/sprGoldScorpionWalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprGoldScorpionWalk",
     "tags": [],
     "resourceType": "GMSequence",

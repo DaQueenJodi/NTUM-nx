@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"22467cf4-f5d0-485c-86b3-2217caad42d2","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"22467cf4-f5d0-485c-86b3-2217caad42d2","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"LayerId":{"name":"98353a4d-05ab-4cc1-b659-5cc359138c4f","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"22467cf4-f5d0-485c-86b3-2217caad42d2","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"LayerId":{"name":"9a6016a1-6073-4a8a-b774-81d0f2b3215d","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"22467cf4-f5d0-485c-86b3-2217caad42d2","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"LayerId":{"name":"98353a4d-05ab-4cc1-b659-5cc359138c4f","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprUltraShopMenuGiantGoldenChest","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"resourceVersion":"1.0","name":"22467cf4-f5d0-485c-86b3-2217caad42d2","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"5a21496d-c99a-4e6c-8ff0-c0dd55546019","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"5a21496d-c99a-4e6c-8ff0-c0dd55546019","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"LayerId":{"name":"9a6016a1-6073-4a8a-b774-81d0f2b3215d","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -65,7 +65,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprUltraShopMenuGiantGoldenChest","path":"sprites/sprUltraShopMenuGiantGoldenChest/sprUltraShopMenuGiantGoldenChest.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprUltraShopMenuGiantGoldenChest",
     "tags": [],
     "resourceType": "GMSequence",

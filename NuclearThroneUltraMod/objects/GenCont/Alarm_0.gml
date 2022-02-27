@@ -1,5 +1,4 @@
 ///Populate
-
 with Floor
 {
 if !position_meeting(x-16,y-16,Floor) instance_create(x-16,y-16,Wall)

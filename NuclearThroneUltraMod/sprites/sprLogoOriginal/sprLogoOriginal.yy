@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprLogoOriginal","path":"sprites/sprLogoOriginal/sprLogoOriginal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprLogoOriginal",
     "tags": [],
     "resourceType": "GMSequence",

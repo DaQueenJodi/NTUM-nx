@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPillarHurt","path":"sprites/sprPillarHurt/sprPillarHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPillarHurt",
     "tags": [],
     "resourceType": "GMSequence",

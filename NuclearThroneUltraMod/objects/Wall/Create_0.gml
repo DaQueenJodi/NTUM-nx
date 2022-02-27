@@ -170,6 +170,12 @@ outspr=sprWall116Out;
 sprite_index=sprWall116Bot;
 break;
 
+default:
+topspr=sprWall0Top;
+outspr=sprWall0Out;
+sprite_index=sprWall0Bot;
+break;
+
 }
 image_speed = 0 
 

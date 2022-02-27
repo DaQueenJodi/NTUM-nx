@@ -115,54 +115,54 @@ if skill==78//business hog more options armour
 if skill == 73//REDEMPTION Skeleton Ultra A
 {
 
-
-
-
 with GenCont
 race=Player.race;
-
-
-
-instance_create(x,y,Player);
+var newPlayer = instance_create(x,y,Player);
 with Player
 {
-	instance_destroy();
-
-	with Player//Data to keep
+	if id != newPlayer.id
 	{
-	race = other.race
-	crown = other.crown
-	lastarea = other.lastarea;
-	area = other.area//other.lastarea;
-	loops = other.loops;
-	hard = other.hard;
-	kills = other.kills;
-	subarea=other.subarea;
-	ultra_got[75]=1;//you picked redemption
-	skillpoints=other.level;
-	level=other.level;
+		instance_destroy(id,false);
+		with newPlayer//Data to keep
+		{
+			race = other.race
+			crown = other.crown
+			lastarea = other.lastarea;
+			area = other.area//other.lastarea;
+			loops = other.loops;
+			hard = other.hard;
+			kills = other.kills;
+			subarea=other.subarea;
+			ultra_got[75]=1;//you picked redemption
+			skillpoints=other.level;
+			level=other.level;
 
-	wep=other.wep
-	bwep=other.bwep
+			wep=other.wep
+			bwep=other.bwep
 
-	wepmod1=other.wepmod1
-	wepmod2=other.wepmod2
-	wepmod3=other.wepmod3
-	wepmod4=other.wepmod4
+			wepmod1=other.wepmod1
+			wepmod2=other.wepmod2
+			wepmod3=other.wepmod3
+			wepmod4=other.wepmod4
 
-	bwepmod1=other.bwepmod1
-	bwepmod2=other.bwepmod2
-	bwepmod3=other.bwepmod3
-	bwepmod4=other.bwepmod4
+			bwepmod1=other.bwepmod1
+			bwepmod2=other.bwepmod2
+			bwepmod3=other.bwepmod3
+			bwepmod4=other.bwepmod4
+			
+			cwepmod1=other.cwepmod1
+			cwepmod2=other.cwepmod2
+			cwepmod3=other.cwepmod3
+			cwepmod4=other.cwepmod4
 
-
-	//give the ammos
-	ammo[1] = typ_amax[1];
-	ammo[2] = typ_amax[2];
-	ammo[3] = typ_amax[3];
-	ammo[4] = typ_amax[4];
-	ammo[5] = typ_amax[5];
-	//event_perform(ev_other,ev_room_end);
+			//give the ammos
+			ammo[1] = typ_amax[1];
+			ammo[2] = typ_amax[2];
+			ammo[3] = typ_amax[3];
+			ammo[4] = typ_amax[4];
+			ammo[5] = typ_amax[5];
+			//event_perform(ev_other,ev_room_end);
+		}
 	}
 }
 
@@ -424,8 +424,8 @@ instance_destroy()
 
 if Player.skillpoints > 0
 {
-if regularprocedure
-instance_create(x,y,LevCont)
+	if regularprocedure
+	instance_create(x,y,LevCont)
 }
 else
 {

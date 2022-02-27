@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprOasisBarrelHurt","path":"sprites/sprOasisBarrelHurt/sprOasisBarrelHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprOasisBarrelHurt",
     "tags": [],
     "resourceType": "GMSequence",

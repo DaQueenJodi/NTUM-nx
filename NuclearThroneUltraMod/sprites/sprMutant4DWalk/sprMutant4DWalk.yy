@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant4DWalk","path":"sprites/sprMutant4DWalk/sprMutant4DWalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant4DWalk",
     "tags": [],
     "resourceType": "GMSequence",

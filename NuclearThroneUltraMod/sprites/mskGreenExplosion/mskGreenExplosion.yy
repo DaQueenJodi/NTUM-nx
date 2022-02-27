@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskGreenExplosion","path":"sprites/mskGreenExplosion/mskGreenExplosion.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskGreenExplosion",
     "tags": [],
     "resourceType": "GMSequence",

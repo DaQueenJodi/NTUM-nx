@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprJawbreaker","path":"sprites/sprJawbreaker/sprJawbreaker.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprJawbreaker",
     "tags": [],
     "resourceType": "GMSequence",

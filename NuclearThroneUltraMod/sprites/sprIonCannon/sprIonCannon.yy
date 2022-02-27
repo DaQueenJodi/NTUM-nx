@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprIonCannon","path":"sprites/sprIonCannon/sprIonCannon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprIonCannon",
     "tags": [],
     "resourceType": "GMSequence",

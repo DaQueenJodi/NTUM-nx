@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWrench","path":"sprites/sprWrench/sprWrench.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWrench",
     "tags": [],
     "resourceType": "GMSequence",

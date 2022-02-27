@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprOasisBarrelDead","path":"sprites/sprOasisBarrelDead/sprOasisBarrelDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprOasisBarrelDead",
     "tags": [],
     "resourceType": "GMSequence",

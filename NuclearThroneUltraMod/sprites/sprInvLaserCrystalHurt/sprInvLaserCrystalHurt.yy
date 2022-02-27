@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprInvLaserCrystalHurt","path":"sprites/sprInvLaserCrystalHurt/sprInvLaserCrystalHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprInvLaserCrystalHurt",
     "tags": [],
     "resourceType": "GMSequence",

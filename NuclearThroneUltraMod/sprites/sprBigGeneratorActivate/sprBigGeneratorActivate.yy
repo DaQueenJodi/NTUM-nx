@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBigGeneratorActivate","path":"sprites/sprBigGeneratorActivate/sprBigGeneratorActivate.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBigGeneratorActivate",
     "tags": [],
     "resourceType": "GMSequence",

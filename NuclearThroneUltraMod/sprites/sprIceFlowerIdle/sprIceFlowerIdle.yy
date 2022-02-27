@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprIceFlowerIdle","path":"sprites/sprIceFlowerIdle/sprIceFlowerIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprIceFlowerIdle",
     "tags": [],
     "resourceType": "GMSequence",

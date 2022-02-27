@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprUltraRevolver","path":"sprites/sprUltraRevolver/sprUltraRevolver.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprUltraRevolver",
     "tags": [],
     "resourceType": "GMSequence",

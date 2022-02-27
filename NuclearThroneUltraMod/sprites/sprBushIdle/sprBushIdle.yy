@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBushIdle","path":"sprites/sprBushIdle/sprBushIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBushIdle",
     "tags": [],
     "resourceType": "GMSequence",

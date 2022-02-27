@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSplinterBow","path":"sprites/sprSplinterBow/sprSplinterBow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSplinterBow",
     "tags": [],
     "resourceType": "GMSequence",

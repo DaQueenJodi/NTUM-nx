@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprExtraLivesHud","path":"sprites/sprExtraLivesHud/sprExtraLivesHud.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprExtraLivesHud",
     "tags": [],
     "resourceType": "GMSequence",

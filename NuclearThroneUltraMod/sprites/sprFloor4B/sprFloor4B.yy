@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "CrystalCaves",
-    "path": "texturegroups/CrystalCaves",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 32,
   "height": 32,
+  "textureGroupId": {
+    "name": "CrystalCaves",
+    "path": "texturegroups/CrystalCaves",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor4B","path":"sprites/sprFloor4B/sprFloor4B.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

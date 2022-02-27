@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNewGuardianFire","path":"sprites/sprNewGuardianFire/sprNewGuardianFire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNewGuardianFire",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWrenchBigEmoji","path":"sprites/sprWrenchBigEmoji/sprWrenchBigEmoji.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWrenchBigEmoji",
     "tags": [],
     "resourceType": "GMSequence",

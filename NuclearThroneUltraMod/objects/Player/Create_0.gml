@@ -11,6 +11,7 @@ audio_listener_orientation(0, 0, -1, 0, 1, 0);
 audio_falloff_set_model(audio_falloff_linear_distance);
 yungCuzCskin = 0;
 randomlySelected = false;
+ultraNow = false;
 //show_message("hi")
 //if joystick_exists(0) joy = 0 else joy = 0
 meleeimmunity = 0;
@@ -132,8 +133,6 @@ skillsChosen = 0; //To check for ultra mutation (always last)
 skeletonlives = 0;
 
 ultimategamble = false;
-if race = 19
-ultimategamble = true;
 
 
 bettermelee = 0;
@@ -504,6 +503,17 @@ if UberCont.opt_gamemode = 11 //GUN GAME
         ammo[wep_type[wep]] += typ_ammo[wep_type[wep]] * 3;
     }
 
+}
+
+if UberCont.opt_gamemode == 8 { //VAN FAN
+    area = 117;
+	if race != 13 // Sheep gets no fanpusher
+	{
+		wep = 373;//The vanpusher
+		if race == 7
+			bwep = wep;
+		ammo[wep_type[wep]] = typ_ammo[wep_type[wep]] * 3
+	}
 }
 
 looping = false; //you are now looping

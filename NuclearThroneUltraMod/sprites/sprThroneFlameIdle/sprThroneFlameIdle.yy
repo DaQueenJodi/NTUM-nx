@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprThroneFlameIdle","path":"sprites/sprThroneFlameIdle/sprThroneFlameIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprThroneFlameIdle",
     "tags": [],
     "resourceType": "GMSequence",

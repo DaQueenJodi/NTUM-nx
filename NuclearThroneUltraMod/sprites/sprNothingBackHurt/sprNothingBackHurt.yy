@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingBackHurt","path":"sprites/sprNothingBackHurt/sprNothingBackHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingBackHurt",
     "tags": [],
     "resourceType": "GMSequence",

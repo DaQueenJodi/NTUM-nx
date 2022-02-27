@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingBeamStretch","path":"sprites/sprNothingBeamStretch/sprNothingBeamStretch.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingBeamStretch",
     "tags": [],
     "resourceType": "GMSequence",

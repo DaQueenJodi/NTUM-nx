@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCrownGuardianIdle","path":"sprites/sprCrownGuardianIdle/sprCrownGuardianIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCrownGuardianIdle",
     "tags": [],
     "resourceType": "GMSequence",

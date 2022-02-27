@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Oasis",
-    "path": "texturegroups/Oasis",
-  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 24,
   "height": 32,
+  "textureGroupId": {
+    "name": "Oasis",
+    "path": "texturegroups/Oasis",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWall101Out","path":"sprites/sprWall101Out/sprWall101Out.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

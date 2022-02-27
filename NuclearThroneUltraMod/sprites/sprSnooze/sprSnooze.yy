@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSnooze","path":"sprites/sprSnooze/sprSnooze.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSnooze",
     "tags": [],
     "resourceType": "GMSequence",

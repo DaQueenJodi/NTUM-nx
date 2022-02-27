@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingBeamStop","path":"sprites/sprNothingBeamStop/sprNothingBeamStop.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingBeamStop",
     "tags": [],
     "resourceType": "GMSequence",

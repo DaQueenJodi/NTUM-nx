@@ -15,7 +15,6 @@ if instance_exists(ThroneBeam)
 if (intro && image_speed > 0)
 {
 	//Bullets can set image_index to 0 canceling our beautifull intro
-	debug(sprite_get_name(sprite_index));
 	prevImageIndex += image_speed
 	image_index = prevImageIndex;
 }

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprIceFlowerHurt","path":"sprites/sprIceFlowerHurt/sprIceFlowerHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprIceFlowerHurt",
     "tags": [],
     "resourceType": "GMSequence",

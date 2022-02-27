@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprUltraMinigun","path":"sprites/sprUltraMinigun/sprUltraMinigun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprUltraMinigun",
     "tags": [],
     "resourceType": "GMSequence",

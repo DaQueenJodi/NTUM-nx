@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBigGenerator","path":"sprites/sprBigGenerator/sprBigGenerator.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBigGenerator",
     "tags": [],
     "resourceType": "GMSequence",

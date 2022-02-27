@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprTorchNewDead","path":"sprites/sprTorchNewDead/sprTorchNewDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprTorchNewDead",
     "tags": [],
     "resourceType": "GMSequence",

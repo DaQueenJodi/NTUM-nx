@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprAmmoChestOpen","path":"sprites/sprAmmoChestOpen/sprAmmoChestOpen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprAmmoChestOpen",
     "tags": [],
     "resourceType": "GMSequence",

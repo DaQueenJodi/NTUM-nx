@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNuclearPillarDead","path":"sprites/sprNuclearPillarDead/sprNuclearPillarDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNuclearPillarDead",
     "tags": [],
     "resourceType": "GMSequence",

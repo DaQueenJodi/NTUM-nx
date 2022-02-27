@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNewGuardianDisappear","path":"sprites/sprNewGuardianDisappear/sprNewGuardianDisappear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNewGuardianDisappear",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutationSplat","path":"sprites/sprMutationSplat/sprMutationSplat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutationSplat",
     "tags": [],
     "resourceType": "GMSequence",

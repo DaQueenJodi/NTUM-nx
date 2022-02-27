@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprTopDecalCave","path":"sprites/sprTopDecalCave/sprTopDecalCave.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprTopDecalCave",
     "tags": [],
     "resourceType": "GMSequence",

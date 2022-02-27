@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprJungleAssassinIdle","path":"sprites/sprJungleAssassinIdle/sprJungleAssassinIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprJungleAssassinIdle",
     "tags": [],
     "resourceType": "GMSequence",

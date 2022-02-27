@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprLastEnemyIndicator","path":"sprites/sprLastEnemyIndicator/sprLastEnemyIndicator.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprLastEnemyIndicator",
     "tags": [],
     "resourceType": "GMSequence",

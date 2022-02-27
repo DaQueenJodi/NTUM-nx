@@ -139,7 +139,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNewGuardianAppear","path":"sprites/sprNewGuardianAppear/sprNewGuardianAppear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNewGuardianAppear",
     "tags": [],
     "resourceType": "GMSequence",

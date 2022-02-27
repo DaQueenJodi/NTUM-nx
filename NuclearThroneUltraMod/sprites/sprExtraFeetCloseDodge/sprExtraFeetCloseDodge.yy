@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprExtraFeetCloseDodge","path":"sprites/sprExtraFeetCloseDodge/sprExtraFeetCloseDodge.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprExtraFeetCloseDodge",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingBeamHit","path":"sprites/sprNothingBeamHit/sprNothingBeamHit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingBeamHit",
     "tags": [],
     "resourceType": "GMSequence",

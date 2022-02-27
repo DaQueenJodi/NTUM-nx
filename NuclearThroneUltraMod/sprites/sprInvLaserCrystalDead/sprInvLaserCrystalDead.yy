@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprInvLaserCrystalDead","path":"sprites/sprInvLaserCrystalDead/sprInvLaserCrystalDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprInvLaserCrystalDead",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBackFloor","path":"sprites/sprBackFloor/sprBackFloor.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBackFloor",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCursedCaveDecal","path":"sprites/sprCursedCaveDecal/sprCursedCaveDecal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCursedCaveDecal",
     "tags": [],
     "resourceType": "GMSequence",

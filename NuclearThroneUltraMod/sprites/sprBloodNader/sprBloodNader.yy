@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBloodNader","path":"sprites/sprBloodNader/sprBloodNader.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBloodNader",
     "tags": [],
     "resourceType": "GMSequence",

@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprInvertedChesireCatPrepLaser","path":"sprites/sprInvertedChesireCatPrepLaser/sprInvertedChesireCatPrepLaser.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

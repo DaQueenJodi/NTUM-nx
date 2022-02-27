@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskSlash","path":"sprites/mskSlash/mskSlash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskSlash",
     "tags": [],
     "resourceType": "GMSequence",

@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingLeg","path":"sprites/sprNothingLeg/sprNothingLeg.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingLeg",
     "tags": [],
     "resourceType": "GMSequence",

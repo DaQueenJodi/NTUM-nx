@@ -1,5 +1,24 @@
 room_speed=30;
-
+if UberCont.opt_gamemode == 8
+{
+	with Floor
+	{
+		instance_destroy(id,false);	
+	}
+	with Wall
+	{
+		instance_destroy(id,false);	
+	}
+	with Top
+	{
+		instance_destroy(id,false);	
+	}
+	with TopSmall
+	{
+		instance_destroy(id,false);	
+	}
+	instance_create(x,y,VanFan);
+}
 if instance_exists(Player)
 {
 if Player.crown=18//DISCOOOO CROWN
@@ -31,61 +50,57 @@ room_speed=40;
     oasisskip+=1;}
     else oasisskip=-1;
     
-    if ( (area=1&&subarea<3)  && (random(100)<invertedchance) )//7.5% chance for inverted desert atom gets 12 procent
-    {
-    invertedportalcounter=1;
-    invertedportaldelay=45+random(100);
-    //area=105
-    }
-    
-        if ( area=2  && (random(100)<invertedchance) )//7.5% chance for inverted sewers atom gets 12 procent
-    {
-    invertedportalcounter=1;
-    invertedportaldelay=45+random(100);
-    //area=105
-    }
-    
-    if ( (area=3&&subarea<3)  && (random(100)<invertedchance) )//7.5% chance for inverted scrapyard atom gets 12 procent
-    {
-    invertedportalcounter=1;
-    invertedportaldelay=45+random(100);
-    //area=106
-    }
-    
-    if ( area=4  && (random(100)<invertedchance) )//7.5% chance for inverted crystal caves atom gets 12 procent
-    {
-    invertedportalcounter=1;
-    invertedportaldelay=45+random(100);
-    //area=106
-    }
-    
-    if ( (area=5&&subarea<3)  && (random(100)<invertedchance) )//7.5% chance for inverted frozen city atom gets 12 procent
-    {
-    invertedportalcounter=1;
-    invertedportaldelay=45+random(100);
-    //area=107
-    }
-    
-    if ( area=6&&subarea<2  && (random(100)<invertedchance) )//7.5% chance for inverted labs atom gets 12 procent
-    {
-    invertedportalcounter=1;
-    invertedportaldelay=45+random(100);
-    //area=107
-    }
-    
-    if ( (area=7&&subarea<2)  && (random(100)<invertedchance) )//7.5% chance for inverted vulcano atom gets 12 procent
-    {
-    invertedportalcounter=1;
-    invertedportaldelay=45+random(100);
-    //area=107
-    }
-    
-        if ( (area=8&&subarea<3)  && (random(100)<invertedchance) )//7.5% chance for inverted wonderland atom gets 12 procent
-    {
-    invertedportalcounter=1;
-    invertedportaldelay=45+random(100);
-    //area=107
-    }
+	if (random(100)<invertedchance || wep == 375 || bwep == 375 || cwep == 375)//Inversion magnet
+	{
+	    if ( (area=1&&subarea<3)  )//7.5% chance for inverted desert atom gets 12 procent
+	    {
+	    invertedportalcounter=1;
+	    invertedportaldelay=45+random(100);
+	    //area=105
+	    }
+	    else if ( area=2  )//7.5% chance for inverted sewers atom gets 12 procent
+	    {
+	    invertedportalcounter=1;
+	    invertedportaldelay=45+random(100);
+	    //area=105
+	    }
+	    else if ( (area=3&&subarea<3)  )//7.5% chance for inverted scrapyard atom gets 12 procent
+	    {
+	    invertedportalcounter=1;
+	    invertedportaldelay=45+random(100);
+	    //area=106
+	    }
+	    else if ( area=4  )//7.5% chance for inverted crystal caves atom gets 12 procent
+	    {
+	    invertedportalcounter=1;
+	    invertedportaldelay=45+random(100);
+	    //area=106
+	    }
+	    else if ( (area=5&&subarea<3)  )//7.5% chance for inverted frozen city atom gets 12 procent
+	    {
+	    invertedportalcounter=1;
+	    invertedportaldelay=45+random(100);
+	    //area=107
+	    }
+	    else if ( area=6&&subarea<2  )//7.5% chance for inverted labs atom gets 12 procent
+	    {
+	    invertedportalcounter=1;
+	    invertedportaldelay=45+random(100);
+	    //area=107
+	    }
+	    else if ( (area=7&&subarea<2)  )//7.5% chance for inverted vulcano atom gets 12 procent
+	    {
+	    invertedportalcounter=1;
+	    invertedportaldelay=45+random(100);
+	    //area=107
+	    }
+	    else if ( (area=8&&subarea<3)  )//7.5% chance for inverted wonderland atom gets 12 procent
+	    {
+	    invertedportalcounter=1;
+	    invertedportaldelay=45+random(100);
+	    //area=107
+	    }
+	}
 
     
     

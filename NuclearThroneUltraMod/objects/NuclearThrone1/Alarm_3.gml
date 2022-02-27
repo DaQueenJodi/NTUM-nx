@@ -16,7 +16,7 @@ if instance_exists(Player)
 {
 	if Player.skill_got[29]//insomnia
 	{
-		alarm[1] += 200;
+		alarm[1] += 140;
 		with instance_create(x,y,Snooze)
 		{
 			owner = other.id;

@@ -2375,7 +2375,7 @@ function scrWeapons() {
 	wep_name[215] = "VIKING AXE"
 	wep_type[215] = 0
 	wep_auto[215] = 0
-	wep_load[215] = 29
+	wep_load[215] = 28
 	wep_cost[215] = 0
 	wep_sprt[215] = sprVikingSmallAxe
 	wep_area[215] = -1
@@ -3376,8 +3376,8 @@ function scrWeapons() {
 	wep_name[306] = "BULLET DISPERSE GUN"
 	wep_type[306] = 1
 	wep_auto[306] = 0
-	wep_load[306] = 18
-	wep_cost[306] = 10
+	wep_load[306] = 17
+	wep_cost[306] = 9
 	wep_sprt[306] = sprBulletDisperseGun
 	wep_area[306] = 5
 	wep_text[306] = "no sense was made"
@@ -3398,7 +3398,7 @@ function scrWeapons() {
 	wep_name[308] = "BULLET DISPERSE MACHINEGUN"
 	wep_type[308] = 1
 	wep_auto[308] = 1
-	wep_load[308] = 8
+	wep_load[308] = 9
 	wep_cost[308] = 12
 	wep_sprt[308] = sprBulletDisperseMachinegun
 	wep_area[308] = 9
@@ -3410,7 +3410,7 @@ function scrWeapons() {
 	wep_type[309] = 1
 	wep_auto[309] = 0
 	wep_load[309] = 12
-	wep_cost[309] = 11
+	wep_cost[309] = 9
 	wep_sprt[309] = sprPopDisperseGun
 	wep_area[309] = 6
 	wep_text[309] = "no sense was made"
@@ -3420,7 +3420,7 @@ function scrWeapons() {
 	wep_name[310] = "LASER DISPERSE GUN"
 	wep_type[310] = 5
 	wep_auto[310] = 0
-	wep_load[310] = 14
+	wep_load[310] = 10
 	wep_cost[310] = 6
 	wep_sprt[310] = sprLaserDisperseGun
 	wep_area[310] = 8
@@ -3530,8 +3530,8 @@ function scrWeapons() {
 	wep_name[320] = "DISPERSE BAZOOKA"
 	wep_type[320] = 4
 	wep_auto[320] = 0
-	wep_load[320] = 40
-	wep_cost[320] = 16
+	wep_load[320] = 30
+	wep_cost[320] = 14
 	wep_sprt[320] = sprDisperseBazooka
 	wep_area[320] = 10
 	wep_text[320] = "medicinal herb gun"
@@ -4021,7 +4021,7 @@ function scrWeapons() {
 	wep_type[364] = 4
 	wep_auto[364] = 1
 	wep_load[364] = 30
-	wep_cost[364] = 20
+	wep_cost[364] = 18
 	wep_sprt[364] = sprDisperseKrakenGun
 	wep_area[364] = 10
 	wep_text[364] = "mobilize the kraken!"
@@ -4106,6 +4106,52 @@ function scrWeapons() {
 	wep_text[371] = "time to rain bullets"
 	wep_swap[371] = sndSwapMachinegun
 	wep_rad[371] = 6;
+	
+	wep_name[372] = "VAN CANNON"
+	wep_type[372] = 4
+	wep_auto[372] = 0
+	wep_load[372] = 60
+	wep_cost[372] = 12
+	wep_sprt[372] = sprVanCannon
+	wep_area[372] = 20
+	wep_text[372] = "popo power"
+	wep_swap[372] = sndSwapExplosive
+	wep_rad[372] = 0;
+	
+	wep_name[373] = "VAN PUSHER"
+	wep_type[373] = 5
+	wep_auto[373] = 0
+	wep_load[373] = 8
+	wep_cost[373] = 0
+	wep_sprt[373] = sprVanPusher
+	wep_area[373] = -1
+	wep_text[373] = "push away da popo"
+	wep_swap[373] = sndSwapEnergy
+	wep_rad[373] = 0;
+	
+	wep_name[374] = "QUADRUPLE SUPER PLASMA CANNON"
+	wep_type[374] = 5
+	wep_auto[374] = 0
+	wep_load[374] = 1300//670//350
+	wep_cost[374] = 90// 48//24
+	wep_sprt[374] = sprQuadruppleSuperPlasmaCannon
+	wep_area[374] = 30//thats the last weapon
+	wep_text[374] ="aaaaaaaaaaaaaaaaa#";
+	repeat(40)
+	wep_text[374] +="#aaaaaaaaaaaaaaaaa#";
+	wep_swap[374] = sndSwapEnergy
+	wep_rad[374] = 0;
+	
+	wep_name[375] = "INVERSION MAGNET"//Probably the worst weapon in the game
+	wep_type[375] = 0
+	wep_auto[375] = 0
+	wep_load[375] = 10
+	wep_cost[375] = 1
+	wep_sprt[375] = sprInversionMagnet
+	wep_area[375] = 30
+	wep_text[375] = "100% inversion"
+	wep_swap[375] = sndSwapSword
+	wep_rad[375] = 0;
 	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"

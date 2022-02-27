@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBushHurt","path":"sprites/sprBushHurt/sprBushHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBushHurt",
     "tags": [],
     "resourceType": "GMSequence",

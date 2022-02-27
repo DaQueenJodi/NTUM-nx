@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprExploGuardianBullet","path":"sprites/sprExploGuardianBullet/sprExploGuardianBullet.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprExploGuardianBullet",
     "tags": [],
     "resourceType": "GMSequence",

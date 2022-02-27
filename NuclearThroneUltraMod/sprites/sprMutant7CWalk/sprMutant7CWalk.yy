@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant7CWalk","path":"sprites/sprMutant7CWalk/sprMutant7CWalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant7CWalk",
     "tags": [],
     "resourceType": "GMSequence",

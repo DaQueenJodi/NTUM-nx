@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingRightDeactivated","path":"sprites/sprNothingRightDeactivated/sprNothingRightDeactivated.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingRightDeactivated",
     "tags": [],
     "resourceType": "GMSequence",

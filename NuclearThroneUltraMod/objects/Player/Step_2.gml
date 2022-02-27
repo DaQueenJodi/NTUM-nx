@@ -134,7 +134,6 @@ oneweponly298=1
 scrSave();
 }
 }
-
 if targetPickup.wep=315//moneygun
 {
 scrUnlockBSkin(20,"FOR STEALING THE MONEY GUN",0);

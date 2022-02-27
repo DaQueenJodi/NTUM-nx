@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Oasis",
-    "path": "texturegroups/Oasis",
-  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 18,
   "height": 18,
+  "textureGroupId": {
+    "name": "Oasis",
+    "path": "texturegroups/Oasis",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor101Explo","path":"sprites/sprFloor101Explo/sprFloor101Explo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

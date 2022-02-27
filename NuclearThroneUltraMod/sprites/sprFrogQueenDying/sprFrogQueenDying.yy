@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Sewers",
-    "path": "texturegroups/Sewers",
-  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 62,
   "height": 51,
+  "textureGroupId": {
+    "name": "Sewers",
+    "path": "texturegroups/Sewers",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -175,7 +175,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFrogQueenDying","path":"sprites/sprFrogQueenDying/sprFrogQueenDying.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

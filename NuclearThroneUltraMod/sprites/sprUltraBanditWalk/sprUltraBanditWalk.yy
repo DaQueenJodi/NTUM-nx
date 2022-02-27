@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprUltraBanditWalk","path":"sprites/sprUltraBanditWalk/sprUltraBanditWalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprUltraBanditWalk",
     "tags": [],
     "resourceType": "GMSequence",

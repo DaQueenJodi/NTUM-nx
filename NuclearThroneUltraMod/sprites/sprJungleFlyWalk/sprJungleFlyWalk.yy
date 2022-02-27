@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprJungleFlyWalk","path":"sprites/sprJungleFlyWalk/sprJungleFlyWalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprJungleFlyWalk",
     "tags": [],
     "resourceType": "GMSequence",

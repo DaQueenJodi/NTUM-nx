@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDogGuardianJumpUp","path":"sprites/sprDogGuardianJumpUp/sprDogGuardianJumpUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprDogGuardianJumpUp",
     "tags": [],
     "resourceType": "GMSequence",

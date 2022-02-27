@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSmallGenerator","path":"sprites/sprSmallGenerator/sprSmallGenerator.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSmallGenerator",
     "tags": [],
     "resourceType": "GMSequence",

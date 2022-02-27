@@ -1,6 +1,5 @@
 event_inherited()
 
-scrEndBoss();
 
 scrUnlockGameMode(22,"FOR KILLING#THE INVERTED CHESHIRE CAT");
 

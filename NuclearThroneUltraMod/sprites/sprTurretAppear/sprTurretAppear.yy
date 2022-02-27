@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprTurretAppear","path":"sprites/sprTurretAppear/sprTurretAppear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprTurretAppear",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskPalacePropChecker","path":"sprites/mskPalacePropChecker/mskPalacePropChecker.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskPalacePropChecker",
     "tags": [],
     "resourceType": "GMSequence",

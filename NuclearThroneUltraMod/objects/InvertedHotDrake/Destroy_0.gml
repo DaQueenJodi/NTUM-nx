@@ -17,10 +17,9 @@ audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 }
 snd_play(sndDragonEmerge)
 scrBusinessHogGoldChest();
-scrDrop(10,1)
 scrDrop(100,0)
 scrDrop(50,90)
-scrDrop(50,1)
+scrDrop(50,10)
 
 event_inherited()
 

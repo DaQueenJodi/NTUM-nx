@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprJungleFlyHurt","path":"sprites/sprJungleFlyHurt/sprJungleFlyHurt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprJungleFlyHurt",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPopoFreakGun","path":"sprites/sprPopoFreakGun/sprPopoFreakGun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPopoFreakGun",
     "tags": [],
     "resourceType": "GMSequence",

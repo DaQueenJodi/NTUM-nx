@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCarpet","path":"sprites/sprCarpet/sprCarpet.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCarpet",
     "tags": [],
     "resourceType": "GMSequence",

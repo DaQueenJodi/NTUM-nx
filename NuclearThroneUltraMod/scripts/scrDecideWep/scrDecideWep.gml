@@ -9,7 +9,7 @@ function scrDecideWep(wepTier, maxTries = 10, cursed = 0, minWepArea = 0) {
 
 		}
 		else {
-			var maxAreaGoodEnough = 20;
+			var maxAreaGoodEnough = 16;
 			if Player.race = 8
 			{
 				wepTier += 1

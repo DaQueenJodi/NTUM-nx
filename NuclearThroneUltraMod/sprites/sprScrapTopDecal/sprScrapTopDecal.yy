@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprScrapTopDecal","path":"sprites/sprScrapTopDecal/sprScrapTopDecal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprScrapTopDecal",
     "tags": [],
     "resourceType": "GMSequence",

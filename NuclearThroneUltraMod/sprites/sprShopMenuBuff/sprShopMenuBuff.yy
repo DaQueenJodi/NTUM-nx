@@ -65,7 +65,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprShopMenuBuff","path":"sprites/sprShopMenuBuff/sprShopMenuBuff.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprShopMenuBuff",
     "tags": [],
     "resourceType": "GMSequence",

@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant6CDead","path":"sprites/sprMutant6CDead/sprMutant6CDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant6CDead",
     "tags": [],
     "resourceType": "GMSequence",

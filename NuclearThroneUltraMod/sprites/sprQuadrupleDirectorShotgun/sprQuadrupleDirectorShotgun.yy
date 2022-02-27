@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprQuadrupleDirectorShotgun","path":"sprites/sprQuadrupleDirectorShotgun/sprQuadrupleDirectorShotgun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

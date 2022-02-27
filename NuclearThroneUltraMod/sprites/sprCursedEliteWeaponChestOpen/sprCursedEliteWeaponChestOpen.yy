@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCursedEliteWeaponChestOpen","path":"sprites/sprCursedEliteWeaponChestOpen/sprCursedEliteWeaponChestOpen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCursedEliteWeaponChestOpen",
     "tags": [],
     "resourceType": "GMSequence",

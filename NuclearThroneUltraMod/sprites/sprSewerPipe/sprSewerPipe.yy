@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSewerPipe","path":"sprites/sprSewerPipe/sprSewerPipe.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSewerPipe",
     "tags": [],
     "resourceType": "GMSequence",

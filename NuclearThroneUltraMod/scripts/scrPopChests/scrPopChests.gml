@@ -69,8 +69,7 @@ function scrPopChests() {
 	
 	if instance_exists(HealthChest)
 	{
-	healthChestGol += min(instance_number(HealthChest),1);
-	debug("og HP chest: ", healthChestGol);
+		healthChestGol = min(instance_number(HealthChest),1);
 	}
 	
 	if instance_exists(Player)

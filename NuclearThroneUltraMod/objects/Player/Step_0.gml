@@ -24,10 +24,10 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
 		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
-	    with instance_create(f.x + 16,f.y + 16,GoldChest)
-			curse = 1;
+	    with instance_create(f.x + 16,f.y + 16,IDPDVan)
+			curse = 0;
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "FLY";
+		thing.mytext = "wep";
 	}
 	if keyboard_check_pressed(vk_numpad1) {
 		repeat(3) {
@@ -48,9 +48,9 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if keyboard_check_pressed(vk_numpad3) {
 		var dangle = random(1)*360;
 		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		instance_create(f.x + 16,f.y + 16,BoneFish);
+		instance_create(f.x + 16,f.y + 16,Thief);
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "FISH";
+		thing.mytext = "Thief";
 	}
 	if keyboard_check_pressed(vk_numpad4) {
 		var dangle = random(1)*360;
@@ -481,7 +481,7 @@ clicked = 1
 
 if (KeyCont.key_fire[p] = 1 or keyfire = 1)
 {
-	if  ammo[wep_type[wep]] < wep_cost[wep] && wep_type[wep] != 0
+	if  ammo[wep_type[wep]] < wep_cost[wep] && wep_type[wep] != 0  && alarm[2] < 1//alarm = Fish Ultra B
 	{
 	if wep == 29|| wep==60 || wep==61 || wep==83 || wep==84 || wep==132//|| wep==109//ALL THE BLOOD WEAPONS!
 	{//glove is not included because that shits just to buggy
@@ -498,17 +498,16 @@ if (KeyCont.key_fire[p] = 1 or keyfire = 1)
 	scrEmpty()
 	}
 	rad = max(rad,0);
-	if rad-wep_rad[wep] < 0
+	if rad-wep_rad[wep] < 0 && Player.alarm[2] < 1//alarm = Fish Ultra B
 	{
 		//not enough radiation
-		debug("not enuf rad");
 		clicked = 0
 		scrEmptyRad();
 		other.wkick = -2
 	}
 }
 
-if can_shoot = 1 and (ammo[wep_type[wep]] >= wep_cost[wep] || wep_type[wep] == 0) and rad>=wep_rad[wep]
+if can_shoot = 1 and (ammo[wep_type[wep]] >= wep_cost[wep] || wep_type[wep] == 0) and rad>=wep_rad[wep] || alarm[2]>0//alarm = Fish Ultra B
 {
 if wep_auto[wep] = 0 and clicked = 1
 {
@@ -1052,7 +1051,7 @@ with projectile
 if skill_got[25]//strong spirit
     {
     
-    if ( strongspiritused=false && my_health=maxhealth || ( strongspiritused=false && my_health > round(maxhealth*0.75) && race = 25 ) )
+    if ( strongspiritused=false && my_health >= maxhealth || ( strongspiritused=false && my_health > round(maxhealth*0.75) && race = 25 ) )
     {
     //strongspiritused=false;
     if strongspirit=false
@@ -1471,7 +1470,7 @@ damageboostdelay--;
 if ultra_got[95]
 {
 with instance_create(x,y,Flame)
-{motion_add(other.direction+180+random(40)-20,0.2+random(2))
+{motion_add(other.direction+180+random(60)-30,0.4+random(2.5))
 team = other.team
 depth=-1;}
 

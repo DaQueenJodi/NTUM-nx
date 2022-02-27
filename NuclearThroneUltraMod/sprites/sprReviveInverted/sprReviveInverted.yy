@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprReviveInverted","path":"sprites/sprReviveInverted/sprReviveInverted.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprReviveInverted",
     "tags": [],
     "resourceType": "GMSequence",

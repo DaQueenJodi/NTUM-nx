@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprCrownPedCloseNew","path":"sprites/sprCrownPedCloseNew/sprCrownPedCloseNew.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprCrownPedCloseNew",
     "tags": [],
     "resourceType": "GMSequence",

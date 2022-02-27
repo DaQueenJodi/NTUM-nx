@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "InvertedScrapyard",
-    "path": "texturegroups/InvertedScrapyard",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 36,
   "height": 36,
+  "textureGroupId": {
+    "name": "InvertedScrapyard",
+    "path": "texturegroups/InvertedScrapyard",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor106B","path":"sprites/sprFloor106B/sprFloor106B.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

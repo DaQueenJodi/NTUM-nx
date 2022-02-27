@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPillar","path":"sprites/sprPillar/sprPillar.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPillar",
     "tags": [],
     "resourceType": "GMSequence",

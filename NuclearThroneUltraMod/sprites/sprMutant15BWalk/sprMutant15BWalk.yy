@@ -80,7 +80,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant15BWalk","path":"sprites/sprMutant15BWalk/sprMutant15BWalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant15BWalk",
     "tags": [],
     "resourceType": "GMSequence",

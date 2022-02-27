@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprThroneFlameBig","path":"sprites/sprThroneFlameBig/sprThroneFlameBig.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprThroneFlameBig",
     "tags": [],
     "resourceType": "GMSequence",

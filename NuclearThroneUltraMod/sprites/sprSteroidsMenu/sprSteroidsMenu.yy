@@ -207,7 +207,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSteroidsMenu","path":"sprites/sprSteroidsMenu/sprSteroidsMenu.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

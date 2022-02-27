@@ -300,7 +300,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSkillIcon","path":"sprites/sprSkillIcon/sprSkillIcon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

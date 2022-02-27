@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprAssassinBossStunned","path":"sprites/sprAssassinBossStunned/sprAssassinBossStunned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprAssassinBossStunned",
     "tags": [],
     "resourceType": "GMSequence",

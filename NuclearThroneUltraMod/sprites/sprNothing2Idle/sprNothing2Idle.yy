@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothing2Idle","path":"sprites/sprNothing2Idle/sprNothing2Idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothing2Idle",
     "tags": [],
     "resourceType": "GMSequence",

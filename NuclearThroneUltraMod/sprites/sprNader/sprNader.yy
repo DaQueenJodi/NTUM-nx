@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNader","path":"sprites/sprNader/sprNader.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNader",
     "tags": [],
     "resourceType": "GMSequence",

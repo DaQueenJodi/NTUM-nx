@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNothingActivate","path":"sprites/sprNothingActivate/sprNothingActivate.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprNothingActivate",
     "tags": [],
     "resourceType": "GMSequence",

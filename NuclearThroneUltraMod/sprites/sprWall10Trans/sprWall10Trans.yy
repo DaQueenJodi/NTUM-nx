@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprWall10Trans","path":"sprites/sprWall10Trans/sprWall10Trans.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprWall10Trans",
     "tags": [],
     "resourceType": "GMSequence",

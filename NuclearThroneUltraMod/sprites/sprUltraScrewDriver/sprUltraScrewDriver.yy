@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprUltraScrewDriver","path":"sprites/sprUltraScrewDriver/sprUltraScrewDriver.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprUltraScrewDriver",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprHammerHeadNear","path":"sprites/sprHammerHeadNear/sprHammerHeadNear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprHammerHeadNear",
     "tags": [],
     "resourceType": "GMSequence",

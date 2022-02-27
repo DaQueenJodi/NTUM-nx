@@ -343,7 +343,7 @@ function scrUltras() {
     
 	//SKELETON 
 	ultra_name[73] = "REDEMPTION"
-	ultra_text[73] = "REROLL ALL YOUR MUTATIONS#GET PATIENCE AS AN EXTRA#CHOICE EVERY TIME."
+	ultra_text[73] = "REROLL ALL YOUR MUTATIONS#GET PATIENCE AS AN EXTRA#CHOICE EVERY TIME.#WHEN YOU LOOP YOU#CAN GET AN ULTRA AGAIN"
 	ultra_tips[73] = "specific taste in mutations"
 
 	ultra_name[74] = "DAMNATION"

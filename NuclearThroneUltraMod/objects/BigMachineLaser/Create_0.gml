@@ -10,3 +10,8 @@ ammo=0;
 spr_idle=sprBigMachineLaser
 spr_fire=sprBigMachineLaserFire
 
+if instance_exists(BigMachine)
+{
+	if BigMachine.x < x
+		image_xscale = -1;
+}

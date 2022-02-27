@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"mskAssassinBossSlash","path":"sprites/mskAssassinBossSlash/mskAssassinBossSlash.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "mskAssassinBossSlash",
     "tags": [],
     "resourceType": "GMSequence",

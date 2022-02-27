@@ -4,7 +4,7 @@ snd_play(sndHealthChest)
 //I show mercy unlike Vlambeer
 var  maxHpIncrease = 2;
 with Player {
-	if race==9 race=12//Chicken maxhealth & yung cuz regain
+	if race==9 || race=12//Chicken maxhealth & yung cuz regain
 	{
 		var targetHealth = 8;
 		if skill_got[1] == 1//Rhino skin

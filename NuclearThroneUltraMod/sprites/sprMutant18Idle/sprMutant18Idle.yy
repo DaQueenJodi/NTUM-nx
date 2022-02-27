@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant18Idle","path":"sprites/sprMutant18Idle/sprMutant18Idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant18Idle",
     "tags": [],
     "resourceType": "GMSequence",

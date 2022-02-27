@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant6CIdle","path":"sprites/sprMutant6CIdle/sprMutant6CIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant6CIdle",
     "tags": [],
     "resourceType": "GMSequence",

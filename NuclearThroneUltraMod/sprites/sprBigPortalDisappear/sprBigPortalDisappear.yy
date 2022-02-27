@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBigPortalDisappear","path":"sprites/sprBigPortalDisappear/sprBigPortalDisappear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprBigPortalDisappear",
     "tags": [],
     "resourceType": "GMSequence",

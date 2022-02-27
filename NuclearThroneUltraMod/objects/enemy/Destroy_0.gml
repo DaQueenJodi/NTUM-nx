@@ -106,9 +106,9 @@ raddrop=floor(raddrop*0.06);
 
 }
 
-if UberCont.opt_gamemode = 9//easy mode
+if UberCont.opt_gamemode == 9//easy mode
 {
-raddrop*=2;
+raddrop*=1.5;
 }
 
 scrRaddrop();

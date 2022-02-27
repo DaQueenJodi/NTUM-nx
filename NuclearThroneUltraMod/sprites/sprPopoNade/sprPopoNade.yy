@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPopoNade","path":"sprites/sprPopoNade/sprPopoNade.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPopoNade",
     "tags": [],
     "resourceType": "GMSequence",

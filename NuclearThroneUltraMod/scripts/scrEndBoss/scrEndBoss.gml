@@ -35,7 +35,7 @@ function scrEndBoss() {
     
 	    with instance_create(x,y,UnlockPopup)
 	    {
-	    mytext="BEST TIME YET!!!"+other.race_name[Player.race]+"#"+other.txttime
+			mytext="BEST TIME YET!!!"+other.race_name[Player.race]+"#"+other.txttime
 	    }
     
 	    scrSave();

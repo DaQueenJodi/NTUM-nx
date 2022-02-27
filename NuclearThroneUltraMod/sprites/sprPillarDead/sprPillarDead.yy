@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprPillarDead","path":"sprites/sprPillarDead/sprPillarDead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprPillarDead",
     "tags": [],
     "resourceType": "GMSequence",

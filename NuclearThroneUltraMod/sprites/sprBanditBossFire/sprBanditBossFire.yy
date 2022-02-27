@@ -1,8 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Desert",
-    "path": "texturegroups/Desert",
-  },
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -20,6 +16,10 @@
   "For3D": false,
   "width": 32,
   "height": 32,
+  "textureGroupId": {
+    "name": "Desert",
+    "path": "texturegroups/Desert",
+  },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBanditBossFire","path":"sprites/sprBanditBossFire/sprBanditBossFire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

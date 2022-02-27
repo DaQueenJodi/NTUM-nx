@@ -1,6 +1,6 @@
 function scrPopulate() {
 	//setting area and spawning some enemies
-	if UberCont.opt_gamemode == 25
+	if UberCont.opt_gamemode == 25 || UberCont.opt_gamemode == 8
 	return;
 	
     //setting area and spawning some enemies

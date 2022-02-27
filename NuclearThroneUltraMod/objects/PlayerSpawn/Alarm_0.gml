@@ -10,7 +10,7 @@ with Player//Data to keep
 {
 	alarm[3]=300;//immunity
 	//bskin=other.bskin;
-	ultimategamble=other.ultimategamble;
+	ultimategamble=true;
 	skeletonlives=other.skeletonlives;
 	race = other.race
 	crown = other.crown

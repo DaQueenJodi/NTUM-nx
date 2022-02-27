@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprThroneFlameStart","path":"sprites/sprThroneFlameStart/sprThroneFlameStart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprThroneFlameStart",
     "tags": [],
     "resourceType": "GMSequence",

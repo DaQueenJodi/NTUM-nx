@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprEnemyBullet1Square","path":"sprites/sprEnemyBullet1Square/sprEnemyBullet1Square.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprEnemyBullet1Square",
     "tags": [],
     "resourceType": "GMSequence",

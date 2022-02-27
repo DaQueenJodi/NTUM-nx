@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprJungleFlyIdle","path":"sprites/sprJungleFlyIdle/sprJungleFlyIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprJungleFlyIdle",
     "tags": [],
     "resourceType": "GMSequence",

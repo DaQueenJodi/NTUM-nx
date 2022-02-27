@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprDisperseBullet","path":"sprites/sprDisperseBullet/sprDisperseBullet.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprDisperseBullet",
     "tags": [],
     "resourceType": "GMSequence",

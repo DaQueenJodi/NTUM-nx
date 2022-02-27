@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFallenChair","path":"sprites/sprFallenChair/sprFallenChair.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprFallenChair",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprMutant18BIdle","path":"sprites/sprMutant18BIdle/sprMutant18BIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprMutant18BIdle",
     "tags": [],
     "resourceType": "GMSequence",

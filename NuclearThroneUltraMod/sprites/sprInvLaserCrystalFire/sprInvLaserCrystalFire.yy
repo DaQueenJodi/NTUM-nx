@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprInvLaserCrystalFire","path":"sprites/sprInvLaserCrystalFire/sprInvLaserCrystalFire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprInvLaserCrystalFire",
     "tags": [],
     "resourceType": "GMSequence",

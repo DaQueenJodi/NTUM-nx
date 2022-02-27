@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprFloor3B","path":"sprites/sprFloor3B/sprFloor3B.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprFloor3B",
     "tags": [],
     "resourceType": "GMSequence",

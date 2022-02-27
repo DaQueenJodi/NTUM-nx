@@ -19,6 +19,24 @@ audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 audio_sound_gain(sndBossWin,max(0,sqrt(UberCont.opt_musvol)),0);
 exit;
 }
+if UberCont.opt_gamemode == 8// && Player.subarea == 1
+{
+	audio_stop_sound(song);
+	audio_stop_sound(amb);
+
+	song = sndChubbyEmuSong;
+	if !audio_is_playing(song)
+		snd_loop(song)
+
+audio_master_gain(max(0,sqrt(UberCont.opt_sfxvol)))
+
+audio_sound_gain(song,max(0,sqrt(UberCont.opt_musvol)),0);
+
+audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
+
+audio_sound_gain(sndBossWin,max(0,sqrt(UberCont.opt_musvol)),0);
+exit;
+}
 if instance_exists(Player)
 {
 area = Player.area

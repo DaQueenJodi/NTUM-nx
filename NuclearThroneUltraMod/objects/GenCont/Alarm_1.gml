@@ -1,5 +1,4 @@
 instance_destroy()
-
 if instance_exists(Player)
 {
 with Crown
@@ -29,17 +28,17 @@ if Player.area = 103
     with WeaponChest
     {
     instance_create(x,y,GoldChest)
-    instance_change(Wind,false)
+	instance_destroy(id,false);
     }
     with BigWeaponChest
     {
     instance_create(x,y,GoldChest)
-    instance_change(Wind,false)
+	instance_destroy(id,false);
     }
     with EliteWeaponChest
     {
     instance_create(x,y,GoldChest)
-    instance_change(Wind,false)
+	instance_destroy(id,false);
     }
 }
 
@@ -47,13 +46,13 @@ if ( Player.area = 101 ) {
     with WeaponChest
     {
     instance_create(x,y,EliteWeaponChest)
-    instance_change(Wind,false)
+	instance_destroy(id,false);
     }
     with BigWeaponChest
     {
     instance_create(x,y,EliteWeaponChest)
     instance_create(x+1,y+1,EliteWeaponChest)
-    instance_change(Wind,false)
+	instance_destroy(id,false);
     }
 }
 

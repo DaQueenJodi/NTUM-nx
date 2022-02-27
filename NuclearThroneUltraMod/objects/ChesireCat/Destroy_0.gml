@@ -1,6 +1,5 @@
 event_inherited()
 
-scrEndBoss();
 
 Sleep(200)
 scrBusinessHogGoldChest();

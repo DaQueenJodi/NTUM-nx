@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprLaserBomb","path":"sprites/sprLaserBomb/sprLaserBomb.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprLaserBomb",
     "tags": [],
     "resourceType": "GMSequence",

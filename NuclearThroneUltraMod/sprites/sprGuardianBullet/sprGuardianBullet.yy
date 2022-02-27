@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprGuardianBullet","path":"sprites/sprGuardianBullet/sprGuardianBullet.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprGuardianBullet",
     "tags": [],
     "resourceType": "GMSequence",

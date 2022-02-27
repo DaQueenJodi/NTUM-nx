@@ -7,7 +7,7 @@ subarea=Player.subarea;
 loops=Player.loops;
 }
 
-if area=1 && subarea=1 && loops=0
+if area=1 && subarea=1 && loops=0 || UberCont.opt_gamemode == 25 || UberCont.opt_gamemode == 8
 {
 
 lastwishused=false;

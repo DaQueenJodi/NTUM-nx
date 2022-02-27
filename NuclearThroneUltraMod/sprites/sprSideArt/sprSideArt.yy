@@ -105,7 +105,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSideArt","path":"sprites/sprSideArt/sprSideArt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sprSideArt",
     "tags": [],
     "resourceType": "GMSequence",

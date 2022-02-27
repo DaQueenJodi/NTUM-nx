@@ -4,8 +4,14 @@ function scrDrawGameOver() {
 	draw_set_font(fntM)
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_center)
-	gameover = "YOU DID NOT REACH THE NUCLEAR THRONE##KILLS: "+string(BackCont.kills)+"#LEVEL: "+string(BackCont.area)+"_"+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
-	if BackCont.loops > 0
+	gameover = "";
+	if (UberCont.opt_gamemode != 25 && UberCont.opt_gamemode != 8)
+		gameover = "YOU DID NOT REACH THE NUCLEAR THRONE##KILLS: "+string(BackCont.kills)+"#LEVEL: "+string(BackCont.area)+"_"+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
+	else if (UberCont.opt_gamemode == 25)
+	{
+		gameover = "KILLS: "+string(BackCont.kills)+"#LEVEL: "+string(BackCont.area)+"_"+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
+	}
+	if BackCont.loops > 0 && UberCont.opt_gamemode != 8
 	gameover += "#LOOPS: "+string(BackCont.loops)
 	/*
 	if UberCont.opt_shake != 1
@@ -20,6 +26,11 @@ function scrDrawGameOver() {
 	gameover += "##MODDED EARLY ACCESS BUILD";
 */
 	gameover += "##GAME MODE : "+UberCont.gamemode[UberCont.opt_gamemode];
+	
+	if (UberCont.opt_gamemode == 8)
+	{
+		gameover += "##TIME SURVIVED: " + VanFan.txttime;
+	}
 	
 	if gameovertime > 30
 	{
