@@ -54,7 +54,7 @@ if oldarea != area or!audio_is_playing(song) or!audio_exists(song) || song == mu
     audio_stop_all()
 
     if (confirmSound) {
-        snd_play(confirmSound, 0, false, false);
+        snd_play_2d(confirmSound);
         confirmSound = false;
     }
 

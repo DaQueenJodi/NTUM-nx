@@ -11,14 +11,14 @@ instance_create(x,y,IDPDSpawn)
 }
 }
 if Player.area = 100{
-snd_play(Player.snd_valt, 0, false, false)}
+snd_play_2d(Player.snd_valt)}
 else if Player.subarea = 1{
-snd_play(Player.snd_wrld, 0, false, false)}
+snd_play_2d(Player.snd_wrld)}
 if Player.race = 6
 {
 
 BackCont.shake += 5
-snd_play(sndVenuz)
+snd_play_2d(sndVenuz)
 }
 
 if Player.area = 103
@@ -78,7 +78,7 @@ Player.drawempty = 30
 Player.drawlowhp = 30
 }
 
-snd_play(sndPortalOpen)
+snd_play_2d(sndPortalOpen)
 
 with CrownPickup
 {
