@@ -2188,7 +2188,7 @@ function scrWeapons() {
 	wep_name[198] = "MORPH HAMMER"
 	wep_type[198] = 5
 	wep_auto[198] = 0
-	wep_load[198] = 30
+	wep_load[198] = 28
 	wep_cost[198] = 2
 	wep_sprt[198] = sprMorphHammer
 	wep_area[198] = 10

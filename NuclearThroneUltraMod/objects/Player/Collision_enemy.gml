@@ -68,8 +68,6 @@ if other.team != 0//Dealing the damage with gamma guts
 		        with other
 		        move_contact_solid(point_direction(other.x,other.y,x,y)+180,4);
 				
-				debug("obn: ",object_get_name(other.object_index));
-				debug("obn: ",other.object_index == IDPDVan);
 				if other.object_index == IDPDVan
 				{
 					scrUnlockGameMode(8,"FOR GETTING HIT BY A VAN#I AM SO SORRY");

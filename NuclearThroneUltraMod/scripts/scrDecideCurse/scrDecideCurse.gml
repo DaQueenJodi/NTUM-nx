@@ -12,11 +12,13 @@ function scrDecideCurse(){
 		if random(4) < Player.nochest
 		{
 		curse = 0
-		instance_change(BigWeaponChest,true)
+		instance_destroy(id,false);
+		instance_create(x,y,BigWeaponChest);
 		}
 		else if random(16)<1+Player.curse+Player.bcurse+Player.ccurse&&Player.hard>2{//8
 		curse = 0
-		instance_change(EliteWeaponChest,true);
+		instance_destroy(id,false);
+		instance_create(x,y,EliteWeaponChest);
 		}
 		else if ( instance_exists(Crown)||Player.wepmod1!=0||Player.bwepmod1!=0 ) and random(7) < 1
 		curse = 1

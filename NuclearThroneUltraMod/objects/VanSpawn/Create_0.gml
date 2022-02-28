@@ -23,7 +23,7 @@ until point_distance(x,y,Player.x,Player.y) > 64
 image_speed = 0.4
 
 //if Player.loops>=1
-alarm[0] = 40
+alarm[0] = 45
 
 snd_play(sndVanWarning);
 RogueIDPD=false;
