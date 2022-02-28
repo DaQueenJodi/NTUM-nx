@@ -36,5 +36,8 @@ snd_play(sndFrogExplode)
 scrDrop(1,1)
 
 with Player//FROG B SKIN
-scrUnlockBSkin(23,"KILL AN INVERTED SUPER BALL GUY",0)
+{
+	if race == 23
+	scrUnlockBSkin(23,"KILL AN INVERTED SUPER BALL GUY#AS FROG",0)
+}
 

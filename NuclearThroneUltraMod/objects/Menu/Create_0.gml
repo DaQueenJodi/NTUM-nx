@@ -339,8 +339,8 @@ with char[19]
 instance_create(x,y+2,SkeletonChair)}
 
 if UberCont.race_have[21] = 1{//Horror
-char[21].x = 90;
-char[21].y = 140;
+char[21].x = 100;
+char[21].y = 150;
 char[21].sprite_index = sprHorrorMenu
 char[21].spr_menu = sprHorrorMenuSelected
 char[21].spr_to = sprHorrorMenuSelect

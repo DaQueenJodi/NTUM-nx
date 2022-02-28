@@ -98,9 +98,6 @@ weaponspickedup+=1;
 if scrCheckGold(targetPickup.wep)
 {
 snd_play(sndGoldPickup);
-//Unlock business hog
-if targetPickup.wep != 39
-scrUnlockCharacter(20,"FOR PICKING UP A GOLD WEAPON")
 }
 
 //GUN GAME
@@ -136,7 +133,7 @@ scrSave();
 }
 if targetPickup.wep=315//moneygun
 {
-scrUnlockBSkin(20,"FOR STEALING THE MONEY GUN",0);
+	scrUnlockCharacter(20,"FOR STEALING THE MONEY GUN")
 with UberCont
 {
 oneweponly315=1

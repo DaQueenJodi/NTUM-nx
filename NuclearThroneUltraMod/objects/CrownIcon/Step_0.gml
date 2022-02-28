@@ -76,6 +76,7 @@ if crown == 2
 if crown = 8 
 {
 Player.skillpoints += 1
+Player.skillsChosen -= 1;
 }
 //CROWN OF DEATH
 if crown = 3

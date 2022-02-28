@@ -86,42 +86,38 @@ if (wepmenuopen) {
 //SKIN
 if skin=1 && UberCont.race_bskin[race]=1
 {//you have this one
-draw_text_color(sx,__view_get( e__VW.YView, 0 )+68,string_hash_to_newline("SKIN: B"),c_black,c_black,c_black,c_black,1);
 draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+67,string_hash_to_newline("SKIN: B"),c_white,c_white,c_white,c_white,1);
 drawMenuBSkin(skin,race,c_white);
 }
 else if skin = 1
 {//you DONT have this one
-draw_text_color(sx,__view_get( e__VW.YView, 0 )+68,string_hash_to_newline("SKIN: B"),c_black,c_black,c_black,c_black,1);
-draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+67,string_hash_to_newline("SKIN: B"),c_black,c_black,c_black,c_black,1);
+draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+67,string_hash_to_newline("SKIN: B"),c_white,c_white,c_white,c_white,1);
 
-draw_sprite(sprLocked,0,sx+1+string_width(string_hash_to_newline("SKIN ")),__view_get( e__VW.YView, 0 )+90);
-
-draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+112+string_height(string_hash_to_newline(race_bskin_lock[race])),string_hash_to_newline(race_bskin_lock[race]),c_black,c_black,c_black,c_black,1);
-draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+110+string_height(string_hash_to_newline(race_bskin_lock[race])),string_hash_to_newline(race_bskin_lock[race]),c_white,c_white,c_white,c_white,1);
+draw_sprite(sprLocked,0,sx-50,__view_get( e__VW.YView, 0 )+90);
+draw_set_halign(fa_right)
+draw_text_color(sx-19,__view_get( e__VW.YView, 0 )+101+string_height(string_hash_to_newline(race_bskin_lock[race])),string_hash_to_newline(race_bskin_lock[race]),c_black,c_black,c_black,c_black,1);
+draw_text_color(sx-20,__view_get( e__VW.YView, 0 )+100+string_height(string_hash_to_newline(race_bskin_lock[race])),string_hash_to_newline(race_bskin_lock[race]),c_white,c_white,c_white,c_white,1);
+draw_set_halign(fa_left)
 drawMenuBSkin(skin,race,c_black);
 }
 else if skin=2 && UberCont.race_cskin[race]=1
 {//you have this one
-draw_text_color(sx,__view_get( e__VW.YView, 0 )+68,string_hash_to_newline("SKIN: C"),c_black,c_black,c_black,c_black,1);
 draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+67,string_hash_to_newline("SKIN: C"),c_white,c_white,c_white,c_white,1);
 drawMenuBSkin(skin,race,c_white);
 }
 else if skin = 2
 {//you DONT have this one
-draw_text_color(sx,__view_get( e__VW.YView, 0 )+68,string_hash_to_newline("SKIN: C"),c_black,c_black,c_black,c_black,1);
-draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+67,string_hash_to_newline("SKIN: C"),c_black,c_black,c_black,c_black,1);
+draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+67,string_hash_to_newline("SKIN: C"),c_white,c_white,c_white,c_white,1);
 
-draw_sprite(sprLocked,0,sx+1+string_width(string_hash_to_newline("SKIN ")),__view_get( e__VW.YView, 0 )+90);
-
-draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+112+string_height(string_hash_to_newline(race_cskin_lock[race])),string_hash_to_newline(race_cskin_lock[race]),c_black,c_black,c_black,c_black,1);
-draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+110+string_height(string_hash_to_newline(race_cskin_lock[race])),string_hash_to_newline(race_cskin_lock[race]),c_white,c_white,c_white,c_white,1);
-
+draw_sprite(sprLocked,0,sx-50,__view_get( e__VW.YView, 0 )+90);
+draw_set_halign(fa_right)
+draw_text_color(sx-19,__view_get( e__VW.YView, 0 )+101+string_height(string_hash_to_newline(race_cskin_lock[race])),string_hash_to_newline(race_cskin_lock[race]),c_black,c_black,c_black,c_black,1);
+draw_text_color(sx-20,__view_get( e__VW.YView, 0 )+100+string_height(string_hash_to_newline(race_cskin_lock[race])),string_hash_to_newline(race_cskin_lock[race]),c_white,c_white,c_white,c_white,1);
+draw_set_halign(fa_left)
 drawMenuBSkin(skin,race,c_black);
 }
 else
 {
-draw_text_color(sx,__view_get( e__VW.YView, 0 )+68,string_hash_to_newline("SKIN: A"),c_black,c_black,c_black,c_black,1);
 draw_text_color(sx+1,__view_get( e__VW.YView, 0 )+67,string_hash_to_newline("SKIN: A"),c_white,c_white,c_white,c_white,1);
 }
 

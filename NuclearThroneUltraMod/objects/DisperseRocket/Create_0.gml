@@ -8,7 +8,7 @@ they have a FORCE and can be 0 or DIRECTIONAL */
 
 typ = 1 //0 = normal, 1 = deflectable, 2 = destructable, 3 = deflectable
 alarm[1]=8;
-time=2000000;
+time=999999000;
 alarm[0]=5;
 
 /* */

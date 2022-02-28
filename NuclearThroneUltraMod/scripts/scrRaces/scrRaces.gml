@@ -22,7 +22,7 @@ function scrRaces() {
 	race_swep[1] = 1
 	race_bskin[1] = 0
 	race_cskin[1] = 0
-	race_bskin_lock[1] = "REACH LOOP WITH GAMEMODE:# FISH'S PARTNER ONLY"
+	race_bskin_lock[1] = "REACH LOOP#WITH GAMEMODE:# FISH'S PARTNER ONLY"
 	race_cskin_lock[1] = "LOOP WITH EVERY CHARACTER"
 
 
@@ -64,8 +64,8 @@ function scrRaces() {
 	race_swep[4] = 1
 	race_bskin[4] = 0
 	race_cskin[4] = 0
-	race_bskin_lock[4] = "LOOP WITHOUT#RHINO SKIN AND STRONG SPIRIT#AS MELTING"
-	race_cskin_lock[4] = "REACH LOOP 3 ON#1HP EQUALITY GAMEMODE#AS MELTING"
+	race_bskin_lock[4] = "LOOP WITHOUT#RHINO SKIN AND#STRONG SPIRIT#AS MELTING"
+	race_cskin_lock[4] = "REACH LOOP 3 ON#1HP EQUALITY#GAMEMODE#AS MELTING"
 
 
 	race_name[5] = "[PLANT]"
@@ -78,7 +78,7 @@ function scrRaces() {
 	race_swep[5] = 1
 	race_bskin[5] = 0
 	race_cskin[5] = 0
-	race_bskin_lock[5] = "REACH WONDERLAND IN UNDER 8 MINUTES#AS PLANT"
+	race_bskin_lock[5] = "REACH WONDERLAND#IN UNDER 8 MINUTES#AS PLANT"
 	race_cskin_lock[5] = "KILL 2.000 ENEMIES IN ONE RUN#AS PLANT"
 
 
@@ -92,8 +92,8 @@ function scrRaces() {
 	race_swep[6] = 39
 	race_bskin[6] = 0
 	race_cskin[6] = 0
-	race_bskin_lock[6] = "UNLOCK ALL GOLDEN WEAPONS#FOR ONE CHARACTER"
-	race_cskin_lock[6] = "UNLOCK A GOLDEN WEAPON#FOR ALL CHARACTERS"
+	race_bskin_lock[6] = "UNLOCK ALL#GOLDEN WEAPONS#FOR ONE CHARACTER"
+	race_cskin_lock[6] = "UNLOCK#A GOLDEN WEAPON#FOR ALL CHARACTERS"
 
 
 	race_name[7] = "[STEROIDS]"
@@ -106,8 +106,8 @@ function scrRaces() {
 	race_swep[7] = 1
 	race_bskin[7] = 0
 	race_cskin[7] = 0
-	race_bskin_lock[7] = "DEFEAT THE BIG MACHINE#ON LOOP AS STEROIDS"
-	race_cskin_lock[7] = "DEFEAT INVERTED BIG MACHINE"
+	race_bskin_lock[7] = "DEFEAT#THE BIG MACHINE#ON LOOP AS STEROIDS"
+	race_cskin_lock[7] = "DEFEAT#INVERTED BIG MACHINE#AS STEROIDS"
 
 
 	race_name[8] = "[ROBOT]"
@@ -134,8 +134,8 @@ function scrRaces() {
 	race_swep[9] = 46
 	race_bskin[9] = 0
 	race_cskin[9] = 0
-	race_bskin_lock[9] = "ACQUIRE THE BLACK SWORD"
-	race_cskin_lock[9] = "AQUIRE THE MOST POWERFULL SWORD"
+	race_bskin_lock[9] = "ACQUIRE#THE BLACK SWORD"
+	race_cskin_lock[9] = "AQUIRE#THE MOST POWERFULL SWORD#LOOP WITH#CHICKEN SWORD"
 
 
 	race_name[10] = "[REBEL]"
@@ -148,8 +148,8 @@ function scrRaces() {
 	race_swep[10] = 1
 	race_bskin[10] = 0
 	race_cskin[10] = 0
-	race_bskin_lock[10] = "COMPLETE A MAIN LEVEL AFTER THE LABS#WITHOUT FIRING AS REBEL"
-	race_cskin_lock[10] = "REACH ???????"
+	race_bskin_lock[10] = "COMPLETE A#MAIN LEVEL AFTER THE LABS#WITHOUT FIRING#AS REBEL"
+	race_cskin_lock[10] = "REACH B?N??T L?N?"
 
 
 	race_name[11] = "[HUNTER]"
@@ -162,8 +162,8 @@ function scrRaces() {
 	race_swep[11] = 80//sniper rifle
 	race_bskin[11] = 0
 	race_cskin[11] = 0
-	race_bskin_lock[11] = "LOOP WITHOUT PICKING UP A WEAPON#AS HUNTER"
-	race_cskin_lock[11] = "KILL INVERTED LIL' HUNTER#IN THE GAMEMODE:#HUNTER ONLY SHOOT WHEN MARKED"
+	race_bskin_lock[11] = "LOOP WITHOUT#PICKING UP A WEAPON#AS HUNTER"
+	race_cskin_lock[11] = "KILL INVERTED LIL' HUNTER#IN THE GAMEMODE:#HUNTER ONLY#SHOOT WHEN MARKED"
 
 
 	race_name[12] = "[YUNG CUZ]"
@@ -177,7 +177,7 @@ function scrRaces() {
 	race_bskin[12] = 0
 	race_cskin[12] = 0
 	race_bskin_lock[12] = "GO TO THE CRIB"
-	race_cskin_lock[12] = "AS YUNG CUZ#COMPLETE 3 AREAS IN A ROW#WITHOUT HAVING#MORE THAN 1 MAX HP#FOR 5 SECONDS";
+	race_cskin_lock[12] = "AS YUNG CUZ#COMPLETE 3 AREAS#IN A ROW#WITHOUT HAVING#MORE THAN 1 MAX HP#FOR 5 SECONDS";
 
 
 	race_name[13] = "[SHEEP]"
@@ -190,8 +190,8 @@ function scrRaces() {
 	race_swep[13] = 0//nothing
 	race_bskin[13] = 0
 	race_cskin[13] = 0
-	race_bskin_lock[13] = "KILL A SHEEP AS SHEEP"
-	race_cskin_lock[13] = "COMPLETE A MAIN LEVEL WITHOUT FIRING#AFTER THE SCRAPYARD AS SHEEP"
+	race_bskin_lock[13] = "KILL A SHEEP#AS SHEEP#CANNIBALISM!"
+	race_cskin_lock[13] = "COMPLETE A#MAIN LEVEL#WITHOUT FIRING#AFTER THE SCRAPYARD#AS SHEEP"
 
 
 	race_name[14] = "[PANDA]"
@@ -204,8 +204,8 @@ function scrRaces() {
 	race_swep[14] = 200//panda stick
 	race_bskin[14] = 0
 	race_cskin[14] = 0
-	race_bskin_lock[14] = "CONVERT A GOLDEN WEAPON#INSIDE OF A PORTAL"
-	race_cskin_lock[14] = "LOOP BY ONLY THROWING WEAPONS#AND NOT USING THEM"
+	race_bskin_lock[14] = "CONVERT A#GOLDEN WEAPON#INSIDE OF A PORTAL"
+	race_cskin_lock[14] = "LOOP BY#ONLY THROWING WEAPONS#AND NOT USING THEM"
 
 
 	race_name[15] = "[ATOM]"
@@ -218,8 +218,8 @@ function scrRaces() {
 	race_swep[15] = 19//laser pistol
 	race_bskin[15] = 0
 	race_cskin[15] = 0
-	race_bskin_lock[15] = "COMPLETE A MAIN LEVEL#AFTER THE SEWERS#WITHOUT FIRING AS ATOM"
-	race_cskin_lock[15] = "COMPLETE 5 LEVELS IN A ROW#USING CROWN OF HASTE AS ATOM"
+	race_bskin_lock[15] = "COMPLETE A#MAIN LEVEL#AFTER THE SEWERS#WITHOUT FIRING#AS ATOM"
+	race_cskin_lock[15] = "COMPLETE FIVE#LEVELS IN A ROW#USING CROWN OF HASTE#AS ATOM"
 
 
 	race_name[16] = "[VIKING]"
@@ -232,8 +232,8 @@ function scrRaces() {
 	race_swep[16] = 215//MDRFKIN AXE BITCHES
 	race_bskin[16] = 0
 	race_cskin[16] = 0
-	race_bskin_lock[16] = "COMPLETE A LEVEL#WITH THE MAXIMUM AMOUNT#OF ARMOUR POSSIBLE#AS VIKING"
-	race_cskin_lock[16] = "KILL 8 ENEMIES IN A ROW#USING ONE ARMOUR STRIKES"
+	race_bskin_lock[16] = "COMPLETE A LEVEL WITH#THE MAXIMUM AMOUNT#OF ARMOUR POSSIBLE#AS VIKING"
+	race_cskin_lock[16] = "KILL 8 ENEMIES#IN ONE ARMOUR STRIKE"
 
 
 	race_name[17] = "[WEAPONSMITH]"
@@ -246,8 +246,8 @@ function scrRaces() {
 	race_swep[17] = 1
 	race_bskin[17] = 0
 	race_cskin[17] = 0
-	race_bskin_lock[17] = "COMBINE TWO GOLDEN WEAPONS"
-	race_cskin_lock[17] = "ADD FOUR MODS TO ONE WEAPON"
+	race_bskin_lock[17] = "COMBINE TWO#GOLDEN WEAPONS"
+	race_cskin_lock[17] = "ADD FOUR MODS#TO ONE WEAPON"
 
 
 	race_name[18] = "[ANGEL]"
@@ -260,7 +260,7 @@ function scrRaces() {
 	race_swep[18] = 56
 	race_bskin[18] = 0
 	race_cskin[18] = 0
-	race_bskin_lock[18] = "TRY EVERY CROWN AT LEAST ONCE#(CHARACTER DOESN'T MATTER)"
+	race_bskin_lock[18] = "TRY EVERY CROWN#AT LEAST ONCE#(WITH ANY CHARACTER)"
 	race_cskin_lock[18] = "DEFLECT A PROJECTILE#THAT IS DEFLECTED#BY A CROWN GUARDIANS#WITHOUT USING MELEE#AS ANGEL"
 
 
@@ -275,7 +275,7 @@ function scrRaces() {
 	race_bskin[19] = 0
 	race_cskin[19] = 0
 	race_bskin_lock[19] = "HAVE FOUR LIVES"
-	race_cskin_lock[19] = "REACH THE VOLCANO ON 400% FREEZEFRAMES"
+	race_cskin_lock[19] = "REACH THE VOLCANO#ON 400% FREEZEFRAMES"
 
 
 	race_name[20] = "[BUSINESS HOG]"
@@ -283,13 +283,13 @@ function scrRaces() {
 	race_acti[20] = "SHOP"
 	race_butt[20] = "20% DISCOUNT"
 	//race_back[20] = "WEAPON CHESTS SOMETIME BECOME#GOLDEN WEAPON CHESTS";
-	race_lock[20] = "GRAB A GOLDEN WEAPON"
+	race_lock[20] = "FIND AND STEAL#THE MONEY GUN"
 	race_have[20] = 0
 	race_swep[20] = 42//golden shotgun
 	race_bskin[20] = 0
 	race_cskin[20] = 0
-	race_bskin_lock[20] = "FIND AND STEAL THE MONEY GUN#(WITH ANY CHARACTER)"
-	race_cskin_lock[20] = "SUCCESSFULLY USE THE INVESTMENT ULTRA"
+	race_bskin_lock[20] = "NANA"
+	race_cskin_lock[20] = "SUCCESSFULLY USE#THE INVESTMENT ULTRA"
 
 
 	race_name[21] = "[HORROR]"//"[ROGUE]"
@@ -302,8 +302,8 @@ function scrRaces() {
 	race_swep[21] = 1
 	race_bskin[21] = 0
 	race_cskin[21] = 0
-	race_bskin_lock[21] = "GAIN THE MAXIMUM AMOUNT# OF RADIATION POSSIBLE#AS HORROR"
-	race_cskin_lock[21] = "COMPLETE A MAIN LEVEL ON LOOP#USING ONLY THE BEAM"
+	race_bskin_lock[21] = "GAIN THE#MAXIMUM AMOUNT# OF RADIATION#POSSIBLE AS HORROR"
+	race_cskin_lock[21] = "COMPLETE A#MAIN LEVEL ON LOOP#USING ONLY THE BEAM"
 
 
 	race_name[22] = "[ROGUE]"
@@ -316,8 +316,8 @@ function scrRaces() {
 	race_swep[22] = 312//ROGUE RIFLE
 	race_bskin[22] = 0
 	race_cskin[22] = 0
-	race_bskin_lock[22] = "KILL AN ELITE IDPD SHIELDER#AS ROGUE"
-	race_cskin_lock[22] = "USE 8 PORTAL STRIKES IN ONE LEVEL"
+	race_bskin_lock[22] = "KILL AN#ELITE IDPD SHIELDER#AS ROGUE"
+	race_cskin_lock[22] = "USE 8 PORTAL STRIKES#IN ONE LEVEL"
 
 
 	race_name[23] = "[FROG]"
@@ -330,8 +330,8 @@ function scrRaces() {
 	race_swep[23] = 348//FROG BLASTER
 	race_bskin[23] = 0
 	race_cskin[23] = 0
-	race_bskin_lock[23] = "KILL AN INVERTED SUPER BALLGUY"
-	race_cskin_lock[23] = "USE THREE TOXIC WEAPONS#IN THE SAME RUN#AS FROG"
+	race_bskin_lock[23] = "KILL AN INVERTED#SUPER BALLGUY#AS FROG"
+	race_cskin_lock[23] = "USE THREE#TOXIC WEAPONS#IN THE SAME RUN#AS FROG"
 
 
 	race_name[24] = "[ELEMENTOR]"//ELEMENTAL GUY
@@ -345,7 +345,7 @@ function scrRaces() {
 	race_bskin[24] = 0
 	race_cskin[24] = 0
 	race_bskin_lock[24] = "BURN A FROZEN ENEMY#AS ELEMENTOR"
-	race_cskin_lock[24] = "COMPLETE A MAIN LEVEL#AFTER THE SEWERS#WITHOUT FIRING#AS ELEMENTOR"
+	race_cskin_lock[24] = "COMPLETE A#MAIN LEVEL#AFTER THE SEWERS#WITHOUT FIRING#AS ELEMENTOR"
 
 
 	race_name[25] = "[DOCTOR]"//MUTATION SMITH
@@ -358,8 +358,8 @@ function scrRaces() {
 	race_swep[25] = 1
 	race_bskin[25] = 0
 	race_cskin[25] = 0
-	race_bskin_lock[25] = "REACH LEVEL 7 BEFORE THE CRYSTAL CAVES#AS DOCTOR"
-	race_cskin_lock[25] = "KILL YOURSELF USING YOUR ACTIVE#AS DOCTOR"
+	race_bskin_lock[25] = "REACH LEVEL 7#BEFORE THE#CRYSTAL CAVES#AS DOCTOR"
+	race_cskin_lock[25] = "PROFESSIONAL#SELFCARE"
 
 
 	race_name[26] = "[GOOD OL' HUMPHRY]"//RUSTY GRANDPA SOLDIER
@@ -372,7 +372,7 @@ function scrRaces() {
 	race_swep[26] = 1
 	race_bskin[26] = 0
 	race_cskin[26] = 0
-	race_bskin_lock[26] = "COMPLETE A MAIN LEVEL#AFTER THE SCRAPYARD#WITHOUT MISSING#AS GOOD OL'HUMPHRY"
+	race_bskin_lock[26] = "COMPLETE A#MAIN LEVEL#AFTER THE SCRAPYARD#WITHOUT MISSING#AS GOOD OL'HUMPHRY"
 	race_cskin_lock[26] = "REACH 100 SKILL"
 
 

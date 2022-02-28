@@ -11,42 +11,42 @@ if instance_exists(Player){
 		styleb = choose(1,1,1,1,1,1,0)
 	}
 	
-if Player.area = 3 and Player.subarea = 3
-goal = 150//50
-else if (Player.area = 7||Player.area=108) and Player.subarea = 2
-goal = 50
-else if Player.area = 100
-goal = 40
-else if Player.area = 103
-goal = 130
-else if Player.area = 102
-goal = 50
-else if Player.area = 104
-goal = 10
-else if Player.area = 105
-goal = 145
-else if Player.area = 106
-goal = 120
-else if Player.area = 114
-goal = 125
-else if (Player.area = 6||Player.area=112) && Player.subarea=2//LABS BOSS
-goal=1;
-else if Player.area = 9 && Player.subarea < 2
-goal = 130
-else if Player.area = 10
-{
-	styleb = choose(0,0,0,0,0,0,1,1)//Slightly higher chance for B tiles
+	if Player.area = 3 and Player.subarea = 3
+	goal = 150//50
+	else if (Player.area = 7||Player.area=108) and Player.subarea = 2
+	goal = 50
+	else if Player.area = 100
+	goal = 40
+	else if Player.area = 103
 	goal = 130
-}
-else if Player.area == 9 && Player.subarea == 3
-goal = 350;
-}
+	else if Player.area = 102
+	goal = 50
+	else if Player.area = 104
+	goal = 10
+	else if Player.area = 105
+	goal = 145
+	else if Player.area = 106
+	goal = 120
+	else if Player.area = 114
+	goal = 125
+	else if (Player.area = 6||Player.area=112) && Player.subarea=2//LABS BOSS
+	goal=1;
+	else if Player.area = 9 && Player.subarea < 2
+	goal = 130
+	else if Player.area = 10
+	{
+		styleb = choose(0,0,0,0,0,0,1,1)//Slightly higher chance for B tiles
+		goal = 130
+	}
+	else if Player.area == 9 && Player.subarea == 3
+	goal = 350;
 
-if UberCont.opt_gamemode==6//small levels
-{
-goal=30;
-if Player.area == 9 && Player.subarea == 3
-goal = 290;
+	if UberCont.opt_gamemode==6//small levels
+	{
+	goal=30;
+		if Player.area == 9 && Player.subarea == 3
+			goal = 290;
+	}
 }
 if UberCont.opt_gamemode == 25 //Survival arena
 {

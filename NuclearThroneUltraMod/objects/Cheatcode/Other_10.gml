@@ -10,8 +10,9 @@ if (hundredPercentI) >= array_length(hundredPercent)
 	repeat(racemax+1)
 	{
 		race_have[dir]=1
+		/*
 		race_bskin[dir]=1
-		race_cskin[dir]=1
+		race_cskin[dir]=1*/
 		//Crownstart unlock
 		var cir = 0;
 		ctot_all_crowns_taken[dir] = 0;
@@ -28,13 +29,13 @@ if (hundredPercentI) >= array_length(hundredPercent)
 	}
 
 	var dir=0;
-
+/*
 	repeat(maxgamemode+1)
 	{
 		gamemode_have[dir]=1
 		dir++
 	}
-
+*/
 	var racedir=1;
 
 	repeat(racemax)

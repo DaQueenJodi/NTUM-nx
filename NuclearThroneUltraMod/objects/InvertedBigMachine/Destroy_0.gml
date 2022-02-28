@@ -5,7 +5,7 @@ scrDrop(50,40);
 with Player
 {
 if race = 7 
-scrUnlockCSkin(7,"FOR DEFEATING THE INVERTED BIG MACHINE#AS STEROIDS",0); 
+	scrUnlockCSkin(7,"FOR DEFEATING THE INVERTED BIG MACHINE#AS STEROIDS",0); 
 
 }
 
