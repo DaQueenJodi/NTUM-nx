@@ -1,4 +1,4 @@
-raddrop = 2
+raddrop = 11
 maxhealth = 35
 meleedamage = 2;
 size = 4
@@ -27,3 +27,4 @@ wkick = 0
 friction = 6;
 instance_create(x,y,WallBreak);
 depth = -2;
+timesfired = 0;

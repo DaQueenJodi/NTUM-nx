@@ -3,7 +3,7 @@ if owner > -1 && instance_exists(Player)
 {
 	if owner.bigballs
 	{
-		snd_play_2d(sndNothingFire);
+		snd_play_2d(sndBigBallFire);
 		with instance_create(x,y,BigGuardianBulletSpawn)
 		{
 			team = other.team

@@ -3650,6 +3650,7 @@
     {"id":{"name":"sndBloodPistol","path":"sounds/sndBloodPistol/sndBloodPistol.yy",},"order":37,},
     {"id":{"name":"sndSheepDead","path":"sounds/sndSheepDead/sndSheepDead.yy",},"order":96,},
     {"id":{"name":"musThemeP","path":"sounds/musThemeP/musThemeP.yy",},"order":2,},
+    {"id":{"name":"musBossWin","path":"sounds/musBossWin/musBossWin.yy",},"order":61,},
     {"id":{"name":"musThemeA","path":"sounds/musThemeA/musThemeA.yy",},"order":0,},
     {"id":{"name":"musThemeB","path":"sounds/musThemeB/musThemeB.yy",},"order":1,},
     {"id":{"name":"amb0b","path":"sounds/amb0b/amb0b.yy",},"order":4,},
