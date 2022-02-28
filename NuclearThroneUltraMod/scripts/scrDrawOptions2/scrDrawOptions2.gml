@@ -125,9 +125,9 @@ function scrDrawOptions2() {
 		    || wep=69 && UberCont.oneweponly69=1 || wep=75 && UberCont.oneweponly75=1 || wep=264 && UberCont.oneweponly264=1 || wep=328 && UberCont.oneweponly328=1
 		     || wep=231 && UberCont.oneweponly231=1 || wep=263 && UberCont.oneweponly263=1 || wep=214 && UberCont.oneweponly214=1 || wep=316 && UberCont.oneweponly316=1    )   )
 		     {
-		     draw_sprite(wep_sprt[StartingWeaponUpDown.wep],0,x,y+32);
+		     draw_sprite(wep_sprt[StartingWeaponUpDown.wep],0,x,y+29);
 		draw_text_color(x,y+16,string_hash_to_newline(string(StartingWeaponUpDown.wep)),c_white,c_white,c_white,c_white,1);
-		draw_text_color(x-string_width(string_hash_to_newline(string(StartingWeaponUpDown.wep_name[wep])))*0.5,y+16,string_hash_to_newline("####"+string(StartingWeaponUpDown.wep_name[wep])),c_white,c_white,c_white,c_white,1);
+		draw_text_color(x-string_width(string_hash_to_newline(string(StartingWeaponUpDown.wep_name[wep])))*0.5,y+16,string_hash_to_newline("###"+string(StartingWeaponUpDown.wep_name[wep])),c_white,c_white,c_white,c_white,1);
 		UberCont.opt_gm1wep=wep;
 		}
 		else

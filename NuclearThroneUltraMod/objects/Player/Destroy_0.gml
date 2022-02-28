@@ -14,6 +14,8 @@ if UberCont.opt_gamemode == 8
 		time_minutes=UberCont.time_minutes;
 		time_hours=UberCont.time_hours;
 		txttime = UberCont.minutesstring+":"+UberCont.secondsstring+":"+UberCont.microseconds;
+		if (other.race == 22 && (time_seconds >= 30 || time_minutes >= 1 || time_hours >= 1))
+			scrUnlockBSkin(22,"FOR SURVIVING THE VANS!#FOR ATLEAST 30 SECONDS",8);
 	}
 }
 
@@ -226,6 +228,33 @@ else
 	{
 		raddrop = rad;
 		scrRaddrop();
+	}
+	if race == 23 //Frog explode!
+	{
+		repeat(40)
+		instance_create(x,y,ToxicGas)
+
+		snd_play(sndToxicBarrelGas)
+
+		dir = random(360)
+		repeat(20)
+		{
+		dir += 360/20
+		with instance_create(x,y,EnemyBullet2)
+		{
+		motion_add(other.dir,4)
+		image_angle = direction
+		team = other.team
+		}
+		with instance_create(x,y,AcidStreak)
+		{
+		motion_add(other.dir,8)
+		image_angle = direction
+		}
+		}
+		snd_play(sndFrogExplode)
+
+		BackCont.shake += 20	
 	}
 	//SAVE STUFF
 	if instance_exists(BackCont)

@@ -4,8 +4,8 @@ function scrInit() {
 	unlocked=0;
 	opt_gamemode=0;
 	opt_gm1wep=1;
-	opt_discs=3;
-	opt_discdamage=6;
+	opt_discs=6;
+	opt_discdamage=2;
 	
 	//INIT DATA
 	scrRaces();

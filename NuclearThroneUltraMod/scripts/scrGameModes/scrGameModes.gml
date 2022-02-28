@@ -133,11 +133,11 @@ function scrGameModes() {
 	gamemode_have[23] = 0;*/
 
 	gamemodeOrder[0] = 0;
-	gamemodeOrder[1] = 8;
+	gamemodeOrder[1] = 9;
 	gamemodeOrder[2] = 3;
 	gamemodeOrder[3] = 1;
 	gamemodeOrder[4] = 2;
-	gamemodeOrder[5] = 9;
+	gamemodeOrder[5] = 8;
 	gamemodeOrder[6] = 5;
 	gamemodeOrder[7] = 6;
 	gamemodeOrder[8] = 20;
@@ -148,8 +148,8 @@ function scrGameModes() {
 	gamemodeOrder[13] = 13;
 	gamemodeOrder[14] = 14;
 	gamemodeOrder[15] = 15;
-	gamemodeOrder[16] = 16;
-	gamemodeOrder[17] = 18;
+	gamemodeOrder[16] = 18;
+	gamemodeOrder[17] = 16;
 	gamemodeOrder[18] = 19;
 	gamemodeOrder[19] = 7;
 	gamemodeOrder[20] = 21;

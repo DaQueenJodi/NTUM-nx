@@ -22,6 +22,7 @@ motion_add(other.dir,8)
 image_angle = direction
 }
 }
+snd_play(sndFrogExplode)
 
 BackCont.shake += 20
 

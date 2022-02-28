@@ -24,7 +24,7 @@ event_user(0);
 if (UberCont.opt_gamemode==1&&gamemodeOrder[gamemodenr]==1)
 {
 if !instance_exists(StartingWeaponUpDown)
-instance_create(x,y+8,StartingWeaponUpDown);
+instance_create(x,y+24,StartingWeaponUpDown);
 /*with(instance_create(x,y+32,WeaponDisplay))
 {
 scrWeapons();

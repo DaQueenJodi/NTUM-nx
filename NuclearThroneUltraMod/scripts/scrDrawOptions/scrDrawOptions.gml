@@ -1,4 +1,5 @@
 function scrDrawOptions() {
+	UberCont.optY = 0;
 	//DRAW OPTIONS
 	if widescreen > 0
 	widescreen -= 8

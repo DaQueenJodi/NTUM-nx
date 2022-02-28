@@ -523,7 +523,9 @@ if wep = 1 || wep = 39 || wep = 56
 onlyusemerevolver = true;
 else
     onlyusemerevolver = false;
-
+onlyusemegold = false;
+if scrCheckGold(wep_name[wep])
+	onlyusemegold = true;
 isAlkaline = true;
 myShield = -1;
 if UberCont.opt_gamemode == 25 && !instance_exists(SurvivalWave)

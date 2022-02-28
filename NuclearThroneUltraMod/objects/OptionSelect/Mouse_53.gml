@@ -2,7 +2,7 @@ if mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y+24 and selecte
 {
 with option2
 instance_destroy();
-
+UberCont.optY = 0;
 selected = 1
 instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+8,__view_get( e__VW.YView, 0 )+32,MusVolSlider)
 instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+8,__view_get( e__VW.YView, 0 )+40,SfxVolSlider)

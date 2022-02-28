@@ -1,16 +1,18 @@
 /// @description WepPickup
-if instance_exists(WepPickup){
+if instance_exists(WepPickup) && !instance_exists(GenCont){
 
 if point_distance(x,y,instance_nearest(x,y,WepPickup).x,instance_nearest(x,y,WepPickup).y)<36
 {
 
 targetPickup=instance_nearest(x,y,WepPickup);
 
-
+var isGold = false;
 //UNLOCK GOLDEN WEAPON
 if scrCheckGold(wep_name[targetPickup.wep])
+{
+	isGold = true;
 	scrUnlockGoldWeapon(targetPickup.wep);
-
+}
 //first get ammo
 if ultra_got[68]=0
 {
@@ -91,7 +93,10 @@ if KeyCont.key_pick[p] = 1
 if curse = 0||targetPickup.curse==curse or bwep = 0 || (cwep = 0 && ultra_got[31])//SWITCH OUR MODS DATA ASWELL!
 {
 instance_create(x,y,WepSwap)
-
+if !isGold
+{
+	onlyusemegold = false;	
+}
 if targetPickup.pickedup=false
 weaponspickedup+=1;
 
@@ -119,7 +124,7 @@ if scrToxicWeapons(targetPickup.wep) && targetPickup.pickedup=false && race = 23
 {
 toxicweaponsfound++;
 if toxicweaponsfound>=3
-scrUnlockCSkin(23,"BY USING 3 TOXIC WEAPONS#IN ONE RUN AS FROG",0)
+scrUnlockBSkin(23,"BY USING 3 TOXIC WEAPONS#IN ONE RUN AS FROG",0)
 }
 
 //some one wep only unlocks that odont really count as unlockables

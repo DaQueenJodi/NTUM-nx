@@ -9,4 +9,6 @@ fire=true
 else
 fire=false;
 
-maxSpeed = random_range(1,4.5);
+minSpeed = 0.8;
+maxSpeed = random_range(minSpeed,3.5);
+instance_create(x,y,WallBreak);

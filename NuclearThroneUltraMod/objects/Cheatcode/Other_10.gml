@@ -29,13 +29,13 @@ if (hundredPercentI) >= array_length(hundredPercent)
 	}
 
 	var dir=0;
-/*
+
 	repeat(maxgamemode+1)
 	{
 		gamemode_have[dir]=1
 		dir++
 	}
-*/
+
 	var racedir=1;
 
 	repeat(racemax)

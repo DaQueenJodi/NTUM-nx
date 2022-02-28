@@ -288,11 +288,11 @@ function scrRaces() {
 	race_swep[20] = 42//golden shotgun
 	race_bskin[20] = 0
 	race_cskin[20] = 0
-	race_bskin_lock[20] = "NANA"
+	race_bskin_lock[20] = "REACH AND#BEAT THE THRONE#USING ONLY#GOLD WEAPONS#AS BUSINESS HOG"
 	race_cskin_lock[20] = "SUCCESSFULLY USE#THE INVESTMENT ULTRA"
 
 
-	race_name[21] = "[HORROR]"//"[ROGUE]"
+	race_name[21] = "[HORROR]"
 	race_pass[21] = "EXTRA MUTATION CHOICE"//"BLAST ARMOUR, HEAT"
 	race_acti[21] = "RADIATION BEAM"//"PORTAL STRIKE"
 	race_butt[21] = "BEAM CHARGES QUICKER#BEAM HEALS#SOMETIMES MISSED BEAM#WILL DROP RADS"//"STRONGER PORTAL STRIKE"
@@ -316,7 +316,7 @@ function scrRaces() {
 	race_swep[22] = 312//ROGUE RIFLE
 	race_bskin[22] = 0
 	race_cskin[22] = 0
-	race_bskin_lock[22] = "KILL AN#ELITE IDPD SHIELDER#AS ROGUE"
+	race_bskin_lock[22] = "SURVIVE IN#THE GAMEMODE#VAN FAN#FOR ATLEAST#30 SECONDS#AS ROGUE"
 	race_cskin_lock[22] = "USE 8 PORTAL STRIKES#IN ONE LEVEL"
 
 
@@ -330,8 +330,8 @@ function scrRaces() {
 	race_swep[23] = 348//FROG BLASTER
 	race_bskin[23] = 0
 	race_cskin[23] = 0
-	race_bskin_lock[23] = "KILL AN INVERTED#SUPER BALLGUY#AS FROG"
-	race_cskin_lock[23] = "USE THREE#TOXIC WEAPONS#IN THE SAME RUN#AS FROG"
+	race_bskin_lock[23] = "USE THREE#TOXIC WEAPONS#IN THE SAME RUN#AS FROG"
+	race_cskin_lock[23] = "REACH AND BEAT#THE THRONE#AS FROG#ON THE GAMEMODE:#DISC ROOM#WITH SETTINGS:#ATLEAST 6 DISCS#ATLEAST 2 DAMAGE"
 
 
 	race_name[24] = "[ELEMENTOR]"//ELEMENTAL GUY
