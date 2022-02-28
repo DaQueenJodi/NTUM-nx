@@ -1001,7 +1001,7 @@ function scrWeapons() {
 	wep_type[90] = 1
 	wep_auto[90] = 0
 	wep_load[90] = 8
-	wep_cost[90] = 0
+	wep_cost[90] = 2
 	wep_sprt[90] = sprAPistol
 	wep_area[90] = 1
 	wep_text[90] = ""
