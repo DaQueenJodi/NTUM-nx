@@ -1147,60 +1147,65 @@ function scrPowers() {
 	//MELTING
 	if race = 4
 	{
-	if ultra_got[13]{
-	with enemy{
-	if maxhealth<=5 and x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
-	{//melting ultra a brain capacity
-	MorphMe=true;
+		var killedIt = false;
+		
+		
+		with Corpse
+		{
+			if image_speed = 0 and (instance_number(enemy) > 0 or instance_exists(Portal)) and x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
+			{
+			killedIt = true;
+			snd_play(sndExplosion)
 
+			instance_destroy()
+			with instance_create(x,y,BloodStreak)
+			{
+			motion_add(point_direction(Player.x,Player.y,x,y),8)
+			image_angle = direction
+			}
+			instance_create(x,y,MeltSplat)
+			if Player.skill_got[5] = 1 || size>1
+			{ang = random(360)
+			instance_create(x+lengthdir_x(24,ang),y+lengthdir_y(24,ang),MeatExplosion)
+			instance_create(x+lengthdir_x(24,ang+120),y+lengthdir_y(24,ang+120),MeatExplosion)
+			instance_create(x+lengthdir_x(24,ang+240),y+lengthdir_y(24,ang+240),MeatExplosion)}
+			instance_create(x,y,MeatExplosion)
+			}
+		}
+		
+		
+		if ultra_got[13]{
+			with enemy{
+			if maxhealth<=5 and x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
+			{//melting ultra a brain capacity
+			MorphMe=true;
 
-	snd_play_2d(sndExplosion)
-
-	if Player.skill_got[5] = 1
-	snd_play_2d(sndCorpseExploUpg)
-	else
-	snd_play_2d(sndCorpseExplo)
-
-	instance_destroy()
-	with instance_create(x,y,BloodStreak)
-	{
-	motion_add(point_direction(Player.x,Player.y,x,y),8)
-	image_angle = direction
-	}
-	instance_create(x,y,MeltSplat)//Scorchmark
-	if Player.skill_got[5] = 1
-	{ang = random(360)
-	instance_create(x+lengthdir_x(24,ang),y+lengthdir_y(24,ang),MeatExplosion)
-	instance_create(x+lengthdir_x(24,ang+120),y+lengthdir_y(24,ang+120),MeatExplosion)
-	instance_create(x+lengthdir_x(24,ang+240),y+lengthdir_y(24,ang+240),MeatExplosion)}
-	instance_create(x,y,MeatExplosion)
-	}
-	} }
-	with Corpse
-	{if image_speed = 0 and (instance_number(enemy) > 0 or instance_exists(Portal)) and x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
-	{
-
-	snd_play_2d(sndExplosion)
-
-	if Player.skill_got[5] = 1
-	snd_play_2d(sndCorpseExploUpg)
-	else
-	snd_play_2d(sndCorpseExplo)
-
-	instance_destroy()
-	with instance_create(x,y,BloodStreak)
-	{
-	motion_add(point_direction(Player.x,Player.y,x,y),8)
-	image_angle = direction
-	}
-	instance_create(x,y,MeltSplat)
-	if Player.skill_got[5] = 1 || size>1
-	{ang = random(360)
-	instance_create(x+lengthdir_x(24,ang),y+lengthdir_y(24,ang),MeatExplosion)
-	instance_create(x+lengthdir_x(24,ang+120),y+lengthdir_y(24,ang+120),MeatExplosion)
-	instance_create(x+lengthdir_x(24,ang+240),y+lengthdir_y(24,ang+240),MeatExplosion)}
-	instance_create(x,y,MeatExplosion)}}
-
+				snd_play(sndExplosion)
+				killedIt = true;
+			instance_destroy()
+			with instance_create(x,y,BloodStreak)
+			{
+			motion_add(point_direction(Player.x,Player.y,x,y),8)
+			image_angle = direction
+			}
+			instance_create(x,y,MeltSplat)//Scorchmark
+			if Player.skill_got[5] = 1
+			{ang = random(360)
+			instance_create(x+lengthdir_x(24,ang),y+lengthdir_y(24,ang),MeatExplosion)
+			instance_create(x+lengthdir_x(24,ang+120),y+lengthdir_y(24,ang+120),MeatExplosion)
+			instance_create(x+lengthdir_x(24,ang+240),y+lengthdir_y(24,ang+240),MeatExplosion)}
+			instance_create(x,y,MeatExplosion)
+			}
+			} 
+		}
+		
+		if killedIt && !audio_is_playing(sndCorpseExploUpg) && !audio_is_playing(sndCorpseExplo)
+		{
+			if Player.skill_got[5] = 1
+				snd_play_2d(sndCorpseExploUpg)
+			else
+				snd_play_2d(sndCorpseExplo)	
+		}
 
 	}
 

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndMeatExplo",
-  "duration": 0.0,
+  "duration": 0.613016,
   "parent": {
     "name": "Player",
     "path": "folders/Sounds/Player.yy",

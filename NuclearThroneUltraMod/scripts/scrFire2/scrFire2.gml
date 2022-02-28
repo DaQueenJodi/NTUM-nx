@@ -5,10 +5,10 @@ function scrFire2() {
 	//KRAKEN GUN
 	case 194:
 
-	snd_play_2d(sndRoll);
-	snd_play_2d(sndBloodLauncher);
+	snd_play_fire(sndRoll);
+	snd_play_fire(sndBloodLauncher);
 
-	snd_play_2d(choose(sndWater1,sndWater2) );
+	snd_play_fire(choose(sndWater1,sndWater2) );
 
 
 	with instance_create(x,y,Tentacle)
@@ -43,9 +43,9 @@ function scrFire2() {
 	//BIG KRAKEN GUN
 	case 195:
 
-	snd_play_2d(sndRoll);
-	snd_play_2d(sndBloodLauncher);
-	snd_play_2d(choose(sndWater1,sndWater2) );
+	snd_play_fire(sndRoll);
+	snd_play_fire(sndBloodLauncher);
+	snd_play_fire(choose(sndWater1,sndWater2) );
 	repeat(3){
 	with instance_create(x,y,Tentacle)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(40)-20)*other.accuracy
@@ -80,9 +80,9 @@ function scrFire2() {
 	//KRAKEN CANNON
 	case 196:
 
-	snd_play_2d(sndRoll);
-	snd_play_2d(sndBloodLauncher);
-	snd_play_2d(choose(sndWater1,sndWater2) );
+	snd_play_fire(sndRoll);
+	snd_play_fire(sndBloodLauncher);
+	snd_play_fire(choose(sndWater1,sndWater2) );
 
 	repeat(6){
 	with instance_create(x,y,Tentacle)
@@ -121,8 +121,8 @@ function scrFire2() {
 
 	Sleep(30);
 
-	snd_play_2d(sndSuperPlasmaCannon)
-	snd_play_2d(sndSuperPlasmaCannon)
+	snd_play_fire(sndSuperPlasmaCannon)
+	snd_play_fire(sndSuperPlasmaCannon)
 
 	with instance_create(x,y,PlasmaHuge)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)+12*other.accuracy,2)
@@ -148,9 +148,9 @@ function scrFire2() {
 	case 198:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLaserSwordUpg)
+	snd_play_fire(sndLaserSwordUpg)
 	else
-	snd_play_2d(sndLaserSword)
+	snd_play_fire(sndLaserSword)
 
 	instance_create(x,y,Dust)
 
@@ -183,7 +183,7 @@ function scrFire2() {
 	//ULTRA SEEKER PISTOL
 	case 199:
 
-	snd_play_2d(sndSeekerShotgun)
+	snd_play_fire(sndSeekerShotgun)
 
 	with instance_create(x,y,UltraSeekerBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(20)-10)-10*other.accuracy,2+random(3))
@@ -216,7 +216,7 @@ function scrFire2() {
 	//PANDA STICK
 	case 200:
 
-	snd_play_2d(sndHammer)
+	snd_play_fire(sndHammer)
 
 	instance_create(x,y,Dust)
 
@@ -249,7 +249,7 @@ function scrFire2() {
 	//SUPERHOT REVOLVER
 	case 201:
 
-	snd_play_2d(sndHeavyRevolver)
+	snd_play_fire(sndHeavyRevolver)
 
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
@@ -284,7 +284,7 @@ function scrFire2() {
 
 	//FLAME WAVE GUN
 	case 203:
-	snd_play_2d(sndFireShotgun);
+	snd_play_fire(sndFireShotgun);
 
 	with instance_create(x,y,FlameWaveBurst)
 	{
@@ -301,7 +301,7 @@ function scrFire2() {
 	//SPLINTER SEEKER CROSSBOW
 	case 204:
 
-	snd_play_2d(sndBigSplinter)
+	snd_play_fire(sndBigSplinter)
 
 	with instance_create(x,y,SeekerBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(20)-10)-20*other.accuracy,2+random(3))
@@ -341,9 +341,9 @@ function scrFire2() {
 	case 205:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaUpg)
 	else
-	snd_play_2d(sndPlasma)
+	snd_play_fire(sndPlasma)
 
 
 	repeat(3)
@@ -368,7 +368,7 @@ function scrFire2() {
 	//SMALL MISSILE LAUNCHER
 	case 206:
 
-	snd_play_2d(sndRocket)
+	snd_play_fire(sndRocket)
 
 
 	with instance_create(x,y,Missile)
@@ -391,7 +391,7 @@ function scrFire2() {
 	//MISSILE LAUNCHER
 	case 207:
 
-	snd_play_2d(sndRocket)
+	snd_play_fire(sndRocket)
 
 
 	with instance_create(x,y,Missile)
@@ -433,7 +433,7 @@ function scrFire2() {
 	//MINI PLASMA SHOTGUN
 	case 208:
 
-	snd_play_2d(sndPlasma)
+	snd_play_fire(sndPlasma)
 
 	repeat(7)
 	{
@@ -454,9 +454,9 @@ function scrFire2() {
 	case 209:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaUpg)
 	else
-	snd_play_2d(sndPlasma)
+	snd_play_fire(sndPlasma)
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),MiniPlasmaBall)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(26)-13)*other.accuracy,2)
@@ -492,9 +492,9 @@ function scrFire2() {
 	case 211:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaUpg)
 	else
-	snd_play_2d(sndPlasma)
+	snd_play_fire(sndPlasma)
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),MiniPlasmaBall)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,2)
@@ -514,9 +514,9 @@ function scrFire2() {
 	case 212:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLaserUpg)
+	snd_play_fire(sndLaserUpg)
 	else
-	snd_play_2d(sndLaser)
+	snd_play_fire(sndLaser)
 	with instance_create(x,y,SuperIonBurst)
 	{
 	creator = other.id
@@ -552,7 +552,7 @@ function scrFire2() {
 	//VIKING GREAT AXE
 	case 214:
 
-	snd_play_2d(sndHammer)
+	snd_play_fire(sndHammer)
 
 	instance_create(x,y,Dust)
 
@@ -581,7 +581,7 @@ function scrFire2() {
 	//VIKING AXE
 	case 215:
 
-	snd_play_2d(sndHammer)
+	snd_play_fire(sndHammer)
 
 	instance_create(x,y,Dust)
 
@@ -608,7 +608,7 @@ function scrFire2() {
 	//GRENADE SHOTGUN
 	case 216:
 
-	snd_play_2d(sndGrenadeShotgun)
+	snd_play_fire(sndGrenadeShotgun)
 
 	repeat(4)
 	{
@@ -631,7 +631,7 @@ function scrFire2() {
 	//AUTO GRENADE SHOTGUN
 	case 217:
 
-	snd_play_2d(sndGrenadeShotgun)
+	snd_play_fire(sndGrenadeShotgun)
 
 	repeat(3)
 	{
@@ -654,7 +654,7 @@ function scrFire2() {
 	//GRENADE RIFLE
 	case 218:
 
-	snd_play_2d(sndGrenadeRifle);
+	snd_play_fire(sndGrenadeRifle);
 
 	with instance_create(x,y,SmallGrenadeBurst)
 	{
@@ -671,7 +671,7 @@ function scrFire2() {
 	//GRENADE HYPER RIFLE
 	case 219:
 
-	snd_play_2d(sndGrenadeRifle);
+	snd_play_fire(sndGrenadeRifle);
 
 	with instance_create(x,y,SmallGrenadeBurst)
 	{
@@ -687,7 +687,7 @@ function scrFire2() {
 	//GHETTO BLASTER
 	case 220:
 
-	snd_play_2d(sndGhettoBlast)
+	snd_play_fire(sndGhettoBlast)
 
 	instance_create(x,y,Dust)
 
@@ -723,7 +723,7 @@ function scrFire2() {
 	//DOOM LAUNCHER
 	case 221:
 
-	snd_play_2d(sndGrenade)
+	snd_play_fire(sndGrenade)
 
 	with instance_create(x,y,DoomNadeCluster)
 	{
@@ -745,9 +745,9 @@ function scrFire2() {
 
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLaserSwordUpg)
+	snd_play_fire(sndLaserSwordUpg)
 	else
-	snd_play_2d(sndLaserSword)
+	snd_play_fire(sndLaserSword)
 	instance_create(x,y,Dust)
 
 	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),EnergySlash)
@@ -762,9 +762,9 @@ function scrFire2() {
 
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLaserUpg)
+	snd_play_fire(sndLaserUpg)
 	else
-	snd_play_2d(sndLaser)
+	snd_play_fire(sndLaser)
 	with instance_create(x,y,Laser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)*other.accuracy
 	team = other.team
@@ -787,7 +787,7 @@ function scrFire2() {
 	//BULLET SWORD
 	case 223:
 
-	snd_play_2d(choose(sndSword1,sndSword2))
+	snd_play_fire(choose(sndSword1,sndSword2))
 
 	instance_create(x,y,Dust)
 
@@ -825,7 +825,7 @@ function scrFire2() {
 	//GOLDEN CAR THROWER
 	case 224:
 
-	snd_play_2d(sndSnowBotThrow);
+	snd_play_fire(sndSnowBotThrow);
 	with instance_create(x,y,CarThrow)
 	{
 	maxhealth = 30;//20 original
@@ -848,9 +848,9 @@ function scrFire2() {
 	case 225:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaUpg)
 	else
-	snd_play_2d(sndPlasma)
+	snd_play_fire(sndPlasma)
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),PlasmaBall)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy,4)
@@ -870,7 +870,7 @@ function scrFire2() {
 	//GOLDEN SLUGGER
 	case 226:
 
-	snd_play_2d(sndSlugger)
+	snd_play_fire(sndSlugger)
 
 	with instance_create(x,y,Slug)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,17)
@@ -906,7 +906,7 @@ function scrFire2() {
 	//GOLDEN SPLINTER GUN
 	case 228:
 
-	snd_play_2d(sndSplinterGun)
+	snd_play_fire(sndSplinterGun)
 	repeat(2){
 	with instance_create(x,y,Splinter)//5 splinters
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,20+random(4))
@@ -935,7 +935,7 @@ function scrFire2() {
 	//GOLDEN BAZOOKA
 	case 229:
 
-	snd_play_2d(sndRocket)
+	snd_play_fire(sndRocket)
 
 	with instance_create(x,y,Rocket)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)*other.accuracy,2)
@@ -954,7 +954,7 @@ function scrFire2() {
 	//GOLDEN SCREWDRIVER
 	case 230:
 
-	snd_play_2d(sndScrewdriver)
+	snd_play_fire(sndScrewdriver)
 
 	instance_create(x,y,Dust)
 
@@ -980,7 +980,7 @@ function scrFire2() {
 	//GUITAR
 	case 231:
 
-	snd_play_2d(sndGuitar)
+	snd_play_fire(sndGuitar)
 
 	instance_create(x,y,Dust)
 
@@ -1014,7 +1014,7 @@ function scrFire2() {
 	//HEAVY CROSSBOW
 	case 232:
 
-	snd_play_2d(sndHeavyCrossbow)
+	snd_play_fire(sndHeavyCrossbow)
 
 	with instance_create(x,y,HeavyBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y),18)
@@ -1031,7 +1031,7 @@ function scrFire2() {
 	//BLADE GUN
 	case 233:
 
-	snd_play_2d(sndDiscgun)
+	snd_play_fire(sndDiscgun)
 
 	with instance_create(x,y,Blade)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,10)
@@ -1048,7 +1048,7 @@ function scrFire2() {
 	//HEAVY AUTO CROSSBOW
 	case 234:
 
-	snd_play_2d(sndHeavyCrossbow)
+	snd_play_fire(sndHeavyCrossbow)
 
 	with instance_create(x,y,HeavyBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+random(18)-9,18)
@@ -1065,8 +1065,8 @@ function scrFire2() {
 	//SUPER HEAVY CROSSBOW
 	case 235:
 
-	snd_play_2d(sndSuperCrossbow)
-	//snd_play_2d(sndHeavyCrossbow)
+	snd_play_fire(sndSuperCrossbow)
+	//snd_play_fire(sndHeavyCrossbow)
 
 	with instance_create(x,y,HeavyBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y),18)
@@ -1102,8 +1102,8 @@ function scrFire2() {
 	//SUPER HEAVY AUTO CROSSBOW
 	case 236:
 
-	snd_play_2d(sndSuperCrossbow)
-	snd_play_2d(sndHeavyCrossbow)
+	snd_play_fire(sndSuperCrossbow)
+	snd_play_fire(sndHeavyCrossbow)
 
 	with instance_create(x,y,HeavyBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y),18)
@@ -1141,7 +1141,7 @@ function scrFire2() {
 
 	with instance_create(x,y,SlashDirectorShotgunPrep)
 	{
-	snd_play_2d(sndSlugger)
+	snd_play_fire(sndSlugger)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*other.accuracy,10+random(2));
 	image_angle=direction;
 	rate=10//for extra speed more bullets per step
@@ -1164,7 +1164,7 @@ function scrFire2() {
 	//SPLIT BLADE GUN
 	case 238:
 
-	snd_play_2d(sndDiscgun)
+	snd_play_fire(sndDiscgun)
 
 	with instance_create(x,y,SplitBlade)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,10)
@@ -1183,7 +1183,7 @@ function scrFire2() {
 	//ROCKET GLOVE
 	case 239:
 
-	snd_play_2d(sndRocket);
+	snd_play_fire(sndRocket);
 	snd_loop(sndFlamerLoop);
 	with instance_create(x,y,RocketGloveBurst)
 	{
@@ -1233,7 +1233,7 @@ function scrFire2() {
 	//INFINITY SLUGGER
 	case 241:
 
-	snd_play_2d(sndSlugger)
+	snd_play_fire(sndSlugger)
 
 	with instance_create(x,y,Slug)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy,16)
@@ -1253,9 +1253,9 @@ function scrFire2() {
 
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLaserUpg)
+	snd_play_fire(sndLaserUpg)
 	else
-	snd_play_2d(sndLaser)
+	snd_play_fire(sndLaser)
 	with instance_create(x,y,Laser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)//+(random(2)-1)*other.accuracy
 	team = other.team
@@ -1274,7 +1274,7 @@ function scrFire2() {
 	//SWARM SHOTGUN
 	case 243:
 
-	snd_play_2d(sndSwarm);
+	snd_play_fire(sndSwarm);
 
 	repeat(6){
 	with instance_create(x,y,SwarmBolt)
@@ -1309,8 +1309,8 @@ function scrFire2() {
 	case 244:
 
 
-	snd_play_2d(sndUltraLaserUpg)
-	snd_play_2d(sndThunder);
+	snd_play_fire(sndUltraLaserUpg)
+	snd_play_fire(sndThunder);
 
 	with instance_create(x,y,MegaLaser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)*other.accuracy
@@ -1359,9 +1359,9 @@ function scrFire2() {
 	case 245:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(choose(sndLightning2,sndLightning3))
+	snd_play_fire(choose(sndLightning2,sndLightning3))
 	else
-	snd_play_2d(sndLightning1)
+	snd_play_fire(sndLightning1)
 
 
 	with instance_create(x,y,Lightning)
@@ -1383,7 +1383,7 @@ function scrFire2() {
 	//SUPER SPLIT BLADE GUN
 	case 246:
 
-	snd_play_2d(sndDiscgun)
+	snd_play_fire(sndDiscgun)
 
 	with instance_create(x,y,SuperSplitBlade)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,10)
@@ -1400,7 +1400,7 @@ function scrFire2() {
 	//BOMB LAUNCHER
 	case 247:
 
-	snd_play_2d(sndGrenade)
+	snd_play_fire(sndGrenade)
 
 	with instance_create(x,y,SplitGrenade)
 	{
@@ -1419,7 +1419,7 @@ function scrFire2() {
 	//ULTRA POPGUN
 	case 248:
 
-	snd_play_2d(sndMachinegun)
+	snd_play_fire(sndMachinegun)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
 
@@ -1438,7 +1438,7 @@ function scrFire2() {
 	//HEAVY SLUGGER
 	case 249:
 
-	snd_play_2d(sndHeavySlugger)
+	snd_play_fire(sndHeavySlugger)
 
 	with instance_create(x,y,HeavySlug)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,12)//16
@@ -1456,7 +1456,7 @@ function scrFire2() {
 	//AUTO EXPLOSIVE BOW
 	case 250:
 
-	snd_play_2d(sndCrossbow)
+	snd_play_fire(sndCrossbow)
 
 	with instance_create(x,y,ExplosiveBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(16)-8)*other.accuracy,22)
@@ -1474,7 +1474,7 @@ function scrFire2() {
 	//YOYO GUN
 	case 251:
 
-	snd_play_2d(sndDiscgun)
+	snd_play_fire(sndDiscgun)
 
 	with instance_create(x,y,Yoyo)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,6)
@@ -1491,7 +1491,7 @@ function scrFire2() {
 	//SUPER YOYO GUN
 	case 252:
 
-	snd_play_2d(sndDiscgun)
+	snd_play_fire(sndDiscgun)
 
 
 	with instance_create(x,y,Yoyo)
@@ -1529,7 +1529,7 @@ function scrFire2() {
 	//SHANK GUN
 	case 253:
 
-	snd_play_2d(sndCrossbow)
+	snd_play_fire(sndCrossbow)
 
 	with instance_create(x,y,ShankBullet)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)*other.accuracy,16)
@@ -1546,7 +1546,7 @@ function scrFire2() {
 	//SUPER SHANK GUN
 	case 254:
 
-	snd_play_2d(sndHeavyCrossbow)
+	snd_play_fire(sndHeavyCrossbow)
 
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+180,16)
 
@@ -1582,9 +1582,9 @@ function scrFire2() {
 	case 255:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndPlasmaBigUpg)
+	snd_play_fire(sndPlasmaBigUpg)
 	else
-	snd_play_2d(sndPlasmaBig)
+	snd_play_fire(sndPlasmaBig)
 
 	with instance_create(x,y,EnergyShankBullet)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)*other.accuracy,16)
@@ -1602,7 +1602,7 @@ function scrFire2() {
 	//SUPER ENERGY SHANK GUN
 	case 256:
 
-	snd_play_2d(sndLightningPlasma2)
+	snd_play_fire(sndLightningPlasma2)
 
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+180,16)
 
@@ -1637,7 +1637,7 @@ function scrFire2() {
 	//LIGHTNING CROSSBOW
 	case 257:
 
-	snd_play_2d(sndCrossbow)
+	snd_play_fire(sndCrossbow)
 
 	with instance_create(x,y,LightningBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y),24)
@@ -1656,7 +1656,7 @@ function scrFire2() {
 
 	if wep_type[258]==2
 	{
-	snd_play_2d(sndShotgun)
+	snd_play_fire(sndShotgun)
 
 	repeat(8)
 	{
@@ -1710,7 +1710,7 @@ function scrFire2() {
 	}
 	else
 	{
-	snd_play_2d(sndMachinegun)
+	snd_play_fire(sndMachinegun)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
 
@@ -1731,8 +1731,8 @@ function scrFire2() {
 	//HYPER HEAVY SLUGGER
 	case 260:
 
-	snd_play_2d(sndHyperSlugger)
-	snd_play_2d(sndHeavySlugger)
+	snd_play_fire(sndHyperSlugger)
+	snd_play_fire(sndHeavySlugger)
 
 	with instance_create(x,y,HyperHeavySlug)
 	{
@@ -1750,8 +1750,8 @@ function scrFire2() {
 	//HYPER SNIPER
 	case 261:
 
-	snd_play_2d(sndHeavyRevolver)
-	snd_play_2d(sndHyperSlugger);
+	snd_play_fire(sndHeavyRevolver)
+	snd_play_fire(sndHyperSlugger);
 
 	with instance_create(x,y,HyperSniper)
 	{
@@ -1769,7 +1769,7 @@ function scrFire2() {
 	//SPIRAL YOYO GUN
 	case 262:
 
-	snd_play_2d(sndDiscgun)
+	snd_play_fire(sndDiscgun)
 
 	with instance_create(x,y,Yoyo)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,6)
@@ -1811,7 +1811,7 @@ function scrFire2() {
 	//ELECTRICGUITAR
 	case 263:
 
-	snd_play_2d(sndGuitar)
+	snd_play_fire(sndGuitar)
 
 	instance_create(x,y,Dust)
 
@@ -1845,7 +1845,7 @@ function scrFire2() {
 	//BROKEN STER GUN
 	case 264:
 
-	snd_play_2d(sndRocket)
+	snd_play_fire(sndRocket)
 
 	with instance_create(x,y,SterNuke)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)+10*other.accuracy,2)
@@ -1867,7 +1867,7 @@ function scrFire2() {
 	//HEAVY MINIGUN
 	case 265:
 
-	snd_play_2d(sndMinigun)
+	snd_play_fire(sndMinigun)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(80)-40,3+random(2))
 
@@ -1886,7 +1886,7 @@ function scrFire2() {
 	//HEAVY DOUBLE MINIGUN
 	case 266:
 
-	snd_play_2d(sndDoubleMinigun)
+	snd_play_fire(sndDoubleMinigun)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(80)-40,3+random(2))
 	repeat(2){
@@ -1906,7 +1906,7 @@ function scrFire2() {
 	//FAT REVOLVER
 	case 267:
 
-	snd_play_2d(sndHeavyRevolver)
+	snd_play_fire(sndHeavyRevolver)
 
 
 	with instance_create(x,y,Shell)
@@ -1933,7 +1933,7 @@ function scrFire2() {
 	//FAT MACHINEGUN
 	case 268:
 
-	snd_play_2d(sndHeavyRevolver)
+	snd_play_fire(sndHeavyRevolver)
 
 
 	with instance_create(x,y,Shell)
@@ -1963,9 +1963,9 @@ function scrFire2() {
 
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLaserUpg)
+	snd_play_fire(sndLaserUpg)
 	else
-	snd_play_2d(sndLaser)
+	snd_play_fire(sndLaser)
 	with instance_create(x,y,Laser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)*other.accuracy
 	team = other.team
@@ -1986,9 +1986,9 @@ function scrFire2() {
 	case 270:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLaserUpg)
+	snd_play_fire(sndLaserUpg)
 	else
-	snd_play_2d(sndLaser)
+	snd_play_fire(sndLaser)
 	with instance_create(x,y,Laser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy
 	team = other.team
@@ -2007,7 +2007,7 @@ function scrFire2() {
 	//FAT SMG
 	case 271:
 
-	snd_play_2d(sndHeavyRevolver)
+	snd_play_fire(sndHeavyRevolver)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(60)-30,2+random(2))
 
@@ -2032,9 +2032,9 @@ function scrFire2() {
 	//GHOST BLADE
 	case 272:
 
-	snd_play_2d(choose(sndSword1,sndSword2))
+	snd_play_fire(choose(sndSword1,sndSword2))
 
-	snd_play_2d(sndBloodLauncher)
+	snd_play_fire(sndBloodLauncher)
 
 	instance_create(x,y,Smoke)
 	instance_create(x,y,Dust)
@@ -2077,9 +2077,9 @@ function scrFire2() {
 	//GYRO BURSTER
 	case 273:
 
-	snd_play_2d(sndGrenade)
+	snd_play_fire(sndGrenade)
 
-	snd_play_2d(sndGyroBurst)
+	snd_play_fire(sndGyroBurst)
 
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
@@ -2098,7 +2098,7 @@ function scrFire2() {
 	//INFUSER
 	case 274:
 
-	snd_play_2d(sndCrossbow)
+	snd_play_fire(sndCrossbow)
 
 	with instance_create(x,y,InfuseBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y),24)
@@ -2115,8 +2115,8 @@ function scrFire2() {
 	//GHOST SHOVEL
 	case 275:
 
-	snd_play_2d(sndShovel)
-	snd_play_2d(sndBloodLauncher)
+	snd_play_fire(sndShovel)
+	snd_play_fire(sndBloodLauncher)
 
 	instance_create(x,y,Smoke)
 	instance_create(x,y,Dust)
@@ -2228,7 +2228,7 @@ function scrFire2() {
 	//GOLDEN SLEDGEHAMMER
 	case 277:
 
-	snd_play_2d(sndHammer)
+	snd_play_fire(sndHammer)
 
 	instance_create(x,y,Dust)
 
@@ -2256,7 +2256,7 @@ function scrFire2() {
 	//GOLDEN SHOVEL
 	case 278:
 
-	snd_play_2d(sndShovel)
+	snd_play_fire(sndShovel)
 
 	instance_create(x,y,Dust)
 
@@ -2303,7 +2303,7 @@ function scrFire2() {
 	//GOLDEN EXPLOSIVE BOW
 	case 279:
 
-	snd_play_2d(sndCrossbow)
+	snd_play_fire(sndCrossbow)
 
 	with instance_create(x,y,GoldenExplosiveBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y),22)
@@ -2335,7 +2335,7 @@ function scrFire2() {
 	//GOLDEN SHORTGUN
 	case 281:
 
-	snd_play_2d(sndShotgun)
+	snd_play_fire(sndShotgun)
 
 	repeat(22)
 	{
@@ -2355,7 +2355,7 @@ function scrFire2() {
 	//GOLDEN BULLET SHOTGUN
 	case 282:
 
-	snd_play_2d(sndShotgun)
+	snd_play_fire(sndShotgun)
 
 	repeat(8)
 	{
@@ -2389,7 +2389,7 @@ function scrFire2() {
 	//GOLDEN POPGUN
 	case 284:
 
-	snd_play_2d(sndPopgun)
+	snd_play_fire(sndPopgun)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
 
@@ -2422,7 +2422,7 @@ function scrFire2() {
 	//GOLDEN GLOVE
 	case 286:
 
-	snd_play_2d(sndHammer)
+	snd_play_fire(sndHammer)
 
 	instance_create(x,y,Dust)
 
@@ -2460,7 +2460,7 @@ function scrFire2() {
 	//GOLDEN FLARE GUN
 	case 287:
 
-	snd_play_2d(sndFlare)
+	snd_play_fire(sndFlare)
 
 	with instance_create(x,y,Flare)
 	{
@@ -2479,7 +2479,7 @@ function scrFire2() {
 	//GOLDEN SMG
 	case 288:
 
-	snd_play_2d(sndPistol)
+	snd_play_fire(sndPistol)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(60)-30,2+random(2))
 
@@ -2498,7 +2498,7 @@ function scrFire2() {
 	//ULTRA SLUGGER
 	case 289:
 
-	snd_play_2d(sndSuperSlugger)
+	snd_play_fire(sndSuperSlugger)
 
 	with instance_create(x,y,UltraSlug)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,16)
@@ -2515,7 +2515,7 @@ function scrFire2() {
 	//GOLDEN BOUNCER SMG
 	case 290:
 
-	snd_play_2d(sndBouncerFire)
+	snd_play_fire(sndBouncerFire)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(60)-30,2+random(2))
 
@@ -2535,9 +2535,9 @@ function scrFire2() {
 	case 291:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLaserSwordUpg)
+	snd_play_fire(sndLaserSwordUpg)
 	else
-	snd_play_2d(sndLaserSword)
+	snd_play_fire(sndLaserSword)
 
 	instance_create(x,y,Dust)
 
@@ -2575,7 +2575,7 @@ function scrFire2() {
 	//SEEKER CANON
 	case 292:
 
-	snd_play_2d(sndSeekerPistol)
+	snd_play_fire(sndSeekerPistol)
 
 
 	with instance_create(x,y,SeekerCannonBurst)
@@ -2598,7 +2598,7 @@ function scrFire2() {
 	//DIRECTOR SUPER SLUGGER
 	case 293:
 
-	snd_play_2d(sndSuperSlugger)
+	snd_play_fire(sndSuperSlugger)
 
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+180,3)
 
@@ -2691,7 +2691,7 @@ function scrFire2() {
 	//ULTRA FLAK CANNON
 	case 297:
 
-	snd_play_2d(sndUltraGrenade)
+	snd_play_fire(sndUltraGrenade)
 
 	with instance_create(x,y,UltraFlakBullet)
 	{
@@ -2748,7 +2748,7 @@ function scrFire2() {
 	//ULTRA GLOVE
 	case 301:
 
-	snd_play_2d(sndUltraShovel)
+	snd_play_fire(sndUltraShovel)
 
 	instance_create(x,y,Dust)
 	instance_create(x,y,Smoke)
@@ -2787,8 +2787,8 @@ function scrFire2() {
 	//ULTRA SPLINTER GUN
 	case 302:
 
-	snd_play_2d(sndUltraCrossbow)
-	snd_play_2d(sndSplinterGun)
+	snd_play_fire(sndUltraCrossbow)
+	snd_play_fire(sndSplinterGun)
 
 	with instance_create(x,y,UltraSplinter)//6 splinters
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*other.accuracy,20+random(4))
@@ -2821,8 +2821,8 @@ function scrFire2() {
 	//ULTRA SUPER CROSSBOW
 	case 303:
 
-	snd_play_2d(sndSuperCrossbow)
-	snd_play_2d(sndUltraCrossbow)
+	snd_play_fire(sndSuperCrossbow)
+	snd_play_fire(sndUltraCrossbow)
 
 	with instance_create(x,y,UltraBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y),24)
@@ -2857,7 +2857,7 @@ function scrFire2() {
 	//ULTRA INFUSER
 	case 304:
 
-	snd_play_2d(sndUltraCrossbow)
+	snd_play_fire(sndUltraCrossbow)
 
 	with instance_create(x,y,UltraInfuseBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y),24)
@@ -2890,7 +2890,7 @@ function scrFire2() {
 	//BULLET DISPERSE GUN
 	case 306:
 
-	snd_play_2d(sndHeavyRevolver)
+	snd_play_fire(sndHeavyRevolver)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
 
@@ -2913,7 +2913,7 @@ function scrFire2() {
 	//FROST FLARE GUN
 	case 307:
 
-	snd_play_2d(sndFlare)
+	snd_play_fire(sndFlare)
 
 	with instance_create(x,y,FrostFlare)
 	{
@@ -2932,7 +2932,7 @@ function scrFire2() {
 	//BULLET DISPERSE MACHINEGUN
 	case 308:
 
-	snd_play_2d(sndHeavyMachinegun)
+	snd_play_fire(sndHeavyMachinegun)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
 
@@ -2954,7 +2954,7 @@ function scrFire2() {
 	//POP DISPERSE GUN
 	case 309:
 
-	snd_play_2d(sndShotgun)
+	snd_play_fire(sndShotgun)
 
 	with instance_create(x,y,DispersePellet)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,10)
@@ -2974,7 +2974,7 @@ function scrFire2() {
 	//LASER DISPERSE GUN
 	case 310:
 
-	snd_play_2d(sndPlasma)
+	snd_play_fire(sndPlasma)
 
 
 	with instance_create(x,y,DisperseLaser)
@@ -3001,8 +3001,8 @@ function scrFire2() {
 	ammo[3]-=1;
 	ammo[4]-=1;
 
-	snd_play_2d(sndPartyHorn)
-	snd_play_2d(sndPotato);
+	snd_play_fire(sndPartyHorn)
+	snd_play_fire(sndPotato);
 	repeat(69){
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,10+random(10))
@@ -3076,8 +3076,8 @@ function scrFire2() {
 	//HYPER INFUSER
 	case 313:
 
-	snd_play_2d(sndHeavyCrossbow)
-	snd_play_2d(sndHyperSlugger)
+	snd_play_fire(sndHeavyCrossbow)
+	snd_play_fire(sndHyperSlugger)
 
 	with instance_create(x,y,HyperInfuseBolt)
 	{
@@ -3113,8 +3113,8 @@ function scrFire2() {
 
 	//MONEY GUN
 	case 315:
-	snd_play_2d(sndPopgun)
-	snd_play_2d(sndPartyHorn)
+	snd_play_fire(sndPopgun)
+	snd_play_fire(sndPartyHorn)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(60)-30,2+random(2))
 
@@ -3133,7 +3133,7 @@ function scrFire2() {
 	//HUNTER HEAVY SNIPER
 	case 316:
 
-	snd_play_2d(sndSniperFire)
+	snd_play_fire(sndSniperFire)
 
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
@@ -3169,7 +3169,7 @@ function scrFire2() {
 	//AUTO TOXICBOW
 	case 317:
 
-	snd_play_2d(sndCrossbow)
+	snd_play_fire(sndCrossbow)
 
 	with instance_create(x,y,ToxicBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,24)
@@ -3186,7 +3186,7 @@ function scrFire2() {
 	//SUPER TOXICBOW
 	case 318:
 
-	snd_play_2d(sndSuperCrossbow)
+	snd_play_fire(sndSuperCrossbow)
 
 	with instance_create(x,y,ToxicBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y),24)
@@ -3223,9 +3223,9 @@ function scrFire2() {
 
 
 
-	snd_play_2d(sndGrenade)
+	snd_play_fire(sndGrenade)
 
-	snd_play_2d(sndToxicBarrelGas);
+	snd_play_fire(sndToxicBarrelGas);
 
 	with instance_create(x,y,ToxicIonBurst)
 	{
@@ -3245,7 +3245,7 @@ function scrFire2() {
 	//ROCKET DISPERSE GUN
 	case 320:
 
-	snd_play_2d(sndRocket)
+	snd_play_fire(sndRocket)
 
 	with instance_create(x,y,DisperseRocket)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,10)
@@ -3265,7 +3265,7 @@ function scrFire2() {
 	//LIGHTNING SCREWDRIVER
 	case 321:
 
-	snd_play_2d(sndScrewdriver)
+	snd_play_fire(sndScrewdriver)
 
 	instance_create(x,y,Dust)
 
@@ -3308,10 +3308,10 @@ function scrFire2() {
 	//THUNDERCRACK
 	case 323:
 
-	snd_play_2d(sndRoll);
-	snd_play_2d(sndBloodLauncher);
+	snd_play_fire(sndRoll);
+	snd_play_fire(sndBloodLauncher);
 
-	snd_play_2d(choose(sndWater1,sndWater2) );
+	snd_play_fire(choose(sndWater1,sndWater2) );
 
 
 	repeat(2)
@@ -3340,9 +3340,9 @@ function scrFire2() {
 	}
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLightning3)
+	snd_play_fire(sndLightning3)
 	else
-	snd_play_2d(sndLightning1)
+	snd_play_fire(sndLightning1)
 
 
 	repeat(2)
@@ -3383,8 +3383,8 @@ function scrFire2() {
 	//ICE CANNON
 	case 324:
 
-	snd_play_2d(sndGrenade)
-	snd_play_2d(sndFrostShot1)
+	snd_play_fire(sndGrenade)
+	snd_play_fire(sndFrostShot1)
 
 	with instance_create(x,y,IceCannonBall)
 	{
@@ -3403,7 +3403,7 @@ function scrFire2() {
 	//FROST FLAK CANNON
 	case 325:
 
-	snd_play_2d(sndGrenade)
+	snd_play_fire(sndGrenade)
 
 	with instance_create(x,y,FrostFlakBullet)
 	{
@@ -3421,8 +3421,8 @@ function scrFire2() {
 	//TOXIC CANNON
 	case 326:
 
-	snd_play_2d(sndGrenade)
-	snd_play_2d(sndToxicBoltGas)
+	snd_play_fire(sndGrenade)
+	snd_play_fire(sndToxicBoltGas)
 
 	with instance_create(x,y,ToxicCannonBall)
 	{
@@ -3441,7 +3441,7 @@ function scrFire2() {
 	//BLOOD CANNON
 	case 327:
 
-	snd_play_2d(sndBloodCannon);
+	snd_play_fire(sndBloodCannon);
 
 	with instance_create(x,y,BloodCannonBall)
 	{
@@ -3461,9 +3461,9 @@ function scrFire2() {
 	case 328:
 
 	if my_health>0
-	snd_play_2d(choose(sndSword1,sndSword2))
+	snd_play_fire(choose(sndSword1,sndSword2))
 	else
-	snd_play_2d(sndBlackSwordMega)
+	snd_play_fire(sndBlackSwordMega)
 
 	instance_create(x,y,Dust)
 
@@ -3495,11 +3495,11 @@ function scrFire2() {
 	case 329:
 
 	if my_health>0
-	snd_play_2d(choose(sndSword1,sndSword2))
+	snd_play_fire(choose(sndSword1,sndSword2))
 	else
 	{
-	snd_play_2d(sndBloodCannonLoop);
-	snd_play_2d(sndBlackSwordMega);
+	snd_play_fire(sndBloodCannonLoop);
+	snd_play_fire(sndBlackSwordMega);
 	}
 
 	instance_create(x,y,Dust)
@@ -3532,7 +3532,7 @@ function scrFire2() {
 	//DOOM PISTOL
 	case 330:
 
-	snd_play_2d(sndGrenadeRifle)
+	snd_play_fire(sndGrenadeRifle)
 
 	with instance_create(x,y,DoomGrenade)
 	{
@@ -3550,7 +3550,7 @@ function scrFire2() {
 	//DOOM RIFLE
 	case 331:
 
-	snd_play_2d(sndGrenadeShotgun);
+	snd_play_fire(sndGrenadeShotgun);
 
 	with instance_create(x,y,DoomBurst)
 	{
@@ -3567,9 +3567,9 @@ function scrFire2() {
 	case 332:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLaserSwordUpg)
+	snd_play_fire(sndLaserSwordUpg)
 	else
-	snd_play_2d(sndLaserSword)
+	snd_play_fire(sndLaserSword)
 	instance_create(x,y,Dust)
 
 	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),EnergySlash)
@@ -3611,7 +3611,7 @@ function scrFire2() {
 	//HYPERGATLING BAZOOKA
 	case 333:
 
-	snd_play_2d(sndRocket)
+	snd_play_fire(sndRocket)
 
 	with instance_create(x,y,Rocket)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(26)-13)*other.accuracy,2)
@@ -3628,8 +3628,8 @@ function scrFire2() {
 	//ION BOMB
 	case 334:
 
-	snd_play_2d(sndRocket)
-	snd_play_2d(sndHyperSlugger)
+	snd_play_fire(sndRocket)
+	snd_play_fire(sndHyperSlugger)
 
 	with instance_create(mouse_x,mouse_y,Explosion)
 
@@ -3644,7 +3644,7 @@ function scrFire2() {
 	//FROST SMG
 	case 335:
 
-	snd_play_2d(sndFrostShot1);
+	snd_play_fire(sndFrostShot1);
 
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(60)-30,2+random(2))
@@ -3679,9 +3679,9 @@ function scrFire2() {
 	case 337:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndLightning3)
+	snd_play_fire(sndLightning3)
 	else
-	snd_play_2d(sndLightning1)
+	snd_play_fire(sndLightning1)
 
 
 	with instance_create(x,y,Lightning)
@@ -3703,10 +3703,10 @@ function scrFire2() {
 	//KRAKEN PISTOL
 	case 338:
 
-	snd_play_2d(sndRoll);
-	snd_play_2d(sndBloodLauncher);
+	snd_play_fire(sndRoll);
+	snd_play_fire(sndBloodLauncher);
 
-	snd_play_2d(choose(sndWater1,sndWater2) );
+	snd_play_fire(choose(sndWater1,sndWater2) );
 
 
 	with instance_create(x,y,Tentacle)
@@ -3740,7 +3740,7 @@ function scrFire2() {
 	//FROST HAMMER
 	case 339:
 
-	snd_play_2d(sndHammer)
+	snd_play_fire(sndHammer)
 
 	instance_create(x,y,Dust)
 
@@ -3767,9 +3767,9 @@ function scrFire2() {
 	//TRIDENT
 	case 340:
 
-	snd_play_2d(sndBloodHammer)
-	snd_play_2d(sndBloodLauncher)
-	snd_play_2d(sndRoll)
+	snd_play_fire(sndBloodHammer)
+	snd_play_fire(sndBloodLauncher)
+	snd_play_fire(sndRoll)
 
 	instance_create(x,y,Dust)
 
@@ -3798,9 +3798,9 @@ function scrFire2() {
 
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+180,4)
 
-	snd_play_2d(sndRoll);
-	snd_play_2d(sndBloodCannon);
-	snd_play_2d(choose(sndWater1,sndWater2) );
+	snd_play_fire(sndRoll);
+	snd_play_fire(sndBloodCannon);
+	snd_play_fire(choose(sndWater1,sndWater2) );
 
 	repeat(8){
 	with instance_create(x,y,Tentacle)
@@ -3838,9 +3838,9 @@ function scrFire2() {
 	//KRAKEN ION CANNON
 	case 342:
 
-	snd_play_2d(sndRoll);
-	snd_play_2d(sndBloodLauncher);
-	snd_play_2d(sndHyperSlugger);
+	snd_play_fire(sndRoll);
+	snd_play_fire(sndBloodLauncher);
+	snd_play_fire(sndHyperSlugger);
 
 	with instance_create(x,y,KrakenIonBurst)
 	{
@@ -3865,11 +3865,11 @@ function scrFire2() {
 
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+180,3)
 
-	snd_play_2d(sndLightningPlasma2)
-	snd_play_2d(sndRoll);
-	snd_play_2d(sndBloodCannon);
+	snd_play_fire(sndLightningPlasma2)
+	snd_play_fire(sndRoll);
+	snd_play_fire(sndBloodCannon);
 
-	snd_play_2d(choose(sndWater1,sndWater2) );
+	snd_play_fire(choose(sndWater1,sndWater2) );
 
 	repeat(2){
 	with instance_create(x,y,Lightning)
@@ -3925,9 +3925,9 @@ function scrFire2() {
 	case 344:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaUpg)
 	else
-	snd_play_2d(sndPlasma)
+	snd_play_fire(sndPlasma)
 
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),ElectroBall)
@@ -3955,9 +3955,9 @@ function scrFire2() {
 	case 345:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaUpg)
 	else
-	snd_play_2d(sndPlasma)
+	snd_play_fire(sndPlasma)
 
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),ElectroBall)
@@ -3984,7 +3984,7 @@ function scrFire2() {
 	//AUTO BULLET SHOTGUN
 	case 346:
 
-	snd_play_2d(sndShotgun)
+	snd_play_fire(sndShotgun)
 
 	repeat(6)
 	{
@@ -4006,11 +4006,11 @@ function scrFire2() {
 	case 347:
 
 	if Player.skill_got[17] = 1
-	snd_play_2d(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaUpg)
 	else
-	snd_play_2d(sndPlasma)
+	snd_play_fire(sndPlasma)
 
-	snd_play_2d(choose(sndSpark1,sndSpark2));
+	snd_play_fire(choose(sndSpark1,sndSpark2));
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),ElectroBall)
 	{
@@ -4060,7 +4060,7 @@ function scrFire2() {
 	//FROG BLASTER
 	case 348:
 
-	snd_play_2d(sndFrogPistol)
+	snd_play_fire(sndFrogPistol)
 
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
@@ -4083,7 +4083,7 @@ function scrFire2() {
 	//GOLDEN FROG BLASTER
 	case 349:
 
-	snd_play_2d(sndFrogPistol)
+	snd_play_fire(sndFrogPistol)
 
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
@@ -4107,7 +4107,7 @@ function scrFire2() {
 	//HYPER GLOVE
 	case 350:
 
-	snd_play_2d(sndHammer)
+	snd_play_fire(sndHammer)
 
 	instance_create(x,y,Dust)
 
@@ -4153,7 +4153,7 @@ function scrFire2() {
 	//BULLET DISPERSE DISPERSE GUN
 	case 351:
 
-	snd_play_2d(sndHeavyRevolver)
+	snd_play_fire(sndHeavyRevolver)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
 
@@ -4189,7 +4189,7 @@ function scrFire2() {
 	}
 
 	//frost
-	snd_play_2d(sndFrostShot1)
+	snd_play_fire(sndFrostShot1)
 
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
@@ -4200,7 +4200,7 @@ function scrFire2() {
 	team = other.team}
 
 	//Flame
-	snd_play_2d(sndFireShotgun)
+	snd_play_fire(sndFireShotgun)
 
 	repeat(4)
 	{
@@ -4212,10 +4212,10 @@ function scrFire2() {
 
 
 	//kraken
-	snd_play_2d(sndRoll);
-	snd_play_2d(sndBloodLauncher);
+	snd_play_fire(sndRoll);
+	snd_play_fire(sndBloodLauncher);
 
-	snd_play_2d(choose(sndWater1,sndWater2) );
+	snd_play_fire(choose(sndWater1,sndWater2) );
 
 
 	with instance_create(x,y,Tentacle)
@@ -4240,9 +4240,9 @@ function scrFire2() {
 	}
 	//lightning
 	if Player.skill_got[17] = 1
-	snd_play_2d(choose(sndLightning2,sndLightning3))
+	snd_play_fire(choose(sndLightning2,sndLightning3))
 	else
-	snd_play_2d(sndLightning1)
+	snd_play_fire(sndLightning1)
 
 
 	with instance_create(x,y,Lightning)
@@ -4269,7 +4269,7 @@ function scrFire2() {
 	//TERMITE GUN
 	case 353:
 
-	snd_play_2d(sndTermite)
+	snd_play_fire(sndTermite)
 	//with instance_create(x,y,Shell)
 	//motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(60)-30,2+random(2))
 
@@ -4287,8 +4287,8 @@ function scrFire2() {
 	//SUPER BOUNCER FLAK CANNON
 	case 354:
 
-	snd_play_2d(sndFlakCannon);
-	snd_play_2d(sndWaveGun);
+	snd_play_fire(sndFlakCannon);
+	snd_play_fire(sndWaveGun);
 
 	with instance_create(x,y,SuperBouncerFlakBullet)
 	{
@@ -4311,7 +4311,7 @@ function scrFire2() {
 	var ldy = lengthdir_y(offset,aimdir+90);
 	var cldx = x+lengthdir_x(offset+8,aimdir+90);
 	var cldy = y+lengthdir_y(offset+8,aimdir+90);
-	snd_play_2d(sndEraser)
+	snd_play_fire(sndEraser)
 	if (collision_line(x,y,cldx,cldy,Wall,false,false) > 0)
 	{
 		ldx = 0;
@@ -4357,7 +4357,7 @@ function scrFire2() {
 	//HEAVY GRENADE LAUNCHER
 	case 356:
 
-	snd_play_2d(sndHeavyNader)
+	snd_play_fire(sndHeavyNader)
 
 	with instance_create(x,y,HeavyGrenade)
 	{
@@ -4376,7 +4376,7 @@ function scrFire2() {
 	//AUTO HEAVY GRENADE LAUNCHER
 	case 357:
 
-	snd_play_2d(sndHeavyNader)
+	snd_play_fire(sndHeavyNader)
 
 	with instance_create(x,y,HeavyGrenade)
 	{
@@ -4396,11 +4396,11 @@ function scrFire2() {
 	case 358:
 	
 	if place_meeting(mouse_x,mouse_y,Floor) and not place_meeting(mouse_x, mouse_y, Wall) {
-		snd_play_2d(sndHyperLightning);
+		snd_play_fire(sndHyperLightning);
 		if alarm[3]<1
 		alarm[3]=4;//imunity
 		instance_create(x,y,Teleport);
-		snd_play_2d(sndHyperLightning);
+		snd_play_fire(sndHyperLightning);
 		repeat(5){
 			with instance_create(x,y,Smoke)
 			motion_add(random(360),1+random(3))
@@ -4415,7 +4415,7 @@ function scrFire2() {
 		var telepower = 1;
 		if (race == 15) { //atom, add some serious power to that teleport!
 			telepower = 5;
-			snd_play_2d(sndLightningCannonEnd);
+			snd_play_fire(sndLightningCannonEnd);
 			repeat(5) {
 				with instance_create(x,y,Lightning) {
 					image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
@@ -4428,7 +4428,7 @@ function scrFire2() {
 				}
 			}
 			if (skill_got[5]) { //we have throne butt too? time to kick it up a notch
-				snd_play_2d(sndPlasmaBigExplode)
+				snd_play_fire(sndPlasmaBigExplode)
 				ang = random(360)
 				repeat(6)
 				{
@@ -4444,7 +4444,7 @@ function scrFire2() {
 			}
 		}
 		
-		snd_play_2d(sndLightning3);
+		snd_play_fire(sndLightning3);
 		repeat(telepower) {
 			instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
 			
@@ -4464,7 +4464,7 @@ function scrFire2() {
 		}
 	} else {
 		ammo[wep_type[358]] += wep_cost[358];
-		snd_play_2d(sndSpark1);
+		snd_play_fire(sndSpark1);
 	}
 
 	break;
@@ -4472,7 +4472,7 @@ function scrFire2() {
 	//LASER BOMB LAUNCHER
 	case 359:
 
-	snd_play_2d(sndHeavyNader)
+	snd_play_fire(sndHeavyNader)
 
 	with instance_create(x,y,LaserBomb)
 	{
@@ -4491,7 +4491,7 @@ function scrFire2() {
 	//FLAIL
 	case 360:
 
-	snd_play_2d(sndFlail)
+	snd_play_fire(sndFlail)
 
 	instance_create(x,y,Dust)
 
@@ -4518,7 +4518,7 @@ function scrFire2() {
 	//REWIRER
 	case 361:
 
-	snd_play_2d(sndTripwireLauncher)
+	snd_play_fire(sndTripwireLauncher)
 
 	with instance_create(x,y,WireBolt)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y),24)
@@ -4535,7 +4535,7 @@ function scrFire2() {
 	//SPLINTER GRENADE LAUNCHER
 	case 362:
 
-	snd_play_2d(sndGrenade)
+	snd_play_fire(sndGrenade)
 
 	with instance_create(x,y,SplinterGrenade)
 	{
@@ -4554,7 +4554,7 @@ function scrFire2() {
 	//SPLINTER MINIGUN
 	case 363:
 	
-	snd_play_2d(sndSplinterMinigun)
+	snd_play_fire(sndSplinterMinigun)
 
 	with instance_create(x,y,Splinter)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(26)-13)*other.accuracy,20)
@@ -4575,10 +4575,10 @@ function scrFire2() {
 	//KRAKEN DISPERSE GUN
 	case 364:
 
-	snd_play_2d(sndRoll);
-	snd_play_2d(sndBloodCannon);
+	snd_play_fire(sndRoll);
+	snd_play_fire(sndBloodCannon);
 
-	snd_play_2d(choose(sndWater1,sndWater2) );
+	snd_play_fire(choose(sndWater1,sndWater2) );
 	snd_loop(sndBloodCannonLoop);
 	
 	with instance_create(x,y,DisperseKraken)
@@ -4601,7 +4601,7 @@ function scrFire2() {
 	//SPLINTER SHOTGUN
 	case 365:
 
-	snd_play_2d(sndSplinterShotgun)
+	snd_play_fire(sndSplinterShotgun)
 
 	repeat(3)
 	{
@@ -4628,7 +4628,7 @@ function scrFire2() {
 	//BOUNCER REVOLVER
 	case 366:
 
-	snd_play_2d(sndBouncerPistol)
+	snd_play_fire(sndBouncerPistol)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(60)-30,2+random(2))
 
@@ -4647,7 +4647,7 @@ function scrFire2() {
 	//DIRECTOR GRENADE LAUNCHER
 	case 367:
 
-	snd_play_2d(sndGrenade)
+	snd_play_fire(sndGrenade)
 
 	with instance_create(x,y,DirectorGrenade)
 	{
@@ -4666,11 +4666,11 @@ function scrFire2() {
 	//KRAKEN GRENADE LAUNCHER
 	case 368:
 
-	snd_play_2d(sndGrenade);
-	snd_play_2d(sndRoll);
-	//snd_play_2d(sndBloodLauncher);
+	snd_play_fire(sndGrenade);
+	snd_play_fire(sndRoll);
+	//snd_play_fire(sndBloodLauncher);
 
-	snd_play_2d(choose(sndWater1,sndWater2) );
+	snd_play_fire(choose(sndWater1,sndWater2) );
 
 	with instance_create(x,y,OceanBomb)
 	{
@@ -4689,7 +4689,7 @@ function scrFire2() {
 	//ULTRA SCREWDRIVER
 	case 369:
 
-	snd_play_2d(sndUltraScrewdriver)
+	snd_play_fire(sndUltraScrewdriver)
 
 	instance_create(x,y,Smoke)
 	instance_create(x,y,Dust)
@@ -4714,7 +4714,7 @@ function scrFire2() {
 	
 	//OBSIDIAN THROWING KNIFE
 	case 370:
-	snd_play_2d(sndEnemySlash);
+	snd_play_fire(sndEnemySlash);
 	with instance_create(x,y,ThrowWepNoReturn)
 	{
 		team=other.team;
@@ -4745,8 +4745,8 @@ function scrFire2() {
 	//ULTRA MINIGUN
 	case 371:
 
-	snd_play_2d(sndMinigun)
-	snd_play_2d(sndUltraPistol)
+	snd_play_fire(sndMinigun)
+	snd_play_fire(sndUltraPistol)
 
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
@@ -4765,8 +4765,8 @@ function scrFire2() {
 	
 	case 372:
 	
-		snd_play_2d(sndPopgun);
-		snd_play_2d(sndPlasmaHit);
+		snd_play_fire(sndPopgun);
+		snd_play_fire(sndPlasmaHit);
 		
 		with instance_create(x,y,VanCannon)
 		{
@@ -4782,8 +4782,8 @@ function scrFire2() {
 	//VAN PUSHER
 	case 373:
 
-	snd_play_2d(sndGhettoBlast)
-	snd_play_2d(sndPlasmaHit);
+	snd_play_fire(sndGhettoBlast)
+	snd_play_fire(sndPlasmaHit);
 
 	instance_create(x,y,Dust)
 
@@ -4811,10 +4811,10 @@ function scrFire2() {
 	case 374:
 
 	Sleep(30);
-	snd_play_2d(sndSuperPlasmaCannon)
-	snd_play_2d(sndPlasmaHit)
-	snd_play_2d(sndSuperPlasmaCannon)
-	snd_play_2d(sndExplosionXXL)
+	snd_play_fire(sndSuperPlasmaCannon)
+	snd_play_fire(sndPlasmaHit)
+	snd_play_fire(sndSuperPlasmaCannon)
+	snd_play_fire(sndExplosionXXL)
 	Sleep(10);
 
 	with instance_create(x,y,PlasmaHuge)
@@ -4849,7 +4849,7 @@ function scrFire2() {
 	//INVERSION MAGNET
 	case 375:
 
-	snd_play_2d(sndScrewdriver)
+	snd_play_fire(sndScrewdriver)
 
 	instance_create(x,y,Dust)
 

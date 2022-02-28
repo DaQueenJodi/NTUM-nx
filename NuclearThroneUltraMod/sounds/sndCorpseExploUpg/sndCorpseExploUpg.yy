@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndCorpseExploUpg",
-  "duration": 0.0,
+  "duration": 1.445351,
   "parent": {
     "name": "Player",
     "path": "folders/Sounds/Player.yy",
