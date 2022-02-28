@@ -14,7 +14,7 @@ function scrDrawUpdate() {
 
 	if updatepage=0
 	{
-	txt0 = @"#UPDATE 25 [0.10] (BETA)##
+	txt0 = @"#UPDATE 25 [0.20] (BETA)##
 	* NEW INTRO SEQUENCE#
 	* PALACE ADDED!#
 	* NEW HUMPHRY ACTIVE#
@@ -43,6 +43,7 @@ function scrDrawUpdate() {
 	* ADDED NEW CROWNS (CHOICE & DARKNESS)#
 	* BIG HEALTH CHESTS CAN OVERHEAL#
 	* JUNGLE & CURSED CAVES#
+	* 3D SOUNDS#
 	* FIXED A LOT OF BUGS##
 	#MORE INFO ON DISCORD/TWITTER @ERDEPPOL#
 	* PRESS [SPACE] FOR PAGE 1";
