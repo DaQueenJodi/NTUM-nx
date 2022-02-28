@@ -2037,6 +2037,7 @@
     {"id":{"name":"sprGoldenRocket","path":"sprites/sprGoldenRocket/sprGoldenRocket.yy",},"order":130,},
     {"id":{"name":"sprNuke","path":"sprites/sprNuke/sprNuke.yy",},"order":131,},
     {"id":{"name":"sprTeaPotNuke","path":"sprites/sprTeaPotNuke/sprTeaPotNuke.yy",},"order":132,},
+    {"id":{"name":"sprLogoRelease","path":"sprites/sprLogoRelease/sprLogoRelease.yy",},"order":8,},
     {"id":{"name":"sprTeaPotNukeHurt","path":"sprites/sprTeaPotNukeHurt/sprTeaPotNukeHurt.yy",},"order":133,},
     {"id":{"name":"sprGoldGrenade","path":"sprites/sprGoldGrenade/sprGoldGrenade.yy",},"order":134,},
     {"id":{"name":"sprBlackHoleGrenade","path":"sprites/sprBlackHoleGrenade/sprBlackHoleGrenade.yy",},"order":135,},

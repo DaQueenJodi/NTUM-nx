@@ -151,7 +151,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprLogo","path":"sprites/sprLogo/sprLogo.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprLogo",
     "tags": [],
     "resourceType": "GMSequence",
   },
