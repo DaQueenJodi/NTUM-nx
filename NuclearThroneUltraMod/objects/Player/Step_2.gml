@@ -501,7 +501,7 @@ if (my_health<prevhealth)
 	//Took a hit?
 	if (skill_got[32] && isAlkaline && exception=false)//Alkaline Savila
 	{
-		var damageTaken = prevhealth - my_health - damageReduced;
+		var damageTaken = (prevhealth - my_health) + damageReduced;
 		//Needs to be healable or lethal
 		if (prevhealth < maxhealth || my_health <= 0)
 		{
