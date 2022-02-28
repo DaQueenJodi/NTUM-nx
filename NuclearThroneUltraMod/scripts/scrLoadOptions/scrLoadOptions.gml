@@ -26,6 +26,7 @@ function scrLoadOptions() {
 	opt_loading = ini_read_real("OPTIONS","loading",3.5);
 	opt_bossintro = ini_read_real("OPTIONS","bossintro",0);
 	opt_timer = ini_read_real("OPTIONS","timer",0);
+	opt_gamemode = ini_read_real("OPTIONS","gamemode",0);
 
 	//custom controls (ASCII)
 	opt_up = ini_read_real("OPTIONS","up",87);//W
