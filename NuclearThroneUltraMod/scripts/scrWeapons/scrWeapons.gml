@@ -3916,7 +3916,7 @@ function scrWeapons() {
 	wep_name[355] = "JAWBREAKER"
 	wep_type[355] = 2
 	wep_auto[355] = 0
-	wep_load[355] = 16
+	wep_load[355] = 17
 	wep_cost[355] = 1
 	wep_sprt[355] = sprJawbreaker
 	wep_area[355] = 1

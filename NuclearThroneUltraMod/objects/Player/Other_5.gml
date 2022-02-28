@@ -132,9 +132,19 @@ nochest += 1
 
 if crown == 15
 {
-	if bcurse == 0
+	if ultra_got[31]
 	{
-		bwep = 0;	
+		if ccurse == 0
+		{
+			cwep = 0;	
+		}
+	}
+	else
+	{
+		if bcurse == 0
+		{
+			bwep = 0;	
+		}
 	}
 }
 if race=14//PANDA

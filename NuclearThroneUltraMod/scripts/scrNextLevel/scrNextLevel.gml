@@ -239,11 +239,15 @@ function scrNextLevel() {
 	    {
 	        if inverted=false
 	        {
-	        area += 1
-	        subarea=1
-				if area == 4 && (curse || bcurse || ccurse)
+				if area == 3 && (curse || bcurse || ccurse)
 				{
 					area = 115;	
+					subarea = 1;
+				}
+				else
+				{
+			        area += 1
+			        subarea = 1
 				}
 	        }
 	    }
