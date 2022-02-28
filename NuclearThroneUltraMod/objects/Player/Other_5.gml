@@ -197,7 +197,7 @@ if race=14//PANDA
 }
 
 if crown==10
-hard++;
+hard+=0.5;
 
 
 if UberCont.opt_gamemode=10//random levels

@@ -3,7 +3,6 @@ if instance_exists(Player) {
     if Player.loops > 0 { //LOOP
 
         alarm[1] = 12 + random(15);
-
         scrTarget()
         if target > 0 {
             if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {

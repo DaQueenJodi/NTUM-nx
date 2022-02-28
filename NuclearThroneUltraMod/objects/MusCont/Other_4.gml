@@ -223,11 +223,18 @@ if oldarea != area or!audio_is_playing(song) or!audio_exists(song) || song == mu
         amb = amb0b
     }
 
-    if area = 114 || area = 10 //Jungle bugnle flungle drums yaya temp savanna
+    if area = 114//Jungle bugnle flungle drums yaya
     {
         song = mus105
 
         amb = amb105
+    }
+	
+	if area = 10 //savanna
+    {
+        song = mus105
+
+        amb = amb1
     }
 
     if area = 115 //cheese caves

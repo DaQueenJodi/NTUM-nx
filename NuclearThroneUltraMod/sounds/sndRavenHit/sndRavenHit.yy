@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndRavenHit",
-  "duration": 0.0,
+  "duration": 0.329342,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/Enemies.yy",

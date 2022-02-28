@@ -188,7 +188,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprRavenIdle","path":"sprites/sprRavenIdle/sprRavenIdle.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprRavenIdle",
     "tags": [],
     "resourceType": "GMSequence",
   },

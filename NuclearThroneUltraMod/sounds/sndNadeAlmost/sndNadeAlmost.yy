@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndNadeAlmost",
-  "duration": 0.0,
+  "duration": 0.226656,
   "parent": {
     "name": "IDPD sounds",
     "path": "folders/Sounds/IDPD sounds.yy",

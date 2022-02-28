@@ -41,6 +41,7 @@ scrTarget()
 
 function healMe(amount) {
     my_health += amount;
+	snd_play(sndHealthPickup);
     with instance_create(x, y - 16, HealFX)
     depth = -3;
     if my_health > maxhealth

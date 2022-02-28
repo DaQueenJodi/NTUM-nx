@@ -23,7 +23,11 @@ if other.team != team and other.my_health > 0 && speed>1
 		            }
 		        }
 		    }
-		    snd_play(snd_hurt, hurt_pitch_variation)
+		    snd_play(snd_hurt, hurt_pitch_variation);
+			with instance_create(x,y,ImpactFX)
+			{
+				sprite_index = sprThrowHit;	
+			}
 	    }
 	}
 

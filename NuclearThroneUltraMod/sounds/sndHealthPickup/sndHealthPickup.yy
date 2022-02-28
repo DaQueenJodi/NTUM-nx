@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndHealthPickup",
-  "duration": 0.0,
+  "duration": 0.201187,
   "parent": {
     "name": "Pickups",
     "path": "folders/Sounds/Pickups.yy",

@@ -46,9 +46,9 @@ function scrPopEnemies() {
     }
 
     if spawnarea = 10 {
-        theBandit = choose(SavannaBandit, SavannaBandit, SavannaBandit, Bandit);
+        theBandit = choose(SavannaBandit, SavannaBandit, SavannaBandit, Bandit, BanditSquare);
         if styleb = 1 {
-            instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(MaggotSpawn, BigMaggot, BigMaggot, Maggot))
+            instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(MaggotSpawn, Vulture, Vulture, Vulture))
         }
         else {
             if random(7) < 1
@@ -61,7 +61,7 @@ function scrPopEnemies() {
                     instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
                 }
                 else
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(theBandit, theBandit, theBandit, theBandit, theBandit, theBandit, Maggot, Scorpion))
+                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(theBandit, theBandit, theBandit, theBandit, theBandit, theBandit, Vulture, Scorpion))
             }
         }
     }

@@ -35,12 +35,12 @@ my_health = maxhealth
 
 if Player.race=4 && Player.my_health <= Player.maxhealth*0.5 and random(2) < 1//melting
 {
-instance_destroy()
+instance_destroy(id,false)
 instance_create(x,y,HealthChest)
 }
 else if Player.race!=4 && Player.my_health < round(6/2) and random(2) < 1 || ( Player.race=12 && random(9)<1 )//Yung cuz
 {
-instance_destroy()
+instance_destroy(id,false)
 instance_create(x,y,HealthChest)
 }
 

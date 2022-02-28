@@ -51,7 +51,7 @@ function scrCrowns() {
 	crown_tips[9] = "you really like these weapons"
 
 	crown_name[10] = "[CROWN OF DIFFICULTY]"
-	crown_text[10] = "THE DIFFICULTY & WEAPON TIER INCREASES#TWICE AS MUCH EACH LEVEL"
+	crown_text[10] = "THE DIFFICULTY & WEAPON TIER INCREASES#MORE AS MUCH EACH LEVEL"
 	crown_used[10] = 0
 	crown_tips[10] = "acceleration"
 

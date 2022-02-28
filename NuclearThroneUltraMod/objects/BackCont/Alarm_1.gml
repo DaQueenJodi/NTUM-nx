@@ -12,13 +12,15 @@ repeat(Player.loops)
 instance_create(Player.x,Player.y,IDPDSpawn)        
 if Player.crown==10//crown of difficulty
 {
-repeat(Player.loops)   
-instance_create(Player.x,Player.y,IDPDSpawn)
+	repeat(1+Player.loops) 
+	instance_create(Player.x,Player.y,IDPDSpawn)
+}
+if Player.crown==16//crown of popo
+{
+	repeat(2+Player.loops) 
+	instance_create(Player.x,Player.y,IDPDSpawn)
+}
 }
 
-}
-
-if Player.crown==10
-alarm[1]=400;
 }
 
