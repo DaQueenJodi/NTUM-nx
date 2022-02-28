@@ -8,20 +8,16 @@ function scrCheckOneGold() {
 
 	repeat(racemax)
 	{
+		var wepdir=1;
+		var gotthisone=0;
 
-	var wepdir=1;
-	var gotthisone=0;
-
-	repeat(maxstartwep)
-	{
-	if start_wep_have[wepdir,racedir]=1
-	gotthisone++;
-
-	if gotthisone>1
-	thischarhasagoldwep++;
-
-	}
-
+		repeat(maxstartwep)
+		{
+			if start_wep_have[wepdir,racedir]=1
+				gotthisone++;
+		}
+		if gotthisone>1
+			thischarhasagoldwep++;
 	racedir++;
 	}
 
