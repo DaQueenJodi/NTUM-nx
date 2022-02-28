@@ -24,8 +24,8 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
 		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
-	    with instance_create(f.x + 16,f.y + 16,IDPDVan)
-			curse = 0;
+	    with instance_create(f.x + 16,f.y + 16,WeaponChest)
+			curse = 1;
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
 		thing.mytext = "wep";
 	}
