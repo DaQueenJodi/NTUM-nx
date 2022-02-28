@@ -30,8 +30,8 @@ if instance_number(becomenemy) = 0 and !instance_exists(Menu) and !instance_exis
 	    {
 	        with Portal
 	        {
-	        if inverted=false
-	        {other.canspawnportal=false;}
+				if inverted=false
+				{other.canspawnportal=false;}
 	        }
         
 	        if Portal.inverted=true&&canspawnportal=true

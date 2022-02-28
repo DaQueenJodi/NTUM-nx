@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndPortalAppear",
-  "duration": 0.0,
+  "duration": 5.461338,
   "parent": {
     "name": "Menu",
     "path": "folders/Sounds/Menu.yy",

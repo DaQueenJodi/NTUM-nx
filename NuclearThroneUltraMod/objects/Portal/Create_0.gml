@@ -2,7 +2,8 @@ image_speed = 0.4
 
 endgame = 100
 
-snd_play(sndPortalOpen)
+snd_play_2d(sndPortalOpen)
+snd_play(sndPortalAppear)
 snd_loop(sndPortalLoop)
 
 

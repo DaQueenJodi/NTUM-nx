@@ -57,8 +57,9 @@ snd_wrld=sndYungCuzBuddyWrld;
 
 wep = Player.wep
 bwep = Player.bwep
-//curse = 0
-//bcurse = 0
+curse = Player.curse
+bcurse = Player.bcurse
+ccurse = Player.ccurse;
 reload = 0//Player.reload
 breload = 0//Player.breload
 team = Player.team

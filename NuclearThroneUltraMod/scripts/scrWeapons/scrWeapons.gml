@@ -4119,7 +4119,7 @@ function scrWeapons() {
 	wep_rad[372] = 0;
 	
 	wep_name[373] = "VAN PUSHER"
-	wep_type[373] = 5
+	wep_type[373] = 0
 	wep_auto[373] = 0
 	wep_load[373] = 8
 	wep_cost[373] = 0
