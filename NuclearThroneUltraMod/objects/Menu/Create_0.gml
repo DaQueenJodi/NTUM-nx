@@ -6,7 +6,7 @@ mode = 0
 mouseover = -1;
 image_speed = 0
 
-widescreen = 0
+widescreen = -5
 scrRaces()
 scrCrowns()
 scrGameModes();

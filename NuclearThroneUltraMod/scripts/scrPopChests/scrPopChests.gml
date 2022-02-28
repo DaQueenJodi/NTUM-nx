@@ -63,7 +63,7 @@ function scrPopChests() {
 		}
 	}
 	var gol = 1;
-	var healthChestGol = choose(0,0,0,0,0,0,0,0,1);
+	var healthChestGol = choose(0,0,0,0,0,0,0,0,0,1);
 	var wepChestGol = gol;
 	
 	
@@ -84,18 +84,18 @@ function scrPopChests() {
 		else
 		gol = choose(3,3,4,3,2);
 
-		healthChestGol += choose(0,0,0,0,1);
+		healthChestGol += choose(0,0,0,0,0,1);
 		}
 		if Player.race == 4 //YUNG CUZ
 		{
-			healthChestGol += choose(0,0,0,0,1);
+			healthChestGol += choose(0,0,0,0,0,1);
 		}
 		wepChestGol = gol;
 	
 		if Player.crown == 15//CROWN OF CHOICE
 		{
 			gol += 1;
-			healthChestGol += choose(0,0,0,0,0,1);
+			healthChestGol += choose(0,0,0,0,0,0,1);
 			wepChestGol += 2;
 		}
 

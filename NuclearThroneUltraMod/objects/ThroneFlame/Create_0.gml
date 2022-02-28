@@ -1,5 +1,5 @@
 /// @description xxx
 image_speed = 0.4;
-hideMe = false;
 xOffset = 0;
 yOffset = 0;
+image_alpha =  0.8;
