@@ -94,10 +94,11 @@ if UberCont.opt_camera_follow==0
 {
 	if !instance_exists(DramaCamera) && instance_exists(Player)
 	{
-		//Always keep player on the screen
-		viewx2 = Player.x - vw;
-		viewy2 = Player.y - vh;
+		viewx2 = prevviewx2 + (viewx2 - prevviewx2)*smoothing
+		viewy2 = prevviewy2 + (viewy2 - prevviewy2)*smoothing
 	}
+	prevviewx2 = viewx2;
+	prevviewy2 = viewy2;
 }
 __view_set( e__VW.XView, 0, round(viewx2+(random(shake)-shake/2)*UberCont.opt_shake) );
 __view_set( e__VW.YView, 0, round(viewy2+(random(shake)-shake/2)*UberCont.opt_shake) );

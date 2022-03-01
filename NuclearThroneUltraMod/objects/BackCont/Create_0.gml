@@ -2,6 +2,9 @@ viewx = 0
 viewy = 0
 viewx2 = 0
 viewy2 = 0
+prevviewx2 = 0
+prevviewy2 = 0
+smoothing = 0.5;
 
 shake = 0
 kills = 0
