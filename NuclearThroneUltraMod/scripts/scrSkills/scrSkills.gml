@@ -293,7 +293,7 @@ function scrSkills() {
 	skill_msnd[29] =  sndInsomnia
 
 	skill_name[30] = "POWER CRAVING"
-	skill_text[30] = "EVERY WEAPON HAS ONE RANDOM WEAPON MOD#INCREASE MOD MAX BY ONE#INCREASE THE AMOUNT OF MOD ACTIVATIONS"
+	skill_text[30] = "EVERY WEAPON HAS ONE RANDOM WEAPON MOD#INCREASE MOD MAX BY ONE#INCREASE HOW OFTEN MODS TRIGGER"
 	skill_tips[30] = "maximum power"
 	skill_msnd[30] =  sndPowerCraving
 

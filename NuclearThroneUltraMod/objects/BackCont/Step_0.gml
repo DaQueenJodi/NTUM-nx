@@ -90,7 +90,15 @@ viewy2 = viewy2-(viewy2-viewy)*0.4
 		viewy2 = clamp(viewy2,Player.y - (vh*2),Player.y);
 	}
 }
-
+if UberCont.opt_camera_follow==0
+{
+	if !instance_exists(DramaCamera) && instance_exists(Player)
+	{
+		//Always keep player on the screen
+		viewx2 = Player.x - vw;
+		viewy2 = Player.y - vh;
+	}
+}
 __view_set( e__VW.XView, 0, round(viewx2+(random(shake)-shake/2)*UberCont.opt_shake) );
 __view_set( e__VW.YView, 0, round(viewy2+(random(shake)-shake/2)*UberCont.opt_shake) );
 

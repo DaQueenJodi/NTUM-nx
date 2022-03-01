@@ -39,6 +39,8 @@ function scrModHit() {
 				moddelay=13;
 		    else
 				moddelay=27;
+			if ultra_got[65] == 1//Weapon smith Ultra A
+				moddelay -= 6;
     
 	    }
 	}

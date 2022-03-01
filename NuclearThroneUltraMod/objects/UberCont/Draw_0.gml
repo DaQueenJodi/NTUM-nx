@@ -1,3 +1,5 @@
+var yy = __view_get( e__VW.YView, 0 );
+
 if paused = 1
 {
 
@@ -6,24 +8,65 @@ var text;
 //if instance_exists(Player)
 //{
 text = string(area)+"_"+string(subarea)
+var upsideDown = false;
+if area == 10
+{
+	text = "1B_"+string(subarea);
+}
 if area > 99
-text = "???"
-
-    if loops>0
-    {
-    text="L"+string(loops)+" "+text;
-    }
+{
+	text = "???"
+	switch (area)
+	{
+		case 105: //Inverted desert
+			text = "1_"+string(subarea);
+			upsideDown = true;
+		break;
+		case 106: //Inverted scrapyard
+			text = "3_"+string(subarea);
+			upsideDown = true;
+		break;
+		case 107: //Inverted frozen city
+			text = "5_"+string(subarea);
+			upsideDown = true;
+		break;
+		case 108: //Inverted vulcano
+			text = "7_"+string(subarea);
+			upsideDown = true;
+		break;
+		case 109: //Inverted wonderland
+			text = "8_"+string(subarea);
+			upsideDown = true;
+		break;
+		case 110: //Inverted sewers
+			text = "2_"+string(subarea);
+			upsideDown = true;
+		break;
+		case 111: //Inverted crystal caves
+			text = "4_"+string(subarea);
+			upsideDown = true;
+		break;
+		case 112: //Inverted labs
+			text = "6_"+string(subarea);
+			upsideDown = true;
+		break;
+	}
+}
+if loops>0
+{
+	text="L"+string(loops)+" "+text;
+}
 
 //}
 
-draw_sprite_ext(pauseimg,0,__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 ),1,1,0,c_white,1)//0.35,
+draw_sprite_ext(pauseimg,0,__view_get( e__VW.XView, 0 ),yy,1,1,0,c_white,1)//0.35,
 draw_set_color(c_black)
 draw_set_blend_mode(bm_normal)
 draw_set_alpha(0.6)
-draw_rectangle(__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 ),__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ),__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 ),0)
+draw_rectangle(__view_get( e__VW.XView, 0 ),yy,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ),yy+__view_get( e__VW.HView, 0 ),0)
 draw_set_alpha(1)
-draw_rectangle(__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 ),__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ),__view_get( e__VW.YView, 0 )+48,0)
-draw_rectangle(__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 ),__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ),__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-48,0)
+draw_rectangle(__view_get( e__VW.XView, 0 ),yy,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ),yy+48,0)
+draw_rectangle(__view_get( e__VW.XView, 0 ),yy+__view_get( e__VW.HView, 0 ),__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ),yy+__view_get( e__VW.HView, 0 )-48,0)
 /*draw_set_halign(fa_center)
 draw_set_valign(fa_center)
 draw_text(view_xview+view_wview/2+1,view_yview+26,"GAME PAUSED##[ENTER] MAIN MENU [LEFT CLICK] RESUME#[R] QUICK RESTART [Q] QUIT#"+string(text)+"#GAMEMODE : "+string(gamemode) )
@@ -46,35 +89,19 @@ timer="ON"
 else
 timer="OFF"
 
-var infotxt="";
 
-if loops>0
-    {
-    infotxt="L"+string(loops)+" ";
-    }
+var d = " DIFFICULTY: "+string(hard);
 
-if area > 99
-infotxt = infotxt+"???";
-else if area == 10
-{
-	infotxt = infotxt+"1B_"+string(subarea);
-}
-else
-{
-	infotxt = infotxt+string(area)+"_"+string(subarea);
-}
-d = " DIFFICULTY: "+string(hard);
-
-txt0 = "#OPTIONS###KILLS: "+string(kills)+"  "+infotxt+d+"########################PRESS [RIGHT CLICK] TO RETURN#PRESS [ENTER] FOR MAIN MENU"
+txt0 = "#OPTIONS###########################PRESS [RIGHT CLICK] TO RETURN#PRESS [ENTER] FOR MAIN MENU"
 
 if UberCont.opt_loading == 4
 	var loadspeed = "MAX#"
 else
 	var loadspeed = string(scrAddZero(round(UberCont.opt_loading*100),2))+"%#";
 
-txt1 = "######AUDIO#MUSIC VOLUME#MASTER VOLUME#AMBIENT VOLUME#3D AUDIO##VISUALS#FULL SCREEN#CROSSHAIR#SIDE ART#BLOOM#SHADOWS#HIGH QUALITY##OTHER#SCREEN SHAKE#FREEZE FRAMES#LOADING SPEED#CAPTURE MOUSE#BOSS INTROS#TIMER"
+txt1 = "######AUDIO#MUSIC VOLUME#MASTER VOLUME#AMBIENT VOLUME#3D AUDIO##VISUALS#FULL SCREEN#CROSSHAIR#SIDE ART#BLOOM#CAMERA FOLLOW AIM#HIGH QUALITY##OTHER#SCREEN SHAKE#FREEZE FRAMES#LOADING SPEED#CAPTURE MOUSE#BOSS INTROS#TIMER"
 txt2 = "#######"+string(scrAddZero(round(UberCont.opt_musvol*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_sfxvol*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_ambvol*100),2))
-+"%#"+string(scrOnOff(UberCont.opt_3d_audio))+"###"+string(scrOnOff(UberCont.opt_fulscrn))+"#"+string(UberCont.opt_crosshair+1)+"#"+string(UberCont.opt_sideart)+"#"+string(round(UberCont.opt_bloom*1000))+"%#"+string(scrOnOff(UberCont.opt_shadow))+"#"//
++"%#"+string(scrOnOff(UberCont.opt_3d_audio))+"###"+string(scrOnOff(UberCont.opt_fulscrn))+"#"+string(UberCont.opt_crosshair+1)+"#"+string(UberCont.opt_sideart)+"#"+string(round(UberCont.opt_bloom*1000))+"%#"+string(scrOnOff(UberCont.opt_camera_follow))+"#"//
 +string(scrOnOff(UberCont.opt_highquality))+
 "###"+string(scrAddZero(round(UberCont.opt_shake*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_freeze*100),2))+"%#"+loadspeed+string(scrOnOff(UberCont.opt_mousecp))+"#"+string(bossintro)+"#"+string(timer)
 
@@ -103,7 +130,7 @@ with SideArtUpDown
 event_perform(ev_draw,0)
 with BloomUpDown
 event_perform(ev_draw,0)
-with ShadowToggle
+with CameraFollowToggle
 event_perform(ev_draw,0)
 with HighQualityToggle
 event_perform(ev_draw,0)
@@ -128,45 +155,63 @@ event_perform(ev_draw,0)
 
 draw_set_font(fntM)
 draw_set_valign(fa_top)
-draw_set_halign(fa_center)
+//Top text...
+var xx = __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )*0.5;
+draw_set_color(c_gray)
+draw_set_halign(fa_left)
+var kt = "KILLS: "+string(kills)+" "
+var xxx = xx - (string_width(kt+text+d)*0.5);
+draw_text(xxx,yy,string_hash_to_newline("####"+kt))
+xxx = xxx + string_width(kt);
+if upsideDown
+{
+	draw_set_halign(fa_center)
+	draw_text_transformed(xxx+(string_width(text)*0.5),yy+(string_height(text)*5),string_hash_to_newline(text),-1,-1,0)
+}
+else
+	draw_text(xxx,yy,string_hash_to_newline("####"+text))
+draw_set_halign(fa_left)
+xxx = xxx + string_width(text);
+draw_text(xxx,yy,string_hash_to_newline("####"+d))
 
 draw_set_color(c_black)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+1,string_hash_to_newline(string(txt0)))
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+1,string_hash_to_newline(string(txt0)))
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 ),string_hash_to_newline(string(txt0)))
+draw_set_halign(fa_center)
+draw_text(xx,yy+1,string_hash_to_newline(string(txt0)))
+draw_text(xx+1,yy+1,string_hash_to_newline(string(txt0)))
+draw_text(xx+1,yy,string_hash_to_newline(string(txt0)))
 draw_set_color(c_gray)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 ),string_hash_to_newline(string(txt0)))
+draw_text(xx,yy,string_hash_to_newline(string(txt0)))
 draw_set_color(c_white)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 ),string_hash_to_newline(string(stxt0)))
+draw_text(xx,yy,string_hash_to_newline(string(stxt0)))
 
 
 draw_set_halign(fa_right)
 draw_set_color(c_black)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-8,__view_get( e__VW.YView, 0 )+1,string_hash_to_newline(string(txt1)))
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-7,__view_get( e__VW.YView, 0 )+1,string_hash_to_newline(string(txt1)))
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-7,__view_get( e__VW.YView, 0 ),string_hash_to_newline(string(txt1)))
+draw_text(xx-8,yy+1,string_hash_to_newline(string(txt1)))
+draw_text(xx-7,yy+1,string_hash_to_newline(string(txt1)))
+draw_text(xx-7,yy,string_hash_to_newline(string(txt1)))
 draw_set_color(c_gray)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-8,__view_get( e__VW.YView, 0 ),string_hash_to_newline(string(txt1)))
+draw_text(xx-8,yy,string_hash_to_newline(string(txt1)))
 draw_set_color(c_white)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2-8,__view_get( e__VW.YView, 0 ),string_hash_to_newline(string(stxt1)))
+draw_text(xx-8,yy,string_hash_to_newline(string(stxt1)))
 
 draw_set_halign(fa_left)
 
 draw_set_color(c_black)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+8,__view_get( e__VW.YView, 0 )+1,string_hash_to_newline(string(txt2)))
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+9,__view_get( e__VW.YView, 0 )+1,string_hash_to_newline(string(txt2)))
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+9,__view_get( e__VW.YView, 0 ),string_hash_to_newline(string(txt2)))
+draw_text(xx+8,yy+1,string_hash_to_newline(string(txt2)))
+draw_text(xx+9,yy+1,string_hash_to_newline(string(txt2)))
+draw_text(xx+9,yy,string_hash_to_newline(string(txt2)))
 draw_set_color(c_gray)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+8,__view_get( e__VW.YView, 0 ),string_hash_to_newline(string(txt2)))
+draw_text(xx+8,yy,string_hash_to_newline(string(txt2)))
 draw_set_color(c_white)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+8,__view_get( e__VW.YView, 0 ),string_hash_to_newline(string(stxt2)))
+draw_text(xx+8,yy,string_hash_to_newline(string(stxt2)))
 
 /////ALLRIGHT THATS OPTIONS
 
 }
 
 if alarm[1]>0
-draw_sprite_ext(pauseimg,0,__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 ),1,1,0,c_white,1)
+draw_sprite_ext(pauseimg,0,__view_get( e__VW.XView, 0 ),yy,1,1,0,c_white,1)
 
 /* */
 /*  */

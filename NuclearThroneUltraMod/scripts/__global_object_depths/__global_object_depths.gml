@@ -36,7 +36,7 @@ function __global_object_depths() {
 	global.__objectDepths[28] = -11; // FullScreenToggle
 	global.__objectDepths[29] = -11; // BossIntroToggle
 	global.__objectDepths[30] = -11; // TimerToggle
-	global.__objectDepths[31] = -11; // ShadowToggle
+	global.__objectDepths[31] = -11; // CameraFollowToggle
 	global.__objectDepths[32] = -11; // HighQualityToggle
 	global.__objectDepths[33] = -11; // ShakeUpDown
 	global.__objectDepths[34] = -11; // FreezeFrameUpDown
@@ -693,7 +693,7 @@ function __global_object_depths() {
 	global.__objectNames[28] = "FullScreenToggle";
 	global.__objectNames[29] = "BossIntroToggle";
 	global.__objectNames[30] = "TimerToggle";
-	global.__objectNames[31] = "ShadowToggle";
+	global.__objectNames[31] = "CameraFollowToggle";
 	global.__objectNames[32] = "HighQualityToggle";
 	global.__objectNames[33] = "ShakeUpDown";
 	global.__objectNames[34] = "FreezeFrameUpDown";

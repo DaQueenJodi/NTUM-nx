@@ -11,7 +11,7 @@ function scrSaveOptions() {
 	ini_write_real("OPTIONS","crosshair",opt_crosshair);
 	ini_write_real("OPTIONS","sideart",opt_sideart);
 	ini_write_real("OPTIONS","bloom",opt_bloom);
-	ini_write_real("OPTIONS","shadow",opt_shadow);
+	ini_write_real("OPTIONS","camerafollowaim",opt_camera_follow);
 	ini_write_real("OPTIONS","highquality",opt_highquality);
 	//ini_write_real("OPTIONS","nicedrk",opt_nicedrk);
 

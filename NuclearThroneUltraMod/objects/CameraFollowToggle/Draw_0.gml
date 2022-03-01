@@ -1,11 +1,11 @@
-draw_sprite(sprite_index,UberCont.opt_shadow,x,y)
+draw_sprite(sprite_index,UberCont.opt_camera_follow,x,y)
 
 if mouse_check_button_pressed(mb_left) and mouse_x > x and mouse_x < x+8 and mouse_y > y and mouse_y < y+8
 {
-if UberCont.opt_shadow = 0
-UberCont.opt_shadow = 1
+if UberCont.opt_camera_follow = 0
+UberCont.opt_camera_follow = 1
 else
-UberCont.opt_shadow = 0
+UberCont.opt_camera_follow = 0
 
 }
 

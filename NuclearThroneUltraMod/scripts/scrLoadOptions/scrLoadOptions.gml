@@ -11,7 +11,7 @@ function scrLoadOptions() {
 	opt_crosshair = ini_read_real("OPTIONS","crosshair",0);
 	opt_sideart = ini_read_real("OPTIONS","sideart",0);
 	opt_bloom = ini_read_real("OPTIONS","bloom",0.1);
-	opt_shadow = ini_read_real("OPTIONS","shadow",1);
+	opt_camera_follow = ini_read_real("OPTIONS","camerafollowaim",1);
 	opt_highquality = ini_read_real("OPTIONS","highquality",1);
 	//opt_nicedrk = ini_read_real("OPTIONS","nicedrk",0);
 

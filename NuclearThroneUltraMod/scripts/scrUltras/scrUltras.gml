@@ -307,10 +307,10 @@ function scrUltras() {
 	    ultra_text[64] = "WHENEVER YOU LOSE A PIECE OF ARMOUR#YOU CLEAR ALL PROJECTILES#AND DEAL A MASSIVE AMOUNT OF DAMAGE#TO ALL ENEMIES ON SCREEN"
 	    ultra_tips[64] = "rogue is jelous"
     
-	//GUNSMITH 
+	//WEAPONSMITH 
 	ultra_name[65] = "WEAPON MODDER"
-	ultra_text[65] = "AT THE START OF EVERY AREA#A WEAPON MOD SPAWNS#(so 1-1,2-1,3-1 etc.)"
-	ultra_tips[65] = "MODDERator"
+	ultra_text[65] = "IN EVERY AREA#A WEAPON MOD SPAWNS#INCREASE HOW OFTEN MODS TRIGGER"
+	ultra_tips[65] = "modder"
 
 	ultra_name[66] = "ARMOUR SMITH"
 	ultra_text[66] = "WHEN UPGRADING A WEAPON#YOU ALSO GAIN TWO ARMOUR#ARMOUR MAX IS 2"

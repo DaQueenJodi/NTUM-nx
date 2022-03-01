@@ -1230,7 +1230,7 @@ with instance_create(x+10,y+5,RedirectFX)
 {
 	sprite_index = sprExtraFeetCloseDodge;	
 }
-scrDrop(55,0);
+scrDrop(65,0);
 }
 else
 {
@@ -1238,7 +1238,7 @@ with instance_create(x+10,y+5,RedirectFX)
 {
 	sprite_index = sprExtraFeetCloseDodge;	
 }
-scrDrop(50,0);
+scrDrop(60,0);
 }
 
 }

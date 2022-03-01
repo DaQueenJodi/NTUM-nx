@@ -33,7 +33,7 @@
     "path": "folders/Objects/Menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ShadowToggle",
+  "name": "CameraFollowToggle",
   "tags": [],
   "resourceType": "GMObject",
 }

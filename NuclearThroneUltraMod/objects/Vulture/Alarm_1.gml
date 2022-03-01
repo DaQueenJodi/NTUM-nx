@@ -13,7 +13,7 @@ if target > 0 {
 			gunangle = point_direction(x, y, xx, yy);
 			with instance_create(x,y,EnemyBullet5)
 			{
-				motion_add(other.gunangle,7)
+				motion_add(other.gunangle,6)
 				team = other.team
 				image_angle = direction
 			}
