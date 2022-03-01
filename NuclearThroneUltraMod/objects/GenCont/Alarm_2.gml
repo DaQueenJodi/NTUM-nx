@@ -69,6 +69,16 @@ instance_create(x+16,y+16,ProtoStatue)} }
 
 if Player.area=1 && Player.subarea<3
 {
+	if (Player.subarea == 1)
+	{
+		var dir = instance_furthest(Player.x,Player,Floor)+random_range(120,-120);
+		var len = 128+random(256);
+		var nearestFloor = instance_nearest(Player.x+lengthdir_x(len,dir),Player.y+lengthdir_y(len,dir),Floor)
+		with nearestFloor
+		{
+			instance_create(x+16,y+8,BigVultureSkull)
+		}
+	}
 with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/3+random(128)-64,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/3+random(128)-64,Floor)
 instance_create(x+16,y+16,BigFishSkull)
 }

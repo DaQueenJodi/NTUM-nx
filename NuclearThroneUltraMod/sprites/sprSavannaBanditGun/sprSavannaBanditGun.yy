@@ -2,15 +2,15 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 0,
+  "origin": 9,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
+  "bbox_left": 1,
   "bbox_right": 15,
   "bbox_top": 1,
-  "bbox_bottom": 10,
+  "bbox_bottom": 9,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"45faba07-cd17-4322-b13f-94c729e6a8f2","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"45faba07-cd17-4322-b13f-94c729e6a8f2","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},"LayerId":{"name":"2af91532-833e-4ede-9ba5-eb0bc2dee54d","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprSavannaBanditGun","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},"resourceVersion":"1.0","name":"45faba07-cd17-4322-b13f-94c729e6a8f2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"be6f9892-4362-42cb-b379-3ed5c699b6b9","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"be6f9892-4362-42cb-b379-3ed5c699b6b9","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},"LayerId":{"name":"2af91532-833e-4ede-9ba5-eb0bc2dee54d","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprSavannaBanditGun","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},"resourceVersion":"1.0","name":"be6f9892-4362-42cb-b379-3ed5c699b6b9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprSavannaBanditGun","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"700d212e-aad9-46c1-982b-5ae554fa378d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"45faba07-cd17-4322-b13f-94c729e6a8f2","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"def5895a-458a-4629-bb0c-fce526222c11","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"be6f9892-4362-42cb-b379-3ed5c699b6b9","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 1,
+    "yorigin": 2,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprSavannaBanditGun","path":"sprites/sprSavannaBanditGun/sprSavannaBanditGun.yy",},

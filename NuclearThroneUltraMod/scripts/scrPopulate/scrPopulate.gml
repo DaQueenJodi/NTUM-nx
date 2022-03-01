@@ -351,6 +351,11 @@ function scrPopulate() {
         repeat(Player.loops + 1)
         instance_create(x, y, WantBoss)
     }
+	
+	if Player.area = 10 and Player.subarea = 3 {
+        repeat(Player.loops + 1)
+        instance_create(x, y, WantBoss)
+    }
 
     //spawn OASIS boss
     if Player.area = 101 and Player.subarea = 2 {

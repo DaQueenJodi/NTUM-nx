@@ -251,8 +251,16 @@ function scrNextLevel() {
 				}
 	        }
 	    }
+		else if area == 10
+		{
+			area = 3;
+			subarea = 1;
+			inverted = true;
+		}
 	    else//WE LOOP HERE!
+		{
 	    looping=true;
+		}
 	    }    
 
 	if ( area=1 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted desert atom gets 12 procent

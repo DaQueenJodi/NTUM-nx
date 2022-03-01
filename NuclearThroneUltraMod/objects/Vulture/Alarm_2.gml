@@ -1,5 +1,5 @@
 /// @description Heal from corpse
-if corpseTarget > -1
+if corpseTarget > -1 && instance_exists(corpseTarget)
 {
 	if point_distance(x,y,corpseTarget.x,corpseTarget.y) < 24
 	{

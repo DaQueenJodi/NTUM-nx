@@ -9,7 +9,7 @@ motion_add(direction,0.8)
 if speed > 3
 speed = 3
 
-if corpseTarget > -1 && alarm[2] < 1
+if corpseTarget > -1 && instance_exists(corpseTarget) && alarm[2] < 1
 {
 	if point_distance(x,y,corpseTarget.x,corpseTarget.y) < 24
 	{

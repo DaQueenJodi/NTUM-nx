@@ -5,14 +5,44 @@ alarm[1] = 20 + random(10)
 scrTarget()
 if target > 0 {
     if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {
-        if point_distance(target.x, target.y, x, y) > 64 {
-
+		var dis = point_distance(target.x, target.y, x, y);
+        if dis > 64  && dis < 200{
+			//Leads shot!
+			var xx = target.x + (target.hspeed*4)
+			var yy = target.y + (target.vspeed*4)
+			gunangle = point_direction(x, y, xx, yy);
+			with instance_create(x,y,EnemyBullet5)
+			{
+				motion_add(other.gunangle,7)
+				team = other.team
+				image_angle = direction
+			}
+			alarm[1] += 10;
         }
         else {
-            direction = point_direction(target.x, target.y, x, y) + random(20) - 10
-            speed = 0.4
-            walk = 40 + random(10)
-            gunangle = point_direction(x, y, target.x, target.y)
+			var noCorpse = true
+			if (my_health < maxhealth && instance_exists(Corpse) && random(4) < 2)
+			{
+				if my_health < maxhealth && instance_exists(Corpse)
+				{
+					corpseTarget = instance_nearest(x,y,Corpse);
+					if (collision_line(x,y,corpseTarget.x,corpseTarget.y,Wall,false,false) < 0)
+					{
+						noCorpse = false;
+						direction = point_direction(x,y,corpseTarget.x,corpseTarget.y);
+						motion_add(direction,4);
+						walk = 20;
+						alarm[1] += walk;
+					}
+				}	
+			}
+			if noCorpse
+			{
+	            direction = point_direction(target.x, target.y, x, y) + random(20) - 10
+	            speed = 0.4
+	            walk = 40 + random(10)
+	            gunangle = point_direction(x, y, target.x, target.y)
+			}
         }
 
         if target.x < x
@@ -28,6 +58,7 @@ if target > 0 {
 			corpseTarget = instance_nearest(x,y,Corpse);
 			if (collision_line(x,y,corpseTarget.x,corpseTarget.y,Wall,false,false) < 0)
 			{
+				noCorpse = false;
 				direction = point_direction(x,y,corpseTarget.x,corpseTarget.y);
 				motion_add(direction,4);
 				walk = 20;
