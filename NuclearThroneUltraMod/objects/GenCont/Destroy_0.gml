@@ -22,7 +22,7 @@ if UberCont.opt_gamemode == 8
 if instance_exists(Player)
 {
 if Player.crown=18//DISCOOOO CROWN
-room_speed=40;
+room_speed=35;
     with Player{
     
     if ultra_got[87]//Rogue new captain ultra summon rogue idpd

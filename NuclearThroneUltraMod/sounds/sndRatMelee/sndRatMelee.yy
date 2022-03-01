@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndRatMelee",
-  "duration": 0.0,
+  "duration": 0.349751,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/Enemies.yy",

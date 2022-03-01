@@ -11,8 +11,8 @@ spr_walk = sprVultureWalk
 spr_hurt = sprVultureHurt
 spr_dead = sprVultureDead
 
-snd_hurt = sndRavenHit
-snd_dead = sndRavenDie
+snd_hurt = sndVultureHurt
+snd_dead = sndVultureDeath
 
 //behavior
 walk = 0

@@ -27,7 +27,7 @@ if race = 0 || UberCont.opt_gamemode == 23
 	do race = ceil(random(racemax)) until race_have[race] = 1
 }
 if crown = 0
-crown = ceil(random(crownmax))
+crown = ceil(irandom(crownmax))
 with WepPickup
 instance_destroy();
 draw_texture_flush();//Free memory (removes all loadedness of texture pages, txp for all areas for example) meaning sprites for area 7 & others aren't loaded when you restart

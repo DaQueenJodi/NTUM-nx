@@ -9,7 +9,7 @@ var usedRandom = false;
 if crown = 0
 {
 	usedRandom = true;
-	crown = ceil(random(crownmax-1)+1)
+	crown = ceil(irandom(crownmax-1)+1)
 }
 oldcrown = Player.crown
 Player.crown = crown

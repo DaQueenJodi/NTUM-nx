@@ -6,14 +6,14 @@ size = 1
 event_inherited()
 
 spr_idle = sprHyenaIdle
-spr_walk = sprRatWalk
-spr_hurt = sprRatHurt
-spr_dead = sprRatDead
+spr_walk = sprHyenaWalk
+spr_hurt = sprHyenaHurt
+spr_dead = sprHyenaDead
 
 
-snd_hurt = sndRatHit
-snd_dead = sndRatDie
-snd_mele = sndRatMelee
+snd_hurt = sndHyenaHurt
+snd_dead = sndHyenaDeath
+snd_mele = sndHyenaMelee
 
 //behavior
 walk = 0

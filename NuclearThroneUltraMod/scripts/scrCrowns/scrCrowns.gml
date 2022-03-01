@@ -77,9 +77,9 @@ function scrCrowns() {
 	
 	crown_name[15] = "[CROWN OF CHOICE]"
 	if instance_exists(Player) && Player.ultra_got[31]
-		crown_text[15] = "REMOVE YOUR SECONDARY WEAPON#WHEN YOU GO THROUGH A PORTAL#MORE CHESTS#SLIGHTLY MORE WEAPON DROPS"
-	else
 		crown_text[15] = "REMOVE YOUR TERTIARY WEAPON#WHEN YOU GO THROUGH A PORTAL#MORE CHESTS#SLIGHTLY MORE WEAPON DROPS"
+	else
+		crown_text[15] = "REMOVE YOUR SECONDARY WEAPON#WHEN YOU GO THROUGH A PORTAL#MORE CHESTS#SLIGHTLY MORE WEAPON DROPS"
 	crown_used[15] = 0
 	crown_tips[15] = "this crown used to be in the game#but without the increased weapon droprate"
 /*
@@ -99,7 +99,7 @@ function scrCrowns() {
 	crown_tips[17] = "your death has been signed#when you gave in to your greed"
 
 	crown_name[18] = "[CROWN OF DISCO]"
-	crown_text[18] = "DANCE BABY DANCE!"
+	crown_text[18] = "DANCE BABY DANCE!#WARNING FLASHING LIGHTS"
 	crown_used[18] = 0
 	crown_tips[18] = "bullet disco!"
 	/*
