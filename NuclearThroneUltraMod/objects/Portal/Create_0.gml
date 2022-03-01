@@ -38,7 +38,6 @@ currentsubarea=BackCont.subarea;
 
 type=1;
 
-instance_create(x,y,PortalShock);
 
 inverted=false;//is this an inverted portal?
 
@@ -61,5 +60,6 @@ if ( (currentarea=105 || currentarea=106|| currentarea=107 || currentarea = 108 
 	canspawnportal=false;
 }
 
+alarm[2] = 2;
 pullstrength=2;
 

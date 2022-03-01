@@ -108,5 +108,5 @@ if pullstrength>4.5
 pullstrength=4.5;
 
 if inverted
-pullstrength*=0.9;
+pullstrength*=0.7;
 
