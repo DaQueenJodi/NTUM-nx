@@ -1,7 +1,4 @@
-
-
-scrDrop(80,0)
-scrDrop(20,10)
+scrDrop(50,0)
 instance_create(x,y,WallBreak);
 event_inherited()
 
