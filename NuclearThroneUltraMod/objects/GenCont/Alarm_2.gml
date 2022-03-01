@@ -46,15 +46,20 @@ while (instance_number(RogueAmmoChest) < ammoWant)
 
 if Player.area = 100
 {
-with instance_furthest(Player.x,Player.y,Floor)
-{
-	instance_create(x+16,y+16,CrownPickup)
-    if Player.crownvisits>1{
-    instance_create(x-32,y-64,WeaponMod)
-    with instance_create(x+64,y-64,WeaponMod)
-    image_xscale=-1;
-    }
-}
+	with instance_furthest(Player.x,Player.y,Floor)
+	{
+		instance_create(x+16,y+16,CrownPickup)
+	    if Player.crownvisits>1{
+	    instance_create(x-32,y-64,WeaponMod)
+	    with instance_create(x+64,y-64,WeaponMod)
+	    image_xscale=-1;
+	    }
+		if (UberCont.crown_start[Player.race] && Player.crownvisits = -1)
+		{
+			Player.x = x+16;
+			Player.y = y+64;
+		}
+	}
 }
 else if (Player.area > 2 or Player.loops > 0) and Player.subarea = 2 && Player.area != 9 && Player.area!=105 && Player.area!=101&&Player.area!=6&&Player.area!=8&&Player.area!=7&&Player.area!=108
 &&Player.area!=112&&Player.area!=103&&Player.area!=104&& Player.area!=113 && Player.area!=114 && UberCont.opt_gamemode != 25
@@ -69,16 +74,6 @@ instance_create(x+16,y+16,ProtoStatue)} }
 
 if Player.area=1 && Player.subarea<3
 {
-	if (Player.subarea == 1)
-	{
-		var dir = instance_furthest(Player.x,Player,Floor)+random_range(120,-120);
-		var len = 128+random(256);
-		var nearestFloor = instance_nearest(Player.x+lengthdir_x(len,dir),Player.y+lengthdir_y(len,dir),Floor)
-		with nearestFloor
-		{
-			instance_create(x+16,y+8,BigVultureSkull)
-		}
-	}
 with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/3+random(128)-64,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/3+random(128)-64,Floor)
 instance_create(x+16,y+16,BigFishSkull)
 }

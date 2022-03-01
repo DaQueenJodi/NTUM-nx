@@ -21,7 +21,6 @@ alarm[1] = 30+random(90)
 wkick = 0
 
 corpseTarget = -1;
-ammo = 5;
-maxammo = 5;
-
+projectileSpeed = 5.5;
+projectileSpeed += clamp(GetPlayerLoops(),0,3);
 alarm[2] = 1;

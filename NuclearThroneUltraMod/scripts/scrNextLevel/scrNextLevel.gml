@@ -320,10 +320,12 @@ function scrNextLevel() {
 
 	if (area=105 || area=106|| area=107 || area = 108 || area = 109 | area = 110 || area = 111 || area = 112)&&subarea<2//inverted curse
 	{
-		hard+=2
+		hard+=1.5
 	}
+	else if area == 10
+		hard += 1.5
 	else if (!(area = 7 && subarea == 1) && !(area = 5 && subarea == 1))//Labs 1 and Vulcano 1 don't increase hard
-	hard += 1
+		hard += 1
 
 
 

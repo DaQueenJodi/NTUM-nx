@@ -48,25 +48,32 @@ function scrPopEnemies() {
     if spawnarea = 10 {
         theBandit = choose(SavannaBandit, SavannaBandit, SavannaBandit, Bandit, BanditSquare);
         if styleb = 1 {
-            instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Vulture, Vulture, Hyena, Vulture))
+            instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Vulture, Exploder, Hyena, Vulture))
         }
         else {
             if random(7) < 1
 			{
-				repeat(3+irandom(2))//Pack of hyenas
+				repeat(2+irandom(2))//Pack of hyenas
 				{
 					instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Hyena)
 				}
 			}
             else {
-                if random(30) < 1 {
-                    instance_create(x + 16, y + 16, Barrel)
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, SavannaBandit)
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
-                }
-                else
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(theBandit, theBandit, theBandit, theBandit, theBandit, theBandit, Vulture, Hyena))
+	                if random(30) < 1 {
+	                    instance_create(x + 16, y + 16, Barrel)
+	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, SavannaBandit)
+	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
+	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
+	                }
+					else if random(25) < 1
+					{
+						repeat(2+irandom(2))
+						{
+							instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Hyena)
+						}
+					}
+	                else
+	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(theBandit, theBandit, theBandit, theBandit, Exploder, Exploder, Vulture, Vulture))
             }
         }
     }

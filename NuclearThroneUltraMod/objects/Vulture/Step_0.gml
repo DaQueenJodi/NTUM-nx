@@ -19,5 +19,6 @@ if corpseTarget > -1 && instance_exists(corpseTarget) && alarm[2] < 1
 		sprite_index = spr_eat;
 		image_index = 0;
 		alarm[2] = 5;
+		alarm[3] = 1;
 	}
 }

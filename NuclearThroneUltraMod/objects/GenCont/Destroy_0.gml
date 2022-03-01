@@ -231,8 +231,26 @@ room_speed=35;
     
     }
     
-    
+    if (Player.area == 1 && Player.subarea == 1)
+	{
+		var tar = Player;
+		if instance_exists(WeaponChest)
+		{
+			tar = WeaponChest;
+		}
+		var furthest = instance_furthest(tar.x,tar,Floor);
+		var dir = point_direction(x,y,furthest.x,furthest.y)+random_range(120,-120);
+		var len = 128+random(256);
+		var nearestFloor = instance_nearest(tar.x+lengthdir_x(len,dir),tar.y+lengthdir_y(len,dir),Floor)
+		with nearestFloor
+		{
+			instance_create(x+16,y+8,BigVultureSkull)
+		}
+	}
 }
+
+
+
 with PlayerAlarms//Recheck alarms for certain skills
 	event_user(0);
 

@@ -1,4 +1,4 @@
-maxhealth = 50
+maxhealth = 60
 size = 1
 if UberCont.public == 0//Temp only for dev build
 {
@@ -16,7 +16,7 @@ name = "ENTER?"
 event_inherited()
 shadowSprite = shd48;
 snd_hurt = sndHitRock
-alarm[1]=350//15 sec 450
+alarm[1]=300//10 seconds 300
 instance_create(x,y,WallBreak);
 instance_create(x,y+16,WallBreak);
 instance_create(x+16,y,WallBreak);

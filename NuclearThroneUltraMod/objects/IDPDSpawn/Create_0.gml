@@ -1,7 +1,7 @@
 if instance_exists(Player) && instance_exists(Floor)
 {
 
-if Player.area=100
+if Player.area=100 || (Player.area == 9 && Player.subarea == 3)
 {
 instance_destroy()
 exit;

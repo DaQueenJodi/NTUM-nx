@@ -6,20 +6,21 @@ scrTarget()
 if target > 0 {
     if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {
 		var dis = point_distance(target.x, target.y, x, y);
-        if dis > 64  && dis < 200{
+        if dis > 48  && dis < 140{
 			//Leads shot!
 			var xx = target.x + (target.hspeed*4)
 			var yy = target.y + (target.vspeed*4)
 			gunangle = point_direction(x, y, xx, yy);
 			with instance_create(x,y,EnemyBullet5)
 			{
-				motion_add(other.gunangle,6)
+				motion_add(other.gunangle,other.projectileSpeed)
 				team = other.team
 				image_angle = direction
 			}
 			alarm[1] += 10;
         }
         else {
+			gunangle = point_direction(x, y, target.x, target.y);
 			var noCorpse = true
 			if (my_health < maxhealth && instance_exists(Corpse) && random(4) < 2)
 			{
@@ -46,9 +47,9 @@ if target > 0 {
         }
 
         if target.x < x
-        right = -1
+			right = -1
         else if target.x > x
-        right = 1
+			right = 1
     }
     else
 	{
@@ -70,8 +71,12 @@ if target > 0 {
 			motion_add(random(360), 0.4)
 			walk = 20 + random(10)
 			alarm[1] = walk + 10 + random(30)
-			gunangle = direction
 		}
+		gunangle = direction
+		if hspeed > 0
+		    right = 1
+		else if hspeed < 0
+		    right = -1
 	}
 }
 else if random(10) < 2
@@ -80,10 +85,8 @@ else if random(10) < 2
 	walk = 20 + random(10)
 	alarm[1] = walk + 10 + random(30)
 	gunangle = direction
+	if hspeed > 0
+		right = 1
+	else if hspeed < 0
+		right = -1
 }
-
-
- if hspeed > 0
-    right = 1
-else if hspeed < 0
-    right = -1

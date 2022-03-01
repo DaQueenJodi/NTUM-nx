@@ -2,7 +2,7 @@
 if instance_exists(Player) {
     if Player.loops > 0 { //LOOP
 
-        alarm[1] = 12 + random(15);
+        alarm[1] = 10 + random(12);
 
         scrTarget()
         if target > 0 {
@@ -58,7 +58,7 @@ if instance_exists(Player) {
 
     }
     else { //PRE LOOP
-        alarm[1] = 20 + random(10)
+        alarm[1] = 10 + random(10)
 
         scrTarget()
         if target > 0 {
@@ -84,9 +84,9 @@ if instance_exists(Player) {
                 }
 
                 if target.x < x
-                right = -1
+					right = -1
                 else if target.x > x
-                right = 1
+					right = 1
             }
             else if random(4) < 1 {
                 motion_add(random(360), 0.4)
@@ -94,9 +94,9 @@ if instance_exists(Player) {
                 alarm[1] = walk + 10 + random(30)
                 gunangle = direction
                 if hspeed > 0
-                right = 1
+					right = 1
                 else if hspeed < 0
-                right = -1
+					right = -1
             }
         }
         else if random(10) < 1 {
@@ -105,9 +105,9 @@ if instance_exists(Player) {
             alarm[1] = walk + 10 + random(30)
             gunangle = direction
             if hspeed > 0
-            right = 1
+				right = 1
             else if hspeed < 0
-            right = -1
+				right = -1
         }
     }
 }

@@ -14,8 +14,8 @@ if instance_exists(Player)
 {
 if Player.race=22//Rogue
 {
-repeat(1+irandom(3))
-instance_create(x,y,IDPDSpawn);
+	repeat(1+irandom(3))
+		instance_create(x,y,IDPDSpawn);
 }
 
 if Player.race=15//atom extra chance for invertedness and bosses ofcourse aswell
