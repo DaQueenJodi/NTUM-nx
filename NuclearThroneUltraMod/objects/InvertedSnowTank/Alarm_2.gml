@@ -2,7 +2,7 @@ if ammo > 0
 {
 if ammo = 32
 snd_play(sndSnowTankPreShoot);
-snd_play(sndSnowTankShoot);
+snd_play(sndSnowTankShoot,0.01,true);
 if random(2)<1
 {
 with instance_create(x,y,EnemyBullet5)

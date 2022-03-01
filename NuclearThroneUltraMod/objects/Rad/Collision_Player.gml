@@ -3,7 +3,7 @@ if speed = 0
 other.rad += 1
 if other.crown == 4
 other.rad += 0.18;
-snd_play_2d(sndRadPickup)
+snd_play_2d(sndRadPickup,0.05,true);
 
 if other.skill_got[3]//Pluto
 {

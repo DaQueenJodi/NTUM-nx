@@ -52,13 +52,13 @@ instance_create(x+16,y-16,WallBreak)
 
 if ( (currentarea=105 || currentarea=106|| currentarea=107 || currentarea = 108 || currentarea = 109 || currentarea = 112) && currentsubarea < 2 && random(5) < chance )//inverted bosses
 {
-inverted=true;
-if instance_exists(Player)
-{
-Player.inverted=true;
-}
-with Corpse
-canspawnportal=false;
+	inverted=true;
+	if instance_exists(Player)
+	{
+		Player.inverted=true;
+	}
+	with Corpse
+	canspawnportal=false;
 }
 
 pullstrength=2;

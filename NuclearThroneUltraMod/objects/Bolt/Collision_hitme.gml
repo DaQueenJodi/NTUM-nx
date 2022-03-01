@@ -1,6 +1,6 @@
 if candmg and other.team != team
 {
-snd_play(other.snd_hurt, other.hurt_pitch_variation)
+snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
 if other.my_health >= dmg && other.sprite_index != other.spr_hurt
 {
 	instance_destroy()

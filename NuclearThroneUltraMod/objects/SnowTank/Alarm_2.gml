@@ -2,7 +2,7 @@ if ammo > 0
 {
 if ammo = 16
 snd_play(sndSnowTankPreShoot);
-snd_play(sndSnowTankShoot);
+snd_play(sndSnowTankShoot,0.01,true);
 with instance_create(x,y,EnemyBullet4)
 {motion_add(other.gunangle+sin(other.wave)*20,12)
 team = other.team

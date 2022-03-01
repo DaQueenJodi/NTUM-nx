@@ -479,7 +479,7 @@ with enemy{
 if x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 {
 //if sprite_index!=spr_hurt{
-snd_play(other.snd_hurt, other.hurt_pitch_variation)
+snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
 Sleep(10)
 my_health -= other.sharpteeth*multiplier//Sharp teeth's damage!
 sprite_index = spr_hurt

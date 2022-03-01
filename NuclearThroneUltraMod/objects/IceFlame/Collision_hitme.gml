@@ -32,7 +32,7 @@ if alarm[1] > 0
 }
 
 
-snd_play(other.snd_hurt, other.hurt_pitch_variation)
+snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
 
 }
 x = (x+other.x)/2+random(6)-3

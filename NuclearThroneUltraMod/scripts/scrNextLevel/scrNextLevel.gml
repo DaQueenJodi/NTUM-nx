@@ -52,7 +52,6 @@ function scrNextLevel() {
 	        //inverted big bandit
 	        area = 105
 	        subarea=3;
-	        //show_message("HEY");
 	        inverted=false;
 	        exit;
 	        }
@@ -144,8 +143,6 @@ function scrNextLevel() {
     
 	    if area = 109//inv wonderland bring to cheshire cat
 	    {
-    
-    
 	        if inverted && subarea<2
 	        {
 	        //inverted chesire cat
@@ -253,8 +250,8 @@ function scrNextLevel() {
 	    }
 		else if area == 10
 		{
-			area = 3;
-			subarea = 1;
+			area = 7;
+			subarea = 0;
 			inverted = true;
 		}
 	    else//WE LOOP HERE!
@@ -265,7 +262,6 @@ function scrNextLevel() {
 
 	if ( area=1 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted desert atom gets 12 procent
 	{area=105
-	inverted=false
 	subarea=1
 	lastarea=1}
 
@@ -276,43 +272,36 @@ function scrNextLevel() {
 	if ( area=3 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted scrapyard atom gets 12 procent
 	{area=106;
 	subarea=1;
-	lastarea=3;
-	inverted=false;}//in case of crownvault
+	lastarea=3;}//in case of crownvault
 
 	if ( area=4 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted crystal caves atom gets 12 procent
 	{area=111;
 	subarea=1;
-	lastarea=5;
-	inverted=false;}//in case of crownvault
+	lastarea=5;}//in case of crownvault
 
 	if ( area=5 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted frozen city atom gets 12 procent
 	{area=107;
 	subarea=1;
-	lastarea=5;
-	inverted=false;}//in case of crownvault
+	lastarea=5;}//in case of crownvault
 
 	if ( area=6 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted labs atom gets 12 procent
 	{area=112;
 	subarea=1;
-	lastarea=7;
-	inverted=false;}//in case of crownvault
+	lastarea=7;}//in case of crownvault
 
 	if ( area=7 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted vulcano atom gets 12 procent
 	{area=108;
 	subarea=1;
-	lastarea=7;
-	inverted=false;}//in case of crownvault
+	lastarea=7;}//in case of crownvault
 
 	if ( area=8 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted wonderland atom gets 12 procent
 	{area=109;
 	subarea=1;
-	lastarea=8;
-	inverted=false;}//in case of crownvault
+	lastarea=8;}//in case of crownvault
 
 	if ( area=2 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted sewers atom gets 12 procent
 	{area=110;
 	subarea=1;
-	inverted=false;
 	lastarea=3;}
 
 

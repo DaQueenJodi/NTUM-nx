@@ -16,7 +16,7 @@ image_index = 0
 motion_add(other.direction,6)
 }
 alarm[0]=5;
-snd_play(other.snd_hurt, other.hurt_pitch_variation)
+snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
 }
 //instance_create(x,y,BulletHit)
 }

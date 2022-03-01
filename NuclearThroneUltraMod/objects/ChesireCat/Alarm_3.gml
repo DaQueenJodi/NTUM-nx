@@ -4,7 +4,7 @@ if ammo > 0
 {
 ammo -= 1
 alarm[3] = 10
-snd_play(sndLaserUpg)
+snd_play(sndLaserUpg,0.01,true)
 //sprite_index = spr_fire
 //repeat(4){
 with instance_create(x,y,EnemyLaser)

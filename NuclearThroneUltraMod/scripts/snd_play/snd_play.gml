@@ -26,7 +26,12 @@ function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = tru
 	else
 	{
 		var playSound = true;
-		if audio_is_playing(sndId)
+		if cancelPrev
+		{
+			if audio_is_playing(sndId)
+				audio_stop_sound(sndId);
+		}
+		else if audio_is_playing(sndId)
 		{
 			var nearest = instance_nearest(x,y,Sound)
 			if instance_exists(nearest) && point_distance(x,y,nearest.x,nearest.y) < 32

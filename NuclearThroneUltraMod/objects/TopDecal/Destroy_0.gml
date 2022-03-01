@@ -1,5 +1,5 @@
 /// @description xxx
-if UberCont.area == 3
+if UberCont.area == 3 || UberCont.area == 106
 {
 	if sprite_index == sprScrapTopDecal && image_index == 2
 	{

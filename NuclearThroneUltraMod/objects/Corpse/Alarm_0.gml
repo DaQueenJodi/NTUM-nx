@@ -19,7 +19,7 @@ if instance_number(becomenemy) = 0 and !instance_exists(Menu) and !instance_exis
 					dir = instance_nearest(x-16,y-16,Floor)
 				}
 		        with instance_create(dir.x+16,dir.y+16,Portal)
-		        type = 1
+					type = 1
         
 		        instance_create(dir.x+16,dir.y+16,WallBreak);
         

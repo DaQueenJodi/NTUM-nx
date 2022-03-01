@@ -100,7 +100,7 @@ if place_meeting(x,y,Wall)
 
 
 
-snd_play(other.snd_hurt, other.hurt_pitch_variation)
+snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
 if random(2)<1
 instance_create(x,y,FishBoost)
 }
