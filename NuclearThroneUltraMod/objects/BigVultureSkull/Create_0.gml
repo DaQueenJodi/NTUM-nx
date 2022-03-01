@@ -1,15 +1,15 @@
 maxhealth = 60
 size = 1
-if UberCont.public == 0//Temp only for dev build
-{
+//if UberCont.public == 0//Temp only for dev build
+//{
 	spr_idle = sprBigVultureSkullOpen;
 	spr_hurt = sprBigVultureSkullOpenHurt
-}
+/*}
 else
 {
 	spr_idle = sprBigVultureSkull;
 	spr_hurt = sprBigVultureSkullHurt;
-}
+}*/
 spr_dead = sprBigVultureSkullDead
 name = "ENTER?"
 
