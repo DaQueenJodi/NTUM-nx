@@ -18,5 +18,4 @@ snd_mele = sndHyenaMelee
 //behavior
 walk = 0
 alarm[1] = 30+random(90)
-image_speed = 0.6;
 corpseTarget = -1;

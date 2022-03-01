@@ -125,9 +125,9 @@ if crown = 2
 }
 
 //NOCHEST SHIT
-if (instance_exists(WeaponChest) or instance_exists(BigWeaponChest) && area != 100)// and !(area = 1 and subarea = 1)
+if (instance_exists(WeaponChest) or instance_exists(BigWeaponChest) && area != 100 && !restarted)// and !(area = 1 and subarea = 1)
 {
-nochest += 1
+	nochest += 1
 }
 
 if crown == 15

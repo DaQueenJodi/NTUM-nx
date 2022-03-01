@@ -46,7 +46,7 @@ if target > 0
 				alarm[1] += walk;
 			}
 		}
-		if noCorpse &&  random(5) < 1
+		if noCorpse &&  random(4) < 1
 		{
 			motion_add(random(360),0.4)
 			walk = 10+random(15)

@@ -1,5 +1,5 @@
 raddrop = 64
-maxhealth = 175
+maxhealth = 200;//175
 meleedamage = 3
 size = 3
 
@@ -8,7 +8,7 @@ sucking = false;
 event_inherited();
 
 if Player.loops > 0 {
-	maxhealth = 300;
+	maxhealth = 350;
 	my_health = maxhealth;
 }
 

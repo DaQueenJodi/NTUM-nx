@@ -16,7 +16,14 @@ snd_dead = sndVultureDeath
 
 //behavior
 walk = 0
-gunangle = random(360)
+direction = random(360);
+gunangle = direction;
+speed = 1;
+if hspeed > 0
+	right = 1
+else if hspeed < 0
+	right = -1
+speed = 0;
 alarm[1] = 30+random(90)
 wkick = 0
 

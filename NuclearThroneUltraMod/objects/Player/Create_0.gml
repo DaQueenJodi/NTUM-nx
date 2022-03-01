@@ -375,7 +375,7 @@ bwepangle = 0
 cwepangle = 0
 bwepflip = 1
 cwepflip = 1
-nochest = 0
+nochest = -1
 
 bleed = 0
 decay = 600
