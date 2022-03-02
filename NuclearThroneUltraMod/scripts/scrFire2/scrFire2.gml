@@ -4919,5 +4919,32 @@ function scrFire2() {
 
 	break;
 	
+	//EXPLOSION HAMMER
+	case 377:
+
+	snd_play_fire(sndHammer)
+
+	instance_create(x,y,Dust)
+
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee+2)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee+2)*20,point_direction(x,y,mouse_x,mouse_y)),ExplosiveSlash)
+	{
+		dmg = 4
+		longarms = 0
+		if instance_exists(Player)
+		longarms = (Player.skill_got[13]+other.bettermelee)*3
+		motion_add(point_direction(x,y,mouse_x,mouse_y),2+longarms)
+		image_angle = direction
+		team = other.team
+	}
+
+	wepangle = -wepangle
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+180,5)
+	BackCont.viewx2 += lengthdir_x(13,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(13,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.shake += 1
+	wkick = -5
+
+	break;
+	
 	}//end of switch part 2!
 }

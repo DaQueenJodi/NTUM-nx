@@ -11,7 +11,7 @@ with instance_create(xx,yy,obj)
 		{
 			if alarm[1]>0
 			{
-				alarm[1]+=90;
+				alarm[1]+=25;
 	
 				with instance_create(x,y,Snooze)
 				{
@@ -25,7 +25,7 @@ with instance_create(xx,yy,obj)
 		{
 			if alarm[1]>0
 			{
-		    alarm[1]+=65;
+		    alarm[1]+=20;
 				with instance_create(x,y,Snooze)
 				{
 					owner = other.id;

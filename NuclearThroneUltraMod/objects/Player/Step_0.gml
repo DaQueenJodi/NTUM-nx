@@ -728,7 +728,7 @@ if ultra_got[21]//ULTRA A
     if ultra_got[67]
     {
         //Ultra c one with the gun
-        if wep_type[wep] != 0 && wep != 24 && wep != 36 && wep != 53 && wep!=198 && wep!=37 && wep!=126 && wep!=108 && wep!=109 && wep!=123 && wep != 222 && wep!=239//if wep_type[wep]==0 // You are holding a melee weapon
+        if wep_type[wep] != 0 && !scrMeleeWeapons()//if wep_type[wep]==0 // You are holding a melee weapon
         {
         reload -=0.64;
         }

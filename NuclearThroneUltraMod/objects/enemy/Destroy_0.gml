@@ -76,7 +76,7 @@ speed /= size
 
 // random pitch between 0.85 and 1.15, which probably matches how the real game handles death noises
 // if you dont believe me then boot up unmodded v99 and kill rats or crows and listen closely
-snd_play(snd_dead, 0.15);
+snd_play(snd_dead, 0.15,true);
 }
 //else if instance_exists(Corpse)
 //Corpse.alarm[0]=1;//spawn a portal?

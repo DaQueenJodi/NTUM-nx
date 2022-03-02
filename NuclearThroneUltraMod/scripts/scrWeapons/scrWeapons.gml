@@ -3379,7 +3379,7 @@ function scrWeapons() {
 	wep_load[306] = 17
 	wep_cost[306] = 9
 	wep_sprt[306] = sprBulletDisperseGun
-	wep_area[306] = 5
+	wep_area[306] = 10
 	wep_text[306] = "no sense was made"
 	wep_swap[306] = sndSwapPistol
 	wep_rad[306] = 0;
@@ -3401,7 +3401,7 @@ function scrWeapons() {
 	wep_load[308] = 9
 	wep_cost[308] = 12
 	wep_sprt[308] = sprBulletDisperseMachinegun
-	wep_area[308] = 9
+	wep_area[308] = 15
 	wep_text[308] = "rapid fire goodness"
 	wep_swap[308] = sndSwapPistol
 	wep_rad[308] = 0;
@@ -3410,7 +3410,7 @@ function scrWeapons() {
 	wep_type[309] = 1
 	wep_auto[309] = 0
 	wep_load[309] = 12
-	wep_cost[309] = 9
+	wep_cost[309] = 14
 	wep_sprt[309] = sprPopDisperseGun
 	wep_area[309] = 6
 	wep_text[309] = "no sense was made"
@@ -3423,7 +3423,7 @@ function scrWeapons() {
 	wep_load[310] = 10
 	wep_cost[310] = 6
 	wep_sprt[310] = sprLaserDisperseGun
-	wep_area[310] = 8
+	wep_area[310] = 15
 	wep_text[310] = "no sense was made"
 	wep_swap[310] = sndSwapEnergy
 	wep_rad[310] = 0;
@@ -3533,7 +3533,7 @@ function scrWeapons() {
 	wep_load[320] = 30
 	wep_cost[320] = 14
 	wep_sprt[320] = sprDisperseBazooka
-	wep_area[320] = 10
+	wep_area[320] = 16
 	wep_text[320] = "medicinal herb gun"
 	wep_swap[320] = sndSwapExplosive
 	wep_rad[320] = 0;
@@ -3875,7 +3875,7 @@ function scrWeapons() {
 	wep_load[351] = 18
 	wep_cost[351] = 22
 	wep_sprt[351] = sprBulletDisperseDisperseGun
-	wep_area[351] = 12
+	wep_area[351] = 18
 	wep_text[351] = "disperse it all!"
 	wep_swap[351] = sndSwapPistol
 	wep_rad[351] = 0;
@@ -4023,7 +4023,7 @@ function scrWeapons() {
 	wep_load[364] = 30
 	wep_cost[364] = 18
 	wep_sprt[364] = sprDisperseKrakenGun
-	wep_area[364] = 10
+	wep_area[364] = 16
 	wep_text[364] = "mobilize the kraken!"
 	wep_swap[364] = sndSwapExplosive
 	wep_rad[364] = 0;
@@ -4163,6 +4163,17 @@ function scrWeapons() {
 	wep_text[376] = "think forever"
 	wep_swap[376] = sndSwapMachinegun
 	wep_rad[376] = 0;
+	
+	wep_name[377] = "EXPLOSION HAMMER"
+	wep_type[377] = 4
+	wep_auto[377] = 0
+	wep_load[377] = 24
+	wep_cost[377] = 4
+	wep_sprt[377] = sprEnergyHammer
+	wep_area[377] = 9
+	wep_text[377] = "blow up in the face"
+	wep_swap[377] = sndSwapHammer
+	wep_rad[377] = 0;
 	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"

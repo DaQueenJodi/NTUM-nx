@@ -926,7 +926,7 @@ repeat(1+loops)
 			{
 				wave[i] = {
 					obj: GoldSnowTank,
-					time: 15
+					time: 17
 				};
 				i++;
 			}
@@ -1221,7 +1221,9 @@ repeat(1+loops)
 		/*
 		#region wave 7
 		case 7:
+			
 		break;
+		/*
 		#endregion
 		#region wave 8
 		case 8:
