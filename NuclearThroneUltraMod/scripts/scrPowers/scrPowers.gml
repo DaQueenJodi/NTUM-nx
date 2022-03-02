@@ -1790,16 +1790,14 @@ function scrPowers() {
 
 	with PortalStrike
 	{
-
-	if other.skill_got[5]
-	snd_play_2d(sndPortalStrikeFireTB);
-	else
-	snd_play_2d(sndPortalStrikeFire);
-
 	    if alarm[0]<0
 	    {
-    
-	    ammo=5;
+		if other.skill_got[5]
+			snd_play_2d(sndPortalStrikeFireTB);
+		else
+			snd_play_2d(sndPortalStrikeFire);
+	    
+		ammo=5;
 	    time=2;
 	    dir =point_direction(x,y,mouse_x,mouse_y);
     

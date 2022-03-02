@@ -15,6 +15,6 @@ if other.typ = 2
 with other
 instance_destroy()
 }
-
+speed *= 0.9;
 }
 

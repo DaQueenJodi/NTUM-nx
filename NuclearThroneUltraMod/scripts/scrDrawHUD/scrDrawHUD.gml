@@ -53,17 +53,24 @@ function scrDrawHUD() {
 	//ROGUE AMMO
 	if Player.race=22
 	{
-	if Player.ultra_got[85]=1
-	{
-	draw_sprite(sprRogueAmmoHUDTB,0,__view_get( e__VW.XView, 0 )+116,__view_get( e__VW.YView, 0 )+11)
-	draw_sprite(sprRogueAmmoHUDTB,Player.rogueammo,__view_get( e__VW.XView, 0 )+116,__view_get( e__VW.YView, 0 )+11)
-	}
-	else
-	{
-	draw_sprite(sprRogueAmmoHUD,0,__view_get( e__VW.XView, 0 )+116,__view_get( e__VW.YView, 0 )+11)
-	draw_sprite(sprRogueAmmoHUD,Player.rogueammo,__view_get( e__VW.XView, 0 )+116,__view_get( e__VW.YView, 0 )+11)
-	}
-
+		var spr = sprRogueAmmoHUD;
+		if Player.ultra_got[85]=1
+		{
+			if Player.skill_got[10]
+			{
+				spr = sprRogueAmmoHUDTBPlus;
+			}
+			else
+			{
+				spr = sprRogueAmmoHUDTB;
+			}
+		}
+		else if Player.skill_got[10]
+		{
+			spr = sprRogueAmmoHUDPlus;
+		}
+		draw_sprite(spr,0,__view_get( e__VW.XView, 0 )+116,__view_get( e__VW.YView, 0 )+11)
+		draw_sprite(spr,Player.rogueammo,__view_get( e__VW.XView, 0 )+116,__view_get( e__VW.YView, 0 )+11)
 	}
 
 

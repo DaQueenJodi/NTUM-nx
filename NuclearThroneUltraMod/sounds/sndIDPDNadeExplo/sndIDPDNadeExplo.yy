@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndIDPDNadeExplo",
-  "duration": 0.0,
+  "duration": 1.0,
   "parent": {
     "name": "IDPD sounds",
     "path": "folders/Sounds/IDPD sounds.yy",

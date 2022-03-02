@@ -495,6 +495,13 @@ repeat(1+loops)
 			};
 			i++;
 			wave[i] = {
+				obj: EliteWeaponChest,
+				time: 5,
+				xx: centerX-32,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
 				obj: BanditSquare,
 				time: 4
 			};
@@ -883,7 +890,7 @@ repeat(1+loops)
 			i++;
 			wave[i] = {
 				obj: GoldSnowTank,
-				time: 120,
+				time: 140,
 				xx: centerX+32,
 				yy: centerY
 			};
@@ -930,7 +937,7 @@ repeat(1+loops)
 			{
 				wave[i] = {
 					obj: GoldSnowTank,
-					time: 17
+					time: 20
 				};
 				i++;
 			}
@@ -1438,14 +1445,14 @@ repeat(1+loops)
 				obj: Sheep,
 				time: 140,
 				xx: centerX,
-				yy: centerY
+				yy: centerY-16
 			};
 			i++;
 			wave[i] = {
 				obj: ExplosiveSheep,
 				time: 60,
 				xx: centerX,
-				yy: centerY
+				yy: centerY+16
 			};
 			i++;
 			repeat(3)

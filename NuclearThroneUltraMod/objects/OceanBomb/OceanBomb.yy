@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprGrenade",
-    "path": "sprites/sprGrenade/sprGrenade.yy",
+    "name": "sprOceanBomb",
+    "path": "sprites/sprOceanBomb/sprOceanBomb.yy",
   },
   "solid": false,
   "visible": true,

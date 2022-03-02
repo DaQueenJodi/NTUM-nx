@@ -18,8 +18,13 @@ if skill == 2
 
 if skill = 85//ROGUE SUPER PORTAL STRIKE
 {
-Player.rogueammomax=6;
-Player.rogueammo=6;
+	Player.rogueammomax=6;
+	Player.rogueammo=6;
+	if Player.skill_got[10] //back muscle
+	{
+		Player.rogueammomax=8;
+		Player.rogueammo=8;
+	}
 }
 
 if skill = 97 // MUTATION SMITH WEAPON MUTATOR BETTER WEAPON SPECIFIC MUTATIONS

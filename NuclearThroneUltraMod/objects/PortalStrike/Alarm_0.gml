@@ -14,6 +14,6 @@ instance_create(x+lengthdir_x(exploPos,dir),y+lengthdir_y(exploPos,dir),RogueExp
 
 exploPos+=32;
 
-snd_play(sndIDPDNadeExplo);
+snd_play(sndIDPDNadeExplo,0.1,true);
 visible=false;
 

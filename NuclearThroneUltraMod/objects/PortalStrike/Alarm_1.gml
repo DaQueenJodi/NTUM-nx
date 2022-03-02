@@ -10,5 +10,5 @@ instance_create(x+lengthdir_x(exploPos,dir)+lengthdir_x(16,dir-90),y+lengthdir_y
 
 //exploPos+=32;
 
-snd_play(sndIDPDNadeExplo);
+snd_play(sndIDPDNadeExplo,0.1,true);
 

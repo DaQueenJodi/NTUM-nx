@@ -55,6 +55,14 @@ scrUnlockCharacter(15,"FOR TAKING THRONEBUTT AS CRYSTAL");
 }
 else if skill = 10
 {
+	if Player.ultra_got[85]//ROGUE SUPER PORTAL STRIKE
+	{
+		Player.rogueammomax=8;
+	}
+	else
+	{
+		Player.rogueammomax=4;
+	}
 if Player.race=25
 {
 Player.typ_amax[1] = 255+Player.skill_got[10]*345

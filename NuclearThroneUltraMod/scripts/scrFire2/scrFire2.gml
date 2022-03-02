@@ -695,12 +695,12 @@ function scrFire2() {
 	{
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,6+random(4))
 
-	dmg = 12//4 wrench
+	dmg = 11//4 wrench
 
 	if instance_exists(Player)
 	{
 	if Player.skill_got[17] = 1//laserbrain
-	dmg = 18//4 wrench
+	dmg = 17
 	}
 
 	longarms = 0
@@ -3767,7 +3767,6 @@ function scrFire2() {
 	case 340:
 
 	snd_play_fire(sndBloodHammer)
-	snd_play_fire(sndBloodLauncher)
 	snd_play_fire(sndRoll)
 
 	instance_create(x,y,Dust)
