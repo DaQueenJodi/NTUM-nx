@@ -18,7 +18,7 @@ spr_dead = sprMeleeDead
 spr_walk = sprite_index
 
 event_inherited()
-
+existTime = 0;
 image_speed = 0
 
 

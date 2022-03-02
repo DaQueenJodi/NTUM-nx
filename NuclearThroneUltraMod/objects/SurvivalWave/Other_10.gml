@@ -1218,11 +1218,44 @@ repeat(1+loops)
 			i++;
 		break;
 		#endregion
-		/*
 		#region wave 7
 		case 7:
-			
+			repeat(7)
+			{
+				wave[i] = {
+					obj: LavaBallEnemy,
+					time: 4,
+					xx: centerX+random_range(16,-16),
+					yy: centerY+random_range(16,-16)
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: LavaBallEnemy,
+				time: 140,
+				xx: centerX+random_range(16,-16),
+				yy: centerY+random_range(16,-16)
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: FireBat,
+					time: 4,
+					xx: centerX+random_range(16,-16),
+					yy: centerY+random_range(16,-16)
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: FireBat,
+				time: 120,
+				xx: centerX+random_range(16,-16),
+				yy: centerY+random_range(16,-16)
+			};
+			i++;
 		break;
+		#endregion
 		/*
 		#endregion
 		#region wave 8

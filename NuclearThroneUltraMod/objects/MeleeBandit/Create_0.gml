@@ -5,7 +5,7 @@ size = 1
 bloodempty=0;
 
 event_inherited()
-
+existTime = 0;
 spr_idle = sprMeleeIdle
 spr_walk = sprMeleeWalk
 spr_hurt = sprMeleeHurt
