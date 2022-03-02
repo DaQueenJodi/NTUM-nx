@@ -4872,5 +4872,52 @@ function scrFire2() {
 
 	break;
 	
+	//INFINITY SMART GUN
+	case 376:
+
+	snd_play_fire(sndSmartgun)
+	with instance_create(x,y,Shell)
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
+
+	with instance_create(x,y,Bullet1)
+	{
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,16)
+
+	var target;
+	target=instance_nearest(x+lengthdir_x(80,direction),y+lengthdir_y(80,direction),enemy);// nearest in direction of cursor
+
+	if instance_exists(target)
+	{
+	        if!(collision_line(x,y,target.x,target.y,Wall,false,true) )//No walls between player and target?
+	        {
+	            if(direction<point_direction(x,y,target.x,target.y)+30+(30*Player.skill_got[19]))
+	            {
+					direction=point_direction(x,y,target.x,target.y)+(random(12)-6)*other.accuracy;
+					motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,15)
+	            }
+	       }
+		   else
+		   {
+				motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,15)   
+		   }
+       
+	}
+	else
+	{
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,15)	
+	}
+
+	image_angle = direction
+	team = other.team
+
+	}
+
+	BackCont.viewx2 += lengthdir_x(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 3.5
+	wkick = 4
+
+	break;
+	
 	}//end of switch part 2!
 }

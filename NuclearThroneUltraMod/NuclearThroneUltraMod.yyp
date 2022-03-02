@@ -44,6 +44,7 @@
     {"id":{"name":"sndCrownBlood","path":"sounds/sndCrownBlood/sndCrownBlood.yy",},"order":11,},
     {"id":{"name":"sprInvertedChesireCatLaser","path":"sprites/sprInvertedChesireCatLaser/sprInvertedChesireCatLaser.yy",},"order":21,},
     {"id":{"name":"sprInvertedChesireCatIdle","path":"sprites/sprInvertedChesireCatIdle/sprInvertedChesireCatIdle.yy",},"order":23,},
+    {"id":{"name":"sprInfinitySmartGun","path":"sprites/sprInfinitySmartGun/sprInfinitySmartGun.yy",},"order":40,},
     {"id":{"name":"sprInvertedChesireCatPrepLaser","path":"sprites/sprInvertedChesireCatPrepLaser/sprInvertedChesireCatPrepLaser.yy",},"order":25,},
     {"id":{"name":"sprInvertedChesireCatHurt","path":"sprites/sprInvertedChesireCatHurt/sprInvertedChesireCatHurt.yy",},"order":27,},
     {"id":{"name":"sprInvertedChesireCatDead","path":"sprites/sprInvertedChesireCatDead/sprInvertedChesireCatDead.yy",},"order":29,},

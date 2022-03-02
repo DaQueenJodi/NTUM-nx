@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprSmartGun","path":"sprites/sprSmartGun/sprSmartGun.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprSmartGun",
     "tags": [],
     "resourceType": "GMSequence",
   },

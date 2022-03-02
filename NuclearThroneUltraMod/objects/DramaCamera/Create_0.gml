@@ -141,7 +141,7 @@ if Player.area == 9
 }
 if Player.area == 10
 {
-	name = "TEMPORARY BIG BANDIT";	
+	name = "INVERTED BIG BANDIT";	
 }
 
 }

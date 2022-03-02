@@ -4153,6 +4153,17 @@ function scrWeapons() {
 	wep_swap[375] = sndSwapSword
 	wep_rad[375] = 0;
 	
+	wep_name[376] = "INFINITY SMART GUN"
+	wep_type[376] = 1
+	wep_auto[376] = 1
+	wep_load[376] = 3
+	wep_cost[376] = 0
+	wep_sprt[376] = sprInfinitySmartGun
+	wep_area[376] = 22
+	wep_text[376] = "think forever"
+	wep_swap[376] = sndSwapMachinegun
+	wep_rad[376] = 0;
+	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"
 	wep_type[369] = 5
