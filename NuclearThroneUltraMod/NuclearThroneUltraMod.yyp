@@ -221,6 +221,7 @@
     {"id":{"name":"sprInvertedTeaPotFire","path":"sprites/sprInvertedTeaPotFire/sprInvertedTeaPotFire.yy",},"order":37,},
     {"id":{"name":"sprInvertedTeaPotHurt","path":"sprites/sprInvertedTeaPotHurt/sprInvertedTeaPotHurt.yy",},"order":39,},
     {"id":{"name":"sprInvertedTeaPotDead","path":"sprites/sprInvertedTeaPotDead/sprInvertedTeaPotDead.yy",},"order":41,},
+    {"id":{"name":"sprExplosiveHammer","path":"sprites/sprExplosiveHammer/sprExplosiveHammer.yy",},"order":53,},
     {"id":{"name":"sprInvertedCardGuy2Idle","path":"sprites/sprInvertedCardGuy2Idle/sprInvertedCardGuy2Idle.yy",},"order":43,},
     {"id":{"name":"sprInvertedCardGuy2Walk","path":"sprites/sprInvertedCardGuy2Walk/sprInvertedCardGuy2Walk.yy",},"order":45,},
     {"id":{"name":"sprInvertedCardGuy2Hurt","path":"sprites/sprInvertedCardGuy2Hurt/sprInvertedCardGuy2Hurt.yy",},"order":47,},

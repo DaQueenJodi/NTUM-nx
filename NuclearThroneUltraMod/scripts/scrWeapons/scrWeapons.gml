@@ -3412,7 +3412,7 @@ function scrWeapons() {
 	wep_load[309] = 12
 	wep_cost[309] = 14
 	wep_sprt[309] = sprPopDisperseGun
-	wep_area[309] = 6
+	wep_area[309] = 10
 	wep_text[309] = "no sense was made"
 	wep_swap[309] = sndSwapShotgun
 	wep_rad[309] = 0;
@@ -3423,7 +3423,7 @@ function scrWeapons() {
 	wep_load[310] = 10
 	wep_cost[310] = 6
 	wep_sprt[310] = sprLaserDisperseGun
-	wep_area[310] = 15
+	wep_area[310] = 13
 	wep_text[310] = "no sense was made"
 	wep_swap[310] = sndSwapEnergy
 	wep_rad[310] = 0;
@@ -4023,7 +4023,7 @@ function scrWeapons() {
 	wep_load[364] = 30
 	wep_cost[364] = 18
 	wep_sprt[364] = sprDisperseKrakenGun
-	wep_area[364] = 16
+	wep_area[364] = 15
 	wep_text[364] = "mobilize the kraken!"
 	wep_swap[364] = sndSwapExplosive
 	wep_rad[364] = 0;
@@ -4169,8 +4169,8 @@ function scrWeapons() {
 	wep_auto[377] = 0
 	wep_load[377] = 20
 	wep_cost[377] = 2
-	wep_sprt[377] = sprEnergyHammer
-	wep_area[377] = 13
+	wep_sprt[377] = sprExplosiveHammer
+	wep_area[377] = 10
 	wep_text[377] = "blow up in the face"
 	wep_swap[377] = sndSwapHammer
 	wep_rad[377] = 0;

@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprEnergyHammer","path":"sprites/sprEnergyHammer/sprEnergyHammer.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprEnergyHammer",
     "tags": [],
     "resourceType": "GMSequence",
   },
