@@ -17,16 +17,19 @@ function scrSpawnSurvivalWaveReward(){
 			instance_create(x+70,y-64,RadChest);
 		}
 	}
-	/*
+	
 	switch (wave)
 	{
-		case 2:
-			instance_create(x,y-64,WeaponChest);
-			instance_create(x,y+64,RadChest);
+		case 4:
+			with instance_create(x+64,y+96,WeaponMod)
+				image_xscale = -1;
+			instance_create(x-64,y+96,WeaponMod);
+				
 		break;
-		case 3:
-			instance_create(x,y-64,WeaponChest);
-			instance_create(x,y+64,RadChest);
+		case 9:
+			with instance_create(x+64,y+96,WeaponMod)
+				image_xscale = -1;
+			instance_create(x-64,y+96,WeaponMod);
 		break;
-	}*/
+	}
 }

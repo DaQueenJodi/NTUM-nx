@@ -1,4 +1,6 @@
 image_speed = 0.4
+type=1;
+inverted=false;//is this an inverted portal?
 
 endgame = 100
 
@@ -36,10 +38,8 @@ currentarea=BackCont.area;
 currentsubarea=BackCont.subarea;
 }
 
-type=1;
 
 
-inverted=false;//is this an inverted portal?
 
 instance_create(x,y,WallBreak)
 instance_create(x+16,y+16,WallBreak)

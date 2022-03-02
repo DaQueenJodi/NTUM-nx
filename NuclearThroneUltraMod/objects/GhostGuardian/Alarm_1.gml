@@ -12,7 +12,13 @@ if target > 0
 	}
 	else
 	{
-		if (dis > 400)
+		if random(3) < 1 && instance_exists(Floor) && !place_meeting(x,y,Floor)
+		{
+			var nearestFloor = instance_nearest(x,y,Floor)
+			direction = point_direction(x,y,nearestFloor.x+16,nearestFloor.y+16);
+			speed = 3;
+		}
+		else if (dis > 400)
 		{
 			direction = point_direction(x,y,target.x,target.y);
 			speed = 3;

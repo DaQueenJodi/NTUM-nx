@@ -2166,8 +2166,8 @@ function scrWeapons() {
 	wep_name[196] = "KRAKEN CANNON"
 	wep_type[196] = 4
 	wep_auto[196] = 0
-	wep_load[196] = 40
-	wep_cost[196] = 6
+	wep_load[196] = 30
+	wep_cost[196] = 4
 	wep_sprt[196] = sprKrakenCannon
 	wep_area[196] = 11
 	wep_text[196] = "release the kraken"

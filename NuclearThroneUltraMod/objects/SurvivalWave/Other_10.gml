@@ -37,6 +37,11 @@ with Corpse
 	instance_destroy(id,false);
 	instance_create(x,y,SurvivalPortal);
 }
+with WeaponMod
+{
+	instance_destroy();
+	instance_create(x,y,SurvivalPortal);
+}
 snd_play(sndCrownBlood);//LETS GO GET EM!
 wave = [];
 alarm[3] = 5;//Tell time is the difference between these two numbers
@@ -1443,14 +1448,14 @@ repeat(1+loops)
 		case 8:
 			wave[i] = {
 				obj: Sheep,
-				time: 140,
+				time: 80,
 				xx: centerX,
 				yy: centerY-16
 			};
 			i++;
 			wave[i] = {
 				obj: ExplosiveSheep,
-				time: 60,
+				time: 50,
 				xx: centerX,
 				yy: centerY+16
 			};
@@ -1483,15 +1488,16 @@ repeat(1+loops)
 				};
 				i++;
 			}
-			
 			wave[i] = {
 				obj: CardGuy2,
 				time: 10
 			};
 			i++;
 			wave[i] = {
-				obj: TeaPot,
-				time: 70
+				obj: AmmoChest,
+				time: 70,
+				xx: centerX,
+				yy: centerY - 32
 			};
 			i++;
 			repeat(3)
@@ -1528,7 +1534,7 @@ repeat(1+loops)
 				i++;
 				wave[i] = {
 					obj: TeaPot,
-					time: 20,
+					time: 30,
 					xx: centerX,
 					yy: centerY
 				};
@@ -1536,21 +1542,35 @@ repeat(1+loops)
 			}
 			wave[i] = {
 				obj: TeaPot,
-				time: 180,
+				time: 160,
 				xx: centerX,
 				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: VanSpawn,
+				time: 30,
+				xx: centerX-140,
+				yy: centerY+32
+			};
+			i++;
+			wave[i] = {
+				obj: VanSpawn,
+				time: 90,
+				xx: centerX+140,
+				yy: centerY-32
 			};
 			i++;
 			repeat(3)
 			{
 				wave[i] = {
 					obj: TeaPot,
-					time: 10
+					time: 14
 				};
 				i++;
 			}
 			wave[i] = {
-				obj: TeaPot,
+				obj: CardGuy,
 				time: 90
 			};
 			i++;
@@ -1558,12 +1578,12 @@ repeat(1+loops)
 			{
 				wave[i] = {
 					obj: CardGuy2,
-					time: 20
+					time: 15
 				};
 				i++;
 				wave[i] = {
 					obj: CardGuy,
-					time: 20
+					time: 15
 				};
 				i++;
 				wave[i] = {
@@ -1574,31 +1594,41 @@ repeat(1+loops)
 			}
 			wave[i] = {
 				obj: EliteWeaponChest,
-				time: 90,
+				time: 80,
 				xx: centerX,
 				yy: centerY - 32
 			};
 			i++;
 			wave[i] = {
+				obj: IDPDSpawn,
+				time: 10
+			};
+			i++;
+			wave[i] = {
 				obj: CardGuy,
-				time: 90
+				time: 80
 			};
 			i++;
 			wave[i] = {
 				obj: ChesireCat,
-				time: 200
+				time: 190
+			};
+			i++;
+			wave[i] = {
+				obj: IDPDSpawn,
+				time: 10
 			};
 			i++;
 			repeat(2)
 			{
 				wave[i] = {
 					obj: CardGuy2,
-					time: 30
+					time: 25
 				};
 				i++;
 				wave[i] = {
 					obj: CardGuy,
-					time: 40
+					time: 30
 				};
 				i++;
 				wave[i] = {
@@ -1608,13 +1638,190 @@ repeat(1+loops)
 			}
 		break;
 		#endregion
-		/*
 		#region wave 9
 		case 9:
+			repeat(8)
+			{
+				wave[i] = {
+					obj: PalaceGuardian,
+					time: 15
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: ExploGuardian,
+				time: 130,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: PalaceGuardian,
+					time: 14
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: ExploGuardian,
+				time: 40
+			};
+			i++;
+			wave[i] = {
+				obj: GuardianDog,
+				time: 140,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+					obj: PalaceGuardian,
+					time: 20
+				};
+				i++;
+			}
+			repeat(4)
+			{
+				wave[i] = {
+					obj: ExploGuardian,
+					time: 20
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: GhostGuardian,
+				time: 2,
+				xx: centerX+256,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: GhostGuardian,
+				time: 190,
+				xx: centerX-256,
+				yy: centerY
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+					obj: GhostGuardian,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: ExploGuardian,
+				time: 10,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+					obj: PalaceGuardian,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: ExploGuardian,
+				time: 120,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: HealthChest,
+				time: 70,
+				xx: centerX,
+				yy: centerY+32
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: GuardianDog,
+					time: 30
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: GuardianDog,
+				time: 160
+			};
+			i++;
+			var xxx = centerX - 128;
+			for (var ix = 0; ix < 8; ix++) {
+				var yyy = centerY - 128;
+				for (var iy = 0; iy < 24; iy++) {
+					wave[i] = {
+						obj: WallBreak,
+						time: 1,
+						xx: xxx,
+						yy: yyy,
+					};
+					i++
+					if (iy == 23 && ix == 3)
+					{
+						wave[i] = {
+							obj: Carpet,
+							time: 2,
+							xx: xxx+16,
+							yy: yyy+16,
+						};
+						i++
+						wave[i] = {
+							obj: NuclearThrone1,
+							time: 1,
+							xx: xxx,
+							yy: yyy,
+						};
+						i++
+					}
+					yyy -= 32;
+				}
+				xxx += 32;
+			}
+			wave[i] = {
+				obj: GhostGuardian,
+				time: 60
+			};
+			i++;
+			wave[i] = {
+				obj: ExploGuardian,
+				time: 30,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: PalaceGuardian,
+				time: 20
+			};
+			i++;
+			wave[i] = {
+				obj: PalaceGuardian,
+				time: 60
+			};
+			i++;
+			wave[i] = {
+				obj: GuardianDog,
+				time: 80
+			};
+			i++;
+			wave[i] = {
+				obj: PalaceGuardian,
+				time: 60
+			};
+			i++;
 		break;
-		
 		#endregion
-		*/
+		
 		#region loop
 		default:
 			//loops
