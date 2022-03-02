@@ -131,9 +131,19 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	    }*/
 	//}
 	if keyboard_check_pressed(ord("T")) {
-		instance_create(Player.x,Player.y,Portal);
-		thing = instance_create(x,y,PopupText)
-		thing.mytext = "PORTAL!";
+		if instance_exists(Portal) && UberCont.opt_gamemode == 25
+		{
+			subarea++;
+			hard += 1.25;
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "SUBAREA++! "+string(subarea);
+		}
+		else
+		{
+			instance_create(Player.x,Player.y,Portal);
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "PORTAL!";
+		}
 	}
 	if (keyboard_check_pressed(ord("1")))
 	    {

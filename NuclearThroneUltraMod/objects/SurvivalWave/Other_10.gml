@@ -11,6 +11,7 @@ if instance_exists(Player)
 {
 	waveNumber = Player.subarea - waveNumberOffset
 }
+debug("waveNumber "+string(waveNumber));
 with WepPickup
 {
 	instance_destroy();
@@ -78,6 +79,7 @@ switch (waveNumber)
 	break;
 	case 4:
 		song = mus4;
+		Player.area = 4;
 		with Floor
 		{
 			if styleb
@@ -88,6 +90,7 @@ switch (waveNumber)
 	break;
 	case 5:
 		song = mus5;
+		Player.area = 5;
 		with Floor
 		{
 			if styleb
@@ -108,6 +111,7 @@ switch (waveNumber)
 	break;
 	case 7:
 		song = musVulcano;
+		Player.area = 7;
 		with Floor
 		{
 			if styleb
@@ -1237,6 +1241,11 @@ repeat(1+loops)
 				yy: centerY+random_range(16,-16)
 			};
 			i++;
+			wave[i] = {
+				obj: Thief,
+				time: 4,
+			};
+			i++;
 			repeat(3)
 			{
 				wave[i] = {
@@ -1248,12 +1257,164 @@ repeat(1+loops)
 				i++;
 			}
 			wave[i] = {
+				obj: Thief,
+				time: 4,
+			};
+			i++;
+			wave[i] = {
 				obj: FireBat,
 				time: 120,
 				xx: centerX+random_range(16,-16),
 				yy: centerY+random_range(16,-16)
 			};
 			i++;
+			repeat(4)
+			{
+				wave[i] = {
+					obj: FireBaller,
+					time: 5,
+				};
+				i++;
+			}
+			repeat(4)
+			{
+				wave[i] = {
+					obj: SuperFireBaller,
+					time: 10,
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: BanditSquare,
+				time: 40,
+			};
+			i++;
+			wave[i] = {
+				obj: Bandit,
+				time: 40,
+			};
+			i++;
+			wave[i] = {
+				obj: Thief,
+				time: 30,
+			};
+			i++;
+			wave[i] = {
+				obj: LavaBallEnemy,
+				time: 160,
+				xx: centerX,
+				yy: centerY,
+			};
+			i++;
+			wave[i] = {
+				obj: SuperFireBaller,
+				time: 20,
+				xx: centerX,
+				yy: centerY,
+			};
+			repeat(7)
+			{
+				wave[i] = {
+					obj: Salamander,
+					time: 10,
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Salamander,
+				time: 160,
+			};
+			i++;
+			repeat(7)
+			{
+				wave[i] = {
+					obj: LavaBallEnemy,
+					time: 4
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: LavaBallEnemy,
+				time: 160,
+			};
+			wave[i] = {
+				obj: FireBat,
+				time: 40,
+				xx: centerX,
+				yy: centerY,
+			};
+			var xxx = centerX+96;
+			for (var ix = 0; ix < 8; ix++) {
+				var yyy = centerY - 128;
+				for (var iy = 0; iy < 8; iy++) {
+					wave[i] = {
+						obj: WallBreak,
+						time: 2,
+						xx: xxx,
+						yy: yyy,
+					};
+					i++
+					yyy += 32;
+				}
+				xxx += 32;
+			}
+			wave[i] = {
+				obj: HotDrake,
+				time: 120,
+				xx: centerX+256,
+				yy: centerY,
+			};
+			i++
+			wave[i] = {
+				obj: FireBat,
+				time: 40
+			};
+			i++
+			wave[i] = {
+				obj: BanditSquare,
+				time: 40
+			};
+			i++;
+			wave[i] = {
+				obj: LavaBallEnemy,
+				time: 40
+			};
+			i++
+			wave[i] = {
+				obj: Salamander,
+				time: 40
+			};
+			i++
+			wave[i] = {
+				obj: FireBaller,
+				time: 50
+			};
+			i++
+			wave[i] = {
+				obj: SuperFireBaller,
+				time: 60
+			};
+			i++
+			wave[i] = {
+				obj: SuperFireBaller,
+				time: 30
+			};
+			i++
+			wave[i] = {
+				obj: Bandit,
+				time: 20
+			};
+			i++;
+			wave[i] = {
+				obj: Salamander,
+				time: 40
+			};
+			i++
+			wave[i] = {
+				obj: FireBat,
+				time: 40
+			};
+			i++
 		break;
 		#endregion
 		/*

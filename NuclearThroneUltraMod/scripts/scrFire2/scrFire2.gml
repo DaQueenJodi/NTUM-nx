@@ -4926,13 +4926,13 @@ function scrFire2() {
 
 	instance_create(x,y,Dust)
 
-	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee+2)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee+2)*20,point_direction(x,y,mouse_x,mouse_y)),ExplosiveSlash)
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee+4)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee+4)*20,point_direction(x,y,mouse_x,mouse_y)),ExplosiveSlash)
 	{
-		dmg = 4
+		dmg = 8
 		longarms = 0
 		if instance_exists(Player)
 		longarms = (Player.skill_got[13]+other.bettermelee)*3
-		motion_add(point_direction(x,y,mouse_x,mouse_y),2+longarms)
+		motion_add(point_direction(x,y,mouse_x,mouse_y),1+longarms)
 		image_angle = direction
 		team = other.team
 	}

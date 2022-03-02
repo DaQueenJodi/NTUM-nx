@@ -4167,10 +4167,10 @@ function scrWeapons() {
 	wep_name[377] = "EXPLOSION HAMMER"
 	wep_type[377] = 4
 	wep_auto[377] = 0
-	wep_load[377] = 24
-	wep_cost[377] = 4
+	wep_load[377] = 20
+	wep_cost[377] = 2
 	wep_sprt[377] = sprEnergyHammer
-	wep_area[377] = 9
+	wep_area[377] = 13
 	wep_text[377] = "blow up in the face"
 	wep_swap[377] = sndSwapHammer
 	wep_rad[377] = 0;

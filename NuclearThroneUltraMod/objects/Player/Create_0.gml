@@ -362,7 +362,7 @@ prevhealth = maxhealth //health previous step
 
 //default shit
 clicked = 0
-if wep_type[wep] = 0 or wep = 24 or wep = 36
+if scrMeleeWeapons()
 wepangle = choose(120, -120)
 else
     wepangle = 0

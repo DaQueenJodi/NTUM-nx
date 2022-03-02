@@ -1,7 +1,10 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "mskWallBreak",
+    "path": "sprites/mskWallBreak/mskWallBreak.yy",
+  },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": {
     "name": "mskWallBreak",
     "path": "sprites/mskWallBreak/mskWallBreak.yy",
