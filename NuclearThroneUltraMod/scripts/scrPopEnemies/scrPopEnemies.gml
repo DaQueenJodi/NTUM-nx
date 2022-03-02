@@ -1,8 +1,11 @@
 function scrPopEnemies() {
+	var loops = 0;
+	if instance_exists(Player)
+		loops = Player.loops;
     //DESERT
     if spawnarea = 1 or spawnarea = 0 // or spawnarea = 100
     {
-		if Player.loops > 0 {
+		if loops > 0 {
 	        if styleb = 1 {
 	            instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(MaggotSpawn, BigMaggot, JungleFly, Maggot))
 	        }
@@ -117,7 +120,7 @@ function scrPopEnemies() {
     }
     //SEWERS
     if spawnarea = 2 {
-		if Player.loops > 0 {
+		if loops > 0 {
 	        if styleb = 1 {
 	            instance_create(x + 16, y + 16, choose(Rat, Rat, Gator, Gator, Exploder))
 	        }
@@ -155,7 +158,7 @@ function scrPopEnemies() {
 
     //SCRAPYARD
     if spawnarea = 3 {
-		if Player.loops > 0 {
+		if loops > 0 {
 			if styleb = 1 && random(2) < 1 {
 				instance_create(x + 16, y + 16, choose(MeleeBandit, Thief, Salamander, Salamander, Salamander, Salamander))
 	        }
@@ -219,7 +222,7 @@ function scrPopEnemies() {
 
     //CAVES
     if spawnarea = 4 {
-		if Player.loops > 0 {
+		if loops > 0 {
 			if random(12) < 1
 	        instance_create(x + 16, y + 16, choose(FireBat, ExploFreak, RhinoFreak))
 	        else
@@ -249,7 +252,7 @@ function scrPopEnemies() {
 
     //FROZEN CITY
     if spawnarea = 5 {
-		if Player.loops > 0 {
+		if loops > 0 {
 			if random(12) < 1
 			instance_create(x + 16, y + 16, choose(ExploGuardian, GuardianDog, Necromancer))
 			else if random(3) < 2
@@ -270,7 +273,7 @@ function scrPopEnemies() {
 
     //LABS
     if spawnarea = 6 {
-		if Player.loops > 0 {
+		if loops > 0 {
 	        if subarea = 2 {
 	            if random(22) < 1
 	            instance_create(x + 16, y + 16, choose(Freak, Freak, Freak, Freak, Turret, RhinoFreak));
@@ -341,35 +344,70 @@ function scrPopEnemies() {
 
     //VULCANO
     if spawnarea = 7 {
-        if styleb = 1 //b style
-        {
-            if random(10) < 1 {
-                repeat(2)
-                instance_create(x + 12 + random(8), y + 12 + random(8), choose(LavaBallEnemy, LavaBallEnemy, LavaBallEnemy, LavaBallEnemy, LavaBallEnemy, Salamander))
-            }
-            else if random(7) < 1
-            instance_create(x + 16, y + 16, choose(SuperFireBaller, Thief, SuperFireBaller, FireBat, Bandit, BanditSquare, FireBaller, FireBaller))
-        } else //a style
-        {
-            if random(10) < 1 {
-                if instance_exists(Player) {
-                    if Player.subarea = 2 {
-                        repeat(3)
-                        instance_create(x + 12 + random(8), y + 12 + random(8), choose(FireBat, LavaBallEnemy, LavaBallEnemy, FireBaller, FireBat, Salamander))
-                    }
-                    else { //not subarea 2
-                        repeat(4)
-                        instance_create(x + 12 + random(8), y + 12 + random(8), choose(FireBat, LavaBallEnemy, LavaBallEnemy, FireBaller, FireBat, Salamander, Bandit, BanditSquare))
-                    }
-                }
-                else { //dead Player
-                    repeat(2)
-                    instance_create(x + 12 + random(8), y + 12 + random(8), choose(FireBat, LavaBallEnemy, LavaBallEnemy, FireBaller, FireBat, Salamander, Salamander, Bandit, BanditSquare))
-                }
-            }
-            else if random(7) < 1
-            instance_create(x + 16, y + 16, choose(FireBat, FireBat, LavaBallEnemy, SuperFireBaller, SuperFireBaller, FireBaller, Salamander))
-        }
+		if loops > 0
+		{
+			if styleb = 1 //b style
+	        {
+	            if random(10) < 1 {
+	                repeat(2)
+	                instance_create(x + 12 + random(8), y + 12 + random(8), choose(LavaBallEnemy, LavaBallEnemy, GhostGuardian, GhostGuardian, LavaBallEnemy, Salamander))
+	            }
+	            else if random(7) < 1
+	            instance_create(x + 16, y + 16, choose(SuperFireBaller, Thief, SuperFireBaller, FireBat, ExploFreak, BanditSquare, FireBaller,MeleeBandit, FireBaller))
+	        } else //a style
+	        {
+	            if random(10) < 1 {
+	                if instance_exists(Player) {
+	                    if Player.subarea = 2 {
+	                        repeat(3)
+	                        instance_create(x + 12 + random(8), y + 12 + random(8), choose(FireBat, LavaBallEnemy, LavaBallEnemy, FireBaller, FireBat, Salamander))
+	                    }
+	                    else { //not subarea 2
+	                        repeat(4)
+	                        instance_create(x + 12 + random(8), y + 12 + random(8), choose(FireBat, LavaBallEnemy, LavaBallEnemy, FireBaller, FireBat, Salamander, Bandit, BanditSquare))
+	                    }
+	                }
+	                else { //dead Player
+	                    repeat(2)
+	                    instance_create(x + 12 + random(8), y + 12 + random(8), choose(FireBat, LavaBallEnemy, ExploFreak, FireBaller, FireBat,MeleeBandit, Salamander, Salamander, Bandit, BanditSquare))
+	                }
+	            }
+	            else if random(7) < 1
+					instance_create(x + 16, y + 16, choose(FireBat, FireBat, LavaBallEnemy, SuperFireBaller, SuperFireBaller, FireBaller, Salamander,ExploFreak,GhostGuardian,MeleeBandit))
+	        }	
+		}
+		else
+		{
+	        if styleb = 1 //b style
+	        {
+	            if random(10) < 1 {
+	                repeat(2)
+	                instance_create(x + 12 + random(8), y + 12 + random(8), choose(LavaBallEnemy, LavaBallEnemy, LavaBallEnemy, LavaBallEnemy, LavaBallEnemy, Salamander))
+	            }
+	            else if random(7) < 1
+	            instance_create(x + 16, y + 16, choose(SuperFireBaller, Thief, SuperFireBaller, FireBat, Bandit, BanditSquare, FireBaller, FireBaller))
+	        } else //a style
+	        {
+	            if random(10) < 1 {
+	                if instance_exists(Player) {
+	                    if Player.subarea = 2 {
+	                        repeat(3)
+	                        instance_create(x + 12 + random(8), y + 12 + random(8), choose(FireBat, LavaBallEnemy, LavaBallEnemy, FireBaller, FireBat, Salamander))
+	                    }
+	                    else { //not subarea 2
+	                        repeat(4)
+	                        instance_create(x + 12 + random(8), y + 12 + random(8), choose(FireBat, LavaBallEnemy, LavaBallEnemy, FireBaller, FireBat, Salamander, Bandit, BanditSquare))
+	                    }
+	                }
+	                else { //dead Player
+	                    repeat(2)
+	                    instance_create(x + 12 + random(8), y + 12 + random(8), choose(FireBat, LavaBallEnemy, LavaBallEnemy, FireBaller, FireBat, Salamander, Salamander, Bandit, BanditSquare))
+	                }
+	            }
+	            else if random(7) < 1
+	            instance_create(x + 16, y + 16, choose(FireBat, FireBat, LavaBallEnemy, SuperFireBaller, SuperFireBaller, FireBaller, Salamander))
+	        }
+		}
     }
 
     //INVERTED VULCANO
@@ -554,7 +592,7 @@ function scrPopEnemies() {
 
 
     if spawnarea == 9 && subarea != 3 {
-		if Player.loops > 0 {
+		if loops > 0 {
 			if styleb = 1 && random(7) < 2 {
 	            instance_create(x + 16, y + 16, choose(GuardianDog, GuardianDog, GhostGuardian))
 	        } else {

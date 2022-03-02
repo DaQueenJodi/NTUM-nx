@@ -1416,11 +1416,70 @@ repeat(1+loops)
 			};
 			i++
 		break;
-		#endregion
-		/*
+		
 		#endregion
 		#region wave 8
 		case 8:
+			wave[i] = {
+				obj: Sheep,
+				time: 140,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: ExplosiveSheep,
+				time: 60,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: CardGuy,
+					time: 2
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: CardGuy,
+				time: 60
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: CardGuy2,
+					time: 2
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: CardGuy2,
+				time: 60
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: Sheep,
+					time: 1
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Sheep,
+				time: 1
+			};
+			i++;
+			wave[i] = {
+				obj: SuperMimic,
+				time: 60,
+				xx: centerX,
+				yy: centerY+32
+			};
+			i++;
 		break;
 		#endregion
 		#region wave 9
@@ -1428,7 +1487,7 @@ repeat(1+loops)
 		break;
 		
 		#endregion
-		*/
+		
 		#region loop
 		default:
 			//loops
@@ -1452,7 +1511,7 @@ with MusCont
 waveLength = array_length(wave);
 for (var w = 0; w < waveLength; w++) {
 	//Decrease duration between spawns each loops
-	wave[w].time = clamp(wave[w].time/(1+(loops*0.3)),
+	wave[w].time = clamp(wave[w].time/(1+(loops*0.4)),
 	1,wave[w].time);
 }
 #endregion
