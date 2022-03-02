@@ -23,7 +23,7 @@ function scrRaces() {
 	race_bskin[1] = 0
 	race_cskin[1] = 0
 	race_bskin_lock[1] = "REACH LOOP#WITH GAMEMODE:# FISH'S PARTNER ONLY"
-	race_cskin_lock[1] = "LOOP WITH EVERY CHARACTER"
+	race_cskin_lock[1] = "LOOP WITH#EVERY CHARACTER"
 
 
 	race_name[2] = "[CRYSTAL]"

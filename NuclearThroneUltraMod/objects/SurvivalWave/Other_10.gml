@@ -1033,7 +1033,7 @@ repeat(1+loops)
 			}
 			wave[i] = {
 				obj: RhinoFreak,
-				time: 20
+				time: 50
 			};
 			i++;
 			wave[i] = {
@@ -1113,7 +1113,7 @@ repeat(1+loops)
 			i++;
 			wave[i] = {
 				obj: RhinoFreak,
-				time: 100,
+				time: 180,
 				xx: centerX,
 				yy: centerY
 			};
@@ -1256,7 +1256,7 @@ with MusCont
 waveLength = array_length(wave);
 for (var w = 0; w < waveLength; w++) {
 	//Decrease duration between spawns each loops
-	wave[w].time = clamp(wave[w].time/(1+(loops*0.2)),
+	wave[w].time = clamp(wave[w].time/(1+(loops*0.3)),
 	1,wave[w].time);
 }
 #endregion

@@ -115,6 +115,10 @@ function scrGameModes() {
 	gamemode_unlock[28] = "TAKE EVERY REGULAR MUTATION#ATLEAST ONCE";
 	gamemode_have[28] = 0;
 	
+	gamemode[29] = "INFINITE AMMO";
+	gamemode_unlock[29] = "TAKE FISH'S ULTRA#GUN WARRANT";
+	gamemode_have[29] = 0;
+	
 	/*
 	gamemode[23] = "SEEDED";
 	gamemode_description[23] = "YOU ONLY GET MELEE WEAPONS#ALWAYS GET LONG ARMS";
@@ -158,9 +162,10 @@ function scrGameModes() {
 	gamemodeOrder[23] = 23;
 	gamemodeOrder[24] = 24;
 	gamemodeOrder[25] = 28;
-	gamemodeOrder[26] = 17;
-	gamemodeOrder[27] = 26;
-	gamemodeOrder[28] = 27;
+	gamemodeOrder[26] = 29;
+	gamemodeOrder[27] = 17;
+	gamemodeOrder[28] = 26;
+	gamemodeOrder[29] = 27;
 
 
 

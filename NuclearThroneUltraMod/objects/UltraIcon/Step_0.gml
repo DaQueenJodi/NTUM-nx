@@ -11,6 +11,11 @@ if skill = 0
 Player.patience+=1;
 }
 
+if skill == 2
+{
+	scrUnlockGameMode(29,"FOR TAKING FISH'S ULTRA#GUN WARRANT");	
+}
+
 if skill = 85//ROGUE SUPER PORTAL STRIKE
 {
 Player.rogueammomax=6;
