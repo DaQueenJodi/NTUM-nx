@@ -18,7 +18,7 @@ if target > 0
 			direction = point_direction(x,y,nearestFloor.x+16,nearestFloor.y+16);
 			speed = 3;
 		}
-		else if (dis > 400)
+		else if (dis > 370)
 		{
 			direction = point_direction(x,y,target.x,target.y);
 			speed = 3;
