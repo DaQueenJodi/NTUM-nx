@@ -8,7 +8,7 @@ if instance_exists(Player) {
 scrTarget()
 if target > 0 {
     if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {
-        if point_distance(target.x, target.y, x, y) > 48 and point_distance(target.x, target.y, x, y) < 128 {
+        if point_distance(target.x, target.y, x, y) > 48 and point_distance(target.x, target.y, x, y) < 120 {
             if random(2) < 1 {
                 alarm[2] = 16;
                 instance_create(x, y, Notice);
@@ -19,7 +19,7 @@ if target > 0 {
                     alarm[1] = 10 + random(10);
                 }
             }
-            else {
+            else if random(2) < 1{
                 direction = point_direction(x, y, target.x, target.y) + random(180) - 90
                 speed = 0.4
                 walk = 10 + random(10)

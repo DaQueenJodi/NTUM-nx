@@ -61,7 +61,7 @@ direction = point_direction(x,y,target.xprevious,target.yprevious)
             {
             sprite_index = sprFireLilHunter
         
-            motion_add(other.direction+random(12)-6,2+random(3))
+            motion_add(other.direction+random(12)-6,3+random(4))
             image_angle = direction
             team = other.team
             }

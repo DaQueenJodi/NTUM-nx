@@ -40,9 +40,9 @@ if target > 0
 		if instance_exists(Player)
 		{
 			if Player.skill_got[5] = 1
-			alarm[1] = 3
+			alarm[1] = 4
 			else
-			alarm[1] = 8
+			alarm[1] = 9
 		}
 	}
 	else

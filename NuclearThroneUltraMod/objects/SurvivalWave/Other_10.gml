@@ -1257,7 +1257,7 @@ repeat(1+loops)
 				i++;
 			}
 			wave[i] = {
-				obj: Thief,
+				obj: Bandit,
 				time: 4,
 			};
 			i++;
@@ -1292,6 +1292,13 @@ repeat(1+loops)
 			wave[i] = {
 				obj: Bandit,
 				time: 40,
+			};
+			i++;
+			wave[i] = {
+				obj: AmmoChest,
+				time: 40,
+				xx: centerX,
+				yy: centerY + 32
 			};
 			i++;
 			wave[i] = {
@@ -1333,6 +1340,13 @@ repeat(1+loops)
 				};
 				i++;
 			}
+			wave[i] = {
+				obj: WeaponChest,
+				time: 40,
+				xx: centerX,
+				yy: centerY - 32
+			};
+			i++
 			wave[i] = {
 				obj: LavaBallEnemy,
 				time: 160,
@@ -1444,7 +1458,14 @@ repeat(1+loops)
 			}
 			wave[i] = {
 				obj: CardGuy,
-				time: 60
+				time: 10
+			};
+			i++;
+			wave[i] = {
+				obj: TeaPot,
+				time: 70,
+				xx: centerX,
+				yy: centerY
 			};
 			i++;
 			repeat(3)
@@ -1455,9 +1476,15 @@ repeat(1+loops)
 				};
 				i++;
 			}
+			
 			wave[i] = {
 				obj: CardGuy2,
-				time: 60
+				time: 10
+			};
+			i++;
+			wave[i] = {
+				obj: TeaPot,
+				time: 70
 			};
 			i++;
 			repeat(3)
@@ -1480,14 +1507,107 @@ repeat(1+loops)
 				yy: centerY+32
 			};
 			i++;
+			repeat(8)
+			{
+				wave[i] = {
+					obj: CardGuy2,
+					time: 20
+				};
+				i++;
+				wave[i] = {
+					obj: CardGuy,
+					time: 20
+				};
+				i++;
+				wave[i] = {
+					obj: TeaPot,
+					time: 20,
+					xx: centerX,
+					yy: centerY
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: TeaPot,
+				time: 180,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(3)
+			{
+				wave[i] = {
+					obj: TeaPot,
+					time: 10
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: TeaPot,
+				time: 90
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+					obj: CardGuy2,
+					time: 20
+				};
+				i++;
+				wave[i] = {
+					obj: CardGuy,
+					time: 20
+				};
+				i++;
+				wave[i] = {
+					obj: TeaPot,
+					time: 20
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: EliteWeaponChest,
+				time: 90,
+				xx: centerX,
+				yy: centerY - 32
+			};
+			i++;
+			wave[i] = {
+				obj: CardGuy,
+				time: 90
+			};
+			i++;
+			wave[i] = {
+				obj: ChesireCat,
+				time: 200
+			};
+			i++;
+			repeat(2)
+			{
+				wave[i] = {
+					obj: CardGuy2,
+					time: 30
+				};
+				i++;
+				wave[i] = {
+					obj: CardGuy,
+					time: 40
+				};
+				i++;
+				wave[i] = {
+					obj: TeaPot,
+					time: 20
+				};
+			}
 		break;
 		#endregion
+		/*
 		#region wave 9
 		case 9:
 		break;
 		
 		#endregion
-		
+		*/
 		#region loop
 		default:
 			//loops
