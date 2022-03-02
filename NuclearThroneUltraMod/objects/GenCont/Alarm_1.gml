@@ -73,7 +73,11 @@ else if Player.subarea==2 && (Player.area==6 || Player.area == 112)//Labs boss
 Player.x = 10016+96;
 Player.y = 10016+96;
 }
-
+else if Player.area = 100 && UberCont.crown_start[Player.race] && Player.crownvisits == 0 && instance_exists(CrownPickup)
+{
+	Player.x = CrownPickup.x;
+	Player.y = CrownPickup.y+32;
+}
 Player.drawempty = 30
 Player.drawlowhp = 30
 }

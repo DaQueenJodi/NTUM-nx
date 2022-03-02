@@ -256,3 +256,4 @@ with PlayerAlarms//Recheck alarms for certain skills
 
 with UberCont
 	wallsBroken = 0;
+	

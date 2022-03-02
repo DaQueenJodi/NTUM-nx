@@ -54,11 +54,14 @@ if Player.area = 100
 	    with instance_create(x+64,y-64,WeaponMod)
 	    image_xscale=-1;
 	    }
-		if (UberCont.crown_start[Player.race] && Player.crownvisits = -1)
+		/*
+		debug("Player.crownvisits: ", Player.crownvisits);
+		if (UberCont.crown_start[Player.race] && Player.crownvisits == 0)
 		{
+			debug("move the player");
 			Player.x = x+16;
-			Player.y = y+64;
-		}
+			Player.y = y+32;
+		}*/
 	}
 }
 else if (Player.area > 2 or Player.loops > 0) and Player.subarea = 2 && Player.area != 9 && Player.area!=105 && Player.area!=101&&Player.area!=6&&Player.area!=8&&Player.area!=7&&Player.area!=108
@@ -115,7 +118,8 @@ instance_create(instance_nearest(Player.x,Player.y,Floor).x+16, instance_nearest
 }
 
 
-if !(Player.area == 9 && Player.subarea == 3 || ((Player.area == 6 || Player.area == 112) && Player.subarea == 2) || UberCont.opt_gamemode == 25 || UberCont.opt_gamemode == 8)
+if !(Player.area == 9 && Player.subarea == 3 || ((Player.area == 6 || Player.area == 112) && Player.subarea == 2) || UberCont.opt_gamemode == 25 || UberCont.opt_gamemode == 8
+|| Player.area == 100)
 {
 	//safe corridors pls
 	instance_create(Player.x,Player.y,WallBreak);
@@ -124,7 +128,7 @@ if !(Player.area == 9 && Player.subarea == 3 || ((Player.area == 6 || Player.are
 	instance_create(Player.x-16,Player.y+16,WallBreak);
 	instance_create(Player.x-16,Player.y-16,WallBreak);
 }
-else
+else if Player.area != 100
 {
 	Player.x += 16;
 	Player.y -= 32;

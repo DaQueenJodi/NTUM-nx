@@ -94,8 +94,8 @@ if UberCont.opt_camera_follow==0
 {
 	if !instance_exists(DramaCamera) && instance_exists(Player)
 	{
-		viewx2 = prevviewx2 + (viewx2 - prevviewx2)*smoothing
-		viewy2 = prevviewy2 + (viewy2 - prevviewy2)*smoothing
+		viewx2 = prevviewx2 + (Player.x - vw - prevviewx2)*smoothing
+		viewy2 = prevviewy2 + (Player.y - vh - prevviewy2)*smoothing
 	}
 	prevviewx2 = viewx2;
 	prevviewy2 = viewy2;
