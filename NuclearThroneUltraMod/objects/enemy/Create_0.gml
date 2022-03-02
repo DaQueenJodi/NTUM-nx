@@ -19,7 +19,6 @@ snd_dead = sndEnemyDie
 snd_mele = sndMaggotBite
 hurt_pitch_variation = 0.15;
 
-
 EnemyHealthAdjustments();
 
 if instance_exists(Player)
@@ -37,9 +36,4 @@ if instance_exists(Player)
 wkick=false;
 spr_chrg=false;
 spr_fire=false;
-
-
-
-
-
-
+existTime = 0;

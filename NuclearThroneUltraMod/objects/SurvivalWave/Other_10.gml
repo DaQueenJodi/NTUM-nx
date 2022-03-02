@@ -39,7 +39,7 @@ with Corpse
 snd_play(sndCrownBlood);//LETS GO GET EM!
 wave = [];
 alarm[3] = 5;//Tell time is the difference between these two numbers
-alarm[0] = 15;
+alarm[0] = 20;
 spawnI = 0;
 spawnItell = 0;
 #endregion

@@ -46,7 +46,7 @@ if other.team != 0//Dealing the damage with gamma guts
 }
 
 	//if(alarm[0]<1){
-	if other.meleedamage > 0 and other.team != team && meleeimmunity<1 && alarm[3] < 1//is it a melee enemy?
+	if other.meleedamage > 0 && other.existTime > 40 and other.team != team && meleeimmunity<1 && alarm[3] < 1//is it a melee enemy?
 	{
 	meleeimmunity=15;
 	    if (other.my_health<=0)

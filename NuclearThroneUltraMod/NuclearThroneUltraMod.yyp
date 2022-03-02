@@ -2990,6 +2990,7 @@
     {"id":{"name":"sndNothingBeamWarn","path":"sounds/sndNothingBeamWarn/sndNothingBeamWarn.yy",},"order":21,},
     {"id":{"name":"sndOasisBossFire","path":"sounds/sndOasisBossFire/sndOasisBossFire.yy",},"order":11,},
     {"id":{"name":"sndOasisBossHurt","path":"sounds/sndOasisBossHurt/sndOasisBossHurt.yy",},"order":13,},
+    {"id":{"name":"array_contains","path":"scripts/array_contains/array_contains.yy",},"order":3,},
     {"id":{"name":"sndOasisBossIntro","path":"sounds/sndOasisBossIntro/sndOasisBossIntro.yy",},"order":15,},
     {"id":{"name":"sprExtraLivesHud","path":"sprites/sprExtraLivesHud/sprExtraLivesHud.yy",},"order":8,},
     {"id":{"name":"sndOasisBossHalfHP","path":"sounds/sndOasisBossHalfHP/sndOasisBossHalfHP.yy",},"order":17,},
