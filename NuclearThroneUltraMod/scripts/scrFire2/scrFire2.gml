@@ -2533,7 +2533,7 @@ function scrFire2() {
 
 	//ENERGY GLOVE
 	case 291:
-
+	var aimDir = point_direction(x,y,mouse_x,mouse_y);
 	if Player.skill_got[17] = 1
 	snd_play_fire(sndLaserSwordUpg)
 	else
@@ -2541,7 +2541,6 @@ function scrFire2() {
 
 	instance_create(x,y,Dust)
 
-	ang = point_direction(x,y,mouse_x,mouse_y)
 	repeat(3)
 	{
 	scrMoveContactSolid(ang,44)
@@ -2551,7 +2550,7 @@ function scrFire2() {
 
 	instance_create(x,y,Dust)
 
-	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,ang),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,ang),EnergyHammerSlash)
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,aimDir),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,aimDir),EnergyHammerSlash)
 	{
 	longarms = 0
 	if instance_exists(Player)
@@ -2561,12 +2560,12 @@ function scrFire2() {
 	team = other.team}
 
 	}
-	motion_add(ang,3);
+	motion_add(aimDir,3);
 	alarm[3]=4;//imunity
 	//wepangle = -wepangle
 	speed = -speed*0.5
-	BackCont.viewx2 += lengthdir_x(8,ang)*UberCont.opt_shake
-	BackCont.viewy2 += lengthdir_y(8,ang)*UberCont.opt_shake
+	BackCont.viewx2 += lengthdir_x(8,aimDir)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(8,aimDir)*UberCont.opt_shake
 	BackCont.shake += 4
 	wkick = -12
 
@@ -4925,14 +4924,14 @@ function scrFire2() {
 	snd_play_fire(sndHammer)
 
 	instance_create(x,y,Dust)
-
-	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee+4)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee+4)*20,point_direction(x,y,mouse_x,mouse_y)),ExplosiveSlash)
+	var aimDir = point_direction(x,y,mouse_x,mouse_y);
+	with instance_create(x+lengthdir_x(0.2+(Player.skill_got[13]+bettermelee)*20,aimDir),y+lengthdir_y(0.2+(Player.skill_got[13]+bettermelee)*20,aimDir),ExplosiveSlash)
 	{
 		dmg = 8
 		longarms = 0
 		if instance_exists(Player)
 		longarms = (Player.skill_got[13]+other.bettermelee)*3
-		motion_add(point_direction(x,y,mouse_x,mouse_y),1+longarms)
+		motion_add(aimDir,1+longarms)
 		image_angle = direction
 		team = other.team
 	}

@@ -5,7 +5,13 @@ if area==104
 area=103;
 
 alarm[0]=1;
-
+if (UberCont.opt_gamemode == 25 && !instance_exists(Vlambeer))
+{
+	topspr=sprWall116Top;
+	outspr=sprWall116Out;
+	sprite_index=sprWall116Bot;
+}
+else
 switch (area)
 {
 case 0:

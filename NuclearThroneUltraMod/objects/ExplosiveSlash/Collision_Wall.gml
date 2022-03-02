@@ -10,7 +10,10 @@ snd_play(sndMeleeWall)
 Sleep(5)
 with other
 {
-	instance_create(x+8,y+8,SmallExplosion);
+	if !place_meeting(x,y,FloorExplo)
+	{
+		instance_create(x+8,y+8,SmallExplosion);
+	}
 	instance_destroy()
 	instance_create(x,y,FloorExplo)
 }

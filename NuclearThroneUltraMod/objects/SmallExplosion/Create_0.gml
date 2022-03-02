@@ -1,5 +1,5 @@
 event_inherited();
-image_speed = 0.4
+image_speed = 1;
 
 repeat(3)
 {
@@ -30,4 +30,3 @@ dmg=5;
 Humphry=false;//gets assigned true when playing as humphry and firing
 HumphryNr=0;
 HumphryHit=0;
-

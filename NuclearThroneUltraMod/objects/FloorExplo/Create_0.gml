@@ -8,7 +8,11 @@ if instance_exists(Player) area = Player.area
 else area = BackCont.area
 if area==104
 area=103;
-
+if (UberCont.opt_gamemode == 25 && area != 7 && !instance_exists(Vlambeer))
+{
+	sprite_index=sprFloor116Explo;
+}
+else
 switch (area)
 {
 case 0:
