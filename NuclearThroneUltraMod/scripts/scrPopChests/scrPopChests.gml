@@ -63,7 +63,10 @@ function scrPopChests() {
 		}
 	}
 	var gol = 1;
-	var healthChestGol = choose(0,0,0,0,0,0,0,0,0,1);
+	if (instance_exists(Player) && Player.my_health < ceil(Player.maxhealth*0.8))
+		var	healthChestGol = choose(0,0,0,0,0,0,0,0,0,1);
+	else
+		var	healthChestGol = 0;
 	var wepChestGol = gol;
 	
 	

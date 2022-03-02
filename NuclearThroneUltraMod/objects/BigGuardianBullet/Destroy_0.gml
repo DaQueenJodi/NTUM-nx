@@ -34,5 +34,5 @@ if canSpawn
 		angle += angleStep;
 	}
 }
-scrDrop(40,0);
+scrDrop(70,0);
 scrRaddrop(2);

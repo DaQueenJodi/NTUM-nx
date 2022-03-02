@@ -159,8 +159,8 @@ function scrNextLevel() {
 	        }
 	        else
 	        {//loop
-	        area=8;
-	        subarea=3;
+	        area=9;
+	        subarea=1;
 	        }
         
 	    }

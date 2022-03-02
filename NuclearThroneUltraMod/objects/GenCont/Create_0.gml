@@ -69,7 +69,7 @@ __background_set_colour( make_color_rgb(80,112,149) )
 else if Player.area = 8//Candyland
 __background_set_colour( make_color_rgb(162,111,220) )
 else if Player.area = 9//Palace
-__background_set_colour( make_color_rgb(112,50,50) )
+__background_set_colour( make_color_rgb(97,29,36) )
 else if Player.area = 10//savanna
 __background_set_colour( make_color_rgb(160,95,61) )
 else if Player.area = 106//Inverted scrapyard

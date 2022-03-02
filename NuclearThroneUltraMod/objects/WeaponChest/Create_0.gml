@@ -5,7 +5,8 @@ if isOneWeaponOnlyModes()
 	oneweponly = true;
 else
 	oneweponly = false;
-curse = scrDecideCurse();
+if object_index != BigWeaponChest
+	curse = scrDecideCurse();
 
 event_inherited()
 
