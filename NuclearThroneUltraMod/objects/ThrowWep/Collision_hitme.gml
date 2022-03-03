@@ -2,6 +2,7 @@ if other.team != team and other.my_health > 0 && speed>1
 {
 	if instance_exists(Player) && Player.ultra_got[54] == 1
 	{
+		snd_play(sndExplosion);
 		with other
 		{
 			instance_create(x+8,y+8,Explosion);

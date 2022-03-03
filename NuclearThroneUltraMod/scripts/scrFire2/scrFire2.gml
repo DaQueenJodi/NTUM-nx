@@ -4944,5 +4944,23 @@ function scrFire2() {
 
 	break;
 	
+	//LOVE BOMBER
+	case 378:
+
+	snd_play_fire(sndGrenade)
+
+	with instance_create(x,y,LoveBomb)
+	{
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*other.accuracy,11)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 3
+	wkick = 5
+
+	break;
+	
 	}//end of switch part 2!
 }

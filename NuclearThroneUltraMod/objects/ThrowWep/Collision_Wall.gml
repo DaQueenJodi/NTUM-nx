@@ -13,10 +13,13 @@ if instance_exists(Player)
 	} 
 	if Player.ultra_got[54] == 1
 	{
-		snd_play(sndExplosion);
 		with other
 		{
-			instance_create(x+8,y+8,Explosion);
+			if !place_meeting(x,y,FloorExplo)
+			{
+				snd_play(sndExplosion);
+				instance_create(x+8,y+8,Explosion);
+			}
 		}
 	}
 }

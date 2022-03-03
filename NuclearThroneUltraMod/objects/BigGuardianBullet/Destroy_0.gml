@@ -22,13 +22,14 @@ if canSpawn
 		var pspd = 2;
 		repeat(4 + loops)
 		{
-		with instance_create(x+lengthdir_x(offset,angle),y+lengthdir_y(offset,angle),GuardianBulletSpawn)
-		{
-			motion_add(angle,pspd);
-			image_angle = direction
-			team = other.team
-			owner = other.owner;
-		}
+			if owner > -1 && instance_exists(owner)
+				with instance_create(x+lengthdir_x(offset,angle),y+lengthdir_y(offset,angle),GuardianBulletSpawn)
+				{
+					motion_add(angle,pspd);
+					image_angle = direction
+					team = other.team
+					owner = other.owner;
+				}
 		offset += 0.5;
 		pspd+=0.5;
 		}

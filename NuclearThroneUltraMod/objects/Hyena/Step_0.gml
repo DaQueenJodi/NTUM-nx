@@ -7,7 +7,7 @@ walk -= 1
 	{
 		if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 		{
-			motion_add(point_direction(x,y,target.x,target.y),2);
+			motion_add(point_direction(x,y,target.x,target.y),1.8);
 		}
 		else
 		{

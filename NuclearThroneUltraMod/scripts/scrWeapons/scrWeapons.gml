@@ -4175,6 +4175,17 @@ function scrWeapons() {
 	wep_swap[377] = sndSwapHammer
 	wep_rad[377] = 0;
 	
+	wep_name[378] = "LOVE BOMBER"
+	wep_type[378] = 4
+	wep_auto[378] = 0
+	wep_load[378] = 23
+	wep_cost[378] = 2
+	wep_sprt[378] = sprLoveBomber
+	wep_area[378] = 8
+	wep_text[378] = "<3"
+	wep_swap[378] = sndSwapExplosive
+	wep_rad[378] = 0;
+	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"
 	wep_type[369] = 5

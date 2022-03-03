@@ -672,14 +672,14 @@ function scrPowers() {
 			    //primary
 			    var prevwep;
     
-			    if wep_area[other.wep]=99//handling starting weapons
+			    if wep_area[other.wep]==-1//handling starting weapons
 			    wep_area[other.wep]=1
     
 			    prevwep=other.wep;
     
 			    do {wep = round(random(maxwep-1)+1)}
 			    until (wep_area[wep] = wep_area[prevwep])
-
+				
 			    curse = other.curse
 			    wepmod1=other.wepmod1;
 			    wepmod2=other.wepmod2;

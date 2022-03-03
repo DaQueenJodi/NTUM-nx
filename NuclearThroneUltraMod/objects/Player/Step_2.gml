@@ -1,5 +1,5 @@
 /// @description WepPickup
-if instance_exists(WepPickup) && !instance_exists(GenCont) && !instance_exists(LevCont){
+if instance_exists(WepPickup) && !instance_exists(GenCont) && !instance_exists(LevCont)  && !instance_exists(SpiralCont){
 
 if point_distance(x,y,instance_nearest(x,y,WepPickup).x,instance_nearest(x,y,WepPickup).y)<36
 {

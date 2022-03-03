@@ -69,8 +69,4 @@ function scrStartingWeapons() {
 	}
 
 	maxstartwep=27;
-
-
-
-
 }
