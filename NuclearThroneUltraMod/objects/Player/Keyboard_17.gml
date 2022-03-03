@@ -28,10 +28,23 @@ if UberCont.public = 0 {
             wep = maxwep
     }
 
-    if keyboard_check_pressed(ord("F")) {
-
+    if keyboard_check_pressed(ord("K")) {
         with enemy
         my_health = 0;
+    }
+	
+	if keyboard_check_pressed(ord("F")) {
+		if cheatyinfiniteammo {
+			cheatyinfiniteammo = false;
+			snd_play_2d(sndAmmoPickup)
+			thing = instance_create(x,y,PopupText);
+			thing.mytext = "NOT INFINITE AMMO!";
+		} else {
+			cheatyinfiniteammo = true;
+			snd_play_2d(sndAmmoChest)
+			thing = instance_create(x,y,PopupText);
+			thing.mytext = "INFINITE AMMO!";
+		}
     }
 
     if keyboard_check_pressed(ord("1")) {
