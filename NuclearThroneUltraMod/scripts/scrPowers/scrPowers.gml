@@ -659,7 +659,9 @@ function scrPowers() {
 	{
 	if curse=0&&wep!=0{
 
-	snd_play_2d(sndEnemySlash);
+		//snd_play_2d(sndEnemySlash);
+		snd_play_2d(sndChickenThrow);
+
 	    with instance_create(x,y,ThrowWep)
 	    {
 		    team=other.team;

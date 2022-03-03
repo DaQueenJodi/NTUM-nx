@@ -15,6 +15,7 @@ if instance_exists(Player)
 		returnFX = false;
 		if instance_exists(Player) && !dontteleport
 		{
+			snd_play_2d(sndWepReturn,0.1);
 			with instance_create(x,y,ThrowWepReturnFX)
 			{
 				owner = Player.id;
