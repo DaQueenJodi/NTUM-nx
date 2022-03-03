@@ -1308,7 +1308,7 @@ function scrFire2() {
 	//ULTRA MEGA LASERPISTOL
 	case 244:
 
-
+	snd_play_fire(sndMegaLaser);
 	snd_play_fire(sndUltraLaserUpg)
 	snd_play_fire(sndThunder);
 

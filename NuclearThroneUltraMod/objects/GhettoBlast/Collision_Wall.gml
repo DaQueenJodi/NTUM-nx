@@ -11,7 +11,7 @@ if walled = 0
 with instance_create(other.x+8,other.y+8,MeleeHitWall)
 image_angle = point_direction(other.x,other.y,x,y)
 walled = 1
-//snd_play(sndMeleeWall)
+//snd_play(sndMeleeWall,0.1)
 }
 
 

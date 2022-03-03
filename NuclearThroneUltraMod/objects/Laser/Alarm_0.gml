@@ -41,12 +41,12 @@ until (place_meeting(x,y,hitme) and dir > 16) or place_meeting(x,y,Wall) or plac
 }
 else
 {	//bouncy laser
-    with instance_create(x - lengthdir_x(4,image_angle),y - lengthdir_y(4,image_angle),Laser)
+    with instance_create(x - lengthdir_x(8,image_angle),y - lengthdir_y(8,image_angle),Laser)
     {image_angle = other.image_angle*-1;
     team = other.team
     laserhit=other.laserhit-1;
     sprite_index=sprBouncingLaser;
-    image_yscale -= 0.2
+    image_yscale -= 0.15
     do {x += lengthdir_x(2,image_angle) y += lengthdir_y(2,image_angle) dir += 1}
 until (place_meeting(x,y,hitme) and dir > 16) or place_meeting(x,y,Wall) or place_meeting(x,y,VikingWall) or dir > 160
     

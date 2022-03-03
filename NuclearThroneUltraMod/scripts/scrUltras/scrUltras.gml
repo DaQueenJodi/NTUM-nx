@@ -247,7 +247,7 @@ function scrUltras() {
 	    ultra_tips[53] = "strong arms!"
     
 	    ultra_name[54] = "DELIBERATE REINCARNATION"
-	    ultra_text[54] = "WHENEVER YOU THROW YOUR WEAPON#IT TRANSFORMS INTO A RANDOM#WEAPON OF THE SAME TIER"
+	    ultra_text[54] = "WHENEVER YOU THROW YOUR WEAPON#IT TRANSFORMS INTO A RANDOM#WEAPON OF THE SAME TIER#WHEN WEAPONS RETURN#THEY FIRE A MASSIVE LASER"
 	    ultra_tips[54] = "rngezus"
     
 	    ultra_name[55] = "DONE BEING EXTINCT"
