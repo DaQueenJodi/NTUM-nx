@@ -43,3 +43,8 @@ if place_free(x,y+16){
 else{
     h = 20-r
 }
+if !checked
+{
+	alarm[1] = 10;
+	checked = true;
+}

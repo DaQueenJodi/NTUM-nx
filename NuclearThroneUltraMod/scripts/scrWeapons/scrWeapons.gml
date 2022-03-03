@@ -3214,7 +3214,7 @@ function scrWeapons() {
 	wep_load[291] = 26
 	wep_cost[291] = 4
 	wep_sprt[291] = sprEnergyGlove
-	wep_area[291] = 8
+	wep_area[291] = 9
 	wep_text[291] = "batteries inlcuded"
 	wep_swap[291] = sndSwapHammer
 	wep_rad[291] = 0;

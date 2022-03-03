@@ -2543,7 +2543,7 @@ function scrFire2() {
 
 	repeat(3)
 	{
-	scrMoveContactSolid(ang,44)
+	scrMoveContactSolid(aimDir,44)
 
 	instance_create(x,y,Dust)
 
