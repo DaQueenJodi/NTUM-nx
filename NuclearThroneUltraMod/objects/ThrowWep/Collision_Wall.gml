@@ -1,11 +1,21 @@
 move_bounce_solid(true)
 move_outside_solid(point_direction(other.x+8,other.y+8,x,y),2)
 speed*=0.8;
-if instance_exists(Player) && Player.ultra_got[53] == 1//TURNING BADASS ULTRA A
+if instance_exists(Player)
 {
-	if instance_exists(enemy)
+	if Player.ultra_got[53] == 1//TURNING BADASS ULTRA A
 	{
-		var nearest = instance_nearest(x,y,enemy);
-		direction = point_direction(x,y,nearest.x,nearest.y);
+		if instance_exists(enemy)
+		{
+			var nearest = instance_nearest(x,y,enemy);
+			direction = point_direction(x,y,nearest.x,nearest.y);
+		}
+	} else if Player.ultra_got[55] == 1
+	{
+		snd_play(sndExplosion);
+		with other
+		{
+			instance_create(x+8,y+8,Explosion);
+		}
 	}
 }

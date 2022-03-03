@@ -1,5 +1,10 @@
 if other.team != team and other.my_health > 0 && speed>1
 {
+	if instance_exists(Player) && Player.ultra_got[55] == 1
+	{
+		snd_play(sndExplosion);
+		instance_create(x,y,Explosion);
+	}
 	with other
 	{
 		if sprite_index!=spr_hurt
