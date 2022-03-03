@@ -239,7 +239,7 @@ function scrPopulate() {
 			TopDecals();
             with Bones
 				sprite_index = sprIceDecal;
-			with TopDecal {
+			with TopDecal
                 sprite_index = sprTopDecalCity;
         }
         if spawnarea = 4 // || spawnarea = 111
@@ -247,7 +247,7 @@ function scrPopulate() {
             TopDecals();
             GenBones();
             with Bones
-            sprite_index = sprCaveDecal;
+				sprite_index = sprCaveDecal;
             with TopDecal {
                 sprite_index = sprTopDecalCave;
             }
@@ -285,9 +285,9 @@ function scrPopulate() {
             }
 			TopDecals();
             with TopDecal
-            sprite_index = sprVulcanoTopDecal
+				sprite_index = sprVulcanoTopDecal
             with Bones
-            sprite_index = sprVulcanoBones
+				sprite_index = sprVulcanoBones
         }
     }
 
