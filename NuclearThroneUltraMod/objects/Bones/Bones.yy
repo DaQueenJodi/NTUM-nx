@@ -4,7 +4,7 @@
     "path": "sprites/sprBones/sprBones.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": {
     "name": "mskBones",
     "path": "sprites/mskBones/mskBones.yy",
@@ -26,6 +26,7 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"FloorExplo","path":"objects/FloorExplo/FloorExplo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

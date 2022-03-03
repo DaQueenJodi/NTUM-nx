@@ -1,7 +1,6 @@
 image_speed = 0
-if random(10) < 1
-image_index = 1
+alarm[0] = 1;
 
-depth = -y;
+depth = -10;//Changed when last spiral is gone
 
 
