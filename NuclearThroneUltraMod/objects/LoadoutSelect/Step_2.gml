@@ -85,47 +85,48 @@ if wepmenuopen
 
 if race != 0 && mouse_x > sx-24 and mouse_x < sx and mouse_y > __view_get( e__VW.YView, 0 )+60-12 and mouse_y < __view_get( e__VW.YView, 0 )+60+12
 {
-scale=1.4;
+	scale=1.4;
 
-if mouse_check_button_pressed(mb_left)
-{
-/*
-if UberCont.race_bskin[race]=1&&UberCont.race_cskin[race]=1//you have a bskin and a cskin for this character
-{
-skin++
-if skin>2
-skin=0
-}
-else if UberCont.race_bskin[race]=1//you have a skin for this character
-{
+	if mouse_check_button_pressed(mb_left)
+	{
+	/*
+	if UberCont.race_bskin[race]=1&&UberCont.race_cskin[race]=1//you have a bskin and a cskin for this character
+	{
+	skin++
+	if skin>2
+	skin=0
+	}
+	else if UberCont.race_bskin[race]=1//you have a skin for this character
+	{
 
-skin++
-if skin>1
-skin=0
+	skin++
+	if skin>1
+	skin=0
 
 
 
-}
-else//you have no new skins
-{
-skin=0;
-}*/
+	}
+	else//you have no new skins
+	{
+	skin=0;
+	}*/
 
-skin++
-if skin>2
-skin=0
+		skin++
+		if skin>2
+		skin=0
 
-if skin=1 && UberCont.race_bskin[race]=1
-UberCont.skin[race]=skin;
-else if skin=2 && UberCont.race_cskin[race]=1
-UberCont.skin[race]=skin;
-else
-UberCont.skin[race]=0;
-snd_play(choose(sndMenuASkin,sndMenuBSkin));
-}
+		if skin=1 && UberCont.race_bskin[race]=1
+			UberCont.skin[race]=skin;
+		else if skin=2 && UberCont.race_cskin[race]=1
+			UberCont.skin[race]=skin;
+		else
+			UberCont.skin[race]=0;
+		
+		snd_play_2d(choose(sndMenuASkin,sndMenuBSkin));
+	}
 
-with UberCont
-scrSave();
+	with UberCont
+	scrSave();
 
 }
 else

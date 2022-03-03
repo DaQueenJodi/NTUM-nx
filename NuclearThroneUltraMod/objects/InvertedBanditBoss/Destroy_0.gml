@@ -20,18 +20,21 @@ audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 repeat(2)
 scrDrop(200,0)
 scrBusinessHogGoldChest();
-//drop oopsgun?
-if(random(50)<1){
-with instance_create(x,y,WepPickup)
+//drop golden oopsgun?
+if instance_exists(Player)
 {
-scrWeapons()
-wep = 69
-name = wep_name[69]
-ammo = 0
-type = wep_type[69]
-curse = 0
-sprite_index = wep_sprt[69]
-}}
+	if(random(100)<1&&Player.loops<1){
+	with instance_create(x,y,WepPickup)
+	{
+	scrWeapons()
+	wep = 298
+	name = wep_name[298]
+	ammo = 0
+	type = wep_type[298]
+	curse = 0
+	sprite_index = wep_sprt[298]
+	}}
+}
 event_inherited()
 
 if oasis
