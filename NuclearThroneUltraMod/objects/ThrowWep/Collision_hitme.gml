@@ -1,9 +1,11 @@
 if other.team != team and other.my_health > 0 && speed>1
 {
-	if instance_exists(Player) && Player.ultra_got[55] == 1
+	if instance_exists(Player) && Player.ultra_got[54] == 1
 	{
-		snd_play(sndExplosion);
-		instance_create(x,y,Explosion);
+		with other
+		{
+			instance_create(x+8,y+8,Explosion);
+		}
 	}
 	with other
 	{
@@ -44,7 +46,7 @@ if other.team != team and other.my_health > 0 && speed>1
 			direction+=180+random(60)-30
 			speed*=0.7;
         }
-		else if Player.ultra_got[53] == 1//TURNING BADASS ULTRA A
+		else if Player.ultra_got[53] == 1 || Player.ultra_got[54] || Player.ultra_got[55] || Player.ultra_got[56] == 1
 		{
 			speed *= 1.2;//EXTRA SPEED
 			if instance_exists(enemy) && instance_number(enemy) > 1
