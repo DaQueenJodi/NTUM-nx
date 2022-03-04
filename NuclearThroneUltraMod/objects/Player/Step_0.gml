@@ -152,6 +152,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			} else {
 				wep = wep - 1;
 			}
+			reload = 0;
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
 			scrWeaponHold();
@@ -165,6 +166,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			} else {
 				wep = wep + 1;
 			}
+			reload = 0;
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
 			scrWeaponHold();
@@ -178,6 +180,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			} else {
 				wep = wep - 50;
 			}
+			reload = 0;
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
 			scrWeaponHold();
@@ -191,6 +194,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			} else {
 				wep = wep + 50;
 			}
+			reload = 0;
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
 			scrWeaponHold();
