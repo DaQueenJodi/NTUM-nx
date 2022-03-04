@@ -1,0 +1,129 @@
+Feature:
+New ultra icons for Panda A Fish C Sheep C
+New mutation (works with yung cuz dupes)
+New intro sequence
+New atom B skin
+Skin previews
+New humphry menu animation
+Changed humphry active it now shrinks and slows projectiles at the cost of ammo  weapon types you do not have equiped.
+Instead of the old sprint ability
+Swap skin sfx
+Labs turret enemy recreated and added
+Inverted turret enemy
+Horror now drops rads upon dieing
+Added some more sounds
+Added a cheatcode for 100%
+Character select now shows an outline when a character has looped
+Cursed elite weapon chests
+New chests that replace weapon chests when in gamemode where weapon pickups are disabled
+New mutation GLASS ARM CANNON
+Panda throw return FX
+Vastly improved system that decides what weapons drop you are more likely to get weapons of your current tier
+Taking a mod above max will rerroll your first mod
+Morph mod
+Pickups mod (sometimes pickup drop on hit)
+Weapons mod (sometimes weapons drop on hit)
+Changed some panda ultras. Throws bounce towards enemies, lasers explosions etc.
+New area savanna! A hard alternative to the desert that skips you far ahead if you beat it.
+Explosive hammer a weapon that causes explosions on hitting walls or enemies
+Love bomber, a sticky nader that lobs hearts that explode into a heart shape and sometimes heals you (bloodlust odds)
+Inversion magnet (can be found in a certain big fishy skull if you are fast enough) 100% guarentee to cause inverted portals to appear, its also a terrible screwdriver
+Van Fan a new gamemode, survive the incoming vans! The only thing at your disposal is a tiny fan. Get it Van Fan...
+
+New weapons:
+Van Cannon new weapon that fires popo vans.
+Quadruple super plasma cannon! yes
+Ultra minigun (costs one less rad compared to an ultra revolver)
+Ultra screwdriver
+Kraken grenade launcher
+Director grenade launcher (we made this on stream)
+Obsidian Throwing knife (works like panda/chicken throw)
+Jawbreaker: early game weapon that fires two tiny eraser bursts on the side of the player. Centers much more with accuracy buffs
+Heavy grenade launcher
+Auto heavy grenade launcher because ofcourse
+
+Balance:
+Inverted bandits are slightly more aggressive and have 1 more hp
+Increased attack delay on big assassin and inverted big assassin
+Made skin unlock conditions for good o'l humphry harder
+Business hogs rad costs are now in percentages
+Business hogs prices are rebalanced
+Business hogs thronebutt now gives 10% discount instead of 25%
+The i-frames enemies get when damaged by fire is now one frame less.
+increased chance fire does damage to enemies while ignoring their iframes
+Termites now have a higher chance to deal damage while ignoring enemy iframes. They also give enemies shorter iframes
+Decreased chance of super secret hidden boss and now also only appears on loop
+inverted explode freaks now explode into blue fire in addition to normal explosions
+Necromancer revive circles will now be destroyed when the creator of it dies (this is only for normal necromancers not inverted necromancers)
+Inverted necromancer revive circles now spawn blue fire for each corpse revived
+Sharpstress (sharpteeth) and business hog's screen damage ability now ignore iframes on enemies
+Leveling up now requires very slightly more radiation
+Slightly lowered amount of rads you get in inverted desert
+Increased the accuracy boost of eagle eyes you are nearly pinpoint accurate with it now
+Increased the iframes for the player you should stay in the hurt animation a little longer now preventing you from dieing to a very fast burst of bullets
+Increased immunity gained with euphoria
+Changed sheep's active. You now have more control and you don't get pushed into the same direction you originally charged in. The charge no longer counts how many things you hit before being destroyed. But instead hitting things will deplete the power. And not hitting things will increase the power. Kinda like having enough speed to tackle something and the things you tackle will slow you down
+Sheeps tackle damage is now increased by gama guts
+Changed Sheep A and C as charge is different now
+Reduced frost bullet damage by 1
+Reduced freeze time of frost bullets 30 frames to 15 frames
+Elementor active now costs some ammo
+Ion bomb drops later and costs more ammo (2)
+Made euphoria projectile slowdown effect just a little better
+Minor buff to lasers
+Disperse guns now drop a little later and cost a little more ammo
+Horror's thronebutt now makes it so that sometimes missed beam will drop rads
+You can now unlock things in many more gamemodes
+Revamped weapon loot system it is now more likely to give you a weapon of your current tier/difficulty
+Swarm bolts deal slightly more damage
+Eyes passive is now slightly stronger on enemy projectiles
+Made chesire cat less random
+Changes to vulcano enemy spawns (overall less enemies and added salamanders removed explofreaks)
+New square bullets sometimes Bandits will fire these. Also chesire cat will have them, These projectiles are immune to melee
+New agoraphobia unlock (waiting for 10 minutes was boring)
+Last wish life now spawns a lot of explosions and you level up twice as fast untill you reach the level you were at
+Crystal shield now has synergy with gamma guts increasing the range of gamme guts while shielded
+Big assassin now delays it's reaction/attack/decision making while dodging
+Big assassin now has more HP
+Rush crown now gives one additional rogue ammo
+Rush crown now increases the value of rads by 25%
+Rogue now starts with 1 rogue ammo
+Big machine is no longer completly immune for a while but intead reduces incoming damage
+Stress and rage now effect all your weapons not just your primary
+When moneygun drops out of a gold chest it will drop as an additional weapon and won't replace your gold rolled weapon
+Increased moneygun moneybullet damage by 1
+Buff hunter C ultra
+Different Atom passive and Proton ultra
+Fish's Ultra Brothers in arms changes: partner deals more damage fires slower and blocks projectiles
+Panda Ultra A throws now bounce towards enemies and reduced throw damage increase
+Replaced crown of massacre with crown of choice
+Snooze FX for insomnia
+Crown of disco now has the effects of crown of opposite aswell (an old removed crown)
+New Crown of Darkness.
+Reduced chance to get toxic mod (except for when you play Frog)
+Gold weapons are now easier to get
+Panda now wont reroll starting weapon
+
+
+Bugfix:
+Optimized some code
+bandits are now more accurate
+energy glove slashes now angle to correct direction
+Yung cuz now copies euphoria and correctly copies though shell
+Created superbouncerflak cannon. It was in the game but had no functionality
+Fix hover overlap of business hog's shopmenu
+Pellets should now ignore enemy iframes since they get destroyed after dealing damage anyway
+Fixed a case where the game would immediatly exit upon dieing
+Respawning after dieing no longer duplicates your corpse/body and gun, how morbid reminds me of the prestige.
+Fixed completion percentage calculation
+Fixed a bug where every character is immune to melee damage as long as you held RMB
+Fix end of area unlocks being able to get unlocked by restarting
+Fix unlock of YV B skin working on one golden wep instead of all for one character
+Fixed other menus being able to open while already in a menu
+Fix eraserbandits instakilling the player
+Sounds for golden scorpion
+Weaponsmith now has a passive that adds a small weapondroprate to any enemy killed
+Now saving stats to random character aswell These stats will be saved to both the characer played and to random
+Fixed instant restart
+Skeleton's real Ultra D was disabled.
+Eagle eyes now shows content of gold chests

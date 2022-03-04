@@ -6,7 +6,6 @@ audio_stop_sound(sndVenuz)
 snd_play(sndVenuz)
 
 }
-wepmod1++;
 //wepmod2++;
 
 
