@@ -6,7 +6,6 @@ dmg = 5;
 team = 1;
 typ = 2;
 image_speed = 0.4;
-image_angle = random(360);
 
 angleDir = choose(1,-1) * irandom(3);
 owner = -1;
