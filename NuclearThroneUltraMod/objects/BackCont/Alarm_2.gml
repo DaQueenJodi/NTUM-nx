@@ -3,7 +3,7 @@
 var spawnedVan = false;
 if instance_exists(Player)
 {
-	if (verticalVans && wantVanAmount % 2 == 0 || true) //EVEN
+	if (verticalVans && wantVanAmount % 2 == 0) //EVEN
 	{
 		var xx = Player.x + random_range(-48,48);
 		var yy = Player.y + choose(-250,250);

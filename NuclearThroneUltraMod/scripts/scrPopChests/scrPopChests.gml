@@ -50,6 +50,18 @@ function scrPopChests() {
 			yy = 10016+16;
 			instance_create(xx-48,yy-64,WeaponChest);
 			instance_create(xx+48,yy-64,AmmoChest);
+			if Player.race=22
+			{
+				instance_create(xx,yy-64,RogueAmmoChest);
+				if Player.skill_got[23]//OPEN MIND
+				{
+					instance_create(xx-48,yy-96,RogueAmmoChest);
+				}
+				if Player.skill_got[5]//Rogue butt
+				{
+					instance_create(xx+48,yy-96,RogueAmmoChest);
+				}
+			}
 			if Player.skill_got[23]//OPEN MIND
 			{
 				instance_create(xx-96,yy-64,WeaponChest);
