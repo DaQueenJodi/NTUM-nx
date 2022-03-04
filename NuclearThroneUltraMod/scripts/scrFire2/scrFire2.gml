@@ -4967,7 +4967,7 @@ function scrFire2() {
 		var xstep = lengthdir_x(len,aimDir+90);
 		var ystep = lengthdir_y(len,aimDir+90);
 		var count = 0;
-		while (!place_meeting(bx,by,Wall) && count < 500)
+		while (!place_meeting(bx,by,Wall) && count < 500 || count < 1)
 		{
 			instance_create(bx,by,Dust);
 			with instance_create(bx,by,Bullet1)
@@ -4985,7 +4985,7 @@ function scrFire2() {
 		bx = x + xstep;
 		by = y + ystep;
 		count = 0;
-		while (!place_meeting(bx,by,Wall) && count < 500)
+		while (!place_meeting(bx,by,Wall) && count < 500 || count < 1)
 		{
 			instance_create(bx,by,Dust);
 			with instance_create(bx,by,Bullet1)
@@ -5014,12 +5014,12 @@ function scrFire2() {
 		mask_index = mskBullet1;
 		var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*accuracy;
 		var len = 8+(accuracy*3);
-		var bx = x;
-		var by = y;
 		var xstep = lengthdir_x(len,aimDir);
 		var ystep = lengthdir_y(len,aimDir);
+		var bx = x;
+		var by = y;
 		var count = 0;
-		while (!place_meeting(bx,by,Wall) && count < 500)
+		while (!place_meeting(bx,by,Wall) && count < 500 || count < 2)
 		{
 			with instance_create(bx,by,Bullet1)
 			{
