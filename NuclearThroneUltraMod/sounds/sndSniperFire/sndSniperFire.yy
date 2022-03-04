@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSniperFire",
-  "duration": 0.0,
+  "duration": 0.998685,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/Enemies.yy",

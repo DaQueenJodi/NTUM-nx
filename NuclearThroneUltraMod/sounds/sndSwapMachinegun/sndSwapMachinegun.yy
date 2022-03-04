@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSwapMachinegun",
-  "duration": 0.0,
+  "duration": 0.288005,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

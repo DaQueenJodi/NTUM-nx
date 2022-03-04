@@ -1565,7 +1565,7 @@ function scrWeapons() {
 	wep_cost[141] = 6
 	wep_sprt[141] = sprBulletShotgun
 	wep_area[141] = 3
-	wep_text[141] = ""
+	wep_text[141] = "shotfun"
 	wep_swap[141] = sndSwapShotgun
 	wep_rad[141] = 0;
 
@@ -4185,6 +4185,39 @@ function scrWeapons() {
 	wep_text[378] = "<3"
 	wep_swap[378] = sndSwapExplosive
 	wep_rad[378] = 0;
+	
+	wep_name[379] = "SKULL BREAKER"
+	wep_type[379] = 1
+	wep_auto[379] = 1
+	wep_load[379] = 25
+	wep_cost[379] = 11
+	wep_sprt[379] = sprSkullBreaker
+	wep_area[379] = 11
+	wep_text[379] = "bullets are closer together with eagle eyes"
+	wep_swap[379] = sndSwapShotgun
+	wep_rad[379] = 0;
+	
+	wep_name[380] = "SKULL SPLITTER"
+	wep_type[380] = 1
+	wep_auto[380] = 1
+	wep_load[380] = 30
+	wep_cost[380] = 17
+	wep_sprt[380] = sprSkullSplitter
+	wep_area[380] = 12
+	wep_text[380] = "more bullets with eagle eyes"
+	wep_swap[380] = sndSwapMachinegun
+	wep_rad[380] = 0;
+	
+	wep_name[381] = "MUCHAS PELOTILLA"
+	wep_type[381] = 2
+	wep_auto[381] = 1
+	wep_load[381] = 240
+	wep_cost[381] = 23
+	wep_sprt[381] = sprMuchasPelotilla
+	wep_area[381] = 18
+	wep_text[381] = "cest bon"
+	wep_swap[381] = sndSwapShotgun
+	wep_rad[381] = 0;
 	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"

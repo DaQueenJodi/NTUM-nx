@@ -4947,10 +4947,128 @@ function scrFire2() {
 	image_angle = direction
 	team = other.team}
 
-	BackCont.viewx2 += lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
-	BackCont.viewy2 += lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewx2 += lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.shake += 3
 	wkick = 5
+
+	break;
+	
+	//SKULL BREAKER
+	case 379:
+		snd_play_fire(sndShotgun);
+		snd_play_fire(sndQuadMachinegun);
+		var msk = mask_index;
+		mask_index = mskBullet1;
+		var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)*accuracy;
+		var len = 6+(accuracy*3);
+		var bx = x;
+		var by = y;
+		var xstep = lengthdir_x(len,aimDir+90);
+		var ystep = lengthdir_y(len,aimDir+90);
+		while (!place_meeting(bx,by,Wall))
+		{
+			instance_create(bx,by,Dust);
+			with instance_create(bx,by,Bullet1)
+			{
+				motion_add(aimDir,12);
+				image_angle = direction
+				team = other.team
+			}
+			bx += xstep;
+			by += ystep;
+		}
+		var xstep = lengthdir_x(len,aimDir-90);
+		var ystep = lengthdir_y(len,aimDir-90);
+		bx = x + xstep;
+		by = y + ystep;
+		while (!place_meeting(bx,by,Wall))
+		{
+			instance_create(bx,by,Dust);
+			with instance_create(bx,by,Bullet1)
+			{
+				motion_add(aimDir,12);
+				image_angle = direction
+				team = other.team
+			}
+			bx += xstep;
+			by += ystep;
+		}
+		mask_index = msk;
+		BackCont.viewx2 += lengthdir_x(13,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(13,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 10
+		wkick = 7
+
+	break;
+	
+	//SKULL SPLITTER
+	case 380:
+		snd_play_fire(sndSniperFire);
+		snd_play_fire(sndUltraPistol);
+		var msk = mask_index;
+		mask_index = mskBullet1;
+		var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*accuracy;
+		var len = 8+(accuracy*3);
+		var bx = x;
+		var by = y;
+		var xstep = lengthdir_x(len,aimDir);
+		var ystep = lengthdir_y(len,aimDir);
+		while (!place_meeting(bx,by,Wall))
+		{
+			with instance_create(bx,by,Bullet1)
+			{
+				motion_add(aimDir,12);
+				image_angle = direction
+				team = other.team
+			}
+			bx += xstep;
+			by += ystep;
+		}
+		mask_index = msk;
+		BackCont.viewx2 += lengthdir_x(13,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(13,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 10
+		wkick = 7
+
+	break;
+	
+	//MUCHAS PELOTILLA
+	case 381:
+	snd_play_fire(sndPopgun);
+	snd_play_fire(sndUltraShotgun);
+	snd_play_fire(sndQuadMachinegun);
+	var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*accuracy;
+	var r = right;
+	var t = team;
+	with Floor
+	{
+		with instance_create(x+16,y+16,Shell)
+			motion_add(aimDir+r*100+random(50)-25,2+random(2))
+
+		with instance_create(x+16,y+16,Bullet2)
+		{
+			motion_add(aimDir,14+random(2))
+			image_angle = direction
+			team = t
+		}
+		with instance_create(x+16,y+16,Bullet2)
+		{
+			motion_add(aimDir+90,14+random(2))
+			image_angle = direction
+			team = t
+		}
+		with instance_create(x+16,y+16,Bullet2)
+		{
+			motion_add(aimDir-90,14+random(2))
+			image_angle = direction
+			team = t
+		}
+	}
+	BackCont.viewx2 += lengthdir_x(9,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 10
+	wkick = 10
 
 	break;
 	

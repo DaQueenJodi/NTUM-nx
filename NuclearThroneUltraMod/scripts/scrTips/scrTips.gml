@@ -236,7 +236,8 @@ function scrTips() {
 	tip = choose("never let go of your bamboo","kawaii as fuck","rng","portal magic","what is a panda doing here",
 	"don't want to be here","help me","if only hotline miami had a panda","panda used to be a pacifist"
 	,"fight to survive","manage your weapons!","killing is no fun","panda is unpredictable with weapons"
-	,"you can see your new weapon#while a level is generating","throw weapons#in a portal to keep them"
+	,"you can see your new weapon#while a level is generating","throw weapons#in a portal to keep them",
+	"if you like a weapon#you can throw it into a portal#to keep it"
 	)
 
 	if Player.race = 15//Atom
