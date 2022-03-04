@@ -5,6 +5,7 @@ event_inherited();
 
 dmg = 12;
 team = 1;
+image_angle = random(360);
 image_speed = 0.4;
 friction = 0.1;
 
