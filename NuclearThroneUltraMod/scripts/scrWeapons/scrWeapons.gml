@@ -4211,10 +4211,10 @@ function scrWeapons() {
 	wep_name[381] = "MUCHAS PELOTILLA"
 	wep_type[381] = 2
 	wep_auto[381] = 1
-	wep_load[381] = 240
-	wep_cost[381] = 23
+	wep_load[381] = 200
+	wep_cost[381] = 20
 	wep_sprt[381] = sprMuchasPelotilla
-	wep_area[381] = 18
+	wep_area[381] = 17
 	wep_text[381] = "cest bon"
 	wep_swap[381] = sndSwapShotgun
 	wep_rad[381] = 0;

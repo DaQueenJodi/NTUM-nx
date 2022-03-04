@@ -31,14 +31,14 @@ if target > 0
 		fireTriShot = false;
 		bigballs = false;
 	}
-	else if target.x > beamL && target.x < beamR && ran > 60
+	else if target.x > beamL && target.x < beamR && ran > 55
 	{
 		//In center
 		bigballs = false;
 		fireTriShot = false;
 		event_user(0);//BEAM START
 	}
-	else if ran > 45
+	else if ran > 40
 	{
 		//Tri shot
 		bigballs = false;
