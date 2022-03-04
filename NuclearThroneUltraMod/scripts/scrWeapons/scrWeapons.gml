@@ -3002,7 +3002,7 @@ function scrWeapons() {
 	wep_name[272] = "GHOST BLADE"
 	wep_type[272] = 0
 	wep_auto[272] = 0
-	wep_load[272] = 38
+	wep_load[272] = 30
 	wep_cost[272] = 0
 	wep_sprt[272] = sprGhostBlade
 	wep_area[272] = 13
@@ -3035,7 +3035,7 @@ function scrWeapons() {
 	wep_name[275] = "GHOST SHOVEL"
 	wep_type[275] = 0
 	wep_auto[275] = 0
-	wep_load[275] = 52
+	wep_load[275] = 44
 	wep_cost[275] = 0
 	wep_sprt[275] = sprGhostShovel
 	wep_area[275] = 16//4 originally?

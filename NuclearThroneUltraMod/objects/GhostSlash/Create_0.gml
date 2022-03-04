@@ -1,5 +1,5 @@
 event_inherited();
-image_speed = 0.4
+image_speed = 0.3
 
 typ = 0 //0 = nothing, 1 = deflectable, 2 = destructable, 3 = deflectable
 
@@ -9,5 +9,5 @@ sleepRate=15;
 snd_wallhit=sndMeleeWall;
 snd_hit=sndHitWall;
 
-dmg=14;
+dmg=18;
 

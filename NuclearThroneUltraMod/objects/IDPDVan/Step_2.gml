@@ -8,6 +8,7 @@ if alarm[3]>5
     else
     {
     motion_add(180,10);
+	direction=180;
     }
 }
 

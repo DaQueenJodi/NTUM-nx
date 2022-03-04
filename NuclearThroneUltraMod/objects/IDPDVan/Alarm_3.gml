@@ -1,8 +1,9 @@
 /// @description Spawn popo
 size=0;
+/*
 if team != 2
 team=3;
-else
+else*/
 team = 0;
     repeat(3+irandom(UberCont.loops))
     {
@@ -25,6 +26,8 @@ if random(3)<1 //elite
     spr_hurt=sprRogueEliteGruntHurt;
     spr_dead=sprRogueEliteGruntDead;
     }
+	else
+		scrSleepyPopo()
     if instance_exists(Player)
     motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,6)
     else
@@ -43,6 +46,8 @@ if random(3)<1 //elite
     spr_hurt=sprRogueEliteShielderHurt;
     spr_dead=sprRogueEliteShielderDead;
     }
+	else
+		scrSleepyPopo()
     if instance_exists(Player)
     motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,5)
     else
@@ -60,6 +65,8 @@ if random(3)<1 //elite
     spr_walk=sprRogueEliteInspectorWalk;
     spr_hurt=sprRogueEliteInspectorHurt;
     spr_dead=sprRogueEliteInspectorDead;}
+	else
+		scrSleepyPopo()
     if instance_exists(Player)
     motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,5)
     else
@@ -97,6 +104,8 @@ if other.RogueIDPD=true
     spr_walk=sprRogueGruntWalk;
     spr_hurt=sprRogueGruntHurt;
     spr_dead=sprRogueGruntDead;}
+	else
+		scrSleepyPopo()
 if instance_exists(Player)
 motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,4)
 else
@@ -114,6 +123,8 @@ if other.RogueIDPD=true
     spr_walk=sprRogueShielderWalk;
     spr_hurt=sprRogueShielderHurt;
     spr_dead=sprRogueShielderDead;}
+	else
+		scrSleepyPopo()
 if instance_exists(Player)
 motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,4)
 else
@@ -131,6 +142,8 @@ if other.RogueIDPD=true
     spr_walk=sprRogueInspectorWalk;
     spr_hurt=sprRogueInspectorHurt;
     spr_dead=sprRogueInspectorDead;}
+	else
+		scrSleepyPopo()
 if instance_exists(Player)
 motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,4)
 else
@@ -148,6 +161,8 @@ if other.RogueIDPD=true
     spr_walk=sprRogueSegwayIDPDWalk;
     spr_hurt=sprRogueSegwayIDPDHurt;
     spr_dead=sprRogueSegwayIDPDDead;}
+	else
+		scrSleepyPopo()
 if instance_exists(Player)
 motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,4)
 else

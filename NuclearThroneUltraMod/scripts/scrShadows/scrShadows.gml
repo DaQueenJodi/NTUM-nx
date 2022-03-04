@@ -45,7 +45,12 @@ function scrShadows() {
 	with InvertedScrapBoss
 	draw_sprite(shd96,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with IDPDVan
-	draw_sprite(shd96,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )-8)
+	{
+		if object_index == IDPDVanVertical
+			draw_sprite_ext(shd96,0,x-__view_get( e__VW.XView, 0 )-8,y-__view_get( e__VW.YView, 0 ),1,1,90,c_white,1)
+		else
+			draw_sprite(shd96,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )-8)
+	}
 	with BecomeScrapBoss
 	draw_sprite(shd96,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with BecomeInvertedScrapBoss

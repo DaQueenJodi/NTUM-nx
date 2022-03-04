@@ -19,23 +19,41 @@ shad = noone;//surface_create(view_wview,view_hview)
 
 
 alarm[0] = 1
-
-vanCome1=10;
-canspawnvan1=true;
-
-vanCome2=10;
-canspawnvan2=true;
-
-vanCome3=10;
-canspawnvan3=true;
-
-vanCome4=10;
-canspawnvan4=true;
-
-vanCome5=10;
-canspawnvan5=true;
-
-
 alarm[1] = 120
-alarm[2] = 300;//popo van
 
+wantVanAmount = 0;
+vanDelay = 400;
+vanDelayRandom = 100;
+verticalVans = false;
+
+///@description deside how manny vans
+if instance_exists(Player)
+{
+	wantVanAmount = GetPlayerLoops();
+	vanDelay = max(60,vanDelay - ((wantVanAmount-1)*60));
+	if wantVanAmount > 2
+		verticalVans = true;
+	if Player.crown == 16 //CROWN OF POPO
+		wantVanAmount ++;
+	if Player.crown==10//crown of difficulty
+	{
+		vanDelay*=0.7;
+		verticalVans = true;
+	}
+	if Player.ultra_got[82]
+	{
+		alarm[3]=60;
+	//maxEnemyHealthInLevel=0;
+	}
+	//progression
+	alarm[4]=600;//10 seconds
+	if (wantVanAmount < 1 || (Player.area == 9 && Player.subarea == 3) 
+	|| Player.area == 100)
+	{
+		exit;
+	}
+	else
+	{
+		alarm[2] = max(250,vanDelay+irandom(vanDelayRandom));
+	}
+}

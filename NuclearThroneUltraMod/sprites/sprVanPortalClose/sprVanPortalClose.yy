@@ -112,7 +112,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprVanPortalClose","path":"sprites/sprVanPortalClose/sprVanPortalClose.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprVanPortalClose",
     "tags": [],
     "resourceType": "GMSequence",
   },

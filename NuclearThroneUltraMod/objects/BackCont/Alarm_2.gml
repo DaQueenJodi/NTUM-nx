@@ -1,70 +1,42 @@
 /// @description popo vans
 
-alarm[2]=70+irandom(120);//minimum delay between vans
-
-if (!instance_exists(GenCont) && !instance_exists(LevCont) && instance_exists(Floor))
+var spawnedVan = false;
+if instance_exists(Player)
 {
-
-//loop 1
-if ( (instance_number(enemy)<enemiesInStartLevel*vanCome1&&instance_exists(Player) ) && canspawnvan1==true )
+	if (verticalVans && wantVanAmount % 2 == 0 || true) //EVEN
+	{
+		var xx = Player.x + random_range(-48,48);
+		var yy = Player.y + choose(-250,250);
+		var spawnfloor = instance_nearest(xx,yy,Floor);
+		if instance_exists(spawnfloor)
+		{
+			with instance_create(spawnfloor.x + 16,spawnfloor.y + 16,VanSpawn)
+				vertical = true;
+			spawnedVan = true;
+			wantVanAmount --;
+		}
+	}
+	else
+	{
+		var xx = Player.x + choose(-250,250);
+		var yy = Player.y + random_range(-48,48);
+		var spawnfloor = instance_nearest(xx,yy,Floor);
+		if instance_exists(spawnfloor)
+		{
+			instance_create(spawnfloor.x + 16,spawnfloor.y + 16,VanSpawn);
+			spawnedVan = true;
+			wantVanAmount --;
+		}
+	}
+}
+if (wantVanAmount > 0)
 {
-
-canspawnvan1=false;
-var spawnfloor = instance_nearest(Player.x+choose(random(64)+132,random(-64)-132),Player.y+choose(random(48)+8,random(-48)-8),Floor);
-if instance_exists(spawnfloor)
-instance_create(spawnfloor.x+16,spawnfloor.y+16,VanSpawn);
-
-exit;
+	if (spawnedVan)
+	{
+		alarm[2] = vanDelay + irandom(vanDelayRandom);//minimum delay between vans
+	}
+	else
+	{
+		alarm[2] = (vanDelay + irandom(vanDelayRandom))*0.5;	
+	}
 }
-
-//loop 2
-if ( (instance_number(enemy)<enemiesInStartLevel*vanCome2&&instance_exists(Player) ) && canspawnvan2==true )
-{
-
-canspawnvan2=false;
-var spawnfloor = instance_nearest(Player.x+choose(random(64)+132,random(-64)-132),Player.y+choose(random(48)+8,random(-48)-8),Floor);
-if instance_exists(spawnfloor)
-instance_create(spawnfloor.x+16,spawnfloor.y+16,VanSpawn);
-
-exit;
-}
-
-//loop 3
-if ( (instance_number(enemy)<enemiesInStartLevel*vanCome3&&instance_exists(Player) ) && canspawnvan3==true )
-{
-
-canspawnvan3=false;
-var spawnfloor = instance_nearest(Player.x+choose(random(64)+132,random(-64)-132),Player.y+choose(random(48)+8,random(-48)-8),Floor);
-if instance_exists(spawnfloor)
-instance_create(spawnfloor.x+16,spawnfloor.y+16,VanSpawn);
-
-exit;
-}
-
-///loop 4
-if ( (instance_number(enemy)<enemiesInStartLevel*vanCome4&&instance_exists(Player) ) && canspawnvan4==true )
-{
-
-canspawnvan4=false;
-var spawnfloor = instance_nearest(Player.x+choose(random(64)+132,random(-64)-132),Player.y+choose(random(48)+8,random(-48)-8),Floor);
-if instance_exists(spawnfloor)
-instance_create(spawnfloor.x+16,spawnfloor.y+16,VanSpawn);
-
-}
-
-
-///crown of popo
-if ( (instance_number(enemy)<enemiesInStartLevel*vanCome5&&instance_exists(Player) ) && canspawnvan5==true )
-{
-
-canspawnvan5=false;
-var spawnfloor = instance_nearest(Player.x+choose(random(64)+132,random(-64)-132),Player.y+choose(random(48)+8,random(-48)-8),Floor);
-if instance_exists(spawnfloor)
-instance_create(spawnfloor.x+16,spawnfloor.y+16,VanSpawn);
-
-}
-
-
-
-}
-

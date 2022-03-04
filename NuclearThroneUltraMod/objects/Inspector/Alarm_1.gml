@@ -8,7 +8,13 @@ scrTarget();
 
 if target > 0
 {
-if random(5) < 1 and freeze > 40
+	var othersControl = 0;
+	with Inspector
+	{
+		if control
+			othersControl ++;
+	}
+if othersControl < 1 && random(5) < 1 and freeze > 40
 {
 //MIND CONTROL
 control = 1

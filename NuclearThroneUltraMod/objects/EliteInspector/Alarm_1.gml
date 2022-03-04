@@ -10,7 +10,13 @@ scrTarget();
 
 if target > 0
 {
-if random(5) < 2 and freeze > 40 && control = 0
+	var othersControl = 0;
+	with EliteInspector
+	{
+		if control
+			othersControl ++;
+	}
+if random(5) < 2 and freeze > 40 && control = 0 && othersControl < 1
 {
 //MIND CONTROL
 control = 1

@@ -13,6 +13,7 @@ if random(4)<1 &&Player.loops>0//elite
     
     with instance_create(x+random(4)-2,y+random(4)-2,EliteGrunt)
     {
+		scrSleepyPopo();
     if instance_exists(Player)
     motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,6)
     else
@@ -23,6 +24,7 @@ if random(4)<1 &&Player.loops>0//elite
     {
     with instance_create(x+random(4)-2,y+random(4)-2,EliteShielder)
     {
+		scrSleepyPopo();
     if instance_exists(Player)
     motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,5)
     else
@@ -33,6 +35,7 @@ if random(4)<1 &&Player.loops>0//elite
     {
     with instance_create(x+random(4)-2,y+random(4)-2,EliteInspector)
     {
+		scrSleepyPopo();
     if instance_exists(Player)
     motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,5)
     else
@@ -43,6 +46,7 @@ if random(4)<1 &&Player.loops>0//elite
     {
     with instance_create(x+random(4)-2,y+random(4)-2,SegwayPopo)
     {
+		scrSleepyPopo();
     if instance_exists(Player)
     motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,5)
     else
@@ -74,6 +78,7 @@ repeat(2)
 {
 with instance_create(x+random(4)-2,y+random(4)-2,Grunt)
 {
+	scrSleepyPopo();
 if instance_exists(Player)
 motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,4)
 else
@@ -84,6 +89,7 @@ if dir = 2
 {
 with instance_create(x+random(4)-2,y+random(4)-2,Shielder)
 {
+	scrSleepyPopo();
 if instance_exists(Player)
 motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,4)
 else
@@ -94,6 +100,7 @@ if dir = 3
 {
 with instance_create(x+random(4)-2,y+random(4)-2,Inspector)
 {
+	scrSleepyPopo();
 if instance_exists(Player)
 motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,4)
 else
@@ -104,6 +111,7 @@ if dir = 4
 {
 with instance_create(x+random(4)-2,y+random(4)-2,SegwayPopo)
 {
+	scrSleepyPopo();
 if instance_exists(Player)
 motion_add(point_direction(x,y,Player.x,Player.y)+random(90)-45,4)
 else

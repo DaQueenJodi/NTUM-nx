@@ -233,9 +233,9 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if (keyboard_check_pressed(ord("L")))
 	    {
 		var dangle = random(1)*360;
-		invertedportalcounter = invertedportaldelay
+		loops++
 		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
-		thing.mytext = "INVERTED PORTAL!";
+		thing.mytext = "LOOPS++! "+string(loops);
 	    }
 	if (keyboard_check_pressed(ord("G")))
 	    {
@@ -1512,14 +1512,20 @@ if (RogueHeat==true)
 ///Lets try aggro
 if crown = 18//Crown of disco
 {
-
-with enemy
+	with enemy
+	{
+		if alarm[1]>8
+			alarm[1]=8;
+	}
+}
+if crown == 10 //Crown of difficulty
 {
-if alarm[1]>8
-alarm[1]=8;
-}
-
-}
+	with enemy
+	{
+		if alarm[1] > 1 && alarm[1] < 10
+			alarm[1] = 1;
+	}
+}	
 wave += 0.4;//Looping animations
 
 //Hammer head

@@ -10,12 +10,14 @@ speed=12;
 
 if speed<0.5 && idle
 {
-idle=false;
+	debug("TEAM ZERO");
+	idle=false;
 if team != 2
 	team = 0;
 image_index=0;
 snd_play(sndVanOpen);
 meleedamage=0;
+friction = 8;
 }
 /*
 if (team == 0)

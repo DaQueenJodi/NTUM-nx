@@ -9,5 +9,5 @@ if speed>3&&alarm[3]>0
     }
 
 }
-speed*=0.85;
+speed*=0.87;
 

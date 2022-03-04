@@ -19,8 +19,9 @@ snd_hurt = sndVanHurt
 walk = 0
 
 idle=true;
-
-if instance_exists(Player)
+right = 1;
+/*
+if instance_exists(Player) && object_index != IDPDVanVertical
 {
 if Player.x>x//right
 {right=1
@@ -30,11 +31,8 @@ else//left
 {right=-1;
 motion_add(180,8);}
 
-}
+}*/
 friction=4;
 alarm[3]=45;
 
 ang = random(360);
-
-
-

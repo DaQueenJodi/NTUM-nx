@@ -9,40 +9,41 @@ instance_create(x,y,CanSpawnBoss)
 }
 if instance_exists(CanSpawnBoss)
 {
-with instance_nearest(target.x,target.y,CanSpawnBoss)
-{
-if other.area=105 || other.area==10//inverted desert temp savanna boss
-{
-instance_create(x,y,InvertedBanditBoss)
-}
-else
-{
-    if other.area=3 && other.loops>0 && instance_exists(Floor)//scrapyard
-    {
-    with instance_nearest(instance_furthest(x+random(120)-60,y+random(120)-60,Floor),instance_furthest(x+random(120)-60,y+random(120)-60,Floor),Floor)
-    instance_create(x+16,y+16,AssassinBoss);
-    }
-    else if other.area=106 && other.loops>0 && instance_exists(Floor)//inverted scrapyard
-    {
-    with instance_nearest(instance_furthest(x+random(120)-60,y+random(120)-60,Floor),instance_furthest(x+random(120)-60,y+random(120)-60,Floor),Floor)
-    instance_create(x+16,y+16,InvertedAssassinBoss);
-    }
-    else if other.area=101||other.area=2
-    instance_create(x,y,BigFish);//oasis
-    else if other.oasis=true
-    {
-    with instance_create(x,y,BanditBoss)
-    {oasis=true;}
-    }
-    else if other.area = 1
-    instance_create(x,y,BanditBoss)
-}
+	with instance_nearest(target.x,target.y,CanSpawnBoss)
+	{
+	if other.area=105 || other.area==10//inverted desert temp savanna boss
+	{
+	instance_create(x,y,InvertedBanditBoss)
+	}
+	else
+	{
+	    if other.area=3 && other.loops>0 && instance_exists(Floor)//scrapyard
+	    {
+	    with instance_nearest(instance_furthest(x+random(120)-60,y+random(120)-60,Floor),instance_furthest(x+random(120)-60,y+random(120)-60,Floor),Floor)
+	    instance_create(x+16,y+16,AssassinBoss);
+	    }
+	    else if other.area=106 && other.loops>0 && instance_exists(Floor)//inverted scrapyard
+	    {
+	    with instance_nearest(instance_furthest(x+random(120)-60,y+random(120)-60,Floor),instance_furthest(x+random(120)-60,y+random(120)-60,Floor),Floor)
+	    instance_create(x+16,y+16,InvertedAssassinBoss);
+	    }
+	    else if other.area=101||other.area=2
+	    instance_create(x,y,BigFish);//oasis
+	    else if other.oasis=true
+	    {
+	    with instance_create(x,y,BanditBoss)
+	    {oasis=true;}
+	    }
+	    else if other.area = 1
+	    instance_create(x,y,BanditBoss)
+	}
 
-}
-with CanSpawnBoss
-instance_destroy()
-
-instance_destroy()
+	}
+	with CanSpawnBoss
+	instance_destroy()
+	with WantBoss
+		alarm[0]+=(10*instance_number(WantBoss));
+	instance_destroy()
 }
 }
 alarm[0] = 5

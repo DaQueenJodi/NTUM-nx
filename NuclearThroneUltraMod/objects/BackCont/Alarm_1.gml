@@ -6,7 +6,7 @@ if instance_exists(Player) and !instance_exists(GenCont) and !instance_exists(Le
 if random(3+Player.loops)>1
 alarm[1] = 1000//500
 
-if  (( (Player.loops >= 1 and instance_number(Grunt) < 3+Player.loops and Player.area != 100) || Player.crown=10) && instance_number(enemy)>0)
+if  (( (Player.loops >= 1 and instance_number(Grunt) < 3+Player.loops and Player.area != 100) || Player.crown=10) && instance_number(enemy)>3)
 {
 repeat(Player.loops)    
 instance_create(Player.x,Player.y,IDPDSpawn)        

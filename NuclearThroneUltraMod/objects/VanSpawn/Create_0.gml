@@ -27,4 +27,7 @@ alarm[0] = 45
 
 snd_play(sndVanWarning);
 RogueIDPD=false;
-
+vertical = false;
+right = 1;
+alarm[2] = 1;
+arrowSprite = sprVanPortalDirectionStart;

@@ -1,6 +1,6 @@
 x -= hspeed
 y -= vspeed
-
+image_speed = 0.5
 if speed > 2
 {
 x += lengthdir_x(3,image_angle)
