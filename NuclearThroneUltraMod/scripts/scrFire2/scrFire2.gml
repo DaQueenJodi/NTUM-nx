@@ -4966,7 +4966,8 @@ function scrFire2() {
 		var by = y;
 		var xstep = lengthdir_x(len,aimDir+90);
 		var ystep = lengthdir_y(len,aimDir+90);
-		while (!place_meeting(bx,by,Wall))
+		var count = 0;
+		while (!place_meeting(bx,by,Wall) && count < 500)
 		{
 			instance_create(bx,by,Dust);
 			with instance_create(bx,by,Bullet1)
@@ -4977,12 +4978,14 @@ function scrFire2() {
 			}
 			bx += xstep;
 			by += ystep;
+			count ++;
 		}
 		var xstep = lengthdir_x(len,aimDir-90);
 		var ystep = lengthdir_y(len,aimDir-90);
 		bx = x + xstep;
 		by = y + ystep;
-		while (!place_meeting(bx,by,Wall))
+		count = 0;
+		while (!place_meeting(bx,by,Wall) && count < 500)
 		{
 			instance_create(bx,by,Dust);
 			with instance_create(bx,by,Bullet1)
@@ -4993,6 +4996,7 @@ function scrFire2() {
 			}
 			bx += xstep;
 			by += ystep;
+			count ++;
 		}
 		mask_index = msk;
 		BackCont.viewx2 += lengthdir_x(13,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
@@ -5014,7 +5018,8 @@ function scrFire2() {
 		var by = y;
 		var xstep = lengthdir_x(len,aimDir);
 		var ystep = lengthdir_y(len,aimDir);
-		while (!place_meeting(bx,by,Wall))
+		var count = 0;
+		while (!place_meeting(bx,by,Wall) && count < 500)
 		{
 			with instance_create(bx,by,Bullet1)
 			{
@@ -5024,6 +5029,7 @@ function scrFire2() {
 			}
 			bx += xstep;
 			by += ystep;
+			count ++;
 		}
 		mask_index = msk;
 		BackCont.viewx2 += lengthdir_x(13,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
