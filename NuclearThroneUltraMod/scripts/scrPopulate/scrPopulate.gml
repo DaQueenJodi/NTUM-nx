@@ -284,10 +284,20 @@ function scrPopulate() {
                 image_xscale = -1
             }
 			TopDecals();
-            with TopDecal
-				sprite_index = sprVulcanoTopDecal
-            with Bones
-				sprite_index = sprVulcanoBones
+			if spawnarea == 7
+			{
+	            with TopDecal
+					sprite_index = sprVulcanoTopDecal
+	            with Bones
+					sprite_index = sprVulcanoBones
+			}
+			else
+			{
+				with TopDecal
+					sprite_index = sprInvertedVulcanoTopDecal
+	            with Bones
+					sprite_index = sprVulcanoBones
+			}
         }
     }
 

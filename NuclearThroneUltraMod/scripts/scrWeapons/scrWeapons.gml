@@ -4044,7 +4044,7 @@ function scrWeapons() {
 	wep_name[366] = "BOUNCER REVOLVER"
 	wep_type[366] = 1
 	wep_auto[366] = 0
-	wep_load[366] = 9
+	wep_load[366] = 6
 	wep_cost[366] = 1
 	wep_sprt[366] = sprBouncerRevolver
 	wep_area[366] = 1

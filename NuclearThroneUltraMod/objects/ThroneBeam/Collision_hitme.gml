@@ -4,13 +4,12 @@ if other.team != team and other.my_health > 0
 	{
 		if sprite_index!=spr_hurt
 		{
-			debug("DAMAGE!");
 			my_health -= other.dmg
 			sprite_index = spr_hurt
 			image_index = 0
 			motion_add(other.image_angle+90,8)
+			snd_play(snd_hurt, hurt_pitch_variation,true)
+			instance_create(x,y,Smoke)
 		}
 	}
-	snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
-	instance_create(x,y,Smoke)
 }

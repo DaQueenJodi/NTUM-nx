@@ -154,6 +154,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			}
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
+			scrWeaponHold();
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
@@ -166,6 +167,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			}
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
+			scrWeaponHold();
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
@@ -178,6 +180,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			}
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
+			scrWeaponHold();
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
@@ -190,6 +193,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			}
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
+			scrWeaponHold();
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
 	    }
