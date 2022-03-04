@@ -1,5 +1,5 @@
 /// @description Animation state transitions
-if sprite_index = spr_hurt && !fire
+if sprite_index == spr_hurt && !fire
 {
 	spr_idle = spr_normal;
 	spr_walk = spr_normal;
