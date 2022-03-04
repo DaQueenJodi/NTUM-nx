@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndMeleeWall",
-  "duration": 0.0,
+  "duration": 0.632813,
   "parent": {
     "name": "HitWall",
     "path": "folders/Sounds/HitWall.yy",

@@ -3214,7 +3214,7 @@ function scrWeapons() {
 	wep_load[291] = 26
 	wep_cost[291] = 4
 	wep_sprt[291] = sprEnergyGlove
-	wep_area[291] = 8
+	wep_area[291] = 9
 	wep_text[291] = "batteries inlcuded"
 	wep_swap[291] = sndSwapHammer
 	wep_rad[291] = 0;
@@ -4174,6 +4174,17 @@ function scrWeapons() {
 	wep_text[377] = "blow up in the face"
 	wep_swap[377] = sndSwapHammer
 	wep_rad[377] = 0;
+	
+	wep_name[378] = "LOVE BOMBER"
+	wep_type[378] = 4
+	wep_auto[378] = 0
+	wep_load[378] = 23
+	wep_cost[378] = 2
+	wep_sprt[378] = sprLoveBomber
+	wep_area[378] = 8
+	wep_text[378] = "<3"
+	wep_swap[378] = sndSwapExplosive
+	wep_rad[378] = 0;
 	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"

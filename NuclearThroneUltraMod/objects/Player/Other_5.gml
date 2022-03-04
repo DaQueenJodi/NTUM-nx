@@ -149,45 +149,40 @@ if crown == 15
 }
 if race=14//PANDA
 {
-    if level!=1 && ultra_got[56]=0
+    if level!=1 && ultra_got[56]=0 && wep_area[wep] != -1
     {
     
         //primary
-        if wep!=0{
-        var dir= 0;
-        var prevwep;
-        
-        if wep_area[wep]=-1//handling starting weapons
-        wep_area[wep]=1
-        
-        prevwep=wep;
-        
-        //handling golden weapons
-        if string_copy(wep_name[prevwep],0,4) = "GOLD"&&loops<1
+        if wep!=0
 		{
-			prevwep=9//minigun tier 6
-			scrUnlockBSkin(14,"FOR CONVERTING A GOLDEN WEAPON",0)
-		}
+		    var dir= 0;
+		    var prevwep;
         
-        if ultra_got[55]
-        {
-        do {wep = round(random(maxwep-1)+1);dir+=1;
-        if dir >999
-        wep=prevwep;}
-        until ( ( (wep_area[wep] = wep_area[prevwep]) || (wep_area[wep] = wep_area[prevwep+1]) || (wep_area[wep] = wep_area[prevwep+2]) )||(dir>1000)  && (wep_area[wep] != -1) )
-        }
-        else{
-        do {wep = round(random(maxwep-1)+1);dir++;
-        if dir >999
-        wep=prevwep;}
-        until ( (wep_area[wep] = wep_area[prevwep])||(dir>1000) && (wep_area[wep] != -1) )
-        }
+		    prevwep=wep;
         
-        //hold it properly now
-        if wep_type[wep] != 0 and wep != 24 and wep != 36 and wep != 53 && wep!=198 && wep!=222 && wep!=223//some melee exceptions
-        wepangle = 0
-        else if wepangle = 0
-        wepangle = choose(120,-120)
+		    //handling golden weapons
+		    if string_copy(wep_name[prevwep],0,4) = "GOLD"&&loops<1
+			{
+				prevwep=9//minigun tier 6
+				scrUnlockBSkin(14,"FOR CONVERTING A GOLDEN WEAPON",0)
+			}
+        
+		    if ultra_got[55]
+		    {
+		    do {wep = round(random(maxwep-1)+1);dir+=1;
+		    if dir >999
+		    wep=prevwep;}
+		    until ( ( (wep_area[wep] = wep_area[prevwep]) || (wep_area[wep] = wep_area[prevwep+1]) || (wep_area[wep] = wep_area[prevwep+2]) )||(dir>1000)  && (wep_area[wep] != -1) )
+		    }
+		    else{
+		    do {wep = round(random(maxwep-1)+1);dir++;
+		    if dir >999
+		    wep=prevwep;}
+		    until ( (wep_area[wep] = wep_area[prevwep])||(dir>1000) && (wep_area[wep] != -1) )
+		    }
+        
+		    //hold it properly now
+			scrWeaponHold();
         
         }
         //dont start empty handed

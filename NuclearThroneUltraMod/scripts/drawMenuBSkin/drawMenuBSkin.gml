@@ -12,6 +12,10 @@ function drawMenuBSkin(skin,race,colour){
 	{
 		var spr = asset_get_index("sprMutant" + string(race)+"CIdle");
 	}
+	else
+	{
+		var spr = asset_get_index("sprMutant" + string(race)+"Idle");
+	}
 	shader_set(shdDrawWhite);
 	draw_sprite_ext(spr,imageIndex,xx+1,yy+1,1,1,0,colour,1);
 	draw_sprite_ext(spr,imageIndex,xx+1,yy-1,1,1,0,colour,1);

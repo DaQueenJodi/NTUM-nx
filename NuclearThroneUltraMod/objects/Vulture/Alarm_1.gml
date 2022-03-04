@@ -6,10 +6,10 @@ scrTarget()
 if target > 0 {
     if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {
 		var dis = point_distance(target.x, target.y, x, y);
-        if dis > 48  && dis < 140{
+        if dis > 32  && dis < 160{
 			//Leads shot!
-			var xx = target.x + (target.hspeed*4)
-			var yy = target.y + (target.vspeed*4)
+			var xx = target.x + (target.hspeed*2)
+			var yy = target.y + (target.vspeed*2)
 			gunangle = point_direction(x, y, xx, yy);
 			with instance_create(x,y,EnemyBullet5)
 			{

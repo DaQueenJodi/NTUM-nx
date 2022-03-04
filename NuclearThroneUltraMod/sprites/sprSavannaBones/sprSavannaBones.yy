@@ -27,9 +27,15 @@
     {"compositeImage":{"FrameId":{"name":"7f6f8893-4357-414f-aa9e-df5b93f4a5de","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"7f6f8893-4357-414f-aa9e-df5b93f4a5de","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"LayerId":{"name":"f9914e4f-2b60-4b84-9da0-79bd5c223299","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprSavannaBones","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","name":"7f6f8893-4357-414f-aa9e-df5b93f4a5de","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"be35d020-db2d-46ef-8074-041cab18d2af","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"be35d020-db2d-46ef-8074-041cab18d2af","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"LayerId":{"name":"f9914e4f-2b60-4b84-9da0-79bd5c223299","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprSavannaBones","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","name":"be35d020-db2d-46ef-8074-041cab18d2af","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"4b229cce-7333-44d3-9bd9-f01eb3b64d77","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"4b229cce-7333-44d3-9bd9-f01eb3b64d77","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"LayerId":{"name":"f9914e4f-2b60-4b84-9da0-79bd5c223299","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprSavannaBones","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","name":"4b229cce-7333-44d3-9bd9-f01eb3b64d77","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"95cd4fc7-1784-4c30-951e-f596fab08b39","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"95cd4fc7-1784-4c30-951e-f596fab08b39","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"LayerId":{"name":"f9914e4f-2b60-4b84-9da0-79bd5c223299","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprSavannaBones","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","name":"95cd4fc7-1784-4c30-951e-f596fab08b39","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprSavannaBones","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},
@@ -39,13 +45,15 @@
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 2.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f5328b6c-8cd4-433b-8d30-162a9471e856","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7f6f8893-4357-414f-aa9e-df5b93f4a5de","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"e910e171-56bd-4d45-a4a3-5c394ba81db3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4b229cce-7333-44d3-9bd9-f01eb3b64d77","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"743aca18-1278-42ba-b210-218e2fb63fc1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"be35d020-db2d-46ef-8074-041cab18d2af","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e910e171-56bd-4d45-a4a3-5c394ba81db3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4b229cce-7333-44d3-9bd9-f01eb3b64d77","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"22f56aae-b70b-4976-84b2-b316d57a4f9f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"95cd4fc7-1784-4c30-951e-f596fab08b39","path":"sprites/sprSavannaBones/sprSavannaBones.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

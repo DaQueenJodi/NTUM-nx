@@ -1308,7 +1308,7 @@ function scrFire2() {
 	//ULTRA MEGA LASERPISTOL
 	case 244:
 
-
+	snd_play_fire(sndMegaLaser);
 	snd_play_fire(sndUltraLaserUpg)
 	snd_play_fire(sndThunder);
 
@@ -2543,7 +2543,7 @@ function scrFire2() {
 
 	repeat(3)
 	{
-	scrMoveContactSolid(ang,44)
+	scrMoveContactSolid(aimDir,44)
 
 	instance_create(x,y,Dust)
 
@@ -4941,6 +4941,24 @@ function scrFire2() {
 	BackCont.viewy2 += lengthdir_y(13,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
 	BackCont.shake += 1
 	wkick = -5
+
+	break;
+	
+	//LOVE BOMBER
+	case 378:
+
+	snd_play_fire(sndGrenade)
+
+	with instance_create(x,y,LoveBomb)
+	{
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*other.accuracy,11)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 3
+	wkick = 5
 
 	break;
 	

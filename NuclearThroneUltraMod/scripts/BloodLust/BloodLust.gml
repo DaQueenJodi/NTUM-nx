@@ -3,16 +3,15 @@
 ///@param
 function BloodLust(){
 	//SOME KILLS REGENERATE HEALTH
-	snd_play(sndBloodlustProc);
 	var chance = 7.7
 	if Player.race == 25
 		chance = 7.89;
     if Player.skill_got[7] = 1 and random(100) <  chance//7.69% chance
     {
-    
+    	snd_play(sndBloodlustProc);
 	    with instance_create(Player.x,Player.y-8,HealFX)
 	    {
-	    sprite_index=sprBloodlust;
+			sprite_index=sprBloodlust;
 	    }
     
 	    num = 1

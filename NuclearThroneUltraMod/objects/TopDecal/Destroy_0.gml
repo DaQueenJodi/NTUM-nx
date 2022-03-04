@@ -1,4 +1,4 @@
-/// @description xxx
+/// @description Explode?
 if UberCont.area == 3 || UberCont.area == 106
 {
 	if sprite_index == sprScrapTopDecal && image_index == 2

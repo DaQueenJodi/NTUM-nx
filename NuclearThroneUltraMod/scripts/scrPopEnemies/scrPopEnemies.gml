@@ -54,9 +54,9 @@ function scrPopEnemies() {
             instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Vulture, Exploder, Hyena, Vulture))
         }
         else {
-            if random(7) < 1
+            if random(8) < 1
 			{
-				repeat(2+irandom(2))//Pack of hyenas
+				repeat(2)//Pack of hyenas
 				{
 					instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Hyena)
 				}

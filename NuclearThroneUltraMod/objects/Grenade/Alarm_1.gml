@@ -8,5 +8,5 @@ motion_add(random(360),random(2))
 }
 
 if sticky = 1
-depth = -3
+depth = -5
 

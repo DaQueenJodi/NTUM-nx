@@ -6,19 +6,16 @@ if object_index!=ExplosionNonLethal
 with instance_create(x,y,ExplosionMask)
 	owner = other.id;
 }
-repeat(4)
-{
 with instance_create(x,y,Smoke)
 motion_add(random(360),1+random(2))
-}
 
 ang = random(360)
-repeat(10)
+var angstep = 360/4
+repeat(4)
 {
 with instance_create(x,y,Dust)
 motion_add(other.ang,6)
-
-ang += 360/10
+ang += angstep;
 }
 
 

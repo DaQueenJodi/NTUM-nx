@@ -20,7 +20,7 @@ hogpoints = 0; //INVESTMENT ULTRA amount of ultra mutations you get
 horrorEtaken = false;
 markforhpreduction = false; //used by skeleton to bypass immunity frames
 raddrop = 0;
-hurtDuration = 17; //Additional iframes
+hurtDuration = 18; //Additional iframes
 hurtTime = 0;
 lockoutElementor = false; //When no ammo lockout ability for elementor
 boostLevel = 0;
@@ -173,6 +173,7 @@ if UberCont.opt_gamemode = 1 { //one weapon only game mode yo
     }
 }
 else {
+	UberCont.start_wep[0]=race_swep[race];//Starting weapon 0 is different for each character
     wep = UberCont.start_wep[UberCont.selected_start_wep[race]];
 }
 

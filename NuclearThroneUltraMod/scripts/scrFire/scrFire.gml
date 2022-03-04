@@ -1875,7 +1875,7 @@ function scrFire() {
 	//MEGA LASER PISTOL
 	case 82:
 
-	snd_play_fire(sndLaserUpg)
+	snd_play_fire(sndMegaLaser)
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),MegaLaser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)*other.accuracy
@@ -3334,7 +3334,7 @@ function scrFire() {
 	//MEGA LASER RIFLE
 	case 138:
 
-	snd_play_fire(sndLaserUpg)
+	snd_play_fire(sndMegaLaser)
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),MegaLaser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy

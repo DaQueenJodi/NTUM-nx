@@ -202,4 +202,5 @@ r = 0
 w = 24
 h = 24
 
-alarm[1] = 2;
+checked = false;
+alarm[1] = 3;
