@@ -451,10 +451,11 @@ function scrMakeFloor() {
 				!(iy == circleHeight -1 && ix == 0) &&
 				!(iy == 0 && ix == circleWidth - 1) &&
 				(!genExtraCover || (
-					!(iy == round(circleHeight*0.2) && ix == round(circleWidth*0.2)) &&
-					!(iy == floor(circleHeight*0.8) && ix == round(circleWidth*0.2)) &&
-					!(iy == floor(circleHeight*0.8) && ix == floor(circleWidth*0.8)) &&
-					!(iy == round(circleHeight*0.2) && ix == floor(circleWidth*0.8)))
+				//Extra cover
+					!(iy == round(circleHeight*0.3) && ix == round(circleWidth*0.3)) &&
+					!(iy == floor(circleHeight*0.7) && ix == round(circleWidth*0.3)) &&
+					!(iy == floor(circleHeight*0.7) && ix == floor(circleWidth*0.7)) &&
+					!(iy == round(circleHeight*0.3) && ix == floor(circleWidth*0.7)))
 				)
 				{
 					instance_create(x + (32*ix),
