@@ -79,7 +79,7 @@ char[24].spr_to = sprElementorMenuSelect
 char[24].spr_from = sprElementorMenuDeselect
 char[24].spr_slct = sprElementorMenu
 char[24].num = 24
-char[24].depth--;
+//char[24].depth--;
 }
 
 if UberCont.race_have[20] = 1//BusinessHog

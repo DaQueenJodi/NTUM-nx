@@ -8,7 +8,7 @@ if speed>12
 speed=12;
 
 
-if speed<0.5 && idle
+if speed<0.8 && idle
 {
 	debug("TEAM ZERO");
 	idle=false;

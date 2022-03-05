@@ -3454,7 +3454,10 @@ function scrFire2() {
 	if my_health>0
 	snd_play_fire(choose(sndSword1,sndSword2))
 	else
-	snd_play_fire(sndBlackSwordMega)
+	{
+		snd_play_fire(sndBlackSwordMega)
+		reload *= 0.75;
+	}
 
 	instance_create(x,y,Dust)
 
@@ -3489,8 +3492,9 @@ function scrFire2() {
 	snd_play_fire(choose(sndSword1,sndSword2))
 	else
 	{
-	snd_play_fire(sndBloodCannonLoop);
-	snd_play_fire(sndBlackSwordMega);
+		snd_play_fire(sndBloodCannonLoop);
+		snd_play_fire(sndBlackSwordMega);
+		reload *= 0.75;
 	}
 
 	instance_create(x,y,Dust)
@@ -3502,13 +3506,14 @@ function scrFire2() {
 
 	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,ang),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,ang),DarkSwordSlash)
 	{
-	ang = other.ang
-	longarms = 0
-	if instance_exists(Player)
-	longarms = (Player.skill_got[13]+other.bettermelee)*3
-	motion_add(ang,2+longarms)
-	image_angle = direction
-	team = other.team}
+		ang = other.ang
+		longarms = 0
+		if instance_exists(Player)
+		longarms = (Player.skill_got[13]+other.bettermelee)*3
+		motion_add(ang,2+longarms)
+		image_angle = direction
+		team = other.team
+	}
 
 	wepangle = -wepangle
 	speed = -speed*0.5
