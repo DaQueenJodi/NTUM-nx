@@ -2884,7 +2884,7 @@ function scrWeapons() {
 	wep_load[261] = 5
 	wep_cost[261] = 4
 	wep_sprt[261] = sprHyperMachinegun
-	wep_area[261] = 16
+	wep_area[261] = 15
 	wep_text[261] = "hyper machinegun shoots through walls"
 	wep_swap[261] = sndSwapShotgun
 	wep_rad[261] = 0;
@@ -4211,10 +4211,10 @@ function scrWeapons() {
 	wep_name[381] = "MUCHAS PELOTILLA"
 	wep_type[381] = 2
 	wep_auto[381] = 1
-	wep_load[381] = 200
-	wep_cost[381] = 20
+	wep_load[381] = 220
+	wep_cost[381] = 30
 	wep_sprt[381] = sprMuchasPelotilla
-	wep_area[381] = 17
+	wep_area[381] = 18
 	wep_text[381] = "cest bon"
 	wep_swap[381] = sndSwapShotgun
 	wep_rad[381] = 0;

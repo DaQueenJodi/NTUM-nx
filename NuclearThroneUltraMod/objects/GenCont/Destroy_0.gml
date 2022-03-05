@@ -158,7 +158,7 @@ room_speed=35;
     {
 	    if alarm[1]>0
 		{
-			alarm[1]+=290;
+			alarm[1]+=265;
 	
 			with instance_create(x,y,Snooze)
 			{
@@ -175,7 +175,7 @@ room_speed=35;
     {
 	    if alarm[1]>0
 		{
-	    alarm[1]+=265;
+	    alarm[1]+=250;
 			with instance_create(x,y,Snooze)
 			{
 				owner = other.id;

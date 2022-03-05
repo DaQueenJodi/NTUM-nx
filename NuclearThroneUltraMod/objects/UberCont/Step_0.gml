@@ -49,8 +49,8 @@ instance_activate_object(KeyCont)
 with KeyCont{
 scrKeyContStep()}
 //RETURN TO GAME
-if keyboard_check_pressed(vk_escape) or keyboard_check_pressed(ord("P")) or keyboard_check_pressed(vk_f1) or mouse_check_button_pressed(mb_right) or KeyCont.key_back[0] = 1
-or gamepad_button_check(0,gp_face2) or gamepad_button_check(0,gp_start) or gamepad_button_check(0,gp_select)
+if instance_exists(KeyCont) && (keyboard_check_pressed(vk_escape) or keyboard_check_pressed(ord("P")) or keyboard_check_pressed(vk_f1) or mouse_check_button_pressed(mb_right) or KeyCont.key_back[0] = 1
+or gamepad_button_check(0,gp_face2) or gamepad_button_check(0,gp_start) or gamepad_button_check(0,gp_select))
 {
 with option
 instance_destroy()

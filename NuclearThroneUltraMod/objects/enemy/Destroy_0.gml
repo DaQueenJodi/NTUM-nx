@@ -102,7 +102,7 @@ if Player.crown = 15
 raddrop=round(raddrop*0.19);
 
 if Player.crown = 17
-raddrop=floor(raddrop*0.06);
+raddrop=max(choose(0,1),floor(raddrop*0.06));
 
 }
 

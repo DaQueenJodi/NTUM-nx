@@ -31,12 +31,5 @@ if instance_exists(Player)
 }
 if (wantVanAmount > 0)
 {
-	if (spawnedVan)
-	{
-		alarm[2] = vanDelay + irandom(vanDelayRandom);//minimum delay between vans
-	}
-	else
-	{
-		alarm[2] = (vanDelay + irandom(vanDelayRandom))*0.5;	
-	}
+	alarm[2] = vanDelay + irandom(vanDelayRandom);//minimum delay between vans
 }

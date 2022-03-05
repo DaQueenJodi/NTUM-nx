@@ -21,6 +21,7 @@ walk = 0
 
 idle=true;
 right = 1;
+acc = 9 + min(16,GetPlayerLoops());
 /*
 if instance_exists(Player) && object_index != IDPDVanVertical
 {

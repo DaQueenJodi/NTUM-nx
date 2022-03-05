@@ -159,7 +159,7 @@ function scrNextLevel() {
 	        exit;
 	        }
 	        else
-	        {//loop
+	        {
 	        area=9;
 	        subarea=1;
 	        }
