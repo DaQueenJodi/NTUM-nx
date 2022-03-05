@@ -37,7 +37,7 @@ __background_set_colour( make_color_rgb(180,189,197) )
 else if Player.area = 6//labs
 __background_set_colour( make_color_rgb(9,28,32) )
 else if Player.area = 100//crownvault
-__background_set_colour( make_color_rgb(55,44,29) )//make_color_rgb(67,53,35) )
+__background_set_colour( make_color_rgb(67,53,35) )//make_color_rgb(67,53,35) )
 else if Player.area = 102//pizza sewers
 __background_set_colour( make_color_rgb(160,75,99) )
 else if Player.area = 103//yv mansion

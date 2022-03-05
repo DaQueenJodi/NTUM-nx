@@ -36,6 +36,19 @@ missedthislevel = false;
 damageboostdelay = 0; //Hunter's damage boost for thronebutt
 
 targetPickup = noone; //weapon pickup refrence
+enum ultramods {
+	nothing,
+	bulletIsPellet,
+	pelletIsBullet,
+	lightningIsKraken,
+	krakenIsLightning,
+	laserIsPlasma,
+	plasmaIsRocket,
+	rocketIsPlasma,
+	heavyBulletIsSlug,
+	slugIsFatBullet,
+}
+ultramod = ultramods.nothing;
 
 //complicated fix for fantastic arcade
 //joyaim = 0

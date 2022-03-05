@@ -54,14 +54,44 @@ if Player.area = 100
 	    with instance_create(x+64,y-64,WeaponMod)
 	    image_xscale=-1;
 	    }
-		/*
-		debug("Player.crownvisits: ", Player.crownvisits);
-		if (UberCont.crown_start[Player.race] && Player.crownvisits == 0)
+		if Player.loops > 0
 		{
-			debug("move the player");
-			Player.x = x+16;
-			Player.y = y+32;
-		}*/
+			var xx = x;
+			var yy = y;
+			var msk = mask_index;
+			mask_index = mskFloor;
+			var xstep = 32;
+			if Player.x > x
+				xstep = -32;
+			var ystep = 32;
+			if Player.y > y
+				ystep = -32;
+			repeat(12)
+			{
+				if (!place_meeting(xx,yy,Floor))
+				{
+					with instance_create(xx,yy,Floor)
+					{
+						styleb = 1;
+						sprite_index = sprFloor100C;
+					}
+				}
+				xx += xstep;
+			}
+			var oy = yy;
+			for (var ix = 0; ix < 8; ix++) {
+				yy = oy;
+				for (var iy = 0; iy < 8; iy++) {
+				    with instance_create(xx,yy,Floor)
+					{
+						styleb = 0;	
+					}
+					yy += ystep;
+				}
+				xx += xstep;
+			}
+			mask_index = msk;
+		}
 	}
 }
 else if (Player.area > 2 or Player.loops > 0) and Player.subarea = 2 && Player.area != 9 && Player.area!=105 && Player.area!=101&&Player.area!=6&&Player.area!=8&&Player.area!=7&&Player.area!=108
