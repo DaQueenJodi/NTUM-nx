@@ -5076,7 +5076,7 @@ function scrFire2() {
 			team = t
 		}
 	}
-	BackCont.viewx2 += lengthdir_x(9,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewx2 += lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.shake += 10
 	wkick = 10
@@ -5087,40 +5087,23 @@ function scrFire2() {
 	case 382:
 	snd_play_fire(sndLaser);
 	snd_play_fire(sndUltraLaserUpg);
+	snd_play_fire(sndPlasmaHit);
 	var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*accuracy;
 	var t = team;
 	with Wall
 	{
 		if collision_point(x+8,y+18,Floor,false,false)//Down
 		{
-			with instance_create(x,y,Laser)
+			with instance_create(x+8,y+14,Laser)
 			{
 				image_angle = 270;
 				team = t
 				event_perform(ev_alarm,0)
 			}
 		}
-		if collision_point(x+8,y-10,Floor,false,false)//Top
-		{
-			with instance_create(x,y,Laser)
-			{
-				image_angle = 90;
-				team = t
-				event_perform(ev_alarm,0)
-			}
-		}
 		if collision_point(x+18,y+8,Floor,false,false)//Right
 		{
-			with instance_create(x,y,Laser)
-			{
-				image_angle = 180;
-				team = t
-				event_perform(ev_alarm,0)
-			}
-		}
-		if collision_point(x-10,y+8,Floor,false,false)//Right
-		{
-			with instance_create(x,y,Laser)
+			with instance_create(x+14,y+8,Laser)
 			{
 				image_angle = 0;
 				team = t
@@ -5128,7 +5111,7 @@ function scrFire2() {
 			}
 		}
 	}
-	BackCont.viewx2 += lengthdir_x(9,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewx2 += lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.shake += 20
 	wkick = 10

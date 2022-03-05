@@ -11,6 +11,7 @@ if target > 0 {
 			var xx = target.x + (target.hspeed*2)
 			var yy = target.y + (target.vspeed*2)
 			gunangle = point_direction(x, y, xx, yy);
+			snd_play(sndSnowTankShoot);
 			with instance_create(x,y,EnemyBullet5)
 			{
 				motion_add(other.gunangle,other.projectileSpeed)

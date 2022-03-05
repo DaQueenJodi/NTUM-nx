@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSnowTankShoot",
-  "duration": 0.0,
+  "duration": 1.994671,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/Enemies.yy",
