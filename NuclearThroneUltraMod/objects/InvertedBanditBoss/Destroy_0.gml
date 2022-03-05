@@ -23,7 +23,7 @@ scrBusinessHogGoldChest();
 //drop golden oopsgun?
 if instance_exists(Player)
 {
-	if(random(100)<1&&Player.loops<1){
+	if(random(400)<1&&Player.loops<1){
 	with instance_create(x,y,WepPickup)
 	{
 	scrWeapons()

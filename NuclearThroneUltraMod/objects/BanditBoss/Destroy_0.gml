@@ -27,7 +27,7 @@ scrBusinessHogGoldChest();
 
 
 //drop oopsgun?
-if(random(100)<1 && GetPlayerLoops() < 1){
+if(random(200)<1 && GetPlayerLoops() < 1){
 with instance_create(x,y,WepPickup)
 {
 scrWeapons()
