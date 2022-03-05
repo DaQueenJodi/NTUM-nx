@@ -13,7 +13,7 @@ if instance_exists(Player)
 if Player.ultra_got[16]//Doomed melting
 dmg=6;
 }
-snd_play(sndMeatExplo)
+snd_play(sndMeatExplo,0.1,true)
 
 BackCont.shake += 6
 

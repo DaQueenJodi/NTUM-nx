@@ -939,7 +939,7 @@ function scrPowers() {
 			if image_speed = 0 and (instance_number(enemy) > 0 or instance_exists(Portal)) and x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 			{
 			killedIt = true;
-			snd_play(sndExplosion)
+			snd_play(sndExplosion,0.1,true)
 
 			instance_destroy()
 			with instance_create(x,y,BloodStreak)
