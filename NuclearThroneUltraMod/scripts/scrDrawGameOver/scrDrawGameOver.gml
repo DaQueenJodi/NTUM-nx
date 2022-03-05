@@ -45,7 +45,7 @@ function scrDrawGameOver() {
 	}
 
 
-	if (UberCont.canRestart && keyboard_check_pressed(ord("R")) or KeyCont.key_back[0] = 1) and gameovertime > 25
+	if (UberCont.canRestart && keyboard_check_pressed(ord("R")) or KeyCont.key_back[0] = 1) and gameovertime > 30
 	{//QUICK RESTART
 	with SurvivalWave
 		instance_destroy();
@@ -87,10 +87,10 @@ function scrDrawGameOver() {
 	}
 	debug("GAMEOVER RESTART");
 	
-	//room_restart()
+	room_restart()
 	exit;
 	}
-	if (keyboard_check_pressed(vk_enter) or mouse_check_button_pressed(mb_left)) and gameovertime > 45 && !instance_exists(PlayerSpawn)
+	if (keyboard_check_pressed(vk_enter) or mouse_check_button_pressed(mb_left)) and gameovertime > 40 && !instance_exists(PlayerSpawn)
 	{
 		debug("GAMEOVER QUIT");
 	//BACK TO MENU

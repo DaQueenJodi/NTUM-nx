@@ -5083,5 +5083,57 @@ function scrFire2() {
 
 	break;
 	
+	//MUCHAS LÁSER
+	case 382:
+	snd_play_fire(sndLaser);
+	snd_play_fire(sndUltraLaserUpg);
+	var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*accuracy;
+	var t = team;
+	with Wall
+	{
+		if collision_point(x+8,y+18,Floor,false,false)//Down
+		{
+			with instance_create(x,y,Laser)
+			{
+				image_angle = 270;
+				team = t
+				event_perform(ev_alarm,0)
+			}
+		}
+		if collision_point(x+8,y-10,Floor,false,false)//Top
+		{
+			with instance_create(x,y,Laser)
+			{
+				image_angle = 90;
+				team = t
+				event_perform(ev_alarm,0)
+			}
+		}
+		if collision_point(x+18,y+8,Floor,false,false)//Right
+		{
+			with instance_create(x,y,Laser)
+			{
+				image_angle = 180;
+				team = t
+				event_perform(ev_alarm,0)
+			}
+		}
+		if collision_point(x-10,y+8,Floor,false,false)//Right
+		{
+			with instance_create(x,y,Laser)
+			{
+				image_angle = 0;
+				team = t
+				event_perform(ev_alarm,0)
+			}
+		}
+	}
+	BackCont.viewx2 += lengthdir_x(9,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 20
+	wkick = 10
+
+	break;
+	
 	}//end of switch part 2!
 }

@@ -4219,6 +4219,17 @@ function scrWeapons() {
 	wep_swap[381] = sndSwapShotgun
 	wep_rad[381] = 0;
 	
+	wep_name[382] = "MUCHAS LÁSER"
+	wep_type[382] = 5
+	wep_auto[382] = 1
+	wep_load[382] = 220
+	wep_cost[382] = 30
+	wep_sprt[382] = sprMuchasPelotilla
+	wep_area[382] = 30
+	wep_text[382] = "cest bon"
+	wep_swap[382] = sndSwapShotgun
+	wep_rad[382] = 0;
+	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"
 	wep_type[369] = 5

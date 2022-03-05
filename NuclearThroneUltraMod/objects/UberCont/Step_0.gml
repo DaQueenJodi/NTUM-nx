@@ -91,7 +91,7 @@ else
 
 //NOT PAUSED
 
-if (keyboard_check_pressed(vk_escape)or KeyCont.key_paus[0] = 1 || (!instance_exists(Vlambeer)&&(!window_has_focus()) && public == 1) ) and !instance_exists(GenCont)
+if instance_exists(KeyCont) && (keyboard_check_pressed(vk_escape)or KeyCont.key_paus[0] = 1 || (!instance_exists(Vlambeer)&&(!window_has_focus()) && public == 1) ) and !instance_exists(GenCont)
 {
 if keyboard_check_pressed(vk_escape) and instance_exists(Menu)
 {
