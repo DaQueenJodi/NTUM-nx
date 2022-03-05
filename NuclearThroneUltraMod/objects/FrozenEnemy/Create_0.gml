@@ -1,3 +1,3 @@
 image_speed=0;
-DebrisAmount=6;
+debrisAmount=6;
 owner = -1;

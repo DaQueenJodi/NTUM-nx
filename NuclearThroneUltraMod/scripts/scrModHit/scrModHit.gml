@@ -90,7 +90,7 @@ function scrModHit() {
 	        image_yscale=other.size;
 	        xx=other.x
 	        yy=other.y
-	        DebrisAmount=3;
+	        debrisAmount=3;
 	        }
 	    alarm[11]+=10;//30 for freezebullets
 		if alarm[1] > 0
@@ -283,7 +283,7 @@ function scrModHit() {
 	        image_yscale=other.size;
 	        xx=other.x
 	        yy=other.y
-	        DebrisAmount=3;
+	        debrisAmount=3;
 	        }
     
 	    alarm[11]+=10;//30 for freezebullets
@@ -295,7 +295,7 @@ function scrModHit() {
 	else
 	{
 	with FrozenEnemy
-	DebrisAmount+=3;
+	debrisAmount+=3;
 	with other
 	{
 		alarm[11]+=10;
@@ -496,7 +496,7 @@ function scrModHit() {
 	        image_yscale=other.size;
 	        xx=other.x
 	        yy=other.y
-	        DebrisAmount=3;
+	        debrisAmount=3;
 	        }
     
 	    alarm[11]+=10;//30 for freezebullets
@@ -508,7 +508,7 @@ function scrModHit() {
 	else
 	{
 	with FrozenEnemy
-	DebrisAmount+=3;
+	debrisAmount+=3;
 	with other
 	{
 		alarm[11]+=10;
@@ -710,7 +710,7 @@ function scrModHit() {
 	        image_yscale=other.size;
 	        xx=other.x
 	        yy=other.y
-	        DebrisAmount=3;
+	        debrisAmount=3;
 	        }
     
 	    alarm[11]+=10;//30 for freezebullets
@@ -722,7 +722,7 @@ function scrModHit() {
 	else
 	{
 	with FrozenEnemy
-	DebrisAmount+=3;
+	debrisAmount+=3;
 	with other
 	{
 		alarm[11]+=10;
