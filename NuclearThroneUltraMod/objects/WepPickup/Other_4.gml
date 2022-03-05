@@ -4,4 +4,4 @@ if instance_exists(Player)
 	y=Player.y;
 }
 alarm[2] = 5;
-
+persistent = false;
