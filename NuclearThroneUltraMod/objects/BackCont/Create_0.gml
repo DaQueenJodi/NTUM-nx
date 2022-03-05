@@ -30,7 +30,7 @@ verticalVans = false;
 if instance_exists(Player)
 {
 	wantVanAmount = GetPlayerLoops();
-	vanDelay = max(60,vanDelay - ((wantVanAmount-1)*62));
+	vanDelay = max(60,vanDelay - ((wantVanAmount-1)*65));
 	if wantVanAmount > 2
 		verticalVans = true;
 	if Player.crown == 16 //CROWN OF POPO
@@ -47,13 +47,4 @@ if instance_exists(Player)
 	}
 	//progression
 	alarm[4]=600;//10 seconds
-	if (wantVanAmount < 1 || (Player.area == 9 && Player.subarea == 3) 
-	|| Player.area == 100)
-	{
-		exit;
-	}
-	else
-	{
-		alarm[2] = max(250,vanDelay+irandom(vanDelayRandom));
-	}
 }
