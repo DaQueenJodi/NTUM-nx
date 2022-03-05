@@ -11,18 +11,18 @@ if target > 0
 		
 		if point_distance(target.x,target.y,x,y) < 70 && point_distance(target.x,target.y,x,y) > 24 {//SMACK THAT
 			if alarm[5] < 1 {
-				alarm[2]=14
+				alarm[2]=14-smackdelayReduction
 				instance_create(x,y,Notice);
 				instance_create(x+5,y,Notice);
 				instance_create(x-5,y,Notice);
-				alarm[1]=25;
+				alarm[1]=20-smackdelayReduction;
 				speed *= 0.1;
 			} else {
-				alarm[2]=22
+				alarm[2]=20-smackdelayReduction
 				instance_create(x,y,Notice);
 				instance_create(x+5,y,Notice);
 				instance_create(x-5,y,Notice);
-				alarm[1]=40;
+				alarm[1]=34-smackdelayReduction;
 				speed *= 0.1;
 			}
 		}
@@ -41,17 +41,17 @@ if target > 0
 	else if point_distance(target.x,target.y,x,y) < 70 && alarm[5] < 1
 	{//SMACK THAT ANYWAYS WE CAN GO THROUGH WALLS FK THAT SHIT
 		if alarm[5] < 1 {
-			alarm[2]=17//the delay that everyone wants its longer here cause you wont expect this
+			alarm[2]=15-smackdelayReduction//the delay that everyone wants its longer here cause you wont expect this
 			instance_create(x,y,Notice);
 			instance_create(x+5,y,Notice);
 			instance_create(x-5,y,Notice);
-			alarm[1]=30;
+			alarm[1]=24-smackdelayReduction;
 		} else {
-			alarm[2]=25
+			alarm[2]=25-smackdelayReduction
 			instance_create(x,y,Notice);
 			instance_create(x+5,y,Notice);
 			instance_create(x-5,y,Notice);
-			alarm[1]=40;
+			alarm[1]=20-smackdelayReduction;
 		}
 		
 	}

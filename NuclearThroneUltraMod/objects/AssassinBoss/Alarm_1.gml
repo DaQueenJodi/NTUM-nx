@@ -6,23 +6,23 @@ if target > 0
 	{
 		if random(4)<1//shift dodgy movement
 		{
-			move_contact_solid(direction+choose(90,-90),1+irandom(3))
+			move_contact_solid(direction+choose(90,-90),2+irandom(3))
 		}
 		
 		if point_distance(target.x,target.y,x,y) < 70 && point_distance(target.x,target.y,x,y) > 24 {//SMACK THAT
 			if alarm[5] < 1 {
-				alarm[2]=17
+				alarm[2]=17-smackdelayReduction
 				instance_create(x,y,Notice);
 				instance_create(x+5,y,Notice);
 				instance_create(x-5,y,Notice);
-				alarm[1]=25;
+				alarm[1]=23-smackdelayReduction;
 				speed *= 0.1;
 			} else {
-				alarm[2]=24
+				alarm[2]=24-smackdelayReduction
 				instance_create(x,y,Notice);
 				instance_create(x+5,y,Notice);
 				instance_create(x-5,y,Notice);
-				alarm[1]=40;
+				alarm[1]=36-smackdelayReduction;
 				speed *= 0.1;
 			}
 		}
@@ -41,17 +41,17 @@ if target > 0
 	else if point_distance(target.x,target.y,x,y) < 70 && alarm[5] < 1
 	{//SMACK THAT ANYWAYS WE CAN GO THROUGH WALLS FK THAT SHIT
 		if alarm[5] < 1 {
-			alarm[2]=21//the delay that everyone wants its longer here cause you wont expect this
+			alarm[2]=19-smackdelayReduction//the delay that everyone wants its longer here cause you wont expect this
 			instance_create(x,y,Notice);
 			instance_create(x+5,y,Notice);
 			instance_create(x-5,y,Notice);
-			alarm[1]=30;
+			alarm[1]=26-smackdelayReduction;
 		} else {
-			alarm[2]=30
+			alarm[2]=28-smackdelayReduction
 			instance_create(x,y,Notice);
 			instance_create(x+5,y,Notice);
 			instance_create(x-5,y,Notice);
-			alarm[1]=40;
+			alarm[1]=34-smackdelayReduction;
 		}
 		
 	}

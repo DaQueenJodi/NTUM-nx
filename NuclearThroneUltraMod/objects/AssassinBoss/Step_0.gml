@@ -16,15 +16,17 @@ if (alarm[4] < 0) {
 		mp_potential_step(target.x,target.y,2,false)
 	}
 
-	if speed > 5.2
-	speed = 5.2
+	if speed > 5.4
+	speed = 5.4
 
 	if dodge > 0
 	{
 		sprite_index=spr_walk;
 		move_contact_solid(direction,8)
 		dodge -= 1.4
-		//alarm[1] += 1;
+		alarm[1] += 0.5;
+		if (alarm[2] > 1)
+			alarm[2] += 0.5;
 	}
 
 	//hes firing at me!
