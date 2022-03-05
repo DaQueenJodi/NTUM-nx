@@ -508,7 +508,7 @@ function scrModHit() {
 	else
 	{
 	with FrozenEnemy
-	debrisAmount+=3;
+	DebrisAmount+=3;
 	with other
 	{
 		alarm[11]+=10;
@@ -722,7 +722,7 @@ function scrModHit() {
 	else
 	{
 	with FrozenEnemy
-	debrisAmount+=3;
+	DebrisAmount+=3;
 	with other
 	{
 		alarm[11]+=10;

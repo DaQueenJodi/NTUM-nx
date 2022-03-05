@@ -20,6 +20,8 @@ if instance_exists(Player)
 				snd_play(sndExplosion);
 				instance_create(x+8,y+8,Explosion);
 			}
+			instance_destroy();
+			instance_create(x,y,FloorExplo);
 		}
 	}
 }

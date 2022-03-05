@@ -1,6 +1,6 @@
 //shatter anim?
 snd_play(sndBreakIce);
-repeat(DebrisAmount){
+repeat(debrisAmount){
 with instance_create(x,y,Debris)
 {
 

@@ -22,7 +22,7 @@ with other
             image_yscale=other.size;
             xx=other.x
             yy=other.y
-            DebrisAmount=choose(1,2);
+            debrisAmount=choose(1,2);
 			owner=other.id;
             }
         alarm[11]+=20;
