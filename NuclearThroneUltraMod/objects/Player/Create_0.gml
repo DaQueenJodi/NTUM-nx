@@ -533,3 +533,5 @@ if UberCont.opt_gamemode == 25 && !instance_exists(SurvivalWave)
 {
 	instance_create(x,y,SurvivalWave);	
 }
+cheatyinfiniteammo = false;
+unkillable = false;

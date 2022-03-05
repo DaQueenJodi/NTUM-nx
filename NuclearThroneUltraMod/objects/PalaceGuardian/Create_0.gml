@@ -27,4 +27,3 @@ wkick = 0
 friction = 6;
 instance_create(x,y,WallBreak);
 depth = -2;
-timesfired = 0;

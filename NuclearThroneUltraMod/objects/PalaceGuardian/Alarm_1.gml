@@ -1,5 +1,5 @@
 ///AI
-if instance_exists(Player) && !fire && sprite_index != spr_appear && sprite_index != spr_disappear
+if instance_exists(Player) && !fire && sprite_index != spr_appear && sprite_index != spr_disappear 
 {
 
 alarm[1] = 20+random(20);
@@ -9,9 +9,8 @@ if target > 0
 {
 	if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 	{
-		if random(4) < 3 && timesfired < 2
+		if random(3) < 2
 		{
-			timesfired++;
 			fire = true;
 			spr_idle = spr_fire;
 			spr_walk = spr_fire;
@@ -20,6 +19,7 @@ if target > 0
 			var angle = -60;
 			var dir = point_direction(x,y,target.x,target.y);
 			var motiondiff = 0;
+			snd_play(sndGuardianFire, 0.15);
 
 			repeat(3)
 			{
@@ -27,8 +27,8 @@ if target > 0
 				{	
 					team = other.team;
 					owner = other.id;
-					x += lengthdir_x(24 - 8*(motiondiff % 2), dir);
-					y += lengthdir_y(24 - 8*(motiondiff % 2), dir);
+					x += lengthdir_x(-8*(motiondiff % 2), dir);
+					y += lengthdir_y(-8*(motiondiff % 2), dir);
 					motion_add(dir+angle,1.8 - (motiondiff % 2));
 				}
 				motiondiff++;
@@ -37,8 +37,7 @@ if target > 0
 			alarm[1] = 20;
 		}
 		
-		if random(2) < 1 || timesfired == 2 {
-			timesfired = 0
+		if random(4) < 3 {
 			alarm[2] = 15;
 		}
 		
@@ -53,4 +52,8 @@ if target > 0
 else
 {
 	alarm[1] = 20;
+}
+
+if random(3) < 1 {
+	direction = random(360)
 }

@@ -1,6 +1,8 @@
 /// @description main
-if UberCont.opt_gamemode == 29//Infinite ammo
+if UberCont.opt_gamemode == 29 || cheatyinfiniteammo //Infinite ammo
 	alarm[2] = 2;
+if unkillable
+	alarm[1] = 2;
 if !instance_exists(GenCont) and !instance_exists(LevCont) and visible = 1
 {if roll = 0
 {if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
@@ -107,15 +109,17 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 		thing.mytext = "POPO";
 	}
 	if keyboard_check_pressed(vk_numpad0) {
-		if alarm[1] > 30 {
+		if unkillable {
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "NOT UNKILLABLE!";
+			unkillable = false;
 			alarm[1] = 1;
 			snd_play(sndStrongSpiritLost)
 		} else {
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "UNKILLABLE!";
-			alarm[1] = 9999999;
+			unkillable = true;
+			alarm[1] = 2;
 			snd_play(sndStrongSpiritGain)
 		}
 	}
