@@ -6,7 +6,7 @@ alarm[0] = chargetime+Player.reload*0.2;
 else
 {
 snd_play(sndFastRatExpire);
-rate+=2;
+rate+=2.5;
 }
 
 if instance_exists(creator)

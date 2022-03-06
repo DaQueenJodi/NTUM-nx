@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndFastRatExpire",
-  "duration": 0.0,
+  "duration": 1.221338,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/Enemies.yy",

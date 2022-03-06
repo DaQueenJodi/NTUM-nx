@@ -4,10 +4,8 @@ if mode = 0
 if KeyCont.key_fire[p] = 1
 {
 mode = 1
-debug("ITS GO TIME");
 with MusCont
 {
-	debug("alarm zero: ",alarm[0]);
 	if alarm[0] > 0
 		alarm[0] = 1
 }
