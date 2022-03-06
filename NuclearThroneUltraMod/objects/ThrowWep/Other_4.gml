@@ -1,2 +1,2 @@
 /// @description visible in a couple of frames
-alarm[2] = 5;
+alarm[2] = 10;

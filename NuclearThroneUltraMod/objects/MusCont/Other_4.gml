@@ -1,5 +1,11 @@
 oldarea = area
-if UberCont.opt_gamemode == 25 // && Player.subarea == 1
+if instance_exists(Player)
+{
+	area = Player.area;
+	alarm[0] = 0;
+}
+debug("area: ",area);
+if UberCont.opt_gamemode == 25 && area != 0
 {
     audio_stop_sound(song);
     song = mus100;
@@ -17,9 +23,10 @@ if UberCont.opt_gamemode == 25 // && Player.subarea == 1
     audio_sound_gain(amb, max(0, sqrt(UberCont.opt_ambvol)), 0);
 
     audio_sound_gain(sndBossWin, max(0, sqrt(UberCont.opt_musvol)), 0);
+	
     exit;
 }
-if UberCont.opt_gamemode == 8 // && Player.subarea == 1
+if UberCont.opt_gamemode == 8 && area != 0
 {
     audio_stop_sound(song);
     audio_stop_sound(amb);
@@ -37,12 +44,8 @@ if UberCont.opt_gamemode == 8 // && Player.subarea == 1
     audio_sound_gain(sndBossWin, max(0, sqrt(UberCont.opt_musvol)), 0);
     exit;
 }
-if instance_exists(Player) {
-    area = Player.area
-    alarm[0] = 0
-}
 
-if oldarea != area or!audio_is_playing(song) or!audio_exists(song) || song == musBossWin {
+if oldarea != area || area == 0 or !audio_is_playing(song) or!audio_exists(song) || song == musBossWin {
 
     dir = 1
     deaths = 0
@@ -50,15 +53,12 @@ if oldarea != area or!audio_is_playing(song) or!audio_exists(song) || song == mu
     deaths += UberCont.ctot_dead[dir]
 
 
-
-    audio_stop_all()
+    audio_stop_all();
 
     if (confirmSound) {
         snd_play_2d(confirmSound);
         confirmSound = false;
     }
-
-
     if area = 0 {
 
         song = musThemeA;

@@ -1,9 +1,9 @@
 
 audio_stop_all()
 
-song=musThemeB;
+song = musThemeB;
 
-snd_play(song)
+snd_loop(song)
 snd_loop(amb)
 
 

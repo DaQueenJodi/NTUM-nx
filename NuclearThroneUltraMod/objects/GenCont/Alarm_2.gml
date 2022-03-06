@@ -78,6 +78,7 @@ if Player.area = 100
 				}
 				xx += xstep;
 			}
+			instance_create(xx,yy,SurvivalWave);
 			var oy = yy;
 			for (var ix = 0; ix < 8; ix++) {
 				yy = oy;
@@ -85,6 +86,10 @@ if Player.area = 100
 				    with instance_create(xx,yy,Floor)
 					{
 						styleb = 0;	
+					}
+					if iy == 4 && ix == 4
+					{
+						instance_create(xx,yy,SurvivalArenaStarter);
 					}
 					yy += ystep;
 				}

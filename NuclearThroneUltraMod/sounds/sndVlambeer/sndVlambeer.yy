@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndVlambeer",
-  "duration": 0.0,
+  "duration": 0.472018,
   "parent": {
     "name": "Menu",
     "path": "folders/Sounds/Menu.yy",

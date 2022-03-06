@@ -77,7 +77,7 @@ function scrDrawGameOver() {
 	crown = other.crown}
 	instance_create(x,y,Player)
 	with MusCont
-	instance_destroy()
+		instance_destroy()
 	instance_create(0,0,MusCont)
 	
 	with Player

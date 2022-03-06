@@ -1,6 +1,8 @@
 ///scrDecideCurse();
 // /@description
 function scrDecideCurse(){
+	if UberCont.opt_gamemode == 25
+		return 0;
 	var curse = 0;
 	if instance_exists(Player)
 	{

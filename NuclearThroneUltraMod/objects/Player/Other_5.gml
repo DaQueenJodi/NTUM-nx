@@ -314,30 +314,30 @@ looping=false;
 if race=16&&loops=1{
 with instance_create(x,y,WepPickup)
 {
-persistent=true;
-scrWeapons()
-wep =214
-name = wep_name[wep]
-ammo = 0
-type = wep_type[wep]
-curse = 0
-sprite_index = wep_sprt[wep]
+	persistent=true;
+	scrWeapons()
+	wep =214
+	name = wep_name[wep]
+	ammo = 0
+	type = wep_type[wep]
+	curse = 0
+	sprite_index = wep_sprt[wep]
 }}
 //DROP HUNTER HEAVY SNIPER
-if race = 11 &&loops=1
+if race = 11 && loops=1
 {
 
-with instance_create(x,y,WepPickup)
-{
-persistent=true;
-scrWeapons()
-wep =316
-name = wep_name[wep]
-ammo = 0
-type = wep_type[wep]
-curse = 0
-sprite_index = wep_sprt[wep]
-}
+	with instance_create(x,y,WepPickup)
+	{
+		persistent = true;
+		scrWeapons()
+		wep =316
+		name = wep_name[wep]
+		ammo = 0
+		type = wep_type[wep]
+		curse = 0
+		sprite_index = wep_sprt[wep]
+	}
 
 }
 

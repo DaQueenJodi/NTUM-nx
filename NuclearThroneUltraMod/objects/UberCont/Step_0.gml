@@ -70,14 +70,15 @@ paused = 0
 //RETURN TO MENU
 if keyboard_check_pressed(vk_enter) or gamepad_button_check(0,gp_face4) && !instance_exists(PlayerSpawn)
 {
-instance_activate_all()
-paused = 0
-if instance_exists(Player)
-kills=Player.kills
-with Player
-instance_destroy()
-scrRestart()
-draw_texture_flush();//free texture memory
+	instance_activate_all()
+	paused = 0
+	if instance_exists(Player)
+	kills=Player.kills
+	with Player
+	instance_destroy()
+	scrRestart()
+	debug("RETURN TO MENU PAUSED");
+	draw_texture_flush();//free texture memory
 }
 //QUIT
 if ( keyboard_check_pressed(ord("Q")) or ( gamepad_button_check(0,gp_shoulderr) && gamepad_button_check(0,gp_shoulderrb) 

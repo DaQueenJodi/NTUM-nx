@@ -22,12 +22,19 @@ function scrDrawBloom() {
 	with Bullet4
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
 
+	with HorrorBullet
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3))//roids ultra d
+	
+	with FrostFlakBullet
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
+	
+	with BouncerFlakBullet
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
 	}
 	with PlutoFX
 	draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale,image_angle,c_white,ba+0.01)
 	
-	with HorrorBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3))//roids ultra d
+	
 
 	with MorphSlash//the only melee with bloom cause I can
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
@@ -61,25 +68,25 @@ function scrDrawBloom() {
 	draw_sprite_ext(bloomSprite,-1,x,y,2,2,image_angle,c_white,(ba+0.01)*image_alpha)
 	if instance_exists(Player)
 	{
-	with Rage{
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,Player.rage*0.001)}
+		with Rage{
+		draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,Player.rage*0.001)}
 
-	with AngelDeflect//ANGEL PROTECTOR ULTRA A
-	draw_sprite_ext(sprite_index,-1,x,y,1,1,image_angle,c_white,(ba*0.35)*Player.speed);
+		with AngelDeflect//ANGEL PROTECTOR ULTRA A
+		draw_sprite_ext(sprite_index,-1,x,y,1,1,image_angle,c_white,(ba*0.35)*Player.speed);
 
-	with Bullet3//bouncer
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
-
-
-	with FreezeBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
+		with Bullet3//bouncer
+		draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
 
 
-	with HeavyBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
+		with FreezeBullet
+		draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
 
-	with FatBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
+
+		with HeavyBullet
+		draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
+
+		with FatBullet
+		draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
 	}
 
 	with PlasmaBall
@@ -110,8 +117,7 @@ function scrDrawBloom() {
 
 	with FlakBullet
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
-	with FrostFlakBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
+	
 	with AssassinBoss
 	{
 		var size = ds_list_size(afterImage);
@@ -120,11 +126,6 @@ function scrDrawBloom() {
 			draw_sprite_ext(aimage.sp,aimage.ii,aimage.xx,aimage.yy,aimage.xs,1,0,c_white,clamp(aimage.time + 0.2,0.2,1));
 		}	
 	}
-	if instance_exists(Player){
-	with BouncerFlakBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
-	}
-
 	with SuperFlakBullet
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with SuperBouncerFlakBullet
@@ -188,7 +189,7 @@ function scrDrawBloom() {
 	{
 	if race=13 && (KeyCont.key_spec[p] = 1 || KeyCont.key_spec[p] = 2)
 	{
-	draw_sprite_ext(sprite_index,image_index,x,y,right,1,image_angle,c_white,(Player.ultra_got[49]*2)*sheepPower/10);}
+	draw_sprite_ext(sprite_index,image_index,x,y,right,1,image_angle,c_white,(ultra_got[49]*2)*sheepPower/10);}
 	if race = 9 and bskin
 	draw_sprite_ext(sprite_index,image_index,x,y,right*1.2,1.2,image_angle,c_white,ba+0.01)
 	if skill_got[8]//gamma guts

@@ -1,13 +1,15 @@
-if !persistent
+if visible
 {
 	persistent = true
-	snd_play(sndWepPortal);
+	var portalDepth = - 5;
+	if instance_exists(Portal)
+		portalDepth = other.depth - 1;
+	snd_play(sndWepPortal,0.1,false,true,1,false,false);
 	visible = false;
-	var portalDepth = other.depth;
 	with instance_create(x,y,ImpactFX)
 	{
 		sprite_index = sprWepPortal;
 		image_angle=other.image_angle;
-		depth = portalDepth - 1;
+		depth = portalDepth;
 	}
 }

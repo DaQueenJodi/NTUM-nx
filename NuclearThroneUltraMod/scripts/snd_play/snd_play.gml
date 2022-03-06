@@ -1,5 +1,5 @@
 
-function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = true, priority = 2,noOverlap = false) {
+function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = true, priority = 2,noOverlap = false, noOverlapWhenNear = true) {
 	//SS_Init();
 	if noOverlap && audio_is_playing(sndId)
 		return false;
@@ -31,7 +31,7 @@ function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = tru
 			if audio_is_playing(sndId)
 				audio_stop_sound(sndId);
 		}
-		else if audio_is_playing(sndId)
+		else if noOverlapWhenNear && audio_is_playing(sndId)
 		{
 			var nearest = instance_nearest(x,y,Sound)
 			if instance_exists(nearest) && point_distance(x,y,nearest.x,nearest.y) < 32

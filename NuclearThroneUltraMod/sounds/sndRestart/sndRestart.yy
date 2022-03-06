@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndRestart",
-  "duration": 0.0,
+  "duration": 0.787687,
   "parent": {
     "name": "Menu",
     "path": "folders/Sounds/Menu.yy",

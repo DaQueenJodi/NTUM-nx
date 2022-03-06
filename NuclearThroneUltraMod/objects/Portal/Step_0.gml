@@ -11,19 +11,24 @@ with WepPickup
 {
 	if point_distance(x,y,Portal.x,Portal.y) < 96 and collision_line(x,y,Portal.x,Portal.y,Wall,0,0) < 0
 	{
-	if place_free(x+lengthdir_x(other.pullstrength,point_direction(x,y,Portal.x,Portal.y)),y)
-	x += lengthdir_x(other.pullstrength,point_direction(x,y,Portal.x,Portal.y))
-	if place_free(x,y+lengthdir_y(other.pullstrength,point_direction(x,y,Portal.x,Portal.y)))
-	y += lengthdir_y(other.pullstrength,point_direction(x,y,Portal.x,Portal.y))
-	image_angle -= 15*rotspeed
+		//if place_free(x+lengthdir_x(other.pullstrength,point_direction(x,y,Portal.x,Portal.y)),y)
+			x += lengthdir_x(other.pullstrength,point_direction(x,y,Portal.x,Portal.y))
+		//if place_free(x,y+lengthdir_y(other.pullstrength,point_direction(x,y,Portal.x,Portal.y)))
+			y += lengthdir_y(other.pullstrength,point_direction(x,y,Portal.x,Portal.y))
+		image_angle -= 15*rotspeed
 
-	if point_distance(x,y,Portal.x,Portal.y) < 48
-	persistent=true;
-	if point_distance(x,y,Portal.x,Portal.y) < 16
-	{
-	x = -50000
-	y = -50000
-	}
+		if point_distance(x,y,Portal.x,Portal.y) < 48 && visible
+		{
+			//mask_index = mskPickupThroughWall;
+			persistent = true;
+			x += lengthdir_x(2,point_direction(x,y,Portal.x,Portal.y))
+			y += lengthdir_y(2,point_direction(x,y,Portal.x,Portal.y))
+		}
+		if point_distance(x,y,Portal.x,Portal.y) < 16
+		{
+			x = -50000
+			y = -50000
+		}
 	}
 }
 

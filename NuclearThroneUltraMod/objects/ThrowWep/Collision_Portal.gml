@@ -1,7 +1,7 @@
 persistent = true
 if (!dontteleport)
 {
-	snd_play(sndWepPortal);
+	snd_play(sndWepPortal,0.1,false,true,1,false,false);
 	visible = false;
 	speed = 0;
 	var portalDepth = other.depth;
