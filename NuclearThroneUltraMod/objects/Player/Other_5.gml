@@ -483,22 +483,22 @@ scrUnlockGameMode(12,"FOR KILLING EVERY MAIN BOSS#WHILE MARKING THEM")
 }
 
 //SKINS
-if ( firedthislevel=false && race = 10 && area <100 && ( area>6 || loops>0 )  )
+if ( firedthislevel=false && race = 10 && area < 100 && area != 10 && ( area>6 || loops>0 )  )
 scrUnlockBSkin(10,"FOR COMPLETING A MAIN AREA# AFTER THE LABS#WITHOUT FIRING AS REBEL",0);
 
-if ( firedthislevel=false && race = 13 && area <100 && ( area>3 || loops>0 )  )
+if ( firedthislevel=false && race = 13 && area <100 && area != 10 && ( area>3 || loops>0 )  )
 scrUnlockCSkin(13,"FOR COMPLETING A MAIN AREA# AFTER THE SCRAPYARD#WITHOUT FIRING AS SHEEP",0);
 
-if ( firedthislevel=false && race = 15 && area <100 && ( area>2 || loops>0 )  )
+if ( firedthislevel=false && race = 15 && area <100 && area != 10 && ( area>2 || loops>0 )  )
 scrUnlockBSkin(15,"FOR COMPLETING A MAIN AREA# AFTER THE SEWERS#WITHOUT FIRING AS ATOM",0);
 
 if ( firedthislevel=false && race = 21 && loops>0 )
 scrUnlockCSkin(21,"FOR COMPLETING A MAIN AREA ON#USING ONLY THE BEAM",0);
 
-if ( firedthislevel=false && race = 24 && area <100 && ( area>2 || loops>0 )  )
+if ( firedthislevel=false && race = 24 && area <100 && area != 10 && ( area>2 || loops>0 )  )
 scrUnlockCSkin(24,"FOR COMPLETING A MAIN AREA# AFTER THE SEWERS#WITHOUT FIRING AS ELEMENTOR",0);
 
-if ( missedthislevel=false && race = 26 && area <100 && ( area>3 || loops>0 )  )
+if ( missedthislevel=false && race = 26 && area <100 && area != 10 && ( area>3 || loops>0 )  )
 scrUnlockBSkin(26,"FOR COMPLETING A MAIN AREA# AFTER THE SCRAPYARD#WITHOUT MISSING AS GOOD O'L HUMPHRY",0);
 
 if (yungCuzCskin > 2)
