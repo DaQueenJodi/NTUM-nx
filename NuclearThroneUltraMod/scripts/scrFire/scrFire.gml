@@ -82,7 +82,11 @@ function scrFire() {
 	    }until (wep!=69&&wep!=298)//not Oops gun pls and golden oops gun
 	}
 
-	//JW use switch case you idiot
+	if wep_type[wep] == 5 && !instance_exists(LaserBrainFX)
+	{
+		instance_create(x,y,LaserBrainFX);	
+	}
+	
 	switch(wep)
 	{
 	//REVOLVER

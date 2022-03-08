@@ -5480,7 +5480,37 @@ function scrFire2() {
 		projectileSpeed += 1;
 		event_perform(ev_alarm,0)
 	}
-
+	break;
+	
+	case 401:
+	break;
+	
+	
+	//GUN GUN
+	case 402:
+	snd_play_fire(sndGunGun);
+	with instance_create(x,y,ThrowWepNoReturn)
+	{
+		team=other.team;
+		motion_add(point_direction(x,y,mouse_x,mouse_y),16);
+		scrWeapons()
+		wep = scrDecideWep(0,8,0);
+		name = wep_name[wep];
+		ammo = 0;
+		type = wep_type[wep];
+		//dmg = 24 + (other.level*2);Retail
+		dmg = 30 + (other.level*2);
+		pierce = false;
+		sprite_index = wep_sprt[wep]
+	}
+	with instance_create(x,y,GunGunFire)
+	{
+		depth = other.depth - 1;
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+random(60)-30,1.5);
+	}
+	BackCont.viewx2 += lengthdir_x(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 4
 	break;
 	
 	}//end of switch part 2!

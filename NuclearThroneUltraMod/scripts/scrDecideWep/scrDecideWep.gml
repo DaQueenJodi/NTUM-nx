@@ -1,4 +1,8 @@
-function scrDecideWep(wepTier, maxTries = 10, cursed = 0, minWepArea = 0) {
+function scrDecideWep(wepTierParam, maxTriesParam = 10, cursedParam = 0, minWepAreaParam = 0) {
+	var wepTier = wepTierParam;
+	var maxTries = maxTriesParam;
+	var cursed = cursedParam;
+	var minWepArea = minWepAreaParam;
 	if instance_exists(Player)
 	{
 		if UberCont.opt_gamemode=2{
@@ -54,6 +58,10 @@ function scrDecideWep(wepTier, maxTries = 10, cursed = 0, minWepArea = 0) {
 			{
 				wep = maxValidTierWep;
 			}
+		}
+		while (wep == 401 && Player.crown != 5)//Rolled gun gun? you must have crown of guns
+		{
+			scrDecideWep(wepTierParam, maxTriesParam, cursedParam, minWepAreaParam);	
 		}
 	}
 	else

@@ -4438,6 +4438,17 @@ function scrWeapons() {
 	wep_swap[401] = sndSwapExplosive
 	wep_rad[401] = 0;
 	
+	wep_name[402] = "GUN GUN"
+	wep_type[402] = 5
+	wep_auto[402] = 0
+	wep_load[402] = 90
+	wep_cost[402] = 40
+	wep_sprt[402] = sprGunGun
+	wep_area[402] = 15
+	wep_text[402] = "a gun that shoots guns"
+	wep_swap[402] = sndSwapExplosive
+	wep_rad[402] = 0;
+	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"
 	wep_type[369] = 5

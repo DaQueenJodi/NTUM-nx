@@ -1,5 +1,5 @@
 persistent = true
-if (!dontteleport)
+if (visible)
 {
 	snd_play(sndWepPortal,0.1,false,true,1,false,false);
 	visible = false;

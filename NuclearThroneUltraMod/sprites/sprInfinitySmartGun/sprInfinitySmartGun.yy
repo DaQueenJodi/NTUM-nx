@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Remade",
-    "path": "folders/Sprites/Weapons/Custom/Remade.yy",
+    "name": "Custom",
+    "path": "folders/Sprites/Weapons/Custom.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprInfinitySmartGun",
