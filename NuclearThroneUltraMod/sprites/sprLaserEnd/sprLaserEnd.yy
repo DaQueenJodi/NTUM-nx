@@ -88,7 +88,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprLaserEnd","path":"sprites/sprLaserEnd/sprLaserEnd.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprLaserEnd",
     "tags": [],
     "resourceType": "GMSequence",
   },

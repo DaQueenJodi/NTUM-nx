@@ -26,7 +26,7 @@ BackCont.shake += 1
 wkick = 2}
 
 
-//if ammo = 0
+//if ammo <= 0
 if random(9)<1{
 rate+=1;
 rage+=1;

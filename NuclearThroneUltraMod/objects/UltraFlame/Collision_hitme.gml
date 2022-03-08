@@ -1,6 +1,6 @@
 if other.team != team and other.my_health > 0
 {
-if other.sprite_index != other.spr_hurt or random(30) < 1
+if other.sprite_index != other.spr_hurt
 {
 snd_play(sndBurn)
 with other
@@ -11,6 +11,10 @@ image_index = 1;
 motion_add(other.direction,0.5)
 }
 snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
+}
+else
+{
+	image_index += 0.2;//iframe skipper
 }
 x = (x+other.x)/2+random(6)-3
 y = (y+other.y)/2+random(6)-3

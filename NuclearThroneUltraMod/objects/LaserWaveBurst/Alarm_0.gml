@@ -47,12 +47,12 @@ left=true
 
 
 if left
-ang+=10;
+ang+=angleStep;
 else
-ang-=10;
+ang-=angleStep;
 }
 
 
-if ammo = 0
+if ammo <= 0
 instance_destroy()
 

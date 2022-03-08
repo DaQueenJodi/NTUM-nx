@@ -91,6 +91,6 @@ laserhit=0;
 
 alarm[0] = 2
 
-image_xscale = point_distance(x,y,xstart,ystart)/2
+image_xscale = point_distance(x,y,xstart,ystart)*0.5
 instance_create(x,y,Smoke)
 

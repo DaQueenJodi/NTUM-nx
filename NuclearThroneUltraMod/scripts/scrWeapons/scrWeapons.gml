@@ -4383,24 +4383,24 @@ function scrWeapons() {
 	wep_swap[396] = sndSwapEnergy
 	wep_rad[396] = 0;
 	
-	wep_name[397] = "BOLT BOMB"
+	wep_name[397] = "SWARM BOMB"
 	wep_type[397] = 3
 	wep_auto[397] = 0
 	wep_load[397] = 24
-	wep_cost[397] = 1
+	wep_cost[397] = 2
 	wep_sprt[397] = sprSplinterBomb
 	wep_area[397] = 4
 	wep_text[397] = "scrappy"
 	wep_swap[397] = sndSwapBow
 	wep_rad[397] = 0;
 	
-	wep_name[398] = "EXPLODING LIGHTNING BALLS"//Tiny balls that explode into lightning on impact move fast fire fast
-	wep_type[398] = 3
+	wep_name[398] = "LIGHTNING LASER"//Tiny balls that explode into lightning on impact move fast fire fast
+	wep_type[398] = 5
 	wep_auto[398] = 0
-	wep_load[398] = 24
-	wep_cost[398] = 1
+	wep_load[398] = 8
+	wep_cost[398] = 3
 	wep_sprt[398] = sprSplinterBomb
-	wep_area[398] = 4
+	wep_area[398] = 10
 	wep_text[398] = "scrappy"
 	wep_swap[398] = sndSwapBow
 	wep_rad[398] = 0;
@@ -4449,20 +4449,32 @@ function scrWeapons() {
 	wep_swap[402] = sndSwapExplosive
 	wep_rad[402] = 0;
 	
+	wep_name[403] = "CLUSTER GRENADE LAUNCHER"
+	wep_type[403] = 4
+	wep_auto[403] = 0
+	wep_load[403] = 25//11
+	wep_cost[403] = 2
+	wep_sprt[403] = sprClusterNader
+	wep_area[403] = 6
+	wep_text[403] = "the bouncer"
+	wep_swap[403] = sndSwapSword
+	wep_rad[403] = 0;
+	
+	wep_name[404] = "MISSILE BOMB"
+	wep_type[404] = 4
+	wep_auto[404] = 0
+	wep_load[404] = 48
+	wep_cost[404] = 4
+	wep_sprt[404] = sprMissileLauncher
+	wep_area[404] = 10
+	wep_text[404] = "be very carefull"
+	wep_swap[404] = sndSwapExplosive
+	wep_rad[404] = 0;
+	
+	
 	/*
 	wep_name[369] = "LIGHTNING CANNON"
 	wep_type[369] = 5
-	wep_auto[369] = 0
-	wep_load[369] = 6//11
-	wep_cost[369] = 0
-	wep_sprt[369] = sprGoldenScrewdriver
-	wep_area[369] = 19
-	wep_text[369] = "ultra shanking"
-	wep_swap[369] = sndSwapSword
-	wep_rad[369] = 5;
-	
-	wep_name[369] = "CLUSTER GRENADE LAUNCHER"
-	wep_type[369] = 4
 	wep_auto[369] = 0
 	wep_load[369] = 6//11
 	wep_cost[369] = 0

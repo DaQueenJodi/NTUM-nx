@@ -93,8 +93,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Custom",
-    "path": "folders/Sprites/Weapons/Custom.yy",
+    "name": "Gold",
+    "path": "folders/Sprites/Weapons/Gold.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprGoldenJawbreaker",

@@ -88,7 +88,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprLaserStart","path":"sprites/sprLaserStart/sprLaserStart.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprLaserStart",
     "tags": [],
     "resourceType": "GMSequence",
   },

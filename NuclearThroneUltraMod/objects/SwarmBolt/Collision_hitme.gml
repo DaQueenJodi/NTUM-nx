@@ -3,7 +3,7 @@ if speed > 1 and other.team != team
 
 with other
 {
-if sprite_index!=spr_hurt|| (team!= 2 && random(30)<1){
+if (sprite_index!=spr_hurt){
 	my_health -= other.dmg//9//20
 	sprite_index = spr_hurt
 	image_index = 1;
@@ -15,6 +15,10 @@ if sprite_index!=spr_hurt|| (team!= 2 && random(30)<1){
 		//move_contact_solid(direction+180,8);
 		}
     }
+	else if other.team != 2
+	{
+		image_index += 0.2;//iframe skipper
+	}
 }
 
 }

@@ -4814,54 +4814,60 @@ function scrFire() {
 	6 lightning
 	*/
 	if object_index=Player{
-	if moddelay=0{
+	if moddelay=0 {
+		var reloadBoost = 0.85;
+		if Player.skill_got[30]
+			reloadBoost = 0.8;
+		if wepmod1=12
+		reload*=reloadBoost
 
-	if wepmod1=12
-	reload*=0.9
+		if wepmod2=12
+		reload*=reloadBoost
 
-	if wepmod2=12
-	reload*=0.9
+		if wepmod3=12
+		reload*=reloadBoost
 
-	if wepmod3=12
-	reload*=0.9
+		if wepmod4=12
+		reload*=reloadBoost
 
-	if wepmod4=12
-	reload*=0.9
+		with projectile
+		{
+		if team=other.team//player projectile
+		{
+			Mod1=other.wepmod1;
+			Mod2=other.wepmod2;
+			Mod3=other.wepmod3;
+			var speedBoost = 1.5;
+		if Player.skill_got[30]
+		{
+			Mod4=other.wepmod4;
+			speedBoost = 1.6;
+		}
 
-	with projectile
-	{
-	if team=other.team//player projectile
-	{
-	Mod1=other.wepmod1;
-	Mod2=other.wepmod2;
-	Mod3=other.wepmod3;
-	if Player.skill_got[30]
-	Mod4=other.wepmod4;
+		    //Projectile speed mod
+		    if Mod1==11
+		    {
+		    speed*=speedBoost
+		    Mod1=0;
+		    }
+		    if Mod2==11
+		    {
+		    speed*=speedBoost
+		    Mod2=0;
+		    }
+		    if Mod3==11
+		    {
+		    speed*=speedBoost
+		    Mod3=0;
+		    }
+		    if Mod4==11
+		    {
+		    speed*=speedBoost
+		    Mod4=0;
+		    }
+		}
 
-	    //Projectile speed mod
-	    if Mod1==11
-	    {
-	    speed*=1.4;
-	    Mod1=0;
-	    }
-	    if Mod2==11
-	    {
-	    speed*=1.4;
-	    Mod2=0;
-	    }
-	    if Mod3==11
-	    {
-	    speed*=1.4;
-	    Mod3=0;
-	    }
-	    if Mod4==11
-	    {
-	    speed*=1.4;
-	    Mod4=0;
-	    }
-	}
-
-	}   
+		}   
 	}   
 
 	firedthislevel=true;

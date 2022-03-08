@@ -7,7 +7,7 @@ sprite_index = sprLilHunterLiftStart
 image_index = 0
 instance_change(LilHunterFly,false)
 
-snd_play(sndLilHunterLaunch)
+snd_play_2d(sndLilHunterLaunch)
 }
 }else
 {
@@ -15,6 +15,6 @@ sprite_index = sprLilHunterLiftStart
 image_index = 0
 instance_change(LilHunterFly,false)
 
-snd_play(sndLilHunterLaunch)
+snd_play_2d(sndLilHunterLaunch)
 }
 

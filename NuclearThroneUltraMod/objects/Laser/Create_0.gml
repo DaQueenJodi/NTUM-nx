@@ -20,3 +20,5 @@ img = 0
 laserhit=0;
 dmg = 2;
 isog = true;
+startImg = sprLaserStart;
+endImg = sprLaserEnd;

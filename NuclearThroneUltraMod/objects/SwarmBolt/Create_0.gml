@@ -10,7 +10,7 @@ hits=6;
 if instance_exists(Player){
 if Player.skill_got[21] = 1//bolt marrow
 {
-hits=3;
+hits+=3;
 friction+=0.1;
 }
 if Player.skill_got[19]//eagle eyes

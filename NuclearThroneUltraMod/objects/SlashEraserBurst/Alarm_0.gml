@@ -50,7 +50,7 @@ if (instance_exists(Player))//HUNTER
 }
 
 
-if ammo = 0
+if ammo <= 0
 instance_destroy()
 
 

@@ -1,5 +1,5 @@
-/// @description xxx
-if instance_number(Spiral) ==  5
+/// @description Fix bones
+if instance_number(Spiral) ==  4
 {
 	with Bones
 	{

@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprLaser","path":"sprites/sprLaser/sprLaser.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprLaser",
     "tags": [],
     "resourceType": "GMSequence",
   },

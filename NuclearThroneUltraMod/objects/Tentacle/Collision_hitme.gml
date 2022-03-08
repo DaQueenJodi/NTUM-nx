@@ -4,7 +4,7 @@ if other.team != team and other.my_health > 0&&other.id != creator//the thing I 
 
 with other//enemy
 {
-if sprite_index != spr_hurt || random(35) < 1
+if sprite_index != spr_hurt
 {
 	if instance_exists(Player)
 	{
@@ -81,6 +81,10 @@ if sprite_index != spr_hurt || random(35) < 1
 	}
 	}
 
+}
+else
+{
+	image_index += 0.2;//iframe skipper
 }
 if instance_exists(other.creator){
 direction=point_direction(x,y,other.creator.x,other.creator.y);

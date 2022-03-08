@@ -1072,16 +1072,20 @@ with projectile
                 {
                     if instance_exists(enemy)
                     {
+						var homeBoost = 0.4;
+						if instance_exists(Player) && Player.skill_got[30]
+							homeBoost = 0.45;
+							
                         if collision_line(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y,Wall,0,0) < 0
                         {
-                        if Mod1=13
-                        motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),0.2);
-                        if Mod2=13
-                        motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),0.2);
-                        if Mod3=13
-                        motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),0.2);
-                        if Mod4=13
-                        motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),0.2);
+	                        if Mod1=13
+								motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),homeBoost);
+	                        if Mod2=13
+								motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),homeBoost);
+	                        if Mod3=13
+								motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),homeBoost);
+	                        if Mod4=13
+								motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),homeBoost);
                         }
                     }
                 }

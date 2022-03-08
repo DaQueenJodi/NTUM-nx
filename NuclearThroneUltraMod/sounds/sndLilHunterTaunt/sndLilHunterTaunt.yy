@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndLilHunterTaunt",
-  "duration": 0.0,
+  "duration": 2.25068,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/Enemies.yy",

@@ -3,7 +3,7 @@ if other.team != team && other.team != 2
 	//Hit enemy
 	with other
 	{
-		if sprite_index != spr_hurt || random(30) < 1
+		if sprite_index != spr_hurt
 		{
 			with other
 			instance_destroy()
@@ -13,6 +13,10 @@ if other.team != team && other.team != 2
 			image_index = 0
 			Sleep(10)
 			BackCont.shake += 1
+		}
+		else
+		{
+			image_index += 0.2;//iframe skipper
 		}
 	}
 }

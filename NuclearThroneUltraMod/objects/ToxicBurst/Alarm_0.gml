@@ -23,7 +23,7 @@ BackCont.shake += 0.8;
 wkick = 2}
 
 
-if ammo = 0
+if ammo <= 0
 instance_destroy()
 
 

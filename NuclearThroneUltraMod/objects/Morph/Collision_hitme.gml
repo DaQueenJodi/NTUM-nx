@@ -14,6 +14,10 @@ if(object_index!=Sheep&&object_index!=ExplosiveSheep){
     Sleep(1)
     //BackCont.shake += 2
     }
+	else if other.team != 2
+	{
+		image_index += 0.2;//iframe skipper
+	}
     }
 }
 }

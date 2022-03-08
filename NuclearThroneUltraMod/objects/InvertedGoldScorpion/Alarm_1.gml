@@ -13,7 +13,7 @@ if target > 0
 	}
 	direction = point_direction(target.x,target.y,x,y)+random(120)-60
 	speed = 2//0.4
-	if ammo = 0
+	if ammo <= 0
 	walk = 10+random(10)
 	if point_distance(x,y,target.x,target.y) < 64
 	{
@@ -25,7 +25,7 @@ if target > 0
 	right = -1
 	else if target.x > x
 	right = 1
-	if ammo = 0
+	if ammo <= 0
 	motion_add(point_direction(x,y,target.x,target.y),0.3)
 }
 else if random(10) < 1

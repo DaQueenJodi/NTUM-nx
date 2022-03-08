@@ -36,11 +36,11 @@ function scrModHit() {
 	    {
     
 		    if skill_got[30]//power craving
-				moddelay=13;
+				moddelay=12;
 		    else
-				moddelay=27;
+				moddelay=20;
 			if ultra_got[65] == 1//Weapon smith Ultra A
-				moddelay -= 6;
+				moddelay -= 10;
     
 	    }
 	}
@@ -63,9 +63,9 @@ function scrModHit() {
 	case 2://EXPLODE! WAY TO OP!
 
 
-	snd_play(sndExplosion);
+	snd_play(sndExplosionS);
 	with instance_create(other.x+lengthdir_x(8,random(360)),other.y+lengthdir_x(8,random(360)),SmallExplosion)//SMALL EXPLOSIONS CAUSE THIS IS OP AS FUCK
-	dmg=2;
+	dmg=4;
 	break;
 
 	case 3://burn!
@@ -90,7 +90,7 @@ function scrModHit() {
 	        image_yscale=other.size;
 	        xx=other.x
 	        yy=other.y
-	        debrisAmount=3;
+	        debrisAmount=4;
 	        }
 	    alarm[11]+=10;//30 for freezebullets
 		if alarm[1] > 0
@@ -104,7 +104,7 @@ function scrModHit() {
 
 	snd_play(sndMeatExplo);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),MeatExplosion)
-	dmg=1;
+	dmg=3;
 	break;
 
 	case 6://ELECTROCUTION!
@@ -114,7 +114,7 @@ function scrModHit() {
 	{image_angle = random(360);
 	image_speed += 0.2
 	team = other.team
-	ammo = 4
+	ammo = 6
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)
@@ -132,8 +132,8 @@ function scrModHit() {
 	{image_angle = point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y)+random(20)-10;//Instance nearest not me?
 	creator=other.id;
 	team = 2//Player.team
-	ammo = 5
-	dmg=1;
+	ammo = 7
+	dmg=3;
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)
@@ -155,7 +155,7 @@ function scrModHit() {
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),SwarmBolt)
 	{team=other.team;
 	direction=random(360);
-	hits=3;}
+	hits-=1;}
 	break;
 
 	case 9://bouncer
@@ -163,7 +163,7 @@ function scrModHit() {
 	{motion_add(random(360),5.1)
 	image_angle = direction
 	team = 2
-	dmg=3;
+	
 	mask_index=mskPickupThroughWall;
 	alarm[0]=6;}
 
@@ -179,7 +179,7 @@ function scrModHit() {
 	repeat(4)
 	{
 	with instance_create(other.x,other.y,Bullet2)
-	{motion_add(random(360),7+random(6))//12+6
+	{motion_add(random(360),10+random(6))//12+6
 	image_angle = direction
 	team = 2
 	mask_index=mskPickupThroughWall;
@@ -197,7 +197,7 @@ function scrModHit() {
 	audio_play_sound(sndHorrorBeam,50,0)
 	}
 
-	other.raddrop+=5;
+	other.raddrop+=7;
 
 	break;
 
@@ -205,7 +205,7 @@ function scrModHit() {
 
 	snd_play(sndSplinterGun)
 
-	repeat(2)
+	repeat(3)
 	{
 	with instance_create(x,y,Splinter)//5 splinters
 	{motion_add(random(360),20+random(4))
@@ -251,10 +251,10 @@ function scrModHit() {
 
 	case 2://EXPLODE! WAY TO OP!
 
-	if !audio_is_playing(sndExplosion)
-	snd_play(sndExplosion);
+	if !audio_is_playing(sndExplosionS)
+	snd_play(sndExplosionS);
 	with instance_create(other.x+lengthdir_x(8,random(360)),other.y+lengthdir_x(12,random(360)),SmallExplosion)//SMALL EXPLOSIONS CAUSE THIS IS OP AS FUCK
-	dmg=2;
+	dmg=4;
 	break;
 
 	case 3://burn!
@@ -283,7 +283,7 @@ function scrModHit() {
 	        image_yscale=other.size;
 	        xx=other.x
 	        yy=other.y
-	        debrisAmount=3;
+	        debrisAmount=4;
 	        }
     
 	    alarm[11]+=10;//30 for freezebullets
@@ -311,7 +311,7 @@ function scrModHit() {
 	if !audio_is_playing(sndMeatExplo)
 	snd_play(sndMeatExplo);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),MeatExplosion)
-	dmg=1;
+	dmg=3;
 	break;
 
 	case 6://ELECTROCUTION!
@@ -322,7 +322,7 @@ function scrModHit() {
 	{image_angle = random(360);
 	image_speed += 0.2
 	team = other.team
-	ammo = 4
+	ammo = 6
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)
@@ -340,8 +340,8 @@ function scrModHit() {
 	{image_angle = point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y)+random(20)-10;//Instance nearest not me?
 	creator=other.id;
 	team = 2//Player.team
-	ammo = 5
-	dmg=1;
+	ammo = 7
+	dmg=3;
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)
@@ -364,7 +364,7 @@ function scrModHit() {
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),SwarmBolt)
 	{team=other.team;
 	direction=random(360);
-	hits=3;}
+	hits-=1;}
 	break;
 
 	case 9://bouncer
@@ -372,7 +372,7 @@ function scrModHit() {
 	{motion_add(random(360),5.1)
 	image_angle = direction
 	team = 2
-	dmg=3;
+	
 	mask_index=mskPickupThroughWall;
 	alarm[0]=6;}
 
@@ -388,7 +388,7 @@ function scrModHit() {
 	repeat(4)
 	{
 	with instance_create(other.x,other.y,Bullet2)
-	{motion_add(random(360),7+random(6))//12+6
+	{motion_add(random(360),10+random(6))//12+6
 	image_angle = direction
 	team = 2
 	mask_index=mskPickupThroughWall;
@@ -407,7 +407,7 @@ function scrModHit() {
 	audio_play_sound(sndHorrorBeam,50,0)
 	}
 
-	other.raddrop+=5;
+	other.raddrop+=7;
 
 	break;
 
@@ -415,7 +415,7 @@ function scrModHit() {
 
 	snd_play(sndSplinterGun)
 
-	repeat(2)
+	repeat(3)
 	{
 	with instance_create(x,y,Splinter)//5 splinters
 	{motion_add(random(360),20+random(4))
@@ -465,10 +465,10 @@ function scrModHit() {
 	break;
 	case 2://EXPLODE! WAY TO OP!
 
-	if !audio_is_playing(sndExplosion)
-	snd_play(sndExplosion);
+	if !audio_is_playing(sndExplosionS)
+	snd_play(sndExplosionS);
 	with instance_create(other.x+lengthdir_x(12,random(360)),other.y+lengthdir_x(8,random(360)),SmallExplosion)//SMALL EXPLOSIONS CAUSE THIS IS OP AS FUCK
-	dmg=2;
+	dmg=4;
 	break;
 	case 3://burn!
 	if !audio_is_playing(sndFlare)
@@ -496,7 +496,7 @@ function scrModHit() {
 	        image_yscale=other.size;
 	        xx=other.x
 	        yy=other.y
-	        debrisAmount=3;
+	        debrisAmount=4;
 	        }
     
 	    alarm[11]+=10;//30 for freezebullets
@@ -524,7 +524,7 @@ function scrModHit() {
 	if !audio_is_playing(sndMeatExplo)
 	snd_play(sndMeatExplo);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),MeatExplosion)
-	dmg=1;
+	dmg=3;
 	break;
 
 	case 6://ELECTROCUTION!
@@ -535,7 +535,7 @@ function scrModHit() {
 	{image_angle = random(360);
 	image_speed += 0.2
 	team = other.team
-	ammo = 4
+	ammo = 6
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)
@@ -552,8 +552,8 @@ function scrModHit() {
 	{image_angle = point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y)+random(20)-10;//Instance nearest not me?
 	creator=other.id;
 	team = 2//Player.team
-	ammo = 5
-	dmg=1;
+	ammo = 7
+	dmg=3;
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)
@@ -575,7 +575,7 @@ function scrModHit() {
 	case 8:
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),SwarmBolt)
 	{team=other.team;
-	hits=3;
+	hits-=1;
 	direction=random(360);}
 	break;
 
@@ -584,7 +584,7 @@ function scrModHit() {
 	{motion_add(random(360),5.1)
 	image_angle = direction
 	team = 2
-	dmg=3;
+	
 	mask_index=mskPickupThroughWall;
 	alarm[0]=6;}
 
@@ -601,7 +601,7 @@ function scrModHit() {
 	repeat(4)
 	{
 	with instance_create(other.x,other.y,Bullet2)
-	{motion_add(random(360),7+random(6))//12+6
+	{motion_add(random(360),10+random(6))//12+6
 	image_angle = direction
 	team = 2
 	mask_index=mskPickupThroughWall;
@@ -620,7 +620,7 @@ function scrModHit() {
 	audio_play_sound(sndHorrorBeam,50,0)
 	}
 
-	other.raddrop+=5;
+	other.raddrop+=7;
 
 	break;
 
@@ -628,7 +628,7 @@ function scrModHit() {
 
 	snd_play(sndSplinterGun)
 
-	repeat(2)
+	repeat(3)
 	{
 	with instance_create(x,y,Splinter)//5 splinters
 	{motion_add(random(360),20+random(4))
@@ -679,10 +679,10 @@ function scrModHit() {
 	break;
 	case 2://EXPLODE! WAY TO OP!
 
-	if !audio_is_playing(sndExplosion)
-	snd_play(sndExplosion);
+	if !audio_is_playing(sndExplosionS)
+	snd_play(sndExplosionS);
 	with instance_create(other.x+lengthdir_x(12,random(360)),other.y+lengthdir_x(8,random(360)),SmallExplosion)//SMALL EXPLOSIONS CAUSE THIS IS OP AS FUCK
-	dmg=2;
+	dmg=4;
 	break;
 	case 3://burn!
 	if !audio_is_playing(sndFlare)
@@ -710,7 +710,7 @@ function scrModHit() {
 	        image_yscale=other.size;
 	        xx=other.x
 	        yy=other.y
-	        debrisAmount=3;
+	        debrisAmount=4;
 	        }
     
 	    alarm[11]+=10;//30 for freezebullets
@@ -738,7 +738,7 @@ function scrModHit() {
 	if !audio_is_playing(sndMeatExplo)
 	snd_play(sndMeatExplo);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),MeatExplosion)
-	dmg=1;
+	dmg=3;
 	break;
 
 	case 6://ELECTROCUTION!
@@ -749,7 +749,7 @@ function scrModHit() {
 	{image_angle = random(360);
 	image_speed += 0.2
 	team = other.team
-	ammo = 4
+	ammo = 6
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)
@@ -766,8 +766,8 @@ function scrModHit() {
 	{image_angle = point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y)+random(20)-10;//Instance nearest not me?
 	creator=other.id;
 	team = 2//Player.team
-	ammo = 5
-	dmg=1;
+	ammo = 7
+	dmg=3;
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)
@@ -789,7 +789,7 @@ function scrModHit() {
 	case 8:
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),SwarmBolt)
 	{team=other.team;
-	hits=3;
+	hits-=1;
 	direction=random(360);}
 	break;
 
@@ -798,7 +798,7 @@ function scrModHit() {
 	{motion_add(random(360),5.1)
 	image_angle = direction
 	team = 2
-	dmg=3;
+	
 	mask_index=mskPickupThroughWall;
 	alarm[0]=6;}
 
@@ -815,7 +815,7 @@ function scrModHit() {
 	repeat(4)
 	{
 	with instance_create(other.x,other.y,Bullet2)
-	{motion_add(random(360),7+random(6))//12+6
+	{motion_add(random(360),10+random(6))//12+6
 	image_angle = direction
 	team = 2
 	mask_index=mskPickupThroughWall;
@@ -834,7 +834,7 @@ function scrModHit() {
 	audio_play_sound(sndHorrorBeam,50,0)
 	}
 
-	other.raddrop+=5;
+	other.raddrop+=7;
 
 	break;
 
@@ -842,7 +842,7 @@ function scrModHit() {
 
 	snd_play(sndSplinterGun)
 
-	repeat(2)
+	repeat(3)
 	{
 	with instance_create(x,y,Splinter)//5 splinters
 	{motion_add(random(360),20+random(4))
@@ -854,7 +854,6 @@ function scrModHit() {
 
 
 	case 16://MORPH
-	debug("MORPHING");
 	with instance_create(x,y,Morph)
 		scrCanHumphry();
 

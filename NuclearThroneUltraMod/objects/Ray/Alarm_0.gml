@@ -35,7 +35,6 @@ BackCont.viewy2 += lengthdir_y(2,point_direction(x,y,mouse_x,mouse_y)+180)*UberC
 wkick = 2}
 
 
-if ammo = 0
-
+if ammo <= 0
 instance_destroy()
 

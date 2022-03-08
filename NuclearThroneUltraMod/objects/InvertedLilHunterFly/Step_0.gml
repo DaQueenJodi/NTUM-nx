@@ -51,7 +51,7 @@ z = 0
 alarm[1] = 20+random(10)
 if intro = 0
 {
-snd_play(sndLilHunterAppear)
+snd_play_2d(sndLilHunterAppear)
 instance_create(x,y,DramaCamera)
 intro = 1
 }

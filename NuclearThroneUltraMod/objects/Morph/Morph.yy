@@ -4,7 +4,7 @@
     "path": "sprites/sprDust/sprDust.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": {
     "name": "mskPlasmaImpact",
     "path": "sprites/mskPlasmaImpact/mskPlasmaImpact.yy",

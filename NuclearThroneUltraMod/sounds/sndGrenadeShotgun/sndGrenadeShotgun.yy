@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndGrenadeShotgun",
-  "duration": 0.0,
+  "duration": 0.885375,
   "parent": {
     "name": "Explosive",
     "path": "folders/Sounds/Weapons/Explosive.yy",

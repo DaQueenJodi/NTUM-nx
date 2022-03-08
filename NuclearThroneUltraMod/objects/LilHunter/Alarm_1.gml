@@ -13,7 +13,7 @@ if random(35) < 1 or (point_distance(x,y,target.x,target.y) < 64 and random(3) <
 sprite_index = sprLilHunterLiftStart
 image_index = 0
 instance_change(LilHunterFly,false)
-snd_play(sndLilHunterLaunch)
+snd_play_2d(sndLilHunterLaunch)
 }
 else
 {
@@ -108,7 +108,15 @@ walk = 8+random(4)
 gunangle = point_direction(x,y,target.x,target.y)
 }
 }
-else if random(40)<1
+else if random(30) < 1 && !instance_exists(IDPDSpawn)
+{
+	snd_play_2d(sndLilHunterSummon)
+	with Player
+	{
+		instance_create(x,y,IDPDSpawn);
+	}
+}
+else if random(30)<1
 {
 
 //CAN'T SEE FLY AWAY FLY
@@ -116,7 +124,7 @@ else if random(40)<1
 sprite_index = sprLilHunterLiftStart
 image_index = 0
 instance_change(LilHunterFly,false)
-snd_play(sndLilHunterLaunch)
+snd_play_2d(sndLilHunterLaunch)
 
 }
 else

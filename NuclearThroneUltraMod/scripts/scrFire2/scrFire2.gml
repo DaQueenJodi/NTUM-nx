@@ -2701,6 +2701,7 @@ function scrFire2() {
 	///GOLDEN OOPS GUN
 	case 298:
 		scrRestart();
+		exit;
 	break;
 	//ULTRA WAVE GUN
 	case 299:
@@ -2723,6 +2724,7 @@ function scrFire2() {
 	{
 	creator = other.id
 	ammo = 20
+	angleStep = 80/10;
 	time = 1
 	team = other.team
 	event_perform(ev_alarm,0) 
@@ -5533,11 +5535,54 @@ function scrFire2() {
 	case 396:
 	break;
 	
+	
+	//SWARM BOMB
 	case 397:
+		snd_play_fire(sndGrenadeRifle)
+		with instance_create(x,y,SwarmBomb)
+		{
+		sticky = 0
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*other.accuracy,10)
+		image_angle = direction
+		team = other.team}
+
+		BackCont.viewx2 += lengthdir_x(10,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 4
+		wkick = 6
 	break;
 	
-	
+	//LIGHTNING LASER
 	case 398:
+		if Player.skill_got[17] = 1
+		{
+			snd_play_fire(sndLightning3)
+			snd_play_fire(sndLaserUpg)
+		}
+		else
+		{
+			snd_play_fire(sndLightning1)
+			snd_play_fire(sndLaser)
+		}
+		var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)*other.accuracy;
+		with instance_create(x,y,Laser)
+		{image_angle = aimDir;
+		team = other.team;
+		startImg = sprLightningLaserStart;
+		endImg = sprLightningLaserEnd;
+		sprite_index = sprLightningLaser;
+		event_perform(ev_alarm,0);
+		}
+		with instance_create(x,y,LaserLightning)
+		{image_angle = aimDir;
+		team = other.team;
+		event_perform(ev_alarm,0);
+		}
+
+		BackCont.viewx2 += lengthdir_x(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 6
+		wkick = 4
 	break;
 	
 	//WRONG DIRECTION
@@ -5618,6 +5663,44 @@ function scrFire2() {
 	BackCont.viewx2 += lengthdir_x(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.shake += 4
+	break;
+	
+	//CLUSTER LAUNCHER
+	case 403:
+
+	snd_play_fire(sndClusterLauncher)
+
+	with instance_create(x,y,ClusterGrenade)
+	{
+	sticky = 0
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*other.accuracy,10)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(11,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(11,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 4
+	wkick = 5
+
+	break;
+	
+	//MISSILE BOMB
+	case 404:
+
+	snd_play_fire(sndClusterLauncher)
+
+	with instance_create(x,y,MissileBomb)
+	{
+	sticky = 0
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*other.accuracy,10)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(11,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(11,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 4
+	wkick = 5
+
 	break;
 	
 	}//end of switch part 2!

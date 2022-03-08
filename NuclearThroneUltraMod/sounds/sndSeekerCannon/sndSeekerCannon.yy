@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSeekerCannon",
-  "duration": 0.0,
+  "duration": 0.129188,
   "parent": {
     "name": "Bolts",
     "path": "folders/Sounds/Weapons/Bolts.yy",

@@ -12,3 +12,4 @@ rightang=point_direction(x,y,mouse_x,mouse_y)+40*Player.accuracy;
 ang=choose(0,80);
 left=false;
 
+angleStep = 10;

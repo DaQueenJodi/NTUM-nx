@@ -231,8 +231,8 @@ function scrDrawBloom() {
 	with Laser
 	{
 	draw_sprite_ext(sprite_index,-1,x,y,image_xscale,2,image_angle,c_white,ba+0.01)
-	draw_sprite_ext(sprLaserStart,img,xstart,ystart,2,2,image_angle,c_white,ba+0.01)
-	draw_sprite_ext(sprLaserEnd,img,x,y,2,2,image_angle,c_white,ba+0.01)
+	draw_sprite_ext(startImg,img,xstart,ystart,2,2,image_angle,c_white,ba+0.01)
+	draw_sprite_ext(endImg,img,x,y,2,2,image_angle,c_white,ba+0.01)
 	}
 	with MegaLaser
 	{

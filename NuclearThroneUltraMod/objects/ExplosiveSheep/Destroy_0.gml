@@ -1,4 +1,4 @@
-scrDrop(3,0)
+scrDrop(30,2)
 
 //NOW SOME ENEMY CODE
 

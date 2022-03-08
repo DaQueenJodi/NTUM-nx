@@ -23,6 +23,6 @@ BackCont.shake += 3
 creator.wkick = 6}
 
 
-if ammo = 0
+if ammo <= 0
 instance_destroy()
 
