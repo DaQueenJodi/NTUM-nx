@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprElectroBall","path":"sprites/sprElectroBall/sprElectroBall.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprElectroBall",
     "tags": [],
     "resourceType": "GMSequence",
   },

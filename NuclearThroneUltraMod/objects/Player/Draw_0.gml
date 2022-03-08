@@ -13,13 +13,38 @@ draw_sprite_ext(wep_sprt[bwep],triggerfinger,x-right*2,y,1,bwepright,90+15*right
 
 if ( wep_type[wep] = 3||wep==257 ) and (!(IsShielding)||(ultra_got[7]==1)) and wep != 18
 {
-lasx = x
-lasy = y
-lasd = 0
-do {lasd += 1 lasx += lengthdir_x(2,point_direction(x,y,mouse_x,mouse_y)) lasy += lengthdir_y(2,point_direction(x,y,mouse_x,mouse_y))}
-until position_meeting(lasx,lasy,Wall) or lasd > 1000
-
-draw_sprite_ext(sprLaserSightPlayer,-1,x,y,point_distance(x,y,lasx,lasy)/2+2,1,point_direction(x,y,mouse_x,mouse_y),c_white,1)
+	if wep == 399 //Wrong direction
+	{
+		
+		lasd = 0
+		var aimDir = point_direction(x,y,mouse_x,mouse_y);
+		var sx = x + lengthdir_x(8,aimDir);
+		var sy = y + lengthdir_y(8,aimDir);
+		lasx = sx
+		lasy = sy
+		aimDir += 90
+		do {lasd += 1 lasx += lengthdir_x(2,aimDir) lasy += lengthdir_y(2,aimDir)}
+		until position_meeting(lasx,lasy,Wall) or lasd > 1000
+		draw_sprite_ext(sprLaserSightPlayer,-1,sx,sy,point_distance(sx,sy,lasx,lasy)/2+2,1,aimDir,c_white,1)
+		lasx = sx
+		lasy = sy
+		lasd = 0
+		var aimDir = point_direction(x,y,mouse_x,mouse_y) - 90
+		do {lasd += 1 lasx += lengthdir_x(2,aimDir) lasy += lengthdir_y(2,aimDir)}
+		until position_meeting(lasx,lasy,Wall) or lasd > 1000
+		draw_sprite_ext(sprLaserSightPlayer,-1,sx,sy,point_distance(sx,sy,lasx,lasy)/2+2,1,aimDir,c_white,1)
+	}
+	else
+	{
+		lasx = x
+		lasy = y
+		lasd = 0
+		var aimDir = point_direction(x,y,mouse_x,mouse_y)
+		do {lasd += 1 lasx += lengthdir_x(2,aimDir) lasy += lengthdir_y(2,aimDir)}
+		until position_meeting(lasx,lasy,Wall) or lasd > 1000
+	
+		draw_sprite_ext(sprLaserSightPlayer,-1,x,y,point_distance(x,y,lasx,lasy)/2+2,1,point_direction(x,y,mouse_x,mouse_y),c_white,1)
+	}
 }
 
 if ultra_got[31]//draw robots third weapon on its back
@@ -41,20 +66,46 @@ bwep=wep;//secondary slot will now be your primary
 //bwepangle=wepangle;//angle
 
 }
+//Roids lasersight
 if race = 7 and bwep != 0
-{if wep_type[bwep] = 3 and bwep != 18
-{lasx = x
-lasy = y-4
-lasd = 0
-do {lasd += 1 lasx += lengthdir_x(2,point_direction(x,y,mouse_x,mouse_y)) lasy += lengthdir_y(2,point_direction(x,y,mouse_x,mouse_y))}
-until position_meeting(lasx,lasy,Wall) or lasd > 1000
-draw_sprite_ext(sprLaserSightPlayer,-1,x,y-4,point_distance(x,y,lasx,lasy)/2+2,1,point_direction(x,y,mouse_x,mouse_y),c_white,1)
-}draw_sprite_ext(wep_sprt[bwep],triggerfinger,x+lengthdir_x(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),y+gunY-4+lengthdir_y(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),1,-bwepright,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20)),c_white,1)
-if bwep = 63 || wep = 343//Blackhole/Dimension Generator
 {
-if can_shoot = 1 and ammo[wep_type[wep]] >= wep_cost[wep]{
+	if wep_type[bwep] = 3 and bwep != 18
+	{
+		if bwep == 399 //Wrong direction
+		{
+			lasd = 0
+			var aimDir = point_direction(x,y,mouse_x,mouse_y);
+			var sx = x + lengthdir_x(8,aimDir);
+			var sy = y-4 + lengthdir_y(8,aimDir);
+			lasx = sx
+			lasy = sy
+			aimDir += 90
+			do {lasd += 1 lasx += lengthdir_x(2,aimDir) lasy += lengthdir_y(2,aimDir)}
+			until position_meeting(lasx,lasy,Wall) or lasd > 1000
+			draw_sprite_ext(sprLaserSightPlayer,-1,sx,sy,point_distance(sx,sy,lasx,lasy)/2+2,1,aimDir,c_white,1)
+			lasx = sx
+			lasy = sy
+			lasd = 0
+			var aimDir = point_direction(x,y,mouse_x,mouse_y) - 90
+			do {lasd += 1 lasx += lengthdir_x(2,aimDir) lasy += lengthdir_y(2,aimDir)}
+			until position_meeting(lasx,lasy,Wall) or lasd > 1000
+			draw_sprite_ext(sprLaserSightPlayer,-1,sx,sy,point_distance(sx,sy,lasx,lasy)/2+2,1,aimDir,c_white,1)
+		}
+		else
+		{
+			lasx = x
+			lasy = y-4
+			lasd = 0
+			do {lasd += 1 lasx += lengthdir_x(2,point_direction(x,y,mouse_x,mouse_y)) lasy += lengthdir_y(2,point_direction(x,y,mouse_x,mouse_y))}
+			until position_meeting(lasx,lasy,Wall) or lasd > 1000
+			draw_sprite_ext(sprLaserSightPlayer,-1,x,y-4,point_distance(x,y,lasx,lasy)/2+2,1,point_direction(x,y,mouse_x,mouse_y),c_white,1)
+		}
+	}draw_sprite_ext(wep_sprt[bwep],triggerfinger,x+lengthdir_x(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),y+gunY-4+lengthdir_y(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),1,-bwepright,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20)),c_white,1)
+	if bwep = 63 || wep = 343//Blackhole/Dimension Generator
+	{
+	if can_shoot = 1 and ammo[wep_type[wep]] >= wep_cost[wep]{
 
-draw_sprite_ext(sprBlackHoleGeneration,triggerfinger,x+lengthdir_x(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),y+gunY-4+lengthdir_y(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),1,-bwepright,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20)),c_white,1)}}
+	draw_sprite_ext(sprBlackHoleGeneration,triggerfinger,x+lengthdir_x(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),y+gunY-4+lengthdir_y(-bwkick,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20))),1,-bwepright,point_direction(x,y,mouse_x,mouse_y)+(bwepangle*(1-wkick/20)),c_white,1)}}
 
 }
 

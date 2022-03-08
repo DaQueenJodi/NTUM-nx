@@ -5,7 +5,7 @@ snd_play(sndPlasmaBigExplodeUpg)
 else
 snd_play(sndPlasmaBigExplode)
 }
-
+instance_create(x,y,WallBreak);
 ang = random(360)
 repeat(10)
 {

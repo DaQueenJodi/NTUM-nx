@@ -1017,7 +1017,7 @@ function scrFire2() {
 	snd_play_fire(sndHeavyCrossbow)
 
 	with instance_create(x,y,HeavyBolt)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y),18)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)*other.accuracy,18)
 	image_angle = direction
 	team = other.team}
 
@@ -3942,7 +3942,6 @@ function scrFire2() {
 	BackCont.viewy2 += lengthdir_y(3,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.shake += 3
 	wkick = 5
-	resetSpeed=false;
 
 	break;
 
@@ -5447,8 +5446,32 @@ function scrFire2() {
 	
 	break;
 	
-	
+	//ELECTRO CANNON
 	case 395:
+		if Player.skill_got[17] = 1
+		snd_play_fire(sndPlasmaUpg)
+		else
+		snd_play_fire(sndPlasma)
+
+
+		with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),ElectroBallBig)
+		{
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy,2)
+		image_angle = direction
+		team=other.team;
+
+		with instance_create(x,y,ElectroBallSpawn)
+		{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4),1)
+		image_angle = direction}
+
+		}
+
+		Sleep(10);
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+180,3)
+		BackCont.viewx2 += lengthdir_x(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 6
+		wkick = 6
 	break;
 	
 	
@@ -5462,27 +5485,56 @@ function scrFire2() {
 	case 398:
 	break;
 	
-	
+	//WRONG DIRECTION
 	case 399:
+		snd_play_fire(sndHeavyCrossbow)
+
+		var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)*accuracy
+		var sx = x + lengthdir_x(8,aimDir);
+		var sy = y + lengthdir_y(8,aimDir);
+		with instance_create(sx,sy,HeavyBolt)
+		{motion_add(aimDir+90,18)
+		image_angle = direction
+		team = other.team}
+		
+		with instance_create(sx,sy,HeavyBolt)
+		{motion_add(aimDir-90,18)
+		image_angle = direction
+		team = other.team}
+
+		BackCont.viewx2 += lengthdir_x(30,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(30,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 12
+		wkick = 6
 	break;
 	
 	
 	//GOLDEN GRENADE PISTOL
 	case 400:
-
-	with instance_create(x,y,SmallGrenadeBurst)
-	{
-		isGold = true;
-		creator = other.id
-		ammo = 2
-		time = 2
-		team = other.team
-		projectileSpeed += 1;
-		event_perform(ev_alarm,0)
-	}
+		with instance_create(x,y,SmallGrenadeBurst)
+		{
+			isGold = true;
+			creator = other.id
+			ammo = 2
+			time = 2
+			team = other.team
+			projectileSpeed += 1;
+			event_perform(ev_alarm,0)
+		}
 	break;
 	
+	
+	//HEALTH DISPENSER
 	case 401:
+		var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(20)-10);
+		with instance_create(x+lengthdir_x(8,aimDir),y+lengthdir_y(8,aimDir),HPPickup)
+		{
+			friction += 0.1;
+			alarm[3] = 5;
+			isGettingSucked = false;
+			motion_add(aimDir,12);
+		}
+		snd_play(sndHealthChest);
 	break;
 	
 	

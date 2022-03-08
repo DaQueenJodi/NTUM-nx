@@ -48,7 +48,7 @@ betterlaserbrain=2.1;
 }
 if skill_got[21]//bolt marrow
 {
-betterlaserbrain=20;
+betterboltmarrow = 10;
 }
 }
 

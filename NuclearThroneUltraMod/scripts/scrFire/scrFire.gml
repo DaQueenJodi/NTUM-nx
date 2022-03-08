@@ -211,7 +211,7 @@ function scrFire() {
 	snd_play_fire(sndCrossbow)
 
 	with instance_create(x,y,Bolt)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y),24)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)*other.accuracy,24)
 	image_angle = direction
 	team = other.team}
 

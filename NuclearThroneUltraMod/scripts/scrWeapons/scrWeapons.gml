@@ -4364,8 +4364,8 @@ function scrWeapons() {
 	wep_name[395] = "ELECTRO CANNON"
 	wep_type[395] = 5
 	wep_auto[395] = 1
-	wep_load[395] = 12
-	wep_cost[395] = 1
+	wep_load[395] = 20
+	wep_cost[395] = 4
 	wep_sprt[395] = sprElectroGun
 	wep_area[395] = 7
 	wep_text[395] = "considered plasma & lightning"
@@ -4408,11 +4408,11 @@ function scrWeapons() {
 	wep_name[399] = "WRONG DIRECTION"
 	wep_type[399] = 3
 	wep_auto[399] = 0
-	wep_load[399] = 36
+	wep_load[399] = 34
 	wep_cost[399] = 3
-	wep_sprt[399] = sprHeavyCrossbow
+	wep_sprt[399] = sprWrongDirection
 	wep_area[399] = 4
-	wep_text[399] = "turn left"
+	wep_text[399] = "took a wrong turn somewhere"
 	wep_swap[399] = sndSwapBow
 	wep_rad[399] = 0;
 	

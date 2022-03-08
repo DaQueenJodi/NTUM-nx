@@ -1,7 +1,7 @@
 if other.team != team and other.my_health > 0 && other.team!=2
 {
 with other
-{if sprite_index != spr_hurt || random(35)<1
+{if sprite_index != spr_hurt || random(30)<1
 {
 if instance_exists(Player)
 {

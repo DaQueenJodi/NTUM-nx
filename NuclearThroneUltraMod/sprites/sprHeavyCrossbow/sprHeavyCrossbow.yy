@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprHeavyCrossbow","path":"sprites/sprHeavyCrossbow/sprHeavyCrossbow.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprHeavyCrossbow",
     "tags": [],
     "resourceType": "GMSequence",
   },
