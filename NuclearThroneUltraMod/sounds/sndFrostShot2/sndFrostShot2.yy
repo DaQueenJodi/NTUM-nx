@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndFrostShot2",
-  "duration": 0.0,
+  "duration": 0.450604,
   "parent": {
     "name": "Bullet",
     "path": "folders/Sounds/Weapons/Bullet.yy",

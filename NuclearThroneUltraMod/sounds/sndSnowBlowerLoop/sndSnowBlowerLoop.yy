@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSnowBlowerLoop",
-  "duration": 0.0,
+  "duration": 5.900522,
   "parent": {
     "name": "Explosive",
     "path": "folders/Sounds/Weapons/Explosive.yy",

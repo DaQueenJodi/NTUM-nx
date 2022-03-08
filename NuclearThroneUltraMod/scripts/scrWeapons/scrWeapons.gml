@@ -3737,13 +3737,13 @@ function scrWeapons() {
 	wep_swap[338] = sndSwapDragon
 	wep_rad[338] = 0;
 
-	wep_name[339] = "FROST HAMMER"
+	wep_name[339] = "FROST AXE"
 	wep_type[339] = 0
 	wep_auto[339] = 0
 	wep_load[339] = 33
 	wep_cost[339] = 0
 	wep_sprt[339] = sprFrostHammer
-	wep_area[339] = 9
+	wep_area[339] = 10
 	wep_text[339] = "freeze! hammer time"
 	wep_swap[339] = sndSwapHammer
 	wep_rad[339] = 0;
@@ -3751,11 +3751,11 @@ function scrWeapons() {
 	wep_name[340] = "TRIDENT"
 	wep_type[340] = 0
 	wep_auto[340] = 0
-	wep_load[340] = 34
+	wep_load[340] = 30
 	wep_cost[340] = 0
 	wep_sprt[340] = sprTrident
 	wep_area[340] = 10
-	wep_text[340] = "hammer time"
+	wep_text[340] = "aqua fork"
 	wep_swap[340] = sndSwapDragon
 	wep_rad[340] = 0;
 
@@ -3873,7 +3873,7 @@ function scrWeapons() {
 	wep_type[351] = 1
 	wep_auto[351] = 0
 	wep_load[351] = 18
-	wep_cost[351] = 22
+	wep_cost[351] = 30
 	wep_sprt[351] = sprBulletDisperseDisperseGun
 	wep_area[351] = 18
 	wep_text[351] = "disperse it all!"
@@ -4350,13 +4350,13 @@ function scrWeapons() {
 	wep_swap[393] = sndSwapDragon
 	wep_rad[393] = 0;
 	
-	wep_name[394] = "FIRE AXE"
+	wep_name[394] = "FLAME AXE"
 	wep_type[394] = 0
 	wep_auto[394] = 0
 	wep_load[394] = 28
 	wep_cost[394] = 0
-	wep_sprt[394] = sprFrostHammer
-	wep_area[394] = 12//9frost hammer
+	wep_sprt[394] = sprFlameAxe
+	wep_area[394] = 10//10frost hammer
 	wep_text[394] = "chop burned wood"
 	wep_swap[394] = sndSwapHammer
 	wep_rad[394] = 0;

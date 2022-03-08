@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndFlamerStart",
-  "duration": 0.0,
+  "duration": 0.309342,
   "parent": {
     "name": "Dragon",
     "path": "folders/Sounds/Weapons/Dragon.yy",

@@ -454,9 +454,9 @@ function scrFire2() {
 	case 209:
 
 	if Player.skill_got[17] = 1
-	snd_play_fire(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaMinigun)
 	else
-	snd_play_fire(sndPlasma)
+	snd_play_fire(sndPlasmaMinigunUpg)
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),MiniPlasmaBall)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(26)-13)*other.accuracy,2)
@@ -492,9 +492,9 @@ function scrFire2() {
 	case 211:
 
 	if Player.skill_got[17] = 1
-	snd_play_fire(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaMinigun)
 	else
-	snd_play_fire(sndPlasma)
+	snd_play_fire(sndPlasmaMinigunUpg)
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),MiniPlasmaBall)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,2)
@@ -3733,24 +3733,41 @@ function scrFire2() {
 
 	break;
 
-	//FROST HAMMER
+	//FROST AXE
 	case 339:
 
+	snd_play_fire(sndFrostShot1);
 	snd_play_fire(sndHammer)
 
 	instance_create(x,y,Dust)
-
+	var t = team;
 	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),FrostSlash)
 	{
-
-	dmg = 17//shovel is 12 is frostglove
-	longarms = 0
-	if instance_exists(Player)
-	longarms = (Player.skill_got[13]+other.bettermelee)*3
-	motion_add(point_direction(x,y,mouse_x,mouse_y),2+longarms)
-	image_angle = direction
-	team = other.team}
-
+		dmg = 18//shovel is 12 is frostglove
+		longarms = 0
+		if instance_exists(Player)
+		longarms = (Player.skill_got[13]+other.bettermelee)*3
+		motion_add(point_direction(x,y,mouse_x,mouse_y),2+longarms)
+		image_angle = direction
+		team = t
+	}
+	var len = 32 + ((Player.skill_got[13]+bettermelee)*20);
+	var angStep = (100*accuracy) / 5;
+	var aimDir = point_direction(x,y,mouse_x,mouse_y) - (angStep*2.5);
+	var fx = x + lengthdir_x(len,aimDir);
+	var fy = y + lengthdir_y(len,aimDir);
+	repeat(5)
+	{
+		with instance_create(fx,fy,IceFlame)
+		{
+			motion_add(aimDir,4+random(1))
+			image_angle = direction
+			team = t
+		}
+		aimDir += angStep;
+		fx = x + lengthdir_x(len,aimDir);
+		fy = y + lengthdir_y(len,aimDir);
+	}
 	wepangle = -wepangle
 	motion_add(point_direction(x,y,mouse_x,mouse_y),6)
 	BackCont.viewx2 += lengthdir_x(12,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
@@ -3771,7 +3788,7 @@ function scrFire2() {
 	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),KrakenSlash)
 	{
 
-	dmg = 16//shovel is 12 is frostglove
+	dmg = 18//shovel is 12 is frostglove
 	longarms = 0
 	if instance_exists(Player)
 	longarms = (Player.skill_got[13]+other.bettermelee)*3
@@ -5172,9 +5189,9 @@ function scrFire2() {
 	case 384:
 
 	if Player.skill_got[17] = 1
-	snd_play_fire(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaMinigun)
 	else
-	snd_play_fire(sndPlasma)
+	snd_play_fire(sndPlasmaMinigunUpg)
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),MiniPlasmaBall)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,2)
@@ -5414,20 +5431,20 @@ function scrFire2() {
 	{
 		with instance_create(x+16,y+16,Flame)
 		{
-			motion_add(0,6)
-			image_angle = direction
+			motion_add(0,4)
+			//image_angle = direction
 			team = t
 		}
 		with instance_create(x+16,y+16,Flame)
 		{
-			motion_add(120,6)
-			image_angle = direction
+			motion_add(120,4)
+			//image_angle = direction
 			team = t
 		}
 		with instance_create(x+16,y+16,Flame)
 		{
-			motion_add(240,6)
-			image_angle = direction
+			motion_add(240,4)
+			//image_angle = direction
 			team = t
 		}
 	}
@@ -5441,17 +5458,55 @@ function scrFire2() {
 	case 393:
 	break;
 	
-	
+	//FLAME AXE
 	case 394:
-	
+		snd_play_fire(sndHammer)
+		snd_play_fire(sndFlareExplode)
+
+		instance_create(x,y,Dust)
+		var t = team;
+
+		with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),FlameSlash)
+		{
+			dmg = 16//shovel is 12 is frostglove
+			longarms = 0
+			if instance_exists(Player)
+			longarms = (Player.skill_got[13]+other.bettermelee)*3
+			motion_add(point_direction(x,y,mouse_x,mouse_y),2+longarms)
+			image_angle = direction
+			team = t
+		}
+		var len = 32 + ((Player.skill_got[13]+bettermelee)*20);
+		var angStep = (100*accuracy) / 10;
+		var aimDir = point_direction(x,y,mouse_x,mouse_y) - (angStep*5);
+		var fx = x + lengthdir_x(len,aimDir);
+		var fy = y + lengthdir_y(len,aimDir);
+		repeat(10)
+		{
+			with instance_create(fx,fy,Flame)
+			{
+				motion_add(aimDir,4+random(1))
+				//image_angle = direction
+				team = t
+			}
+			aimDir += angStep;
+			fx = x + lengthdir_x(len,aimDir);
+			fy = y + lengthdir_y(len,aimDir);
+		}
+		wepangle = -wepangle
+		motion_add(point_direction(x,y,mouse_x,mouse_y),6)
+		BackCont.viewx2 += lengthdir_x(12,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(12,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+		BackCont.shake += 1
+		wkick = -4
 	break;
 	
 	//ELECTRO CANNON
 	case 395:
 		if Player.skill_got[17] = 1
-		snd_play_fire(sndPlasmaUpg)
+		snd_play_fire(sndPlasmaBigUpg)
 		else
-		snd_play_fire(sndPlasma)
+		snd_play_fire(sndPlasmaBig)
 
 
 		with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),ElectroBallBig)
@@ -5532,7 +5587,7 @@ function scrFire2() {
 			friction += 0.1;
 			alarm[3] = 5;
 			isGettingSucked = false;
-			motion_add(aimDir,12);
+			motion_add(aimDir,14);
 		}
 		snd_play(sndHealthChest);
 	break;

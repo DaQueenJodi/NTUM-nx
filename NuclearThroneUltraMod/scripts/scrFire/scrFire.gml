@@ -1755,9 +1755,9 @@ function scrFire() {
 	case 77:
 
 	if Player.skill_got[17] = 1
-	snd_play_fire(sndPlasmaUpg)
+	snd_play_fire(sndPlasmaMinigun)
 	else
-	snd_play_fire(sndPlasma)
+	snd_play_fire(sndPlasmaMinigunUpg)
 
 	with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),PlasmaBall)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(16)-8)*other.accuracy,2)

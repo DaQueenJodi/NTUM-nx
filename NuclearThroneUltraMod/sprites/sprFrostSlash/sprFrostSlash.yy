@@ -68,7 +68,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFrostSlash","path":"sprites/sprFrostSlash/sprFrostSlash.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFrostSlash",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -6,7 +6,7 @@ timeout += 1
 if timeout > 1
 {
 audio_stop_sound(sndSnowBlowerLoop)
-snd_play(sndFrostShot2)
+snd_play(sndFrostShot1)
 instance_destroy()
 }
 }

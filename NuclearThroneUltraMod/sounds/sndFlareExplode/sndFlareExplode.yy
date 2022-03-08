@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndFlareExplode",
-  "duration": 0.0,
+  "duration": 0.549342,
   "parent": {
     "name": "Dragon",
     "path": "folders/Sounds/Weapons/Dragon.yy",
