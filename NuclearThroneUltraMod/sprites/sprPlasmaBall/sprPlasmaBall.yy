@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprPlasmaBall","path":"sprites/sprPlasmaBall/sprPlasmaBall.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprPlasmaBall",
     "tags": [],
     "resourceType": "GMSequence",
   },

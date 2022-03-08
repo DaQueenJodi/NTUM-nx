@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndShotgunHitWall",
-  "duration": 0.0,
+  "duration": 1.329592,
   "parent": {
     "name": "HitWall",
     "path": "folders/Sounds/HitWall.yy",

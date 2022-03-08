@@ -76,7 +76,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprPlasmaEffect","path":"sprites/sprPlasmaEffect/sprPlasmaEffect.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprPlasmaEffect",
     "tags": [],
     "resourceType": "GMSequence",
   },

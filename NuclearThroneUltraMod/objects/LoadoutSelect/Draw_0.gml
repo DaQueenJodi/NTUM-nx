@@ -12,7 +12,7 @@ if (wepmenuopen) {
     do {
 		var sprite = wep_sprt[UberCont.start_wep[wepiter]];
         spritewidth = sprite_get_width(sprite);
-        if wepx + spritewidth > 310 {
+        if wepx + spritewidth > 320 {
             wepx = 170;
             wepy += 16;
         }

@@ -2,8 +2,8 @@ if other.team != team and other.my_health > 0
 {
 
 BackCont.shake += 2
-image_xscale-=0.3;
-image_yscale-=0.3;
+image_xscale-=0.29;
+image_yscale-=0.29;
 if alarm[0]<3
 {Sleep(4)
 with other

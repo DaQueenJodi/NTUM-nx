@@ -14,7 +14,7 @@ yy=creator.y;
 //with instance_create(xx,yy,Shell)
 //motion_add(point_direction(x,y,mouse_x,mouse_y)+180+random(50)-25,2+random(2))
 
-repeat(4){
+repeat(projectileAmount){
 with instance_create(x,y,Bullet2)
 {
 motion_add(point_direction(x,y,other.mox,other.moy),14+random(4))

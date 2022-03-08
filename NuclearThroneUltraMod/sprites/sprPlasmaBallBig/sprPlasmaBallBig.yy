@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprPlasmaBallBig","path":"sprites/sprPlasmaBallBig/sprPlasmaBallBig.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprPlasmaBallBig",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSplinterGun",
-  "duration": 0.0,
+  "duration": 0.508367,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

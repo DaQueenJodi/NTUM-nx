@@ -87,7 +87,7 @@ if instance_exists(WepPickup) && !instance_exists(GenCont) && !instance_exists(L
 	}
 
 
-	if KeyCont.key_pick[p] = 1
+	if KeyCont.key_pick[p] = 1 && targetPickup.visible == true
 	{
 		KeyCont.key_pick[p] = 2;
 	if curse = 0||targetPickup.curse==curse or bwep = 0 || (cwep = 0 && ultra_got[31])//SWITCH OUR MODS DATA ASWELL!

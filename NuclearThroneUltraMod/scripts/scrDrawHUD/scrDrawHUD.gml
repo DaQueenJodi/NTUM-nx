@@ -507,7 +507,7 @@ function scrDrawHUD() {
 	//PICKUP STUFF
 	if instance_exists(Player.targetPickup)
 	{
-
+	if Player.targetPickup.visible == true
 	with Player.targetPickup
 	{
 

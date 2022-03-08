@@ -15,8 +15,9 @@ snd_play_2d(sndGrenade)
 //{
 with instance_create(x,y,SmallGrenade)
 {
-
-motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.creator.accuracy,9+random(3))//speed=10
+if other.isGold
+	sprite_index = sprSmallGoldGrenade
+motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.creator.accuracy,other.projectileSpeed+random(3))//speed=10
 image_angle = direction
 team = other.team
 //alarm[0] = 14//shorter fuse original 40 regular naddes 60

@@ -29,6 +29,8 @@ Explosive hammer a weapon that causes explosions on hitting walls or enemies
 Love bomber, a sticky nader that lobs hearts that explode into a heart shape and sometimes heals you (bloodlust odds)
 Inversion magnet (can be found in a certain big fishy skull if you are fast enough) 100% guarentee to cause inverted portals to appear, its also a terrible screwdriver
 Van Fan a new gamemode, survive the incoming vans! The only thing at your disposal is a tiny fan. Get it Van Fan...
+Vertical vans on loop 3 and beyond
+Ultra mods! a new modification to weapons/projectiles. Things can get crazy with these
 
 New weapons:
 Van Cannon new weapon that fires popo vans.
@@ -41,6 +43,24 @@ Obsidian Throwing knife (works like panda/chicken throw)
 Jawbreaker: early game weapon that fires two tiny eraser bursts on the side of the player. Centers much more with accuracy buffs
 Heavy grenade launcher
 Auto heavy grenade launcher because ofcourse
+Bouncer revolver earlygame pistol alternative
+Splinter shotgun
+Kraken disperse gun
+Splinter minigun
+Splinter bomb
+Rewirer (fires bolts that stick to walls and enemies and fire lasers between them)
+Flail quite long range melee weapon that deals damage more than once since it sticks around a little longer than most melee weapons
+Laser bomb launcher (heavy grenade with a laser cross upon exploding)
+Ion teleporter (kinda like atom's thronebutt)
+Super bouncer flak cannon
+Wall of bullets
+Bullet laser
+Muchas Pelotilla ( shotgun across the entire level )
+Muchas Láser (laser across the entier level)
+Golden jawbreaker
+Mini plasma gun (early game plasma gun)
+Splinter blade gun (blade gun that fires splinters while it rotates)
+Bouncer plasma
 
 Balance:
 Inverted bandits are slightly more aggressive and have 1 more hp
@@ -103,6 +123,8 @@ New Crown of Darkness.
 Reduced chance to get toxic mod (except for when you play Frog)
 Gold weapons are now easier to get
 Panda now wont reroll starting weapon
+Frogs gass from using the active deals 1 more damage than normal toxic and there is more of it
+Weapon smith will now no longer randomize the weapon it will use to take the highest tier from instead it will always take the highest
 
 
 Bugfix:
@@ -127,3 +149,4 @@ Now saving stats to random character aswell These stats will be saved to both th
 Fixed instant restart
 Skeleton's real Ultra D was disabled.
 Eagle eyes now shows content of gold chests
+Vans now spawn every level

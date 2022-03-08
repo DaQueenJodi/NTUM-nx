@@ -3526,10 +3526,10 @@ function scrFire() {
 
 	snd_play_fire(sndShotgun)
 
-	repeat(7)
+	repeat(9)
 	{
 	with instance_create(x,y,FreezeBullet)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(40)-20)*other.accuracy,12+random(6))
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(40)-20)*other.accuracy,14+random(6))
 	image_angle = direction
 	team = other.team}
 	}
