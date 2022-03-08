@@ -1,3 +1,35 @@
+if isog && GetPlayerUltramod() == ultramods.lightningKraken
+{
+	snd_play_fire(sndLightning1)
+	if ultra
+	{
+		with instance_create(x,y,UltraLightning)
+		{image_angle =other.image_angle
+		team = other.team
+		ammo = other.ammo
+		isog = false;
+		alarm[0] = 1;
+		visible = 0
+		with instance_create(x,y,LightningSpawn)
+		image_angle = other.image_angle}
+	}
+	else
+	{
+		with instance_create(x,y,Lightning)
+		{image_angle =other.image_angle
+		team = other.team
+		ammo = other.ammo
+		isog = false;
+		alarm[0] = 1;
+		visible = 0
+		with instance_create(x,y,LightningSpawn)
+		image_angle = other.image_angle}
+	}
+	instance_destroy(id,false);
+	exit;
+}
+isog = false;
+
 if instance_exists(target)
 dir = instance_nearest(x+lengthdir_x(80,direction),y+lengthdir_y(80,direction),target)
 var oldx, oldy;
@@ -49,6 +81,7 @@ if ammo > 0
 image_index += 0.4/ammo
 with instance_create(x,y,Tentacle)
 {
+	isog = other.isog;
 sprite_index=other.sprite_index;
 ion=other.ion;
 accuracy=other.accuracy;

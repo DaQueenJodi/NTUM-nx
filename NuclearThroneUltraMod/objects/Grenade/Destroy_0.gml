@@ -1,4 +1,7 @@
 //event_inherited();
+if (!canExplodeBlade && (object_index == Grenade) && GetPlayerUltramod() == ultramods.bladeGrenade)
+	exit;
+	
 if sticky = 1
 {
 

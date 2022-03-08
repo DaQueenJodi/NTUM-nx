@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndMutant6LowA",
-  "duration": 0.0,
+  "duration": 0.941043,
   "parent": {
     "name": "YV",
     "path": "folders/Sounds/Player/YV.yy",

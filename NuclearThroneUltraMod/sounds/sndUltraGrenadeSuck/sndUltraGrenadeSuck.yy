@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndUltraGrenadeSuck",
-  "duration": 0.0,
+  "duration": 1.574781,
   "parent": {
     "name": "Ultra",
     "path": "folders/Sounds/Weapons/Ultra.yy",

@@ -22,4 +22,6 @@ wallbounce+=5;
 }
 
 typ = 1 
+dmg = 20;
 
+alarm[11] = 1;

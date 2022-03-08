@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndGrenade",
-  "duration": 0.0,
+  "duration": 1.199184,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndPlasma",
-  "duration": 0.0,
+  "duration": 0.814671,
   "parent": {
     "name": "plasma",
     "path": "folders/Sounds/Weapons/Energy/plasma.yy",

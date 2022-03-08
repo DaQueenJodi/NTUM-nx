@@ -1,4 +1,43 @@
 if instance_exists(Player){
+	if isog && GetPlayerUltramod() == ultramods.lightningKraken
+	{
+		snd_play_fire(choose(sndWater1,sndWater2) );
+		with instance_create(x,y,Tentacle)
+		{image_angle = other.image_angle;
+			if instance_exists(Implosion)
+			{
+				creator = Implosion.id;
+			}
+			else if instance_exists(ElectroBall)
+			{
+				creator = instance_nearest(x,y,ElectroBall);	
+			}
+			else {
+				creator = Player.id;	
+			}
+		team = other.team
+		ammo = other.ammo
+		isog = false;
+		alarm[0] = 1;
+		visible = 0
+		with instance_create(x,y,LightningSpawn)
+		{
+		sprite_index=sprTentacleSpawn
+		image_angle = other.image_angle
+		}
+		repeat(3){
+		    with instance_create(x,y,FishBoost)
+		    {
+		    motion_add(image_angle+random(60)-30,2+random(4) );
+		    }}
+
+		}
+		
+		instance_destroy(id,false);
+		exit;
+	}
+	isog = false;
+	
 if Player.ultra_got[43]&&instance_exists(Marker)//hunter focused fire
 {accuracy-=2;}
 if Player.ultra_got[42]//hunter never miss
@@ -59,6 +98,7 @@ if ammo > 0
 image_index += 0.4/ammo
 with instance_create(x,y,Lightning)
 {
+	isog = other.isog;
 accuracy=other.accuracy;
 direction = other.direction
 image_angle = direction

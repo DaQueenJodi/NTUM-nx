@@ -7,3 +7,4 @@ typ = 2 //0 = nothing, 1 = deflectable, 2 = destructable
 snd = sndRocketFly
 snd_play(snd)
 
+alarm[11] = 1;

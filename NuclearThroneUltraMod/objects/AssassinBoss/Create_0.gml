@@ -23,7 +23,7 @@ spr_stunned = sprAssassinBossStunned
 snd_hurt = sndAssassinHit
 snd_dead = sndAssassinDie
 
-snd_play(sndAssassinGetUp)
+snd_play_2d(sndAssassinGetUp)
 
 //behavior
 walk = 0

@@ -15,6 +15,5 @@ image_xscale=1;
 else
 image_xscale=-1;
 
-if speed>4
-speed=4;
-
+if speed>4.5
+speed=4.5;

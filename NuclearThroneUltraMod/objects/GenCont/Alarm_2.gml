@@ -80,14 +80,14 @@ if Player.area = 100
 			}
 			instance_create(xx,yy,SurvivalWave);
 			var oy = yy;
-			for (var ix = 0; ix < 8; ix++) {
+			for (var ix = 0; ix < 10; ix++) {
 				yy = oy;
-				for (var iy = 0; iy < 8; iy++) {
+				for (var iy = 0; iy < 10; iy++) {
 				    with instance_create(xx,yy,Floor)
 					{
 						styleb = 0;	
 					}
-					if iy == 4 && ix == 4
+					if iy == 5 && ix == 4 + max(0,sign(xstep))
 					{
 						instance_create(xx,yy,SurvivalArenaStarter);
 					}

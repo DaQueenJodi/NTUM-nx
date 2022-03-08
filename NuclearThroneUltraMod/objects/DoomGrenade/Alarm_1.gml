@@ -1,4 +1,4 @@
-alarm[1] = 3+random(3)
+alarm[1] = 3;
 
 
 if !instance_exists(target)
@@ -18,16 +18,16 @@ if target > 0
 if collision_line(x,y,target.x,target.y,Wall,0,0) < 0 and point_distance(x,y,target.x,target.y) < 600
 {
 
-motion_add(point_direction(x,y,target.x,target.y),0.8)
-mp_potential_step(target.x,target.y,2,false)
+	motion_add(point_direction(x,y,target.x,target.y),0.8)
+	mp_potential_step(target.x,target.y,2,false)
 
-walk=9;
-alarm[1]=walk;
+	walk=5;
+	alarm[1]=walk;
 
-if target.x < x
-right = -1
-else if target.x > x
-right = 1
+	if target.x < x
+		right = -1
+	else if target.x > x
+		right = 1
 }
 else if random(4) < 3
 {

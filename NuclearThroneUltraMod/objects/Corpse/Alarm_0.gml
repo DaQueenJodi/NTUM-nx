@@ -1,4 +1,4 @@
-if UberCont.opt_gamemode == 25
+if instance_exists(SurvivalWave)
 	exit;
 if instance_number(enemy) == (instance_number(IDPDVan))
 {

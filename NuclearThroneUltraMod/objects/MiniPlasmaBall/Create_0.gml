@@ -20,5 +20,4 @@ direction=originalDirection;
 image_speed = 0.5
 resetSpeed=false;
 
-/* */
-/*  */
+alarm[11] = 1;

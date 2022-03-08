@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndMutant1Crwn",
-  "duration": 0.0,
+  "duration": 1.434671,
   "parent": {
     "name": "Fish",
     "path": "folders/Sounds/Player/Fish.yy",

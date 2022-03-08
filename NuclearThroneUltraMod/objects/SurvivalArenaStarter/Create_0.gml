@@ -1,4 +1,6 @@
 /// @description Init
+image_speed = 0;
+var dis = 48;
 if (UberCont.opt_gamemode == 25)
 {
 	if instance_exists(Player)
@@ -11,7 +13,6 @@ if (UberCont.opt_gamemode == 25)
 		//Won't come here
 		name = "START WAVE 1";	
 	}
-	image_speed = 0;
 	var dis = 48;
 	instance_create(x - dis,y - dis,OldTorch);
 	instance_create(x + dis,y - dis,OldTorch);
@@ -21,7 +22,6 @@ if (UberCont.opt_gamemode == 25)
 else
 {
 	name = "TAKE THE CHALLENGE?";
-	var dis = 48;
 	instance_create(x - dis,y - dis,Torch);
 	instance_create(x + dis,y - dis,Torch);
 	instance_create(x + dis,y + dis,Torch);

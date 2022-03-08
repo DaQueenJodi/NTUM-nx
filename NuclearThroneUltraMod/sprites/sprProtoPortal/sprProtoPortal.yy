@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "portal",
-    "path": "folders/Sprites/portal.yy",
+    "path": "folders/Sprites/CrownVault/portal.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprProtoPortal",

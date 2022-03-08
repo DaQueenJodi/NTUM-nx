@@ -201,14 +201,13 @@ room_speed=35;
     
     with WepPickup
     {
-    if persistent = true
-    {
-    persistent = false
-    
-    x = Player.x
-    y = Player.y
-    motion_add(random(360),1.5+random(1))
-    }
+	    if persistent = true
+	    {
+		    persistent = false
+		    x = Player.x
+		    y = Player.y
+		    motion_add(random(360),1.5+random(1))
+	    }
     }
     
     
@@ -220,8 +219,8 @@ room_speed=35;
     with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/3+random(300)-150,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/3+random(300)-150,Floor)
     {
     
-    with instance_create(x+16,y+16,PermanentDisc)
-    motion_add(random(360),2+random(5) )
+	    with instance_create(x+16,y+16,PermanentDisc)
+			motion_add(random(360),2+random(5) )
     
     }
     

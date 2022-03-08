@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndUltraLaser",
-  "duration": 0.0,
+  "duration": 1.540719,
   "parent": {
     "name": "Ultra",
     "path": "folders/Sounds/Weapons/Ultra.yy",

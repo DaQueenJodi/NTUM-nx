@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndHeavyMachinegun",
-  "duration": 0.0,
+  "duration": 0.429375,
   "parent": {
     "name": "Bullet",
     "path": "folders/Sounds/Weapons/Bullet.yy",

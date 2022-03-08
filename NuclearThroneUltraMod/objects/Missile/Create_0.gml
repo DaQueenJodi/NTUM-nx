@@ -9,3 +9,4 @@ alarm[0]=6
 
 //mask_index=mskPickupThroughWall;
 
+alarm[11] = 1;

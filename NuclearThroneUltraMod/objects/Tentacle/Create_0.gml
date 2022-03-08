@@ -20,6 +20,5 @@ if Player.skill_got[19]==1
 accuracy=5;
 }
 }
-
-/* */
-/*  */
+ultra = false;
+isog = true;

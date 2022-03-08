@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndRocket",
-  "duration": 0.0,
+  "duration": 0.77068,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

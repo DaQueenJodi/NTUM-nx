@@ -16,7 +16,7 @@ if other.team != team && other.team != 2
 		}
 	}
 }
-else if other.team=2 && other.team!=team && image_xscale>0.22
+else if other.team=2 && other.team!=team && image_xscale>0.22 && alarm[11] < 1
 {
 	//Hit player
     with other

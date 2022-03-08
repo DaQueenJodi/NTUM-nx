@@ -1,3 +1,4 @@
+if !instance_exists(SurvivalWave)
 with MusCont
 {
 //optimise sound_discard(song)
@@ -37,7 +38,7 @@ if instance_exists(Player)
 }
 event_inherited()
 
-if oasis
+if oasis && !instance_exists(SurvivalWave)
 {
 instance_create(x,y,Portal);
 with Player

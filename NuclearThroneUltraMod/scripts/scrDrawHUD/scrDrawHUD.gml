@@ -242,11 +242,13 @@ function scrDrawHUD() {
 	draw_sprite_part_smart(spr,1,sprite_get_xoffset(spr),sprite_get_yoffset(spr)-8,wid,14,__view_get( e__VW.XView, 0 )+24,__view_get( e__VW.YView, 0 )+16,c_black,1)
 	draw_sprite_part_smart(spr,1,sprite_get_xoffset(spr),sprite_get_yoffset(spr)-8,max(0,wid*min(Player.wep_load[Player.wep],Player.reload/Player.wep_load[Player.wep])),14,__view_get( e__VW.XView, 0 )+24,__view_get( e__VW.YView, 0 )+16,c_white,0.5)
 
+	//Ultramod
+	draw_sprite(sprUltraModIcon,Player.ultramod,__view_get( e__VW.XView, 0 )+14,__view_get( e__VW.YView, 0 )+58);
 	//WEAPON MODS!
-	draw_sprite(sprModHUD,Player.wepmod1,__view_get( e__VW.XView, 0 )+18,__view_get( e__VW.YView, 0 )+30);
-	draw_sprite(sprModHUD,Player.wepmod2,__view_get( e__VW.XView, 0 )+28,__view_get( e__VW.YView, 0 )+30);
-	draw_sprite(sprModHUD,Player.wepmod3,__view_get( e__VW.XView, 0 )+38,__view_get( e__VW.YView, 0 )+30);
-	draw_sprite(sprModHUD,Player.wepmod4,__view_get( e__VW.XView, 0 )+48,__view_get( e__VW.YView, 0 )+30);
+	draw_sprite(sprModHUD,Player.wepmod1,__view_get( e__VW.XView, 0 )+18,__view_get( e__VW.YView, 0 )+29);
+	draw_sprite(sprModHUD,Player.wepmod2,__view_get( e__VW.XView, 0 )+28,__view_get( e__VW.YView, 0 )+29);
+	draw_sprite(sprModHUD,Player.wepmod3,__view_get( e__VW.XView, 0 )+38,__view_get( e__VW.YView, 0 )+29);
+	draw_sprite(sprModHUD,Player.wepmod4,__view_get( e__VW.XView, 0 )+48,__view_get( e__VW.YView, 0 )+29);
 
 	if Player.wep_type[Player.wep] != 0
 	{
@@ -653,18 +655,63 @@ function scrDrawHUD() {
 
 	with WeaponMod
 	{
-	if place_meeting(x,y,Player)
-	{
-	draw_sprite(sprEPickup,UberCont.opt_gamepad,x+8,y)
+		if place_meeting(x,y,Player)
+		{
+			draw_sprite(sprEPickup,UberCont.opt_gamepad,x+8,y)
 
-	draw_set_color(c_black)
-	draw_text(x+16,y,string_hash_to_newline(string(name)))
-	draw_text(x+17,y,string_hash_to_newline(string(name)))
-	draw_text(x+17,y-1,string_hash_to_newline(string(name)))
-	draw_set_color(c_white)
-	draw_text(x+16,y-1,string_hash_to_newline(string(name)))
-	//draw_sprite(sprAmmoPointer,0,view_xview+5-10+type*10,view_yview+32+12)
+			draw_set_color(c_black)
+			draw_text(x+16,y,string_hash_to_newline(string(name)))
+			draw_text(x+17,y,string_hash_to_newline(string(name)))
+			draw_text(x+17,y-1,string_hash_to_newline(string(name)))
+			draw_set_color(c_white)
+			draw_text(x+16,y-1,string_hash_to_newline(string(name)))
+			//draw_sprite(sprAmmoPointer,0,view_xview+5-10+type*10,view_yview+32+12)
+		}
 	}
+	with UltraMod
+	{
+		if place_meeting(x,y,Player)
+		{
+			var rstring = "";
+			var lstring = "";
+			if swapper == -1
+			{
+				rstring = ultramodName[1];
+				lstring = ultramodName[0];
+			}
+			else
+			{
+				rstring = ultramodName[0];
+				lstring = ultramodName[1];
+			}
+			var yy = y - 32;
+			var btw = " <=> ";
+			var btwh = string_width(btw)*0.5;
+			draw_sprite(sprEPickup,UberCont.opt_gamepad,x,yy-4)
+			draw_set_color(c_black)
+			draw_set_halign(fa_left);
+			var xx = x - ( string_width(lstring) + btwh)
+			draw_text(xx,yy,lstring)
+			draw_text(xx+1,yy,lstring)
+			draw_text(xx+1,yy-1,lstring)
+			draw_set_color(c_white)
+			draw_text(xx,yy-1,lstring)
+			xx = x - btwh;
+			draw_set_color(c_black)
+			draw_text(xx,yy,btw)
+			draw_text(xx+1,yy,btw)
+			draw_text(xx+1,yy-1,btw)
+			draw_set_color(c_white)
+			draw_text(xx,yy-1,btw)
+			xx = x + btwh//+ ( string_width(lstring) + (string_width(" <=> ")*0.5))
+			draw_set_color(c_black)
+			draw_text(xx,yy,rstring)
+			draw_text(xx+1,yy,rstring)
+			draw_text(xx+1,yy-1,rstring)
+			draw_set_color(c_white)
+			draw_text(xx,yy-1,rstring)
+			draw_set_halign(fa_center)
+		}
 	}
 
 	with ProtoStatue

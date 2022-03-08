@@ -69,34 +69,34 @@ if ( (Player.race==11)&&(Player.ultra_got[41]==1)   )
     
     
     //WEAPON MODS!
-if other.team=Player.team || other.object_index=Disc || other.object_index=ToxicGas || other.object_index=ToxicThrowerGas
+if other.team = Player.team || other.object_index=Disc || other.object_index=ToxicGas || other.object_index=ToxicThrowerGas
 {
 scrModHit();
 
 scrHumphryHit();
+	if Player.ultra_got[100] && team != other.team
+	{
+	//	gunangle=random(360)
+		target = -1;
+		walk = 0;
 
-if Player.ultra_got[100]
-{
-gunangle=random(360)
-target=-1;
-walk=0;
-
-if alarm[1]<90 && alarm[1] > 0
-{
-alarm[1]+=30;
-if Player.skill_got[5]
-	alarm[1] += 20;
-	
-if my_health>0
-instance_create(x,y-6,SleepFX);
-
-}
+		var amount = Player.reload * 0.6;
+		if Player.skill_got[5]
+			var amount = Player.reload * 0.8;
+		else
+			var amount = Player.reload * 0.6;
+		
+		if alarm[1] > 0 && my_health > 0
+		{
+			alarm[1] += amount;
+			instance_create(x,y-6,SleepFX);
+		}
 
 
-if alarm[2]>1
-alarm[2]=0;
+		//if alarm[2]>1
+		//alarm[2]=0;
 
-}
+	}
 
 }    
    

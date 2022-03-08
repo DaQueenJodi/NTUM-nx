@@ -5,3 +5,4 @@ candmg=true;
 dmg = 20;
 boltStick = BoltStick;
 hitEntities = [];
+alarm[11] = 1;

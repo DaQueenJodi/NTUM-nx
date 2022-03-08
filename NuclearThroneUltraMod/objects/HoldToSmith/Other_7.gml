@@ -1,4 +1,4 @@
-/// @description EAT
+/// @description COMBINE
 with Player
 {
 	if bwep!=0
@@ -14,10 +14,7 @@ with Player
 	    bwep=9//minigun tier 6
     
 	    //GO through array and check if there is a weapon of a higher  tier first
-	    if random(2)<1
-	    highesttier=wep_area[wep];
-	    else
-	    highesttier=wep_area[bwep];
+	    highesttier = max(wep_area[wep],wep_area[bwep]);
     
 	    if highesttier=-1||highesttier=99
 	    highesttier=irandom(4);

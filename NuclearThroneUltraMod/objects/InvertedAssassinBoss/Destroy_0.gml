@@ -11,7 +11,7 @@ if mask_index=other.mask_index
 speed=0;
 
 }
-
+if !instance_exists(SurvivalWave)
 with MusCont
 {
 //optimise sound_discard(song)

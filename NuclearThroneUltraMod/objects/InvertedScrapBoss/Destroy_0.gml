@@ -1,3 +1,4 @@
+if !instance_exists(SurvivalWave)
 with MusCont
 {
 audio_stop_sound(song)

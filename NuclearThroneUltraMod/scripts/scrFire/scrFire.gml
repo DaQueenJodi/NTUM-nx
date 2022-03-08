@@ -3487,7 +3487,7 @@ function scrFire() {
 	case 145:
 
 	snd_play_fire(sndGrenade)
-
+	snd_play_fire(sndHyperLauncher)
 	with instance_create(x,y,LineFire)
 	{
 	direction = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)*other.accuracy
@@ -3506,7 +3506,7 @@ function scrFire() {
 	case 146:
 
 	snd_play_fire(sndGrenade)
-
+	snd_play_fire(sndHyperLauncher)
 	with instance_create(x,y,LineToxic)
 	{
 	direction = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)*other.accuracy
@@ -3967,7 +3967,7 @@ function scrFire() {
 	case 164:
 
 	snd_play_fire(sndBloodLauncher)
-
+	snd_play_fire(sndHyperLauncher)
 	with instance_create(x,y,LineBlood)
 	{
 	direction = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)*other.accuracy
@@ -4011,7 +4011,7 @@ function scrFire() {
 	rate=1//for extra speed more bullets per step
 	Direction=point_direction(x,y,mouse_x,mouse_y);
 	creator = other.id
-	ammo = 10
+	ammo = 14
 	totalammo = ammo;
 	time = 1
 	team = other.team
@@ -4037,7 +4037,7 @@ function scrFire() {
 	rate=4//for extra speed more bullets per step
 	Direction=point_direction(x,y,mouse_x,mouse_y);
 	creator = other.id
-	ammo = 40
+	ammo = 45
 	totalammo = ammo;
 	time = 1
 	team = other.team
@@ -4089,7 +4089,7 @@ function scrFire() {
 	rate=4//for extra speed more bullets per step
 	Direction=point_direction(x,y,mouse_x,mouse_y);
 	creator = other.id
-	ammo = 120
+	ammo = 140
 	totalammo = ammo;
 	time = 1
 	team = other.team

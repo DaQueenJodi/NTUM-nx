@@ -255,7 +255,7 @@ function scrUltras() {
 	    ultra_tips[55] = "rise above"
     
 	    ultra_name[56] = "BLASPHEMY"
-	    ultra_text[56] = "MORE MELEE SPEED#YOU NO LONGER#GET RANDOM WEAPONS#AFTER EXITING A PORTAL#THROWS BOUNCE TOWARDS ENEMIES"
+	    ultra_text[56] = "MORE MELEE SWING SPEED#YOU NO LONGER#GET RANDOM WEAPONS#AFTER EXITING A PORTAL#THROWS BOUNCE TOWARDS ENEMIES"
 	    ultra_tips[56] = "survival above pacifism"
     
 	//ATOM 
@@ -307,7 +307,7 @@ function scrUltras() {
 	    ultra_text[64] = "WHENEVER YOU LOSE A PIECE OF ARMOUR#YOU CLEAR ALL PROJECTILES#AND DEAL A MASSIVE AMOUNT OF DAMAGE#TO ALL ENEMIES ON SCREEN"
 	    ultra_tips[64] = "rogue is jelous"
     
-	//WEAPONSMITH 
+	//WEAPON SMITH 
 	ultra_name[65] = "WEAPON MODDER"
 	ultra_text[65] = "IN EVERY AREA#A WEAPON MOD SPAWNS#INCREASE HOW OFTEN MODS TRIGGER"
 	ultra_tips[65] = "modder"
@@ -317,7 +317,7 @@ function scrUltras() {
 	ultra_tips[66] = "craft changer"
 
 	ultra_name[67] = "ONE WITH THE GUN"
-	ultra_text[67] = "INCREASED FIRE RATE AND#REDUCED AMMO COST#FOR ALL WEAPONS EXCLUDING MELEE#DECREASED MELEE FIRE RATE"
+	ultra_text[67] = "INCREASED FIRE RATE AND#REDUCED AMMO COST#FOR ALL WEAPONS EXCLUDING MELEE#DECREASED MELEE SWING RATE"
 	ultra_tips[67] = "new meta"
 
 	ultra_name[68] = "SCRAP FINDER"

@@ -20,6 +20,12 @@ function scrSpawnSurvivalWaveReward(){
 	
 	switch (wave)
 	{
+		case 1:
+			instance_create(x,y+96,EliteWeaponChest);
+		break;
+		case 2:
+			instance_create(x,y+96,EliteWeaponChest);
+		break;
 		case 4:
 			with instance_create(x+64,y+96,WeaponMod)
 				image_xscale = -1;

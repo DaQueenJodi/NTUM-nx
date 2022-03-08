@@ -1,4 +1,16 @@
 if(instance_exists(Player)){
+	if isog && GetPlayerUltramod() == ultramods.heavyBoltMegaLaser
+	{
+		audio_stop_sound(sndMegaLaser);
+		snd_play(sndHeavyCrossbow);
+		instance_destroy(id,false);
+		with instance_create(x,y,HeavyBolt)
+		{motion_add(other.image_angle,24)
+		image_angle = direction
+		team = other.team
+		alarm[11] = 0;}
+	}
+	isog = false;
 if (Player.race=11 && Player.ultra_got[42]==1 && aimed=false)//HUNTER ULTRA B Homing projectiles
 {
 aimed=true;

@@ -6,6 +6,6 @@ event_inherited();
 alarm[0] = 10;//Can spawn pickup
 returnFX = false;
 dontteleport = true;
-dmg = 40;
+dmg = 50;
 stopSpeed = 1;
 pierce = true;

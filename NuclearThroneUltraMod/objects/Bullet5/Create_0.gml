@@ -21,3 +21,4 @@ wallbounce+=5;
 
 typ = 1
 
+alarm[11] = 1;

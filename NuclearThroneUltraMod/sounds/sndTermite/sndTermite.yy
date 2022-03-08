@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.6,
   "preload": true,
   "bitRate": 192,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndTermite",
-  "duration": 0.0,
+  "duration": 0.505283,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/Enemies.yy",

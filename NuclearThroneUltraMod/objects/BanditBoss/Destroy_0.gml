@@ -1,4 +1,4 @@
-if UberCont.opt_gamemode != 25
+if !instance_exists(SurvivalWave)
 with MusCont
 {
 //optimise sound_discard(song)
@@ -40,7 +40,7 @@ sprite_index = wep_sprt[69]
 }}
 event_inherited()
 
-if oasis
+if oasis && !instance_exists(SurvivalWave)
 {
 instance_create(x,y,Portal);
 with Player

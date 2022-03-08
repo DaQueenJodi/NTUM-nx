@@ -1,8 +1,7 @@
-function scrLightningWeapons(argument0) {
-	if (argument0=57 || argument0=58 || argument0=59 || argument0=101 || argument0=120 || 
-	argument0=124 || argument0=125 || argument0=144 || argument0=245 || argument0=257 || argument0 = 337 ||
-	argument0=321 || argument0=63 || argument0=63 || argument0=344 || argument0 = 345 
-	|| argument0 = 347 || ( argument0=352 && wep_type[argument0]=5 ) || ( argument0=323 && wep_type[argument0]=5 ))
+function scrLightningWeapons(targetWep) {
+	if (string_copy(wep_name[targetWep],0,8) == "LIGHTNING" || string_copy(wep_name[targetWep],0,6) == "ELECTRO" || targetWep=120 || 
+	targetWep=144 || targetWep = 337 || targetWep=63
+	|| targetWep = 347 || ( targetWep=352 && wep_type[targetWep]=5 ) || ( targetWep=323 && wep_type[targetWep]=5 ))
 	return true
 	else
 	return false

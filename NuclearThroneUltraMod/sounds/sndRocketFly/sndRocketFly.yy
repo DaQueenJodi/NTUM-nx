@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndRocketFly",
-  "duration": 0.0,
+  "duration": 1.706667,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

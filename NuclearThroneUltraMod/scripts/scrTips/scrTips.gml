@@ -46,7 +46,7 @@ function scrTips() {
 	"kraken pulls enemies towards you",
 	"doing alright",
 	"there are other worlds out there",
-	/*more rares*/choose("try not to get mad","be kind",
+	/*more rares*/choose("try not to get mad","be kind","the original idea for the name trashtalk#came from lars in a stream# he made a lot of the sounds in ultra mod",
 	"maybe you should play better","if you ever get stuck#outside a level#walk far away#from the level to get teleported back","use wasd to move","don't get baited by items","ask and ye shall receive","you smell that?","sick build bro","what does your gun tell you?","don't get baited by items"
 	,"thematically inconsistent!","if you reach loop 2#your level cap increases by 1","skeleton has#a fifth ultra mutation","don't be afraid to pick up new weapons",choose("28 EGGS FOR BREAKFAST","shit on my tits","never pick hanzo","microtransactions","if you are seeing this#you are fucking aswesome")/*super rare*/
 	)
@@ -146,7 +146,7 @@ function scrTips() {
 	if Player.area = 115
 	tip = choose("cheese caves","cursed caves","gouda")//Fun fact I used to live in Gouda
 	if Player.area = 116
-	tip = choose("survival arena")
+	tip = choose("survival arena","when starting a wave#chests and weapon drops get destroyed")
 	if Player.area = 117
 	tip = choose("nono popo")
 	}

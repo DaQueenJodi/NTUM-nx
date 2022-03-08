@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndWater1",
-  "duration": 0.0,
+  "duration": 0.858688,
   "parent": {
     "name": "Explosive",
     "path": "folders/Sounds/Weapons/Explosive.yy",

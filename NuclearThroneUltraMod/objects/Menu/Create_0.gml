@@ -174,7 +174,7 @@ break;
 //break;
 case 18:
 char[18].sprite_index=sprMutant18Idle
-char[18].depth--;
+//char[18].depth--;
 break;
 case 19:
 char[19].sprite_index=sprMutant19Idle

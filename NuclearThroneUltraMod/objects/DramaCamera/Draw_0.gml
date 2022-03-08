@@ -16,12 +16,12 @@ depth = -99
 }
 with LilHunter
 {
-snd_play(sndLilHunterAppear)
+snd_play_2d(sndLilHunterAppear)
 depth = -99
 }
 with InvertedLilHunter
 {
-snd_play(sndLilHunterAppear)
+snd_play_2d(sndLilHunterAppear)
 depth = -99
 }
 with ScrapBoss

@@ -11,7 +11,6 @@ if instance_exists(Player)
 {
 	waveNumber = Player.subarea - waveNumberOffset
 }
-debug("waveNumber "+string(waveNumber));
 with WepPickup
 {
 	instance_destroy();
@@ -1008,7 +1007,7 @@ repeat(1+loops)
 			};
 			wave[i] = {
 				obj: VanSpawn,
-				time: 60,
+				time: 140,
 				xx: centerX-128,
 				yy: centerY
 			};

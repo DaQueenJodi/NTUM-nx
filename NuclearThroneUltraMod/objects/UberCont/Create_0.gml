@@ -75,3 +75,34 @@ if !opt_fulscrn
 	window_set_size(640*2,480*2);
 	
 canRestart = true;
+
+enum ultramods {
+	nothing,
+	
+	bulletPellet,
+	laserHeavyBullet,
+	lightningKraken,
+	toxicFire,
+	
+	plasmaFlak,
+	boltPlasma,
+	plasmaRocket,
+	grenadeRocket,
+	
+	boltRocket,
+	boltLaser,
+	heavyBoltNuke,
+	seekerMissile,
+	
+	slugFatBullet,
+	boltSlug,
+	splinterBullet,
+	splinterPellet,
+	
+	splinterElectro,
+	bulletMiniPlasma,
+	heavyBoltMegaLaser,
+	bladeGrenade,
+	
+}
+maxUltramod = 16;

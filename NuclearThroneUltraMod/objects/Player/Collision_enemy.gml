@@ -16,7 +16,7 @@ if other.team != team
 		{
 			contactDmg += 2;
 			if ultra_got[58]
-				contactDmg += 5;
+				contactDmg += 6;
 		}
 		if contactDmg > 0
 		{
@@ -44,7 +44,7 @@ if other.team != team
 	}
 
 	//if(alarm[0]<1){
-	if other.meleedamage > 0 && other.existTime > 40 && meleeimmunity<1 && alarm[3] < 1//is it a melee enemy?
+	if other.meleedamage > 0 && other.existTime > 30 && meleeimmunity<1 && alarm[3] < 1//is it a melee enemy?
 	{
 	meleeimmunity=15;
 	    if (other.my_health<=0)

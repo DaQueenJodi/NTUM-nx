@@ -1192,7 +1192,7 @@ function scrPowers() {
 	    {
     
 	    if toxicamount = floor(maxtoxicamount*0.1)
-	    instance_create(x,y,FrogEgg);
+			instance_create(x,y,FrogEgg);
     
 	    }
     
@@ -1826,11 +1826,11 @@ function scrPowers() {
 	repeat(toxicamount)
 	{
 
-	with instance_create(x,y,ToxicGas)
-	{
-		motion_add(random(360),1.3+random(2)+(other.skill_got[5]*2));
-	}
-
+		with instance_create(x,y,ToxicGas)
+		{
+			motion_add(random(360),1.3+random(2)+(other.skill_got[5]*2));
+			dmg += 1;
+		}
 	}
 
 	toxicamount=0;

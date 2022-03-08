@@ -1,4 +1,4 @@
-if UberCont.opt_bossintro=0 || UberCont.opt_gamemode == 25{
+if UberCont.opt_bossintro=0 || instance_exists(SurvivalWave){
 instance_destroy();
 exit;}
 

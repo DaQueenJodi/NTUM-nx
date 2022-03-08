@@ -33,6 +33,18 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
 		thing.mytext = "wep";
 	}
+	if keyboard_check_pressed(ord("B")) {
+		wepmod1 ++;
+		wepmod2 ++;
+		wepmod3 ++;
+		wepmod4 ++;
+	}
+	if keyboard_check_pressed(ord("N")) {
+		wepmod1 --;
+		wepmod2 --;
+		wepmod3 --;
+		wepmod4 --;
+	}
 	if keyboard_check_pressed(vk_numpad1) {
 		repeat(3) {
 			var dangle = random(1)*360;
@@ -204,6 +216,18 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			scrWeaponHold();
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
+	    }
+	if (keyboard_check_pressed(ord("5")))
+	    {
+			ultramod --;
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "Ultramod -- "+string(ultramod);
+	    }
+	if (keyboard_check_pressed(ord("6")))
+	    {
+			ultramod ++;
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "Ultramod ++ "+string(ultramod);
 	    }
 	if (keyboard_check_pressed(ord("F")))
 	    {

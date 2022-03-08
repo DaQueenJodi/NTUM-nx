@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndUltraGrenade",
-  "duration": 0.0,
+  "duration": 0.884531,
   "parent": {
     "name": "Ultra",
     "path": "folders/Sounds/Weapons/Ultra.yy",

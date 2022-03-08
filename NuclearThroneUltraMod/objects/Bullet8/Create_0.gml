@@ -12,5 +12,4 @@ turned=false;
 
 alarm[0]=2;
 
-/* */
-/*  */
+alarm[11] = 1;

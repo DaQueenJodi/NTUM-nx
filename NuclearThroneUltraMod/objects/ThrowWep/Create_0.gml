@@ -41,7 +41,7 @@ if instance_exists(Player)
 	dmg=(13+2*Player.level)*multiplier
 }
 else
-dmg=13;//22
+	dmg=13;//22
 
 dontteleport=false;
 returnFX = true;
