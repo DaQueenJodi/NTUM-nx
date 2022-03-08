@@ -37,9 +37,6 @@ with Floor
 if instance_exists(TopCont)
 	TopCont.darkness = 0;
 
-alarm[1] = 1;
-exit;
-//TEMP
 var i = 0;
 var waveType = choose(0,0);
 switch (waveType)

@@ -1147,7 +1147,7 @@ function scrFire2() {
 	rate=10//for extra speed more bullets per step
 	Direction=point_direction(x,y,mouse_x,mouse_y);
 	creator = other.id
-	ammo = 30
+	ammo = 45
 	totalammo = ammo;
 	time = 1
 	team = other.team

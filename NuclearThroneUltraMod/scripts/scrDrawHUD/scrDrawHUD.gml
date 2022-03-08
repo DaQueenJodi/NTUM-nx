@@ -243,7 +243,7 @@ function scrDrawHUD() {
 	draw_sprite_part_smart(spr,1,sprite_get_xoffset(spr),sprite_get_yoffset(spr)-8,max(0,wid*min(Player.wep_load[Player.wep],Player.reload/Player.wep_load[Player.wep])),14,__view_get( e__VW.XView, 0 )+24,__view_get( e__VW.YView, 0 )+16,c_white,0.5)
 
 	//Ultramod
-	draw_sprite(sprUltraModIcon,Player.ultramod,__view_get( e__VW.XView, 0 )+14,__view_get( e__VW.YView, 0 )+58);
+	draw_sprite(sprUltraModIcon,Player.ultramod,__view_get( e__VW.XView, 0 )+14,__view_get( e__VW.YView, 0 )+59);
 	//WEAPON MODS!
 	draw_sprite(sprModHUD,Player.wepmod1,__view_get( e__VW.XView, 0 )+18,__view_get( e__VW.YView, 0 )+29);
 	draw_sprite(sprModHUD,Player.wepmod2,__view_get( e__VW.XView, 0 )+28,__view_get( e__VW.YView, 0 )+29);

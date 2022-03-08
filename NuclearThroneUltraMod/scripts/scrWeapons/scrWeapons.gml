@@ -2620,7 +2620,7 @@ function scrWeapons() {
 	wep_load[237] = 38
 	wep_cost[237] = 4
 	wep_sprt[237] = sprSpiralSlashDirectorShotgun
-	wep_area[237] = 10
+	wep_area[237] = 9
 	wep_text[237] = "click click click"
 	wep_swap[237] = sndSwapShotgun
 	wep_rad[237] = 0;

@@ -19,7 +19,10 @@ if instance_exists(Player)
 		snd_play_2d(Player.snd_lowh);
 		with Floor
 		{
-			sprite_index = sprFloor100;	
+			if styleb
+			sprite_index = sprFloor100C;
+			else
+			sprite_index = sprFloor100;
 		}
 		with FloorExplo
 		{

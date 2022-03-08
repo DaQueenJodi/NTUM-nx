@@ -25,7 +25,17 @@ if UberCont.opt_gamemode != 25
 			}
 			yy += ystep;
 		}
-		
+		with Floor
+		{
+			if styleb
+			sprite_index = sprFloor100C;
+			else
+			sprite_index = sprFloor100;
+		}
+		with FloorExplo
+		{
+			sprite_index = sprFloor100Explo;	
+		}
 		with MusCont
 		{
 			audio_stop_sound(song);

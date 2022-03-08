@@ -2982,7 +2982,7 @@
     {"id":{"name":"sndGrenadeRifle","path":"sounds/sndGrenadeRifle/sndGrenadeRifle.yy",},"order":13,},
     {"id":{"name":"sndSnowBlowerLoop","path":"sounds/sndSnowBlowerLoop/sndSnowBlowerLoop.yy",},"order":15,},
     {"id":{"name":"sprCrownPedCloseNew","path":"sprites/sprCrownPedCloseNew/sprCrownPedCloseNew.yy",},"order":0,},
-    {"id":{"name":"sprModHolderDead","path":"sprites/sprModHolderDead/sprModHolderDead.yy",},"order":16,},
+    {"id":{"name":"sprUltraModHolderDead","path":"sprites/sprUltraModHolderDead/sprUltraModHolderDead.yy",},"order":16,},
     {"id":{"name":"sndWater1","path":"sounds/sndWater1/sndWater1.yy",},"order":17,},
     {"id":{"name":"sndWater2","path":"sounds/sndWater2/sndWater2.yy",},"order":19,},
     {"id":{"name":"sprThroneCorpseDead","path":"sprites/sprThroneCorpseDead/sprThroneCorpseDead.yy",},"order":32,},

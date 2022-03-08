@@ -17,7 +17,7 @@ image_index = 0;
 mask_index=mskPickupThroughWall;
 with UltraMod
 {
-	sprite_index = sprModHolderDead;
+	sprite_index = sprUltraModHolderDead;
 	image_index = 0;
 	mask_index=mskPickupThroughWall;
 }
