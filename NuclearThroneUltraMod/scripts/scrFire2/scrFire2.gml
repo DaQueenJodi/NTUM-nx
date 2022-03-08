@@ -3752,11 +3752,11 @@ function scrFire2() {
 		team = t
 	}
 	var len = 32 + ((Player.skill_got[13]+bettermelee)*20);
-	var angStep = (100*accuracy) / 5;
-	var aimDir = point_direction(x,y,mouse_x,mouse_y) - (angStep*2.5);
+	var angStep = (100*accuracy) / 6;
+	var aimDir = point_direction(x,y,mouse_x,mouse_y) - (angStep*3);
 	var fx = x + lengthdir_x(len,aimDir);
 	var fy = y + lengthdir_y(len,aimDir);
-	repeat(5)
+	repeat(6)
 	{
 		with instance_create(fx,fy,IceFlame)
 		{
