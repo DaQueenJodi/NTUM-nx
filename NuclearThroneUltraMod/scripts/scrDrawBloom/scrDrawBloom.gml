@@ -64,6 +64,8 @@ function scrDrawBloom() {
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with Flames
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
+	with DiscoBall
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with SheepHyperDashTrail
 	draw_sprite_ext(bloomSprite,-1,x,y,2,2,image_angle,c_white,(ba+0.01)*image_alpha)
 	if instance_exists(Player)

@@ -12,7 +12,9 @@ UberCont.opt_musvol = 0;
 
 with MusCont
 {
-audio_master_gain(max(0,sqrt(max(0,UberCont.opt_sfxvol) )));
+	
+//audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
+audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
 audio_sound_gain(song,max(0,sqrt(max(0,UberCont.opt_musvol) )),0);
 
@@ -33,7 +35,8 @@ UberCont.opt_musvol = 0;
 
 with MusCont
 {
-audio_master_gain(max(0,sqrt(max(0,UberCont.opt_sfxvol) )));
+//audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
+audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
 audio_sound_gain(song,max(0,sqrt(max(0,UberCont.opt_musvol) )),0);
 
@@ -52,7 +55,8 @@ UberCont.opt_musvol = 0;
 
 with MusCont
 {
-audio_master_gain(max(0,sqrt(max(0,UberCont.opt_sfxvol) )));
+//audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
+audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
 audio_sound_gain(song,max(0,sqrt(max(0,UberCont.opt_musvol) )),0);
 

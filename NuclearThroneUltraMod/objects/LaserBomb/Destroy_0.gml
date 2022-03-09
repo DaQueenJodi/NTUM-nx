@@ -12,12 +12,12 @@ else
 var dirStep = 90;
 repeat(4)
 {
-with instance_create(x,y,Laser)
-{
-	image_angle = dir
-	team = other.team
-	event_perform(ev_alarm,0)
-}
+	with instance_create(x,y,Laser)
+	{
+		image_angle = dir
+		team = other.team
+		event_perform(ev_alarm,0)
+	}
 dir += dirStep;
 }
 BackCont.shake += 6;

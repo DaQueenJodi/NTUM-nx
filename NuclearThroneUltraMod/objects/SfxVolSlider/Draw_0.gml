@@ -7,7 +7,7 @@ if mouse_check_button(mb_left) and mouse_x > x-2 and mouse_x < x+100 and mouse_y
 UberCont.opt_sfxvol = round((mouse_x-x)/5)*5/100
 with MusCont
 {
-audio_master_gain(max(0,sqrt(max(0,UberCont.opt_sfxvol) )));
+audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
 audio_sound_gain(song,max(0,sqrt(max(0,UberCont.opt_musvol) )),0);
 
@@ -23,7 +23,7 @@ if UberCont.opt_sfxvol > 0
 UberCont.opt_sfxvol -= 0.05
 with MusCont
 {
-audio_master_gain(max(0,sqrt(max(0,UberCont.opt_sfxvol) )));
+audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
 audio_sound_gain(song,max(0,sqrt(max(0,UberCont.opt_musvol) )),0);
 
@@ -38,7 +38,7 @@ if UberCont.opt_sfxvol < 1
 UberCont.opt_sfxvol += 0.05
 with MusCont
 {
-audio_master_gain(max(0,sqrt(max(0,UberCont.opt_sfxvol) )));
+audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
 audio_sound_gain(song,max(0,sqrt(max(0,UberCont.opt_musvol) )),0);
 

@@ -9,7 +9,7 @@ audio_stop_all()
 song = mus100b;
 snd_loop(song)
 snd_loop(amb)
-audio_master_gain(max(0,sqrt(UberCont.opt_sfxvol)))
+audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
 audio_sound_gain(song,max(0,sqrt(UberCont.opt_musvol)),0);
 

@@ -1972,7 +1972,7 @@ function scrFire2() {
 	event_perform(ev_alarm,0)
 	laserhit=4;
 	sprite_index=sprBouncingLaser;
-	image_yscale -= 0.2}
+	image_yscale -= 0.1}
 
 	BackCont.viewx2 += lengthdir_x(3,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(3,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
@@ -1995,7 +1995,7 @@ function scrFire2() {
 	event_perform(ev_alarm,0)
 	laserhit=6;
 	sprite_index=sprBouncingLaser;
-	image_yscale -= 0.2}
+	image_yscale -= 0.1}
 
 	BackCont.viewx2 += lengthdir_x(3,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.viewy2 += lengthdir_y(3,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
@@ -5531,8 +5531,26 @@ function scrFire2() {
 		wkick = 6
 	break;
 	
-	
+	//DISCO GUN
 	case 396:
+		Sleep(10)
+		if !instance_exists(DISCOTIME)
+		{
+			instance_create(x,y,DISCOTIME);	
+		}
+		snd_play_fire(sndClusterLauncher)
+
+		with instance_create(x,y,DiscoBall)
+		{
+		sticky = 0
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*other.accuracy,12)
+		image_angle = direction
+		team = other.team}
+		
+		BackCont.viewx2 += lengthdir_x(5,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(5,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 8
+		wkick = 5
 	break;
 	
 	

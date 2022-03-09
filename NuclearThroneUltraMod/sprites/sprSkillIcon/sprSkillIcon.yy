@@ -301,7 +301,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprSkillIcon","path":"sprites/sprSkillIcon/sprSkillIcon.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprSkillIcon",
     "tags": [],
     "resourceType": "GMSequence",
   },

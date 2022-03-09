@@ -32,7 +32,10 @@ if instance_exists(Player)
 	if Player.loops >1
 	raddrop*=0.8;
 }
-
+if place_meeting(x,y,enemy)
+{
+	motion_add(random(360),2);	
+}
 wkick=false;
 spr_chrg=false;
 spr_fire=false;

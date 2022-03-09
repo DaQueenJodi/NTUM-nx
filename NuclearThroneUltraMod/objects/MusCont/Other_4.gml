@@ -16,7 +16,8 @@ if UberCont.opt_gamemode == 25 && area != 0
     snd_loop(amb)
 
 
-    audio_master_gain(max(0, sqrt(UberCont.opt_sfxvol)))
+    //audio_master_gain(max(0, sqrt(UberCont.opt_sfxvol)))
+	audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
     audio_sound_gain(song, max(0, sqrt(UberCont.opt_musvol)), 0);
 
@@ -35,7 +36,8 @@ if UberCont.opt_gamemode == 8 && area != 0
     if !audio_is_playing(song)
     snd_loop(song)
 
-    audio_master_gain(max(0, sqrt(UberCont.opt_sfxvol)))
+    //audio_master_gain(max(0, sqrt(UberCont.opt_sfxvol)))
+	audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
     audio_sound_gain(song, max(0, sqrt(UberCont.opt_musvol)), 0);
 
@@ -249,7 +251,8 @@ if oldarea != area || area == 0 or !audio_is_playing(song) or!audio_exists(song)
     snd_loop(amb)
 
 
-    audio_master_gain(max(0, sqrt(UberCont.opt_sfxvol)))
+    //audio_master_gain(max(0, sqrt(UberCont.opt_sfxvol)))
+	audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
     audio_sound_gain(song, max(0, sqrt(UberCont.opt_musvol)), 0);
 

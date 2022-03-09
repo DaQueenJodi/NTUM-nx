@@ -1,5 +1,5 @@
 if instance_exists(Player){
-	if isog && GetPlayerUltramod() == ultramods.lightningKraken
+	if team == 2 && isog && GetPlayerUltramod() == ultramods.lightningKraken
 	{
 		snd_play_fire(choose(sndWater1,sndWater2) );
 		with instance_create(x,y,Tentacle)

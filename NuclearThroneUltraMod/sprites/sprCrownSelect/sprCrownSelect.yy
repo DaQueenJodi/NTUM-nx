@@ -148,7 +148,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprCrownSelect","path":"sprites/sprCrownSelect/sprCrownSelect.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprCrownSelect",
     "tags": [],
     "resourceType": "GMSequence",
   },

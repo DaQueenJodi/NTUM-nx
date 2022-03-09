@@ -65,10 +65,11 @@ game_end();
 exit;
 }
 //*/
-
+if !audio_group_is_loaded(agsfx)
+	audio_group_load(agsfx);
+	
 if !instance_exists(UberCont)
 instance_create(0,0,UberCont)
-
-
+	
 room_goto(romGame)
 instance_destroy()
