@@ -1,6 +1,6 @@
 /// @description Break wall on bounce and electroball why not
 
-snd_play_fire(sndPlasmaMinigun)
+snd_play(sndPlasmaMinigun)
 with instance_create(x+lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)),ElectroBall)
 {
 motion_add(other.direction+180,2)

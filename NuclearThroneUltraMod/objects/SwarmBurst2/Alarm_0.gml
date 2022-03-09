@@ -3,9 +3,7 @@ ammo -= 1
 alarm[0] = time
 
 //FIRING
-audio_stop_sound(sndSeekerCannon)
-audio_sound_pitch(sndSeekerCannon,random_range(0.9,1.1))
-audio_play_sound(sndSeekerCannon,100,0)
+snd_play(sndJackHammer,0.2,true);
 
 with instance_create(x,y,SwarmBolt)
 {motion_add(other.ang,2)

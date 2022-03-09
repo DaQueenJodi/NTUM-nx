@@ -4324,7 +4324,7 @@ function scrWeapons() {
 	wep_cost[391] = 1
 	wep_sprt[391] = sprJawbreaker
 	wep_area[391] = 17
-	wep_text[391] = "pincer attack"
+	wep_text[391] = "cheekbone hitter"
 	wep_swap[391] = sndSwapBow
 	wep_rad[391] = 0;
 	
@@ -4342,11 +4342,11 @@ function scrWeapons() {
 	wep_name[393] = "TWO HEADED DRAGON"
 	wep_type[393] = 4
 	wep_auto[393] = 1
-	wep_load[393] = 3
+	wep_load[393] = 5
 	wep_cost[393] = 1
 	wep_sprt[393] = sprDragon
 	wep_area[393] = 16
-	wep_text[393] = "hot breath"
+	wep_text[393] = "holding fire will increase the power"
 	wep_swap[393] = sndSwapDragon
 	wep_rad[393] = 0;
 	
@@ -4368,7 +4368,7 @@ function scrWeapons() {
 	wep_cost[395] = 6
 	wep_sprt[395] = sprElectroGun
 	wep_area[395] = 7
-	wep_text[395] = "considered plasma & lightning"
+	wep_text[395] = "state of the art gunnery"
 	wep_swap[395] = sndSwapEnergy
 	wep_rad[395] = 0;
 	
@@ -4390,7 +4390,7 @@ function scrWeapons() {
 	wep_cost[397] = 2
 	wep_sprt[397] = sprSplinterBomb
 	wep_area[397] = 4
-	wep_text[397] = "scrappy"
+	wep_text[397] = "bee hive"
 	wep_swap[397] = sndSwapBow
 	wep_rad[397] = 0;
 	
@@ -4401,7 +4401,7 @@ function scrWeapons() {
 	wep_cost[398] = 3
 	wep_sprt[398] = sprSplinterBomb
 	wep_area[398] = 10
-	wep_text[398] = "scrappy"
+	wep_text[398] = "its a laser and lightning!"
 	wep_swap[398] = sndSwapBow
 	wep_rad[398] = 0;
 	

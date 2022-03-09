@@ -5457,7 +5457,20 @@ function scrFire2() {
 
 	break;
 	
+	//TWO HEADED DRAGON
 	case 393:
+		if !instance_exists(TwoHeadedDragonSound)
+		instance_create(x,y,TwoHeadedDragonSound)
+		
+		with instance_create(x,y,TwoHeadedDragonBurst)
+		{
+			creator = other.id
+			ammo = 6
+			time = 1
+			team = other.team
+			event_perform(ev_alarm,0) 
+		}
+		
 	break;
 	
 	//FLAME AXE

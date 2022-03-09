@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndJackHammer",
-  "duration": 0.0,
+  "duration": 0.174671,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",
