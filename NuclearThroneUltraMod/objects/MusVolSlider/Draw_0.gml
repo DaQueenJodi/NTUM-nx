@@ -3,7 +3,7 @@ draw_set_color(c_gray)
 draw_rectangle(x,y+1,x+UberCont.opt_musvol*100,y+6,0)
 
 //slider
-if mouse_check_button(mb_left) and mouse_x > x-2 and mouse_x < x+100 and mouse_y > y and mouse_y < y+8
+if alarm[0] < 1 && mouse_check_button(mb_left) and mouse_x > x-2 and mouse_x < x+100 and mouse_y > y and mouse_y < y+8
 {
 UberCont.opt_musvol = round((mouse_x-x)/5)*5/100
 

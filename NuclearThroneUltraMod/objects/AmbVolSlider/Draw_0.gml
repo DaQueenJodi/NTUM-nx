@@ -2,7 +2,7 @@ draw_sprite(sprite_index,-1,x,y)
 draw_set_color(c_gray)
 draw_rectangle(x,y+1,x+UberCont.opt_ambvol*100,y+6,0)
 
-if mouse_check_button(mb_left) and mouse_x > x-2 and mouse_x < x+100 and mouse_y > y and mouse_y < y+8
+if alarm[0] < 1 && mouse_check_button(mb_left) and mouse_x > x-2 and mouse_x < x+100 and mouse_y > y and mouse_y < y+8
 {
 UberCont.opt_ambvol = round((mouse_x-x)/5)*5/100
 with MusCont

@@ -26,7 +26,6 @@ confirmSound = false;
 //wantmusic = 1
 if wantmusic = 0 {instance_destroy() exit;}
 
-debug("UberCont.opt_musvol ",UberCont.opt_musvol);
 audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
 
 audio_sound_gain(song,max(0,sqrt(UberCont.opt_musvol)),0);

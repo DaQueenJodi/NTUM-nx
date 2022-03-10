@@ -12,7 +12,7 @@ if mouse_check_button_pressed(mb_left) and mouse_x > x+10 and mouse_x < x+18 and
 if UberCont.opt_loading < 4
 UberCont.opt_loading += 0.1
 }
-
+draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 if UberCont.opt_loading>3.7
 draw_text(x+20,y,string_hash_to_newline("DON'T FORGET#ABOUT TIPS?"))

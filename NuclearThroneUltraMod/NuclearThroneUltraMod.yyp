@@ -3911,6 +3911,7 @@
     {"id":{"name":"scrLoadData","path":"scripts/scrLoadData/scrLoadData.yy",},"order":7,},
     {"id":{"name":"scrInit","path":"scripts/scrInit/scrInit.yy",},"order":8,},
     {"id":{"name":"scrInitOptions","path":"scripts/scrInitOptions/scrInitOptions.yy",},"order":9,},
+    {"id":{"name":"SaveEater","path":"objects/SaveEater/SaveEater.yy",},"order":101,},
     {"id":{"name":"scrDrawCredits","path":"scripts/scrDrawCredits/scrDrawCredits.yy",},"order":1,},
     {"id":{"name":"scrDrawUpdate","path":"scripts/scrDrawUpdate/scrDrawUpdate.yy",},"order":3,},
     {"id":{"name":"scrDrawOptions","path":"scripts/scrDrawOptions/scrDrawOptions.yy",},"order":5,},

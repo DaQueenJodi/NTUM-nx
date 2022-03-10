@@ -1,7 +1,6 @@
 function scrLoad() {
 	var saveFileString;
 	saveFileString="ntultra"+string(version)+".sav";
-
 	    ini_open(saveFileString);
 	    scrLoadStats();
 	    scrLoadOptions();
@@ -10,7 +9,4 @@ function scrLoad() {
 
 	//Percentage of unlocked stuff
 	completionpercentage=scrCompletionPercentage();
-
-
-
 }
