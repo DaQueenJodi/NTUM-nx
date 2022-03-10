@@ -27,6 +27,7 @@ if race != 0 && mouse_x > __view_get( e__VW.XView, 0 )+300-10 and mouse_x < __vi
     if mouse_check_button_pressed(mb_left)
     {
         if (wepmenuopen) {
+			snd_play_2d(sndClickBack);
             wepmenuopen = false;
 			crownIcons = [];
 			/*
@@ -37,6 +38,7 @@ if race != 0 && mouse_x > __view_get( e__VW.XView, 0 )+300-10 and mouse_x < __vi
 				visible = true;
 				*/
         } else {
+			snd_play_2d(sndClick);
             wepmenuopen = true;
 			//BackCont.viewx2 = (Menu.char[Menu.race].x-__view_get( e__VW.WView, 0 )/2);
 			//BackCont.viewy2 = (Menu.char[Menu.race].y-__view_get( e__VW.HView, 0 )/2);

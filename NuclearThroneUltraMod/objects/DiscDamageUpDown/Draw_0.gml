@@ -3,6 +3,7 @@ draw_sprite(sprite_index,/*UberCont.opt_gamemode*/1,x,y)
 
 if mouse_check_button_pressed(mb_left) and mouse_x > x and mouse_x < x+8 and mouse_y > y and mouse_y < y+8
 {
+	snd_play_2d(sndClick);
 if UberCont.opt_discdamage > 0
 UberCont.opt_discdamage -= 1;
 else
@@ -11,6 +12,7 @@ UberCont.opt_discdamage=20;
 }
 if mouse_check_button_pressed(mb_left) and mouse_x > x+10 and mouse_x < x+18 and mouse_y > y and mouse_y < y+8
 {
+	snd_play_2d(sndClick);
 if UberCont.opt_discdamage < 20
 UberCont.opt_discdamage += 1
 else

@@ -40,6 +40,7 @@ if mode = 1
 {
 if KeyCont.key_spec[p] = 1
 {
+	snd_play_2d(sndClickBack);
 	if hasNoMenuOpen()
 	{
 		//if OptionSelect.selected = 1
