@@ -3,12 +3,12 @@ if other.team != team
 //if hit=false{
 if instance_exists(Player){
 if Player.skill_got[17] = 1
-snd_play(sndDragonStop)
+snd_play(sndMorphStart)
 else
-snd_play(sndFlamerStart)
+snd_play(sndMorphStop)
 }
 else
-snd_play(sndFlamerStart)
+snd_play(sndMorphStop)
 
 
 

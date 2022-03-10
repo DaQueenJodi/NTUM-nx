@@ -1608,8 +1608,8 @@ function scrFire() {
 	//MORPH-O-RAY
 	case 70:
 
-	if !instance_exists(FlameSound)
-	instance_create(x,y,FlameSound)
+	if !instance_exists(MorphSound)
+	instance_create(x,y,MorphSound)
 	with instance_create(x,y,Ray)
 	{
 	creator = other.id
@@ -1680,8 +1680,8 @@ function scrFire() {
 	//EXPLOSIVE MORPH-O-RAY
 	case 73:
 
-	if !instance_exists(FlameSound)
-	instance_create(x,y,FlameSound)
+	if !instance_exists(MorphSound)
+	instance_create(x,y,MorphSound)
 	with instance_create(x,y,Ray)
 	{
 	creator = other.id
@@ -2265,8 +2265,8 @@ function scrFire() {
 	//MORPH-O-PISTOL
 	case 98:
 
-	if !instance_exists(FlameSound)
-	instance_create(x,y,FlameSound)
+	if !instance_exists(MorphSound)
+	instance_create(x,y,MorphSound)
 	with instance_create(x,y,Ray)
 	{
 	creator = other.id

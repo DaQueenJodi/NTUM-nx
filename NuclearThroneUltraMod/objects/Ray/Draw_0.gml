@@ -36,7 +36,7 @@ if!(collision_line(x,y,target.x,target.y,Wall,false,true) )//No walls in between
     }
 }}
     points=10;
-    distance=10+random(30);//distance_to_object(target);
+    distance=25+random(30);//distance_to_object(target);
     Direction=point_direction(x,y,mouse_x,mouse_y)+random(10)-5;
     repeat(5){
     xx=x;
@@ -59,7 +59,7 @@ else{
 
 
     points=10;
-    distance=10+random(30);//distance_to_object(target);
+    distance=25+random(30);//distance_to_object(target);
     Direction=point_direction(x,y,mouse_x,mouse_y)+random(10)-5;
     repeat(5){
     xx=x;

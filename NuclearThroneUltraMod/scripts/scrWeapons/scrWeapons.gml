@@ -2972,7 +2972,7 @@ function scrWeapons() {
 	wep_load[269] = 11
 	wep_cost[269] = 1
 	wep_sprt[269] = sprBouncerLaserGun
-	wep_area[269] = 6
+	wep_area[269] = 7
 	wep_text[269] = "unpredictable"
 	wep_swap[269] = sndSwapEnergy
 	wep_rad[269] = 0;
@@ -4470,6 +4470,50 @@ function scrWeapons() {
 	wep_text[404] = "be very carefull"
 	wep_swap[404] = sndSwapExplosive
 	wep_rad[404] = 0;
+	
+	wep_name[405] = "CUBER"
+	wep_type[405] = 1
+	wep_auto[405] = 0
+	wep_load[405] = 6
+	wep_cost[405] = 1
+	wep_sprt[405] = sprRevolver
+	wep_area[405] = 8
+	wep_text[405] = "phase through walls"
+	wep_swap[405] = sndSwapPistol
+	wep_rad[405] = 0;
+	
+	wep_name[406] = "CUBER RIFLE"
+	wep_type[406] = 1
+	wep_auto[406] = 1
+	wep_load[406] = 3
+	wep_cost[406] = 1
+	wep_sprt[406] = sprRevolver
+	wep_area[406] = 10
+	wep_text[406] = "square bullets"
+	wep_swap[406] = sndSwapPistol
+	wep_rad[406] = 0;
+	
+	wep_name[407] = "MORPH-O-LASER"
+	wep_type[407] = 5
+	wep_auto[407] = 0
+	wep_load[407] = 10
+	wep_cost[407] = 1
+	wep_sprt[407] = sprRevolver
+	wep_area[407] = 4
+	wep_text[407] = "sheep blaser"
+	wep_swap[407] = sndSwapPistol
+	wep_rad[407] = 0;
+	
+	wep_name[408] = "MORPH-O-RIFLE"
+	wep_type[408] = 1
+	wep_auto[408] = 0
+	wep_load[408] = 4
+	wep_cost[408] = 1
+	wep_sprt[408] = sprRevolver
+	wep_area[408] = 4
+	wep_text[408] = "phase through walls"
+	wep_swap[408] = sndSwapPistol
+	wep_rad[408] = 0;
 	
 	
 	/*

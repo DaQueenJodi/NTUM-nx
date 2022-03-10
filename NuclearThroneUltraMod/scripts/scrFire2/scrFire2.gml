@@ -5734,5 +5734,89 @@ function scrFire2() {
 
 	break;
 	
+	//CUBER
+	case 405:
+
+	snd_play_fire(sndCuber)
+
+	with instance_create(x,y,Shell)
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
+
+	with instance_create(x,y,PlayerSquareBullet)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy,10)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 4
+	wkick = 2
+
+	break;
+	
+	//CUBER RIFLE
+	case 406:
+
+	snd_play_fire(sndCuber)
+
+	with instance_create(x,y,Shell)
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
+
+	with instance_create(x,y,PlayerSquareBullet)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,10)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 3
+	wkick = 2
+
+	break;
+	
+	//MORPH-O-LASER
+	case 407:
+		if Player.skill_got[17] = 1
+			snd_play_fire(sndLaserUpg)
+		else
+			snd_play_fire(sndLaser)
+		var aimDir = point_direction(x,y,mouse_x,mouse_y);
+		var len = 5 * accuracy;
+		
+		with instance_create(x,y,MorphLaser)
+		{
+			image_angle = aimDir+(random(2)-1)*other.accuracy
+			team = other.team
+			event_perform(ev_alarm,0)
+		}
+
+		BackCont.viewx2 += lengthdir_x(5,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(5,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 4
+		wkick = 4
+	break;
+	
+	//MORPH-O-RIFLE
+	case 408:
+
+	snd_play_fire(sndCuber);
+
+	with instance_create(x,y,Shell)
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
+
+	with instance_create(x,y,MorphBullet)
+	{
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,18)
+	image_angle = direction
+	team = other.team
+	}
+
+	BackCont.viewx2 += lengthdir_x(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 3
+	wkick = 2
+
+	break;
+	
 	}//end of switch part 2!
 }
