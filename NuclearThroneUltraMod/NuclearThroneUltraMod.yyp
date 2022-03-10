@@ -1430,6 +1430,7 @@
     {"id":{"name":"sprMutant8Dead","path":"sprites/sprMutant8Dead/sprMutant8Dead.yy",},"order":5,},
     {"id":{"name":"sprHyenaIdle","path":"sprites/sprHyenaIdle/sprHyenaIdle.yy",},"order":6,},
     {"id":{"name":"sprMutant8Hurt","path":"sprites/sprMutant8Hurt/sprMutant8Hurt.yy",},"order":6,},
+    {"id":{"name":"sprMorph","path":"sprites/sprMorph/sprMorph.yy",},"order":231,},
     {"id":{"name":"sprMutant8DHurt","path":"sprites/sprMutant8DHurt/sprMutant8DHurt.yy",},"order":1,},
     {"id":{"name":"sprMutant8DDead","path":"sprites/sprMutant8DDead/sprMutant8DDead.yy",},"order":3,},
     {"id":{"name":"sprMutant8DWalk","path":"sprites/sprMutant8DWalk/sprMutant8DWalk.yy",},"order":5,},

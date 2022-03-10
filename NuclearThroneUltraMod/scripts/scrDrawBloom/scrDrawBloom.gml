@@ -89,6 +89,14 @@ function scrDrawBloom() {
 
 		with FatBullet
 		draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba+0.01)//roids ultra d
+		
+		with Morph
+		{
+			if Player.skill_got[17]
+				draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(image_alpha+0.2)*(0.5-ba));
+			else
+				draw_sprite_ext(sprite_index,-1,x,y,1.8,1.8,image_angle,c_white,image_alpha*(0.5-ba));
+		}
 	}
 
 	with PlasmaBall

@@ -1,2 +1,2 @@
-/// @description xxx
+/// @description end me
 instance_destroy();

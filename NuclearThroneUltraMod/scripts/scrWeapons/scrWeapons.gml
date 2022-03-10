@@ -4496,22 +4496,22 @@ function scrWeapons() {
 	wep_name[407] = "MORPH-O-LASER"
 	wep_type[407] = 5
 	wep_auto[407] = 0
-	wep_load[407] = 10
+	wep_load[407] = 14
 	wep_cost[407] = 1
 	wep_sprt[407] = sprRevolver
-	wep_area[407] = 4
+	wep_area[407] = 5
 	wep_text[407] = "sheep blaser"
 	wep_swap[407] = sndSwapPistol
 	wep_rad[407] = 0;
 	
 	wep_name[408] = "MORPH-O-RIFLE"
 	wep_type[408] = 1
-	wep_auto[408] = 0
-	wep_load[408] = 4
+	wep_auto[408] = 1
+	wep_load[408] = 6
 	wep_cost[408] = 1
 	wep_sprt[408] = sprRevolver
 	wep_area[408] = 4
-	wep_text[408] = "phase through walls"
+	wep_text[408] = "sheep shooter"
 	wep_swap[408] = sndSwapPistol
 	wep_rad[408] = 0;
 	

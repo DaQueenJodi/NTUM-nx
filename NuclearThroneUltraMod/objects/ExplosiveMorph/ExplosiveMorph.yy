@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprDust",
-    "path": "sprites/sprDust/sprDust.yy",
+    "name": "sprMorph",
+    "path": "sprites/sprMorph/sprMorph.yy",
   },
   "solid": false,
   "visible": true,
