@@ -107,7 +107,6 @@ txt2 = "#######"+string(scrAddZero(round(UberCont.opt_musvol*100),2))+"%#"+strin
 
 
 
-
 stxt0 = "#OPTIONS#GAMEMODE: "+UberCont.gamemode[UberCont.opt_gamemode];
 stxt1 = "######AUDIO######VISUALS########OTHER####"
 stxt2 = txt2

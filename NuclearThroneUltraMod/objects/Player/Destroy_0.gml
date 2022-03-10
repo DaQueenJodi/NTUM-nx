@@ -1,6 +1,6 @@
 //UNLOCK EASY MODE
 if area=1 && subarea=1 && loops=0
-scrUnlockGameMode(9,"FOR PLAYING LIKE SHIT")
+scrUnlockGameMode(9,"YOU DID THAT ON PURPOSE")
 
 if scrCheckLoopAll()
 scrUnlockCSkin(1,"FOR LOOPING WITH EVERY CHARACTER",0);
@@ -335,13 +335,12 @@ else
 			encrypted_data.ctot_dailies_score_score[
 			array_length(encrypted_data.ctot_dailies_score_score)-1] = other.kills;
 			scrSaveEncrypted();
-			opt_gamemode = 0;
 			useSeed = false;
 		}
 		if (opt_gamemode == 26)
 		{
-			opt_gamemode = 0;
 			useSeed = false;
+			scrSaveEncrypted();
 		}
 		
 		scrSave();

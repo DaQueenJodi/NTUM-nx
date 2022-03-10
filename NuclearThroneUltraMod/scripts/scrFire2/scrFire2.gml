@@ -4730,6 +4730,7 @@ function scrFire2() {
 	//OBSIDIAN THROWING KNIFE
 	case 370:
 	snd_play_fire(sndEnemySlash);
+	var yc = object_index == YungCuzDupe;
 	with instance_create(x,y,ThrowWepNoReturn)
 	{
 		team=other.team;
@@ -4744,6 +4745,7 @@ function scrFire2() {
 		wepmod2=other.wepmod2;
 		wepmod3=other.wepmod3;
 		wepmod4=other.wepmod4;
+		thrownByCuz = yc;
 		sprite_index = wep_sprt[wep]
 	}
 	BackCont.viewx2 += lengthdir_x(4,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
@@ -4752,7 +4754,8 @@ function scrFire2() {
 	if curse
 		my_health -= 7;
 	//TOSSING CURSED WEAPONS!?
-	scrSwapWeps();
+	if !yc
+		scrSwapWeps();
 	clicked = 0;
 	bwep = 0
 	break;

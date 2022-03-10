@@ -76,6 +76,15 @@ function scrDrawStats() {
 		whiteEnter+="#";
 		dir ++;
 	}
+	if totSkills > 999
+	{
+		totSkills = string(totSkills);
+		totSkills = string_copy(totSkills,0,3)+ "#" + string_copy(totSkills,4,string_length(totSkills));
+	}
+	else
+	{
+		totSkills = string(totSkills)+"#";	
+	}
 	var ultrastats  = "";
 	var ultranames = "";
 	var ultraWhiteEnter = "";
@@ -108,16 +117,25 @@ function scrDrawStats() {
 			dir ++;
 		}
 	}
+	totUltras = 1000;
+	if totUltras > 999
+	{
+		totUltras = string(totUltras);
+		totUltras = string_copy(totUltras,0,3)+ "#" + string_copy(totUltras,4,string_length(totUltras));
+	}
+	else
+	{
+		totUltras = string(totUltras)+"#";	
+	}
 	
-
 	txt0 = "#STATISTICS"
 	txt1 = "####TOTAL#TIME#KILLS#DEATHS#LOOPS#WALLS DESTROYED##BEST#TIME#KILLS#DIFFICULTY#LOOPS##"+string(race_name[Menu.race])+"#BEST KILLS#TOTAL KILLS#DEATHS#LOOPS";
 	var txt1b = "#"+skillnames+"#MUTATIONS TAKEN###" + ultranames+"#ULTRAS TAKEN";
 	txt2 = "#####"+string(time)+"#"+string(kills)+"#"+string(deaths)+"#"+string(loops)+"#"+string(wallkill)+"###"+string(btime)+" "+string(race_name[rtime])+"#"+string(bkills)+" "+string(race_name[rkills])+"#"+string(bdiff)+
 	" "+string(race_name[rdiff])+"#"+string(bloop)+" "+string(race_name[rloop])
 	+"###"+string(UberCont.cbst_kill[Menu.race])+"#"+string(UberCont.ctot_kill[Menu.race])+"#"+string(UberCont.ctot_dead[Menu.race])+"#"+string(UberCont.ctot_loop[Menu.race])
-	var txt2b = "#"+skillstats+"#"+string(totSkills)
-	+"###"+ultrastats + "#"+ string(totUltras);
+	var txt2b = "#"+skillstats+"#"+totSkills
+	+"##"+ultrastats + "#"+ totUltras;
 	stxt0 = "#STATISTICS"
 	stxt1 = "####TOTAL#######BEST######"+string(race_name[Menu.race])+ "######"
 	var stxt1b = "MUTATIONS TAKEN##"
@@ -126,8 +144,6 @@ function scrDrawStats() {
 	+ ultraWhiteEnter;
 	stxt2 = ""
 
-	var xOffset = 130;
-	var yOffset = string_height(txt1)*25//190;//string_height(txt1);
 	
 	var scoreDayList = UberCont.encrypted_data.dailies_score_day;
 	var scoreScoreList = UberCont.encrypted_data.ctot_dailies_score_score;
@@ -138,19 +154,44 @@ function scrDrawStats() {
 	if (al < 1)
 	{
 		stxt1b += "#";
-		txt1c += "NO SCORE"
-		txt2c += "YET"
+		txt1c += "NO SCORE#"
+		txt2c += "YET#"
 	}	
 	for (var i = al - 1; i >= 0; i--) {
 		stxt1b += "#";
-		txt1c += string(scoreDayList[i]);
-		txt2c += string(scoreScoreList[i]);
+		txt1c += string(scoreDayList[i])+"#";
+		txt2c += string(scoreScoreList[i])+"#";
 	}
 	stxt1c += "##DAILY RACE#";
-	txt1c += "###COMING";
-	txt2c += "###SOON";
+	txt1c += "##";
+	txt2c += "##";
+	var raceDayList = UberCont.encrypted_data.dailies_race_day;
+	var raceTimeList = UberCont.encrypted_data.ctot_dailies_race_time;
+	var al = array_length(raceDayList);
+	if (al < 1)
+	{
+		stxt1b += "#";
+		txt1c += "NO TIME"
+		txt2c += "YET"
+	}
+	for (var i = al - 1; i >= 0; i--) {
+		stxt1b += "#";
+		txt1c += string(raceDayList[i])+"#";
+		if raceTimeList[i] == -1
+		{
+			txt2c += "FAIL#"
+		}
+		else
+		{
+			var rt = scrTime(raceTimeList[i],false)
+			txt2c += string(rt)+"#";
+		}
+	}
 	
-	var xOffsetL = -64;
+	var xOffsetL = -69
+	var xOffset = 135;
+	var yOffset = string_height(txt1)*25//190;//string_height(txt1);
+	var bspc = 2;
 	
 	draw_set_font(fntM)
 	draw_set_valign(fa_top)
@@ -171,20 +212,20 @@ function scrDrawStats() {
 	draw_text(xx-8,yy+1,string_hash_to_newline(string(txt1)))
 	draw_text(xx-7,yy+1,string_hash_to_newline(string(txt1)))
 	draw_text(xx-7,yy,string_hash_to_newline(string(txt1)))
-	draw_text(xx+xOffset-4,yy+yOffset+1,string_hash_to_newline(string(txt1b)))
-	draw_text(xx+xOffset-5,yy+yOffset+1,string_hash_to_newline(string(txt1b)))
-	draw_text(xx+xOffset-5,yy+yOffset,string_hash_to_newline(string(txt1b)))
-	draw_text(xx+xOffsetL-4,yy+yOffset+1,string_hash_to_newline(string(txt1c)))
-	draw_text(xx+xOffsetL-5,yy+yOffset+1,string_hash_to_newline(string(txt1c)))
-	draw_text(xx+xOffsetL-5,yy+yOffset,string_hash_to_newline(string(txt1c)))
+	draw_text(xx+xOffset-bspc,yy+yOffset+1,string_hash_to_newline(string(txt1b)))
+	draw_text(xx+xOffset-bspc-1,yy+yOffset+1,string_hash_to_newline(string(txt1b)))
+	draw_text(xx+xOffset-bspc-1,yy+yOffset,string_hash_to_newline(string(txt1b)))
+	draw_text(xx+xOffsetL-bspc,yy+yOffset+1,string_hash_to_newline(string(txt1c)))
+	draw_text(xx+xOffsetL-bspc-1,yy+yOffset+1,string_hash_to_newline(string(txt1c)))
+	draw_text(xx+xOffsetL-bspc-1,yy+yOffset,string_hash_to_newline(string(txt1c)))
 	draw_set_color(c_gray)
 	draw_text(xx-8,yy,string_hash_to_newline(string(txt1)))
-	draw_text(xx+xOffset-4,yy+yOffset,string_hash_to_newline(string(txt1b)))
-	draw_text(xx+xOffsetL-4,yy+yOffset,string_hash_to_newline(string(txt1c)))
+	draw_text(xx+xOffset-bspc,yy+yOffset,string_hash_to_newline(string(txt1b)))
+	draw_text(xx+xOffsetL-bspc,yy+yOffset,string_hash_to_newline(string(txt1c)))
 	draw_set_color(c_white)
 	draw_text(xx-8,yy,string_hash_to_newline(string(stxt1)))
-	draw_text(xx+xOffset-4,yy+yOffset,string_hash_to_newline(string(stxt1b)))
-	draw_text(xx+xOffsetL-4,yy+yOffset,string_hash_to_newline(string(stxt1c)))
+	draw_text(xx+xOffset-bspc,yy+yOffset,string_hash_to_newline(string(stxt1b)))
+	draw_text(xx+xOffsetL-bspc,yy+yOffset,string_hash_to_newline(string(stxt1c)))
 
 
 	
@@ -196,20 +237,20 @@ function scrDrawStats() {
 	draw_text(xx+8,yy+1,string_hash_to_newline(string(txt2)))
 	draw_text(xx+9,yy+1,string_hash_to_newline(string(txt2)))
 	draw_text(xx+9,yy,string_hash_to_newline(string(txt2)))
-	draw_text(xx+xOffset+4,yy+yOffset+1,string_hash_to_newline(string(txt2b)))
-	draw_text(xx+xOffset+5,yy+yOffset+1,string_hash_to_newline(string(txt2b)))
-	draw_text(xx+xOffset+5,yy+yOffset,string_hash_to_newline(string(txt2b)))
-	draw_text(xx+xOffsetL+4,yy+yOffset+1,string_hash_to_newline(string(txt2c)))
-	draw_text(xx+xOffsetL+5,yy+yOffset+1,string_hash_to_newline(string(txt2c)))
-	draw_text(xx+xOffsetL+5,yy+yOffset,string_hash_to_newline(string(txt2c)))
+	draw_text(xx+xOffset+bspc,yy+yOffset+1,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffset+bspc+1,yy+yOffset+1,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffset+bspc+1,yy+yOffset,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffsetL+bspc,yy+yOffset+1,string_hash_to_newline(string(txt2c)))
+	draw_text(xx+xOffsetL+bspc+1,yy+yOffset+1,string_hash_to_newline(string(txt2c)))
+	draw_text(xx+xOffsetL+bspc+1,yy+yOffset,string_hash_to_newline(string(txt2c)))
 	draw_set_color(c_gray)
 	draw_text(xx+8,yy,string_hash_to_newline(string(txt2)))
-	draw_text(xx+xOffset+4,yy+yOffset,string_hash_to_newline(string(txt2b)))
-	draw_text(xx+xOffsetL+4,yy+yOffset,string_hash_to_newline(string(txt2c)))
+	draw_text(xx+xOffset+bspc,yy+yOffset,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffsetL+bspc,yy+yOffset,string_hash_to_newline(string(txt2c)))
 	draw_set_color(c_white)
 	draw_text(xx+8,yy,string_hash_to_newline(string(stxt2)))
-	draw_text(xx+xOffset+4,yy+yOffset,string_hash_to_newline(string(txt2b)))
-	draw_text(xx+xOffsetL+4,yy+yOffset,string_hash_to_newline(string(txt2c)))
+	draw_text(xx+xOffset+bspc,yy+yOffset,string_hash_to_newline(string(txt2b)))
+	draw_text(xx+xOffsetL+bspc,yy+yOffset,string_hash_to_newline(string(txt2c)))
 
 
 

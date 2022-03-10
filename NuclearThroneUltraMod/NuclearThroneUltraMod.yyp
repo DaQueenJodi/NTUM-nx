@@ -625,6 +625,7 @@
     {"id":{"name":"sprInvertedRavenHurt","path":"sprites/sprInvertedRavenHurt/sprInvertedRavenHurt.yy",},"order":23,},
     {"id":{"name":"sprInvertedRavenFly","path":"sprites/sprInvertedRavenFly/sprInvertedRavenFly.yy",},"order":25,},
     {"id":{"name":"sndNothingFire","path":"sounds/sndNothingFire/sndNothingFire.yy",},"order":11,},
+    {"id":{"name":"DeleteSave","path":"objects/DeleteSave/DeleteSave.yy",},"order":100,},
     {"id":{"name":"sprHammerHeadNear","path":"sprites/sprHammerHeadNear/sprHammerHeadNear.yy",},"order":22,},
     {"id":{"name":"sprInvertedRavenLift","path":"sprites/sprInvertedRavenLift/sprInvertedRavenLift.yy",},"order":27,},
     {"id":{"name":"sprInvertedRavenLand","path":"sprites/sprInvertedRavenLand/sprInvertedRavenLand.yy",},"order":29,},

@@ -9,3 +9,4 @@ dontteleport = true;
 dmg = 50;
 stopSpeed = 1;
 pierce = true;
+thrownByCuz = false;

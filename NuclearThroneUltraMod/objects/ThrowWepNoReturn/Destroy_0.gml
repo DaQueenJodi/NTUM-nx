@@ -1,5 +1,5 @@
 /// @description Don't return instead create =pickup
-
+if !thrownByCuz
 with instance_create(x,y,WepPickup)
 {
 	oneweponly=false;

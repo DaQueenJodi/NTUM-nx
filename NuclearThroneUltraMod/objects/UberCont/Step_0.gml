@@ -153,7 +153,8 @@ paused = 1
 
 ///Timer
 
-if !instance_exists(GenCont) && !instance_exists(Menu) && !instance_exists(Vlambeer)
+if !instance_exists(GenCont) && !instance_exists(Menu) && !instance_exists(Vlambeer) &&
+(instance_exists(Player) || instance_exists(PlayerSpawn))
 {
 
 if paused=0

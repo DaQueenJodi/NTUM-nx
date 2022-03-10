@@ -19,13 +19,13 @@ function scrTime(argument0, argument1) {
 	if argument1==true//days
 	{
 	if string(days) = "1"
-	return scrAddZero(hors,1)+":"+scrAddZero(mins,1)+":"+scrAddZero(secs,1)+" "+scrAddZero(days,2)+"DAY"
+	return string(hors)+":"+scrAddZero(mins,1)+":"+scrAddZero(secs,1)+" "+scrAddZero(days,2)+"DAY"
 	else
-	return scrAddZero(hors,1)+":"+scrAddZero(mins,1)+":"+scrAddZero(secs,1)+" "+scrAddZero(days,2)+"DAYS"
+	return string(hors)+":"+scrAddZero(mins,1)+":"+scrAddZero(secs,1)+" "+scrAddZero(days,2)+"DAYS"
 	}
 	else//no days
 	{
-	return scrAddZero(hors,1)+":"+scrAddZero(mins,1)+":"+scrAddZero(secs,1);
+	return string(hors)+":"+scrAddZero(mins,1)+":"+scrAddZero(secs,1);
 	}
 
 

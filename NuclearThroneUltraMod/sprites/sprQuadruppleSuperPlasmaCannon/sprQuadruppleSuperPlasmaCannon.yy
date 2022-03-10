@@ -79,7 +79,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 10,
-    "yorigin": 18,
+    "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprQuadruppleSuperPlasmaCannon","path":"sprites/sprQuadruppleSuperPlasmaCannon/sprQuadruppleSuperPlasmaCannon.yy",},
