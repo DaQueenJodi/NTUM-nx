@@ -22,6 +22,9 @@ extra+=other.typ_ammo[type]*(instance_number(YungCuzDupe)*0.5);
 if Player.race=12 && Player.skill_got[5]=1//Yung Cuz Thronebutt
 extra+=other.typ_ammo[type]*(instance_number(YungCuzDupe));
 
+if UberCont.opt_gamemode == 9 //Casual mode
+	extra +=1;
+
 var gain_multiplier = 1
 
 if cursed

@@ -1,4 +1,5 @@
 num = 2
+
 if Player.skill_got[9] = 1
 {
 
@@ -9,7 +10,8 @@ num = 4;
 
 }
 
-
+if UberCont.opt_gamemode == 9 //Casual mode
+	num +=1;
 
 instance_create(x,y,HealFX)
 

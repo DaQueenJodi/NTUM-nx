@@ -19,6 +19,8 @@ with other
 			if immunelimit > Player.maxhealth
 				immunelimit = Player.maxhealth;
 		}
+		if UberCont.opt_gamemode == 9
+			other.dmg = 3;
 	}
 
 		if !(sprite_index = spr_hurt and immune = 1)

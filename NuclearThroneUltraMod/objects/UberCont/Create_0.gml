@@ -106,3 +106,4 @@ enum ultramods {
 	
 }
 maxUltramod = 16;
+casualModeHPIncrease = 2;

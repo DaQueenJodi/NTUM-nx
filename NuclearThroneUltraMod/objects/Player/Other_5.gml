@@ -288,6 +288,8 @@ looping=false;
 				targetHealth += 4;
 			if skill_got[33] == 1//Glass arm cannon
 				targetHealth -= 2;
+			if UberCont.opt_gamemode == 9
+				targetHealth += UberCont.casualModeHPIncrease;
             if maxhealth<targetHealth
             {
 	            maxhealth = min(maxhealth + 2,targetHealth);

@@ -2851,7 +2851,7 @@ function scrWeapons() {
 	wep_load[258] = 18
 	wep_cost[258] = 1
 	wep_sprt[258] = sprShotgunRifle1
-	wep_area[258] = 4
+	wep_area[258] = 2
 	wep_text[258] = "true hybrid gun"
 	wep_swap[258] = sndSwapShotgun
 	wep_rad[258] = 0;
@@ -2862,7 +2862,7 @@ function scrWeapons() {
 	wep_load[259] = 5
 	wep_cost[259] = 1
 	wep_sprt[259] = sprBulletPopper1
-	wep_area[259] = 3
+	wep_area[259] = 2
 	wep_text[259] = "make a decision, gun!"
 	wep_swap[259] = sndSwapMachinegun
 	wep_rad[259] = 0;

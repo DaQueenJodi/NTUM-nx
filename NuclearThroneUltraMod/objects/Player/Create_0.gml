@@ -272,6 +272,8 @@ else {
 }
 
 maxhealth = 8
+if UberCont.opt_gamemode == 9
+	maxhealth += UberCont.casualModeHPIncrease;
 maxspeed = 4
 
 
