@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprCrossbow","path":"sprites/sprCrossbow/sprCrossbow.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprCrossbow",
     "tags": [],
     "resourceType": "GMSequence",
   },

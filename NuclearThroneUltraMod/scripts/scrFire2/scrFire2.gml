@@ -5919,5 +5919,22 @@ function scrFire2() {
 
 	break;
 	
+	//LEACHER
+	case 413:
+
+	snd_play_fire(sndCrossbow)
+
+	with instance_create(x,y,LeacherBolt)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y),24)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(40,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(40,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 5
+	wkick = 5
+
+	break;
+	
 	}//end of switch part 2!
 }

@@ -1,9 +1,10 @@
 if candmg and other.team != team
 {
-snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
+
 
 if other.my_health >= (dmg*0.5) && !array_contains(hitEntities,other.id)//other.sprite_index != other.spr_hurt
 {
+	snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
 	instance_destroy()
 
 	with other
@@ -23,6 +24,7 @@ if other.my_health >= (dmg*0.5) && !array_contains(hitEntities,other.id)//other.
 }
 else if other.my_health < (dmg*0.5) and !array_contains(hitEntities,other.id)// other.sprite_index != other.spr_hurt)//other.sprite_index != other.spr_hurt
 {
+	snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
 	hitEntities[array_length(hitEntities)] = other.id;
 	with other
 	{

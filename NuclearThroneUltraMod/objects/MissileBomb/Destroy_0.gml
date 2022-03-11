@@ -1,5 +1,5 @@
 /// @description Boom
-instance_create(Explosion);
+instance_create(x,y,Explosion);
 snd_play(sndExplosion);
 snd_play(sndClusterOpen);
 with instance_create(x,y,MissileBurst2)

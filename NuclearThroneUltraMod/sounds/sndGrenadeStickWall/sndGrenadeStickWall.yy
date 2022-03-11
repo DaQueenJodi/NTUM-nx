@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndGrenadeStickWall",
-  "duration": 0.0,
+  "duration": 0.5,
   "parent": {
     "name": "HitWall",
     "path": "folders/Sounds/HitWall.yy",

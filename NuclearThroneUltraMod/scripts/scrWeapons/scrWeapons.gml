@@ -1839,7 +1839,7 @@ function scrWeapons() {
 	wep_load[166] = 22
 	wep_cost[166] = 2
 	wep_sprt[166] = sprSlashShotgun
-	wep_area[166] = 2
+	wep_area[166] = 3
 	wep_text[166] = "shoot them out of there cover"
 	wep_swap[166] = sndSwapShotgun
 	wep_rad[166] = 0;
@@ -3024,7 +3024,7 @@ function scrWeapons() {
 	wep_name[274] = "INFUSER"
 	wep_type[274] = 3
 	wep_auto[274] = 0
-	wep_load[274] = 22
+	wep_load[274] = 20
 	wep_cost[274] = 1
 	wep_sprt[274] = sprNewInfuser
 	wep_area[274] = 5
@@ -4545,7 +4545,7 @@ function scrWeapons() {
 	wep_sprt[411] = sprKrakenYoyoGun
 	wep_area[411] = 6
 	wep_text[411] = ""
-	wep_swap[411] = sndSwapBow
+	wep_swap[411] = sndSwapDragon
 	wep_rad[411] = 0;
 	
 	wep_name[412] = "LANCE"
@@ -4559,20 +4559,17 @@ function scrWeapons() {
 	wep_swap[412] = sndSwapSword
 	wep_rad[412] = 0;
 	
-	
-	/*
-	wep_name[369] = "LIGHTNING CANNON"
-	wep_type[369] = 5
-	wep_auto[369] = 0
-	wep_load[369] = 6//11
-	wep_cost[369] = 0
-	wep_sprt[369] = sprGoldenScrewdriver
-	wep_area[369] = 19
-	wep_text[369] = "ultra shanking"
-	wep_swap[369] = sndSwapSword
-	wep_rad[369] = 5;
-	*/
-	
+	wep_name[413] = "LEACHER"
+	wep_type[413] = 3
+	wep_auto[413] = 0
+	wep_load[413] = 20
+	wep_cost[413] = 2
+	wep_sprt[413] = sprLeacherBow
+	wep_area[413] = 7
+	wep_text[413] = "vampire"
+	wep_swap[413] = sndSwapBow
+	wep_rad[413] = 0;
+
 	maxwep = array_length(wep_name)-1;
 
 	//0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy

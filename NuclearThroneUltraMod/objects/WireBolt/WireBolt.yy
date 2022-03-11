@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprSplinter",
-    "path": "sprites/sprSplinter/sprSplinter.yy",
+    "name": "sprWireBolt",
+    "path": "sprites/sprWireBolt/sprWireBolt.yy",
   },
   "solid": false,
   "visible": true,

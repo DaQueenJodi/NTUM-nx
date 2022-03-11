@@ -8,3 +8,5 @@ offy = random(2)-1
 
 alarm[0]=120;
 
+dmg = 7;
+dealtDamage = false;

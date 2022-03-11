@@ -28,6 +28,6 @@ image_xscale=point_distance(x,y,other.dir.x-other.hspeed,other.dir.y-other.vspee
 }}
 
 
-if speed<1
-    instance_destroy();
+if speed<1 && alarm[11] < 1
+	alarm[11] = 10;
 
