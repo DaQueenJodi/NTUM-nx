@@ -937,7 +937,7 @@ function scrWeapons() {
 	wep_load[84] = 2
 	wep_cost[84] = 3
 	wep_sprt[84] = sprTripleBloodGun
-	wep_area[84] = 8
+	wep_area[84] = 4
 	wep_text[84] = "fueled by fleshwounds"
 	wep_swap[84] = sndSwapMachinegun
 	wep_rad[84] = 0;
@@ -1465,7 +1465,7 @@ function scrWeapons() {
 	wep_load[132] = 9
 	wep_cost[132] = 2
 	wep_sprt[132] = sprHyperBloodLauncher
-	wep_area[132] = 15
+	wep_area[132] = 14
 	wep_text[132] = "born in blood"
 	wep_swap[132] = sndSwapExplosive
 	wep_rad[132] = 0;
@@ -1575,7 +1575,7 @@ function scrWeapons() {
 	wep_load[142] = 16
 	wep_cost[142] = 5
 	wep_sprt[142] = sprBloodBulletShotgun
-	wep_area[142] = 2
+	wep_area[142] = 3
 	wep_text[142] = "spit blood"
 	wep_swap[142] = sndSwapShotgun
 	wep_rad[142] = 0;
@@ -1586,7 +1586,7 @@ function scrWeapons() {
 	wep_load[143] = 15
 	wep_cost[143] = 3
 	wep_sprt[143] = sprLineNader
-	wep_area[143] = 10
+	wep_area[143] = 9
 	wep_text[143] = "dangerous bliss"
 	wep_swap[143] = sndSwapExplosive
 	wep_rad[143] = 0;
@@ -1608,7 +1608,7 @@ function scrWeapons() {
 	wep_load[145] = 14
 	wep_cost[145] = 3
 	wep_sprt[145] = sprLineFire
-	wep_area[145] = 10
+	wep_area[145] = 9
 	wep_text[145] = "don't get in the line of fire"
 	wep_swap[145] = sndSwapFlame
 	wep_rad[145] = 0;
@@ -1817,7 +1817,7 @@ function scrWeapons() {
 	wep_load[164] = 16
 	wep_cost[164] = 3
 	wep_sprt[164] = sprLineBloodNader
-	wep_area[164] = 10
+	wep_area[164] = 9
 	wep_text[164] = "it's a bloody blood bath"
 	wep_swap[164] = sndSwapExplosive
 	wep_rad[164] = 0;
