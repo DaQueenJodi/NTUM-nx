@@ -28,6 +28,10 @@ image_xscale=point_distance(x,y,other.dir.x-other.hspeed,other.dir.y-other.vspee
 }}
 
 
-if speed<1 && alarm[11] < 1
-	alarm[11] = 10;
+if speed<1 && alarm[1] < 1
+{
+	alarm[1] = 10;
+	image_index = 2
+	image_speed = 0;
+}
 
