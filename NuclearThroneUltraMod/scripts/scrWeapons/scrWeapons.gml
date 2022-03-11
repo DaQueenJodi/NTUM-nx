@@ -926,7 +926,7 @@ function scrWeapons() {
 	wep_load[83] = 3
 	wep_cost[83] = 1
 	wep_sprt[83] = sprBloodRifle
-	wep_area[83] = 2
+	wep_area[83] = 1
 	wep_text[83] = "bloody hell"
 	wep_swap[83] = sndSwapMachinegun
 	wep_rad[83] = 0;
@@ -2771,7 +2771,7 @@ function scrWeapons() {
 	wep_name[251] = "YOYO GUN"
 	wep_type[251] = 3
 	wep_auto[251] = 1
-	wep_load[251] = 14
+	wep_load[251] = 16
 	wep_cost[251] = 2
 	wep_sprt[251] = sprYoyoGun
 	wep_area[251] = 3
@@ -4307,7 +4307,7 @@ function scrWeapons() {
 	wep_rad[389] = 0;
 	
 	wep_name[390] = "JAWSPLITTER"
-	wep_type[390] = 2
+	wep_type[390] = 3
 	wep_auto[390] = 0
 	wep_load[390] = 15
 	wep_cost[390] = 1
@@ -4318,7 +4318,7 @@ function scrWeapons() {
 	wep_rad[390] = 0;
 	
 	wep_name[391] = "GOLDEN JAWSPLITTER"
-	wep_type[391] = 2
+	wep_type[391] = 3
 	wep_auto[391] = 0
 	wep_load[391] = 14
 	wep_cost[391] = 1
