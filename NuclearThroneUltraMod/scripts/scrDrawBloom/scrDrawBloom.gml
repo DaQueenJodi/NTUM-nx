@@ -98,8 +98,19 @@ function scrDrawBloom() {
 				draw_sprite_ext(sprite_index,-1,x,y,1.8,1.8,image_angle,c_white,image_alpha*(0.5-ba));
 		}
 	}
-
+	with DiscoBall
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with PlasmaBall
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
+	with BouncerPlasmaBall
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
+	with BouncerPlasmaBallBig
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
+	with RedirectorPlasmaBall
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
+	with ElectroBall
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
+	with ElectroBallBig
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with PlasmaFX
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)

@@ -6,5 +6,5 @@ with instance_create(x,y,Splinter)
 	team = other.team
 }
 
-snd_play(sndSplinterGun,0.2,true,true,1);
+snd_play(sndJackHammer,0.2,true,true,1);
 alarm[2] = 2;

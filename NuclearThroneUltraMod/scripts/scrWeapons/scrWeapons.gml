@@ -964,7 +964,7 @@ function scrWeapons() {
 	wep_swap[86] = sndSwapShotgun
 	wep_rad[86] = 0;
 
-	wep_name[87] = " DOUBLE MINIGUN"
+	wep_name[87] = "DOUBLE MINIGUN"
 	wep_type[87] = 1
 	wep_auto[87] = 1
 	wep_load[87] = 1
@@ -993,7 +993,7 @@ function scrWeapons() {
 	wep_cost[89] = 1
 	wep_sprt[89] = sprDirectorSlugger
 	wep_area[89] = 4
-	wep_text[89] = "curveball"
+	wep_text[89] = "control"
 	wep_swap[89] = sndSwapShotgun
 	wep_rad[89] = 0;
 
@@ -1004,7 +1004,7 @@ function scrWeapons() {
 	wep_cost[90] = 2
 	wep_sprt[90] = sprAPistol
 	wep_area[90] = 1
-	wep_text[90] = ""
+	wep_text[90] = "new classic"
 	wep_swap[90] = sndSwapMachinegun
 	wep_rad[90] = 0;
 
@@ -1015,7 +1015,7 @@ function scrWeapons() {
 	wep_cost[91] = 3
 	wep_sprt[91] = sprAssaultShotgun
 	wep_area[91] = 5
-	wep_text[91] = ""
+	wep_text[91] = "burst shotgun"
 	wep_swap[91] = sndSwapShotgun
 	wep_rad[91] = 0;
 
@@ -1763,7 +1763,7 @@ function scrWeapons() {
 	wep_cost[159] = 4
 	wep_sprt[159] = sprQuadrupleFlameShotgun
 	wep_area[159] = 8
-	wep_text[159] = ""
+	wep_text[159] = "quad"
 	wep_swap[159] = sndSwapShotgun
 	wep_rad[159] = 0;
 
@@ -1774,7 +1774,7 @@ function scrWeapons() {
 	wep_cost[160] = 3
 	wep_sprt[160] = sprFlameEraser
 	wep_area[160] = 8//6 ERASER
-	wep_text[160] = ""
+	wep_text[160] = "buuuuuuuuuuuuurrrrrn"
 	wep_swap[160] = sndSwapShotgun
 	wep_rad[160] = 0;
 
@@ -1928,7 +1928,7 @@ function scrWeapons() {
 	wep_cost[174] = 1
 	wep_sprt[174] = sprFlameDirectorShotgun
 	wep_area[174] = 5
-	wep_text[174] = ""
+	wep_text[174] = "heatflow"
 	wep_swap[174] = sndSwapShotgun
 	wep_rad[174] = 0;
 
@@ -1983,7 +1983,7 @@ function scrWeapons() {
 	wep_cost[179] = 1
 	wep_sprt[179] = sprAutoFlareGun
 	wep_area[179] = 9
-	wep_text[179] = ""
+	wep_text[179] = "automatic signalling"
 	wep_swap[179] = sndSwapFlame
 	wep_rad[179] = 0;
 
@@ -2335,7 +2335,7 @@ function scrWeapons() {
 	wep_cost[211] = 1
 	wep_sprt[211] = sprMiniPlasmaRifle
 	wep_area[211] = 6
-	wep_text[211] = ""
+	wep_text[211] = "fast bubbles"
 	wep_swap[211] = sndSwapEnergy
 	wep_rad[211] = 0;
 
@@ -2742,7 +2742,7 @@ function scrWeapons() {
 	wep_cost[248] = 1
 	wep_sprt[248] = sprUltraPopGun
 	wep_area[248] = 18
-	wep_text[248] = ""
+	wep_text[248] = "hey friend"
 	wep_swap[248] = sndSwapMachinegun
 	wep_rad[248] = 2;
 
@@ -2764,7 +2764,7 @@ function scrWeapons() {
 	wep_cost[250] = 1
 	wep_sprt[250] = sprAutoExploBow
 	wep_area[250] = 7
-	wep_text[250] = ""
+	wep_text[250] = "boom boom pow"
 	wep_swap[250] = sndSwapBow
 	wep_rad[250] = 0;
 
@@ -3545,7 +3545,7 @@ function scrWeapons() {
 	wep_cost[321] = 0
 	wep_sprt[321] = sprLightningScrewDriver
 	wep_area[321] = 7
-	wep_text[321] = ""
+	wep_text[321] = "electrical engineering"
 	wep_swap[321] = sndSwapEnergy
 	wep_rad[321] = 0;
 
@@ -3700,7 +3700,7 @@ function scrWeapons() {
 	wep_cost[335] = 2
 	wep_sprt[335] = sprFrostSMG
 	wep_area[335] = 6
-	wep_text[335] = ""
+	wep_text[335] = "cold sub"
 	wep_swap[335] = sndSwapPistol
 	wep_rad[335] = 0;
 
@@ -3711,7 +3711,7 @@ function scrWeapons() {
 	wep_cost[336] = 6
 	wep_sprt[336] = sprFrostARifle
 	wep_area[336] = 7
-	wep_text[336] = ""
+	wep_text[336] = "freeze burst"
 	wep_swap[336] = sndSwapMachinegun
 	wep_rad[336] = 0;
 
@@ -3821,7 +3821,7 @@ function scrWeapons() {
 	wep_cost[346] = 6
 	wep_sprt[346] = sprAutoBulletShotgun
 	wep_area[346] = 8
-	wep_text[346] = ""
+	wep_text[346] = "bullets not pellets"
 	wep_swap[346] = sndSwapShotgun
 	wep_rad[346] = 0;
 
@@ -4247,7 +4247,7 @@ function scrWeapons() {
 	wep_cost[384] = 1
 	wep_sprt[384] = sprBouncerRevolver
 	wep_area[384] = 1
-	wep_text[384] = "hey how you doing"
+	wep_text[384] = "mini plasma is faster and smaller#than regular plasma"
 	wep_swap[384] = sndSwapPistol
 	wep_rad[384] = 0;
 	
@@ -4280,7 +4280,7 @@ function scrWeapons() {
 	wep_cost[387] = 2
 	wep_sprt[387] = sprPlasmaRifle
 	wep_area[387] = 10
-	wep_text[387] = ""
+	wep_text[387] = "boioioioink"
 	wep_swap[387] = sndSwapEnergy
 	wep_rad[387] = 0;
 	
@@ -4291,7 +4291,7 @@ function scrWeapons() {
 	wep_cost[388] = 9
 	wep_sprt[388] = sprPlasmaCannon
 	wep_area[388] = 14
-	wep_text[388] = "fun fun fun"
+	wep_text[388] = "boioioioioioioioioioioink"
 	wep_swap[388] = sndSwapEnergy
 	wep_rad[388] = 0;
 	
@@ -4313,7 +4313,7 @@ function scrWeapons() {
 	wep_cost[390] = 1
 	wep_sprt[390] = sprJawbreaker
 	wep_area[390] = 1
-	wep_text[390] = "pincer attack"
+	wep_text[390] = "cheekbone hitter"
 	wep_swap[390] = sndSwapBow
 	wep_rad[390] = 0;
 	
@@ -4324,7 +4324,7 @@ function scrWeapons() {
 	wep_cost[391] = 1
 	wep_sprt[391] = sprJawbreaker
 	wep_area[391] = 17
-	wep_text[391] = "cheekbone hitter"
+	wep_text[391] = ""
 	wep_swap[391] = sndSwapBow
 	wep_rad[391] = 0;
 	
@@ -4377,7 +4377,7 @@ function scrWeapons() {
 	wep_auto[396] = 0
 	wep_load[396] = 180
 	wep_cost[396] = 25
-	wep_sprt[396] = sprLaserWaveGun
+	wep_sprt[396] = sprDiscoGun
 	wep_area[396] = 16
 	wep_text[396] = "BRING YOUR OWN PARTY!"
 	wep_swap[396] = sndSwapEnergy
@@ -4388,7 +4388,7 @@ function scrWeapons() {
 	wep_auto[397] = 0
 	wep_load[397] = 24
 	wep_cost[397] = 2
-	wep_sprt[397] = sprSplinterBomb
+	wep_sprt[397] = sprSwarmBomb
 	wep_area[397] = 4
 	wep_text[397] = "bee hive"
 	wep_swap[397] = sndSwapBow
@@ -4399,9 +4399,9 @@ function scrWeapons() {
 	wep_auto[398] = 0
 	wep_load[398] = 8
 	wep_cost[398] = 3
-	wep_sprt[398] = sprSplinterBomb
+	wep_sprt[398] = sprLightningLaserGun
 	wep_area[398] = 10
-	wep_text[398] = "its a laser and lightning!"
+	wep_text[398] = ""
 	wep_swap[398] = sndSwapBow
 	wep_rad[398] = 0;
 	
@@ -4432,7 +4432,7 @@ function scrWeapons() {
 	wep_auto[401] = 0
 	wep_load[401] = 30//13
 	wep_cost[401] = 25
-	wep_sprt[401] = sprGoldenGrenadeRevolver
+	wep_sprt[401] = sprHealthDispenser
 	wep_area[401] = 8
 	wep_text[401] = "medic!"
 	wep_swap[401] = sndSwapExplosive
@@ -4456,7 +4456,7 @@ function scrWeapons() {
 	wep_cost[403] = 2
 	wep_sprt[403] = sprClusterNader
 	wep_area[403] = 6
-	wep_text[403] = "the bouncer"
+	wep_text[403] = ""
 	wep_swap[403] = sndSwapSword
 	wep_rad[403] = 0;
 	
@@ -4465,18 +4465,18 @@ function scrWeapons() {
 	wep_auto[404] = 0
 	wep_load[404] = 48
 	wep_cost[404] = 4
-	wep_sprt[404] = sprMissileLauncher
+	wep_sprt[404] = sprMissileBombThrower
 	wep_area[404] = 10
 	wep_text[404] = "be very carefull"
 	wep_swap[404] = sndSwapExplosive
 	wep_rad[404] = 0;
 	
-	wep_name[405] = "CUBER"
+	wep_name[405] = "CUBER REVOLVER"
 	wep_type[405] = 1
 	wep_auto[405] = 0
 	wep_load[405] = 6
 	wep_cost[405] = 1
-	wep_sprt[405] = sprRevolver
+	wep_sprt[405] = sprCuberRevolver
 	wep_area[405] = 8
 	wep_text[405] = "phase through walls"
 	wep_swap[405] = sndSwapPistol
@@ -4487,7 +4487,7 @@ function scrWeapons() {
 	wep_auto[406] = 1
 	wep_load[406] = 3
 	wep_cost[406] = 1
-	wep_sprt[406] = sprRevolver
+	wep_sprt[406] = sprCuberRifle
 	wep_area[406] = 10
 	wep_text[406] = "square bullets"
 	wep_swap[406] = sndSwapPistol
@@ -4498,7 +4498,7 @@ function scrWeapons() {
 	wep_auto[407] = 0
 	wep_load[407] = 14
 	wep_cost[407] = 1
-	wep_sprt[407] = sprRevolver
+	wep_sprt[407] = sprMorphOLaser
 	wep_area[407] = 5
 	wep_text[407] = "sheep blaser"
 	wep_swap[407] = sndSwapPistol
@@ -4509,11 +4509,22 @@ function scrWeapons() {
 	wep_auto[408] = 1
 	wep_load[408] = 6
 	wep_cost[408] = 1
-	wep_sprt[408] = sprRevolver
+	wep_sprt[408] = sprMorphORifle
 	wep_area[408] = 4
 	wep_text[408] = "sheep shooter"
 	wep_swap[408] = sndSwapPistol
 	wep_rad[408] = 0;
+	
+	wep_name[409] = "DIRECTOR PLASMA GUN"
+	wep_type[409] = 5
+	wep_auto[409] = 0
+	wep_load[409] = 25
+	wep_cost[409] = 2
+	wep_sprt[409] = sprPlasmaGun
+	wep_area[409] = 6
+	wep_text[409] = "curve ball"
+	wep_swap[409] = sndSwapEnergy
+	wep_rad[409] = 0;
 	
 	
 	/*

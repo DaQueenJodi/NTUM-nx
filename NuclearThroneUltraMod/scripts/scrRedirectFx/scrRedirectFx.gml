@@ -2,6 +2,7 @@
 // /@description
 ///@param
 function scrRedirectFx(){
+	BackCont.shake += 1;
 	snd_play(sndDirector);
 	audio_stop_sound(sndDirector)
 	audio_sound_pitch(sndDirector,random_range(0.9,1.1))

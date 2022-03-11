@@ -5,55 +5,8 @@ function scrDrawGameOver() {
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_center)
 	gameover = "";
-	var topText = "YOU DID NOT REACH THE NUCLEAR THRONE";
-	if BackCont.loops > 9
-	{
-		topText = choose(
-		"WORLD RECORD!?","BRUH WHAT WAS THIS SETUP?",
-		"PLEASE NERF THIS SETUP","ABSOLUTLY INSANE","WORLD RECORD!","DOUBLE DIGIT LOOP!"
-		);	
-	}
-	if BackCont.loops > 7
-	{
-		topText = choose(
-		"DID YOU RECORD THAT?","ABSOLUTLY CRACKED AT THE GAME",
-		"YOU DESTROYED THE NUCLEAR THRONE","YOU LOOPED","AWESOME!","THAT WAS A GOOD RUN","GREAT WORK","AMAZING","ITS A LOOP!","VERY WELL PLAYED",
-		"MORE THAN ONE LOOP!?","GREAT NOW DO IT AGAIN!","AMAZING RUN!","CRACKED","ABOVE AND BEYOND","YO WTF 8 LOOPS??","BRUH WHAT WAS THIS SETUP?",
-		"PLEASE NERF THIS SETUP","ABSOLUTLY INSANE","WOOOOOO"
-		);	
-	}
-	else if BackCont.loops > 1
-	{
-		topText = choose(
-		"GREAT WORK","WELL PLAYED","WELL DONE",
-		"YOU DESTROYED THE NUCLEAR THRONE","YOU LOOPED","AWESOME!","THAT WAS A GOOD RUN","GREAT WORK","AMAZING","ITS A LOOP!","VERY WELL PLAYED",
-		"MORE THAN ONE LOOP!?","GREAT NOW DO IT AGAIN!","AMAZING RUN!","CRACKED","ABOVE AND BEYOND","YEA!"
-		);	
-	}
-	if BackCont.loops > 0
-	{
-		topText = choose(
-		"YOU DESTROYED THE NUCLEAR THRONE","YOU LOOPED","AWESOME!","THAT WAS A GOOD RUN","GREAT WORK","AMAZING","ITS A LOOP!",
-		"YOU DESTROYED THE NUCLEAR THRONE","YOU DESTROYED THE NUCLEAR THRONE","VERY WELL PLAYED"
-		);
-	}
-	else if (BackCont.area > 4 && BackCont.area != 10)
-	{
-		topText = choose(
-		"GREAT WORK","NICE TRY","WELL PLAYED","WELL DONE","GREAT WORK",
-		"YOU DID NOT REACH THE NUCLEAR THRONE","YOU ARE AWESOME","YOU ARE GREAT",
-		"THAT WAS A GOOD RUN","YOU DID NOT REACH THE NUCLEAR THRONE","YOU DID NOT REACH THE NUCLEAR THRONE"
-		);
-	} else
-	{
-		topText = choose(
-			"NICE TRY","YOU DID NOT REACH THE NUCLEAR THRONE","YOU DID NOT REACH THE NUCLEAR THRONE",
-			"BETTER LUCK NEXT TIME","YOU DID NOT REACH THE NUCLEAR THRONE","MISSION FAILED","TRY AGAIN"
-			);
-	}
-	var 
 	if (UberCont.opt_gamemode != 25 && UberCont.opt_gamemode != 8)
-		gameover = topText+"##KILLS: "+string(BackCont.kills)+"#LEVEL: "+string(BackCont.area)+"_"+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
+		gameover = gameoverText+"##KILLS: "+string(BackCont.kills)+"#LEVEL: "+string(BackCont.area)+"_"+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
 	else if (UberCont.opt_gamemode == 25)
 	{
 		gameover = "KILLS: "+string(BackCont.kills)+"#LEVEL: "+string(BackCont.area)+"_"+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)

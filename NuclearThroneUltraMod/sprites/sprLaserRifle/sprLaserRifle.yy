@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprLaserRifle","path":"sprites/sprLaserRifle/sprLaserRifle.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprLaserRifle",
     "tags": [],
     "resourceType": "GMSequence",
   },

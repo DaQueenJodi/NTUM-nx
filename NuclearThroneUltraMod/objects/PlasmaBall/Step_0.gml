@@ -12,16 +12,16 @@ if instance_exists(Player)
     if Player.race=11
     {
     speed+=0.5;
-    if speed>10
+    if speed>maxspeed+3
     {
-    speed=10;
+    speed=maxspeed+3;
     }
     }
-    else if(speed>7)
-    {speed=7;}
+    else if(speed>maxspeed)
+    {speed=maxspeed;}
 }
-else if(speed>7)
-{speed=7;}
+else if(speed>maxspeed)
+{speed=maxspeed;}
 
 
 

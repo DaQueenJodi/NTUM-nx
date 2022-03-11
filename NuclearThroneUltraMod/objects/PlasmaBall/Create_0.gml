@@ -22,3 +22,4 @@ Sleep(3)
 resetSpeed=false;
 
 alarm[11] = 1;
+maxspeed = 7;

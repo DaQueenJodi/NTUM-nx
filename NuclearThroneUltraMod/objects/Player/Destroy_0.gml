@@ -1,6 +1,6 @@
 //UNLOCK EASY MODE
 if area=1 && subarea=1 && loops=0
-scrUnlockGameMode(9,"YOU DID THAT ON PURPOSE")
+scrUnlockGameMode(9,"FOR DIEING ON 1-1#YOU DID THAT ON PURPOSE")
 
 if scrCheckLoopAll()
 scrUnlockCSkin(1,"FOR LOOPING WITH EVERY CHARACTER",0);
@@ -264,6 +264,10 @@ else
 		BackCont.subarea = subarea
 		BackCont.hard = hard
 		BackCont.loops = loops
+		with TopCont
+		{
+			gameoverText = scrDecideGameoverText();	
+		}
 	}
 
 	with UberCont

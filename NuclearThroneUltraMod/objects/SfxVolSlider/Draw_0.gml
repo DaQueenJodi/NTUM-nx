@@ -27,6 +27,7 @@ if UberCont.opt_sfxvol > 0
 	else
 		UberCont.opt_sfxvol -= 0.05
 }
+UberCont.opt_sfxvol = max(0,UberCont.opt_sfxvol);
 with MusCont
 {
 audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
@@ -48,6 +49,7 @@ if UberCont.opt_sfxvol < 1
 	else
 		UberCont.opt_sfxvol += 0.05;
 }
+UberCont.opt_sfxvol = min(1,UberCont.opt_sfxvol);
 with MusCont
 {
 audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
