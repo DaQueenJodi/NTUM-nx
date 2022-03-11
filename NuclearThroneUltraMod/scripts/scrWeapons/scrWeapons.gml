@@ -93,7 +93,7 @@ function scrWeapons() {
 	wep_name[8] = "DOUBLE SHOTGUN"
 	wep_type[8] = 2
 	wep_auto[8] = 0
-	wep_load[8] = 34
+	wep_load[8] = 28
 	wep_cost[8] = 2
 	wep_sprt[8] = sprSuperShotgun
 	wep_area[8] = 5
@@ -736,7 +736,7 @@ function scrWeapons() {
 	wep_name[66] = "QUADRUPLE SHOTGUN"
 	wep_type[66] = 2
 	wep_auto[66] = 0
-	wep_load[66] = 36
+	wep_load[66] = 35
 	wep_cost[66] = 4
 	wep_sprt[66] = sprQuadrupleShotgun
 	wep_area[66] = 7
@@ -1737,7 +1737,7 @@ function scrWeapons() {
 	wep_name[157] = "DOUBLE FLAME SHOTGUN"
 	wep_type[157] = 2
 	wep_auto[157] = 0
-	wep_load[157] = 34
+	wep_load[157] = 28
 	wep_cost[157] = 2
 	wep_sprt[157] = sprDoubleFlameShotgun
 	wep_area[157] = 6
@@ -1759,7 +1759,7 @@ function scrWeapons() {
 	wep_name[159] = "QUADRUPLE FLAME SHOTGUN"
 	wep_type[159] = 2
 	wep_auto[159] = 0
-	wep_load[159] = 37
+	wep_load[159] = 35
 	wep_cost[159] = 4
 	wep_sprt[159] = sprQuadrupleFlameShotgun
 	wep_area[159] = 8
@@ -1891,7 +1891,7 @@ function scrWeapons() {
 	wep_name[171] = "DOUBLE DIRECTOR SHOTGUN"
 	wep_type[171] = 2
 	wep_auto[171] = 0
-	wep_load[171] = 34
+	wep_load[171] = 28
 	wep_cost[171] = 2
 	wep_sprt[171] = sprDoubleDirectorShotgun
 	wep_area[171] = 5
@@ -1902,7 +1902,7 @@ function scrWeapons() {
 	wep_name[172] = "QUADRUPLE DIRECTOR SHOTGUN"
 	wep_type[172] = 2
 	wep_auto[172] = 0
-	wep_load[172] = 38
+	wep_load[172] = 35
 	wep_cost[172] = 4
 	wep_sprt[172] = sprQuadrupleDirectorShotgun
 	wep_area[172] = 7
@@ -1935,7 +1935,7 @@ function scrWeapons() {
 	wep_name[175] = "DOUBLE FLAME DIRECTOR SHOTGUN"
 	wep_type[175] = 2
 	wep_auto[175] = 0
-	wep_load[175] = 35
+	wep_load[175] = 28
 	wep_cost[175] = 2
 	wep_sprt[175] = sprDoubleFlameDirectorShotgun
 	wep_area[175] = 8
@@ -1946,7 +1946,7 @@ function scrWeapons() {
 	wep_name[176] = "QUADRUPLE FLAME DIRECTOR SHOTGUN"
 	wep_type[176] = 2
 	wep_auto[176] = 0
-	wep_load[176] = 39
+	wep_load[176] = 35
 	wep_cost[176] = 4
 	wep_sprt[176] = sprQuadrupleFlameDirectorShotgun
 	wep_area[176] = 10
