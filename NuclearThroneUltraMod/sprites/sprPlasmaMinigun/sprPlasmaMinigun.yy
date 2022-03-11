@@ -93,8 +93,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Custom",
-    "path": "folders/Sprites/Weapons/Custom.yy",
+    "name": "Existing",
+    "path": "folders/Sprites/Weapons/Existing.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprPlasmaMinigun",

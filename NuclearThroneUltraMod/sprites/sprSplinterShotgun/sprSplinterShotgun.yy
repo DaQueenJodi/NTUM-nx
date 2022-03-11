@@ -93,8 +93,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Existing",
-    "path": "folders/Sprites/Weapons/Existing.yy",
+    "name": "Custom",
+    "path": "folders/Sprites/Weapons/Custom.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSplinterShotgun",

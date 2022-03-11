@@ -736,7 +736,7 @@ function scrWeapons() {
 	wep_name[66] = "QUADRUPLE SHOTGUN"
 	wep_type[66] = 2
 	wep_auto[66] = 0
-	wep_load[66] = 39
+	wep_load[66] = 36
 	wep_cost[66] = 4
 	wep_sprt[66] = sprQuadrupleShotgun
 	wep_area[66] = 7
@@ -1759,7 +1759,7 @@ function scrWeapons() {
 	wep_name[159] = "QUADRUPLE FLAME SHOTGUN"
 	wep_type[159] = 2
 	wep_auto[159] = 0
-	wep_load[159] = 40
+	wep_load[159] = 37
 	wep_cost[159] = 4
 	wep_sprt[159] = sprQuadrupleFlameShotgun
 	wep_area[159] = 8
@@ -1902,7 +1902,7 @@ function scrWeapons() {
 	wep_name[172] = "QUADRUPLE DIRECTOR SHOTGUN"
 	wep_type[172] = 2
 	wep_auto[172] = 0
-	wep_load[172] = 41
+	wep_load[172] = 38
 	wep_cost[172] = 4
 	wep_sprt[172] = sprQuadrupleDirectorShotgun
 	wep_area[172] = 7
@@ -1946,7 +1946,7 @@ function scrWeapons() {
 	wep_name[176] = "QUADRUPLE FLAME DIRECTOR SHOTGUN"
 	wep_type[176] = 2
 	wep_auto[176] = 0
-	wep_load[176] = 42
+	wep_load[176] = 39
 	wep_cost[176] = 4
 	wep_sprt[176] = sprQuadrupleFlameDirectorShotgun
 	wep_area[176] = 10
@@ -4245,7 +4245,7 @@ function scrWeapons() {
 	wep_auto[384] = 0
 	wep_load[384] = 10
 	wep_cost[384] = 1
-	wep_sprt[384] = sprBouncerRevolver
+	wep_sprt[384] = sprMiniPlasmaGun
 	wep_area[384] = 1
 	wep_text[384] = "mini plasma is faster and smaller#than regular plasma"
 	wep_swap[384] = sndSwapPistol
@@ -4256,7 +4256,7 @@ function scrWeapons() {
 	wep_auto[385] = 1
 	wep_load[385] = 15
 	wep_cost[385] = 3
-	wep_sprt[385] = sprBladeGun
+	wep_sprt[385] = sprSplinterBladeGun
 	wep_area[385] = 8
 	wep_text[385] = "blades don't hurt you"
 	wep_swap[385] = sndSwapBow
@@ -4267,7 +4267,7 @@ function scrWeapons() {
 	wep_auto[386] = 1
 	wep_load[386] = 17
 	wep_cost[386] = 2
-	wep_sprt[386] = sprPlasmaGun
+	wep_sprt[386] = sprBouncerPlasmaGun
 	wep_area[386] = 7
 	wep_text[386] = "boioink"
 	wep_swap[386] = sndSwapEnergy
@@ -4278,7 +4278,7 @@ function scrWeapons() {
 	wep_auto[387] = 1
 	wep_load[387] = 10
 	wep_cost[387] = 2
-	wep_sprt[387] = sprPlasmaRifle
+	wep_sprt[387] = sprBouncerPlasmaRifle
 	wep_area[387] = 10
 	wep_text[387] = "boioioioink"
 	wep_swap[387] = sndSwapEnergy
@@ -4289,7 +4289,7 @@ function scrWeapons() {
 	wep_auto[388] = 0
 	wep_load[388] = 46
 	wep_cost[388] = 9
-	wep_sprt[388] = sprPlasmaCannon
+	wep_sprt[388] = sprBouncerPlasmaCannon
 	wep_area[388] = 14
 	wep_text[388] = "boioioioioioioioioioioink"
 	wep_swap[388] = sndSwapEnergy
@@ -4300,7 +4300,7 @@ function scrWeapons() {
 	wep_auto[389] = 0
 	wep_load[389] = 14
 	wep_cost[389] = 2
-	wep_sprt[389] = sprLaserGun
+	wep_sprt[389] = sprDoubleLaserGun
 	wep_area[389] = 5
 	wep_text[389] = "a higher accuracy narrows the gap"
 	wep_swap[389] = sndSwapEnergy
@@ -4311,7 +4311,7 @@ function scrWeapons() {
 	wep_auto[390] = 0
 	wep_load[390] = 15
 	wep_cost[390] = 1
-	wep_sprt[390] = sprJawbreaker
+	wep_sprt[390] = sprJawSplitter
 	wep_area[390] = 1
 	wep_text[390] = "cheekbone hitter"
 	wep_swap[390] = sndSwapBow
@@ -4322,9 +4322,9 @@ function scrWeapons() {
 	wep_auto[391] = 0
 	wep_load[391] = 14
 	wep_cost[391] = 1
-	wep_sprt[391] = sprJawbreaker
+	wep_sprt[391] = sprGoldenJawSplitter
 	wep_area[391] = 17
-	wep_text[391] = ""
+	wep_text[391] = "golden jaw"
 	wep_swap[391] = sndSwapBow
 	wep_rad[391] = 0;
 	
@@ -4333,7 +4333,7 @@ function scrWeapons() {
 	wep_auto[392] = 0
 	wep_load[392] = 225
 	wep_cost[392] = 30
-	wep_sprt[392] = sprMuchasLaser
+	wep_sprt[392] = sprMuchasFuego
 	wep_area[392] = 18
 	wep_text[392] = "en petit peu"
 	wep_swap[392] = sndSwapDragon
@@ -4344,7 +4344,7 @@ function scrWeapons() {
 	wep_auto[393] = 1
 	wep_load[393] = 5
 	wep_cost[393] = 1
-	wep_sprt[393] = sprDragon
+	wep_sprt[393] = sprTwoHeadedDragon
 	wep_area[393] = 16
 	wep_text[393] = "holding fire will increase the power"
 	wep_swap[393] = sndSwapDragon
@@ -4366,7 +4366,7 @@ function scrWeapons() {
 	wep_auto[395] = 1
 	wep_load[395] = 20
 	wep_cost[395] = 6
-	wep_sprt[395] = sprElectroGun
+	wep_sprt[395] = sprElectroCannon
 	wep_area[395] = 7
 	wep_text[395] = "state of the art gunnery"
 	wep_swap[395] = sndSwapEnergy
@@ -4520,11 +4520,44 @@ function scrWeapons() {
 	wep_auto[409] = 0
 	wep_load[409] = 25
 	wep_cost[409] = 2
-	wep_sprt[409] = sprPlasmaGun
+	wep_sprt[409] = sprDirectorPlasmaGun
 	wep_area[409] = 6
 	wep_text[409] = "curve ball"
 	wep_swap[409] = sndSwapEnergy
 	wep_rad[409] = 0;
+	
+	wep_name[410] = "DOUBLE BOUNCER LASER PISTOL"
+	wep_type[410] = 5
+	wep_auto[410] = 0
+	wep_load[410] = 15
+	wep_cost[410] = 2
+	wep_sprt[410] = sprDoubleBouncerLaserGun
+	wep_area[410] = 9
+	wep_text[410] = "geometry!"
+	wep_swap[410] = sndSwapEnergy
+	wep_rad[410] = 0;
+	
+	wep_name[411] = "KRAKEN YOYO GUN"
+	wep_type[411] = 3
+	wep_auto[411] = 1
+	wep_load[411] = 16
+	wep_cost[411] = 3
+	wep_sprt[411] = sprYoyoGun
+	wep_area[411] = 6
+	wep_text[411] = ""
+	wep_swap[411] = sndSwapBow
+	wep_rad[411] = 0;
+	
+	wep_name[412] = "LANCE"
+	wep_type[412] = 0
+	wep_auto[412] = 0
+	wep_load[412] = 18
+	wep_cost[412] = 0
+	wep_sprt[412] = sprWrench
+	wep_area[412] = 5
+	wep_text[412] = "ratchet"
+	wep_swap[412] = sndSwapSword
+	wep_rad[412] = 0;
 	
 	
 	/*

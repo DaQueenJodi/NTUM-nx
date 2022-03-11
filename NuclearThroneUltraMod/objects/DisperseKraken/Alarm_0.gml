@@ -1,7 +1,7 @@
 alarm[0]=time;
 
 snd_play(sndRoll);
-snd_play(sndBloodLauncher);
+//snd_play(sndBloodLauncher);
 
 snd_play(choose(sndWater1,sndWater2) );
 var accuracy = 1;
@@ -21,11 +21,10 @@ with instance_create(x,y,Tentacle)
 	image_angle = other.image_angle
 	}
 
-	repeat(3){
 	with instance_create(x,y,FishBoost)
 	{
 	motion_add(other.image_angle-90+random(60)-30,2+random(4) );
-	}}
+	}
 
 }
 with instance_create(x,y,Tentacle)
@@ -42,11 +41,10 @@ with instance_create(x,y,Tentacle)
 	image_angle = other.image_angle
 	}
 
-	repeat(3){
 	with instance_create(x,y,FishBoost)
 	{
 	motion_add(other.image_angle+90+random(60)-30,2+random(4) );
-	}}
+	}
 
 }
 

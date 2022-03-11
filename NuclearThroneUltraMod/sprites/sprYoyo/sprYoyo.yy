@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprYoyo","path":"sprites/sprYoyo/sprYoyo.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprYoyo",
     "tags": [],
     "resourceType": "GMSequence",
   },

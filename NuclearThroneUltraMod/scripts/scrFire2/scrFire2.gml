@@ -5844,5 +5844,80 @@ function scrFire2() {
 
 	break;
 	
+	//DOUBLE BOUNCER LASER PISTOL
+	case 410:
+
+	if Player.skill_got[17] = 1
+	snd_play_fire(sndLaserUpg)
+	else
+	snd_play_fire(sndLaser)
+	var aimDir = point_direction(x,y,mouse_x,mouse_y);
+	var len = 5 * accuracy;
+	with instance_create(x+lengthdir_x(len,aimDir+90),y+lengthdir_y(len,aimDir+90),Laser)
+	{image_angle = aimDir+(random(2)-1)*other.accuracy
+	team = other.team
+	laserhit=5;
+	sprite_index=sprBouncingLaser;
+	image_yscale -= 0.1
+	event_perform(ev_alarm,0)
+	}
+	with instance_create(x+lengthdir_x(len,aimDir-90),y+lengthdir_y(len,aimDir-90),Laser)
+	{image_angle = aimDir+(random(2)-1)*other.accuracy
+	team = other.team
+	laserhit=5;
+	sprite_index=sprBouncingLaser;
+	image_yscale -= 0.1
+	event_perform(ev_alarm,0)
+	}
+
+	BackCont.viewx2 += lengthdir_x(5.5,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(5.5,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 4.5
+	wkick = 4
+
+	break;
+	
+	//KRAKEN YOYO GUN
+	case 411:
+
+	snd_play_fire(sndDiscgun)
+
+	with instance_create(x,y,KrakenYoyo)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,6)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 6
+	wkick = 5
+
+	break;
+
+	//LANCE
+	case 412:
+
+	snd_play_fire(choose(sndSword1,sndSword2))
+
+	instance_create(x,y,Dust)
+
+	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),LanceShank)
+	{
+	longarms = 0
+	if instance_exists(Player)
+	longarms = (Player.skill_got[13]+other.bettermelee)*3
+	motion_add(point_direction(x,y,mouse_x,mouse_y),3+longarms)
+	image_angle = direction
+	team = other.team}
+
+	wepangle = -wepangle
+	motion_add(point_direction(x,y,mouse_x,mouse_y),8)
+	BackCont.viewx2 += lengthdir_x(14,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(14,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.shake += 1
+	wkick = -6
+
+	break;
+	
 	}//end of switch part 2!
 }

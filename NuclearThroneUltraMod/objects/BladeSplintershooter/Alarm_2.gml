@@ -5,6 +5,6 @@ with instance_create(x,y,Splinter)
 	image_angle = direction
 	team = other.team
 }
-
+if !audio_is_playing(sndJackHammer)
 snd_play(sndJackHammer,0.2,true,true,1);
 alarm[2] = 2;

@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprLaserGun","path":"sprites/sprLaserGun/sprLaserGun.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprLaserGun",
     "tags": [],
     "resourceType": "GMSequence",
   },
