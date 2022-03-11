@@ -4475,7 +4475,7 @@ function scrWeapons() {
 	wep_type[405] = 1
 	wep_auto[405] = 0
 	wep_load[405] = 6
-	wep_cost[405] = 1
+	wep_cost[405] = 2
 	wep_sprt[405] = sprCuberRevolver
 	wep_area[405] = 8
 	wep_text[405] = "phase through walls"
@@ -4486,7 +4486,7 @@ function scrWeapons() {
 	wep_type[406] = 1
 	wep_auto[406] = 1
 	wep_load[406] = 3
-	wep_cost[406] = 1
+	wep_cost[406] = 2
 	wep_sprt[406] = sprCuberRifle
 	wep_area[406] = 10
 	wep_text[406] = "square bullets"
