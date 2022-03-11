@@ -2851,7 +2851,7 @@ function scrWeapons() {
 	wep_load[258] = 18
 	wep_cost[258] = 1
 	wep_sprt[258] = sprShotgunRifle1
-	wep_area[258] = 2
+	wep_area[258] = 4
 	wep_text[258] = "true hybrid gun"
 	wep_swap[258] = sndSwapShotgun
 	wep_rad[258] = 0;
@@ -4540,9 +4540,9 @@ function scrWeapons() {
 	wep_name[411] = "KRAKEN YOYO GUN"
 	wep_type[411] = 3
 	wep_auto[411] = 1
-	wep_load[411] = 16
+	wep_load[411] = 24
 	wep_cost[411] = 3
-	wep_sprt[411] = sprYoyoGun
+	wep_sprt[411] = sprKrakenYoyoGun
 	wep_area[411] = 6
 	wep_text[411] = ""
 	wep_swap[411] = sndSwapBow
@@ -4553,9 +4553,9 @@ function scrWeapons() {
 	wep_auto[412] = 0
 	wep_load[412] = 18
 	wep_cost[412] = 0
-	wep_sprt[412] = sprWrench
+	wep_sprt[412] = sprLance
 	wep_area[412] = 5
-	wep_text[412] = "ratchet"
+	wep_text[412] = ""
 	wep_swap[412] = sndSwapSword
 	wep_rad[412] = 0;
 	

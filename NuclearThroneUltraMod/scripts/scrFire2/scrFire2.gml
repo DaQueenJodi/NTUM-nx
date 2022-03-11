@@ -1658,7 +1658,7 @@ function scrFire2() {
 	{
 	snd_play_fire(sndShotgun)
 
-	repeat(8)
+	repeat(9)
 	{
 	with instance_create(x,y,Bullet2)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(40)-20)*other.accuracy,12+random(6))
@@ -5901,12 +5901,12 @@ function scrFire2() {
 
 	instance_create(x,y,Dust)
 
-	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),LanceShank)
+	with instance_create(x+lengthdir_x(5+((Player.skill_got[13]+bettermelee)*20),point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(5+((Player.skill_got[13]+bettermelee)*20),point_direction(x,y,mouse_x,mouse_y)),LanceShank)
 	{
 	longarms = 0
 	if instance_exists(Player)
 	longarms = (Player.skill_got[13]+other.bettermelee)*3
-	motion_add(point_direction(x,y,mouse_x,mouse_y),3+longarms)
+	motion_add(point_direction(x,y,mouse_x,mouse_y),4+longarms)
 	image_angle = direction
 	team = other.team}
 

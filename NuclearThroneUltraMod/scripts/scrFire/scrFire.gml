@@ -146,7 +146,7 @@ function scrFire() {
 
 	instance_create(x,y,Dust)
 
-	with instance_create(x+lengthdir_x(5+((Player.skill_got[13]+bettermelee)*20),point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(5+((Player.skill_got[13]+bettermelee)*20),point_direction(x,y,mouse_x,mouse_y)),Slash)
+	with instance_create(x+lengthdir_x(((Player.skill_got[13]+bettermelee)*20),point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(((Player.skill_got[13]+bettermelee)*20),point_direction(x,y,mouse_x,mouse_y)),Slash)
 	{
 	dmg = 4
 	longarms = 0
