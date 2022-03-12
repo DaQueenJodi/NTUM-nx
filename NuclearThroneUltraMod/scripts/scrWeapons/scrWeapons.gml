@@ -4309,7 +4309,7 @@ function scrWeapons() {
 	wep_name[390] = "JAWSPLITTER"
 	wep_type[390] = 3
 	wep_auto[390] = 0
-	wep_load[390] = 15
+	wep_load[390] = 13
 	wep_cost[390] = 1
 	wep_sprt[390] = sprJawSplitter
 	wep_area[390] = 1
@@ -4320,7 +4320,7 @@ function scrWeapons() {
 	wep_name[391] = "GOLDEN JAWSPLITTER"
 	wep_type[391] = 3
 	wep_auto[391] = 0
-	wep_load[391] = 14
+	wep_load[391] = 12
 	wep_cost[391] = 1
 	wep_sprt[391] = sprGoldenJawSplitter
 	wep_area[391] = 17
