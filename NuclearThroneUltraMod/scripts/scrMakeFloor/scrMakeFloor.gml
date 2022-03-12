@@ -396,7 +396,7 @@ function scrMakeFloor() {
 	} 
 	
 	//savanna
-	if area = 10{ if random(5) < 3
+	if area = 10{ if random(5) < 2
 	{instance_create(x,y,Floor)
 	instance_create(x+32,y,Floor)
 	instance_create(x-32,y,Floor)
