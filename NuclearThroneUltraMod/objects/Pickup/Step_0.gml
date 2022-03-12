@@ -1,4 +1,4 @@
-if instance_exists(Player) && !cursed {
+if instance_exists(Player) && (!cursed || Player.skill_got[3]) {
     if instance_exists(ProtoStatue) and speed = 0 {
         if point_distance(x, y, ProtoStatue.x, ProtoStatue.y) < 180 and(Player.ultra_got[12] == 1 || collision_line(x, y, ProtoStatue.x, ProtoStatue.y, Wall, 0, 0) < 0) {
             if place_free(x + lengthdir_x(12, point_direction(x, y, ProtoStatue.x, ProtoStatue.y)), y)
@@ -6,7 +6,7 @@ if instance_exists(Player) && !cursed {
             if place_free(x, y + lengthdir_y(12, point_direction(x, y, ProtoStatue.x, ProtoStatue.y)))
             y += lengthdir_y(12, point_direction(x, y, ProtoStatue.x, ProtoStatue.y))
         } else if speed = 0 {
-            if point_distance(x, y, Player.x, Player.y) < 75 + Player.betterpluto or instance_exists(Portal) {
+            if point_distance(x, y, Player.x, Player.y) < 77 + Player.betterpluto or instance_exists(Portal) {
                 if place_free(x + lengthdir_x(12, point_direction(x, y, Player.x, Player.y)), y)
                 x += lengthdir_x(12, point_direction(x, y, Player.x, Player.y))
                 if place_free(x, y + lengthdir_y(12, point_direction(x, y, Player.x, Player.y)))
@@ -20,7 +20,7 @@ if instance_exists(Player) && !cursed {
 
     }
     else if speed = 0 {
-        if point_distance(x, y, Player.x, Player.y) < 75 + Player.betterpluto or instance_exists(Portal) {
+        if point_distance(x, y, Player.x, Player.y) < 77 + Player.betterpluto or instance_exists(Portal) {
             if place_free(x + lengthdir_x(12, point_direction(x, y, Player.x, Player.y)), y)
             x += lengthdir_x(12, point_direction(x, y, Player.x, Player.y))
             if place_free(x, y + lengthdir_y(12, point_direction(x, y, Player.x, Player.y)))

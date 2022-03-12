@@ -2305,6 +2305,7 @@
     {"id":{"name":"sprCampfireBear","path":"sprites/sprCampfireBear/sprCampfireBear.yy",},"order":33,},
     {"id":{"name":"sprCaveSparkle","path":"sprites/sprCaveSparkle/sprCaveSparkle.yy",},"order":34,},
     {"id":{"name":"sprCharredGround","path":"sprites/sprCharredGround/sprCharredGround.yy",},"order":35,},
+    {"id":{"name":"mskVulture","path":"sprites/mskVulture/mskVulture.yy",},"order":12,},
     {"id":{"name":"sprCheeseDrip","path":"sprites/sprCheeseDrip/sprCheeseDrip.yy",},"order":36,},
     {"id":{"name":"sndSuperFireballerDie","path":"sounds/sndSuperFireballerDie/sndSuperFireballerDie.yy",},"order":1,},
     {"id":{"name":"sprCocoon","path":"sprites/sprCocoon/sprCocoon.yy",},"order":37,},

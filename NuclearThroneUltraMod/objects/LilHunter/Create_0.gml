@@ -28,14 +28,14 @@ snd_dead = sndLilHunterBreak
 //behavior
 walk = 0
 gunangle = random(360)
-alarm[1] = 600//400//30+random(90)
+alarm[1] = 700//400//30+random(90)
 wkick = 0
 dodge = 0
 z = 0
 intro = 0
 
 //FLY
-alarm[2] = 200+random(100)//30
+alarm[2] = 250+random(100)//30
 
 
 sndtaunt = 0

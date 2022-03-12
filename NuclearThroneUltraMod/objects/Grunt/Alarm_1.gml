@@ -8,7 +8,7 @@ scrTarget();
 
 if target > 0 and roll = 0
 {
-if target==Player
+if instance_exists(Player) && target==Player.id
 {
     if random(my_health/2+2+target.can_shoot*3) < 1 and freeze > 40
     {
@@ -34,7 +34,7 @@ if target==Player
     lastx = target.x
     lasty = target.y
     //SEE PLAYER AND FAR ENOUGH AND NOT SHOUTING "FREEZE MOTHERFUCKER"
-    if random(2) < 1 and freeze > 40 && point_distance(target.x,target.y,x,y) < 164
+    if random(2) < 1 and freeze > 40 && point_distance(target.x,target.y,x,y) < 156
     {
     //FIRE
     snd_play(sndGruntFire)

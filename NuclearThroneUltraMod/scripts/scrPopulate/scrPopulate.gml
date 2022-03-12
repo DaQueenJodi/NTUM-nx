@@ -296,7 +296,7 @@ function scrPopulate() {
 				with TopDecal
 					sprite_index = sprInvertedVulcanoTopDecal
 	            with Bones
-					sprite_index = sprVulcanoBones
+					sprite_index = sprInvertedVulcanoBones
 			}
         }
     }

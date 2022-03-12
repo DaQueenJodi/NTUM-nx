@@ -1473,10 +1473,10 @@ function scrWeapons() {
 	wep_name[133] = "AUTO SPLINTER GUN"
 	wep_type[133] = 3
 	wep_auto[133] = 1
-	wep_load[133] = 12
+	wep_load[133] = 10
 	wep_cost[133] = 1
 	wep_sprt[133] = sprAutoSplinterGun
-	wep_area[133] = 9
+	wep_area[133] = 8
 	wep_text[133] = "225 splinters per minute"
 	wep_swap[133] = sndSwapBow
 	wep_rad[133] = 0;
@@ -2783,7 +2783,7 @@ function scrWeapons() {
 	wep_type[252] = 3
 	wep_auto[252] = 1
 	wep_load[252] = 12
-	wep_cost[252] = 8
+	wep_cost[252] = 7
 	wep_sprt[252] = sprSuperYoyoGun
 	wep_area[252] = 8
 	wep_text[252] = "cutting edge technology"
@@ -2837,10 +2837,10 @@ function scrWeapons() {
 	wep_name[257] = "LIGHTNING CROSSBOW"
 	wep_type[257] = 3
 	wep_auto[257] = 0
-	wep_load[257] = 25
+	wep_load[257] = 24
 	wep_cost[257] = 2
 	wep_sprt[257] = sprLightningCrossbow
-	wep_area[257] = 6
+	wep_area[257] = 5
 	wep_text[257] = "lightning jolt!"
 	wep_swap[257] = sndSwapBow
 	wep_rad[257] = 0;
@@ -2893,7 +2893,7 @@ function scrWeapons() {
 	wep_type[262] = 3
 	wep_auto[262] = 1
 	wep_load[262] = 12
-	wep_cost[262] = 8
+	wep_cost[262] = 7
 	wep_sprt[262] = sprSpiralYoyoGun
 	wep_area[262] = 6
 	wep_text[262] = "this looks stupid"
@@ -4243,7 +4243,7 @@ function scrWeapons() {
 	wep_name[384] = "MINI PLASMA GUN"
 	wep_type[384] = 1
 	wep_auto[384] = 0
-	wep_load[384] = 10
+	wep_load[384] = 12
 	wep_cost[384] = 1
 	wep_sprt[384] = sprMiniPlasmaGun
 	wep_area[384] = 1

@@ -6,7 +6,7 @@ scrTarget()
 if target > 0 {
     if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {
 		var dis = point_distance(target.x, target.y, x, y);
-        if dis > 32  && dis < 160{
+        if dis > 48  && dis < 170{
 			//Leads shot!
 			var xx = target.x + (target.hspeed*2)
 			var yy = target.y + (target.vspeed*2)

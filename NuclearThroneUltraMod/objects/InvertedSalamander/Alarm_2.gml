@@ -10,7 +10,7 @@ sprite_index = spr_fire
             {
             sprite_index = sprFireLilHunter
         
-            motion_add(other.gunangle+random(4)-2,10)
+            motion_add(other.gunangle+random(4)-2,9)
             //image_angle = direction
             team = other.team
             }

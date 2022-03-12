@@ -2,7 +2,7 @@
 if instance_exists(Player) {
     if Player.loops > 0 { //LOOP
 
-        alarm[1] = 10 + random(12);
+        alarm[1] = 4 + random(8);
 
         scrTarget()
         if target > 0 {
@@ -58,7 +58,7 @@ if instance_exists(Player) {
 
     }
     else { //PRE LOOP
-        alarm[1] = 10 + random(10)
+        alarm[1] = 8 + random(8)
 
         scrTarget()
         if target > 0 {

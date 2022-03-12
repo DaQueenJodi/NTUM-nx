@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskBandit",
-    "path": "sprites/mskBandit/mskBandit.yy",
+    "name": "mskVulture",
+    "path": "sprites/mskVulture/mskVulture.yy",
   },
   "persistent": false,
   "parentObjectId": {

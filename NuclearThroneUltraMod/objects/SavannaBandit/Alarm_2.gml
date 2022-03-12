@@ -1,8 +1,8 @@
 /// @description ooo im gonna shoot!
 if instance_exists(Player) && Player.loops > 0 {
-	alarm[2] = 3;
+	alarm[2] = 2;
 } else {
-	alarm[2] = 5;
+	alarm[2] = 4;
 }
 
 if oooimgonnashoot {
