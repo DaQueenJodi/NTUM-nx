@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndMutant26Wrld",
-  "duration": 0.0,
+  "duration": 1.428027,
   "parent": {
     "name": "Humphry",
     "path": "folders/Sounds/Player/Humphry.yy",

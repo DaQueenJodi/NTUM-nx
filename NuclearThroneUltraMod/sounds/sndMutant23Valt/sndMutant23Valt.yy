@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndMutant23Valt",
-  "duration": 0.0,
+  "duration": 2.356688,
   "parent": {
     "name": "Frog",
     "path": "folders/Sounds/Player/Frog.yy",

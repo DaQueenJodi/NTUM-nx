@@ -791,7 +791,7 @@ function scrLoadRace() {
 	snd_chst=sndMutant26Crwn;//chst
 	snd_wrld=sndMutant26Wrld;
 	snd_thrn=sndMutant26Crwn;//
-	snd_valt=sndMutant23Valt;
+	snd_valt=sndMutant26Crwn;
 	break;
 
 	}
