@@ -4563,7 +4563,7 @@ function scrWeapons() {
 	wep_type[413] = 3
 	wep_auto[413] = 0
 	wep_load[413] = 20
-	wep_cost[413] = 2
+	wep_cost[413] = 3
 	wep_sprt[413] = sprLeacherBow
 	wep_area[413] = 7
 	wep_text[413] = "vampire"
