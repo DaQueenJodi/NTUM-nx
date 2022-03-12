@@ -19,7 +19,7 @@ if dir<10
 crown = other.dir
 }
 else
-{with instance_create(__view_get( e__VW.XView, 0 )+18+(dir-9)*32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-16,CrownIcon)//24
+{with instance_create(__view_get( e__VW.XView, 0 )+18+(dir-10)*32,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-16,CrownIcon)//24
 crown = other.dir
 }
 dir += 1}

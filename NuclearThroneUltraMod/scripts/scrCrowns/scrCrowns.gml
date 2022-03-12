@@ -11,7 +11,7 @@ function scrCrowns() {
 
 	crown_name[2] = "[CROWN OF LIFE]"
 	//crown_text[2] = "RESET LIFE TO MAX HP# AT THE END OF EACH LEVEL#NO HP DROPS"
-	crown_text[2] = "GAIN MAX HP#AT THE END OF EACH AREA#OVERHEAL FOR 25%"
+	crown_text[2] = "RESET HP TO MAX HP#AT THE END OF EACH AREA#IF YOU ALREADY HAVE MAX HP#OVERHEAL 2HP#NO HP DROPS"
 	crown_used[2] = 0
 	crown_tips[2] = "life"
 
@@ -51,7 +51,7 @@ function scrCrowns() {
 	crown_tips[9] = "you really like these weapons"
 
 	crown_name[10] = "[CROWN OF DIFFICULTY]"
-	crown_text[10] = "THE DIFFICULTY & WEAPON TIER INCREASES#MORE AS MUCH EACH LEVEL"
+	crown_text[10] = "THE DIFFICULTY & WEAPON TIER INCREASES#MORE EACH LEVEL"
 	crown_used[10] = 0
 	crown_tips[10] = "acceleration"
 
@@ -102,13 +102,13 @@ function scrCrowns() {
 	crown_text[18] = "DANCE BABY DANCE!#WARNING FLASHING LIGHTS"
 	crown_used[18] = 0
 	crown_tips[18] = "bullet disco!"
-	/*
-	crown_name[19] = "[CROWN OF DARKNESS]"
-	crown_text[19] = "EVERY AREA IS DARK#SOMETHING GOOD?"
+	
+	crown_name[19] = "[CROWN OF BLINDNESS]"
+	crown_text[19] = "EVERY AREA IS DARK#ENEMIES CAN HIT EACH OTHER"
 	crown_used[19] = 0
-	crown_tips[19] = "bullet disco!"
-*/
-	crownmax = 18
+	crown_tips[19] = "friendly fire"
+
+	crownmax = 19
 
 
 

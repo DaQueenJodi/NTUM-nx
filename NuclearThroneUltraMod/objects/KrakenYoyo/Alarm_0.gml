@@ -1,5 +1,5 @@
 /// @description Tentacles!
-alarm[0] = 5;
+alarm[0] = 6;
 
 snd_play(sndRoll);
 //snd_play(sndBloodLauncher);
@@ -13,7 +13,7 @@ with instance_create(x,y,Tentacle)
 	image_angle = other.image_angle-90+(random(30)-15)*accuracy
 	creator=other.id;
 	team = other.team
-	ammo = 12
+	ammo = 10
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)
@@ -33,7 +33,7 @@ with instance_create(x,y,Tentacle)
 	image_angle = other.image_angle+90+(random(30)-15)*accuracy
 	creator=other.id;
 	team = other.team
-	ammo = 12
+	ammo = 10
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)

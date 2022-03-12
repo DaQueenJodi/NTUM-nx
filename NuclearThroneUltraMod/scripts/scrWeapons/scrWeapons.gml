@@ -2782,7 +2782,7 @@ function scrWeapons() {
 	wep_name[252] = "SUPER YOYO GUN"
 	wep_type[252] = 3
 	wep_auto[252] = 1
-	wep_load[252] = 8
+	wep_load[252] = 12
 	wep_cost[252] = 8
 	wep_sprt[252] = sprSuperYoyoGun
 	wep_area[252] = 8
@@ -2892,8 +2892,8 @@ function scrWeapons() {
 	wep_name[262] = "SPIRAL YOYO GUN"
 	wep_type[262] = 3
 	wep_auto[262] = 1
-	wep_load[262] = 8
-	wep_cost[262] = 10
+	wep_load[262] = 12
+	wep_cost[262] = 8
 	wep_sprt[262] = sprSpiralYoyoGun
 	wep_area[262] = 6
 	wep_text[262] = "this looks stupid"
@@ -4218,7 +4218,7 @@ function scrWeapons() {
 	wep_swap[381] = sndSwapShotgun
 	wep_rad[381] = 0;
 	
-	wep_name[382] = "MUCHAS LÁSERES"
+	wep_name[382] = "MUCHAS LASERES"
 	wep_type[382] = 5
 	wep_auto[382] = 0
 	wep_load[382] = 225
