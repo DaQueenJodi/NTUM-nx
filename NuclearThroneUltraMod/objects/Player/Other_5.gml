@@ -118,10 +118,16 @@ if ultra_got[40] = 1 || ultra_got[47] {//Rebel Ultra D YUNG CUZ ULTRA C
 //CROWN OF LIFE
 if crown = 2
 {
+	if my_health >= maxhealth
+	{
+		my_health += 2;	
+	}
+	/*
 	var toHeal = maxhealth - min(my_health,maxhealth);
 	//my_health = maxhealth;
 	var overheal = (maxhealth - toHeal) * 0.25;
 	my_health = max(maxhealth,my_health + overheal);
+	*/
 }
 
 //NOCHEST SHIT

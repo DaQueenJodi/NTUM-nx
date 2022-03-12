@@ -1,11 +1,11 @@
 draw_set_color(c_dkgray)
 //draw_rectangle(x-12,y-16,x+12,y+16,0)
-
+var candrawoutline = skill < array_length(UberCont.ctot_skill_taken)-1
 if mouse_x > x-16 and mouse_x < x+16 and mouse_y > y-20 and mouse_y < y+20
 {
 draw_sprite(sprSkillSelected,-1,x,y)
 draw_sprite(sprite_index,skill,x+2,y-2)
-if UberCont.ctot_skill_taken[skill] > 0
+if candrawoutline && UberCont.ctot_skill_taken[skill] > 0
 {
 	var col = make_color_rgb(72,156,8);
 	draw_rectangle_color(x-12,y-17,x+12,y+15,col,col,col,col,true);	
@@ -16,7 +16,7 @@ else
 {
 draw_sprite(sprite_index,skill,x,y)
 draw_sprite_ext(sprite_index,skill,x,y,1,1,0,c_black,0.05)
-if UberCont.ctot_skill_taken[skill] > 0
+if candrawoutline && UberCont.ctot_skill_taken[skill] > 0
 {
 	var col = make_color_rgb(72,156,8);
 	draw_rectangle_color(x-12,y-16,x+11,y+15,col,col,col,col,true);	

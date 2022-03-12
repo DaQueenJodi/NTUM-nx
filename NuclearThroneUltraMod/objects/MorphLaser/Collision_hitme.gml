@@ -3,7 +3,8 @@ if other.team != team and other.my_health > 0
 {
 	with instance_create(other.x,other.y,Morph)
 	{
-		team = other.team;	
+		team = other.team;
+		alarm[0] -= 1;
 	}
 	
 	with other

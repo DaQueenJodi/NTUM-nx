@@ -6,7 +6,7 @@ SetSeed();
 instance_create(10000,10000,FloorMaker)
 instance_create(0,0,TopCont)
 wave = 0
-
+skillscroll = 0;
 
 if instance_exists(Player)
 {

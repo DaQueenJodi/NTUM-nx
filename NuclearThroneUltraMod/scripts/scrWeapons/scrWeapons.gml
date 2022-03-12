@@ -1495,7 +1495,7 @@ function scrWeapons() {
 	wep_name[135] = "LOLLIPOP"
 	wep_type[135] = 0
 	wep_auto[135] = 0
-	wep_load[135] = 42
+	wep_load[135] = 36
 	wep_cost[135] = 0
 	wep_sprt[135] = sprLollipop
 	wep_area[135] = 16
@@ -2089,7 +2089,7 @@ function scrWeapons() {
 	wep_name[189] = "SPLINTER SEEKER"
 	wep_type[189] = 3
 	wep_auto[189] = 0
-	wep_load[189] = 31
+	wep_load[189] = 28
 	wep_cost[189] = 2
 	wep_sprt[189] = sprSplinterSeeker
 	wep_area[189] = 7
@@ -2100,7 +2100,7 @@ function scrWeapons() {
 	wep_name[190] = "SEEKER CROSSBOW"
 	wep_type[190] = 3
 	wep_auto[190] = 0
-	wep_load[190] = 32
+	wep_load[190] = 28
 	wep_cost[190] = 2
 	wep_sprt[190] = sprSeekerCrossbow
 	wep_area[190] = 7
@@ -2837,7 +2837,7 @@ function scrWeapons() {
 	wep_name[257] = "LIGHTNING CROSSBOW"
 	wep_type[257] = 3
 	wep_auto[257] = 0
-	wep_load[257] = 24
+	wep_load[257] = 22
 	wep_cost[257] = 2
 	wep_sprt[257] = sprLightningCrossbow
 	wep_area[257] = 5
@@ -4497,7 +4497,7 @@ function scrWeapons() {
 	wep_type[407] = 5
 	wep_auto[407] = 0
 	wep_load[407] = 14
-	wep_cost[407] = 1
+	wep_cost[407] = 2
 	wep_sprt[407] = sprMorphOLaser
 	wep_area[407] = 5
 	wep_text[407] = "sheep blaser"

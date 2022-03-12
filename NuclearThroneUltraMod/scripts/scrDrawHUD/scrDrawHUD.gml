@@ -447,17 +447,36 @@ function scrDrawHUD() {
 	}
 
 	//SKILL ICONS
-	dir = 0
-	dix = 0
+	dix = 0;
+	dir = 0;
+	if Player.level > 14
+	{
+		var cdir = 0;
+		var fs = 0;
+		repeat(Player.maxskill+1)
+		{
+			if Player.skill_got[cdir] == 1
+			{
+				fs++
+				if fs == skillscroll
+				{
+					dir = cdir;	
+				}
+			}
+			cdir ++;
+		}
+	}
 	repeat(Player.maxskill+1)
 	{
-	if Player.skill_got[dir] = 1
-	{
-	draw_sprite_ext(sprSkillIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+13,1,1,0,c_black,1)
-	draw_sprite_ext(sprSkillIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+12,1,1,0,c_white,1)
-	dix += 1
-	}
-	dir += 1
+		if Player.skill_got[dir] = 1 && dix < 12 - (max(-1,Player.maxarmour-1))
+		{
+			draw_sprite_ext(sprSkillIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+13,1,1,0,c_black,1)
+			draw_sprite_ext(sprSkillIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+12,1,1,0,c_white,1)
+			dix += 1
+		}
+		dir += 1
+		if dir > Player.maxskill
+			dir = 0;
 	}
 	//ULTRA ICON
 	dir=1;
@@ -468,8 +487,8 @@ function scrDrawHUD() {
 	    if Player.ultra_got[dir]
 	    {
 	    if !(dir=79 && Player.race=21){//Horror don't draw skeleton's ultra
-	    draw_sprite_ext(sprUltraIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+24,1,1,0,c_black,1);
-	    draw_sprite_ext(sprUltraIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+26,1,1,0,c_white,1);
+	    draw_sprite_ext(sprUltraIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+20,1,1,0,c_black,1);
+	    draw_sprite_ext(sprUltraIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+22,1,1,0,c_white,1);
 	    }
 	    dix+=1
 	    }
@@ -481,7 +500,7 @@ function scrDrawHUD() {
 	    repeat(Player.skeletonlives)
 	    {
 	    dix++;
-		draw_sprite_ext(sprExtraLivesHud,1,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-16*dix,__view_get( e__VW.YView, 0 )+40,1,1,0,c_white,1);
+		draw_sprite_ext(sprExtraLivesHud,1,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-16*dix,__view_get( e__VW.YView, 0 )+36,1,1,0,c_white,1);
 	    }
 	}
 

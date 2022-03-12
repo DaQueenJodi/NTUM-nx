@@ -23,6 +23,7 @@ with Player
 	        //{
 			highesttier = min(highesttier,highest_wep_tier-2);//Cap it
 	        var dir=0;
+			var targetTier = highesttier+1+skill_got[5];
 	        var newwep = wep;
 	            do
 	            {
@@ -31,7 +32,7 @@ with Player
 		            if dir>4999
 						newwep=wep;
 	            }
-	            until(  (wep_area[newwep]==(highesttier+2+skill_got[5]) )|| ( ( wep_area[newwep]==highesttier || ( wep_area[newwep] > highesttier && wep_area[newwep] < highesttier+2+skill_got[5] ) )&&dir>3000 ) || ( dir>5000 ) )//PREVENT INFINITE LOOP HERE IF YOU HAVE HIGHEST TIER WEAPON
+	            until(  (wep_area[newwep]==(targetTier) )|| ( ( wep_area[newwep]==highesttier || ( wep_area[newwep] > highesttier && wep_area[newwep] < targetTier ) )&&dir>3000 ) || ( dir>5000 ) )//PREVENT INFINITE LOOP HERE IF YOU HAVE HIGHEST TIER WEAPON
             
 	            //wep=0;
 	            //scrSwapWeps()

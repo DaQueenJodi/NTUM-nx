@@ -18,6 +18,7 @@ with MusCont
 	audio_stop_sound(song);
 	song = other.song;
 	snd_loop(song);
+	audio_sound_gain(song, max(0, sqrt(UberCont.opt_musvol)), 0);
 }
 with Player
 {
@@ -205,14 +206,6 @@ switch (waveType)
 			yy: centerY
 		};
 		i++;
-		repeat(4)
-		{
-			wave[i] = {
-				obj: SnowTank,
-				time: 10,
-			};
-			i++;
-		};
 		wave[i] = {
 			obj: VanSpawn,
 			time: 30,

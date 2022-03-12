@@ -1,5 +1,6 @@
 pick = 0
 canmove = 1
+skillscroll = 0;
 
 __view_set( e__VW.XView, 0, 0 )
 __view_set( e__VW.YView, 0, 0 )
@@ -61,7 +62,6 @@ else if (Player.skillsChosen>7 || (Player.ultra_got[0] && Player.skillpoints < 2
 			{
 				instance_create(x,y,LevCont);
 				instance_destroy();
-				exit;	
 			}
 		}
 		if UberCont.opt_gamemode == 28 //ALL MUTATION CHOICES

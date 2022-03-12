@@ -1389,6 +1389,7 @@
     {"id":{"name":"sprMutant6Idle","path":"sprites/sprMutant6Idle/sprMutant6Idle.yy",},"order":5,},
     {"id":{"name":"sprMutant6Walk","path":"sprites/sprMutant6Walk/sprMutant6Walk.yy",},"order":7,},
     {"id":{"name":"sprMutant6Hurt","path":"sprites/sprMutant6Hurt/sprMutant6Hurt.yy",},"order":9,},
+    {"id":{"name":"AnySkillLeft","path":"scripts/AnySkillLeft/AnySkillLeft.yy",},"order":51,},
     {"id":{"name":"sprMutant6Dead","path":"sprites/sprMutant6Dead/sprMutant6Dead.yy",},"order":11,},
     {"id":{"name":"sprMutant4Walk","path":"sprites/sprMutant4Walk/sprMutant4Walk.yy",},"order":0,},
     {"id":{"name":"sprMutant4Hurt","path":"sprites/sprMutant4Hurt/sprMutant4Hurt.yy",},"order":1,},

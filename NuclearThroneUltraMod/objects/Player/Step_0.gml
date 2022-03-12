@@ -723,6 +723,9 @@ with instance_create(x,y,PopupText)
 mytext = "LEVEL "+string(other.level)+"!"
 instance_create(x,y,LevelUp)
 skillpoints += 1
+if level > 40
+	skillsChosena --;
+	
 
 }
 else
