@@ -545,9 +545,9 @@ if (my_health<prevhealth)
 
 		prevhealth=my_health;
 		if race=25
-			alarm[3]=35;
+			alarm[3]=36;
 		else
-			alarm[3]=30;//duration
+			alarm[3]=32;//duration
 		myShield = instance_create(x,y,EuphoriaShield);
 		with myShield
 		{
