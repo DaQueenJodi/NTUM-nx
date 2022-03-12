@@ -349,7 +349,7 @@ function scrWeapons() {
 	wep_load[31] = 29
 	wep_cost[31] = 1
 	wep_sprt[31] = sprToxicBow
-	wep_area[31] = 5
+	wep_area[31] = 4
 	wep_text[31] = "hold breath while firing"
 	wep_swap[31] = sndSwapBow
 	wep_rad[31] = 0;
