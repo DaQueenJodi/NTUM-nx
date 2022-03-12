@@ -37,7 +37,7 @@ if (hundredPercentI) >= array_length(hundredPercent)
 	}
 
 	var racedir=1;
-	/*
+	
 	repeat(racemax)
 	{
 		var dir = 1;
@@ -49,7 +49,7 @@ if (hundredPercentI) >= array_length(hundredPercent)
 			dir++;
 		}
 	racedir++;
-	}*/
+	}
 	scrSave();
 	}
 	room_restart();
