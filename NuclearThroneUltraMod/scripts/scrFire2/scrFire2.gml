@@ -5115,7 +5115,7 @@ function scrFire2() {
 		{
 			with instance_create(x+8,y+14,Laser)
 			{
-				image_yscale += 0.1;
+				image_yscale += 0.2;
 				image_angle = 270;
 				team = t
 				event_perform(ev_alarm,0)
@@ -5125,7 +5125,7 @@ function scrFire2() {
 		{
 			with instance_create(x+14,y+8,Laser)
 			{
-				image_yscale += 0.1;
+				image_yscale += 0.2;
 				image_angle = 0;
 				team = t
 				event_perform(ev_alarm,0)

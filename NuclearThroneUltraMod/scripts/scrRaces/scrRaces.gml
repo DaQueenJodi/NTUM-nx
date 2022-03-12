@@ -79,7 +79,7 @@ function scrRaces() {
 	race_bskin[5] = 0
 	race_cskin[5] = 0
 	race_bskin_lock[5] = "REACH WONDERLAND#IN UNDER 8 MINUTES#AS PLANT"
-	race_cskin_lock[5] = "KILL 2.000 ENEMIES IN ONE RUN#AS PLANT"
+	race_cskin_lock[5] = "KILL 2.000#ENEMIES IN ONE RUN#AS PLANT"
 
 
 	race_name[6] = "[Y.V.]"
