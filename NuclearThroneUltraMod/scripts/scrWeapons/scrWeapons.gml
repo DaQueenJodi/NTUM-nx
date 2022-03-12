@@ -4496,7 +4496,7 @@ function scrWeapons() {
 	wep_name[407] = "MORPH-O-LASER"
 	wep_type[407] = 5
 	wep_auto[407] = 0
-	wep_load[407] = 14
+	wep_load[407] = 13
 	wep_cost[407] = 2
 	wep_sprt[407] = sprMorphOLaser
 	wep_area[407] = 5
