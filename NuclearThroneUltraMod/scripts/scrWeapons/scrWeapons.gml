@@ -2024,7 +2024,7 @@ function scrWeapons() {
 	wep_type[183] = 2
 	wep_auto[183] = 0
 	wep_load[183] = 22
-	wep_cost[183] = 3
+	wep_cost[183] = 2
 	wep_sprt[183] = sprFlameDirectorEraser
 	wep_area[183] = 10//6
 	wep_text[183] = "redirecting"
