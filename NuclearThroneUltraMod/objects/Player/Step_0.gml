@@ -1077,9 +1077,9 @@ with projectile
                 {
                     if instance_exists(enemy)
                     {
-						var homeBoost = 0.4;
+						var homeBoost = 1;
 						if instance_exists(Player) && Player.skill_got[30]
-							homeBoost = 0.45;
+							homeBoost = 1.5;
 							
                         if collision_line(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y,Wall,0,0) < 0
                         {
