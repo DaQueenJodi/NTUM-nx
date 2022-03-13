@@ -63,6 +63,7 @@ function scrNextLevel() {
 	        {
 	        area = 3
 	        subarea = 1
+			inverted=false
 	        exit;
 	        }
         
@@ -83,12 +84,14 @@ function scrNextLevel() {
 	        {
 	        area=3;
 	        subarea=3;
+			inverted=false
 	        exit;
 	        }
 	        else
 	        {
 	        area=4;
 	        subarea=1;
+			inverted=false
 	        exit;
 	        }
     
@@ -108,12 +111,14 @@ function scrNextLevel() {
 	        {
 	        area=5;
 	        subarea=3;
+			inverted=false
 	        exit;
 	        }
 	        else
 	        {
 	        area=6;
 	        subarea=1;
+			inverted=false
 	        exit;
 	        }
     
@@ -140,6 +145,7 @@ function scrNextLevel() {
 	        {
 	        area=8;
 	        subarea=1;
+			inverted=false
 	        exit;
 	        }
     
@@ -159,12 +165,14 @@ function scrNextLevel() {
 	        {
 	        area=8;
 	        subarea=3;
+			inverted=false
 	        exit;
 	        }
 	        else
 	        {
 	        area=9;
 	        subarea=1;
+			inverted=false
 	        }
         
 	    }
@@ -203,12 +211,14 @@ function scrNextLevel() {
 	        {
 	        area=6;
 	        subarea=2;
+			inverted=false
 	        exit;
 	        }
 	        else
 	        {
 	        area=7
 	        subarea=1;
+			inverted=false
 	        }
     
 	    }

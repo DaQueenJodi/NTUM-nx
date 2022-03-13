@@ -913,7 +913,7 @@ function scrWeapons() {
 	wep_type[82] = 5
 	wep_auto[82] = 0
 	wep_load[82] = 35
-	wep_cost[82] = 4
+	wep_cost[82] = 3
 	wep_sprt[82] = sprMegaLaserPistol
 	wep_area[82] = 7
 	wep_text[82] = "IMA FIRIN MAH LAZOR!"
@@ -956,7 +956,7 @@ function scrWeapons() {
 	wep_name[86] = "SUPER ERASER"
 	wep_type[86] = 2
 	wep_auto[86] = 0
-	wep_load[86] = 40
+	wep_load[86] = 36
 	wep_cost[86] = 10
 	wep_sprt[86] = sprSuperEraser
 	wep_area[86] = 14
@@ -1529,7 +1529,7 @@ function scrWeapons() {
 	wep_type[138] = 5
 	wep_auto[138] = 1
 	wep_load[138] = 16
-	wep_cost[138] = 4
+	wep_cost[138] = 3
 	wep_sprt[138] = sprMegaLaserRifle
 	wep_area[138] = 11//pistol = 7
 	wep_text[138] = "SHOOP DA WHOOP"
@@ -1650,7 +1650,7 @@ function scrWeapons() {
 	wep_type[149] = 2
 	wep_auto[149] = 0
 	wep_load[149] = 3
-	wep_cost[149] = 5
+	wep_cost[149] = 4
 	wep_sprt[149] = sprHyperBurstShotgun
 	wep_area[149] = 12
 	wep_text[149] = "hyper everything"
@@ -1661,7 +1661,7 @@ function scrWeapons() {
 	wep_type[150] = 2
 	wep_auto[150] = 0
 	wep_load[150] = 3
-	wep_cost[150] = 5
+	wep_cost[150] = 4
 	wep_sprt[150] = sprHyperBurstSlugger
 	wep_area[150] = 15
 	wep_text[150] = "where's your gatling slugger now?!"
@@ -1782,7 +1782,7 @@ function scrWeapons() {
 	wep_type[161] = 2
 	wep_auto[161] = 0
 	wep_load[161] = 60
-	wep_cost[161] = 15
+	wep_cost[161] = 12
 	wep_sprt[161] = sprSuperFlameEraser
 	wep_area[161] = 16//14 SUPER ERASER
 	wep_text[161] = "vaporize"
@@ -2695,7 +2695,7 @@ function scrWeapons() {
 	wep_type[244] = 5
 	wep_auto[244] = 0
 	wep_load[244] = 50
-	wep_cost[244] = 12
+	wep_cost[244] = 10
 	wep_sprt[244] = sprUltraMegaLaserPistol
 	wep_area[244] = 24
 	wep_text[244] = "the tam gun"
