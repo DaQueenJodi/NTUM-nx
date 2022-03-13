@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndHorrorBeam",
-  "duration": 0.0,
+  "duration": 0.326531,
   "parent": {
     "name": "Horror",
     "path": "folders/Sounds/Player/Horror.yy",

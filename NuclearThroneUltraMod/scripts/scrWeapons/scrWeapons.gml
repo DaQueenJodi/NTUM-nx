@@ -2018,7 +2018,7 @@ function scrWeapons() {
 	wep_area[182] = 7//6
 	wep_text[182] = "directing"
 	wep_swap[182] = sndSwapShotgun
-	wep_rad[182] = 0;f
+	wep_rad[182] = 0;
 
 	wep_name[183] = "FLAME DIRECTOR ERASER"
 	wep_type[183] = 2
@@ -3377,7 +3377,7 @@ function scrWeapons() {
 	wep_type[306] = 1
 	wep_auto[306] = 0
 	wep_load[306] = 17
-	wep_cost[306] = 9
+	wep_cost[306] = 8
 	wep_sprt[306] = sprBulletDisperseGun
 	wep_area[306] = 10
 	wep_text[306] = "no sense was made"
@@ -3410,7 +3410,7 @@ function scrWeapons() {
 	wep_type[309] = 1
 	wep_auto[309] = 0
 	wep_load[309] = 12
-	wep_cost[309] = 14
+	wep_cost[309] = 8
 	wep_sprt[309] = sprPopDisperseGun
 	wep_area[309] = 10
 	wep_text[309] = "no sense was made"
@@ -3421,7 +3421,7 @@ function scrWeapons() {
 	wep_type[310] = 5
 	wep_auto[310] = 0
 	wep_load[310] = 10
-	wep_cost[310] = 6
+	wep_cost[310] = 5
 	wep_sprt[310] = sprLaserDisperseGun
 	wep_area[310] = 13
 	wep_text[310] = "no sense was made"
@@ -3531,7 +3531,7 @@ function scrWeapons() {
 	wep_type[320] = 4
 	wep_auto[320] = 0
 	wep_load[320] = 30
-	wep_cost[320] = 14
+	wep_cost[320] = 12
 	wep_sprt[320] = sprDisperseBazooka
 	wep_area[320] = 16
 	wep_text[320] = "medicinal herb gun"
@@ -3873,7 +3873,7 @@ function scrWeapons() {
 	wep_type[351] = 1
 	wep_auto[351] = 0
 	wep_load[351] = 18
-	wep_cost[351] = 30
+	wep_cost[351] = 25
 	wep_sprt[351] = sprBulletDisperseDisperseGun
 	wep_area[351] = 18
 	wep_text[351] = "disperse it all!"
@@ -4021,7 +4021,7 @@ function scrWeapons() {
 	wep_type[364] = 4
 	wep_auto[364] = 1
 	wep_load[364] = 30
-	wep_cost[364] = 18
+	wep_cost[364] = 16
 	wep_sprt[364] = sprDisperseKrakenGun
 	wep_area[364] = 15
 	wep_text[364] = "mobilize the kraken!"
@@ -4066,7 +4066,7 @@ function scrWeapons() {
 	wep_type[368] = 4
 	wep_auto[368] = 0
 	wep_load[368] = 25
-	wep_cost[368] = 1
+	wep_cost[368] = 3
 	wep_sprt[368] = sprKrakenNader
 	wep_area[368] = 12
 	wep_text[368] = "ocean bomb!"

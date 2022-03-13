@@ -38,6 +38,7 @@ if sprite_index != spr_hurt
 	{
 		with instance_create(mouse_x,mouse_y,BloodGrenade)
 		{
+			dmg = 2;
 			exploAmount = explm;
 		visible=false;
 		sticky = 0
@@ -63,6 +64,7 @@ if sprite_index != spr_hurt
 
 	with instance_create(x,y,BloodGrenade)
 	{
+		dmg = 2;
 		exploAmount = explm;
 	visible=false;
 	sticky = 0

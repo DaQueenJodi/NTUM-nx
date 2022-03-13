@@ -8,4 +8,5 @@ offy = random(2)-1
 
 exploAmount = 3;
 typ = 1 
+dmg = 10;
 

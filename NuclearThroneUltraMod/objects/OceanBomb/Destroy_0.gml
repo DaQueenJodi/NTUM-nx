@@ -5,9 +5,9 @@ if instance_exists(Player)
 {
 	accuracy = Player.accuracy;	
 }
-var amount = 7;
+var amount = 8;
 var angle = image_angle;
-var angleStep = 360/7;
+var angleStep = 360/amount;
 snd_play(sndRoll);
 snd_play(sndBloodLauncher);
 

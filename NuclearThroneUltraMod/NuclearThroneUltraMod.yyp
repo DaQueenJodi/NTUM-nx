@@ -2032,6 +2032,7 @@
     {"id":{"name":"sprBullet5","path":"sprites/sprBullet5/sprBullet5.yy",},"order":57,},
     {"id":{"name":"sprBullet5Disappear","path":"sprites/sprBullet5Disappear/sprBullet5Disappear.yy",},"order":58,},
     {"id":{"name":"sprBullet4","path":"sprites/sprBullet4/sprBullet4.yy",},"order":59,},
+    {"id":{"name":"sndRadMod","path":"sounds/sndRadMod/sndRadMod.yy",},"order":38,},
     {"id":{"name":"sprPartnerBullet2","path":"sprites/sprPartnerBullet2/sprPartnerBullet2.yy",},"order":60,},
     {"id":{"name":"sndHammerHeadEnd","path":"sounds/sndHammerHeadEnd/sndHammerHeadEnd.yy",},"order":108,},
     {"id":{"name":"sprPartnerBullet","path":"sprites/sprPartnerBullet/sprPartnerBullet.yy",},"order":61,},

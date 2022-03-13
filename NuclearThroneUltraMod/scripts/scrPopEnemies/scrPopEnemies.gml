@@ -617,7 +617,7 @@ function scrPopEnemies() {
     if spawnarea == 9 && subarea != 3 {
 		if loops > 0 {
 			if styleb = 1 && random(7) < 2 {
-	            instance_create(x + 16, y + 16, choose(GuardianDog, GuardianDog, GhostGuardian))
+	            instance_create(x + 16, y + 16, choose(GuardianDog, GhostGuardian,PalaceGuardian))
 	        } else {
 	            var ran = random(100);
 

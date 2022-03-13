@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndHorrorPortal",
-  "duration": 0.0,
+  "duration": 3.614406,
   "parent": {
     "name": "Horror",
     "path": "folders/Sounds/Player/Horror.yy",

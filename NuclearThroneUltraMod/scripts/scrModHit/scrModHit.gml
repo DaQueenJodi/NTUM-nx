@@ -190,14 +190,9 @@ function scrModHit() {
 
 	case 14://Radiation
 
-
-	if !audio_is_playing(sndHorrorBeam)
-	{
-	audio_sound_pitch(sndHorrorBeam,random_range(0.7,1.6))
-	audio_play_sound(sndHorrorBeam,50,0)
-	}
-
-	other.raddrop+=7;
+	snd_play(sndRadMod,0.2,true);
+	if other.raddrop != 0
+		other.raddrop+=6;
 
 	break;
 
@@ -400,14 +395,9 @@ function scrModHit() {
 
 	case 14://Radiation
 
-
-	if !audio_is_playing(sndHorrorBeam)
-	{
-	audio_sound_pitch(sndHorrorBeam,random_range(0.7,1.6))
-	audio_play_sound(sndHorrorBeam,50,0)
-	}
-
-	other.raddrop+=7;
+	snd_play(sndRadMod,0.2,true);
+	if other.raddrop != 0
+		other.raddrop+=6;
 
 	break;
 
@@ -613,14 +603,9 @@ function scrModHit() {
 
 	case 14://Radiation
 
-
-	if !audio_is_playing(sndHorrorBeam)
-	{
-	audio_sound_pitch(sndHorrorBeam,random_range(0.7,1.6))
-	audio_play_sound(sndHorrorBeam,50,0)
-	}
-
-	other.raddrop+=7;
+	snd_play(sndRadMod,0.2,true);
+	if other.raddrop != 0
+		other.raddrop+=6;
 
 	break;
 
@@ -827,14 +812,9 @@ function scrModHit() {
 
 	case 14://Radiation
 
-
-	if !audio_is_playing(sndHorrorBeam)
-	{
-	audio_sound_pitch(sndHorrorBeam,random_range(0.7,1.6))
-	audio_play_sound(sndHorrorBeam,50,0)
-	}
-
-	other.raddrop+=7;
+	snd_play(sndRadMod,0.2,true);
+	if other.raddrop != 0
+		other.raddrop+=6;
 
 	break;
 
