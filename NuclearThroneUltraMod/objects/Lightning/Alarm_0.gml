@@ -42,15 +42,15 @@ if Player.ultra_got[43]&&instance_exists(Marker)//hunter focused fire
 {accuracy-=2;}
 if Player.ultra_got[42]//hunter never miss
 {accuracy-=4;}
-
+var modBoost = 1;
 if Mod1=13
-accuracy-=0.5;
+accuracy-=modBoost;
 if Mod2=13
-accuracy-=0.5;
+accuracy-=modBoost;
 if Mod3=13
-accuracy-=0.5;
+accuracy-=modBoost;
 if Mod4=13
-accuracy-=0.5;
+accuracy-=modBoost;
 
 if accuracy<0
 accuracy=0;
