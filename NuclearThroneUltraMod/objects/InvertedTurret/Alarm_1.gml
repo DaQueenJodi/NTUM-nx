@@ -12,7 +12,7 @@ if target > 0
 		{
 			if hidden
 			{
-				if (point_distance(target.x,target.y,x,y) < 64)
+				if (point_distance(target.x,target.y,x,y) < 256)
 				{
 					image_speed = 0.8;
 				}

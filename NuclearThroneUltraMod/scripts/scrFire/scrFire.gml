@@ -23,44 +23,67 @@ function scrFire() {
 
 	// ROIDS THRONEBUTT
 	//when firing both weapon more chance to giev other weapon ammo
+	if Player.ultra_got[25] && wep == bwep
+	{
+		if random(100)<((wep_cost[wep]/typ_ammo[wep_type[wep]])*0.5)*100
+		{
+			with instance_create(Player.x,Player.y-8,HealFX)
+			{
+				sprite_index=sprBloodlust;
+			}
+			snd_play(sndBloodlustProc);
+			var num = 1
+			Player.my_health = max(Player.my_health,min(Player.my_health + num,Player.maxhealth));
+    
+			dir = instance_create(x,y,PopupText)
+			dir.mytext = "+"+string(num)+" HP"
+			if Player.my_health = Player.maxhealth
+			dir.mytext = "MAX HP"
+			else if Player.my_health > Player.maxhealth
+			dir.mytext = "OVER MAX HP"
+		}
+	}
 	if (Player.race=7 && Player.skill_got[5]=1)
 	{
 	    if KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2
 	    {
-	        if random(100)<((wep_cost[bwep]/typ_ammo[wep_type[bwep]])*0.67)*100{
+	        if random(100)<((wep_cost[bwep]/typ_ammo[wep_type[bwep]])*0.69)*100
+			{
     
-	    type=round(typ_ammo[wep_type[bwep]]/2);
-	    if (ammo[wep_type[bwep]] + type >=typ_amax[wep_type[bwep]])
-	    {
-	    ammo[wep_type[bwep]]=typ_amax[wep_type[bwep]];
-	    }
-	    else
-	    ammo[wep_type[bwep]] += type;
+			    type=round(typ_ammo[wep_type[bwep]]/2);
+			    if (ammo[wep_type[bwep]] + type >=typ_amax[wep_type[bwep]])
+			    {
+					ammo[wep_type[bwep]]=typ_amax[wep_type[bwep]];
+			    }
+			    else
+					ammo[wep_type[bwep]] += type;
     
-	dir = instance_create(x,y,PopupText)
-	dir.mytext = "+"+string(other.type)+" "+string(other.typ_name[wep_type[bwep]])
-	if other.type = other.typ_amax[wep_type[bwep]]
-	dir.mytext = "MAX "+string(other.typ_name[wep_type[bwep]])}
+				dir = instance_create(x,y,PopupText)
+				dir.mytext = "+"+string(other.type)+" "+string(other.typ_name[wep_type[bwep]])
+				if other.type = other.typ_amax[wep_type[bwep]]
+					dir.mytext = "MAX "+string(other.typ_name[wep_type[bwep]])
+			}
 
 	    }
 	    else
 	    {
-	    if random(100)<((wep_cost[bwep]/typ_ammo[wep_type[bwep]])*0.5)*100{
+		    if random(100)<((wep_cost[bwep]/typ_ammo[wep_type[bwep]])*0.5)*100
+			{
     
-	    type=round(typ_ammo[wep_type[bwep]]/2)
-	    if (ammo[wep_type[bwep]] + type >=typ_amax[wep_type[bwep]])
-	    {
-	    ammo[wep_type[bwep]]=typ_amax[wep_type[bwep]];
-	    }
-	    else
-	    ammo[wep_type[bwep]] += type;
+			    type=round(typ_ammo[wep_type[bwep]]/2)
+			    if (ammo[wep_type[bwep]] + type >=typ_amax[wep_type[bwep]])
+			    {
+					ammo[wep_type[bwep]]=typ_amax[wep_type[bwep]];
+			    }
+			    else
+					ammo[wep_type[bwep]] += type;
     
-	dir = instance_create(x,y,PopupText)
-	dir.mytext = "+"+string(other.type)+" "+string(other.typ_name[wep_type[bwep]])
-	if other.type = other.typ_amax[wep_type[bwep]]
-	dir.mytext = "MAX "+string(other.typ_name[wep_type[bwep]])
+				dir = instance_create(x,y,PopupText)
+				dir.mytext = "+"+string(other.type)+" "+string(other.typ_name[wep_type[bwep]])
+				if other.type = other.typ_amax[wep_type[bwep]]
+					dir.mytext = "MAX "+string(other.typ_name[wep_type[bwep]])
 
-	    }
+		    }
 	    }
 
 	}

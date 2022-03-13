@@ -109,7 +109,7 @@ function scrUltras() {
     
 	//STEROIDS 
 	ultra_name[25] = "AMBIDEXTUROUS"
-	ultra_text[25] = "WEAPON CHESTS DROP#TWO OF THE SAME WEAPON"
+	ultra_text[25] = "WEAPON CHESTS DROP#TWO OF THE SAME WEAPON#FIRING WHILE HAVING TWO#OF THE SAME WEAPONS#SLOWLY HEALS YOU"
 	ultra_tips[25] = "big wep chests drop two duplicates"
 
 	ultra_name[26] = "GET LOADED"

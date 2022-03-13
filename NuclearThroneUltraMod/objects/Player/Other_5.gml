@@ -224,39 +224,8 @@ audio_stop_sound(sndHorrorLoopTB);
 audio_stop_sound(sndHorrorLoop);
 horrorcharge=origincharge;
 }
-/*
-if ultra_got[0] && !horrorEtaken
-{
-	skillpoints++;
-}*/
-/*
-//Horror ultra E
-if ultra_got[0]
-{
-var i = 0;
-var j = false;
-do
-{
-i++;
-if ultra_got[i]
-j=true;
-}
-until(i>=maxultra)
-
-if j==false
-{
-skillsChosen=10;
-
-//if ultra_got[79]
-//ultra_got[79]=0;
-
-}
-
-}
-*/
 oasis=false;
 
-/* */
 ///looping!
 if looping
 {

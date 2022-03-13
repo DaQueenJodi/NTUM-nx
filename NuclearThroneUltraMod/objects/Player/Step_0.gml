@@ -663,8 +663,10 @@ instance_create(x,y,WepSwap)
 scrSwapWeps()
 
 if ultra_got[27]//ROIDS MIRROR HANDS
-reload*=0.5
-
+{
+	reload *= 0.4;
+	breload *= 0.4;
+}
 snd_play(wep_swap[wep])
 if (curse)
 {
@@ -862,7 +864,7 @@ if breload <= 0
 {
 bcan_shoot = 1
 
-if ultra_got[27]{//fk u JW your system is shit (no offense)
+if ultra_got[27]{
 var roidsWepangle;//damage control
 roidsWepangle=bwepangle;//steroids melee shit
 scrSwapWeps();
