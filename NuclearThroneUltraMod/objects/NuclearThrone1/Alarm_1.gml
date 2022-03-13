@@ -23,7 +23,7 @@ if target > 0
 		fireTriShot = false;
 		bigballs = false;
 	}
-	else if target.y - y > 128 && ran > 70
+	else if target.y - y > 148 && ran > 70
 	{
 		//Far below me
 		walk = alarm[1];

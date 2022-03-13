@@ -9,6 +9,6 @@ team = 1;
 typ = 2;
 image_speed = 0.4;
 image_angle = random(360);
-friction = 0.1;
+friction = 0.09;
 
 alarm[0] = 4;

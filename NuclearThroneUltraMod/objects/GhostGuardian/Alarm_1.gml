@@ -1,4 +1,4 @@
-alarm[1] = 10+random(10)
+alarm[1] = 5+random(10)
 scrTarget()
 if target > 0
 {

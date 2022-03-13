@@ -11,6 +11,6 @@ with instance_create(x,y,BigGuardianBullet)
 	team = other.team;
 	x += lengthdir_x(8, dir);
 	y += lengthdir_y(8, dir);
-	motion_add(dir,2.4+random(2)+addspeed);
+	motion_add(dir,2.4+random(1.6)+addspeed);
 }
 instance_destroy();
