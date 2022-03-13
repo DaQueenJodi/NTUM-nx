@@ -41,42 +41,44 @@ function scrMakeFloor() {
 	if area = 4|| area = 111 || area = 115//caves?
 	instance_create(x,y,Floor)
 
-	if area = 5 || area = 107 { if ( (random(10) < 1) || (subarea=3&&random(40)<1 ) )//frozzen city 11
+	if area = 5 || area = 107 
+	{ if ( (subarea != 3 &&random(10) < 1) || (subarea == 3 && random(20)<1 ) )//frozzen city 11
 	{
-	if random(2) < 1 && !(subarea==3&&random(4)<3)
-	{
-	instance_create(x+32,y,Floor)
-	instance_create(x+32,y+32,Floor)
-	instance_create(x,y+32,Floor)
-	instance_create(x,y-32,Floor)
-	instance_create(x-32,y,Floor)
-	instance_create(x+32,y-32,Floor)
-	instance_create(x-32,y-32,Floor)
-	instance_create(x-32,y+32,Floor)
-	}
-	else
-	{
-	instance_create(x+64,y-64,Floor)
-	instance_create(x+64,y-32,Floor)
-	instance_create(x+64,y,Floor)
-	instance_create(x+64,y+32,Floor)
-	instance_create(x+64,y+64,Floor)
+		if random(2) < 1
+		{
+			instance_create(x+32,y,Floor)
+			instance_create(x+32,y+32,Floor)
+			instance_create(x,y+32,Floor)
+			instance_create(x,y-32,Floor)
+			instance_create(x-32,y,Floor)
+			instance_create(x+32,y-32,Floor)
+			instance_create(x-32,y-32,Floor)
+			instance_create(x-32,y+32,Floor)
+		}
+		else
+		{
+			instance_create(x+64,y-64,Floor)
+			instance_create(x+64,y-32,Floor)
+			instance_create(x+64,y,Floor)
+			instance_create(x+64,y+32,Floor)
+			instance_create(x+64,y+64,Floor)
 
-	instance_create(x-64,y-64,Floor)
-	instance_create(x-64,y-32,Floor)
-	instance_create(x-64,y,Floor)
-	instance_create(x-64,y+32,Floor)
-	instance_create(x-64,y+64,Floor)
+			instance_create(x-64,y-64,Floor)
+			instance_create(x-64,y-32,Floor)
+			instance_create(x-64,y,Floor)
+			instance_create(x-64,y+32,Floor)
+			instance_create(x-64,y+64,Floor)
 
-	instance_create(x,y-64,Floor)
-	instance_create(x-32,y-64,Floor)
-	instance_create(x+32,y-64,Floor)
+			instance_create(x,y-64,Floor)
+			instance_create(x-32,y-64,Floor)
+			instance_create(x+32,y-64,Floor)
 
-	instance_create(x,y+64,Floor)
-	instance_create(x-32,y+64,Floor)
-	instance_create(x+32,y+64,Floor)
-	}
-	}else instance_create(x,y,Floor)} 
+			instance_create(x,y+64,Floor)
+			instance_create(x-32,y+64,Floor)
+			instance_create(x+32,y+64,Floor)
+		}
+	}else {instance_create(x,y,Floor)}
+	} 
 
 
 	if area = 6&& subarea = 2//LABS BOSS

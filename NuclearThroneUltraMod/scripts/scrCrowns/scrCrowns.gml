@@ -11,7 +11,7 @@ function scrCrowns() {
 
 	crown_name[2] = "[CROWN OF LIFE]"
 	//crown_text[2] = "RESET LIFE TO MAX HP# AT THE END OF EACH LEVEL#NO HP DROPS"
-	crown_text[2] = "RESET HP TO MAX HP#AT THE END OF EACH AREA#IF YOU ALREADY HAVE MAX HP#OVERHEAL 2HP#NO HP DROPS"
+	crown_text[2] = "NO HEALTH DROPS#AT THE END OF EACH AREA#RESET HP TO MAX HP#IF YOU ALREADY HAVE MAX HP#OVERHEAL 3HP"
 	crown_used[2] = 0
 	crown_tips[2] = "life"
 
@@ -51,7 +51,7 @@ function scrCrowns() {
 	crown_tips[9] = "you really like these weapons"
 
 	crown_name[10] = "[CROWN OF DIFFICULTY]"
-	crown_text[10] = "THE DIFFICULTY & WEAPON TIER INCREASES#MORE EACH LEVEL"
+	crown_text[10] = "THE DIFFICULTY & WEAPON TIER INCREASES#MORE EACH AREA"
 	crown_used[10] = 0
 	crown_tips[10] = "acceleration"
 
@@ -89,7 +89,7 @@ function scrCrowns() {
 	crown_tips[15] = "double crown of blood"
 */
 	crown_name[16] = "[CROWN OF POPO]"
-	crown_text[16] = "AN EXTRA VAN SPAWNS EACH LEVEL#POPO DROP RADS"
+	crown_text[16] = "AN EXTRA VAN SPAWNS EACH AREA#POPO DROP RADS"
 	crown_used[16] = 0
 	crown_tips[16] = "in love with da popo"
 

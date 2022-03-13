@@ -288,7 +288,7 @@ function scrSkills() {
 	skill_msnd[28] =  sndMutRage
 
 	skill_name[29] = "INSOMNIA"
-	skill_text[29] = "ENEMIES DON'T ATTACK YOU#FOR A COUPLE OF SECONDS#AT THE START OF EACH LEVEL"
+	skill_text[29] = "ENEMIES DON'T ATTACK YOU#FOR A COUPLE OF SECONDS#AT THE START OF EACH AREA"
 	skill_tips[29] = "sleep"
 	skill_msnd[29] =  sndInsomnia
 

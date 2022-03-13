@@ -1,4 +1,4 @@
-maxhealth = 75//80
+maxhealth = 76//80
 size = 2
 if instance_exists(Player)
 {

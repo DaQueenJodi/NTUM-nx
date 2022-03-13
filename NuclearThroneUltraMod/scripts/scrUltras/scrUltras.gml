@@ -284,18 +284,18 @@ function scrUltras() {
 	    {
 	    if Player.race=19||Player.race=20||Player.race=21{//skeleton hog and horror
 	    ultra_name[62] = "ARMOUR UP"
-	    ultra_text[62] = "GAIN ONE ARMOUR EACH LEVEL#INCREASE ARMOUR MAX BY TWO"
+	    ultra_text[62] = "GAIN ONE ARMOUR EACH AREA#INCREASE ARMOUR MAX BY TWO"
 	    ultra_tips[62] = "tank up"
 	    }
 	    else{
 	    ultra_name[62] = "ARMOUR UP"
-	    ultra_text[62] = "GAIN ONE EXTRA ARMOUR EACH LEVEL#INCREASE ARMOUR MAX BY TWO"
+	    ultra_text[62] = "GAIN ONE EXTRA ARMOUR EACH AREA#INCREASE ARMOUR MAX BY TWO"
 	    ultra_tips[62] = "tank up"
 	    }
 	    }
 	    else{
 	    ultra_name[62] = "ARMOUR UP"
-	    ultra_text[62] = "GAIN ONE EXTRA ARMOUR EACH LEVEL#INCREASE ARMOUR MAX BY TWO"
+	    ultra_text[62] = "GAIN ONE EXTRA ARMOUR EACH AREA#INCREASE ARMOUR MAX BY TWO"
 	    ultra_tips[62] = "tank up"
 	    }
     

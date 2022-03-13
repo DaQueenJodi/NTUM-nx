@@ -68,9 +68,23 @@ scrUnlockBSkin(18,"FOR TRYING EVERY CROWN",0);
 //CROWN OF LIFE
 if crown == 2
 {
+	with Player
+	{
+		if my_health >= maxhealth
+		{
+			my_health = max(my_health,maxhealth);
+			my_health += 3;
+		}
+		else
+		{
+			my_health = max(my_health,maxhealth);
+		}
+	}
+	/*
 	var toHeal = Player.maxhealth - min(Player.my_health,Player.maxhealth);
 	var overheal = (Player.maxhealth - toHeal);
 	Player.my_health = max(Player.maxhealth,Player.my_health + overheal);
+	*/
 }
 //CROWN OF DESTINY
 if crown = 8 
