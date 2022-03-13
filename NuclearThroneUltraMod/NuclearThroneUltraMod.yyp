@@ -3039,6 +3039,7 @@
     {"id":{"name":"sndGuitarHitWall","path":"sounds/sndGuitarHitWall/sndGuitarHitWall.yy",},"order":3,},
     {"id":{"name":"sndGuitarHit","path":"sounds/sndGuitarHit/sndGuitarHit.yy",},"order":5,},
     {"id":{"name":"sndSledgeHitWall","path":"sounds/sndSledgeHitWall/sndSledgeHitWall.yy",},"order":7,},
+    {"id":{"name":"ReplaceWithFloor","path":"scripts/ReplaceWithFloor/ReplaceWithFloor.yy",},"order":28,},
     {"id":{"name":"sndSledgeHit","path":"sounds/sndSledgeHit/sndSledgeHit.yy",},"order":9,},
     {"id":{"name":"sndHammer","path":"sounds/sndHammer/sndHammer.yy",},"order":11,},
     {"id":{"name":"sndSword2","path":"sounds/sndSword2/sndSword2.yy",},"order":13,},

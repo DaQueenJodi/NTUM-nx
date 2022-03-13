@@ -1,5 +1,6 @@
-if instance_number(Floor) > goal && UberCont.opt_gamemode != 25
+if instance_number(Floor) > goal && (UberCont.opt_gamemode != 25 || instance_exists(Vlambeer))
 {
+	debug("gen normal");
 	if point_distance(x,y,10016,10016) > 48 
 	{
 		if instance_exists(Player){

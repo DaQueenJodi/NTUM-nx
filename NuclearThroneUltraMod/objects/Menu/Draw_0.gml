@@ -69,12 +69,28 @@ draw_rectangle(__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 )+__view_
 
 
 //GAME MODE!
-	draw_set_color(c_white)
+	/*8
+	if (UberCont.opt_gamemode != 0)
+	{
+		draw_set_color(c_gray);
+		draw_rectangle(__view_get( e__VW.XView, 0 )+30,
+		__view_get( e__VW.YView, 0 )-42 + widescreen,
+		__view_get( e__VW.XView, 0 )+192,
+		__view_get( e__VW.YView, 0 )-18 + widescreen,false);
+	}*/
 	draw_set_halign(fa_left)//jezus christ this menu systemm is fked up
 	draw_set_valign(fa_top);
-
-	//draw_text_color(gx,__view_get( e__VW.YView, 0 )+16 + widescreen,string_hash_to_newline("GAMEMODE : "+gamemode[UberCont.opt_gamemode]),c_black,c_black,c_black,c_black,1);
-	draw_text_color(__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.YView, 0 )-40 + widescreen,string_hash_to_newline("GAMEMODE:#"+gamemode[UberCont.opt_gamemode]),c_white,c_white,c_white,c_white,1);
+	/*
+	if (UberCont.opt_gamemode != 0)
+	{
+		//draw_text_color(gx,__view_get( e__VW.YView, 0 )+16 + widescreen,string_hash_to_newline("GAMEMODE : "+gamemode[UberCont.opt_gamemode]),c_black,c_black,c_black,c_black,1);
+		draw_text_color(__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.YView, 0 )-39 + widescreen,string_hash_to_newline("GAMEMODE:#"+gamemode[UberCont.opt_gamemode]),c_gray,c_gray,c_gray,c_gray,1);
+		draw_text_color(__view_get( e__VW.XView, 0 )+33,__view_get( e__VW.YView, 0 )-39 + widescreen,string_hash_to_newline("GAMEMODE:#"+gamemode[UberCont.opt_gamemode]),c_gray,c_gray,c_gray,c_gray,1);
+		draw_text_color(__view_get( e__VW.XView, 0 )+33,__view_get( e__VW.YView, 0 )-40 + widescreen,string_hash_to_newline("GAMEMODE:#"+gamemode[UberCont.opt_gamemode]),c_gray,c_gray,c_gray,c_gray,1);
+	}*/
+	draw_set_color(c_white)
+	if (UberCont.opt_gamemode != 0)
+		draw_text_color(__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.YView, 0 )-40 + widescreen,string_hash_to_newline("GAMEMODE:#"+gamemode[UberCont.opt_gamemode]),c_white,c_white,c_white,c_white,1);
 
 	//draw_set_halign(fa_right)
 	//draw_text_color(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ),__view_get( e__VW.YView, 0 )+65,string_hash_to_newline(string(UberCont.completionpercentage)+"% COMPLETE"),c_black,c_black,c_black,c_black,1);

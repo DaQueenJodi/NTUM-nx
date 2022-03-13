@@ -26,3 +26,4 @@ myscreen = choose(sprTV3A,sprTV3B,sprTV3C)
 
 alarm[0] = 30+random(90)
 
+alarm[1] = 1;

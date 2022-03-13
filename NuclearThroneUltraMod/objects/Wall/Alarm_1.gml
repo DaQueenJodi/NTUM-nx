@@ -15,6 +15,10 @@ l = 0
 else
 l = 4
 
+if !place_meeting(x,y+16,Floor)
+	visible = 0
+else
+	visible = 1;
 
 if place_free(x+16,y){
     if BackCont.area = 1 or BackCont.area = 100 or BackCont.area = 4  or BackCont.area = 8 or BackCont.area = 7 or BackCont.area = 105 or BackCont.area = 109 or BackCont.area = 108 or BackCont.area = 111{
