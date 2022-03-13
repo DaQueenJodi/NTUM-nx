@@ -4409,7 +4409,7 @@ function scrWeapons() {
 	wep_type[399] = 3
 	wep_auto[399] = 0
 	wep_load[399] = 34
-	wep_cost[399] = 3
+	wep_cost[399] = 1
 	wep_sprt[399] = sprWrongDirection
 	wep_area[399] = 4
 	wep_text[399] = "took a wrong turn somewhere"
