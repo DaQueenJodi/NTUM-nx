@@ -3,6 +3,7 @@ with MusCont
 {
 	song = musBoss4A	
 	snd_loop(song);
+	audio_sound_gain(song,max(0,sqrt(UberCont.opt_musvol)),0);
 }
 sprite_index = sprNothingActivate;
 spr_idle = sprNothingActivate;
@@ -11,7 +12,8 @@ my_health = maxhealth;
 //mask_index = mskNothingActive;
 image_index = 1;
 imageIndex = 1;
-instance_create(x,y,ThronePipes);
+with instance_create(x,y,ThronePipes)
+	depth = other.depth + 3;
 meleedamage = 10;
 alarm[2] = 90;
 beamY = y;
