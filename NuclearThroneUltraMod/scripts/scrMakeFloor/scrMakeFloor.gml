@@ -435,7 +435,6 @@ function scrMakeFloor() {
 		instance_destroy();
 	if UberCont.opt_gamemode == 25 && !instance_exists(Vlambeer)//Survival Arena
 	{
-		debug("gen survival");
 		//instance_create(x,y,Floor)
 		x = 0;
 		y = 0;

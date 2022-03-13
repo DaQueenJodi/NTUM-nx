@@ -118,7 +118,7 @@ if instance_exists(Cursor)
 Cursor.image_index=UberCont.opt_crosshair;
 
 if area=100
-crownvisits++;
+	crownvisits++;
 
 
 if race=10//rebel hoody

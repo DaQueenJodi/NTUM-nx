@@ -673,7 +673,7 @@ function scrWeapons() {
 	wep_load[60] = 16
 	wep_cost[60] = 2
 	wep_sprt[60] = sprBloodShotgun
-	wep_area[60] = 10
+	wep_area[60] = 8
 	wep_text[60] = "explosions from your heart"
 	wep_swap[60] = sndSwapExplosive
 	wep_rad[60] = 0;
@@ -902,7 +902,7 @@ function scrWeapons() {
 	wep_type[81] = 3
 	wep_auto[81] = 1
 	wep_load[81] = 35
-	wep_cost[81] = 10
+	wep_cost[81] = 8
 	wep_sprt[81] = sprSuperSwordGun
 	wep_area[81] = 15
 	wep_text[81] = "SLASH SLASH SLASH SLASH SLASH"
@@ -2805,7 +2805,7 @@ function scrWeapons() {
 	wep_type[254] = 3
 	wep_auto[254] = 1
 	wep_load[254] = 35
-	wep_cost[254] = 10
+	wep_cost[254] = 8
 	wep_sprt[254] = sprSuperShankGun
 	wep_area[254] = 15
 	wep_text[254] = "shank them to dead"
@@ -4389,7 +4389,7 @@ function scrWeapons() {
 	wep_load[397] = 24
 	wep_cost[397] = 2
 	wep_sprt[397] = sprSwarmBomb
-	wep_area[397] = 4
+	wep_area[397] = 5
 	wep_text[397] = "bee hive"
 	wep_swap[397] = sndSwapBow
 	wep_rad[397] = 0;

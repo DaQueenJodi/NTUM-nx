@@ -38,7 +38,7 @@ if close
 with instance_create(x,y,Portal)
 type = 3
 if instance_exists(Player)
-Player.area = 100
+	Player.area = 100
 }
 else
 {

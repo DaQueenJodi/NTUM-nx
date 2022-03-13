@@ -1,6 +1,5 @@
 with Player
 {
-area=other.currentarea;
-
+	area= other.currentarea;
 }
 

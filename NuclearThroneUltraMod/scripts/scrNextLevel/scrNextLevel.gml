@@ -10,13 +10,16 @@ function scrNextLevel() {
 
 	if area = 104//YV CRIB
 	{
-	area=lastarea;
-	if subarea==1&&area!=8//LAST AREA
-	area+=1;
+		area=lastarea;
+		if subarea==1&&area!=8//LAST AREA
+			area+=1;
 	}
 	//show_message("inverted: "+ string(inverted)+"#area :"+string(area));
+
 	if area < 100
-	lastarea = area
+	{
+		lastarea = area
+	}
 	else if subarea = 1 || area = 105 || area = 106 || area = 107 || area = 101 || area = 110 || area = 111 || area = 112 || area = 103 || area = 109 || area = 113 || area == 114 || area = 108 || area == 115
 	{
 	    if area = 113 && subarea=2//banditland
@@ -230,13 +233,13 @@ function scrNextLevel() {
 
 	}
 	if ( subarea < 3 and area != 2 and area != 4/* and area != 6 */and area != 105 and area != 106  && !(area = 6 && subarea > 1) )&&!(area=7&&subarea=2)
-	subarea += 1
-	    else if area < 100// && area=2 && area=4
-	    {
-	    if area < 9
-	    {
-	        if inverted=false
-	        {
+		subarea += 1
+	else if area < 100// && area=2 && area=4
+	{
+		if area < 9
+		{
+		    if inverted=false
+		    {
 				if area == 3 && (curse || bcurse || ccurse)
 				{
 					area = 115;	
@@ -244,63 +247,63 @@ function scrNextLevel() {
 				}
 				else
 				{
-			        area += 1
-			        subarea = 1
+				    area += 1
+				    subarea = 1
 				}
-	        }
-	    }
+		    }
+		}
 		else if area == 10
 		{
 			area = 7;
 			subarea = 0;
 			inverted = true;
 		}
-	    else//WE LOOP HERE!
+		else//WE LOOP HERE!
 		{
-	    looping=true;
+		looping=true;
 		}
-	    }    
-
-	if ( area=1 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted desert atom gets 12 procent
+	}    
+	//TO INVERTED AREAS
+	if ( area=1 && inverted )//inv desert
 	{area=105
-	subarea=1
-	lastarea=1}
+	lastarea=105;
+	subarea=2;}
 
 	if ( area=1 && oasis )
 	{area=101;
 	subarea=1;}
 
-	if ( area=3 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted scrapyard atom gets 12 procent
+	if ( area=3 && inverted )//inv scrap
 	{area=106;
-	subarea=1;
-	lastarea=3;}//in case of crownvault
+	lastarea=106;
+	subarea=2;}//in case of crownvault
 
-	if ( area=4 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted crystal caves atom gets 12 procent
+	if ( area=4 && inverted )//inv crystal caves
 	{area=111;
 	subarea=1;
 	lastarea=5;}//in case of crownvault
 
-	if ( area=5 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted frozen city atom gets 12 procent
+	if ( area=5 && inverted )//inv frozen city
 	{area=107;
-	subarea=1;
-	lastarea=5;}//in case of crownvault
+	lastarea=107;
+	subarea=2;}//in case of crownvault
 
-	if ( area=6 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted labs atom gets 12 procent
+	if ( area=6 && inverted )//inv labs
 	{area=112;
 	subarea=1;
 	lastarea=7;}//in case of crownvault
 
-	if ( area=7 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted vulcano atom gets 12 procent
+	if ( area=7 && inverted )//inv vulcano
 	{area=108;
 	subarea=1;
 	lastarea=7;}//in case of crownvault
 
-	if ( area=8 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted wonderland atom gets 12 procent
+	if ( area=8 && inverted )//inv wonderland
 	{area=109;
-	subarea=1;
-	lastarea=8;}//in case of crownvault
+	subarea=2;
+	lastarea = 109}//in case of crownvault
 
-	if ( area=2 && inverted )//&& ( (random(100)<7.5)||(race=15&&random(100)<12) ) )//7.5% chance for inverted sewers atom gets 12 procent
+	if ( area=2 && inverted )//inv sewers
 	{area=110;
 	subarea=1;
 	lastarea=3;}
@@ -317,7 +320,7 @@ function scrNextLevel() {
 	    }
 	}
 	}
-
+	debug("area end : ",area);
 
 	if (area=105 || area=106|| area=107 || area = 108 || area = 109 | area = 110 || area = 111 || area = 112)&&subarea<2//inverted curse
 	{

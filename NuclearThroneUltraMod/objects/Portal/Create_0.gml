@@ -20,8 +20,8 @@ if Player.race=22//Rogue
 		instance_create(x,y,IDPDSpawn);
 }
 
-if Player.race=15//atom extra chance for invertedness and bosses ofcourse aswell
-chance=2;
+//if Player.race=15//atom extra chance for invertedness and bosses ofcourse aswell
+//chance=2;
 
 with projectile
 {
