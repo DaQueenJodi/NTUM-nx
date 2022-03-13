@@ -1836,10 +1836,10 @@ function scrWeapons() {
 	wep_name[166] = "SLASH SHOTGUN"
 	wep_type[166] = 2
 	wep_auto[166] = 0
-	wep_load[166] = 22
+	wep_load[166] = 23
 	wep_cost[166] = 2
 	wep_sprt[166] = sprSlashShotgun
-	wep_area[166] = 3
+	wep_area[166] = 4
 	wep_text[166] = "shoot them out of there cover"
 	wep_swap[166] = sndSwapShotgun
 	wep_rad[166] = 0;
