@@ -107,3 +107,5 @@ enum ultramods {
 }
 maxUltramod = 16;
 casualModeHPIncrease = 2;
+
+hadBossIntro = false;

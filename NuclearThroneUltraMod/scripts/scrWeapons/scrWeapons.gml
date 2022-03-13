@@ -1023,7 +1023,7 @@ function scrWeapons() {
 	wep_type[92] = 2
 	wep_auto[92] = 1
 	wep_load[92] = 9
-	wep_cost[92] = 2
+	wep_cost[92] = 1
 	wep_sprt[92] = sprBeamShotgun
 	wep_area[92] = 10
 	wep_text[92] = "drawer"
@@ -4563,7 +4563,7 @@ function scrWeapons() {
 	wep_type[413] = 3
 	wep_auto[413] = 0
 	wep_load[413] = 20
-	wep_cost[413] = 3
+	wep_cost[413] = 2
 	wep_sprt[413] = sprLeacherBow
 	wep_area[413] = 7
 	wep_text[413] = "vampire"

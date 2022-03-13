@@ -81,6 +81,7 @@ if ammo > 0
 image_index += 0.4/ammo
 with instance_create(x,y,Tentacle)
 {
+	exploAmount = other.exploAmount;
 	isog = other.isog;
 sprite_index=other.sprite_index;
 ion=other.ion;

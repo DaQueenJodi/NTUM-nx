@@ -1,7 +1,7 @@
 if other.team != team and other.my_health > 0&&other.id != creator//the thing I hit must not be myself
 {
 
-
+var explm = exploAmount;
 with other//enemy
 {
 if sprite_index != spr_hurt
@@ -36,18 +36,19 @@ if sprite_index != spr_hurt
 
 	if other.ion=true
 	{
-	with instance_create(mouse_x,mouse_y,BloodGrenade)
-	{
-	visible=false;
-	sticky = 0
-	motion_add(random(360),9+random(6))
-	image_angle = direction
-	team = other.team
-	with instance_create(x,y,BloodStreak){
-	image_angle = point_direction(x,y,mouse_x,mouse_y)}
-	alarm[0]=3;
-	//instance_destroy();
-	}//}
+		with instance_create(mouse_x,mouse_y,BloodGrenade)
+		{
+			exploAmount = explm;
+		visible=false;
+		sticky = 0
+		motion_add(random(360),9+random(6))
+		image_angle = direction
+		team = other.team
+		with instance_create(x,y,BloodStreak){
+		image_angle = point_direction(x,y,mouse_x,mouse_y)}
+		alarm[0]=3;
+		//instance_destroy();
+		}//}
 	}
 	else
 	{
@@ -62,6 +63,7 @@ if sprite_index != spr_hurt
 
 	with instance_create(x,y,BloodGrenade)
 	{
+		exploAmount = explm;
 	visible=false;
 	sticky = 0
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(30)-15),9+random(6))

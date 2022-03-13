@@ -1,5 +1,6 @@
 if other.team != team and other.my_health > 0
-{instance_destroy()
+{
+	instance_destroy();
 	with other
 	{
 	if object_index!=Player

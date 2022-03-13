@@ -1364,7 +1364,7 @@ repeat(1+loops)
 			};
 			wave[i] = {
 				obj: FireBat,
-				time: 40,
+				time: 70,
 				xx: centerX,
 				yy: centerY,
 			};
@@ -1387,7 +1387,7 @@ repeat(1+loops)
 				obj: HotDrake,
 				time: 120,
 				xx: centerX+256,
-				yy: centerY,
+				yy: centerY-32,
 			};
 			i++
 			wave[i] = {
@@ -1533,7 +1533,7 @@ repeat(1+loops)
 				i++;
 				wave[i] = {
 					obj: TeaPot,
-					time: 30,
+					time: 40,
 					xx: centerX,
 					yy: centerY
 				};
@@ -1541,7 +1541,7 @@ repeat(1+loops)
 			}
 			wave[i] = {
 				obj: TeaPot,
-				time: 160,
+				time: 180,
 				xx: centerX,
 				yy: centerY
 			};

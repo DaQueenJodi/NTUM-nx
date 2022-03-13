@@ -1,8 +1,8 @@
-if UberCont.opt_bossintro=0 || instance_exists(SurvivalWave){
+if UberCont.opt_bossintro=0 || instance_exists(SurvivalWave) || UberCont.hadBossIntro{
 instance_destroy();
 exit;}
 
-
+UberCont.hadBossIntro = true;
 
 urgent = 2
 alarm[0] = 2;

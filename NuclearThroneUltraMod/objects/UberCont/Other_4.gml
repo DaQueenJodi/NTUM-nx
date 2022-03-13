@@ -30,3 +30,5 @@ if (opt_gamemode == 17)
 	public = 0;
 else
 	public = defaultPublic;
+	
+hadBossIntro = false;

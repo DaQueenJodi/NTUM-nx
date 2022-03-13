@@ -1,7 +1,9 @@
 scrDrop(40,0)
-
-instance_create(x,y,Explosion)
+if existTime > 15
+{
+instance_create(x,y,Explosion);
+snd_play(sndExplosion);
+}
 event_inherited()
 
-snd_play(sndExplosion)
 

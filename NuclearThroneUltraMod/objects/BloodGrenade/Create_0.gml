@@ -6,6 +6,6 @@ alarm[0] = 30
 offx = random(2)-1
 offy = random(2)-1
 
-
+exploAmount = 3;
 typ = 1 
 
