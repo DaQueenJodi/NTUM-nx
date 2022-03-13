@@ -2018,7 +2018,7 @@ function scrWeapons() {
 	wep_area[182] = 7//6
 	wep_text[182] = "directing"
 	wep_swap[182] = sndSwapShotgun
-	wep_rad[182] = 0;
+	wep_rad[182] = 0;f
 
 	wep_name[183] = "FLAME DIRECTOR ERASER"
 	wep_type[183] = 2
@@ -2134,7 +2134,7 @@ function scrWeapons() {
 	wep_type[193] = 3
 	wep_auto[193] = 1
 	wep_load[193] = 30
-	wep_cost[193] = 25//8
+	wep_cost[193] = 12//8
 	wep_sprt[193] = sprUltraBladeGun
 	wep_area[193] = 22
 	wep_text[193] = "ultra sharp"
@@ -2573,8 +2573,8 @@ function scrWeapons() {
 	wep_name[233] = "BLADE GUN"
 	wep_type[233] = 3
 	wep_auto[233] = 1
-	wep_load[233] = 8
-	wep_cost[233] = 2
+	wep_load[233] = 12
+	wep_cost[233] = 1
 	wep_sprt[233] = sprBladeGun
 	wep_area[233] = 5
 	wep_text[233] = "blades don't hurt you"
@@ -2717,7 +2717,7 @@ function scrWeapons() {
 	wep_type[246] = 3
 	wep_auto[246] = 1
 	wep_load[246] = 12
-	wep_cost[246] = 8//4
+	wep_cost[246] = 6//4
 	wep_sprt[246] = sprSuperSplitBladeGun
 	wep_area[246] = 15
 	wep_text[246] = "very sharp"
