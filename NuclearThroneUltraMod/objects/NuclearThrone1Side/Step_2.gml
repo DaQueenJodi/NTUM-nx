@@ -30,8 +30,11 @@ if (my_health < prevhealth)
 	}
 	with owner
 	{
-		my_health -= dmgTaken;
-		prevhealth = my_health;//Don't recognize this as dmg
+		if sprite_index != spr_hurt
+		{
+			my_health -= dmgTaken;
+			prevhealth = my_health;//Don't recognize this as dmg
+		}
 		sprite_index = sprNothingMiddleHurtLink;
 		if disable
 			spr_hurt = sprNothingMiddleDeactivatedHurtLink;

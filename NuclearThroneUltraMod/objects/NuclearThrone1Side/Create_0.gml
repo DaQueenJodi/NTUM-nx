@@ -1,5 +1,5 @@
 /// @description Init
-maxhealth = 550;
+maxhealth = 5020;
 disable = false;
 size = 8;
 meleedamage = 0;

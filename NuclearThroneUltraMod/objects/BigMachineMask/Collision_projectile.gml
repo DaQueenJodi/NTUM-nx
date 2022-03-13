@@ -13,9 +13,9 @@ if BigMachine.alarm[3]<1
 	if proj.team != 1
 	with BigMachine
 	{
-		my_health -= proj.dmg*0.2;
 		if (spr_idle == sprBigMachineIdle)
 		{
+			my_health -= proj.dmg*0.24;
 			sprite_index = sprBigMachineHurt;
 			image_index = 1;
 		}
@@ -37,9 +37,9 @@ if InvertedBigMachine.alarm[3]<1
 	if proj.team != 1
 	with InvertedBigMachine
 	{
-		my_health -= proj.dmg*0.18;
 		if (spr_idle == sprInvertedBigMachineIdle)
 		{
+			my_health -= proj.dmg*0.22;
 			sprite_index = sprInvertedBigMachineHurt;
 			image_index = 1;
 		}

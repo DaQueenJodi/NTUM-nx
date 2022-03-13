@@ -39,7 +39,7 @@ if my_health <= 0 && !disable
 			{
 				firerate = max(firerate - 1, 1);
 				maxAmmo = max(maxAmmo - 1, 3);
-				gunangle[array_length(gunangle)] = 200;//Add in a left
+				gunangle[array_length(gunangle)] = 220;//Add in a left
 				if disable {
 					other.my_health -= 100;
 				}
@@ -57,7 +57,7 @@ if my_health <= 0 && !disable
 			{
 				firerate = max(firerate - 1, 1);
 				maxAmmo = max(maxAmmo - 1, 3);
-				gunangle[array_length(gunangle)] = 340;//Add in a right
+				gunangle[array_length(gunangle)] = 320;//Add in a right
 				if disable {
 					other.my_health -= 100;
 				}

@@ -24,6 +24,5 @@ if owner > -1 && owner.fireTriShot && instance_exists(Player)
 		alarm[1] += firerate;
 		ammo = maxAmmo;
 		angleI = irandom(array_length(gunangle)-1)
-		debug("angleI: ",angleI);
 	}
 }
