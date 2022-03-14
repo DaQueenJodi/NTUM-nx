@@ -18,7 +18,7 @@ if (KeyCont.key_fire[Player.p] = 1 or KeyCont.key_fire[Player.p] = 2 or Player.k
 {
 
 //snd_play(sndNadeAlmost);
-rate++;
+rate+= 1.5;
 
 with instance_create(x+random(48)-24,y+random(48)-24,WeaponCharge)
 {

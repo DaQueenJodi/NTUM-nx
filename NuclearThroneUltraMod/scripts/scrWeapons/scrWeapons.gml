@@ -3464,7 +3464,7 @@ function scrWeapons() {
 	wep_name[314] = "CHARGE SPLINTERGUN"
 	wep_type[314] = 3
 	wep_auto[314] = 0
-	wep_load[314] = 30
+	wep_load[314] = 25
 	wep_cost[314] = 0
 	wep_sprt[314] = sprChargeSplinterGun
 	wep_area[314] = 5

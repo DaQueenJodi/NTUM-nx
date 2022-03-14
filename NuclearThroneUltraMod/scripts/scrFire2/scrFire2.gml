@@ -3090,7 +3090,7 @@ function scrFire2() {
 
 	with instance_create(x,y,ChargeSplinterGun)
 	{
-	maxcharge=27;//maxrate
+	maxcharge=32;//maxrate
 	type=3;
 	cost=1;
 	creator = other.id
