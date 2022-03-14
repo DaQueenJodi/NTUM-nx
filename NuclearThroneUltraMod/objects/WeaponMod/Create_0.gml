@@ -6,7 +6,7 @@ if instance_exists(WeaponMod) && instance_number(WeaponMod) > 1
 	var nearest = instance_nearest_notme(x,y,WeaponMod);
 	if nearest != noone
 	{
-		with instance_nearest_notme(x,y,WeaponMod)
+		with nearest
 		{
 			while wepmod == other.wepmod
 			{
