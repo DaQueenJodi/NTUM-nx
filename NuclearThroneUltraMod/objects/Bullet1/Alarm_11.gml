@@ -36,9 +36,10 @@ else if um == ultramods.bulletMiniPlasma
 	}
 	with instance_create(x,y,MiniPlasmaBall)
 	{
-		isog = false;
-		image_angle = other.direction;
-		team = other.team
-		event_perform(ev_alarm,0);
+		direction = other.direction;
+		image_angle = direction;
+		speed = other.speed;
+		team = other.team;
+		alarm[11] = 0;
 	}
 }
