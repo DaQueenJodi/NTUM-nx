@@ -1553,7 +1553,7 @@ function scrWeapons() {
 	wep_load[140] = 26
 	wep_cost[140] = 4
 	wep_sprt[140] = sprHyperPlasmaCannon
-	wep_area[140] = 14
+	wep_area[140] = 15
 	wep_text[140] = "bubbles"
 	wep_swap[140] = sndSwapEnergy
 	wep_rad[140] = 0;
@@ -2873,7 +2873,7 @@ function scrWeapons() {
 	wep_load[260] = 11
 	wep_cost[260] = 4
 	wep_sprt[260] = sprHyperHeavySlugger
-	wep_area[260] = 19
+	wep_area[260] = 14
 	wep_text[260] = "heavy slugger with infinite range!"
 	wep_swap[260] = sndSwapShotgun
 	wep_rad[260] = 0;
