@@ -1718,7 +1718,7 @@ function scrWeapons() {
 	wep_load[155] = 3
 	wep_cost[155] = 2
 	wep_sprt[155] = sprMiniIncinerator
-	wep_area[155] = 9
+	wep_area[155] = 8
 	wep_text[155] = "junior firestarter"
 	wep_swap[155] = sndSwapMachinegun
 	wep_rad[155] = 0;
@@ -1793,7 +1793,7 @@ function scrWeapons() {
 	wep_type[162] = 1
 	wep_auto[162] = 1
 	wep_load[162] = 2
-	wep_cost[162] = 4
+	wep_cost[162] = 3
 	wep_sprt[162] = sprMegaIncinerator
 	wep_area[162] = 18//15 quadripple machinegun
 	wep_text[162] = "senior firestarter"
@@ -1814,8 +1814,8 @@ function scrWeapons() {
 	wep_name[164] = "LINE OF BLOOD"
 	wep_type[164] = 4
 	wep_auto[164] = 0
-	wep_load[164] = 16
-	wep_cost[164] = 3
+	wep_load[164] = 15
+	wep_cost[164] = 2
 	wep_sprt[164] = sprLineBloodNader
 	wep_area[164] = 9
 	wep_text[164] = "it's a bloody blood bath"
@@ -1825,7 +1825,7 @@ function scrWeapons() {
 	wep_name[165] = "EXPLOSIVE BOW"
 	wep_type[165] = 3
 	wep_auto[165] = 0
-	wep_load[165] = 29
+	wep_load[165] = 25
 	wep_cost[165] = 1
 	wep_sprt[165] = sprExplosiveBow
 	wep_area[165] = 6

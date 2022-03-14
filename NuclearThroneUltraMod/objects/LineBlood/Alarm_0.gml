@@ -26,16 +26,9 @@ motion_add(random(360),random(4))
 //instance_create(x,y,Explosion);
 Sleep(20)
 dir = 0
-do {dir += 1 x += lengthdir_x(4,direction) y += lengthdir_y(4,direction)
-
-//instance_create(x,y,Explosion);
-if instance_exists(MeatExplosion){
-if point_distance(x,y,instance_nearest(x,y,MeatExplosion).x,instance_nearest(x,y,MeatExplosion).y)>32
-instance_create(x+lengthdir_x(random(16),random(360)),y+lengthdir_y(random(16),random(360)),MeatExplosion)
-}
-else 
-instance_create(x+lengthdir_x(random(16),random(360)),y+lengthdir_y(random(16),random(360)),MeatExplosion)
-
+do {dir += 1 x += lengthdir_x(16,direction) y += lengthdir_y(16,direction)
+	var randir = random(360);
+	instance_create(x+lengthdir_x(4,randir),y+lengthdir_y(4,randir),MeatExplosion)
 if(random(6)<1){
 with instance_create(x,y,Smoke)
 motion_add(random(360),random(2))
@@ -44,6 +37,7 @@ motion_add(random(360),random(2))
 }
 until dir > 100 or place_meeting(x,y,Wall)
 alarm[1] = 2
+
 
 speed = 4
 }
