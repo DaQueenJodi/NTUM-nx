@@ -418,9 +418,9 @@ sharpteeth = 0; //stress embedded
 crackshotsfired = 0; //hunter ultra d
 
 //horror
-horrorcharge = 1;
-origincharge = 1;
-maxcharge = 16;
+horrorcharge = 3;
+origincharge = 3;
+maxcharge = 20;
 horrorhealtime = 0;
 
 //extra feet items

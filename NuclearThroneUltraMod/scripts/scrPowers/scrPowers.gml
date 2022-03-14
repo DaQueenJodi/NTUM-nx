@@ -1214,7 +1214,7 @@ function scrPowers() {
 	snd_play_2d(sndHorrorBeam);
 
 	if horrorcharge<maxcharge
-	horrorcharge+=0.18+(skill_got[5]*0.3);
+	horrorcharge+=0.2+(skill_got[5]*0.3);
 
 	if skill_got[5]
 	{
@@ -1263,7 +1263,7 @@ function scrPowers() {
 
 	if horrorcharge>12&&random(2)<1
 	{
-	rad--;
+		rad--;
 
 	    with instance_create(x+lengthdir_x(random(horrorcharge*0.7),point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(random(horrorcharge*0.7),point_direction(x,y,mouse_x,mouse_y)),HorrorBeam)
 	    {

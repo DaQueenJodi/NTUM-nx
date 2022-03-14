@@ -9,5 +9,6 @@ if GetPlayerUltramod() == ultramods.slugFatBullet
 		speed = other.speed;
 		team = other.team;
 		alarm[11] = 0;
+		friction = 0.2;
 	}
 }

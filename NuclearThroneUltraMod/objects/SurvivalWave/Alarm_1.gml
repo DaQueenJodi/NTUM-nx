@@ -1,7 +1,7 @@
 /// @description Winner?
 if UberCont.opt_gamemode != 25
 {
-	if instance_number(enemy) <= instance_number(IDPDVan)
+	if instance_number(enemy) <= instance_number(IDPDVan) && !instance_exists(LilHunterFly) && !instance_exists(InvertedLilHunterFly)
 	{
 		//var maxU = UberCont.maxUltramod;
 		var yy = centerY-96;
@@ -50,7 +50,7 @@ if UberCont.opt_gamemode != 25
 }
 else
 {
-	if instance_number(enemy) <= instance_number(IDPDVan)
+	if instance_number(enemy) <= instance_number(IDPDVan) && !instance_exists(LilHunterFly) && !instance_exists(InvertedLilHunterFly)
 	{
 		instance_create(centerX,centerY,Portal);
 	}

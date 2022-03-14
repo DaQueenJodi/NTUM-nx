@@ -53,6 +53,7 @@ if um == ultramods.boltPlasma
 	instance_destroy(id,false);
 	with instance_create(x,y,Slug)
 	{
+		friction = 0.2;
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;
