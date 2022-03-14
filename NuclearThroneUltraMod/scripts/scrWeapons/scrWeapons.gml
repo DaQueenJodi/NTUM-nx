@@ -1419,7 +1419,7 @@ function scrWeapons() {
 	wep_type[128] = 5
 	wep_auto[128] = 1
 	wep_load[128] = 50
-	wep_cost[128] = 18
+	wep_cost[128] = 15
 	wep_sprt[128] = sprSuperEnergySwordGun
 	wep_area[128] = 22
 	wep_text[128] = "this is nuts"
@@ -2827,7 +2827,7 @@ function scrWeapons() {
 	wep_type[256] = 5
 	wep_auto[256] = 1
 	wep_load[256] = 50
-	wep_cost[256] = 17
+	wep_cost[256] = 14
 	wep_sprt[256] = sprSuperEnergyShankGun
 	wep_area[256] = 20
 	wep_text[256] = "new meta"

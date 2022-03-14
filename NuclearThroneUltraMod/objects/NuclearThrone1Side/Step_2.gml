@@ -35,6 +35,10 @@ if (my_health < prevhealth)
 			my_health -= dmgTaken;
 			prevhealth = my_health;//Don't recognize this as dmg
 		}
+		else
+		{
+			image_index += 0.2;//iframe skipper
+		}
 		sprite_index = sprNothingMiddleHurtLink;
 		if disable
 			spr_hurt = sprNothingMiddleDeactivatedHurtLink;
