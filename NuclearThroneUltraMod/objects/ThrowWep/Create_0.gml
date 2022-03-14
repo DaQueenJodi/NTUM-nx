@@ -53,4 +53,5 @@ returnFX = true;
     wepmod3=0
     wepmod4=0
 
-stopSpeed = 2;
+stopSpeed = 1;
+thrownByCuz = false;

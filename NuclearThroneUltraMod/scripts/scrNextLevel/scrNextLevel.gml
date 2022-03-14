@@ -51,7 +51,7 @@ function scrNextLevel() {
 
 	    if area = 102 || area = 105//bring to scrapyard
 	    {
-	        if inverted && area = 105 &&subarea<2
+	        if inverted && area = 105 &&subarea<3
 	        {
 	        //inverted big bandit
 	        area = 105
@@ -72,7 +72,7 @@ function scrNextLevel() {
     
 	    if area = 106//inverted scrapyard
 	    {
-	        if inverted && subarea<2
+	        if inverted && subarea<3
 	        {
 	        //inverted big dog
 	        area = 106
@@ -99,7 +99,7 @@ function scrNextLevel() {
     
 	    if area = 107//inv frozen citybring to lill cunter
 	    {
-	        if inverted && subarea<2
+	        if inverted && subarea<3
 	        {
 	        //inverted lil hunter
 	        area = 107

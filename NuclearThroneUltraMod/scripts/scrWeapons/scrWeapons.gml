@@ -4551,7 +4551,7 @@ function scrWeapons() {
 	wep_name[412] = "LANCE"
 	wep_type[412] = 0
 	wep_auto[412] = 0
-	wep_load[412] = 18
+	wep_load[412] = 17
 	wep_cost[412] = 0
 	wep_sprt[412] = sprLance
 	wep_area[412] = 5

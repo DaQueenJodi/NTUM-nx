@@ -5684,11 +5684,12 @@ function scrFire2() {
 		motion_add(point_direction(x,y,mouse_x,mouse_y),16);
 		scrWeapons()
 		wep = scrDecideWep(0,8,0);
+		debug("throw wep: ",wep);
 		name = wep_name[wep];
 		ammo = 0;
 		type = wep_type[wep];
 		//dmg = 24 + (other.level*2);Retail
-		dmg = 30 + (other.level*2);
+		dmg = 30 + (Player.level*2);
 		pierce = false;
 		sprite_index = wep_sprt[wep]
 	}
