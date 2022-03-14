@@ -16,5 +16,4 @@ alarm[2]=8;
 alarm[1]=140;
 snd_loop(sndFlamerLoop);
 
-/* */
-/*  */
+dmg = 20;
