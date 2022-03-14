@@ -3255,7 +3255,7 @@ function scrWeapons() {
 	wep_name[295] = "CHARGE LASER"
 	wep_type[295] = 5
 	wep_auto[295] = 0
-	wep_load[295] = 32
+	wep_load[295] = 28
 	wep_cost[295] = 0
 	wep_sprt[295] = sprChargeLaserGun
 	wep_area[295] = 3
