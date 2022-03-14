@@ -1550,7 +1550,7 @@ function scrWeapons() {
 	wep_name[140] = "HYPER PLASMA CANNON"
 	wep_type[140] = 5
 	wep_auto[140] = 0
-	wep_load[140] = 26
+	wep_load[140] = 24
 	wep_cost[140] = 4
 	wep_sprt[140] = sprHyperPlasmaCannon
 	wep_area[140] = 15
@@ -1584,7 +1584,7 @@ function scrWeapons() {
 	wep_type[143] = 4
 	wep_auto[143] = 0
 	wep_load[143] = 15
-	wep_cost[143] = 3
+	wep_cost[143] = 2
 	wep_sprt[143] = sprLineNader
 	wep_area[143] = 9
 	wep_text[143] = "dangerous bliss"
@@ -1594,8 +1594,8 @@ function scrWeapons() {
 	wep_name[144] = "HYPER LIGHTNING LAUNCHER"
 	wep_type[144] = 5
 	wep_auto[144] = 0
-	wep_load[144] = 26
-	wep_cost[144] = 4
+	wep_load[144] = 24
+	wep_cost[144] = 3
 	wep_sprt[144] = sprLightningHyperRifle
 	wep_area[144] = 15
 	wep_text[144] = "thunder lightning ever so frightning"//payama sam reference!
@@ -1605,8 +1605,8 @@ function scrWeapons() {
 	wep_name[145] = "LINE OF FIRE"
 	wep_type[145] = 4
 	wep_auto[145] = 0
-	wep_load[145] = 14
-	wep_cost[145] = 3
+	wep_load[145] = 15
+	wep_cost[145] = 2
 	wep_sprt[145] = sprLineFire
 	wep_area[145] = 9
 	wep_text[145] = "don't get in the line of fire"
@@ -1616,7 +1616,7 @@ function scrWeapons() {
 	wep_name[146] = "LINE OF TOXIC"
 	wep_type[146] = 4
 	wep_auto[146] = 0
-	wep_load[146] = 21
+	wep_load[146] = 15
 	wep_cost[146] = 2
 	wep_sprt[146] = sprLineToxic
 	wep_area[146] = 4

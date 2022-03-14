@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndToxicBarrelGas",
-  "duration": 0.0,
+  "duration": 2.069342,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

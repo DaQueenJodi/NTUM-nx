@@ -28,18 +28,8 @@ motion_add(random(360),random(4))
 //instance_create(x,y,Explosion);
 Sleep(20)
 dir = 0
-do {dir += 1 x += lengthdir_x(4,direction) y += lengthdir_y(4,direction)
-/*if point_distance(x,y,Player.x,Player.y)>82
-{
-//instance_create(x,y,Explosion);
-if instance_exists(Explosion){
-if point_distance(x,y,instance_nearest(x,y,Explosion).x,instance_nearest(x,y,Explosion).y)>32
-instance_create(x+lengthdir_x(random(16),random(360)),y+lengthdir_y(random(16),random(360)),Explosion)
-}
-else 
-instance_create(x+lengthdir_x(random(16),random(360)),y+lengthdir_y(random(16),random(360)),Explosion)
+do {dir += 1 x += lengthdir_x(3,direction) y += lengthdir_y(3,direction)
 
-}*/
 repeat(2){
 with instance_create(x,y,Flame)
 {motion_add(random(360),0.5+random(2))
@@ -51,7 +41,7 @@ move_contact_solid(direction,4)}
 until dir > 100 or place_meeting(x,y,Wall)
 alarm[1] = 2
 
-speed = 4
+speed = 3
 }
 
 /* */

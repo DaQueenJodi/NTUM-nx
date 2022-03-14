@@ -16,7 +16,6 @@ if instance_exists(target)
        }
 }
 }
-
 move_contact_solid(direction,16)
 
 repeat(4){
@@ -26,17 +25,12 @@ motion_add(random(360),random(4))
 //instance_create(x,y,Explosion);
 Sleep(20)
 dir = 0
-do {dir += 1 x += lengthdir_x(4,direction) y += lengthdir_y(4,direction)
-if point_distance(x,y,Player.x,Player.y)>74
+do {dir += 1 x += lengthdir_x(16,direction) y += lengthdir_y(16,direction)
+if point_distance(x,y,Player.x,Player.y)>68
 {
-//instance_create(x,y,Explosion);
-if instance_exists(Explosion){
-if point_distance(x,y,instance_nearest(x,y,Explosion).x,instance_nearest(x,y,Explosion).y)>32
-instance_create(x+lengthdir_x(random(16),random(360)),y+lengthdir_y(random(16),random(360)),Explosion)
-}
-else 
-instance_create(x+lengthdir_x(random(16),random(360)),y+lengthdir_y(random(16),random(360)),Explosion)
-
+	var randir = random(360);
+	instance_create(x+lengthdir_x(4,randir),y+lengthdir_y(4,randir),Explosion)
+	instance_create(x+lengthdir_x(24,randir+180),y+lengthdir_y(24,randir+180),SmallExplosion)
 }
 if(random(6)<1){
 with instance_create(x,y,Smoke)
