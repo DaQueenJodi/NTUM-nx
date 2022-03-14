@@ -2478,7 +2478,7 @@ function scrFire() {
 
 	snd_play_fire(sndShotgun)
 
-	repeat(20)
+	repeat(22)
 	{
 	with instance_create(x,y,Bullet2)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(80)-40)*other.accuracy,6+random(6))

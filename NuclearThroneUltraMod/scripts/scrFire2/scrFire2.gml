@@ -1747,10 +1747,10 @@ function scrFire2() {
 
 	break;
 
-	//HYPER SNIPER
+	//HYPER MACHINEGUN
 	case 261:
 
-	snd_play_fire(sndHeavyRevolver)
+	//snd_play_fire(sndHeavyRevolver)
 	snd_play_fire(sndHyperSlugger);
 
 	with instance_create(x,y,HyperSniper)
@@ -2329,7 +2329,7 @@ function scrFire2() {
 
 	snd_play_fire(sndShotgun)
 
-	repeat(22)
+	repeat(24)
 	{
 	with instance_create(x,y,Bullet2)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(80)-40)*other.accuracy,6+random(7))
