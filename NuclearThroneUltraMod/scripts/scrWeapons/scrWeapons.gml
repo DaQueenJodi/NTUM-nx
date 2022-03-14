@@ -4331,8 +4331,8 @@ function scrWeapons() {
 	wep_name[392] = "MUCHAS FUEGO"
 	wep_type[392] = 4
 	wep_auto[392] = 0
-	wep_load[392] = 225
-	wep_cost[392] = 30
+	wep_load[392] = 150
+	wep_cost[392] = 20
 	wep_sprt[392] = sprMuchasFuego
 	wep_area[392] = 18
 	wep_text[392] = "en petit peu"
