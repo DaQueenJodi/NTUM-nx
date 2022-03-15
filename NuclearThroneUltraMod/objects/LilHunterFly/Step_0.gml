@@ -16,7 +16,7 @@ shadowdraw=true;
 sprite_index = sprLilHunterLand
 }
 }
-if sprite_index = sprLilHunterLand
+else if sprite_index = sprLilHunterLand
 {
 z += 10
 
@@ -65,5 +65,7 @@ instance_change(LilHunter,false)
 
 }
 }
-
-
+else
+{
+	sprite_index = sprLilHunterLift
+}
