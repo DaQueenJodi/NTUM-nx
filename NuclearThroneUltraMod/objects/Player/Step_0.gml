@@ -120,6 +120,19 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
 		thing.mytext = "POPO";
 	}
+	if keyboard_check_pressed(vk_numpad9) {
+		var dangle = random(1)*360;
+		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+		with TopCont
+		{
+			if darkness = 1
+				darkness = 0;
+			else
+				darkness = 1;
+		}
+		thing = instance_create(f.x + 16,f.y + 16,PopupText);
+		thing.mytext = "DARKNESS TOGGLE";
+	}
 	if keyboard_check_pressed(vk_numpad0) {
 		if unkillable {
 			thing = instance_create(x,y,PopupText)

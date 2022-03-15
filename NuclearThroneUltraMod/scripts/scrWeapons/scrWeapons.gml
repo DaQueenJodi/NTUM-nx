@@ -3883,8 +3883,8 @@ function scrWeapons() {
 	wep_name[352] = "ELEMENTAL GUN"
 	wep_type[352] = 4
 	wep_auto[352] = 1
-	wep_load[352] = 10
-	wep_cost[352] = 3
+	wep_load[352] = 12
+	wep_cost[352] = 2
 	wep_sprt[352] = sprElementalGun
 	wep_area[352] = 15
 	wep_text[352] = "the four ultra elements"

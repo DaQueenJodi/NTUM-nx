@@ -31,8 +31,14 @@ if instance_exists(Player)
 	}
 	else
 	{
-		alarm[4] = 4;	
+		alarm[4] = 4;
 	}
+}
+else if instance_exists(PlayerSpawn)
+{
+	alarm[0] += 1;
+	alarm[3] += 1;
+	alarm[4] = 4;
 }
 else
 {
