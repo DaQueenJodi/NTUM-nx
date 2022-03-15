@@ -3,7 +3,7 @@ if area=1 && subarea=1 && loops=0
 scrUnlockGameMode(9,"FOR DIEING ON 1-1#YOU DID THAT ON PURPOSE")
 
 if scrCheckLoopAll()
-scrUnlockCSkin(1,"FOR LOOPING WITH EVERY CHARACTER",0);
+	scrUnlockCSkin(1,"FOR LOOPING WITH EVERY CHARACTER",0);
 
 if UberCont.opt_gamemode == 8
 {

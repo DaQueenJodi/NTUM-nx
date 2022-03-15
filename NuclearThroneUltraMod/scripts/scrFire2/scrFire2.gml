@@ -3711,7 +3711,7 @@ function scrFire2() {
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(30)-15)*other.accuracy
 	creator=other.id;
 	team = other.team
-	ammo = 8
+	ammo = 9
 	event_perform(ev_alarm,0)
 	visible = 0
 	with instance_create(x,y,LightningSpawn)

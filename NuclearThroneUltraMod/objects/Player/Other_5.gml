@@ -229,7 +229,9 @@ oasis=false;
 ///looping!
 if looping
 {
-
+if scrCheckLoopAll()
+	scrUnlockCSkin(1,"FOR LOOPING WITH EVERY CHARACTER",0);
+	
 if race = 11 && weaponspickedup<1
 scrUnlockBSkin(11,"FOR LOOPING#WITHOUT PICKING UP A WEAPON#AS HUNTER",0);
 

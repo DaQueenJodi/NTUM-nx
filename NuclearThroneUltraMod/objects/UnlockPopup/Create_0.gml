@@ -8,3 +8,8 @@ alarm[0]=150;
 drawtext=false;
 
 yy=0;
+with UnlockPopup
+{
+	if id != other.id
+	alarm[0] += 50;
+}

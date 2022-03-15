@@ -3,7 +3,7 @@ function scrCheckLoopAll() {
 	{
 
 	var dir=1;
-	var thisonelooped=1;
+	var thisonelooped=0;
 	repeat(racemax)
 	{
 
