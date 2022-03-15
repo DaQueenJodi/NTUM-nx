@@ -3,11 +3,11 @@ projectileHitBrake = 1.8;
 enemyHitbrake = 5;
 bloomSprite = sprSheepDashBloom;
 imageIndex = 0;
-dmg = 0.8;
+dmg = 1;
 if instance_exists(Player)
 {
 	var damageBoost = max(1,Player.skill_got[8]*1.3) + frac(Player.skill_got[5] * 1.6);
-	dmg = 0.8*damageBoost;
+	dmg = 1*damageBoost;
 	if Player.skill_got[2]//Extra feet synergy why not
 	{
 		projectileHitBrake-= 0.5;
@@ -32,7 +32,7 @@ if instance_exists(Player)
 		sprite_index=sprSheepDashFXultra;
 		projectileHitBrake-= 0.7;
 		enemyHitbrake -= 2;
-		dmg = 1.5*damageBoost;
+		dmg = 1.75*damageBoost;
     }
     if Player.skill_got[5]==1
     {
