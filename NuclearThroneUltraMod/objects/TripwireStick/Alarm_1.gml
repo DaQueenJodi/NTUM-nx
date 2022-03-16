@@ -13,9 +13,9 @@ if instance_exists(TripwireStick) && instance_number(TripwireStick) > 1
 			{
 				var dir = point_direction(xx,yy,xxx,yyy);
 				if instance_exists(Player) && Player.skill_got[17] == 1
-					snd_play(sndLaserUpg)
+					snd_play(sndLaserUpg,0.1,true)
 				else
-					snd_play(sndLaser)
+					snd_play(sndLaser,0.1,true)
 
 				if instance_exists(Player)
 					dir = dir + (random(4)-2)*Player.accuracy
@@ -31,4 +31,4 @@ if instance_exists(TripwireStick) && instance_number(TripwireStick) > 1
 		}
 	}
 }
-alarm[1] = 10;
+alarm[1] = 12;

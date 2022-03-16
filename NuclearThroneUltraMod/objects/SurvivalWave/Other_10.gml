@@ -1765,7 +1765,7 @@ repeat(1+loops)
 						yy: yyy,
 					};
 					i++
-					if (iy == 23 && ix == 3)
+					if (iy == 22 && ix == 3)
 					{
 						wave[i] = {
 							obj: Carpet,

@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndBoltHitWall",
-  "duration": 0.0,
+  "duration": 0.625031,
   "parent": {
     "name": "HitWall",
     "path": "folders/Sounds/HitWall.yy",

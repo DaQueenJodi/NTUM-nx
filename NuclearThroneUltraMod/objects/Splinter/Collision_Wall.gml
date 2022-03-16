@@ -1,6 +1,6 @@
 if speed != 0
 {
-snd_play(sndBoltHitWall)
+snd_play(sndBoltHitWall,0.1,true)
 alarm[0] = 1;
 move_contact_solid(direction,16)
 instance_create(x,y,Dust)
