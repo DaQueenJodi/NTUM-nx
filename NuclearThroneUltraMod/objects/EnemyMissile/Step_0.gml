@@ -28,7 +28,3 @@ if speed>2
 speed=2;
 
 image_angle=direction;
-
-if random(2)<1
-instance_create(x,y,Smoke);
-
