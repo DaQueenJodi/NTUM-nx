@@ -2463,7 +2463,7 @@ function scrWeapons() {
 	wep_name[223] = "BULLET SWORD"
 	wep_type[223] = 1
 	wep_auto[223] = 0
-	wep_load[223] = 14
+	wep_load[223] = 9
 	wep_cost[223] = 5
 	wep_sprt[223] = sprBulletSword
 	wep_area[223] = 10
