@@ -5089,7 +5089,13 @@ function scrFire2() {
 		}
 		with instance_create(x+16,y+16,Bullet2)
 		{
-			motion_add(90,14+random(2))
+			motion_add(120,14+random(2))
+			image_angle = direction
+			team = t
+		}
+		with instance_create(x+16,y+16,Bullet2)
+		{
+			motion_add(240,14+random(2))
 			image_angle = direction
 			team = t
 		}
@@ -5446,13 +5452,19 @@ function scrFire2() {
 		}
 		with instance_create(x+16,y+16,Flame)
 		{
-			motion_add(120,4)
+			motion_add(90,4)
 			//image_angle = direction
 			team = t
 		}
 		with instance_create(x+16,y+16,Flame)
 		{
-			motion_add(240,4)
+			motion_add(270,4)
+			//image_angle = direction
+			team = t
+		}
+		with instance_create(x+16,y+16,Flame)
+		{
+			motion_add(180,4)
 			//image_angle = direction
 			team = t
 		}

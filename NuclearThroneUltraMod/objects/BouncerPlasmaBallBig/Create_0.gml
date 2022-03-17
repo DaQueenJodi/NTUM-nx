@@ -8,18 +8,15 @@ they have a FORCE and can be 0 or DIRECTIONAL */
 
 typ = 1 //0 = normal, 1 = deflectable, 2 = destructable, 3 = deflectable
 
-dmg = 22
+dmg = 18
 
 if instance_exists(Player)
 {
 if Player.skill_got[17] = 1
-dmg = 27+(Player.betterlaserbrain*2)
+dmg = 23+(Player.betterlaserbrain*2)
 }
 //friction=0.4;
 image_speed = 0.5
 Sleep(10)
 originalDirection=point_direction(x,y,mouse_x,mouse_y);
 resetSpeed=false;
-
-/* */
-/*  */

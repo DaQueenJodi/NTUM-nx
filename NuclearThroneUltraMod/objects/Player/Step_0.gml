@@ -1502,25 +1502,24 @@ if race = 26
 {
     if HumphryTB=1 && HumphrySkill>0
     {
-    HumphryTBcount++;
+	    HumphryTBcount++;
     
-    //if HumphryTBcount=2||HumphryTBcount=6||HumphryTBcount=9 ||HumphryTBcount=12
-    HumphrySkill--;
+	    //if HumphryTBcount=2||HumphryTBcount=6||HumphryTBcount=9 ||HumphryTBcount=12
+	    HumphrySkill-= 1.25;
     
-    if HumphryTBcount>=8
-    {
-    if my_health<maxhealth
-    {
-    instance_create(x,y,HealFX)
+	    if HumphryTBcount>=8
+	    {
+	    if my_health<maxhealth
+	    {
+	    instance_create(x,y,HealFX)
     
-    snd_play(sndHealthPickup);
+	    snd_play(sndHealthPickup);
     
-    my_health++;
-    }
-    HumphryTBcount=0;
-    //HumphrySkill--;
-    }
-    
+	    my_health++;
+	    }
+	    HumphryTBcount=0;
+	    //HumphrySkill--;
+	    }
     }
     else if HumphrySkill<1
     {
