@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndBloodLauncherExplo",
-  "duration": 0.0,
+  "duration": 3.157347,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

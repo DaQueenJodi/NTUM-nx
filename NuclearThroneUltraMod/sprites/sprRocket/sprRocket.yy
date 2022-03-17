@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprRocket","path":"sprites/sprRocket/sprRocket.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprRocket",
     "tags": [],
     "resourceType": "GMSequence",
   },

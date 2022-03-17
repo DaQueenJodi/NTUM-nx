@@ -92,7 +92,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprExplosion","path":"sprites/sprExplosion/sprExplosion.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprExplosion",
     "tags": [],
     "resourceType": "GMSequence",
   },

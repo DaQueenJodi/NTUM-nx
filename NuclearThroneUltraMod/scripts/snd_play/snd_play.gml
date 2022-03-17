@@ -58,7 +58,7 @@ function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = tru
 				emitter = audio_emitter_create();
 				audio_emitter_position(emitter,x,y,depth);
 				audio_emitter_falloff(emitter, 50, 400, 1);
-				audio_play_sound_on(emitter,sndId,false,priority);
+				audio_sound_pitch(audio_play_sound_on(emitter,sndId,false,priority), 1 + (random(randompitch)*2 - randompitch));
 				alarm[0] = room_speed * audio_sound_length(sndId);
 			}
 		}

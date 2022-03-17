@@ -8,3 +8,4 @@ snd = sndRocketFly
 snd_play(snd)
 
 alarm[11] = 1;
+dmg = 20;

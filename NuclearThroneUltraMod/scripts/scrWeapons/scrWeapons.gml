@@ -4569,6 +4569,39 @@ function scrWeapons() {
 	wep_text[413] = "vampire"
 	wep_swap[413] = sndSwapBow
 	wep_rad[413] = 0;
+	
+	wep_name[414] = "BUBBLER"
+	wep_type[414] = 4
+	wep_auto[414] = 0
+	wep_load[414] = 12
+	wep_cost[414] = 2
+	wep_sprt[414] = sprLeacherBow
+	wep_area[414] = 5
+	wep_text[414] = "pop goes the bubble"
+	wep_swap[414] = sndSwapBow
+	wep_rad[414] = 0;
+	
+	wep_name[415] = "BLOOD BUBBLER"
+	wep_type[415] = 4
+	wep_auto[415] = 0
+	wep_load[415] = 12
+	wep_cost[415] = 2
+	wep_sprt[415] = sprLeacherBow
+	wep_area[415] = 7
+	wep_text[415] = "boiling blood"
+	wep_swap[415] = sndSwapBow
+	wep_rad[415] = 0;
+	
+	wep_name[416] = "BOUNCER BAZOOKA"
+	wep_type[416] = 4
+	wep_auto[416] = 0
+	wep_load[416] = 30
+	wep_cost[416] = 1
+	wep_sprt[416] = sprBazooka
+	wep_area[416] = 7
+	wep_text[416] = ""
+	wep_swap[416] = sndSwapExplosive
+	wep_rad[416] = 0;
 
 	maxwep = array_length(wep_name)-1;
 

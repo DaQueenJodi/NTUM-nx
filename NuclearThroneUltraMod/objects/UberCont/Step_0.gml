@@ -1,7 +1,7 @@
 if paused = 1
 {
 //QUICK RESTART
-if (canRestart && paused == 1 && !instance_exists(PlayerSpawn) && (keyboard_check_pressed(ord("R")) || gamepad_button_check(0,gp_face3)) )//(gamepad_button_check(0,gp_stickl) && gamepad_button_check(0,gp_stickr)) )
+if (canRestart && paused == 1 && !instance_exists(PlayerSpawn) && !instance_exists(Player) && (keyboard_check_pressed(ord("R")) || gamepad_button_check(0,gp_face3)) )//(gamepad_button_check(0,gp_stickl) && gamepad_button_check(0,gp_stickr)) )
 {
 	with SurvivalWave
 		instance_destroy();

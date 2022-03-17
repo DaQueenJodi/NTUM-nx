@@ -19,3 +19,4 @@ originalDirection=point_direction(x,y,mouse_x,mouse_y);
 direction=originalDirection;
 image_speed = 0.5
 Sleep(3)
+alarm[11] = 1;

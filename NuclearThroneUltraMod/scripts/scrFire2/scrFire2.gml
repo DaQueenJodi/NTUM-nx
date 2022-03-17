@@ -5953,5 +5953,68 @@ function scrFire2() {
 
 	break;
 	
+	//BUBBLER
+	case 414:
+		snd_play(sndClusterOpen);
+		snd_play(choose(sndWater1,sndWater2),0.1,true);
+		var len = 70;
+		var am = 8;
+		var aimDir = point_direction(x,y,mouse_x,mouse_y);
+		var xx = x + lengthdir_x(len,aimDir);
+		var yy = y + lengthdir_y(len,aimDir);
+		var angstp = 360/am;
+		repeat(am)
+		{
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			aimDir += angstp;
+			xx = x + lengthdir_x(len,aimDir);
+			yy = y + lengthdir_y(len,aimDir);
+		}
+
+	break;
+	
+	//BLOOD BUBBLER
+	case 415:
+		snd_play(sndClusterOpen);
+		snd_play(choose(sndWater1,sndWater2),0.1,true);
+		var len = 48;
+		var am = 8;
+		var aimDir = point_direction(x,y,mouse_x,mouse_y);
+		var xx = x + lengthdir_x(len,aimDir);
+		var yy = y + lengthdir_y(len,aimDir);
+		var angstp = 360/am;
+		repeat(am)
+		{
+			with instance_create(xx,yy,BigBloodBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			aimDir += angstp;
+			xx = x + lengthdir_x(len,aimDir);
+			yy = y + lengthdir_y(len,aimDir);
+		}
+
+	break;
+	
+	//BOUNCER BAZOOKA
+	case 416:
+
+	snd_play_fire(sndRocket)
+
+	with instance_create(x,y,BouncerRocket)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)*other.accuracy,2)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(30,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(30,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 4
+	wkick = 10
+
+	break;
+	
 	}//end of switch part 2!
 }

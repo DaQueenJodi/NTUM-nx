@@ -922,7 +922,7 @@ snd_play(sndShotReload)
 
 if lsthealth < my_health
 {
-drawlowhp = 30
+drawlowhp = 20
 lsthealth += 1
 }
 if sprite_index != spr_hurt and lsthealth > my_health
