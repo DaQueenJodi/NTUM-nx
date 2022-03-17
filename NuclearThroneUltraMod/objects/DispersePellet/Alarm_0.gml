@@ -1,7 +1,6 @@
 alarm[0]=time;
 
-snd_play(sndPopgun)
-
+snd_play(sndPopgun,0.1,true)
 
 with instance_create(x,y,Bullet2)
 {motion_add(other.image_angle+90+(random(6)-3),14+random(2))

@@ -7,6 +7,7 @@ else
 snd_play(sndPlasmaBigExplode)
 }
 ang = random(360)
+var angstep = 360/4;
 repeat(4)
 {
 with instance_create(xprevious,yprevious,PlasmaBig)
@@ -15,7 +16,7 @@ scrCanHumphry();
 image_angle = direction
 originalDirection=other.ang;
 team = other.team}
-ang += 360/10
+ang += angstep;
 }
 
 instance_create(x,y,PlasmaImpact)

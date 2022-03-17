@@ -2777,13 +2777,13 @@ function scrWeapons() {
 	wep_area[251] = 3
 	wep_text[251] = "away! and return!"
 	wep_swap[251] = sndSwapBow
-	wep_rad[0251] = 0;
+	wep_rad[251] = 0;
 
 	wep_name[252] = "SUPER YOYO GUN"
 	wep_type[252] = 3
 	wep_auto[252] = 1
 	wep_load[252] = 12
-	wep_cost[252] = 7
+	wep_cost[252] = 6
 	wep_sprt[252] = sprSuperYoyoGun
 	wep_area[252] = 8
 	wep_text[252] = "cutting edge technology"
@@ -2893,7 +2893,7 @@ function scrWeapons() {
 	wep_type[262] = 3
 	wep_auto[262] = 1
 	wep_load[262] = 12
-	wep_cost[262] = 7
+	wep_cost[262] = 6
 	wep_sprt[262] = sprSpiralYoyoGun
 	wep_area[262] = 6
 	wep_text[262] = "this looks stupid"
@@ -4602,6 +4602,61 @@ function scrWeapons() {
 	wep_text[416] = ""
 	wep_swap[416] = sndSwapExplosive
 	wep_rad[416] = 0;
+	
+	wep_name[417] = "SUPER TOXIC CANNON"
+	wep_type[417] = 4
+	wep_auto[417] = 0
+	wep_load[417] = 44
+	wep_cost[417] = 8
+	wep_sprt[417] = sprToxicCannon
+	wep_area[417] = 14
+	wep_text[417] = ""
+	wep_swap[417] = sndSwapExplosive
+	wep_rad[417] = 0;
+	
+	wep_name[418] = "SUPER SPIRAL YOYO GUN"
+	wep_type[418] = 3
+	wep_auto[418] = 1
+	wep_load[418] = 20
+	wep_cost[418] = 8
+	wep_sprt[418] = sprSpiralYoyoGun
+	wep_area[418] = 9
+	wep_text[418] = "this looks stupid"
+	wep_swap[418] = sndSwapBow
+	wep_rad[418] = 0;
+	
+	wep_name[419] = "SPINNER YOYO GUN"
+	wep_type[419] = 3
+	wep_auto[419] = 1
+	wep_load[419] = 16
+	wep_cost[419] = 2
+	wep_sprt[419] = sprYoyoGun
+	wep_area[419] = 5
+	wep_text[419] = ""
+	wep_swap[419] = sndSwapBow
+	wep_rad[419] = 0;
+	
+	wep_name[420] = "SUPER SPINNER YOYO GUN"
+	wep_type[420] = 3
+	wep_auto[420] = 1
+	wep_load[420] = 27
+	wep_cost[420] = 5
+	wep_sprt[420] = sprYoyoGun
+	wep_area[420] = 8
+	wep_text[420] = "super dizzy"
+	wep_swap[420] = sndSwapBow
+	wep_rad[420] = 0;
+	
+	wep_name[421] = "DISPERSE SPINNER YOYO GUN"
+	wep_type[421] = 3
+	wep_auto[421] = 1
+	wep_load[421] = 20
+	wep_cost[421] = 10
+	wep_sprt[421] = sprSpiralYoyoGun
+	wep_area[421] = 12
+	wep_text[421] = "once upon a time there was a yoyo that never returned"
+	wep_swap[421] = sndSwapBow
+	wep_rad[421] = 0;
 
 	maxwep = array_length(wep_name)-1;
 

@@ -6016,5 +6016,157 @@ function scrFire2() {
 
 	break;
 	
+	//SUPER TOXIC CANNON
+	case 417:
+
+	snd_play_fire(sndGrenade)
+	snd_play_fire(sndToxicBoltGas)
+
+	with instance_create(x,y,SuperToxicCannonBall)
+	{
+	image_angle=point_direction(x,y,mouse_x,mouse_y);
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(8)-4)*other.accuracy,3)
+	}
+
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+180,2)
+	BackCont.viewx2 += lengthdir_x(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(6,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 6
+	wkick = 7
+
+	break;
+	
+	//SUPER SPIRAL YOYO GUN
+	case 418:
+
+	snd_play_fire(sndSuperDiscGun)
+	var offset = 0;
+	var spd = 5;
+	repeat(3)
+	{
+		with instance_create(x,y,Yoyo)
+		{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy+offset,spd)
+		image_angle = direction
+		team = other.team}
+
+		with instance_create(x,y,Yoyo)
+		{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy+60+offset,spd)
+		image_angle = direction
+		team = other.team}
+
+		with instance_create(x,y,Yoyo)
+		{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy+120+offset,spd)
+		image_angle = direction
+		team = other.team}
+
+		with instance_create(x,y,Yoyo)
+		{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy+180+offset,spd)
+		image_angle = direction
+		team = other.team}
+
+		with instance_create(x,y,Yoyo)
+		{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy+240+offset,spd)
+		image_angle = direction
+		team = other.team}
+
+		with instance_create(x,y,Yoyo)
+		{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy+300+offset,spd)
+		image_angle = direction
+		team = other.team}
+		
+		spd += 2;
+		offset += 20;
+	}
+
+	BackCont.viewx2 += lengthdir_x(11,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(11,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 16
+	wkick = 7
+
+	break;
+	
+	//SPINNER YOYO GUN
+	case 419:
+
+	snd_play_fire(sndDiscgun)
+	var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*accuracy;
+	with instance_create(x,y,SpinnerYoyo)
+	{
+		team = other.team;
+		var sins = sin(point_direction(x,y,mouse_x,mouse_y));
+		if sins > 0
+		{
+			motion_add(aimDir + 10,12);
+			rotation = -400;
+		}
+		else
+		{
+			motion_add(aimDir - 10,12);
+			rotation = 400;
+		}
+		image_angle = direction
+		oDir = direction;
+		owner = other.id
+	}
+	
+	break;
+	
+	//SUPER SPINNER YOYO GUN
+	case 420:
+
+	snd_play_fire(sndDiscgun)
+	var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*accuracy;
+	var am = 6;
+	var angStep = 360/am; 
+	repeat(am)
+	{
+		with instance_create(x,y,SpinnerYoyo)
+		{
+			team = other.team;
+			var sins = sin(point_direction(x,y,mouse_x,mouse_y));
+			if sins > 0
+			{
+				motion_add(aimDir + 10,12);
+				rotation = -400;
+			}
+			else
+			{
+				motion_add(aimDir - 10,12);
+				rotation = 400;
+			}
+			image_angle = direction
+			oDir = direction;
+			owner = other.id
+		}
+		aimDir += angStep;
+	}
+
+	BackCont.viewx2 += lengthdir_x(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 6
+	wkick = 5
+
+	break;
+	
+	//YOYO DISPERSE GUN
+	case 421:
+
+	snd_play_fire(sndSuperDiscGun)
+
+	with instance_create(x,y,DisperseYoyo)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,10)
+	image_angle = direction
+	team = other.team
+	time=2;
+	event_perform(ev_alarm,0) 
+	}
+
+	BackCont.viewx2 += lengthdir_x(14,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(14,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 8
+	wkick = 7
+
+	break;
+	
 	}//end of switch part 2!
 }
