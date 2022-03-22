@@ -295,7 +295,7 @@ function scrDrawBloom() {
 	with RadChest
 	draw_sprite_ext(sprRadChestGlow,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with EnemyBullet2
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.005)
+	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with EnemyBullet3
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba+0.01)
 	with EnemyBullet4
