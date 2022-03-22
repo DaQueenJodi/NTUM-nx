@@ -23,6 +23,16 @@ repeat(Player.loops-1)
 instance_create(instance_furthest(Player.x,Player.y,Floor).x+132, instance_furthest(Player.x,Player.y,Floor).y+32,LilHunter);
 }
 
+if Player.loops > 0 && Player.area == 2 && Player.subarea == 1
+{
+	var far = instance_furthest(Player.x,Player.y,Floor);
+	var dir = point_direction(Player.x,Player.y,far.x,far.y);
+	var dis = point_distance(Player.x,Player.y,far.x,far.y)*0.8;
+	var xx = Player.x + lengthdir_x(dis,dir);
+	var yy = Player.y + lengthdir_y(dis,dir);
+	instance_create(instance_nearest(xx,yy,Floor).x+16, instance_nearest(xx,yy,Floor).y+16,BallMom)
+}
+
 //Volcano Boss
 //if Player.area = 7 and Player.subarea = 3
 //instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,BecomeScrapBoss)

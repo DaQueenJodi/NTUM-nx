@@ -27,7 +27,11 @@ name = "INVERTED BIG BANDIT"
 if Player.area = 2
 {
 //with instance_create(x,y,Drama)
-name = "SEWER FISH"
+name = "MOM";
+if random(80)<1
+{
+	name = choose("BALL MOM","MUMMY","FROG QUEEN","BALL MAMA");	
+}
 }
 if Player.area = 3
 {
@@ -43,7 +47,7 @@ else
 {
 
 if random(100)<1
-name = "BIG ASS ASSASSIN"
+name = choose("BIG ASS ASSASSIN","BIG ASS");
 else
 name = "BIG ASSASSIN"
 
@@ -137,11 +141,15 @@ name = "BIG FISH"
 
 if Player.area == 9
 {
-	name = "THE NUCLEAR THRONE";	
+	name = "THE NUCLEAR THRONE";
+	if random(200) < 1
+		name = "SON OF A BITCH";
 }
 if Player.area == 10
 {
-	name = "INVERTED BIG BANDIT";	
+	name = "INVERTED BIG BANDIT";
+	if random(200) < 1
+		name = "WHITE TRASH";
 }
 
 }
@@ -179,7 +187,9 @@ if instance_exists(Player)
 		else
 			song = musBoss6B;
 	}
-    if Player.area = 101 || Player.area = 2
+	if Player.area = 2
+	song = musBoss5;
+    if Player.area = 101
     song = musBoss1;
     snd_loop(song)
     snd_loop(amb)

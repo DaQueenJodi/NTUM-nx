@@ -670,7 +670,7 @@ function scrWeapons() {
 	wep_name[60] = "BLOOD SHOTGUN"
 	wep_type[60] = 4
 	wep_auto[60] = 0
-	wep_load[60] = 16
+	wep_load[60] = 12
 	wep_cost[60] = 2
 	wep_sprt[60] = sprBloodShotgun
 	wep_area[60] = 8
@@ -4188,8 +4188,8 @@ function scrWeapons() {
 	wep_name[379] = "BULLET WALL"
 	wep_type[379] = 1
 	wep_auto[379] = 0
-	wep_load[379] = 20
-	wep_cost[379] = 10
+	wep_load[379] = 15
+	wep_cost[379] = 8
 	wep_sprt[379] = sprSkullBreaker
 	wep_area[379] = 11
 	wep_text[379] = "bullets are closer together with eagle eyes"
@@ -4199,8 +4199,8 @@ function scrWeapons() {
 	wep_name[380] = "BULLET LASER"
 	wep_type[380] = 1
 	wep_auto[380] = 0
-	wep_load[380] = 20
-	wep_cost[380] = 15
+	wep_load[380] = 15
+	wep_cost[380] = 12
 	wep_sprt[380] = sprSkullSplitter
 	wep_area[380] = 12
 	wep_text[380] = "more bullets with eagle eyes"
@@ -4668,6 +4668,17 @@ function scrWeapons() {
 	wep_text[422] = "mine is longer"
 	wep_swap[422] = sndSwapSword
 	wep_rad[422] = 0;
+	
+	wep_name[423] = "INFESTER"
+	wep_type[423] = 3
+	wep_auto[423] = 1
+	wep_load[423] = 5
+	wep_cost[423] = 1
+	wep_sprt[423] = sprInfester
+	wep_area[423] = 14
+	wep_text[423] = ""
+	wep_swap[423] = sndSwapBow
+	wep_rad[423] = 0;
 	
 	/*
 	wep_name[312] = "ULTRA ROGUE RIFLE"

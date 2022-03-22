@@ -10,3 +10,5 @@ alarm[0]=120;
 
 dmg = 7;
 dealtDamage = false;
+
+hitTime = 10;

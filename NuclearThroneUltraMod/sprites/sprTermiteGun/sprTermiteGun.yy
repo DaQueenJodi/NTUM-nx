@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprTermiteGun","path":"sprites/sprTermiteGun/sprTermiteGun.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprTermiteGun",
     "tags": [],
     "resourceType": "GMSequence",
   },

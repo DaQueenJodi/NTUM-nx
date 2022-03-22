@@ -1,9 +1,9 @@
-if other.team != team && other.team != 2
+if other.team != team && other.team != 2 && other.id != owner
 {
 	//Hit enemy
 	with other
 	{
-		if sprite_index != spr_hurt
+		if sprite_index != spr_hurt 
 		{
 			with other
 			instance_destroy()
@@ -20,7 +20,7 @@ if other.team != team && other.team != 2
 		}
 	}
 }
-else if other.team=2 && other.team!=team && image_xscale>0.22 && alarm[11] < 1
+else if other.team = 2 && other.team!=team && image_xscale>0.22 && alarm[11] < 1
 {
 	//Hit player
     with other

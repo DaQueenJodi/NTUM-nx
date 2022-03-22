@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndToxicBoltGas",
-  "duration": 0.0,
+  "duration": 1.02068,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

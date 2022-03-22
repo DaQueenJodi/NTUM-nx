@@ -57,9 +57,10 @@ if UberCont.public = 0 {
     }
 
     if keyboard_check_pressed(ord("2")) {
-        area = 114
+        area = 1
         //inverted=true;
-        subarea = 0
+		loops = 1;
+        subarea = 3
         with enemy
         my_health = 0
         with instance_create(x, y, Portal) type = 1

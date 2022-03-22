@@ -57,6 +57,10 @@ snd_play(sndAssassinPretend)
 depth = -99
 }
 
+with BallMom
+{
+	depth = -99;	
+}
 }
 urgent += 1
 

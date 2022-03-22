@@ -1,8 +1,15 @@
 if my_health<1
 snd_play(sndFrogEggDead)
 
-repeat(4)
-instance_create(x,y,ToxicThrowerGas)
+if team == 2
+{
+	repeat(4)
+	instance_create(x,y,ToxicThrowerGas)
 
-snd_play(sndToxicBoltGas);
-
+	snd_play(sndToxicBoltGas);
+}
+else
+{
+	scrDrop(50,0);
+}
+event_inherited();

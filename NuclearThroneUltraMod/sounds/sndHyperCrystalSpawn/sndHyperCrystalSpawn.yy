@@ -15,7 +15,7 @@
   "duration": 3.674031,
   "parent": {
     "name": "HyperCrystal",
-    "path": "folders/Sounds/Boss/HyperCrystal.yy",
+    "path": "folders/Sounds/Enemies/Boss/HyperCrystal.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndHyperCrystalSpawn",

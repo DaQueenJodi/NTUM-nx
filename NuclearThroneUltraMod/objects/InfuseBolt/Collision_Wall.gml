@@ -6,7 +6,7 @@ move_contact_solid(direction,16)
 instance_create(x,y,Dust)
 image_index = 2
 
-if alarm[0]>15
-alarm[0] = 15;
+if alarm[0]>hitTime+5
+alarm[0] = hitTime+5;
 }
 

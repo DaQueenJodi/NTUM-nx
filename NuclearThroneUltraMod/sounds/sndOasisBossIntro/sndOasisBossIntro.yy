@@ -15,7 +15,7 @@
   "duration": 2.090688,
   "parent": {
     "name": "Boss",
-    "path": "folders/Sounds/Boss.yy",
+    "path": "folders/Sounds/Enemies/Boss.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndOasisBossIntro",

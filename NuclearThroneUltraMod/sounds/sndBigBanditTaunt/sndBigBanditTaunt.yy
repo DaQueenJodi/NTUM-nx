@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndBigBanditTaunt",
-  "duration": 0.0,
+  "duration": 4.312018,
   "parent": {
     "name": "BigBandit",
     "path": "folders/Sounds/Enemies/BigBandit.yy",

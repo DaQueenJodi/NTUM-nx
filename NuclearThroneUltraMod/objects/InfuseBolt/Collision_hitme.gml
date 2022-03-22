@@ -16,6 +16,6 @@ if other.team != team && !dealtDamage
 	}
 
 
-	if alarm[0]>10
-	alarm[0] = 10;
+	if alarm[0]>hitTime
+	alarm[0] = hitTime;
 }

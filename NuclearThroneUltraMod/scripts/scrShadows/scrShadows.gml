@@ -73,6 +73,10 @@ function scrShadows() {
 	draw_sprite_ext(shd16,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),1,1,image_angle,c_white,1)
 	with Scorpion
 	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+	with BallMom
+	draw_sprite(shd64,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+4)
+	with FrogEgg
+	draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with InvertedScorpion
 	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with Crab

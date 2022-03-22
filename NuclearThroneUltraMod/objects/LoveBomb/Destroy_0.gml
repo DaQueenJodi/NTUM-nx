@@ -6,7 +6,7 @@ if instance_exists(Player) && random(100) < 7.7//7.69% chance
 	{
 		sprite_index=sprBloodlust;
 	}
-	snd_play(sndBloodlustProc);
+	snd_play_2d(sndBloodlustProc);
 	var num = 1
 	Player.my_health = max(Player.my_health,min(Player.my_health + num,Player.maxhealth));
     

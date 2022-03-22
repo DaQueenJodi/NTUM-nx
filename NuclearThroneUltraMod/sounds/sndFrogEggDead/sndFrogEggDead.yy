@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndFrogEggDead",
-  "duration": 0.0,
+  "duration": 0.677687,
   "parent": {
     "name": "FROG",
     "path": "folders/Sounds/FROG.yy",

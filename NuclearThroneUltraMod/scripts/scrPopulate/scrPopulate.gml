@@ -380,12 +380,12 @@ function scrPopulate() {
         repeat(Player.loops + 1)
         instance_create(x, y, WantBoss)
     }
-
+/*
     if (Player.area = 2 && Player.loops > 0) { //SPAWN BIG FISH
         repeat(Player.loops + 1)
         instance_create(x, y, WantBoss);
     }
-
+*/
     if (Player.area = 3 && Player.subarea = 1 && Player.loops > 0) { //SPAWN ASSASSINBOSS
         repeat(Player.loops)
         instance_create(x, y, WantBoss);

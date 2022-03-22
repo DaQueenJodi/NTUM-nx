@@ -1,12 +1,12 @@
-snd_play(sndTermiteDead);
+snd_play(sndTermiteDead,0.3,true);
 
-repeat(4)
+repeat(3)
 {
 with instance_create(x,y,Smoke)
 motion_add(random(360),random(3))
 }
 
-repeat(3+irandom(8))
+repeat(2+irandom(4))
 {
 instance_create(x,y,RavenFeather);
 }
