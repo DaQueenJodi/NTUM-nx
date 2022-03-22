@@ -1,12 +1,12 @@
 if instance_exists(Player)
 {
 if Player.skill_got[17] = 1
-snd_play(sndLaserSwordUpg)
+snd_play(sndLaserSwordUpg,0.2,true)
 else
-snd_play(sndLaserSword)
+snd_play(sndLaserSword,0.2,true)
 }
 else
-{snd_play(sndLaserSword)}
+{snd_play(sndLaserSword,0.2,true)}
 
 instance_create(x,y,Dust)
 

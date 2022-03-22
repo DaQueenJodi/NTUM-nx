@@ -102,7 +102,7 @@ function scrDrop(itemdrop, weapondrop) {
 	        }
 	    }
 	//drop items
-	if itemdrop > 0 &&random(100) < itemdrop+2*(need+Player.skill_got[4]*(0.5+Player.betterrabbitpaw) +(Player.ultra_got[39]*instance_number(Ally)*0.3)+(Player.skill_got[28]*(Player.rage*0.0004)) )//0.6 before rabbit paw nerf
+	if itemdrop > 0 &&random(100) < itemdrop+2*(need+Player.skill_got[4]*(0.5+Player.betterrabbitpaw) +(Player.ultra_got[39]*instance_number(Ally)*0.6)+(Player.skill_got[28]*(Player.rage*0.0004)) )//0.6 before rabbit paw nerf
 	{//0.3 for each ally Rebel has REBEL ULTRA C?
 
 	if random(Player.maxhealth) > Player.my_health and random(3) < 2 and Player.crown != 2
@@ -116,7 +116,7 @@ function scrDrop(itemdrop, weapondrop) {
 	return true;
 	}
 	}
-	else if random(100) < weapondrop*(1+Player.skill_got[4]*(0.5+Player.betterrabbitpaw) +(Player.ultra_got[39]*instance_number(Ally)*0.3)+(Player.skill_got[28]*(Player.rage*0.0004)) )//rage=0.001
+	else if random(100) < weapondrop*(1+Player.skill_got[4]*(0.5+Player.betterrabbitpaw) +(Player.ultra_got[39]*instance_number(Ally)*0.6)+(Player.skill_got[28]*(Player.rage*0.0004)) )//rage=0.001
 	{
 	//drop weps
 	with instance_create(x+random(4)-2,y+random(4)-2,WepPickup)

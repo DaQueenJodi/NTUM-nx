@@ -8,10 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-//if !audio_is_playing(sndSwarm)
-audio_stop_sound(sndSeekerCannon)
-audio_sound_pitch(sndSeekerCannon,random_range(0.9,1.1))
-audio_play_sound(sndSeekerCannon,100,0)
+snd_play_fire(sndSwarm);
 
 
 

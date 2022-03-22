@@ -4,7 +4,7 @@ if target > 0
 {
 	//GOT TARGET
 	var dis = point_distance(x,y,target.x,target.y);
-	if dis < 185
+	if dis < 200
 	{
 		//CAN SEE
 		//direction = point_direction(x,y,target.x,target.y)+random(60)-30

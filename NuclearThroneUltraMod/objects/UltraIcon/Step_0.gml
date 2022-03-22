@@ -26,6 +26,11 @@ if skill = 85//ROGUE SUPER PORTAL STRIKE
 		Player.rogueammo=8;
 	}
 }
+else if skill == 88 //ROGUE ULTRA POPO
+{
+	Player.rogueammo = 0;
+	Player.rogueammomax = 0;
+}
 
 if skill = 97 // MUTATION SMITH WEAPON MUTATOR BETTER WEAPON SPECIFIC MUTATIONS
 {

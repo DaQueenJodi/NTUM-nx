@@ -15,6 +15,7 @@ if target > 0
 		aTime *=0.5;
 		event_user(2);
 	}
+	
 	if target.y < y && ran > 50
 	{
 		//Above me
@@ -23,7 +24,7 @@ if target > 0
 		fireTriShot = false;
 		bigballs = false;
 	}
-	else if target.y - y > 148 && ran > 70
+	else if ((target.y - y > 142 && ran > 64) || ran > 96)
 	{
 		//Far below me
 		walk = alarm[1];

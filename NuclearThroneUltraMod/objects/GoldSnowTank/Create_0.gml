@@ -20,3 +20,4 @@ gunangle = random(360)
 rest = 0
 wave = 0
 
+isLoop = GetPlayerLoops() > 0

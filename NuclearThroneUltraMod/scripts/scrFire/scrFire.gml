@@ -4921,10 +4921,8 @@ function scrFire() {
 
 	if Player.ultra_got[88]//ROGUE ULTRA POPO ULTRA D
 	{
-
-	if wep_rad[wep]>0
-	rad+=round(wep_rad[wep]*0.64);
-
+		if wep_rad[wep]>0
+			rad+=wep_rad[wep]*0.4;
 	}
 	if Player.crown=18//DISCO FEVER!
 	{

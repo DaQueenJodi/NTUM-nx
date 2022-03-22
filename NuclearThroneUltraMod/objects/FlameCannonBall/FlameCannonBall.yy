@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskMiniFlameCannonBall",
-    "path": "sprites/mskMiniFlameCannonBall/mskMiniFlameCannonBall.yy",
+    "name": "mskFlameCannonBall",
+    "path": "sprites/mskFlameCannonBall/mskFlameCannonBall.yy",
   },
   "persistent": false,
   "parentObjectId": {

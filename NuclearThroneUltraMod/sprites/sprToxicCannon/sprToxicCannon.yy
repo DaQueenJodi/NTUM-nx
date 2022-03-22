@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprToxicCannon","path":"sprites/sprToxicCannon/sprToxicCannon.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprToxicCannon",
     "tags": [],
     "resourceType": "GMSequence",
   },

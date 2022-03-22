@@ -23,7 +23,7 @@ function scrPowers() {
 		}
 		if (insufficientFunds)
 		{
-			snd_play_2d(snd_lowa);
+			snd_play_2d(snd_lowa,0,true,false,10);
 		}
 		else
 		{
@@ -255,40 +255,49 @@ function scrPowers() {
 
 	if race = 22 //Rogue
 	{
-	if rogueammo>0
+		var radcost = 80;
+		var useRad = ultra_got[88] == 1
+	if rogueammo > 0 || (useRad && rad > 20)
 	{
-	portalstrikesusedthislevel++;
-	if portalstrikesusedthislevel>=8
-	scrUnlockCSkin(22,"FOR USING EIGHT PORTAL STRIKES#IN ONE LEVEL",0);
+		if useRad
+			rad -= radcost;
+		portalstrikesusedthislevel++;
+		if portalstrikesusedthislevel>=8
+		scrUnlockCSkin(22,"FOR USING EIGHT PORTAL STRIKES#IN ONE LEVEL",0);
 
-	with instance_create(mouse_x,mouse_y,PortalStrike)
-	{
-	if other.bskin=2
-	sprite_index=sprRogueCStrike
-	if other.skill_got[5]
-	{
-	upgraded=true;
-	if other.bskin=2
-	sprite_index=sprRogueCStrikeTB;
+		with instance_create(mouse_x,mouse_y,PortalStrike)
+		{
+		if other.bskin=2
+		sprite_index=sprRogueCStrike
+		if other.skill_got[5]
+		{
+		upgraded=true;
+		if other.bskin=2
+		sprite_index=sprRogueCStrikeTB;
+		else
+		sprite_index=sprRogueStrikeTB;
+		}
+
+		}
+		snd_play_2d(sndRogueAim);
+	}
 	else
-	sprite_index=sprRogueStrikeTB;
-	}
-
-	}
-
-	snd_play_2d(sndRogueAim);
-
-	}
-	else
 	{
+		snd_play_2d(sndPortalStrikeEmpty);
 
-	snd_play_2d(sndPortalStrikeEmpty);
-
-	with instance_create(x,y,PopupText)
-	{mytext = "NOT ENOUGH#PORTAL STRIKE AMMO"
-	colour=c_red;
-	other.wkick = -2}
-
+		if useRad
+		{
+			with instance_create(x,y,PopupText)
+			{mytext = "NOT ENOUGH#PORTAL STRIKE AMMO"
+			colour=c_red;}
+		}
+		else
+		{
+			snd_play_2d(sndUltraEmpty);	
+			with instance_create(x,y,PopupText)
+			{mytext = "NOT ENOUGH#RADS"
+			colour=c_red;}
+		}
 	}
 
 
@@ -820,7 +829,7 @@ function scrPowers() {
 			}
 			else
 			{
-				snd_play_2d(snd_lowa);
+				snd_play_2d(snd_lowa,0,true,false,10);
 				BackCont.shake += 5;
 			}
 		}
@@ -1407,7 +1416,7 @@ function scrPowers() {
 		else
 		{
 			lockoutElementor = true;
-			snd_play_2d(snd_lowa);
+			snd_play_2d(snd_lowa,0,true,false,10);
 			BackCont.shake += 5;
 		}
 	}

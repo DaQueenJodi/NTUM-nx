@@ -2,10 +2,10 @@ event_inherited();
 typ = 1 //0 = normal, 1 = deflectable, 2 = destructable, 3 = deflectable
 
 image_speed=1;
-dmg = 10;
+dmg = 12;
 owner = -1;
 length = 1;
-maxlength = 100;
+maxlength = 116;
 if instance_exists(Player) && Player.skill_got[19]//Eagle eyes increase range why not
 	maxlength += 28;
 oDir = 0;

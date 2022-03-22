@@ -13,6 +13,10 @@ if sprite_index == sprAmmo {
 		if Player.ccurse {
 			curselevel++
 		}
+		if Player.skill_got[3] == 1
+		{
+			curselevel --;	
+		}
 	}
 
 	if curselevel == 2 {

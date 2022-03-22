@@ -71,9 +71,26 @@ function scrPopChests() {
 			{
 				instance_create(xx-72,yy-64,WeaponChest);
 			}
+			if Player.ultra_got[88] == 1
+			{
+				with RogueAmmoChest
+				{
+					instance_destroy(id,false);
+					instance_create(x,y,RadChest);	
+				}
+			}
 			return;
 		}
+		if Player.ultra_got[88] == 1
+		{
+			with RogueAmmoChest
+			{
+				instance_destroy(id,false);
+				instance_create(x,y,RadChest);	
+			}
+		}
 	}
+	
 	var gol = 1;
 	if (instance_exists(Player) && Player.my_health < ceil(Player.maxhealth*0.8))
 		var	healthChestGol = choose(0,0,0,0,0,0,0,0,0,1);

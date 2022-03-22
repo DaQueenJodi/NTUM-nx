@@ -703,7 +703,7 @@ function scrWeapons() {
 	wep_name[63] = "BLACKHOLE GENERATOR"
 	wep_type[63] = 5
 	wep_auto[63] = 0
-	wep_load[63] = 50
+	wep_load[63] = 40
 	wep_cost[63] = 7
 	wep_sprt[63] = sprBlackholeGenerator
 	wep_area[63] = 14
@@ -3784,7 +3784,7 @@ function scrWeapons() {
 	wep_name[343] = "DIMENSION GENERATOR"
 	wep_type[343] = 4
 	wep_auto[343] = 0
-	wep_load[343] = 50
+	wep_load[343] = 40
 	wep_cost[343] = 10
 	wep_sprt[343] = sprDimensionGenerator
 	wep_area[343] = 14
@@ -4241,7 +4241,7 @@ function scrWeapons() {
 	wep_rad[383] = 0;
 	
 	wep_name[384] = "MINI PLASMA GUN"
-	wep_type[384] = 1
+	wep_type[384] = 5
 	wep_auto[384] = 0
 	wep_load[384] = 12
 	wep_cost[384] = 1
@@ -4575,7 +4575,7 @@ function scrWeapons() {
 	wep_auto[414] = 0
 	wep_load[414] = 12
 	wep_cost[414] = 2
-	wep_sprt[414] = sprLeacherBow
+	wep_sprt[414] = sprBubbler
 	wep_area[414] = 5
 	wep_text[414] = "pop goes the bubble"
 	wep_swap[414] = sndSwapBow
@@ -4586,7 +4586,7 @@ function scrWeapons() {
 	wep_auto[415] = 0
 	wep_load[415] = 12
 	wep_cost[415] = 2
-	wep_sprt[415] = sprLeacherBow
+	wep_sprt[415] = sprBloodBubbler
 	wep_area[415] = 7
 	wep_text[415] = "boiling blood"
 	wep_swap[415] = sndSwapBow
@@ -4597,7 +4597,7 @@ function scrWeapons() {
 	wep_auto[416] = 0
 	wep_load[416] = 30
 	wep_cost[416] = 1
-	wep_sprt[416] = sprBazooka
+	wep_sprt[416] = sprBouncerBazooka
 	wep_area[416] = 7
 	wep_text[416] = ""
 	wep_swap[416] = sndSwapExplosive
@@ -4608,7 +4608,7 @@ function scrWeapons() {
 	wep_auto[417] = 0
 	wep_load[417] = 44
 	wep_cost[417] = 8
-	wep_sprt[417] = sprToxicCannon
+	wep_sprt[417] = sprSuperToxicCannon
 	wep_area[417] = 14
 	wep_text[417] = ""
 	wep_swap[417] = sndSwapExplosive
@@ -4619,9 +4619,9 @@ function scrWeapons() {
 	wep_auto[418] = 1
 	wep_load[418] = 20
 	wep_cost[418] = 8
-	wep_sprt[418] = sprSpiralYoyoGun
+	wep_sprt[418] = sprSuperSpiralYoyoGun
 	wep_area[418] = 9
-	wep_text[418] = "this looks stupid"
+	wep_text[418] = ""
 	wep_swap[418] = sndSwapBow
 	wep_rad[418] = 0;
 	
@@ -4630,9 +4630,9 @@ function scrWeapons() {
 	wep_auto[419] = 1
 	wep_load[419] = 16
 	wep_cost[419] = 2
-	wep_sprt[419] = sprYoyoGun
+	wep_sprt[419] = sprSpinnerYoyoGun
 	wep_area[419] = 5
-	wep_text[419] = ""
+	wep_text[419] = "yoyo phases through walls"
 	wep_swap[419] = sndSwapBow
 	wep_rad[419] = 0;
 	
@@ -4641,7 +4641,7 @@ function scrWeapons() {
 	wep_auto[420] = 1
 	wep_load[420] = 27
 	wep_cost[420] = 5
-	wep_sprt[420] = sprYoyoGun
+	wep_sprt[420] = sprSuperSpinnerYoyoGun
 	wep_area[420] = 8
 	wep_text[420] = "super dizzy"
 	wep_swap[420] = sndSwapBow
@@ -4652,11 +4652,46 @@ function scrWeapons() {
 	wep_auto[421] = 1
 	wep_load[421] = 20
 	wep_cost[421] = 10
-	wep_sprt[421] = sprSpiralYoyoGun
+	wep_sprt[421] = sprSpinnerYoyoDisperseGun
 	wep_area[421] = 12
 	wep_text[421] = "once upon a time there was a yoyo that never returned"
 	wep_swap[421] = sndSwapBow
 	wep_rad[421] = 0;
+	
+	wep_name[422] = "SUPER LANCE"
+	wep_type[422] = 0
+	wep_auto[422] = 0
+	wep_load[422] = 13
+	wep_cost[422] = 0
+	wep_sprt[422] = sprSuperLance
+	wep_area[422] = 13
+	wep_text[422] = "mine is longer"
+	wep_swap[422] = sndSwapSword
+	wep_rad[422] = 0;
+	
+	/*
+	wep_name[312] = "ULTRA ROGUE RIFLE"
+	wep_type[312] = 1
+	wep_auto[312] = 0
+	wep_load[312] = 6
+	wep_cost[312] = 2
+	wep_sprt[312] = sprRogueRifle
+	wep_area[312] = -1
+	wep_text[312] = "popo nono"
+	wep_swap[312] = sndSwapMachinegun
+	wep_rad[312] = 0;
+	
+	wep_name[61] = "HEAVY BLOOD PISTOL"
+	wep_type[61] = 1
+	wep_auto[61] = 0
+	wep_load[61] = 1
+	wep_cost[61] = 1
+	wep_sprt[61] = sprBloodPistol
+	wep_area[61] = 0
+	wep_text[61] = "blood weapons destroy projectiles"
+	wep_swap[61] = sndSwapPistol
+	wep_rad[61] = 0;
+	*/
 
 	maxwep = array_length(wep_name)-1;
 

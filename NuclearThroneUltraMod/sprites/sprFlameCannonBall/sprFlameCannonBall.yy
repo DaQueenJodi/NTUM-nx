@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFlameCannonBall","path":"sprites/sprFlameCannonBall/sprFlameCannonBall.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFlameCannonBall",
     "tags": [],
     "resourceType": "GMSequence",
   },

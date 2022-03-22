@@ -22,7 +22,7 @@ alarm[0] = 1
 alarm[1] = 120
 
 wantVanAmount = 0;
-vanDelay = 400;
+vanDelay = 330;
 vanDelayRandom = 100;
 verticalVans = false;
 
@@ -30,7 +30,7 @@ verticalVans = false;
 if instance_exists(Player)
 {
 	wantVanAmount = GetPlayerLoops();
-	vanDelay = max(60,vanDelay - ((wantVanAmount-1)*65));
+	vanDelay = max(60,vanDelay - ((wantVanAmount-1)*70));
 	if wantVanAmount > 2
 		verticalVans = true;
 	if Player.crown == 16 //CROWN OF POPO

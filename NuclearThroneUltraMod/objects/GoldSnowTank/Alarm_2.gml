@@ -12,11 +12,17 @@ team = other.team
 }
 }
 snd_play(sndGoldTankShoot)
-with instance_create(x,y,EnemyBullet4)
+
+var proj = EnemyBullet4
+
+if (isLoop && ammo % 2 == 0)
+	proj = EnemyBullet1Square;
+
+with instance_create(x,y,proj)
 {motion_add(other.gunangle+sin(other.wave)*20,12)
 team = other.team
 image_angle = direction}
-with instance_create(x,y,EnemyBullet4)
+with instance_create(x,y,proj)
 {motion_add(other.gunangle-sin(other.wave)*20,12)
 team = other.team
 image_angle = direction}

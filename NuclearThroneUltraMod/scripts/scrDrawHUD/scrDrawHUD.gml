@@ -51,7 +51,7 @@ function scrDrawHUD() {
 
 
 	//ROGUE AMMO
-	if Player.race=22
+	if Player.race=22 && Player.ultra_got[88] != 1
 	{
 		var spr = sprRogueAmmoHUD;
 		if Player.ultra_got[85]=1
@@ -410,7 +410,7 @@ function scrDrawHUD() {
 	if Player.wep_type[Player.wep] > 0 && Player.ammo[Player.wep_type[Player.wep]] <= Player.typ_ammo[Player.wep_type[Player.wep]] and sin(wave) > 0 and Player.drawempty > 0
 	{
 	if Player.drawempty = 10 and Player.ammo[Player.wep_type[Player.wep]] > Player.typ_ammo[Player.wep_type[Player.wep]]-Player.wep_cost[Player.wep]
-	snd_play(Player.snd_lowa)
+	snd_play_2d(Player.snd_lowa,0,true,false,10);
 	Player.drawempty -= 1
 
 	txt = "LOW "+string(Player.typ_name[Player.wep_type[Player.wep]])

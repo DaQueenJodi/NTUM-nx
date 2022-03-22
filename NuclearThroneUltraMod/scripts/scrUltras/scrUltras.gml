@@ -321,7 +321,7 @@ function scrUltras() {
 	ultra_tips[67] = "new meta"
 
 	ultra_name[68] = "SCRAP FINDER"
-	ultra_text[68] = "WEAPON DROPS GIVE YOU HEALTH, RADS#AND MORE AMMO FOR ALL TYPES"
+	ultra_text[68] = "WEAPON DROPS GIVE YOU HEALTH, RADS#AND MORE AMMO FOR ALL TYPES#PICKING UP A WEAPON#SPAWNS A LIGHTNING"
 	ultra_tips[68] = "recourseful"
 
 	    //ANGEL 
@@ -418,19 +418,19 @@ function scrUltras() {
 
 	    //ROGUE 
 	    ultra_name[85] = "SUPER PORTAL STRIKE"
-	    ultra_text[85] = "MORE PORTAL AMMO#DOUBLE PORTAL AMMO PER PICKUP"
+	    ultra_text[85] = "MORE PORTAL AMMO#DOUBLE PORTAL STRIKE AMMO PER PICKUP#PICKING UP PORTAL STRIKE AMMO#TRIGGERS BLAST ARMOUR"
 	    ultra_tips[85] = "money everywhere"
     
 	    ultra_name[86] = "SUPER BLAST ARMOUR"
-	    ultra_text[86] = "STRONGER BLAST ARMOUR"
+	    ultra_text[86] = "STRONGER BLAST ARMOUR#PICKING UP PORTAL STRIKE AMMO#TRIGGERS BLAST ARMOUR"
 	    ultra_tips[86] = "options"
     
 	    ultra_name[87] = "NEW CAPTAIN"
-	    ultra_text[87] = "AT THE START OF A LEVEL#SUMMON A GROUP OF IDPD#THAT FIGHT FOR YOU"
+	    ultra_text[87] = "AT THE START OF A LEVEL#SUMMON A GROUP OF IDPD#THAT FIGHT FOR YOU#PICKING UP PORTAL STRIKE AMMO#TRIGGERS BLAST ARMOUR"
 	    ultra_tips[87] = "rogue leader"
     
 	    ultra_name[88] = "ULTRA POPO"
-	    ultra_text[88] = "ULTRA WEAPONS COST LESS RADS#NO MORE PORTAL STRIKE AMMO#PORTAL STRIKE COSTS RADS#BLAST ARMOUR PRODUCES RADS"//This sucks lets change it
+	    ultra_text[88] = "ULTRA WEAPONS COST LESS RADS#PORTAL STRIKE COSTS RADS INSTEAD#REPLACE PORTAL STRIKE AMMO CHESTS#WITH RAD CHESTS#BLAST ARMOUR PRODUCES RADS#RADS SPAWN ULTRA LIGHTNING"//This sucks lets change it
 	    ultra_tips[88] = "I can do that better"
     
     

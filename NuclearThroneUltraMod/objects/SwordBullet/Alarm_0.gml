@@ -1,4 +1,4 @@
-snd_play(sndHammer)
+snd_play(sndHammer,0.2,true)
 
 instance_create(x,y,Dust)
 

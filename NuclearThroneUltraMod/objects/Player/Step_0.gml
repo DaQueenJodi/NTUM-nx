@@ -33,6 +33,13 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
 		thing.mytext = "wep";
 	}
+	if keyboard_check_pressed(ord("C")) {
+		var dangle = random(1)*360;
+		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
+	    curse = !curse;
+		thing = instance_create(f.x + 16,f.y + 16,PopupText);
+		thing.mytext = "CURSE TOGGLE";
+	}
 	if keyboard_check_pressed(ord("B")) {
 		wepmod1 ++;
 		wepmod2 ++;
@@ -927,8 +934,8 @@ lsthealth += 1
 }
 if sprite_index != spr_hurt and lsthealth > my_health
 {
-if drawlowhp < 30 and my_health <= 4
-snd_play(snd_lowh, 0, false, false)
+if drawlowhp < 30 and my_health <= 4 && !audio_is_playing(snd_lowh)
+snd_play_2d(snd_lowh, 0, true,false,10)
 drawlowhp = 30
 lsthealth -= 0.5
 

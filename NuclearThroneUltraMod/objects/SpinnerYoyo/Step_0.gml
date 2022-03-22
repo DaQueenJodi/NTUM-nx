@@ -20,9 +20,9 @@ if instance_exists(Player) and instance_exists(enemy)
 if speed < 0
 {
 	if rotation > 0
-		oDir += max((rotation/length)*2,10);
+		oDir += max((rotation/length)*2,5);
 	else
-		oDir += min((rotation/length)*2,-10) ;
+		oDir += min((rotation/length)*2,-5) ;
 }
 else
 {

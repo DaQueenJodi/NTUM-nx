@@ -25,6 +25,11 @@ if target > 0
 			{
 				with instance_create(x,y,GuardianBulletSpawn)
 				{	
+					if GetPlayerLoops() > random(2.5)
+					{
+						typ = 3;
+						sprite_index = sprGuardianSquareBulletSpawn;
+					}
 					team = other.team;
 					owner = other.id;
 					x += lengthdir_x(-8*(motiondiff % 2), dir);

@@ -6114,7 +6114,7 @@ function scrFire2() {
 	//SUPER SPINNER YOYO GUN
 	case 420:
 
-	snd_play_fire(sndDiscgun)
+	snd_play_fire(sndSuperDiscGun)
 	var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*accuracy;
 	var am = 6;
 	var angStep = 360/am; 
@@ -6165,6 +6165,49 @@ function scrFire2() {
 	BackCont.viewy2 += lengthdir_y(14,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	BackCont.shake += 8
 	wkick = 7
+
+	break;
+	
+	//SUPER LANCE
+	case 422:
+
+	//snd_play_fire(choose(sndSword1,sndSword2))
+	snd_play_fire(sndBlackSwordMega);
+	instance_create(x,y,Dust)
+
+	with instance_create(x+lengthdir_x(5+((Player.skill_got[13]+bettermelee)*20),point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(5+((Player.skill_got[13]+bettermelee)*20),point_direction(x,y,mouse_x,mouse_y)),LanceShank)
+	{
+		dmg = 13;
+	longarms = 0
+	if instance_exists(Player)
+	longarms = (Player.skill_got[13]+other.bettermelee)*3
+	motion_add(point_direction(x,y,mouse_x,mouse_y),4+longarms)
+	image_angle = direction
+	team = other.team
+	
+	image_yscale = 0.1;
+	var takeMeOut = 40;
+		while (!place_meeting(x,y,Wall) && takeMeOut > 0)
+		{
+			image_xscale += 0.2;
+			takeMeOut--;
+		}
+		var xx = x;
+		var yy = y;
+		repeat(image_xscale*4)
+		{
+			instance_create(xx,yy,Dust);
+			xx += lengthdir_x(16,image_angle);
+			yy += lengthdir_y(16,image_angle);	
+		}
+		image_yscale = 1;
+	}
+	wepangle = -wepangle
+	motion_add(point_direction(x,y,mouse_x,mouse_y),12)
+	BackCont.viewx2 += lengthdir_x(20,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(20,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.shake += 4
+	wkick = -8
 
 	break;
 	

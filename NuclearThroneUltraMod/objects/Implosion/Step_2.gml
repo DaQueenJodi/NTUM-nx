@@ -76,13 +76,13 @@ sprite_index=sprPortal;
     if kraken
     {
     motion_add(random(360),random(3));
-    snd_play(choose(sndWater1,sndWater2))
-    snd_play(sndBloodLauncher);
+    snd_play(choose(sndWater1,sndWater2),0.1,true)
+    snd_play(sndBloodLauncher,0.1,true);
     with instance_create(x,y,Tentacle)
 {image_angle = random(360);
 creator=other.id;
 team = other.team
-ammo = 12+random(14)
+ammo = 14+random(14)
 dmg=9;//5 is lowest
 event_perform(ev_alarm,0)
 visible = 0
@@ -100,29 +100,29 @@ repeat(3){
 
 }
 
-alarm[2]=5;//kraken rate.    
+alarm[2]=4;//kraken rate.    
     }
     else
     {
     
     if instance_exists(Player){
     if Player.skill_got[17] = 1
-    snd_play(sndLaserUpg)
+    snd_play(sndLaserUpg,0.1,true)
     else
-    snd_play(sndLaser)
+    snd_play(sndLaser,0.1,true)
     
     }
     with instance_create(x,y,Lightning)
     {image_angle = random(360)
     team = other.team
-    ammo = 9+random(3)
+    ammo = 12+random(4);
     event_perform(ev_alarm,0)
     visible = 0
     with instance_create(x,y,LightningSpawn)
     image_angle = other.image_angle}
     
 
-alarm[2]=3;//lightning rate.
+alarm[2]=2;//lightning rate.
     }
     
         Sleep(1)

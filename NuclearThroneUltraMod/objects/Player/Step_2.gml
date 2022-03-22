@@ -92,6 +92,25 @@ if instance_exists(WepPickup) && !instance_exists(GenCont) && !instance_exists(L
 		KeyCont.key_pick[p] = 2;
 	if curse = 0||targetPickup.curse==curse or bwep = 0 || (cwep = 0 && ultra_got[31])//SWITCH OUR MODS DATA ASWELL!
 	{
+		if ultra_got[68] == 1//Weapon smith scrapfinder
+		{
+			snd_play_2d(choose(sndSpark1,sndSpark2),0.1,true);
+			var angl = random(360);
+			var anglStep = 360 / 3;
+			repeat(3)
+			{
+			with instance_create(x,y,Lightning)
+			{image_angle = angl
+			accuracy=0;
+			team = other.team
+			ammo = 16;
+			event_perform(ev_alarm,0)
+			visible = 0
+			with instance_create(x,y,LightningSpawn)
+			image_angle = other.image_angle}
+			angl += anglStep;
+			}
+		}
 	instance_create(x,y,WepSwap)
 	if !isGold
 	{
@@ -375,38 +394,7 @@ if race=22
 
 if my_health<prevhealth//&&sprite_index=spr_hurt
 {
-with instance_create(x,y,RogueExplosion)
-{team=2;}
-
-if ultra_got[86]//SUPER BLAST ARMOUR
-{
-
-
-var randir=random(360);
-repeat(3)
-{
-
-with instance_create(x+lengthdir_x(16,randir),y+lengthdir_y(16,randir),RogueExplosion)
-{team=2;}
-
-randir+=360/3;
-}
-
-randir=random(360);
-repeat(3)
-{
-
-with instance_create(x+lengthdir_x(32,randir),y+lengthdir_y(32,randir),RogueExplosion)
-{team=2;}
-
-randir+=360/3;
-}
-
-
-}
-
-
-snd_play(sndIDPDNadeExplo);
+	event_user(0);
 }
 
 }

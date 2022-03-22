@@ -1,4 +1,4 @@
-if other.team!=2
+if other.team!=2 && other.typ != 3
 {
 with other
 {

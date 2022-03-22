@@ -3,7 +3,7 @@ snd_play(sndBigBallExplo);
 instance_create(x,y,WallBreak);
 with instance_create(x,y,ScorpionBulletHit)
 {
-	sprite_index = sprGuardianBulletHit;	
+	sprite_index = sprGuardianBulletHit;
 }
 var canSpawn = true;
 with Portal

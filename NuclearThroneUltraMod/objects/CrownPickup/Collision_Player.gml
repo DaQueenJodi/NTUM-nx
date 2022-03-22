@@ -4,7 +4,7 @@ with Crown
 }
 instance_change(Crown,true)
 Player.crownpoints += 1
-if Player.curse = 1 or Player.bcurse = 1
+if Player.curse = 1 or Player.bcurse = 1 or Player.ccurse = 1
 {
 repeat(10)
 instance_create(x+random(16)-8,y+random(16)-8,Curse)

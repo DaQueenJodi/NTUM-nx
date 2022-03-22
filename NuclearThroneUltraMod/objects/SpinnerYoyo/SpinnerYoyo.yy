@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskBlade",
-    "path": "sprites/mskBlade/mskBlade.yy",
+    "name": "mskSpinnerYoyo",
+    "path": "sprites/mskSpinnerYoyo/mskSpinnerYoyo.yy",
   },
   "persistent": false,
   "parentObjectId": {

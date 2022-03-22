@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskGuardianBullet",
-    "path": "sprites/mskGuardianBullet/mskGuardianBullet.yy",
+    "name": "mskBigGuardianBullet",
+    "path": "sprites/mskBigGuardianBullet/mskBigGuardianBullet.yy",
   },
   "persistent": false,
   "parentObjectId": {

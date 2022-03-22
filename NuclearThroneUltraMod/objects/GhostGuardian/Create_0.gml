@@ -61,5 +61,5 @@ for (var i = 0; i < amountOfProjectiles; i++) {
 	}
 	angle += angleStep;
 }
-maxSpeed = 4.2 + min(2,loops);
+maxSpeed = 4.4 + min(2,loops);
 acc = 1.6 + min(0.4,loops*0.14);//This acceleration is the scary variable

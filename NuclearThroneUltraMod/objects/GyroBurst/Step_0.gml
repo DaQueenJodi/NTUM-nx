@@ -26,6 +26,20 @@ norecycle=true;
 
 }
 
+var a = ang + 180;
+with instance_create(x,y,Shell)
+motion_add(a*100+random(50)-25,2+random(2))
+
+with instance_create(x,y+16,Bullet1)
+{motion_add(a+(random(8)-4),16)
+image_angle = direction
+team = other.team
+
+if random(4)<3
+norecycle=true;
+
+}
+
 }
 
 if place_meeting(x,y,Wall)

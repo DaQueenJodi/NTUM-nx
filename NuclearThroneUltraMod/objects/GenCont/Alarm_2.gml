@@ -11,7 +11,7 @@ repeat(Player.loops)
 instance_create(instance_furthest(Player.x+random(128)-64,Player.y+random(128)-64,Floor).x+16, instance_furthest(Player.x+random(128)-64,Player.y+random(128)-64,Floor).y+16,BecomeScrapBoss)
 }
 
-if (Player.area = 5 and Player.subarea = 3) || ( Player.area=8 && Player.subarea=2 && Player.loops>0 )
+if (Player.area = 5 and Player.subarea = 3) || ( Player.area=8 && Player.subarea=1 && Player.loops>0 )
 instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,LilHunter)
 
 if (Player.area = 107 and Player.subarea = 3)//inverted frozen city

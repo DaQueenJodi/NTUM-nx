@@ -3,7 +3,7 @@ if ammo > 0
 if ammo = 32
 snd_play(sndSnowTankPreShoot);
 snd_play(sndSnowTankShoot,0.01,true);
-if random(2)<1
+if ammo % 2 == 0
 {
 with instance_create(x,y,EnemyBullet5)
 {motion_add(other.gunangle+sin(other.wave)*30,13)
@@ -16,11 +16,15 @@ image_angle = direction}
 }
 else
 {
-with instance_create(x,y,EnemyBullet4)
+	var proj = EnemyBullet4
+
+	if isLoop
+		proj = EnemyBullet1Square;
+with instance_create(x,y,proj)
 {motion_add(other.gunangle+sin(other.wave)*30,13)
 team = other.team
 image_angle = direction}
-with instance_create(x,y,EnemyBullet4)
+with instance_create(x,y,proj)
 {motion_add(other.gunangle-sin(other.wave)*30,13)
 team = other.team
 image_angle = direction}

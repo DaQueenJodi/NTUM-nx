@@ -4,8 +4,14 @@ else
     image_index += 0.4
 	
 if !cursed {
+	var levelEnded = false;
+	with Portal
+	{
+		if !inverted
+			levelEnded = true;
+	}
 	if instance_exists(Player) {
-	    if point_distance(x, y, Player.x, Player.y) < 36 + (Player.skill_got[3] * 55) + Player.betterpluto or instance_exists(Portal) {
+	    if point_distance(x, y, Player.x, Player.y) < 36 + (Player.skill_got[3] * 55) + Player.betterpluto or levelEnded {
 	        if !place_meeting(x + lengthdir_x(6, point_direction(x, y, Player.x, Player.y)), y, Wall)
 	        x += lengthdir_x(6, point_direction(x, y, Player.x, Player.y))
 	        if !place_meeting(x, y + lengthdir_y(6, point_direction(x, y, Player.x, Player.y)), Wall)

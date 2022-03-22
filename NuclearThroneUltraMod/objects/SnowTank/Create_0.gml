@@ -31,3 +31,4 @@ if instance_exists(Player)
 	}
 }
 
+isLoop = GetPlayerLoops() > 0

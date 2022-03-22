@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBazooka","path":"sprites/sprBazooka/sprBazooka.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprBazooka",
     "tags": [],
     "resourceType": "GMSequence",
   },

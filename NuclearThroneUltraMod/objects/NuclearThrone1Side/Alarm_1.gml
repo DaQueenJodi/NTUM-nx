@@ -8,15 +8,48 @@ if owner > -1 && owner.fireTriShot && instance_exists(Player)
 		
 	var angleStep = 20;
 	var angle = gunangle[angleI] - angleStep;
-	repeat(3)
+	if loops > 0
 	{
-		with instance_create(x,y,ExploGuardianBullet)
+		var proj1 = ExploGuardianBullet;
+		var proj2 = ExploGuardianSquareBullet;
+		if (ammo % 2 == 0)
+		{
+			proj2 = ExploGuardianBullet;
+			proj1 = ExploGuardianSquareBullet;
+		}
+		with instance_create(x,y,proj1)
 		{
 			motion_add(angle,other.projectileSpeed);
 			image_angle = direction
 			team = other.team
 		}
 		angle += angleStep;
+		with instance_create(x,y,proj2)
+		{
+			motion_add(angle,other.projectileSpeed);
+			image_angle = direction
+			team = other.team
+		}
+		angle += angleStep;
+		with instance_create(x,y,proj1)
+		{
+			motion_add(angle,other.projectileSpeed);
+			image_angle = direction
+			team = other.team
+		}
+	}
+	else
+	{
+		repeat(3)
+		{
+			with instance_create(x,y,ExploGuardianBullet)
+			{
+				motion_add(angle,other.projectileSpeed);
+				image_angle = direction
+				team = other.team
+			}
+			angle += angleStep;
+		}
 	}
 	ammo -= 1;
 	if ammo < 0

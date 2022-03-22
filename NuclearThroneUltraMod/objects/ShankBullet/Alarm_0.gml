@@ -1,4 +1,4 @@
-snd_play(sndScrewdriver)
+snd_play(sndScrewdriver,0.2,true)
 
 instance_create(x,y,Dust)
 

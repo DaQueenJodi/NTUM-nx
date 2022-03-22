@@ -1,5 +1,5 @@
 /// @description Init
-maxhealth = 500;
+maxhealth = 600;
 disable = false;
 size = 8;
 meleedamage = 0;
@@ -26,3 +26,4 @@ gunangle[1] = 240;
 gunangle[2] = 300;
 angleI = random(array_length(gunangle)-1);
 badboyBuff = 1;
+loops = GetPlayerLoops()
