@@ -27,9 +27,9 @@ if skill = 1
 else if skill = 2
 {
 if Player.race=25
-Player.maxspeed +=0.75;
+	Player.maxspeed +=0.6;
 else
-Player.maxspeed += 0.5
+	Player.maxspeed += 0.5;
 
 }
 else if skill = 3
@@ -177,20 +177,20 @@ scrWeapons();
 }
 else if skill = 5 && Player.race = 16//VIKING
 {
-Player.maxarmour+=1;
-Player.armour+=1;//kindness here
+	Player.maxarmour+=1;
+	Player.armour+=1;//kindness here
 }
 else if skill = 19{
 
 if Player.race=25
 {
-Player.accuracy = Player.standartAccuracy*0.2//0.3//in case you have build up rage use the standart
-Player.standartAccuracy=Player.accuracy//new standart
+	Player.accuracy = Player.standartAccuracy*0.2//0.3//in case you have build up rage use the standart
+	Player.standartAccuracy=Player.accuracy//new standart
 }
 else
 {
-Player.accuracy = Player.standartAccuracy*0.28//0.38//in case you have build up rage use the standart
-Player.standartAccuracy=Player.accuracy//new standart
+	Player.accuracy = Player.standartAccuracy*0.28//0.38//in case you have build up rage use the standart
+	Player.standartAccuracy=Player.accuracy//new standart
 }
 
 

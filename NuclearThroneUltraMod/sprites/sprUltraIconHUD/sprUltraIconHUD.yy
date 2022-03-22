@@ -476,7 +476,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprUltraIconHUD","path":"sprites/sprUltraIconHUD/sprUltraIconHUD.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprUltraIconHUD",
     "tags": [],
     "resourceType": "GMSequence",
   },

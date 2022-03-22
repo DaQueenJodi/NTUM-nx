@@ -335,7 +335,7 @@ if race == 19 //skeleton
 {
     maxhealth = 4;
     maxspeed = 3.6
-    accuracy = 1.4
+    accuracy = 1.2
 }
 
 if race = 5 //Plant
@@ -357,6 +357,10 @@ if race = 7 //roids secondary weapon
     bwep = 239; //rocketglove
 
     accuracy = 1.8
+}
+if race = 11//HUNTER
+{
+	accuracy = 0.8;	
 }
 standartAccuracy = accuracy;
 

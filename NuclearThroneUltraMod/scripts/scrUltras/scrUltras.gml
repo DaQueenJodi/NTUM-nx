@@ -365,7 +365,7 @@ function scrUltras() {
 	    else
 	    {
 	    ultra_name[76] = "UNSTOPPABLE"
-	    ultra_text[76] = "GAIN THREE LIVES"
+	    ultra_text[76] = "GAIN THREE LIVES#NORMAL MOVEMENT SPEED"
 	    ultra_tips[76] = "never dead"
 	    }
 	}

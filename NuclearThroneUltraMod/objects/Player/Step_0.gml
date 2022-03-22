@@ -807,7 +807,7 @@ if ultra_got[21]//ULTRA A
 
 if race=25
 {
-accuracy=standartAccuracy;
+	accuracy=standartAccuracy;
 }
 
 if skill_got[28] = 1

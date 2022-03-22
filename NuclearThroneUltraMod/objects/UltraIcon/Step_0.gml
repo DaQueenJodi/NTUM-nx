@@ -195,6 +195,7 @@ if skill == 76//skelly ultra D
     {
     skeletonlives+=3;
     ultimategamble=false;
+	maxspeed += 0.4;//Normal speed
     }
     
     }

@@ -16,7 +16,7 @@ with instance_create(x,y,BulletHit)
 sprite_index=sprEatRadPlut;
 }
 
-if other.ultra_got[88]
+if other.ultra_got[88] == 1
 {
 	var ac = other.accuracy;
 	with instance_create(x,y,UltraLightning)

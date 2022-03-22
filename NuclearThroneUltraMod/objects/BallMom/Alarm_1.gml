@@ -1,4 +1,4 @@
-alarm[1] = 15+random(5)
+alarm[1] = 14+random(9)
 
 if !almostDead && my_health < 0.25
 {
@@ -42,7 +42,7 @@ if active
 			alarm[0] = 120;//4 seconds
 		}
 	}
-	else if ran > 60 && target > 0
+	else if ran > 50 && target > 0
 	{
 		speed *= 0.5;
 		sprite_index = spr_fire;

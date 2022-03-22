@@ -153,7 +153,7 @@ function scrRaces() {
 
 
 	race_name[11] = "[HUNTER]"
-	race_pass[11] = "HIGHER PROJECTILE VELOCITY"
+	race_pass[11] = "HIGHER PROJECTILE VELOCITY#HIGHER ACCURACY"
 	race_acti[11] = "MARK"
 	race_butt[11] = "MARKED ENEMIES#TAKE MORE DAMAGE"
 	//race_back[11] = "MARKED ENEMIES THAT DIE#HAVE A HIGHER DROPRATE(this is an ultra?) MARKED ENEMIES THAT DIE#DECREATE RELOAD";
@@ -265,7 +265,7 @@ function scrRaces() {
 
 
 	race_name[19] = "[SKELETON]"
-	race_pass[19] = "HAS ONLY 4HP#SLOWER#LESS ACCURATE"
+	race_pass[19] = "HAS ONLY 4HP#SLOWER#SLIGHTLY LESS ACCURATE"
 	race_acti[19] = "BLOOD GAMBLE"
 	race_butt[19] = "BETTER BLOOD GAMBLE ODDS"
 	//race_back[19] = "THE SLOWER YOU MOVE#THE FASTER YOU FIRE";

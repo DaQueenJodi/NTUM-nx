@@ -486,10 +486,15 @@ function scrDrawHUD() {
 
 	    if Player.ultra_got[dir]
 	    {
-	    if !(dir=79 && Player.race=21){//Horror don't draw skeleton's ultra
-	    draw_sprite_ext(sprUltraIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+20,1,1,0,c_black,1);
-	    draw_sprite_ext(sprUltraIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+22,1,1,0,c_white,1);
-	    }
+			if dir == 76 && Player.ultimategamble == true
+			{
+				draw_sprite_ext(sprUltimateGambleIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+20,1,1,0,c_black,1);
+				draw_sprite_ext(sprUltimateGambleIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+22,1,1,0,c_white,1);
+			}
+		    else if !(dir=79 && Player.race=21){//Horror don't draw skeleton's ultra
+				draw_sprite_ext(sprUltraIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+20,1,1,0,c_black,1);
+				draw_sprite_ext(sprUltraIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+22,1,1,0,c_white,1);
+			}
 	    dix+=1
 	    }
 	dir+=1;
