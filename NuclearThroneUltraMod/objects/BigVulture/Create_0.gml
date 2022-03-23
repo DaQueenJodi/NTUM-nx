@@ -41,4 +41,12 @@ else if hspeed < 0
 	right = -1
 speed = 0;
 
-instance_create(x,y,WallBreak);
+var d = 16;
+instance_create(x,y-d,WallBreak);
+instance_create(x,y+d,WallBreak);
+instance_create(x-d,y,WallBreak);
+instance_create(x+d,y,WallBreak);
+instance_create(x+d,y+d,WallBreak);
+instance_create(x+d,y-d,WallBreak);
+instance_create(x-d,y+d,WallBreak);
+instance_create(x-d,y-d,WallBreak);

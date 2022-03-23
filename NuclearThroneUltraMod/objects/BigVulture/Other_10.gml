@@ -16,4 +16,3 @@ if target > 0
 }
 chargeDirection = direction
 gunangle = direction;
-motion_add(1,direction+180);
