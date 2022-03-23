@@ -1,6 +1,3 @@
 /// @description Gass
-with instance_create(x,y,ToxicGas)
-{
-	owner = other.owner;
-}
+instance_create(x,y,ToxicGas)
 alarm[0] = 1;

@@ -1835,7 +1835,7 @@ function scrPowers() {
 	repeat(toxicamount)
 	{
 
-		with instance_create(x,y,ToxicGas)
+		with instance_create(x,y,ToxicThrowerGas)
 		{
 			motion_add(random(360),1.3+random(2)+(other.skill_got[5]*2));
 			dmg += 1;

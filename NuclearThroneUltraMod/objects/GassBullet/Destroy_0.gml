@@ -4,6 +4,5 @@ repeat(10)
 {
 	with instance_create(x,y,ToxicGas)
 	{
-		owner = other.owner;
 	}
 }

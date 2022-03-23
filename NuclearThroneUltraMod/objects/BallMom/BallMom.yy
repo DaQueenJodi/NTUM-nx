@@ -38,8 +38,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Sewers",
-    "path": "folders/Objects/Enemies/Sewers.yy",
+    "name": "NuclearThrone",
+    "path": "folders/Objects/Enemies/Boss/NuclearThrone.yy",
   },
   "resourceVersion": "1.0",
   "name": "BallMom",

@@ -25,9 +25,9 @@ if Player.ultra_got[89]
 repeat(4)
 {
 
-    with instance_create(x,y,ToxicGas)
+    with instance_create(x,y,ToxicThrowerGas)
     {
-    motion_add(random(360),0.3+random(1)+(Player.skill_got[5]*2));
+		motion_add(random(360),0.3+random(1)+(Player.skill_got[5]*2));
     }
 
 }

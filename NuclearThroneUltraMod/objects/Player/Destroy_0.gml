@@ -232,7 +232,7 @@ else
 	if race == 23 //Frog explode!
 	{
 		repeat(40)
-		instance_create(x,y,ToxicGas)
+		instance_create(x,y,ToxicThrowerGas)
 
 		snd_play(sndToxicBarrelGas)
 

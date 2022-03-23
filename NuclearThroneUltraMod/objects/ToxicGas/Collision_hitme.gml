@@ -1,3 +1,4 @@
+/*
 if other.team != team && other.team != 2 && other.id != owner
 {
 	//Hit enemy
@@ -20,7 +21,7 @@ if other.team != team && other.team != 2 && other.id != owner
 		}
 	}
 }
-else if other.team = 2 && other.team!=team && image_xscale>0.22 && alarm[11] < 1
+else */if other.team = 2 && other.team!=team && image_xscale>0.22 && alarm[11] < 1
 {
 	//Hit player
     with other

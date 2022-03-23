@@ -9,7 +9,6 @@ image_xscale = 0.5
 image_yscale = 0.5
 rot = (1+random(3))*choose(1,-1)
 growspeed = 0.003+random(0.002)
-owner = -1;
 team = 0
 typ = 0//2
 

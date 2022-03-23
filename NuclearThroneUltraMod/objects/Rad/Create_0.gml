@@ -21,7 +21,7 @@ if Player.race = 15{ alarm[0] /= 2}//atom
 if Player.ultra_got[89]
 {
 
-with instance_create(x,y,ToxicGas)
+with instance_create(x,y,ToxicThrowerGas)
 {
 motion_add(random(360),0.3+random(1)+(Player.skill_got[5]*2));
 }

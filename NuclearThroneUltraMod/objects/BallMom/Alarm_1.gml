@@ -1,4 +1,4 @@
-alarm[1] = 14+random(9)
+alarm[1] = 17+random(10)
 
 if !almostDead && my_health < 0.25
 {
@@ -29,7 +29,7 @@ if active
 				sprite_index=sprFrogHeal;
 			}
 			snd_play(sndBloodlustProc);
-			my_health += 10;
+			my_health += 8;
 			my_health = min(maxhealth,my_health);
 		}
 	}
@@ -49,7 +49,6 @@ if active
 		var aimDir = point_direction(x,y,target.x,target.y);
 		snd_play(sndBallMamaFire);
 		with instance_create(x, y, GassBullet) {
-			owner = other.id;
             motion_add(aimDir, 4.5)
             image_angle = direction
             team = other.team
