@@ -114,6 +114,7 @@ draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get
 }
 //Area text
 var xx = __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )*0.5
+draw_set_valign(fa_center)
 if upsideDown
 {
 	draw_set_color(c_black)

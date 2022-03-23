@@ -5,11 +5,67 @@ function scrDrawGameOver() {
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_center)
 	gameover = "";
+	
+	var area = BackCont.area;
+	var subarea = BackCont.subarea
+	var loops = BackCont.loops;
+
+	var txt = string(area)+"_"+string(subarea)
+	var upsideDown = false;
+	if area == 10
+	{
+		txt = "1B_"+string(subarea);
+	}
+	if area > 99
+	{
+		txt = "???"
+		switch (area)
+		{
+			case 105: //Inverted desert
+				txt = "1_"+string(subarea);
+				upsideDown = true;
+			break;
+			case 106: //Inverted scrapyard
+				txt = "3_"+string(subarea);
+				upsideDown = true;
+			break;
+			case 107: //Inverted frozen city
+				txt = "5_"+string(subarea);
+				upsideDown = true;
+			break;
+			case 108: //Inverted vulcano
+				txt = "7_"+string(subarea);
+				upsideDown = true;
+			break;
+			case 109: //Inverted wonderland
+				txt = "8_"+string(subarea);
+				upsideDown = true;
+			break;
+			case 110: //Inverted sewers
+				txt = "2_"+string(subarea);
+				upsideDown = true;
+			break;
+			case 111: //Inverted crystal caves
+				txt = "4_"+string(subarea);
+				upsideDown = true;
+			break;
+			case 112: //Inverted labs
+				txt = "6_"+string(subarea);
+				upsideDown = true;
+			break;
+		}
+	}
+	if !upsideDown
+		txt = "AREA: "+txt;
+	if loops>0
+	{
+		txt="L"+string(loops)+" "+txt;
+	}
 	if (UberCont.opt_gamemode != 25 && UberCont.opt_gamemode != 8)
-		gameover = gameoverText+"##KILLS: "+string(BackCont.kills)+"#LEVEL: "+string(BackCont.area)+"_"+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
+		gameover = gameoverText+"##KILLS: "+string(BackCont.kills)+"###DIFFICULTY: "+string(BackCont.hard)
 	else if (UberCont.opt_gamemode == 25)
 	{
-		gameover = "KILLS: "+string(BackCont.kills)+"#LEVEL: "+string(BackCont.area)+"_"+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
+		gameover = "KILLS: "+string(BackCont.kills)+"#WAVE: "+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
 	}
 	if BackCont.loops > 0 && UberCont.opt_gamemode != 8
 	gameover += "#LOOPS: "+string(BackCont.loops)
@@ -106,6 +162,7 @@ function scrDrawGameOver() {
 	}
 	if gameovertime > 20
 	{
+		var yy = string_height(string_hash_to_newline("A#A#A"))-4
 	draw_set_color(c_black)
 	draw_set_alpha(0.4)
 	draw_rectangle(__view_get( e__VW.XView, 0 ),__view_get( e__VW.YView, 0 ),__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ),__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 ),0)
@@ -113,8 +170,32 @@ function scrDrawGameOver() {
 	draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2-string_height(string_hash_to_newline("A"))+1,string_hash_to_newline(string(gameover)))
 	draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2-string_height(string_hash_to_newline("A"))+1,string_hash_to_newline(string(gameover)))
 	draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2-string_height(string_hash_to_newline("A")),string_hash_to_newline(string(gameover)))
+	
+	
 	draw_set_color(c_white)
 	draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2-string_height(string_hash_to_newline("A")),string_hash_to_newline(string(gameover)))
+	
+	if upsideDown
+	{
+		draw_set_color(c_black)
+		draw_text_transformed(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1-yy,string_hash_to_newline(txt),-1,-1,0)
+		draw_text_transformed(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1-yy,string_hash_to_newline(txt),-1,-1,0)
+		draw_text_transformed(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2-yy,string_hash_to_newline(txt),-1,-1,0)
+	
+		draw_set_color(c_white)
+		draw_text_transformed(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2-yy,string_hash_to_newline(txt),-1,-1,0)
+	}
+	else
+	{
+		draw_set_color(c_black)
+		draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1-yy,string_hash_to_newline(txt))
+		draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1-yy,string_hash_to_newline(txt))
+		draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2-yy,string_hash_to_newline(txt))
+	
+		draw_set_color(c_white)
+		draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2-yy,string_hash_to_newline(txt))
+	}
+	
 	draw_set_valign(fa_top)
 	}
 

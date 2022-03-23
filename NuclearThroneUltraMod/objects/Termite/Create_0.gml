@@ -3,8 +3,8 @@ event_inherited();
 alarm[1] = 6
 alarm[0] = 60*/
 
-bites=4;
-dmg = 2;
+bites=2;
+dmg = 4;
 image_speed = 1//0.4
 friction = 0.4
 right = choose(1,-1)
