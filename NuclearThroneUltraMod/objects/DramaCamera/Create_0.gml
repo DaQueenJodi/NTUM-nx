@@ -147,9 +147,7 @@ if Player.area == 9
 }
 if Player.area == 10
 {
-	name = "INVERTED BIG BANDIT";
-	if random(200) < 1
-		name = "WHITE TRASH";
+	name = "BIG VULTURE";
 }
 
 }

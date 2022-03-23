@@ -1,3 +1,4 @@
+/// @description AI
 if instance_exists(Player)
 {
 if Player.loops>0

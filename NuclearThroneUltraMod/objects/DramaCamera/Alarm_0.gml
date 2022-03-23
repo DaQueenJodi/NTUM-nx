@@ -11,6 +11,8 @@ with BanditBoss
 depth = -2
 with InvertedBanditBoss
 depth = -2
+with BigVulture
+depth = -2
 with ScrapBoss
 depth = -2
 with InvertedScrapBoss

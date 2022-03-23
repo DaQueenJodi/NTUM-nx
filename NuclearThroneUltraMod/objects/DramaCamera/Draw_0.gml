@@ -14,6 +14,11 @@ with InvertedBanditBoss
 snd_play(sndBigBanditIntro)
 depth = -99
 }
+with BigVulture
+{
+snd_play(sndBigBanditIntro)
+depth = -99
+}
 with LilHunter
 {
 snd_play_2d(sndLilHunterAppear)

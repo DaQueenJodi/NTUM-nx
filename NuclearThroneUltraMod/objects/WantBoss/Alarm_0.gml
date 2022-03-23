@@ -11,7 +11,11 @@ if instance_exists(CanSpawnBoss)
 {
 	with instance_nearest(target.x,target.y,CanSpawnBoss)
 	{
-	if other.area=105 || other.area==10//inverted desert temp savanna boss
+		if other.area==10
+		{
+			instance_create(x,y,BigVulture);
+		}
+	else if other.area=105//inverted desert temp savanna boss
 	{
 	instance_create(x,y,InvertedBanditBoss)
 	}

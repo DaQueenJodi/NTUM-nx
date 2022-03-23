@@ -1,3 +1,4 @@
+/// @description AI
 alarm[1] = 17+random(10)
 
 if !almostDead && my_health < 0.25

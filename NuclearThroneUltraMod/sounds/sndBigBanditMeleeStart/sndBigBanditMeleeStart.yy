@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndBigBanditMeleeStart",
-  "duration": 0.0,
+  "duration": 0.421338,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/Enemies.yy",
