@@ -1,6 +1,5 @@
 ///@description AI
-//HEAL FROM CORPSES!
-alarm[1] = 20 + random(10)
+alarm[1] = 15 + random(10)
 
 scrTarget()
 if target > 0 {
@@ -40,15 +39,18 @@ if target > 0 {
 			}
 			if noCorpse
 			{
-	            direction = point_direction(target.x, target.y, x, y) + random(20) - 10
-	            speed = 0.4
-	            walk = 40 + random(10)
-	            gunangle = point_direction(x, y, target.x, target.y)
-			}
-			else
-			{
-				//Charge
-				event_user(0);	
+				if random(2) < 1
+				{
+					//Charge
+					event_user(0);
+				}
+				else
+				{
+		            direction = point_direction(target.x, target.y, x, y) + random(20) - 10
+		            speed = 0.4
+		            walk = 40 + random(10)
+		            gunangle = point_direction(x, y, target.x, target.y)
+				}
 			}
         }
 

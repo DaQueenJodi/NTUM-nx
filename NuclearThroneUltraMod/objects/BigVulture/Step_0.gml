@@ -4,11 +4,10 @@ if alarm[4] > 0
 {
 	instance_create(x,y,WallBreak);
 	instance_create(x+random(8)-4,y+4+random(4),Dust)
-	motion_add(direction,1.5);
-	motion_add(chargeDirection,0.8);
+	motion_add(direction,1.4);
+	motion_add(chargeDirection,1);
 	if speed > 12
 		speed = 12;
-		
 	if hspeed > 0
 		right = 1
 	else if hspeed < 0
