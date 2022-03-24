@@ -253,8 +253,8 @@ function scrPopEnemies() {
     //FROZEN CITY
     if spawnarea = 5 {
 		if loops > 0 {
-			if random(12) < 1
-			instance_create(x + 16, y + 16, choose(ExploGuardian, GuardianDog, Necromancer))
+			if random(12) < 2
+			instance_create(x + 16, y + 16, choose(ExploGuardian, GuardianDog, CubeGuardian, Necromancer))
 			else if random(3) < 2
 			instance_create(x + 16, y + 16, choose(SnowBot, SnowBot, SnowBot, SnowTank, Wolf, Wolf, DiscGuy, BanditSquare))
 		} else {
@@ -622,7 +622,7 @@ function scrPopEnemies() {
 	            var ran = random(100);
 
 	            if ran > 78 {
-	                instance_create(x + 16, y + 16, choose(PalaceGuardian, PalaceGuardian, ExploGuardian, ExploGuardian, GhostGuardian, GuardianDog))
+	                instance_create(x + 16, y + 16, choose(PalaceGuardian, PalaceGuardian, ExploGuardian, ExploGuardian, GhostGuardian, GuardianDog, CubeGuardian))
 	            } else if ran > 70 {
 					instance_create(x + 16, y + 16, choose(Sniper, JungleBandit, ExploFreak))
 				}
@@ -634,7 +634,7 @@ function scrPopEnemies() {
 	            var ran = random(100);
 
 	            if ran > 78 {
-	                instance_create(x + 16, y + 16, choose(PalaceGuardian, PalaceGuardian, ExploGuardian, ExploGuardian, GhostGuardian, GuardianDog))
+	                instance_create(x + 16, y + 16, choose(PalaceGuardian, PalaceGuardian, ExploGuardian, CubeGuardian, GhostGuardian, GuardianDog))
 	            }
 	        }
 		}

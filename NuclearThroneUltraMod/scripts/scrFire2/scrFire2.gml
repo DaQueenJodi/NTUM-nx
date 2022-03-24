@@ -6180,12 +6180,14 @@ function scrFire2() {
 		dmg = 13;
 	longarms = 0
 	if instance_exists(Player)
-	longarms = (Player.skill_got[13]+other.bettermelee)*3
+		longarms = (Player.skill_got[13]+other.bettermelee)*3
 	motion_add(point_direction(x,y,mouse_x,mouse_y),4+longarms)
 	image_angle = direction
 	team = other.team
 	
 	image_yscale = 0.1;
+	if (longarms != 0)//Long arms effect for this is that it will have an easier time getting past walls
+		image_yscale = 0.05;
 	var takeMeOut = 40;
 		while (!place_meeting(x,y,Wall) && takeMeOut > 0)
 		{

@@ -28,10 +28,10 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
 		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
-	    with instance_create(f.x + 16,f.y + 16,BigVulture)
+	    with instance_create(f.x + 16,f.y + 16,CubeGuardian)
 			curse = 1;
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "BIG VULTURE";
+		thing.mytext = "CUBE GUARDIAN";
 	}
 	if keyboard_check_pressed(ord("C")) {
 		var dangle = random(1)*360;

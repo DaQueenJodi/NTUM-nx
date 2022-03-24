@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"shd48","path":"sprites/shd48/shd48.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "shd48",
     "tags": [],
     "resourceType": "GMSequence",
   },

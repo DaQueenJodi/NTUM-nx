@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndSnowTankAim",
-  "duration": 0.0,
+  "duration": 2.272018,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/Enemies.yy",

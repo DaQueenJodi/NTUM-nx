@@ -20,7 +20,7 @@ instance_create(x,y,WallBreak);
 depth = -12;
 var loops = GetPlayerLoops();
 var i = 0;
-myCompanions = [];
+var myCompanions = [];
 var amountOfProjectiles = 3;
 amountOfProjectiles += min(loops,4);
 for (var i = 0; i < amountOfProjectiles; i++) {
@@ -61,5 +61,5 @@ for (var i = 0; i < amountOfProjectiles; i++) {
 	}
 	angle += angleStep;
 }
-maxSpeed = 4.4 + min(2,loops);
-acc = 1.6 + min(0.4,loops*0.14);//This acceleration is the scary variable
+maxSpeed = 4.6 + min(2,loops);
+acc = 1.8 + min(0.4,loops*0.18);//This acceleration is the scary variable

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprGuardianBullet",
-    "path": "sprites/sprGuardianBullet/sprGuardianBullet.yy",
+    "name": "sprSquareGuardianBullet",
+    "path": "sprites/sprSquareGuardianBullet/sprSquareGuardianBullet.yy",
   },
   "solid": false,
   "visible": true,
