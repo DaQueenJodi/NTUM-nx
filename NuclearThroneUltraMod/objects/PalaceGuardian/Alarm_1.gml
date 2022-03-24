@@ -1,4 +1,4 @@
-///AI
+///@description AI
 if instance_exists(Player) && !fire && sprite_index != spr_appear && sprite_index != spr_disappear 
 {
 

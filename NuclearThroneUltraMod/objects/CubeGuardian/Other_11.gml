@@ -10,7 +10,14 @@ spr_hurt = spr_charge_hurt;
 snd_play(sndExploGuardianCharge);
 image_index = 0;
 imageIndex = 0;
-alarm[1] = 120;
+alarm[1] = 200;
+if target > 0
+{
+	if target.x < x
+		right = -1
+	else if target.x > x
+		right = 1
+}
 
 var loops = GetPlayerLoops();
 var i = 0;

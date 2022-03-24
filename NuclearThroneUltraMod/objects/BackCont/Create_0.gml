@@ -23,7 +23,7 @@ alarm[1] = 120
 
 wantVanAmount = 0;
 vanDelay = 330;
-vanDelayRandom = 100;
+vanDelayRandom = 50;
 verticalVans = false;
 
 ///@description deside how manny vans
