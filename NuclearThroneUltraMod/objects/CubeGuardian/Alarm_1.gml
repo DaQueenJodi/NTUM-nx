@@ -8,7 +8,7 @@ motion_add(direction,1);
 	{
 		if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 		{
-			if x > target.x - 160 && x < target.x + 160 && y > target.y - 120 && y < target.y + 120 && random(2) < 1
+			if x > target.x - 160 && x < target.x + 160 && y > target.y - 120 && y < target.y + 120 && random(3) < 2
 			{
 				event_user(1);
 			}

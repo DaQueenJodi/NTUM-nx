@@ -2360,6 +2360,7 @@
     {"id":{"name":"DISCOTIME","path":"objects/DISCOTIME/DISCOTIME.yy",},"order":16,},
     {"id":{"name":"sprEPickup","path":"sprites/sprEPickup/sprEPickup.yy",},"order":49,},
     {"id":{"name":"sprExpBar","path":"sprites/sprExpBar/sprExpBar.yy",},"order":50,},
+    {"id":{"name":"mskCubeGuardian","path":"sprites/mskCubeGuardian/mskCubeGuardian.yy",},"order":32,},
     {"id":{"name":"sprExpBarLevel","path":"sprites/sprExpBarLevel/sprExpBarLevel.yy",},"order":51,},
     {"id":{"name":"sprExploIcon","path":"sprites/sprExploIcon/sprExploIcon.yy",},"order":52,},
     {"id":{"name":"sprExploIconBG","path":"sprites/sprExploIconBG/sprExploIconBG.yy",},"order":53,},

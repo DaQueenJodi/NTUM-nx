@@ -178,7 +178,7 @@ if oldarea != area || area == 0 or !audio_is_playing(song) or!audio_exists(song)
 
     }
 
-    if area = 106 //inverted desert
+    if area = 106 //inverted scrap
     {
 
         song = mus3b;

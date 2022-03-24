@@ -80,7 +80,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprCubeGuardianWalk","path":"sprites/sprCubeGuardianWalk/sprCubeGuardianWalk.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprCubeGuardianWalk",
     "tags": [],
     "resourceType": "GMSequence",
   },

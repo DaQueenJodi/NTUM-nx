@@ -144,6 +144,150 @@ switch (waveNumber)
 				sprite_index = sprFloor9;
 		}
 	break;
+	case 10:
+		song = mus1b;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor105B;
+			else
+				sprite_index = sprFloor105;
+		}
+	break;
+	case 11:
+		song = mus105;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor10B;
+			else
+				sprite_index = sprFloor10;
+		}
+	break;
+	case 12://inv sewers
+		song = musInvertedSewers;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor110B;
+			else
+				sprite_index = sprFloor110;
+		}
+	break;
+	case 13://inv scrap
+		song = mus3b;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor106B;
+			else
+				sprite_index = sprFloor106;
+		}
+	break;
+	case 14://mansion
+		song = mus103;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor103B;
+			else
+				sprite_index = sprFloor103;
+		}
+	break;
+	case 15://inv cave
+		song = mus104;
+		Player.area = 111;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor111B;
+			else
+				sprite_index = sprFloor111;
+		}
+	break;
+	case 16://inv frozen
+		song = mus101;
+		Player.area = 101;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor101B;
+			else
+				sprite_index = sprFloor101;
+		}
+	break;
+	case 17://jungle
+		song = mus105;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor114B;
+			else
+				sprite_index = sprFloor114;
+		}
+	break;
+	case 18://inv lab
+		song = mus106b;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor106B;
+			else
+				sprite_index = sprFloor106;
+		}
+	break;
+	case 19://pizza sewers
+		song = mus102;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor102B;
+			else
+				sprite_index = sprFloor102;
+		}
+	break;
+	case 20://cursed caves
+		song = mus104;
+		Player.area = 115;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor115B;
+			else
+				sprite_index = sprFloor115;
+		}
+	break;
+	case 21://inv vulcano
+		song = mus5b;
+		Player.area = 108;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor108B;
+			else
+				sprite_index = sprFloor108;
+		}
+	break;
+	case 22://inv banditland
+		song = musThemeP;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor0B;
+			else
+				sprite_index = sprFloor0;
+		}
+	break;
+	case 23://inv wonderland
+		song = mus5b;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor109B;
+			else
+				sprite_index = sprFloor109;
+		}
+	break;
 }
 #endregion
 #region waves
@@ -619,7 +763,7 @@ repeat(1+loops)
 			};
 		break;
 		#endregion
-		#region wave 4
+		#region wave 4 caves
 		case 4:
 			repeat(5)
 			{
@@ -780,7 +924,7 @@ repeat(1+loops)
 			i++;
 		break;
 		#endregion
-		#region wave 5
+		#region wave 5 frozen city
 		case 5:
 			repeat(3)
 			{
@@ -1014,7 +1158,7 @@ repeat(1+loops)
 			i++;
 		break;
 		#endregion
-		#region wave 6
+		#region wave 6 labs
 		case 6:
 			repeat(8)
 			{
@@ -1233,7 +1377,7 @@ repeat(1+loops)
 			i++;
 		break;
 		#endregion
-		#region wave 7
+		#region wave 7 vulcano
 		case 7:
 			repeat(7)
 			{
@@ -1443,7 +1587,7 @@ repeat(1+loops)
 		break;
 		
 		#endregion
-		#region wave 8
+		#region wave 8 wonderland
 		case 8:
 			wave[i] = {
 				obj: Sheep,
@@ -1637,7 +1781,7 @@ repeat(1+loops)
 			}
 		break;
 		#endregion
-		#region wave 9
+		#region wave 9 palace
 		case 9:
 			repeat(8)
 			{
@@ -1704,6 +1848,13 @@ repeat(1+loops)
 				yy: centerY
 			};
 			i++;
+			wave[i] = {
+				obj: CubeGuardian,
+				time: 30,
+				xx: centerX+256,
+				yy: centerY
+			};
+			i++;
 			repeat(4)
 			{
 				wave[i] = {
@@ -1713,7 +1864,7 @@ repeat(1+loops)
 				i++;
 			}
 			wave[i] = {
-				obj: ExploGuardian,
+				obj: CubeGuardian,
 				time: 10,
 				xx: centerX,
 				yy: centerY
@@ -1728,7 +1879,7 @@ repeat(1+loops)
 				i++;
 			}
 			wave[i] = {
-				obj: ExploGuardian,
+				obj: CubeGuardian,
 				time: 120,
 				xx: centerX,
 				yy: centerY
@@ -1793,13 +1944,13 @@ repeat(1+loops)
 			i++;
 			wave[i] = {
 				obj: ExploGuardian,
-				time: 30,
+				time: 60,
 				xx: centerX,
 				yy: centerY
 			};
 			i++;
 			wave[i] = {
-				obj: PalaceGuardian,
+				obj: CubeGuardian,
 				time: 20
 			};
 			i++;
@@ -1820,7 +1971,470 @@ repeat(1+loops)
 			i++;
 		break;
 		#endregion
+		#region wave 10 inverted desert
+		case 10:
+		var cx = centerX + 128
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: cx-16,
+				yy: centerY-16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: cx+16,
+				yy: centerY-16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: cx+16,
+				yy: centerY+16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: cx-16,
+				yy: centerY+16
+			};
+			i++;
+			wave[i] = {
+					obj: Barrel,
+					time: 50,
+					xx: cx,
+					yy: centerY
+			};
+			i++;
+			
+			cx = centerX - 128
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: cx-16,
+				yy: centerY-16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: cx+16,
+				yy: centerY-16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: cx+16,
+				yy: centerY+16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: cx-16,
+				yy: centerY+16
+			};
+			i++;
+			wave[i] = {
+					obj: Barrel,
+					time: 5,
+					xx: cx,
+					yy: centerY
+			};
+			i++;
+			var cy = centerY - 128
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: centerX-16,
+				yy: cy-16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: centerX+16,
+				yy: cy-16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: centerX+16,
+				yy: cy+16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: centerX-16,
+				yy: cy+16
+			};
+			i++;
+			wave[i] = {
+					obj: Barrel,
+					time: 5,
+					xx: centerX,
+					yy: cy
+			};
+			i++;
+			cy = centerY + 128
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: centerX-16,
+				yy: cy-16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: centerX+16,
+				yy: cy-16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: centerX+16,
+				yy: cy+16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditInverted,
+				time: 1,
+				xx: centerX-16,
+				yy: cy+16
+			};
+			i++;
+			wave[i] = {
+					obj: Barrel,
+					time: 50,
+					xx: centerX,
+					yy: cy
+			};
+			i++;
+			
+			repeat(6)
+			{
+				wave[i] = {
+					obj: BanditInverted,
+					time: 5,
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: InvertedGoldScorpion,
+				time: 140,
+			};
+			i++;
+			repeat(6)
+			{
+				wave[i] = {
+					obj: BanditSquare,
+					time: 4,
+				};
+				i++;
+			}
+			wave[i] = {
+					obj: BigMaggotInverted,
+					time: 50,
+					xx: centerX,
+					yy: centerY,
+				};
+			i++;
+			repeat(24)
+			{
+				wave[i] = {
+					obj: MaggotInverted,
+					time: 1,
+				};
+				i++;
+			}
+			wave[i] = {
+					obj: BigMaggotInverted,
+					time: 40,
+				};
+			i++;
+			wave[i] = {
+					obj: InvertedScorpion,
+					time: 40,
+				};
+			i++;
+			wave[i] = {
+				obj: InvertedGoldScorpion,
+				xx: centerX,
+				yy: centerY,
+				time: 60
+			};
+			i++
+			wave[i] = {
+					obj: BigMaggotInverted,
+					time: 40,
+				};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+						obj: InvertedScorpion,
+						time: 10,
+					};
+				i++;
+			}
+			wave[i] = {
+					obj: InvertedGoldScorpion,
+					xx: centerX,
+					yy: centerY,
+					time: 90,
+				};
+			i++;
+			wave[i] = {
+					obj: BanditInverted,
+					time: 60,
+				};
+			i++;
+			wave[i] = {
+				obj: InvertedBanditBoss,
+				time: 70,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+						obj: InvertedGoldScorpion,
+						time: 10,
+					};
+				i++;
+			}
+		break;
+		#endregion
+		#region wave 11 Savanna
+		case 11:
+			wave[i] = {
+				obj: Hyena,
+				time: 2,
+			};
+			i++;
+			wave[i] = {
+				obj: Vulture,
+				time: 2,
+			};
+			i++;
+			wave[i] = {
+				obj: Hyena,
+				time: 2,
+			};
+			i++;
+			wave[i] = {
+				obj: Vulture,
+				time: 60,
+			};
+			i++;
+			repeat(8)
+			{
+				wave[i] = {
+				obj: Hyena,
+				time: 2,
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Vulture,
+				time: 60,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: BanditSquare,
+				time: 10,
+				xx: centerX,
+				yy: centerY
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+				obj: SavannaBandit,
+				time: 2,
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Vulture,
+				time: 5,
+				xx: centerX-16,
+				yy: centerY
+			};
+			i++;
+			wave[i] = {
+				obj: Vulture,
+				time: 5,
+				xx: centerX+16,
+				yy: centerY
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+				obj: Hyena,
+				time: 2,
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: Vulture,
+				time: 5,
+				xx: centerX,
+				yy: centerY+16
+			};
+			i++;
+			wave[i] = {
+				obj: Vulture,
+				time: 90,
+				xx: centerX,
+				yy: centerY-16
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+				obj: SavannaBandit,
+				time: 1,
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: BanditSquare,
+				time: 10,
+				xx: centerX-16,
+				yy: centerY
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+				obj: Hyena,
+				time: 3,
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: BanditSquare,
+				time: 10,
+				xx: centerX+16,
+				yy: centerY
+			};
+			i++;
+			repeat(4)
+			{
+				wave[i] = {
+				obj: Vulture,
+				time: 5,
+				};
+				i++;
+			}
+			wave[i] = {
+				obj: BanditSquare,
+				time: 10,
+				xx: centerX,
+				yy: centerY+16
+			};
+			i++;
+			wave[i] = {
+				obj: BanditSquare,
+				time: 10,
+				xx: centerX,
+				yy: centerY-16
+			};
+			i++;
+			wave[i] = {
+				obj: BigVulture,
+				time: 90,
+				xx: centerX,
+				yy: centerY-16
+			};
+			i++;
+			repeat(8)
+			{
+				wave[i] = {
+				obj: Hyena,
+				time: 2,
+				};
+				i++;
+			}
+			
+		break;
+		#endregion
+		#region next
+		/*
+		#region wave 12 Inverted sewers
+		case 12:
+		break;
+		#endregion
 		
+		#region wave 13 Inverted scrapyard
+		case 13:
+		break;
+		#endregion
+				
+		#region wave 14 YV mansion
+		case 14:
+		break;
+		#endregion
+				
+		#region wave 15 Inverted caves
+		case 15:
+		break;
+		#endregion
+				
+		#region wave 16 Inverted Frozen city
+		case 16:
+		break;
+		#endregion
+				
+		#region wave 17 Jungle
+		case 17:
+		break;
+		#endregion
+				
+		#region wave 18 Inverted Labs
+		case 18:
+		break;
+		#endregion
+				
+		#region wave 19 Pizza sewers
+		case 19:
+		break;
+		#endregion
+				
+		#region wave 20 Cursed caves
+		case 20:
+		break;
+		#endregion
+				
+		#region wave 21 Inverted Vulcano
+		case 21:
+		break;
+		#endregion
+				
+		#region wave 22 Banditland
+		case 22:
+		break;
+		#endregion
+		
+		#region wave 22 Inverted wonderland
+		case 23:
+		break;
+		#endregion
+		*/
+		#endregion
 		#region loop
 		default:
 			//loops

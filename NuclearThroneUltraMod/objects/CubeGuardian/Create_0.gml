@@ -27,7 +27,7 @@ alarm[1] = 30+random(90)
 wkick = 0
 friction = 2;
 instance_create(x,y,WallBreak);
-var loops = GetPlayerLoops();
+loops = GetPlayerLoops();
 projectileSpeed = 10;
 projectileSpeed += min(loops,3);
 amountOfProjectiles = 4;
