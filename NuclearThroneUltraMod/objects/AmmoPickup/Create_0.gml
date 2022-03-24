@@ -1,5 +1,5 @@
 event_inherited();
-
+type = 0;
 if sprite_index == sprAmmo {
 	var curselevel = 0;
 

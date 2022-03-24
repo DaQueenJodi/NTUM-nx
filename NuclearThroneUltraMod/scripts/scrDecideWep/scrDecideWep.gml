@@ -33,7 +33,7 @@ function scrDecideWep(wepTierParam, maxTriesParam = 10, cursedParam = 0, minWepA
 			}
 			else if instance_exists(Player)
 			{
-				if (wepTier == 17 || wepTier == 24 || wepTier == 30) && UberCont.start_wep_have_all[Player.race]//THE GOLDEN TIER(s)
+				if (wepTier == 21 || wepTier == 24 || wepTier == 30) && UberCont.start_wep_have_all[Player.race]//THE GOLDEN TIER(s)
 				{
 					return scrDecideWepGold();	
 				}

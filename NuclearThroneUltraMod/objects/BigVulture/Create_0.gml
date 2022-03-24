@@ -24,8 +24,8 @@ spr_hurt = sprBigVultureHurt;
 spr_eat = sprBigVultureEat;
 spr_dead = sprBigVultureDead
 
-snd_hurt = sndVultureHurt
-snd_dead = sndVultureDeath
+snd_hurt = sndBigVultureHurt
+snd_dead = sndBigVultureDeath
 
 scrTarget();
 if target > 0

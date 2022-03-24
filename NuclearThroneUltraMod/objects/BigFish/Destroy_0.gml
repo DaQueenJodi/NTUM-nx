@@ -12,6 +12,7 @@ with instance_create(x,y,Dust)
 }
 }
 scrBusinessHogGoldChest();
+if !instance_exists(SurvivalWave) && !instance_exists(WantBoss) && !instance_exists(BigFish)
 with MusCont
 {
 //optimise sound_discard(song)

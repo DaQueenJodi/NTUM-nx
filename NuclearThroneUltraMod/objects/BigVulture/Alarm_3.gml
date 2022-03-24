@@ -1,4 +1,5 @@
 /// @description Eating FX
+snd_play(choose(sndBigVultureEat1,sndBigVultureEat2,sndBigVultureEat3,sndBigVultureEat4));
 with instance_create(x,y,BloodStreak)
 {
 	vspeed = - 2 - random(6);

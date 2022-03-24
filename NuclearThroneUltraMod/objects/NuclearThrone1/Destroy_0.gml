@@ -23,4 +23,5 @@ if instance_exists(Player)
 
 scrRaddrop();
 scrEndBoss();
+scrBusinessHogGoldChest();
 Sleep(200)

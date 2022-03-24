@@ -1,7 +1,7 @@
 scrDrop(100,100)
 
 event_inherited()
-
+scrBusinessHogGoldChest();
 repeat(5+irandom(6))
 {
 	with instance_create(x,y,RavenFeather)

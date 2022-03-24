@@ -14,7 +14,7 @@ if shooting < 1
 		ammo --;
 		alarm[1] += fireRate;
 		shooting = fireRate;
-		snd_play(sndSnowTankShoot);
+		snd_play(sndSnowTankShoot,0.1,false,true,2,false,false);
 		with instance_create(x,y,EnemyBullet5)
 		{
 			motion_add(other.gunangle,other.projectileSpeed)
@@ -31,8 +31,8 @@ if alarm[4] > 0
 {
 	instance_create(x,y,WallBreak);
 	instance_create(x+random(8)-4,y+4+random(4),Dust)
-	motion_add(direction,0.5);
-	motion_add(chargeDirection,2.1);
+	motion_add(direction,0.2);
+	motion_add(chargeDirection,2.9);
 	if speed > 12
 		speed = 12;
 	if hspeed > 0
@@ -62,10 +62,13 @@ else if alarm[7] < 1 //Charge tell??
 			alarm[1] += 15;
 			sprite_index = spr_eat;
 			if alarm[2] < 1
+			{
 				image_index = 0;
+			}
 				
 			alarm[2] = 15;
 			alarm[3] = 1;
+
 		}
 	}
 }

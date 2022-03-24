@@ -1,16 +1,68 @@
 //if max ammo?&&50% of time
-if other.ammo[other.wep_type[other.wep]] = other.typ_amax[other.wep_type[other.wep]] or other.ammo[other.wep_type[other.bwep]] = other.typ_amax[other.wep_type[other.bwep]] && random(2)<1
-type = choose(1,2,3,4,5)
+var pt = other.wep_type[other.wep];//primary ammo type
+var st = other.wep_type[other.bwep];//secondary ammo type
+var pa = other.ammo[pt];//primary ammo
+var sa = other.ammo[st];//secondary ammo
+var pam = other.typ_amax[pt];//primary max ammo
+var sam = other.typ_amax[st]//secondary max ammo
+var ran = random(6);
+if pa = pam or sa = sam && ran < 3
+{
+	if ran < 1
+	{
+		//Chance to top up weapon that is not full
+		if (pa == pam) && sa < sam
+			type = st;
+		else if (pa < pam) && sa == sam
+			type = pt;
+		else
+			type = choose(1,2,3,4,5);
+	}
+	else
+	{
+		type = choose(1,2,3,4,5)
+	}
+}
 else if other.bwep != 0
-type = choose(other.wep_type[other.wep],other.wep_type[other.bwep])
+{
+	//Chance to give ammo which you need most
+	if ran < 1
+	{
+		if pt == 0
+		{
+			type = st;
+		}
+		else if st == 0
+		{
+			type = pt;
+		}
+		else
+		{
+			var pap = pa/pam;//primary ammo percentage
+			var sap = sa/sam;//secondary ammo percentage
+			if pap < sap
+			{
+				type = pt;	
+			}
+			else
+			{
+				type = st;	
+			}
+		}
+	}
+	else
+	{
+		type = choose(pt,st)
+	}
+}
 else
-type = other.wep_type[other.wep]
+	type = pt
 
 //Roids get loaded ultra
 if ( Player.ultra_got[26] && other.wep!=0 )
-type = other.wep_type[other.wep];
+type = pt;
 
-if type = 0
+if type == 0
 type = choose(1,2,3,4,5)
 
 extra = 0

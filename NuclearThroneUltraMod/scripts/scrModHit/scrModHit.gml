@@ -152,6 +152,7 @@ function scrModHit() {
 	break;
 
 	case 8://swarm
+	snd_play(sndSwarm,0.05,true);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),SwarmBolt)
 	{team=other.team;
 	direction=random(360);
@@ -159,6 +160,7 @@ function scrModHit() {
 	break;
 
 	case 9://bouncer
+	snd_play(sndBouncerPistol,0.05,true);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),Bullet3)
 	{motion_add(random(360),5.1)
 	image_angle = direction
@@ -175,7 +177,7 @@ function scrModHit() {
 
 	case 10://shotgun
 
-	snd_play(sndShotgun);
+	snd_play(sndShotgun,0.05,true);
 	repeat(4)
 	{
 	with instance_create(other.x,other.y,Bullet2)
@@ -198,7 +200,7 @@ function scrModHit() {
 
 	case 15://SPLINTER
 
-	snd_play(sndSplinterGun)
+	snd_play(sndSplinterGun,0.05,true)
 
 	repeat(3)
 	{
@@ -356,6 +358,7 @@ function scrModHit() {
 	break;
 
 	case 8:
+	snd_play(sndSwarm,0.05,true);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),SwarmBolt)
 	{team=other.team;
 	direction=random(360);
@@ -363,6 +366,7 @@ function scrModHit() {
 	break;
 
 	case 9://bouncer
+	snd_play(sndBouncerPistol,0.05,true);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),Bullet3)
 	{motion_add(random(360),5.1)
 	image_angle = direction
@@ -379,7 +383,7 @@ function scrModHit() {
 
 	case 10://shotgun
 
-	snd_play(sndShotgun);
+	snd_play(sndShotgun,0.05,true,0.05,true);
 	repeat(4)
 	{
 	with instance_create(other.x,other.y,Bullet2)
@@ -403,7 +407,7 @@ function scrModHit() {
 
 	case 15://SPLINTER
 
-	snd_play(sndSplinterGun)
+	snd_play(sndSplinterGun,0.05,true)
 
 	repeat(3)
 	{
@@ -563,6 +567,7 @@ function scrModHit() {
 	break;
 
 	case 8:
+	snd_play(sndSwarm,0.05,true);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),SwarmBolt)
 	{team=other.team;
 	hits-=1;
@@ -570,6 +575,7 @@ function scrModHit() {
 	break;
 
 	case 9://bouncer
+	snd_play(sndBouncerPistol,0.05,true);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),Bullet3)
 	{motion_add(random(360),5.1)
 	image_angle = direction
@@ -587,7 +593,7 @@ function scrModHit() {
 
 	case 10://shotgun
 
-	snd_play(sndShotgun);
+	snd_play(sndShotgun,0.05,true);
 	repeat(4)
 	{
 	with instance_create(other.x,other.y,Bullet2)
@@ -611,7 +617,7 @@ function scrModHit() {
 
 	case 15://SPLINTER
 
-	snd_play(sndSplinterGun)
+	snd_play(sndSplinterGun,0.05,true)
 
 	repeat(3)
 	{
@@ -772,6 +778,7 @@ function scrModHit() {
 	break;
 
 	case 8:
+	snd_play(sndSwarm,0.05,true);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),SwarmBolt)
 	{team=other.team;
 	hits-=1;
@@ -779,6 +786,7 @@ function scrModHit() {
 	break;
 
 	case 9://bouncer
+	snd_play(sndBouncerPistol,0.05,true);
 	with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),Bullet3)
 	{motion_add(random(360),5.1)
 	image_angle = direction
@@ -796,7 +804,7 @@ function scrModHit() {
 
 	case 10://shotgun
 
-	snd_play(sndShotgun);
+	snd_play(sndShotgun,0.05,true);
 	repeat(4)
 	{
 	with instance_create(other.x,other.y,Bullet2)
@@ -820,7 +828,7 @@ function scrModHit() {
 
 	case 15://SPLINTER
 
-	snd_play(sndSplinterGun)
+	snd_play(sndSplinterGun,0.05,true)
 
 	repeat(3)
 	{
