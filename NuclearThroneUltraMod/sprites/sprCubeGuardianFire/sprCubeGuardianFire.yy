@@ -177,8 +177,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Horror",
-    "path": "folders/Sprites/Player/Custom/Horror.yy",
+    "name": "Palace Enemy",
+    "path": "folders/Sprites/Palace/Palace Enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprCubeGuardianFire",

@@ -1,23 +1,26 @@
 ///@description AI
-alarm[1] = 15 + random(10)
+alarm[1] = 9 + random(10)
 
 scrTarget()
 if target > 0 {
     if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {
 		var dis = point_distance(target.x, target.y, x, y);
-        if dis > 48  && dis < 170{
-			//Leads shot!
-			var xx = target.x + (target.hspeed*2)
-			var yy = target.y + (target.vspeed*2)
-			gunangle = point_direction(x, y, xx, yy);
-			snd_play(sndSnowTankShoot);
-			with instance_create(x,y,EnemyBullet5)
+        if dis > 32  && dis < 170 {
+			if random(10) > 2
 			{
-				motion_add(other.gunangle,other.projectileSpeed)
-				team = other.team
-				image_angle = direction
+				if (random(3) > 1)
+				{
+					direction = point_direction(x,y,target.x,target.y)+choose(90,-90);
+					walk = 20 + random(10);
+				}
+				//Start shooting
+				event_user(1);
 			}
-			alarm[1] += 10;
+			else
+			{
+				//Charge
+				event_user(0);
+			}
         }
         else {
 			gunangle = point_direction(x, y, target.x, target.y);
@@ -34,6 +37,10 @@ if target > 0 {
 						motion_add(direction,4);
 						walk = 20;
 						alarm[1] += walk;
+					}
+					else
+					{
+						corpseTarget = -1;	
 					}
 				}	
 			}
@@ -73,17 +80,29 @@ if target > 0 {
 				walk = 20;
 				alarm[1] += walk;
 			}
+			else
+			{
+				corpseTarget = -1;	
+			}
 		}
-		if noCorpse && random(10) < 7
+		if noCorpse
 		{
-			motion_add(random(360), 0.4)
-			walk = 20 + random(10)
-			alarm[1] = walk + 10 + random(30)
-		}
-		else
-		{
-			//Charge
-			event_user(0);	
+			var ran = random(10);
+			if ran > 5 {
+				motion_add(random(360), 0.4)
+				walk = 10 + random(10)
+				alarm[1] = walk + 5 + random(10)
+			}
+			else if (ran > 4)
+			{
+				//Shoot to the wall
+				event_user(1);
+			}
+			else
+			{
+				//Charge
+				event_user(0);	
+			}
 		}
 		gunangle = direction
 		if hspeed > 0

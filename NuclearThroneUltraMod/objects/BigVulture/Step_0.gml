@@ -1,5 +1,32 @@
 event_inherited()
-
+if sprite_index = spr_hurt
+{
+	alarm[2] = 0;
+	alarm[3] = 0;
+	corpseTarget = -1;
+}
+else if alarm[2] > 0
+	sprite_index = spr_eat;
+if shooting < 1
+{
+	if ammo > 0
+	{
+		ammo --;
+		alarm[1] += fireRate;
+		shooting = fireRate;
+		snd_play(sndSnowTankShoot);
+		with instance_create(x,y,EnemyBullet5)
+		{
+			motion_add(other.gunangle,other.projectileSpeed)
+			team = other.team
+			image_angle = direction
+		}
+		event_user(2);
+	}
+} else if shooting > 0
+{
+	shooting --;
+}
 if alarm[4] > 0
 {
 	instance_create(x,y,WallBreak);
@@ -15,7 +42,7 @@ if alarm[4] > 0
 		
 	image_angle = direction;
 }
-else if alarm[7] < 1 //Charge tell
+else if alarm[7] < 1 //Charge tell??
 {
 	if walk > 0
 	{
@@ -32,10 +59,12 @@ else if alarm[7] < 1 //Charge tell
 		{
 			walk = 0;
 			speed = 0;
-			alarm[1] += 20;
+			alarm[1] += 15;
 			sprite_index = spr_eat;
-			image_index = 0;
-			alarm[2] = 5;
+			if alarm[2] < 1
+				image_index = 0;
+				
+			alarm[2] = 15;
 			alarm[3] = 1;
 		}
 	}

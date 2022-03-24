@@ -73,7 +73,6 @@ window_set_min_width(640);
 window_set_min_height(480);
 if !opt_fulscrn
 	window_set_size(640*2,480*2);
-	
 canRestart = true;
 
 enum ultramods {

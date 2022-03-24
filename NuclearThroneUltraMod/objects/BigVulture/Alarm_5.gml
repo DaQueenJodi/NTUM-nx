@@ -1,6 +1,6 @@
 /// @description START CHARGE
 alarm[4] = 20;
-alarm[1] += 24;
+alarm[1] += 21;
 right = 1;
 spr_idle = sprBigVultureCharge;
 spr_walk = sprBigVultureCharge;

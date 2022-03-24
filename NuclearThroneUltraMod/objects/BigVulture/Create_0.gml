@@ -12,8 +12,8 @@ walk = 0
 wkick = 0
 
 corpseTarget = -1;
-projectileSpeed = 5.3;
-projectileSpeed += clamp(GetPlayerLoops(),0,3);
+projectileSpeed = 7;
+projectileSpeed += clamp(GetPlayerLoops(),0,3)*0.5;
 alarm[1] = 40;
 alarm[2] = 1;
 alarm[6] = 10;//Intro
@@ -21,12 +21,11 @@ alarm[6] = 10;//Intro
 spr_idle = sprBigVultureIdle;
 spr_walk = sprBigVultureWalk;
 spr_hurt = sprBigVultureHurt;
-spr_eat = sprVultureEat;
-spr_dead = sprVultureDead
+spr_eat = sprBigVultureEat;
+spr_dead = sprBigVultureDead
 
 snd_hurt = sndVultureHurt
 snd_dead = sndVultureDeath
-
 
 scrTarget();
 if target > 0
@@ -50,3 +49,8 @@ instance_create(x+d,y+d,WallBreak);
 instance_create(x+d,y-d,WallBreak);
 instance_create(x-d,y+d,WallBreak);
 instance_create(x-d,y-d,WallBreak);
+
+ammo = 0;
+maxAmmo = 10;
+fireRate = 2;
+shooting = 0;

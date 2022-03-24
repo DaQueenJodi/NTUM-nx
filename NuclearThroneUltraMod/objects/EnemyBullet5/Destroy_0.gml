@@ -1,4 +1,5 @@
 instance_create(x,y,EBulletHit)
+instance_create(x,y,WallBreak);
 with instance_create(x,y,SmallExplosion)
 {
 team=other.team;

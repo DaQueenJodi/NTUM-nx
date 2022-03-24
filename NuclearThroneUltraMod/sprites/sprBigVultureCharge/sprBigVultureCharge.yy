@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "BigVulture",
-    "path": "folders/Sprites/Enemies/Boss/BigBandit/BigVulture.yy",
+    "path": "folders/Sprites/Enemies/Boss/BigVulture.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBigVultureCharge",
