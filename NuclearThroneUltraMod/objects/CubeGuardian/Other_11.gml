@@ -5,6 +5,7 @@ charge = true;
 depth = -12;
 sprite_index = spr_charge;
 spr_idle = spr_charge;
+spr_walk = spr_charge;
 spr_hurt = spr_charge_hurt;
 snd_play(sndExploGuardianCharge);
 image_index = 0;
@@ -24,8 +25,6 @@ i = 0;
 var dis = distance;
 var rotationdir = choose(1,-1);
 var idd = id;
-var ox = x;
-var oy = y;
 var lp = random(1);
 //Euphoria
 if instance_exists(Player)
@@ -36,7 +35,7 @@ if Player.skill_got[12] = 1
 	dis -= 8;
 }
 }
-var between = 1 / (amountOfProjectiles / 4);
+//var between = 1 / (amountOfProjectiles / 4);
 for (var i = 0; i < amountOfProjectiles; i++) {
 	with myCompanions[i]
 	{
@@ -46,13 +45,19 @@ for (var i = 0; i < amountOfProjectiles; i++) {
 		rotateSpeed = rotSpeed;
 		maxdistance = dis;
 		lerpStep = lp;
-		x = ox + lengthdir_x(distance,ownerAngle);
-		y = oy + lengthdir_y(distance,ownerAngle);
+		debug("lp: ",lp);
 	}
 	dir += 1;
+	/*
 	if dir > 3
 	{
 		dir = 0;
 		lp += between;
+		if lp > 1
+		{
+			lp -= 1;
+			dir ++;
+		}
 	}
+	*/
 }

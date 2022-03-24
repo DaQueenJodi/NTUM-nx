@@ -77,9 +77,17 @@ if instance_exists(owner)
 		}
 	}
 	if rotationDirection == 1
-		lerpStep += rotateSpeed/distance;
+	{
+		lerpStep += min(0.3,rotateSpeed/distance);
+		if lerpStep > 1
+			lerpStep -= 1;
+	}
 	else
-		lerpStep -= rotateSpeed/distance;
+	{
+		lerpStep -= min(0.3,rotateSpeed/distance);
+		if lerpStep < 0
+			lerpStep += 1;
+	}
 }
 else
 {

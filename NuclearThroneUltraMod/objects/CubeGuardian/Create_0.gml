@@ -31,11 +31,15 @@ var loops = GetPlayerLoops();
 projectileSpeed = 10;
 projectileSpeed += min(loops,3);
 amountOfProjectiles = 4;
-amountOfProjectiles += min(loops*2,8);
 rotateSpeed = 2+min(loops,3);
 distance = 48;
 distance += min(32,loops*8);
 direction = random(360);
+speed = 1;
+if hspeed > 0
+	right = 1
+else if hspeed < 0
+	right = -1
 depth = -2;
 fired = false;
 

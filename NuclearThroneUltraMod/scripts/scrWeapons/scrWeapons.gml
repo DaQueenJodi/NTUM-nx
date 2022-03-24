@@ -4367,7 +4367,7 @@ function scrWeapons() {
 	wep_load[395] = 20
 	wep_cost[395] = 6
 	wep_sprt[395] = sprElectroCannon
-	wep_area[395] = 7
+	wep_area[395] = 9
 	wep_text[395] = "state of the art gunnery"
 	wep_swap[395] = sndSwapEnergy
 	wep_rad[395] = 0;
@@ -4565,7 +4565,7 @@ function scrWeapons() {
 	wep_load[413] = 20
 	wep_cost[413] = 2
 	wep_sprt[413] = sprLeacherBow
-	wep_area[413] = 7
+	wep_area[413] = 8
 	wep_text[413] = "vampire"
 	wep_swap[413] = sndSwapBow
 	wep_rad[413] = 0;
@@ -4628,7 +4628,7 @@ function scrWeapons() {
 	wep_name[419] = "SPINNER YOYO GUN"
 	wep_type[419] = 3
 	wep_auto[419] = 1
-	wep_load[419] = 16
+	wep_load[419] = 14
 	wep_cost[419] = 2
 	wep_sprt[419] = sprSpinnerYoyoGun
 	wep_area[419] = 5
@@ -4639,7 +4639,7 @@ function scrWeapons() {
 	wep_name[420] = "SUPER SPINNER YOYO GUN"
 	wep_type[420] = 3
 	wep_auto[420] = 1
-	wep_load[420] = 27
+	wep_load[420] = 25
 	wep_cost[420] = 5
 	wep_sprt[420] = sprSuperSpinnerYoyoGun
 	wep_area[420] = 8
