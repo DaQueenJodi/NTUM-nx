@@ -121,7 +121,7 @@ function scrTips() {
 	if Player.area = 9
 	tip = choose("The palace","This place is old");
 	if Player.area = 10
-	tip = choose("dry grass","savanna","they eat each other","they attack together");
+	tip = choose("dry grass","savanna","they eat each other","they attack together","bring a good strating weapon");
 	if Player.area = 106
 	tip = choose("inverted darkness","back to the other dimension","pls explain","inverted world are a benefit","oh no, the question marks!","good luck getting through this"
 	,"white ravens")

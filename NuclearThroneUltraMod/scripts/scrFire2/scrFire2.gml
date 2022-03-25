@@ -6230,5 +6230,40 @@ function scrFire2() {
 
 	break;
 	
+	//WAZER
+	case 424:
+
+	
+	
+	if !instance_exists(PlayerWazer)
+	{
+		if Player.skill_got[17] = 1
+			snd_play_fire(sndLaserUpg)
+		else
+			snd_play_fire(sndLaser)
+			
+		if !audio_is_playing(sndMorphLoop)
+			snd_loop(sndMorphLoop);
+		with instance_create(x,y,PlayerWazer)
+		{
+			team = other.team;
+			mywep = other.wep
+			alarm[0] = 1 + other.wep_load[mywep];
+			owner = other.id;
+			camKick = 5;
+			camShake = 3;
+			wkick = 4;
+		}
+	}
+	else
+	{
+		with PlayerWazer
+		{
+			alarm[0] = 1 + other.wep_load[other.wep];
+		}
+	}
+
+	break;
+	
 	}//end of switch part 2!
 }

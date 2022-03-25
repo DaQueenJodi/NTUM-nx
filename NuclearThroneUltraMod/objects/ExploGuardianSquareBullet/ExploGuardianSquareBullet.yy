@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Projectiles",
-    "path": "folders/Objects/Projectiles.yy",
+    "name": "PalaceProjectiles",
+    "path": "folders/Objects/Projectiles/PalaceProjectiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "ExploGuardianSquareBullet",

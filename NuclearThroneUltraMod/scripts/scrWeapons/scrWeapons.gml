@@ -4680,6 +4680,17 @@ function scrWeapons() {
 	wep_swap[423] = sndSwapBow
 	wep_rad[423] = 0;
 	
+	wep_name[424] = "WAZER"
+	wep_type[424] = 5
+	wep_auto[424] = 1
+	wep_load[424] = 9
+	wep_cost[424] = 1
+	wep_sprt[424] = sprLaserRifle
+	wep_area[424] = 10
+	wep_text[424] = ""
+	wep_swap[424] = sndSwapEnergy
+	wep_rad[424] = 0;
+	
 	/*
 	wep_name[312] = "ULTRA ROGUE RIFLE"
 	wep_type[312] = 1
@@ -4693,6 +4704,17 @@ function scrWeapons() {
 	wep_rad[312] = 0;
 	
 	wep_name[61] = "HEAVY BLOOD PISTOL"
+	wep_type[61] = 1
+	wep_auto[61] = 0
+	wep_load[61] = 1
+	wep_cost[61] = 1
+	wep_sprt[61] = sprBloodPistol
+	wep_area[61] = 0
+	wep_text[61] = "blood weapons destroy projectiles"
+	wep_swap[61] = sndSwapPistol
+	wep_rad[61] = 0;
+	
+	wep_name[61] = "HAILSTORM" // bouncy stream of splinters
 	wep_type[61] = 1
 	wep_auto[61] = 0
 	wep_load[61] = 1

@@ -59,19 +59,46 @@ until (place_meeting(x,y,hitme) and dir > 16) or place_meeting(x,y,Wall) or dir 
 
 if laserhit>0// && random(3)<1
 {
-if ( place_meeting(x+8,y-4,Wall) ||place_meeting(x-8,y-4,Wall) ) && ( place_meeting(x+8,y+4,Wall) ||place_meeting(x-8,y+4,Wall) )
+//	var xx = x + lengthdir_x(3,image_angle+180);
+//	var yy = y + lengthdir_y(3,image_angle+180);
+//if ( place_meeting(x+8,y-4,Wall) ||place_meeting(x-8,y-4,Wall) ) && ( place_meeting(x+8,y+4,Wall) ||place_meeting(x-8,y+4,Wall) )
+if place_meeting(x,y,Wall) || place_meeting(x,y,hitme)
 {
     with instance_create(x,y,Laser)
-    {image_angle = other.image_angle*-1+180;
-    team = other.team
-    laserhit=other.laserhit-1;
+    {
+		//if !collision_line(xx-4,yy,xx+4,yy,Wall,false,false)
+			//image_angle = other.image_angle*-1//180-other.image_angle;
+		//else
+			image_angle = 180-other.image_angle;
+		x += lengthdir_x(4,image_angle);
+		y += lengthdir_y(4,image_angle);
+		if collision_point(x,y,Wall,false,false)
+		{
+			x -= lengthdir_x(4,image_angle);
+			y -= lengthdir_y(4,image_angle);
+			image_angle = other.image_angle*-1
+			x += lengthdir_x(4,image_angle);
+			y += lengthdir_y(4,image_angle);
+		}
+		else if collision_point(x,y,hitme,false,false) && instance_position(x,y,hitme).team != team
+		{
+			x -= lengthdir_x(4,image_angle);
+			y -= lengthdir_y(4,image_angle);
+			image_angle = other.image_angle*-1
+			x += lengthdir_x(4,image_angle);
+			y += lengthdir_y(4,image_angle);
+		}
+	    team = other.team
+		sprite_index=sprBouncingLaser;
+	    laserhit=other.laserhit-1;
     
     do {x += lengthdir_x(2,image_angle) y += lengthdir_y(2,image_angle) dir += 1}
 until (place_meeting(x,y,hitme) and dir > 16) or place_meeting(x,y,Wall) or place_meeting(x,y,VikingWall) or dir > 160
     
     alarm[0]=1;
     }
-}
+	laserhit=0;
+}/*
 else
 {	//bouncy laser
     with instance_create(x - lengthdir_x(8,image_angle),y - lengthdir_y(8,image_angle),Laser)
@@ -86,7 +113,7 @@ until (place_meeting(x,y,hitme) and dir > 16) or place_meeting(x,y,Wall) or plac
     alarm[0]=1;
     }
 }
-laserhit=0;
+laserhit=0;*/
 }
 
 alarm[0] = 2
