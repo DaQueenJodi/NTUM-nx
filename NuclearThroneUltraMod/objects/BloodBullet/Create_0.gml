@@ -11,9 +11,6 @@ typ = 1 //0 = normal, 1 = deflectable, 2 = destructable, 3 = deflectable
 friction = 0.8
 dmg=1;
 if instance_exists(Player){
-if Player.ultra_got[16]//Melting doomed
-dmg=3;
+	if Player.ultra_got[16]//Melting doomed
+		dmg=4;
 }
-
-/* */
-/*  */

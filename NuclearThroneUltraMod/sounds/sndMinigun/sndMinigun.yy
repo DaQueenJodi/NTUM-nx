@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndMinigun",
-  "duration": 0.0,
+  "duration": 0.44,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

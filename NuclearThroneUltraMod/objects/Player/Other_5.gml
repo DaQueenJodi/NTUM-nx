@@ -340,6 +340,23 @@ if (wep = 46 || bwep = 46 || cwep == 46) && loops=1
 	curse = 0
 	sprite_index = wep_sprt[wep]
 	}
+}
+
+//DROP ULTRA ROGUE RIFLE
+if (wep = 312 || bwep = 312|| cwep == 312) && loops=1
+{
+
+	with instance_create(x,y,WepPickup)
+	{
+	persistent=true;
+	scrWeapons()
+	wep = 427
+	name = wep_name[wep]
+	ammo = 0
+	type = wep_type[wep]
+	curse = 0
+	sprite_index = wep_sprt[wep]
+	}
 
 }
 

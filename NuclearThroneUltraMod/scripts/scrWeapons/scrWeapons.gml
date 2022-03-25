@@ -4104,7 +4104,7 @@ function scrWeapons() {
 	wep_area[371] = 22
 	wep_text[371] = "time to rain bullets"
 	wep_swap[371] = sndSwapMachinegun
-	wep_rad[371] = 6;
+	wep_rad[371] = 5;
 	
 	wep_name[372] = "VAN CANNON"
 	wep_type[372] = 4
@@ -4246,7 +4246,7 @@ function scrWeapons() {
 	wep_load[384] = 12
 	wep_cost[384] = 1
 	wep_sprt[384] = sprMiniPlasmaGun
-	wep_area[384] = 1
+	wep_area[384] = 2
 	wep_text[384] = "mini plasma is faster and smaller#than regular plasma"
 	wep_swap[384] = sndSwapPistol
 	wep_rad[384] = 0;
@@ -4687,32 +4687,44 @@ function scrWeapons() {
 	wep_cost[424] = 1
 	wep_sprt[424] = sprLaserRifle
 	wep_area[424] = 10
-	wep_text[424] = ""
+	wep_text[424] = "an actual laser"
 	wep_swap[424] = sndSwapEnergy
 	wep_rad[424] = 0;
 	
-	/*
-	wep_name[312] = "ULTRA ROGUE RIFLE"
-	wep_type[312] = 1
-	wep_auto[312] = 0
-	wep_load[312] = 6
-	wep_cost[312] = 2
-	wep_sprt[312] = sprRogueRifle
-	wep_area[312] = -1
-	wep_text[312] = "popo nono"
-	wep_swap[312] = sndSwapMachinegun
-	wep_rad[312] = 0;
+	wep_name[425] = "HEAVY BLOOD PISTOL"
+	wep_type[425] = 1
+	wep_auto[425] = 0
+	wep_load[425] = 2
+	wep_cost[425] = 1
+	wep_sprt[425] = sprBloodPistol
+	wep_area[425] = 9
+	wep_text[425] = ""
+	wep_swap[425] = sndSwapPistol
+	wep_rad[425] = 0;
 	
-	wep_name[61] = "HEAVY BLOOD PISTOL"
-	wep_type[61] = 1
-	wep_auto[61] = 0
-	wep_load[61] = 1
-	wep_cost[61] = 1
-	wep_sprt[61] = sprBloodPistol
-	wep_area[61] = 0
-	wep_text[61] = "blood weapons destroy projectiles"
-	wep_swap[61] = sndSwapPistol
-	wep_rad[61] = 0;
+	wep_name[426] = "HEAVY BLOOD RIFLE"
+	wep_type[426] = 1
+	wep_auto[426] = 1
+	wep_load[426] = 4
+	wep_cost[426] = 1
+	wep_sprt[426] = sprBloodRifle
+	wep_area[426] = 11
+	wep_text[426] = ""
+	wep_swap[426] = sndSwapPistol
+	wep_rad[426] = 0;
+
+	wep_name[427] = "ULTRA ROGUE RIFLE"
+	wep_type[427] = 1
+	wep_auto[427] = 0
+	wep_load[427] = 5
+	wep_cost[427] = 2
+	wep_sprt[427] = sprRogueRifle
+	wep_area[427] = -1
+	wep_text[427] = ""
+	wep_swap[427] = sndSwapMachinegun
+	wep_rad[427] = 0;
+
+	/*
 	
 	wep_name[61] = "HAILSTORM" // bouncy stream of splinters
 	wep_type[61] = 1

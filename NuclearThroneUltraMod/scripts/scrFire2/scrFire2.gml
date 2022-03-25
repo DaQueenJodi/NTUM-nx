@@ -4764,7 +4764,7 @@ function scrFire2() {
 	case 371:
 
 	snd_play_fire(sndMinigun)
-	snd_play_fire(sndUltraPistol)
+	snd_play_fire(sndUltraMinigun)
 
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
@@ -6232,9 +6232,6 @@ function scrFire2() {
 	
 	//WAZER
 	case 424:
-
-	
-	
 	if !instance_exists(PlayerWazer)
 	{
 		if Player.skill_got[17] = 1
@@ -6261,6 +6258,57 @@ function scrFire2() {
 		{
 			alarm[0] = 1 + other.wep_load[other.wep];
 		}
+	}
+	break;
+	
+	//HEAVY BLOOD PISTOL
+	case 425:
+
+	snd_play_fire(sndHeavyBloodPistol)
+	with instance_create(x,y,Shell)
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
+
+	with instance_create(x,y,HeavyBloodBullet)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,16)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(7,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(7,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 4
+	wkick = 3
+
+	break;
+	
+	//HEAVY BLOOD RIFLE
+	case 426:
+
+	snd_play_fire(sndHeavyBloodPistol)
+	with instance_create(x,y,Shell)
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
+
+	with instance_create(x,y,HeavyBloodBullet)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(16)-8)*other.accuracy,16)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(7,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(7,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 3
+	wkick = 3
+
+	break;
+	
+	//ULTRA ROGUE RIFLE
+	case 427:
+
+	with instance_create(x,y,UltraRogueRifleBurst)
+	{
+	creator = other.id
+	ammo = 2
+	time = 2
+	team = other.team
+	event_perform(ev_alarm,0) 
 	}
 
 	break;
