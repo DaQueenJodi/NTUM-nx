@@ -1168,8 +1168,12 @@ image_angle = other.image_angle}
 
 }}
 if ultra_got[16]{
-with meltingd
-instance_destroy();}
+	with meltingd
+	{
+		my_health = 0;
+		//instance_destroy();
+	}
+}
 
 /* */
 ///lava and frost

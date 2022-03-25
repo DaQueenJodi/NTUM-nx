@@ -14,7 +14,7 @@ motion_add(point_direction(x,y,mouse_x,mouse_y)+180+random(50)-25,2+random(2))
 
 with instance_create(x,y,Bullet4)
 {
-motion_add(point_direction(x,y,mouse_x,mouse_y)+random(12)-6*other.creator.accuracy,18)
+motion_add(point_direction(x,y,mouse_x,mouse_y)+random(12)-6*other.creator.accuracy,19)
 image_angle = direction
 team = other.team
     if (instance_exists(Player))

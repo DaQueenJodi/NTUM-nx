@@ -1270,7 +1270,7 @@ function scrWeapons() {
 	wep_area[114] = 19
 	wep_text[114] = "radical"
 	wep_swap[114] = sndSwapMachinegun
-	wep_rad[114] = 7;
+	wep_rad[114] = 4;//retail 4
 
 	wep_name[115] = "ULTRA SHOTGUN"
 	wep_type[115] = 2
@@ -1281,7 +1281,7 @@ function scrWeapons() {
 	wep_area[115] = 19
 	wep_text[115] = "radiculous"
 	wep_swap[115] = sndSwapShotgun
-	wep_rad[115] = 17;
+	wep_rad[115] = 14;//retail 14
 
 	wep_name[116] = "ULTRA CROSSBOW"
 	wep_type[116] = 3
@@ -1292,7 +1292,7 @@ function scrWeapons() {
 	wep_area[116] = 19
 	wep_text[116] = "green bow"
 	wep_swap[116] = sndSwapShotgun
-	wep_rad[116] = 15;
+	wep_rad[116] = 12;
 
 	wep_name[117] = "ULTRA LASER PISTOL"
 	wep_type[117] = 5
@@ -1301,9 +1301,9 @@ function scrWeapons() {
 	wep_cost[117] = 3
 	wep_sprt[117] = sprUltraLaserGun
 	wep_area[117] = 19
-	wep_text[117] = "ultraaaaaaa"
+	wep_text[117] = ""
 	wep_swap[117] = sndSwapEnergy
-	wep_rad[117] = 18;
+	wep_rad[117] = 16;
 
 	wep_name[118] = "ULTRA SHOVEL"
 	wep_type[118] = 0
@@ -1314,7 +1314,7 @@ function scrWeapons() {
 	wep_area[118] = 19//4 originally?
 	wep_text[118] = "dig you to death"
 	wep_swap[118] = sndSwapHammer
-	wep_rad[118] = 17;
+	wep_rad[118] = 14;
 
 	wep_name[119] = "AUTO FLAK CANNON"
 	wep_type[119] = 2
@@ -1336,7 +1336,7 @@ function scrWeapons() {
 	wep_area[120] = 21
 	wep_text[120] = "ultranado"
 	wep_swap[120] = sndSwapEnergy
-	wep_rad[120] = 19;
+	wep_rad[120] = 16;
 
 	wep_name[121] = "ULTRA FLAMETHROWER"
 	wep_type[121] = 4
@@ -1347,7 +1347,7 @@ function scrWeapons() {
 	wep_area[121] = 20
 	wep_text[121] = "ultra breath"
 	wep_swap[121] = sndSwapDragon
-	wep_rad[121] = 8;
+	wep_rad[121] = 5;
 
 	wep_name[122] = "FLARE SHOTGUN"
 	wep_type[122] = 4
@@ -2139,7 +2139,7 @@ function scrWeapons() {
 	wep_area[193] = 22
 	wep_text[193] = "ultra sharp"
 	wep_swap[193] = sndSwapBow
-	wep_rad[193] = 40;
+	wep_rad[193] = 20;
 
 	wep_name[194] = "KRAKEN GUN"
 	wep_type[194] = 4
@@ -2205,7 +2205,7 @@ function scrWeapons() {
 	wep_area[199] = 19
 	wep_text[199] = "I see green"
 	wep_swap[199] = sndSwapBow
-	wep_rad[199] = 22;
+	wep_rad[199] = 20;
 
 	wep_name[200] = "PANDA STICK"
 	wep_type[200] = 0
@@ -2700,7 +2700,7 @@ function scrWeapons() {
 	wep_area[244] = 24
 	wep_text[244] = "the tam gun"
 	wep_swap[244] = sndSwapEnergy
-	wep_rad[244] = 26;
+	wep_rad[244] = 22;
 
 	wep_name[245] = "LIGHTNING MINIGUN"
 	wep_type[245] = 5
@@ -3195,7 +3195,7 @@ function scrWeapons() {
 	wep_area[289] = 18
 	wep_text[289] = "biological slugs"
 	wep_swap[289] = sndSwapShotgun
-	wep_rad[289] = 20;
+	wep_rad[289] = 12;
 
 	wep_name[290] = "GOLDEN BOUNCER SMG"
 	wep_type[290] = 1
@@ -3283,7 +3283,7 @@ function scrWeapons() {
 	wep_area[297] = 20
 	wep_text[297] = "green ball of green pellets"
 	wep_swap[297] = sndSwapExplosive
-	wep_rad[297] = 25;//17ultrashotgun
+	wep_rad[297] = 20;//14ultrashotgun
 
 	wep_name[298] = "GOLDEN OOPS GUN"
 	wep_type[298] = 1
@@ -3305,7 +3305,7 @@ function scrWeapons() {
 	wep_area[299] = 20
 	wep_text[299] = "ultra wave fun"
 	wep_swap[299] = sndSwapShotgun
-	wep_rad[299] = 25;
+	wep_rad[299] = 20;
 
 	wep_name[300] = "LASER WAVE GUN"
 	wep_type[300] = 5
@@ -3327,7 +3327,7 @@ function scrWeapons() {
 	wep_area[301] = 19
 	wep_text[301] = "ultra fingers"
 	wep_swap[301] = sndSwapHammer
-	wep_rad[301] = 18;
+	wep_rad[301] = 12;//ultra shovel 14
 
 	wep_name[302] = "ULTRA SPLINTER GUN"
 	wep_type[302] = 3
@@ -3338,7 +3338,7 @@ function scrWeapons() {
 	wep_area[302] = 20
 	wep_text[302] = "dodge this"
 	wep_swap[302] = sndSwapBow
-	wep_rad[302] = 16;
+	wep_rad[302] = 12;//crossbow 12
 
 	wep_name[303] = "ULTRA SUPER CROSSBOW"
 	wep_type[303] = 3
@@ -3349,7 +3349,7 @@ function scrWeapons() {
 	wep_area[303] = 22
 	wep_text[303] = "this will waste your rads"
 	wep_swap[303] = sndSwapBow
-	wep_rad[303] = 60;
+	wep_rad[303] = 48;//ultra bo
 
 	wep_name[304] = "ULTRA INFUSER"
 	wep_type[304] = 3
@@ -3768,7 +3768,7 @@ function scrWeapons() {
 	wep_area[341] = 21
 	wep_text[341] = "true power of the ocean"
 	wep_swap[341] = sndSwapDragon
-	wep_rad[341] = 29;
+	wep_rad[341] = 18;
 
 	wep_name[342] = "KRAKEN ION CANNON"
 	wep_type[342] = 4
@@ -4079,10 +4079,10 @@ function scrWeapons() {
 	wep_load[369] = 5
 	wep_cost[369] = 0
 	wep_sprt[369] = sprUltraScrewDriver
-	wep_area[369] = 19
+	wep_area[369] = 18
 	wep_text[369] = "ultra shanking"
 	wep_swap[369] = sndSwapSword
-	wep_rad[369] = 5;
+	wep_rad[369] = 4;
 	
 	wep_name[370] = "OBSIDIAN THROWING KNIFE"
 	wep_type[370] = 0
@@ -4104,7 +4104,7 @@ function scrWeapons() {
 	wep_area[371] = 22
 	wep_text[371] = "time to rain bullets"
 	wep_swap[371] = sndSwapMachinegun
-	wep_rad[371] = 5;
+	wep_rad[371] = 3;
 	
 	wep_name[372] = "VAN CANNON"
 	wep_type[372] = 4
@@ -4722,7 +4722,7 @@ function scrWeapons() {
 	wep_area[427] = -1
 	wep_text[427] = ""
 	wep_swap[427] = sndSwapMachinegun
-	wep_rad[427] = 0;
+	wep_rad[427] = 6;
 
 	/*
 	
@@ -4751,9 +4751,15 @@ function scrWeapons() {
 	}
 
 	if instance_exists(Player){
-	typ_amax[0] = 1000 typ_amax[1] = 255+Player.skill_got[10]*300 typ_amax[2] = 55+Player.skill_got[10]*44 typ_amax[3] = 55+Player.skill_got[10]*44 typ_amax[4] = 55+Player.skill_got[10]*44 typ_amax[5] = 55+Player.skill_got[10]*44}
+	typ_amax[0] = 1000 typ_amax[1] = 255+Player.skill_got[10]*300 typ_amax[2] = 55+Player.skill_got[10]*44 typ_amax[3] = 55+Player.skill_got[10]*44 typ_amax[4] = 55+Player.skill_got[10]*44 typ_amax[5] = 55+Player.skill_got[10]*44
+	
+		if Player.ultra_got[15] == 1//Power overwhelming
+		{
+			scrWeaponsAdjustCostPowerOverwhelming();	
+		}
+	}
 	else{
-	typ_amax[0] = 1000 typ_amax[1] = 255 typ_amax[2] = 55 typ_amax[3] = 55 typ_amax[4] = 55 typ_amax[5] = 55}
+		typ_amax[0] = 1000 typ_amax[1] = 255 typ_amax[2] = 55 typ_amax[3] = 55 typ_amax[4] = 55 typ_amax[5] = 55}
 
 	typ_name[0] = "MELEE" typ_name[1] = "BULLETS" typ_name[2] = "SHELLS" typ_name[3] = "BOLTS" typ_name[4] = "EXPLOSIVES" typ_name[5] = "ENERGY"
 

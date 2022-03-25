@@ -148,7 +148,7 @@ betterboltmarrow = 0;
 scrRaces()
 scrSkills()
 scrUltras()
-scrWeapons()
+scrWeapons();
 scrCrowns()
 
 bskin = UberCont.skin[race];

@@ -31,7 +31,14 @@ else if skill == 88 //ROGUE ULTRA POPO
 	Player.rogueammo = 0;
 	Player.rogueammomax = 0;
 }
-
+else if skill == 15
+{
+	with Player
+	{
+		scrWeaponsAdjustCostPowerOverwhelming();
+		Player.maxlevel += 1;//higher level cap
+	}
+}
 if skill = 97 // MUTATION SMITH WEAPON MUTATOR BETTER WEAPON SPECIFIC MUTATIONS
 {
 
@@ -86,12 +93,6 @@ Player.my_health = Player.maxhealth;}
 Player.skillpoints+=4;//amounth of mutations
 //Player.skillsChosen=0;//no ultras pls
 
-}
-
-if skill==15
-{
-Player.maxlevel=12;//higher level cap
-//Player.skillsChosen=0;//no ultras pls
 }
 
 //ARMOUR UP viking

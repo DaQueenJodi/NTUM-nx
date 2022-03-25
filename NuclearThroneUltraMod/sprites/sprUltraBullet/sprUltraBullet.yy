@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprUltraBullet","path":"sprites/sprUltraBullet/sprUltraBullet.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprUltraBullet",
     "tags": [],
     "resourceType": "GMSequence",
   },

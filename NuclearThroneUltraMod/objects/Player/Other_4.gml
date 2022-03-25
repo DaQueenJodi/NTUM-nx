@@ -31,10 +31,6 @@ movethislevel=true;
 portalstrikesusedthislevel=0;
 
 
-//Unlock Angel
-if skill_got[1] && skill_got[9] && skill_got[7] && skill_got[25]
-scrUnlockCharacter(18,"FOR TAKING RHINO SKIN,#STRONG SPIRIT, BLOOD LUST#AND SECOND STOMACH")
-
 if area = 2 && loops>0//UNLOCK LOOP START
 scrUnlockGameMode(21,"FOR REACHING SEWERS LOOP 1")
 

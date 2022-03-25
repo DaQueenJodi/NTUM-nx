@@ -66,11 +66,11 @@ function scrUltras() {
 	    ultra_tips[14] = "three is not enough"
     
 	    ultra_name[15] = "POWER OVERWHELMING"
-	    ultra_text[15] = "INCREASE LEVEL CAP BY 2#EVEN MORE RADS"
+	    ultra_text[15] = "INCREASE LEVEL CAP BY 1#EVEN MORE RADS#HALF AMMO COST FOR ALL WEAPONS#ALL WEAPONS COST A SMALL AMOUNT OF RADS"
 	    ultra_tips[15] = "ultra ultra ultra ultra"
     
 	    ultra_name[16] = "DOOMED"
-	    ultra_text[16] = "THE ENEMY THAT DIES LAST IN A LEVEL#IS DEAD IN THE NEXT LEVEL#MORE BLOOD DAMAGE"
+	    ultra_text[16] = "THE TYPE OF ENEMY THAT DIES LAST IN AN AREA#IS DEAD IN THE NEXT AREA#MORE BLOOD DAMAGE"
 	    ultra_tips[16] = "blood sweat and tears"
     
 	//PLANT 
