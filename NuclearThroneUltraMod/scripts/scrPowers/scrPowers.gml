@@ -492,6 +492,7 @@ function scrPowers() {
 
 	if race==15//Atom
 	{
+		var laserscale = 0.1;
 	if ultra_got[60] && point_distance(x,y,mouse_x,mouse_y)<300//Ultra D
 	{
 	var tel;
@@ -511,7 +512,7 @@ function scrPowers() {
 
 	if (tel==true)
 	{
-    
+		
 	    if place_meeting(mouse_x,mouse_y,Floor)
 	    {
 		    if alarm[3]<1
@@ -533,6 +534,18 @@ function scrPowers() {
 		    {
 			    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
 			    snd_play_2d(sndLightning3);
+				
+				if Player.skill_got[17] = 1
+					snd_play_fire(sndLaserUpg)
+				else
+					snd_play_fire(sndLaser)
+				with instance_create(x,y,Laser)
+				{
+					image_angle = point_direction(x,y,other.xprevious,other.yprevious);
+					image_yscale -= laserscale;
+					team = other.team
+					event_perform(ev_alarm,0)
+				}
 
 			    with instance_create(x,y,Lightning)
 					{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
@@ -543,7 +556,6 @@ function scrPowers() {
 					with instance_create(x,y,LightningSpawn)
 					image_angle = other.image_angle}
 		    }
-    
     
 		    repeat(5) {
 			    with instance_create(x,y,Smoke)
@@ -578,28 +590,36 @@ function scrPowers() {
     
 		    alarm[8]=2;
     
-		    x=xx;;
-		    y=yy;;
+		    x=xx;
+		    y=yy;
 		    BackCont.viewx2 += lengthdir_x(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 		    BackCont.viewy2 += lengthdir_y(20,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 		    BackCont.shake += 2    
     
 		    if skill_got[5]//thronebutt
 		    {
-		    snd_play_2d(sndLightning3);
-		    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
-    
-
-		    with instance_create(x,y,Lightning)
-			{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
-			team = other.team
-			ammo = 6
-			event_perform(ev_alarm,0)
-			visible = 0
-			with instance_create(x,y,LightningSpawn)
-			image_angle = other.image_angle}
-
-
+			    snd_play_2d(sndLightning3);
+			    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
+			
+				if Player.skill_got[17] = 1
+					snd_play_fire(sndLaserUpg)
+				else
+					snd_play_fire(sndLaser)
+				with instance_create(x,y,Laser)
+				{
+					image_angle = point_direction(x,y,other.xprevious,other.yprevious);
+					image_yscale -= laserscale;
+					team = other.team
+					event_perform(ev_alarm,0)
+				}
+			    with instance_create(x,y,Lightning)
+				{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
+				team = other.team
+				ammo = 6
+				event_perform(ev_alarm,0)
+				visible = 0
+				with instance_create(x,y,LightningSpawn)
+				image_angle = other.image_angle}
 		    }
     
     
@@ -626,34 +646,46 @@ function scrPowers() {
   
 	    if skill_got[5]//thronebutt
 	    {
-	    snd_play_2d(sndLightning3);
-	    instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
+			snd_play_2d(sndLightning3);
+			instance_create(x+random(24)-12,y+random(24)-12,PlasmaImpact);
+		
+			if Player.skill_got[17] = 1
+				snd_play_fire(sndLaserUpg)
+			else
+				snd_play_fire(sndLaser)
+			with instance_create(x,y,Laser)
+			{
+				image_angle = point_direction(x,y,other.xprevious,other.yprevious);
+				team = other.team
+				image_yscale -= laserscale;
+				event_perform(ev_alarm,0)
+			}
     
-	    if ultra_got[59]=1
-	{
+		    if ultra_got[59]=1
+			{
 
-	    with instance_create(x,y,Lightning)
-	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
-	team = other.team
-	ammo = 9
-	event_perform(ev_alarm,0)
-	visible = 0
-	with instance_create(x,y,LightningSpawn)
-	image_angle = other.image_angle}
+			    with instance_create(x,y,Lightning)
+			{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
+			team = other.team
+			ammo = 9
+			event_perform(ev_alarm,0)
+			visible = 0
+			with instance_create(x,y,LightningSpawn)
+			image_angle = other.image_angle}
 
-	}
-	else{
+			}
+			else{
 
-	with instance_create(x,y,Lightning)
-	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
-	team = other.team
-	ammo = 6
-	event_perform(ev_alarm,0)
-	visible = 0
-	with instance_create(x,y,LightningSpawn)
-	image_angle = other.image_angle}
+			with instance_create(x,y,Lightning)
+			{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(360))*other.accuracy
+			team = other.team
+			ammo = 6
+			event_perform(ev_alarm,0)
+			visible = 0
+			with instance_create(x,y,LightningSpawn)
+			image_angle = other.image_angle}
 
-	}
+			}
 	    }
     
 

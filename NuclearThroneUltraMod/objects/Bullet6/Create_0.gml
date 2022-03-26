@@ -7,12 +7,12 @@ if instance_exists(Player)
 {
 if Player.skill_got[15] = 1
 {
-wallbounce = 6
+wallbounce = 7
 alarm[1]=3;
 
 if Player.race=25
 {
-wallbounce = 7;
+wallbounce = 8;
 
 if Player.ultra_got[97]
 {

@@ -1005,35 +1005,75 @@ can_shoot = 0
 else
 can_shoot = 1
 
+var homeBoost = 0;
+
 if (ultra_got[42]==1)//HUNTER ULTRA B Homing projectiles
+	homeBoost += 4;
+if skill_got[19] == 1
+{
+	homeBoost += 1;
+	if race == 25
+		homeBoost += 0.2;
+}
+///homing projectiles mod
+var modHomeBoost = 0.5;
+if skill_got[30] == 1
+	modHomeBoost += 0.4;
+
+if wepmod1 == 13
+	homeBoost += modHomeBoost;
+if wepmod2 == 13
+	homeBoost += modHomeBoost;
+if wepmod3 == 13
+	homeBoost += modHomeBoost;
+if wepmod4 == 13
+	homeBoost += modHomeBoost;
+
+if homeBoost > 0
 {
     with projectile
     {
-    
-        if (team==2)
+        if (team == other.team)
         {
-        if object_index!=Laser&&object_index!=MegaLaser&&object_index!=Lightning&&object_index!=Tentacle
-        {
-        if instance_exists(enemy)
-        {
-            if collision_line(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y,Wall,0,0) < 0
-            {
-                if (direction<point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y) )
-                {
-                direction+=4+Player.skill_got[19];//eagle eyes improves that shit
-                image_angle+=4+Player.skill_got[19];
-                }
-                else if (direction>point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y) )
-                {
-                direction-=4+Player.skill_got[19];
-                image_angle-=4+Player.skill_got[19];
-                }
-            }
-        }
-        }
+	        if ProjectileCanBeMoved()
+	        {
+		        if instance_exists(enemy)
+		        {
+					var t = instance_nearest(x,y,enemy)
+		            if collision_line(x,y,t.x,t.y,Wall,0,0) < 0// && point_distance(x,y,t.x,t.y) < 128
+		            {
+						var d = point_direction(x,y,t.x,t.y)
+						var ad = angle_difference(d,direction);
+		                if (ad > 2)
+		                {
+							direction+=homeBoost;
+							image_angle+=homeBoost;
+		                }
+		                else if (ad < -2)
+		                {
+							direction-=homeBoost;
+							image_angle-=homeBoost;
+		                }
+		            }
+		        }
+	        }
         }
     }
 }
+var reloadBoost = 0.8;
+		if skill_got[30]
+			reloadBoost = 0.7;
+		if wepmod1=12
+		reload*=reloadBoost
+
+		if wepmod2=12
+		reload*=reloadBoost
+
+		if wepmod3=12
+		reload*=reloadBoost
+
+		if wepmod4=12
+		reload*=reloadBoost
 
 if (ultra_got[43]=1)//HUNTER ULTRA C Focused projectiles
 {
@@ -1042,7 +1082,7 @@ if (ultra_got[43]=1)//HUNTER ULTRA C Focused projectiles
 	    with projectile
 		{
 		if x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 ) 
-		 and object_index != EnemyLaser and object_index!=Laser&&object_index!=MegaLaser&&object_index!=Lightning&&object_index!=Tentacle
+		 and ProjectileCanBeMoved()
 		{
 			var str = 2.0;
 			if place_free(x+lengthdir_x(str,point_direction(x,y,Marker.x,Marker.y)),y)
@@ -1066,64 +1106,7 @@ if (ultra_got[43]=1)//HUNTER ULTRA C Focused projectiles
 		}
     }
 }
-/*
-if race=12
-{
-if instance_exists(YungCuzDupe){//Yung cuz's dupes
-    with enemy
-    {
-    if point_distance(x,y,Player.x,Player.y)<point_distance(x,y,instance_nearest(x,y,YungCuzDupe).x,instance_nearest(x,y,YungCuzDupe).y)
-    {target = instance_nearest(x,y,Player)}
-    else{target = instance_nearest(x,y,YungCuzDupe)}
-    }
-} 
 
-}
-
-/* */
-///homing projectiles mod
-
-if moddelay=0{
-
-with projectile
-{
-    if team=other.team//player projectile
-    {
-        if Mod1=13||Mod2=13||Mod3=13||Mod4=13
-        { 
-            if (team==2)
-            {
-                if object_index!=Laser&&object_index!=MegaLaser&&object_index!=Lightning&&object_index!=Tentacle
-                {
-                    if instance_exists(enemy)
-                    {
-						var homeBoost = 1;
-						if instance_exists(Player) && Player.skill_got[30]
-							homeBoost = 1.5;
-							
-                        if collision_line(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y,Wall,0,0) < 0
-                        {
-	                        if Mod1=13
-								motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),homeBoost);
-	                        if Mod2=13
-								motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),homeBoost);
-	                        if Mod3=13
-								motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),homeBoost);
-	                        if Mod4=13
-								motion_add(point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y),homeBoost);
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
-
-}
-
-}
-
-/* */
 ///ELEMENTOR ultra D &strong spirit
 if skill_got[25]//strong spirit
     {
@@ -1218,9 +1201,11 @@ if area=108&&race!=18&&race!=24//angel & elementor don't bother with this stuff
     
     if getFrozen>24
     {
-    instance_create(x,y,FrozenPlayer);
-    frozen=15;
-    getFrozen=0;
+		my_health -= 1;
+		snd_play_2d(snd_hurt);
+	    instance_create(x,y,FrozenPlayer);
+	    frozen=15;
+	    getFrozen=0;
     }
 
     }

@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskHeavyBullet",
-    "path": "sprites/mskHeavyBullet/mskHeavyBullet.yy",
+    "name": "mskHeavyBloodBullet",
+    "path": "sprites/mskHeavyBloodBullet/mskHeavyBloodBullet.yy",
   },
   "persistent": false,
   "parentObjectId": {

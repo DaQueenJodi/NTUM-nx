@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndBouncerHitWall",
-  "duration": 0.0,
+  "duration": 0.093531,
   "parent": {
     "name": "Bullet",
     "path": "folders/Sounds/Weapons/Bullet.yy",

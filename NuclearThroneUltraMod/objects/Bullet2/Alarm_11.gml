@@ -1,4 +1,4 @@
-/// @description Change to bullet
+/// @description ultramod
 var um = GetPlayerUltramod();
 if um == ultramods.bulletPellet
 {

@@ -29,7 +29,3 @@ alarm[2] = 5
 
 repeat(16)
 instance_create(x,y,ToxicGas)
-
-//Unlock Frog
-scrUnlockCharacter(23,"FOR HAVING A SUPER FROG#ARUNNING AROUND")
-

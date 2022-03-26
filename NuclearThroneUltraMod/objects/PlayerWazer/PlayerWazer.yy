@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "projectile",
-    "path": "objects/projectile/projectile.yy",
+    "name": "Wazer",
+    "path": "objects/Wazer/Wazer.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

@@ -19,3 +19,5 @@ repeat(3)
 with instance_create(x,y,ExploderExplo)
 motion_add(random(360),random(2)+2)
 }
+
+scrUnlockCharacter(23,"FOR KILLING MOTHER!#THAT'S KINDA GRIM")

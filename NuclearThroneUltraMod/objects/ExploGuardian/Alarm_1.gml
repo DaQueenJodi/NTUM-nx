@@ -14,6 +14,7 @@ motion_add(direction,1);
 			charge = true;
 			sprite_index = spr_charge;
 			spr_idle = spr_charge;
+			spr_walk = spr_charge;
 			spr_hurt = spr_charge_hurt;
 			snd_play(sndExploGuardianCharge);
 			image_index = 0;

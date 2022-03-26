@@ -4714,7 +4714,7 @@ function scrFire() {
 	if wep_type[wep] = 0 || wep = 24 || wep = 36 || wep = 53 || wep=198 || wep=37|| wep=126|| wep=108|| wep=109|| wep=123 || wep = 222|| wep=239//if wep_type[wep]==0 // You are holding a melee weapon
 	    {
 	    with projectile{
-	    if team=2&& typ=0 && object_index!=Laser && object_index!=MegaLaser && object_index!=Tentacle && object_index!= Lightning{//if team is Player
+	    if team=2&& typ=0 && ProjectileCanBeMoved(){//if team is Player
 	    //image_speed/=2;}//double the damage
 	    dmg*=1.5;
 	    BackCont.shake += 5}}
@@ -4838,10 +4838,9 @@ function scrFire() {
 	6 lightning
 	*/
 	if object_index=Player{
-	if moddelay=0 {
-		var reloadBoost = 0.85;
+		var reloadBoost = 0.9;
 		if Player.skill_got[30]
-			reloadBoost = 0.8;
+			reloadBoost = 0.9;
 		if wepmod1=12
 		reload*=reloadBoost
 
@@ -4856,43 +4855,50 @@ function scrFire() {
 
 		with projectile
 		{
-		if team=other.team//player projectile
-		{
-			Mod1=other.wepmod1;
-			Mod2=other.wepmod2;
-			Mod3=other.wepmod3;
-			var speedBoost = 1.5;
-		if Player.skill_got[30]
-		{
-			Mod4=other.wepmod4;
-			speedBoost = 1.6;
-		}
-
-		    //Projectile speed mod
-		    if Mod1==11
-		    {
-		    speed*=speedBoost
-		    Mod1=0;
-		    }
-		    if Mod2==11
-		    {
-		    speed*=speedBoost
-		    Mod2=0;
-		    }
-		    if Mod3==11
-		    {
-		    speed*=speedBoost
-		    Mod3=0;
-		    }
-		    if Mod4==11
-		    {
-		    speed*=speedBoost
-		    Mod4=0;
-		    }
-		}
-
+			if team=other.team//player projectile
+			{
+				Mod1=other.wepmod1;
+				Mod2=other.wepmod2;
+				Mod3=other.wepmod3;
+				if !hadSpeedApplied && speed > 0
+				{
+					hadSpeedApplied = true;
+					var speedBoost = 1.11;
+					var spda = 2.4;
+					var speedAdd = 0;
+					if Player.skill_got[30]
+					{
+						Mod4=other.wepmod4;
+						speedBoost = 1.15;
+						spda = 4;
+					}
+				    //Projectile speed mod
+				    if Mod1==11
+				    {
+						speed*=speedBoost
+						speedAdd += spda;
+				    }
+				    if Mod2==11
+				    {
+						speed*=speedBoost
+						speedAdd += spda;
+				    }
+				    if Mod3==11
+				    {
+						speed*=speedBoost
+						speedAdd += spda;
+				    }
+				    if Mod4==11
+				    {
+						speed*=speedBoost
+						speedAdd += spda;
+				    }
+					speed += speedAdd;
+					speed = min(speed,40);
+					debug("speed it: ",speed);
+				}
+			}
 		}   
-	}   
 
 	firedthislevel=true;
 

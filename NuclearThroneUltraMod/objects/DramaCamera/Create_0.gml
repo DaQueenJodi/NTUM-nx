@@ -28,9 +28,11 @@ if Player.area = 2
 {
 //with instance_create(x,y,Drama)
 name = "MOM";
-if random(80)<1
+if random(30)<1
 {
-	name = choose("BALL MOM","MUMMY","FROG QUEEN","BALL MAMA");	
+	name = choose("BALL MOM","MUMMY","FROG QUEEN","BALL MAMA",
+	"PLEASE I'M A MOTHER#OF FIVE CHILDREN#DON'T KILL ME",
+	"MISS. FROG#HAPPILY MARRIED","MOMMY BALL");	
 }
 }
 if Player.area = 3
