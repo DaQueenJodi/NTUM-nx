@@ -27,9 +27,9 @@ function scrModHit() {
 		with Player
 		{
 		    if skill_got[30]//power craving
-				moddelay=17;
+				moddelay=16;
 		    else
-				moddelay=30;
+				moddelay=26;
 			if ultra_got[65] == 1//Weapon smith Ultra A
 				moddelay -= 10;
     
