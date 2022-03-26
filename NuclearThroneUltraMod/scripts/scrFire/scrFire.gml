@@ -4702,9 +4702,9 @@ function scrFire() {
 
 	if Player.ultra_got[56]==1//PANDA Meditate rapid hands melee firerate
 	{
-	if wep_type[wep] = 0 || wep = 24 || wep = 36 || wep = 53 || wep=198 || wep=37|| wep=126|| wep=108|| wep=109|| wep=122|| wep=123 || wep=239//holding a melee weapon
+		if scrMeleeWeapons()
 	    {
-	    reload*=0.6;//0.6;
+			reload*=0.6;//0.6;
 	    }
 	}
 
@@ -4725,19 +4725,18 @@ function scrFire() {
 
 	    if Player.ultra_got[23]//ULTRA C
 	    {
-	    if wep_type[wep]==2 // You are holding a shotgun
-	    {
-	    reload *=0.4;//shotgun speed
-	    //ammo[1] += wep_cost[wep]//bullet magic
+		    if wep_type[wep] == 2 // You are holding a shotgun
+		    {
+			    reload *=0.4;//shotgun speed
+			    //ammo[1] += wep_cost[wep]//bullet magic
     
-	    if (ammo[1] + wep_cost[wep] >=typ_amax[1])//bullet magic
-	    {
-	    ammo[1]=typ_amax[1]//typ_amax[wep_type[bwep]];
-	    }
-	    else
-	    ammo[1] += wep_cost[wep];
-    
-	    }
+			    if (ammo[1] + wep_cost[wep] >=typ_amax[1])//bullet magic
+			    {
+					ammo[1]=typ_amax[1]//typ_amax[wep_type[bwep]];
+			    }
+			    else
+					ammo[1] += wep_cost[wep];
+		    }
 	    }
     
     
@@ -4802,16 +4801,16 @@ function scrFire() {
 
 	    if Player.ultra_got[67]
 	    {
-	    //Ultra c one with the gun
-	    if wep_type[wep] != 0 && wep != 24 && wep != 36 && wep != 53 && wep!=198 && wep!=37 && wep!=126 && wep!=108 && wep!=109 && wep!=123 && wep != 222 && wep!=239//if wep_type[wep]==0 // You are holding a melee weapon
-	    {
-	        if wep_cost[wep]>1//if ammo cost is more than 1
-	        ammo[wep_type[wep]]+=1;//return one ammo
-	    }
-	    else//thats a melee weapon!
-	    {
-	    reload*=2
-	    }
+		    //Ultra c one with the gun
+		    if !scrMeleeWeapons()
+		    {
+		        if wep_cost[wep]>1//if ammo cost is more than 1
+		        ammo[wep_type[wep]]+=1;//return one ammo
+		    }
+		    else//thats a melee weapon!
+		    {
+				reload*=2
+		    }
 	    }
     
 
@@ -4820,9 +4819,7 @@ function scrFire() {
 
 	if Player.curse//super minor curse weapon fire rate increase
 	{
-	reload -=0.02;
-	//reload -= (1-(my_health/maxhealth))*0.7 stress
-
+		reload -=0.03;
 	}
 
 	/*WEAPON MODS
@@ -4837,22 +4834,7 @@ function scrFire() {
 	5 blood
 	6 lightning
 	*/
-	if object_index=Player{
-		var reloadBoost = 0.9;
-		if Player.skill_got[30]
-			reloadBoost = 0.9;
-		if wepmod1=12
-		reload*=reloadBoost
-
-		if wepmod2=12
-		reload*=reloadBoost
-
-		if wepmod3=12
-		reload*=reloadBoost
-
-		if wepmod4=12
-		reload*=reloadBoost
-
+	if object_index = Player {
 		with projectile
 		{
 			if team=other.team//player projectile
@@ -4866,11 +4848,11 @@ function scrFire() {
 					var speedBoost = 1.11;
 					var spda = 2.4;
 					var speedAdd = 0;
-					if Player.skill_got[30]
+					if Player.skill_got[30] == 1
 					{
 						Mod4=other.wepmod4;
 						speedBoost = 1.15;
-						spda = 4;
+						spda = 3.9;
 					}
 				    //Projectile speed mod
 				    if Mod1==11
@@ -4895,7 +4877,6 @@ function scrFire() {
 				    }
 					speed += speedAdd;
 					speed = min(speed,40);
-					debug("speed it: ",speed);
 				}
 			}
 		}   
@@ -4905,10 +4886,25 @@ function scrFire() {
 	fired=true;
 
 	}
-	if Player.ultra_got[80]//business hog gold digger
+	var reloadBoost = 0.82;
+	if Player.skill_got[30] == 1
+		reloadBoost = 0.74;
+	
+	if wepmod1==12
+		reload*=reloadBoost
+	
+	if wepmod2==12
+	reload*=reloadBoost
+
+	if wepmod3==12
+	reload*=reloadBoost
+
+	if wepmod4==12
+	reload*=reloadBoost
+	if Player.ultra_got[80] == 1//business hog gold digger
 	{
-	if scrCheckGold(wep_name[wep])//string_copy(wep_name[wep],0,4) = "GOLD"&&loops<1
-	reload*=0.4;
+		if scrCheckGold(wep_name[wep])//string_copy(wep_name[wep],0,4) = "GOLD"&&loops<1
+		reload*=0.4;
 	}
 
 

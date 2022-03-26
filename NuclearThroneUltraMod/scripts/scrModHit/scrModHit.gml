@@ -22,24 +22,14 @@ function scrModHit() {
 	15 splinter
 	16 morph
 	*/
-	//if other.type=0//MELEE WEAPONS spawn on top of enemy
-	//{
-
-
-
-
-
-	//}
 	if instance_exists(Player) && Player.moddelay < 1
 	{
-	with Player
-	{
-	    
-    
+		with Player
+		{
 		    if skill_got[30]//power craving
-				moddelay=15;
+				moddelay=17;
 		    else
-				moddelay=25;
+				moddelay=30;
 			if ultra_got[65] == 1//Weapon smith Ultra A
 				moddelay -= 10;
     
@@ -187,7 +177,7 @@ function scrModHit() {
 					{
 						team=other.team;
 						direction=random(360);
-						hits -= 2;
+						hits -= 1;
 					}
 				break;
 
@@ -199,7 +189,7 @@ function scrModHit() {
 					image_angle = direction
 					team = 2
 					mask_index=mskPickupThroughWall;
-					alarm[0] = 6;
+					alarm[0] = 5;
 				}
 				break;
 
@@ -214,7 +204,7 @@ function scrModHit() {
 						image_angle = direction
 						team = 2
 						mask_index=mskPickupThroughWall;
-						alarm[0] = 4;
+						alarm[0] = 3;
 					}
 				}
 				break;
@@ -228,10 +218,10 @@ function scrModHit() {
 
 				case 15://SPLINTER
 
-				snd_play(sndSplinterGun,0.05,true)
+				snd_play(sndSplinterMinigun,0.05,true)
 				repeat(3)
 				{
-					with instance_create(x,y,Splinter)//5 splinters
+					with instance_create(other.x,other.y,Splinter)//5 splinters
 					{
 						motion_add(random(360),20+random(4))
 						image_angle = direction
@@ -242,7 +232,7 @@ function scrModHit() {
 				break;
 
 				case 16://MORPH
-				with instance_create(x,y,Morph)
+				with instance_create(other.x,other.y,Morph)
 					scrCanHumphry();
 				break;
 	

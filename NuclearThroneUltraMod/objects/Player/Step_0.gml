@@ -545,7 +545,7 @@ wep_auto[wep] = 1 wep_auto[bwep] = 1}
 
 
 if (KeyCont.key_fire[p] = 1 or keyfire = 1) and wep_auto[wep] = 0 and ((wep_type[wep] = 0 or wep_type[wep] = 1) or can_shoot = 1) and reload < 15
-clicked = 1
+	clicked = 1
 
 if (KeyCont.key_fire[p] = 1 or keyfire = 1)
 {
@@ -619,8 +619,7 @@ if wep_auto[wep] = 0 and clicked = 1
     
     }
     else {
-    
-    scrFire()
+		scrFire()
     }
     
 clicked = 0
@@ -784,96 +783,97 @@ if (reload > 0 || breload > 0 || creload > 0)
 
 if reload > 0
 {
-reload -= 1
-if race = 6
-{//YV fire rate boost
-reload -= 0.265//0.25
+	reload -= 1
+	
+	if race = 6
+	{//YV fire rate boost
+		reload -= 0.265//0.25
     
-}
-if ultra_got[21]//ULTRA A
-    {
-    reload -=0.45;
-    }
-//Weaponsmith one with the gun fire rate
+	}
+	if ultra_got[21]//YV ULTRA A
+	{
+		reload -=0.45;
+	}
+	//Weaponsmith one with the gun fire rate
 
-    if ultra_got[67]
-    {
-        //Ultra c one with the gun
-        if wep_type[wep] != 0 && !scrMeleeWeapons()//if wep_type[wep]==0 // You are holding a melee weapon
-        {
-        reload -=0.64;
-        }
-    }
+	    if ultra_got[67]
+	    {
+	        //Ultra c one with the gun
+	        if wep_type[wep] != 0 && !scrMeleeWeapons()//if wep_type[wep]==0 // You are holding a melee weapon
+	        {
+	        reload -=0.64;
+	        }
+	    }
 
-if race=25
-{
-	accuracy=standartAccuracy;
-}
+	if race=25
+	{
+		accuracy=standartAccuracy;
+	}
 
-if skill_got[28] = 1
-{
-//rage
-var rageAccuracy;
-var reduction = rage*0.0054;
-reload -= reduction//0.01//0.009 when cap is 100
-breload -= reduction;
-creload -= reduction;
+	if skill_got[28] = 1
+	{
+	//rage
+	var rageAccuracy;
+	var reduction = rage*0.0054;
+	reload -= reduction//0.01//0.009 when cap is 100
+	breload -= reduction;
+	creload -= reduction;
 
-rageAccuracy = rage*0.001//0.0011// caps at 0.10 increase when cap = 100
-accuracy=standartAccuracy+rageAccuracy;//standartAccuracy will be changed by eagle eyes so this scales with that.
-}
-
-
-if ultra_got[102]//Humphry Ultra B Rapid facial hair growth
-{
-reload -= HumphrySkill*0.0058//0.0055//0.01//0.009 when cap is 100
-}
-
-if race=25
-{
-
-accuracy=accuracy-(HumphrySkill*0.1);
-if accuracy<0
-accuracy=0;
-
-}
+	rageAccuracy = rage*0.001//0.0011// caps at 0.10 increase when cap = 100
+	accuracy=standartAccuracy+rageAccuracy;//standartAccuracy will be changed by eagle eyes so this scales with that.
+	}
 
 
+	if ultra_got[102]//Humphry Ultra B Rapid facial hair growth
+	{
+	reload -= HumphrySkill*0.0058//0.0055//0.01//0.009 when cap is 100
+	}
 
-if reload <= 0
-{
-can_shoot = 1
+	if race=25
+	{
 
-if ammo[wep_type[wep]] < wep_cost[wep] and wep_type[wep] != 0
-scrEmpty()
+	accuracy=accuracy-(HumphrySkill*0.1);
+	if accuracy<0
+	accuracy=0;
 
-wepflip = -wepflip
+	}
 
-if wep_type[wep] = 0
-snd_play(sndMeleeFlip)
 
-if wep_type[wep] = 3
-snd_play(sndCrossReload)
-if string_copy(wep_name[wep],0,6) = "PLASMA"
-{
-if skill_got[17] = 1
-snd_play(sndPlasmaReloadUpg)
-else
-snd_play(sndPlasmaReload)
-}
-if wep_type[wep] = 2
-{
-repeat(wep_cost[wep])
-{with instance_create(x,y,Shell)
-{sprite_index = sprShotShell
-motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(40)-20,2+random(2))}}
 
-wkick = -1
-if wep = 8
-wkick = -2
-snd_play(sndShotReload)
-}
-}
+	if reload <= 0
+	{
+	can_shoot = 1
+
+	if ammo[wep_type[wep]] < wep_cost[wep] and wep_type[wep] != 0
+	scrEmpty()
+
+	wepflip = -wepflip
+
+	if wep_type[wep] = 0
+	snd_play(sndMeleeFlip)
+
+	if wep_type[wep] = 3
+	snd_play(sndCrossReload)
+	if string_copy(wep_name[wep],0,6) = "PLASMA"
+	{
+	if skill_got[17] = 1
+	snd_play(sndPlasmaReloadUpg)
+	else
+	snd_play(sndPlasmaReload)
+	}
+	if wep_type[wep] = 2
+	{
+	repeat(wep_cost[wep])
+	{with instance_create(x,y,Shell)
+	{sprite_index = sprShotShell
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(40)-20,2+random(2))}}
+
+	wkick = -1
+	if wep = 8
+	wkick = -2
+	snd_play(sndShotReload)
+	}
+	}
 }
 if race = 7 and breload > 0//steroids
 {
@@ -1018,7 +1018,7 @@ if skill_got[19] == 1
 ///homing projectiles mod
 var modHomeBoost = 0.5;
 if skill_got[30] == 1
-	modHomeBoost += 0.4;
+	modHomeBoost += 0.34;
 
 if wepmod1 == 13
 	homeBoost += modHomeBoost;
@@ -1060,20 +1060,6 @@ if homeBoost > 0
         }
     }
 }
-var reloadBoost = 0.8;
-		if skill_got[30]
-			reloadBoost = 0.7;
-		if wepmod1=12
-		reload*=reloadBoost
-
-		if wepmod2=12
-		reload*=reloadBoost
-
-		if wepmod3=12
-		reload*=reloadBoost
-
-		if wepmod4=12
-		reload*=reloadBoost
 
 if (ultra_got[43]=1)//HUNTER ULTRA C Focused projectiles
 {

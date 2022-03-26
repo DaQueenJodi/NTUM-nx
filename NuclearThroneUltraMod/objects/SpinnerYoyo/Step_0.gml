@@ -9,12 +9,40 @@ y = ty + lengthdir_y(length,oDir);
 if instance_exists(Player) and instance_exists(enemy)
 {
 	var dir = instance_nearest(x,y,enemy)
-	if Player.skill_got[21] = 1 and point_distance(x,y,dir.x,dir.y) < 48 +Player.betterboltmarrow
+	var home = 0;
+	if Player.skill_got[21] == 1
+		home += 50 + Player.betterboltmarrow;
+	if Player.skill_got[19] == 1//Eagle eyes
 	{
-		x += lengthdir_x(4,point_direction(x,y,dir.x,dir.y))
-		y += lengthdir_y(4,point_direction(x,y,dir.x,dir.y))
-		oDir -= (angle_difference(oDir,point_direction(tx,ty,dir.x,dir.y))*0.6);
-		length -= speed*0.6;
+		home += 12;
+		if Player.race == 25
+			home += 4;
+	}
+	//home mod
+	var modBoost = 7;
+	if Player.skill_got[30]
+	{
+		modBoost += 5;
+		if Player.race == 25
+			modBoost += 2;
+	}
+	if Mod1 == 13
+		home += modBoost;
+	if Mod2 == 13
+		home += modBoost;
+	if Mod3 == 13
+		home += modBoost;
+	if Mod4 == 13
+		home += modBoost;
+	if home > 0
+	{
+		if point_distance(x,y,dir.x,dir.y) < home
+		{
+			x += lengthdir_x(4,point_direction(x,y,dir.x,dir.y))
+			y += lengthdir_y(4,point_direction(x,y,dir.x,dir.y))
+			oDir -= (angle_difference(oDir,point_direction(tx,ty,dir.x,dir.y))*0.6);
+			length -= speed*0.6;
+		}
 	}
 }
 if speed < 0
