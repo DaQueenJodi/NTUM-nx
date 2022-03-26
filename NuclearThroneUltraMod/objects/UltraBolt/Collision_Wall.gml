@@ -11,8 +11,11 @@ if wallsdestroyed<1{
     }
 }
 else{
-with other
-{instance_destroy();
-instance_create(x,y,FloorExplo);}
-wallsdestroyed-=1;}
+	with other
+	{
+		instance_destroy();
+		instance_create(x,y,FloorExplo);
+	}
+	wallsdestroyed-=1;
+}
 

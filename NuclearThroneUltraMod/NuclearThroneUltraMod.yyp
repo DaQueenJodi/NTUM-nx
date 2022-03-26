@@ -4489,6 +4489,7 @@
     {"id":{"name":"sndNothing2Beam","path":"sounds/sndNothing2Beam/sndNothing2Beam.yy",},"order":3,},
     {"id":{"name":"Bullet9","path":"objects/Bullet9/Bullet9.yy",},"order":109,},
     {"id":{"name":"Nuke","path":"objects/Nuke/Nuke.yy",},"order":110,},
+    {"id":{"name":"sndSwarmRapid","path":"sounds/sndSwarmRapid/sndSwarmRapid.yy",},"order":12,},
     {"id":{"name":"SterNuke","path":"objects/SterNuke/SterNuke.yy",},"order":111,},
     {"id":{"name":"Laser","path":"objects/Laser/Laser.yy",},"order":112,},
     {"id":{"name":"MegaLaser","path":"objects/MegaLaser/MegaLaser.yy",},"order":114,},

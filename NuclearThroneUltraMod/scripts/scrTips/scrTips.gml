@@ -102,8 +102,8 @@ function scrTips() {
 	if Player.area = 6
 	tip = choose("beep boop","nerds","don't push any buttons","randa")
 	if Player.area = 100
-	tip = choose("aw yes","no more placeholder art!","there is value here","visit this place atleast twice","let's hope its not toxic again",
-	"old torches","you can get 3 mods#on a single weapon","mods stack")
+	tip = choose("aw yes","take a crown to uncurse your weapon","there is value here","visit this place atleast twice","let's hope its not toxic again",
+	"old torches","you can get 3 mods#on a single weapon","mods stack","take a crown to unlock$crown start for this character")
 	if Player.area = 102
 	tip = choose("hunger...","it smells nice here","wait for it....")
 	if Player.area = 103

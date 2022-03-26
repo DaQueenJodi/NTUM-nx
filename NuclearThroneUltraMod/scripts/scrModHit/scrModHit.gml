@@ -172,7 +172,7 @@ function scrModHit() {
 				break;
 
 				case 8://swarm
-					snd_play(sndSwarm,0.05,true);
+					snd_play(sndSwarmRapid,0.05,true);
 					with instance_create(other.x+lengthdir_x(4,random(360)),other.y+lengthdir_x(4,random(360)),SwarmBolt)
 					{
 						team=other.team;

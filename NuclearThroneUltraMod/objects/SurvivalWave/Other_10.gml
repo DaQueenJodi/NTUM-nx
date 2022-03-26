@@ -236,7 +236,17 @@ switch (waveNumber)
 				sprite_index = sprFloor106;
 		}
 	break;
-	case 19://pizza sewers
+	case 19://inv oasis
+		song = mus101;
+		with Floor
+		{
+			if styleb
+				sprite_index = sprFloor101B;
+			else
+				sprite_index = sprFloor101;
+		}
+	break;
+	case 20://pizza sewers
 		song = mus102;
 		with Floor
 		{
@@ -246,7 +256,7 @@ switch (waveNumber)
 				sprite_index = sprFloor102;
 		}
 	break;
-	case 20://cursed caves
+	case 21://cursed caves
 		song = mus104;
 		Player.area = 115;
 		with Floor
@@ -257,7 +267,7 @@ switch (waveNumber)
 				sprite_index = sprFloor115;
 		}
 	break;
-	case 21://inv vulcano
+	case 22://inv vulcano
 		song = mus5b;
 		Player.area = 108;
 		with Floor
@@ -268,7 +278,7 @@ switch (waveNumber)
 				sprite_index = sprFloor108;
 		}
 	break;
-	case 22://inv banditland
+	case 23://inv banditland
 		song = musThemeP;
 		with Floor
 		{
@@ -278,7 +288,7 @@ switch (waveNumber)
 				sprite_index = sprFloor0;
 		}
 	break;
-	case 23://inv wonderland
+	case 24://inv wonderland
 		song = mus5b;
 		with Floor
 		{
@@ -2408,29 +2418,34 @@ repeat(1+loops)
 		case 18:
 		break;
 		#endregion
-				
-		#region wave 19 Pizza sewers
+		
+		#region wave 19 Oasis
 		case 19:
 		break;
 		#endregion
 				
-		#region wave 20 Cursed caves
+		#region wave 20 Pizza sewers
 		case 20:
 		break;
 		#endregion
 				
-		#region wave 21 Inverted Vulcano
+		#region wave 1 Cursed caves
 		case 21:
 		break;
 		#endregion
 				
-		#region wave 22 Banditland
+		#region wave 22 Inverted Vulcano
 		case 22:
 		break;
 		#endregion
-		
-		#region wave 22 Inverted wonderland
+				
+		#region wave 23 Banditland
 		case 23:
+		break;
+		#endregion
+		
+		#region wave 24 Inverted wonderland
+		case 24:
 		break;
 		#endregion
 		*/

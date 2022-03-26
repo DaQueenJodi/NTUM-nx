@@ -31,8 +31,8 @@ if target!=0
 motion_add(point_direction(x,y,target.x,target.y),2+Player.skill_got[21]);
 }
 motion_add(direction,3);//the force that pulls it away from the direction?
-if speed>5+Player.skill_got[21]
-speed=5+Player.skill_got[21];
+if speed>mxSpd
+speed=mxSpd
 
 image_angle=direction;
 

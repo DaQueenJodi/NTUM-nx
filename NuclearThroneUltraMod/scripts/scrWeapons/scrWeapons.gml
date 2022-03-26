@@ -1067,7 +1067,7 @@ function scrWeapons() {
 	wep_type[96] = 1
 	wep_auto[96] = 1
 	wep_load[96] = 14
-	wep_cost[96] = 6
+	wep_cost[96] = 5
 	wep_sprt[96] = sprHyperBouncerRifle
 	wep_area[96] = 7
 	wep_text[96] = "hyper bounce time"
@@ -2463,7 +2463,7 @@ function scrWeapons() {
 	wep_name[223] = "BULLET SWORD"
 	wep_type[223] = 1
 	wep_auto[223] = 0
-	wep_load[223] = 9
+	wep_load[223] = 11
 	wep_cost[223] = 5
 	wep_sprt[223] = sprBulletSword
 	wep_area[223] = 10
@@ -2870,8 +2870,8 @@ function scrWeapons() {
 	wep_name[260] = "HYPER HEAVY SLUGGER"
 	wep_type[260] = 2
 	wep_auto[260] = 0
-	wep_load[260] = 11
-	wep_cost[260] = 4
+	wep_load[260] = 13
+	wep_cost[260] = 3
 	wep_sprt[260] = sprHyperHeavySlugger
 	wep_area[260] = 14
 	wep_text[260] = "heavy slugger with infinite range!"
@@ -3675,7 +3675,7 @@ function scrWeapons() {
 	wep_type[333] = 4
 	wep_auto[333] = 1
 	wep_load[333] = 1
-	wep_cost[333] = 1
+	wep_cost[333] = 0.5
 	wep_sprt[333] = sprHyperGatlingBazooka
 	wep_area[333] = 10
 	wep_text[333] = "bazooka minigun"

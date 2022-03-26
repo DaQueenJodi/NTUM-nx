@@ -4,9 +4,7 @@ if hit[0] != noone{
 	xEnd = hit[1];
 	yEnd = hit[2];
 }
-debug("hit: ",hit);
 image_yscale = (yEnd - y)/sprite_height
-debug("yscale: ",image_yscale);
 /*
 var dir;
 dir = 0

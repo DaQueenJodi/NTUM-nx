@@ -2257,6 +2257,7 @@ function scrFire() {
 
 	with instance_create(x,y,BouncerBurst)
 	{
+		pspeed += 3;
 	creator = other.id
 	ammo = 6
 	time = 2

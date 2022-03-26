@@ -194,7 +194,7 @@ if oldarea != area || area == 0 or !audio_is_playing(song) or!audio_exists(song)
         amb = amb5;
     }
 
-    if area = 101 //inverted frozen city
+    if area = 101 //oasis
     {
 
         song = mus101;

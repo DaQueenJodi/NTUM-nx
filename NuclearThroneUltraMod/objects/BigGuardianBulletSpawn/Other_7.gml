@@ -4,6 +4,7 @@ var dir = point_direction(x,y,target.x,target.y);
 snd_play(sndBigBallFire);
 var addspeed = point_distance(x,y,target.x,target.y)*0.0153;
 debug(addspeed);
+addspeed = min(addspeed,20);
 if typ == 2
 {
 	with instance_create(x,y,BigGuardianBullet)

@@ -157,6 +157,8 @@ if race == 7 && bskin == 2
 {
 	gunY = 4;
 }
+if race == 25
+	betterrabbitpaw += 0.02;
 //RACE STUFF
 scrLoadRace();
 
