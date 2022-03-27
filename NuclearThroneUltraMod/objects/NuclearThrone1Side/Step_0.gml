@@ -2,6 +2,10 @@
 if my_health <= 0 && !disable
 {
 	my_health = 99999;
+	with NuclearThrone1
+	{
+		my_health -= 120;
+	}
 	disable = true;
 	BackCont.shake += 20;
 	BackCont.viewy2 += 40*UberCont.opt_shake;
@@ -39,9 +43,9 @@ if my_health <= 0 && !disable
 			{
 				firerate = max(firerate - 1, 1);
 				maxAmmo = max(maxAmmo - 1, 3);
-				gunangle[array_length(gunangle)] = 220;//Add in a left
+				//gunangle[array_length(gunangle)] = 360;//Add in a left
 				if disable {
-					other.my_health -= 120;
+					other.cantrishot = false;
 				}
 			}
 		}
@@ -57,9 +61,9 @@ if my_health <= 0 && !disable
 			{
 				firerate = max(firerate - 1, 1);
 				maxAmmo = max(maxAmmo - 1, 3);
-				gunangle[array_length(gunangle)] = 320;//Add in a right
+				//gunangle[array_length(gunangle)] = 190;//Add in a right
 				if disable {
-					other.my_health -= 120;
+					other.cantrishot = false;
 				}
 			}
 		}

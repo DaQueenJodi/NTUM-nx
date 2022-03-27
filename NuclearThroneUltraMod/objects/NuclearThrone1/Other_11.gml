@@ -4,7 +4,7 @@
 	with NuclearThrone1Side
 	{
 		ammo = maxAmmo;
-		alarm[1] = firerate;
+		alarm[3] = firerate;
 	}
 		
 	fireTriShot = true;

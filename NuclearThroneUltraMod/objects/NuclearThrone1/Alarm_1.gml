@@ -1,4 +1,6 @@
 /// @description AI
+if !active || intro || immune
+	exit;
 alarm[1] = aTime+random(10);
 var beamL = x - 20;
 var beamR = x + 20;
@@ -41,7 +43,7 @@ if target > 0
 		fireTriShot = false;
 		event_user(0);//BEAM START
 	}
-	else if ran > 40
+	else if ran > 40 && cantrishot
 	{
 		//Tri shot
 		bigballs = false;

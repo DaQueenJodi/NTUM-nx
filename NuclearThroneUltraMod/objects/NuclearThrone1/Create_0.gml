@@ -12,7 +12,7 @@ instance_create(x-64,y-32,Floor);
 x += 16;
 y += 16;
 y += 64;
-maxhealth = 1550//retail has 1500 but the parts take 100 health each away upon destruction
+maxhealth = 1650//retail has 1500 but the parts take 100 health each away upon destruction
 size = 8;
 friction = 6;
 meleedamage = 0;
@@ -26,6 +26,7 @@ raddrop = 500;
 disable = false;
 firstEntry = false;
 prevImageIndex = 0;
+cantrishot = true;
 
 event_inherited()
 walk = 0;
@@ -74,6 +75,10 @@ with rightSide {
 	spr_idle = sprNothingRight;
 	spr_hurt = sprNothingRightHurt;
 	isLeft = false;
+	gunangle[0] = 270;
+	gunangle[1] = 240;
+	gunangle[2] = 210;
+	gunangle[3] = 300;
 	spriteXscale = 1;
 	image_xscale = -1;
 	legXoffset = 50;
