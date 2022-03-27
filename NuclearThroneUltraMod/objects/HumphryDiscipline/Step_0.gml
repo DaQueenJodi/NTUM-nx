@@ -1,7 +1,7 @@
 /// @description alpha increase
 if (comingIn)
 {
-	alpha = min(0.5, alpha + 0.15);
+	alpha = min(0.4, alpha + 0.13);
 }
 else
 {

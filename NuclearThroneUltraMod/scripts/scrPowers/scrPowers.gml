@@ -30,7 +30,8 @@ function scrPowers() {
 			var effective = false;
 			with projectile
 			{
-				if (team!= other.team)
+				if (team!= other.team
+				&& x > other.x - 170 && x < other.x + 170 && y > other.y - 130 && y < other.y + 130)
 				{
 					if (image_xscale > 0.2 + (other.ultra_got[104]*0.6) && image_yscale > 0.2 && speed > 1)
 					{
@@ -54,6 +55,10 @@ function scrPowers() {
 				Sleep(40);
 				snd_play_2d(sndChickenStart);
 				instance_create(x,y,HumphryDiscipline);
+			}
+			else
+			{
+				snd_play_2d(sndChickenStart);
 			}
 		}
 	}
