@@ -6,7 +6,7 @@ dir = random(360)
 
 if instance_exists(Player)
 {
-if Player.loops>0
+if Player.loops>1
 {
 
 repeat(14)
