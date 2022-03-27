@@ -22,7 +22,7 @@ alarm[0] = 1
 alarm[1] = 120
 
 wantVanAmount = 0;
-vanDelay = 280;
+vanDelay = 270;
 vanDelayRandom = 50;
 verticalVans = false;
 

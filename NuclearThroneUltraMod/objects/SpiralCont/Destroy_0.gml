@@ -8,6 +8,6 @@ with BackCont
 	}
 	else
 	{
-		alarm[2] = max(240,vanDelay+irandom(vanDelayRandom)+60);
+		alarm[2] = max(230,vanDelay+irandom(vanDelayRandom)+60);
 	}
 }

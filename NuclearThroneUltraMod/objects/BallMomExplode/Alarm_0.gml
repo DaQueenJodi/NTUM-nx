@@ -1,0 +1,2 @@
+/// @description End level
+scrSpawnEndLevelPortal();

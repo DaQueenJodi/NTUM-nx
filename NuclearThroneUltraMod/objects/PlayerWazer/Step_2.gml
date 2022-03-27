@@ -16,8 +16,8 @@ if owner > -1 && instance_exists(owner) && !ending {
 	BackCont.shake = max(BackCont.shake,camShake);
 	owner.wkick = wkick;
 	
-	if hit[0] != noone
-	{
+	//if hit[0] != noone
+	//{
 		image_xscale = point_distance(x,y,hit[1],hit[2]);	
-	}
+	//}
 }

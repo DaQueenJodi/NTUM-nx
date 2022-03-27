@@ -2793,11 +2793,10 @@ function scrFire2() {
 	{
 		if !hitWall
 		{
-			hitWall = scrMoveContactSolid(ang,42)
-			instance_create(x,y,BigWallBreak);
+			hitWall = scrMoveContactSolid(ang,40)
 			instance_create(x,y,Dust)
 			instance_create(x,y,Smoke)
-			with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,ang),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,ang),Slash)
+			with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,ang),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,ang),EnergyHammerSlash)
 			{
 				dmg = 30;
 				sprite_index=sprUltraSlash;

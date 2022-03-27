@@ -9,6 +9,7 @@ function scrTips() {
 	//RANDOM
 	tip = choose(choose(
 	"HP will only drop when damaged",
+	"When you respawn#you level up faster",
 	"explosives can destroy walls",
 	"melee weapons can deflect bullets",
 	"shotguns are great for close combat",
