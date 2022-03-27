@@ -58,7 +58,7 @@ if instance_exists(Player)
 	var dis = point_distance(x,y,Player.x,Player.y)
 	if dis > 52
 	{
-		if dis >= 300
+		if dis >= 280
 		{
 			x = Player.x;
 			y = Player.y;

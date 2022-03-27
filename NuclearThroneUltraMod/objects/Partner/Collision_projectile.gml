@@ -1,11 +1,17 @@
 /// @description Destroy projectiles
 with other
 {
-	if other.team != team
+	if other.team != team && typ != 3
 	{
-		if object_index != EnemyLaser && object_index != Lightning
+		if ProjectileCanBeMoved()
 		{
-			instance_destroy();
+			snd_play(sndHitMetal,0.1,true);
+			with instance_create(x,y,ImpactFX)
+			{
+				sprite_index = sprPartnerBlock;
+				depth = other.depth - 2;
+			}
+			instance_destroy(id);
 		}
 	}
 }

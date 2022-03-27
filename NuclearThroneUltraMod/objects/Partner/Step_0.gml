@@ -16,7 +16,7 @@ motion_add(direction,0.8)
 var dis = point_distance(x,y,Player.x,Player.y)
 if dis > 128//52
 {
-	if dis > 300
+	if dis > 280
 	{
 		x = Player.x;
 		y = Player.y;
@@ -54,7 +54,7 @@ exit;
 }
 }
 
-snd_play(sndEnemyFire)
+snd_play(sndPartnerFire,0.05,true);
 gunangle = point_direction(x,y,target.x,target.y)
 wkick = 4
 
@@ -83,4 +83,11 @@ motion_add(point_direction(x,y,xx,yy),0.8);
 }
 
 
-
+if instance_exists(projectile)
+{
+	var t = instance_nearest(x,y,projectile)
+	if t.team != team && point_distance(x,y,t.x,t.y) < 64
+	{
+		motion_add(point_direction(x,y,t.x,t.y),2);
+	}
+}

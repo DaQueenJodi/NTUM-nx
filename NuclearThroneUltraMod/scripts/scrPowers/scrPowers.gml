@@ -33,7 +33,7 @@ function scrPowers() {
 				if (team!= other.team
 				&& x > other.x - 170 && x < other.x + 170 && y > other.y - 130 && y < other.y + 130)
 				{
-					if (image_xscale > 0.2 + (other.ultra_got[104]*0.6) && image_yscale > 0.2 && speed > 1)
+					if (image_xscale > 0.15 + (other.ultra_got[104]*0.6) && image_yscale > 0.2 && speed > 1)
 					{
 						image_xscale *= 0.75;
 						image_yscale *= 0.75;

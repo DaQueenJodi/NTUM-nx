@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskAlly",
-    "path": "sprites/mskAlly/mskAlly.yy",
+    "name": "mskPartner",
+    "path": "sprites/mskPartner/mskPartner.yy",
   },
   "persistent": false,
   "parentObjectId": null,
