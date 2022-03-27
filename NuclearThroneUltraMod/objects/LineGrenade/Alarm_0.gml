@@ -1,21 +1,12 @@
 if instance_exists(Player)
 {
-if (Player.race=11 && Player.ultra_got[42]==1)//HUNTER ULTRA B Homing projectiles
-{
-direction=point_direction(x,y,mouse_x,mouse_y);
-target=instance_nearest(x+lengthdir_x(80,direction),y+lengthdir_y(80,direction),enemy);// nearest in direction of cursor
 
-if instance_exists(target)
-{
-        if!(collision_line(x,y,target.x,target.y,Wall,false,true) )//No walls between player and target?
-        {
-            if(direction<point_direction(x,y,target.x,target.y)+30+(30*Player.skill_got[19]))
-            {
-            direction=point_direction(x,y,target.x,target.y);
-            }
-       }
-}
-}
+	if (aimed=false && team == 2)
+	{
+		aimed=true;
+		direction = scrAimAssistLaser(direction);
+	}
+
 move_contact_solid(direction,16)
 
 repeat(4){

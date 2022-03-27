@@ -8,11 +8,11 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "agsfx",
+    "path": "audiogroups/agsfx",
   },
-  "soundFile": "sndBigVultureCharge",
-  "duration": 0.0,
+  "soundFile": "sndBigVultureCharge.wav",
+  "duration": 0.979184,
   "parent": {
     "name": "BigVulture",
     "path": "folders/Sounds/Enemies/Boss/BigVulture.yy",

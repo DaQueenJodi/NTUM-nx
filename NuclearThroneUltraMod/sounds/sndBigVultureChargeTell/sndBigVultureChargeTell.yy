@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndBigVultureChargeTell.wav",
-  "duration": 0.979184,
+  "duration": 0.456281,
   "parent": {
     "name": "BigVulture",
     "path": "folders/Sounds/Enemies/Boss/BigVulture.yy",

@@ -18,5 +18,6 @@ image_yscale = 1.75+(Player.betterlaserbrain*0.2)
 aimed=false;
 img = 0
 laserhit=0;
-dmg = 2;
+dmg = 1;
 lightningStartDir = choose(true,false);
+aimed = false;

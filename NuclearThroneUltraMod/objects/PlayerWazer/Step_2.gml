@@ -3,6 +3,7 @@ if owner > 0  && !ending {
 	if owner.wep != mywep
 		event_perform(ev_alarm,0);
 	image_angle = point_direction(owner.x,owner.y,mouse_x,mouse_y);
+	image_angle = scrAimAssistLaser(image_angle);
 	x = owner.x + lengthdir_x(offset,image_angle);
 	y = owner.y + lengthdir_y(offset,image_angle);
 	var hit = collision_line_point(x,y,

@@ -3,8 +3,8 @@
 ///@param
 function scrAimAssistLaser(originalDirection){
 	var aimAssist = 0;
-	if Player.race == 11
-		aimAssist += 6;
+	//if Player.race == 11
+	//	aimAssist += 6;
 	if Player.skill_got[19] == 1//Eagle eyes
 		aimAssist += 11;
 	if Player.ultra_got[42]==1//Never miss

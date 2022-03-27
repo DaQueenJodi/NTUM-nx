@@ -38,6 +38,7 @@ if (my_health < prevhealth)
 		else
 		{
 			image_index += 0.2;//iframe skipper
+			my_health -= dmgTaken*0.1;
 		}
 		sprite_index = sprNothingMiddleHurtLink;
 		if disable

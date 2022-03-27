@@ -8,7 +8,7 @@ if instance_exists(Player)
 var amount = 14;
 var angle = image_angle;
 var angleStep = 360/14;
-snd_play(sndSplinterGun);
+snd_play(sndSplinterGun,0.05,true);
 repeat(amount)
 {
 	with instance_create(x,y,Splinter)//5 splinters
