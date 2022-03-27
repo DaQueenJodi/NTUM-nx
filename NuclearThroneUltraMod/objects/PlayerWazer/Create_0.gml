@@ -3,6 +3,7 @@ event_inherited();
 owner = -1;
 team = 2;
 dmg = 2;
+typ = 0
 if instance_exists(Player)
 {
 	if Player.skill_got[17] = 1

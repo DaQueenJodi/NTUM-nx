@@ -24,7 +24,7 @@ if Player.area = 105
 //with instance_create(x,y,Drama)
 name = "INVERTED BIG BANDIT"
 }
-if Player.area = 2
+if Player.area = 2 || Player.area == 110
 {
 //with instance_create(x,y,Drama)
 name = "MOM";

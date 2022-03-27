@@ -171,7 +171,7 @@ function scrShadows() {
 	with CrownPed
 	draw_sprite(shd64B,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+8)
 	with WeaponMod
-	draw_sprite(shd32,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+	draw_sprite(shd32,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+8)
 	with UltraMod
 	{
 		if sprite_index != sprUltraModHolderDead

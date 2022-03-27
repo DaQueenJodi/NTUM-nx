@@ -8,7 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-snd_play_2d(sndLaserUpg)
+snd_play(sndLaserUpg,0.1,true)
 
 if place_meeting(mouse_x,mouse_y,Floor)
 {

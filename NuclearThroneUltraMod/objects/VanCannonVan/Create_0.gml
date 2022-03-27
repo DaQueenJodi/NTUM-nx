@@ -6,4 +6,4 @@ friction = 0.1;
 dmg = 42;
 alarm[0] = 30;
 image_speed = 0.4;
-type = 3;
+typ = 3;

@@ -5,7 +5,7 @@ snd_play(sndRoll);
 
 snd_play(choose(sndWater1,sndWater2) );
 var accuracy = 1;
-if owner > 0  && instance_exists(owner)
+if owner > -1 && instance_exists(owner)
 	accuracy = owner.accuracy;
 with instance_create(x,y,Tentacle)
 {

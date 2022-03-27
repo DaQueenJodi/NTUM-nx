@@ -5,12 +5,7 @@ function scrAimAssistLaser(originalDirection){
 	var aimAssist = 0;
 	//if Player.race == 11
 	//	aimAssist += 6;
-	if Player.skill_got[19] == 1//Eagle eyes
-		aimAssist += 11;
-	if Player.ultra_got[42]==1//Never miss
-	{
-		aimAssist += 60;
-	}
+	
 	/*
 	if Player.ultra_got[43] == 1//Focused fire
 	{
@@ -20,6 +15,12 @@ function scrAimAssistLaser(originalDirection){
 	var modBoost = 6;
 	with Player
 	{
+		if skill_got[19] == 1//Eagle eyes
+		aimAssist += 11;
+		if ultra_got[42]==1//Never miss
+		{
+			aimAssist += 60;
+		}
 		if skill_got[30] == 1
 			modBoost = 11;
 		if wepmod1 == 13

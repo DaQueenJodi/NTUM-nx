@@ -2903,7 +2903,7 @@ function scrWeapons() {
 	wep_name[263] = "ELECTRIC GUITAR"
 	wep_type[263] = 0
 	wep_auto[263] = 0
-	wep_load[263] = 15
+	wep_load[263] = 13
 	wep_cost[263] = 0
 	wep_sprt[263] = sprElectricGuitar
 	wep_area[263] = -1
@@ -4697,7 +4697,7 @@ function scrWeapons() {
 	wep_load[425] = 2
 	wep_cost[425] = 1
 	wep_sprt[425] = sprBloodPistol
-	wep_area[425] = 9
+	wep_area[425] = 8
 	wep_text[425] = ""
 	wep_swap[425] = sndSwapPistol
 	wep_rad[425] = 0;
@@ -4705,10 +4705,10 @@ function scrWeapons() {
 	wep_name[426] = "HEAVY BLOOD RIFLE"
 	wep_type[426] = 1
 	wep_auto[426] = 1
-	wep_load[426] = 4
+	wep_load[426] = 3
 	wep_cost[426] = 1
 	wep_sprt[426] = sprBloodRifle
-	wep_area[426] = 11
+	wep_area[426] = 10
 	wep_text[426] = ""
 	wep_swap[426] = sndSwapPistol
 	wep_rad[426] = 0;

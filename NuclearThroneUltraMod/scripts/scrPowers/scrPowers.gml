@@ -90,8 +90,8 @@ function scrPowers() {
         
 	        if !audio_is_playing(sndNecromancerRevive)
 	        {
-	        audio_sound_pitch(sndNecromancerRevive,random_range(1.1,1.5))
-	        audio_play_sound(sndNecromancerRevive,90,0)
+				audio_sound_pitch(sndNecromancerRevive,random_range(1.1,1.5))
+				audio_play_sound(sndNecromancerRevive,90,0)
 	        }
         
         
@@ -122,11 +122,11 @@ function scrPowers() {
 		instance_create(mouse_x,mouse_y,Infect);
 		if skill_got[5]
 		{
-			rad -= 10;
+			rad -= 9;
 		}
 		else
 		{
-			rad-=18;
+			rad-=16;
 		}
 	}
 	else
@@ -979,8 +979,11 @@ function scrPowers() {
 		{
 			if image_speed = 0 and (instance_number(enemy) > 0 or instance_exists(Portal)) and x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 			{
+				
+			if !killedIt
+				snd_play(sndExplosion,0.1,true)
+				
 			killedIt = true;
-			snd_play(sndExplosion,0.1,true)
 
 			instance_destroy()
 			with instance_create(x,y,BloodStreak)
@@ -1004,8 +1007,8 @@ function scrPowers() {
 			if maxhealth<=5 and x > __view_get( e__VW.XView, 0 ) and x < __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 ) and y > __view_get( e__VW.YView, 0 ) and y < __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )
 			{//melting ultra a brain capacity
 			MorphMe=true;
-
-				snd_play(sndExplosion)
+				if !killedIt
+					snd_play(sndExplosion)
 				killedIt = true;
 			instance_destroy()
 			with instance_create(x,y,BloodStreak)

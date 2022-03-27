@@ -28,4 +28,4 @@ snd_hurt = sndDogGuardianHurt;
 snd_dead = sndDogGuardianDead;
 snd_mele = sndDogGuardianMelee;
 justjumped = false;
-instance_create(x,y,WallBreak);
+instance_create(x,y,BigWallBreak);

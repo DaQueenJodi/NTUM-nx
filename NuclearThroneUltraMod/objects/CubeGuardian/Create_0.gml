@@ -44,3 +44,4 @@ depth = -2;
 fired = false;
 
 myCompanions = [];
+instance_create(x,y,BigWallBreak);

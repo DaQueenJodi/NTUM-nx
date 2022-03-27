@@ -13,6 +13,11 @@ else if instance_exists(Player) && Player.skill_got[30]&&wepmod4==0//power cravi
 }
 else
 {
+	//Cycle mods
+	if instance_exists(Player) && Player.skill_got[30]
+		wepmod4 = wepmod3;
+	wepmod3 = wepmod2;
+	wepmod2 = wepmod1;
 	wepmod1 = wepmod;
 }
 

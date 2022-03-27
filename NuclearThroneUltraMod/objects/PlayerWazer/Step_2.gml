@@ -1,5 +1,5 @@
 /// @description Update
-if owner > 0  && !ending {
+if owner > -1 && instance_exists(owner) && !ending {
 	if owner.wep != mywep
 		event_perform(ev_alarm,0);
 	image_angle = point_direction(owner.x,owner.y,mouse_x,mouse_y);
@@ -9,7 +9,7 @@ if owner > 0  && !ending {
 	var hit = collision_line_point(x,y,
 	x+lengthdir_x(300,image_angle),
 	y+lengthdir_y(300,image_angle),
-	Wall,false,true);
+	Wall,true,true);
 	
 	BackCont.viewx2 = BackCont.viewx + lengthdir_x(camKick,image_angle+180)*UberCont.opt_shake
 	BackCont.viewy2 = BackCont.viewy + lengthdir_y(camKick,image_angle+180)*UberCont.opt_shake

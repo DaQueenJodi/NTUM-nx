@@ -24,11 +24,13 @@ if target > 0
 		fireTriShot = false;
 		bigballs = false;
 	}
-	else if ((target.y - y > 142 && ran > 64) || ran > 96)
+	else if ((target.y - y > 150 && ran > 64) || ran > 97 || target.y - y > 210)
 	{
 		//Far below me
 		walk = alarm[1];
 		walkDir = 1;
+		if target.y - y > 230
+			walkDir += 0.4;
 		fireTriShot = false;
 		bigballs = false;
 	}

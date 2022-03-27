@@ -17,7 +17,7 @@ if instance_exists(Player)
 	if Player.race == 23
 	{
 		if UberCont.opt_gamemode == 19 && UberCont.opt_discs >= 6 && UberCont.opt_discdamage >= 2
-		scrUnlockCSkin(19,"FOR BEATING THE THRONE#ON DISC ROOM MODE#AS FROG#WHAT A MADLAD!",19);
+		scrUnlockCSkin(23,"FOR BEATING THE THRONE#ON DISC ROOM MODE#AS FROG#WHAT A MADLAD!",19);
 	}
 }
 
