@@ -267,11 +267,6 @@ else
     rage=340;
     }
     }
-    
-    //YOU?
-    if Player.loops > 0 && random(25000)<1
-    instance_create(x,y,You);
-    
 }
     
     if(Player.ultra_got[18]==1){//PLANT ULTRA B KILLER

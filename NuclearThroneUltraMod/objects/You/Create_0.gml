@@ -63,6 +63,11 @@ ammo[3] = Player.ammo[3]
 ammo[4] = Player.ammo[4]
 ammo[5] = Player.ammo[5]
 
+wepmod1 = Player.wepmod1;
+wepmod2 = Player.wepmod2;
+wepmod3 = Player.wepmod3;
+wepmod4 = Player.wepmod4;
+
 
 
 //default shit
@@ -98,12 +103,14 @@ triggerfinger=Player.triggerfinger;//0;
 strongspirit=Player.strongspirit;//false
 strongspiritused=Player.strongspiritused;//false
 
-maxhealth = floor(8*1.5*Player.level);
+maxhealth = floor(6*1.5*Player.level);
 if Player.skill_got[1]//rhino skin
-maxhealth=floor(9*1.5*Player.level);
+maxhealth=floor(7*1.5*Player.level);
 
 my_health = maxhealth
 lsthealth = maxhealth//lasthealth
+
+EnemyHealthAdjustments();
 
 if Player.skill_got[14]{
 skill_got[14] = 1}

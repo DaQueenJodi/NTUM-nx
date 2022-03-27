@@ -29,7 +29,15 @@ if curse=1//ITS CURSED YOU WOT!? LETS FIGHT!
 {
 snd_play(sndStatueDead);
 
-
+//YOU?
+if Player.loops > 0 && instance_exists(Floor) && random(200)<1
+{
+	var rd = random(360)
+	var xx = x+lengthdir_x(96,rd);
+	var yy = y+lengthdir_y(96,rd);
+	var f = instance_nearest(xx,yy,Floor);
+	instance_create(f.x+16,f.y+16,You);
+}
 
 with CrownPed {instance_create(x,y,GuardianStatue);}//curse!
 

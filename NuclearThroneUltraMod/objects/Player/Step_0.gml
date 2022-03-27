@@ -305,6 +305,14 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
 		thing.mytext = "INVERTED PORTAL!";
 	    }
+	if (keyboard_check_pressed(ord("O")))
+	    {
+		var dangle = random(1)*360;
+	    invertedportalcounter=1;
+	    invertedportaldelay=5+random(30);
+		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,You);
+		thing.mytext = "YOU!?";
+	    }
 	if (keyboard_check_pressed(vk_delete))
 	    {
 		repeat(15) {
