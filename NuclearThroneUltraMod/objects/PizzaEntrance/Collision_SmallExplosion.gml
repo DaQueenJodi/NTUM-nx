@@ -1,4 +1,4 @@
-if image_index = 0 && alarm[0]<1
+if image_index = 0 && alarm[0]<1 && !instance_exists(BallMom) && !instance_exists(BallMomExplode)
 {
 image_index = 1
 with Player

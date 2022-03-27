@@ -15,7 +15,7 @@ repeat(other.dmg){
 //instance_create(x+lengthdir_x(24,ang),y+lengthdir_y(24,ang),MeatExplosion)
 //instance_create(x+lengthdir_x(24,ang+120),y+lengthdir_y(24,ang+120),MeatExplosion)
 //instance_create(x+lengthdir_x(24,ang+240),y+lengthdir_y(24,ang+240),MeatExplosion)
-instance_create(x+lengthdir_x(8,ang+random_range(0,240)),y+lengthdir_y(8,ang+random_range(0,240)),MeatExplosion)
+instance_create(x+lengthdir_x(14,ang+random_range(0,240)),y+lengthdir_y(14,ang+random_range(0,240)),MeatExplosion)
 }}
 
 

@@ -3560,11 +3560,11 @@ function scrWeapons() {
 	wep_swap[322] = sndSwapDragon
 	wep_rad[322] = 0;
 
-	wep_name[323] = "THUNDERCRACK"
+	wep_name[323] = "THUNDER KRAKEN"
 	wep_type[323] = 5
 	wep_auto[323] = 0
 	wep_load[323] = 26
-	wep_cost[323] = 3
+	wep_cost[323] = 2
 	wep_sprt[323] = sprThunderCrack
 	wep_area[323] = 9
 	wep_text[323] = "Eye of the storming ocean"

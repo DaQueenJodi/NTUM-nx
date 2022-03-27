@@ -7,4 +7,4 @@ walled = 0
 friction = 0.1
 sleepRate=20;
 hit=false;
-
+dmg = 3;
