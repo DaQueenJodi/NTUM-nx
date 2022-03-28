@@ -38,8 +38,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "Savanna",
+    "path": "folders/Objects/Enemies/Savanna.yy",
   },
   "resourceVersion": "1.0",
   "name": "SavannaBandit",

@@ -2156,7 +2156,7 @@ function scrWeapons() {
 	wep_type[195] = 4
 	wep_auto[195] = 0
 	wep_load[195] = 25//10
-	wep_cost[195] = 3
+	wep_cost[195] = 2
 	wep_sprt[195] = sprBigKrakenGun
 	wep_area[195] = 6
 	wep_text[195] = "hentai gun"
@@ -2167,7 +2167,7 @@ function scrWeapons() {
 	wep_type[196] = 4
 	wep_auto[196] = 0
 	wep_load[196] = 30
-	wep_cost[196] = 4
+	wep_cost[196] = 3
 	wep_sprt[196] = sprKrakenCannon
 	wep_area[196] = 11
 	wep_text[196] = "release the kraken"

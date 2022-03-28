@@ -1,3 +1,4 @@
+///@description AI
 alarm[1] = 10+random(10)//30+r10
 scrTarget()
 if target > 0

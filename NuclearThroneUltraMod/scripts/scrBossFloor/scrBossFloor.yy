@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Player Character",
-    "path": "folders/Scripts/Player Character.yy",
+    "name": "LevelGen",
+    "path": "folders/Scripts/LevelGen.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scrGloveMove",
+  "name": "scrBossFloor",
   "tags": [],
   "resourceType": "GMScript",
 }

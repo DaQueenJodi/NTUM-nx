@@ -1,3 +1,4 @@
+///@description Fire
 if instance_exists(Player){
 if ammo > 0
 {

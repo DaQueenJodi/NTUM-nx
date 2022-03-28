@@ -11,6 +11,11 @@ function ReplaceWithFloor(x1,y1,x2,y2){
 		for (var i = 0; i < al; i++) {
 			instance_destroy(walls[| i]);
 		}
+		ds_list_clear(walls);
+		var al = instance_place_list(x2,y2,TopDecal,walls,false)
+		for (var i = 0; i < al; i++) {
+			instance_destroy(walls[| i]);
+		}
 		ds_list_destroy(walls);
 		with instance_create(x2,y2,Floor)
 		{

@@ -343,7 +343,7 @@ function scrUltras() {
     
 	//SKELETON 
 	ultra_name[73] = "REDEMPTION"
-	ultra_text[73] = "REROLL ALL YOUR MUTATIONS#GET PATIENCE AS AN EXTRA#CHOICE EVERY TIME.#WHEN YOU LOOP YOU#CAN GET AN ULTRA AGAIN"
+	ultra_text[73] = "REROLL ALL YOUR MUTATIONS#GET PATIENCE AS AN EXTRA#CHOICE EVERY TIME.#WHEN YOU LOOP YOU#CAN GET AN ULTRA AGAIN#NORMAL MOVEMENT SPEED#NORMAL ACCURACY"
 	ultra_tips[73] = "specific taste in mutations"
 
 	ultra_name[74] = "DAMNATION"
@@ -365,7 +365,7 @@ function scrUltras() {
 	    else
 	    {
 	    ultra_name[76] = "UNSTOPPABLE"
-	    ultra_text[76] = "GAIN THREE LIVES#NORMAL MOVEMENT SPEED"
+	    ultra_text[76] = "GAIN THREE LIVES#NORMAL MOVEMENT SPEED#NORMAL ACCURACY"
 	    ultra_tips[76] = "never dead"
 	    }
 	}

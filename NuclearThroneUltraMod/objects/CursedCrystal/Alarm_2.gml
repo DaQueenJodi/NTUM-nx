@@ -1,3 +1,4 @@
+///@description Fire
 if ammo > 0
 {
 ammo -= 1

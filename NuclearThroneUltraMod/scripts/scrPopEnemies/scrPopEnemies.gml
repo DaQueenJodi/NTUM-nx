@@ -222,22 +222,28 @@ function scrPopEnemies() {
 
     //CAVES
     if spawnarea = 4 {
+		var crystal = LaserCrystal
+		if random(30) < 1//random 30
+			crystal = LightningCrystal;
 		if loops > 0 {
 			if random(12) < 1
 	        instance_create(x + 16, y + 16, choose(FireBat, ExploFreak, RhinoFreak))
 	        else
-	            instance_create(x + 16, y + 16, choose(Spider, Spider, Spider, Spider, LaserCrystal))
+	            instance_create(x + 16, y + 16, choose(Spider, Spider, Spider, Spider, crystal))
 		} else {
 			if random(30) < 1
 	        instance_create(x + 16, y + 16, FireBat)
 	        else
-	            instance_create(x + 16, y + 16, choose(Spider, Spider, Spider, Spider, LaserCrystal))
+	            instance_create(x + 16, y + 16, choose(Spider, Spider, Spider, Spider, crystal))
 		}
        
     }
     //CHEESE CAVES
     if spawnarea = 115 {
-        instance_create(x + 16, y + 16, choose(CursedSpider, CursedSpider, CursedSpider, CursedSpider, CursedCrystal))
+		var crystal = CursedCrystal;
+		if random(40) < 1
+			crystal = LightningCrystal;
+        instance_create(x + 16, y + 16, choose(CursedSpider, CursedSpider, CursedSpider, CursedSpider, crystal))
     }
 
 
@@ -292,7 +298,10 @@ function scrPopEnemies() {
 	                instance_create(x + 16, y + 16, NOWALLSHEREPLEASE);
 	            }
 				else if ran > 65 {
-					instance_create(x + 16, y + 16, choose(Ratking, LaserCrystal));
+					var crystal = LaserCrystal
+					if random(40) < 1//random 30
+						crystal = LightningCrystal;
+					instance_create(x + 16, y + 16, choose(Ratking, crystal));
 				}
 	        }
 		} else {

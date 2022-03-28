@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndLaserCrystalCharge",
-  "duration": 0.0,
+  "duration": 1.93551,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/Enemies.yy",

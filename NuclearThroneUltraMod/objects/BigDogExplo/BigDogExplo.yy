@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprBigDogExplode",
+    "path": "sprites/sprBigDogExplode/sprBigDogExplode.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

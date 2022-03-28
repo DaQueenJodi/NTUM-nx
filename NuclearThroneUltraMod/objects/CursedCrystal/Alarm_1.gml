@@ -1,3 +1,4 @@
+///@description AI
 alarm[1] = 30+random(10)
 
 if instance_exists(Player)

@@ -66,7 +66,9 @@ name = "INVERTED BIG ASSASSIN"
 if Player.area = 4
 {
 //with instance_create(x,y,Drama)
-name = choose("BIG DOG AGAIN","BIG DOG AGAIN","BIG DOG AGAIN","BIG DOG AGAIN","BIG DOG AGAIN","DO IT AGAIN","RESPAWN!","AGAIN","NOT HYPERCRYSTAL","DOGGY","BIG DOG AGAIN");
+name = "HYPER CRYSTAL";
+if random(90)<1
+	name = choose("CRYSTAL'S MOM","HYPER RIFLE?","HYPER DIAMOND","LUIGI");
 }
 if Player.area = 5
 {

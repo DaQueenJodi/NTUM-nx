@@ -150,7 +150,7 @@ with Player
 			kills = other.kills;
 			subarea=other.subarea;
 			ultra_got[75]=1;//you picked redemption
-			skillpoints=other.level;
+			skillpoints=max(0,other.level-2);
 			level=other.level;
 
 			wep=other.wep
@@ -178,6 +178,10 @@ with Player
 			ammo[4] = typ_amax[4];
 			ammo[5] = typ_amax[5];
 			//event_perform(ev_other,ev_room_end);
+			
+			maxspeed += 0.4;//Normal speed
+			accuracy = 1;//Normal accuracy
+			standartAccuracy = accuracy;
 		}
 	}
 }
@@ -197,6 +201,12 @@ if skill == 76//skelly ultra D
     skeletonlives+=3;
     ultimategamble=false;
 	maxspeed += 0.4;//Normal speed
+	accuracy = 1;//Normal accuracy
+	standartAccuracy = accuracy;
+		if skill_got[19] //eagle eyes
+		{
+			scrApplyEagleEyes();
+		}
     }
     
     }
