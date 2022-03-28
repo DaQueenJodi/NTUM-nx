@@ -5,6 +5,7 @@ with instance_create(x,y,Bullet3)
 {motion_add(random(360),5.1)
 image_angle = direction
 team = other.team
+norecycle = choose(false,false,true);
 scrCanHumphry();}
 }
 Sleep(18)

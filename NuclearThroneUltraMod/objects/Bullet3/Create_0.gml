@@ -16,3 +16,4 @@ if instance_exists(Player)
 		maxWallHits += 1;
 }
 dmg=4;
+norecycle = false;
