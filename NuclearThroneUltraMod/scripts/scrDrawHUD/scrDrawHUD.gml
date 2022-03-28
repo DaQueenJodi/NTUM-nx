@@ -243,13 +243,47 @@ function scrDrawHUD() {
 	draw_sprite_part_smart(spr,1,sprite_get_xoffset(spr),sprite_get_yoffset(spr)-8,max(0,wid*min(Player.wep_load[Player.wep],Player.reload/Player.wep_load[Player.wep])),14,__view_get( e__VW.XView, 0 )+24,__view_get( e__VW.YView, 0 )+16,c_white,0.5)
 
 	//Ultramod
-	draw_sprite(sprUltraModIcon,Player.ultramod,__view_get( e__VW.XView, 0 )+14,__view_get( e__VW.YView, 0 )+59);
+	if Player.ultramod != 0
+	{
+		var xx = __view_get( e__VW.XView, 0 )+14
+		var yy = __view_get( e__VW.YView, 0 )+60
+		var h = 16*0.5;
+		var w = 24*0.5;
+		if (mouse_x > xx-w && mouse_x < xx+w && mouse_y < yy+h && mouse_y > yy-h)
+			scrDrawHelp("this is an ultramod I am still working on this")
+		draw_sprite(sprUltraModIcon,Player.ultramod,xx,yy);
+	}
 	//WEAPON MODS!
-	draw_sprite(sprModHUD,Player.wepmod1,__view_get( e__VW.XView, 0 )+18,__view_get( e__VW.YView, 0 )+29);
-	draw_sprite(sprModHUD,Player.wepmod2,__view_get( e__VW.XView, 0 )+28,__view_get( e__VW.YView, 0 )+29);
-	draw_sprite(sprModHUD,Player.wepmod3,__view_get( e__VW.XView, 0 )+38,__view_get( e__VW.YView, 0 )+29);
-	draw_sprite(sprModHUD,Player.wepmod4,__view_get( e__VW.XView, 0 )+48,__view_get( e__VW.YView, 0 )+29);
-
+	var xx = __view_get( e__VW.XView, 0 )+2;
+	var yy = __view_get( e__VW.YView, 0 )+42;
+	var xs = 10;
+	if Player.wepmod1 != 0
+	{
+		draw_sprite(sprModHUD,Player.wepmod1,xx,yy);
+		if (mouse_x > xx && mouse_x < xx+xs && mouse_y < yy+xs && mouse_y > yy)
+			scrDrawHelp(scrWepModName(Player.wepmod1));
+	}
+	xx += xs;
+	if Player.wepmod2 != 0
+	{
+		draw_sprite(sprModHUD,Player.wepmod2,xx,yy);
+		if (mouse_x > xx && mouse_x < xx+xs && mouse_y < yy+xs && mouse_y > yy)
+			scrDrawHelp(scrWepModName(Player.wepmod2));
+	}
+	xx += xs;
+	if Player.wepmod3 != 0
+	{
+		draw_sprite(sprModHUD,Player.wepmod3,xx,yy);
+		if (mouse_x > xx && mouse_x < xx+xs && mouse_y < yy+xs && mouse_y > yy)
+			scrDrawHelp(scrWepModName(Player.wepmod3));
+	}
+	xx += xs;
+	if Player.wepmod4 != 0
+	{
+		draw_sprite(sprModHUD,Player.wepmod4,xx,yy);
+		if (mouse_x > xx && mouse_x < xx+xs && mouse_y < yy+xs && mouse_y > yy)
+			scrDrawHelp(scrWepModName(Player.wepmod4));
+	}
 	if Player.wep_type[Player.wep] != 0
 	{
 	var aAmmo = string(round(Player.ammo[Player.wep_type[Player.wep]]))
@@ -341,7 +375,7 @@ function scrDrawHUD() {
 
 
 	var ammoheight;
-	ammoheight=38;//34
+	ammoheight=30;//34
 
 
 	//AMMO ICONS

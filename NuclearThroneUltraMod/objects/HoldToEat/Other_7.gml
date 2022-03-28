@@ -45,27 +45,31 @@ with Player
 
 	with instance_create(x,y,RobotTurret)
 	{
-	motion_add(point_direction(x,y,mouse_x,mouse_y),11);
-	wep = other.wep
-	spr_idle=wep_sprt[wep];
+		wepmod1 = other.wepmod1;
+		wepmod2 = other.wepmod2;
+		wepmod3 = other.wepmod3;
+		wepmod4 = other.wepmod4;
+		motion_add(point_direction(x,y,mouse_x,mouse_y),11);
+		wep = other.wep
+		spr_idle=wep_sprt[wep];
 
-	if wep_type[wep]=0
-	{//melee
-	wepammo=7+irandom(5)
-	wepcost=1;
-	}
-	else
-	{
-	wepammo=round(typ_ammo[wep_type[wep]]*1.6);//if wepcost is more than 3x wepcost???
-	wepcost=wep_cost[wep]
-	if wepcost>wepammo//If its like a doubel spcs fire it once
-	wepammo=wepcost;
-	}
+		if wep_type[wep]=0
+		{//melee
+		wepammo=7+irandom(5)
+		wepcost=1;
+		}
+		else
+		{
+		wepammo=round(typ_ammo[wep_type[wep]]*1.6);//if wepcost is more than 3x wepcost???
+		wepcost=wep_cost[wep]
+		if wepcost>wepammo//If its like a doubel spcs fire it once
+			wepammo=wepcost;
+		}
 
-	reload=wep_load[wep];
+		reload=wep_load[wep];
 
 
-	alarm[0]=reload
+		alarm[0]=reload
 	}
 
 	}

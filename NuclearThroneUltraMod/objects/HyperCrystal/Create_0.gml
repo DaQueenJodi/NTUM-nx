@@ -33,5 +33,5 @@ canSuperAlt = false;
 easyCrystalLoss = true;
 scrBossFloor();
 
-halfHp = false;
+halfHP = false;
 lowHP = false;
