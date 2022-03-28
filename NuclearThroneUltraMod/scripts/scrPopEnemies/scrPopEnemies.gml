@@ -263,9 +263,17 @@ function scrPopEnemies() {
 			instance_create(x + 16, y + 16, choose(ExploGuardian, GuardianDog, CubeGuardian, Necromancer))
 			else if random(3) < 2
 			instance_create(x + 16, y + 16, choose(SnowBot, SnowBot, SnowBot, SnowTank, Wolf, Wolf, DiscGuy, BanditSquare))
+			else if instance_number(enemy) < 1
+			{
+				instance_create(x + 16, y + 16,DiscGuy);
+			}
 		} else {
 			if random(3) < 2
 			instance_create(x + 16, y + 16, choose(SnowBot, SnowBot, SnowBot, SnowTank, Wolf, Wolf, DiscGuy, BanditSquare))
+			else if instance_number(enemy) < 1
+			{
+				instance_create(x + 16, y + 16,DiscGuy);
+			}
 		}
         
     }
@@ -274,6 +282,10 @@ function scrPopEnemies() {
     if spawnarea = 107 {
         if random(3) < 2
         instance_create(x + 16, y + 16, choose(InvertedDiscGuy, InvertedSnowBot, InvertedSnowBot, InvertedSnowTank, InvertedWolf, InvertedWolf, InvertedDiscGuy))
+		else if instance_number(enemy) < 1
+		{
+			instance_create(x + 16, y + 16,InvertedDiscGuy);
+		}
     }
 
 
@@ -303,6 +315,10 @@ function scrPopEnemies() {
 						crystal = LightningCrystal;
 					instance_create(x + 16, y + 16, choose(Ratking, crystal));
 				}
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,Turret);
+				}
 	        }
 		} else {
 	        if subarea = 2 {
@@ -322,6 +338,10 @@ function scrPopEnemies() {
 	                instance_create(x + 16, y + 16, Turret);
 	                instance_create(x + 16, y + 16, NOWALLSHEREPLEASE);
 	            }
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,Turret);
+				}
 	        }
 		}
 
@@ -348,6 +368,10 @@ function scrPopEnemies() {
                 instance_create(x + 16, y + 16, InvertedTurret);
                 instance_create(x + 16, y + 16, NOWALLSHEREPLEASE);
             }
+			else if instance_number(enemy) < 1
+			{
+				instance_create(x + 16, y + 16,InvertedTurret);
+			}
         }
     }
 
@@ -383,6 +407,10 @@ function scrPopEnemies() {
 	            }
 	            else if random(7) < 1
 					instance_create(x + 16, y + 16, choose(FireBat, FireBat, LavaBallEnemy, SuperFireBaller, SuperFireBaller, FireBaller, Salamander,ExploFreak,GhostGuardian,MeleeBandit))
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,LavaBallEnemy);
+				}
 	        }	
 		}
 		else
@@ -414,7 +442,11 @@ function scrPopEnemies() {
 	                }
 	            }
 	            else if random(7) < 1
-	            instance_create(x + 16, y + 16, choose(FireBat, FireBat, LavaBallEnemy, SuperFireBaller, SuperFireBaller, FireBaller, Salamander))
+					instance_create(x + 16, y + 16, choose(FireBat, FireBat, LavaBallEnemy, SuperFireBaller, SuperFireBaller, FireBaller, Salamander))
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,LavaBallEnemy);
+				}
 	        }
 		}
     }
@@ -448,7 +480,11 @@ function scrPopEnemies() {
                 }
             }
             else if random(7) < 1
-            instance_create(x + 16, y + 16, choose(InvertedFireBat, InvertedFireBat, InvertedLavaBallEnemy, InvertedSuperFireBaller, InvertedSuperFireBaller, InvertedFireBaller, InvertedSalamander))
+				instance_create(x + 16, y + 16, choose(InvertedFireBat, InvertedFireBat, InvertedLavaBallEnemy, InvertedSuperFireBaller, InvertedSuperFireBaller, InvertedFireBaller, InvertedSalamander))
+			else if instance_number(enemy) < 1
+			{
+				instance_create(x + 16, y + 16,InvertedLavaBallEnemy);
+			}
         }
     }
 
@@ -480,6 +516,10 @@ function scrPopEnemies() {
 	                    else if random(4) < 2.5 {
 	                        instance_create(x + 16, y + 16, choose(TeaPot, CardGuy, CardGuy, CardGuy, CardGuy2, CardGuy2, CardGuy2, Sheep,Hyena,Hyena,GuardianDog,CubeGuardian))
 	                    }
+						else if instance_number(enemy) < 1
+						{
+							instance_create(x + 16, y + 16,CardGuy);
+						}
 	                }
 				}
 				else
@@ -494,6 +534,10 @@ function scrPopEnemies() {
 	                    else if random(4) < 2.5 {
 	                        instance_create(x + 16, y + 16, choose(TeaPot, CardGuy, CardGuy, CardGuy, CardGuy2, CardGuy2, CardGuy2, Sheep))
 	                    }
+						else if instance_number(enemy) < 1
+						{
+							instance_create(x + 16, y + 16,CardGuy);
+						}
 	                }
 				}
             }
@@ -509,6 +553,10 @@ function scrPopEnemies() {
                 else if random(4) < 2.5 {
                     instance_create(x + 16, y + 16, choose(TeaPot, CardGuy, CardGuy, CardGuy, CardGuy2, CardGuy2, CardGuy2, Sheep))
                 }
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,CardGuy);
+				}
             }
         }
     }
@@ -533,6 +581,10 @@ function scrPopEnemies() {
                     else if random(4) < 2.5 {
                         instance_create(x + 16, y + 16, choose(InvertedTeaPot, InvertedCardGuy, InvertedCardGuy, InvertedCardGuy, InvertedCardGuy2, InvertedCardGuy2, InvertedCardGuy2))
                     }
+					else if instance_number(enemy) < 1
+					{
+						instance_create(x + 16, y + 16,InvertedCardGuy);
+					}
                 }
             }
         }
@@ -546,7 +598,10 @@ function scrPopEnemies() {
                 instance_create(x + 16, y + 16, choose(InvertedTeaPot, InvertedTeaPot, InvertedTeaPot, ExplosiveSheep))
                 else if random(4) < 2.5 {
                     instance_create(x + 16, y + 16, choose(InvertedTeaPot, InvertedCardGuy, InvertedCardGuy, InvertedCardGuy, InvertedCardGuy2, InvertedCardGuy2, InvertedCardGuy2))
-                }
+                } else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,InvertedCardGuy);
+				}
             }
         }
 
@@ -558,7 +613,7 @@ function scrPopEnemies() {
     }
 
 
-    //VENUZ AIRHORN.WAV
+    //VENUZ AIRHORN.WAV its OGG now..
     if spawnarea = 103 {
         if random(5) < 1
         instance_create(x + 16, y + 16, choose(FireBaller, Jock, FireBaller, Jock, FireBaller, SuperFireBaller))
@@ -629,11 +684,14 @@ function scrPopEnemies() {
 	            instance_create(x + 16, y + 16, choose(GuardianDog, GhostGuardian,PalaceGuardian))
 	        } else {
 	            var ran = random(100);
-
-	            if ran > 78 {
+	            if ran > 60 {
 	                instance_create(x + 16, y + 16, choose(PalaceGuardian, PalaceGuardian, ExploGuardian, ExploGuardian, GhostGuardian, GuardianDog, CubeGuardian))
-	            } else if ran > 70 {
+	            } else if ran > 40 {
 					instance_create(x + 16, y + 16, choose(Sniper, JungleBandit, ExploFreak))
+				}
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,PalaceGuardian);
 				}
 	        }
 		} else {
@@ -642,9 +700,13 @@ function scrPopEnemies() {
 	        } else {
 	            var ran = random(100);
 
-	            if ran > 78 {
+	            if ran > 60 {
 	                instance_create(x + 16, y + 16, choose(PalaceGuardian, PalaceGuardian, ExploGuardian, CubeGuardian, GhostGuardian, GuardianDog))
 	            }
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,PalaceGuardian);
+				}
 	        }
 		}
     }

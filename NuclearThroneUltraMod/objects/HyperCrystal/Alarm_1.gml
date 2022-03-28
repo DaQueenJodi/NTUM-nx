@@ -23,6 +23,9 @@ if target > 0
 			//Explode
 			event_user(1);
 		}
+		
+		if collision_line(x,y,target.x,target.y,Wall,0,0) < 0 && random(3) < 1
+			direction = point_direction(x,y,target.x,target.y);
 	}
 	else if dis < 64
 	{
