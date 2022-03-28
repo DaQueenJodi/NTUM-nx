@@ -1,3 +1,3 @@
 /// @description Explode the babies
-alarm[3] = 60;
-alarm[1] += 60;
+alarm[3] = 55;
+alarm[1] += 55;

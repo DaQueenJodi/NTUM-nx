@@ -13,8 +13,8 @@ spr_dead = sprHyperCrystalDead
 spr_fire = sprHyperCrystalFire
 
 
-snd_hurt = sndLaserCrystalHit
-snd_dead = sndLaserCrystalDeath
+snd_hurt = sndHyperCrystalHurt
+snd_dead = sndHyperCrystalDead
 
 
 
@@ -32,3 +32,6 @@ altCrystal = LightningCrystal;
 canSuperAlt = false;
 easyCrystalLoss = true;
 scrBossFloor();
+
+halfHp = false;
+lowHP = false;

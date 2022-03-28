@@ -1,5 +1,6 @@
 /// @description Fill up crystal list
 ds_list_clear(myCrystals)
+snd_play(sndHyperCrystalSpawn);
 instance_create(x,y,WallBreak);
 repeat(ammo)
 {

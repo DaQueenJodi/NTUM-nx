@@ -1,5 +1,17 @@
 ///@description AI
 alarm[1] = 30+random(10)
+
+if !halfHP && my_health < maxhealth * 0.6
+{
+	halfHP = true;
+	snd_play(sndHyperCrystalHalfHP);
+}
+else if !lowHP && my_health < maxhealth * 0.25
+{
+	lowHP = true;
+	snd_play(sndHyperCrystalLowHP);
+	
+}
 scrTarget()
 if target > 0
 {

@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndBigBanditHalfHP",
-  "duration": 0.0,
+  "duration": 2.138685,
   "parent": {
     "name": "BigBandit",
     "path": "folders/Sounds/Enemies/BigBandit.yy",
