@@ -293,18 +293,17 @@ function scrPowers() {
 	else
 	{
 		snd_play_2d(sndPortalStrikeEmpty);
-
 		if useRad
-		{
-			with instance_create(x,y,PopupText)
-			{mytext = "NOT ENOUGH#PORTAL STRIKE AMMO"
-			colour=c_red;}
-		}
-		else
 		{
 			snd_play_2d(sndUltraEmpty);	
 			with instance_create(x,y,PopupText)
 			{mytext = "NOT ENOUGH#RADS"
+			colour=c_red;}
+		}
+		else
+		{
+			with instance_create(x,y,PopupText)
+			{mytext = "NOT ENOUGH#PORTAL STRIKE AMMO"
 			colour=c_red;}
 		}
 	}

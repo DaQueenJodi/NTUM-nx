@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndShielderHurtF",
-  "duration": 0.0,
+  "duration": 0.568844,
   "parent": {
     "name": "Shielder",
     "path": "folders/Sounds/IDPD sounds/Shielder.yy",

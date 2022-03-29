@@ -8,28 +8,37 @@ if instance_exists(Player) && !instance_exists(SurvivalWave)
     
     //sound_discard(song)
     //sound_discard(amb)
-    
-    if Player.area = 1 || Player.area = 105
+    var area = Player.area;
+	var subarea = Player.subarea;
+    if area = 1 || area = 105
     song = musBoss1;
-    if Player.area = 3 || Player.area = 106
+    if area = 3 || area = 106
     song = musBoss2;
-    if Player.area = 5 || Player.area = 107
+    if area = 5 || area = 107
     song = musBoss3;
-    if Player.area = 6 || Player.area = 112
+    if area = 6 || area = 112
 		song = musBoss7;
-    if Player.area = 7 || Player.area = 108
+    if area = 7 || area = 108
 		song = musPurpleDragonBoss;
-    if Player.area = 8 || Player.area = 109
+    if area = 8 || area = 109
 	{
 		if (random(100) <1)
 			song = sndChubbyEmuSong;
 		else
 			song = musBoss6B;
 	}
-	if Player.area = 2
+	if area = 2
 		song = musBoss5;
-    if Player.area = 101
+	if area == 4 || area == 115
+		song = musBoss6;
+	if area == 115
+		song = musBoss6B;
+	if area == 111
+		song = choose(musBoss6,musBoss6B);
+    if area = 101
 		song = musBoss1;
+	if area == 10
+		song = musBoss3
     snd_loop(song)
     snd_loop(amb)
     //audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
@@ -115,6 +124,12 @@ name = "HYPER CRYSTAL";
 if random(90)<1
 	name = choose("CRYSTAL'S MOM","HYPER RIFLE?","HYPER DIAMOND","LUIGI");
 }
+if Player.area = 111
+{
+name = "INVERTED HYPER CRYSTAL";
+if random(90)<1
+	name = choose("CRYSTAL'S MOM","HYPER RIFLE?","HYPER DIAMOND","LUIGI");
+}
 if Player.area = 5
 {
 //with instance_create(x,y,Drama)
@@ -146,8 +161,19 @@ if Player.area = 6
 }
 if Player.area = 112
 {
-//with instance_create(x,y,Drama)
-name = "INVERTED MACHINE"
+	if Player.subarea == 2
+	{
+		name = "INVERTED MACHINE"
+		if random(120) < 1
+			name = choose("TINY ROOM OF DOOM","WHITE MACHINE","FUCK THE SYSTEM");
+	}
+	else
+	{
+		name = "TECHNOMANCER";
+		if random(80) < 1
+			name = choose("TECHROMANCER","ALMOST INVERTED TECHNOMANCER");
+	}
+
 }
 
 if Player.area = 7

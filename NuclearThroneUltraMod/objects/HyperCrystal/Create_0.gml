@@ -35,3 +35,6 @@ scrBossFloor();
 
 halfHP = false;
 lowHP = false;
+sndtaunt = 0;
+tauntdelay = 0;
+hasHadIntro = false;

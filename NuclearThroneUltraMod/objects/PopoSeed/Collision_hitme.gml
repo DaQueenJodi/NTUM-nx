@@ -1,6 +1,7 @@
 if other.team != team
 {instance_destroy()
 
-instance_create(x,y,PopoTangle)
+with instance_create(x,y,PopoTangle)
+	team = other.team;
 instance_create(x,y,Dust)}
 

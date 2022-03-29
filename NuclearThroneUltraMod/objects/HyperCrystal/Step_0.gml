@@ -2,7 +2,7 @@ event_inherited()
 
 //Spin crystals
 var ds = 0;
-if !ds_list_empty(myCrystals)
+if myCrystals && !ds_list_empty(myCrystals)
 	ds = ds_list_size(myCrystals);
 var attacking = alarm[3] > 0;
 if ds > 0 
@@ -68,3 +68,13 @@ motion_add(direction,0.5)
 
 if speed > maxspeed
 speed = maxspeed
+
+if !instance_exists(Player) && sndtaunt = 0
+{
+	tauntdelay += 1
+	if tauntdelay > 50
+	{
+		snd_play_2d(sndHyperCrystalTaunt);
+		sndtaunt = 1
+	}
+}

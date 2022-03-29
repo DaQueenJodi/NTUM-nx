@@ -7,24 +7,10 @@ scrRogueTarget()
 else
 scrTarget();
 
-if target > 0 and roll = 0
+if target > 0
 {
 if instance_exists(Player) && target==Player.id
 {
-    if random(my_health/2+2+target.can_shoot*3) < 1 and freeze > 40
-    {
-    //ROLL
-    if point_distance(x,y,target.x,target.y) > 150
-    direction = point_direction(x,y,target.x,target.y)+random(60)-30
-    else
-    direction = point_direction(x,y,target.x,target.y)+(70+random(60))*choose(1,-1)
-    speed = 4
-    roll = 1
-    snd_play(sndRoll)
-    instance_create(x,y,Dust)
-    }
-    else
-    {
     if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
     {
     gunangle = point_direction(x,y,target.x,target.y)
@@ -35,19 +21,9 @@ if instance_exists(Player) && target==Player.id
     lastx = target.x
     lasty = target.y
     //SEE PLAYER AND FAR ENOUGH AND NOT SHOUTING "FREEZE MOTHERFUCKER"
-    if random(2) < 1 and freeze > 40 && point_distance(target.x,target.y,x,y) < 156
+    if alarm[2] < 1 && random(2) < 1 and freeze > 40 && point_distance(target.x,target.y,x,y) < 156
     {
-    //FIRE
-    snd_play(sndGruntFire)
-    wkick = 4
-    with instance_create(x,y,IDPDBullet){
-    motion_add(other.gunangle+random(6)-3,8)
-    image_angle = direction
-    team = other.team
-	if team == 2
-		sprite_index = sprIDPDBulletRogue}
-    
-    alarm[1] = 3+random(2)
+		alarm[2] = fireRate;
     }
     else
     {
@@ -88,6 +64,7 @@ if instance_exists(Player) && target==Player.id
     else
     snd_play(sndGruntThrowNadeF)
     wkick = 8
+	bwkick = 8;
     with instance_create(x,y,PopoNade){
     motion_add(other.gunangle+random(20)-10,10)
     image_angle = direction
@@ -96,7 +73,6 @@ if instance_exists(Player) && target==Player.id
 		sprite_index = sprPopoNadeRogue}
     }
     
-    }
     }
 }
 else
@@ -111,17 +87,10 @@ right = 1
 lastx = target.x
 lasty = target.y
 //SEE PLAYER AND FAR ENOUGH AND NOT SHOUTING "FREEZE MOTHERFUCKER"
-if random(2) < 1 and freeze > 40
+if alarm[2] < 1 && random(2) < 1 and freeze > 40
 {
-//FIRE
-snd_play(sndGruntFire)
-wkick = 4
-with instance_create(x,y,IDPDBullet){
-motion_add(other.gunangle+random(6)-3,8)
-image_angle = direction
-team = other.team}
-
-alarm[1] = 3+random(2)
+	alarm[2] = fireRate;
+	ammo = maxammo;
 }
 else
 {
@@ -171,7 +140,7 @@ team = other.team}
 }
 }
 }
-else if random(10) < 1 and roll = 0
+else if random(10) < 1
 {
 //NO TARGET
 motion_add(random(360),0.4)

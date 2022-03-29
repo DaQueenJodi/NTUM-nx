@@ -26,7 +26,7 @@ if (Player.loops > 0 && Player.area == 4 && Player.subarea == 1)
 {
 	scrSpawnBoss(HyperCrystal);
 }
-if (Player.loops > 0 && (Player.area == 115 || Player.area == 110) && Player.subarea == 1)
+if (Player.loops > 0 && Player.area == 111 && Player.subarea == 1)
 {
 	scrSpawnBoss(InvertedHyperCrystal);
 }
@@ -34,9 +34,13 @@ if (Player.loops > 0 && Player.area == 115 && Player.subarea == 1)
 {
 	scrSpawnBoss(CursedHyperCrystal);
 }
-if (Player.loops > 0 && (Player.area == 6 || Player.area == 110) && Player.subarea == 1)
+if (Player.loops > 0 && Player.area == 6 && Player.subarea == 1)
 {
 	scrSpawnTechnomancer(Technomancer);
+}
+if (Player.loops > 0 && Player.area == 112 && Player.subarea == 1)
+{
+	scrSpawnTechnomancer(InvertedTechnomancer);
 }
 
 //Volcano Boss

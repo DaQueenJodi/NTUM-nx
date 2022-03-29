@@ -18,12 +18,3 @@ freeze += 1
 if Player.can_shoot = 0
 freeze += 3
 }
-
-with Player
-{
-if place_meeting(x,y,PopoTangle)
-other.stuck=true;
-else
-other.stuck=false;
-}
-

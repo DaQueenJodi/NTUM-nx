@@ -1,4 +1,4 @@
-alarm[1] = 8+random(15)//20 20
+alarm[1] = 10+random(15)//20 20
 
 if team=2
 scrRogueTarget()
@@ -29,24 +29,20 @@ else if target.x > x
 right = 1
 lastx = target.x
 lasty = target.y
+with Player
+{
+if place_meeting(x,y,PopoTangle)
+other.stuck=true;
+else
+other.stuck=false;
+}
 //SEE PLAYER AND FAR ENOUGH AND NOT SHOUTING "FREEZE MOTHERFUCKER"
 if freeze > 10 and point_distance(x,y,target.x,target.y)<120
 {
 //FIRE
 instance_create(x,y,Notice);
-alarm[2]=21;
-
-alarm[1] = 10+random(15)
-
-if instance_exists(Player)
-{
-if scrMeleeWeapons()==true///Player.wep_type[Player.wep] = 0 || Player.wep = 24 || Player.wep = 36 || Player.wep = 53 || Player.wep=198 || Player.wep=37|| Player.wep=126|| Player.wep=108|| Player.wep=109|| Player.wep=123 || Player.wep = 222|| Player.wep=239//if Player.wep_type[Player.wep]==0 // You are holding a melee weapon
-    {
-    alarm[2]=10;
-    alarm=6+random(5)//go aggro hes got a melee weapon
-    }
-}
-
+alarm[2] = 21;
+alarm[1] = alarm[2] + 10;
 }
 else if stuck
 {//hes stuck go to him and kill em!

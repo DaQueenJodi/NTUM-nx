@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndGruntFire",
-  "duration": 0.0,
+  "duration": 0.811043,
   "parent": {
     "name": "Grunt",
     "path": "folders/Sounds/IDPD sounds/Grunt.yy",

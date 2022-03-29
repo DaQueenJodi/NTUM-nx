@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskBullet1",
-    "path": "sprites/mskBullet1/mskBullet1.yy",
+    "name": "mskBouncerBullet",
+    "path": "sprites/mskBouncerBullet/mskBouncerBullet.yy",
   },
   "persistent": false,
   "parentObjectId": {

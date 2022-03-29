@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprPopoGun","path":"sprites/sprPopoGun/sprPopoGun.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprPopoGun",
     "tags": [],
     "resourceType": "GMSequence",
   },

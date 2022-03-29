@@ -232,18 +232,35 @@ room_speed=35;
     
     if (Player.area == 1 && Player.subarea == 1)
 	{
-		var tar = Player;
 		if instance_exists(WeaponChest)
 		{
-			tar = WeaponChest;
+			with Floor
+			{
+				if instance_exists(BigVultureSkull)
+					continue;
+				var xx = x+16;
+				var yy = y+16;
+				var t = instance_nearest(xx,yy,WeaponChest)
+				var d = point_distance(xx,yy,t.x,t.y)
+				if d < 256 && d > 32
+					instance_create(x+16,y+8,BigVultureSkull)
+			}
 		}
-		var furthest = instance_furthest(tar.x,tar,Floor);
-		var dir = point_direction(x,y,furthest.x,furthest.y)+random_range(120,-120);
-		var len = 128+random(128);
-		var nearestFloor = instance_nearest(tar.x+lengthdir_x(len,dir),tar.y+lengthdir_y(len,dir),Floor)
-		with nearestFloor
+		else
 		{
-			instance_create(x+16,y+8,BigVultureSkull)
+			var tar = Player;
+			if instance_exists(WeaponChest)
+			{
+				tar = WeaponChest;
+			}
+			var furthest = instance_furthest(tar.x,tar,Floor);
+			var dir = point_direction(x,y,furthest.x,furthest.y)+random_range(120,-120);
+			var len = 128+random(32);
+			var nearestFloor = instance_nearest(tar.x+lengthdir_x(len,dir),tar.y+lengthdir_y(len,dir),Floor)
+			with nearestFloor
+			{
+				instance_create(x+16,y+8,BigVultureSkull)
+			}
 		}
 	}
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprHyperCrystalIdle",
-    "path": "sprites/sprHyperCrystalIdle/sprHyperCrystalIdle.yy",
+    "name": "sprInvertedHyperCrystalIdle",
+    "path": "sprites/sprInvertedHyperCrystalIdle/sprInvertedHyperCrystalIdle.yy",
   },
   "solid": false,
   "visible": true,

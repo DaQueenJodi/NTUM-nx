@@ -1,5 +1,5 @@
 raddrop = 0
-maxhealth = 8
+maxhealth = 20
 meleedamage = 0
 size = 1
 scrCrownOfPopoRad(2);
@@ -13,8 +13,8 @@ spr_dead = sprBuffPopoDead
 
 if male
 {
-snd_hurt = sndGruntHurtM
-snd_dead = sndGruntDeadM
+snd_hurt = sndShielderHurtM
+snd_dead = sndShielderDeadM
 snd_play(sndGruntEnterM)
 }
 else
@@ -32,6 +32,7 @@ grenades = 2
 gunangle = random(360)
 alarm[1] = 30+random(15)
 wkick = 0
+bwkick = 0;
 roll = 1
 angle = 0
 
@@ -46,4 +47,7 @@ else
 lastx = x
 lasty = y
 }
-
+bfire = false;
+maxammo = 6;
+ammo = maxammo;
+fireRate = 3;
