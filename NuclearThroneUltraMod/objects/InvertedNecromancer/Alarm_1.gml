@@ -50,52 +50,56 @@ else if random(2)<1
 {
 
 //TRANSFORM
+	if instance_exists(InvertedFreak)
+	{
+	crp = instance_nearest(x,y,InvertedFreak)
+	if collision_line(x,y,crp.x,crp.y,Wall,0,0) < 0
+	{
+	wkick = 5
+	gunangle = point_direction(x,y,crp.x,crp.y)
+	with crp
+	{
+		instance_create(x,y,ReviveFX)
+		instance_destroy(id);
+		with instance_create(x,y,InvertedExploFreak)
+		{
+			if other.raddrop == 0
+				raddrop = 0;
+		}
+	}
+	snd_play(sndNecromancerRevive)
+	alarm[1] = 5+random(14)
+	}
 
-if instance_exists(InvertedFreak)
-{
-crp = instance_nearest(x,y,InvertedFreak)
-if collision_line(x,y,crp.x,crp.y,Wall,0,0) < 0
-{
-wkick = 5
-gunangle = point_direction(x,y,crp.x,crp.y)
-with crp
-{
-instance_create(x,y,ReviveFX)
-instance_change(ExploFreak,false)
-//with instance_nearest(x,y,Floor)
-//instance_create(x+16+random(16)-8,y+16+random(16)-8,ReviveArea);
-}
-snd_play(sndNecromancerRevive)
-alarm[1] = 5+random(14)
-}
-
-}
+	}
 
 }
 else
 {
 
-//TRANSFORM LEVEL 2
+	//TRANSFORM LEVEL 2
+	if instance_exists(InvertedExploFreak)
+	{
+	crp = instance_nearest(x,y,InvertedExploFreak)
+	if collision_line(x,y,crp.x,crp.y,Wall,0,0) < 0
+	{
+	wkick = 5
+	gunangle = point_direction(x,y,crp.x,crp.y)
+	with crp
+	{
+		instance_create(x,y,ReviveFX)
+		instance_destroy(id);
+		with instance_create(x,y,InvertedRhinoFreak)
+		{
+			if other.raddrop == 0
+				raddrop = 0;
+		}
+	}
+	snd_play(sndNecromancerRevive)
+	alarm[1] = 10+random(20)
+	}
 
-if instance_exists(InvertedExploFreak)
-{
-crp = instance_nearest(x,y,InvertedExploFreak)
-if collision_line(x,y,crp.x,crp.y,Wall,0,0) < 0
-{
-wkick = 5
-gunangle = point_direction(x,y,crp.x,crp.y)
-with crp
-{
-instance_create(x,y,ReviveFX)
-instance_change(InvertedRhinoFreak,false)
-//with instance_nearest(x,y,Floor)
-//instance_create(x+16+random(16)-8,y+16+random(16)-8,ReviveArea);
-}
-snd_play(sndNecromancerRevive)
-alarm[1] = 10+random(20)
-}
-
-}
+	}
 
 }
 

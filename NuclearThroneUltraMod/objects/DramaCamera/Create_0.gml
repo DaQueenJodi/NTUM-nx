@@ -1,9 +1,54 @@
-if UberCont.opt_bossintro=0 || instance_exists(SurvivalWave) || UberCont.hadBossIntro{
+if instance_exists(Player) && !instance_exists(SurvivalWave)
+{
+    ///
+    with MusCont
+    {
+    audio_stop_all()
+    //optimise 
+    
+    //sound_discard(song)
+    //sound_discard(amb)
+    
+    if Player.area = 1 || Player.area = 105
+    song = musBoss1;
+    if Player.area = 3 || Player.area = 106
+    song = musBoss2;
+    if Player.area = 5 || Player.area = 107
+    song = musBoss3;
+    if Player.area = 6 || Player.area = 112
+		song = musBoss7;
+    if Player.area = 7 || Player.area = 108
+		song = musPurpleDragonBoss;
+    if Player.area = 8 || Player.area = 109
+	{
+		if (random(100) <1)
+			song = sndChubbyEmuSong;
+		else
+			song = musBoss6B;
+	}
+	if Player.area = 2
+		song = musBoss5;
+    if Player.area = 101
+		song = musBoss1;
+    snd_loop(song)
+    snd_loop(amb)
+    //audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
+	audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
+    
+    audio_sound_gain(song,max(0,sqrt(UberCont.opt_musvol)),0);
+    
+    audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
+    
+    //audio_sound_gain(sndBossWin,max(0,sqrt(UberCont.opt_musvol)),0);
+    }
+
+}
+
+
+if UberCont.opt_bossintro=0 || instance_exists(SurvivalWave) || UberCont.hadBossIntro {
 instance_destroy();
 exit;}
-
 UberCont.hadBossIntro = true;
-
 urgent = 2
 alarm[0] = 2;
 
@@ -84,10 +129,20 @@ if Player.area = 107
 name = "INVERTED LIL HUNTER"
 }
 
-if Player.area = 6
+if Player.area = 6 
 {
-//with instance_create(x,y,Drama)
-name = "BIG MACHINE"
+	if Player.subarea == 2
+	{
+		name = "BIG MACHINE";
+		if random(120) < 1
+			name = choose("METAL BLOCK","TINY THRONE");
+	}
+	else
+	{
+		name = "TECHNOMANCER";
+		if random(80) < 1
+			name = choose("TECHROMANCER","LITTLE SHIT");
+	}
 }
 if Player.area = 112
 {
@@ -161,51 +216,7 @@ name=other.name;
 __view_set( e__VW.XView, 0, x-(__view_get( e__VW.WView, 0 )*0.5) );
 __view_set( e__VW.YView, 0, y-(__view_get( e__VW.HView, 0 )*0.5) );
 
-if instance_exists(Player)
-{
-    ///
-    with MusCont
-    {
-    audio_stop_all()
-    //optimise 
-    
-    //sound_discard(song)
-    //sound_discard(amb)
-    
-    if Player.area = 1 || Player.area = 105
-    song = musBoss1;
-    if Player.area = 3 || Player.area = 106
-    song = musBoss2;
-    if Player.area = 5 || Player.area = 107
-    song = musBoss3;
-    if Player.area = 6 || Player.area = 112
-    song = musBoss7;
-    if Player.area = 7 || Player.area = 108
-    song = musPurpleDragonBoss;
-    if Player.area = 8 || Player.area = 109
-	{
-		if (random(100) <1)
-			song = sndChubbyEmuSong;
-		else
-			song = musBoss6B;
-	}
-	if Player.area = 2
-	song = musBoss5;
-    if Player.area = 101
-    song = musBoss1;
-    snd_loop(song)
-    snd_loop(amb)
-    //audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
-	audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
-    
-    audio_sound_gain(song,max(0,sqrt(UberCont.opt_musvol)),0);
-    
-    audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
-    
-    //audio_sound_gain(sndBossWin,max(0,sqrt(UberCont.opt_musvol)),0);
-    }
 
-}
 
 
 

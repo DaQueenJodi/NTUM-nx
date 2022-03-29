@@ -84,14 +84,13 @@ UberCont.cbst_diff[race] = hard
 
 //Health manipulation!
 if race=16
-    {
+{
+	if skill_got[5]
+		freeArmourStrike = true;
     armour++;
-    if skill_got[5]
-		armour++;
-    
-    }
-if ultra_got[62]//Viking armour up ultra
-    armour++;
+	if ultra_got[62]//Viking armour up ultra
+	    armour++;
+}
 
 if race==10//Rebel pasive
 {

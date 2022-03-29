@@ -49,8 +49,11 @@ with instance_create(x,y,Corpse)
 {
 size = other.size
 mask_index = other.mask_index
-motion_add(other.direction,other.speed)
-speed += max(0,-other.my_health/5)
+if other.speed > 0
+{
+	motion_add(other.direction,other.speed)
+	speed += max(0,-other.my_health/5)
+}
 sprite_index = other.spr_dead
 image_xscale = other.right
 

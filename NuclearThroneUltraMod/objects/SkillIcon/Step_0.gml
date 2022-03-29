@@ -178,6 +178,7 @@ scrWeapons();
 else if skill = 5 && Player.race = 16//VIKING
 {
 	Player.maxarmour+=1;
+	Player.freeArmourStrike = true;
 	Player.armour+=1;//kindness here
 }
 else if skill = 19{

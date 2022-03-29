@@ -14,8 +14,8 @@
   "soundFile": "sndMolesargeDie.ogg",
   "duration": 0.628322,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sounds/Enemies.yy",
+    "name": "Regular",
+    "path": "folders/Sounds/Enemies/Regular.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndMolesargeDie",

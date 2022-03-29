@@ -4,6 +4,13 @@ Sleep(50)
 /// @description Spectacular
 with MusCont {
 	audio_stop_sound(song)
+	if instance_exists(Player) 
+	{
+		if Player.area == 2
+			song = mus6;
+		else if Player.area == 110
+			song = musInvertedSewers;
+	}
 }
 snd_play_2d(snd_dead);
 with instance_create(x,y,BallMomExplode)

@@ -26,12 +26,15 @@ var thing;
 if UberCont.public==0 && !keyboard_check(vk_control) {
 //hacks
 	if keyboard_check_pressed(ord("V")) {
-		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
-	    with instance_create(f.x + 16,f.y + 16,HyperCrystal)
-			curse = 1;
-		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "HyperCrystal";
+		repeat(3)
+		{
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
+		    with instance_create(f.x + 16,f.y + 16,Technomancer)
+				curse = 1;
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "HyperCrystal";
+		}
 	}
 	if keyboard_check_pressed(ord("C")) {
 		var dangle = random(1)*360;

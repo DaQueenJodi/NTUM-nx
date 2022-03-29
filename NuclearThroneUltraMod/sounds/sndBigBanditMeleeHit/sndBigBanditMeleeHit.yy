@@ -15,7 +15,7 @@
   "duration": 2.25,
   "parent": {
     "name": "BigBandit",
-    "path": "folders/Sounds/Enemies/BigBandit.yy",
+    "path": "folders/Sounds/Enemies/Boss/BigBandit.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndBigBanditMeleeHit",

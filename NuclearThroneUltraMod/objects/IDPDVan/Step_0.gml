@@ -10,7 +10,6 @@ speed=12;
 
 if speed<0.8 && idle
 {
-	debug("TEAM ZERO");
 	idle=false;
 if team != 2
 	team = 0;

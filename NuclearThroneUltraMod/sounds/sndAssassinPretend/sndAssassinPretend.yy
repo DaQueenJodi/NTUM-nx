@@ -14,8 +14,8 @@
   "soundFile": "sndAssassinPretend",
   "duration": 1.466667,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sounds/Enemies.yy",
+    "name": "Regular",
+    "path": "folders/Sounds/Enemies/Regular.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndAssassinPretend",

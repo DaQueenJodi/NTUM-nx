@@ -20,7 +20,7 @@ hogpoints = 0; //INVESTMENT ULTRA amount of ultra mutations you get
 horrorEtaken = false;
 markforhpreduction = false; //used by skeleton to bypass immunity frames
 raddrop = 0;
-hurtDuration = 15; //Additional iframes
+hurtDuration = 12; //Additional iframes
 hurtTime = 0;
 lockoutElementor = false; //When no ammo lockout ability for elementor
 boostLevel = 0;
@@ -459,6 +459,7 @@ HumphryTBcount = 0;
 HumphrySkill = 0;
 HumphryShotCount = 0;
 
+freeArmourStrike = false;
 if race = 16 {
     armour = 2;
     maxarmour = 2;

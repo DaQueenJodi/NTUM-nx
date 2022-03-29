@@ -66,6 +66,14 @@ with BallMom
 {
 	depth = -99;	
 }
+with HyperCrystal
+{
+	depth = -99;	
+}
+with Technomancer
+{
+	depth = -99;	
+}
 }
 urgent += 1
 

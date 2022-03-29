@@ -37,8 +37,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "Sewers",
+    "path": "folders/Objects/Enemies/Sewers.yy",
   },
   "resourceVersion": "1.0",
   "name": "Turtle",

@@ -14,8 +14,8 @@
   "soundFile": "sndRavenHit",
   "duration": 0.329342,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sounds/Enemies.yy",
+    "name": "Regular",
+    "path": "folders/Sounds/Enemies/Regular.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndRavenHit",

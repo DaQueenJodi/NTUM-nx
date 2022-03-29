@@ -14,8 +14,8 @@
   "soundFile": "sndBigMaggotBite",
   "duration": 0.0,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sounds/Enemies.yy",
+    "name": "Regular",
+    "path": "folders/Sounds/Enemies/Regular.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndBigMaggotBite",

@@ -66,10 +66,11 @@ wkick = 5
 gunangle = point_direction(x,y,crp.x,crp.y)
 with crp
 {
-//instance_create(x,y,ReviveFX)
-//instance_change(Freak,true)
-with instance_nearest(x,y,Floor)
-instance_create(x+16+random(16)-8,y+16+random(16)-8,ReviveArea);
+var nearestFloor = instance_nearest(x,y,Floor);
+with instance_create(nearestFloor.x+16+random(16)-8,nearestFloor.y+16+random(16)-8,ReviveArea)
+{
+	owner = other.id;	
+}
 
 snd_play(sndNecromancerRevive)
 }

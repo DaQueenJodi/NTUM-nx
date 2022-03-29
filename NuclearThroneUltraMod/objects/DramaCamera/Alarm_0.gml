@@ -31,6 +31,10 @@ with InvertedChesireCat
 depth = -2
 with BallMom
 depth = -2
+with HyperCrystal
+depth = -2
+with Technomancer
+depth = -2
 
 
 with Drama

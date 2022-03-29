@@ -14,8 +14,8 @@
   "soundFile": "sndLilHunterSummon.wav",
   "duration": 0.810688,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sounds/Enemies.yy",
+    "name": "Boss",
+    "path": "folders/Sounds/Enemies/Boss.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndLilHunterSummon",
