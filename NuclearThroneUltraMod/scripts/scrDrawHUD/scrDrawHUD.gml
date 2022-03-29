@@ -356,7 +356,7 @@ function scrDrawHUD() {
 	if Player.race=26
 	{
 
-	txt = string(Player.HumphrySkill);
+	txt = string(round(Player.HumphrySkill));
 
 
 
@@ -367,7 +367,7 @@ function scrDrawHUD() {
 	draw_text(__view_get( e__VW.XView, 0 )+14,__view_get( e__VW.YView, 0 )+68,string_hash_to_newline(string(txt)))
 	draw_text(__view_get( e__VW.XView, 0 )+14,__view_get( e__VW.YView, 0 )+69,string_hash_to_newline(string(txt)))
 	draw_text(__view_get( e__VW.XView, 0 )+15,__view_get( e__VW.YView, 0 )+69,string_hash_to_newline(string(txt)))
-	if Player.HumphryTB=1
+	if Player.HumphryLoss
 	draw_set_color(c_red)
 	else
 	draw_set_color(c_white)

@@ -565,9 +565,7 @@ if(my_health<=0 && maxhealth>0)
     {
     HumphrySkill=0;
     my_health=1;
-    
-    HumphryTB=1;//red colour
-    
+    HumphryLoss = true;
     alarm[1]=20;//invincibility 
     }
     

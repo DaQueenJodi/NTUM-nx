@@ -454,8 +454,8 @@ rnglevelloop = 0;
 
 heavyheart = 0;
 
-HumphryTB = 0;
 HumphryTBcount = 0;
+HumphryLoss = false;
 HumphrySkill = 0;
 HumphryShotCount = 0;
 

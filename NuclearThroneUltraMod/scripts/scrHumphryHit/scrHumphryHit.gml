@@ -20,7 +20,7 @@ function scrHumphryHit() {
     
 	    with Player
 	    {
-	    HumphryTB=0;
+	    HumphryLoss = false;
 	    if ultra_got[101]
 	    HumphrySkill+=2;
 	    else

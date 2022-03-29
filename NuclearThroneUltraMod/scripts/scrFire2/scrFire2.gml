@@ -893,11 +893,12 @@ function scrFire2() {
 	BackCont.viewy2 += lengthdir_y(2,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
 	with instance_create(x,y,Burst)
 	{
-	creator = other.id
-	ammo = 3
-	time = 2
-	team = other.team
-	event_perform(ev_alarm,0) 
+		snd = sndGoldMachinegun;
+		creator = other.id
+		ammo = 3
+		time = 2
+		team = other.team
+		event_perform(ev_alarm,0)
 	}
 
 	break;
@@ -2309,16 +2310,17 @@ function scrFire2() {
 
 	break;
 
-	//ASSAULT PISTOL
+	//GOLDEN ASSAULT PISTOL
 	case 280:
 
 	with instance_create(x,y,Burst)
 	{
-	creator = other.id
-	ammo = 2
-	time = 2
-	team = other.team
-	event_perform(ev_alarm,0) 
+		snd = sndGoldMachinegun;
+		creator = other.id
+		ammo = 2
+		time = 2
+		team = other.team
+		event_perform(ev_alarm,0) 
 	}
 
 	break;

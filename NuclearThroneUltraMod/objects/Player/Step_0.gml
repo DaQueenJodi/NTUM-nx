@@ -862,16 +862,17 @@ if reload > 0
 	wepflip = -wepflip
 
 	if wep_type[wep] = 0
-	snd_play(sndMeleeFlip)
-
+	snd_play(sndMeleeFlip,0,true)
 	if wep_type[wep] = 3
-	snd_play(sndCrossReload)
+	snd_play(sndCrossReload,0,true)
+	if wep_type[wep] = 4
+	snd_play(sndNadeReload,0,true)
 	if string_copy(wep_name[wep],0,6) = "PLASMA"
 	{
 	if skill_got[17] = 1
-	snd_play(sndPlasmaReloadUpg)
+	snd_play(sndPlasmaReloadUpg,0,true)
 	else
-	snd_play(sndPlasmaReload)
+	snd_play(sndPlasmaReload,0,true)
 	}
 	if wep_type[wep] = 2
 	{
@@ -883,7 +884,7 @@ if reload > 0
 	wkick = -1
 	if wep = 8
 	wkick = -2
-	snd_play(sndShotReload)
+	snd_play(sndShotReload,0,true)
 	}
 	}
 }
@@ -910,9 +911,11 @@ if ammo[wep_type[bwep]] < wep_cost[bwep] and wep_type[bwep] != 0
 scrEmptyB()
 
 if wep_type[bwep] = 0 //&& ultra_got[27]=0//mirror hands melee bug fix part 2
-snd_play(sndMeleeFlip)
+snd_play(sndMeleeFlip,0,true)
 if wep_type[bwep] = 3
-snd_play(sndCrossReload)
+snd_play(sndCrossReload,0,true)
+if wep_type[wep] = 4
+	snd_play(sndNadeReload,0,true)
 if wep_type[bwep] = 2
 {
 repeat(wep_cost[bwep])
@@ -929,7 +932,7 @@ else{
 bwkick = -1
 if bwep = 8
 bwkick = -2}
-snd_play(sndShotReload)
+snd_play(sndShotReload,0,true)
 }
     if ultra_got[27]{
     scrSwapWeps();
@@ -1494,35 +1497,38 @@ tranquilitydelay=0;
 ///Humphry thronebutt
 if race = 26
 {
-    if HumphryTB=1 && HumphrySkill>0
-    {
-	    HumphryTBcount++;
+	if HumphryLoss
+	{
+		if skill_got[5]
+		{
+			HumphryTBcount++;
+		    HumphrySkill-= 1.25;
     
-	    //if HumphryTBcount=2||HumphryTBcount=6||HumphryTBcount=9 ||HumphryTBcount=12
-	    HumphrySkill-= 1.25;
+		    if HumphryTBcount>=8
+		    {
+		    if my_health<maxhealth
+		    {
+			    instance_create(x,y,HealFX)
     
-	    if HumphryTBcount>=8
+			    snd_play(sndHealthPickup);
+    
+			    my_health++;
+		    }
+		    HumphryTBcount=0;
+		    }
+		}
+		else
+		{
+			HumphrySkill-= 2;
+		}
+		if HumphrySkill<1
 	    {
-	    if my_health<maxhealth
-	    {
-	    instance_create(x,y,HealFX)
-    
-	    snd_play(sndHealthPickup);
-    
-	    my_health++;
+		    HumphrySkill=0
+		    HumphryLoss = false;
 	    }
-	    HumphryTBcount=0;
-	    //HumphrySkill--;
-	    }
-    }
-    else if HumphrySkill<1
-    {
-    HumphrySkill=0
-    HumphryTB=0;
-    }
+	}
 }
 
-/* */
 ///Hunter damage boost delay
 if damageboostdelay>0
 damageboostdelay--;

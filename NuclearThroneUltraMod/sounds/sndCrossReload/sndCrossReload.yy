@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndCrossReload",
-  "duration": 0.0,
+  "duration": 0.443673,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

@@ -32,17 +32,10 @@ if HumphryHit=0
 with Player
 {
 missedthislevel=true;
-
-if skill_got[5]=1
-{
-HumphryTB=1;
+HumphryLoss = true;
 HumphryTBcount=0;
 HumphrySkill--;
-}
-else
-{
-HumphrySkill=0;
-}
+
 with projectile
 HumphryHit=2;
 

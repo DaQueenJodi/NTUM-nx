@@ -999,7 +999,7 @@ function scrFire() {
 	//GOLDEN MACHINEGUN
 	case 41:
 
-	snd_play_fire(sndMachinegun)
+	snd_play_fire(sndGoldMachinegun)
 	with instance_create(x,y,Shell)
 	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
 

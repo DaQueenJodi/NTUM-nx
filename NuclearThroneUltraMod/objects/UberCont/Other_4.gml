@@ -7,6 +7,22 @@ subarea=Player.subarea;
 loops=Player.loops;
 }
 
+if area == 1 || area == 105 || area == 10 || area == 7 || area == 108
+	snd_wallbreak = sndWallBreakRock;
+else if area == 2 || area == 110 || area == 3 || area == 106 || area == 5 || area == 107
+	snd_wallbreak = sndWallBreakScrap;
+else if area == 2 || area == 110 || area == 3 || area == 106
+	snd_wallbreak = sndWallBreakRock;
+else if area == 4 || area == 115 || area == 111
+	snd_wallbreak = sndWallBreakCrystal;
+else if area == 6 || area == 112
+	snd_wallbreak = sndWallBreakLabs;
+else if area == 8 || area == 109 || area == 9
+	snd_wallbreak = sndWallBreakBrick;
+else if area == 114
+	snd_wallbreak = sndWallBreakJungle;
+else if area == 2
+
 if area=1 && subarea=1 && loops=0 || UberCont.opt_gamemode == 25 || UberCont.opt_gamemode == 8
 {
 

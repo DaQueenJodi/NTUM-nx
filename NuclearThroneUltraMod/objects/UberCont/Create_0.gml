@@ -108,3 +108,4 @@ maxUltramod = 16;
 casualModeHPIncrease = 2;
 
 hadBossIntro = false;
+snd_wallbreak = sndWallBreak;

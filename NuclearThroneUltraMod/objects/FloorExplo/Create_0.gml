@@ -298,8 +298,8 @@ BackCont.shake += 1
 //if random(2)<1//not to much debris
 instance_create(x+8+random(8)-4,y+8+random(8)-4,Debris)
 
-if !audio_is_playing(sndWallBreak)
-snd_play(sndWallBreak)
+if !audio_is_playing(UberCont.snd_wallbreak)
+snd_play(UberCont.snd_wallbreak)
 
 styleb = 0
 

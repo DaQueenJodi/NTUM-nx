@@ -53,10 +53,10 @@ function scrWepModName(wm){
 	return "[MORPH]"
 	break;
 	case 17:
-	return "[PICKUPS DROP]"
+	return "[PICKUP DROP]"
 	break;
 	case 18:
-	return "[WEAPONS DROP]"
+	return "[WEAPON DROP]"
 	break;
 	default:
 	return "UNKNOWN MOD?#IF YOU SEE THIS SOMETHING IS WRONG#PLS REPORT @ERDEPPOL"
