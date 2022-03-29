@@ -97,8 +97,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Technomancer",
-    "path": "folders/Sprites/Enemies/Boss/Technomancer.yy",
+    "name": "BigMachine",
+    "path": "folders/Sprites/Enemies/Boss/BigMachine.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprInvertedBigMachineBecomeExposed",
