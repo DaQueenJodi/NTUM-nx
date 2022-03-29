@@ -4781,7 +4781,7 @@ function scrFire2() {
 	//OBSIDIAN THROWING KNIFE
 	case 370:
 	snd_play_fire(sndEnemySlash);
-	var yc = object_index == YungCuzDupe;
+	var yc = object_index == YungCuzDupe || object_index == RobotTurret;
 	with instance_create(x,y,ThrowWepNoReturn)
 	{
 		team=other.team;

@@ -240,6 +240,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if (keyboard_check_pressed(ord("5")))
 	    {
 			ultramod --;
+			ultramod = max(0,ultramod);
 			thing = instance_create(x,y,PopupText)
 			thing.mytext = "Ultramod -- "+string(ultramod);
 	    }

@@ -3,7 +3,6 @@ image_speed = 0.4
 
 raddrop = 10
 meleedamage = 0
-
 HumphryTB=0;
 HumphryTBcount=0;
 HumphrySkill=0;
@@ -22,7 +21,8 @@ scrWeapons()
 if instance_exists(Player)
 {
 race=Player.race;
-
+ultra_got = Player.ultra_got;
+skill_got = Player.skill_got;
 bettermelee=Player.bettermelee;
 betterlaserbrain=Player.betterlaserbrain;
 betterpluto=Player.betterpluto;
@@ -45,8 +45,10 @@ hurt_pitch_variation = 0;
 
 wep = Player.wep
 bwep = Player.bwep
-//curse = 0
-//bcurse = 0
+cwep = Player.cwep
+curse = 0
+bcurse = 0
+ccurse = 0;
 reload = 0//Player.reload
 breload = 0//Player.breload
 team = 4//Player.team
@@ -68,6 +70,15 @@ wepmod2 = Player.wepmod2;
 wepmod3 = Player.wepmod3;
 wepmod4 = Player.wepmod4;
 
+bwepmod1 = Player.bwepmod1;
+bwepmod2 = Player.bwepmod2;
+bwepmod3 = Player.bwepmod3;
+bwepmod4 = Player.bwepmod4;
+
+cwepmod1 = Player.cwepmod1;
+cwepmod2 = Player.cwepmod2;
+cwepmod3 = Player.cwepmod3;
+cwepmod4 = Player.cwepmod4;
 
 
 //default shit

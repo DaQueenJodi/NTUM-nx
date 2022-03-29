@@ -250,7 +250,10 @@ function scrDrawHUD() {
 		var h = 16*0.5;
 		var w = 24*0.5;
 		if (mouse_x > xx-w && mouse_x < xx+w && mouse_y < yy+h && mouse_y > yy-h)
-			scrDrawHelp("this is an ultramod I am still working on this")
+		{
+			var umn = scrUltraModName(Player.ultramod);
+			scrDrawHelp(umn[0] + " <=> " + umn[1]);
+		}
 		draw_sprite(sprUltraModIcon,Player.ultramod,xx,yy);
 	}
 	//WEAPON MODS!

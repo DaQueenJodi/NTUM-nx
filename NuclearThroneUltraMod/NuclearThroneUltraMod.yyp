@@ -3582,6 +3582,7 @@
     {"id":{"name":"sndMutant5Wrld","path":"sounds/sndMutant5Wrld/sndMutant5Wrld.yy",},"order":74,},
     {"id":{"name":"sndMutant5Crwn","path":"sounds/sndMutant5Crwn/sndMutant5Crwn.yy",},"order":75,},
     {"id":{"name":"sndMutant5Hurt","path":"sounds/sndMutant5Hurt/sndMutant5Hurt.yy",},"order":76,},
+    {"id":{"name":"scrUltraModName","path":"scripts/scrUltraModName/scrUltraModName.yy",},"order":19,},
     {"id":{"name":"sndMutant5LowA","path":"sounds/sndMutant5LowA/sndMutant5LowA.yy",},"order":77,},
     {"id":{"name":"sndMutant5LowH","path":"sounds/sndMutant5LowH/sndMutant5LowH.yy",},"order":78,},
     {"id":{"name":"sndMutant5Chst","path":"sounds/sndMutant5Chst/sndMutant5Chst.yy",},"order":79,},
