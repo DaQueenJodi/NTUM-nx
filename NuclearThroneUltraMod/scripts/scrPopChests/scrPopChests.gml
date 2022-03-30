@@ -112,9 +112,9 @@ function scrPopChests() {
 		if(Player.skill_got[23]){//OPEN MIND
 
 		if Player.race=25
-		gol=choose(3,3,4,4,2);
+		gol=choose(3,3,3,2,2,2);
 		else
-		gol = choose(3,3,4,3,2);
+		gol = choose(3,3,2,2,2,2);
 
 		healthChestGol += choose(0,0,0,0,0,1);
 		}

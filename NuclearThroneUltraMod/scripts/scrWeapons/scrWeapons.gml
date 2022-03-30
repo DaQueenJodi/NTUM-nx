@@ -4389,7 +4389,7 @@ function scrWeapons() {
 	wep_load[397] = 24
 	wep_cost[397] = 2
 	wep_sprt[397] = sprSwarmBomb
-	wep_area[397] = 5
+	wep_area[397] = 8
 	wep_text[397] = "bee hive"
 	wep_swap[397] = sndSwapBow
 	wep_rad[397] = 0;
@@ -4696,8 +4696,8 @@ function scrWeapons() {
 	wep_auto[425] = 0
 	wep_load[425] = 2
 	wep_cost[425] = 1
-	wep_sprt[425] = sprBloodPistol
-	wep_area[425] = 8
+	wep_sprt[425] = sprHeavyBloodPistol
+	wep_area[425] = 5
 	wep_text[425] = ""
 	wep_swap[425] = sndSwapPistol
 	wep_rad[425] = 0;
@@ -4707,8 +4707,8 @@ function scrWeapons() {
 	wep_auto[426] = 1
 	wep_load[426] = 3
 	wep_cost[426] = 1
-	wep_sprt[426] = sprBloodRifle
-	wep_area[426] = 10
+	wep_sprt[426] = sprHeavyBloodRifle
+	wep_area[426] = 6
 	wep_text[426] = ""
 	wep_swap[426] = sndSwapPistol
 	wep_rad[426] = 0;
@@ -4718,7 +4718,7 @@ function scrWeapons() {
 	wep_auto[427] = 0
 	wep_load[427] = 5
 	wep_cost[427] = 2
-	wep_sprt[427] = sprRogueRifle
+	wep_sprt[427] = sprUltraRogueRifle
 	wep_area[427] = -1
 	wep_text[427] = ""
 	wep_swap[427] = sndSwapMachinegun
@@ -4740,7 +4740,7 @@ function scrWeapons() {
 	wep_auto[429] = 1
 	wep_load[429] = 25
 	wep_cost[429] = 2
-	wep_sprt[429] = sprSplinterGun
+	wep_sprt[429] = sprSplinterStorm
 	wep_area[429] = 10
 	wep_text[429] = "bouncing splinters"
 	wep_swap[429] = sndSwapBow
@@ -4751,7 +4751,7 @@ function scrWeapons() {
 	wep_auto[430] = 0
 	wep_load[430] = 30
 	wep_cost[430] = 4
-	wep_sprt[430] = sprFlakCannon
+	wep_sprt[430] = sprSlugCannon
 	wep_area[430] = 11
 	wep_text[430] = "CTRL + S"
 	wep_swap[430] = sndSwapExplosive

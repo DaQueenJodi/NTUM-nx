@@ -11,7 +11,7 @@ mxSpd = 5;
 if instance_exists(Player){
 if Player.skill_got[21] = 1//bolt marrow
 {
-hits+=2;
+hits+=choose(1,1,2);
 mxSpd ++;
 if Player.race == 25
 	mxSpd += 0.2;
