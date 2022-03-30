@@ -28,7 +28,14 @@ motion_add(other.direction,4)
 }
 
 instance_destroy()
-with instance_create(x,y,BulletHit)
-sprite_index=sprIDPDBulletHit
+with instance_create(x,y,EBulletHit)
+{
+	if other.team == 2
+		sprite_index = sprIDPDBulletHitRogue;
+	else
+		sprite_index = sprIDPDBulletHit;
+}
+
+
 }
 

@@ -30,15 +30,15 @@ else if(speed>6)
 
 
 
-if(image_xscale<1)
+if(image_xscale<nomscale)
 {
 image_xscale+=0.1;
 image_yscale+=0.1;
 }
 else
 {
-image_xscale=1;
-image_yscale=1;
+image_xscale=nomscale;
+image_yscale=nomscale;
 }
 if( (collision_point(x+lengthdir_x(4,originalDirection+20),y+lengthdir_y(4,originalDirection+20),Wall,false,true))&&(collision_point(x+lengthdir_x(4,originalDirection-20),y+lengthdir_y(4,originalDirection-20),Wall,false,true)) ){//precise or not?
 instance_destroy();

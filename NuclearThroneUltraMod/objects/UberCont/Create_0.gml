@@ -83,7 +83,7 @@ enum ultramods {
 	lightningKraken,
 	toxicFire,
 	
-	plasmaFlak,
+	pelletElectro,
 	boltPlasma,
 	plasmaRocket,
 	grenadeRocket,

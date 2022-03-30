@@ -29,7 +29,7 @@ image_xscale-=0.16;
 image_yscale-=0.16;
 
 instance_create(x,y,Dust)
-snd_play(sndHitWall,0.05,true,true,1,false);
+snd_play(sndHitWall,0.05,true,true,1,false,true,0.75);
 
 
 resetSpeed=true;

@@ -11,16 +11,12 @@ y = creator.y
 snd_play_fire(sndSplinterMinigun)
 var dir = point_direction(x,y,mouse_x,mouse_y) + (accuracy * sin(ammo));
 repeat(3)
-with instance_create(x,y,BouncerSplinter)//5 splinters
+with instance_create(x,y,StormSplinter)//5 splinters
 {
-	motion_add(dir+random(8)-4,20+random(4))
+	motion_add(dir+random(8)-4,14+random(4))
 	image_angle = direction
 	team = other.team
-	if Player.race=11
-	{
-		if team=2
-			speed*=1.18;
-	}
+	scrBoostProjectileSpeed();
 }
 
 BackCont.viewx2 += lengthdir_x(7,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake

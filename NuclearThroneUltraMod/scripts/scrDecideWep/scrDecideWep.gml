@@ -13,7 +13,7 @@ function scrDecideWep(wepTierParam, maxTriesParam = 10, cursedParam = 0, minWepA
 
 		}
 		else {
-			var maxAreaGoodEnough = 10;
+			var maxAreaGoodEnough = irandom_range(7,12);
 			if Player.race = 8
 			{
 				wepTier += 1

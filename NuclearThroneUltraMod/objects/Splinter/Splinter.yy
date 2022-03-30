@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskBolt",
-    "path": "sprites/mskBolt/mskBolt.yy",
+    "name": "mskSplinter",
+    "path": "sprites/mskSplinter/mskSplinter.yy",
   },
   "persistent": false,
   "parentObjectId": {

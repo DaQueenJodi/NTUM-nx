@@ -12,5 +12,4 @@ hitWall=0;
 
 alarm[2] = 1
 
-/* */
-/*  */
+rotation = choose(10,-10);

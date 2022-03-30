@@ -1,5 +1,5 @@
 
-function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = true, priority = 2,noOverlap = false, noOverlapWhenNear = true) {
+function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = true, priority = 2,noOverlap = false, noOverlapWhenNear = true,volume = 0.8) {
 	//SS_Init();
 	if noOverlap && audio_is_playing(sndId)
 		return false;
@@ -57,6 +57,7 @@ function snd_play(sndId, randompitch = 0, cancelPrev = false, usesLocation = tru
 				mySound = sndId;
 				emitter = audio_emitter_create();
 				audio_emitter_position(emitter,x,y,depth);
+				audio_emitter_gain(emitter, volume);
 				audio_emitter_falloff(emitter, 50, 400, 1);
 				audio_sound_pitch(audio_play_sound_on(emitter,sndId,false,priority), 1 + (random(randompitch)*2 - randompitch));
 				alarm[0] = room_speed * audio_sound_length(sndId);

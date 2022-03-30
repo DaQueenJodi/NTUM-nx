@@ -2,9 +2,7 @@
 //snd_play(sndShotgunHitWall)
 
 if speed > 6{
-audio_stop_sound(sndShotgunHitWall)
-audio_sound_pitch(sndShotgunHitWall,random_range(0.9,1.1))
-audio_play_sound(sndShotgunHitWall,100,0)
+snd_play(sndShotgunHitWall,0.05,true,true,1,false,true,0.75);
 }
 
 move_bounce_solid(true)

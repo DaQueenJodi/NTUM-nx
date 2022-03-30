@@ -299,7 +299,7 @@ BackCont.shake += 1
 instance_create(x+8+random(8)-4,y+8+random(8)-4,Debris)
 
 if !audio_is_playing(UberCont.snd_wallbreak)
-snd_play(UberCont.snd_wallbreak,0.05,true)
+snd_play(UberCont.snd_wallbreak,0.05,true,true,1,false,false,0.6)
 
 styleb = 0
 

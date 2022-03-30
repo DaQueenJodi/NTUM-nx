@@ -26,10 +26,10 @@ function scrDrawBloom() {
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3))//roids ultra d
 	
 	with FrostFlakBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba)//roids ultra d
+	draw_sprite_ext(sprite_index,1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba)//roids ultra d
 	
 	with BouncerFlakBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba)//roids ultra d
+	draw_sprite_ext(sprite_index,1,x,y,2,2,image_angle,c_white,(Player.ultra_got[28]*0.3)+ba)//roids ultra d
 	}
 	with PlutoFX
 	draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale,image_angle,c_white,ba)
@@ -137,7 +137,11 @@ function scrDrawBloom() {
 	draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale*2,image_angle,c_white,ba)
 
 	with FlakBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba)
+	draw_sprite_ext(sprite_index,1,x,y,2,2,image_angle,c_white,ba)
+	with SlugCannonBullet
+	draw_sprite_ext(sprite_index,1,x,y,2,2,image_angle,c_white,ba)
+	with UltraFlakBullet
+	draw_sprite_ext(sprite_index,1,x,y,2,2,image_angle,c_white,ba)
 	
 	with AssassinBoss
 	{
@@ -148,9 +152,9 @@ function scrDrawBloom() {
 		}	
 	}
 	with SuperFlakBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba)
+	draw_sprite_ext(sprite_index,1,x,y,2,2,image_angle,c_white,ba)
 	with SuperBouncerFlakBullet
-	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba)
+	draw_sprite_ext(sprite_index,1,x,y,2,2,image_angle,c_white,ba)
 	with PlasmaBig
 	draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,ba)
 	with PlasmaHuge

@@ -29,9 +29,9 @@ if um == ultramods.splinterBullet
 	with Player
 	{
 		if skill_got[17] = 1
-			snd_play_fire(sndPlasmaUpg)
+			snd_play_fire(sndPlasmaMinigunUpg)
 		else
-			snd_play_fire(sndPlasma)	
+			snd_play_fire(sndPlasmaMinigun)	
 	}
 	with instance_create(x,y,ElectroBallSpawn)
 	{motion_add(other.direction+(random(8)-4),1)

@@ -1,7 +1,8 @@
 with instance_create(x,y,BoltTrail)
 {
-image_angle=other.direction;
-image_xscale=other.speed;
+	colour = other.trailColour;
+	image_angle=other.direction;
+	image_xscale=other.speed;
 }
 
 if instance_exists(enemy) and instance_exists(Player)

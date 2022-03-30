@@ -1,6 +1,8 @@
 if other.team != team
 {
 instance_destroy()
+with instance_create(x,y,BulletHit)
+	sprite_index = sprFlakHit;
 snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
 Sleep(50)
 with other

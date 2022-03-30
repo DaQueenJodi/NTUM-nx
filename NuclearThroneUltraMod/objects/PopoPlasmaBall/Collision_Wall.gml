@@ -32,7 +32,7 @@ instance_create(x,y,Dust)
 
 instance_destroy();
 
-snd_play(sndHitWall,0.05,true,true,1,false);
+snd_play(sndHitWall,0.05,true,true,1,false,true,0.75);
 
 
 resetSpeed=true;

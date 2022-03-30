@@ -1,2 +1,2 @@
-/// @description xxx
+/// @description accuracy
 accuracy = 14;

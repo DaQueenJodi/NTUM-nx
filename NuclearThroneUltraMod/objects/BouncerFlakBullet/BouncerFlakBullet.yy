@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprFlakBullet",
-    "path": "sprites/sprFlakBullet/sprFlakBullet.yy",
+    "name": "sprBouncerFlakBullet",
+    "path": "sprites/sprBouncerFlakBullet/sprBouncerFlakBullet.yy",
   },
   "solid": false,
   "visible": true,

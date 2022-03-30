@@ -9,3 +9,4 @@ instance_destroy()
 
 image_speed = speed/12
 
+image_angle += rotation;

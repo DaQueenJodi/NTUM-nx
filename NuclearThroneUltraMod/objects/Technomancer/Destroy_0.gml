@@ -4,7 +4,7 @@ speed = 0;
 event_inherited()
 
 debug("LEFT OVER:",instance_number(myKind));
-if instance_number(myKind) < 2
+if instance_number(myKind) < 2 && !instance_exists(SurvivalWave) && !instance_exists(WantBoss)
 {
 	with MusCont
     {

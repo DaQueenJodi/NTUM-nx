@@ -2,16 +2,19 @@
 // /@description
 ///@param
 function scrDrawHelp(txt){
+	txt = string_replace_all(txt,"#"," ");
+	var w = 206;
+	var s = string_height("A");
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_top)
 	var xx = __view_get( e__VW.XView, 0 )+110;
-	var yy = __view_get( e__VW.YView, 0 )+20;
+	var yy = __view_get( e__VW.YView, 0 )+22;
 	draw_set_colour(c_black);
 	draw_set_alpha(0.4);
-	draw_rectangle(xx-2,yy-2,xx+string_width(txt)+2,yy+string_height(txt)+2,false);
+	draw_rectangle(xx-2,yy-2,xx+string_width_ext(txt,s,w)+2,yy+string_height_ext(txt,s,w)+2,false);
 	draw_set_alpha(1);
 	draw_set_colour(c_black);
-	draw_text(xx+1,yy+1,txt);
+	draw_text_ext(xx+1,yy+1,txt,s,w);
 	draw_set_colour(c_white);
-	draw_text(xx,yy,txt);
+	draw_text_ext(xx,yy,txt,s,w);
 }

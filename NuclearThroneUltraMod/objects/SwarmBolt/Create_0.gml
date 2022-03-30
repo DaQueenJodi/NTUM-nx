@@ -7,7 +7,7 @@ dmg = 4;
 target=0;
 
 hits=3;
-maxspd = 5;
+mxSpd = 5;
 if instance_exists(Player){
 if Player.skill_got[21] = 1//bolt marrow
 {

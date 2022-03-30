@@ -9,7 +9,8 @@ norecycle = choose(false,false,true);
 scrCanHumphry();}
 }
 Sleep(18)
-
+with instance_create(x,y,BulletHit)
+	sprite_index = sprFlakHit;
 repeat(6)
 {
 with instance_create(x,y,Smoke)

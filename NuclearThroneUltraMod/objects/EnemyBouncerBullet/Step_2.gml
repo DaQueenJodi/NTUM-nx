@@ -1,2 +1,2 @@
-image_angle=direction;
+image_angle += rotation
 

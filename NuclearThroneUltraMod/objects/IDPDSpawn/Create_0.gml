@@ -25,5 +25,5 @@ image_speed = 0.4
 alarm[0] = 40
 
 
-snd_play(sndIDPDPortalSpawn)
+snd_play(sndIDPDPortalSpawn,0,true)
 

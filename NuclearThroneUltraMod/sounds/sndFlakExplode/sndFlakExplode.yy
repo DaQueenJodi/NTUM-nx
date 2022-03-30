@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndFlakExplode",
-  "duration": 0.0,
+  "duration": 0.676063,
   "parent": {
     "name": "Shell",
     "path": "folders/Sounds/Weapons/Shell.yy",

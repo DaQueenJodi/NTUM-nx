@@ -20,15 +20,15 @@ else if(speed>7)
 
 
 
-if(image_xscale<1)
+if(image_xscale<nomscale)
 {
 image_xscale+=0.02;
 image_yscale+=0.02;
 }
 else
 {
-image_xscale=1;
-image_yscale=1;
+image_xscale=nomscale;
+image_yscale=nomscale;
 }
 
 with instance_create(x+random(8)-4,y+random(16)-8,PlasmaFX)

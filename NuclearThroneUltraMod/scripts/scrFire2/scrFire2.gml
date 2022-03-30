@@ -6409,5 +6409,23 @@ function scrFire2() {
 
 	break;
 	
+	//SLUG CANNON
+	case 430:
+
+	snd_play_fire(sndFlakCannon)
+
+	with instance_create(x,y,SlugCannonBullet)
+	{
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,11+random(2))
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(34,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(34,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 6
+	wkick = 8
+
+	break;
+	
 	}//end of switch part 2!
 }

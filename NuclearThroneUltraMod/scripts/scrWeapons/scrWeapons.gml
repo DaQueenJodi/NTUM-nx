@@ -3375,7 +3375,7 @@ function scrWeapons() {
 
 	wep_name[306] = "BULLET DISPERSE GUN"
 	wep_type[306] = 1
-	wep_auto[306] = 0
+	wep_auto[306] = 1
 	wep_load[306] = 14
 	wep_cost[306] = 6
 	wep_sprt[306] = sprBulletDisperseGun
@@ -3408,7 +3408,7 @@ function scrWeapons() {
 
 	wep_name[309] = "POP DISPERSE GUN"
 	wep_type[309] = 1
-	wep_auto[309] = 0
+	wep_auto[309] = 1
 	wep_load[309] = 14
 	wep_cost[309] = 6
 	wep_sprt[309] = sprPopDisperseGun
@@ -3419,7 +3419,7 @@ function scrWeapons() {
 
 	wep_name[310] = "LASER DISPERSE GUN"
 	wep_type[310] = 5
-	wep_auto[310] = 0
+	wep_auto[310] = 1
 	wep_load[310] = 10
 	wep_cost[310] = 5
 	wep_sprt[310] = sprLaserDisperseGun
@@ -3529,7 +3529,7 @@ function scrWeapons() {
 
 	wep_name[320] = "DISPERSE BAZOOKA"
 	wep_type[320] = 4
-	wep_auto[320] = 0
+	wep_auto[320] = 1
 	wep_load[320] = 30
 	wep_cost[320] = 12
 	wep_sprt[320] = sprDisperseBazooka
@@ -3685,7 +3685,7 @@ function scrWeapons() {
 	wep_name[334] = "ION BOMB"
 	wep_type[334] = 4
 	wep_auto[334] = 0
-	wep_load[334] = 15
+	wep_load[334] = 12
 	wep_cost[334] = 1
 	wep_sprt[334] = sprIonBomb
 	wep_area[334] = 5
@@ -3762,7 +3762,7 @@ function scrWeapons() {
 	wep_name[341] = "ULTRA KRAKEN CANNON"
 	wep_type[341] = 4
 	wep_auto[341] = 0
-	wep_load[341] = 50
+	wep_load[341] = 40
 	wep_cost[341] = 7
 	wep_sprt[341] = sprUltraKrakenCannon
 	wep_area[341] = 21
@@ -3871,7 +3871,7 @@ function scrWeapons() {
 
 	wep_name[351] = "BULLET DISPERSE DISPERSE GUN"
 	wep_type[351] = 1
-	wep_auto[351] = 0
+	wep_auto[351] = 1
 	wep_load[351] = 18
 	wep_cost[351] = 25
 	wep_sprt[351] = sprBulletDisperseDisperseGun
@@ -4731,13 +4731,13 @@ function scrWeapons() {
 	wep_cost[428] = 1
 	wep_sprt[428] = sprLaserRifle
 	wep_area[428] = 13
-	wep_text[428] = "r"
+	wep_text[428] = "excavate"
 	wep_swap[428] = sndSwapEnergy
 	wep_rad[428] = 0;
 	
-	wep_name[429] = "HAILSTORM"
+	wep_name[429] = "SPLINTER STORM"
 	wep_type[429] = 3
-	wep_auto[429] = 0
+	wep_auto[429] = 1
 	wep_load[429] = 25
 	wep_cost[429] = 2
 	wep_sprt[429] = sprSplinterGun
@@ -4745,6 +4745,17 @@ function scrWeapons() {
 	wep_text[429] = "bouncing splinters"
 	wep_swap[429] = sndSwapBow
 	wep_rad[429] = 0;
+	
+	wep_name[430] = "SLUG CANNON"
+	wep_type[430] = 2
+	wep_auto[430] = 0
+	wep_load[430] = 30
+	wep_cost[430] = 4
+	wep_sprt[430] = sprFlakCannon
+	wep_area[430] = 11
+	wep_text[430] = "CTRL + S"
+	wep_swap[430] = sndSwapExplosive
+	wep_rad[430] = 0;
 
 
 	maxwep = array_length(wep_name)-1;

@@ -7,5 +7,4 @@ motion_add(random(360),random(2))
 if speed <2
 instance_destroy()
 
-//image_speed = speed/12
-
+image_angle += rotation;

@@ -14,7 +14,7 @@ repeat(4+irandom(2))
 		image_index = 6
 }
 
-if !instance_exists(SurvivalWave)
+if !instance_exists(SurvivalWave) && !instance_exists(WantBoss) && instance_number(BigVulture) == 1
 	with MusCont
 	{
 		audio_stop_sound(song);

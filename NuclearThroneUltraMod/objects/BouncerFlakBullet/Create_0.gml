@@ -4,3 +4,4 @@ typ = 1
 image_speed=0.4;
 alarm[0]=44;
 
+rotation = choose(10,-10);

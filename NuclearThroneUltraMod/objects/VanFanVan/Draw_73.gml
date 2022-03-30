@@ -11,8 +11,8 @@ var oy = lengthdir_y(24,image_angle-90);
 draw_line_colour(x+ox,y+oy,dx+ox,dy+oy,
 col1,col2);
 
-var xx = x + lengthdir_x(64,image_angle);;
-var yy = y + lengthdir_y(64,image_angle);;
+var xx = x + lengthdir_x(64,image_angle);
+var yy = y + lengthdir_y(64,image_angle);
 var xxx = xx + lengthdir_x(64,image_angle);
 var yyy = yy + lengthdir_y(64,image_angle);
 repeat(6)

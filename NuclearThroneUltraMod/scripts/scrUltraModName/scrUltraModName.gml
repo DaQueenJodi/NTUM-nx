@@ -25,11 +25,9 @@ function scrUltraModName(um){
 			umn[0] = "TOXIC";
 			umn[1] = "FIRE";
 		break;
-	
-	
-		case ultramods.plasmaFlak:
-			umn[0] = "PLASMA";
-			umn[1] = "FLAK";
+		case ultramods.pelletElectro:
+			umn[0] = "SHOTGUN PELLET";
+			umn[1] = "ELECTRO";
 		break;
 		case ultramods.boltPlasma:
 			umn[0] = "PLASMA";

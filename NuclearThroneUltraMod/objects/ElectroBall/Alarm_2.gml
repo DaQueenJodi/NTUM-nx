@@ -1,5 +1,6 @@
 /// @description ultramod
-if GetPlayerUltramod() == ultramods.splinterElectro
+var um = GetPlayerUltramod();
+if um == ultramods.splinterElectro
 {
 	instance_destroy(id,false);
 	snd_play_fire(sndSplinterGun)
@@ -9,6 +10,19 @@ if GetPlayerUltramod() == ultramods.splinterElectro
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed + 16;
+		team = other.team;
+		alarm[11] = 0;
+	}
+}
+else if um == ultramods.pelletElectro
+{
+	instance_destroy(id,false);
+	with instance_create(x,y,Bullet2)
+	{
+		scrCopyWeaponMod(other);
+		direction = other.direction;
+		image_angle = direction;
+		speed = other.speed;
 		team = other.team;
 		alarm[11] = 0;
 	}

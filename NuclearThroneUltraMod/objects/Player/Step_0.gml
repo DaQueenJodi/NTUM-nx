@@ -739,7 +739,7 @@ if (rad >  GetPlayerMaxRad())
 {
 if level < maxlevel || UberCont.opt_gamemode == 22
 {
-snd_play(sndLevelUp)
+	
 //rad -= level*60
 rad = 0;
 level += 1
@@ -749,9 +749,36 @@ scrUnlockBSkin(25,"FOR REACHING LEVEL 7#BEFORE THE CRYSTAL CAVES#AS MUTATION DOC
 
 repeat(level-6)
 instance_create(x,y,IDPDSpawn)
-with instance_create(x,y,PopupText)
-mytext = "LEVEL "+string(other.level)+"!"
-instance_create(x,y,LevelUp)
+
+	if level == 10
+	{
+		snd_play_2d(sndExplosionXXL);
+		instance_create(x,y,LevelUpUltra);
+		BackCont.shake += 20;
+		with instance_create(x,y,Flash)
+		{
+			alarm[1] = 6;
+			alarm[0] = 2;
+		}
+		with enemy
+		{
+			my_health -= 10;
+			if !audio_is_playing(snd_hurt)
+				snd_play(snd_hurt,hurt_pitch_variation,true);
+		}
+	}
+	else
+	{
+		snd_play_2d(sndLevelUp)
+	}
+if level != 10
+{
+	with instance_create(x,y,PopupText)
+	{
+		mytext = "LEVEL "+string(other.level)+"!"
+	}
+	instance_create(x,y,LevelUp)
+}
 skillpoints += 1
 if level > 40
 	skillsChosena --;

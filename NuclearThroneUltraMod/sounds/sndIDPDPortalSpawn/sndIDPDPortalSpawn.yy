@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.9,
   "preload": false,
   "bitRate": 192,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndIDPDPortalSpawn",
-  "duration": 0.0,
+  "duration": 5.448073,
   "parent": {
     "name": "IDPD sounds",
     "path": "folders/Sounds/IDPD sounds.yy",

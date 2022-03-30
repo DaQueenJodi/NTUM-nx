@@ -7,7 +7,6 @@ team = other.team
 scrCanHumphry();}
 }
 Sleep(20)
-
 repeat(6)
 {
 with instance_create(x,y,Smoke)

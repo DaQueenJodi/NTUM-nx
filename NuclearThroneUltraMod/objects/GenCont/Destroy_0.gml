@@ -242,7 +242,7 @@ room_speed=35;
 				var yy = y+16;
 				var t = instance_nearest(xx,yy,WeaponChest)
 				var d = point_distance(xx,yy,t.x,t.y)
-				if d < 256 && d > 32
+				if d < 160 && d > 32
 					instance_create(x+16,y+8,BigVultureSkull)
 			}
 		}

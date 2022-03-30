@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "mskSplinter",
+    "path": "sprites/mskSplinter/mskSplinter.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "InfuseBolt",

@@ -11,7 +11,7 @@ if mask_index=other.mask_index
 speed=0;
 
 }
-if !instance_exists(SurvivalWave) && !instance_exists(WantBoss) && !instance_exists(AssassinBoss)
+if !instance_exists(SurvivalWave) && !instance_exists(WantBoss) && instance_number(AssassinBoss) == 1
 with MusCont
 {
 //optimise sound_discard(song)

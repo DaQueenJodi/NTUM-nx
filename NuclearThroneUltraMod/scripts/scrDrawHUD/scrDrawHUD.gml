@@ -102,6 +102,82 @@ function scrDrawHUD() {
 	draw_text(__view_get( e__VW.XView, 0 )+23+44,__view_get( e__VW.YView, 0 )+7,string_hash_to_newline(string(Player.my_health)+"/"+string(Player.maxhealth)))
 	}
 	var wepcolour = c_white;
+	
+	
+	//ULTRA ICON
+	dir=1;
+	dix=0;
+	if Player.skeletonlives>0
+	{
+	    repeat(Player.skeletonlives)
+	    {
+			dix++;
+			draw_sprite_ext(sprExtraLivesHud,1,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-16*dix,__view_get( e__VW.YView, 0 )+36,1,1,0,c_white,1);
+	    }
+	}
+	dix ++
+	repeat(Player.maxultra)
+	{
+
+	    if Player.ultra_got[dir]
+	    {
+			var xx =__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix;
+			var yy =__view_get( e__VW.YView, 0 )+20;
+			var s = 18;
+			if dir == 76 && Player.ultimategamble == true
+			{
+				draw_sprite_ext(sprUltimateGambleIconHUD,dir,xx,yy,1,1,0,c_white,1);
+			}
+		    else if !(dir=79 && Player.race=21){//Horror don't draw skeleton's ultra
+				draw_sprite_ext(sprUltraIconHUD,dir,xx,yy,1,1,0,c_white,1);
+			}
+			if (mouse_x > xx && mouse_x < xx + s && mouse_y > yy && mouse_y < yy + s)
+			{
+				scrDrawHelp("["+Player.ultra_name[dir]+"]\n"+Player.ultra_text[dir]);
+			}
+			dix+=1
+	    }
+	dir+=1;
+	}
+	//SKILL ICONS
+	dix = 0;
+	dir = 0;
+	if Player.level > 14
+	{
+		var cdir = 0;
+		var fs = 0;
+		repeat(Player.maxskill+1)
+		{
+			if Player.skill_got[cdir] == 1
+			{
+				fs++
+				if fs == skillscroll
+				{
+					dir = cdir;	
+				}
+			}
+			cdir ++;
+		}
+	}
+	repeat(Player.maxskill+1)
+	{
+		if Player.skill_got[dir] = 1 && dix < 12 - (max(-1,Player.maxarmour-1))
+		{
+			var xx = __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix;
+			var yy = __view_get( e__VW.YView, 0 )+12;
+			var s = 8;
+			draw_sprite_ext(sprSkillIconHUD,dir,xx,yy+1,1,1,0,c_black,1)
+			draw_sprite_ext(sprSkillIconHUD,dir,xx,yy,1,1,0,c_white,1)
+			dix += 1
+			if (mouse_x > xx-s && mouse_x < xx + s && mouse_y > yy-s && mouse_y < yy + s)
+			{
+				scrDrawHelp("["+Player.skill_name[dir]+"]\n"+Player.skill_text[dir]);
+			}
+		}
+		dir += 1
+		if dir > Player.maxskill
+			dir = 0;
+	}
 
 
 	//TERTIARY WEAPON
@@ -483,68 +559,7 @@ function scrDrawHUD() {
 	draw_text(__view_get( e__VW.XView, 0 )+110,__view_get( e__VW.YView, 0 )+7,string_hash_to_newline(string(txt)))
 	}
 
-	//SKILL ICONS
-	dix = 0;
-	dir = 0;
-	if Player.level > 14
-	{
-		var cdir = 0;
-		var fs = 0;
-		repeat(Player.maxskill+1)
-		{
-			if Player.skill_got[cdir] == 1
-			{
-				fs++
-				if fs == skillscroll
-				{
-					dir = cdir;	
-				}
-			}
-			cdir ++;
-		}
-	}
-	repeat(Player.maxskill+1)
-	{
-		if Player.skill_got[dir] = 1 && dix < 12 - (max(-1,Player.maxarmour-1))
-		{
-			draw_sprite_ext(sprSkillIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+13,1,1,0,c_black,1)
-			draw_sprite_ext(sprSkillIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+12,1,1,0,c_white,1)
-			dix += 1
-		}
-		dir += 1
-		if dir > Player.maxskill
-			dir = 0;
-	}
-	//ULTRA ICON
-	dir=1;
-	dix=1;
-	repeat(Player.maxultra)
-	{
-
-	    if Player.ultra_got[dir]
-	    {
-			if dir == 76 && Player.ultimategamble == true
-			{
-				draw_sprite_ext(sprUltimateGambleIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+20,1,1,0,c_black,1);
-				draw_sprite_ext(sprUltimateGambleIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+22,1,1,0,c_white,1);
-			}
-		    else if !(dir=79 && Player.race=21){//Horror don't draw skeleton's ultra
-				draw_sprite_ext(sprUltraIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+20,1,1,0,c_black,1);
-				draw_sprite_ext(sprUltraIconHUD,dir,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-12-16*dix,__view_get( e__VW.YView, 0 )+22,1,1,0,c_white,1);
-			}
-	    dix+=1
-	    }
-	dir+=1;
-	}
-	if Player.skeletonlives>0
-	{
-		dix --;
-	    repeat(Player.skeletonlives)
-	    {
-	    dix++;
-		draw_sprite_ext(sprExtraLivesHud,1,__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-16*dix,__view_get( e__VW.YView, 0 )+36,1,1,0,c_white,1);
-	    }
-	}
+	
 
 	}
 	else if !instance_exists(GenCont) && !instance_exists(PlayerSpawn)

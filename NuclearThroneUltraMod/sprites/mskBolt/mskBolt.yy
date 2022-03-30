@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"mskBolt","path":"sprites/mskBolt/mskBolt.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "mskBolt",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -14,7 +14,7 @@ scrDrop(20,0)
 scrDrop(50,40)
 scrDrop(50,100)
 
-
+if !instance_exists(SurvivalWave) && !instance_exists(WantBoss) && instance_number(ChesireCat) == 1
 with MusCont
 {
 //optimise sound_discard(song)
