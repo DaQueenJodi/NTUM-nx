@@ -6385,5 +6385,29 @@ function scrFire2() {
 	}
 	break;
 	
+	//SPLINTER STORM
+	case 429:
+	snd_play(sndSplinterShotgun);
+	var aimDir = point_direction(x,y,mouse_x,mouse_y)+180;
+	with instance_create(x,y,SplinterBurst2)
+	{
+		accuracy = 12*other.accuracy;
+		mox=mouse_x;
+		moy=mouse_y;
+		creator = other.id
+		ammo = 14
+		maxammo = ammo;
+		time = 2
+		team = other.team
+		event_perform(ev_alarm,0) 
+	}
+
+	BackCont.viewx2 += lengthdir_x(10,aimDir)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(10,aimDir)*UberCont.opt_shake
+	BackCont.shake += 7
+	wkick = 6
+
+	break;
+	
 	}//end of switch part 2!
 }

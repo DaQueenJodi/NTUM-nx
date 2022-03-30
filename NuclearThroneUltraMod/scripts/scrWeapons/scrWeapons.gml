@@ -335,7 +335,7 @@ function scrWeapons() {
 	wep_name[30] = "SPLINTER GUN"
 	wep_type[30] = 3
 	wep_auto[30] = 0
-	wep_load[30] = 23
+	wep_load[30] = 17
 	wep_cost[30] = 1
 	wep_sprt[30] = sprSplinterGun
 	wep_area[30] = 4
@@ -2518,7 +2518,7 @@ function scrWeapons() {
 	wep_name[228] = "GOLDEN SPLINTER GUN"
 	wep_type[228] = 3
 	wep_auto[228] = 0
-	wep_load[228] = 22
+	wep_load[228] = 15
 	wep_cost[228] = 1
 	wep_sprt[228] = sprGoldenSplinterGun
 	wep_area[228] = 19
@@ -4730,24 +4730,22 @@ function scrWeapons() {
 	wep_load[428] = 7
 	wep_cost[428] = 1
 	wep_sprt[428] = sprLaserRifle
-	wep_area[428] = 10
-	wep_text[428] = "an actual laser"
+	wep_area[428] = 13
+	wep_text[428] = "r"
 	wep_swap[428] = sndSwapEnergy
 	wep_rad[428] = 0;
-
-	/*
 	
-	wep_name[61] = "HAILSTORM" // bouncy stream of splinters
-	wep_type[61] = 1
-	wep_auto[61] = 0
-	wep_load[61] = 1
-	wep_cost[61] = 1
-	wep_sprt[61] = sprBloodPistol
-	wep_area[61] = 0
-	wep_text[61] = "blood weapons destroy projectiles"
-	wep_swap[61] = sndSwapPistol
-	wep_rad[61] = 0;
-	*/
+	wep_name[429] = "HAILSTORM"
+	wep_type[429] = 3
+	wep_auto[429] = 0
+	wep_load[429] = 25
+	wep_cost[429] = 2
+	wep_sprt[429] = sprSplinterGun
+	wep_area[429] = 10
+	wep_text[429] = "bouncing splinters"
+	wep_swap[429] = sndSwapBow
+	wep_rad[429] = 0;
+
 
 	maxwep = array_length(wep_name)-1;
 
