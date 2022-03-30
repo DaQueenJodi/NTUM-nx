@@ -5,6 +5,7 @@ if um == ultramods.splinterBullet
 	instance_destroy(id,false);
 	with instance_create(x,y,Bullet1)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;
@@ -16,6 +17,7 @@ if um == ultramods.splinterBullet
 	instance_destroy(id,false);
 	with instance_create(x,y,Bullet2)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;
@@ -36,6 +38,7 @@ if um == ultramods.splinterBullet
 	image_angle = direction}
 	with instance_create(x,y,ElectroBall)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;

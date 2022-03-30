@@ -6287,13 +6287,14 @@ function scrFire2() {
 	case 424:
 	if !instance_exists(PlayerWazer)
 	{
+		/*
 		if Player.skill_got[17] = 1
 			snd_play_fire(sndLaserUpg)
 		else
 			snd_play_fire(sndLaser)
-			
-		if !audio_is_playing(sndMorphLoop)
-			snd_loop(sndMorphLoop);
+			*/
+			snd_play_2d(sndWazerStart,0,true);
+		
 		with instance_create(x,y,PlayerWazer)
 		{
 			team = other.team;

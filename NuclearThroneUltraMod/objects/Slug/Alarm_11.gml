@@ -5,6 +5,7 @@ if um == ultramods.slugFatBullet
 	instance_destroy(id,false);
 	with instance_create(x,y,FatBullet)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;
@@ -17,6 +18,7 @@ if um == ultramods.slugFatBullet
 	instance_destroy(id,false);
 	with instance_create(x,y,Bolt)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;

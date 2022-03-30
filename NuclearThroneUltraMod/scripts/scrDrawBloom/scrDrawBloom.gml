@@ -141,8 +141,8 @@ function scrDrawBloom() {
 	
 	with AssassinBoss
 	{
-		var size = ds_list_size(afterImage);
-		for (var i = 0; i <  size; i++) {
+		var ds = ds_list_size(afterImage);
+		for (var i = 0; i <  ds; i++) {
 			var aimage = afterImage[| i];
 			draw_sprite_ext(aimage.sp,aimage.ii,aimage.xx,aimage.yy,aimage.xs,1,0,c_white,clamp(aimage.time + 0.2,0.2,1));
 		}	

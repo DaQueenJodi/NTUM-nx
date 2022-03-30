@@ -32,5 +32,3 @@ if Player.ultra_got[92]
 dmg=5;
 
 }
-
-alarm[11] = 1;

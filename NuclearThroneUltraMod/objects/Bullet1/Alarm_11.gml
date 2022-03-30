@@ -4,6 +4,7 @@ if um == ultramods.bulletPellet
 {
 	with instance_create(x,y,Bullet2)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;
@@ -17,6 +18,7 @@ if um == ultramods.bulletPellet
 	snd_play_fire(sndSplinterGun)
 	with instance_create(x,y,Splinter)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;
@@ -36,6 +38,7 @@ else if um == ultramods.bulletMiniPlasma
 	}
 	with instance_create(x,y,MiniPlasmaBall)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;

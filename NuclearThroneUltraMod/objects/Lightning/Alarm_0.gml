@@ -4,6 +4,7 @@ if instance_exists(Player){
 		snd_play_fire(choose(sndWater1,sndWater2) );
 		with instance_create(x,y,Tentacle)
 		{image_angle = other.image_angle;
+			scrCopyWeaponMod(other);
 			if instance_exists(Implosion)
 			{
 				creator = Implosion.id;
@@ -99,6 +100,7 @@ image_index += 0.4/ammo
 with instance_create(x,y,Lightning)
 {
 	isog = other.isog;
+	scrCopyWeaponMod(other);
 accuracy=other.accuracy;
 direction = other.direction
 image_angle = direction

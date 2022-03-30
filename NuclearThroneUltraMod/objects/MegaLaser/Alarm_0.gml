@@ -7,6 +7,7 @@ if(instance_exists(Player)){
 		with instance_create(x,y,HeavyBolt)
 		{motion_add(other.image_angle,24)
 		image_angle = direction
+		scrCopyWeaponMod(other);
 		team = other.team
 		alarm[11] = 0;}
 	}

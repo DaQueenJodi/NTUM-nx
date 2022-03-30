@@ -4,6 +4,7 @@ if ((object_index == Grenade || object_index == DirectorGrenade) && um == ultram
 {
 	with instance_create(x,y,Rocket)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;
@@ -15,6 +16,7 @@ if ((object_index == Grenade || object_index == DirectorGrenade) && um == ultram
 {
 	with instance_create(x,y,Blade)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;

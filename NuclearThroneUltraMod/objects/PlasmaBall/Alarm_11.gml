@@ -5,6 +5,7 @@ if um == ultramods.plasmaFlak
 	snd_play_fire(sndFlakCannon)
 	with instance_create(x,y,FlakBullet)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = 11+random(2)+other.speed;
@@ -18,6 +19,7 @@ else if um == ultramods.boltPlasma
 	snd_play_fire(sndCrossbow)
 	with instance_create(x,y,Bolt)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = 18+other.speed;
@@ -31,6 +33,7 @@ else if um == ultramods.plasmaRocket
 	snd_play_fire(sndRocket)
 	with instance_create(x,y,Rocket)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;

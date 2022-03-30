@@ -5,6 +5,7 @@ if isog && GetPlayerUltramod() == ultramods.lightningKraken
 		{image_angle = other.image_angle;
 			ultra = true;
 			sprite_index=sprUltraTentacle;
+			scrCopyWeaponMod(other);
 			dmg=18;
 			creator = Player.id;	
 			team = other.team
@@ -68,6 +69,7 @@ image_index += 0.4/ammo//indexammo
 with instance_create(x,y,UltraLightning)
 {
 	isog = other.isog;
+	scrCopyWeaponMod(other);
 direction = other.direction
 image_angle = direction
 ammo = other.ammo;

@@ -11,6 +11,7 @@ if um == ultramods.boltPlasma
 	}
 	with instance_create(x,y,PlasmaBall)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;
@@ -23,6 +24,7 @@ if um == ultramods.boltPlasma
 	snd_play_fire(sndRocket);
 	with instance_create(x,y,Rocket)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;
@@ -41,6 +43,7 @@ if um == ultramods.boltPlasma
 	}
 	with instance_create(x,y,Laser)
 	{
+		scrCopyWeaponMod(other);
 		isog = false;
 		image_angle = other.direction;
 		team = other.team
@@ -53,6 +56,7 @@ if um == ultramods.boltPlasma
 	instance_destroy(id,false);
 	with instance_create(x,y,Slug)
 	{
+		scrCopyWeaponMod(other);
 		friction = 0.2;
 		direction = other.direction;
 		image_angle = direction;

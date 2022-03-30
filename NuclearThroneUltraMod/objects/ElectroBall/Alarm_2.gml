@@ -5,6 +5,7 @@ if GetPlayerUltramod() == ultramods.splinterElectro
 	snd_play_fire(sndSplinterGun)
 	with instance_create(x,y,Splinter)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed + 16;

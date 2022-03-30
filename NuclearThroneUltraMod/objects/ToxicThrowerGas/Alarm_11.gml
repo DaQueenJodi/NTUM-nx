@@ -3,6 +3,7 @@ if GetPlayerUltramod() == ultramods.toxicFire
 {
 	with instance_create(x,y,Flame)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;

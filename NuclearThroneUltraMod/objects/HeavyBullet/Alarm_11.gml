@@ -11,6 +11,7 @@ if GetPlayerUltramod() == ultramods.laserHeavyBullet
 	instance_destroy(id,false);
 	with instance_create(x,y,Laser)
 	{
+		scrCopyWeaponMod(other);
 		isog = false;
 		image_angle = other.direction;
 		team = other.team

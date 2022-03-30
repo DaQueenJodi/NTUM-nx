@@ -10,6 +10,7 @@ if GetPlayerUltramod() == ultramods.plasmaFlak
 	}
 	with instance_create(x,y,PlasmaBall)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;

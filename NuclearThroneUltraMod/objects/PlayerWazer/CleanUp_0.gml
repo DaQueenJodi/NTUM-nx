@@ -1,3 +1,5 @@
 /// @description Stop loop sfx
-audio_is_playing(sndMorphLoop)
-	audio_stop_sound(sndMorphLoop);
+if audio_is_playing(sndWazerLoop)
+	audio_stop_sound(sndWazerLoop);
+if audio_is_playing(sndWazerStart)
+	audio_stop_sound(sndWazerStart);

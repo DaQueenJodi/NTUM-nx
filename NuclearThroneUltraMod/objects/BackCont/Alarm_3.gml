@@ -11,13 +11,13 @@ other.totalEnemyHealth=other.totalEnemyHealth+my_health
 //We've reached a new high set this as the maximum hp we found this level.
 //if totalEnemyHealth>maxEnemyHealthInLevel
 //maxEnemyHealthInLevel=totalEnemyHealth;
-
-if totalEnemyHealth<140&&!instance_exists(GenCont)&&!instance_exists(LevCont)&&instance_exists(enemy)&&!instance_exists(becomenemy)
+//retail is 140
+if totalEnemyHealth<=142&&!instance_exists(GenCont)&&!instance_exists(LevCont)&&instance_exists(enemy)&&!instance_exists(becomenemy)&&!instance_exists(WantBoss)
 {
 with enemy
-my_health=0;
+	my_health=0;
 
-snd_play(sndHorrorPortal)
+snd_play_2d(sndHorrorPortal)
 }
 else
 alarm[3]=10+random(30);

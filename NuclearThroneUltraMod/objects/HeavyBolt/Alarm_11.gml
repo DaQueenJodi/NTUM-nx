@@ -5,6 +5,7 @@ if um == ultramods.heavyBoltNuke
 	instance_destroy(id,false);
 	with instance_create(x,y,Nuke)
 	{
+		scrCopyWeaponMod(other);
 		direction = other.direction;
 		image_angle = direction;
 		speed = other.speed;
@@ -16,6 +17,7 @@ if um == ultramods.heavyBoltNuke
 	snd_play_fire(sndMegaLaser)
 	with instance_create(x,y,MegaLaser)
 	{
+		scrCopyWeaponMod(other);
 		isog = false;
 		image_angle = other.direction;
 		team = other.team

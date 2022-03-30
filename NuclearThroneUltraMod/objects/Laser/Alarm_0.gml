@@ -9,6 +9,7 @@ if(instance_exists(Player)){
 			snd_play_fire(sndHeavyMachinegun);
 			with instance_create(x,y,HeavyBullet)
 			{motion_add(other.image_angle,16)
+				scrCopyWeaponMod(other);
 			image_angle = direction
 			team = other.team
 			alarm[11] = 0;}
@@ -23,6 +24,7 @@ if(instance_exists(Player)){
 			snd_play_fire(sndHeavyCrossbow);
 			with instance_create(x,y,Bolt)
 			{motion_add(other.image_angle,24)
+				scrCopyWeaponMod(other);
 			image_angle = direction
 			team = other.team
 			alarm[11] = 0;}
@@ -86,22 +88,7 @@ until (place_meeting(x,y,hitme) and dir > 16) or place_meeting(x,y,Wall) or plac
     alarm[0]=1;
     }
 	laserhit=0;
-}/*
-else
-{	//bouncy laser
-    with instance_create(x - lengthdir_x(8,image_angle),y - lengthdir_y(8,image_angle),Laser)
-    {image_angle = other.image_angle*-1;
-    team = other.team
-    laserhit=other.laserhit-1;
-    sprite_index=sprBouncingLaser;
-    image_yscale -= 0.15
-    do {x += lengthdir_x(2,image_angle) y += lengthdir_y(2,image_angle) dir += 1}
-until (place_meeting(x,y,hitme) and dir > 16) or place_meeting(x,y,Wall) or place_meeting(x,y,VikingWall) or dir > 160
-    
-    alarm[0]=1;
-    }
 }
-laserhit=0;*/
 }
 
 alarm[0] = 2
