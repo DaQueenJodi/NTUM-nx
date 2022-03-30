@@ -1,3 +1,3 @@
 if id < other.id
-y -= 2
+y -= 3
 

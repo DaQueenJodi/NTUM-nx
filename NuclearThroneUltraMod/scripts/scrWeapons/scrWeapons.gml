@@ -4680,12 +4680,12 @@ function scrWeapons() {
 	wep_swap[423] = sndSwapBow
 	wep_rad[423] = 0;
 	
-	wep_name[424] = "WAZER"
+	wep_name[424] = "WAZER RIFLE"
 	wep_type[424] = 5
 	wep_auto[424] = 1
 	wep_load[424] = 9
 	wep_cost[424] = 1
-	wep_sprt[424] = sprLaserRifle
+	wep_sprt[424] = sprWazerRifle
 	wep_area[424] = 10
 	wep_text[424] = "an actual laser"
 	wep_swap[424] = sndSwapEnergy
@@ -4724,12 +4724,12 @@ function scrWeapons() {
 	wep_swap[427] = sndSwapMachinegun
 	wep_rad[427] = 6;
 	
-	wep_name[428] = "EXPLOSION WAZER"
+	wep_name[428] = "EXPLOSION WAZER RIFLE"
 	wep_type[428] = 4
 	wep_auto[428] = 1
 	wep_load[428] = 7
 	wep_cost[428] = 1
-	wep_sprt[428] = sprLaserRifle
+	wep_sprt[428] = sprExplosiveWazerRifle
 	wep_area[428] = 13
 	wep_text[428] = "excavate"
 	wep_swap[428] = sndSwapEnergy

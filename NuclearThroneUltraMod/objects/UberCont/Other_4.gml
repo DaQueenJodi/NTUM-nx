@@ -48,3 +48,4 @@ else
 	public = defaultPublic;
 	
 hadBossIntro = false;
+opt_ammoicon = true;

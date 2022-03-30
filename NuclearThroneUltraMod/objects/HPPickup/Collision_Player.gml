@@ -26,13 +26,25 @@ other.my_health += num
 else// if other.crown != 2
 other.my_health = max(other.my_health,other.maxhealth);
 
-
-dir = instance_create(x,y,PopupText)
-dir.mytext = "+"+string(num)+" HP"
-if other.my_health = other.maxhealth
-dir.mytext = "MAX HP"
-else if other.my_health > other.maxhealth
-dir.mytext = "OVER MAX HP"
+if UberCont.opt_ammoicon
+{
+	dir = instance_create(x,y,PopupText)
+	dir.sprt = sprHPIconPickup;
+	dir.mytext = "+"+string(num)
+	if other.my_health = other.maxhealth
+	dir.mytext = "MAX"
+	else if other.my_health > other.maxhealth
+	dir.mytext = "OVER MAX"
+}
+else
+{
+	dir = instance_create(x,y,PopupText)
+	dir.mytext = "+"+string(num)+" HP"
+	if other.my_health = other.maxhealth
+	dir.mytext = "MAX HP"
+	else if other.my_health > other.maxhealth
+	dir.mytext = "OVER MAX HP"
+}
 
 instance_create(x,y,SmallChestPickup)
 

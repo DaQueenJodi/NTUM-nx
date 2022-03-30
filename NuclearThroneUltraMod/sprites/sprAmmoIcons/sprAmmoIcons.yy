@@ -76,7 +76,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprAmmoIcons","path":"sprites/sprAmmoIcons/sprAmmoIcons.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprAmmoIcons",
     "tags": [],
     "resourceType": "GMSequence",
   },

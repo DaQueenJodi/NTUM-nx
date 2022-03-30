@@ -167,10 +167,21 @@ if (my_health<prevhealth)
 				owner=other.id;
 			snd_play(sndHealthPickup)
 			var pt = instance_create(x,y,PopupText)
-			if my_health = maxhealth
-				pt.mytext = "MAX HP";
+			if UberCont.opt_ammoicon
+			{
+				if my_health = maxhealth
+					pt.mytext = "MAX";
+				else
+					pt.mytext = "+"+string(damageTaken);
+				pt.sprt = sprHPIconPickup;
+			}
 			else
-				pt.mytext = "+"+string(damageTaken)+" HP";
+			{
+				if my_health = maxhealth
+					pt.mytext = "MAX HP";
+				else
+					pt.mytext = "+"+string(damageTaken)+" HP";
+			}
 			
 			alarm[3]=10;//duration of iframes
 		}

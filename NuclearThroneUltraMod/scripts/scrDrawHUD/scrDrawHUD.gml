@@ -9,15 +9,18 @@ function scrDrawHUD() {
 	///POPUP TEXT
 	with PopupText
 	{
-	if visible = 1
-	{
-	draw_set_color(c_black)
-	draw_text(median(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-10-string_width(string_hash_to_newline(mytext))/2,__view_get( e__VW.XView, 0 )+10+string_width(string_hash_to_newline(mytext))/2,x),median(__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-30+1,__view_get( e__VW.YView, 0 )+20+1,y)+1,string_hash_to_newline(string(mytext)))
-	draw_text(median(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-10-string_width(string_hash_to_newline(mytext))/2,__view_get( e__VW.XView, 0 )+10+string_width(string_hash_to_newline(mytext))/2,x)+1,median(__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-30+1,__view_get( e__VW.YView, 0 )+20+1,y)+1,string_hash_to_newline(string(mytext)))
-	draw_text(median(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-10-string_width(string_hash_to_newline(mytext))/2,__view_get( e__VW.XView, 0 )+10+string_width(string_hash_to_newline(mytext))/2,x)+1,median(__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-30+1,__view_get( e__VW.YView, 0 )+20+1,y),string_hash_to_newline(string(mytext)))
-	draw_set_color(colour)
-	draw_text(median(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-10-string_width(string_hash_to_newline(mytext))/2,__view_get( e__VW.XView, 0 )+10+string_width(string_hash_to_newline(mytext))/2,x),median(__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-30,__view_get( e__VW.YView, 0 )+20,y),string_hash_to_newline(string(mytext)))
-	}
+		if visible = 1
+		{
+			var xx = median(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )-10-string_width(string_hash_to_newline(mytext))/2,__view_get( e__VW.XView, 0 )+10+string_width(string_hash_to_newline(mytext))/2,x);
+			var yy = median(__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-30+1,__view_get( e__VW.YView, 0 )+20+1,y);
+			draw_set_color(c_black)
+			draw_text(xx,yy+1,string_hash_to_newline(string(mytext)))
+			draw_text(xx+1,yy+1,string_hash_to_newline(string(mytext)))
+			draw_text(xx+1,yy,string_hash_to_newline(string(mytext)))
+			draw_set_color(colour)
+			draw_sprite(sprt,ii,xx+(string_width(string_hash_to_newline(string(mytext)))*0.5),yy);
+			draw_text(xx,median(__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-30,__view_get( e__VW.YView, 0 )+20,y),string_hash_to_newline(string(mytext)))
+		}
 	}
 
 	with LevelUp

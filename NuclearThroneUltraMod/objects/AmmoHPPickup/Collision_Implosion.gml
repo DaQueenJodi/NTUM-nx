@@ -19,11 +19,22 @@ Player.ammo[type] += Player.typ_ammo[type]+extra
 if Player.ammo[type] > Player.typ_amax[type]
 Player.ammo[type] = Player.typ_amax[type]
 
-
-dir = instance_create(x,y,PopupText)
-dir.mytext = "+"+string(Player.typ_ammo[type]+extra)+" "+string(Player.typ_name[type])
-if Player.ammo[type] = Player.typ_amax[type]
-dir.mytext = "MAX "+string(Player.typ_name[type])
+if (UberCont.opt_ammoicon)
+{
+	dir = instance_create(x,y,PopupText)
+	dir.sprt = sprAmmoIconsPickup
+	dir.ii = type-1;
+	dir.mytext = "+"+string(Player.typ_ammo[type]+extra)
+	if Player.ammo[type] = Player.typ_amax[type]
+	dir.mytext = "MAX";
+}
+else
+{
+	dir = instance_create(x,y,PopupText)
+	dir.mytext = "+"+string(Player.typ_ammo[type]+extra)+" "+string(Player.typ_name[type])
+	if Player.ammo[type] = Player.typ_amax[type]
+	dir.mytext = "MAX "+string(Player.typ_name[type])
+}
 
 snd_play(sndAmmoPickup)
 instance_destroy()

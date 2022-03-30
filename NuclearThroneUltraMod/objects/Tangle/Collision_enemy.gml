@@ -36,11 +36,21 @@ if instance_exists(Player)
     Player.my_health += num
     if Player.my_health > Player.maxhealth
     Player.my_health = Player.maxhealth
-    
-    dir = instance_create(Player.x,Player.y,PopupText)
-    dir.mytext = "+"+string(num)+" HP"
-    if Player.my_health = Player.maxhealth
-    dir.mytext = "MAX HP"
+	    if UberCont.opt_ammoicon
+		{
+			dir = instance_create(Player.x,Player.y,PopupText)
+		    dir.mytext = "+"+string(num)
+		    if Player.my_health = Player.maxhealth
+		    dir.mytext = "MAX"
+			dir.sprt = sprHPIconPickup;
+		}
+		else
+		{
+		    dir = instance_create(Player.x,Player.y,PopupText)
+		    dir.mytext = "+"+string(num)+" HP"
+		    if Player.my_health = Player.maxhealth
+		    dir.mytext = "MAX HP"
+		}
     
     }
     }

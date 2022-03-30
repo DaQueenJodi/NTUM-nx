@@ -40,13 +40,25 @@ with other {
 }
 
 
-
-dir = instance_create(x,y,PopupText)
-dir.mytext = "+"+string(num)+" HP"
-if other.my_health = other.maxhealth
-dir.mytext = "MAX HP"
-else if other.my_health > other.maxhealth
-dir.mytext = "+"+string(num)+" HP#OVERHEAL!"
+if UberCont.opt_ammoicon
+{
+	dir = instance_create(x,y,PopupText)
+	dir.spr = sprHPIconPickup;
+	dir.mytext = "+"+string(num)
+	if other.my_health = other.maxhealth
+	dir.mytext = "MAX"
+	else if other.my_health > other.maxhealth
+	dir.mytext = "+"+string(num)+" HP#OVERHEAL!"
+}
+else
+{
+	dir = instance_create(x,y,PopupText)
+	dir.mytext = "+"+string(num)+" HP"
+	if other.my_health = other.maxhealth
+	dir.mytext = "MAX HP"
+	else if other.my_health > other.maxhealth
+	dir.mytext = "+"+string(num)+" HP#OVERHEAL!"
+}
 
 snd_play(sndHealthChest)
 instance_destroy()

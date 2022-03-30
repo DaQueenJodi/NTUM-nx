@@ -18,16 +18,28 @@ if instance_exists(WepPickup) && !instance_exists(GenCont) && !instance_exists(L
 	{
 	    if targetPickup.ammo > 0 and wep_type[targetPickup.wep] != 0
 	    {
-	    ammo[wep_type[targetPickup.wep]] += typ_ammo[targetPickup.wep_type[targetPickup.wep]]*2
-	    if ammo[wep_type[targetPickup.wep]] > typ_amax[targetPickup.wep_type[targetPickup.wep]]
-	    ammo[wep_type[targetPickup.wep]] = typ_amax[targetPickup.wep_type[targetPickup.wep]]
+		    ammo[wep_type[targetPickup.wep]] += typ_ammo[targetPickup.wep_type[targetPickup.wep]]*2
+		    if ammo[wep_type[targetPickup.wep]] > typ_amax[targetPickup.wep_type[targetPickup.wep]]
+				ammo[wep_type[targetPickup.wep]] = typ_amax[targetPickup.wep_type[targetPickup.wep]]
     
-    
-	    dir = instance_create(x,y,PopupText)
-	    dir.mytext = "+"+string(typ_ammo[wep_type[targetPickup.wep]]*2)+" "+string(typ_name[wep_type[targetPickup.wep]])
-	    if ammo[wep_type[targetPickup.wep]] = typ_amax[targetPickup.wep_type[targetPickup.wep]]
-	    dir.mytext = "MAX "+string(typ_name[wep_type[targetPickup.wep]])
-	    targetPickup.ammo = 0
+			if (UberCont.opt_ammoicon)
+			{
+				dir = instance_create(x,y,PopupText);
+				dir.sprt = sprAmmoIconsPickup
+				dir.ii = targetPickup.wep_type[targetPickup.wep]-1;
+			    dir.mytext = "+"+string(typ_ammo[wep_type[targetPickup.wep]]*2);
+			    if ammo[wep_type[targetPickup.wep]] = typ_amax[targetPickup.wep_type[targetPickup.wep]]
+			    dir.mytext = "MAX";
+			}
+			else
+			{
+			    dir = instance_create(x,y,PopupText)
+			    dir.mytext = "+"+string(typ_ammo[wep_type[targetPickup.wep]]*2)+" "+string(typ_name[wep_type[targetPickup.wep]])
+			    if ammo[wep_type[targetPickup.wep]] = typ_amax[targetPickup.wep_type[targetPickup.wep]]
+			    dir.mytext = "MAX "+string(typ_name[wep_type[targetPickup.wep]])
+			}
+			
+		    targetPickup.ammo = 0
 	    }
 	}
 	else
@@ -512,10 +524,22 @@ if (my_health<prevhealth)
 				owner=other.id;
 			snd_play(sndHealthPickup)
 			var pt = instance_create(x,y,PopupText)
-			if my_health = maxhealth
-				pt.mytext = "MAX HP";
+			if UberCont.opt_ammoicon
+			{
+				if my_health = maxhealth
+					pt.mytext = "MAX";
+				else
+					pt.mytext = "+"+string(damageTaken);
+				
+				pt.sprt = sprHPIconPickup;
+			}
 			else
-				pt.mytext = "+"+string(damageTaken)+" HP";
+			{
+				if my_health = maxhealth
+					pt.mytext = "MAX HP";
+				else
+					pt.mytext = "+"+string(damageTaken)+" HP";
+			}
 			
 			alarm[3]=10;//duration of iframes
 		}

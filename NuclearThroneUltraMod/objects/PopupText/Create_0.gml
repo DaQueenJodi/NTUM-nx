@@ -6,4 +6,5 @@ alarm[2] = 1
 
 colour=c_white;
 blink=true;
-
+sprt = mskPickupThroughWall;
+ii = 0;

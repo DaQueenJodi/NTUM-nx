@@ -66,22 +66,8 @@ speed *= 0.9}
 //Mutations
 if instance_exists(Player)
 {
-//SOME KILLS REGENERATE AMMO
-    if Player.skill_got[6] = 1 and random(10) < 3
-    {
-    type = choose(1,2,3,4,5)
-    
-    Player.ammo[type] += round(Player.typ_ammo[type]/2)
-    if Player.ammo[type] > Player.typ_amax[type]
-    Player.ammo[type] = Player.typ_amax[type]
-    
-    
-    dir = instance_create(x,y,PopupText)
-    dir.mytext = "+"+string(round(Player.typ_ammo[type]/2))+" "+string(Player.typ_name[type])
-    if Player.ammo[type] = Player.typ_amax[type]
-    dir.mytext = "MAX "+string(Player.typ_name[type])
-    }
-    
+	//SOME KILLS REGENERATE AMMO
+    scrLuckyShot();
     BloodLust();
     
     //TRIGGER FINGERS
