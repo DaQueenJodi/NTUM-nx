@@ -23,3 +23,4 @@ accuracy=5;
 ultra = false;
 isog = true;
 exploAmount = 3;
+canBeMoved = false;

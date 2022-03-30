@@ -8,7 +8,7 @@ if owner > -1 && instance_exists(owner) && !ending {
 	image_angle = scrAimAssistLaser(image_angle);
 	x = owner.x + lengthdir_x(offset,image_angle);
 	y = owner.y + lengthdir_y(offset,image_angle);
-	var hit = collision_line_point(x,y,
+	hit = collision_line_point(x,y,
 	x+lengthdir_x(300,image_angle),
 	y+lengthdir_y(300,image_angle),
 	Wall,true,true);

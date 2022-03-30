@@ -30,3 +30,4 @@ image_speed-=0.1;
 }
 
 isog = true;
+canBeMoved = false;

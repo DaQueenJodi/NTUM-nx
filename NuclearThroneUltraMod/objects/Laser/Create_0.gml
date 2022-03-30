@@ -22,3 +22,5 @@ dmg = 2;
 isog = true;
 startImg = sprLaserStart;
 endImg = sprLaserEnd;
+
+canBeMoved = false;

@@ -6287,14 +6287,7 @@ function scrFire2() {
 	case 424:
 	if !instance_exists(PlayerWazer)
 	{
-		/*
-		if Player.skill_got[17] = 1
-			snd_play_fire(sndLaserUpg)
-		else
-			snd_play_fire(sndLaser)
-			*/
-			snd_play_2d(sndWazerStart,0,true);
-		
+		snd_play_2d(sndWazerStart,0,true);
 		with instance_create(x,y,PlayerWazer)
 		{
 			team = other.team;
@@ -6365,6 +6358,31 @@ function scrFire2() {
 	event_perform(ev_alarm,0) 
 	}
 
+	break;
+	
+	//EXPLOSION WAZER
+	case 428:
+	if !instance_exists(PlayerExplosionWazer)
+	{
+		snd_play_2d(sndWazerStart,0,true);
+		with instance_create(x,y,PlayerExplosionWazer)
+		{
+			team = other.team;
+			mywep = other.wep
+			alarm[0] = 1 + other.wep_load[mywep];
+			owner = other.id;
+			camKick = 5;
+			camShake = 3;
+			wkick = 4;
+		}
+	}
+	else
+	{
+		with PlayerExplosionWazer
+		{
+			alarm[0] = 1 + other.wep_load[other.wep];
+		}
+	}
 	break;
 	
 	}//end of switch part 2!

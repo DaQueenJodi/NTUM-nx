@@ -19,3 +19,4 @@ ending = false;
 pitch = 0;
 prevangle = image_angle;
 alarm[2] = 2;
+hit = [];

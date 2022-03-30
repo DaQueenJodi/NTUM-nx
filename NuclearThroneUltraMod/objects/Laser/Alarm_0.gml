@@ -70,7 +70,7 @@ if place_meeting(x,y,Wall) || place_meeting(x,y,hitme)
 			x += lengthdir_x(4,image_angle);
 			y += lengthdir_y(4,image_angle);
 		}
-		else if collision_point(x,y,hitme,false,false) && instance_position(x,y,hitme).team != team
+		else if instance_position(x,y,hitme) != noone && instance_position(x,y,hitme).team != team
 		{
 			x -= lengthdir_x(4,image_angle);
 			y -= lengthdir_y(4,image_angle);

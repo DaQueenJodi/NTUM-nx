@@ -27,3 +27,4 @@ ultraD=true;
 if Player.skill_got[5]
 dropRad = true;
 }
+canBeMoved = false;

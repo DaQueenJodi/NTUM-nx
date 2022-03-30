@@ -4723,6 +4723,17 @@ function scrWeapons() {
 	wep_text[427] = ""
 	wep_swap[427] = sndSwapMachinegun
 	wep_rad[427] = 6;
+	
+	wep_name[428] = "EXPLOSION WAZER"
+	wep_type[428] = 4
+	wep_auto[428] = 1
+	wep_load[428] = 7
+	wep_cost[428] = 1
+	wep_sprt[428] = sprLaserRifle
+	wep_area[428] = 10
+	wep_text[428] = "an actual laser"
+	wep_swap[428] = sndSwapEnergy
+	wep_rad[428] = 0;
 
 	/*
 	
