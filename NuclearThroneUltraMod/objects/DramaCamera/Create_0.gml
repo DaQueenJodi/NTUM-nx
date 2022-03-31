@@ -175,9 +175,9 @@ if Player.area = 112
 	}
 	else
 	{
-		name = "TECHNOMANCER";
+		name = "INVERTED TECHNOMANCER";
 		if random(80) < 1
-			name = choose("TECHROMANCER","ALMOST INVERTED TECHNOMANCER");
+			name = choose("");
 	}
 
 }

@@ -23,16 +23,16 @@ wallbounce+=5;
 
 typ = 1 
 dmg = 24;
-alarm[1] = 3;
+alarm[1] = 4;
 if instance_exists(Player)
 {
 	if Player.skill_got[15] = 1
 	{
-		alarm[1] += 2;
+		alarm[1] += 3;
 		if Player.ultra_got[97]
 		{
 		wallbounce+=5;
-		alarm[1]+=1;
+		alarm[1]+=2;
 		}
 	}
 }

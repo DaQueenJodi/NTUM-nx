@@ -1,4 +1,6 @@
 /// @description Explode crystals
+if !ds_exists(myCrystals,ds_type_list)
+	exit;
 var ds = ds_list_size(myCrystals);
 var am = 7;
 var astep = 360/7;

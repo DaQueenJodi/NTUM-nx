@@ -261,14 +261,14 @@ function scrPopEnemies() {
 		if loops > 0 {
 			if random(12) < 2
 			instance_create(x + 16, y + 16, choose(ExploGuardian, GuardianDog, CubeGuardian, Necromancer))
-			else if random(3) < 2
+			else if random(4) > 3
 			instance_create(x + 16, y + 16, choose(SnowBot, SnowBot, SnowBot, SnowTank, Wolf, Wolf, DiscGuy, BanditSquare))
 			else if instance_number(enemy) < 1
 			{
 				instance_create(x + 16, y + 16,DiscGuy);
 			}
 		} else {
-			if random(3) < 2
+			if random(4) > 3
 			instance_create(x + 16, y + 16, choose(SnowBot, SnowBot, SnowBot, SnowTank, Wolf, Wolf, DiscGuy, BanditSquare))
 			else if instance_number(enemy) < 1
 			{

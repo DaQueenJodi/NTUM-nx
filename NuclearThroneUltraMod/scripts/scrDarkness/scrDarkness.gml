@@ -55,6 +55,12 @@ function scrDarkness() {
 	//MORE BULLETS OR WHAT?
 	with TopDecal
 	draw_circle(x-__view_get( e__VW.XView, 0 )+16,y-__view_get( e__VW.YView, 0 )+16,32,0)
+	with HyperCrystal
+	draw_circle(x-__view_get( e__VW.XView, 0 )+16,y-__view_get( e__VW.YView, 0 )+16,48,0)
+	with BallMom
+	draw_circle(x-__view_get( e__VW.XView, 0 )+16,y-__view_get( e__VW.YView, 0 )+16,48,0)
+	with Technomancer
+	draw_circle(x-__view_get( e__VW.XView, 0 )+16,y-__view_get( e__VW.YView, 0 )+16,48,0)
 	with Bones
 	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),32,0)
 	with BigMachine

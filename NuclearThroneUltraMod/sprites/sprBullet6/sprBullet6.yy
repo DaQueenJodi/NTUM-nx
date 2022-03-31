@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBullet6","path":"sprites/sprBullet6/sprBullet6.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprBullet6",
     "tags": [],
     "resourceType": "GMSequence",
   },

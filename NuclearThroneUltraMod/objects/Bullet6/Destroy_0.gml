@@ -5,7 +5,7 @@ motion_add(other.direction,1+random(3));
     if instance_exists(Player)
     {
     if Player.skill_got[15] = 1
-    image_speed=0.4;
+		image_speed=0.4;
     }
 }
 

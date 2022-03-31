@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprBullet2",
-    "path": "sprites/sprBullet2/sprBullet2.yy",
+    "name": "sprBullet2HighDmg",
+    "path": "sprites/sprBullet2HighDmg/sprBullet2HighDmg.yy",
   },
   "solid": false,
   "visible": true,

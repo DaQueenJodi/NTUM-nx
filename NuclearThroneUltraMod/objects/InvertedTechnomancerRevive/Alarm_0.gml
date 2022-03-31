@@ -11,6 +11,7 @@ if instance_exists(Corpse)
 				instance_destroy(id,false);
 				with instance_create(x,y,InvertedNecromancer)
 				{
+					alarm[1] *= 0.5;
 					raddrop = 0;
 				}
 		    }

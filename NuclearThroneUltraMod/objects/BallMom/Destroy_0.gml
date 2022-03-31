@@ -12,6 +12,10 @@ with MusCont {
 		else if Player.area == 110
 			song = musInvertedSewers;
 	}
+	snd_loop(song)
+	audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
+	audio_sound_gain(song,max(0,sqrt(UberCont.opt_musvol)),0);
+	audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 }
 snd_play_2d(snd_dead);
 with instance_create(x,y,BallMomExplode)

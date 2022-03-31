@@ -16,5 +16,7 @@ if instance_exists(Corpse)
 		imageIndex = 0;
 		snd_play(sndTechnomancerRevive);
 		alarm[1] = image_number/image_speed + 10;
+		if inverted
+			alarm[1] -= 3;
 	}
 }

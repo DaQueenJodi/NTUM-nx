@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprTechnoMancer",
-    "path": "sprites/sprTechnoMancer/sprTechnoMancer.yy",
+    "name": "sprInvertedTechnoMancer",
+    "path": "sprites/sprInvertedTechnoMancer/sprInvertedTechnoMancer.yy",
   },
   "solid": false,
   "visible": true,

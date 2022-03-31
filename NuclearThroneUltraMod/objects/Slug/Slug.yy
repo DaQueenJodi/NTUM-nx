@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprSlugBullet",
-    "path": "sprites/sprSlugBullet/sprSlugBullet.yy",
+    "name": "sprSlugBulletHighDamage",
+    "path": "sprites/sprSlugBulletHighDamage/sprSlugBulletHighDamage.yy",
   },
   "solid": false,
   "visible": true,

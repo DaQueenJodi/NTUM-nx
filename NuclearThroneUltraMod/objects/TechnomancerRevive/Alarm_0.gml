@@ -12,6 +12,7 @@ if instance_exists(Corpse)
 				with instance_create(x,y,Necromancer)
 				{
 					raddrop = 0;
+					alarm[1] *= 0.6;
 				}
 		    }
 		}

@@ -1,5 +1,7 @@
-alarm[1] = 30+random(20)//10 5
-
+///@description AI
+alarm[1] = 30+random(20)
+if inverted
+	alarm[1] -= 5;
 scrTarget()
 if target > 0
 {
@@ -29,7 +31,14 @@ if target > 0
 					var canSpawnTurret = false;
 					var xx = x - 64;
 					var yy = y - 32;
-					if !collision_point(xx,yy,Turret,false,false)
+					var ran = 100;
+					var decider = [0,0,0,0];
+					if GetPlayerLoops() < 2
+					{	
+						ran = random(100);
+						decider = choose([75,50,25,0],[50,25,0,75],[25,0,75,50],[0,25,75,50]);
+					}
+					if !collision_point(xx,yy,Turret,false,false) && ran > decider[0]
 					{
 						canSpawnTurret = true;
 						instance_create(xx,yy,BigWallBreak);
@@ -37,7 +46,7 @@ if target > 0
 					}
 					xx = x + 64;
 					yy = y - 32;
-					if !collision_point(xx,yy,Turret,false,false)
+					if !collision_point(xx,yy,Turret,false,false) && ran > decider[1]
 					{
 						canSpawnTurret = true;
 						instance_create(xx,yy,BigWallBreak);
@@ -45,7 +54,7 @@ if target > 0
 					}
 					xx = x + 64;
 					yy = y + 48;
-					if !collision_point(xx,yy,Turret,false,false)
+					if !collision_point(xx,yy,Turret,false,false) && ran > decider[2]
 					{
 						canSpawnTurret = true;
 						instance_create(xx,yy,BigWallBreak);
@@ -53,7 +62,7 @@ if target > 0
 					}
 					xx = x - 64;
 					yy = y + 48;
-					if !collision_point(xx,yy,Turret,false,false)
+					if !collision_point(xx,yy,Turret,false,false) && ran > decider[3]
 					{
 						canSpawnTurret = true;
 						instance_create(xx,yy,BigWallBreak);
@@ -65,7 +74,9 @@ if target > 0
 						spr_idle = spr_fire1;
 						spr_walk = spr_fire1;
 						sprite_index = spr_fire1;
-						alarm[1] = image_number/image_speed + 10;
+						alarm[1] = image_number/image_speed + 20;
+						if inverted
+							alarm[1] -= 5;
 						imageIndex = 0;
 						snd_play(sndTechnomancerSpawnTurret);
 					}

@@ -34,3 +34,4 @@ active = false;
 hasHadIntro = false;
 imageIndex = sprite_get_number(spr_disappear);
 myKind = Technomancer;
+inverted = false;

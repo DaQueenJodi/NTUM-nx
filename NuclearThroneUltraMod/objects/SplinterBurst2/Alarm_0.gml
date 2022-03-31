@@ -8,7 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-snd_play_fire(sndSplinterMinigun)
+snd_play(sndSplinterMinigun,0.02,true,false,2,false,false,0.7);
 var dir = point_direction(x,y,mouse_x,mouse_y) + (accuracy * sin(ammo));
 repeat(3)
 with instance_create(x,y,StormSplinter)//5 splinters
