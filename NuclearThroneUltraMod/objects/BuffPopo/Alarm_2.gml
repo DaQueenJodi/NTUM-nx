@@ -1,5 +1,5 @@
 /// @description Fire
-snd_play(sndPopoBouncerFire)
+snd_play(sndPopoBouncerFire,0.1,true)
 if team=2
 scrRogueTarget()
 else
@@ -19,6 +19,7 @@ else
 {
 	wkick = 4
 }
+bfire = !bfire;
 if team == 2
 {
 	with instance_create(x,y,Bullet3){
@@ -39,7 +40,7 @@ ammo --;
 if ammo < 1
 {
 	ammo = maxammo;
-	alarm[2] = 60;
+	alarm[1] += 10;
 }
 else
 {
