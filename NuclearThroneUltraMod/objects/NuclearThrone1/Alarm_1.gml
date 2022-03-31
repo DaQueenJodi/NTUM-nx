@@ -1,11 +1,11 @@
 /// @description AI
+
 if !active || intro || immune
 	exit;
 alarm[1] = aTime+random(10);
 var beamL = x - 20;
 var beamR = x + 20;
 scrTarget();
-
 if target > 0
 {
 	var ran = random(100);
@@ -26,12 +26,12 @@ if target > 0
 		fireTriShot = false;
 		bigballs = false;
 	}
-	else if ((target.y - y > 150 && ran > 64) || ran > 97 || target.y - y > 210)
+	else if ((target.y - y > 250 && ran > 64) || ran > 97 || target.y - y > 180)
 	{
-		//Far below me
-		walk = alarm[1];
+		//below me
+		walk = alarm[1]-2;
 		walkDir = 1;
-		if target.y - y > 230
+		if target.y - y > 280
 			walkDir += 0.4;
 		fireTriShot = false;
 		bigballs = false;

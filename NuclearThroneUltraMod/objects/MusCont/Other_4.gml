@@ -11,9 +11,9 @@ if UberCont.opt_gamemode == 25 && area != 0
     song = mus100;
     amb = amb100;
     if !audio_is_playing(song)
-    snd_loop(song)
+		snd_loop(song)
     if !audio_is_playing(amb)
-    snd_loop(amb)
+		snd_loop(amb)
 
 
     //audio_master_gain(max(0, sqrt(UberCont.opt_sfxvol)))
@@ -34,7 +34,7 @@ if UberCont.opt_gamemode == 8 && area != 0
 
     song = sndChubbyEmuSong;
     if !audio_is_playing(song)
-    snd_loop(song)
+		snd_loop(song)
 
     //audio_master_gain(max(0, sqrt(UberCont.opt_sfxvol)))
 	audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
@@ -234,7 +234,7 @@ if oldarea != area || area == 0 or !audio_is_playing(song) or!audio_exists(song)
 	
 	if area = 10 //savanna
     {
-        song = mus105
+        song = mus10
 
         amb = amb1
     }

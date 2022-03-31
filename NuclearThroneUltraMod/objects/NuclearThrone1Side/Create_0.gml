@@ -27,7 +27,6 @@ ammo = maxAmmo;
 gunangle[0] = 270;
 gunangle[1] = 300;
 gunangle[2] = 330;
-gunangle[3] = 240;
 angleI = 0;//random(array_length(gunangle)-1);
 badboyBuff = 1;
 loops = GetPlayerLoops()

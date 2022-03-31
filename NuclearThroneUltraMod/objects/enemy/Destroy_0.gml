@@ -63,9 +63,9 @@ if instance_exists(Player)
 if Player.skill_got[20] = 1
 {
 
-speed += 9
+speed += 9.3
 if Player.race=25
-speed+=1;
+speed+=1.25;
 
 }
 }

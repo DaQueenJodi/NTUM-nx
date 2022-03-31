@@ -78,7 +78,6 @@ with rightSide {
 	gunangle[0] = 270;
 	gunangle[1] = 240;
 	gunangle[2] = 210;
-	gunangle[3] = 300;
 	spriteXscale = 1;
 	image_xscale = -1;
 	legXoffset = 50;

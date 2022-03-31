@@ -11,7 +11,7 @@ function scrTarget() {
 	{
 	target = Decoy;
 	} else if Player.ultra_got[11]=1{//eyes ultra c brainwash
-	    if instance_exists(enemy)
+	    if instance_exists(enemy) && instance_number(enemy) > 1
 	    {
 	        if random(100)<27+(Player.skill_got[5]*9)//chance to get brainwashed
 	        {//thronebutt adds 10%
@@ -23,7 +23,7 @@ function scrTarget() {
 	        team=1;//what if popo?
 	        }
 	    }
-	    }
+	}
 	else{
 	target = instance_nearest(x,y,Player)}
 

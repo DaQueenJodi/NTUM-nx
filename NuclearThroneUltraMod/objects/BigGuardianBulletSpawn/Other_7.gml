@@ -1,8 +1,8 @@
 /// @description Spawn projectiles
 scrTarget();
-var dir = point_direction(x,y,target.x,target.y);
+var dir = point_direction(x,y,target.xprevious,target.yprevious);
 snd_play(sndBigBallFire);
-var addspeed = point_distance(x,y,target.x,target.y)*0.0153;
+var addspeed = point_distance(x,y,target.xprevious,target.yprevious)*0.0153;
 debug(addspeed);
 addspeed = min(addspeed,20);
 if typ == 2

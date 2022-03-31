@@ -18,7 +18,10 @@ if my_health <= 0 && !disable
 	repeat(6)
 	{
 		with instance_create(xx,yy,GreenExplosion)
+		{
 			depth = other.depth - 2;
+			team = other.team;
+		}
 		xx = x + lengthdir_x(48,ang);
 		xx = y + lengthdir_y(48,ang);
 		ang += angstep;
@@ -27,7 +30,10 @@ if my_health <= 0 && !disable
 	repeat(6)
 	{
 		with instance_create(xx,yy,GreenExplosion)
+		{
 			depth = other.depth - 2;
+			team = other.team;
+		}
 		xx = x + lengthdir_x(96,ang);
 		xx = y + lengthdir_y(96,ang);
 		ang += angstep;

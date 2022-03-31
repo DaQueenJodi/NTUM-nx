@@ -5,6 +5,7 @@ with MusCont
 	snd_loop(song);
 	audio_sound_gain(song,max(0,sqrt(UberCont.opt_musvol)),0);
 }
+debug("ACTIVATE");
 sprite_index = sprNothingActivate;
 spr_idle = sprNothingActivate;
 spr_hurt = sprNothingActivate;

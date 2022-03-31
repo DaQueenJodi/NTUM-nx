@@ -1,4 +1,7 @@
+/// @description Retarget
 instance_destroy();
 with enemy
-target=-1;
+{
+	scrTarget();
+}
 

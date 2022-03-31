@@ -38,7 +38,7 @@ if instance_exists(Player) && !instance_exists(SurvivalWave)
     if area = 101
 		song = musBoss1;
 	if area == 10
-		song = musBoss3
+		song = musBoss10
     snd_loop(song)
     snd_loop(amb)
     //audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);

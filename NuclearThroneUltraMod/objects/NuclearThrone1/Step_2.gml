@@ -24,7 +24,6 @@ else if active
 	{
 		var dmgTaken = prevhealth - my_health;
 		//Damage reduction on middle part
-		debug("cantrishot ",cantrishot);
 		if cantrishot
 			my_health += dmgTaken * 0.5;
 		if sprite_index == spr_hurt

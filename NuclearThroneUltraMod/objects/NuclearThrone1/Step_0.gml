@@ -8,7 +8,7 @@ if intro
 		BackCont.shake = max(BackCont.shake, 8);
 if immune
 {
-	my_health = maxhealth;//TODO APPLY ENEMY HEALTH CHANGES
+	my_health = maxhealth;
 	sprite_index = spr_idle;
 	if !active && !intro
 	{
