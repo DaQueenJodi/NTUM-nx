@@ -6,7 +6,7 @@ dir = random(360)
 var loop = false;
 if instance_exists(Player)
 {
-if Player.loops>0
+if Player.loops>1
 {
 loop=true;
 
@@ -21,7 +21,7 @@ repeat(14)
     dir += 25
     with instance_create(x,y,EnemyBullet2)
     {
-    motion_add(other.dir,6)//4
+    motion_add(other.dir,5)//4
     image_angle = direction
     team = other.team
     }
@@ -38,7 +38,7 @@ else{
     dir += 45
     with instance_create(x,y,EnemyBullet2)
     {
-    motion_add(other.dir,6)//4
+    motion_add(other.dir,5)//4
     image_angle = direction
     team = other.team
     }

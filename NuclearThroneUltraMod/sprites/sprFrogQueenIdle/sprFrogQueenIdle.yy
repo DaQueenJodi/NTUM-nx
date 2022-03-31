@@ -112,7 +112,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFrogQueenIdle","path":"sprites/sprFrogQueenIdle/sprFrogQueenIdle.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFrogQueenIdle",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -68,7 +68,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFrogEggHurt","path":"sprites/sprFrogEggHurt/sprFrogEggHurt.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFrogEggHurt",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFrogEgg","path":"sprites/sprFrogEgg/sprFrogEgg.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFrogEgg",
     "tags": [],
     "resourceType": "GMSequence",
   },

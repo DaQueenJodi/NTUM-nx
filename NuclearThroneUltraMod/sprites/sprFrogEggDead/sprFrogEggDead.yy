@@ -76,7 +76,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFrogEggDead","path":"sprites/sprFrogEggDead/sprFrogEggDead.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFrogEggDead",
     "tags": [],
     "resourceType": "GMSequence",
   },

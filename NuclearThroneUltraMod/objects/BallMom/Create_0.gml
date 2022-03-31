@@ -29,3 +29,4 @@ halfway = false;
 almostDead = false;
 sndtaunt = 0
 tauntdelay = 0
+isInverted = false;

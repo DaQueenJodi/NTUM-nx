@@ -96,7 +96,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFrogQueenWalk","path":"sprites/sprFrogQueenWalk/sprFrogQueenWalk.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFrogQueenWalk",
     "tags": [],
     "resourceType": "GMSequence",
   },

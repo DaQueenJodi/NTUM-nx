@@ -176,7 +176,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFrogQueenDying","path":"sprites/sprFrogQueenDying/sprFrogQueenDying.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFrogQueenDying",
     "tags": [],
     "resourceType": "GMSequence",
   },

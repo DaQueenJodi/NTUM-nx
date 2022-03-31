@@ -1,6 +1,7 @@
 /// @description AI
 alarm[1] = 17+random(10)
-
+if inverted 
+	alarm[1] -= 5;
 if !almostDead && my_health < 0.25
 {
 	snd_play_2d(sndBallMamaLowHP);
@@ -37,10 +38,21 @@ if active
 	var ran = random(100);
 	if ran > 80 && instance_number(SuperFrog) < 5 && instance_number(InvertedSuperFrog) < 5
 	{
-		with instance_create(x,y,FrogEgg)
+		if isInverted
 		{
-			team = other.team;
-			alarm[0] = 120;//4 seconds
+			with instance_create(x,y,InvertedFrogEgg)
+			{
+				team = other.team;
+				alarm[0] = 100;
+			}
+		}
+		else
+		{
+			with instance_create(x,y,FrogEgg)
+			{
+				team = other.team;
+				alarm[0] = 120;//4 seconds
+			}
 		}
 	}
 	else if ran > 50 && target > 0

@@ -100,7 +100,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFrogQueenDead","path":"sprites/sprFrogQueenDead/sprFrogQueenDead.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFrogQueenDead",
     "tags": [],
     "resourceType": "GMSequence",
   },

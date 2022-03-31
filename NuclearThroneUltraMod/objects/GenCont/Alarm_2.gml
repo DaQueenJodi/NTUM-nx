@@ -18,9 +18,13 @@ repeat(Player.loops-1)
 instance_create(instance_furthest(Player.x,Player.y,Floor).x+132, instance_furthest(Player.x,Player.y,Floor).y+32,LilHunter);
 }
 
-if (Player.loops > 0 && (Player.area == 2 || Player.area == 110) && Player.subarea == 1)
+if (Player.loops > 0 && Player.area == 2 && Player.subarea == 1)
 {
 	scrSpawnBoss(BallMom);
+}
+if (Player.loops > 0 && Player.area == 110 && Player.subarea == 1)
+{
+	scrSpawnBoss(InvertedBallMom);
 }
 if (Player.loops > 0 && Player.area == 4 && Player.subarea == 1)
 {

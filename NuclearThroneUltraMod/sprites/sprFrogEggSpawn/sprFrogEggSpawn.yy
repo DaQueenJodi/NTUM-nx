@@ -76,7 +76,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFrogEggSpawn","path":"sprites/sprFrogEggSpawn/sprFrogEggSpawn.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFrogEggSpawn",
     "tags": [],
     "resourceType": "GMSequence",
   },

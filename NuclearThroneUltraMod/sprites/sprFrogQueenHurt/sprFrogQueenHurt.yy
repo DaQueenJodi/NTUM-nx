@@ -68,7 +68,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprFrogQueenHurt","path":"sprites/sprFrogQueenHurt/sprFrogQueenHurt.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprFrogQueenHurt",
     "tags": [],
     "resourceType": "GMSequence",
   },
