@@ -39,10 +39,12 @@ oldx = x
 oldy = y
 
 if instance_exists(Player){
+if Player.skill_got[19] == 1
+{accuracy-=3;}
 if Player.ultra_got[43]&&instance_exists(Marker)//hunter focused fire
-{accuracy-=2;}
+{accuracy-=5;}
 if Player.ultra_got[42]//hunter never miss
-{accuracy-=4;}
+{accuracy-=6;}
 var modBoost = 1;
 if Mod1=13
 accuracy-=modBoost;
@@ -60,8 +62,8 @@ direction = image_angle+(random(accuracy)-(accuracy*0.5))//30 - 15
 speed = 4
 if instance_exists(target)
 {
-if point_distance(x,y,dir.x,dir.y) < 160//120
-motion_add(point_direction(x,y,dir.x,dir.y),1.5)//1
+if point_distance(x,y,dir.x,dir.y) < 170-accuracy//120
+motion_add(point_direction(x,y,dir.x,dir.y),1.6-(accuracy*0.05))//1
 }
 image_angle = direction
 speed = 0

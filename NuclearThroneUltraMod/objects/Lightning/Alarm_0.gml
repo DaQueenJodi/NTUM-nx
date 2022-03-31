@@ -1,5 +1,7 @@
 if instance_exists(Player){
-	if team == 2 && isog && GetPlayerUltramod() == ultramods.lightningKraken
+if team == 2
+{
+	if isog && GetPlayerUltramod() == ultramods.lightningKraken
 	{
 		snd_play_fire(choose(sndWater1,sndWater2) );
 		with instance_create(x,y,Tentacle)
@@ -38,11 +40,12 @@ if instance_exists(Player){
 		exit;
 	}
 	isog = false;
-	
+if Player.skill_got[19] == 1
+{accuracy-=3;}
 if Player.ultra_got[43]&&instance_exists(Marker)//hunter focused fire
-{accuracy-=2;}
+{accuracy-=5;}
 if Player.ultra_got[42]//hunter never miss
-{accuracy-=4;}
+{accuracy-=6;}
 var modBoost = 1;
 if Mod1=13
 accuracy-=modBoost;
@@ -53,6 +56,7 @@ accuracy-=modBoost;
 if Mod4=13
 accuracy-=modBoost;
 
+}
 if accuracy<0
 accuracy=0;
 
@@ -76,8 +80,8 @@ direction = image_angle+(random(accuracy)-(accuracy*0.5))//30-15   24-12
 speed = 4
 if instance_exists(target)
 {
-if point_distance(x,y,dir.x,dir.y) < 120
-motion_add(point_direction(x,y,dir.x,dir.y),1)
+if point_distance(x,y,dir.x,dir.y) < 140-accuracy
+	motion_add(point_direction(x,y,dir.x,dir.y),1.2-(accuracy*0.05))
 }
 image_angle = direction
 speed = 0

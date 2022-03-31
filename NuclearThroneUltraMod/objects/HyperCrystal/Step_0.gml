@@ -2,7 +2,7 @@ event_inherited()
 
 //Spin crystals
 var ds = 0;
-if myCrystals && !ds_list_empty(myCrystals)
+if ds_exists(myCrystals,ds_type_list)
 	ds = ds_list_size(myCrystals);
 var attacking = alarm[3] > 0;
 if ds > 0 
@@ -17,6 +17,10 @@ if ds > 0
 			gunangle += 20;
 		if ((alarm[2] < 20 || attacking) && crystalDis < maxCrystalDis)
 			crystalDis += 2;
+		else if isCursed && !attacking && random(10) < 1
+		{
+			gunangle += choose(60,120,-60,-120);	
+		}
 	}
 	else if !attacking
 		gunangle += 5;
@@ -31,6 +35,7 @@ if ds > 0
 			{
 				alarm[1] += 2;
 				alarm[2] = 0;
+				alarm[4] = 0;//cursed no teleport
 				with instance_create(x+random(6)-3,y+random(6)-3,LaserCharge)
 				{
 					motion_add(random(360),1+random(1))
@@ -64,7 +69,7 @@ if ds > 0
 }
 
 if !attacking
-motion_add(direction,0.5)
+	motion_add(direction,0.5)
 
 if speed > maxspeed
 speed = maxspeed

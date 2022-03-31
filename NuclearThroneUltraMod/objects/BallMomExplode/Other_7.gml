@@ -1,8 +1,10 @@
 /// @description xxx
-BackCont.shake += 20
-Sleep(50);
+
 if sprite_index == sprFrogQueenDying
 {
+	BackCont.shake += 50
+	Sleep(50);
+	instance_create(x,y,BigWallBreak);
 	sprite_index = sprFrogQueenDead;
 	image_index = 0;
 	snd_play(sndBallMamaDead2);
@@ -13,11 +15,11 @@ if sprite_index == sprFrogQueenDying
 	{
 		with instance_create(x,y,EnemyBullet2)
 	    {
-		    motion_add(am,4)
+		    motion_add(ang,4)
 		    image_angle = direction
 		    team = other.team
 	    }
-		am += angStep;
+		ang += angStep;
 	}
 }
 else

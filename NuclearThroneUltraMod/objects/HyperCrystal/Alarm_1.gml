@@ -1,7 +1,5 @@
 ///@description AI
 alarm[1] = 30+random(10)
-
-
 if !halfHP && my_health < maxhealth * 0.6
 {
 	halfHP = true;
@@ -33,7 +31,6 @@ if target > 0
 				if instance_exists(myCrystals[| i])
 					alive++;
 			}
-		
 			if alive < ammo && random(alive) < 0.5
 			{
 				//New crystals
@@ -50,6 +47,10 @@ if target > 0
 		}
 		else if dis < 64
 		{
+			if isCursed && random(10) < 1
+			{
+				event_user(2);//Teleport
+			}
 			if random(3) < 1
 				direction = point_direction(x,y,target.x,target.y);
 			else
@@ -57,10 +58,18 @@ if target > 0
 		}
 		else if random(3) < 1
 		{
+			if isCursed//Teleport why not
+			{
+				event_user(2);
+			}
 			direction = random(360)
 		}
 		else
 		{
+			if isCursed//Teleport why not
+			{
+				event_user(2);
+			}
 			direction = point_direction(x,y,target.x,target.y);
 		}
 	}
@@ -69,5 +78,9 @@ else if random(10) < 1
 {
 	motion_add(random(360),0.4)
 	alarm[1] = 10+random(30)
+}
+else if isCursed && random(10) < 1
+{
+	event_user(2);
 }
 

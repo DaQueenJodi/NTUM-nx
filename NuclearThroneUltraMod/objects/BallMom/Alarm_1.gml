@@ -35,7 +35,7 @@ if active
 		}
 	}
 	var ran = random(100);
-	if ran > 80
+	if ran > 80 && instance_number(SuperFrog) < 5 && instance_number(InvertedSuperFrog) < 5
 	{
 		with instance_create(x,y,FrogEgg)
 		{

@@ -33,7 +33,7 @@ if prevhealth>my_health
 {
     if instance_exists(Player)
     {
-        if Player.skill_got[19]
+        if Player.skill_got[19] && !instance_exists(SpiralCont)
         {
             with instance_create(x+irandom(16)-16,y+irandom(16)-16,PopupText)
             {

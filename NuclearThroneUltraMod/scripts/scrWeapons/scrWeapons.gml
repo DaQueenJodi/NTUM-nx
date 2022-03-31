@@ -4739,9 +4739,9 @@ function scrWeapons() {
 	wep_type[429] = 3
 	wep_auto[429] = 1
 	wep_load[429] = 25
-	wep_cost[429] = 2
+	wep_cost[429] = 3
 	wep_sprt[429] = sprSplinterStorm
-	wep_area[429] = 10
+	wep_area[429] = 11
 	wep_text[429] = "bouncing splinters"
 	wep_swap[429] = sndSwapBow
 	wep_rad[429] = 0;
@@ -4752,7 +4752,7 @@ function scrWeapons() {
 	wep_load[430] = 30
 	wep_cost[430] = 4
 	wep_sprt[430] = sprSlugCannon
-	wep_area[430] = 11
+	wep_area[430] = 9
 	wep_text[430] = "CTRL + S"
 	wep_swap[430] = sndSwapExplosive
 	wep_rad[430] = 0;

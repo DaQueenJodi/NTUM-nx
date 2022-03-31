@@ -5,7 +5,7 @@ size = 4
 
 
 event_inherited()
-
+depth --;
 spr_idle = sprHyperCrystalIdle
 spr_walk = sprHyperCrystalIdle
 spr_hurt = sprHyperCrystalHurt
@@ -29,7 +29,7 @@ maxCrystalDis = 100;
 myCrystals = ds_list_create();
 normalCrystal = LaserCrystal;
 altCrystal = LightningCrystal;
-canSuperAlt = false;
+isCursed = false;
 easyCrystalLoss = true;
 scrBossFloor();
 

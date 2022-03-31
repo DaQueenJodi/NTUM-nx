@@ -24,6 +24,7 @@ while(amountOfWalls > 0)
 	ds_list_clear(hitWalls);
 	amountOfWalls = instance_place_list(x,y,Wall,hitWalls,false);
 }
+ds_list_destroy(hitWalls);
 with Player
 {
 	if place_meeting(px + nextMoveX,py + nextMoveY,Floor)

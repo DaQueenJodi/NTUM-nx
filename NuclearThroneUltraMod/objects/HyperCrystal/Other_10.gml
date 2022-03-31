@@ -1,12 +1,13 @@
 /// @description Fill up crystal list
-ds_list_clear(myCrystals)
+//if !ds_list_empty(myCrystals)
+//	ds_list_clear(myCrystals);
 snd_play(sndHyperCrystalSpawn);
 instance_create(x,y,WallBreak);
 repeat(ammo)
 {
 	var crystal = noone;
 	var ran = random(100)
-	if ran < 1 && canSuperAlt
+	if ran < 1 && isCursed
 	{
 		//This one percent chance for cursed spiders is actually in retail
 		instance_create(x,y,CursedSpider);
@@ -22,7 +23,10 @@ repeat(ammo)
 	if crystal != noone
 	{
 		with crystal
+		{
+			depth = other.depth + 1;
 			alarm[1] *= 0.5;
+		}
 		ds_list_add(myCrystals,crystal);
 	}
 }

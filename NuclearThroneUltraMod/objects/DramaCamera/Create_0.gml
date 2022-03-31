@@ -9,7 +9,7 @@ if instance_exists(Player) && !instance_exists(SurvivalWave)
     //sound_discard(song)
     //sound_discard(amb)
     var area = Player.area;
-	var subarea = Player.subarea;
+	//var subarea = Player.subarea;
     if area = 1 || area = 105
     song = musBoss1;
     if area = 3 || area = 106
@@ -129,6 +129,12 @@ if Player.area = 111
 name = "INVERTED HYPER CRYSTAL";
 if random(90)<1
 	name = choose("CRYSTAL'S MOM","HYPER RIFLE?","HYPER DIAMOND","LUIGI");
+}
+if Player.area = 115
+{
+name = "CURSED HYPER CRYSTAL";
+if random(90)<1
+	name = choose("A MISTAKE");
 }
 if Player.area = 5
 {

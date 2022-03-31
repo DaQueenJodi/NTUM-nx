@@ -13,13 +13,15 @@ sprite_index = spr_fire
     //event_perform(ev_alarm,0)
     }*/
     with instance_create(x,y,Lightning)
-{image_angle = point_direction(x,y,Player.x,Player.y)+(random(30)-15)
-team = other.team
-ammo = 7
-event_perform(ev_alarm,0)
-visible = 0
-with instance_create(x,y,LightningSpawn)
-image_angle = other.image_angle}
+	{
+		image_angle = point_direction(x,y,Player.x,Player.y)+(random(30)-15)
+		team = other.team
+		ammo = 7
+		event_perform(ev_alarm,0)
+		visible = 0
+		with instance_create(x,y,LightningSpawn)
+		image_angle = other.image_angle
+	}
 }
 else
 {

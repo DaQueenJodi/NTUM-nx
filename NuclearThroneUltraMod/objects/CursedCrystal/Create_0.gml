@@ -16,16 +16,6 @@ spr_fire = sprInvLaserCrystalFire;
 snd_hurt = sndLaserCrystalHit
 snd_dead = choose(sndBanditDie, sndRatDie, sndRavenDie, sndScorpionDie, sndBigMaggotDie, sndGatorDie, sndSalamanderDead)
 
-replace=false;
-if instance_exists(Player)
-{
-if random(40) < 1//random 30
-{
-replace=true;
-instance_destroy()
-instance_create(x,y,LightningCrystal)
-}
-}
 
 //behavior
 ammo = 4

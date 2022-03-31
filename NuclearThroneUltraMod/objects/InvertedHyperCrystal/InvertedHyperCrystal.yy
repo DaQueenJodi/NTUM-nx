@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "mskHyperCrystal",
+    "path": "sprites/mskHyperCrystal/mskHyperCrystal.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "HyperCrystal",

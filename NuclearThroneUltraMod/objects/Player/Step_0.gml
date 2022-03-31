@@ -28,10 +28,10 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if keyboard_check_pressed(ord("V")) {
 		var dangle = random(1)*360;
 		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
-		with instance_create(f.x + 16,f.y + 16,HyperCrystal)
-			curse = 1;
+		instance_create(f.x + 16,f.y + 16,BigWallBreak)
+		instance_create(f.x + 16,f.y + 16,CursedHyperCrystal)
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "HYPER CRYSTAL";
+		thing.mytext = "CURSED HYPER CRYSTAL";
 	}
 	if keyboard_check_pressed(ord("C")) {
 		var dangle = random(1)*360;

@@ -1,5 +1,4 @@
 /// @description very fair teleport
-
 alarm[4] = 15 + random(45)
 
 if ammo < 1 && alarm[2] < 1 {
