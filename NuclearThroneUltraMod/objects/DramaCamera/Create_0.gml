@@ -36,9 +36,9 @@ if instance_exists(Player) && !instance_exists(SurvivalWave)
 		else
 			song = musBoss6B;
 	}
-	if area = 2
+	if area = 2 || area == 110
 		song = musBoss5;
-	if area == 4 || area == 115
+	if area == 4
 		song = musBoss6;
 	if area == 115
 		song = musBoss6B;
@@ -87,16 +87,25 @@ if Player.area = 105
 //with instance_create(x,y,Drama)
 name = "INVERTED BIG BANDIT"
 }
-if Player.area = 2 || Player.area == 110
+if Player.area = 2
 {
-//with instance_create(x,y,Drama)
-name = "MOM";
-if random(40)<1
-{
-	name = choose("BALL MOM","MUMMY","FROG QUEEN","BALL MAMA",
-	"PLEASE I'M A MOTHER#OF FIVE CHILDREN#DON'T KILL ME",
-	"MISS. FROG#HAPPILY MARRIED","MOMMY BALL","YOUR MOM! HAHA");	
+	name = "MOM";
+	if random(40)<1
+	{
+		name = choose("BALL MOM","MUMMY","FROG QUEEN","BALL MAMA",
+		"PLEASE I'M A MOTHER#OF FIVE CHILDREN#DON'T KILL ME",
+		"MISS. FROG#HAPPILY MARRIED","MOMMY BALL","YOUR MOM! HAHA");	
+	}
 }
+if Player.area == 110
+{
+	name = "INVERTED MOM";
+	if random(40)<1
+	{
+		name = choose("INVERTED BALL MOM","DAD?","FROG KING","BALL PAPA",
+		"PLEASE I'M A FATHER#OF FIVE CHILDREN#DON'T KILL ME",
+		"MR. FROG#HAPPILY DIVORCED","DADDY BALL");	
+	}
 }
 if Player.area = 3
 {
