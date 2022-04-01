@@ -164,8 +164,11 @@ scrLoadRace();
 
 
 if UberCont.opt_gamemode == 14 //fish companion only
-ultra_got[3] = 1;
-
+{
+	ultra_got[3] = 1;
+	if !instance_exists(Partner)
+		instance_create(x,y,Partner);
+}
 oneweponlywep = 0;
 //WEAPON STUFF!
 if UberCont.opt_gamemode = 1 { //one weapon only game mode yo
@@ -184,10 +187,10 @@ else {
 oneweponlywep = wep;
 
 if UberCont.opt_gamemode = 13
-wep = 239; //rocketglove
+	wep = 239; //rocketglove
 
 if UberCont.opt_gamemode == 14 //fish companion only no wep
-wep = 0;
+	wep = 0;
 
 bwep = 0
 cwep = 0 //roids specific

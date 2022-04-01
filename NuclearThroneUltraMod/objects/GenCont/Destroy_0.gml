@@ -119,7 +119,7 @@ room_speed=35;
 		}
 	
     }
-    if ultra_got[3]//FISH's BROTHER
+    if ultra_got[3]//FISH's PARTNER
     {
     instance_create(x,y,Partner);
     }

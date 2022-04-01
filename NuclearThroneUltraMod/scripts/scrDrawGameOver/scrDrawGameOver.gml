@@ -65,6 +65,7 @@ function scrDrawGameOver() {
 		gameover = gameoverText+"##KILLS: "+string(BackCont.kills)+"###DIFFICULTY: "+string(BackCont.hard)
 	else if (UberCont.opt_gamemode == 25)
 	{
+		txt = "";
 		gameover = "KILLS: "+string(BackCont.kills)+"#WAVE: "+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
 	}
 	if BackCont.loops > 0 && UberCont.opt_gamemode != 8

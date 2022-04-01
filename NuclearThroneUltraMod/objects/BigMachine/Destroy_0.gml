@@ -11,7 +11,8 @@ scrUnlockBSkin(7,"FOR DEFEATING THE BIG MACHINE#ON LOOP AS STEROIDS",0);
 
 scrBusinessHogGoldChest();
 
-instance_create(x,y,BigDogExplo);
+with instance_create(x,y,BigDogExplo)
+	visible = false;
 snd_play(sndExplosionXL);
 
 mask_index=mskBigMachine;

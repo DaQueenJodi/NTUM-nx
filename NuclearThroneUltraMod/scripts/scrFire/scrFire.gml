@@ -1355,7 +1355,7 @@ function scrFire() {
 
 
 	with instance_create(x,y,Lightning)
-	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(30)-15)*other.accuracy
+	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(20)-10)*other.accuracy
 	team = other.team
 	ammo = 14
 	event_perform(ev_alarm,0)
@@ -1407,7 +1407,7 @@ function scrFire() {
 	repeat(8)
 	{
 	with instance_create(x,y,Lightning)
-	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(180)-60)*other.accuracy
+	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(60)-30)*other.accuracy
 	team = other.team
 	ammo = 9+random(3)
 	event_perform(ev_alarm,0)
@@ -2362,7 +2362,7 @@ function scrFire() {
 
 
 	with instance_create(x,y,Lightning)
-	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(30)-15)*other.accuracy
+	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(20)-15)*other.accuracy
 	team = other.team
 	ammo = 14
 	event_perform(ev_alarm,0)

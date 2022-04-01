@@ -2837,7 +2837,7 @@ function scrWeapons() {
 	wep_name[257] = "LIGHTNING CROSSBOW"
 	wep_type[257] = 3
 	wep_auto[257] = 0
-	wep_load[257] = 22
+	wep_load[257] = 17
 	wep_cost[257] = 2
 	wep_sprt[257] = sprLightningCrossbow
 	wep_area[257] = 5

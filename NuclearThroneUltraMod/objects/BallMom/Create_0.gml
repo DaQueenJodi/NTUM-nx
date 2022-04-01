@@ -24,8 +24,8 @@ motion_add(point_direction(Player.x,Player.y,x,y)+180,1)
 
 close = 0
 active = false;
-theSpeed = 0.5 + max(0,(GetPlayerLoops()-1)*0.5);
-maxSpeed = 1 + max(0,(GetPlayerLoops()));
+theSpeed = 0.5 + max(0,(GetPlayerLoops()-1)*0.25);
+maxSpeed = 1 + max(0,(GetPlayerLoops()*0.5));
 halfway = false;
 almostDead = false;
 sndtaunt = 0

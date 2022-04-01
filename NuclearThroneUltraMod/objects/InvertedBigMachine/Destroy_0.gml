@@ -11,7 +11,8 @@ if race = 7
 
 scrBusinessHogGoldChest();
 
-instance_create(x,y,BigDogExplo);
+with instance_create(x,y,BigDogExplo)
+	visible = false;
 snd_play(sndExplosionXL);
 
 

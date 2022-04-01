@@ -358,7 +358,7 @@ function scrPopulate() {
         instance_create(x, y, WantBoss)
     }
 	//spawn SEWER FISH boss
-    if (Player.area = 2 || Player.area == 110) and Player.subarea = 2 {
+    if (Player.area = 2 || Player.area == 110) and Player.subarea = 1 {
         repeat(Player.loops - 2)
 			instance_create(x, y, WantBoss)
     }
