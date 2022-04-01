@@ -614,13 +614,6 @@ rage=0;
 
 }
 
-/* */
-///markforhpreduction
-if markforhpreduction==true
-{
-markforhpreduction=false;
-my_health--;
-}
 
 // Audio
 audio_listener_position(x, y, depth*10);

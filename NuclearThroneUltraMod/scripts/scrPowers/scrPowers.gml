@@ -375,21 +375,22 @@ function scrPowers() {
 	    //gamble some blood
 	    if (wep_cost[wep]/typ_ammo[wep_type[wep]] >random(1)*(1-(skill_got[5]*0.3333333333333333) )  )//(skill_got[5]*0.3333333333333333)  )//cost of shot divided by ammo pickup for weptype
 	    {//thronebutt adds 1/3 chance of not taking damage
-	    markforhpreduction=true;
+			my_health -= 1;
+			exception=true;
     
-	    //if my_health<1&&strongspirit
-	    image_index=0;
-	    sprite_index=spr_hurt;
-	    snd_play_2d(snd_hurt, hurt_pitch_variation);
+			//if my_health<1&&strongspirit
+			image_index=0;
+			sprite_index=spr_hurt;
+			snd_play_2d(snd_hurt, hurt_pitch_variation);
     
-	repeat(3)
-	{
-	with instance_create(x,y,BloodStreak)
-	{
-	motion_add(random(360),8)
-	image_angle = direction
-	}
-	}
+			repeat(3)
+			{
+			with instance_create(x,y,BloodStreak)
+			{
+			motion_add(random(360),8)
+			image_angle = direction
+			}
+			}
 	    }
     
 	ammo[wep_type[wep]]+=wep_cost[wep]//return ammo

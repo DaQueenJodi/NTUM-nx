@@ -18,7 +18,6 @@ meleeimmunity = 0;
 usedHogInvestment = false;
 hogpoints = 0; //INVESTMENT ULTRA amount of ultra mutations you get
 horrorEtaken = false;
-markforhpreduction = false; //used by skeleton to bypass immunity frames
 raddrop = 0;
 hurtDuration = 13; //Additional iframes
 hurtTime = 0;
