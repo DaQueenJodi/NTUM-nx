@@ -20,6 +20,7 @@ with MusCont {
 snd_play_2d(snd_dead);
 with instance_create(x,y,BallMomExplode)
 {
+	sprite_index = other.spr_dying;
 	team = other.team;	
 }
 

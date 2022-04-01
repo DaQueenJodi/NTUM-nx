@@ -11,6 +11,7 @@ spr_walk = sprFrogQueenWalk
 spr_hurt = sprFrogQueenHurt
 spr_dead = sprFrogQueenDead
 spr_fire = sprFrogQueenFire;
+spr_dying = sprFrogQueenDying;
 
 snd_dead = sndBallMamaDead1;
 snd_hurt = sndBallMamaHurt;

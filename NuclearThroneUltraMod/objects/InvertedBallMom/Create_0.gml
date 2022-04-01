@@ -9,3 +9,4 @@ spr_walk = sprInvertedFrogQueenWalk
 spr_hurt = sprInvertedFrogQueenHurt
 spr_dead = sprInvertedFrogQueenDead
 spr_fire = sprInvertedFrogQueenFire;
+spr_dying = sprInvertedFrogQueenDying;

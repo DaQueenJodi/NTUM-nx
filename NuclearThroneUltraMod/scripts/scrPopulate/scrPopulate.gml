@@ -45,7 +45,7 @@ function scrPopulate() {
         if random(10 + Player.hard) < Player.hard and point_distance(x, y, Player.x, Player.y) > 160 /*110*/ and!place_meeting(x, y, RadChest) and!place_meeting(x, y, AmmoChest) and!place_meeting(x, y, WeaponChest) and((x + 16 != Player.x and y + 16 != Player.y) or point_distance(x, y, Player.x, Player.y) > 300) //240
         {
             if ((spawnarea = 3 || spawnarea = 106) && Player.subarea = 3) || ((spawnarea = 5 || spawnarea = 112) && Player.subarea = 3) || (spawnarea = 7 && Player.subarea = 2) {
-                if random(3) < 1 {
+                if random(3) < 1.3 {
                     if UberCont.opt_gamemode = 9 //easy mode
                     {
                         if random(4) < 1
@@ -55,7 +55,7 @@ function scrPopulate() {
                 }
 
                 //spawn some more enemies on loop 3 cause you need to die man.
-                if Player.loops > 2 && random(2) < 1
+                if Player.loops > 1 && random(3) < 1
 					scrPopEnemies();
 
             }
@@ -68,11 +68,11 @@ function scrPopulate() {
                     scrPopEnemies()
 
 
-                    //spawn some more enemies on loop 2 cause you need to die man.
-                    if Player.loops > 2 && random(2) < 1
+                    //spawn some more enemies on loop
+                    if Player.loops > 1 && random(3) < 1
                     scrPopEnemies();
 
-                    if Player.loops > 4
+                    if Player.loops > 3
                     scrPopEnemies();
                 }
             }
