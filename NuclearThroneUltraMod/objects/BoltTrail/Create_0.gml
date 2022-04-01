@@ -10,5 +10,5 @@ else
     image_speed=0.5;
     
     
-    colour=c_white;
+    theColour=c_white;
 

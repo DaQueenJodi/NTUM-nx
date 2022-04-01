@@ -211,6 +211,11 @@ function scrModHit() {
 
 				case 14://Radiation
 				snd_play(sndRadMod,0.2,true);
+				repeat(2)
+					with instance_create(x,y,PlutoFX)
+					{
+						motion_add(random(360),4);
+					}
 				if other.raddrop != 0
 					other.raddrop += 6;
 

@@ -20,7 +20,7 @@ else
 if my_health < maxhealth and random(2) < 1
 {
 image_index = 0
-snd_play(sndBigMaggotBurrow)
+snd_play(sndBigMaggotBurrow,0,true)
 instance_change(BigMaggotBurrow,false)
 }
 rage = 0

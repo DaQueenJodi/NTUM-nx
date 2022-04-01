@@ -5,7 +5,7 @@ function scrEmpty() {
 	dir.mytext = "EMPTY"
 	if ammo[wep_type[wep]] > 0
 	dir.mytext = "NOT ENOUGH "+string(typ_name[wep_type[wep]])
-	dir.colour=c_red;
+	dir.theColour=c_red;
 	wkick = -2
 	drawempty = 30
 

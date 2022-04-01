@@ -17,7 +17,7 @@ function scrDrawHUD() {
 			draw_text(xx,yy+1,string_hash_to_newline(string(mytext)))
 			draw_text(xx+1,yy+1,string_hash_to_newline(string(mytext)))
 			draw_text(xx+1,yy,string_hash_to_newline(string(mytext)))
-			draw_set_color(colour)
+			draw_set_color(theColour)
 			draw_sprite(sprt,ii,xx+(string_width(string_hash_to_newline(string(mytext)))*0.5),yy);
 			draw_text(xx,median(__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )-30,__view_get( e__VW.YView, 0 )+20,y),string_hash_to_newline(string(mytext)))
 		}

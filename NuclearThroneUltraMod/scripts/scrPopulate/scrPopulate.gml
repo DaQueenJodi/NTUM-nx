@@ -54,15 +54,15 @@ function scrPopulate() {
                         scrPopEnemies()
                 }
 
-                //spawn some more enemies on loop 2 cause you need to die man.
-                if Player.loops > 2
-                scrPopEnemies();
+                //spawn some more enemies on loop 3 cause you need to die man.
+                if Player.loops > 2 && random(2) < 1
+					scrPopEnemies();
 
             }
             else {
                 if UberCont.opt_gamemode = 9 //easy mode
                 {
-                    if random(4) < 1
+                    if random(4) < 1 || !instance_exists(enemy)
                     scrPopEnemies()
                 } else { //normal procedure
                     scrPopEnemies()
@@ -74,12 +74,6 @@ function scrPopulate() {
 
                     if Player.loops > 4
                     scrPopEnemies();
-
-                    if (Player.loops mod 2 == 0 && Player.loops > 1) {
-                        //even thus inverted
-                    } else if (random(3) < 1)
-                        scrPopEnemies();
-
                 }
             }
 
@@ -363,13 +357,18 @@ function scrPopulate() {
         repeat(Player.loops + 1)
         instance_create(x, y, WantBoss)
     }
+	//spawn SEWER FISH boss
+    if (Player.area = 2 || Player.area == 110) and Player.subarea = 2 {
+        repeat(Player.loops - 2)
+			instance_create(x, y, WantBoss)
+    }
 
     //spawn INVERTED desert boss
     if Player.area = 105 and Player.subarea = 3 {
         repeat(Player.loops + 1)
         instance_create(x, y, WantBoss)
     }
-	
+	//Big vulture
 	if Player.area = 10 and Player.subarea = 3 {
         repeat(Player.loops + 1)
         instance_create(x, y, WantBoss)
@@ -380,19 +379,14 @@ function scrPopulate() {
         repeat(Player.loops + 1)
         instance_create(x, y, WantBoss)
     }
-/*
-    if (Player.area = 2 && Player.loops > 0) { //SPAWN BIG FISH
-        repeat(Player.loops + 1)
-        instance_create(x, y, WantBoss);
-    }
-*/
+
     if (Player.area = 3 && Player.subarea = 1 && Player.loops > 0) { //SPAWN ASSASSINBOSS
         repeat(Player.loops)
         instance_create(x, y, WantBoss);
     }
 
     if (Player.area = 106 && Player.subarea = 1 && Player.loops > 0) { //SPAWN ASSASSINBOSS
-        repeat(Player.loops - 1)
+        repeat(Player.loops)
         instance_create(x, y, WantBoss);
     }
 

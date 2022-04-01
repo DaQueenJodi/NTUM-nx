@@ -27,7 +27,7 @@ gunangle = random(360)
 alarm[1] = 30+random(90)
 wkick = 0
 friction = 2;
-instance_create(x,y,WallBreak);
+instance_create(x,y,BigWallBreak);
 projectileSpeed = 10;
 projectileSpeed += min(GetPlayerLoops(),3);
 direction = random(360);

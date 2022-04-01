@@ -8,6 +8,7 @@ spr_idle = spr_charge;
 spr_walk = spr_charge;
 spr_hurt = spr_charge_hurt;
 snd_play(sndExploGuardianCharge);
+alarm[2] = 20;
 image_index = 0;
 imageIndex = 0;
 alarm[1] = 200;
@@ -42,7 +43,6 @@ if Player.skill_got[12] = 1
 	dis -= 8;
 }
 }
-//var between = 1 / (amountOfProjectiles / 4);
 for (var i = 0; i < amountOfProjectiles; i++) {
 	with myCompanions[i]
 	{
@@ -52,19 +52,6 @@ for (var i = 0; i < amountOfProjectiles; i++) {
 		rotateSpeed = rotSpeed;
 		maxdistance = dis;
 		lerpStep = lp;
-		debug("lp: ",lp);
 	}
 	dir += 1;
-	/*
-	if dir > 3
-	{
-		dir = 0;
-		lp += between;
-		if lp > 1
-		{
-			lp -= 1;
-			dir ++;
-		}
-	}
-	*/
 }

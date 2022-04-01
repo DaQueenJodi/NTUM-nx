@@ -4,7 +4,7 @@ time = 10
 y -= 8
 alarm[2] = 1
 
-colour=c_white;
+theColour=c_white;
 blink=true;
 sprt = mskPickupThroughWall;
 ii = 0;

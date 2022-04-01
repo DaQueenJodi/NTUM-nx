@@ -10,7 +10,7 @@ alphaOrigin = 0.25;
 alpha = alphaOrigin;
 wave = 0;
 hue = random_range(0,360);
-colour = make_color_hsv(hue,250,250);
+theColour = make_color_hsv(hue,250,250);
 ogspd = 5;
 spd = ogspd;
 with Player

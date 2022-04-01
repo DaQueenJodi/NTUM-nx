@@ -56,6 +56,18 @@ if charge
 			}
 		}
 	}
+	else if imageIndex >= 28//End fire
+	{
+		depth = -2;
+		charge = false;
+		image_index = 0;
+		sprite_index = spr_normal;
+		spr_idle = spr_normal;
+		spr_walk = spr_normal;
+		spr_hurt = spr_normal_hurt;
+		alarm[1] = 7-min(loops*2,4);
+		motion_add(direction,2);
+	}
 }
 else
 {

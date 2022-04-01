@@ -471,7 +471,7 @@ else {
 
 //sheep
 sheepPower = 0;
-sheepPowerToHaveEffect = 4;
+sheepPowerToHaveEffect = 3.7;
 if race = 13 {
     justAsheep = true;
 }

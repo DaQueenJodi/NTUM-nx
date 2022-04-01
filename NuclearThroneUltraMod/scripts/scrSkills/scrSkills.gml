@@ -90,10 +90,10 @@ function scrSkills() {
 	skill_tips[8] = "skin glows"
 	skill_msnd[8] =  sndMutGammaGuts
 
-	if random(500)<1
+	if random(200)<1
 	{
 	skill_name[9] = "SECOND TUMMY"
-	skill_text[9] = "OMNOMNOMNOM"
+	skill_text[9] = "OMNrOMNOMNOM"
 	skill_tips[9] = "omnomnomnom"
 	skill_msnd[9] =  sndMutSecondStomache
 	}

@@ -9,7 +9,7 @@ right = 1
 else if hspeed < 0
 right = -1
 
-speed = 3.8
+speed = 3.5
 
 if instance_exists(Player)
 {

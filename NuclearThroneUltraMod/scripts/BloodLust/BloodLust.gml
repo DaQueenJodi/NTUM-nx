@@ -8,7 +8,7 @@ function BloodLust(){
 		chance = 7.89;
     if Player.skill_got[7] = 1 and random(100) <  chance//7.69% chance
     {
-    	snd_play(sndBloodlustProc);
+    	snd_play_2d(sndBloodlustProc,0,true);
 	    with instance_create(Player.x,Player.y-8,HealFX)
 	    {
 			sprite_index=sprBloodlust;

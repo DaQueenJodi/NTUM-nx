@@ -61,13 +61,7 @@ repeat(speed)
 speed *= 0.9}
 }
 
-//SOME KILLS REGENERATE AMMO
-if instance_exists(Player)
-{
-scrLuckyShot();
-BloodLust();
-}
-
+scrEnemyDeathEvent();
 //drop timebomb??
 if(random(50)<1){//2
 with instance_create(x,y,WepPickup)

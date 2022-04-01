@@ -23,7 +23,7 @@ function scrGameModes() {
 	gamemode_unlock[5] = "TAKE MELTING ULTRA:#BRAIN CAPACITY";
 	gamemode_have[5] = 0;
 
-	gamemode[6] = "CLAUSTROFOBIA";//
+	gamemode[6] = "CLAUSTROPHOBIA";//
 	gamemode_unlock[6] = "FINISH AN AREA IN UNDER 10 SECONDS";
 	gamemode_have[6] = 0;
 

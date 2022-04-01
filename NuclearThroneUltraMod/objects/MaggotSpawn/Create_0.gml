@@ -16,5 +16,5 @@ spr_dead = sprMSpawnDead
 snd_dead = sndMaggotSpawnDie
 
 
-
+motion_add(random(360),2);
 

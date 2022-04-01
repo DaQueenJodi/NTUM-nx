@@ -452,25 +452,8 @@ subarea = 1
 if restarted
 	exit;
 	
-//UNLOCK GAME MODE CLAUSTROFOBIA
-if seconds<12&&!instance_exists(MenuGen) &&!instance_exists(Menu) && ( my_health>0 ||bleed>0 )
-{//CLAUSTROFOBIA GAMEMODE UNLOCK
-if instance_exists(Portal)
-{
-if Portal.type==1
-scrUnlockGameMode(6,"FOR COMPLETING A LEVEL#IN UNDER 10 SECONDS")
-}
-//else
-//scrUnlockGameMode(6,"FOR COMPLETING A LEVEL#IN UNDER 10 SECONDS")
-}
-/*
-if seconds>600 &&!instance_exists(MenuGen) &&!instance_exists(Menu) && ( my_health>0 ||bleed>0 )
-{//AGORAPHOBIA GAMEMODE UNLOCK
-scrUnlockGameMode(20,"FOR TAKING MORE THAN# TEN MINUTES TO FINISH AN AREA")
-}
-*/
 
-if movethislevel==false&&race=15 &&!instance_exists(MenuGen) &&!instance_exists(Menu) &&  !instance_exists(Vlambeer)
+if movethislevel==false&&race=15 &&!instance_exists(MenuGen) &&!instance_exists(Menu) &&  !instance_exists(Vlambeer) && !instance_exists(CrownPickup)
 {//ATOM TELEPORT ONLY GAMEMODE UNLOCK
 scrUnlockGameMode(7,"FOR COMPLETING A LEVEL WITHOUT WALKING")
 }

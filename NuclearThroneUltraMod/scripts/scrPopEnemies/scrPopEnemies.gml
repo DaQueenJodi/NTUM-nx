@@ -496,7 +496,7 @@ function scrPopEnemies() {
                 if !instance_exists(ChesireCat) {
                     instance_create(x + 16, y + 16, ChesireCat);
                 }
-				else if loops > 0 && random(16) < 1
+				else if loops > 0 && random(8) < 1 || random(16) < 1
 				{
 	                instance_create(x + 16, y + 16, choose(Sheep, ExplosiveSheep, TeaPot, CardGuy, CardGuy2, 
 					Sheep, ExplosiveSheep, TeaPot, CardGuy, CardGuy2,

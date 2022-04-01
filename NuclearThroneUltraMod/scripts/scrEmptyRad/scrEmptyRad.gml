@@ -3,6 +3,6 @@ function scrEmptyRad() {
 	snd_play(sndUltraEmpty)
 	with instance_create(x,y,PopupText)
 	{mytext = "NOT ENOUGH RADS"
-	colour=c_red;
+	theColour=c_red;
 	}
 }

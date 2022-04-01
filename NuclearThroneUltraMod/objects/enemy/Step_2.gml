@@ -37,7 +37,7 @@ if prevhealth>my_health
         {
             with instance_create(x+irandom(16)-16,y+irandom(16)-16,PopupText)
             {
-            colour=c_orange;
+            theColour=c_orange;
             mytext=string(other.prevhealth-other.my_health)
             time = 6
             alarm[1]=1;

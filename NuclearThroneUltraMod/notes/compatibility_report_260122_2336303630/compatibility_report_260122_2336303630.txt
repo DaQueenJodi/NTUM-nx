@@ -3245,11 +3245,11 @@ Missing audiogroup for sound: 'sndMaggotBite' - setting to default audio group
 Missing audiogroup for sound: 'sndMaggotSpawnDie' - setting to default audio group
 Missing audiogroup for sound: 'sndMaggotSpawnIdle' - setting to default audio group
 Missing audiogroup for sound: 'sndBigMaggotBite' - setting to default audio group
-Missing audiogroup for sound: 'sndBigMaggotBurrow' - setting to default audio group
+Missing audiogroup for sound: 'sndBigMaggotBurrow,0,true' - setting to default audio group
 Missing audiogroup for sound: 'sndBigMaggotDie' - setting to default audio group
 Missing audiogroup for sound: 'sndBigMaggotHit' - setting to default audio group
-Missing audiogroup for sound: 'sndBigMaggotUnburrowSand' - setting to default audio group
-Missing audiogroup for sound: 'sndBigMaggotUnburrow' - setting to default audio group
+Missing audiogroup for sound: 'sndBigMaggotUnburrow,0,true' - setting to default audio group
+Missing audiogroup for sound: 'sndBigMaggotUnburrow,0,true' - setting to default audio group
 Missing audiogroup for sound: 'sndFastRatSpawn' - setting to default audio group
 Missing audiogroup for sound: 'sndFrogClose' - setting to default audio group
 Missing audiogroup for sound: 'sndFrogExplode' - setting to default audio group

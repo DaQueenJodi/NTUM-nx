@@ -1,2 +1,2 @@
-colour=c_white;
+theColour=c_white;
 

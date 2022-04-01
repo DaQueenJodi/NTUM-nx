@@ -1452,7 +1452,7 @@ function scrWeapons() {
 	wep_type[131] = 1
 	wep_auto[131] = 0
 	wep_load[131] = 3
-	wep_cost[131] = 10
+	wep_cost[131] = 8
 	wep_sprt[131] = sprHeavyHyperRifle
 	wep_area[131] = 16
 	wep_text[131] = "heavy burden"

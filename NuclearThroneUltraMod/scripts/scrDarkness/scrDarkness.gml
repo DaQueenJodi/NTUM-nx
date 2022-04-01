@@ -20,6 +20,8 @@ function scrDarkness() {
 	draw_circle(x+16-__view_get( e__VW.XView, 0 ),y+16-__view_get( e__VW.YView, 0 ),32+random(4),0)}
 	with Player
 	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),130+random(4),0)
+	with You
+	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),130+random(4),0)
 	with MeatExplosion
 	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),140+random(4),0)
 	with Explosion

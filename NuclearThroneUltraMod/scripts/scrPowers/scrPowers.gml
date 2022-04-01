@@ -298,13 +298,13 @@ function scrPowers() {
 			snd_play_2d(sndUltraEmpty);	
 			with instance_create(x,y,PopupText)
 			{mytext = "NOT ENOUGH#RADS"
-			colour=c_red;}
+			theColour=c_red;}
 		}
 		else
 		{
 			with instance_create(x,y,PopupText)
 			{mytext = "NOT ENOUGH#PORTAL STRIKE AMMO"
-			colour=c_red;}
+			theColour=c_red;}
 		}
 	}
 

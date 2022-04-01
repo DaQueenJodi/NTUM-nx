@@ -5,7 +5,7 @@ function scrUnlockGameMode(gm, unlockText) {
 	UberCont.gamemode_have[gm]=1
 	debug("unlock");
 	with instance_create(x,y,UnlockPopup)
-	mytext=UberCont.gamemode[gm]+ "#GAMEMODE UNLOCKED!#"+unlockText
+		mytext=UberCont.gamemode[gm]+ "#GAMEMODE UNLOCKED!#"+unlockText
 
 	with UberCont
 	scrSave();

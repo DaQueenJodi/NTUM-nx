@@ -13,7 +13,7 @@ if target > 0
 		gunangle += angle_difference(point_direction(x,y,target.x,target.y),gunangle)*0.9;
 	}
 }
-snd_play(sndTurretFire);
+snd_play(sndTurretFire,0.1,true);
 sprite_index = spr_fire;
 image_index = 0;
 with instance_create(x,y,EnemyBullet1)

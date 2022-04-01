@@ -1,5 +1,5 @@
 with instance_create(x,y,DiscTrail)
-colour=c_lime;
+theColour=c_lime;
 
 dist += 1
 

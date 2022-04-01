@@ -19,11 +19,17 @@ if(instance_exists(Player)){
             if(explosive==2)
             {
             with instance_create(target.x,target.y,Morph)
-            scrCanHumphry(); 
+			{
+				scrCopyWeaponMod(other);
+				scrCanHumphry(); 
+			}
             }
             if(explosive==3){
             with instance_create(target.x,target.y,ExplosiveMorph)
-            scrCanHumphry(); }
+			{
+				scrCopyWeaponMod(other);
+				scrCanHumphry(); 
+			}}
         }
             
     }}

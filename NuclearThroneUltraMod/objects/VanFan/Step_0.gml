@@ -1,7 +1,7 @@
 /// @description Colourrrr
-__background_set_colour(colour)
+__background_set_colour(theColour)
 hue += spd;
-colour = make_color_hsv(hue,250,250);
+theColour = make_color_hsv(hue,250,250);
 if hue >= 360
 	hue = 1;
 if instance_exists(Player)

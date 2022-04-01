@@ -46,8 +46,8 @@ if target > 0
 			    with instance_nearest(instance_furthest(x+random(120)-60,y+random(120)-60,Floor),instance_furthest(x+random(120)-60,y+random(120)-60,Floor),Floor)
 			    instance_create(x+16,y+16,InvertedAssassinBoss);
 			    }
-			    else if other.area=101||other.area=2
-			    instance_create(x,y,BigFish);//oasis
+			    else if other.area=101||other.area=2||other.area == 110
+					instance_create(x,y,BigFish);//oasis
 			    else if other.oasis=true
 			    {
 			    with instance_create(x,y,BanditBoss)

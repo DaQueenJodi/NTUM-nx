@@ -9,11 +9,20 @@ if instance_exists(Player) && !instance_exists(SurvivalWave)
     //sound_discard(song)
     //sound_discard(amb)
     var area = Player.area;
-	//var subarea = Player.subarea;
+	var subarea = Player.subarea;
     if area = 1 || area = 105
     song = musBoss1;
     if area = 3 || area = 106
-    song = musBoss2;
+	{
+		if subarea == 1
+		{
+			song = musAssassinBoss;	
+		}
+		else
+		{
+			song = musBoss2;
+		}
+	}
     if area = 5 || area = 107
     song = musBoss3;
     if area = 6 || area = 112
@@ -82,11 +91,11 @@ if Player.area = 2 || Player.area == 110
 {
 //with instance_create(x,y,Drama)
 name = "MOM";
-if random(30)<1
+if random(40)<1
 {
 	name = choose("BALL MOM","MUMMY","FROG QUEEN","BALL MAMA",
 	"PLEASE I'M A MOTHER#OF FIVE CHILDREN#DON'T KILL ME",
-	"MISS. FROG#HAPPILY MARRIED","MOMMY BALL");	
+	"MISS. FROG#HAPPILY MARRIED","MOMMY BALL","YOUR MOM! HAHA");	
 }
 }
 if Player.area = 3

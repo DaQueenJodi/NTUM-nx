@@ -1,5 +1,5 @@
 dir = random(360)
-scrRaddrop();
+scrEnemyDeathEvent();
 Sleep(50)
 /// @description Spectacular
 if !instance_exists(SurvivalWave) && !instance_exists(WantBoss) && instance_number(object_index) == 1

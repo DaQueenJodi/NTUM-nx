@@ -6,17 +6,22 @@ if Player.area = 106 and Player.subarea = 3
 instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,BecomeInvertedScrapBoss)
 
 
-if (Player.area = 5 and Player.subarea = 3) || ( Player.area=8 && Player.subarea=1 && Player.loops>0 )
-instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,LilHunter)
+	if (Player.area = 5 and Player.subarea = 3) || ( Player.area=8 && Player.subarea=1 && Player.loops>0 )
+	instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,LilHunter)
 
-if (Player.area = 107 and Player.subarea = 3)//inverted frozen city
-instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,InvertedLilHunter)
+	if (Player.area = 107 and Player.subarea = 3)//inverted frozen city
+	instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,InvertedLilHunter)
 
-if (Player.loops>1) && (Player.area = 5 and Player.subarea = 3)
-{
-repeat(Player.loops-1)
-instance_create(instance_furthest(Player.x,Player.y,Floor).x+132, instance_furthest(Player.x,Player.y,Floor).y+32,LilHunter);
-}
+	if (Player.loops>1) && (Player.area = 5 and Player.subarea = 3)
+	{
+	repeat(Player.loops-1)
+	instance_create(instance_furthest(Player.x,Player.y,Floor).x+132, instance_furthest(Player.x,Player.y,Floor).y+32,LilHunter);
+	}
+	if (Player.loops>2) && (Player.area = 107 and Player.subarea = 3)
+	{
+	repeat(Player.loops-2)
+	instance_create(instance_furthest(Player.x,Player.y,Floor).x+132, instance_furthest(Player.x,Player.y,Floor).y+32,InvertedLilHunter);
+	}
 
 if (Player.loops > 0 && Player.area == 2 && Player.subarea == 1)
 {

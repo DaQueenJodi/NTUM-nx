@@ -2,7 +2,7 @@
 {
 image_angle=other.direction;
 image_xscale=other.speed;
-colour=c_lime;
+theColour=c_lime;
 }
 
 if !instance_exists(Player)

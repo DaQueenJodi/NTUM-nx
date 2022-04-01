@@ -10,8 +10,8 @@ with other
 	subarea = 1
 }
 
-with enemy
-	my_health = 0
+//with enemy
+//	my_health = 0
 
 with instance_create(x,y,Portal) type = 1
 

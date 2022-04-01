@@ -22,6 +22,7 @@ with other
 		    other.curse=ccurse;
     
 		    dir= instance_create(x,y-8,PopupText)
+			dir.theColour = c_red;
 		    dir.mytext = "WEAPON STOLEN!";
 			Sleep(100);
 		    cwep=0;
@@ -39,6 +40,7 @@ with other
     
 		    dir= instance_create(x,y-8,PopupText)
 		    dir.mytext = "WEAPON STOLEN!";
+			dir.theColour=c_red;
 			Sleep(100);
 		    bwep=0;
 		}
@@ -48,20 +50,40 @@ with other
     if ( ( ammo[wep_type[wep]]-other.typ_ammo[wep_type[wep]]*2 ) && wep_type[wep]!=0 )
     {
 	    ammo[wep_type[wep]]-=other.typ_ammo[wep_type[wep]]*2;
-        
-	    dir = instance_create(x,y,PopupText)
-	    dir.mytext = "-"+string(other.typ_ammo[wep_type[wep]]*2)+" "+string(typ_name[wep_type[wep]])
-	    dir.colour=c_red;
+        if (UberCont.opt_ammoicon)
+		{
+			dir = instance_create(x,y,PopupText);
+			dir.sprt = sprAmmoIconsPickup
+			dir.ii = wep_type[wep]-1;
+		    dir.mytext = "-"+string(other.typ_ammo[wep_type[wep]]*2)
+		    dir.theColour=c_red;
+		}
+		else
+		{
+		    dir = instance_create(x,y,PopupText)
+		    dir.mytext = "-"+string(other.typ_ammo[wep_type[wep]]*2)+" "+string(typ_name[wep_type[wep]])
+		    dir.theColour=c_red;
+		}
     }
 	else if cwep!=0 && other.wep == 0
     {
 	    if ( (ammo[wep_type[cwep]]-other.typ_ammo[wep_type[cwep]]*2) && wep_type[cwep]!=0   )
 	    {
 	    ammo[wep_type[cwep]]-=other.typ_ammo[wep_type[cwep]]*2;
-     
-	    dir= instance_create(x,y,PopupText)
-	    dir.mytext = "-"+string(other.typ_ammo[wep_type[cwep]]*2)+" "+string(typ_name[wep_type[cwep]])   
-	    dir.colour=c_red;
+		if (UberCont.opt_ammoicon)
+		{
+			dir = instance_create(x,y,PopupText);
+			dir.sprt = sprAmmoIconsPickup
+			dir.ii = wep_type[cwep]-1;
+		    dir.mytext = "-"+string(other.typ_ammo[wep_type[cwep]]*2)
+		    dir.theColour=c_red;
+		}
+		else
+		{
+		    dir= instance_create(x,y,PopupText)
+		    dir.mytext = "-"+string(other.typ_ammo[wep_type[cwep]]*2)+" "+string(typ_name[wep_type[cwep]])   
+		    dir.theColour=c_red;
+		}
 	    }
 	    else
 	    {
@@ -76,7 +98,7 @@ with other
     
 	    dir= instance_create(x,y,PopupText)
 	    dir.mytext = "WEAPON STOLEN!"
-	    dir.colour=c_red;
+	    dir.theColour=c_red;
 		Sleep(100);
 	    cwep=0;
 	    }
@@ -85,11 +107,21 @@ with other
     {
 	    if ( (ammo[wep_type[bwep]]-other.typ_ammo[wep_type[bwep]]*2) && wep_type[bwep]!=0   )
 	    {
-	    ammo[wep_type[bwep]]-=other.typ_ammo[wep_type[bwep]]*2;
-     
-	    dir= instance_create(x,y,PopupText)
-	    dir.mytext = "-"+string(other.typ_ammo[wep_type[bwep]]*2)+" "+string(typ_name[wep_type[bwep]])   
-	    dir.colour=c_red;
+			ammo[wep_type[bwep]]-=other.typ_ammo[wep_type[bwep]]*2;
+			if (UberCont.opt_ammoicon)
+			{
+				dir = instance_create(x,y,PopupText);
+				dir.sprt = sprAmmoIconsPickup
+				dir.ii = wep_type[bwep]-1;
+			    dir.mytext = "-"+string(other.typ_ammo[wep_type[bwep]]*2)
+			    dir.theColour=c_red;
+			}
+			else
+			{
+			    dir= instance_create(x,y,PopupText)
+			    dir.mytext = "-"+string(other.typ_ammo[wep_type[bwep]]*2)+" "+string(typ_name[wep_type[bwep]])   
+			    dir.theColour=c_red;
+			}
 	    }
 	    else
 	    {
@@ -103,7 +135,7 @@ with other
     
 	    dir= instance_create(x,y,PopupText)
 	    dir.mytext = "WEAPON STOLEN!"
-	    dir.colour=c_red;
+	    dir.theColour=c_red;
 		Sleep(100);
 	    bwep=0;
 	    }

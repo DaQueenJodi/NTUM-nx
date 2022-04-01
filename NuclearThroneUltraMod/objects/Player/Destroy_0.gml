@@ -1,5 +1,5 @@
 //UNLOCK EASY MODE
-if area=1 && subarea=1 && loops=0
+if area=1 && subarea=1 && loops=0 && my_health <= 0
 scrUnlockGameMode(9,"FOR DIEING ON 1-1#YOU DID THAT ON PURPOSE")
 
 if scrCheckLoopAll()

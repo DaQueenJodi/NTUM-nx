@@ -16,7 +16,7 @@ if instance_exists(Player) && Player.wep == 396
 	wave++;
 	alpha = alphaOrigin +(sin(wave)*0.1);
 	hue += spd;
-	colour = make_color_hsv(hue,250,250);
+	theColour = make_color_hsv(hue,250,250);
 	if hue >= 360
 		hue = 1;
 	spd = ogspd + cos(spd);

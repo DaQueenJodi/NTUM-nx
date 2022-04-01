@@ -1,6 +1,6 @@
 with instance_create(x,y,BoltTrail)
 {
-	colour = other.trailColour;
+	theColour = other.trailColour;
 	image_angle=other.direction;
 	image_xscale=other.speed;
 }

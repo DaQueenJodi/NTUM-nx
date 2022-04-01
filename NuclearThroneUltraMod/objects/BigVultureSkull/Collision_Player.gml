@@ -1,4 +1,4 @@
-/// @description Go to banditland
+/// @description Go to Savanna
 if spr_idle == sprBigVultureSkullOpen
 {
 	if KeyCont.key_pick[other.p] = 1
@@ -12,8 +12,8 @@ if spr_idle == sprBigVultureSkullOpen
 		subarea = 0
 	}
 
-	with enemy
-		my_health = 0
+	//with enemy
+	//	my_health = 0
 
 	with instance_create(x,y,Portal) type = 1
 

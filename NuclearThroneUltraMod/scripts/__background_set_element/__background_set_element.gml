@@ -77,7 +77,7 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
 		}
 		else if (string_pos(__colstring, __layername) > 0)
 		{
-			// Make sure colour is as deep as it can be
+			// Make sure theColour is as deep as it can be
 			__collayer = __layerlist[__i];
 			layer_depth(__layerlist[__i], __farthestdepth);
 		}
@@ -131,7 +131,7 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
 	var __layerdepth;
 	if (__bind == -1)
 	{
-		// This is the background colour layer
+		// This is the background theColour layer
 		__layername = __colstring;
 		__layerdepth = __farthestdepth;
 	}
@@ -145,7 +145,7 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
 		else
 		{
 			__layername = __bgstring + string(__bind);
-			__layerdepth = (__farthestdepth - __depthinc) - (__bind * __depthinc);	// reserve 16000 for imported colour
+			__layerdepth = (__farthestdepth - __depthinc) - (__bind * __depthinc);	// reserve 16000 for imported theColour
 		}
 	}
 

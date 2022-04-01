@@ -191,10 +191,13 @@ else if skill=27//patience
 {
 
 
-if Player.race=25
-Player.skillpoints++;
-else
-Player.patience++;
+	if Player.race=25
+	{
+		Player.skillpoints++;
+		Player.skillsChosen--;
+	}
+	else
+	Player.patience++;
 }
 else if skill == 33 //GLASS ARM CANNON
 {

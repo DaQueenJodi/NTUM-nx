@@ -2,7 +2,7 @@
 {
 image_angle=other.direction;
 image_xscale=other.speed;
-colour=c_lime;
+theColour=c_lime;
 }
 
 if instance_exists(enemy) and instance_exists(Player)
@@ -16,7 +16,7 @@ dir = instance_nearest(x,y,enemy)
 
 with instance_create(x,y,BoltTrail)
 {
-colour=c_lime;
+theColour=c_lime;
 image_angle=point_direction(x,y,other.dir.x-other.hspeed,other.dir.y-other.vspeed)+180;
 image_xscale=point_distance(x,y,other.dir.x-other.hspeed,other.dir.y-other.vspeed);
 }  

@@ -21,7 +21,7 @@ if instance_exists(Player)
 	}
 }
 
-scrRaddrop();
+scrEnemyDeathEvent();
 scrEndBoss();
 scrBusinessHogGoldChest();
 Sleep(200)
