@@ -16,7 +16,7 @@ depth = -99
 }
 with BigVulture
 {
-snd_play(sndBigVultureChargeTell)
+snd_play(sndBigVultureCharge)
 depth = -99
 }
 with LilHunter

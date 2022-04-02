@@ -21,6 +21,11 @@ with Player//Data to keep
 	kills = other.kills;
 	subarea=other.subarea;
 	boostLevel = other.level;
+	ammo[1] = typ_ammo[1] * 3
+    ammo[2] = typ_ammo[2] * 3
+    ammo[3] = typ_ammo[3] * 3
+    ammo[4] = typ_ammo[4] * 3
+    ammo[5] = typ_ammo[5] * 3
 	event_perform(ev_alarm,0);
 	//event_perform(ev_other,ev_room_end);
 	visible=true;
