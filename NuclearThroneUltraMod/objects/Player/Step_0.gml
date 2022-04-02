@@ -160,12 +160,6 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 		thing.mytext = "RADS!";
 		rad = GetPlayerMaxRad() + 1;
 	}
-	/*
-	if keyboard_check(ord("R")) {
-	    /*repeat(50) {
-			instance_create(Player.x,Player.y,Rad);
-	    }*/
-	//}
 	if keyboard_check_pressed(ord("T")) {
 		if instance_exists(Portal) && UberCont.opt_gamemode == 25
 		{
@@ -575,7 +569,7 @@ if (KeyCont.key_fire[p] = 1 or keyfire = 1)
 	scrEmpty()
 	}
 	rad = max(rad,0);
-	if rad-wep_rad[wep] < 0 && Player.alarm[2] < 1//alarm = Fish Ultra B
+	if rad-wep_rad[wep] < 0 && alarm[2] < 1//alarm = Fish Ultra B
 	{
 		//not enough radiation
 		clicked = 0
@@ -597,13 +591,13 @@ if wep_auto[wep] = 0 and clicked = 1
             var mox,moy;
             var len,dir;
             if UberCont.opt_fulscrn=1
-            len=point_distance(Player.x,Player.y,target.x,target.y)*4
+            len=point_distance(other.x,other.y,target.x,target.y)*4
             else{
-            len=point_distance(Player.x,Player.y,target.x,target.y)
+            len=point_distance(other.x,other.y,target.x,target.y)
             len*=(window_get_height())*0.0038;
             }
             
-            dir=point_direction(Player.x,Player.y,target.x,target.y);
+            dir=point_direction(other.x,other.y,target.x,target.y);
             
             mox=(window_get_x()+window_get_width()*0.5)+lengthdir_x(len,dir);
             moy=(window_get_y()+window_get_height()*0.5)+lengthdir_y(len,dir);
@@ -645,13 +639,13 @@ if wep_auto[wep] = 1 and (KeyCont.key_fire[p] = 1 or KeyCont.key_fire[p] = 2 or 
             var mox,moy;
             var len,dir;
             if UberCont.opt_fulscrn=1
-            len=point_distance(Player.x,Player.y,target.x,target.y)*4
+            len=point_distance(other.x,other.y,target.x,target.y)*4
             else{
-            len=point_distance(Player.x,Player.y,target.x,target.y)
+            len=point_distance(other.x,other.y,target.x,target.y)
             len*=(window_get_height())*0.0038;
             }
             
-            dir=point_direction(Player.x,Player.y,target.x,target.y);
+            dir=point_direction(other.x,other.y,target.x,target.y);
             
             mox=(window_get_x()+window_get_width()*0.5)+lengthdir_x(len,dir);
             moy=(window_get_y()+window_get_height()*0.5)+lengthdir_y(len,dir);
@@ -1294,15 +1288,13 @@ if instance_exists(projectile)&&extrafeetalarm<1{
     {
         with projectile
         {
-        if instance_exists(Player){
-        if point_distance(x,y,Player.x,Player.y)<30{//use close projectile
+        if point_distance(x,y,other.x,other.y)<30{//use close projectile
             if team!=other.team//NOT FROM PLAYA!? O_O
             {                     
             other.extrafeetalarm=20;//after this time we check if you've dodged this
             other.extrafeetdodged=true;
             // change a variable here so that you cannot spawn even more items yo?
             }
-            }}
         }
     }
 }
