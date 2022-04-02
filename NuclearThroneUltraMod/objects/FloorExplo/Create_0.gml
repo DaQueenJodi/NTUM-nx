@@ -249,8 +249,7 @@ i++;
 
 alarm[2] = 1;
 
-if UberCont.opt_highquality=1
-{
+
 with Wall
 {
 if !place_meeting(x,y+16,Floor)
@@ -289,7 +288,7 @@ h = 20-r
 
 }
 */
-}
+
 //*/
 alarm[0]=1;
 

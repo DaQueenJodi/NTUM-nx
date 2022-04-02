@@ -1,9 +1,3 @@
-if UberCont.opt_highquality=0
-{
-instance_destroy();
-exit;
-}
-
 image_angle = random(360)
 motion_add(random(360),random(1)+0.5)
 friction = 0.1

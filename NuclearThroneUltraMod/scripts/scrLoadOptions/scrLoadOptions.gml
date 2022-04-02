@@ -12,7 +12,7 @@ function scrLoadOptions() {
 	opt_sideart = ini_read_real("OPTIONS","sideart",0);
 	opt_bloom = ini_read_real("OPTIONS","bloom",0.1);
 	opt_camera_follow = ini_read_real("OPTIONS","camerafollowaim",1);
-	opt_highquality = ini_read_real("OPTIONS","highquality",1);
+	opt_hud_des = ini_read_real("OPTIONS","huddes",1);
 	//opt_nicedrk = ini_read_real("OPTIONS","nicedrk",0);
 
 	//controls

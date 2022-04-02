@@ -18,11 +18,8 @@ if Player.area = 105|| Player.area = 106
 type=5;
 }
 
-HQ =  UberCont.opt_highquality
 
 
-if HQ=1
-{
 repeat(60)//(200)
 {
 with SpiralCont
@@ -36,7 +33,6 @@ event_perform(ev_step,0)
 
 with SpiralStar
 event_perform(ev_step,0)
-}
 }
 
 active = 1

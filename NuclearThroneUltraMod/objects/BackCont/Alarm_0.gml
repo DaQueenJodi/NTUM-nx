@@ -3,8 +3,6 @@ alarm[0] = 1+random(60)
 if instance_exists(Player)
 area = Player.area
 
-if UberCont.opt_highquality=1
-{
 
 if area = 0
 {
@@ -65,5 +63,4 @@ image_xscale = other.right}}
 }
 }
 
-}
 

@@ -98,10 +98,10 @@ if UberCont.opt_loading == 4
 else
 	var loadspeed = string(scrAddZero(round(UberCont.opt_loading*100),2))+"%#";
 
-txt1 = "######AUDIO#MUSIC VOLUME#SFX VOLUME#AMBIENT VOLUME#3D AUDIO##VISUALS#FULL SCREEN#CROSSHAIR#SIDE ART#BLOOM#CAMERA FOLLOW AIM#HIGH QUALITY##OTHER#SCREEN SHAKE#FREEZE FRAMES#LOADING SPEED#CAPTURE MOUSE#BOSS INTROS#TIMER"
+txt1 = "######AUDIO#MUSIC VOLUME#SFX VOLUME#AMBIENT VOLUME#3D AUDIO##VISUALS#FULL SCREEN#CROSSHAIR#SIDE ART#BLOOM#CAMERA FOLLOW AIM#HUD DESCRIPTION##OTHER#SCREEN SHAKE#FREEZE FRAMES#LOADING SPEED#CAPTURE MOUSE#BOSS INTROS#TIMER"
 txt2 = "#######"+string(scrAddZero(round(UberCont.opt_musvol*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_sfxvol*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_ambvol*100),2))
 +"%#"+string(scrOnOff(UberCont.opt_3d_audio))+"###"+string(scrOnOff(UberCont.opt_fulscrn))+"#"+string(UberCont.opt_crosshair+1)+"#"+string(UberCont.opt_sideart)+"#"+string(round(UberCont.opt_bloom*1000))+"%#"+string(scrOnOff(UberCont.opt_camera_follow))+"#"//
-+string(scrOnOff(UberCont.opt_highquality))+
++string(scrOnOff(UberCont.opt_hud_des))+
 "###"+string(scrAddZero(round(UberCont.opt_shake*100),2))+"%#"+string(scrAddZero(round(UberCont.opt_freeze*100),2))+"%#"+loadspeed+string(scrOnOff(UberCont.opt_mousecp))+"#"+string(bossintro)+"#"+string(timer)
 
 

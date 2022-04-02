@@ -23,7 +23,7 @@ if type = 4{
 x = room_width/2
 y = room_height/2}
 
-if random(4) < 1 and type != 4 && HQ=1
+if random(4) < 1 and type != 4
 {
 if type = 2 or (random(3) < 1)
 {
@@ -33,11 +33,11 @@ depth = other.image_angle
 }
 
 
-if type = 4 && HQ=1
+if type = 4
 {
 instance_create(x,y,SpiralStar)
 }
-else if HQ=1
+else
 {
 with instance_create(x,y,Spiral)
 {

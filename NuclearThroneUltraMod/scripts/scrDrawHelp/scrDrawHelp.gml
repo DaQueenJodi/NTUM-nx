@@ -2,6 +2,8 @@
 // /@description
 ///@param
 function scrDrawHelp(txt){
+	if UberCont.opt_hud_des == 0
+		return "";
 	txt = string_replace_all(txt,"#"," ");
 	var w = 206;
 	var s = string_height("A");

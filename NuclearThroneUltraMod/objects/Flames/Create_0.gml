@@ -1,9 +1,3 @@
-if UberCont.opt_highquality=0
-{
-instance_destroy();
-exit;
-}
-
 alarm[0]=200+random(200);
 
 sprite_index=choose(sprGroundFlame,sprGroundFlame,sprGroundFlame,sprGroundFlameBig);

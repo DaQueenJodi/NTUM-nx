@@ -1,5 +1,3 @@
-HQ=UberCont.opt_highquality
-
 var area;
 if instance_exists(Player) area = Player.area
 else area = BackCont.area
