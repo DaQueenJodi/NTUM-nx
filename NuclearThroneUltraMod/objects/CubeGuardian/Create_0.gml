@@ -28,7 +28,7 @@ wkick = 0
 friction = 2;
 instance_create(x,y,WallBreak);
 loops = GetPlayerLoops();
-projectileSpeed = 10;
+projectileSpeed = 8;
 projectileSpeed += min(loops,3);
 amountOfProjectiles = 4;
 rotateSpeed = 2+min(loops,3);

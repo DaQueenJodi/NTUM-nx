@@ -2,7 +2,7 @@
 
 // Inherit the parent event
 event_inherited();
-dmg = 5;
+dmg = 4;
 team = 1;
 typ = 3;
 image_speed = 0.4;
