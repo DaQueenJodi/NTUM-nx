@@ -1283,22 +1283,23 @@ if typ!=0&&object_index!=Flame&&object_index!=TrapFire&&object_index!=HotDrakeFl
 
 if skill_got[2]
 {
-if instance_exists(projectile)&&extrafeetalarm<1{
-    if point_distance(x,y,projectile.x,projectile.y)<31//a close projectile is spotted
-    {
-        with projectile
-        {
-        if point_distance(x,y,other.x,other.y)<30{//use close projectile
-            if team!=other.team//NOT FROM PLAYA!? O_O
-            {                     
-            other.extrafeetalarm=20;//after this time we check if you've dodged this
-            other.extrafeetdodged=true;
-            // change a variable here so that you cannot spawn even more items yo?
-            }
-        }
-    }
-}
-
+	if instance_exists(projectile)&&extrafeetalarm<1{
+	    if point_distance(x,y,projectile.x,projectile.y)<31//a close projectile is spotted
+	    {
+	        with projectile
+	        {
+		        if point_distance(x,y,other.x,other.y)<30
+				{//use close projectile
+		            if team!=other.team//NOT FROM PLAYA!? O_O
+		            {                     
+		            other.extrafeetalarm=20;//after this time we check if you've dodged this
+		            other.extrafeetdodged=true;
+		            // change a variable here so that you cannot spawn even more items yo?
+		            }
+		        }
+			}
+	    }
+	}
 }
 
 
