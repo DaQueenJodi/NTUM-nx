@@ -4392,6 +4392,7 @@
     {"id":{"name":"RobotTurret","path":"objects/RobotTurret/RobotTurret.yy",},"order":53,},
     {"id":{"name":"AmmoChestMystery","path":"objects/AmmoChestMystery/AmmoChestMystery.yy",},"order":0,},
     {"id":{"name":"Bullet1Flame","path":"objects/Bullet1Flame/Bullet1Flame.yy",},"order":216,},
+    {"id":{"name":"sprInvertedBigDogExplode","path":"sprites/sprInvertedBigDogExplode/sprInvertedBigDogExplode.yy",},"order":55,},
     {"id":{"name":"ShopItem","path":"objects/ShopItem/ShopItem.yy",},"order":1,},
     {"id":{"name":"HealFX","path":"objects/HealFX/HealFX.yy",},"order":1,},
     {"id":{"name":"Implosion","path":"objects/Implosion/Implosion.yy",},"order":31,},

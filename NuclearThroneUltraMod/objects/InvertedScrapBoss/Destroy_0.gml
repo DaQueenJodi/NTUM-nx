@@ -19,7 +19,8 @@ audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 scrDrop(0,100)
 scrBusinessHogGoldChest();
 Sleep(50)
-instance_create(x,y,BigDogExplo)
+with instance_create(x,y,BigDogExplo)
+	sprite_index = sprInvertedBigDogExplode;
 event_inherited()
 
 with instance_nearest(x,y,Corpse)
