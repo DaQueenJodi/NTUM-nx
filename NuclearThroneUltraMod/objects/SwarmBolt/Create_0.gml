@@ -3,7 +3,7 @@ friction=0.2;
 //friction = 0.6
 typ = 2 //0 = normal, 1 = deflectable, 2 = destructable
 
-dmg = 4;
+dmg = 3;
 target=0;
 
 hits=3;
@@ -15,7 +15,7 @@ hits+=choose(1,1,2);
 mxSpd ++;
 if Player.race == 25
 	mxSpd += 0.2;
-if betterboltmarrow > 0
+if Player.betterboltmarrow > 0
 	mxSpd ++;
 friction+=0.1;
 }

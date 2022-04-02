@@ -14,7 +14,7 @@ function scrDrawUpdate() {
 
 	if updatepage=0
 	{
-	txt0 = @"#UPDATE 25 [0.01] (BETA)##
+	txt0 = @"#UPDATE 25 [0.01]##
 	* LOOP BOSSES!#
 	* BIG VULTURE (SOUNDS BY LARJE100)#
 	* INVERTED LOOP BOSSES#
