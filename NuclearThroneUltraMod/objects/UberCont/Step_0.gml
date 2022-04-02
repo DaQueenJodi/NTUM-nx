@@ -100,7 +100,7 @@ if !instance_exists(OptionSelect)
 game_end()
 else if OptionSelect.selected = 0 and CreditsSelect.selected = 0 and StatsSelect.selected = 0 and OptionSelect2.selected = 0 and UpdateSelect.selected = 0
 game_end()
-else
+else if !instance_exists(PlayerSpawn) && !instance_exists(Player)
 {
 scrRestart()
 }
