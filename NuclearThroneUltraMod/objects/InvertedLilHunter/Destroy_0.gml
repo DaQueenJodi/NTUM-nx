@@ -25,6 +25,7 @@ scrBusinessHogGoldChest();
 scrDrop(200,0)
 scrDrop(10,2)
 instance_create(x,y,Explosion)
+if !place_meeting(x,y,Morph)
 with instance_create(x,y,InvertedLilHunterDie)
 team = other.team
 if instance_exists(Player)

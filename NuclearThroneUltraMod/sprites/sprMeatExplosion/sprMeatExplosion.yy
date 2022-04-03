@@ -80,7 +80,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprMeatExplosion","path":"sprites/sprMeatExplosion/sprMeatExplosion.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprMeatExplosion",
     "tags": [],
     "resourceType": "GMSequence",
   },

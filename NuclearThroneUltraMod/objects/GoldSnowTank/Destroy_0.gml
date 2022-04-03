@@ -12,7 +12,7 @@ instance_create(x+random(8)-4,y+random(8)-4,Explosion)
 }*/
 
 
-
+if !place_meeting(x,y,Morph)
 with instance_create(x,y,SnowTankExplo)
 {
 spr_dead = sprGoldenSnowTankDead;

@@ -10,7 +10,6 @@ if instance_exists(Player)
 	accuracy = Player.accuracy;
 with instance_create(x,y,Tentacle)
 {
-	exploAmount = 1;
 	image_angle = other.image_angle-90+(random(30)-15)*accuracy
 	creator=other.id;
 	team = other.team
@@ -31,7 +30,6 @@ with instance_create(x,y,Tentacle)
 }
 with instance_create(x,y,Tentacle)
 {
-	exploAmount = 1;
 	image_angle = other.image_angle+90+(random(30)-15)*accuracy
 	creator=other.id;
 	team = other.team

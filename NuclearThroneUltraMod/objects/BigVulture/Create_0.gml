@@ -4,9 +4,14 @@ meleedamage = 0
 size = 1
 
 event_inherited()
-
-
-
+isInverted = false;
+gunangle1 = 0;
+gunangle2 = 0;
+fireRate2 = 2;
+shooting2 = 0;
+chargeSpeed = 2.9;
+maxChargeSpeed = 12;
+maxSpeed = 3;
 //behavior
 walk = 0
 wkick = 0

@@ -1,115 +1,75 @@
 if other.team != team and other.my_health > 0&&other.id != creator//the thing I hit must not be myself
 {
-
-var explm = exploAmount;
-with other//enemy
-{
-if sprite_index != spr_hurt
-{
-	if instance_exists(Player)
+	var hit = other;
+	var s = max(0,other.size);
+	with other//enemy
 	{
-		if Player.race=24//Elementor's passive
-			my_health -= other.dmg+1;
-		else
-			my_health -= other.dmg
-	}
-	else
-		my_health -= other.dmg//lightning does 6 dmg normal tentacle does 3
-	sprite_index = spr_hurt
-	image_index = 0
-	//motion_add(other.image_angle,4)}
-	//with Player
-	motion_add(other.image_angle,4)
-
-
-	//speed=0;
-	if instance_exists(other.creator){
-	direction=point_direction(x,y,other.creator.x,other.creator.y);
-	motion_add(point_direction(x,y,other.creator.x,other.creator.y),0.8);
-	mp_potential_step(other.creator.x,other.creator.y,3,false)
-	if place_meeting(x,y,Wall)
-	{	x = xprevious;
-		y = yprevious;	
-	}
-	//move_contact_solid(direction,2+random(2))
-	}
-
-	if other.ion=true
-	{
-		with instance_create(mouse_x,mouse_y,BloodGrenade)
+		if sprite_index != spr_hurt
 		{
-			dmg = 2;
-			exploAmount = explm;
-		visible=false;
-		sticky = 0
-		motion_add(random(360),9+random(6))
-		image_angle = direction
-		team = other.team
-		with instance_create(x,y,BloodStreak){
-		image_angle = point_direction(x,y,mouse_x,mouse_y)}
-		alarm[0]=3;
-		//instance_destroy();
-		}//}
+			if instance_exists(Player)
+			{
+				if Player.race=24//Elementor's passive
+					my_health -= other.dmg+1;
+				else
+					my_health -= other.dmg
+			}
+			else
+				my_health -= other.dmg//lightning does 6 dmg normal tentacle does 3
+			sprite_index = spr_hurt
+			image_index = 0
+			motion_add(other.image_angle,4)
+			if other.ion=true
+			{
+				with instance_create(mouse_x,mouse_y,MeatExplosion)
+						scrCanHumphry();
+				with instance_create(x,y,BloodStreak){
+					image_angle = random(360);
+					}
+
+			}
+			else
+			{
+				with other.creator{
+					if object_index=Player{
+						Player.alarm[3]=max(10,Player.alarm[3]);
+					}
+					snd_play(sndMeatExplo,0,true)
+					snd_play(sndBloodLauncherExplo,0.1,true)
+					var dir = point_direction(x,y,hit.x,hit.y);
+					var dis = point_distance(x,y,hit.x,hit.y)*0.5;
+					var xx = x+lengthdir_x(dis,dir);
+					var yy = y+lengthdir_y(dis,dir);
+					with instance_create(xx,yy,MeatExplosion)
+						scrCanHumphry();
+					with instance_create(xx,yy,BloodStreak){
+						image_angle = random(360);
+						}
+
+				    repeat(2){
+					    with instance_create(x,y,FishBoost)
+					    {
+							motion_add(random(360),2+random(4) );
+					    }
+					}
+				}
+			}
+		}
+		else
+		{
+			image_index += 0.2;//iframe skipper
+		}
+		if instance_exists(other.creator){
+			direction = point_direction(x,y,other.creator.x,other.creator.y);
+			motion_add(direction,0.6/s);
+			mp_potential_step(other.creator.x,other.creator.y,2.5/s,false)
+			if place_meeting(x,y,Wall)
+			{	x = xprevious;
+				y = yprevious;	
+			}
+		}
 	}
-	else
-	{
-	with other.creator{
-	//if instance_exists(Player){
-	if object_index=Player{
-	if Player.alarm[3]<10//iframes
-	Player.alarm[3]=10;}//imunity 4
-	//}
 
-
-
-	with instance_create(x,y,BloodGrenade)
-	{
-		dmg = 2;
-		exploAmount = explm;
-	visible=false;
-	sticky = 0
-	motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(30)-15),9+random(6))
-	image_angle = direction
-	team = other.team
-	with instance_create(x,y,BloodStreak){
-	image_angle = point_direction(x,y,mouse_x,mouse_y)}
-	alarm[0]=3;
-	//instance_destroy();
-	}//}
-
-	    repeat(2){
-	    with instance_create(x,y,FishBoost)
-	    {
-	    motion_add( point_direction(x,y,mouse_x,mouse_y)+random(60)-30,2+random(4) );
-	    }}
-	}
-	}
-
+	snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
+	if random(2)<1
+		instance_create(x,y,FishBoost)
 }
-else
-{
-	image_index += 0.2;//iframe skipper
-}
-if instance_exists(other.creator){
-direction=point_direction(x,y,other.creator.x,other.creator.y);
-motion_add(point_direction(x,y,other.creator.x,other.creator.y),0.4);
-mp_potential_step(other.creator.x,other.creator.y,2,false)
-//move_contact_solid(direction,2+random(2))
-if place_meeting(x,y,Wall)
-{	x = xprevious;
-	y = yprevious;	
-}
-}
-}
-
-
-
-
-
-
-
-snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
-if random(2)<1
-instance_create(x,y,FishBoost)
-}
-

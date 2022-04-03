@@ -1,6 +1,7 @@
 ///@description AI
 alarm[1] = 9 + random(10)
-
+if isInverted
+	alarm[1] -= 7;
 scrTarget()
 if target > 0 {
     if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {
