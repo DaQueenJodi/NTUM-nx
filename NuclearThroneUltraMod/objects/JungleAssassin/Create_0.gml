@@ -15,7 +15,7 @@ spr_dead = sprJungleAssassinDead
 snd_hurt = sndJungleAssassinHurt
 snd_dead = sndJungleAssassinDead
 
-snd_play(sndJungleAssassinWake)
+snd_play(sndJungleAssassinWake,0,true)
 
 //behavior
 walk = 0

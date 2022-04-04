@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskScrapBoss",
-    "path": "sprites/mskScrapBoss/mskScrapBoss.yy",
+    "name": "mskBushBox",
+    "path": "sprites/mskBushBox/mskBushBox.yy",
   },
   "persistent": false,
   "parentObjectId": {

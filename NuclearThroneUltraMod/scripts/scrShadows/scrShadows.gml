@@ -107,6 +107,10 @@ function scrShadows() {
 	draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+6)
 	with CubeGuardian
 	draw_sprite(shd48c,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+6)
+	with BecomeJungleBoss
+	draw_sprite(shdBushBox,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+	with JungleBoss
+	draw_sprite(shdBushBox,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with GhostGuardian
 	draw_sprite(shd32,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+8)
 	with GuardianDog

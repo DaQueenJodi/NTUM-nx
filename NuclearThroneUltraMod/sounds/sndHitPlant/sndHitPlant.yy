@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndHitPlant",
-  "duration": 0.0,
+  "duration": 0.233016,
   "parent": {
     "name": "Enviroment",
     "path": "folders/Sounds/Enviroment.yy",

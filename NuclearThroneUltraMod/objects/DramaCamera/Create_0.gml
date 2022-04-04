@@ -48,6 +48,8 @@ if instance_exists(Player) && !instance_exists(SurvivalWave)
 		song = musBoss1;
 	if area == 10
 		song = musBoss10
+	if area == 114
+		song = musBushBoxBoss;
     snd_loop(song)
     snd_loop(amb)
     //audio_group_set_gain(agsfx,max(0, sqrt(UberCont.opt_sfxvol)),0);
@@ -130,10 +132,18 @@ name = "BIG ASSASSIN"
 if Player.area = 106
 {
 //with instance_create(x,y,Drama)
-if Player.subarea = 3
-name = "INVERTED BIG DOG"
-else
-name = "INVERTED BIG ASSASSIN"
+	if Player.subarea = 3
+	{
+	name = "INVERTED BIG DOG"
+	if random(90)<1
+		name = choose("I.B.B","INVERTED SCRAP BOSS","IMAGINE MUTATING INTO THIS THING");
+	}
+	else
+	{
+	name = "INVERTED BIG ASSASSIN"
+	if random(90)<1
+		name = choose("THERE SHE IS!","BEST FRIEND","JUST WANT A HUG");
+	}
 }
 if Player.area = 4
 {
@@ -152,7 +162,14 @@ if Player.area = 115
 {
 name = "CURSED HYPER CRYSTAL";
 if random(90)<1
-	name = choose("A MISTAKE");
+	name = choose("A MISTAKE","PURPLE MENACE");
+}
+if Player.area = 114
+{
+//with instance_create(x,y,Drama)
+name = "THE BUSH BOX BOSS"
+if random(70)<1
+	name = choose("BIG BUSH BOX BOSS","BUSH CUBE","BIG BUSH","BUSHY BOX","PLANT","MISSING FLOWERS");
 }
 if Player.area = 5
 {
@@ -165,6 +182,9 @@ name = "LIL HUNTER"
 if Player.area = 107
 {
 //with instance_create(x,y,Drama)
+if random(10000)<1
+name= "HENKY!"
+else
 name = "INVERTED LIL HUNTER"
 }
 
@@ -246,6 +266,8 @@ if Player.area = 101
 {
 //with instance_create(x,y,Drama)
 name = "BIG FISH"
+if random(100) < 1
+		name = choose("HEY LOOK#IT'S FISH#FROM NUCLEAR THRONE","O'L BITEY");
 }
 
 if Player.area == 9

@@ -18,9 +18,9 @@ snd_play(sndEnemyFire)
 wkick = 4
 with instance_create(x,y,EnemyBullet1Square)
 {
-motion_add(other.gunangle+random(20)-10,4.5)
-image_angle = direction
-team = other.team
+	motion_add(other.gunangle+random(20)-10,4.5)
+	image_angle = direction
+	team = other.team
 }
 alarm[1] = 5+random(5)}
 else
