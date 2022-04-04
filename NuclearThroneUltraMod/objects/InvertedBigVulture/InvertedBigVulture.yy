@@ -33,8 +33,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss",
-    "path": "folders/Objects/Enemies/Boss.yy",
+    "name": "Savanna",
+    "path": "folders/Objects/Enemies/Boss/Savanna.yy",
   },
   "resourceVersion": "1.0",
   "name": "InvertedBigVulture",

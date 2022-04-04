@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndShovel",
-  "duration": 0.0,
+  "duration": 0.5,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

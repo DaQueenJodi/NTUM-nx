@@ -63,3 +63,5 @@ for (var i = 0; i < amountOfProjectiles; i++) {
 }
 maxSpeed = 4.4 + min(2,loops);
 acc = 2 + min(0.4,loops*0.18);//This acceleration is the scary variable
+
+alarm[2] = 4;

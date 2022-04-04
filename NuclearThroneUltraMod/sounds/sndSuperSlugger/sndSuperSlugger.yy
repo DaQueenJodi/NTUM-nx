@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndSuperSlugger",
-  "duration": 0.0,
+  "duration": 1.074156,
   "parent": {
     "name": "Shell",
     "path": "folders/Sounds/Weapons/Shell.yy",

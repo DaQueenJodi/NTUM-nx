@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss",
-    "path": "folders/Objects/Enemies/Boss.yy",
+    "name": "Jungle",
+    "path": "folders/Objects/Enemies/Boss/Jungle.yy",
   },
   "resourceVersion": "1.0",
   "name": "BecomeJungleBoss",

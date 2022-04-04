@@ -29,10 +29,8 @@ loops = Player.loops;
 
 var txt = string(area)+"_"+string(subarea)
 var upsideDown = false;
-if area == 10
-{
-	txt = "1B_"+string(subarea);
-}
+txt = scrAreaSwapper(area,subarea);
+
 if area > 99
 {
 	txt = "???"

@@ -255,6 +255,11 @@ function scrNextLevel() {
 					area = 115;	
 					subarea = 1;
 				}
+				else if area == 6 && subarea == 2
+				{
+					area = 9;
+					subarea = 1;
+				}
 				else
 				{
 				    area += 1

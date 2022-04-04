@@ -331,7 +331,7 @@ function scrDrawHUD() {
 		if (mouse_x > xx-w && mouse_x < xx+w && mouse_y < yy+h && mouse_y > yy-h)
 		{
 			var umn = scrUltraModName(Player.ultramod);
-			scrDrawHelp(umn[0] + " <=> " + umn[1]);
+			scrDrawHelp(umn[0] + " <SWAP> " + umn[1]);
 		}
 		draw_sprite(sprUltraModIcon,Player.ultramod,xx,yy);
 	}
@@ -764,7 +764,7 @@ function scrDrawHUD() {
 				lstring = ultramodName[1];
 			}
 			var yy = y - 32;
-			var btw = " <=> ";
+			var btw = " <SWAP> ";
 			var btwh = string_width(btw)*0.5;
 			draw_sprite(sprEPickup,UberCont.opt_gamepad,x,yy-4)
 			draw_set_color(c_black)
@@ -782,7 +782,7 @@ function scrDrawHUD() {
 			draw_text(xx+1,yy-1,btw)
 			draw_set_color(c_white)
 			draw_text(xx,yy-1,btw)
-			xx = x + btwh//+ ( string_width(lstring) + (string_width(" <=> ")*0.5))
+			xx = x + btwh//+ ( string_width(lstring) + (string_width(" <SWAP> ")*0.5))
 			draw_set_color(c_black)
 			draw_text(xx,yy,rstring)
 			draw_text(xx+1,yy,rstring)

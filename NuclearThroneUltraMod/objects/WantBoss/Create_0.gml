@@ -1,5 +1,5 @@
 target = -1
-
+team = 1;
 enemies = instance_number(enemy)
 
 if instance_exists(Player)

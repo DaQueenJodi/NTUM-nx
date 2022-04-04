@@ -40,8 +40,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss",
-    "path": "folders/Objects/Enemies/Boss.yy",
+    "name": "Labs",
+    "path": "folders/Objects/Enemies/Boss/Labs.yy",
   },
   "resourceVersion": "1.0",
   "name": "Technomancer",

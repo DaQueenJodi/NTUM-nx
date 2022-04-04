@@ -80,7 +80,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBanditBossIdle","path":"sprites/sprBanditBossIdle/sprBanditBossIdle.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprBanditBossIdle",
     "tags": [],
     "resourceType": "GMSequence",
   },

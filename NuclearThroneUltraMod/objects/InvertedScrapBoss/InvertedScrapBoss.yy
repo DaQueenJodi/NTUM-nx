@@ -38,8 +38,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss",
-    "path": "folders/Objects/Enemies/Boss.yy",
+    "name": "Scrap",
+    "path": "folders/Objects/Enemies/Boss/Scrap.yy",
   },
   "resourceVersion": "1.0",
   "name": "InvertedScrapBoss",
