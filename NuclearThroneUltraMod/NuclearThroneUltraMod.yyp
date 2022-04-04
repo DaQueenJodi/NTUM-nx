@@ -1323,6 +1323,7 @@
     {"id":{"name":"sndJungleAssassinHurt","path":"sounds/sndJungleAssassinHurt/sndJungleAssassinHurt.yy",},"order":0,},
     {"id":{"name":"sprMenuPointer","path":"sprites/sprMenuPointer/sprMenuPointer.yy",},"order":28,},
     {"id":{"name":"sprRMBIcon","path":"sprites/sprRMBIcon/sprRMBIcon.yy",},"order":29,},
+    {"id":{"name":"BecomeJungleBoss","path":"objects/BecomeJungleBoss/BecomeJungleBoss.yy",},"order":44,},
     {"id":{"name":"sprSelectMask","path":"sprites/sprSelectMask/sprSelectMask.yy",},"order":30,},
     {"id":{"name":"mskPlayerMenu","path":"sprites/mskPlayerMenu/mskPlayerMenu.yy",},"order":31,},
     {"id":{"name":"sprSkeletonChair","path":"sprites/sprSkeletonChair/sprSkeletonChair.yy",},"order":32,},

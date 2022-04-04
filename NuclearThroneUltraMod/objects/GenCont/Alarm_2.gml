@@ -2,9 +2,11 @@
 if Player.area = 3 and Player.subarea = 3
 instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,BecomeScrapBoss)
 
-if Player.area = 106 and Player.subarea = 3
-instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,BecomeInvertedScrapBoss)
+if Player.area = 106 and Player.subarea = 2
+instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,BecomeJungleBoss)
 
+if Player.area = 114 and Player.subarea = 3
+instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,BecomeScrapBoss)
 
 	if (Player.area = 5 and Player.subarea = 3) || ( Player.area=8 && Player.subarea=1 && Player.loops>0 )
 	instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,LilHunter)
