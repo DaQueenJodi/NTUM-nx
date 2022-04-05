@@ -1216,7 +1216,7 @@ if area=108&&race!=18&&race!=24//angel & elementor don't bother with this stuff
     
     //when player isn't frozen increase the time that determines when it should get frozeen
     if frozen<1
-    getFrozen++;
+		getFrozen++;
     
     if getFrozen>24
     {

@@ -47,7 +47,7 @@ with instance_nearest(__view_get( e__VW.XView, 0 )+random(__view_get( e__VW.WVie
 sprite_index = sprCheeseDrip}
 }
 
-if area = 5 || area = 107
+if area = 5 || area = 107 || area == 108
 {
 
 alarm[0] = 2

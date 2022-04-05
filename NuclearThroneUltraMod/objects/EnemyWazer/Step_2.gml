@@ -14,11 +14,21 @@ if owner > -1 && instance_exists(owner) && !ending {
 		if audio_is_playing(sndWazerStart)
 			audio_sound_pitch(sndWazerStart,pitch);
 		else if !audio_is_playing(sndWazerLoop)
-			snd_loop(sndWazerLoop);
+			snd_play(sndWazerLoop,0,false,false,2,false,false,0.8,true,owner);
 		if audio_is_playing(sndWazerLoop)
 			audio_sound_pitch(sndWazerLoop,pitch);
 		pitch += abs(angle_difference(image_angle,prevangle))*0.02;
 		pitch = clamp(pitch - 0.1,0.96,1.8);
 	}
-	image_xscale = point_distance(x,y,hit[1],hit[2]);
+	var dis = point_distance(x,y,hit[1],hit[2])
+	image_xscale = min(laserRange,dis);
+	if (dis < laserRange)
+	{
+		laserRange = dis;
+		alarm[3] = 1;
+	}
+}
+else
+{
+	image_xscale = laserRange;
 }

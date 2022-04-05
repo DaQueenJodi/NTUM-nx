@@ -4,7 +4,7 @@ alarm[1] += 16;
 spr_idle = sprBigVultureChargeTell;
 spr_walk = sprBigVultureChargeTell;
 speed = 0;
-snd_play(sndBigVultureChargeTell);
+snd_play(sndBigVultureChargeTell,0,false,false,10,false,false,0.82,false,id);
 scrTarget();
 if target > 0
 {

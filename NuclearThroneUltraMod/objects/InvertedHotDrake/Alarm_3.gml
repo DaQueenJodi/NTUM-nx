@@ -19,9 +19,8 @@ if atk=2//BLUE BALL OF FIRE!
     snd_play(sndDragonStop)
     repeat(12)
     {
-    with instance_create(x,y,TrapFire)
+    with instance_create(x,y,EnemyIceFlame)
     {
-    sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,2+random(6))
     image_angle = direction
     team = other.team
@@ -48,9 +47,8 @@ appear=true;
     snd_play(sndDragonStop)
     repeat(12)
     {
-    with instance_create(x,y,Flame)
+    with instance_create(x,y,EnemyIceFlame)
     {
-    sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,2+random(6))
     image_angle = direction
     team = other.team
@@ -58,6 +56,7 @@ appear=true;
     }
         with instance_create(x,y,InvertedHotDrakeSplitBall)
         {
+			inverted= true;
         image_angle=random(360);
         motion_add(other.direction+(random(12)-6),2.7)
         team = other.team}

@@ -49,9 +49,8 @@ image_angle = other.image_angle}
 
 
 repeat(2){
-with instance_create(x-8,y-8,TrapFire)
+with instance_create(x-8,y-8,EnemyIceFlame)
     {
-    sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-20,1+random(4))
     image_angle = direction
     team = other.team

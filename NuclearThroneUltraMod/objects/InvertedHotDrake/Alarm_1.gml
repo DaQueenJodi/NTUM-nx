@@ -14,15 +14,15 @@ alarm[1] = 4+random(5);
     {
     if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
     {
-    if my_health<maxhealth*0.75&&random(24)<1
+    if my_health<maxhealth*0.75&&random(30)<1
     {
-    sprite_index=spr_vanish
-    image_index=0;
-    mask_index=mskPickupThroughWall;
-    direction=90;
-    alarm[1]=300;
-    alarm[4]=40
-    //vanishing=0;
+	    sprite_index=spr_vanish
+	    image_index=0;
+	    mask_index=mskPickupThroughWall;
+	    direction=90;
+	    alarm[1]=300;
+	    alarm[4]=40
+	    //vanishing=0;
     }
     else if point_distance(x,y,target.x,target.y)>300&&random(3) < 1//long Shotgun!
     {
@@ -35,9 +35,8 @@ alarm[1] = 4+random(5);
     snd_play(sndDragonFire)
     repeat(6)
     {
-    with instance_create(x,y,TrapFire)
+    with instance_create(x,y,EnemyIceFlame)
     {
-    sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,4+random(7))
     image_angle = direction
     team = other.team
@@ -62,9 +61,8 @@ alarm[1] = 4+random(5);
     snd_play(sndDragonFire)
     repeat(8)
     {
-    with instance_create(x,y,TrapFire)
+    with instance_create(x,y,EnemyIceFlame)
     {
-    sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,2+random(6))
     image_angle = direction
     team = other.team
@@ -97,9 +95,8 @@ alarm[1] = 4+random(5);
     snd_play(sndDragonFire)
     repeat(8)
     {
-    with instance_create(x,y,TrapFire)
+    with instance_create(x,y,EnemyIceFlame)
     {
-    sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,2+random(6))
     image_angle = direction
     team = other.team
@@ -164,9 +161,8 @@ alarm[1] = 4+random(5);
     snd_play(sndDragonFire)
     repeat(6)
     {
-    with instance_create(x,y,TrapFire)
+    with instance_create(x,y,EnemyIceFlame)
     {
-    sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,4+random(6))
     image_angle = direction
     team = other.team
@@ -191,9 +187,8 @@ alarm[1] = 4+random(5);
     snd_play(sndDragonFire)
     repeat(8)
     {
-    with instance_create(x,y,TrapFire)
+    with instance_create(x,y,EnemyIceFlame)
     {
-    sprite_index = sprFireLilHunter
     motion_add(other.direction+random(60)-30,2+random(6))
     image_angle = direction
     team = other.team

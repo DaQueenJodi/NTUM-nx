@@ -1,13 +1,15 @@
 scrDrop(30,1)
 event_inherited()
-repeat(8)
+var ang = random(360);
+var am = 16;
+var angStep = 360/am;
+repeat(am)
 {
-with instance_create(x,y,TrapFire)
-{motion_add(random(360),1+random(2))
-team = other.team
-move_contact_solid(direction,6)
-image_speed=0.5+random(0.2);
-sprite_index= sprFireLilHunter;}
+	with instance_create(x,y,TrapFire)
+	{motion_add(ang,2+random(3))
+		sprite_index = sprFireLilHunter
+	team = other.team}
+	ang += angStep;
 }
-
+instance_create(x,y,WallBreak);
 

@@ -57,7 +57,10 @@ appear=true;
     team = other.team
     }
     }
-        with instance_create(x,y,HotDrakeSplitBall)
+	var spawn = HotDrakeSplitBall;
+	if GetPlayerLoops() > 0
+		spawn = InvertedHotDrakeSplitBall;
+        with instance_create(x,y,spawn)
         {
         image_angle=random(360);
         motion_add(other.direction+(random(12)-6),2.5+random(0.3))

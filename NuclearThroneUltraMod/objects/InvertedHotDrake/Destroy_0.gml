@@ -24,9 +24,8 @@ scrDrop(50,10)
 event_inherited()
 
 repeat(50){//flame wall of death baby yes 
-with instance_create(x,y+96,TrapFire)
+with instance_create(x,y+96,EnemyIceFlame)
     {
-    sprite_index = sprFireLilHunter
     motion_add(other.direction+random(180)-90,3+random(8))
     image_angle = direction
     team = other.team

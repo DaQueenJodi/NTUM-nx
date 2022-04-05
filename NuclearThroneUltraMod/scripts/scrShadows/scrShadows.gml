@@ -61,6 +61,8 @@ function scrShadows() {
 	draw_sprite(shd8,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with Termite
 	draw_sprite(shd16,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+	with FireWorm
+	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )-3)
 	with GyroBurst
 	draw_sprite(shd16,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+24)
 	with RadMaggot
