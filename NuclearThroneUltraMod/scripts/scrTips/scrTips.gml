@@ -149,7 +149,7 @@ function scrTips() {
 	if Player.area = 116
 	tip = choose("survival arena","when starting a wave#chests and weapon drops get destroyed")
 	if Player.area = 117
-	tip = choose("nono popo")
+	tip = choose("mushrooms with guns","mushroom land","infected mushrooms")
 	}
 
 

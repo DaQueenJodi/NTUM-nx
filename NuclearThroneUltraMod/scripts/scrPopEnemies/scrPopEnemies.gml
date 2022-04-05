@@ -51,7 +51,7 @@ function scrPopEnemies() {
     if spawnarea = 10 {
         theBandit = choose(SavannaBandit, SavannaBandit, SavannaBandit, Bandit, BanditSquare);
         if styleb = 1 {
-            instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Vulture, Exploder, Hyena, Vulture))
+            instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Vulture, GatorSmoke, Hyena, Vulture))
         }
         else {
             if random(8) < 1
@@ -76,7 +76,7 @@ function scrPopEnemies() {
 						}
 					}
 	                else
-	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(theBandit, theBandit, theBandit, theBandit, Exploder, Exploder, Vulture, Vulture))
+	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(theBandit, theBandit, theBandit, theBandit, GatorSmoke, Exploder, Vulture, Vulture))
             }
         }
     }
@@ -675,6 +675,14 @@ function scrPopEnemies() {
                 }
             }
         }
+    }
+	
+	//MUSHROOM LAND
+    if spawnarea = 117 {
+	    if random(9) < 1
+	    instance_create(x + 16, y + 16, choose(Exploder, BuffMushroom, ToxicMushroomGuy, BuffMushroom, Gator, ToxicMushroomGuy, BanditSquare))
+	    else
+	        instance_create(x + 16, y + 16, choose(Gator, GatorSmoke, ToxicMushroomGuy, BuffMushroom, BuffMushroom, ToxicMushroomGuy, ToxicMushroomGuy, BanditSquare))
     }
 
 

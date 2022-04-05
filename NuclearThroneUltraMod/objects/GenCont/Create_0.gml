@@ -92,6 +92,8 @@ else if Player.area = 115//cheese cave
 __background_set_colour( make_color_rgb(255,156,35) )
 else if Player.area = 116//SURVIVAL ARENA
 __background_set_colour( make_color_rgb(43,35,23) )
+else if Player.area = 117//MUSHROOM
+__background_set_colour( make_color_rgb(75,79,31) )
 }
 else
 __background_set_colour( make_color_rgb(106,122,175) )

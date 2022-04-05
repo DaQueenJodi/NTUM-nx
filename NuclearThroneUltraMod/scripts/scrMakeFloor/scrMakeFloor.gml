@@ -632,6 +632,16 @@ function scrMakeFloor() {
 	if random(8) < 1
 	instance_create(x,y,FloorMaker)
 	}
+	//No branch but chest
+	if area == 117
+	{
+		if random(19+instance_number(FloorMaker)) > 20
+		{
+		if point_distance(x,y,10016,10016) > 48{
+		instance_create(x+16,y+16,AmmoChest)
+		instance_create(x,y,Floor)}
+		}
+	}
 
 	if area = 9 && subarea < 3
 	{

@@ -3,3 +3,14 @@ scrDrop(10,0)
 event_inherited()
 scrEndBossMusic();
 instance_create(x,y,BigWallBreak);
+if alarm[5] >  0
+{
+	with myLasers[0]
+	{
+		event_perform(ev_alarm,0);	
+	}
+	with myLasers[1]
+	{
+		event_perform(ev_alarm,0);	
+	}
+}

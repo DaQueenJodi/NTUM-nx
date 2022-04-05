@@ -19,7 +19,7 @@ else if area == 6 || area == 112
 	snd_wallbreak = sndWallBreakLabs;
 else if area == 8 || area == 109 || area == 9 || area == 100 || area == 116
 	snd_wallbreak = sndWallBreakBrick;
-else if area == 114
+else if area == 114 || area == 117
 	snd_wallbreak = sndWallBreakJungle;
 else if area == 2
 

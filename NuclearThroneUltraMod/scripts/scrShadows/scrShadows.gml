@@ -278,6 +278,8 @@ function scrShadows() {
 		draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with Bandit
 		draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+	with ToxicMushroomGuy
+		draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with SavannaBandit
 		draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with Vulture
@@ -360,6 +362,8 @@ function scrShadows() {
 	draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with InvertedNecromancer
 	draw_sprite(shd24,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
+	with BuffMushroom
+	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with RhinoFreak
 	draw_sprite(shd48,0,x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ))
 	with InvertedRhinoFreak

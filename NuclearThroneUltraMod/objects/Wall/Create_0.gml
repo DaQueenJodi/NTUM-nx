@@ -177,7 +177,7 @@ sprite_index=sprWall116Bot;
 break;
 
 case 117:
-topspr=sprWall114Top;//TEMP FIX
+topspr=sprWall117Top;
 outspr=sprWall117Out;
 sprite_index=sprWall117Bot;
 break;
