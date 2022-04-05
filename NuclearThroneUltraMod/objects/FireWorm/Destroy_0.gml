@@ -5,9 +5,12 @@ instance_create(x,y,BigWallBreak);
 var ang = random(360);
 var am = 10;
 var angStep = 360/am;
+var spawn = TrapFire;
+if isInverted
+	spawn = EnemyIceFlame;
 repeat(am)
 {
-	with instance_create(x,y,TrapFire)
+	with instance_create(x,y,spawn)
 	{motion_add(ang,2+random(2))
 	team = other.team
 	}

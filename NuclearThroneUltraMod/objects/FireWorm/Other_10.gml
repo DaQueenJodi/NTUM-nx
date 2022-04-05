@@ -2,15 +2,15 @@
 wkick = 4
 laserDirection = point_direction(x,y,target.x,target.y);
 var predictDirection = point_direction(x,y,target.x+hspeed,target.y+vspeed);
-var ad = angle_difference(laserDirection,predictDirection);
+var ad = angle_difference(predictDirection,laserDirection);
 debug("angle difference",ad);
 if ad > 0
 {
-	laserDir = 1;
+	laserDir = -1;
 }
 else if ad < 0
 {
-	laserDir = -1;	
+	laserDir = 1;	
 }
 else
 {

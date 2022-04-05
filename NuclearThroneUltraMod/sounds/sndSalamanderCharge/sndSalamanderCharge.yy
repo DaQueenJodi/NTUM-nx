@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndSalamanderCharge",
-  "duration": 0.0,
+  "duration": 0.325375,
   "parent": {
     "name": "Salamander",
     "path": "folders/Sounds/Player/Salamander.yy",

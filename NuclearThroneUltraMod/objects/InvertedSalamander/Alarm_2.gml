@@ -6,10 +6,8 @@ ammo -= 1
 alarm[2] = 1
 sprite_index = spr_fire
             
-            with instance_create(x/*-8*/,y,TrapFire)
+            with instance_create(x/*-8*/,y,EnemyIceFlame)
             {
-            sprite_index = sprFireLilHunter
-        
             motion_add(other.gunangle+random(4)-2,9)
             //image_angle = direction
             team = other.team

@@ -24,12 +24,24 @@ if alarm[2] > 0
 			y = other.y;
 			image_angle = dir;
 		}
-		with instance_create(x+(lox*right),y,TrapFire)
-        {
-	        motion_add(dir,2+random(3))
-	        image_angle = direction
-	        team = other.team
-        }
+		if isInverted
+		{
+			with instance_create(x+(lox*right),y,EnemyIceFlame)
+	        {
+		        motion_add(dir,2+random(4))
+		        image_angle = direction
+		        team = other.team
+	        }
+		}
+		else
+		{
+			with instance_create(x+(lox*right),y,TrapFire)
+	        {
+		        motion_add(dir,2+random(3))
+		        image_angle = direction
+		        team = other.team
+	        }
+		}
 	}
 	else
 	{

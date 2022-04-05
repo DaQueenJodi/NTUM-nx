@@ -53,7 +53,7 @@ if instance_exists(Player)
             ignoreHitme=true;
             }
             
-            with instance_create(x/*-8*/,y,TrapFire)
+            with instance_create(x/*-8*/,y,EnemyIceFlame)
             {
             motion_add(other.direction+random(12)-6-30,3+random(4))
             image_angle = direction
@@ -72,7 +72,7 @@ if instance_exists(Player)
             ignoreHitme=true;
             }
             
-            with instance_create(x/*-8*/,y,TrapFire)
+            with instance_create(x/*-8*/,y,EnemyIceFlame)
             {
             motion_add(other.direction+random(16)-6-30,2+random(3))
             image_angle = direction

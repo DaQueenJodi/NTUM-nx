@@ -11,8 +11,10 @@ spr_hurt = sprFireWormHurt
 spr_dead = sprFireWormDead
 spr_fire = sprFireWormFire;
 
-snd_hurt = sndHitPlant
 snd_dead = sndFrogExplode
+
+snd_hurt = sndBigMaggotHit
+snd_mele = sndBigMaggotBite
 
 //behavior
 walk = 0
@@ -21,7 +23,7 @@ actTime = 12;
 maxSpeed = 2;
 acc = 0.6;
 myLaser = -1;
-laserDuration = 70;
+laserDuration = 64;
 laserDirection = 0;
 tellTime = 24;
 laserOffsetMax = 30;
@@ -31,3 +33,4 @@ angleStep = 1;
 maxRange = 240;
 lox = 16;//Laser offset X
 instance_create(x,y,BigWallBreak);
+isInverted = false;
