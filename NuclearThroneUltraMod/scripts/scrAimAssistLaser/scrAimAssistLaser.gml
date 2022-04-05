@@ -2,6 +2,8 @@
 // /@description for laser and hyperlaunchers
 ///@param
 function scrAimAssistLaser(originalDirection){
+	if team != 2
+		return originalDirection;
 	var aimAssist = 0;
 	//if Player.race == 11
 	//	aimAssist += 6;

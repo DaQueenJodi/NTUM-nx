@@ -176,6 +176,12 @@ outspr=sprWall116Out;
 sprite_index=sprWall116Bot;
 break;
 
+case 117:
+topspr=sprWall114Top;//TEMP FIX
+outspr=sprWall117Out;
+sprite_index=sprWall117Bot;
+break;
+
 default:
 topspr=sprWall0Top;
 outspr=sprWall0Out;
@@ -187,6 +193,7 @@ image_speed = 0
 
 image_index = choose(0,0,0,0,0,0,0,1,2) 
 if random(150) < 1 image_index = 3
+
 image_index += choose(0,4)
 
 topindex = choose(0,0,0,0,0,0,0,1,2)

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprWazer",
-    "path": "sprites/sprWazer/sprWazer.yy",
+    "name": "sprExplosionWazer",
+    "path": "sprites/sprExplosionWazer/sprExplosionWazer.yy",
   },
   "solid": false,
   "visible": true,

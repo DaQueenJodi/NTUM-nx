@@ -48,8 +48,8 @@ if UberCont.public = 0 {
     }
 
     if keyboard_check_pressed(ord("1")) {
-        area = 10
-        subarea = 2
+        area = 117
+        subarea = 0
         //inverted=true
         with enemy
         my_health = 0

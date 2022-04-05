@@ -34,6 +34,25 @@ if target > 0
         team = other.team
         }
 	}
+	if alarm[5] > 0
+	{
+		var dir = point_direction(x,y,target.x,target.y);
+		var odis = laserOffset;
+		var xx = x + lengthdir_x(odis,dir+90);
+		var yy = y + lengthdir_y(odis,dir+90);
+		with myLasers[0] {
+			x = xx;
+			y = yy;
+			image_angle = dir;
+		}
+		xx = x + lengthdir_x(odis,dir-90);
+		yy = y + lengthdir_y(odis,dir-90);
+		with myLasers[1] {
+			x = xx;
+			y = yy;
+			image_angle = dir;
+		}
+	}
 }
 if speed > 3
 speed = 3;

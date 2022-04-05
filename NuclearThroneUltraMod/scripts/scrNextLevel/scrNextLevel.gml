@@ -237,7 +237,7 @@ function scrNextLevel() {
 		//Cursed caves
 		if area == 115
 		{
-			area = 5;
+			area = 9;
 			subarea = 0;
 		}
 

@@ -3,6 +3,7 @@ image_index = choose(0,0,0,0,0,0,0,1,2)
 image_speed = 0
 if random(500) < 1
 image_index = 3
+
 image_index += choose(0,4)
 
 if instance_exists(FloorMaker)
@@ -126,6 +127,9 @@ break;
 case 116:
 sprite_index=sprFloor116B;
 break;
+case 117:
+sprite_index=sprFloor117B;
+break;
 default:
 sprite_index=sprFloor0B;
 break;
@@ -218,6 +222,9 @@ sprite_index=sprFloor115;
 break;
 case 116:
 sprite_index=sprFloor116;
+break;
+case 117:
+sprite_index=sprFloor117;
 break;
 default:
 sprite_index=sprFloor0;

@@ -18,6 +18,11 @@ if target > 0 {
 		//Accurate shot
 		event_user(2);	
 	}
+	else if ran > 10
+	{
+		//EXPLOSIVE WAZER BOI
+		event_user(3);
+	}
 	if ran < 10
 	{
 		rotationSpeed *= -1;	

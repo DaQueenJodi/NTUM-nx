@@ -148,6 +148,8 @@ if Player.area - 113//Banditland
 goal=70;
 if Player.area - 114//jungle
 goal=130;
+if Player.area - 117//Mushroom land
+goal=120;
 
 
 if UberCont.opt_gamemode==6 && !((Player.area = 6 || Player.area = 112) && Player.subarea=2)//small levels

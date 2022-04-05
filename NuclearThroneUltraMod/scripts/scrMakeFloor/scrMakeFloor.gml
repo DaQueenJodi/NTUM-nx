@@ -433,6 +433,35 @@ function scrMakeFloor() {
 			instance_create(x,y+32,Floor)
 		}
 	}
+	
+	//Mushroom land
+	if area = 117{
+		if random(8) < 1
+		{
+			instance_create(x,y,Floor)
+			instance_create(x+32,y,Floor)
+			instance_create(x-32,y,Floor)
+			instance_create(x,y+32,Floor)
+			instance_create(x,y-32,Floor)
+			instance_create(x+32,y+32,Floor)
+			instance_create(x+32,y-32,Floor)
+			instance_create(x-32,y-32,Floor)
+			instance_create(x-32,y+32,Floor)
+		} if random (4) < 1
+		{
+			instance_create(x,y,Floor)
+			instance_create(x,y-32,Floor)
+		} else if random (4) < 1
+		{
+			instance_create(x,y,Floor)
+			instance_create(x,y+32,Floor)
+		}
+		else
+		{
+			instance_create(x,y,Floor);
+		}
+	}
+	
 	if UberCont.opt_gamemode == 8
 		instance_destroy();
 	if UberCont.opt_gamemode == 25 && !instance_exists(Vlambeer)//Survival Arena
@@ -538,6 +567,8 @@ function scrMakeFloor() {
 	trn = choose(0,0,0,90,-90,180)
 	else if area == 114
 	trn = choose(0,0,0,0,0,90,-90,180)
+	else if area == 117
+	trn = choose(0,0,0,0,90,-90,180)
 
 	direction += trn
 	if ((area=7||area=108) && subarea=2) || area=104

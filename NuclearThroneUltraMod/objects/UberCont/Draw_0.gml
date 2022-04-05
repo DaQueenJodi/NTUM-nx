@@ -2,59 +2,9 @@ var yy = __view_get( e__VW.YView, 0 );
 
 if paused = 1
 {
-var text;
-//text="You are dead"
-//if instance_exists(Player)
-//{
-text = string(area)+"_"+string(subarea)
-var upsideDown = false;
-if area == 10
-{
-	text = "1B_"+string(subarea);
-}
-if area > 99
-{
-	text = "???"
-	switch (area)
-	{
-		case 105: //Inverted desert
-			text = "1_"+string(subarea);
-			upsideDown = true;
-		break;
-		case 106: //Inverted scrapyard
-			text = "3_"+string(subarea);
-			upsideDown = true;
-		break;
-		case 107: //Inverted frozen city
-			text = "5_"+string(subarea);
-			upsideDown = true;
-		break;
-		case 108: //Inverted vulcano
-			text = "7_"+string(subarea);
-			upsideDown = true;
-		break;
-		case 109: //Inverted wonderland
-			text = "8_"+string(subarea);
-			upsideDown = true;
-		break;
-		case 110: //Inverted sewers
-			text = "2_"+string(subarea);
-			upsideDown = true;
-		break;
-		case 111: //Inverted crystal caves
-			text = "4_"+string(subarea);
-			upsideDown = true;
-		break;
-		case 112: //Inverted labs
-			text = "6_"+string(subarea);
-			upsideDown = true;
-		break;
-	}
-}
-if loops>0
-{
-	text="L"+string(loops)+" "+text;
-}
+var res = scrAreaName(area,subarea,loops);
+var text = res[0];
+var upsideDown = res[1];
 
 //}
 

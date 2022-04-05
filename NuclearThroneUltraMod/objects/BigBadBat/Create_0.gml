@@ -1,4 +1,4 @@
-raddrop = 100
+raddrop = 50
 maxhealth = 250
 meleedamage = 5
 size = 6;
@@ -29,6 +29,10 @@ pSpeedAccurate = 3;
 pSpeedSpinny = 3;
 pSpeedJawbreaker = 4.5;
 fireOffset = 40;
+laserDuration = 80;
+laserOffset = 26;
+myLasers = [];
+
 image_xscale = 1;
 actTime = 12;
 scrTarget();
@@ -39,3 +43,5 @@ if target > 0
 emitter = audio_emitter_create();
 audio_emitter_gain(emitter, 0.8);
 audio_emitter_falloff(emitter, 50, 400, 1);
+
+wkick = 0;
