@@ -3657,6 +3657,7 @@
     {"id":{"name":"sndMutant8Cnfm","path":"sounds/sndMutant8Cnfm/sndMutant8Cnfm.yy",},"order":55,},
     {"id":{"name":"sndMutant8Dead","path":"sounds/sndMutant8Dead/sndMutant8Dead.yy",},"order":56,},
     {"id":{"name":"sndMutant8Valt","path":"sounds/sndMutant8Valt/sndMutant8Valt.yy",},"order":57,},
+    {"id":{"name":"sndYEAH","path":"sounds/sndYEAH/sndYEAH.yy",},"order":4,},
     {"id":{"name":"sndMutant8Thrn","path":"sounds/sndMutant8Thrn/sndMutant8Thrn.yy",},"order":58,},
     {"id":{"name":"sndMutant8Wrld","path":"sounds/sndMutant8Wrld/sndMutant8Wrld.yy",},"order":59,},
     {"id":{"name":"sndHyenaDeath","path":"sounds/sndHyenaDeath/sndHyenaDeath.yy",},"order":1,},
