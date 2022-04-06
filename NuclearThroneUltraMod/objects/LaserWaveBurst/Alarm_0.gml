@@ -13,15 +13,11 @@ y = creator.y
 
 if Player.skill_got[17] = 1
 {
-audio_stop_sound(sndLaserUpg)
-audio_sound_pitch(sndLaserUpg,random_range(0.9,1.1))
-audio_play_sound(sndLaserUpg,100,0)
+snd_play_fire(sndLaserUpg);
 }
 else
 {
-audio_stop_sound(sndLaser)
-audio_sound_pitch(sndLaser,random_range(0.9,1.1))
-audio_play_sound(sndLaser,100,0)
+snd_play_fire(sndLaser);
 }
 
 

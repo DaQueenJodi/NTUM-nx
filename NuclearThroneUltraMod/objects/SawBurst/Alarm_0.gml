@@ -6,7 +6,7 @@ if instance_exists(creator)
 {
 x = creator.x
 y = creator.y
-snd_play_2d(sndJackHammer)
+snd_play_fire(sndJackHammer)
 //FIRING
 if instance_exists(Player){
     with instance_create(x+lengthdir_x((Player.skill_got[13]+Player.bettermelee)*10,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+Player.bettermelee)*10,point_direction(x,y,mouse_x,mouse_y)),Shank)

@@ -8,7 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-snd_play_2d(sndRocket)
+snd_play_fire(sndRocket)
 
 
 with instance_create(x,y,Missile)

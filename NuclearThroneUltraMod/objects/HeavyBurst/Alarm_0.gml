@@ -8,7 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-snd_play_2d(sndHeavyMachinegun)
+snd_play_fire(sndHeavyMachinegun)
 with instance_create(x,y,Shell)
 motion_add(point_direction(x,y,mouse_x,mouse_y)+180+random(50)-25,2+random(2))
 

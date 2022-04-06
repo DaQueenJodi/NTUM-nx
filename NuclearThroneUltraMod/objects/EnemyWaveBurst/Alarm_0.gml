@@ -8,7 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-snd_play(sndShotgun)
+snd_play(sndShotgun,0.1,true)
 
 
 with instance_create(x,y,EnemyBullet3)

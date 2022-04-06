@@ -8,7 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-snd_play_2d(sndSeekerShotgun)
+snd_play_fire(sndSeekerShotgun)
 
 
 with instance_create(x,y,SeekerBolt)
