@@ -8,3 +8,13 @@ friction = 0.1
 sleepRate=15;
 snd_wallhit=sndMeleeWall;
 snd_hit=sndHitWall;
+if UberCont.ultramodSwap
+{
+	var um = GetPlayerUltramod()
+	if um == ultramods.bloodMelee
+	{
+		mask_index = mskPickupThroughWall;
+		visible = false;
+		alarm[11] = 1;
+	}
+}

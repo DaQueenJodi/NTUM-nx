@@ -29,12 +29,13 @@ target=-1;
 
 ///Damage indicator
 
-if prevhealth>my_health
+
+if instance_exists(Player)
 {
-    if instance_exists(Player)
+    if (Player.skill_got[19] || UberCont.public == 0) && !instance_exists(SpiralCont)
     {
-        if Player.skill_got[19] && !instance_exists(SpiralCont)
-        {
+		if prevhealth>my_health
+		{
             with instance_create(x+irandom(16)-16,y+irandom(16)-16,PopupText)
             {
             theColour=c_orange;
@@ -48,4 +49,3 @@ if prevhealth>my_health
         }
     }
 }
-

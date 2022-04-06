@@ -86,8 +86,8 @@ enum ultramods {
 	pelletElectro,
 	boltPlasma,
 	plasmaRocket,
-	meleeLightning,
-	grenadeRocket,
+	bloodMelee,
+	//grenadeRocket,
 	
 	boltRocket,
 	boltLaser,
@@ -106,6 +106,7 @@ enum ultramods {
 	
 }
 maxUltramod = 16;
+ultramodSwap = true;
 casualModeHPIncrease = 2;
 
 hadBossIntro = false;

@@ -43,9 +43,9 @@ function scrUltraModName(um){
 			umn[1] = "ROCKET";
 		break;
 		*/
-		case ultramods.meleeBlood:
-			umn[0] = "MELEE";
-			umn[1] = "BLOOD";
+		case ultramods.bloodMelee:
+			umn[0] = "BLOOD";
+			umn[1] = "MELEE";
 		break;
 		
 		case ultramods.boltRocket:

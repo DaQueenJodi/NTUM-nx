@@ -14,3 +14,4 @@ if instance_exists(Player){
 	if Player.ultra_got[16]//Melting doomed
 		dmg=4;
 }
+alarm[11] = 1;

@@ -1,3 +1,5 @@
+event_inherited();
+typ = 3;
 image_speed = 0.4
 
 dir = random(360)
@@ -23,3 +25,4 @@ Humphry=false;//gets assigned true when playing as humphry and firing
 HumphryNr=0;
 HumphryHit=0;
 
+alarm[11] = 1;

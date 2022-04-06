@@ -2960,6 +2960,12 @@ function scrFire() {
 		{
 			hitWall = scrMoveContactSolid(ang,42)
 			instance_create(x,y,Dust)
+			with instance_create(x,y,IceFlame)
+			{
+				motion_add(other.ang,4+random(1))
+				image_angle = direction
+				team = other.team;
+			}
 			with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,ang),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,ang),FrostSlash)
 			{
 				ang = other.ang

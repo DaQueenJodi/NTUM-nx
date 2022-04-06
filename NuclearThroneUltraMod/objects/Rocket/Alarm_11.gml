@@ -19,20 +19,6 @@ if um == ultramods.plasmaRocket
 		alarm[11] = 0;
 	}
 	instance_destroy(id,false);
-} else if um == ultramods.grenadeRocket
-{
-	audio_stop_sound(sndRocket);
-	snd_play_fire(sndGrenade);
-	with instance_create(x,y,Grenade)
-	{
-		scrCopyWeaponMod(other);
-		direction = other.direction;
-		image_angle = direction;
-		speed = 10 + other.speed;
-		team = other.team;
-		alarm[11] = 0;
-	}
-	instance_destroy(id,false);
 } else if um == ultramods.boltRocket
 {
 	audio_stop_sound(sndRocket);
