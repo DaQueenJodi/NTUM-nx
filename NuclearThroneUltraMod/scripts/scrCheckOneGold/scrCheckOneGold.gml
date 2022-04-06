@@ -16,7 +16,7 @@ function scrCheckOneGold() {
 			if start_wep_have[wepdir,racedir]=1
 				gotthisone++;
 		}
-		if gotthisone>1
+		if gotthisone>0
 			thischarhasagoldwep++;
 	racedir++;
 	}
