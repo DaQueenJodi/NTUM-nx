@@ -6,14 +6,14 @@ draw_set_halign(fa_left)//jezus christ this menu systemm is fked up
 if (wepmenuopen) {
     draw_sprite(sprSplash,0,__view_get( e__VW.XView, 0 )+77,__view_get( e__VW.YView, 0 )+49)
     var wepiter = 0;
-    var wepx = 170;
+    var wepx = 148;
     var wepy = 85;
     var spritewidth = 0;
     do {
 		var sprite = wep_sprt[UberCont.start_wep[wepiter]];
         spritewidth = sprite_get_width(sprite);
         if wepx + spritewidth > 320 {
-            wepx = 170;
+            wepx = 148;
             wepy += 16;
         }
         var xx = __view_get( e__VW.XView, 0 )+wepx;
