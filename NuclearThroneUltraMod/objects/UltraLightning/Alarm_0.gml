@@ -1,6 +1,6 @@
 if isog && GetPlayerUltramod() == ultramods.lightningKraken
 	{
-		snd_play_fire(choose(sndWater1,sndWater2) );
+		snd_play(choose(sndWater1,sndWater2),0.1,true);
 		with instance_create(x,y,Tentacle)
 		{image_angle = other.image_angle;
 			ultra = true;

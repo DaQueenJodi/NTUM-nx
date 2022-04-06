@@ -1,6 +1,6 @@
 if isog && GetPlayerUltramod() == ultramods.lightningKraken
 {
-	snd_play_fire(sndLightning1)
+	snd_play(choose(sndSpark1,sndSpark2),0.1,true)
 	if ultra
 	{
 		with instance_create(x,y,UltraLightning)
