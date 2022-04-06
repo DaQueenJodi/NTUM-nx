@@ -48,6 +48,8 @@ with BanditBoss
 if id!=other.id
 other.cam=false;
 }
+if UberCont.opt_gamemode != 25
+	existTime = 40;
 
 if cam
 instance_create(x,y,DramaCamera);

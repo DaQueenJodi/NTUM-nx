@@ -71,7 +71,7 @@ function scrDrawBloom() {
 	if instance_exists(Player)
 	{
 		with Rage{
-		draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,Player.rage*0.001)}
+		draw_sprite_ext(sprite_index,-1,x,y,2,2,image_angle,c_white,Player.rage*0.002)}
 
 		with AngelDeflect//ANGEL PROTECTOR ULTRA A
 		draw_sprite_ext(sprite_index,-1,x,y,1,1,image_angle,c_white,(ba*0.35)*Player.speed);

@@ -364,12 +364,14 @@ if instance_exists(WepPickup) && !instance_exists(GenCont) && !instance_exists(L
 else
 	targetPickup = noone;
 
-/* */
+var tookHit = false;
+if my_health < prevhealth
+	tookHit = true;
 ///tough shell
 var damageReduced = 0;
 if (skill_got[31])
 {
-	if ( prevhealth > my_health && hardshell == true )
+	if (tookHit && hardshell == true )
 	{
 	var dmgTaken = prevhealth-my_health;
 	    if (( dmgTaken > 4 ) && ( prevhealth-4 != 0 ) && race = 25  )
@@ -403,24 +405,22 @@ if (skill_got[31])
 ///Rogue blast armour
 if race=22
 {
-
-if my_health<prevhealth//&&sprite_index=spr_hurt
-{
-	event_user(0);
-}
-
+	if tookHit//&&sprite_index=spr_hurt
+	{
+		event_user(0);
+	}
 }
 
 /* */
 ///imunity codes
 if ultra_got[48]&&lag>0
 {
-if my_health<prevhealth&&my_health!=maxhealth&&alarm[3]<1
+if tookHit&&my_health!=maxhealth&&alarm[3]<1
 {lag-=1;
 
 
 alarm[3]=15;//before your lag lowers again}
-my_health=prevhealth;
+resetPrevHealth = true;
 }
 }
 
@@ -429,13 +429,13 @@ if race=16 || race = 17 || race = 19 || race = 20 || race = 21//Viking and Gunsm
 if armour>0
 {
 
-if my_health<prevhealth&&my_health!=maxhealth&&alarm[3]<1
+if tookHit&&my_health!=maxhealth&&alarm[3]<1
 {armour-=1;
 
 
 snd_play(sndHitMetal);
 alarm[3]=5;//before your armour lowers again}
-my_health=prevhealth;
+resetPrevHealth = true;
 
 scrBlankArmour();
 
@@ -449,7 +449,7 @@ armour=maxarmour;
 }
 if alarm[3]>0/*|| lag>0 */&&my_health!=maxhealth&& !exception
 {
-if prevhealth>my_health
+if tookHit
 my_health=prevhealth;
 }
 
@@ -457,9 +457,9 @@ my_health=prevhealth;
 
 if skill_got[22]//Stress Sharp teeth part
 {
-if my_health<prevhealth&&alarm[10]<1//I been hit
+if tookHit&&alarm[10]<1//I been hit
 {
-alarm[10]=60;
+alarm[10]=40;
 sharpteeth=prevhealth-my_health-damageReduced;
 var multiplier = 2.5;
 if race = 25
@@ -486,8 +486,8 @@ owner=other.id;
 
 }
 }
-
-if (my_health<prevhealth)
+var resetPrevHealth = false;
+if (tookHit)
 {
 	//Took a hit?
 	if (skill_got[32] && isAlkaline && exception=false)//Alkaline Savila
@@ -502,7 +502,7 @@ if (my_health<prevhealth)
 			if (skill_got[9]) //Second stomache
 				damageTaken *= 2;
 			my_health=min(maxhealth,prevhealth+damageTaken);
-			prevhealth = my_health;
+			resetPrevHealth = true;
 			with instance_create(x,y,HealFX)
 			{
 				depth = other.depth - 1;	
@@ -535,23 +535,16 @@ if (my_health<prevhealth)
 	{
 		if !instance_exists(GenCont)&&(!instance_exists(myShield) || myShield == -1)&&!instance_exists(LevCont)&&exception=false
 		{
-			/*
-		if skill_got[28]//rage
-		{
-		if my_health<prevhealth&&exception=false//I been hit
-		rage=0;
-		}*/
-
-		prevhealth=my_health;
-		if race=25
-			alarm[3]=34;
-		else
-			alarm[3]=30;//duration
-		myShield = instance_create(x,y,EuphoriaShield);
-		with myShield
-		{
-			owner = other.id;
-		}
+			resetPrevHealth = true;
+			if race=25
+				alarm[3]=34;
+			else
+				alarm[3]=30;//duration
+			myShield = instance_create(x,y,EuphoriaShield);
+			with myShield
+			{
+				owner = other.id;
+			}
 		}
 	}
 }
@@ -595,9 +588,8 @@ target=-1;
 ///rage
 if skill_got[28] == 1
 {
-	if my_health<prevhealth && exception=false//I been hit
+	if tookHit && exception=false//I been hit
 		rage = 0;
-
 }
 
 

@@ -174,7 +174,12 @@ function scrDrawHUD() {
 			dix += 1
 			if (mouse_x > xx-s && mouse_x < xx + s && mouse_y > yy-s && mouse_y < yy + s)
 			{
-				scrDrawHelp("["+Player.skill_name[dir]+"]\n"+Player.skill_text[dir]);
+				var ht;
+				if dir == 28//RAGE
+					ht = "["+Player.skill_name[dir]+"] ["+string(Player.rage)+"/350]\n"+Player.skill_text[dir];//MAX RAGE
+				else
+					ht = "["+Player.skill_name[dir]+"]\n"+Player.skill_text[dir];
+				scrDrawHelp(ht);
 			}
 		}
 		dir += 1

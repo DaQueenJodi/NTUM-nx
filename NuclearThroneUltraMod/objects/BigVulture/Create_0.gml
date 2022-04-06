@@ -59,3 +59,6 @@ ammo = 0;
 maxAmmo = 10;
 fireRate = 2;
 shooting = 0;
+
+if UberCont.opt_gamemode != 25
+	existTime = 40;

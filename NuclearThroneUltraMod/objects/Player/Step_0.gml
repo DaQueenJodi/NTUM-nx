@@ -866,16 +866,6 @@ if reload > 0
 	reload -= HumphrySkill*0.0058//0.0055//0.01//0.009 when cap is 100
 	}
 
-	if race=25
-	{
-
-	accuracy=accuracy-(HumphrySkill*0.1);
-	if accuracy<0
-	accuracy=0;
-
-	}
-
-
 
 	if reload <= 0
 	{

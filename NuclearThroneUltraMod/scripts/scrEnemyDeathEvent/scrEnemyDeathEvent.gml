@@ -78,21 +78,11 @@ function scrEnemyDeathEvent(){
 			//RAGE
 			if skill_got[28]
 			{
+				rage+=1;
 				if isdoc
-				{
-					if race=25//doctor
-					rage+=1.25
-					else
-						rage+=1;
-					if rage>365
-						rage=365;	
-				}
-				else
-				{
-					rage+=1;
-					if rage>340
-						rage=340;
-				}
+					rage += 0.25;
+				if rage>350//MAX RAGE
+					rage=350;//340
 			}
 			//PLANT ULTRA B KILLER
 			if ultra_got[18] == 1
