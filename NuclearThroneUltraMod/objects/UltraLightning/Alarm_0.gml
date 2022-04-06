@@ -31,6 +31,28 @@ if isog && GetPlayerUltramod() == ultramods.lightningKraken
 	}
 	isog = false;
 
+if instance_exists(Player)
+{
+	if Player.skill_got[19] == 1
+	{accuracy-=3;}
+	if Player.ultra_got[43]&&instance_exists(Marker)//hunter focused fire
+	{accuracy-=5;}
+	if Player.ultra_got[42]//hunter never miss
+	{accuracy-=6;}
+	var modBoost = 1;
+	if Mod1=13
+	accuracy-=modBoost;
+	if Mod2=13
+	accuracy-=modBoost;
+	if Mod3=13
+	accuracy-=modBoost;
+	if Mod4=13
+	accuracy-=modBoost;
+	
+}
+if accuracy<0
+accuracy=0;	
+
 target=enemy;
 if instance_exists(target)
 dir = instance_nearest(x+lengthdir_x(80,direction),y+lengthdir_y(80,direction),target)
@@ -41,8 +63,8 @@ direction = image_angle+(random(15)-7)//30 15
 speed = 4
 if instance_exists(target)
 {
-if point_distance(x,y,dir.x,dir.y) < 120
-motion_add(point_direction(x,y,dir.x,dir.y),1)
+if point_distance(x,y,dir.x,dir.y) < 140-accuracy
+	motion_add(point_direction(x,y,dir.x,dir.y),1.2-(accuracy*0.045))
 }
 image_angle = direction
 speed = 0
