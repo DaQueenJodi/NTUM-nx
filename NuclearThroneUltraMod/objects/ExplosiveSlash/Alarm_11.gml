@@ -2,6 +2,7 @@
 
 // Inherit the parent event
 event_inherited();
+snd_play(sndBloodHammer,0.1,true)
 var xx = x + lengthdir_x(24,image_angle-20);
 var yy = y + lengthdir_y(24,image_angle-20);
 with instance_create(xx,yy,MeatExplosion)

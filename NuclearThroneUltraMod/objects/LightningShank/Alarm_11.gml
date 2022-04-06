@@ -1,4 +1,4 @@
-/// @description Some lightning why not
+/// @description Also spawn lightning why not
 
 // Inherit the parent event
 event_inherited();

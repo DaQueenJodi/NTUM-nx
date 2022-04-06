@@ -7,6 +7,7 @@ if (sprite_index == sprUltraSlash)
 {
 	toSpawn = UltraBloodBullet;
 }
+snd_play(sndHeavyBloodPistol,0.1,true);
 var ol = 16+speed;
 var xx = x + lengthdir_x(ol,image_angle+180);
 var yy = y + lengthdir_y(ol,image_angle+180);

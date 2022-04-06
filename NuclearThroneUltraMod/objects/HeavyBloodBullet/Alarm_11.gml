@@ -3,6 +3,7 @@ var um = GetPlayerUltramod()
 if um == ultramods.bloodMelee
 {
 	UberCont.ultramodSwap = false;
+	snd_play(choose(sndSword1,sndSword2),0.1,true)
 	with instance_create(x,y,LanceShank)
 	{
 		scrCopyWeaponMod(other);

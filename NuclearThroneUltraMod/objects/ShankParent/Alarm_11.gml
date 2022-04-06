@@ -5,7 +5,11 @@ if instance_exists(Player)
 var ol = 8+speed;
 var xx = x + lengthdir_x(ol,image_angle+180);
 var yy = y + lengthdir_y(ol,image_angle+180);
-with instance_create(xx,yy,HeavyBloodBullet)
+snd_play(sndBloodPistol,0.1,true);
+var spawn = HeavyBloodBullet;
+if sprite_index = sprUltraShank || sprite_index == sprUltraLanceSlash
+	spawn = UltraBloodBullet;
+with instance_create(xx,yy,spawn)
 {
 	scrCopyWeaponMod(other);
 	direction = other.direction;
