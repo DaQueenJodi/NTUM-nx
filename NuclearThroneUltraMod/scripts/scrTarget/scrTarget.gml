@@ -9,7 +9,7 @@ function scrTarget() {
 
 		if instance_exists(Decoy)//Chickens vanish
 		{
-		target = Decoy;
+			target = Decoy;
 		} else if Player.ultra_got[11]=1{//eyes ultra c brainwash
 		    if instance_exists(enemy) && instance_number(enemy) > 1
 		    {

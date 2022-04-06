@@ -53,19 +53,19 @@ if other.team != team and other.my_health > 0&&other.id != creator//the thing I 
 					}
 				}
 			}
+			if instance_exists(other.creator){
+				direction = point_direction(x,y,other.creator.x,other.creator.y);
+				motion_add(direction,1/s);
+				mp_potential_step(other.creator.x,other.creator.y,2.5/s,false)
+				if place_meeting(x,y,Wall)
+				{	x = xprevious;
+					y = yprevious;	
+				}
+			}
 		}
 		else
 		{
 			image_index += 0.2;//iframe skipper
-		}
-		if instance_exists(other.creator){
-			direction = point_direction(x,y,other.creator.x,other.creator.y);
-			motion_add(direction,0.6/s);
-			mp_potential_step(other.creator.x,other.creator.y,2.5/s,false)
-			if place_meeting(x,y,Wall)
-			{	x = xprevious;
-				y = yprevious;	
-			}
 		}
 	}
 

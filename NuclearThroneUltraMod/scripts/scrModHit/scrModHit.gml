@@ -127,12 +127,16 @@ function scrModHit() {
 
 				case 6://ELECTROCUTION!
 				snd_play(choose(sndSpark1,sndSpark2),0,true);
+				var nearest = instance_nearest_notme(x,y,enemy);
 					with instance_create(other.x,other.y,Lightning)
 					{
-						image_angle = random(360);
-						image_speed += 0.2
+						if nearest
+							image_angle = point_direction(x,y,nearest.x,nearest.y)+random(14)-7;//Instance nearest not me?
+						else
+							image_angle = random(360);
+						accuracy --;
 						team = other.team
-						ammo = 8
+						ammo = 12
 						event_perform(ev_alarm,0)
 						visible = 0
 						with instance_create(x,y,LightningSpawn)
@@ -146,9 +150,14 @@ function scrModHit() {
 				snd_play(choose(sndWater1,sndWater2),0,true);
 
 				with other {
+					var nearest = instance_nearest_notme(x,y,enemy);
 					with instance_create(x,y,Tentacle)
 					{
-						image_angle = point_direction(x,y,instance_nearest(x,y,enemy).x,instance_nearest(x,y,enemy).y)+random(20)-10;//Instance nearest not me?
+						if nearest
+							image_angle = point_direction(x,y,nearest.x,nearest.y)+random(14)-7;//Instance nearest not me?
+						else
+							image_angle = random(360);
+						accuracy --;
 						creator=other.id;
 						team = 2//Player.team
 						ammo = 12

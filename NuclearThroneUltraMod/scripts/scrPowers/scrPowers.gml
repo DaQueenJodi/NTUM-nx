@@ -1469,7 +1469,7 @@ function scrPowers() {
 	//CHICKEN
 	if race = 9 && !(instance_exists(GenCont))
 	{
-	room_speed=20;//15
+	room_speed=24;//15
 
 	if instance_exists(Decoy)//CHICKEN VANISH
 	{
@@ -1478,40 +1478,43 @@ function scrPowers() {
 
 	if skill_got[5]==1//THRONEBUTT
 	{//Normal movement speed
-	//spr_walk = sprMutant9Thronebutt;
+		//spr_walk = sprMutant9Thronebutt;
 
 
-	if my_health > 0
-	{
-	if bskin=1
-	spr_walk = sprMutant9BThronebutt;
-	else if bskin=2
-	spr_walk = sprMutant9CThronebutt;
-	else
-	spr_walk=sprMutant9Thronebutt;
-	}
+		if my_health > 0
+		{
+		if bskin=1
+		spr_walk = sprMutant9BThronebutt;
+		else if bskin=2
+		spr_walk = sprMutant9CThronebutt;
+		else
+		spr_walk=sprMutant9Thronebutt;
+		}
 
 
-	if skill_got[2]==1//extra feet
-	{
-	maxspeed=6.3;//6.5
-	}
-	else
-	{
-	maxspeed=5.8;//6
-	}
+		if skill_got[2]==1//extra feet
+		{
+			//normal : 4.5
+		maxspeed=5.625//6.3;//6.5// 4.5
+		}
+		else
+		{
+			// normal : 4
+		maxspeed=5//5.8;//6//normal 4   4*(30/room_speed)
+		}
+		//friction = 0.45 normal
+		//image_speed = 0.4 normal
+		image_speed=0.5////0.7;
+		friction = 0.5625//0.90;
 
-	image_speed=0.7;
-	friction = 0.90;
-
-	if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
-	hspeed -= 3
-	if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
-	hspeed += 3
-	if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
-	vspeed -= 3
-	if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
-	vspeed += 3
+		if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
+		hspeed -= 0.75
+		if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
+		hspeed += 0.75
+		if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
+		vspeed -= 0.75
+		if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
+		vspeed += 0.75
 	}
 	else
 	{

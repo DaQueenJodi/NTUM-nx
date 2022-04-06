@@ -13,8 +13,8 @@ function scrMods() {
 	return choice;
 	/*
 	1. Toxic
-	2. Flame
-	3. Explosion
+	2. Explosion
+	3. Flame
 	4. Frost
 	5. Blood
 	6. Lightning

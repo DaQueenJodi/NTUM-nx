@@ -18,6 +18,7 @@ with MusCont {
 	audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 }
 snd_play_2d(snd_dead);
+if !MorphMe
 with instance_create(x,y,BallMomExplode)
 {
 	sprite_index = other.spr_dying;

@@ -418,12 +418,6 @@ if ultra_got[48]&&lag>0
 if my_health<prevhealth&&my_health!=maxhealth&&alarm[3]<1
 {lag-=1;
 
-/*if skill_got[28]//rage
-{
-if exception=false//no need for this exception?
-rage=0;
-}*/
-
 
 alarm[3]=15;//before your lag lowers again}
 my_health=prevhealth;
@@ -437,13 +431,6 @@ if armour>0
 
 if my_health<prevhealth&&my_health!=maxhealth&&alarm[3]<1
 {armour-=1;
-
-
-/*if skill_got[28]//rage
-{
-if exception=false//No need for exception?
-rage=0;
-}*/
 
 
 snd_play(sndHitMetal);
@@ -605,12 +592,11 @@ with enemy{
 target=-1;
 }}
 
-/* */
 ///rage
-if skill_got[28]
+if skill_got[28] == 1
 {
-if my_health<prevhealth&&exception=false//I been hit
-rage=0;
+	if my_health<prevhealth && exception=false//I been hit
+		rage = 0;
 
 }
 

@@ -88,14 +88,6 @@ function scrFire() {
 
 	}
 
-	if Player.race=9 && Player.ultra_got[35]{
-		if KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2 && !(instance_exists(GenCont))
-		{
-			reload*=0.6;
-		}
-	}
-
-
 	drawempty = 10
 
 	//IDKWID
@@ -4848,7 +4840,7 @@ function scrFire() {
 
 
 
-	    if Player.ultra_got[67]
+	    if Player.ultra_got[67] == 1
 	    {
 		    //Ultra c one with the gun
 		    if !scrMeleeWeapons()

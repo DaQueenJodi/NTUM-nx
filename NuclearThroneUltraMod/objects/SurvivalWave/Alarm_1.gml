@@ -5,7 +5,15 @@ if UberCont.opt_gamemode != 25
 	{
 		//var maxU = UberCont.maxUltramod;
 		var yy = centerY-96;
-		
+		with Corpse
+		{
+			instance_destroy(id,false);
+			instance_create(x,y,SurvivalPortal);
+		}
+		with WepPickup
+		{
+			motion_add(point_direction(other.centerX,other.centerY,x,y),5);
+		}
 		var w = 4;
 		var h = 5;
 		
@@ -45,7 +53,12 @@ if UberCont.opt_gamemode != 25
 	}
 	else
 	{
-		alarm[1] = 60;	
+		with  enemy
+		{
+			if (point_distance(other.centerX,other.centerY,x,y) > 400)
+				my_health = 0;
+		}
+		alarm[1] = 60;
 	}
 }
 else

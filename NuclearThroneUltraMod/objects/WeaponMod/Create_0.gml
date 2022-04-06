@@ -11,6 +11,8 @@ if instance_exists(WeaponMod) && instance_number(WeaponMod) > 1
 			while wepmod == other.wepmod
 			{
 				wepmod = scrMods();
+				modname = scrWepModName(wepmod);
+				name="##MODIFY WEAPON#"+modname;
 			}
 		}
 	}

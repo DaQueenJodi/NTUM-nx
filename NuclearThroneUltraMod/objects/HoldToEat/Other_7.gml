@@ -28,10 +28,10 @@ with Player
 	{
 	if bskin=0//Robot secret golden skin
 	{
-	spr_idle=sprMutant8DIdle;
-	spr_walk=sprMutant8DWalk;
-	spr_hurt=sprMutant8DHurt;
-	spr_dead=sprMutant8DDead;
+		spr_idle=sprMutant8DIdle;
+		spr_walk=sprMutant8DWalk;
+		spr_hurt=sprMutant8DHurt;
+		spr_dead=sprMutant8DDead;
 	}
 	repeat(4)
 	{if random(maxhealth) > my_health and Player.crown != 2

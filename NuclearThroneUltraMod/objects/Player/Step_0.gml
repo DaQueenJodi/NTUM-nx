@@ -839,6 +839,13 @@ if reload > 0
 	{
 		accuracy=standartAccuracy;
 	}
+	
+	if race=9 && ultra_got[35]{
+		if KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2 && !(instance_exists(GenCont))
+		{
+			reload -= 0.25; // 1 - (30 / room_speed)
+		}
+	}
 
 	if skill_got[28] = 1
 	{

@@ -1,7 +1,16 @@
 /// @description Retarget
 instance_destroy();
-with enemy
+if instance_exists(Player)
 {
-	scrTarget();
+	with enemy
+	{
+		target = instance_nearest(x,y,Player);
+	}
 }
-
+else
+{
+	with enemy
+	{
+		target = -1;	
+	}
+}

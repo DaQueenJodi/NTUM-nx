@@ -9,6 +9,7 @@ if instance_exists(Player)
 			my_health = 0;
 		}
 		alarm[0] = 0;
+		alarm[1] = 0;
 		alarm[3] = 0;
 		with MusCont
 		{
