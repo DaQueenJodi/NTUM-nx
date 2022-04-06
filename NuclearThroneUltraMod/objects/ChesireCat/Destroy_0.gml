@@ -1,5 +1,12 @@
 event_inherited()
 
+if alarm[5] >  0
+{
+	with myWazer
+	{
+		event_perform(ev_alarm,0);	
+	}
+}
 
 Sleep(200)
 scrBusinessHogGoldChest();

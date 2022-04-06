@@ -39,16 +39,7 @@ with Player
 			else
 			instance_create(x,y,AmmoPickup)}
 		}
-		
-		repeat(5)//16 is one ultra lazerpistol ammo
-		{
-			with instance_create(x,y,Rad)
-			{
-				motion_add(random(360),random(2)+3)
-				repeat(speed)
-				speed *= 0.9
-			}
-		}
+		scrRaddrop(5);
 		var hasUltra = false;
 		if ultra_got[32]
 		{
@@ -133,24 +124,29 @@ with Player
 		        {
 		            if dir>77
 		            {
-		            instance_create(x,y,AmmoChest);
+						instance_create(x,y,AmmoChest);
 		            }
 		            else if dir>52
 		            {
-		            instance_create(x,y,HealthChest);
+						instance_create(x,y,HealthChest);
 		            }
 		            else if dir>27
 		            {
-		            instance_create(x,y,RadChest);
+						instance_create(x,y,RadChest);
 		            }
 		            else if dir<=27//slightly higher chance for weapon chest cus robot luv weps
 		            {
-		            instance_create(x,y,WeaponChest);
+						instance_create(x,y,WeaponChest);
 		            }
 		        }
 		    }
 		}
-		if hasUltra || ultra_got[31] || ultra_got[29]
+		if ultra_got[31]
+		{
+			hasUltra = true;
+			scrRaddrop(14);
+		}
+		if hasUltra || ultra_got[29]
 		{
 			var langle = random(360);
 			var langstep = 360/8;

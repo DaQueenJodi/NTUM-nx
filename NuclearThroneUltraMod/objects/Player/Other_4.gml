@@ -112,7 +112,11 @@ microseconds=0;
 
 if instance_exists(Cursor)
 Cursor.image_index=UberCont.opt_crosshair;
-
+else
+{
+	with instance_create(0,0,Cursor)
+		image_index=UberCont.opt_crosshair;
+}
 if area=100
 {
 	if crownvisits == -1

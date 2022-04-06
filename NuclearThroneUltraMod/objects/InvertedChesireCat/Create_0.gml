@@ -1,6 +1,6 @@
 raddrop = 150
 maxhealth = 530
-meleedamage = 4
+meleedamage = 3
 size = 3
 
 if UberCont.loops>1
@@ -39,3 +39,10 @@ ammo=8;
 
 dodge=0;
 friction = 0.8;
+
+myWazers = [];
+wazerDuration = 94;
+wazerRotation = 0;
+wazerDirection = 0;
+wazerOffset = 90;
+tellTime = 19;

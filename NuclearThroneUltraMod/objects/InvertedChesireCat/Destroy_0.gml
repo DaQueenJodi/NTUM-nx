@@ -1,5 +1,17 @@
 event_inherited()
 
+if alarm[5] >  0
+{
+	with myWazers[0]
+	{
+		event_perform(ev_alarm,0);	
+	}
+	with myWazers[1]
+	{
+		event_perform(ev_alarm,0);	
+	}
+}
+
 
 scrUnlockGameMode(22,"FOR KILLING#THE INVERTED CHESHIRE CAT");
 
@@ -14,7 +26,7 @@ scrDrop(20,0)
 scrDrop(50,40)
 scrDrop(50,100)
 
-if !instance_exists(SurvivalWave) && !instance_exists(WantBoss) && instance_number(ChesireCat) == 1
+if !instance_exists(SurvivalWave) && !instance_exists(WantBoss) && instance_number(InvertedChesireCat) == 1
 with MusCont
 {
 //optimise sound_discard(song)

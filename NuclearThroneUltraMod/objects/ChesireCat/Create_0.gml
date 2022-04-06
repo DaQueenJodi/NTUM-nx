@@ -1,6 +1,6 @@
 raddrop = 60
 maxhealth = 640
-meleedamage = 4
+meleedamage = 3
 size = 4
 
 event_inherited()
@@ -35,6 +35,12 @@ ammo=7;
 
 dodge=0;
 friction = 0.8;
+myWazer = -1;
+wazerDuration = 100;
+wazerRotation = 0;
+wazerDirection = 0;
+wazerOffset = 120;
+tellTime = 18;
 /*
 
 lasx = x

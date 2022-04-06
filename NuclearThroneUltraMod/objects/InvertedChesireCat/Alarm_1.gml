@@ -1,9 +1,9 @@
-alarm[1] =10+random(15)
+alarm[1] = 12+random(10)
 
 if instance_exists(Player)
 {
 if Player.loops>1
-alarm[1]=6+random(10)
+alarm[1]=7+random(10)
 
 }
 
@@ -26,7 +26,7 @@ if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
 	}
     else if collision_line(x,y,target.x,target.y,Wall,0,0) < 0//ON LAND
     {
-    if random(6) < 1//laser
+    if random(8) < 1//laser
     {
     //instance_create(x,y,ExplosionNonLethal);
     //direction = point_direction(x,y,target.x,target.y)+180
@@ -49,7 +49,7 @@ if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
     walk = alarm[2]+20;
     alarm[1] = alarm[2]+20;*/
     }
-    else if random(6)<1//spin
+    else if random(7)<1//spin
     {
     ammo=5;
     alarm[4] = 16
@@ -64,6 +64,10 @@ if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
     else if random(3)<1//quick burp
     {
 		event_user(0);
+		if random(9)<1//Wazer attack
+		{
+			event_user(4);
+		}
     }
     else if random(4)<1//Missiles!
     {
@@ -76,23 +80,15 @@ if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
 
     with instance_create(x+8+random(8),y,TeaPotNuke)
     motion_add(other.gunangle,4)
-
+	
+		if random(4)<1//Wazer attack
+		{
+			event_user(4);
+		}
     }
-    else if random(3)<1//Minions senpai
+    else if random(3)<1//Wazer attack
     {
-    //snd_play(sndDragonStart)
-    repeat(10)
-    {
-    with instance_create(x,y,Smoke)
-    {motion_add(random(360),1+random(4))
-    image_speed=0.3+random(0.2);}
-    }
-    walk=10;
-    alarm[1] = walk+random(6)
-    with instance_create(x,y,choose(InvertedCardGuy,InvertedCardGuy2,InvertedCardGuy,InvertedCardGuy2,InvertedCardGuy,InvertedCardGuy2,InvertedTeaPot))
-    {
-    alarm[1]=5+random(10);//significantly reduced waiting time before attacking
-    }
+	    event_user(4);
     }
     else if random(3)<1{
     

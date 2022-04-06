@@ -45,8 +45,38 @@ if alarm[4]>0
 {
 image_angle+=10;
 }
-else
+else if alarm[5] < 1
 image_angle=0;
+
+//Wazer attack
+if alarm[5] > 0
+{
+	if sprite_index == spr_hurt && image_index > 2
+		sprite_index = sprInvertedChesireCatLaser;
+	if (alarm[5] < wazerDuration - tellTime)
+	{
+		image_angle -= wazerRotation;
+		wazerDirection -= wazerRotation;
+	}
+	if instance_exists(Wall)
+	{
+		var closeWall = instance_nearest(x,y,Wall)
+		//Move away from wall
+		motion_add(point_direction(closeWall.x,closeWall.y,x,y),0.4);
+	}
+	with myWazers[0]
+	{
+		x = other.x;
+		y = other.y;
+		image_angle = other.wazerDirection;
+	}
+	with myWazers[1]
+	{
+		x = other.x;
+		y = other.y;
+		image_angle = other.wazerDirection+180;
+	}
+}
 
 if dodge > 0
 {

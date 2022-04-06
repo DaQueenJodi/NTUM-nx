@@ -148,7 +148,7 @@ function scrUltras() {
 	    ultra_tips[30] = "2% more chance for weapon chests"
     
 	    ultra_name[31] = "EXTRA STORAGE"
-	    ultra_text[31] = "YOU CAN CARRY THREE WEAPONS##AUTO EAT WEAPONS LEFT IN THE LEVEL"
+	    ultra_text[31] = "YOU CAN CARRY THREE WEAPONS#EATING WEAPONS GIVES MORE RADS##AUTO EAT WEAPONS LEFT IN THE LEVEL"
 	    ultra_tips[31] = "can't choose"
     
 	    ultra_name[32] = "MULTI FUNCTIONAL"
