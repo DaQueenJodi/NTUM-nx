@@ -135,14 +135,14 @@ function scrSkills() {
 	if Player.race=25
 	{
 	skill_name[14] = "BOILING VEINS"
-	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE AND LAVA#WHEN UNDER 6HP#EXCLUDING! BLUE FIRE"
+	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE, FROST AND LAVA#WHEN UNDER 6HP#EXCLUDING! BLUE FIRE"
 	skill_tips[14] = choose("temperature is rising","boiling veins does not#protect against#blue fire");
 	skill_msnd[14] =  sndMutBoilingVeins
 	}
 	else
 	{
 	skill_name[14] = "BOILING VEINS"
-	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE AND LAVA#WHEN UNDER 5HP#EXCLUDING! BLUE FIRE"
+	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE, FROST AND LAVA#WHEN UNDER 5HP#EXCLUDING! BLUE FIRE"
 	skill_tips[14] = choose("temperature is rising","boiling veins does not#protect against#blue fire");
 	skill_msnd[14] =  sndMutBoilingVeins
 	}
