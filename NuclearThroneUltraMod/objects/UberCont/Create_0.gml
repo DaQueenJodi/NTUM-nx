@@ -86,6 +86,7 @@ enum ultramods {
 	pelletElectro,
 	boltPlasma,
 	plasmaRocket,
+	meleeLightning,
 	grenadeRocket,
 	
 	boltRocket,

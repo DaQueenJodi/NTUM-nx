@@ -1,23 +1,14 @@
 {
-  "spriteId": {
-    "name": "sprShank",
-    "path": "sprites/sprShank/sprShank.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "mskShank",
-    "path": "sprites/mskShank/mskShank.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "ShankParent",
-    "path": "objects/ShankParent/ShankParent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
-  "physicsShape": 0,
-  "physicsGroup": 0,
+  "physicsShape": 1,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -30,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Melee",
-    "path": "folders/Objects/Projectiles/Melee.yy",
+    "name": "Menu",
+    "path": "folders/Objects/Menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Shank",
+  "name": "PauseTimer",
   "tags": [],
   "resourceType": "GMObject",
 }

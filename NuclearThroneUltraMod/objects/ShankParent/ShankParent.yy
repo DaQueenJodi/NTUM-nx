@@ -1,18 +1,18 @@
 {
   "spriteId": {
-    "name": "sprEnergySlash",
-    "path": "sprites/sprEnergySlash/sprEnergySlash.yy",
+    "name": "sprShank",
+    "path": "sprites/sprShank/sprShank.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "mskSlash",
-    "path": "sprites/mskSlash/mskSlash.yy",
+    "name": "mskShank",
+    "path": "sprites/mskShank/mskShank.yy",
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "SlashParent",
-    "path": "objects/SlashParent/SlashParent.yy",
+    "name": "projectile",
+    "path": "objects/projectile/projectile.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -29,7 +29,12 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"hitme","path":"objects/hitme/hitme.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"SmallGrenade","path":"objects/SmallGrenade/SmallGrenade.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Grenade","path":"objects/Grenade/Grenade.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"PopoNade","path":"objects/PopoNade/PopoNade.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"projectile","path":"objects/projectile/projectile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Wall","path":"objects/Wall/Wall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -38,7 +43,7 @@
     "path": "folders/Objects/Projectiles/Melee.yy",
   },
   "resourceVersion": "1.0",
-  "name": "EnergySlash",
+  "name": "ShankParent",
   "tags": [],
   "resourceType": "GMObject",
 }

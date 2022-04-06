@@ -8,7 +8,7 @@ button = 2
 else
 button = 0
 //y+34 moet 24
-if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y+24 and image_index != racemax+1 and image_speed = 0 && UberCont.race_have[num]==1
+if button = 1 and mouse_x > x and mouse_x < x+20 and mouse_y > y and mouse_y < y+24 and image_index != racemax+1 and image_speed = 0 && UberCont.race_have[num]==1
 {
     if Menu.race = num
     {
@@ -119,6 +119,13 @@ if button = 1 and mouse_x > x and mouse_x < x+24 and mouse_y > y and mouse_y < y
     with instance_create(x,y,GenCont)
     {race = other.race
     crown = other.crown}
+	with UberCont {
+		lastwishused=false;
+		time_microseconds=0;
+		time_seconds=0;
+		time_minutes=0;
+		time_hours=0;	
+	}
     instance_create(x,y,Player);
 	//Start settings save
 	with UberCont

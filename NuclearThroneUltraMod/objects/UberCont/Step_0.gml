@@ -153,35 +153,28 @@ paused = 1
 
 ///Timer
 
-if !instance_exists(GenCont) && !instance_exists(Menu) && !instance_exists(Vlambeer) &&
-(instance_exists(Player) || instance_exists(PlayerSpawn))
+if paused == 0 && !instance_exists(GenCont) && !instance_exists(Menu) && !instance_exists(Vlambeer) &&
+(instance_exists(Player) || instance_exists(PlayerSpawn) && !instance_exists(PauseTimer)) && !instance_exists(PauseTimer)
 {
+	time_microseconds+=02;
 
-if paused=0
-{
+	if time_microseconds>=60
+	{
+		time_seconds+=1;
+		time_microseconds=00;
+	}
 
-time_microseconds+=02;
+	if time_seconds>=60
+	{
+		time_minutes+=1;
+		time_seconds=0;
+	}
 
-if time_microseconds>=60
-{
-	time_seconds+=1;
-	time_microseconds=00;
-}
-
-if time_seconds>=60
-{
-	time_minutes+=1;
-	time_seconds=0;
-}
-
-if time_minutes>=60
-{
-	time_hours+=1;
-	time_minutes=0;
-}
-
-}
-
+	if time_minutes>=60
+	{
+		time_hours+=1;
+		time_minutes=0;
+	}
 }
 
 ///CAPTURE DA MOUSE AIRHORN.WAV

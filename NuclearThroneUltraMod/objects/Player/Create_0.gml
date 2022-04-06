@@ -309,10 +309,11 @@ oasisskip = -1;
 
 
 crownvisits = 0
-if UberCont.crown_start[race] {
+if UberCont.crown_start[race] && !instance_exists(PlayerSpawn){
     area = 100;
     hard = -1;
     crownvisits = -1;
+	instance_create(0,0,PauseTimer);
 }
 
 if UberCont.opt_gamemode == 25 {

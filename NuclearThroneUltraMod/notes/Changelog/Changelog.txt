@@ -1,1 +1,52 @@
+Features
+Snowtanks ballmom and lill hunter now dont explode upon being morphed
+Inverted Big Vulture
+Jungle boss
+Popo and other enemies now fight each other more often (when within range of player and no line of sight)
+Inverted vulcano enemies now use snow instead of fire/blue fire
+Crownvault ultramod challenge now collects corpses left behind
+Cronvault ultramod challenge will now push weapon drops to the edge of the arena
+Rage is now displayed above strong spirit
+Hovering over the rage skill in HUD now shows exactly how much rage you have
+Eating a weapon as robot will now always give you some rads
+Any robot ultra now spawns ultralightning when eating a weapon
+
+Balance
+Kraken yoyogun drops later
+Kraken pull less hard on bigger sized enemies and less pull in general
+Gators in savanna
+Caves have a higher chance to spawn firebats
+Vulcano is now three areas and it is alittle harder more enemies, lavaball enemies are tankier. Enemy spawn amount are less random
+lavaball enemies explode into fire consistently
+Purple dragon will now switch to cross fireballs when on loop
+decreased chance purple & Inverted dragon will go under the lava and reduced the time they stay under lava
+Enemy toxic gass will now lose speed upon bouncing against a wall
+When decoy runs out enemies should now immediatly target the player again
+Reduced slowmotion strength on chicken (makes the game also a little smoother)
+Kraken & lightning weapon mod now targets enemies that are nearby but not the one hit and increased the accuracy of the tentacle that spawns
+Lightning weapon mod is now as long as kraken and no longer dissapears quicker
+Reduced delay between sharp teeth activations
+Increased maximum rage
+Drawing rage a little clearer
+Doctor no longer gets increased maximum rage.
+Improved/stronger bolt marrow effect on blades (it now takes into account projectile speed)
+
+Bugfixes
+Meatexplosions now deal their damage similar to explosions 1 frame ignoring enemy iframes (also collision mask is little bigger)
+Refactored kraken tentacles they should spam less meat explosions and be more consistent
+Shotgun & bouncer mod projectiles will now not go through walls, their hitbox was disabled for a couple of frames so it would not immediatly damage the enemy it spawned on
+Fix chicken focus ultra not correctly applying reload reduction when in slowmotion and not applying the correct amount.
+Now using math to change chicken speed firerate and thronebutt movement speed
+Fixed some cases where weapon mods would display one thing and say another thing (this happened when rerolling to make sure that you dont get the same mod)
+Fix missiles being able to explode for 1 frame when using seeker ultramod
+Fix inverted ballmom not exploding into projectiles
+Enemies that leave the crown vault challenge area will now be killed after the final wave
+leaving the crown vault challenge after the last wave spawns will now no longer win you the challenge
+Fixed rage not being removed
+Big bandit & Big vulture can instantly charge you again
+Humprhy was not getting accuracy boost from skill removed it from description the boost (if it existed) would negate eagle eyes and we cant have that, can we.
+Fixed more sound issues burst weapons (mostly noticable on yung cuz)
+Fixed loadout overlay overlap for Panda and one of the gold starting weapons
+Ultra lightning now gets same benefits from accuracy as regular lightning
+
 
