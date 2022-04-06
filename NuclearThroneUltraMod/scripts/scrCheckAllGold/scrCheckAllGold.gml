@@ -1,34 +1,30 @@
 function scrCheckAllGold() {
 	with UberCont
 	{
+		var racedir=1;
 
-
-	var racedir=1;
-
-	repeat(racemax)
-	{
-
-		var wepdir=0;
-
-		var gotthisone=0;
-
-		repeat(maxstartwep)
+		repeat(racemax)
 		{
-			if (start_wep_have[wepdir,racedir] == 1)
-				gotthisone++;
+
+			var wepdir=0;
+
+			var gotthisone=0;
+
+			repeat(maxstartwep)
+			{
+				if (start_wep_have[wepdir,racedir] == 1)
+					gotthisone++;
 			
-			wepdir++;
+				wepdir++;
+			}
+
+			racedir++;
+			if gotthisone >= maxstartwep
+				return true;
+
 		}
 
-		racedir++;
-
-		if gotthisone >= maxstartwep
-			return true;
-
-	}
-
-	return false
-
+		return false
 	}
 
 

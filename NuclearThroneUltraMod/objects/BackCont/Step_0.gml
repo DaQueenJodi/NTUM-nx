@@ -61,7 +61,7 @@ viewy = (((Player.y-view_hview/2)-((Player.y-Portal.y)*0.07))*(viewdist-1)+(mous
 if instance_exists(DramaCamera)
 {
 cam = instance_nearest(x,y,DramaCamera)
-if cam.visible = 1
+if instance_exists(cam) && cam.visible = 1
 {
 viewx = (viewx+cam.x*cam.urgent)/(1+cam.urgent)-vw
 viewy = (viewy+cam.y*cam.urgent)/(1+cam.urgent)-vh
