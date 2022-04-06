@@ -6427,5 +6427,30 @@ function scrFire2() {
 
 	break;
 	
+	//ULTRA LANCE
+	case 431:
+
+	snd_play_fire(sndUltraShovel)
+
+	instance_create(x,y,Dust)
+
+	with instance_create(x+lengthdir_x(6+((Player.skill_got[13]+bettermelee)*20),point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(6+((Player.skill_got[13]+bettermelee)*20),point_direction(x,y,mouse_x,mouse_y)),UltraLanceShank)
+	{
+	longarms = 0
+	if instance_exists(Player)
+	longarms = (Player.skill_got[13]+other.bettermelee)*3
+	motion_add(point_direction(x,y,mouse_x,mouse_y),5+longarms)
+	image_angle = direction
+	team = other.team}
+
+	wepangle = -wepangle
+	motion_add(point_direction(x,y,mouse_x,mouse_y),8)
+	BackCont.viewx2 += lengthdir_x(14,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(14,point_direction(x,y,mouse_x,mouse_y))*UberCont.opt_shake
+	BackCont.shake += 1
+	wkick = -6
+
+	break;
+	
 	}//end of switch part 2!
 }

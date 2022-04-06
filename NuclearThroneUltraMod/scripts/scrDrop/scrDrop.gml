@@ -81,7 +81,7 @@ function scrDrop(itemdrop, weapondrop) {
 	    {
 	        if (random(100) < 10+(Player.skill_got[4]*0.5)+(Player.skill_got[28]*(Player.rage*0.0004)) )//rage=0.001
 	        {
-	        if random(Player.maxhealth) > Player.my_health and random(3) < 2 and Player.crown != 2
+	        if (random(Player.maxhealth) > Player.my_health || random(100) < 5) and random(3) < 2 and Player.crown != 2
 			{
 	        instance_create(x+random(4)-2,y+random(4)-2,HealthChest)
 			return true;

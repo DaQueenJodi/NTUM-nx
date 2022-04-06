@@ -519,6 +519,7 @@
     {"id":{"name":"sprSwarmNade","path":"sprites/sprSwarmNade/sprSwarmNade.yy",},"order":220,},
     {"id":{"name":"sprBanditInvertHurt","path":"sprites/sprBanditInvertHurt/sprBanditInvertHurt.yy",},"order":57,},
     {"id":{"name":"sprVanPortalDirectionStart","path":"sprites/sprVanPortalDirectionStart/sprVanPortalDirectionStart.yy",},"order":51,},
+    {"id":{"name":"sprUltraLance","path":"sprites/sprUltraLance/sprUltraLance.yy",},"order":289,},
     {"id":{"name":"sprBanditInvertDead","path":"sprites/sprBanditInvertDead/sprBanditInvertDead.yy",},"order":59,},
     {"id":{"name":"sprBanditInvertIdle","path":"sprites/sprBanditInvertIdle/sprBanditInvertIdle.yy",},"order":61,},
     {"id":{"name":"sprBanditInvertGun","path":"sprites/sprBanditInvertGun/sprBanditInvertGun.yy",},"order":63,},

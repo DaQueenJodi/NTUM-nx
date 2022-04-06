@@ -4756,6 +4756,17 @@ function scrWeapons() {
 	wep_text[430] = "CTRL + S"
 	wep_swap[430] = sndSwapExplosive
 	wep_rad[430] = 0;
+	
+	wep_name[431] = "ULTRA LANCE"
+	wep_type[431] = 0
+	wep_auto[431] = 0
+	wep_load[431] = 14
+	wep_cost[431] = 0
+	wep_sprt[431] = sprUltraLance
+	wep_area[431] = 19
+	wep_text[431] = ""
+	wep_swap[431] = sndSwapSword
+	wep_rad[431] = 9;
 
 
 	maxwep = array_length(wep_name)-1;
