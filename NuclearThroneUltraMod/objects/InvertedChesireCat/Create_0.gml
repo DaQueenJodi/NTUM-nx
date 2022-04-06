@@ -41,8 +41,8 @@ dodge=0;
 friction = 0.8;
 
 myWazers = [];
-wazerDuration = 94;
+wazerDuration = 110;
 wazerRotation = 0;
 wazerDirection = 0;
 wazerOffset = 90;
-tellTime = 19;
+tellTime = 14;
