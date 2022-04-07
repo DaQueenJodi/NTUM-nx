@@ -4758,7 +4758,7 @@ function scrFire() {
 	if Player.ultra_got[34]==1//Chicken Ultra B ninja
 	{
 	//some melee exceptions
-	if wep_type[wep] = 0 || wep = 24 || wep = 36 || wep = 53 || wep=198 || wep=37|| wep=126|| wep=108|| wep=109|| wep=123 || wep = 222|| wep=239//if wep_type[wep]==0 // You are holding a melee weapon
+	if scrMeleeWeapons()
 	    {
 	    with projectile{
 	    if team=2&& typ=0 && ProjectileCanBeMoved(){//if team is Player
