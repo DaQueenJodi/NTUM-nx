@@ -1,4 +1,4 @@
-scrDrop(0,20)
+scrDrop(12,6)
 
 if (charge)
 {
