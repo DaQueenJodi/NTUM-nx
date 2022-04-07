@@ -5,6 +5,12 @@ scrUnlockGameMode(9,"FOR DIEING ON 1-1#YOU DID THAT ON PURPOSE")
 if scrCheckLoopAll()
 	scrUnlockCSkin(1,"FOR LOOPING WITH EVERY CHARACTER",0);
 
+if !skill_got[18] && lastwishused
+{
+	lastwishused = false;
+	//dir= instance_create(x,y-8,PopupText)
+	//dir.mytext = "LAST WISH#CAN GIVE A LIFE AGAIN!";
+}
 if UberCont.opt_gamemode == 8
 {
 	with VanFan

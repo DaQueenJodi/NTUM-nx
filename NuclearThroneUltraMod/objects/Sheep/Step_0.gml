@@ -1,9 +1,6 @@
 //event_inherited()
 //ENEMY CODE
-if(alarm[0]>0)
-{
-my_health=maxhealth;
-}
+
 //optimise 
 /*
 //WKICK

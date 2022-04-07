@@ -26,6 +26,14 @@ audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 				event_user(0);	
 			}
 		}
+		else
+		{
+			with DragonSkull
+			{
+				alarm[1] = 0;
+				closed = true;
+			}
+		}
 	}
 scrDrop(0,100)
 scrDrop(0,50)

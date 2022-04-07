@@ -62,7 +62,7 @@ if alarm[5] > 0
 	{
 		var closeWall = instance_nearest(x,y,Wall)
 		//Move away from wall
-		motion_add(point_direction(closeWall.x,closeWall.y,x,y),0.6);
+		motion_add(point_direction(closeWall.x,closeWall.y,x,y),1);
 	}
 	with myWazers[0]
 	{

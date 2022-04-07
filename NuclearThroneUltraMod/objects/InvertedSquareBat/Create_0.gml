@@ -8,7 +8,8 @@ spr_hurt = sprInvertedSquareBatHurt
 spr_dead = sprInvertedSquareBatDead
 raddrop = 6;
 maxhealth = 15;
-
+my_health = maxhealth;
+EnemyHealthAdjustments();
 actTime = 15;
 maxSpeed = 4;
 circleDistance = 70;

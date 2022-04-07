@@ -17,7 +17,7 @@ with myWazers[0] {
 	wkick = 0;
 }
 myWazers[1] = instance_create(x,y,EnemyWazer);
-alarm[1] = wazerDuration + 5;
+alarm[1] = wazerDuration + 1;
 with myWazers[1] {
 	team = other.team;
 	image_angle = other.wazerDirection+180;

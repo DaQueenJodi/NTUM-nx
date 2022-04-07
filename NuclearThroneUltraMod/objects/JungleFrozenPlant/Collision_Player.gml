@@ -1,16 +1,28 @@
-/// @description Go to banditland
+/// @description Go to jungle or back to frozen city
 if KeyCont.key_pick[other.p] = 1
 {
-
+	if other.skill_got[18] && lastwishused
+	{
+		lastwishused = false;
+		dir= instance_create(x,y-8,PopupText)
+		dir.mytext = "LAST WISH#CAN GIVE A LIFE AGAIN!";
+	}
 	if blood >= bloodNeeded
 	{
 		KeyCont.key_pick[Player.p] = 2;
-
 		with other
 		{
 			snd_play(snd_thrn);
-			area = 114;
-			subarea = 1;
+			if area == 114
+			{
+				area = 5;
+				subarea = 3;
+			}
+			else
+			{
+				area = 114;
+				subarea = 1;
+			}
 		}
 
 		with enemy

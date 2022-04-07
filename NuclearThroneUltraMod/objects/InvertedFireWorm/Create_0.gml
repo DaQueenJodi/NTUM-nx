@@ -5,6 +5,8 @@ event_inherited();
 
 raddrop = 4
 maxhealth = 24
+my_health = maxhealth;
+EnemyHealthAdjustments();
 
 spr_idle = sprInvertedFireWormIdle
 spr_walk = sprInvertedFireWormIdle

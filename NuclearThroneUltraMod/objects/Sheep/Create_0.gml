@@ -28,7 +28,7 @@ snd_dead = sndSheepDead
 snd_mele = sndMaggotBite
 
 
-snd_hurt = sndBanditHit
+snd_hurt = sndSheep
 snd_dead = sndSheepDead
 
 //behavior
@@ -36,6 +36,5 @@ walk = 0
 alarm[1] = 30+random(90)
 wkick = 0
 
-alarm[0]=6;//before sheep can die
 snd_play(sndSheep);
 

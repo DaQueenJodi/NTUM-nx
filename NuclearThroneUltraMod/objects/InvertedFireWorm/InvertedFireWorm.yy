@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprFireWormIdle",
-    "path": "sprites/sprFireWormIdle/sprFireWormIdle.yy",
+    "name": "sprInvertedFireWormIdle",
+    "path": "sprites/sprInvertedFireWormIdle/sprInvertedFireWormIdle.yy",
   },
   "solid": false,
   "visible": true,

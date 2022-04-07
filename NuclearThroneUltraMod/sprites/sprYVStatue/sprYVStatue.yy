@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprYVStatue","path":"sprites/sprYVStatue/sprYVStatue.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprYVStatue",
     "tags": [],
     "resourceType": "GMSequence",
   },

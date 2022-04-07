@@ -80,7 +80,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprTerminal","path":"sprites/sprTerminal/sprTerminal.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprTerminal",
     "tags": [],
     "resourceType": "GMSequence",
   },

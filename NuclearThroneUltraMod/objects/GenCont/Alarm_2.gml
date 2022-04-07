@@ -146,11 +146,16 @@ else if (Player.area > 2 or Player.loops > 0) and Player.subarea = 2 && Player.a
 && Player.area!=112 && Player.area!=113 && Player.area!=114 && Player.area!=115&& Player.area!=116 && UberCont.opt_gamemode != 25
 {
 
-with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/3+random(128)-64,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/3+random(128)-64,Floor){
-if Player.area=104{//YV Crib yo
-instance_create(x+16,y+16,CarVenusFixed)
-}else{
-instance_create(x+16,y+16,ProtoStatue)} }
+	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/3+random(128)-64,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/3+random(128)-64,Floor){
+		if Player.area=104 {
+			//YV Crib yo
+			instance_create(x+16,y+16,CarVenusFixed)
+		}
+		else
+		{
+			instance_create(x+16,y+16,ProtoStatue)
+		} 
+	}
 }
 
 if Player.area=1 && Player.subarea<3
@@ -158,7 +163,6 @@ if Player.area=1 && Player.subarea<3
 with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/3+random(128)-64,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/3+random(128)-64,Floor)
 instance_create(x+16,y+16,BigFishSkull)
 }
-
 
 
 
@@ -179,10 +183,25 @@ with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/
 instance_create(x+16,y+16,BigMushroom)
 
 }
-if Player.area == 5 && Player.subarea < 3 && Player.skill_got[18]
+if Player.area == 6 && Player.subarea == 1
+{
+	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
+		instance_create(x+16,y+16,MushroomLandEntranceLabs)
+}
+if Player.area == 103
+{
+	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
+		instance_create(x+16,y+16,MushroomLandEntrance)
+}
+if ( ((Player.area == 5 && Player.subarea < 2) || (Player.area == 114 && Player.subarea == 2)) && Player.skill_got[18] || Player.skeletonlives > 0)
 {
 	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
 		instance_create(x+16,y+16,JungleFrozenPlant)
+}
+if ((Player.area == 5 && Player.subarea == 2))
+{
+	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
+		instance_create(x+16,y+16,PinkSheep)
 }
 if Player.area == 102
 {

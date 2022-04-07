@@ -423,15 +423,6 @@ function scrPopulate() {
             instance_change(Wind, false)
         }
     }
-    /*
-    //venuz car crib
-    if Player.area = 104 and Player.subarea = 1
-    {
-    with instance_furthest(10016,10016,Car){
-    instance_create(x,y,CarVenus)
-    instance_change(Wind,false)
-    }
-    }*/
 
     if !(Player.area == 9 && Player.subarea == 3) {
         if Player.area < 5 or Player.area >= 100 {

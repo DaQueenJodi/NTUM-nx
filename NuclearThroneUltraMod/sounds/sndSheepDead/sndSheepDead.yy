@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndSheepDead",
-  "duration": 0.0,
+  "duration": 0.391837,
   "parent": {
     "name": "Player",
     "path": "folders/Sounds/Player.yy",
