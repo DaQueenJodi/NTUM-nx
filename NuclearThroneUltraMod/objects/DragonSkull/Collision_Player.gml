@@ -1,5 +1,5 @@
 /// @description Go to Vulcano
-if spr_idle == sprBigVultureSkullOpen
+if spr_idle == sprHotDrakeSkullIdleOpen
 {
 	if KeyCont.key_pick[other.p] = 1
 	{

@@ -4,7 +4,7 @@
 event_inherited();
 if laserRange > 1
 {
-	laserRange -= laserRangeIncrease*3;
+	laserRange -= laserRangeIncrease*4;
 }
 else
 {

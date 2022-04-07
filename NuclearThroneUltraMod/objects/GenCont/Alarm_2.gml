@@ -1,6 +1,15 @@
 /// @description BOSSES mods secret areas
 if Player.area = 3 and Player.subarea = 3
-instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,BecomeScrapBoss)
+{
+	var n = instance_furthest(Player.x,Player.y,Floor)
+	instance_create(n.x+16, n.y+16,BecomeScrapBoss);
+
+	var f = instance_furthest(n.x,n.y,Floor);
+	var d = point_direction(n.x,n.y,f.x,f.y);
+	var ds = point_distance(n.x,n.y,f.x,f.y)*0.6;
+	var nn = instance_nearest(n.x+lengthdir_x(ds,d),n.y+lengthdir_y(ds,d),Floor);
+	instance_create(nn.x+16,nn.y+16,DragonSkull);
+}
 
 if Player.area = 106 and Player.subarea = 3
 instance_create(instance_furthest(Player.x,Player.y,Floor).x+16, instance_furthest(Player.x,Player.y,Floor).y+16,BecomeScrapBoss)
@@ -149,6 +158,7 @@ if Player.area=1 && Player.subarea<3
 with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/3+random(128)-64,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/3+random(128)-64,Floor)
 instance_create(x+16,y+16,BigFishSkull)
 }
+
 
 
 

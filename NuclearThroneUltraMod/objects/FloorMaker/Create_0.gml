@@ -13,7 +13,7 @@ if instance_exists(Player){
 	
 	if Player.area = 3 and Player.subarea = 3
 	goal = 150//50
-	else if (Player.area = 7||Player.area=108) and Player.subarea = 2
+	else if (Player.area = 7||Player.area=108) and Player.subarea == 3
 	goal = 50
 	else if Player.area = 100
 	goal = 40

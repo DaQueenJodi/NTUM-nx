@@ -5,7 +5,7 @@ if instance_exists(Player) && !endPieceSpawned
 		var area = Player.area;
 		var subarea = Player.subarea;
 	if area = 7||area=104||area == 108
-	if subarea=2||area=104 {//Volcanic boss battleground
+	if subarea=3||area=104 {//Volcanic boss battleground
 		with FloorMaker
 		{
 			endPieceSpawned = true;	
