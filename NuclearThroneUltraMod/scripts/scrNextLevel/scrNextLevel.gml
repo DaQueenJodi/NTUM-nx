@@ -31,8 +31,17 @@ function scrNextLevel() {
 		//Jungle
 		if area == 114 && subarea = 2
 		{
-			area = 5;
-			subarea = 3;
+			// To caves
+			if (curse || bcurse || ccurse)
+			{
+				area = 115;
+				subarea = 1;
+			}
+			else
+			{
+				area = 4;
+				subarea = 1;
+			}
 			exit;
 		}
 
@@ -252,9 +261,10 @@ function scrNextLevel() {
 		}
 
 	}
-	if ( subarea < 3 and area != 2 and area != 4/* and area != 6 */and area != 105 and area != 106
-	&& !(area = 6 && subarea > 1)
-	&& !(area = 4 && subarea > 1) )//&&!(area=7&&subarea=2)
+	if ( subarea < 3 and area != 2 and area != 4 and area != 105 and area != 106
+	&& !(area = 6 && subarea > 1)//Labs has 2 areas
+	&& !(area = 4 && subarea > 1) //Caves has 2 areas
+	&& !(area = 114 && subarea > 1) )//Jungle has 2 areas
 		subarea += 1
 	else if area < 100// && area=2 && area=4
 	{
