@@ -1,10 +1,10 @@
 ///@description AI
-alarm[1] = 30+random(10)
+alarm[1] = 15+random(10)//30 + 10
 
 if instance_exists(Player)
 {
 if Player.loops>0
-alarm[1] = 20+random(10);
+alarm[1] = 10+random(10);
 }
 
 scrTarget()

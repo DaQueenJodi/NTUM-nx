@@ -1,5 +1,5 @@
 raddrop = 9
-maxhealth = 18
+maxhealth = 25//18
 meleedamage = 3
 size = 1
 
@@ -15,7 +15,7 @@ snd_hurt = sndHitRock
 //behavior
 walk = 0
 alarm[1] = 30+random(90)
-maxspeed = 3
+maxspeed = 3.5
 
 if instance_exists(Player)
 {

@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 raddrop = 160
-maxhealth = 730
+maxhealth = 750
 easyCrystalLoss = false;
 normalCrystal = LightningCrystal;
 

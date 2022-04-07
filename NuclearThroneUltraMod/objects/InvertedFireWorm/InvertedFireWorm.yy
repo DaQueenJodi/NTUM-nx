@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "MushroomLand",
-    "path": "folders/Objects/Enemies/MushroomLand.yy",
+    "name": "Vulcano",
+    "path": "folders/Objects/Enemies/Vulcano.yy",
   },
   "resourceVersion": "1.0",
   "name": "InvertedFireWorm",

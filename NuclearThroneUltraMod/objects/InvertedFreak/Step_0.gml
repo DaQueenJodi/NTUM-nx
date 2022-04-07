@@ -25,19 +25,19 @@ if instance_exists(Player)
 {
     if Player.loops>0
     {
-    if speed > 5
-    speed = 5
+    if speed > 4.8
+    speed = 4.8
     }
     else
     {
-    if speed > 4.2
-    speed = 4.2
+    if speed > 4
+    speed = 4
     }
 }
 else
 {
-if speed > 4.2
-speed = 4.2
+if speed > 4
+speed = 4
 }
 
 //I'm hurt I will bite now

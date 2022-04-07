@@ -23,14 +23,14 @@ actTime = 12;
 maxSpeed = 2;
 acc = 0.6;
 myLaser = -1;
-laserDuration = 64;
+laserDuration = 80;
 laserDirection = 0;
-tellTime = 24;
+tellTime = 26;
 laserOffsetMax = 30;
 laserOffset = 0;
 laserDir = 1;
 angleStep = 1;
-maxRange = 240;
+maxRange = 200;
 lox = 16;//Laser offset X
 instance_create(x,y,BigWallBreak);
 isInverted = false;

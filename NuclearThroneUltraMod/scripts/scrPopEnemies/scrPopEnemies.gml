@@ -226,7 +226,7 @@ function scrPopEnemies() {
 		if random(30) < 1//random 30
 			crystal = LightningCrystal;
 		if loops > 0 {
-			if random(10) < 1
+			if random(12) < 1
 			{
 				repeat(2+irandom(2))
 					instance_create(x + 16, y + 16, SquareBat)
@@ -236,7 +236,7 @@ function scrPopEnemies() {
 	        else
 	            instance_create(x + 16, y + 16, choose(Spider, Spider, Spider, Spider, crystal))
 		} else {
-			if random(10) < 1
+			if random(12) < 1
 			{
 				repeat(2+irandom(2))
 					instance_create(x + 16, y + 16, SquareBat)

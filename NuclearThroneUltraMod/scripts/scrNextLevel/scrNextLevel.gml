@@ -36,7 +36,7 @@ function scrNextLevel() {
 			exit;
 		}
 
-	    if area = 103
+	    if area = 103//YV mansion
 	    {
 	        if subarea=1
 	        {
@@ -48,9 +48,14 @@ function scrNextLevel() {
 	        subarea=2;
 	        }
 	    }
-
-	    if area = 102 || area = 105//bring to scrapyard
+		if area == 102//Pizza to oasis boss
+		{
+			area = 101;//TODO
+			subarea = 2;
+		}
+	    if area = 105//bring to scrapyard inv desert or pizza
 	    {
+			//TODO
 	        if inverted && area = 105 &&subarea<3
 	        {
 	        //inverted big bandit
@@ -72,6 +77,7 @@ function scrNextLevel() {
     
 	    if area = 106//inverted scrapyard
 	    {
+			//TODO
 	        if inverted && subarea<3
 	        {
 	        //inverted big dog
@@ -99,6 +105,7 @@ function scrNextLevel() {
     
 	    if area = 107//inv frozen citybring to lill cunter
 	    {
+			//TODO
 	        if inverted && subarea<3
 	        {
 	        //inverted lil hunter
@@ -126,6 +133,7 @@ function scrNextLevel() {
     
 	    if area = 108//inv vulcano bring to dragon
 	    {
+			//TODO
 	        if inverted && subarea<2
 	        {
 	        //inverted purple dragon
@@ -153,6 +161,7 @@ function scrNextLevel() {
     
 	    if area = 109//inv wonderland bring to cheshire cat
 	    {
+			//TODO
 	        if inverted && subarea<2
 	        {
 	        //inverted chesire cat
@@ -225,24 +234,27 @@ function scrNextLevel() {
 
 	    if area=101 && subarea=2
 	    {
-	    area=107;
-	    subarea=1;
-	    oasis=false
-	    hard+=3;
+			//Oasis to vulcano
+		    area=7;
+		    subarea=1;
+		    oasis=false
+		    hard+=2;
 	    exit;
 	    }
 	    else if area=101
 	    hard+=2;
 		
-		//Cursed caves
+		//Cursed caves to caves 2
 		if area == 115
 		{
-			area = 9;
-			subarea = 0;
+			area = 4;
+			subarea = 1;
 		}
 
 	}
-	if ( subarea < 3 and area != 2 and area != 4/* and area != 6 */and area != 105 and area != 106  && !(area = 6 && subarea > 1) )&&!(area=7&&subarea=2)
+	if ( subarea < 3 and area != 2 and area != 4/* and area != 6 */and area != 105 and area != 106
+	&& !(area = 6 && subarea > 1)
+	&& !(area = 4 && subarea > 1) )//&&!(area=7&&subarea=2)
 		subarea += 1
 	else if area < 100// && area=2 && area=4
 	{
@@ -250,14 +262,30 @@ function scrNextLevel() {
 		{
 		    if inverted=false
 		    {
-				if area == 3 && (curse || bcurse || ccurse)
+				if area == 3
 				{
-					area = 115;	
+					//Swap labs and caves
+					area = 6
+					subarea = 1;
+				}
+				else if area == 4
+				{
+					area = 9
+					subarea = 1;
+				}
+				else if area == 5 && (curse || bcurse || ccurse)
+				{
+					area = 115;
+					subarea = 1;
+				}
+				else if area == 5
+				{
+					area = 4
 					subarea = 1;
 				}
 				else if area == 6 && subarea == 2
 				{
-					area = 9;
+					area = 5;
 					subarea = 1;
 				}
 				else
@@ -267,11 +295,10 @@ function scrNextLevel() {
 				}
 		    }
 		}
-		else if area == 10
+		else if area == 10//Savanna to Jungle
 		{
-			area = 7;
-			subarea = 0;
-			inverted = true;
+			area = 117;
+			subarea = 1;
 		}
 		else//WE LOOP HERE!
 		{

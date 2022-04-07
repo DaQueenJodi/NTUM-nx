@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 raddrop = 55
-maxhealth = 420
+maxhealth = 390
 turretToSpawn = InvertedTurret;
 reviveToSpawn = InvertedTechnomancerRevive;
 inverted = true;
