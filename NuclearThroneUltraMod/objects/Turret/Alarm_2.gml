@@ -18,7 +18,7 @@ sprite_index = spr_fire;
 image_index = 0;
 with instance_create(x,y,EnemyBullet1)
 {
-	motion_add(other.gunangle,8)
+	motion_add(other.gunangle,7.8)
 	image_angle = direction
 	team = other.team
 }

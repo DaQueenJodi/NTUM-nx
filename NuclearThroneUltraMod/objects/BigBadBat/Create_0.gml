@@ -8,7 +8,7 @@ event_inherited()
 spr_idle = sprBigBadBatIdle
 spr_walk = sprBigBadBatIdle
 spr_hurt = sprBigBadBatHurt
-spr_dead = sprBigBadBatHurt
+spr_dead = sprBigBadBatDead
 spr_fire = sprBigBadBatFire;
 
 snd_hurt = sndHitFlesh
@@ -19,7 +19,7 @@ snd_melee = sndGoldScorpionMelee;
 alarm[1] = 30;
 rotationSpeed = choose(2,-2);
 speedUp = 4;
-distanceToTarget = 128;
+distanceToTarget = 132;
 maxAmmo = 3;
 ammo = maxAmmo;
 fireRate = 8;

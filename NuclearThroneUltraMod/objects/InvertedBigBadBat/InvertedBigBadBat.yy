@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprInvertedBigBadBatIdle",
-    "path": "sprites/sprInvertedBigBadBatIdle/sprInvertedBigBadBatIdle.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

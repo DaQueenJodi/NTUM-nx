@@ -11,7 +11,7 @@ if target > 0 {
 	else if ran > 55
 	{
 		//Do fast spinny attack
-		event_user(1);	
+		event_user(1);
 	}
 	else if ran > 25
 	{

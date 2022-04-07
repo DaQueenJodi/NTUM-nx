@@ -1,5 +1,5 @@
 /// @description EXPLOSION WAZER
-snd_play(sndWazerStart,0,true,fals,3,false,false,0.8,false,id);
+snd_play(sndWazerStart,0,true,false,3,false,false,0.8,false,id);
 sprite_index = spr_fire;
 myLasers = [];
 var dir = point_direction(x,y,target.x,target.y);

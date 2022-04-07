@@ -29,7 +29,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 		var dangle = random(1)*360;
 		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
 		instance_create(f.x + 16,f.y + 16,BigWallBreak)
-		instance_create(f.x + 16,f.y + 16,SquareBat)
+		instance_create(f.x + 16,f.y + 16,BigBadBat)
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
 		thing.mytext = "CURSED HYPER CRYSTAL";
 	}
