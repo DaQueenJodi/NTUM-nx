@@ -19,6 +19,6 @@ with instance_create(x,y,Smoke)
 motion_add(random(360),random(3))
 }
 
-BackCont.shake += 10
+BackCont.shake += 15
 //snd_play(sndFlakExplode);
-snd_play(sndHeavySlugger);
+snd_play(sndSuperSlugger);

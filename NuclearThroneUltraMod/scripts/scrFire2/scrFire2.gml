@@ -6394,7 +6394,7 @@ function scrFire2() {
 		mox=mouse_x;
 		moy=mouse_y;
 		creator = other.id
-		ammo = 14
+		ammo = 13
 		maxammo = ammo;
 		time = 2
 		team = other.team
@@ -6429,6 +6429,7 @@ function scrFire2() {
 	//ULTRA LANCE
 	case 431:
 
+	snd_play_fire(choose(sndSword1,sndSword2))
 	snd_play_fire(sndUltraShovel)
 
 	instance_create(x,y,Dust)

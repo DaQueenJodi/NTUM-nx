@@ -1,4 +1,4 @@
-maxhealth = 40
+maxhealth = 35//40
 raddrop = 2
 event_inherited();
 meleedamage = 0

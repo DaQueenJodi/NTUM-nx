@@ -39,10 +39,4 @@ if( (collision_point(x+lengthdir_x(4,originalDirection+20),y+lengthdir_y(4,origi
 instance_destroy();
 }
 
-with instance_create(x+random(4)-2,y+random(8)-4,PlasmaFX)
-{
-motion_add(other.direction+random(30)-15,random(2))
-image_xscale-=0.1;
-image_yscale-=0.1;
-}
 
