@@ -41,9 +41,6 @@ if instance_exists(Player)
 if Player.race = 4
 raddrop += 1
 
-if Player.race=13
-scrUnlockBSkin(13,"FOR CANNIBALISM",0);
-
 }
 
 //Mutations

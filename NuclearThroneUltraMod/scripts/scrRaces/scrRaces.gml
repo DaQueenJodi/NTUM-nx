@@ -148,7 +148,7 @@ function scrRaces() {
 	race_swep[10] = 1
 	race_bskin[10] = 0
 	race_cskin[10] = 0
-	race_bskin_lock[10] = "COMPLETE A#MAIN LEVEL AFTER THE LABS#WITHOUT FIRING#AS REBEL"
+	race_bskin_lock[10] = "COMPLETE A#MAIN AREA ON LOOP#WITHOUT FIRING#AS REBEL"
 	race_cskin_lock[10] = "REACH B?N??T L?N?"
 
 
@@ -190,8 +190,8 @@ function scrRaces() {
 	race_swep[13] = 0//nothing
 	race_bskin[13] = 0
 	race_cskin[13] = 0
-	race_bskin_lock[13] = "KILL A SHEEP#AS SHEEP#CANNIBALISM!"
-	race_cskin_lock[13] = "COMPLETE A#MAIN LEVEL#WITHOUT FIRING#AFTER THE SCRAPYARD#AS SHEEP"
+	race_bskin_lock[13] = "SAVE A LOST SHEEP#AS SHEEP"
+	race_cskin_lock[13] = "COMPLETE A#MAIN AREA#WITHOUT FIRING#AFTER THE SCRAPYARD#AS SHEEP"
 
 
 	race_name[14] = "[PANDA]"
@@ -218,7 +218,7 @@ function scrRaces() {
 	race_swep[15] = 19//laser pistol
 	race_bskin[15] = 0
 	race_cskin[15] = 0
-	race_bskin_lock[15] = "COMPLETE A#MAIN LEVEL#AFTER THE SEWERS#WITHOUT FIRING#AS ATOM"
+	race_bskin_lock[15] = "COMPLETE A#MAIN AREA#AFTER THE SEWERS#WITHOUT FIRING#AS ATOM"
 	race_cskin_lock[15] = "COMPLETE FIVE#LEVELS IN A ROW#USING CROWN OF HASTE#AS ATOM"
 
 
@@ -303,7 +303,7 @@ function scrRaces() {
 	race_bskin[21] = 0
 	race_cskin[21] = 0
 	race_bskin_lock[21] = "GAIN THE#MAXIMUM AMOUNT# OF RADIATION#POSSIBLE AS HORROR"
-	race_cskin_lock[21] = "COMPLETE A#MAIN LEVEL ON LOOP#USING ONLY THE BEAM"
+	race_cskin_lock[21] = "COMPLETE A#MAIN AREA ON LOOP#USING ONLY THE BEAM"
 
 
 	race_name[22] = "[ROGUE]"
@@ -345,7 +345,7 @@ function scrRaces() {
 	race_bskin[24] = 0
 	race_cskin[24] = 0
 	race_bskin_lock[24] = "BURN A FROZEN ENEMY#AS ELEMENTOR"
-	race_cskin_lock[24] = "COMPLETE A#MAIN LEVEL#AFTER THE SEWERS#WITHOUT FIRING#AS ELEMENTOR"
+	race_cskin_lock[24] = "COMPLETE A#MAIN AREA#AFTER THE SEWERS#WITHOUT FIRING#AS ELEMENTOR"
 
 
 	race_name[25] = "[DOCTOR]"//MUTATION SMITH
@@ -372,7 +372,7 @@ function scrRaces() {
 	race_swep[26] = 1
 	race_bskin[26] = 0
 	race_cskin[26] = 0
-	race_bskin_lock[26] = "COMPLETE A#MAIN LEVEL#AFTER THE SCRAPYARD#WITHOUT MISSING#AS GOOD OL'HUMPHRY"
+	race_bskin_lock[26] = "COMPLETE A#MAIN AREA#AFTER THE SCRAPYARD#WITHOUT MISSING#AS GOOD OL'HUMPHRY"
 	race_cskin_lock[26] = "REACH 100 SKILL"
 
 
