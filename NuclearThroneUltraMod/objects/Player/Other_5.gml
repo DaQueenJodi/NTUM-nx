@@ -119,7 +119,7 @@ if crown = 2
 	if my_health >= maxhealth
 	{
 		my_health = max(my_health,maxhealth);
-		my_health += 3;
+		my_health += 1;
 	}
 	else
 	{
