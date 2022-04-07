@@ -3,7 +3,7 @@ alarm[1] = actTime + random(actTime)
 scrTarget()
 if target > 0 {
 	var dis = point_distance(target.x, target.y, x, y);
-    if dis > 48  && dis < 300{
+    if dis > 48  && dis < 200{
 		var ran = random(10);
 		
 		

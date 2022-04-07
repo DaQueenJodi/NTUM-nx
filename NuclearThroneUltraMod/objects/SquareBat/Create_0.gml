@@ -20,7 +20,7 @@ alarm[1] = 30+random(90)
 actTime = 20;
 
 circleMode = false;
-circleDistance = 96;
+circleDistance = 80;
 angle = 0;
 rotationSpeed = choose(2,-2);
 projectileSpeed = 4;
