@@ -15,7 +15,17 @@ audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 
 //audio_sound_gain(sndBossWin,max(0,sqrt(UberCont.opt_musvol)),0);
 }
-
+//Allow access to vulcano?
+	with Player
+	{
+		if my_health >= maxhealth
+		{
+			with DragonSkull
+			{
+				event_user(0);	
+			}
+		}
+	}
 scrDrop(0,100)
 scrDrop(0,50)
 scrBusinessHogGoldChest();

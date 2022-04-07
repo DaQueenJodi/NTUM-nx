@@ -127,11 +127,11 @@ function scrTips() {
 	tip = choose("inverted darkness","back to the other dimension","pls explain","inverted world are a benefit","oh no, the question marks!","good luck getting through this"
 	,"white ravens")
 	if Player.area = 107
-	tip = choose("black snow?","looks like shit","mud?","explosions everywhere!","should not have come here","the greed is real","do you want to die?","inverted demons")
+	tip = choose("black snow?","looks like shit","mud?","explosions everywhere!","should not have come here","the greed is real","do you want to die?","inverted demons","chocolate city")
 	if Player.area = 101
 	tip = choose("water","hold your breath","big fish here","you should come here more often")
 	if Player.area = 108
-	tip = choose("true hell","frozen volcano")
+	tip = choose("true hell","frozen volcano","ice cold")
 	if Player.area = 109
 	tip = choose("this place is very deadly","don't get nuked","try not to burn","don't blow up","why are you here","your run ends now")
 	if Player.area = 110

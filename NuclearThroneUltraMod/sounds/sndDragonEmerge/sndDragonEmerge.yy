@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndDragonEmerge",
-  "duration": 0.0,
+  "duration": 1.748639,
   "parent": {
     "name": "Dragon",
     "path": "folders/Sounds/Weapons/Dragon.yy",

@@ -283,7 +283,7 @@ function scrNextLevel() {
 					area = 6
 					subarea = 1;
 				}
-				else if area == 4
+				else if area == 4 && subarea == 2
 				{
 					area = 9
 					subarea = 1;

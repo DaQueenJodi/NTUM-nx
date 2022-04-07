@@ -15,8 +15,8 @@ if target > 0
 	if !spawned && instance_exists(Wall)
 	{
 		var rd = random(360);
-		var xx = target.x+lengthdir_x(64,rd);
-		var yy = target.y+lengthdir_y(64,rd);
+		var xx = target.x+lengthdir_x(128,rd);
+		var yy = target.y+lengthdir_y(128,rd);
 		with instance_nearest(xx,yy,Wall)
 		{
 			instance_create(x,y,CanSpawnBoss);
@@ -26,7 +26,15 @@ if target > 0
 	{
 		with instance_nearest(target.x,target.y,CanSpawnBoss)
 		{
-			if other.area==10
+			if other.area==4
+			{
+				instance_create(x,y,BigBadBat);
+			}
+			else if other.area==111
+			{
+				instance_create(x,y,InvertedBigBadBat);
+			}
+			else if other.area==10
 			{
 				instance_create(x,y,BigVulture);
 			}

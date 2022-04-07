@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndBurn",
-  "duration": 0.0,
+  "duration": 0.517347,
   "parent": {
     "name": "Dragon",
     "path": "folders/Sounds/Weapons/Dragon.yy",
