@@ -3,8 +3,19 @@ size = 1
 area = 0;
 if instance_exists(Player)
 area = Player.area;
-
-if area == 4
+if area == 7
+{
+	spr_idle = sprCrystalPropOld
+	spr_hurt = sprCrystalPropOldHurt
+	spr_dead = sprCrystalPropOldDead
+}
+else if area == 108
+{
+	spr_idle = sprCrystalPropBlue
+	spr_hurt = sprCrystalPropBlueHurt
+	spr_dead = sprCrystalPropBlueDead
+}
+else if area == 4
 {
 	if random(10) < 7
 	{

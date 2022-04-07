@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndScorpionMelee",
-  "duration": 0.0,
+  "duration": 0.561542,
   "parent": {
     "name": "Regular",
     "path": "folders/Sounds/Enemies/Regular.yy",

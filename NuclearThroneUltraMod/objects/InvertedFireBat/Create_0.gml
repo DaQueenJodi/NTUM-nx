@@ -13,7 +13,7 @@ spr_hurt = sprInvertedFireBatHurt
 spr_dead = sprInvertedFireBatDead
 spr_fire = sprInvertedFireBatFire
 
-
+snd_melee = sndGoldScorpionMelee;
 snd_dead = sndFrogExplode
 
 walk=0;

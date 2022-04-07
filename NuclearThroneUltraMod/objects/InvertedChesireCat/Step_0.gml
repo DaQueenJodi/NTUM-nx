@@ -14,7 +14,7 @@ if !place_meeting(x,y,Floor) && instance_exists(Floor)
 	var xx = x + lengthdir_x(64,direction);
 	var yy = y + lengthdir_y(64,direction);
 	var targetFloor = instance_nearest(xx,yy,Floor);
-	direction = point_direction(x,y,targetFloor.x,targetFloor.y);
+	direction = point_direction(x,y,targetFloor.x+16,targetFloor.y+16);
 }
 if hspeed > 0
 right = 1

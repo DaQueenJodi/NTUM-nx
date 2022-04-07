@@ -10,7 +10,7 @@ spr_hurt = sprFireBatHurt
 spr_dead = sprFireBatDead
 spr_fire = sprFireBatFire
 
-
+snd_melee = sndGoldScorpionMelee;
 snd_dead = sndFrogExplode
 
 walk=0;

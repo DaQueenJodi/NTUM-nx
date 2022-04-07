@@ -13,6 +13,7 @@ spr_fire = sprBigBadBatFire;
 
 snd_hurt = sndHitFlesh
 snd_dead = sndFrogExplode
+snd_melee = sndGoldScorpionMelee;
 
 //behavior
 alarm[1] = 30;

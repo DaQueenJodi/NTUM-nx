@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndRhinoFreakMelee",
-  "duration": 0.0,
+  "duration": 0.26,
   "parent": {
     "name": "Labs",
     "path": "folders/Sounds/Labs.yy",

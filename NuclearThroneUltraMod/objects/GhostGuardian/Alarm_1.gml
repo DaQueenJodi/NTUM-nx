@@ -22,17 +22,21 @@ if target > 0
 		{
 			goForIt = false;
 			var nearestFloor = instance_nearest(x,y,Floor)
-			direction = point_direction(x,y,nearestFloor.x+16,nearestFloor.y+16);
+			direction = point_direction(x,y,nearestFloor.x,nearestFloor.y);
 			speed = 2;
 			
 		}	
-		else
+		else if random(10) < 2
 		{
 			//CANT SEE
 			direction = random(360)
 			if goForIt
 				speed *= 0.5;
 			goForIt = false;
+		}
+		else
+		{
+			motion_add(point_direction(x,y,target.x,target.y),3);
 		}
 	}
 }

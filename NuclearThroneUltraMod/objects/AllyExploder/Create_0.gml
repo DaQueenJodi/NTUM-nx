@@ -6,7 +6,7 @@ meleedamage = 0
 size = 1
 target=-1;
 my_health=maxhealth;
-
+dmg = 10;
 hurt_pitch_variation = 0;
 
 team = 2;

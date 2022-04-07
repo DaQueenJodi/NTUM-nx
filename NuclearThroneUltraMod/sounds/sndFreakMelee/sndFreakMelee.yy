@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndFreakMelee",
-  "duration": 0.0,
+  "duration": 0.201338,
   "parent": {
     "name": "Labs",
     "path": "folders/Sounds/Labs.yy",
