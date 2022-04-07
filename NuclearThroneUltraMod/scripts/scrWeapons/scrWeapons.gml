@@ -3872,8 +3872,8 @@ function scrWeapons() {
 	wep_name[351] = "BULLET DISPERSE DISPERSE GUN"
 	wep_type[351] = 1
 	wep_auto[351] = 1
-	wep_load[351] = 18
-	wep_cost[351] = 25
+	wep_load[351] = 22
+	wep_cost[351] = 30
 	wep_sprt[351] = sprBulletDisperseDisperseGun
 	wep_area[351] = 18
 	wep_text[351] = "disperse it all!"
