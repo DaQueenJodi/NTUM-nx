@@ -16,9 +16,7 @@ snd_melee = sndGoldScorpionMelee;
 
 //behavior
 walk = 0
-gunangle = random(360)
 alarm[1] = 30+random(90)
-wkick = 0
 actTime = 20;
 
 circleMode = false;
@@ -28,3 +26,4 @@ rotationSpeed = choose(2,-2);
 projectileSpeed = 4;
 projectileSpeedCircle = 3;
 lp = 0.118;
+maxSpeed = 3;

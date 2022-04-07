@@ -5,8 +5,8 @@ if circleMode {
 	if target > 0
 	{
 		var lerpp = lp;
-		x += clamp(((target.x + lengthdir_x(circleDistance,angle))-x)*lerpp,-3,3);
-		y += clamp(((target.y + lengthdir_y(circleDistance,angle))-y)*lerpp,-3,3);
+		x += clamp(((target.x + lengthdir_x(circleDistance,angle))-x)*lerpp,-maxSpeed,maxSpeed);
+		y += clamp(((target.y + lengthdir_y(circleDistance,angle))-y)*lerpp,-maxSpeed,maxSpeed);
 		angle += rotationSpeed; 
 		if target.x < x
 			right = -1
@@ -35,5 +35,5 @@ else
 		motion_add(dir,0.8);
 	}
 }
-if speed > 3
-	speed = 3
+if speed > maxSpeed
+	speed = maxSpeed

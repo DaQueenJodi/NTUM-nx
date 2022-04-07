@@ -2598,6 +2598,7 @@
     {"id":{"name":"sprRecycleGland","path":"sprites/sprRecycleGland/sprRecycleGland.yy",},"order":11,},
     {"id":{"name":"sprEnemyBullet1Square","path":"sprites/sprEnemyBullet1Square/sprEnemyBullet1Square.yy",},"order":16,},
     {"id":{"name":"sprLuckyShot","path":"sprites/sprLuckyShot/sprLuckyShot.yy",},"order":12,},
+    {"id":{"name":"InvertedSquareBat","path":"objects/InvertedSquareBat/InvertedSquareBat.yy",},"order":10,},
     {"id":{"name":"sprBloodlust","path":"sprites/sprBloodlust/sprBloodlust.yy",},"order":13,},
     {"id":{"name":"sprImpactWrists","path":"sprites/sprImpactWrists/sprImpactWrists.yy",},"order":14,},
     {"id":{"name":"sprSweat","path":"sprites/sprSweat/sprSweat.yy",},"order":15,},
