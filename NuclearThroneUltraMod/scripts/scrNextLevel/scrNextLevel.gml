@@ -44,7 +44,7 @@ function scrNextLevel() {
 			}
 			exit;
 		}
-		if area == 117//Mushroom
+		if area == 117 && subarea > 0//Mushroom
 		{
 			//To jungle
 			area = 114
@@ -202,11 +202,11 @@ function scrNextLevel() {
     
 	    if area = 110//inv sewers bring from sewers to mansion?
 	    {
-	    area=103;
-	    subarea=2;
-	    lastarea=3;
+		    area=103;
+		    subarea=2;
+		    lastarea=3;
     
-	    inverted=false;
+		    inverted=false;
 	    exit;
 	    }
     
