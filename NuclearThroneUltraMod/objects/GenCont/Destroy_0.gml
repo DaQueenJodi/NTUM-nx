@@ -152,38 +152,23 @@ room_speed=35;
     
     if skill_got[29]//insomnia
     {
-    if race = 25
-    {
-    with enemy
-    {
-	    if alarm[1]>0
-		{
-			alarm[1]+=255;
-	
-			with instance_create(x,y,Snooze)
+		var t = 200;
+	    if race = 25
+	    {
+			t = 230;
+	    }
+	    with enemy
+	    {
+		    if alarm[1]>0
 			{
-				owner = other.id;
-				yoffset = other.sprite_height*0.5 - 4;
-				depth = other.depth - 1;
+		    alarm[1]+=t;
+				with instance_create(x,y,Snooze)
+				{
+					owner = other.id;
+					yoffset = other.sprite_height*0.5 - 4;
+				}
 			}
-		}
-    }
-    }
-    else
-    {
-    with enemy
-    {
-	    if alarm[1]>0
-		{
-	    alarm[1]+=240;
-			with instance_create(x,y,Snooze)
-			{
-				owner = other.id;
-				yoffset = other.sprite_height*0.5 - 4;
-			}
-		}
-    }
-    }
+	    }
     
     }
     else

@@ -975,7 +975,7 @@ function scrPowers() {
 	//CRYSTAL
 	if race = 2 and !instance_exists(CrystalShield)//Change this ability to longer lasting shield.
 	{
-	instance_create(x,y,CrystalShield)
+		instance_create(x,y,CrystalShield)
 	}
 
 	//MELTING

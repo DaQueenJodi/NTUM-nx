@@ -31,7 +31,7 @@ Player.speed = 0;
 }
 time += 3
 if Player.skill_got[5]//thronebuttttt
-time-=2;
+time-=2.5;
 if time > 220 and sprite_index != spr_disappear
 {
 sprite_index = spr_disappear

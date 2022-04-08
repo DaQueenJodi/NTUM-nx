@@ -44,7 +44,7 @@ if other.team != team
 	}
 
 	//if(alarm[0]<1){
-	if other.meleedamage > 0 && other.existTime > 30 && meleeimmunity<1 && alarm[3] < 1//is it a melee enemy?
+	if other.meleedamage > 0 && other.existTime > 25 && meleeimmunity<1 && alarm[3] < 1//is it a melee enemy?
 	{
 	meleeimmunity=14;
 	    if (other.my_health<=0)

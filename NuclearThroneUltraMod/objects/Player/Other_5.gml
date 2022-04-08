@@ -410,18 +410,19 @@ sprite_index = wep_sprt[wep]
 if race = 23
 {
 
-if loops=1{
-with instance_create(x,y,WepPickup)
-{
-persistent=true;
-scrWeapons()
-wep =349
-name = wep_name[wep]
-ammo = 0
-type = wep_type[wep]
-curse = 0
-sprite_index = wep_sprt[wep]
-}}
+	if loops=1{
+		with instance_create(x,y,WepPickup)
+		{
+			persistent=true;
+			scrWeapons()
+			wep =349
+			name = wep_name[wep]
+			ammo = 0
+			type = wep_type[wep]
+			curse = 0
+			sprite_index = wep_sprt[wep]
+		}
+	}
 
 }
     

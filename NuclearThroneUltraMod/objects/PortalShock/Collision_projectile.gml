@@ -1,3 +1,4 @@
 with (other) {
-instance_destroy();
+	if team != 2
+		instance_destroy();
 }

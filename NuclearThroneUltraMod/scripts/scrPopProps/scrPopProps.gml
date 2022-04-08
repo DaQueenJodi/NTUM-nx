@@ -44,6 +44,9 @@ function scrPopProps() {
 	instance_create(x,y,NOWALLSHEREPLEASE)
 	if random(15) < 1 and point_distance(myx,myy,Player.x,Player.y) > 128 and spawnarea = 3 && Player.subarea!=3
 	instance_create(myx,myy,Trap)
+	
+	if random(15) < 1 and point_distance(myx,myy,Player.x,Player.y) > 128 and (spawnarea = 2 || spawnarea == 110) && Player.loops > 1
+	instance_create(myx,myy,ToxicTrap)
 
 
 	if random(4) < 1 and point_distance(myx,myy,Player.x,Player.y) > 64 and spawnarea = 7 //RANDOM LAVA

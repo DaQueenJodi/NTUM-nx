@@ -4670,14 +4670,14 @@ function scrFire2() {
 
 	snd_play_fire(sndSplinterShotgun)
 
-	repeat(3)
+	repeat(6)
 	{
 	with instance_create(x,y,Splinter)
-	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-20)*other.accuracy,15+random(10))
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(20)-40)*other.accuracy,15+random(10))
 	image_angle = direction
 	team = other.team}
 	}
-	repeat(8)
+	repeat(10)
 	{
 	with instance_create(x,y,Splinter)
 	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(70)-35)*other.accuracy,15+random(10))

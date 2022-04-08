@@ -19,7 +19,7 @@ if instance_exists(Player)
 
 if(Player.ultra_got[7]==1)
 {
-time += 160
+time += 60
 }
 //else{
 //Player.visible=false;}

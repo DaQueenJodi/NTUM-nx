@@ -586,6 +586,7 @@
     {"id":{"name":"sprFreak1Hurt","path":"sprites/sprFreak1Hurt/sprFreak1Hurt.yy",},"order":12,},
     {"id":{"name":"sprFreak1Idle","path":"sprites/sprFreak1Idle/sprFreak1Idle.yy",},"order":13,},
     {"id":{"name":"sprFreak1Walk","path":"sprites/sprFreak1Walk/sprFreak1Walk.yy",},"order":14,},
+    {"id":{"name":"ToxicTrap","path":"objects/ToxicTrap/ToxicTrap.yy",},"order":50,},
     {"id":{"name":"sprInvertedFreak1Walk","path":"sprites/sprInvertedFreak1Walk/sprInvertedFreak1Walk.yy",},"order":15,},
     {"id":{"name":"sndTurretSpawn","path":"sounds/sndTurretSpawn/sndTurretSpawn.yy",},"order":12,},
     {"id":{"name":"sprPillar","path":"sprites/sprPillar/sprPillar.yy",},"order":3,},

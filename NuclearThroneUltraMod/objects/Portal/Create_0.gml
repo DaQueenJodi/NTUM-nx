@@ -4,8 +4,8 @@ inverted=false;//is this an inverted portal?
 
 endgame = 100
 
-snd_play_2d(sndPortalOpen)
-snd_play(sndPortalAppear)
+snd_play(sndPortalOpen)
+snd_play(sndPortalAppear);
 snd_loop(sndPortalLoop)
 
 
@@ -14,20 +14,16 @@ var chance = 1;
 
 if instance_exists(Player)
 {
-if Player.race=22//Rogue
-{
-	repeat(1+irandom(3))
-		instance_create(x,y,IDPDSpawn);
-}
+	if Player.race=22//Rogue
+	{
+		repeat(1+irandom(3))
+			instance_create(x,y,IDPDSpawn);
+	}
 
 //if Player.race=15//atom extra chance for invertedness and bosses ofcourse aswell
 //chance=2;
 
-with projectile
-{
-if team != Player.team
-instance_destroy()
-}
+
 currentarea=Player.area;
 currentsubarea=Player.subarea;
 
@@ -59,7 +55,14 @@ if ( (currentarea=105 || currentarea=106|| currentarea=107 || currentarea = 108 
 	with Corpse
 	canspawnportal=false;
 }
-
+else
+{
+	with projectile
+	{
+		if team != Player.team
+			instance_destroy()
+	}	
+}
 alarm[2] = 2;
-pullstrength=2;
+pullstrength=1;
 

@@ -9,13 +9,6 @@ if(Player.ultra_got[8]==1)//Vengefull
 {
 other.direction = point_direction(x,y,other.x,other.y);
 
-if (other.object_index=EnemyLaser)
-{
-with other
-instance_destroy();
-
-exit;
-}
 
 var target=-1;
 if instance_exists(enemy)

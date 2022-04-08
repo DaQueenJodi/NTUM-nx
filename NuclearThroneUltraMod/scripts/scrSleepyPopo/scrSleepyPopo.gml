@@ -6,7 +6,7 @@ function scrSleepyPopo(){
 	{
 		if Player.skill_got[29]//insomnia
 		{
-			alarm[1] += 70;
+			alarm[1] += 60;
 			with instance_create(x,y,Snooze)
 			{
 				owner = other.id;

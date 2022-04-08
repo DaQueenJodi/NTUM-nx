@@ -9,6 +9,7 @@ HumphryHit=0;//unassigned 0=miss 1=hit 2=dont count as either
 Humphry=false;//gets assigned true when playing as humphry and firing
 HumphryNr=0;
 canBeMoved = true;
+typ = 0;
 /*WEAPON MODS
 mod1[]
 mod2[]

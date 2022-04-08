@@ -36,7 +36,7 @@ function scrUltras() {
 	    ultra_tips[7] = "the iron fist"
     
 	    ultra_name[8] = "VENGEFUL"
-	    ultra_text[8] = "REFLECTED PROJECTILES#HOME IN ON ENEMIES#PUSH AWAY ENEMIES HARDER#TAKE NO LASER DAMAGE WHILE SHIELDED"
+	    ultra_text[8] = "REFLECTED PROJECTILES#HOME IN ON ENEMIES#INVULNERABLE TO ALL DAMAGE#WHILE SHIELDING"
 	    ultra_tips[8] = "homing effects wear of#when you're not shielding"
 
 	//EYES 
