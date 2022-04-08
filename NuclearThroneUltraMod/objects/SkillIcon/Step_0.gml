@@ -254,7 +254,7 @@ with UberCont
 	repeat(maxskill+1)
 	{
 		if ctot_skill_taken[dir] <= 0
-		gotEmAll = false;
+			gotEmAll = false;
 	}
 	if gotEmAll
 	{

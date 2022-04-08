@@ -37,7 +37,7 @@ function scrSaveStats() {
 	ini_write_real("STATS","ctotwallsdestroyed",ctot_walls_destroyed);
 	
 	dir = 0;
-	repeat(maxskill+1)
+	repeat(maxskill+2)
 	{
 		ini_write_real("STATS","ctotskilltaken" + string(dir),ctot_skill_taken[dir]);
 		dir ++;

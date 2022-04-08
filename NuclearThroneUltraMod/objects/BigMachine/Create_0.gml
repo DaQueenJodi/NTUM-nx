@@ -15,8 +15,8 @@ snd_dead = sndNothingTaunt
 
 //behavior
 gunangle = random(360)
-alarm[1] = 120+random(90)
-alarm[2]=30+random(20);//intro
+alarm[4] = 90;//120 before + 90
+alarm[2] = 30;
 wkick = 0
 image_speed=0.4;
 
@@ -53,7 +53,7 @@ instance_create(x+16,y-16,BigMachineTurret);
 }
 
 
-instance_create(x,y,BigMachineMask);
+//instance_create(x,y,BigMachineMask);
 
 friction=4;
 

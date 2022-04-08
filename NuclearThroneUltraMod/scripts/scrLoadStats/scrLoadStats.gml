@@ -35,7 +35,7 @@ function scrLoadStats() {
 	ctot_walls_destroyed = ini_read_real("STATS","ctotwallsdestroyed",0);
 	
 	dir = 0;
-	repeat(maxskill+1)
+	repeat(maxskill+2)
 	{
 		ctot_skill_taken[dir] = ini_read_real("STATS","ctotskilltaken" + string(dir),0);
 		dir ++;

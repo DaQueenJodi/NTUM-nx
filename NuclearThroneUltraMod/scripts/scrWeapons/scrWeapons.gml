@@ -4796,7 +4796,7 @@ function scrWeapons() {
 	wep_load[434] = 3
 	wep_cost[434] = 1
 	wep_sprt[434] = sprHeavyBloodRifle
-	wep_area[434] = 19
+	wep_area[434] = 20
 	wep_text[434] = "cdoesn't cost a lot of rads"
 	wep_swap[434] = sndSwapPistol
 	wep_rad[434] = 3;

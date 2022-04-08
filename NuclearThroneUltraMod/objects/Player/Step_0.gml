@@ -158,7 +158,7 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 	if keyboard_check_pressed(ord("R")) {
 	    thing = instance_create(x,y,PopupText)
 		thing.mytext = "RADS!";
-		rad = GetPlayerMaxRad() + 1;
+		rad = GetPlayerMaxRad()*2;
 	}
 	if keyboard_check_pressed(ord("T")) {
 		if instance_exists(Portal) && UberCont.opt_gamemode == 25
