@@ -6452,5 +6452,68 @@ function scrFire2() {
 
 	break;
 	
+	//CHUNKY BLADE GUN
+	case 432:
+
+	snd_play_fire(sndSuperDiscGun)
+
+	with instance_create(x,y,ChunkyBlade)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,7)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(12,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 10
+	wkick = 5
+
+	break;
+	
+	case 433:
+		snd_play_fire(sndDirector);
+		with projectile
+		{
+			if typ == 1 && ProjectileCanBeMoved()
+			{
+				team = other.team;
+				if instance_exists(enemy)
+				{
+					var n = instance_nearest(x,y,enemy);
+					direction = point_direction(x,y,n.x,n.y);
+				}
+				else
+					direction = random(360);
+				image_angle = direction;
+				scrRedirectFx();
+				speed *= 1.2;
+				speed += 1;
+			}
+			else if typ == 2 && team != other.team 
+			{
+				instance_create(x,y,Smoke);
+				instance_destroy();	
+			}
+		}
+	break;
+	
+	//ULTRA  BLOOD RIFLE
+	case 434:
+
+	snd_play_fire(sndHeavyBloodPistol)
+	with instance_create(x,y,Shell)
+	motion_add(point_direction(x,y,mouse_x,mouse_y)+other.right*100+random(50)-25,2+random(2))
+
+	with instance_create(x,y,UltraBloodBullet)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(16)-8)*other.accuracy,16)
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(8,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 5
+	wkick = 4
+
+	break;
+	
 	}//end of switch part 2!
 }

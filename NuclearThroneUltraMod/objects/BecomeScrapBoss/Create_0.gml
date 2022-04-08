@@ -12,34 +12,8 @@ event_inherited()
 image_speed = 0.4
 
 
-var dix, diy, dir;
-dix = 0
-diy = 0
-dir = instance_furthest(x,y,WeaponChest)
-x = round(dir.x/32)*32-16
-y = round(dir.y/32)*32-16
-repeat(7)
-{
-repeat(7)
-{
-instance_create(x-64+dix*32,y-64+diy*32,Floor)
-dix += 1
-}
-dix = 0
-diy += 1
-}
-
-
-
-with Wall
-{
-if place_meeting(x,y,other)
-{
-instance_destroy()
-instance_create(x,y,FloorExplo)
-}
-}
-
+scrBossFloor();
+instance_create(x,y,BigWallBreak);
 timer = 0
 
 

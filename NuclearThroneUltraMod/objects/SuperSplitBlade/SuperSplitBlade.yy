@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprSplitBlade",
-    "path": "sprites/sprSplitBlade/sprSplitBlade.yy",
+    "name": "sprSuperSplitBlade",
+    "path": "sprites/sprSuperSplitBlade/sprSuperSplitBlade.yy",
   },
   "solid": false,
   "visible": true,

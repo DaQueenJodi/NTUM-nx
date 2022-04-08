@@ -1,5 +1,5 @@
 if awake{
-    alarm[1] = 6+random(8)
+    alarm[1] = 10+random(10)
     if sprite_index != spr_hurt //&& sprite_index != spr_fire i added this
     sprite_index = spr_idle
     scrTarget()

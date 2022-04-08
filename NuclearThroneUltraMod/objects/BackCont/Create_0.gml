@@ -31,6 +31,8 @@ if instance_exists(Player)
 {
 	wantVanAmount = GetPlayerLoops();
 	vanDelay = max(60,vanDelay - ((wantVanAmount-1)*60));
+	if ( (Player.area == 6 || Player.area == 112) && Player.subarea ==  2 )
+		wantVanAmount = min(GetPlayerLoops()-2,2);
 	if wantVanAmount > 2
 		verticalVans = true;
 	if Player.crown == 16 //CROWN OF POPO

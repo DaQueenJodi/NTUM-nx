@@ -21,7 +21,6 @@ if point_distance(x,y,Player.x,Player.y)>68
 {
 	var randir = random(360);
 	instance_create(x+lengthdir_x(4,randir),y+lengthdir_y(4,randir),Explosion)
-	instance_create(x+lengthdir_x(24,randir+180),y+lengthdir_y(24,randir+180),SmallExplosion)
 }
 if(random(6)<1){
 with instance_create(x,y,Smoke)

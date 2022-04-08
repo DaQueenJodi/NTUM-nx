@@ -4,7 +4,6 @@ if KeyCont.key_fire[Player.p] = 1 && turned=false && alarm[0]<1 || (Player.race=
 Player.clicked=0;
 
 
-instance_create(x,y,Smoke);
 speed+=6;
 direction=point_direction(x,y,mouse_x,mouse_y);
 scrRedirectFx();

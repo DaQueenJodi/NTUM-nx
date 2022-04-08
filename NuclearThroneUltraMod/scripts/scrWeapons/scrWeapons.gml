@@ -4752,7 +4752,7 @@ function scrWeapons() {
 	wep_load[430] = 30
 	wep_cost[430] = 4
 	wep_sprt[430] = sprSlugCannon
-	wep_area[430] = 9
+	wep_area[430] = 11
 	wep_text[430] = "CTRL + S"
 	wep_swap[430] = sndSwapExplosive
 	wep_rad[430] = 0;
@@ -4767,6 +4767,39 @@ function scrWeapons() {
 	wep_text[431] = ""
 	wep_swap[431] = sndSwapSword
 	wep_rad[431] = 9;
+	
+	wep_name[432] = "CHUNKY BLADE GUN"
+	wep_type[432] = 3
+	wep_auto[432] = 1
+	wep_load[432] = 26
+	wep_cost[432] = 2
+	wep_sprt[432] = sprBladeGun
+	wep_area[432] = 12
+	wep_text[432] = ""
+	wep_swap[432] = sndSwapBow
+	wep_rad[432] = 0;
+	
+	wep_name[433] = "THE REDIRECTOR"
+	wep_type[433] = 5
+	wep_auto[433] = 0
+	wep_load[433] = 22
+	wep_cost[433] = 1
+	wep_sprt[433] = sprBladeGun
+	wep_area[433] = 14
+	wep_text[433] = "redirects all enemy bullets"
+	wep_swap[433] = sndSwapBow
+	wep_rad[433] = 0;
+	
+	wep_name[434] = "ULTRA BLOOD RIFLE"
+	wep_type[434] = 1
+	wep_auto[434] = 1
+	wep_load[434] = 3
+	wep_cost[434] = 1
+	wep_sprt[434] = sprHeavyBloodRifle
+	wep_area[434] = 19
+	wep_text[434] = "cdoesn't cost a lot of rads"
+	wep_swap[434] = sndSwapPistol
+	wep_rad[434] = 3;
 
 
 	maxwep = array_length(wep_name)-1;

@@ -27,27 +27,8 @@ x = round(dir.x/32)*32-16
 y = round(dir.y/32)*32-16
 
 
-repeat(10)
-{
-repeat(10)
-{
-instance_create(x-96+dix*32,y-96+diy*32,Floor)
-dix += 1
-}
-dix = 0
-diy += 1
-}
-
-
-
-with Wall
-{
-if place_meeting(x,y,other)
-{
-instance_destroy()
-instance_create(x,y,FloorExplo)
-}
-}
+scrBossFloor();
+instance_create(x,y,BigWallBreak);
 
 timer = 0
 
