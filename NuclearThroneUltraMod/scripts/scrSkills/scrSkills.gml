@@ -86,7 +86,7 @@ function scrSkills() {
 	skill_msnd[7] =  sndMutBloodlust
 
 	skill_name[8] = "GAMMA GUTS"
-	skill_text[8] = "ENEMIES TOUCHING YOU TAKE DAMAGE#DONT TAKE DAMAGE FROM#ENEMIES THAT YOU KILL USING GAMMA GUTS"
+	skill_text[8] = "ENEMIES TOUCHING YOU TAKE DAMAGE#50% ENEMY CONTACT DAMAGE#DONT TAKE DAMAGE FROM#ENEMIES THAT YOU KILL USING GAMMA GUTS"
 	skill_tips[8] = "skin glows"
 	skill_msnd[8] =  sndMutGammaGuts
 
@@ -100,7 +100,7 @@ function scrSkills() {
 	else
 	{
 	skill_name[9] = "SECOND STOMACH"
-	skill_text[9] = "MORE HP FROM MEDKITS"
+	skill_text[9] = "MORE HP FROM MEDKITS & MEDCHESTS"
 	skill_tips[9] = "stomach rumbles"
 	skill_msnd[9] =  sndMutSecondStomache
 	}

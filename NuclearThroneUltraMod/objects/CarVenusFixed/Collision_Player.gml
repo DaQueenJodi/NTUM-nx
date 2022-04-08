@@ -7,7 +7,7 @@ if KeyCont.key_pick[other.p] = 1
 		if area !=104
 		{
 			area = 103
-			subarea = 1
+			subarea = 0
 		}
 	}
 	//with enemy

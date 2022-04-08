@@ -40,7 +40,7 @@ if team == 2
 		exit;
 	}
 	isog = false;
-accuracy += Player.accuracy*5;
+accuracy += Player.accuracy*2;
 if Player.skill_got[19] == 1
 {accuracy-=3;}
 if Player.ultra_got[43]&&instance_exists(Marker)//hunter focused fire
@@ -82,7 +82,7 @@ speed = 4
 if instance_exists(target)
 {
 if point_distance(x,y,dir.x,dir.y) < 144-accuracy
-	motion_add(point_direction(x,y,dir.x,dir.y),1.3-(accuracy*0.045))
+	motion_add(point_direction(dir.x,dir.y,x,y),1.3-(accuracy*0.045))
 }
 image_angle = direction
 speed = 0

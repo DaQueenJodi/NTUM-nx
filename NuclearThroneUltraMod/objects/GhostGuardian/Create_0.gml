@@ -17,7 +17,6 @@ direction = random(360);
 friction = 1.5;
 goForIt = false;
 instance_create(x,y,WallBreak);
-depth = -12;
 var loops = GetPlayerLoops();
 var i = 0;
 var myCompanions = [];

@@ -6515,5 +6515,21 @@ function scrFire2() {
 
 	break;
 	
+	//ULTRA TOXICTHROWER
+	case 435:
+
+	if !instance_exists(ToxicSound)
+	instance_create(x,y,ToxicSound)
+	with instance_create(x,y,UltraToxicBurst)
+	{
+	creator = other.id
+	ammo = 9
+	time = 1
+	team = other.team
+	event_perform(ev_alarm,0) 
+	}
+
+	break;
+	
 	}//end of switch part 2!
 }

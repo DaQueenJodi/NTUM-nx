@@ -50,17 +50,10 @@ function scrNextLevel() {
 			area = 114
 			subarea = 0;
 		}
-	    if area = 103//YV mansion
+	    if area = 103 && subarea > 0//YV mansion
 	    {
-	        if subarea=1
-	        {
-	        subarea++;
-	        }
-	        else// if subarea=2
-	        {
 	        area = 3
-	        subarea=2;
-	        }
+	        subarea = 2;
 	    }
 		if area == 102//Pizza to oasis boss
 		{
@@ -85,8 +78,6 @@ function scrNextLevel() {
 			inverted=false
 	        exit;
 	        }
-        
-        
 	    }
     
 	    if area = 106//inverted scrapyard
@@ -102,8 +93,8 @@ function scrNextLevel() {
 	        }
 	        else if subarea < 2
 	        {
-	        area=3;
-	        subarea=3;
+	        area = 7;
+	        subarea=1;
 			inverted=false
 	        exit;
 	        }
@@ -203,7 +194,7 @@ function scrNextLevel() {
 	    if area = 110//inv sewers bring from sewers to mansion?
 	    {
 		    area=103;
-		    subarea=2;
+		    subarea=1;
 		    lastarea=3;
     
 		    inverted=false;

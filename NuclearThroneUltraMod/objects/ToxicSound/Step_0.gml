@@ -1,4 +1,4 @@
-if instance_exists(ToxicBurst)
+if instance_exists(ToxicBurst) || instance_exists(UltraToxicBurst)
 timeout = 0
 else
 {

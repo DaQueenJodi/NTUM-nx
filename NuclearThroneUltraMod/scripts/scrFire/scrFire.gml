@@ -3157,7 +3157,7 @@ function scrFire() {
 	break;
 
 
-	//TOXIC THROWER
+	//TOXICTHROWER
 	case 129:
 
 	if !instance_exists(ToxicSound)

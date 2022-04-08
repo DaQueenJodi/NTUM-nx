@@ -9,7 +9,7 @@ image_xscale = 0.6
 image_yscale = 0.6
 rot = (1+random(3))*choose(1,-1)
 growspeed = 0.002+random(0.003)
-alarm[0]=9;
+alarm[0]=10;
 team = 2
 typ = 0//2
 
@@ -18,7 +18,11 @@ if instance_exists(Player)
 {
 	//FROG POTENCY
 	if Player.ultra_got[92]
+	{
 		dmg=4;
+		image_xscale += 0.1;
+		image_yscale += 0.1;
+	}
 }
 
 alarm[11] = 1;

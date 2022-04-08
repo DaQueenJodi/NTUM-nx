@@ -76,7 +76,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprToxicGas","path":"sprites/sprToxicGas/sprToxicGas.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprToxicGas",
     "tags": [],
     "resourceType": "GMSequence",
   },

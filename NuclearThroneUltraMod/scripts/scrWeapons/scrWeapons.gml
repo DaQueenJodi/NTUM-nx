@@ -4800,6 +4800,17 @@ function scrWeapons() {
 	wep_text[434] = "cdoesn't cost a lot of rads"
 	wep_swap[434] = sndSwapPistol
 	wep_rad[434] = 3;
+	
+	wep_name[435] = "ULTRA TOXICTHROWER"
+	wep_type[435] = 4
+	wep_auto[435] = 1
+	wep_load[435] = 7
+	wep_cost[435] = 1
+	wep_sprt[435] = sprToxicThrower
+	wep_area[435] = 4
+	wep_text[435] = "ultra stinky"
+	wep_swap[435] = sndSwapFlame
+	wep_rad[435] = 4;
 
 
 	maxwep = array_length(wep_name)-1;

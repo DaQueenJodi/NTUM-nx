@@ -3,7 +3,23 @@ if stolen<1
 {
 with other
 {
-
+	var contactDmg = 0;
+	if skill_got[8]
+	{
+		if race==25
+			contactDmg = 8//dmg dealt by gamma guts
+		else
+			contactDmg = 7//dmg dealt by gamma guts
+			
+	}
+	if race == 15 //Atom
+	{
+		contactDmg += 2;
+		if ultra_got[58]
+			contactDmg += 6;
+	}
+	if contactDmg > other.my_health
+		exit;
 
 //0 = melee 1 = bullets 2 = shells 3 = bolts 4 = explosives 5 = energy
 //typ_ammo[0] = 333 typ_ammo[1] = 32 typ_ammo[2] = 8 typ_ammo[3] = 8 typ_ammo[4] = 6 typ_ammo[5] = 10

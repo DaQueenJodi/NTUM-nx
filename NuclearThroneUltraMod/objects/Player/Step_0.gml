@@ -728,63 +728,63 @@ decay = 300
 }
 }
 
-
-if (rad >  GetPlayerMaxRad())
+var mr =GetPlayerMaxRad()
+if (rad > mr)
 {
-if level < maxlevel || UberCont.opt_gamemode == 22
-{
-	
-//rad -= level*60
-rad = 0;
-level += 1
-
-if level=7 && area < 4 && race = 25
-scrUnlockBSkin(25,"FOR REACHING LEVEL 7#BEFORE THE CRYSTAL CAVES#AS MUTATION DOCTOR",0);
-
-repeat(level-6)
-instance_create(x,y,IDPDSpawn)
-
-	if level == 10
+	if level < maxlevel || UberCont.opt_gamemode == 22
 	{
-		snd_play_2d(sndExplosionXXL);
-		instance_create(x,y,LevelUpUltra);
-		BackCont.shake += 20;
-		with instance_create(x,y,Flash)
+	
+	//rad -= level*60
+	rad -= mr;
+	level += 1
+
+	if level=7 && area < 4 && race = 25
+	scrUnlockBSkin(25,"FOR REACHING LEVEL 7#BEFORE THE CRYSTAL CAVES#AS MUTATION DOCTOR",0);
+
+	repeat(level-6)
+	instance_create(x,y,IDPDSpawn)
+
+		if level == 10
 		{
-			alarm[1] = 6;
-			alarm[0] = 2;
+			snd_play_2d(sndExplosionXXL);
+			instance_create(x,y,LevelUpUltra);
+			BackCont.shake += 20;
+			with instance_create(x,y,Flash)
+			{
+				alarm[1] = 6;
+				alarm[0] = 2;
+			}
+			with enemy
+			{
+				my_health -= 10;
+				if !audio_is_playing(snd_hurt)
+					snd_play(snd_hurt,hurt_pitch_variation,true);
+			}
 		}
-		with enemy
+		else
 		{
-			my_health -= 10;
-			if !audio_is_playing(snd_hurt)
-				snd_play(snd_hurt,hurt_pitch_variation,true);
+			snd_play_2d(sndLevelUp)
 		}
+	if level != 10
+	{
+		with instance_create(x,y,PopupText)
+		{
+			mytext = "LEVEL "+string(other.level)+"!"
+		}
+		instance_create(x,y,LevelUp)
+	}
+	skillpoints += 1
+	if level > 40
+		skillsChosena --;
+	
+
 	}
 	else
 	{
-		snd_play_2d(sndLevelUp)
+	rad = mr;
+	if ultra_got[83]
+	scrUnlockBSkin(21,"FOR GAINING THE MAXIMUM AMOUNT#OF RADS AS HORROR",0);
 	}
-if level != 10
-{
-	with instance_create(x,y,PopupText)
-	{
-		mytext = "LEVEL "+string(other.level)+"!"
-	}
-	instance_create(x,y,LevelUp)
-}
-skillpoints += 1
-if level > 40
-	skillsChosena --;
-	
-
-}
-else
-{
-rad = GetPlayerMaxRad();
-if ultra_got[83]
-scrUnlockBSkin(21,"FOR GAINING THE MAXIMUM AMOUNT#OF RADS AS HORROR",0);
-}
 }
 
 //reload stuff
