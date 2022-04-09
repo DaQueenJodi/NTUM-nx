@@ -13,56 +13,22 @@ if close
 {
 
 	raddrop = rad
-
-	do {if raddrop > 15
-	{raddrop -= 10
-	with instance_create(x,y,BigRad)
-	{motion_add(other.direction,other.speed)
-	motion_add(random(360),random(other.raddrop/2)+2)
-	repeat(speed)
-	speed *= 0.9}}
-	}
-	until raddrop <= 15
-
-	repeat(raddrop)
-	{
-	with instance_create(x,y,Rad)
-	{motion_add(other.direction,other.speed)
-	motion_add(random(360),random(other.raddrop/2)+2)
-	repeat(speed)
-	speed *= 0.9}
-	}
-
-}else if rad > 23
+	scrRaddrop(raddrop);
+} else if rad > 23
 {
 with instance_create(x,y,Portal)
 type = 3
 if instance_exists(Player)
 	Player.area = 100
 }
-else
+else //Destroy and not full, pink sheep
 {
-
-raddrop = rad
-
-do {if raddrop > 15
-{raddrop -= 10
-with instance_create(x,y,BigRad)
-{motion_add(other.direction,other.speed)
-motion_add(random(360),random(other.raddrop/2)+2)
-repeat(speed)
-speed *= 0.9}}
-}
-until raddrop <= 15
-
-repeat(raddrop)
-{
-with instance_create(x,y,Rad)
-{motion_add(other.direction,other.speed)
-motion_add(random(360),random(other.raddrop/2)+2)
-repeat(speed)
-speed *= 0.9}
-}
+	raddrop = rad
+	scrRaddrop(raddrop);
+	if instance_exists(Player) && Player.area == 5
+	{
+		instance_create(x,y,PinkSheep);	
+	}
 }
 if instance_exists(Player)
 Player.crownrad = 0

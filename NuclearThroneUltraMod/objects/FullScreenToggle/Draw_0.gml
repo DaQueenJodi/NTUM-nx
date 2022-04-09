@@ -14,5 +14,5 @@ x=round(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_wi
 y=round(__view_get( e__VW.YView, 0 )+80)
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
-draw_text(x+16,y,string_hash_to_newline("HOTKEY: F5"))
+draw_text(x+12,y,string_hash_to_newline("HOTKEY: F5"))
 

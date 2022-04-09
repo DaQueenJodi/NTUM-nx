@@ -1,5 +1,5 @@
 ///@description AI
-alarm[1] = 30+random(10)
+alarm[1] = 14+random(12)
 
 if instance_exists(Player)
 {

@@ -1,4 +1,4 @@
-alarm[1] = 5+random(5)
+alarm[1] = 4+random(5)
 scrTarget()
 if target > 0
 {
@@ -29,7 +29,7 @@ else if random(4) < 1
 {
 motion_add(random(360),0.4)
 walk = 20+random(10)
-alarm[1] = walk+10+random(30)
+alarm[1] = walk+5+random(15)
 gunangle = direction
 if hspeed > 0
 right = 1
@@ -41,7 +41,7 @@ else if random(10) < 1
 {
 motion_add(random(360),0.4)
 walk = 20+random(10)
-alarm[1] = walk+10+random(30)
+alarm[1] = walk+5+random(15)
 gunangle = direction
 if hspeed > 0
 right = 1

@@ -190,28 +190,21 @@ function scrNextLevel() {
 	    exit;
 	    }
     
-	    if area = 112//inv labs bring from labs to dragon//LEFT OFF HERE
+	    if area = 112//inv labs
 	    {
-	    if inverted && subarea<2
+			if inverted && subarea<2
 	        {
         
-	        area = 112
-	        subarea = 2;
-	        inverted=false;
-	        exit;
+		        area = 112
+		        subarea = 2;
+		        inverted=false;
+		        exit;
 	        }
-	        else if subarea<2
+	        else//Inv labs to wonderlands 1
 	        {
-	        area=6;
-	        subarea=2;
-			inverted=false
-	        exit;
-	        }
-	        else
-	        {
-	        area=7
-	        subarea=1;
-			inverted=false
+				area=8
+				subarea=1;
+				inverted=false
 	        }
     
 	    }
@@ -232,7 +225,8 @@ function scrNextLevel() {
 		if area == 115
 		{
 			area = 4;
-			subarea = 1;
+			subarea = 2;
+			exit;
 		}
 
 	}

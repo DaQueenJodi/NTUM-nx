@@ -198,11 +198,6 @@ if ( ((Player.area == 5 && Player.subarea < 2) || (Player.area == 114 && Player.
 	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
 		instance_create(x+16,y+16,JungleFrozenPlant)
 }
-if ((Player.area == 5 && Player.subarea == 2))
-{
-	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
-		instance_create(x+16,y+16,PinkSheep)
-}
 if Player.area == 102
 {
 	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/5+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/5+random(128)-64+32,Floor)

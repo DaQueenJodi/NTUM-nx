@@ -1,4 +1,4 @@
-alarm[1] = 10+random(5)
+alarm[1] = 7+random(5)//10+5
 if instance_exists(Player)
 {
 	if Player.loops>0
@@ -43,7 +43,7 @@ else if random(4) < 1
 {
 	motion_add(random(360),0.4)
 	walk = 20+random(10)
-	alarm[1] = walk+10+random(30)
+	alarm[1] = walk+10+random(15)
 	gunangle = direction
 	if hspeed > 0
 	right = 1
@@ -55,7 +55,7 @@ else if random(10) < 1
 {
 	motion_add(random(360),0.4)
 	walk = 20+random(10)
-	alarm[1] = walk+10+random(30)
+	alarm[1] = walk+10+random(15)
 	gunangle = direction
 	if hspeed > 0
 	right = 1
