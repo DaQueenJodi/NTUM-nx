@@ -16,3 +16,5 @@ loops = BackCont.loops
 }
 oasis=false;
 
+
+alarm[1] = 60;

@@ -10,7 +10,7 @@ if target > 0
 	if collision_line(x,y,target.x,target.y,Wall,0,0) < 0 && point_distance(target.x,target.y,x,y) < 128
 	{
 		//Tracking
-		gunangle += angle_difference(point_direction(x,y,target.x,target.y),gunangle)*0.7;
+		gunangle += angle_difference(point_direction(x,y,target.x,target.y),gunangle)*other.trackingStrength;
 	}
 }
 snd_play(sndTurretFire,0.1,true);
@@ -18,7 +18,7 @@ sprite_index = spr_fire;
 image_index = 0;
 with instance_create(x,y,EnemyBullet1)
 {
-	motion_add(other.gunangle,7.8)
+	motion_add(other.gunangle,other.projectileSpeed)
 	image_angle = direction
 	team = other.team
 }

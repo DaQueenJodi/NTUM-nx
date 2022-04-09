@@ -24,3 +24,10 @@ fireRate = 3;
 maxAmmo = 8;
 ammo = maxAmmo;
 image_speed = 0;
+trackingStrength = 0.4;
+projectileSpeed = 6;
+if GetPlayerLoops() > 0
+{
+	trackingStrength = 0.7;
+	projectileSpeed = 8;
+}

@@ -15,7 +15,7 @@ if collision_line(x,y,target.x,target.y,Wall,0,0) < 0 and point_distance(x,y,tar
 if point_distance(x,y,target.x,target.y) > 64
 {
 ammo = 4
-alarm[2] = 30
+alarm[2] = 25
 if instance_exists(Player)
 {
 if Player.loops>0

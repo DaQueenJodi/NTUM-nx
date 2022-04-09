@@ -145,31 +145,49 @@ if Player.area = 106
 		name = choose("THERE SHE IS!","BEST FRIEND","JUST WANT A HUG");
 	}
 }
-if Player.area = 4
+if Player.area == 4
 {
 //with instance_create(x,y,Drama)
-name = "HYPER CRYSTAL";
-if random(90)<1
-	name = choose("CRYSTAL'S MOM","HYPER RIFLE?","HYPER DIAMOND","LUIGI");
+	if Player.subarea == 1
+	{
+		name = "HYPER CRYSTAL";
+		if random(90)<1
+			name = choose("CRYSTAL'S MOM","HYPER RIFLE?","HYPER DIAMOND","LUIGI");
+	}
+	else
+	{
+		name = "BIG BAD BAT";
+		if random(90)<1
+			name = choose("THE BIG BAD BAT","SQUARES!","BATMAN","BIG BAT");	
+	}
 }
 if Player.area = 111
 {
-name = "INVERTED HYPER CRYSTAL";
-if random(90)<1
-	name = choose("CRYSTAL'S MOM","HYPER RIFLE?","HYPER DIAMOND","LUIGI");
+	if Player.subarea == 1
+	{
+		name = "INVERTED HYPER CRYSTAL";
+		if random(90)<1
+			name = choose("BLUE CRYSTAL","LIGHTNING FRIGHTNING");
+	}
+	else
+	{
+		name = "INVERTED BIG BAD BAT";
+		if random(90)<1
+			name = choose("PURPLE BAT","THE BAT OF DEATH");	
+	}
 }
 if Player.area = 115
 {
-name = "CURSED HYPER CRYSTAL";
-if random(90)<1
-	name = choose("A MISTAKE","PURPLE MENACE");
+	name = "CURSED HYPER CRYSTAL";
+	if random(90)<1
+		name = choose("A MISTAKE","PURPLE MENACE");
 }
 if Player.area = 114
 {
 //with instance_create(x,y,Drama)
-name = "THE BUSH BOX BOSS"
+name = "BUSH BOX"
 if random(70)<1
-	name = choose("BIG BUSH BOX BOSS","BUSH CUBE","BIG BUSH","BUSHY BOX","PLANT","MISSING FLOWERS");
+	name = choose("BIG BUSH BOX BOSS","BUSH CUBE","BIG BUSH","BUSHY BOX","PLANT","MISSING FLOWERS","IT'S THE BUSH BOX BOSS");
 }
 if Player.area = 5
 {

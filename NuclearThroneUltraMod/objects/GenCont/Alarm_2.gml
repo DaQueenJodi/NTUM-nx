@@ -142,7 +142,7 @@ if Player.area = 100
 	}
 }
 else if (Player.area > 2 or Player.loops > 0) and Player.subarea = 2 && Player.area != 9 && Player.area!=101&&Player.area!=6&&Player.area!=7&&Player.area!=108
-&& Player.area!=102 && Player.area!=103 && Player.area!=104
+&& Player.area!=102 && Player.area!=103 && Player.area!=104 && Player.area != 4
 && Player.area!=112 && Player.area!=113 && Player.area!=114 && Player.area!=115&& Player.area!=116 && UberCont.opt_gamemode != 25
 {
 
@@ -193,7 +193,7 @@ if Player.area == 103
 	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
 		instance_create(x+16,y+16,MushroomLandEntrance)
 }
-if ( ((Player.area == 5 && Player.subarea < 2) || (Player.area == 114 && Player.subarea == 2)) && (Player.skill_got[18] || Player.skeletonlives > 0))
+if ( ((Player.area == 5 && Player.subarea < 3) || (Player.area == 114 && Player.subarea == 2)) && (Player.skill_got[18] || Player.skeletonlives > 0))
 {
 	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
 		instance_create(x+16,y+16,JungleFrozenPlant)

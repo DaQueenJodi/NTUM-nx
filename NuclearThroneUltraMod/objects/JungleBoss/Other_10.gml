@@ -22,6 +22,7 @@ repeat(am)
 	{
 		motion_add(ang,6);
 		alarm[1] *= 0.5;
+		raddrop = 0;
 	}
 	ang += angStep;
 }

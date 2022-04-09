@@ -230,7 +230,7 @@ function scrNextLevel() {
 		}
 
 	}
-	if ( subarea < 3 and area != 2 and area != 4 and area != 105 and area != 106
+	if ( subarea < 3 and area != 2 and area != 105 and area != 106
 	&& !(area = 6 && subarea > 1)//Labs has 2 areas
 	&& !(area = 4 && subarea > 1) //Caves has 2 areas
 	&& !(area = 114 && subarea > 1) )//Jungle has 2 areas

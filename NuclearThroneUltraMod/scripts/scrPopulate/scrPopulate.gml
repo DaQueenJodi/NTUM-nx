@@ -422,6 +422,26 @@ function scrPopulate() {
             instance_create(x, y, CarVenus)
             instance_change(Wind, false)
         }
+		if !instance_exists(CarVenus)
+		{
+			with instance_furthest(10016, 10016,Floor)
+			{
+				instance_create(x+16, y+16, CarVenus)
+			}
+		}
+    }
+	if Player.area = 6 and Player.subarea = 1 {
+        with instance_furthest(10016, 10016, Server) {
+            instance_create(x, y, MushroomLandEntranceLabs)
+            instance_change(Wind, false)
+        }
+		if !instance_exists(MushroomLandEntranceLabs)
+		{
+			with instance_furthest(10016, 10016,Floor)
+			{
+				instance_create(x+16, y+16, MushroomLandEntranceLabs)
+			}
+		}
     }
 
     if !(Player.area == 9 && Player.subarea == 3) {

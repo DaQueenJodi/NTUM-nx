@@ -3,12 +3,17 @@ alarm[1] = actTime + random(actTime);
 scrTarget()
 if target > 0 {
 	var ran = random(100);
+	if ran > 90
+	{
+		//Toggle closeness
+		event_user(4);
+	}
 	if ran > 75
 	{
 		ammo = maxAmmo;
 		event_user(0);
 	}
-	else if ran > 55
+	else if ran > 60
 	{
 		//Do fast spinny attack
 		event_user(1);

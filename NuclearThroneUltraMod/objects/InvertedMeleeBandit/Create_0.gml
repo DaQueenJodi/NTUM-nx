@@ -1,5 +1,5 @@
-raddrop = 11
-maxhealth = 3
+raddrop = 10
+maxhealth = 5
 meleedamage = 0
 size = 1
 bloodempty=0

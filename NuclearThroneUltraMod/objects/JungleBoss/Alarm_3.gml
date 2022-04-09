@@ -2,6 +2,7 @@
 direction = chargeDirection;
 motion_add(chargeDirection,startSpeed);
 speed = startSpeed;
-alarm[1] = chargeDuration;
-walk = chargeDuration-10;
+var cd = chargeDuration+irandom(chargeDurationRandom);
+alarm[1] = cd
+walk = cd-10;
 snd_play(sndJungleAssassinAttack);

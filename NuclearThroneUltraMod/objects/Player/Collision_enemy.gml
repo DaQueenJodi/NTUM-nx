@@ -61,7 +61,7 @@ if other.team != team
 		        image_index = 0
 		        snd_play(snd_hurt, hurt_pitch_variation)
 				if skill_got[8]
-					my_health -= other.meleedamage*0.5;
+					my_health -= round(other.meleedamage*0.5);
 				else
 					my_health -= other.meleedamage
 		        motion_add(point_direction(other.x,other.y,x,y)+180,8)

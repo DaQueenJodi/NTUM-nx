@@ -19,7 +19,9 @@ snd_melee = sndGoldScorpionMelee;
 alarm[1] = 30;
 rotationSpeed = choose(2,-2);
 speedUp = 4;
-distanceToTarget = 132;
+minDistanceToTarget = 96;
+maxDistanceToTarget = 32;
+distanceToTarget = maxDistanceToTarget;
 maxAmmo = 3;
 ammo = maxAmmo;
 fireRate = 8;
@@ -35,7 +37,7 @@ laserOffset = 26;
 myLasers = [];
 
 image_xscale = 1;
-actTime = 12;
+actTime = 14;
 scrTarget();
 angle = random(360);
 if target > 0
@@ -46,3 +48,4 @@ audio_emitter_gain(emitter, 0.8);
 audio_emitter_falloff(emitter, 50, 400, 1);
 
 wkick = 0;
+instance_create(x,y,DramaCamera);

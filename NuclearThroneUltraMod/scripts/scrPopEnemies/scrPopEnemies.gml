@@ -221,7 +221,7 @@ function scrPopEnemies() {
     }
 
     //CAVES
-    if spawnarea = 4 {
+    if spawnarea = 4  && (subarea == 1 || random(3) < 1){
 		var crystal = LaserCrystal
 		if random(30) < 1//random 30
 			crystal = LightningCrystal;
@@ -233,13 +233,13 @@ function scrPopEnemies() {
 			}
 			else if random(12) < 1
 			{
-				repeat(2)
 					instance_create(x + 16, y + 16, Spider)
+					instance_create(x + 16, y + 16, choose(Spider,SquareBat,Spider,Spider,FireBat));
 			}
 	        else if random(12) < 1
-				instance_create(x + 16, y + 16, choose(SquareBat, ExploFreak, RhinoFreak))
+				instance_create(x + 16, y + 16, choose(SquareBat, ExploFreak, RhinoFreak,FireBat))
 	        else
-	            instance_create(x + 16, y + 16, choose(Spider, Spider, Spider, Spider, crystal))
+	            instance_create(x + 16, y + 16, choose(Spider, Spider, Spider, Spider, crystal,Spider, Spider, Spider, Spider, crystal,SquareBat,FireBat))
 		} else {
 			if random(10) < 1
 			{
@@ -272,13 +272,44 @@ function scrPopEnemies() {
 
 
     //INVERTED CAVES
-    if spawnarea = 111 {
-        if random(20) < 1
-        instance_create(x + 16, y + 16, InvertedFireBat)
-        else
-            instance_create(x + 16, y + 16, choose(InvertedSpider, InvertedSpider, InvertedSpider, InvertedSpider, LightningCrystal,
-			InvertedSpider, InvertedSpider, InvertedSpider, InvertedSpider, LightningCrystal,InvertedFireBat))
-
+    if spawnarea = 111  && (subarea == 1 || random(3) < 1){
+		var crystal = LightningCrystal
+		if random(30) < 1//random 30
+			crystal = LaserCrystal;
+		if loops > 0 {
+			if random(10) < 1
+			{
+				repeat(2+irandom(2))
+					instance_create(x + 16, y + 16, InvertedSquareBat)
+			}
+			else if random(12) < 1
+			{
+				instance_create(x + 16, y + 16, InvertedSpider)
+				instance_create(x + 16, y + 16, choose(InvertedSpider,InvertedSquareBat,InvertedSpider,InvertedSpider,InvertedFireBat));
+			}
+	        else if random(12) < 1
+				instance_create(x + 16, y + 16, choose(InvertedSpider, InvertedExploFreak, InvertedRhinoFreak,InvertedFireBat))
+	        else
+			{
+	            instance_create(x + 16, y + 16, choose(InvertedSpider, InvertedSpider, InvertedSpider, InvertedSpider,InvertedFireBat,
+				crystal, crystal,InvertedSpider, InvertedSpider, InvertedSpider, InvertedSpider, crystal,InvertedSquareBat))
+			}
+		} else {
+			if random(10) < 1
+			{
+				repeat(2+irandom(2))
+					instance_create(x + 16, y + 16, InvertedSquareBat)
+			}
+			else if random(10) < 1
+			{
+				repeat(2)
+					instance_create(x + 16, y + 16, InvertedSpider)
+			}
+	        else
+	            instance_create(x + 16, y + 16, choose(InvertedSpider, InvertedSpider, InvertedSpider, InvertedSpider, crystal,
+				InvertedSpider, InvertedSpider, InvertedSpider, InvertedSpider, crystal,InvertedSquareBat))
+		}
+       
     }
 
     //FROZEN CITY
@@ -300,7 +331,6 @@ function scrPopEnemies() {
 				instance_create(x + 16, y + 16,DiscGuy);
 			}
 		}
-        
     }
 
     //INVERTED FROZEN CITY

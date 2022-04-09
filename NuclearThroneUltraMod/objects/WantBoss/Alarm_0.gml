@@ -6,7 +6,8 @@ if target > 0
 	var spawned = false;
 	with Wall
 	{
-		if collision_line(x,y,other.target.x,other.target.y,Wall,true,true) < 0 and point_distance(x,y,other.target.x,other.target.y) > 110 and point_distance(x,y,other.target.x,other.target.y) < 120 and ((!place_free(x-16,y) and !place_free(x+16,y)) or (!place_free(x,y+16) and !place_free(x,y-16)))
+		if collision_line(x,y,other.target.x,other.target.y,Wall,true,true) < 0 and point_distance(x,y,other.target.x,other.target.y) > 110 
+		and point_distance(x,y,other.target.x,other.target.y) < 120 and ((!place_free(x-16,y) and !place_free(x+16,y)) or (!place_free(x,y+16) and !place_free(x,y-16)))
 		{
 			instance_create(x,y,CanSpawnBoss)
 			spawned = true;
@@ -51,8 +52,8 @@ if target > 0
 			    }
 			    else if other.area=106 && other.loops>0 && instance_exists(Floor)//inverted scrapyard
 			    {
-			    with instance_nearest(instance_furthest(x+random(120)-60,y+random(120)-60,Floor),instance_furthest(x+random(120)-60,y+random(120)-60,Floor),Floor)
-			    instance_create(x+16,y+16,InvertedAssassinBoss);
+					with instance_nearest(instance_furthest(x+random(120)-60,y+random(120)-60,Floor),instance_furthest(x+random(120)-60,y+random(120)-60,Floor),Floor)
+						instance_create(x+16,y+16,InvertedAssassinBoss);
 			    }
 			    else if other.area=101||other.area=2||other.area == 110
 					instance_create(x,y,BigFish);//oasis

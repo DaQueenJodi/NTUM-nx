@@ -49,14 +49,12 @@ with BigFish
 		other.cam=false;
 }
 
-if cam
+if !(instance_exists(Player) && Player.area == 2 || Player.area == 110)
 	with instance_create(x,y,DramaCamera)
 	{
 		name = "BIG FISH";
-		if instance_exists(Player) && Player.area == 2 || Player.area == 110
-			name = "SEWER FISH";
 		if random(80) < 1
-			name = choose("O'L BITEY","TRASH DWELLER","FISH'S UNCLE?");
+			name = choose("O'L BITEY","TRASH DWELLER","FISH'S UNCLE?","SEWER FISH");
 	}
 
 friction = 0.8;

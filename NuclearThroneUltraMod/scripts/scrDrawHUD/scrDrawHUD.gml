@@ -326,6 +326,14 @@ function scrDrawHUD() {
 	draw_sprite_part_smart(spr,1,sprite_get_xoffset(spr),sprite_get_yoffset(spr)-8,wid,14,__view_get( e__VW.XView, 0 )+24,__view_get( e__VW.YView, 0 )+16,c_black,1)
 	draw_sprite_part_smart(spr,1,sprite_get_xoffset(spr),sprite_get_yoffset(spr)-8,max(0,wid*min(Player.wep_load[Player.wep],Player.reload/Player.wep_load[Player.wep])),14,__view_get( e__VW.XView, 0 )+24,__view_get( e__VW.YView, 0 )+16,c_white,0.5)
 
+	//Debug
+	if UberCont.public = 0 && instance_exists(Player)
+	{
+		var xx = __view_get( e__VW.XView, 0 )+14
+		var yy = __view_get( e__VW.YView, 0 )+60
+		draw_text(xx+32,yy,string(Player.area)+ " - "+string(Player.subarea)+"\nhard: "+string(Player.hard));
+	}
+
 	//Ultramod
 	if Player.ultramod != 0
 	{

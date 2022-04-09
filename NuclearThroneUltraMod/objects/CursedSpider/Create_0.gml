@@ -1,6 +1,6 @@
 raddrop = 9
-maxhealth = 25//18
-meleedamage = 3
+maxhealth = 26//18
+meleedamage = 4
 size = 1
 
 event_inherited()
@@ -16,7 +16,7 @@ snd_dead = choose(sndBanditDie, sndRatDie, sndRavenDie, sndScorpionDie, sndBigMa
 //behavior
 walk = 0
 alarm[1] = 30+random(90)
-maxspeed = 3
+maxspeed = 3.5
 
 if instance_exists(Player)
 {

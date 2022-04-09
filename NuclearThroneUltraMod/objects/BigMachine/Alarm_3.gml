@@ -1,6 +1,7 @@
 /// @description close
 spr_idle=sprBigMachineClose;
 spr_walk=sprBigMachineClose;
+spr_hurt = sprBigMachineClosedHurt
 image_index=0;
 mask_index=mskBigMachine;
 

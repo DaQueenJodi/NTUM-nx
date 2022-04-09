@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprInvertedBigMachineIdle","path":"sprites/sprInvertedBigMachineIdle/sprInvertedBigMachineIdle.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprInvertedBigMachineIdle",
     "tags": [],
     "resourceType": "GMSequence",
   },
