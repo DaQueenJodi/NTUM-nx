@@ -4,10 +4,8 @@ meleedamage = 3
 size = 4
 
 event_inherited()
-if instance_exists(Player){
-my_health=round( (1+(Player.loops*0.2))*my_health )//bandit loop 1: 1.1*4= 5(rounded up)
-maxhealth=my_health;
-}
+alarm[10] = 0;
+
 spr_idle = sprChesireCatIdle
 spr_walk = sprChesireCatIdle
 spr_hurt = sprChesireCatHurt

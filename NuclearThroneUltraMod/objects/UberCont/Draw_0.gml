@@ -1,6 +1,6 @@
 var yy = __view_get( e__VW.YView, 0 );
 
-if paused = 1
+if isPaused = 1
 {
 var res = scrAreaName(area,subarea,loops);
 var text = res[0];

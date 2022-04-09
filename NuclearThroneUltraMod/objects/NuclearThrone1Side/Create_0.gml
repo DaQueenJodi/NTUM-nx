@@ -7,6 +7,7 @@ raddrop = 0;
 // Inherit the parent event
 event_inherited();
 alarm[1] = 0;
+alarm[10] = 0;
 spr_idle = sprNothingLeft;
 spr_hurt = sprNothingLeftHurt;
 snd_hurt = sndNothingHurtHigh;

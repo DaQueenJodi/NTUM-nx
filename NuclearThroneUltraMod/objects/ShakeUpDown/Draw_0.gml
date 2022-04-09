@@ -20,7 +20,7 @@ screenshake400=false;
 }
 draw_set_valign(fa_top);
 //jokes now
-if UberCont.paused=0
+if UberCont.isPaused=0
 {
 if UberCont.opt_shake=4
 draw_text(x+20,y,string_hash_to_newline("WHAT!!!"))

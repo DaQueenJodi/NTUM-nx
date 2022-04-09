@@ -4,7 +4,7 @@ meleedamage = 5
 size = 6;
 
 event_inherited()
-
+alarm[10] = 0;
 spr_idle = sprBigBadBatIdle
 spr_walk = sprBigBadBatIdle
 spr_hurt = sprBigBadBatHurt

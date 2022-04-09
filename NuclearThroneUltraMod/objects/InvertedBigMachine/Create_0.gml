@@ -25,7 +25,10 @@ image_speed=0.4;
 
 instance_create(x+64,y+32,InvertedBigMachineTurret);
 
-instance_create(x-64,y+32,InvertedBigMachineTurret);
+with instance_create(x-64,y+32,InvertedBigMachineTurret)
+{
+	alarm[1] += 5;	
+}
 
 
 
@@ -40,18 +43,34 @@ if instance_exists(Player)
 {
 if Player.loops>0
 {//LOOP
-instance_create(x-32,y+32,InvertedBigMachineTurret);
-instance_create(x+32,y+32,InvertedBigMachineTurret);
+with instance_create(x-32,y+32,InvertedBigMachineTurret)
+{
+	alarm[1] += 10;
+}
+
+with instance_create(x+32,y+32,InvertedBigMachineTurret)
+{
+	alarm[1] += 15;
+}
+
 
 }
 }
 
 if instance_exists(Player)
 {
-if Player.loops>2
+if Player.loops>3
 {//LOOP
-instance_create(x-16,y-16,InvertedBigMachineTurret);
-instance_create(x+16,y-16,InvertedBigMachineTurret);
+with instance_create(x-16,y-16,InvertedBigMachineTurret)
+{
+	alarm[1] += 20;
+}
+
+with instance_create(x+16,y-16,InvertedBigMachineTurret)
+{
+	alarm[1] += 25;	
+}
+
 }
 }
 

@@ -10,9 +10,9 @@ function scrNextLevel() {
 
 	if area = 104//YV CRIB
 	{
-		area=lastarea;
-		if subarea==1&&area!=8//LAST AREA
-			area+=1;
+		area = lastarea;
+		//if subarea==1&&area!=9//LAST AREA
+		//	area+=1;
 	}
 	//show_message("inverted: "+ string(inverted)+"#area :"+string(area));
 
@@ -91,16 +91,9 @@ function scrNextLevel() {
 	        inverted=false;
 	        exit;
 	        }
-	        else if subarea < 2
+	        else//inv scrap to vulcano
 	        {
-	        area = 7;
-	        subarea=1;
-			inverted=false
-	        exit;
-	        }
-	        else
-	        {
-	        area=4;
+	        area=7;
 	        subarea=1;
 			inverted=false
 	        exit;
@@ -119,17 +112,10 @@ function scrNextLevel() {
 	        inverted=false;
 	        exit;
 	        }
-	        else if subarea<2
+	        else//Inv frozen city to wonderland
 	        {
-	        area=5;
-	        subarea=3;
-			inverted=false
-	        exit;
-	        }
-	        else
-	        {
-	        area=6;
-	        subarea=1;
+	        area=8;
+	        subarea=2;
 			inverted=false
 	        exit;
 	        }
@@ -139,24 +125,17 @@ function scrNextLevel() {
 	    if area = 108//inv vulcano bring to dragon
 	    {
 			//TODO
-	        if inverted && subarea<2
+	        if inverted && subarea<3
 	        {
 	        //inverted purple dragon
 	        area = 108
-	        subarea = 2;
+	        subarea = 3;
 	        inverted=false;
 	        exit;
 	        }
-	        else if subarea<2
+	        else//Inverted vulcano bring to banditland
 	        {
-	        area=7;
-	        subarea=2;
-	        inverted=false;
-	        exit;
-	        }
-	        else
-	        {
-	        area=8;
+	        area=113;
 	        subarea=1;
 			inverted=false
 	        exit;
@@ -164,10 +143,10 @@ function scrNextLevel() {
     
 	    }
     
-	    if area = 109//inv wonderland bring to cheshire cat
+	    if area = 109//inv wonderland
 	    {
 			//TODO
-	        if inverted && subarea<2
+	        if inverted && subarea<3
 	        {
 	        //inverted chesire cat
 	        area = 109
@@ -175,17 +154,10 @@ function scrNextLevel() {
 	        inverted=true;
 	        exit;
 	        }
-	        else if subarea<2
-	        {
-	        area=8;
-	        subarea=3;
-			inverted=false
-	        exit;
-	        }
-	        else
+	        else//Skip one palace
 	        {
 	        area=9;
-	        subarea=1;
+	        subarea=2;
 			inverted=false
 	        }
         
@@ -203,15 +175,22 @@ function scrNextLevel() {
     
 	    if area = 111//inv crystal cavesbring from caves to lil hunter
 	    {
-    
-	    area=5
-	    subarea=3;
-    
-	    inverted=false;
+			if inverted && subarea<3
+			{
+				area = 111;
+				subarea = 2;
+				inverted=false;
+			}
+			else//Skip one palace
+			{
+				area=9
+				subarea=2;
+				inverted=false;
+			}
 	    exit;
 	    }
     
-	    if area = 112//inv labs bring from labs to dragon
+	    if area = 112//inv labs bring from labs to dragon//LEFT OFF HERE
 	    {
 	    if inverted && subarea<2
 	        {

@@ -4782,8 +4782,8 @@ function scrWeapons() {
 	wep_name[433] = "THE REDIRECTOR"
 	wep_type[433] = 5
 	wep_auto[433] = 0
-	wep_load[433] = 22
-	wep_cost[433] = 1
+	wep_load[433] = 25
+	wep_cost[433] = 2
 	wep_sprt[433] = sprBladeGun
 	wep_area[433] = 14
 	wep_text[433] = "redirects all enemy bullets"

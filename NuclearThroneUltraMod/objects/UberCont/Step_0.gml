@@ -1,13 +1,13 @@
-if paused = 1
+if isPaused = 1
 {
 //QUICK RESTART
-if (canRestart && paused == 1 && !instance_exists(PlayerSpawn) && !instance_exists(Player) && (keyboard_check_pressed(ord("R")) || gamepad_button_check(0,gp_face3)) )//(gamepad_button_check(0,gp_stickl) && gamepad_button_check(0,gp_stickr)) )
+if (canRestart && isPaused == 1 && !instance_exists(PlayerSpawn) && !instance_exists(Player) && (keyboard_check_pressed(ord("R")) || gamepad_button_check(0,gp_face3)) )//(gamepad_button_check(0,gp_stickl) && gamepad_button_check(0,gp_stickr)) )
 {
 	with SurvivalWave
 		instance_destroy();
 instance_activate_all()
 audio_stop_all();
-paused = 0
+isPaused = 0
 if instance_exists(Player)
 {
 kills=Player.kills
@@ -65,13 +65,13 @@ Cursor.image_index=UberCont.opt_crosshair;
 }else{
 Cursor.image_index=UberCont.opt_crosshair;}
 
-paused = 0
+isPaused = 0
 }
 //RETURN TO MENU
 if keyboard_check_pressed(vk_enter) or gamepad_button_check(0,gp_face4) && !instance_exists(PlayerSpawn)
 {
 	instance_activate_all()
-	paused = 0
+	isPaused = 0
 	if instance_exists(Player)
 	kills=Player.kills
 	with Player
@@ -146,14 +146,14 @@ instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+s
 instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_width(string_hash_to_newline("OFF")),__view_get( e__VW.YView, 0 )+214+optY,TimerToggle);
 
 
-paused = 1
+isPaused = 1
 }
 }
 }
 
 ///Timer
 
-if paused == 0 && !instance_exists(GenCont) && !instance_exists(Menu) && !instance_exists(Vlambeer) &&
+if isPaused == 0 && !instance_exists(GenCont) && !instance_exists(Menu) && !instance_exists(Vlambeer) &&
 (instance_exists(Player) || instance_exists(PlayerSpawn) && !instance_exists(PauseTimer)) && !instance_exists(PauseTimer)
 {
 	time_microseconds+=02;
@@ -178,7 +178,7 @@ if paused == 0 && !instance_exists(GenCont) && !instance_exists(Menu) && !instan
 }
 
 ///CAPTURE DA MOUSE AIRHORN.WAV
-if paused = 0 and opt_mousecp = 1 and window_has_focus()=true && !instance_exists(Menu) && !instance_exists(GenCont) && !instance_exists(LevCont)&& !instance_exists(Vlambeer)//and (mouse_x < view_xview or mouse_y < view_yview or mouse_x > view_xview+view_wview or mouse_y > view_yview+view_hview)
+if isPaused = 0 and opt_mousecp = 1 and window_has_focus()=true && !instance_exists(Menu) && !instance_exists(GenCont) && !instance_exists(LevCont)&& !instance_exists(Vlambeer)//and (mouse_x < view_xview or mouse_y < view_yview or mouse_x > view_xview+view_wview or mouse_y > view_yview+view_hview)
 {
 
 var mox=display_mouse_get_x();

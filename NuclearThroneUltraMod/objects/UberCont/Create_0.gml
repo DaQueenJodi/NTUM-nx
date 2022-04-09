@@ -18,7 +18,7 @@ unlocked=69;
 
 //DEFAULT STUFF
 race = 0
-paused = 0
+isPaused = 0
 alarm[0] = 30
 	//Init variable that we load
 tot_time = 0;
@@ -67,10 +67,9 @@ seedOffset = 0;
 wallsBroken = 0;
 
 scrInit();
-
-window_set_fullscreen(opt_fulscrn)
 window_set_min_width(640);
 window_set_min_height(480);
+window_set_fullscreen(opt_fulscrn)
 if !opt_fulscrn
 	window_set_size(640*2,480*2);
 canRestart = true;

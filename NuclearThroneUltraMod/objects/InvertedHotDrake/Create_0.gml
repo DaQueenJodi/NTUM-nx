@@ -7,6 +7,7 @@ if UberCont.loops>1
 maxhealth=3400;
 
 event_inherited()
+alarm[10] = 0;
 /* THIS IN BEGIN STEP!
 if instance_exists(Player){
 my_health=round( (1+(Player.loops*0.2))*my_health )//bandit loop 1: 1.1*4= 5(rounded up)

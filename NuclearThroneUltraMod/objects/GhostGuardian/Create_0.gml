@@ -12,6 +12,7 @@ spr_dead = sprGhostGuardianDead;
 
 
 //behavior
+alarm[10] = 0;
 alarm[1] = 30+random(90)
 direction = random(360);
 friction = 1.5;

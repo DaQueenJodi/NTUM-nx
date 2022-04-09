@@ -1373,7 +1373,7 @@ microseconds=0;
 var h_point = gamepad_axis_value(0, gp_axisrh);
 var v_point = gamepad_axis_value(0, gp_axisrv);
 
-if ((h_point != 0) || (v_point != 0))//&&!instance_exists(GenCont)&&!instance_exists(LevCont)&&UberCont.paused=0
+if ((h_point != 0) || (v_point != 0))//&&!instance_exists(GenCont)&&!instance_exists(LevCont)&&UberCont.isPaused=0
 {
 var dir = point_direction(0,0, h_point, v_point);
 //var dif = angle_difference(pdir, image_angle);
