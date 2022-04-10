@@ -9,7 +9,7 @@ function scrUltraModDescription(um){
 			umn = "UNKNOWN";
 		break;
 		case ultramods.bulletShotgun:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			BULLETS <WITH> PELLETS
 			DIRECTOR BULLETS <WITH> DIRECTOR PELLETS
 			FLAME PELLETS <WITH> FLAME BULLETS
@@ -29,32 +29,32 @@ function scrUltraModDescription(um){
 			ULTRA MEGA LASERS <TO> 4 ULTRA BULLETS"
 		break;
 		case ultramods.lightningKraken:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			LIGHTNING <WITH> KRAKEN"
 		break;
 		case ultramods.toxicFire:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			TOXIC <WITH> FIRE
 			ULTRA TOXIC <WITH> ULTRA FIRE"
 		break;
 		case ultramods.shotgunElectro:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			SHOTGUN PELLETS <WITH> ELECTRO BALLS"
 		break;
 		case ultramods.plasmaBolt:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			PLASMA <WITH> BOLTS
 			BOUNCER PLASMA <WITH> BOUNCER BOLTS
 			HEAVY BOLTS <TO> PLASMA CANNON BALLS"
 		break;
 		case ultramods.plasmaRocket:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			PLASMA <WITH> ROCKETS
 			BOUNCER PLASMA <WITH> BOUNCER ROCKETS
 			NUKES <TO> PLASMA CANNON BALLS"
 		break;
 		case ultramods.bloodMelee:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			MELEE SLASHES/SHANKS <WITH> 
 			MULTIPLE HEAVY BLOOD BULLETS
 			
@@ -66,64 +66,64 @@ function scrUltraModDescription(um){
 		break;
 		
 		case ultramods.rocketBolt:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			ROCKETS <WITH> BOLTS
 			BOUNCER PLASMA <WITH> BOUNCER ROCKETS
 			NUKES <TO> PLASMA CANNON BALLS"
 		break;
 		case ultramods.laserBolt:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			LASERS <WITH> BOLTS
 			BOUNCER LASERS <WITH> BOUNCER BOLTS
 			HEAVY BOLTS <WITH> HEAVY BOLTS"
 		break
 		case ultramods.seekerMissile:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			SEEKERS <WITH> MISSILES"
 		break;
 		case ultramods.shotgunBolt:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			SHOTGUN PELLETS <WITH> SPLINTERS
 			SLUGS <WITH> BOLTS
 			HEAVY SLUGS <WITH> HEAVY BOLTS
 			ULTRA SPLINTER <WITH> ULTRA PELLET"
 		break;
 		case ultramods.splinterBullet:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			SPLINTERS <WITH> BULLETS
 			ULTRA SPLINTERS <WITH> ULTRA BULLETS"
 		break;
 	
 	
 		case ultramods.bulletPlasma:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			BULLETS <WITH> MINI PLASMA
 			HEAVY BULLETS <WITH> PLASMA
 			BOUNCER BULLETS <WITH> BOUNCER PLASMA"
 		break;
 		case ultramods.splinterElectro:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			SPLINTERS <WITH> ELECTRO"
 		break;
 		case ultramods.bladeGrenade:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			BLADES <WITH> GRENADES"
 		break;
 		
 		case ultramods.toxicSwarm:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			TOXIC <WITH> SWARM"
 		break;//hesitant about this one but lets just play it out for an update
 		case ultramods.bloodExplosionExplosion:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			BLOOD EXPLOSIONS <WITH> EXPLOSIONS"
 		break;
 		case ultramods.snowSwarm:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			SNOW <WITH> SWARM"
 		break;
 		case ultramods.morphFire:
-			umn = @"SWAPS\n
+			umn = @"SWAPS
 			MORPH <WITH> FIRE"
 		break;
 		
