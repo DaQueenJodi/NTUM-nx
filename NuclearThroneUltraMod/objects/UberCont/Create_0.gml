@@ -23,6 +23,7 @@ alarm[0] = 30
 	//Init variable that we load
 tot_time = 0;
 opt_gamepad=0;//for interaction sprites
+opt_ammoicon = true;
 
 with KeyCont
 instance_destroy()
@@ -73,35 +74,36 @@ window_set_fullscreen(opt_fulscrn)
 if !opt_fulscrn
 	window_set_size(640*2,480*2);
 canRestart = true;
+canDoChallenge = true;
 
 enum ultramods {
 	nothing,
 	
-	bulletPellet,
-	laserHeavyBullet,
+	bulletShotgun,
+	laserBullet,
 	lightningKraken,
 	toxicFire,
 	
-	pelletElectro,
-	boltPlasma,
+	shotgunElectro,
+	plasmaBolt,
 	plasmaRocket,
-	bloodMelee,
-	//grenadeRocket,
+	bulletPlasma,
 	
-	boltRocket,
-	boltLaser,
-	heavyBoltNuke,
+	
+	rocketBolt,
+	laserBolt,
+	shotgunBolt,
 	seekerMissile,
 	
-	slugFatBullet,
-	boltSlug,
 	splinterBullet,
-	splinterPellet,
-	
 	splinterElectro,
-	bulletMiniPlasma,
-	heavyBoltMegaLaser,
+	bloodMelee,
 	bladeGrenade,
+	
+	toxicSwarm,
+	bloodExplosionExplosion,
+	snowSwarm,
+	morphFire
 	
 }
 maxUltramod = 16;
@@ -110,3 +112,4 @@ casualModeHPIncrease = 2;
 
 hadBossIntro = false;
 snd_wallbreak = sndWallBreak;
+holdExplainTimer = 0;

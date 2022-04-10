@@ -1,6 +1,6 @@
 /// @description ultramod
 var um = GetPlayerUltramod();
-if um == ultramods.boltPlasma
+if um == ultramods.plasmaBolt
 {
 	with Player
 	{
@@ -19,7 +19,7 @@ if um == ultramods.boltPlasma
 		alarm[11] = 0;
 	}
 	instance_destroy(id,false);
-} else if um == ultramods.boltRocket
+} else if um == ultramods.rocketBolt
 {
 	snd_play_fire(sndRocket);
 	with instance_create(x,y,Rocket)
@@ -32,7 +32,7 @@ if um == ultramods.boltPlasma
 		alarm[11] = 0;
 	}
 	instance_destroy(id,false);
-} else if um == ultramods.boltLaser
+} else if um == ultramods.laserBolt
 {
 	with Player
 	{
@@ -50,7 +50,7 @@ if um == ultramods.boltPlasma
 		event_perform(ev_alarm,0);
 	}
 	instance_destroy(id,false);
-} else if um == ultramods.boltSlug
+} else if um == ultramods.shotgunBolt
 {
 	snd_play_fire(sndSlugger);
 	instance_destroy(id,false);

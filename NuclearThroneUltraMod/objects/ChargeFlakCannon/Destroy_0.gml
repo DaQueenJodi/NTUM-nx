@@ -6,7 +6,7 @@ with instance_create(x,y,FlakBullet)
 motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.creator.accuracy,11+random(2))
 image_angle = direction
 team = other.team
-bullets=other.rate*1.4;}
+bullets=other.rate*1.5;}
 
 
 BackCont.viewx2 += lengthdir_x(rate,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake

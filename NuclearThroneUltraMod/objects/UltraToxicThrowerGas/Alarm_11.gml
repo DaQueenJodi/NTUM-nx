@@ -12,3 +12,4 @@ if GetPlayerUltramod() == ultramods.toxicFire
 	}
 	instance_destroy(id,false);
 }
+//TODO ultra swarm

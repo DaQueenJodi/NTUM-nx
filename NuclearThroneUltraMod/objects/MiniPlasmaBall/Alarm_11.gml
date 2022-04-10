@@ -1,5 +1,5 @@
 /// @description ultramod
-if GetPlayerUltramod() == ultramods.bulletMiniPlasma
+if GetPlayerUltramod() == ultramods.bulletPlasma
 {
 	snd_play_fire(sndMachinegun);
 	with instance_create(x,y,Bullet1)

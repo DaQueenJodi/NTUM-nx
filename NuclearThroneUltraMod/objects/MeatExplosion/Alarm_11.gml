@@ -1,6 +1,6 @@
 /// @description ultramod
 var um = GetPlayerUltramod()
-if um == ultramods.bloodMelee
+if um == ultramods.bloodExplosionExplosion
 {
 	UberCont.ultramodSwap = false;
 	snd_play(sndHammer,0.1,true);
@@ -21,6 +21,20 @@ if um == ultramods.bloodMelee
 		motion_add(direction,2+longarms)
 		image_angle = direction;
 		team = other.team
+	}
+	UberCont.ultramodSwap = true;
+	instance_destroy(id,false);
+}else if um == ultramods.bloodMelee
+{
+	UberCont.ultramodSwap = false;
+	if !audio_is_playing(sndExplosion)
+		snd_play(sndExplosion,0.1,true)
+	with instance_create(x,y,Explosion)
+	{
+		direction = other.direction;
+		image_angle = other.image_angle;
+		speed = other.speed;
+		alarm[11] = 0;
 	}
 	UberCont.ultramodSwap = true;
 	instance_destroy(id,false);

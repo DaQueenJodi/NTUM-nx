@@ -19,11 +19,11 @@ if um == ultramods.plasmaRocket
 		alarm[11] = 0;
 	}
 	instance_destroy(id,false);
-} if um == ultramods.boltRocket
+} if um == ultramods.rocketBolt
 {
 	audio_stop_sound(sndRocket);
 	snd_play_fire(sndCrossbow)
-	with instance_create(x,y,Bolt)
+	with instance_create(x,y,BouncerBolt)
 	{
 		scrCopyWeaponMod(other);
 		direction = other.direction;

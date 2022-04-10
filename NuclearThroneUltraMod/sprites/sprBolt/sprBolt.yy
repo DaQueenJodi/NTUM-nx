@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBolt","path":"sprites/sprBolt/sprBolt.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprBolt",
     "tags": [],
     "resourceType": "GMSequence",
   },

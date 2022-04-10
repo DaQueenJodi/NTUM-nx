@@ -2755,35 +2755,35 @@ function scrFire() {
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)*other.accuracy
 	team = other.team
 	image_yscale+=0.2;
-	bounce=true;
+	isUltra=true;
 	event_perform(ev_alarm,0)
 	}
 	with instance_create(x,y,Laser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)+7*other.accuracy
 	team = other.team
 	image_yscale+=0.2;
-	bounce=true;
+	isUltra=true;
 	event_perform(ev_alarm,0)
 	}
 	with instance_create(x,y,Laser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)+14*other.accuracy
 	team = other.team
 	image_yscale+=0.2;
-	bounce=true;
+	isUltra=true;
 	event_perform(ev_alarm,0)
 	}
 	with instance_create(x,y,Laser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)-7*other.accuracy
 	team = other.team
 	image_yscale+=0.2;
-	bounce=true;
+	isUltra=true;
 	event_perform(ev_alarm,0)
 	}
 	with instance_create(x,y,Laser)
 	{image_angle = point_direction(x,y,mouse_x,mouse_y)+(random(2)-1)-14*other.accuracy
 	team = other.team
 	image_yscale+=0.2;
-	bounce=true;
+	isUltra=true;
 	event_perform(ev_alarm,0)
 	}
 

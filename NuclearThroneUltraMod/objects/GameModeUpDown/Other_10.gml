@@ -35,4 +35,5 @@ else
 	dailyDone = false;
 	UberCont.useSeed = false;
 	UberCont.canRestart = true;	
+	UberCont.canDoChallenge = true;
 }

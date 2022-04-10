@@ -1,6 +1,6 @@
 /// @description ultramod
 var um = GetPlayerUltramod()
-if um == ultramods.bulletPellet
+if um == ultramods.bulletShotgun
 {
 	with instance_create(x,y,Bullet6)
 	{
@@ -16,7 +16,7 @@ if um == ultramods.bulletPellet
 {
 	instance_destroy(id,false);
 	snd_play_fire(sndSplinterGun)
-	with instance_create(x,y,Splinter)
+	with instance_create(x,y,StormSplinter)
 	{
 		scrCopyWeaponMod(other);
 		direction = other.direction;
@@ -26,7 +26,7 @@ if um == ultramods.bulletPellet
 		alarm[11] = 0;
 	}
 }
-else if um == ultramods.bulletMiniPlasma
+else if um == ultramods.bulletPlasma
 {
 	instance_destroy(id,false);
 	with Player

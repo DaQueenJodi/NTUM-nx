@@ -7,12 +7,12 @@ dmg = 3;
 target=0;
 
 hits=3;
-mxSpd = 5;
+mxSpd = 4;
 if instance_exists(Player){
 if Player.skill_got[21] = 1//bolt marrow
 {
 hits+=choose(1,1,2);
-mxSpd ++;
+mxSpd +=2;
 if Player.race == 25
 	mxSpd += 0.2;
 if Player.betterboltmarrow > 0
@@ -25,4 +25,4 @@ hits+=1;
 alarm[0]=6
 }
 
-
+alarm[11] = 1;

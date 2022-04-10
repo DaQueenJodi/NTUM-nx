@@ -1117,7 +1117,7 @@ function scrPowers() {
 	if ammo[wep_type[wep]] >= wep_cost[wep]*(2+Player.skill_got[5]*2) and rad>=wep_rad[bwep]*(2+Player.skill_got[5]*2)// Check ammo of our secondary wep
 	{
 
-	    if (1.5>random(wep_cost[wep]) )//the random value less likely when the other weapons cost is a lot
+	    if (2>random(wep_cost[wep]*0.7) )//the random value less likely when the other weapons cost is a lot
 	    {
 	    repeat(2+Player.skill_got[5]*2)
 	        {

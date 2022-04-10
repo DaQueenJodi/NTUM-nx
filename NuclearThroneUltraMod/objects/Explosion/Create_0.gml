@@ -1,25 +1,37 @@
 image_speed = 0.4
 dmg = 5;
-//seperate mask for players
-if object_index!=ExplosionNonLethal
+
+if UberCont.ultramodSwap
 {
-with instance_create(x,y,ExplosionMask)
-	owner = other.id;
+	var um = GetPlayerUltramod()
+	if um == ultramods.bloodExplosionExplosion
+	{
+		mask_index = mskPickupThroughWall;
+		visible = false;
+		alarm[11] = 1;
+	}
 }
-with instance_create(x,y,Smoke)
-motion_add(random(360),1+random(2))
-
-ang = random(360)
-var angstep = 360/4
-repeat(4)
+else
 {
-with instance_create(x,y,Dust)
-motion_add(other.ang,6)
-ang += angstep;
+	//seperate mask for players
+	if object_index!=ExplosionNonLethal
+	{
+	with instance_create(x,y,ExplosionMask)
+		owner = other.id;
+	}
+	with instance_create(x,y,Smoke)
+	motion_add(random(360),1+random(2))
+
+	ang = random(360)
+	var angstep = 360/4
+	repeat(4)
+	{
+	with instance_create(x,y,Dust)
+	motion_add(other.ang,6)
+	ang += angstep;
+	}
+	BackCont.shake += 7
 }
-
-
-BackCont.shake += 7
 
 team = -1
 if instance_exists(Player){

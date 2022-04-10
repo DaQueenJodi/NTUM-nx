@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBigSkull","path":"sprites/sprBigSkull/sprBigSkull.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprBigSkull",
     "tags": [],
     "resourceType": "GMSequence",
   },

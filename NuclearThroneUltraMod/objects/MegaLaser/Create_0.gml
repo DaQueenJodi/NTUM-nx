@@ -21,6 +21,6 @@ dmg=2.3
 img = -0.5;
 aimed=false;
 Direction=point_direction(x,y,mouse_x,mouse_y);
-
+isUltra = false;
 isog = true;
 canBeMoved = false;

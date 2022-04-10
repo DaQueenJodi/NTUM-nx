@@ -4,7 +4,7 @@ target = -1
 goForIt=false;
 right = choose(1,-1)
 
-snd_play(sndSaplingSpawn);
+snd_play(sndSaplingSpawn,0.1,true);
 
 /*maxhealth = 12
 meleedamage = 0

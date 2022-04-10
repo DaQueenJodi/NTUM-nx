@@ -12,7 +12,7 @@ if um == ultramods.splinterBullet
 		team = other.team;
 		alarm[11] = 0;
 	}
-} else if um == ultramods.splinterPellet
+} else if um == ultramods.shotgunBolt
 {
 	instance_destroy(id,false);
 	with instance_create(x,y,Bullet2)

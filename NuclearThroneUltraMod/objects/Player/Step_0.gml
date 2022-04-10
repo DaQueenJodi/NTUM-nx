@@ -1215,7 +1215,7 @@ if area=108&&race!=18&&race!=24//angel & elementor don't bother with this stuff
     if frozen<1
 		getFrozen++;
     
-    if getFrozen>24
+    if getFrozen>24 && alarm[3] < 1
     {
 		my_health -= 1;
 		snd_play_2d(snd_hurt);

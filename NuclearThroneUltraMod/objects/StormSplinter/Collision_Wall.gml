@@ -3,7 +3,7 @@ if wallHits < 1
 	wallHits ++;
 	move_bounce_solid(true);
 	image_angle = direction;
-	speed += 2;
+	speed = clamp(speed*2,6,24);
 	if !audio_is_playing(sndSpark1)&&!audio_is_playing(sndSpark2)
 	snd_play(choose(sndSpark1,sndSpark2))
 	with instance_create(x,y,Lightning)

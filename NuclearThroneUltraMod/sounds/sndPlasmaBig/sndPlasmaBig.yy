@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndPlasmaBig",
-  "duration": 0.0,
+  "duration": 0.96,
   "parent": {
     "name": "plasma",
     "path": "folders/Sounds/Weapons/Energy/plasma.yy",

@@ -8,6 +8,14 @@ function scrEnemyDeathEvent(){
 	}
 	if instance_exists(Player)
 	{
+		//PLANT ULTRA B KILLER
+		if Player.ultra_got[18] == 1
+		{
+			if place_meeting(x,y,Tangle)
+			{
+				instance_create(x,y,Sapling);
+			}
+		}
 		scrLuckyShot();
 		BloodLust();
 		var isdoc = Player.race == 25;
@@ -84,14 +92,6 @@ function scrEnemyDeathEvent(){
 				if rage>350//MAX RAGE
 					rage=350;//340
 			}
-			//PLANT ULTRA B KILLER
-			if ultra_got[18] == 1
-			{
-			    if place_meeting(x,y,Tangle)
-			    {
-					instance_create(x,y,Sapling);
-			    }
-		    }
 			//Chicken Ultra A harder to kill
 			if ultra_got[33] == 1
 		    {

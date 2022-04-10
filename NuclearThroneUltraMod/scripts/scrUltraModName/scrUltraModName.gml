@@ -9,13 +9,13 @@ function scrUltraModName(um){
 			umn[0] = "UNKNOWN";
 			umn[1] = "ULTRA MOD";
 		break;
-		case ultramods.bulletPellet:
+		case ultramods.bulletShotgun:
 			umn[0] = "BULLET";
-			umn[1] = "SHOTGUN PELLET";
+			umn[1] = "SHOTGUN";
 		break;
-		case ultramods.laserHeavyBullet:
+		case ultramods.laserBullet:
 			umn[0] = "LASER";
-			umn[1] = "HEAVY BULLET";
+			umn[1] = "BULLET";
 		break;
 		case ultramods.lightningKraken:
 			umn[0] = "LIGHTNING";
@@ -25,11 +25,12 @@ function scrUltraModName(um){
 			umn[0] = "TOXIC";
 			umn[1] = "FIRE";
 		break;
-		case ultramods.pelletElectro:
-			umn[0] = "SHOTGUN PELLET";
+		
+		case ultramods.shotgunElectro:
+			umn[0] = "SHOTGUN";
 			umn[1] = "ELECTRO";
 		break;
-		case ultramods.boltPlasma:
+		case ultramods.plasmaBolt:
 			umn[0] = "PLASMA";
 			umn[1] = "BOLT";
 		break;
@@ -37,69 +38,64 @@ function scrUltraModName(um){
 			umn[0] = "PLASMA";
 			umn[1] = "ROCKET";
 		break;
-		/**
-		case ultramods.grenadeRocket:
-			umn[0] = "GRENADE";
-			umn[1] = "ROCKET";
+		case ultramods.bulletPlasma:
+			umn[0] = "BULLET";
+			umn[1] = "PLASMA";
 		break;
-		*/
+		
 		case ultramods.bloodMelee:
 			umn[0] = "BLOOD";
 			umn[1] = "MELEE";
 		break;
 		
-		case ultramods.boltRocket:
-			umn[0] = "BOLT";
-			umn[1] = "ROCKET";
+		case ultramods.rocketBolt:
+			umn[0] = "ROCKET";
+			umn[1] = "BOLT";
 		break;
-		case ultramods.boltLaser:
-			umn[0] = "BOLT";
-			umn[1] = "LASER";
-		break;
-		case ultramods.heavyBoltNuke:
-			umn[0] = "HEAVY BOLT";
-			umn[1] = "NUKE";
-		break;
+		case ultramods.laserBolt:
+			umn[0] = "LASER";
+			umn[1] = "BOLT";
+		break
+		case ultramods.shotgunBolt:
+			umn[0] = "SHOTGUN";
+			umn[1] = "BOLT";
+		break
+
 		case ultramods.seekerMissile:
 			umn[0] = "SEEKER";
 			umn[1] = "MISSILE";
 		break;
-	
-	
-		case ultramods.slugFatBullet:
-			umn[0] = "SLUG";
-			umn[1] = "FAT BULLET";
-		break;
-		case ultramods.boltSlug:
-			umn[0] = "SLUG";
-			umn[1] = "BOLT";
-		break;
+
 		case ultramods.splinterBullet:
 			umn[0] = "SPLINTER";
 			umn[1] = "BULLET";
-		break;
-		case ultramods.splinterPellet:
-			umn[0] = "SPLINTER";
-			umn[1] = "SHOTGUN PELLET";
-		break;
-	
-	
-		case ultramods.bulletMiniPlasma:
-			umn[0] = "BULLET";
-			umn[1] = "MINI PLASMA";
 		break;
 		case ultramods.splinterElectro:
 			umn[0] = "SPLINTER";
 			umn[1] = "ELECTRO";
 		break;
-		case ultramods.heavyBoltMegaLaser:
-			umn[0] = "HEAVY BOLT";
-			umn[1] = "MEGA LASER";
-		break;
 		case ultramods.bladeGrenade:
 			umn[0] = "BLADE";
 			umn[1] = "GRENADE";
 		break;
+		
+		case ultramods.toxicSwarm:
+			umn[0] = "TOXIC";
+			umn[1] = "SWARM";
+		break;
+		case ultramods.bloodExplosionExplosion:
+			umn[0] = "BLOOD EXPLOSION";
+			umn[1] = "EXPLOSION";
+		break;
+		case ultramods.snowSwarm:
+			umn[0] = "SNOW";
+			umn[1] = "SWARM";
+		break;
+		case ultramods.morphFire:
+			umn[0] = "MORPH";
+			umn[1] = "FIRE";
+		break;
+		
 		default:
 			umn[0] = "UNKNOWN";
 			umn[1] = "ULTRA MOD";

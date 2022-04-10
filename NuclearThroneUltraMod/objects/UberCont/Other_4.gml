@@ -29,6 +29,7 @@ instance_create(0,0,Cursor);
 
 firstFloorMaker = true;
 seedOffset = 0;
+holdExplainTimer = 0;
 
 //Cheat mode
 if (opt_gamemode == 17)
@@ -37,4 +38,3 @@ else
 	public = defaultPublic;
 	
 hadBossIntro = false;
-opt_ammoicon = true;

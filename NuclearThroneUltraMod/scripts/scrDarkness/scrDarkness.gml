@@ -62,6 +62,8 @@ function scrDarkness() {	if darkness = 1
 	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),60,0)
 	with Bullet1
 	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),60+random(4),0)
+	with EnemyBullet1Square
+	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),60+random(4),0)
 	with DiscoBall
 	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),60+random(4),0)
 	//MORE BULLETS OR WHAT?

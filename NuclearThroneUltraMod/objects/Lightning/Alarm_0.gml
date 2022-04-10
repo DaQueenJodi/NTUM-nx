@@ -82,7 +82,7 @@ speed = 4
 if instance_exists(target)
 {
 if point_distance(x,y,dir.x,dir.y) < 144-accuracy
-	motion_add(point_direction(dir.x,dir.y,x,y),1.3-(accuracy*0.045))
+	motion_add(point_direction(x,y,dir.x,dir.y),1.3-(accuracy*0.045))
 }
 image_angle = direction
 speed = 0

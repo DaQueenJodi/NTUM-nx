@@ -1586,7 +1586,7 @@ function scrWeapons() {
 	wep_load[143] = 15
 	wep_cost[143] = 2
 	wep_sprt[143] = sprLineNader
-	wep_area[143] = 9
+	wep_area[143] = 8
 	wep_text[143] = "dangerous bliss"
 	wep_swap[143] = sndSwapExplosive
 	wep_rad[143] = 0;

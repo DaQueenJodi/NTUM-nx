@@ -147,11 +147,28 @@ function scrPopProps() {
 	instance_create(x+16,y+16,choose(InvertedTube,InvertedTube,InvertedTube,InvertedTube,InvertedMutantTube))
 
 	    if spawnarea = 7 || spawnarea = 108 && !place_meeting(x,y,Wall){ //CUSTOM
-	    if random(60) < 1{
-	    instance_create(x+16,y+16,BigSkull)}
-	    else if random(10)<1{
-	    instance_create(x+16,y+16,choose(Cocoon,Crystal,CharredGround) )
-	    }}
+		    if random(60) < 1{
+				instance_create(x+16,y+16,BigSkull)
+			}
+		    else if random(13)<1{
+				instance_create(x+16,y+16,Crystal)
+		    } else if random(5) < 3
+			{
+				instance_create(x+16,y+16,VulcanoRock);
+			}
+		}
+		else if spawnarea = 108
+		{
+			if random(60) < 1{
+				instance_create(x+16,y+16,InvertedBigSkull)
+			}
+		    else if random(13)<1{
+				instance_create(x+16,y+16,Crystal)
+		    } else if random(5) < 3
+			{
+				instance_create(x+16,y+16,InvertedVulcanoRock);
+			}
+		}
 	if spawnarea = 8 && !place_meeting(x,y,Wall){//CUSTOM
 	if random(2)<1
 	instance_create(x+16,y+16,CandyCane);

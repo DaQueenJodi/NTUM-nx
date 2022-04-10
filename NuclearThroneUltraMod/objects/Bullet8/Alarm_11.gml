@@ -1,5 +1,5 @@
 /// @description Change to director pellet
-if GetPlayerUltramod() == ultramods.bulletPellet
+if GetPlayerUltramod() == ultramods.bulletShotgun
 {
 	with instance_create(x,y,Bullet7)
 	{

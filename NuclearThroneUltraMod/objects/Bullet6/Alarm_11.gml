@@ -1,6 +1,6 @@
 /// @description ultramod
 var um = GetPlayerUltramod();
-if um == ultramods.bulletPellet
+if um == ultramods.bulletShotgun
 {
 	with instance_create(x,y,Bullet1Flame)
 	{
@@ -12,7 +12,7 @@ if um == ultramods.bulletPellet
 		alarm[11] = 0;
 	}
 	instance_destroy(id,false);
-} else if um == ultramods.splinterPellet
+} else if um == ultramods.shotgunBolt
 {
 	with instance_create(x,y,Splinter)
 	{
@@ -24,7 +24,7 @@ if um == ultramods.bulletPellet
 		alarm[11] = 0;
 	}
 	instance_destroy(id,false);
-}else if um == ultramods.pelletElectro
+}else if um == ultramods.shotgunElectro
 {
 	with Player
 	{

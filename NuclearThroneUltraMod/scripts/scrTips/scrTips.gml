@@ -9,7 +9,7 @@ function scrTips() {
 	//RANDOM
 	tip = choose(choose(
 	"HP will only drop when damaged",
-	"When you respawn#you level up faster",
+	"When you respawn\nyou level up faster",
 	"explosives can destroy walls",
 	"melee weapons can deflect bullets",
 	"shotguns are great for close combat",
@@ -24,22 +24,22 @@ function scrTips() {
 	"watch out for dehydration",
 	"crystal can shield",
 	"fear is the mindkiller",
-	"there is a cheatcode#to unlock everything",
+	"there is a cheatcode\nto unlock everything",
 	"square bullets are immune to melee",
 	/*these are rare*/ choose("no","bob and weave","airhorn.wav","danger zone","no sex jokes","in and about"
 	,"the purple dragon","golden frog anyone?","Y.V. mony rad","the flying cat head","myth of time","sheeps are a thing","feedback is much apreciated","follow @erdeppol","sorry bout bugs","I love you!",
-	"be nice#get bitches")
+	"be nice\nget bitches")
 	),choose(
 	"the I.D.P.D. is looking for you",
-	"gold weapons don't count towards#your progression percentage",
+	"gold weapons don't count towards\nyour progression percentage",
 	"try hitting grenades for extra range",
 	"pick your mutations wisely",
 	"if only you could talk to the monsters",
 	"steroids can dual wield",
 	//"always wear dry socks",
-	"one fast firing weapon#one strong weapon",
+	"one fast firing weapon\none strong weapon",
 	"energy weapons use lots of ammo",
-	"elite wep chests drop weps#of the highest tier possible",
+	"elite wep chests drop weps\nof the highest tier possible",
 	"try not opening weapon chests",
 	"fire at things until they die",
 	"ammo drops depend on your weapons",
@@ -47,26 +47,26 @@ function scrTips() {
 	"kraken pulls enemies towards you",
 	"doing alright",
 	"there are other worlds out there",
-	/*more rares*/choose("try not to get mad","be kind","the original idea for the name trashtalk#came from lars in a stream# he made a lot of the sounds in ultra mod",
-	"maybe you should play better","if you ever get stuck#outside a level#walk far away#from the level to get teleported back","use wasd to move","don't get baited by items","ask and ye shall receive","you smell that?","sick build bro","what does your gun tell you?","don't get baited by items"
-	,"thematically inconsistent!","if you reach loop 2#your level cap increases by 1","skeleton has#a fifth ultra mutation","don't be afraid to pick up new weapons",choose("28 EGGS FOR BREAKFAST","shit on my tits","never pick hanzo","microtransactions","if you are seeing this#you are fucking aswesome")/*super rare*/
+	/*more rares*/choose("try not to get mad","be kind","the original idea for the name trashtalk\ncame from lars in a stream\n he made a lot of the sounds in ultra mod",
+	"maybe you should play better","if you ever get stuck\noutside a level\nwalk far away\nfrom the level to get teleported back","use wasd to move","don't get baited by items","ask and ye shall receive","you smell that?","sick build bro","what does your gun tell you?","don't get baited by items"
+	,"thematically inconsistent!","if you reach loop 2\nyour level cap increases by 1","skeleton has\na fifth ultra mutation","don't be afraid to pick up new weapons",choose("28 EGGS FOR BREAKFAST","shit on my tits","never pick hanzo","microtransactions","if you are seeing this\nyou are fucking aswesome")/*super rare*/
 	)
 	),choose(
-	"don't worry about long-term effects","when near a portal you#don't take damage","don't die","nice",
-	"yung cuz definitely exists","venuz patrol","boiling veins does#NOT protect against#blue fire",
-	"should not have done that","","thank you for playing","Some unused mutations are buffed","visit crownvaults twice#for weapon mods","death is near","good luck"
-	,"you can change the direction#of director projectiles#by clicking after firing")
+	"don't worry about long-term effects","when near a portal you\ndon't take damage","don't die","nice",
+	"yung cuz definitely exists","venuz patrol","boiling veins does\nNOT protect against\nblue fire",
+	"should not have done that","","thank you for playing","Some unused mutations are buffed","visit crownvaults twice\nfor weapon mods","death is near","good luck"
+	,"you can change the direction\nof director projectiles\nby clicking after firing")
 	,
 	choose("try new weapons",
-	"this mod has been build up#from update 19",
+	"this mod has been build up\nfrom update 19",
 	"don't be a dirty casual",
 	"humphry can't run",
 	"atom can teleport",
 	"fish can walk",
 	"git gut!",
 	"don't trust fortune cookies",
-	"picking up a weapon#resets your reload time",
-	"gloves and kraken weapons#give you invincibility frames",
+	"picking up a weapon\nresets your reload time",
+	"gloves and kraken weapons\ngive you invincibility frames",
 	"welcome back",
 	"it's good to have you here",
 	"grab some coffee",
@@ -80,7 +80,7 @@ function scrTips() {
 	"just enjoy",
 	"panda can throw",
 	"chicken can slow down time",
-	"the more dangerous the weapon#the more damage it deals"
+	"the more dangerous the weapon\nthe more damage it deals"
 	) )
 	}
 
@@ -104,7 +104,7 @@ function scrTips() {
 	tip = choose("beep boop","nerds","don't push any buttons","randa")
 	if Player.area = 100
 	tip = choose("aw yes","take a crown to uncurse your weapon","there is value here","visit this place atleast twice","let's hope its not toxic again",
-	"old torches","you can get 3 mods#on a single weapon","mods stack","take a crown to unlock$crown start for this character")
+	"old torches","you can get 3 mods\non a single weapon","mods stack","take a crown to unlock$crown start for this character")
 	if Player.area = 102
 	tip = choose("hunger...","it smells nice here","wait for it....")
 	if Player.area = 103
@@ -116,9 +116,9 @@ function scrTips() {
 	tip = choose("inverted","another dimension","same world","mystery","blue","wormhole","what is this place","blueberry","im blue da ba dee!","interdimensional travel","this is not the wastelands?!","SHORTCUT!")
 	if Player.area = 7
 	tip = choose("inferno","hell","its getting hot in here", "volcano", "hot", "heat", "lava", "magma","lava damages over time",
-	"boiling veins protects you#against lava","don't stand#too long in lava","hot feet","tomato sauce","do not run away from a dragon fight!","do not flee from thy dragon")
+	"boiling veins protects you\nagainst lava","don't stand\ntoo long in lava","hot feet","tomato sauce","do not run away from a dragon fight!","do not flee from thy dragon")
 	if Player.area = 8
-	tip = choose("sweet","wonderland","evil cards","play your cards right","teapots of doom","cotton candy floors","do not eat the mushrooms","I'm not even a fan of#alice in wonderland")
+	tip = choose("sweet","wonderland","evil cards","play your cards right","teapots of doom","cotton candy floors","do not eat the mushrooms","I'm not even a fan of\nalice in wonderland")
 	if Player.area = 9
 	tip = choose("The palace","This place is old");
 	if Player.area = 10
@@ -147,7 +147,7 @@ function scrTips() {
 	if Player.area = 115
 	tip = choose("cheese caves","cursed caves","gouda")//Fun fact I used to live in Gouda
 	if Player.area = 116
-	tip = choose("survival arena","when starting a wave#chests and weapon drops get destroyed")
+	tip = choose("survival arena","when starting a wave\nchests and weapon drops get destroyed")
 	if Player.area = 117
 	tip = choose("mushrooms with guns","mushroom land","infected mushrooms")
 	}
@@ -164,7 +164,7 @@ function scrTips() {
 	tip = choose("last day before retirement","duty calls","it's ok to eat","gills on your neck","like kevin costner")
 
 	if Player.race = 2
-	tip = choose("crystal can handle this","family","crystal does not like cheese#actually we've been lieing all these years#crystal does like cheese!")
+	tip = choose("crystal can handle this","family","crystal does not like cheese\nactually we've been lieing all these years\ncrystal does like cheese!")
 
 	if Player.race = 3
 	tip = choose("eyes sees everything","don't blink","all these thoughts","eyes can't speak","telekinesis pushes bullets away")
@@ -180,8 +180,8 @@ function scrTips() {
 	"yung venuz is the best",
 	"so cool",
 	"thanks gun god",
-	"\#verifyvenuz",
-	"\#yv",
+	"\\nverifyvenuz",
+	"\\nyv",
 	"guns for fake necklace",
 	"guns that send textses",
 	"guns that make breakfast?",
@@ -198,7 +198,7 @@ function scrTips() {
 	,"eat 14 eggs in the morning")
 
 	if Player.race = 8
-	tip = choose("6b 69 6c 6c#61 6c 6c#68 75 6d 61 6e 73","72 6f 62 6f 74","3c 33","74 61 73 74 79","guns for breakfast","I'm afraid I can't let you do that","don't forget to eat weapons")
+	tip = choose("6b 69 6c 6c\n61 6c 6c\n68 75 6d 61 6e 73","72 6f 62 6f 74","3c 33","74 61 73 74 79","guns for breakfast","I'm afraid I can't let you do that","don't forget to eat weapons")
 
 	if Player.race = 9
 	tip = choose("remember the training","focus","go","never surrender","amateur hour is over","again","in cold shadows")
@@ -213,7 +213,7 @@ function scrTips() {
 	"robot's best buddy",
 	"can't escape",
 	"want out",
-	"miss life","after marking#you can unmark#by right clicking again",
+	"miss life","after marking\nyou can unmark\nby right clicking again",
 	"pellets move faster with hunter",
 	"shotguns shoot further as hunter",
 	"paranoid android"
@@ -221,44 +221,44 @@ function scrTips() {
 
 	if Player.race = 12//yung cuz
 	tip = choose("always in the shadow","yung cuz is so cool","the better shape",
-	"not immortal","how to kill a god","waka waka","buddies cost#half your MAX HP","noscope","golden tv"
-	,"mlg","prodigy","up n cmin","buddies return to you#when you stand still","\\#yc",
+	"not immortal","how to kill a god","waka waka","buddies cost\nhalf your MAX HP","noscope","golden tv"
+	,"mlg","prodigy","up n cmin","buddies return to you\nwhen you stand still","\\\nyc",
 	"you have to get good","Buddies copy most mutations")
 
 	if Player.race = 13//sheep
 	tip = choose("BAAHHH","farmville","don't mess with me"
 	,"BAAAA","BAHHH","moo?","silence of the lamb","just a sheep","peacefull"
-	,"shaun the sheep","sheeps don't harm people","shawarma","charge allows you#to move through#some projectiles",
-	"charge increases damage#the longer you charge it","while charging#at high speed#you don't take#contact damage","you are immune#while charging#at high speed",
-	"extra feet and gamma guts#buff your charge","eat grass"
+	,"shaun the sheep","sheeps don't harm people","shawarma","charge allows you\nto move through\nsome projectiles",
+	"charge increases damage\nthe longer you charge it","while charging\nat high speed\nyou don't take\ncontact damage","you are immune\nwhile charging\nat high speed",
+	"extra feet and gamma guts\nbuff your charge","eat grass"
 	)
 
 	if Player.race = 14//panda
 	tip = choose("never let go of your bamboo","kawaii as fuck","rng","portal magic","what is a panda doing here",
 	"don't want to be here","help me","if only hotline miami had a panda","panda used to be a pacifist"
 	,"fight to survive","manage your weapons!","killing is no fun","panda is unpredictable with weapons"
-	,"you can see your new weapon#while a level is generating","throw weapons#in a portal to keep them",
-	"if you like a weapon#you can throw it into a portal#to keep it"
+	,"you can see your new weapon\nwhile a level is generating","throw weapons\nin a portal to keep them",
+	"if you like a weapon\nyou can throw it into a portal\nto keep it"
 	)
 
 	if Player.race = 15//Atom
-	tip = choose("molecules","don't touch each other","elite being","not an accurate#representation of reality","science bitch!","balance of the universe"
+	tip = choose("molecules","don't touch each other","elite being","not an accurate\nrepresentation of reality","science bitch!","balance of the universe"
 	,"from the other side","inverted mutant","higher chance for inverted worlds","purple balls","split the atom","atoms for peace","Entropy")
 
 	if Player.race = 16//Viking
 	tip = choose("the ship that brought you here","the sea","ocean fire","hate pirates","you've come from far","water dragon","tough!"
-	,"rock hard","plunder","time travel?","armour strike damage scales#depending on your level","armour strike damage is more#when you are a higher level","3030")
+	,"rock hard","plunder","time travel?","armour strike damage scales\ndepending on your level","armour strike damage is more\nwhen you are a higher level","3030")
 
 	if Player.race = 17//WEAPONSMITH
-	tip = choose("anvil","you keep the weapon mods#of the weapon you area holding#when upgrading","you upgrade one of your#two weapons at random",
-	"the weapon that gets upgraded#is chosen randomly","weaponsmith is a smoker","hide your face","liver damage","no trousers","fat and strong","weaponsmith is a metalhead")
+	tip = choose("anvil","you keep the weapon mods\nof the weapon you area holding\nwhen upgrading","you upgrade one of your\ntwo weapons at random",
+	"the weapon that gets upgraded\nis chosen randomly","weaponsmith is a smoker","hide your face","liver damage","no trousers","fat and strong","weaponsmith is a metalhead")
 
 	if Player.race = 18//ANGEL
 	tip = choose("ascend","the wall is not the enemy","fly over cars","you fly normally over all terrains","rogue guardian","you don't get pushed off of props",
 	"I believe I can fly","don't serve gorillaman","angel can fly over lava","grow your wings")
 
 	if Player.race = 19//SKELETON
-	tip = choose("hard","dusty","dry","nothing...","bones","blood gamble chance#depends on ammo cost")
+	tip = choose("hard","dusty","dry","nothing...","bones","blood gamble chance\ndepends on ammo cost")
 
 	if Player.race = 20//BUSINESS HOG
 	tip = choose("post apocalyptic capitalism","delusional capitalist","mutated money","Making Nuclear Throne great again"
@@ -277,16 +277,16 @@ function scrTips() {
 
 	if Player.race = 24//ELEMENTOR
 	tip = choose("The elements will destroy you","The avatar","Meditating","Floaty","Very down to earth","SOLID! play!",
-	"Floating guns","No hands required","Your walls do not stop against lasers","Walls can get destroyed#when enemies get very close"
-	,"Elementor can fly over lava","Elementor moves normally over all terrain")//"You can only place walls#against other walls","Create walls from other walls",
+	"Floating guns","No hands required","Your walls do not stop against lasers","Walls can get destroyed\nwhen enemies get very close"
+	,"Elementor can fly over lava","Elementor moves normally over all terrain")//"You can only place walls\nagainst other walls","Create walls from other walls",
 
 	if Player.race = 25//DOCTOR
-	tip = choose("Efficient rad intake","Underleveled?","Second opinion","Trust me,#I'm a doctor","You can use that extra limb#to walk faster","That mutation seems good to me",
+	tip = choose("Efficient rad intake","Underleveled?","Second opinion","Trust me,\nI'm a doctor","You can use that extra limb\nto walk faster","That mutation seems good to me",
 	"Try to stay close to radiation","don't do drugs kids","Doctor used to work in the labs","nasty experiments","The mutation doctor","every single mutation is better!","get vaccinated")
 
 	if Player.race = 26//GOOD OL' HUMPHRY
 	tip = choose("Rusty old soldier","Grandpa","When Humphry pulls out a gun","The real deal","Old and experienced"
-	,"Any projectile in one shot#counts as one hit","When one of multiple projectiles#fire in one shot/burst#hits an enemy it counts as a hit"
+	,"Any projectile in one shot\ncounts as one hit","When one of multiple projectiles\nfire in one shot/burst\nhits an enemy it counts as a hit"
 	,"Out of the fallout shelter","focus and discipline","experience","shrink and slow projectiles","active costs unequiped weapon type ammo")
 	}
 

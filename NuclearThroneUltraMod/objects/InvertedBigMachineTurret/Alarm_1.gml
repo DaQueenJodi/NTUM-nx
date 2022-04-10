@@ -22,13 +22,24 @@ else if random(3)<1//shotgunlike
 {
 snd_play(EnemyBullet1)
 wkick = 8
-repeat(3)
-with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.image_angle+random(30)-15,2)
-image_angle = direction
-team = 1;
-}
+	with instance_create(x,y,EnemyBullet1)
+	{
+		motion_add(other.image_angle-30,2)
+		image_angle = direction
+		team = 1;
+	}
+	with instance_create(x,y,EnemyBullet1)
+	{
+		motion_add(other.image_angle,2)
+		image_angle = direction
+		team = 1;
+	}
+	with instance_create(x,y,EnemyBullet1)
+	{
+		motion_add(other.image_angle+30,2)
+		image_angle = direction
+		team = 1;
+	}
 }
 else if random(2)<1//snipe danger
 {

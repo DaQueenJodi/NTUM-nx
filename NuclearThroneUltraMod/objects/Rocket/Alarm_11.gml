@@ -5,9 +5,9 @@ if um == ultramods.plasmaRocket
 	with Player
 	{
 		if skill_got[17] = 1
-			snd_play_fire(sndPlasmaBigUpg)
+			snd_play_fire(sndPlasmaUpg)
 		else
-			snd_play_fire(sndPlasmaBig)
+			snd_play_fire(sndPlasma)
 	}
 	with instance_create(x,y,PlasmaBall)
 	{
@@ -19,7 +19,7 @@ if um == ultramods.plasmaRocket
 		alarm[11] = 0;
 	}
 	instance_destroy(id,false);
-} else if um == ultramods.boltRocket
+} else if um == ultramods.rocketBolt
 {
 	audio_stop_sound(sndRocket);
 	snd_play_fire(sndCrossbow)

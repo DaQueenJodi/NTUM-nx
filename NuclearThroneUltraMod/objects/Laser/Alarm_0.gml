@@ -2,27 +2,55 @@ if(instance_exists(Player)){
 	if isog
 	{
 		var um = GetPlayerUltramod()
-		if um == ultramods.laserHeavyBullet
+		if um == ultramods.laserBullet
 		{
 			with instance_create(x,y,Shell)
 			motion_add(other.image_angle+Player.right*100+random(50)-25,2+random(2))
 			snd_play_fire(sndHeavyMachinegun);
-			with instance_create(x,y,HeavyBullet)
-			{motion_add(other.image_angle,16)
-				scrCopyWeaponMod(other);
-			image_angle = direction
-			team = other.team
-			alarm[11] = 0;}
+			if isUltra
+			{
+				snd_play_fire(sndUltraPistol);
+				var acc = scrGetPlayerAccuracy();
+				with instance_create(x,y,Bullet4)
+				{motion_add(other.image_angle-(5*acc),16)
+					scrCopyWeaponMod(other);
+				image_angle = direction
+				team = other.team
+				alarm[11] = 0;}
+				with instance_create(x,y,Bullet4)
+				{motion_add(other.image_angle+(5*acc),16)
+					scrCopyWeaponMod(other);
+				image_angle = direction
+				team = other.team
+				alarm[11] = 0;}
+			}
+			else
+			{
+				var acc = scrGetPlayerAccuracy();
+				with instance_create(x,y,Bullet3)
+				{motion_add(other.image_angle-(5*acc),16)
+					scrCopyWeaponMod(other);
+				image_angle = direction
+				team = other.team
+				alarm[11] = 0;}
+				with instance_create(x,y,Bullet3)
+				{motion_add(other.image_angle+(5*acc),16)
+					scrCopyWeaponMod(other);
+				image_angle = direction
+				team = other.team
+				alarm[11] = 0;}
+			}
 		
 			instance_destroy(id,false);
 			exit;
 		}
-		else if um == ultramods.boltLaser
+		else if um == ultramods.laserBolt
 		{
-			with instance_create(x,y,Shell)
-			motion_add(other.image_angle+Player.right*100+random(50)-25,2+random(2))
-			snd_play_fire(sndHeavyCrossbow);
-			with instance_create(x,y,Bolt)
+			snd_play_fire(sndCrossbow);
+			var thebolt = Bolt;
+			if laserhit > 0
+				thebolt = BouncerBolt;
+			with instance_create(x,y,thebolt)
 			{motion_add(other.image_angle,24)
 				scrCopyWeaponMod(other);
 			image_angle = direction

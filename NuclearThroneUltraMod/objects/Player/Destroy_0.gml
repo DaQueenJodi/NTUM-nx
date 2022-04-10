@@ -346,11 +346,16 @@ else
 			array_length(encrypted_data.ctot_dailies_score_score)-1] = other.kills;
 			scrSaveEncrypted();
 			useSeed = false;
+			opt_gamemode = 0;
+			canRestart = true;
+			canDoChallenge = true;
 		}
 		if (opt_gamemode == 26)
 		{
-			useSeed = false;
 			scrSaveEncrypted();
+			useSeed = false;
+			canDoChallenge = true;
+			opt_gamemode = 0;
 		}
 		
 		scrSave();

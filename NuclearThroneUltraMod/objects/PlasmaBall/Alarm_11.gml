@@ -1,6 +1,6 @@
 /// @description ultramod
 var um =GetPlayerUltramod();
-if um == ultramods.boltPlasma
+if um == ultramods.plasmaBolt
 {
 	snd_play_fire(sndCrossbow)
 	with instance_create(x,y,Bolt)

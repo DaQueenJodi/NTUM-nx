@@ -1,2 +1,2 @@
-/// @description xxx
+/// @description dmg reduc
 dmg = 60;

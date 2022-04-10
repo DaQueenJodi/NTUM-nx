@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndNukeFire",
-  "duration": 0.0,
+  "duration": 1.114719,
   "parent": {
     "name": "Explosive",
     "path": "folders/Sounds/Weapons/Explosive.yy",

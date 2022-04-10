@@ -17,5 +17,5 @@ if instance_exists(Player)
 }
 dmg=4;
 norecycle = false;
-
+alarm[11] = 1;
 rotation = choose(10,-10);

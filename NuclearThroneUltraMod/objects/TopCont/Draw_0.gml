@@ -237,8 +237,11 @@ fogscroll -= 480
 
 with Notice{draw_self();}
 with EuphoriaShield{draw_self();}
+with EnemyBullet1Square
+{
+	draw_self();
+}
 //Flying enemies
-
 with ChesireCatTail{
 if visible&&instance_exists(ChesireCat){
 draw_sprite_ext(sprite_index,-1,x,y,ChesireCat.right,1,0,c_white,1);
