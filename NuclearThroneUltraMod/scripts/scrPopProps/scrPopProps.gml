@@ -13,7 +13,7 @@ function scrPopProps() {
 	//walls near the player for safer spawn
 	if random(5)<1  and !place_meeting(x,y,NOWALLSHEREPLEASE) && !place_meeting(x,y,hitme) && !place_meeting(x,y,chestprop) && !place_meeting(x,y,prop)
 	&& point_distance(x,y,Player.x,Player.y)<128 and Player.area != 100 and Player.area != 6 and Player.area != 112 and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104 and !(Player.area = 8 && Player.subarea=3)
-	and Player.area != 9 and Player.area != 114 and Player.area != 116
+	and Player.area != 9 and Player.area != 118 and Player.area != 114 and Player.area != 116
 	{
 		
 	myx = x+choose(0,16)
@@ -34,7 +34,7 @@ function scrPopProps() {
 	instance_create(x,y,NOWALLSHEREPLEASE)
 	}//random(5)< 1
 	if random(6) < 1 and !place_meeting(x,y,NOWALLSHEREPLEASE) && !place_meeting(x,y,hitme) && !place_meeting(x,y,chestprop)  && !place_meeting(x,y,prop)
-	and Player.area != 100 and Player.area != 6 and Player.area != 9 and Player.area != 112  and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104
+	and Player.area != 100 and Player.area != 6 and Player.area != 9 and Player.area != 118 and Player.area != 112  and (Player.area !=5 or random(3) < 1) and Player.area != 102 and Player.area != 104
 	and !(Player.area = 8 && Player.subarea=3) and Player.area != 116//lill walls
 	{
 	myx = x+choose(0,16)
@@ -58,6 +58,36 @@ function scrPopProps() {
 	if random(4) < 1 && spawnarea = 114 && !place_meeting(x,y,Wall)//Jungle
 		instance_create(x+16,y+16,choose(Bush,Bush,Bush,Bush,Bush,Bush,BigFlower))
 	if (spawnarea == 9 && subarea != 3)
+	{
+		var mask = mask_index;
+		mask_index = mskPalacePropChecker;
+		if (random(7) < 1 && !place_meeting(x,y,Wall))
+		{
+			var ran = random(100);
+			if (ran > 90)
+			{
+				instance_create(x,y,choose(Table1,Table2));
+			}
+			else if (ran > 80)
+			{
+				instance_create(x,y,FallenChair);
+			}
+			else if (ran > 70)
+			{
+				instance_create(x,y,Pillar);
+			}
+			else if (ran > 60)
+			{
+				instance_create(x,y,NuclearPillar);
+			}
+			else if (ran > 45)
+			{
+				instance_create(x,y,SmallGenerator);
+			}
+		}
+		mask_index = mask;
+	}
+	else if (spawnarea == 118 && subarea != 3)//Inverted palace
 	{
 		var mask = mask_index;
 		mask_index = mskPalacePropChecker;
