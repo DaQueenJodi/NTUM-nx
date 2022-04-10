@@ -149,8 +149,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Palace Enemy",
-    "path": "folders/Sprites/Palace/Palace Enemy.yy",
+    "name": "NewGuardian",
+    "path": "folders/Sprites/Palace/Palace Enemy/NewGuardian.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprNewGuardianAppear",
