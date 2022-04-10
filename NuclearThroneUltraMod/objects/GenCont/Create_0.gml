@@ -94,6 +94,8 @@ else if Player.area = 116//SURVIVAL ARENA
 __background_set_colour( make_color_rgb(43,35,23) )
 else if Player.area = 117//MUSHROOM
 __background_set_colour( make_color_rgb(75,79,31) )
+else if Player.area = 118//Inverted Palace
+__background_set_colour( make_color_rgb(142,204,204) )
 }
 else
 __background_set_colour( make_color_rgb(106,122,175) )
@@ -135,6 +137,8 @@ goal=120;
 if Player.area = 8
 goal = 130
 if Player.area = 9//Palace
+goal = 130
+if Player.area = 118//Inverted Palace
 goal = 130
 if Player.area = 10//savanna
 goal = 120

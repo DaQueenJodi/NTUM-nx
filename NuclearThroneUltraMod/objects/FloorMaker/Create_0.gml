@@ -37,6 +37,8 @@ if instance_exists(Player){
 	goal=1;
 	else if Player.area = 9 && Player.subarea < 2
 	goal = 130
+	else if Player.area = 118 && Player.subarea < 2
+	goal = 130
 	else if Player.area = 10
 	{
 		styleb = choose(0,0,0,0,0,0,1,1)//Slightly higher chance for B tiles
@@ -44,6 +46,8 @@ if instance_exists(Player){
 	}
 	else if Player.area == 9 && Player.subarea == 3
 	goal = 350;
+	else if Player.area == 118 && Player.subarea == 3
+	goal = 300;
 
 	if UberCont.opt_gamemode==6//small levels
 	{

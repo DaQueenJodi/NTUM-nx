@@ -120,7 +120,9 @@ function scrTips() {
 	if Player.area = 8
 	tip = choose("sweet","wonderland","evil cards","play your cards right","teapots of doom","cotton candy floors","do not eat the mushrooms","I'm not even a fan of\nalice in wonderland")
 	if Player.area = 9
-	tip = choose("The palace","This place is old");
+	tip = choose("the palace","This place is old");
+	if Player.area = 118
+	tip = choose("the inverted palace","regular portals");
 	if Player.area = 10
 	tip = choose("dry grass","savanna","they eat each other","they attack together","bring a good strating weapon");
 	if Player.area = 106

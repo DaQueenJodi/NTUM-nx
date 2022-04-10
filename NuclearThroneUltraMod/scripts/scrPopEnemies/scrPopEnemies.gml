@@ -829,4 +829,36 @@ function scrPopEnemies() {
 	        }
 		}
     }
+	if spawnarea == 118 && subarea != 3 {//Inverted palace
+		if loops > 0 {
+			if styleb = 1 && random(7) < 2 {
+	            instance_create(x + 16, y + 16, choose(GuardianDog, GhostGuardian,InvertedPalaceGuardian))
+	        } else {
+	            var ran = random(100);
+	            if ran > 60 {
+	                instance_create(x + 16, y + 16, choose(PalaceGuardian, InvertedPalaceGuardian, ExploGuardian, ExploGuardian, GhostGuardian, GuardianDog, CubeGuardian))
+	            } else if ran > 40 {
+					instance_create(x + 16, y + 16, choose(Sniper, JungleBandit, ExploFreak))
+				}
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,InvertedPalaceGuardian);
+				}
+	        }
+		} else {
+			if styleb = 1 && random(7) < 2 {
+	            instance_create(x + 16, y + 16, choose(GuardianDog, GuardianDog, GhostGuardian))
+	        } else {
+	            var ran = random(100);
+
+	            if ran > 60 {
+	                instance_create(x + 16, y + 16, choose(InvertedPalaceGuardian, InvertedPalaceGuardian, ExploGuardian, CubeGuardian, GhostGuardian, GuardianDog))
+	            }
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,InvertedPalaceGuardian);
+				}
+	        }
+		}
+    }
 }

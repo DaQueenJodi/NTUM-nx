@@ -13,6 +13,11 @@ if instance_number(Floor) > goal && (UberCont.opt_gamemode != 25 || instance_exi
 			instance_create(x+16,y+16,Carpet);
 			instance_create(x,y,NuclearThrone1);
 		}
+		else if (Player.area == 118 && Player.subarea == 3)
+		{
+			instance_create(x+16,y+16,Carpet);
+			instance_create(x,y,NuclearThrone1);
+		}
 		else if Player.race=22
 		{
 			if Player.area!=104 && Player.area!=100 && !instance_exists(RogueAmmoChest)

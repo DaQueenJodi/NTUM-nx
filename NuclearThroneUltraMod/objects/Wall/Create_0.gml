@@ -182,6 +182,13 @@ outspr=sprWall117Out;
 sprite_index=sprWall117Bot;
 break;
 
+case 118:
+topspr=sprWall118Top;
+outspr=sprWall118Out;
+sprite_index=sprWall118Bot;
+break;
+
+
 default:
 topspr=sprWall0Top;
 outspr=sprWall0Out;

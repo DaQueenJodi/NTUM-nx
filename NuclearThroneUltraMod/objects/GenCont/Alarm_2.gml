@@ -142,7 +142,7 @@ if Player.area = 100
 	}
 }
 else if (Player.area > 2 or Player.loops > 0) and Player.subarea = 2 && Player.area != 9 && Player.area!=101&&Player.area!=6&&Player.area!=7&&Player.area!=108
-&& Player.area!=102 && Player.area!=103 && Player.area!=104 && Player.area != 4
+&& Player.area!=102 && Player.area!=103 && Player.area!=104 && Player.area != 4 && Player.area != 118
 && Player.area!=112 && Player.area!=113 && Player.area!=114 && Player.area!=115&& Player.area!=116 && UberCont.opt_gamemode != 25
 {
 

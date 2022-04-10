@@ -352,7 +352,7 @@ function scrMakeFloor() {
 	instance_create(x,y,Floor);
 	}
 	//Palace
-	if area = 9 {
+	if area == 9 || area == 118{
 		if subarea < 2
 		{
 		if random(5) < 3
@@ -557,9 +557,9 @@ function scrMakeFloor() {
 	trn= choose(-90,0,0,0,0,0,0,0,180,0,90);
 	if area = 8 || area = 109
 	trn = choose(0,0,0,0,0,180,0,0,90,90,-90,90,-90,180)
-	if area = 9 && subarea < 3
+	if ((area = 9 || area == 118) && subarea < 3)
 	trn = choose(0,0,0,0,0,0,0,0,0,90,-90,90,-90)
-	else if area = 9 && subarea == 3
+	else if ((area = 9 || area == 118) && subarea == 3)
 	trn = 0;
 	else if area = 100
 	trn = choose(0,0,0,0,0,0,0,0,0,0,90,-90,180,180)
@@ -575,6 +575,8 @@ function scrMakeFloor() {
 		direction=0;
 	else if area == 9 && subarea == 3
 		direction = 90;
+	else if area == 118 && subarea == 3
+		direction = 270;
 
 
 	if abs(trn) = 90 and (area = 6 || area = 112) and random(2) < 1
@@ -614,7 +616,8 @@ function scrMakeFloor() {
 
 	//instance_create(x,y,Floor)
 
-	if (trn = 180 or (abs(trn) = 90 and (area = 3 || area = 106 || (area == 9 && !subarea == 3)))) and point_distance(x,y,10016,10016) > 48{
+	if (trn = 180 or (abs(trn) = 90 and (area = 3 || area = 106 || (area == 9 && !subarea == 3)
+	|| (area == 118 && !subarea == 3)))) and point_distance(x,y,10016,10016) > 48{
 	instance_create(x,y,Floor)
 	instance_create(x+16,y+16,WeaponChest)}
 
@@ -643,7 +646,7 @@ function scrMakeFloor() {
 		}
 	}
 
-	if area = 9 && subarea < 3
+	if ((area = 9 || area == 118) && subarea < 3)
 	{
 	   if random(19+instance_number(FloorMaker)) > 20
 	   {

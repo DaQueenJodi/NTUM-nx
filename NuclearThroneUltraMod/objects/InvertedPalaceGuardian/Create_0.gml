@@ -1,4 +1,4 @@
-/// @description xxx
+/// @description Tweak
 
 // Inherit the parent event
 event_inherited();
