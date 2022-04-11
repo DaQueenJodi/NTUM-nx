@@ -4779,12 +4779,12 @@ function scrWeapons() {
 	wep_swap[432] = sndSwapBow
 	wep_rad[432] = 0;
 	
-	wep_name[433] = "THE REDIRECTOR"
+	wep_name[433] = "THE DIRECTOR"
 	wep_type[433] = 5
 	wep_auto[433] = 0
 	wep_load[433] = 25
 	wep_cost[433] = 2
-	wep_sprt[433] = sprBladeGun
+	wep_sprt[433] = sprDirector
 	wep_area[433] = 14
 	wep_text[433] = "redirects all enemy bullets"
 	wep_swap[433] = sndSwapBow

@@ -1,5 +1,5 @@
-raddrop = 18
-maxhealth = 80
+raddrop = 24
+maxhealth = 70
 meleedamage = 3
 size = 2
 
@@ -23,7 +23,7 @@ actTime = 12;
 maxSpeed = 2.5;
 acc = 0.6;
 pSpeed = 5;
-fireOffset = 16;
+fireOffset = 14;
 maxAmmo = 4;
 ammo = maxAmmo;
 fireRate = 4;

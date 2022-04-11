@@ -2254,7 +2254,7 @@ function scrFire2() {
 	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y((Player.skill_got[13]+bettermelee)*20,point_direction(x,y,mouse_x,mouse_y)),Slash)
 	{
 	sprite_index=sprGoldenSlash;
-	dmg = 10
+	dmg = 16
 	longarms = 0
 	if instance_exists(Player)
 	longarms = (Player.skill_got[13]+other.bettermelee)*3
@@ -2264,7 +2264,7 @@ function scrFire2() {
 	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*15,point_direction(x,y,mouse_x,mouse_y)+60*Player.accuracy),y+lengthdir_y((Player.skill_got[13]+bettermelee)*15,point_direction(x,y,mouse_x,mouse_y)+60*Player.accuracy),Slash)
 	{
 	sprite_index=sprGoldenSlash;
-	dmg = 10
+	dmg = 16
 	longarms = 0
 	if instance_exists(Player)
 	longarms = (Player.skill_got[13]+other.bettermelee)*3
@@ -2274,7 +2274,7 @@ function scrFire2() {
 	with instance_create(x+lengthdir_x((Player.skill_got[13]+bettermelee)*15,point_direction(x,y,mouse_x,mouse_y)-60*Player.accuracy),y+lengthdir_y((Player.skill_got[13]+bettermelee)*15,point_direction(x,y,mouse_x,mouse_y)-60*Player.accuracy),Slash)
 	{
 	sprite_index=sprGoldenSlash;
-	dmg = 10
+	dmg = 16
 	longarms = 0
 	if instance_exists(Player)
 	longarms = (Player.skill_got[13]+other.bettermelee)*3
@@ -6470,6 +6470,14 @@ function scrFire2() {
 	
 	case 433:
 		snd_play_fire(sndDirector);
+		BackCont.shake += 8
+		wkick = 5
+		wepangle = -wepangle
+		repeat(4)
+		with instance_create(x,y,Smoke)
+		{
+			motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,7)
+		}
 		with projectile
 		{
 			if typ == 1 && ProjectileCanBeMoved()

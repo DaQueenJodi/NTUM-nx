@@ -15,7 +15,6 @@ if target > 0 {
 		} else if dis < 140 && ran < 4
 		{
 			circleMode = true;
-			debug("circle mode on");
 			alarm[1] += 5;
 			angle = point_direction(target.x,target.y,x,y);
 		}

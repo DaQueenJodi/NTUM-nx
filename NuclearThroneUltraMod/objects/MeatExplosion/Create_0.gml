@@ -1,6 +1,7 @@
 event_inherited();
 typ = 3;
 image_speed = 0.4
+dmg = 4;
 if UberCont.ultramodSwap
 {
 	dir = 0;
@@ -21,7 +22,6 @@ else
 	motion_add(other.dir,3+random(1))
 	dir += 360/6
 	}
-	dmg=4;
 	if instance_exists(Player)
 	{
 	if Player.ultra_got[16]//Doomed melting

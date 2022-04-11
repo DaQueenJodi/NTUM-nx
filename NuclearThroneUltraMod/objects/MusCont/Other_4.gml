@@ -150,6 +150,12 @@ if oldarea != area || area == 0 or !audio_is_playing(song) or!audio_exists(song)
 
         amb = amb7;
     }
+	if area = 118 {//Inverted palace
+
+        song = mus7b;
+
+        amb = amb7;
+    }
     if area = 100 {
 
         song = mus100;
@@ -244,6 +250,13 @@ if oldarea != area || area == 0 or !audio_is_playing(song) or!audio_exists(song)
         song = mus104
 
         amb = amb104
+    }
+	
+	if area = 117//Mushroomland
+    {
+        song = musMushroomland
+
+        amb = amb102
     }
 
 

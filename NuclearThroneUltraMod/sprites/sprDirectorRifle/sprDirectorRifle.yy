@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprDirectorRifle","path":"sprites/sprDirectorRifle/sprDirectorRifle.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprDirectorRifle",
     "tags": [],
     "resourceType": "GMSequence",
   },

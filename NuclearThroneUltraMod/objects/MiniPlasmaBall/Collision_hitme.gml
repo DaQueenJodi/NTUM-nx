@@ -1,5 +1,6 @@
 if other.team != team and other.my_health > 0
 {
+	speed = max(speed-1,2);
 	if other.sprite_index != other.spr_hurt
 	{
 		BackCont.shake += 0.5
@@ -10,7 +11,7 @@ if other.team != team and other.my_health > 0
 			my_health -= other.dmg
 			sprite_index = spr_hurt
 			image_index = 0
-			snd_play(other.snd_hurt, other.hurt_pitch_variation,true)
+			snd_play(snd_hurt, hurt_pitch_variation,true)
 			motion_add(other.direction,4)
 		}
 	}

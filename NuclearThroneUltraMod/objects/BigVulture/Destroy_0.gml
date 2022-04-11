@@ -1,5 +1,18 @@
 scrDrop(100,100)
-scrDrop(20,100)
+scrDrop(20,0)
+if !isOneWeaponOnlyModes()
+{
+	with instance_create(x-8,y,WepPickup)
+	{
+		scrWeapons()
+		wep = scrDecideWep(2, 1000, 0)
+		name = wep_name[wep]
+		ammo = 50
+		curse = 0;
+		type = wep_type[wep]
+		sprite_index = wep_sprt[wep]
+	}
+}
 event_inherited()
 scrBusinessHogGoldChest();
 repeat(5+irandom(6))

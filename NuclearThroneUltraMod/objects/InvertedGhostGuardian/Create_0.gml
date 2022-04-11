@@ -8,7 +8,7 @@ spr_idle = sprInvertedGhostGuardianWalk;
 spr_walk = sprInvertedGhostGuardianWalk;
 spr_hurt = sprInvertedGhostGuardianHurt;
 spr_dead = sprInvertedGhostGuardianDead;
-raddrop = 12
+raddrop += 2;
 maxhealth = 20
 my_health = maxhealth;
 EnemyHealthAdjustments();

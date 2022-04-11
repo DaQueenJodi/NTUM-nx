@@ -9,4 +9,4 @@ event_inherited()
 
 
 snd_hurt = sndHitPlant
-
+shadowSprite = shd16;

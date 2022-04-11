@@ -6,17 +6,48 @@ function scrAreaName(area,subarea,loops){
 	var upsideDown = false;
 	if area == 10
 	{
-		txt = "1B_"+string(subarea);
+		txt = "1C_"+string(subarea);
 	}
 	else if area == 9
 	{
 		txt = "7_"+string(subarea);
 	}
-	if area > 99
+	else if area == 4
+	{
+		txt = "6_"+string(subarea);
+	}
+	else if area == 6
+	{
+		txt = "4_"+string(subarea);
+	}
+	else if area == 7
+	{
+		txt = "3B_"+string(subarea);
+	}
+	else if area == 8
+	{
+		txt = "5C_"+string(subarea);
+	}
+	else if area > 99
 	{
 		txt = "???"
 		switch (area)
 		{
+			case 101://Oasis
+				txt = "1B_"+string(subarea);
+			break;
+			case 102://Pizza
+				txt = "2B_"+string(subarea);
+			break;
+			case 103://YV MANSION
+				txt = "3B_"+string(subarea);
+			break;
+			case 117://Mushroom
+				txt = "4B_"+string(subarea);
+			break;
+			case 114://Jungle
+				txt = "5B_"+string(subarea);
+			break;
 			case 105: //Inverted desert
 				txt = "1_"+string(subarea);
 				upsideDown = true;
@@ -30,11 +61,11 @@ function scrAreaName(area,subarea,loops){
 				upsideDown = true;
 			break;
 			case 108: //Inverted vulcano
-				txt = "7_"+string(subarea);
+				txt = "3B_"+string(subarea);
 				upsideDown = true;
 			break;
 			case 109: //Inverted wonderland
-				txt = "8_"+string(subarea);
+				txt = "5C_"+string(subarea);
 				upsideDown = true;
 			break;
 			case 110: //Inverted sewers
@@ -42,11 +73,11 @@ function scrAreaName(area,subarea,loops){
 				upsideDown = true;
 			break;
 			case 111: //Inverted crystal caves
-				txt = "4_"+string(subarea);
+				txt = "6_"+string(subarea);
 				upsideDown = true;
 			break;
 			case 112: //Inverted labs
-				txt = "6_"+string(subarea);
+				txt = "4_"+string(subarea);
 				upsideDown = true;
 			break;
 		}

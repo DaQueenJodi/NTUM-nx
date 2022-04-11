@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 raddrop = 70
-maxhealth = 280
+maxhealth = 290
 my_health = maxhealth;
 EnemyHealthAdjustments();
 spr_idle = sprInvertedBigBadBatIdle
@@ -14,7 +14,7 @@ spr_fire = sprInvertedBigBadBatFire
 actTime = 12;
 spinAttackDuration = 60;
 spinAttackDistance = 64;
-laserOffset = 20;
+laserOffset = 26;
 laserDuration = 60;
 fireRate = 4;
 maxAmmo = 6;

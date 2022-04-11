@@ -1,5 +1,5 @@
 raddrop = 50
-maxhealth = 300
+maxhealth = 320
 meleedamage = 5
 size = 6;
 
@@ -33,7 +33,7 @@ pSpeedSpinny = 3;
 pSpeedJawbreaker = 4.5;
 fireOffset = 40;
 laserDuration = 80;
-laserOffset = 26;
+laserOffset = 32;
 myLasers = [];
 
 image_xscale = 1;
@@ -42,7 +42,9 @@ scrTarget();
 angle = random(360);
 if target > 0
 	angle = point_direction(target.x,target.y,x,y);
-	
+
+//get into position
+alarm[6] = 60;
 emitter = audio_emitter_create();
 audio_emitter_gain(emitter, 0.8);
 audio_emitter_falloff(emitter, 50, 400, 1);
