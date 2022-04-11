@@ -1,5 +1,5 @@
 scrDrop(100,100)
-
+scrDrop(20,100)
 event_inherited()
 scrBusinessHogGoldChest();
 repeat(5+irandom(6))

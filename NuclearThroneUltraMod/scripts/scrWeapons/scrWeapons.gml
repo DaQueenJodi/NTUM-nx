@@ -4773,9 +4773,9 @@ function scrWeapons() {
 	wep_auto[432] = 1
 	wep_load[432] = 26
 	wep_cost[432] = 2
-	wep_sprt[432] = sprBladeGun
+	wep_sprt[432] = sprChunkyBladeGun
 	wep_area[432] = 12
-	wep_text[432] = ""
+	wep_text[432] = "grand blade"
 	wep_swap[432] = sndSwapBow
 	wep_rad[432] = 0;
 	

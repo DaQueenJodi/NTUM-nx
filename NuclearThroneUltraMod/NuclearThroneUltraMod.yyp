@@ -724,6 +724,7 @@
     {"id":{"name":"sprGoldenSnowTankIdle","path":"sprites/sprGoldenSnowTankIdle/sprGoldenSnowTankIdle.yy",},"order":0,},
     {"id":{"name":"sprGoldenSnowTankWalk","path":"sprites/sprGoldenSnowTankWalk/sprGoldenSnowTankWalk.yy",},"order":1,},
     {"id":{"name":"sprGoldenSnowTankHurt","path":"sprites/sprGoldenSnowTankHurt/sprGoldenSnowTankHurt.yy",},"order":2,},
+    {"id":{"name":"sprChunkyBladeGun","path":"sprites/sprChunkyBladeGun/sprChunkyBladeGun.yy",},"order":290,},
     {"id":{"name":"sprGoldenSnowTankDead","path":"sprites/sprGoldenSnowTankDead/sprGoldenSnowTankDead.yy",},"order":3,},
     {"id":{"name":"sprSnowTankIdle","path":"sprites/sprSnowTankIdle/sprSnowTankIdle.yy",},"order":4,},
     {"id":{"name":"sprSnowTankDead","path":"sprites/sprSnowTankDead/sprSnowTankDead.yy",},"order":5,},

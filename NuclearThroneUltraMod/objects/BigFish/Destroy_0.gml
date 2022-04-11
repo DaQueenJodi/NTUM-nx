@@ -1,5 +1,5 @@
-scrDrop(20,2)
-scrDrop(40,1)
+scrDrop(20,100)
+scrDrop(40,0)
 
 //UNLOCK GOOD OL' HUMPHRY
 scrUnlockCharacter(26,"FOR KILLING BIG FISH");

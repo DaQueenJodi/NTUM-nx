@@ -1,4 +1,5 @@
-maxhealth = 60
+var loops = GetPlayerLoops();
+maxhealth = 60 * clamp(loops*1.5,1,4)
 size = 1
 //if UberCont.public == 0//Temp only for dev build
 //{

@@ -296,7 +296,18 @@ if Player.area == 9
 }
 if Player.area == 10
 {
-	name = "BIG VULTURE";
+	if Player.subarea == 3
+	{
+		name = "BIG VULTURE";
+		if random(100) < 1
+			name = choose("CHARGE BIRD","BIG BIRD","ANGRY BIRD");
+	}
+	else
+	{
+		name = "MOM ON VACATION";
+		if random(100) < 1
+			name = choose("WE NOT SKIPPING THIS FIGHT","BALL MOM ON VACATION","MOMMY IN THE SUN");
+	}
 }
 
 }

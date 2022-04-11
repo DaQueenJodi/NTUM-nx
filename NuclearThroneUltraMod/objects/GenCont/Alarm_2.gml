@@ -36,7 +36,7 @@ if Player.area = 114 and Player.subarea = 2
 	instance_create(instance_furthest(Player.x,Player.y,Floor).x+132, instance_furthest(Player.x,Player.y,Floor).y+32,InvertedLilHunter);
 	}
 
-if (Player.loops > 0 && Player.area == 2 && Player.subarea == 1)
+if (Player.loops > 0 && ((Player.area == 2 && Player.subarea == 1) ||  Player.area == 10 && Player.subarea == 1))
 {
 	scrSpawnBoss(BallMom);
 }
