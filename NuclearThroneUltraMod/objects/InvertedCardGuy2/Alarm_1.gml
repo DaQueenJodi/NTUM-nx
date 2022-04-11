@@ -1,9 +1,9 @@
-alarm[1] = 5+random(11)
+alarm[1] = 10+random(10)
 
 if instance_exists(Player)
 {
 if Player.loops>0
-alarm[1] = 5+random(5);
+alarm[1] = 10+random(5);
 }
 
 scrTarget()
@@ -18,7 +18,7 @@ if random(5) < 1 && point_distance(target.x,target.y,x,y) < 200
 
 gunangle = point_direction(x,y,target.xprevious,target.yprevious)
 snd_play(sndSniperTarget)
-alarm[2]=18;
+alarm[2]=20;
 gonnafire=1;
 
 alarm[1] = alarm[2]+random(10)

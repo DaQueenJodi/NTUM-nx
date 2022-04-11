@@ -302,14 +302,14 @@ function scrSkills() {
 	if Player.race=25
 	{
 	skill_name[31] = "TOUGH SHELL"
-	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 4 DAMAGE#DEALS TWO LESS DAMAGE##EVERYTHING THAT DEALS#MORE THAN 2 DAMAGE#DEALS ONE LESS DAMAGE"
+	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 4 DAMAGE TO YOU#DEALS TWO LESS DAMAGE##EVERYTHING THAT DEALS#MORE THAN 2 DAMAGE#DEALS ONE LESS DAMAGE"
 	skill_tips[31] = "damage reduction!"
 	skill_msnd[31] =  sndToughShell
 	}
 	else
 	{
 	skill_name[31] = "TOUGH SHELL"
-	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 1 DAMAGE#DEALS ONE LESS DAMAGE"
+	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 1 DAMAGE TO YOU#DEALS ONE LESS DAMAGE"
 	skill_tips[31] = "damage reduction!"
 	skill_msnd[31] =  sndToughShell
 	}
@@ -317,7 +317,7 @@ function scrSkills() {
 	else
 	{
 	skill_name[31] = "TOUGH SHELL"
-	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 2 DAMAGE#DEALS ONE LESS DAMAGE"
+	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 1 DAMAGE TO YOU#DEALS ONE LESS DAMAGE"
 	skill_tips[31] = "damage reduction!"
 	skill_msnd[31] =  sndToughShell
 	}

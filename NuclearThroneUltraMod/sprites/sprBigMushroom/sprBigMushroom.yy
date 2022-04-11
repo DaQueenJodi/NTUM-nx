@@ -144,7 +144,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBigMushroom","path":"sprites/sprBigMushroom/sprBigMushroom.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprBigMushroom",
     "tags": [],
     "resourceType": "GMSequence",
   },

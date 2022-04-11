@@ -21,6 +21,8 @@ function scrModHit() {
 	14 radiation
 	15 splinter
 	16 morph
+	17 pickups
+	18 weps
 	*/
 	if instance_exists(Player) && Player.moddelay < 1
 	{
@@ -255,7 +257,7 @@ function scrModHit() {
 				break;
 	
 				case 18://GUNS
-					scrDrop(0,6);
+					scrDrop(0,5);
 				break;
 
 				}

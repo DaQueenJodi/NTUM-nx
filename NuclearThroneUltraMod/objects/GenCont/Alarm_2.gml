@@ -175,18 +175,19 @@ instance_create(x+16,y+16,WeaponMod)
 }
 
 
-//MUSHROOM WONDERLAND BANDITLAND
-if Player.area = 8 && Player.subarea < 3 && Player.banditland=true
+
+if Player.area == 8 && Player.subarea == 1
 {
+	//Mushroomland
+	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
+		instance_create(x+16,y+16,MushroomLandEntranceWonderland)
+}
+else if Player.area = 8 && Player.subarea < 3 && Player.banditland=true
+{
+	//MUSHROOM WONDERLAND BANDITLAND
 Player.banditland=false;
 with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
 instance_create(x+16,y+16,BigMushroom)
-
-}
-if Player.area == 6 && Player.subarea == 1
-{
-	with instance_nearest((instance_furthest(Player.x,Player.y,Floor).x*2+Player.x)/4+random(128)-64+32,(instance_furthest(Player.x,Player.y,Floor).y*2+Player.y)/4+random(128)-64+32,Floor)
-		instance_create(x+16,y+16,MushroomLandEntranceLabs)
 }
 if Player.area == 103
 {

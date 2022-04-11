@@ -566,7 +566,7 @@ function scrWeapons() {
 	wep_name[51] = "DRAGON"
 	wep_type[51] = 4
 	wep_auto[51] = 1
-	wep_load[51] = 3
+	wep_load[51] = 4
 	wep_cost[51] = 1
 	wep_sprt[51] = sprDragon
 	wep_area[51] = 13
@@ -1440,7 +1440,7 @@ function scrWeapons() {
 	wep_name[130] = "TOXIC DRAGON"
 	wep_type[130] = 4
 	wep_auto[130] = 1
-	wep_load[130] = 3
+	wep_load[130] = 4
 	wep_cost[130] = 1
 	wep_sprt[130] = sprToxicDragon
 	wep_area[130] = 10
@@ -3552,7 +3552,7 @@ function scrWeapons() {
 	wep_name[322] = "SNOW DRAGON"
 	wep_type[322] = 4
 	wep_auto[322] = 1
-	wep_load[322] = 3
+	wep_load[322] = 4
 	wep_cost[322] = 1
 	wep_sprt[322] = sprSnowDragon
 	wep_area[322] = 14

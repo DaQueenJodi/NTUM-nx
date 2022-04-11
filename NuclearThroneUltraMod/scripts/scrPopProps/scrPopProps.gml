@@ -176,7 +176,7 @@ function scrPopProps() {
 	if spawnarea = 112 and random(4) < 1 && !place_meeting(x,y,Wall)
 	instance_create(x+16,y+16,choose(InvertedTube,InvertedTube,InvertedTube,InvertedTube,InvertedMutantTube))
 
-	    if spawnarea = 7 || spawnarea = 108 && !place_meeting(x,y,Wall){ //CUSTOM
+	    if spawnarea = 7 && !place_meeting(x,y,Wall){ //CUSTOM
 		    if random(60) < 1{
 				instance_create(x+16,y+16,BigSkull)
 			}
@@ -199,6 +199,15 @@ function scrPopProps() {
 				instance_create(x+16,y+16,InvertedVulcanoRock);
 			}
 		}
+	if spawnarea = 117//Mushroomland
+	{
+		if random(10)<1{
+			instance_create(x+16,y+16,ToxicMushroom)
+		} else if random(5) < 4
+		{
+			instance_create(x+16,y+16,choose(MushroomProp1,MushroomProp2));
+		}
+	}
 	if spawnarea = 8 && !place_meeting(x,y,Wall){//CUSTOM
 	if random(2)<1
 	instance_create(x+16,y+16,CandyCane);

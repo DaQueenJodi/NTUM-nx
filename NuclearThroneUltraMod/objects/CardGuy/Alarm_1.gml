@@ -1,4 +1,4 @@
-alarm[1] = 14+random(11)
+alarm[1] = 14+random(12)
 
 if instance_exists(Player)
 {
@@ -13,76 +13,10 @@ if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 {
 if point_distance(target.x,target.y,x,y) > 48
 {
-if random(6) < 1 && point_distance(target.x,target.y,x,y) < 300
+if random(4) < 1 && point_distance(target.x,target.y,x,y) < 300
 {
-snd_play(sndEnemyFire)
-wkick = -6
-gunangle = point_direction(x,y,target.x,target.y)
-direction = point_direction(x,y,target.x,target.y)
-with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.direction+random(12)-6,2)
-image_angle = direction
-team = other.team
-}with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.direction+random(12)-6,3)
-image_angle = direction
-team = other.team
-}with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.direction+random(12)-6,3.5)
-image_angle = direction
-team = other.team
+	event_user(0);
 }
-with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.direction+random(12)-6,2.5)
-image_angle = direction
-team = other.team
-}
-with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.direction+random(12)-6,4)
-image_angle = direction
-team = other.team
-}
-
-
-with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.direction+random(30)-15,2)
-image_angle = direction
-team = other.team
-}with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.direction+random(30)-15,3)
-image_angle = direction
-team = other.team
-}with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.direction+random(30)-15,3.5)
-image_angle = direction
-team = other.team
-}
-with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.direction+random(30)-15,2.5)
-image_angle = direction
-team = other.team
-}
-with instance_create(x,y,EnemyBullet1)
-{
-motion_add(other.direction+random(30)-15,4)
-image_angle = direction
-team = other.team
-}
-
-
-
-
-
-alarm[1] = 10+random(10)}
 else if random(10)<1
 {
 direction=point_direction(x,y,target.x,target.y)+180;
