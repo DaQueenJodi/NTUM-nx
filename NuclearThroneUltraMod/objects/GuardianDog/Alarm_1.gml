@@ -7,7 +7,7 @@ function startJump() {
     alarm[2] = 20; //chargeup time
 }
 
-alarm[1] = 10 + random(10)
+alarm[1] = actTime + random(actTime)
 scrTarget()
 walk = 0
 if jumpUp || jumpDown || fire

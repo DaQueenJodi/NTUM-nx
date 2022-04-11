@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprPalaceTopDecal","path":"sprites/sprPalaceTopDecal/sprPalaceTopDecal.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprPalaceTopDecal",
     "tags": [],
     "resourceType": "GMSequence",
   },

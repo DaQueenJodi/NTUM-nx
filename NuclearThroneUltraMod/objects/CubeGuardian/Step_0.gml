@@ -26,7 +26,7 @@ if charge
 			if target > 0
 			{
 				var suckDir = point_direction(x,y,target.x,target.y);
-				var suckStrength = 0.9 + min(loops*0.2,0.4);
+				var suckStrength = pullInStrength
 				if imageIndex > 14
 					suckStrength += 1.4;
 				if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
@@ -74,6 +74,6 @@ else
 speed = max(speed,2);
 motion_add(direction,2)
 
-if speed > 3.5
-speed = 3.5
+if speed > maxSpeed
+speed = maxSpeed
 }

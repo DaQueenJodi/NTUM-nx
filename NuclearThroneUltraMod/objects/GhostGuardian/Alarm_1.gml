@@ -1,10 +1,10 @@
-alarm[1] = 5+random(10)
+alarm[1] = actTime+random(actTime)
 scrTarget()
 if target > 0
 {
 	//GOT TARGET
 	var dis = point_distance(x,y,target.x,target.y);
-	if dis < 200
+	if dis < maxRange
 	{
 		//CAN SEE
 		//direction = point_direction(x,y,target.x,target.y)+random(60)-30

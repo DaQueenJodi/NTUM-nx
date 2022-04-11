@@ -129,8 +129,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Palace Enemy",
-    "path": "folders/Sprites/Palace/Palace Enemy.yy",
+    "name": "InvertedPalaceEnemies",
+    "path": "folders/Sprites/Palace/Palace Enemy/InvertedPalaceEnemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprInvertedGuardianTryout",

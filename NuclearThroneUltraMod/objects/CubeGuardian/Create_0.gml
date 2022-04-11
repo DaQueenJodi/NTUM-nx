@@ -34,6 +34,10 @@ amountOfProjectiles = 4;
 rotateSpeed = 2+min(loops,3);
 distance = 48;
 distance += min(32,loops*8);
+maxSpeed = 3.5;
+pullInStrength = 0.8 + min(loops*0.2,0.4);
+projectileSprite = sprSquareGuardianBullet
+exploBullet = ExploGuardianBullet;
 direction = random(360);
 speed = 1;
 if hspeed > 0

@@ -1,4 +1,4 @@
-/// @description Spawn guardianBullet dead
+/// @description Sprite
 with instance_create(x,y,ScorpionBulletHit)
 {
 	sprite_index = sprGuardianBulletHit;	

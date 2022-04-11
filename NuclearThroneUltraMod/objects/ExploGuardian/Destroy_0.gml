@@ -2,7 +2,7 @@ scrDrop(0,20)
 
 if (charge || fire)
 {
-	var amount = 14;
+	var amount = exploAmount;
 	var angle = random(360);
 	var angleStep = 360/amount;
 	repeat(amount)

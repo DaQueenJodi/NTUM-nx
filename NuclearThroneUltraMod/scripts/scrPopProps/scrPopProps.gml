@@ -94,25 +94,17 @@ function scrPopProps() {
 		if (random(7) < 1 && !place_meeting(x,y,Wall))
 		{
 			var ran = random(100);
-			if (ran > 90)
+			if (ran > 85)
 			{
-				instance_create(x,y,choose(Table1,Table2));
-			}
-			else if (ran > 80)
-			{
-				instance_create(x,y,FallenChair);
+				//instance_create(x,y,choose(Table1,Table2));
 			}
 			else if (ran > 70)
 			{
-				instance_create(x,y,Pillar);
-			}
-			else if (ran > 60)
-			{
-				instance_create(x,y,NuclearPillar);
+				instance_create(x,y,InvertedNuclearPillar);
 			}
 			else if (ran > 45)
 			{
-				instance_create(x,y,SmallGenerator);
+				instance_create(x,y,InvertedSmallGenerator);
 			}
 		}
 		mask_index = mask;

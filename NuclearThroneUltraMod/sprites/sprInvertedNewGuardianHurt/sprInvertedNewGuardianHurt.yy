@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "NewGuardian",
-    "path": "folders/Sprites/Palace/Palace Enemy/NewGuardian.yy",
+    "name": "InvertedPalaceEnemies",
+    "path": "folders/Sprites/Palace/Palace Enemy/InvertedPalaceEnemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprInvertedNewGuardianHurt",

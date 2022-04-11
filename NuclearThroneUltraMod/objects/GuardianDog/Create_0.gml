@@ -4,7 +4,10 @@ meleedamage = 6;
 size = 4;
 
 event_inherited()
-
+actTime = 10;
+maxSpeed = 2;
+maxJumpSpeed = 8;
+jumpAcc = 0.3;
 spr_normal = sprDogGuardianWalk;
 spr_idle = sprDogGuardianWalk
 spr_walk = sprDogGuardianWalk

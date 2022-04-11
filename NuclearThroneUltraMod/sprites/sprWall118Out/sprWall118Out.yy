@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "PalaceEnviroment",
-    "path": "folders/Sprites/Palace/PalaceEnviroment.yy",
+    "name": "InvertedPalace",
+    "path": "folders/Sprites/Palace/PalaceEnviroment/InvertedPalace.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprWall118Out",

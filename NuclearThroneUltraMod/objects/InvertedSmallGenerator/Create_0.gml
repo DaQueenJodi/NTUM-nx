@@ -1,15 +1,15 @@
-maxhealth = 40
+maxhealth = 35
 my_health = maxhealth;
 size = 2
 
-spr_idle = sprSmallGenerator;
-spr_hurt = sprSmallGeneratorHurt;
-spr_dead = sprSmallGeneratorDead;
+spr_idle = sprInvertedSmallGenerator;
+spr_hurt = sprInvertedSmallGeneratorHurt;
+spr_dead = sprInvertedSmallGeneratorDead;
 
 
 event_inherited()
 shadowSprite = shd32;
-shadowXoffset = image_xscale * 2;
+shadowXoffset = image_xscale;
 shadowYoffset = 6;
 
 snd_hurt = sndHitMetal

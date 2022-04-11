@@ -1,5 +1,5 @@
 ///AI
-alarm[1] = 10+random(10)
+alarm[1] = actTime+random(actTime)
 if fire || charge
 	exit;
 motion_add(direction,1);
@@ -19,11 +19,9 @@ motion_add(direction,1);
 			snd_play(sndExploGuardianCharge);
 			image_index = 0;
 			
-			alarm[2] = 50;
-			alarm[1] = 60;
-			var loops = min(GetPlayerLoops(),3)
-			alarm[2] -= 5*loops;
-			alarm[1] -= 5*loops;
+			alarm[2] = tellTime;
+			alarm[1] = tellTime+10;
+			
 		}
 		else
 		{

@@ -4,7 +4,8 @@ meleedamage = 5
 size = 3
 
 event_inherited()
-
+actTime = 7;
+maxRange = 200;
 spr_idle = sprGhostGuardianWalk;
 spr_walk = sprGhostGuardianWalk;
 spr_hurt = sprGhostGuardianHurt;
@@ -20,7 +21,7 @@ goForIt = false;
 instance_create(x,y,WallBreak);
 var loops = GetPlayerLoops();
 var i = 0;
-var myCompanions = [];
+myCompanions = [];
 var amountOfProjectiles = 3;
 amountOfProjectiles += min(loops,4);
 for (var i = 0; i < amountOfProjectiles; i++) {

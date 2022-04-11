@@ -84,7 +84,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprCubeGuardianDead","path":"sprites/sprCubeGuardianDead/sprCubeGuardianDead.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprCubeGuardianDead",
     "tags": [],
     "resourceType": "GMSequence",
   },

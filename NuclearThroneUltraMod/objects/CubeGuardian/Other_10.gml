@@ -8,6 +8,8 @@ for (var i = 0; i < am; i++) {
 		instance_destroy(id,false);
 		with instance_create(x,y,GuardianSquareBullet)
 		{
+			sprite_index = other.sprite_index;
+			image_index = other.image_index;
 			team = other.team;
 			switch (other.dirStep)
 			{
@@ -31,8 +33,9 @@ snd_play(sndExploGuardianFire);
 var angle = 0;
 repeat(4)
 {
-	with instance_create(x,y,ExploGuardianBullet)
+	with instance_create(x,y,exploBullet)
 	{
+		//offsetDir = 0;
 		motion_add(angle,ps);
 		image_angle = direction
 		team = other.team

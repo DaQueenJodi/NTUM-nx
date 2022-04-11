@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprSmallGenerator",
-    "path": "sprites/sprSmallGenerator/sprSmallGenerator.yy",
+    "name": "sprInvertedSmallGenerator",
+    "path": "sprites/sprInvertedSmallGenerator/sprInvertedSmallGenerator.yy",
   },
   "solid": false,
   "visible": true,

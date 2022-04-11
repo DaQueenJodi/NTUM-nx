@@ -4,7 +4,7 @@ meleedamage = 2
 size = 3
 
 event_inherited()
-
+actTime = 10;
 spr_normal = sprExploGuardianWalk;
 spr_idle = spr_normal;
 spr_walk = sprExploGuardianWalk;
@@ -30,6 +30,9 @@ friction = 2;
 instance_create(x,y,BigWallBreak);
 projectileSpeed = 10;
 projectileSpeed += min(GetPlayerLoops(),3);
+tellTime = 50;
+var loops = min(GetPlayerLoops(),3)
+tellTime -= 5*loops;
 direction = random(360);
 speed = 1;
 if hspeed > 0
@@ -37,3 +40,6 @@ if hspeed > 0
 else if hspeed < 0
 	right = -1
 depth = -2;
+
+exploAmount = 14;
+exploBullet = ExploGuardianBullet;

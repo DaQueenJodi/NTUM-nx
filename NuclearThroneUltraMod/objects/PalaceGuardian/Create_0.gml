@@ -5,6 +5,7 @@ size = 4
 
 event_inherited()
 
+actTime = 20;
 spr_idle = sprNewGuardianIdle;
 spr_walk = sprNewGuardianIdle;
 spr_normal = sprNewGuardianIdle;

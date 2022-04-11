@@ -2,7 +2,11 @@
 
 // Inherit the parent event
 event_inherited();
-
+raddrop = 12
+maxhealth = 30
+my_health = maxhealth;
+EnemyHealthAdjustments();
+actTime = 10;
 spr_idle = sprInvertedNewGuardianIdle;
 spr_walk = sprInvertedNewGuardianIdle;
 spr_normal = sprInvertedNewGuardianIdle;

@@ -46,6 +46,7 @@ if Player.skill_got[12] = 1
 for (var i = 0; i < amountOfProjectiles; i++) {
 	with myCompanions[i]
 	{
+		sprite_index = other.projectileSprite;
 		owner = idd;
 		dirStep = dir;
 		rotationDirection = rotationdir;

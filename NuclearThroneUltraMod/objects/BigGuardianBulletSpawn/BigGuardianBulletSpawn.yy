@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "mskBigGuardianBullet",
+    "path": "sprites/mskBigGuardianBullet/mskBigGuardianBullet.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

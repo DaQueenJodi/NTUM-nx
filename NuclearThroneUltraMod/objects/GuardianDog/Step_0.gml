@@ -6,11 +6,11 @@ else if jumpUp || jumpDown
 {
 	direction = jumpDir;
 	if target > 0
-		motion_add(point_direction(x,y,target.x,target.y),0.3);
-	speed =	8;
+		motion_add(point_direction(x,y,target.x,target.y),jumpAcc);
+	speed =	maxJumpSpeed;
 }
-else if speed > 2
-	speed = 2
+else if speed > maxSpeed
+	speed = maxSpeed
 
 
 

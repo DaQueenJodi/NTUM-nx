@@ -5,7 +5,7 @@ if (charge)
 	var angle = 0;
 	repeat(4)
 	{
-		with instance_create(x,y,ExploGuardianBullet)
+		with instance_create(x,y,exploBullet)
 		{
 			motion_add(angle,other.projectileSpeed);
 			image_angle = direction
