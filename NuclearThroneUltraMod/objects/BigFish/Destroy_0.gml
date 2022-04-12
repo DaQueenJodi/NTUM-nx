@@ -2,7 +2,6 @@ scrDrop(100,100)
 scrDrop(20,0)
 if !isOneWeaponOnlyModes()
 {
-	var w = scrDecideWep(2, 1000, 0)
 	with instance_create(x-8,y,WepPickup)
 	{
 		scrWeapons()

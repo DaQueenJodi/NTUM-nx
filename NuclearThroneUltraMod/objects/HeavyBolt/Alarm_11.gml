@@ -1,4 +1,5 @@
 /// @description ultramod
+var um = GetPlayerUltramod();
 if um == ultramods.plasmaBolt
 {
 	with Player
