@@ -798,7 +798,7 @@ function scrPopEnemies() {
 	    if random(9) < 1
 	    instance_create(x + 16, y + 16, choose(Exploder, BuffMushroom, ToxicMushroomGuy, BuffMushroom, Gator, ToxicMushroomGuy, BanditSquare))
 	    else
-	        instance_create(x + 16, y + 16, choose(Gator, GatorSmoke, ToxicMushroomGuy, BuffMushroom, BuffMushroom, ToxicMushroomGuy, ToxicMushroomGuy, BanditSquare))
+	        instance_create(x + 16, y + 16, choose(Gator, GatorSmoke, ToxicMushroomGuy, BuffMushroom, BuffMushroom, ToxicMushroomGuy, ToxicMushroomGuy, BanditSquare,Exploder))
     }
 
 
