@@ -4246,6 +4246,7 @@
     {"id":{"name":"scrCheckLoopAll","path":"scripts/scrCheckLoopAll/scrCheckLoopAll.yy",},"order":17,},
     {"id":{"name":"sprBushBoxWalk","path":"sprites/sprBushBoxWalk/sprBushBoxWalk.yy",},"order":12,},
     {"id":{"name":"scrCheckAllGold","path":"scripts/scrCheckAllGold/scrCheckAllGold.yy",},"order":19,},
+    {"id":{"name":"sprUltraBloodRifle","path":"sprites/sprUltraBloodRifle/sprUltraBloodRifle.yy",},"order":292,},
     {"id":{"name":"MorphBullet","path":"objects/MorphBullet/MorphBullet.yy",},"order":195,},
     {"id":{"name":"scrCheckOneGold","path":"scripts/scrCheckOneGold/scrCheckOneGold.yy",},"order":21,},
     {"id":{"name":"scrUsedEveryCrown","path":"scripts/scrUsedEveryCrown/scrUsedEveryCrown.yy",},"order":23,},

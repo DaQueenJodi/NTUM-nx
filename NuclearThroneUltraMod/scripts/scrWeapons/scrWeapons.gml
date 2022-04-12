@@ -2972,7 +2972,7 @@ function scrWeapons() {
 	wep_load[269] = 11
 	wep_cost[269] = 1
 	wep_sprt[269] = sprBouncerLaserGun
-	wep_area[269] = 7
+	wep_area[269] = 9
 	wep_text[269] = "unpredictable"
 	wep_swap[269] = sndSwapEnergy
 	wep_rad[269] = 0;
@@ -2983,7 +2983,7 @@ function scrWeapons() {
 	wep_load[270] = 8
 	wep_cost[270] = 1
 	wep_sprt[270] = sprBouncerLaserRifle
-	wep_area[270] = 9
+	wep_area[270] = 12
 	wep_text[270] = "all over the place"
 	wep_swap[270] = sndSwapEnergy
 	wep_rad[270] = 0;
@@ -4795,7 +4795,7 @@ function scrWeapons() {
 	wep_auto[434] = 1
 	wep_load[434] = 3
 	wep_cost[434] = 1
-	wep_sprt[434] = sprHeavyBloodRifle
+	wep_sprt[434] = sprUltraBloodRifle
 	wep_area[434] = 20
 	wep_text[434] = "cdoesn't cost a lot of rads"
 	wep_swap[434] = sndSwapPistol

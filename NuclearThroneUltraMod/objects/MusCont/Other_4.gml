@@ -47,7 +47,7 @@ if UberCont.opt_gamemode == 8 && area != 0
     exit;
 }
 
-if oldarea != area || area == 0 or !audio_is_playing(song) or!audio_exists(song) || song == musBossWin {
+if oldarea != area || area == 0 or !audio_is_playing(song) or audio_is_playing(musBoss1) or !audio_exists(song) || song == musBossWin {
 
     dir = 1
     deaths = 0

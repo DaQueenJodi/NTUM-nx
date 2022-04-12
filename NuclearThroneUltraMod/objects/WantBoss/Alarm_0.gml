@@ -23,7 +23,7 @@ if target > 0
 			instance_create(x,y,CanSpawnBoss);
 		}
 	}
-	if instance_exists(CanSpawnBoss)
+	if instance_exists(CanSpawnBoss) && spawned
 	{
 		with instance_nearest(target.x,target.y,CanSpawnBoss)
 		{
