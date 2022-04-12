@@ -1,4 +1,5 @@
-maxhealth = 30
+loops = GetPlayerLoops();
+maxhealth = 90 * clamp(loops*2,1,4)
 size = 1
 spr_idle = sprMushroomStatue;
 spr_hurt = sprMushroomStatueHurt;
@@ -14,7 +15,4 @@ instance_create(x+16,y,WallBreak);
 instance_create(x+16,y+16,WallBreak);
 instance_create(x-16,y,WallBreak);
 instance_create(x-16,y+16,WallBreak);
-alarm[1] = 120
 
-alarm[2]=900//30 seconds
-closed = false;
