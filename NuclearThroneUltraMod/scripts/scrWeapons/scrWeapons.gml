@@ -4807,7 +4807,7 @@ function scrWeapons() {
 	wep_load[435] = 7
 	wep_cost[435] = 1
 	wep_sprt[435] = sprToxicThrower
-	wep_area[435] = 4
+	wep_area[435] = 19
 	wep_text[435] = "ultra stinky"
 	wep_swap[435] = sndSwapFlame
 	wep_rad[435] = 4;
