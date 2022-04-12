@@ -1,4 +1,4 @@
-alarm[1] = 12+random(10)
+alarm[1] = 8+random(8)
 
 if instance_exists(Player)
 {
@@ -64,7 +64,7 @@ if !place_meeting(x,y,Wall)&&place_meeting(x,y,Floor)
     else if random(3)<1//quick burp
     {
 		event_user(0);
-		if random(9)<1//Wazer attack
+		if random(10)<1.2//Wazer attack
 		{
 			event_user(4);
 		}

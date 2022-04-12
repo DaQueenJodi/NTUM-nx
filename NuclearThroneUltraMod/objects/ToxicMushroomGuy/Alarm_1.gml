@@ -12,6 +12,7 @@ if target > 0 {
 		        team = other.team
 		    }
             wkick = 4
+			alarm[1] += 4;
         }
         else {
             direction = point_direction(x, y, target.x, target.y) + random(180) - 90

@@ -1,6 +1,6 @@
 if instance_exists(Player)
 {
-    if Player.my_health<Player.maxhealth*0.5&&spr_idle != sprBigFishSkull || loops > 0
+    if Player.my_health<Player.maxhealth*0.5&&spr_idle != sprBigFishSkull
     {
 	    with Player
 	    oasisskip=-1;
@@ -16,8 +16,7 @@ if instance_exists(Player)
 	    spr_hurt = sprBigFishSkullHurt}
     }
 }
-    if ( (instance_number(enemy) < BackCont.enemiesInStartLevel * 0.6) ||
-	(instance_number(enemy) < BackCont.enemiesInStartLevel * 0.35 && loops > 0))
+    if (instance_number(enemy) < BackCont.enemiesInStartLevel * 0.6)
     {
     
     with Player

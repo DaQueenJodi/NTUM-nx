@@ -181,7 +181,7 @@ function scrNextLevel() {
     
 	    if area = 111//inv crystal cavesbring from caves to lil hunter
 	    {
-			if inverted && subarea<3
+			if inverted && subarea<2
 			{
 				area = 111;
 				subarea = 2;

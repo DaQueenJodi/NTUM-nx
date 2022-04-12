@@ -355,7 +355,7 @@ function scrMakeFloor() {
 	if area == 9 || area == 118{
 		if subarea < 2
 		{
-		if random(5) < 3
+		if random(5) < 2
 		{
 			instance_create(x,y,Floor)
 			instance_create(x+32,y,Floor)
@@ -571,7 +571,7 @@ function scrMakeFloor() {
 	trn = choose(0,0,0,0,90,-90,180)
 
 	direction += trn
-	if ((area=7||area=108) && subarea=2) || area=104
+	if ((area=7||area=108) && subarea=3) || area=104
 		direction=0;
 	else if area == 9 && subarea == 3
 		direction = 90;

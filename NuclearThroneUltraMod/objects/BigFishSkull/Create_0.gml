@@ -1,5 +1,5 @@
 loops = GetPlayerLoops();
-maxhealth = 100 * clamp(loops*1.5,1,4)
+maxhealth = 100 * clamp(loops*2,1,5)
 size = 2
 
 spr_idle = sprBigFishSkullOpen
@@ -11,6 +11,8 @@ event_inherited()
 shadowSprite = shd32;
 
 snd_hurt = sndHitRock
-alarm[1]=900//33 sec 900
-
+alarm[1]=900 * clamp(loops*1.5,1,4)//33 sec 900
+if loops < 1
+	alarm[2] = 1;
 instance_create(x,y,WallBreak);
+name = "ENTER?"

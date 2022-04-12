@@ -1,5 +1,5 @@
 raddrop = 50
-maxhealth = 320
+maxhealth = 330
 meleedamage = 5
 size = 6;
 
@@ -20,7 +20,7 @@ alarm[1] = 30;
 rotationSpeed = choose(2,-2);
 speedUp = 4;
 minDistanceToTarget = 96;
-maxDistanceToTarget = 32;
+maxDistanceToTarget = 132;
 distanceToTarget = maxDistanceToTarget;
 maxAmmo = 3;
 ammo = maxAmmo;

@@ -253,7 +253,7 @@ function scrModHit() {
 				break;
 	
 				case 17://DROPS
-					scrDrop(9,0);
+					scrDrop(8,0);
 				break;
 	
 				case 18://GUNS

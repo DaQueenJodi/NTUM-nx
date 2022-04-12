@@ -70,7 +70,7 @@ room_speed=35;
 	    invertedportaldelay=45+random(100);
 	    //area=106
 	    }
-	    else if ( area=4  )
+	    else if ( area=4 &&  subarea < 2)
 	    {
 	    invertedportalcounter=1;
 	    invertedportaldelay=45+random(100);

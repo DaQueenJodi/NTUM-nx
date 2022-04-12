@@ -19,7 +19,6 @@ Sleep(200)
 scrBusinessHogGoldChest();
 instance_create(x,y,ChesireCatExplosion);
 
-scrDrop(10,1)
 
 scrDrop(100,0)
 scrDrop(20,0)

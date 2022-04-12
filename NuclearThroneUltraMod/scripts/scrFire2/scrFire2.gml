@@ -6283,7 +6283,12 @@ function scrFire2() {
 	
 	//WAZER
 	case 424:
-	if !instance_exists(PlayerWazer)
+	with PlayerWazer
+	{
+		if team == other.team
+			exists = true;
+	}
+	if !exists
 	{
 		snd_play_2d(sndWazerStart,0,true);
 		with instance_create(x,y,PlayerWazer)
@@ -6301,7 +6306,8 @@ function scrFire2() {
 	{
 		with PlayerWazer
 		{
-			alarm[0] = 1 + other.wep_load[other.wep];
+			if team == other.team
+				alarm[0] = 1 + other.wep_load[other.wep];
 		}
 	}
 	break;
@@ -6360,7 +6366,13 @@ function scrFire2() {
 	
 	//EXPLOSION WAZER
 	case 428:
-	if !instance_exists(PlayerExplosionWazer)
+	var exists = false;
+	with PlayerExplosionWazer
+	{
+		if team == other.team
+			exists = true;
+	}
+	if !exists
 	{
 		snd_play_2d(sndWazerStart,0,true);
 		with instance_create(x,y,PlayerExplosionWazer)
@@ -6378,7 +6390,8 @@ function scrFire2() {
 	{
 		with PlayerExplosionWazer
 		{
-			alarm[0] = 1 + other.wep_load[other.wep];
+			if team == other.team
+				alarm[0] = 1 + other.wep_load[other.wep];
 		}
 	}
 	break;

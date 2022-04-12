@@ -1,5 +1,5 @@
 ///@description AI
-alarm[1] = 12+random(15)
+alarm[1] = 10+random(10)
 
 if instance_exists(Player)
 {
@@ -47,7 +47,7 @@ if dis<240
 		    else if random(3)<1//quick burp
 		    {
 			    event_user(0);
-				if random(9)<1//Wazer attack
+				if random(10)<1.2//Wazer attack
 			    {
 					event_user(4);
 			    }

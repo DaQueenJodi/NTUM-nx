@@ -2320,7 +2320,7 @@ function scrWeapons() {
 	wep_name[210] = "BIG MISSILE LAUNCHER"
 	wep_type[210] = 4
 	wep_auto[210] = 0
-	wep_load[210] = 90
+	wep_load[210] = 60
 	wep_cost[210] = 12
 	wep_sprt[210] = sprBigMissileLauncher
 	wep_area[210] = 13
@@ -2466,7 +2466,7 @@ function scrWeapons() {
 	wep_load[223] = 11
 	wep_cost[223] = 5
 	wep_sprt[223] = sprBulletSword
-	wep_area[223] = 10
+	wep_area[223] = 11
 	wep_text[223] = "bullet bullet bullet bullet sword sword sword sword"
 	wep_swap[223] = sndSwapSword
 	wep_rad[223] = 0;
@@ -4686,7 +4686,7 @@ function scrWeapons() {
 	wep_load[424] = 9
 	wep_cost[424] = 1
 	wep_sprt[424] = sprWazerRifle
-	wep_area[424] = 10
+	wep_area[424] = 13
 	wep_text[424] = "an actual laser"
 	wep_swap[424] = sndSwapEnergy
 	wep_rad[424] = 0;
@@ -4730,7 +4730,7 @@ function scrWeapons() {
 	wep_load[428] = 7
 	wep_cost[428] = 1
 	wep_sprt[428] = sprExplosiveWazerRifle
-	wep_area[428] = 13
+	wep_area[428] = 15
 	wep_text[428] = "excavate"
 	wep_swap[428] = sndSwapEnergy
 	wep_rad[428] = 0;
@@ -4771,7 +4771,7 @@ function scrWeapons() {
 	wep_name[432] = "CHUNKY BLADE GUN"
 	wep_type[432] = 3
 	wep_auto[432] = 1
-	wep_load[432] = 26
+	wep_load[432] = 34
 	wep_cost[432] = 2
 	wep_sprt[432] = sprChunkyBladeGun
 	wep_area[432] = 12

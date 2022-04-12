@@ -36,7 +36,7 @@ if audio_is_playing(sndDragonLoop)
 audio_stop_sound(sndDragonLoop)
 
 //drop Time Thrower?
-if(random(50)<1){
+if(random(200)<1){
 with instance_create(x,y,WepPickup)
 {
 scrWeapons()
