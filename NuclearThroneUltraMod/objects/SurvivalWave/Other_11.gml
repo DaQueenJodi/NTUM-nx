@@ -231,7 +231,6 @@ switch (waveType)
 }
 waveLength = array_length(wave);
 //Start it
-
 alarm[3] = 5;//Tell time is the difference between these two numbers
 alarm[0] = 20;
 alarm[4] = 4;//U a quiter?

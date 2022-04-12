@@ -16,22 +16,19 @@ if UberCont.ultramodSwap
 		alarm[11] = 1;
 	}
 }
-else
+if instance_exists(Player)
 {
-	if instance_exists(Player)
+	if Player.skill_got[17] = 1
 	{
-		if Player.skill_got[17] = 1
-		{
-			alarm[0] += Player.betterlaserbrain;
-			alarm[0] += 2;
-		}
+		alarm[0] += Player.betterlaserbrain;
+		alarm[0] += 2;
 	}
-	repeat(3)
-	with(instance_create(x,y,Smoke)){
-	image_blend = make_color_rgb(244,145,255);
-	}
-
-	image_angle = random(360);
-	rot = random_range(30,-30);
-	image_alpha = 0.4;
 }
+repeat(3)
+with(instance_create(x,y,Smoke)){
+image_blend = make_color_rgb(244,145,255);
+}
+
+image_angle = random(360);
+rot = random_range(30,-30);
+image_alpha = 0.4;
