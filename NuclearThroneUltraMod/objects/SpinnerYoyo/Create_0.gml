@@ -5,7 +5,7 @@ image_speed=1;
 dmg = 12;
 owner = -1;
 length = 1;
-maxlength = 128;
+maxlength = 132;
 if instance_exists(Player) && Player.skill_got[19]//Eagle eyes increase range why not
 	maxlength += 30;
 oDir = 0;

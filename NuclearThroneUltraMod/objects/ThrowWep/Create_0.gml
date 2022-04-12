@@ -5,11 +5,11 @@ friction = 0.4
 motion_add(random(360),0.5+random(1))
 
 rotspeed = (random(1)+1)*choose(1,-1)
-
+/*
 if UberCont.opt_gamemode=1{//one weapon only
 instance_destroy();
 instance_create(x,y,AmmoPickup);}
-
+*/
 /*THIS IS HOW IT SHOULD WORK
 
 damagers have a DAMAGE

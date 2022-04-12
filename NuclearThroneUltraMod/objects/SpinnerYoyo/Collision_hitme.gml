@@ -10,6 +10,10 @@ if other.team != team
 			motion_add(other.direction,4)
 			BackCont.shake += 2
 		}
+		else
+		{
+			image_index += 0.2;//iframe skipper
+		}
 	}
 }
 

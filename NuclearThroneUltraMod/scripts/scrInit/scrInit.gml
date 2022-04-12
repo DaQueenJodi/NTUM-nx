@@ -24,6 +24,7 @@ function scrInit() {
 		ctot_dailies_race_seed: [],
 		ctot_dailies_race_time: [],
 		dailies_race_day: [],
+		secrets: [false,false,false,false,false,false,false,false,false,false],
 	};
 	scrLoadEncrypted();
 }

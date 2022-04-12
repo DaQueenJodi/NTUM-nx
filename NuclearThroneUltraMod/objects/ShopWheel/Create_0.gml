@@ -33,6 +33,4 @@ if instance_exists(Player)
     
     }
 }
-depth = -99;
-with ShopItem
-	depth = -100;
+depth = -25;

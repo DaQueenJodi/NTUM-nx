@@ -17,7 +17,19 @@ function scrLoadEncrypted(){
 			encrypted_data = json_parse(hashlessString);
 			if is_struct(encrypted_data)
 			{
-				debug("SUCCESS");	
+				if (variable_struct_get(encrypted_data,"secrets") == undefined)
+				{
+					var olddata = encrypted_data;
+					encrypted_data = {
+						ctot_dailies_score_seed: olddata.ctot_dailies_score_seed,
+						ctot_dailies_score_score: olddata.ctot_dailies_score_score,
+						dailies_score_day: olddata.dailies_score_day,
+						ctot_dailies_race_seed: olddata.ctot_dailies_race_seed,
+						ctot_dailies_race_time: olddata.ctot_dailies_race_time,
+						dailies_race_day: olddata.dailies_race_day,
+						secrets: [false,false,false,false,false,false,false,false,false,false],
+					}
+				}
 			}
 			else
 			{
@@ -39,6 +51,7 @@ function scrLoadEncrypted(){
 			ctot_dailies_score_score: [-1],
 			ctot_dailies_race_seed: [todaysSeed],
 			ctot_dailies_race_time: [-1],
+			secrets
 		};
 		*/
 		scrSaveEncrypted();

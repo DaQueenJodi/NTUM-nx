@@ -5,10 +5,20 @@ size = 1
 
 event_inherited()
 
-spr_idle = sprBanditIdle
-spr_walk = sprBanditWalk
-spr_hurt = sprBanditHurt
-spr_dead = sprBanditDead
+if UberCont.encrypted_data.secrets[1] == true
+{
+	spr_idle = sprPinkBanditIdle
+	spr_walk = sprPinkBanditWalk
+	spr_hurt = sprPinkBanditHurt
+	spr_dead = sprPinkBanditDead
+}
+else
+{
+	spr_idle = sprBanditIdle
+	spr_walk = sprBanditWalk
+	spr_hurt = sprBanditHurt
+	spr_dead = sprBanditDead
+}
 
 snd_hurt = sndBanditHit
 snd_dead = sndBanditDie

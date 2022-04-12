@@ -123,7 +123,7 @@ my_health = 0}}
 
 
 snd_play(snd_dead)
-with instance_create(x,y,WepPickup)
+with instance_create(x,y,WepPickupForOneWepOnly)
 {
 scrWeapons()
 wep = other.wep

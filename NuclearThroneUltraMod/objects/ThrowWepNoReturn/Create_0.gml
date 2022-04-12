@@ -1,4 +1,5 @@
 /// @description Consistent damage no teleport and pierce
+thrownByCuz = false;
 
 // Inherit the parent event
 event_inherited();
@@ -9,5 +10,4 @@ dontteleport = true;
 dmg = 50;
 stopSpeed = 1;
 pierce = true;
-thrownByCuz = false;
 stopSpeed = 0.5;

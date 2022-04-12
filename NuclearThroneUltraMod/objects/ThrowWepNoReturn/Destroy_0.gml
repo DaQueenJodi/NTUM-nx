@@ -1,6 +1,6 @@
 /// @description Don't return instead create =pickup
 if !thrownByCuz
-with instance_create(x,y,WepPickup)
+with instance_create(x,y,WepPickupForOneWepOnly)
 {
 	oneweponly=false;
     image_angle=other.direction;

@@ -56,7 +56,7 @@ other.canblacksword=true
 }
 }
 ///next level what procedure
-
+/*
 if ( loops mod 2 == 0  && loops>1)
 {//check if loop is above loop 1 and an even number 2 4 6 8
 scrNextLevelInverted();//even
@@ -65,7 +65,8 @@ else
 {
 scrNextLevel();//odd
 }
-
+*/
+scrNextLevel();
 ///at the end of a level stuff
 
 if patience>0||ultra_got[0]=1
@@ -337,6 +338,31 @@ if (wep = 46 || bwep = 46 || cwep == 46) && loops=1
 	type = wep_type[wep]
 	curse = 0
 	sprite_index = wep_sprt[wep]
+	}
+}
+//Secret
+if ((wep == 375 || bwep == 375 || cwep == 375) && isValidGamemodeToUnlock(0) && loops == 1)
+{
+	with UberCont
+	{
+		encrypted_data.secrets[0] = true;
+		scrSaveEncrypted();
+		with instance_create(x,y,UnlockPopup)
+		{
+			mytext="UNLOCKED SUPER SECRET#FOR BRINGING#THE INVERSION MAGNET#TO LOOP";
+		}
+	}
+}
+if ((wep == 231 || bwep == 231 || cwep == 231) && isValidGamemodeToUnlock(0) && race != 1 && loops > 0)
+{
+	with UberCont
+	{
+		encrypted_data.secrets[1] = true;
+		scrSaveEncrypted();
+		with instance_create(x,y,UnlockPopup)
+		{
+			mytext="YOU SHOULD NOT BE PLAYING GUITAR#HERE IS A SUPER SECRET#UNLOCK";
+		}
 	}
 }
 

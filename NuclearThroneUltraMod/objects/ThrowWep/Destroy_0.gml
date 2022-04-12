@@ -42,7 +42,7 @@ with Player
 
 }
 
-with instance_create(x,y,WepPickup)
+with instance_create(x,y,WepPickupForOneWepOnly)
 {
 	oneweponly=false;
 	image_angle=other.image_angle;

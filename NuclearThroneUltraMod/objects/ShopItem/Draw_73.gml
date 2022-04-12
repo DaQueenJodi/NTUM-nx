@@ -8,6 +8,7 @@ draw_set_halign(fa_right)
 
 if place_meeting(x,y,ShopSelector)
 {
+depth = selected;
 
 drawx = x
 drawy = y
@@ -33,5 +34,9 @@ draw_set_color(c_silver)
 draw_text(drawx+string_width(string_hash_to_newline(txt))/2,drawy-14,string_hash_to_newline(string(txt)))
 draw_set_color(c_white)
 //draw_text(drawx+string_width(txt)/2,drawy-14-string_height(txt),string(skill_name[skill]))
+}
+else
+{
+	depth = unselected;	
 }
 

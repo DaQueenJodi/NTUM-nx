@@ -881,7 +881,7 @@ if reload > 0
 	if wep_type[wep] = 3
 	snd_play(sndCrossReload,0,true)
 	if wep_type[wep] = 4
-	snd_play(sndNadeReload,0,true,false,2,false,false,0.67)
+	snd_play(sndNadeReload,0,true,false,2,false,false,0.6)
 	if string_copy(wep_name[wep],0,6) = "PLASMA"
 	{
 	if skill_got[17] = 1
@@ -930,7 +930,7 @@ snd_play(sndMeleeFlip,0,true)
 if wep_type[bwep] = 3
 snd_play(sndCrossReload,0,true)
 if wep_type[wep] = 4
-	snd_play(sndNadeReload,0,true,false,2,false,false,0.67)
+	snd_play(sndNadeReload,0,true,false,2,false,false,0.6)
 if wep_type[bwep] = 2
 {
 repeat(wep_cost[bwep])

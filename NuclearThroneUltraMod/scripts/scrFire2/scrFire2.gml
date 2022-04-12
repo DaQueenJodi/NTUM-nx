@@ -6147,12 +6147,12 @@ function scrFire2() {
 		var sins = sin(point_direction(x,y,mouse_x,mouse_y));
 		if sins > 0
 		{
-			motion_add(aimDir + 10,12);
+			motion_add(aimDir + 10,8);
 			rotation = -400;
 		}
 		else
 		{
-			motion_add(aimDir - 10,12);
+			motion_add(aimDir - 10,8);
 			rotation = 400;
 		}
 		image_angle = direction
@@ -6177,12 +6177,12 @@ function scrFire2() {
 			var sins = sin(point_direction(x,y,mouse_x,mouse_y));
 			if sins > 0
 			{
-				motion_add(aimDir + 10,12);
+				motion_add(aimDir + 10,8);
 				rotation = -400;
 			}
 			else
 			{
-				motion_add(aimDir - 10,12);
+				motion_add(aimDir - 10,8);
 				rotation = 400;
 			}
 			image_angle = direction
@@ -6283,6 +6283,7 @@ function scrFire2() {
 	
 	//WAZER
 	case 424:
+	var exists = false;
 	with PlayerWazer
 	{
 		if team == other.team
