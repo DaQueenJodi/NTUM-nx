@@ -5109,6 +5109,7 @@
     {"id":{"name":"sndGoldTankPreShoot","path":"sounds/sndGoldTankPreShoot/sndGoldTankPreShoot.yy",},"order":22,},
     {"id":{"name":"Jock","path":"objects/Jock/Jock.yy",},"order":40,},
     {"id":{"name":"SnowMan","path":"objects/SnowMan/SnowMan.yy",},"order":41,},
+    {"id":{"name":"sprUltraToxicThrower","path":"sprites/sprUltraToxicThrower/sprUltraToxicThrower.yy",},"order":293,},
     {"id":{"name":"GoldScorpion","path":"objects/GoldScorpion/GoldScorpion.yy",},"order":42,},
     {"id":{"name":"Scorpion","path":"objects/Scorpion/Scorpion.yy",},"order":43,},
     {"id":{"name":"InvertedScorpion","path":"objects/InvertedScorpion/InvertedScorpion.yy",},"order":44,},
