@@ -15,6 +15,13 @@ if UberCont.ultramodSwap
 		visible = false;
 		alarm[11] = 1;
 	}
+	else
+	{
+		repeat(3)
+		with(instance_create(x,y,Smoke)){
+		image_blend = make_color_rgb(244,145,255);
+		}
+	}
 }
 if instance_exists(Player)
 {
@@ -24,10 +31,7 @@ if instance_exists(Player)
 		alarm[0] += 2;
 	}
 }
-repeat(3)
-with(instance_create(x,y,Smoke)){
-image_blend = make_color_rgb(244,145,255);
-}
+
 
 image_angle = random(360);
 rot = random_range(30,-30);
