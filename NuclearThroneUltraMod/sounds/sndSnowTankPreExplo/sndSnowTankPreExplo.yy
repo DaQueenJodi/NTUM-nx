@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndSnowTankPreExplo",
-  "duration": 0.0,
+  "duration": 0.971844,
   "parent": {
     "name": "Regular",
     "path": "folders/Sounds/Enemies/Regular.yy",

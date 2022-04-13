@@ -262,7 +262,7 @@ function scrPopEnemies() {
 		var crystal = CursedCrystal;
 		if random(30) < 1
 			crystal = LightningCrystal;
-		else if random(10) < 1
+		else if random(9) < 1
 		{
 			repeat(2)
 				instance_create(x + 16, y + 16, CursedSpider)

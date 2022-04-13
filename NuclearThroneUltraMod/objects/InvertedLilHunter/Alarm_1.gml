@@ -1,4 +1,4 @@
-alarm[1] = 8+random(8)
+alarm[1] = 7+random(7)
 if loop
 alarm[1]=2+random(4);
 scrTarget()
@@ -95,7 +95,7 @@ repeat(10+irandom(loop))
 {
 with instance_create(x,y,EnemyBullet5)
 {
-motion_add(other.gunangle,5+random(6))
+motion_add(other.gunangle,6+random(4))
 image_angle = direction
 team = other.team
 }

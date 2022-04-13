@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 raddrop = 70
-maxhealth = 300
+maxhealth = 360
 my_health = maxhealth;
 EnemyHealthAdjustments();
 spr_idle = sprInvertedBigBadBatIdle

@@ -18,7 +18,7 @@ audio_sound_gain(amb,max(0,sqrt(UberCont.opt_ambvol)),0);
 //Allow access to vulcano?
 	with Player
 	{
-		if my_health >= maxhealth
+		if my_health >= round(maxhealth*0.5)
 		{
 			with DragonSkull
 			{

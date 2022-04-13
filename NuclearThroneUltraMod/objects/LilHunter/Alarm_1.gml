@@ -6,10 +6,9 @@ if target > 0
 {
 
 //HAS A TARGET
-if random(35) < 1 or (point_distance(x,y,target.x,target.y) < 64 and random(3) < 1) or (point_distance(x,y,target.x,target.y) > 160 and random(16) < 1)
+if random(35) < 1 or (point_distance(x,y,target.x,target.y) < 64 and random(4) < 1) or (point_distance(x,y,target.x,target.y) > 160 and random(16) < 1)
 {
 //FLY
-
 sprite_index = sprLilHunterLiftStart
 image_index = 0
 instance_change(LilHunterFly,false)
@@ -90,7 +89,7 @@ repeat(10+irandom(loop))
 {
 with instance_create(x,y,EnemyBullet1)
 {
-motion_add(other.gunangle,5+random(5))
+motion_add(other.gunangle,5+random(4))
 image_angle = direction
 team = other.team
 }
@@ -108,7 +107,7 @@ walk = 8+random(4)
 gunangle = point_direction(x,y,target.x,target.y)
 }
 }
-else if random(30) < 1 && !instance_exists(IDPDSpawn)
+else if ((random(10) < 1 && !instance_exists(IDPDSpawn)) || (random(30) < 1))
 {
 	snd_play_2d(sndLilHunterSummon)
 	with Player
@@ -118,9 +117,7 @@ else if random(30) < 1 && !instance_exists(IDPDSpawn)
 }
 else if random(30)<1
 {
-
 //CAN'T SEE FLY AWAY FLY
-
 sprite_index = sprLilHunterLiftStart
 image_index = 0
 instance_change(LilHunterFly,false)

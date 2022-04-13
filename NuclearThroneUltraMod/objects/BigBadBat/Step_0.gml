@@ -15,6 +15,8 @@ if target > 0
 		right = 1
 	if alarm[4] > 0
 	{
+		if sprite_index != spr_hurt
+			sprite_index = spr_fire;
 		//Spin attack
 		var dir = point_direction(x,y,target.x,target.y);
 		var odis = spinAttackDistance;
@@ -37,6 +39,8 @@ if target > 0
 	}
 	if alarm[5] > 0
 	{
+		if sprite_index != spr_hurt
+			sprite_index = spr_fire;
 		var dir = point_direction(x,y,target.x,target.y);
 		var odis = laserOffset;
 		var xx = x + lengthdir_x(odis,dir+90);

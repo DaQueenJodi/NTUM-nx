@@ -1,4 +1,4 @@
-move_bounce_solid(false)
+move_bounce_solid(true)
 
 if dist > 50
 {

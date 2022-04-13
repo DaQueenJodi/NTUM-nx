@@ -8,6 +8,7 @@ if (sprite_index == sprNothingSwitchOn)
 if (sprite_index == sprNothingActivate)
 {
 	image_index = image_number -1;
+	meleedamage = 10;
 }
 if active && ! intro{
 	if sprite_index == spr_hurt

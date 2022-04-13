@@ -28,20 +28,23 @@ BackCont.shake += 5
 snd_play(sndLilHunterLand)
 alarm[5]=10;
 instance_create(x,y,WallBreak);
-repeat(10)
+var ang = random(360);
+var am = 12;
+var angstep = 360/12;
+repeat(am)
 {
-with instance_create(x,y,TrapFire)//Trapfire
-{
-sprite_index = sprFireLilHunter
-motion_add(random(360),2+random(0.2))
-move_contact_solid(direction,3)
-image_angle = direction
-team = other.team
-}
-
+	with instance_create(x,y,TrapFire)//Trapfire
+	{
+		sprite_index = sprFireLilHunter
+		motion_add(ang,2+random(0.2))
+		move_contact_solid(direction,2)
+		image_angle = direction
+		team = other.team
+	}
+ang += angstep;
 }
 shadowdraw=false;
-repeat(6)
+repeat(4)
 {
 with instance_create(x+random(16)-8,y+random(16),Dust)
 motion_add(random(360),3+random(1))

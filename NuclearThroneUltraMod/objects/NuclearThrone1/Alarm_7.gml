@@ -15,7 +15,6 @@ image_index = 1;
 imageIndex = 1;
 with instance_create(x,y,ThronePipes)
 	depth = other.depth + 3;
-meleedamage = 10;
 alarm[2] = 90;
 beamY = y;
 repeat(8)

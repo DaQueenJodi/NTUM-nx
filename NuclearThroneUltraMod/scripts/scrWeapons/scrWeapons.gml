@@ -3962,7 +3962,7 @@ function scrWeapons() {
 	wep_type[359] = 4
 	wep_auto[359] = 0
 	wep_load[359] = 25
-	wep_cost[359] = 4
+	wep_cost[359] = 3
 	wep_sprt[359] = sprLaserBombLauncher
 	wep_area[359] = 11
 	wep_text[359] = "lime light show"

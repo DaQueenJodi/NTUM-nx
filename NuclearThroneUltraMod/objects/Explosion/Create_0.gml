@@ -1,6 +1,6 @@
 image_speed = 0.4
 dmg = 5;
-
+myExplosionMask = -1;
 if UberCont.ultramodSwap
 {
 	var um = GetPlayerUltramod()
@@ -15,7 +15,8 @@ if UberCont.ultramodSwap
 		//seperate mask for players
 		if object_index!=ExplosionNonLethal
 		{
-		with instance_create(x,y,ExplosionMask)
+		myExplosionMask = instance_create(x,y,ExplosionMask);
+		with myExplosionMask {
 			owner = other.id;
 		}
 		with instance_create(x,y,Smoke)

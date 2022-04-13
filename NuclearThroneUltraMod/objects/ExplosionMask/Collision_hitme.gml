@@ -1,4 +1,4 @@
-if other.team = 2 && instance_exists(Player)
+if other.team == 2 && instance_exists(Player)
 {
 with other
 {
