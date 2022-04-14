@@ -1,18 +1,19 @@
 function scrSkills() {
+	var isDoctor = false;
+	if instance_exists(Player)
+	{
+		isDoctor = Player.race == 25
+	}
 	skill_name[0] = "HEAVY HEART"
 	skill_text[0] = "MORE WEAPON DROPS"
 	skill_msnd[0] = sndMutHeavyHeart
 	skill_tips[0] = ""
 
 	skill_name[1] = "RHINO SKIN"
-	if instance_exists(Player)
-	{
-	if Player.race=25//Mutation smith/doctor
+	if isDoctor
 	skill_text[1] = "+5 MAX HP"
 	else
 	skill_text[1] = "+4 MAX HP"
-	}
-	else
 	skill_text[1] = "+4 MAX HP"
 	skill_tips[1] = "thick skin"
 	skill_msnd[1] =  sndMutRhinoSkin
@@ -76,12 +77,18 @@ function scrSkills() {
 	skill_msnd[5] =  sndMutThronebutt
 
 	skill_name[6] = "LUCKY SHOT"
-	skill_text[6] = "SOME KILLS REGENERATE AMMO"
+	if isDoctor
+		skill_text[6] = "21% CHANCE KILLS REGENERATE AMMO"
+	else
+		skill_text[6] = "23% CHANCE KILLS REGENERATE AMMO"
 	skill_tips[6] = "ammo everywhere"
 	skill_msnd[6] =  sndMutLuckyShot
 
 	skill_name[7] = "BLOODLUST"
-	skill_text[7] = "SOME KILLS REGENERATE HP"
+	if isDoctor
+		skill_text[7] = "7.9% CHANCE KILLS REGENERATE HP"
+	else
+		skill_text[7] = "7.7% CHANCE KILLS REGENERATE HP"
 	skill_tips[7] = "drink blood"
 	skill_msnd[7] =  sndMutBloodlust
 
@@ -129,36 +136,19 @@ function scrSkills() {
 	skill_tips[13] = "more reach"
 	skill_msnd[13] =  sndMutLongArms
 
-	if instance_exists(Player)
-	{
 
-	if Player.race=25
-	{
 	skill_name[14] = "BOILING VEINS"
-	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE, FROST AND LAVA#WHEN UNDER 6HP#EXCLUDING! BLUE FIRE"
-	skill_tips[14] = choose("temperature is rising","boiling veins does not#protect against#blue fire");
-	skill_msnd[14] =  sndMutBoilingVeins
-	}
+	if isDoctor
+		skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE, FROST AND LAVA#WHEN UNDER 6HP#EXCLUDING! BLUE FIRE"
 	else
-	{
-	skill_name[14] = "BOILING VEINS"
-	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE, FROST AND LAVA#WHEN UNDER 5HP#EXCLUDING! BLUE FIRE"
+		skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE, FROST AND LAVA#WHEN UNDER 5HP#EXCLUDING! BLUE FIRE"
 	skill_tips[14] = choose("temperature is rising","boiling veins does not#protect against#blue fire");
 	skill_msnd[14] =  sndMutBoilingVeins
-	}
 
-	}
-	else
-	{
-	skill_name[14] = "BOILING VEINS"
-	skill_text[14] = "NO DAMAGE FROM#EXPLOSIONS, FIRE AND LAVA#WHEN UNDER 4HP#EXCLUDING! BLUE FIRE"
-	skill_tips[14] = choose("temperature is rising","boiling veins does not#protect against#blue fire");
-	skill_msnd[14] =  sndMutBoilingVeins
-	}
 
 	skill_name[15] = "SHOTGUN SHOULDERS"
 	skill_text[15] = "SHELLS BOUNCE FURTHER"//#BOUNCER BULLETS CAN BOUNCE#ONE ADDITIONAL TIME" effect is minor no need to tell?
-	skill_tips[15] = "shells are friends"
+	skill_tips[15] = choose("shells are friends","shotgun shoulders\nextends close range damage\nfrom shotguns","shotgun shoulders\nincrease bouncer bullets bounces by 1")
 	skill_msnd[15] =  sndMutShotGunShoulders
 
 	skill_name[16] = "RECYCLE GLAND"
@@ -226,61 +216,27 @@ function scrSkills() {
 	skill_tips[24] = "keep killing"
 	skill_msnd[24] =  sndMutTriggerfingers
 
-	if instance_exists(Player)
-	{
-
-	if Player.race=25
-	{
 	skill_name[25] = "STRONG SPIRIT"
-	skill_text[25] = "DENIES LETHAL BLOWS ONCE PER AREA#RECHARGES WHEN AT ATLEAST 75% HEALTH"
-	skill_tips[25] = "denied"
-	skill_msnd[25] =  sndMutStrongSpirit
-	}
+	if isDoctor
+		skill_text[25] = "DENIES LETHAL BLOWS ONCE PER AREA#RECHARGES WHEN AT ATLEAST 75% HEALTH"
 	else
-	{
-	skill_name[25] = "STRONG SPIRIT"
-	skill_text[25] = "DENIES LETHAL BLOWS ONCE PER AREA#RECHARGES WHEN AT FULL HEALTH"
+		skill_text[25] = "DENIES LETHAL BLOWS ONCE PER AREA#RECHARGES WHEN AT FULL HEALTH"
 	skill_tips[25] = "denied"
 	skill_msnd[25] =  sndMutStrongSpirit
-	}
-	}
-	else
-	{
-	skill_name[25] = "STRONG SPIRIT"
-	skill_text[25] = "DENIES LETHAL BLOWS ONCE PER AREA#RECHARGES WHEN AT FULL HEALTH"
-	skill_tips[25] = "denied"
-	skill_msnd[25] =  sndMutStrongSpirit
-	}
 
 	skill_name[26] = "HAMMER HEAD"
 	skill_text[26] = "BREAK THROUGH SOME WALLS#FIND RESOURCES IN WALLS"
 	skill_tips[26] = "hello welcome to my minecraft let's play"
 	skill_msnd[26] =  sndMutHammerHead
 
-	if instance_exists(Player)
-	{
-	if Player.race=25
-	{
 	skill_name[27] = "PATIENCE"
-	skill_text[27] = "CHOOSE A DIFFERENT MUTATION RIGHT AWAY"
-	skill_tips[27] = "no waiting"
-	skill_msnd[27] =  sndMutPatience
-	}
+	if isDoctor
+		skill_text[27] = "CHOOSE A DIFFERENT MUTATION RIGHT AWAY"
 	else
-	{
-	skill_name[27] = "PATIENCE"
-	skill_text[27] = "CHOOSE A MUTATION NEXT AREA"
-	skill_tips[27] = "wait for it..."
+		skill_text[27] = "CHOOSE A MUTATION NEXT AREA"
+	skill_tips[27] = "wait"
 	skill_msnd[27] =  sndMutPatience
-	}
-	}
-	else
-	{
-	skill_name[27] = "PATIENCE"
-	skill_text[27] = "CHOOSE A MUTATION NEXT AREA"
-	skill_tips[27] = "wait for it..."
-	skill_msnd[27] =  sndMutPatience
-	}
+
 
 	skill_name[28] = "RAGE"
 	skill_text[28] = "EACH KILL INCREASES YOUR#FIRE RATE, DROPRATE#AND DECREASES ACCURACY SLIGHTLY#RESETS EACH TIME YOU GET HIT"
@@ -297,30 +253,13 @@ function scrSkills() {
 	skill_tips[30] = "maximum power"
 	skill_msnd[30] =  sndPowerCraving
 
-	if instance_exists(Player)
-	{
-	if Player.race=25
-	{
 	skill_name[31] = "TOUGH SHELL"
-	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 4 DAMAGE TO YOU#DEALS TWO LESS DAMAGE##EVERYTHING THAT DEALS#MORE THAN 2 DAMAGE#DEALS ONE LESS DAMAGE"
-	skill_tips[31] = "damage reduction!"
-	skill_msnd[31] =  sndToughShell
-	}
+	if isDoctor
+		skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 4 DAMAGE TO YOU#DEALS TWO LESS DAMAGE##EVERYTHING THAT DEALS#MORE THAN 2 DAMAGE#DEALS ONE LESS DAMAGE"
 	else
-	{
-	skill_name[31] = "TOUGH SHELL"
-	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 1 DAMAGE TO YOU#DEALS ONE LESS DAMAGE"
+		skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 1 DAMAGE TO YOU#DEALS ONE LESS DAMAGE"
 	skill_tips[31] = "damage reduction!"
 	skill_msnd[31] =  sndToughShell
-	}
-	}
-	else
-	{
-	skill_name[31] = "TOUGH SHELL"
-	skill_text[31] = "EVERYTHING THAT DEALS#MORE THAN 1 DAMAGE TO YOU#DEALS ONE LESS DAMAGE"
-	skill_tips[31] = "damage reduction!"
-	skill_msnd[31] =  sndToughShell
-	}
 	
 	skill_name[32] = "ALKALINE SALIVA"
 	skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#WHILE BELOW MAX HP#HEALS YOU INSTEAD"
@@ -328,20 +267,18 @@ function scrSkills() {
 	skill_msnd[32] =  sndMutAlkalineSaliva
 	
 	skill_name[33] = "GLASS ARM CANNON"//Metroid reference I guess
-	skill_text[33] = "25% LESS ENEMY HP#-2 MAX HP"
+	if isDoctor
+		skill_text[33] = "25% LESS ENEMY HP#-1 MAX HP"
+	else
+		skill_text[33] = "25% LESS ENEMY HP#-2 MAX HP"
 	skill_tips[33] = "fragile"
 	skill_msnd[33] =  sndMutGlassArmCannon
 	if instance_exists(Player) 
 	{
-		if Player.race = 25
-		{
-			skill_text[33] = "25% LESS ENEMY HP#-2 MAX HP"
-		}
-		/*
 		if (Player.race == 3 && Player.maxhealth <= 2 && UberCont.ctot_skill_taken[33] <= 0)
 		{
 			skill_text[33] = "25% LESS ENEMY HP#-2 MAX HP#TAKING THIS WONT KILL YOU <3"	
-		}*/
+		}
 	}
 	
 	/*
@@ -357,11 +294,6 @@ function scrSkills() {
 	skill_text[34] = "THERE ARE NO MORE MUTATIONS LEFT!"
 	skill_tips[34] = ""
 	skill_msnd[34] =  sndPartyHorn
-
-	/*
-	skill_name[29] = "SHARP TEETH"
-	skill_text[29] = "WHENEVER YOU GET HIT DEAL DAMAGE TO EVERYTHING ON THE SCREEN, AND REDUCE DAMAGE TAKEN IN A SHORT PERIOD AFTER BEING HIT TO 1  
-	skill_tips[29] = "bite"*/
 
 	maxskill = 33;
 

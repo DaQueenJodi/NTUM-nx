@@ -38,7 +38,7 @@ function scrLuckyShot(){
 		bwepammo,bwepammo,
 		cwepammo,cwepammo)
     
-	    Player.ammo[type] += round(Player.typ_ammo[type]/2)
+	    Player.ammo[type] += round(Player.typ_ammo[type]*0.5)
 	    if Player.ammo[type] > Player.typ_amax[type]
 	    Player.ammo[type] = Player.typ_amax[type]
     
@@ -47,7 +47,7 @@ function scrLuckyShot(){
 			dir = instance_create(x,y,PopupText);
 			dir.sprt = sprAmmoIconsPickup
 			dir.ii = type-1;
-		    dir.mytext = "+"+string(round(Player.typ_ammo[type]/2));
+		    dir.mytext = "+"+string(round(Player.typ_ammo[type]*0.5));
 		    if Player.ammo[type] = Player.typ_amax[type]
 				dir.mytext = "MAX";
 		}
