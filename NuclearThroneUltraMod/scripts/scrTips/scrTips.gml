@@ -47,7 +47,7 @@ function scrTips() {
 	"kraken pulls enemies towards you",
 	"doing alright",
 	"there are other worlds out there",
-	/*more rares*/choose("try not to get mad","be kind","the original idea for the name trashtalk\ncame from lars in a stream\n he made a lot of the sounds in ultra mod",
+	/*more rares*/choose("try not to get mad","be kind","the original idea for\nthe name trashtalk\ncame from lars in a stream\n he made a lot of the sounds\nin ultra mod",
 	"maybe you should play better","if you ever get stuck\noutside a level\nwalk far away\nfrom the level to get teleported back","use wasd to move","don't get baited by items","ask and ye shall receive","you smell that?","sick build bro","what does your gun tell you?","don't get baited by items"
 	,"thematically inconsistent!","if you reach loop 2\nyour level cap increases by 1","skeleton has\na fifth ultra mutation","don't be afraid to pick up new weapons",choose("28 EGGS FOR BREAKFAST","shit on my tits","never pick hanzo","microtransactions","if you are seeing this\nyou are fucking aswesome")/*super rare*/
 	)

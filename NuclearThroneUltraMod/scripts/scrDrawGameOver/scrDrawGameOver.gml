@@ -20,8 +20,8 @@ function scrDrawGameOver() {
 		txt = "";
 		gameover = "KILLS: "+string(BackCont.kills)+"#WAVE: "+string(BackCont.subarea)+"#DIFFICULTY: "+string(BackCont.hard)
 	}
-	if BackCont.loops > 0 && UberCont.opt_gamemode != 8
-	gameover += "#LOOPS: "+string(BackCont.loops)
+	//if BackCont.loops > 0 && UberCont.opt_gamemode != 8
+	//gameover += "#LOOPS: "+string(BackCont.loops)
 	/*
 	if UberCont.opt_shake != 1
 	gameover += "##PLAYING WITH "+string(round(UberCont.opt_shake*100))+"% SCREENSHAKE"

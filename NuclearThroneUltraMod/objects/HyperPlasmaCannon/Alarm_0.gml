@@ -24,7 +24,7 @@ motion_add(random(360),random(2))
 
 }
 until dir > 100 or place_meeting(x,y,Wall) or place_meeting(x,y,hitme)
-instance_create(x,y,ExplosionNonLethal);
+instance_create(x,y,WallBreak);
 alarm[1] = 2
 
 speed = 4

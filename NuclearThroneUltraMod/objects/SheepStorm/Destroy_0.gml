@@ -3,7 +3,6 @@ audio_stop_sound(sndSheepLoop);
 if instance_exists(Player){
 
 
-room_speed=30;
 
 with Player
 {

@@ -2,7 +2,16 @@
 
 if instance_exists(Player)
 {
-	if (point_distance(centerX,centerY,Player.x,Player.y) > 400)
+	var cx = centerX;
+	var cy = centerY;
+	with enemy
+	{
+		if (point_distance(cx,cy,x,y) > 400)
+		{
+			my_health = 0;	
+		}
+	}
+	if (point_distance(cx,cy,Player.x,Player.y) > 400)
 	{
 		with enemy
 		{
@@ -32,14 +41,14 @@ if instance_exists(Player)
 	}
 	else
 	{
-		alarm[4] = 4;
+		alarm[4] = 5;
 	}
 }
 else if instance_exists(PlayerSpawn)
 {
 	alarm[0] += 1;
 	alarm[3] += 1;
-	alarm[4] = 4;
+	alarm[4] = 5;
 }
 else
 {

@@ -81,13 +81,13 @@ function scrPopEnemies() {
         }
     }
 
-    if spawnarea = 101 //Oasis
+    if spawnarea == 101 //Oasis
     {
 
         if random(10) < 1
-        instance_create(x + 16, y + 16, choose(Crab, Crab))
+			instance_create(x + 16, y + 16, choose(Crab, Crab))
         else
-            instance_create(x + 16, y + 16, choose(BoneFish, BoneFish, BoneFish, BoneFish, BoneFish, BoneFish, BoneFish, Crab))
+            instance_create(x + 16, y + 16, choose(BoneFish, BoneFish, BoneFish, BoneFish, JellyFish, ScubaBandit, ScubaBandit, Crab))
 
     }
 

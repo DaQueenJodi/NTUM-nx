@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndHitFlesh",
-  "duration": 0.0,
+  "duration": 0.237347,
   "parent": {
     "name": "Enviroment",
     "path": "folders/Sounds/Enviroment.yy",

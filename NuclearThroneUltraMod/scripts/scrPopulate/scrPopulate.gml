@@ -451,7 +451,7 @@ function scrPopulate() {
     }
 
     if !(Player.area == 9 && Player.subarea == 3) {
-        if Player.area < 5 or Player.area >= 100 {
+        if Player.area < 5 {
             with WeaponChest
             instance_create(x, y, Bandit)
             with RadChest
@@ -459,7 +459,7 @@ function scrPopulate() {
             with AmmoChest
             instance_create(x, y, Bandit)
         }
-        else {
+        else if Player.area != 101{
             with WeaponChest
             instance_create(x, y, Grunt)
             //with RadChest

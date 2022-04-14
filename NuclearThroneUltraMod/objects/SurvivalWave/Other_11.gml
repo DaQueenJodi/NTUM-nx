@@ -39,8 +39,7 @@ if instance_exists(TopCont)
 	TopCont.darkness = 0;
 
 var i = 0;
-var waveType = choose(0,0);
-switch (waveType)
+switch (UberCont.crownVaultChallenge)
 {
 	case 0:
 		repeat(4)
@@ -62,7 +61,7 @@ switch (waveType)
 		repeat(4)
 		{
 			wave[i] = {
-				obj: BanditInverted,
+				obj: Bandit,
 				time: 4,
 			};
 			i++;
@@ -93,7 +92,7 @@ switch (waveType)
 		repeat(4)
 		{
 			wave[i] = {
-				obj: InvertedScorpion,
+				obj: Scorpion,
 				time: 10,
 			};
 			i++;
@@ -108,7 +107,7 @@ switch (waveType)
 		repeat(4)
 		{
 			wave[i] = {
-				obj: InvertedGoldScorpion,
+				obj: GoldScorpion,
 				time: 15,
 			};
 			i++;
@@ -139,20 +138,20 @@ switch (waveType)
 		repeat(4)
 		{
 			wave[i] = {
-				obj: InvertedMeleeBandit,
+				obj: MeleeBandit,
 				time: 2,
 			};
 			i++;
 		};
 		wave[i] = {
-			obj: InvertedRaven,
+			obj: Raven,
 			time: 60,
 		};
 		i++;
 		repeat(4)
 		{
 			wave[i] = {
-				obj: InvertedSniper,
+				obj: Sniper,
 				time: 6,
 			};
 			i++;
@@ -165,7 +164,7 @@ switch (waveType)
 		};
 		i++;
 		wave[i] = {
-			obj: InvertedScrapBoss,
+			obj: ScrapBoss,
 			time: 70,
 			xx: centerX,
 			yy: centerY
@@ -174,7 +173,7 @@ switch (waveType)
 		repeat(4)
 		{
 			wave[i] = {
-				obj: InvertedRaven,
+				obj: Raven,
 				time: 7,
 			};
 			i++;
@@ -182,26 +181,26 @@ switch (waveType)
 		repeat(4)
 		{
 			wave[i] = {
-				obj: InvertedSniper,
+				obj: Sniper,
 				time: 8,
 			};
 			i++;
 		};
 		wave[i] = {
-				obj: InvertedRaven,
-				time: 200,
+				obj: Raven,
+				time: 160,
 			};
 			i++;
 		wave[i] = {
 			obj: HealthChest,
-			time: 50,
+			time: 40,
 			xx: centerX,
 			yy: centerY+32
 		};
 		i++;
 		wave[i] = {
-			obj: InvertedAssassinBoss,
-			time: 250,
+			obj: AssassinBoss,
+			time: 240,
 			xx: centerX,
 			yy: centerY
 		};
@@ -221,7 +220,7 @@ switch (waveType)
 		};
 		i++;
 		wave[i] = {
-			obj: InvertedLilHunter,
+			obj: LilHunter,
 			time: 300,
 			xx: centerX,
 			yy: centerY
@@ -230,8 +229,12 @@ switch (waveType)
 	break;
 }
 waveLength = array_length(wave);
+UberCont.crownVaultChallenge += 0;
+if UberCont.crownVaultChallenge > 1
+{
+	UberCont.crownVaultChallenge = 0;	
+}
 //Start it
 alarm[3] = 5;//Tell time is the difference between these two numbers
 alarm[0] = 20;
-alarm[4] = 4;//U a quiter?
-alarm[1] = 10;
+alarm[4] = 5;//U a quiter?

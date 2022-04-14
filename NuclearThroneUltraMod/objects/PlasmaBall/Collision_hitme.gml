@@ -1,6 +1,6 @@
 if other.team != team and other.my_health > 0
 {
-	speed = max(speed-2,1);
+	speed = max(speed-3,1);
 	if other.sprite_index != other.spr_hurt
 	{
 			BackCont.shake += 2

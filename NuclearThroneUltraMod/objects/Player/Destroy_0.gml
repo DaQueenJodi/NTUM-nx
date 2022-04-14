@@ -170,7 +170,7 @@ instance_create(x,y,BigDogExplo);
 
 if skeletonlives>0
 {
-instance_create(x,y,ExplosionNonLethal);
+instance_create(x,y,WallBreak);
 
 //blank armour sorta yea
 with enemy{
@@ -229,6 +229,7 @@ alarm[2] = 3;
 }
 else
 {
+	scrEndOfRun();
 	//Horror and atom bskin drop rads
 	if race == 21 || (race == 15 && bskin = 1)
 	{

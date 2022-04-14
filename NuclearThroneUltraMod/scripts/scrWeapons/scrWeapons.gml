@@ -4578,7 +4578,7 @@ function scrWeapons() {
 	wep_sprt[414] = sprBubbler
 	wep_area[414] = 5
 	wep_text[414] = "pop goes the bubble"
-	wep_swap[414] = sndSwapBow
+	wep_swap[414] = sndSwapExplosive
 	wep_rad[414] = 0;
 	
 	wep_name[415] = "BLOOD BUBBLER"
@@ -4589,7 +4589,7 @@ function scrWeapons() {
 	wep_sprt[415] = sprBloodBubbler
 	wep_area[415] = 7
 	wep_text[415] = "boiling blood"
-	wep_swap[415] = sndSwapBow
+	wep_swap[415] = sndSwapExplosive
 	wep_rad[415] = 0;
 	
 	wep_name[416] = "BOUNCER BAZOOKA"
@@ -4811,6 +4811,50 @@ function scrWeapons() {
 	wep_text[435] = "ultra stinky"
 	wep_swap[435] = sndSwapFlame
 	wep_rad[435] = 4;
+	
+	wep_name[436] = "BOX GUN"
+	wep_type[436] = 2
+	wep_auto[436] = 0
+	wep_load[436] = 20
+	wep_cost[436] = 2
+	wep_sprt[436] = sprBoxGun
+	wep_area[436] = 9
+	wep_text[436] = ""
+	wep_swap[436] = sndSwapShotgun
+	wep_rad[436] = 0;
+	
+	wep_name[437] = "BOX SLUGGER"
+	wep_type[437] = 2
+	wep_auto[437] = 0
+	wep_load[437] = 60
+	wep_cost[437] = 2
+	wep_sprt[437] = sprBoxSlugger
+	wep_area[437] = 14
+	wep_text[437] = ""
+	wep_swap[437] = sndSwapShotgun
+	wep_rad[437] = 0;
+	
+	wep_name[438] = "EFFICIENT HEAVY SLUGGER"
+	wep_type[438] = 2
+	wep_auto[438] = 0
+	wep_load[438] = 25
+	wep_cost[438] = 1
+	wep_sprt[438] = sprEfficientHeavySlugger
+	wep_area[438] = 12
+	wep_text[438] = "slow but ammo efficient"
+	wep_swap[438] = sndSwapShotgun
+	wep_rad[438] = 0;
+	
+	wep_name[439] = "LOVE BUBBLER"
+	wep_type[439] = 4
+	wep_auto[439] = 0
+	wep_load[439] = 20
+	wep_cost[439] = 2
+	wep_sprt[439] = sprLoveBubbler
+	wep_area[439] = 10
+	wep_text[439] = "pop goes the bubble"
+	wep_swap[439] = sndSwapExplosive
+	wep_rad[439] = 0;
 
 
 	maxwep = array_length(wep_name)-1;

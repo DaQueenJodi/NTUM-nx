@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "mskFrogQueen",
+    "path": "sprites/mskFrogQueen/mskFrogQueen.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

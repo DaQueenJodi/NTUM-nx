@@ -80,7 +80,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprBoneFishIdle","path":"sprites/sprBoneFishIdle/sprBoneFishIdle.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprBoneFishIdle",
     "tags": [],
     "resourceType": "GMSequence",
   },

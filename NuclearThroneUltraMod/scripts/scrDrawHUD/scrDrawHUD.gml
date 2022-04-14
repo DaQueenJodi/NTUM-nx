@@ -345,7 +345,19 @@ function scrDrawHUD() {
 		if (mouse_x > xx-w && mouse_x < xx+w && mouse_y < yy+h && mouse_y > yy-h)
 		{
 			var umn = scrUltraModName(Player.ultramod);
-			scrDrawHelp(umn[0] + " <=> " + umn[1]);
+			holdExplainUltraModTimer++;
+			if holdExplainUltraModTimer > 30
+			{
+				scrDrawHelp(umn[0] + " <=> " + umn[1]);
+			}
+			else
+			{
+				scrDrawHelp(umn[0] + " <=> " + umn[1]+"\n"+scrUltraModDescription(Player.ultramod));
+			}
+		}
+		else
+		{
+			holdExplainUltraModTimer = 0;
 		}
 		draw_sprite(sprUltraModIcon,Player.ultramod,xx,yy);
 	}
@@ -867,7 +879,7 @@ function scrDrawHUD() {
 			
 			holdExplainTimer ++;
 			//Ultra mod destription
-			if holdExplainTimer > 40
+			if holdExplainTimer > 30
 			{
 				yy = y + 16;
 				draw_text(x,yy,ultramodDescription);

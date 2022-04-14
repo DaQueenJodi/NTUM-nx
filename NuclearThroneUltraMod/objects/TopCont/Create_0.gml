@@ -2,6 +2,7 @@ darkness = 0
 dark=noone;
 skillscroll = 0;
 skillscrollmax = 0;
+holdExplainUltraModTimer = 0;
 if instance_exists(Player)
 {
 	if Player.crown == 19

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprHeavySlug",
-    "path": "sprites/sprHeavySlug/sprHeavySlug.yy",
+    "name": "sprHeavySlugHighDmg",
+    "path": "sprites/sprHeavySlugHighDmg/sprHeavySlugHighDmg.yy",
   },
   "solid": false,
   "visible": true,

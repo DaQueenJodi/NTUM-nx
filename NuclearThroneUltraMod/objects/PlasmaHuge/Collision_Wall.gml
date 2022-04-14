@@ -34,7 +34,7 @@ if( (collision_point(x+lengthdir_x(4,originalDirection+20),y+lengthdir_y(4,origi
 
     with other
     {
-    instance_create(x,y,ExplosionNonLethal);
+    instance_create(x,y,BigWallBreak);
     //instance_create(x,y,FloorExplo)
     //instance_destroy()
     }

@@ -6552,5 +6552,229 @@ function scrFire2() {
 
 	break;
 	
+	//BOX GUN
+	case 436:
+
+		snd_play_fire(sndWaveGun)
+		var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy
+		var s = 17
+		var am = 3;//am*am = 9
+		var offsetStep = 10*accuracy;
+		var offset = offsetStep*am*0.5;
+		var yoffset = offset;
+		var xoffset = offset;
+		var xx = x+lengthdir_x(offset,aimDir-90)+lengthdir_x(offset*0.5,aimDir+180);
+		var yy = y+lengthdir_y(offset,aimDir-90)+lengthdir_y(offset*0.5,aimDir+180);
+		var msk = mask_index;
+		mask_index = mskBullet2;
+			repeat(am)
+			{
+				var xxx = xx;
+				var yyy = yy;
+				repeat(am)
+				{
+					if !place_meeting(xx,yy,Wall)
+						with instance_create(xx,yy,Bullet2)
+						{
+							motion_add(aimDir,s)
+							image_angle = direction
+							team = other.team
+						}
+					yy += lengthdir_y(offsetStep,aimDir);
+					xx += lengthdir_x(offsetStep,aimDir);
+				}
+				xx = xxx;
+				yy = yyy;
+				yy += lengthdir_y(offsetStep,aimDir+90);
+				xx += lengthdir_x(offsetStep,aimDir+90);
+			}
+		mask_index = msk;
+		BackCont.viewx2 += lengthdir_x(14,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(14,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 9
+		wkick = 7
+
+	break;
+	
+	//BOX SLUGGER
+	case 437:
+
+		snd_play_fire(sndSuperSlugger)
+		var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy
+		var s = 16
+		var am = 4;//am*am = 16
+		var offsetStep = 8*accuracy;
+		var offset = offsetStep*am*0.5;
+		var yoffset = offset;
+		var xoffset = offset;
+		var xx = x+lengthdir_x(xoffset,aimDir-90)+lengthdir_x(xoffset,aimDir+180);
+		var yy = y+lengthdir_y(yoffset,aimDir-90)+lengthdir_y(xoffset,aimDir+180);
+		var msk = mask_index;
+		mask_index = mskSlug;
+			repeat(am)
+			{
+				var xxx = xx;
+				var yyy = yy;
+				repeat(am)
+				{
+					if !place_meeting(xx,yy,Wall)
+					with instance_create(xx,yy,Slug)
+					{
+						motion_add(aimDir,s)
+						image_angle = direction
+						team = other.team
+					}
+					yy += lengthdir_y(offsetStep,aimDir);
+					xx += lengthdir_x(offsetStep,aimDir);
+				}
+				xx = xxx;
+				yy = yyy;
+				yy += lengthdir_y(offsetStep,aimDir+90);
+				xx += lengthdir_x(offsetStep,aimDir+90);
+			}
+		mask_index = msk;
+		BackCont.viewx2 += lengthdir_x(15,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.viewy2 += lengthdir_y(15,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+		BackCont.shake += 12
+		wkick = 8
+
+	break;
+	
+	//EFFICIENT HEAVY SLUGGER
+	case 438:
+
+	snd_play_fire(sndHeavySlugger)
+
+	with instance_create(x,y,HeavySlug)
+	{motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*other.accuracy,22)//16
+	image_angle = direction
+	team = other.team}
+
+	BackCont.viewx2 += lengthdir_x(16,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(16,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 20
+	wkick = 10
+
+	break;
+	
+	//LOVE BUBBLER
+	case 439:
+		snd_play(sndClusterOpen);
+		snd_play(choose(sndWater1,sndWater2),0.1,true);
+		var len = 82;
+		var am = 8;
+		var aimDir = point_direction(x,y,mouse_x,mouse_y);
+		var xx = x;
+		var yy = y + len;
+		
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x + len *0.5;
+			yy = y + len *0.6;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x - len *0.5;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x + len *0.75;
+			yy = y;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x - len *0.75;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x + len;
+			yy = y - len *0.5;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x - len;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x + len * 0.8;
+			yy = y - len * 1.1;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x - len * 0.8;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x + len * 0.25;
+			yy = y - len;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x - len * 0.25;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+			xx = x
+			yy = y - len * 0.6;
+			aimDir = point_direction(x,y,xx,yy);
+			with instance_create(xx,yy,BigBubble)
+			{
+				motion_add(aimDir,2);
+			}
+		//Heal chance
+		if random(100) < 7.7//7.69% chance
+		{
+			with instance_create(x,y-8,HealFX)
+			{
+				sprite_index=sprBloodlust;
+			}
+			snd_play_2d(sndBloodlustProc);
+			var num = 1
+			Player.my_health = max(my_health,min(my_health + num,maxhealth));
+		    if UberCont.opt_ammoicon
+			{
+				dir = instance_create(x,y,PopupText)
+				dir.mytext = "+"+string(num)
+				if my_health = maxhealth
+				dir.mytext = "MAX"
+				else if my_health > maxhealth
+				dir.mytext = "OVER MAX"
+				dir.sprt = sprHPIconPickup;
+			}
+			else
+			{
+				dir = instance_create(x,y,PopupText)
+				dir.mytext = "+"+string(num)+" HP"
+				if my_health = maxhealth
+				dir.mytext = "MAX HP"
+				else if my_health > maxhealth
+				dir.mytext = "OVER MAX HP"
+			}
+		}
+	break;
+	
 	}//end of switch part 2!
 }

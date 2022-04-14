@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "mskBanditBoss",
+    "path": "sprites/mskBanditBoss/mskBanditBoss.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

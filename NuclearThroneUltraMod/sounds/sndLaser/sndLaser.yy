@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndLaser",
-  "duration": 0.0,
+  "duration": 0.381338,
   "parent": {
     "name": "Weapons",
     "path": "folders/Sounds/Weapons.yy",

@@ -1,3 +1,3 @@
 move_bounce_solid(true)
-instance_create(other.x,other.y,ExplosionNonLethal);
+instance_create(other.x,other.y,WallBreak);
 
