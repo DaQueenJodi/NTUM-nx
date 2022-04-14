@@ -152,7 +152,7 @@ if Player.area == 4
 	{
 		name = "HYPER CRYSTAL";
 		if random(90)<1
-			name = choose("CRYSTAL'S MOM","HYPER RIFLE?","HYPER DIAMOND","LUIGI");
+			name = choose("CRYSTAL'S MOM","HYPER RIFLE?","HYPER DIAMOND","LUIGI","NOT BIG DOG AGAIN");
 	}
 	else
 	{
