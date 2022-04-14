@@ -32,30 +32,28 @@ var res = scrAreaName(area,subarea,loops);
 var txt = res[0];
 var upsideDown = res[1];
 
-var yy = (__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2)-6// + (string_height(text)*0.5);
 
 }
-draw_set_valign(fa_center)
 draw_set_color(c_black)
 if kutgrap
 {
-
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1,string_hash_to_newline(string(text)+"##OBLITERATING... "+string(round((instance_number(Floor)/goal)*100))+"%##"+string_upper(tip)))
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1,string_hash_to_newline(string(text)+"##OBLITERATING... "+string(round((instance_number(Floor)/goal)*100))+"%##"+string_upper(tip)))
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,string_hash_to_newline(string(text)+"##OBLITERATING... "+string(round((instance_number(Floor)/goal)*100))+"%##"+string_upper(tip)))
+var theText = string_hash_to_newline(string(text)+"#OBLITERATING... "+string(round((instance_number(Floor)/goal)*100))+"%##"+string_upper(tip));
+draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1,theText)
+draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1,theText)
+draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,theText)
 draw_set_color(c_white)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,string_hash_to_newline(string(text)+"##OBLITERATING... "+string(round((instance_number(Floor)/goal)*100))+"%##"+string_upper(tip)))
+draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,theText)
 draw_set_color(c_gray)
 
 }
 else
 {
-
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1,string_hash_to_newline(string(text)+"##GENERATING... "+string(round((instance_number(Floor)/goal)*100))+"%##"+string_upper(tip)))
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1,string_hash_to_newline(string(text)+"##GENERATING... "+string(round((instance_number(Floor)/goal)*100))+"%##"+string_upper(tip)))
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,string_hash_to_newline(string(text)+"##GENERATING... "+string(round((instance_number(Floor)/goal)*100))+"%##"+string_upper(tip)))
+var theText = string_hash_to_newline(string(text)+"#GENERATING... "+string(round((instance_number(Floor)/goal)*100))+"%##"+string_upper(tip));
+draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1,theText)
+draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2+1,theText)
+draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+1,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,theText)
 draw_set_color(c_white)
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,string_hash_to_newline(string(text)+"##GENERATING... "+string(round((instance_number(Floor)/goal)*100))+"%##"+string_upper(tip)))
+draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,theText)
 draw_set_color(c_gray)
 
 if Player.race=14&&Player.ultra_got[56]=0
@@ -70,7 +68,9 @@ draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get
 }
 //Area text
 var xx = __view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )*0.5
-draw_set_valign(fa_middle)
+var yy = (__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )*0.5)-9// + (string_height(text)*0.5);
+yy -= string_height(string_hash_to_newline(theText))*0.5;
+draw_set_valign(fa_top);
 if upsideDown
 {
 	draw_set_color(c_black)
@@ -92,7 +92,7 @@ else
 	draw_set_color(c_gray)
 }
 
-
-draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )/2,string_hash_to_newline("######"+string_upper(tip)))
+draw_set_valign(fa_middle)
+draw_text(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )*0.5,__view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )*0.5,string_hash_to_newline("#####"+string_upper(tip)))
 draw_set_valign(fa_top)
 

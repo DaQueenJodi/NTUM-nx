@@ -2729,8 +2729,9 @@ function scrFire2() {
 
 	///GOLDEN OOPS GUN
 	case 298:
-		scrRestart();
-		exit;
+		with UberCont
+			scrSave();
+		game_end();
 	break;
 	//ULTRA WAVE GUN
 	case 299:
@@ -5085,13 +5086,13 @@ function scrFire2() {
 
 	break;
 	
-	//SKULL SPLITTER
+	//BULLET LASER
 	case 380:
 		snd_play_fire(sndSniperFire);
 		snd_play_fire(sndUltraPistol);
 		var msk = mask_index;
 		mask_index = mskBullet1;
-		var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(10)-5)*accuracy;
+		var aimDir = point_direction(x,y,mouse_x,mouse_y)+(random(6)-3)*accuracy;
 		var len = 8+(accuracy*3);
 		var xstep = lengthdir_x(len,aimDir);
 		var ystep = lengthdir_y(len,aimDir);
@@ -6774,6 +6775,44 @@ function scrFire2() {
 				dir.mytext = "OVER MAX HP"
 			}
 		}
+	break;
+	
+	//THE PENETRATOR
+	case 440:
+
+	snd_play_fire(sndHeavyCrossbow)
+
+	with instance_create(x,y,PenetratorBolt)
+	{
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(4)-2)*other.accuracy,18)
+		image_angle = direction
+		team = other.team
+	}
+
+	BackCont.viewx2 += lengthdir_x(40,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(40,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 10
+	wkick = 7
+
+	break;
+	
+	//AUTO PENETRATOR
+	case 441:
+
+	snd_play_fire(sndHeavyCrossbow)
+
+	with instance_create(x,y,PenetratorBolt)
+	{
+		motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(12)-6)*other.accuracy,18)
+		image_angle = direction
+		team = other.team
+	}
+
+	BackCont.viewx2 += lengthdir_x(35,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.viewy2 += lengthdir_y(35,point_direction(x,y,mouse_x,mouse_y)+180)*UberCont.opt_shake
+	BackCont.shake += 8
+	wkick = 6
+
 	break;
 	
 	}//end of switch part 2!

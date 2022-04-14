@@ -1,10 +1,10 @@
 ///@description AI
-alarm[1] = 14+random(12)//30 + 10
+alarm[1] = 10+random(10)//30 + 10
 
 if instance_exists(Player)
 {
 if Player.loops>0
-alarm[1] = 10+random(10);
+alarm[1] = 6+random(6);
 }
 
 scrTarget()
@@ -33,10 +33,10 @@ alarm[1] = 50+random(30);
 }
 else
 {
-if random(3) < 1
-direction = point_direction(x,y,target.x,target.y)
-else
-direction = choose(direction,point_direction(x,y,target.x,target.y)+90+random(180))
+	if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
+		direction = point_direction(x,y,target.x,target.y)
+	else
+		direction = choose(direction,point_direction(x,y,target.x,target.y)+90+random(180))
 }
 }
 else if random(3) < 1

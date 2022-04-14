@@ -63,8 +63,8 @@ function scrNextLevel() {
 	    }
 		if area == 102//Pizza to oasis boss
 		{
-			area = 101;//TODO
-			subarea = 1;
+			area = 101;
+			subarea = 2;
 		}
 	    if area = 105//bring to scrapyard inv desert or pizza
 	    {
@@ -215,7 +215,7 @@ function scrNextLevel() {
     
 	    }
 
-	    if area=101 && subarea=2
+	    if area=101 && subarea=3
 	    {
 			//Oasis to vulcano
 		    area=7;

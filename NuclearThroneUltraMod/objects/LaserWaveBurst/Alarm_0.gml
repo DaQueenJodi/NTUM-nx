@@ -2,15 +2,15 @@ ammo -= 1
 
 alarm[0] = time
 
-leftang=point_direction(x,y,mouse_x,mouse_y)-40;
-rightang=point_direction(x,y,mouse_x,mouse_y)+40;
+
 
 if instance_exists(creator)
 {
-x = creator.x
-y = creator.y
-//FIRING
-
+	leftang=point_direction(x,y,mouse_x,mouse_y)-(40*creator.accuracy);
+	rightang=point_direction(x,y,mouse_x,mouse_y)+(40*creator.accuracy);
+	x = creator.x
+	y = creator.y
+	//FIRING
 if Player.skill_got[17] = 1
 {
 snd_play_fire(sndLaserUpg);
@@ -23,6 +23,13 @@ snd_play_fire(sndLaser);
 
 with instance_create(x+lengthdir_x(4,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(4,point_direction(x,y,mouse_x,mouse_y)),Laser)
 {image_angle = (other.leftang+other.ang)+(random(2)-1)*other.creator.accuracy
+team = other.team
+event_perform(ev_alarm,0)
+image_yscale-=0.1;
+scrCanHumphry();
+}
+with instance_create(x+lengthdir_x(4,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(4,point_direction(x,y,mouse_x,mouse_y)),Laser)
+{image_angle = (other.rightang-other.ang)+(random(2)-1)*other.creator.accuracy
 team = other.team
 event_perform(ev_alarm,0)
 image_yscale-=0.1;
@@ -43,9 +50,9 @@ left=true
 
 
 if left
-ang+=angleStep;
+ang+=angleStep*creator.accuracy;
 else
-ang-=angleStep;
+ang-=angleStep*creator.accuracy;
 }
 
 

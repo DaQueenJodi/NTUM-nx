@@ -19,5 +19,5 @@ snd_hurt = sndHitFlesh
 maxAmmo = 3;
 ammo = maxAmmo;
 alarm[1] = 30+random(90)
-maxSpeed = 2.2;
+maxSpeed = 2.5;
 

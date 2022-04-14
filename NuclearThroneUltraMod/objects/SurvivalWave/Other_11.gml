@@ -227,9 +227,141 @@ switch (UberCont.crownVaultChallenge)
 		};
 		
 	break;
+	case 1:
+		
+		repeat(4)
+		{
+			wave[i] = {
+				obj: Bandit,
+				time: 2,
+			};
+			i++;
+		};
+		wave[i] = {
+			obj: BigBadBat,
+			time: 390,
+		};
+		i++;
+		repeat(4)
+		{
+			wave[i] = {
+				obj: Bandit,
+				time: 24,
+			};
+			i++;
+		};
+		repeat(4)
+		{
+			wave[i] = {
+				obj: Bandit,
+				time: 22,
+			};
+			i++;
+		};
+		repeat(4)
+		{
+			wave[i] = {
+				obj: SnowTank,
+				time: 30,
+			};
+			i++;
+		};
+		
+		repeat(3)
+		{
+			wave[i] = {
+				obj: MeleeBandit,
+				time: 2,
+			};
+			i++;
+		};
+		wave[i] = {
+			obj: MeleeBandit,
+			time: 120,
+		};
+		i++;
+		wave[i] = {
+			obj: BigVulture,
+			time: 250,
+			xx: centerX,
+			yy: centerY
+		};
+		i++;
+		repeat(4)
+		{
+			wave[i] = {
+				obj: Scorpion,
+				time: 10,
+			};
+			i++;
+		}
+		wave[i] = {
+			obj: GoldScorpion,
+			time: 110,
+			xx: centerX,
+			yy: centerY
+		};
+		i++;
+		wave[i] = {
+			obj: HealthChest,
+			time: 40,
+			xx: centerX,
+			yy: centerY+32
+		};
+		wave[i] = {
+			obj: GoldSnowTank,
+			time: 180,
+			xx: centerX,
+			yy: centerY
+		};
+		
+		repeat(4)
+		{
+			wave[i] = {
+				obj: Raven,
+				time: 2,
+			};
+			i++;
+		};
+		wave[i] = {
+			obj: Raven,
+			time: 60,
+		};
+		i++;
+		repeat(4)
+		{
+			wave[i] = {
+				obj: Sniper,
+				time: 6,
+			};
+			i++;
+		};
+		wave[i] = {
+			obj: VanSpawn,
+			time: 30,
+			xx: centerX-128,
+			yy: centerY-64
+		};
+		i++;
+		wave[i] = {
+			obj: VanSpawn,
+			time: 30,
+			xx: centerX+128,
+			yy: centerY+64
+		};
+		i++;
+		repeat(4)
+		{
+			wave[i] = {
+				obj: Sniper,
+				time: 8,
+			};
+			i++;
+		};
+	break;
 }
 waveLength = array_length(wave);
-UberCont.crownVaultChallenge += 0;
+UberCont.crownVaultChallenge ++;
 if UberCont.crownVaultChallenge > 1
 {
 	UberCont.crownVaultChallenge = 0;	

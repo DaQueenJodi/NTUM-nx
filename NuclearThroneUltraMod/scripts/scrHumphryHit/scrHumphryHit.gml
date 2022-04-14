@@ -1,52 +1,53 @@
 function scrHumphryHit() {
 	if Player.race=26//HUMPRHY SKILL
 	{
+		var dmgTaken = prevhealth-my_health;
 	    with other
 	    {
     
-	    if HumphryHit!=1 && HumphryHit!=2//||team=0
-	    {
-	    HumphryHit=1;//This one has hit
+		    if HumphryHit!=1 && HumphryHit!=2//||team=0
+		    {
+		    HumphryHit=1;//This one has hit
 
-	    //extra damage
-	    other.my_health -= floor(Player.HumphrySkill*0.4);
+		    //extra damage
+		    other.my_health -= dmgTaken*(Player.HumphrySkill*0.01)//floor(Player.HumphrySkill*0.4);
+			//debug("dmg buff: ",dmgTaken*(Player.HumphrySkill*0.1));
+		    with projectile
+		    {
+		    if HumphryNr=other.HumphryNr//Same shot?
+		    HumphryHit=2;
+		    }
     
-	    with projectile
-	    {
-	    if HumphryNr=other.HumphryNr//Same shot?
-	    HumphryHit=2;
-	    }
     
+		    with Player
+		    {
+		    HumphryLoss = false;
+		    if ultra_got[101]
+		    HumphrySkill+=2;
+		    else
+		    HumphrySkill++;
+		    if HumphrySkill>=100
+		    scrUnlockCSkin(26,"FOR REACHING 100 SKILL",0);
+		    }
     
-	    with Player
-	    {
-	    HumphryLoss = false;
-	    if ultra_got[101]
-	    HumphrySkill+=2;
-	    else
-	    HumphrySkill++;
-	    if HumphrySkill>=100
-	    scrUnlockCSkin(26,"FOR REACHING 100 SKILL",0);
-	    }
+		    with Explosion
+		    {
+		    if Humphry=true
+		    {
+		    if HumphryNr=other.HumphryNr
+		    HumphryHit=2;
+		    }
+		    }
     
-	    with Explosion
-	    {
-	    if Humphry=true
-	    {
-	    if HumphryNr=other.HumphryNr
-	    HumphryHit=2;
-	    }
-	    }
+		    if place_meeting(x,y,HumphryProjectile)
+		    {
     
-	    if place_meeting(x,y,HumphryProjectile)
-	    {
+		    with HumphryProjectile
+		    HumphryHit=1;
     
-	    with HumphryProjectile
-	    HumphryHit=1;
+		    }
     
-	    }
-    
-	    }
+		    }
     
 	    }
 

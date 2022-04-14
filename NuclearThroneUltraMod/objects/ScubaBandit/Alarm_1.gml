@@ -1,11 +1,11 @@
 ///AI
-alarm[1] = 15 + random(10)
+alarm[1] = 10 + random(10)
 
 scrTarget()
 if target > 0 {
     if collision_line(x, y, target.x, target.y, Wall, 0, 0) < 0 {
         if point_distance(target.x, target.y, x, y) > 48 {
-            if random(4) < 1 {
+            if random(3) < 1 {
                 snd_play(sndBouncerPistol)
                 wkick = 4
 					gunangle = point_direction(x, y, target.x, target.y)

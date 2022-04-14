@@ -78,9 +78,9 @@ function scrSkills() {
 
 	skill_name[6] = "LUCKY SHOT"
 	if isDoctor
-		skill_text[6] = "21% CHANCE KILLS REGENERATE AMMO"
-	else
 		skill_text[6] = "23% CHANCE KILLS REGENERATE AMMO"
+	else
+		skill_text[6] = "21% CHANCE KILLS REGENERATE AMMO"
 	skill_tips[6] = "ammo everywhere"
 	skill_msnd[6] =  sndMutLuckyShot
 

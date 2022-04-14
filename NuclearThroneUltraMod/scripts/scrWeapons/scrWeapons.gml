@@ -314,7 +314,7 @@ function scrWeapons() {
 	wep_type[28] = 5
 	wep_auto[28] = 1
 	wep_load[28] = 2
-	wep_cost[28] = 1
+	wep_cost[28] = 0.75
 	wep_sprt[28] = sprLaserMinigun
 	wep_area[28] = 8
 	wep_text[28] = "energy bill off the charts"
@@ -2310,7 +2310,7 @@ function scrWeapons() {
 	wep_type[209] = 5
 	wep_auto[209] = 1
 	wep_load[209] = 3
-	wep_cost[209] = 1
+	wep_cost[209] = 0.5
 	wep_sprt[209] = sprMiniPlasmaMinigun
 	wep_area[209] = 11
 	wep_text[209] = "orbs of death"
@@ -3309,9 +3309,9 @@ function scrWeapons() {
 
 	wep_name[300] = "LASER WAVE GUN"
 	wep_type[300] = 5
-	wep_auto[300] = 0
-	wep_load[300] = 10
-	wep_cost[300] = 7
+	wep_auto[300] = 1
+	wep_load[300] = 20
+	wep_cost[300] = 6
 	wep_sprt[300] = sprLaserWaveGun
 	wep_area[300] = 12
 	wep_text[300] = "hands in de aihr"
@@ -4837,7 +4837,7 @@ function scrWeapons() {
 	wep_name[438] = "EFFICIENT HEAVY SLUGGER"
 	wep_type[438] = 2
 	wep_auto[438] = 0
-	wep_load[438] = 30
+	wep_load[438] = 28
 	wep_cost[438] = 1
 	wep_sprt[438] = sprEfficientHeavySlugger
 	wep_area[438] = 12
@@ -4855,6 +4855,28 @@ function scrWeapons() {
 	wep_text[439] = "pop goes the bubble"
 	wep_swap[439] = sndSwapExplosive
 	wep_rad[439] = 0;
+	
+	wep_name[440] = "THE PENETRATOR"
+	wep_type[440] = 3
+	wep_auto[440] = 0
+	wep_load[440] = 40
+	wep_cost[440] = 2
+	wep_sprt[440] = sprPenetrator
+	wep_area[440] = 6
+	wep_text[440] = "damage scales upon each pierce"
+	wep_swap[440] = sndSwapBow
+	wep_rad[440] = 0;
+	
+	wep_name[441] = "AUTO PENETRATOR"
+	wep_type[441] = 3
+	wep_auto[441] = 1
+	wep_load[441] = 11
+	wep_cost[441] = 2
+	wep_sprt[441] = sprAutoPenetrator
+	wep_area[441] = 14
+	wep_text[441] = "infinite pierce"
+	wep_swap[441] = sndSwapBow
+	wep_rad[441] = 0;
 
 
 	maxwep = array_length(wep_name)-1;

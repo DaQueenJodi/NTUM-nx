@@ -1,12 +1,13 @@
 if other.team != team and other.my_health > 0
 {
-	speed = max(speed-2,1);
+	x += (xprevious - x)*0.8;
+	y += (yprevious - y)*0.8;
 	if other.sprite_index != other.spr_hurt
 	{
 		Sleep(4);
 		BackCont.shake += 2
-		image_xscale-=0.1;
-		image_yscale-=0.1;
+		image_xscale-=0.12;
+		image_yscale-=0.12;
 		with other
 		{
 			my_health -= other.dmg

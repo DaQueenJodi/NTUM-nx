@@ -3,27 +3,15 @@ y = __view_get( e__VW.YView, 0 )+__view_get( e__VW.HView, 0 )*0.5
 scrTarget()
 if target > 0
 {
-	var spawned = false;
 	with Wall
 	{
 		if collision_line(x,y,other.target.x,other.target.y,Wall,true,true) < 0 and point_distance(x,y,other.target.x,other.target.y) > 110 
 		and point_distance(x,y,other.target.x,other.target.y) < 120 and ((!place_free(x-16,y) and !place_free(x+16,y)) or (!place_free(x,y+16) and !place_free(x,y-16)))
 		{
 			instance_create(x,y,CanSpawnBoss)
-			spawned = true;
 		}
 	}
-	if !spawned && instance_exists(Wall)
-	{
-		var rd = random(360);
-		var xx = target.x+lengthdir_x(128,rd);
-		var yy = target.y+lengthdir_y(128,rd);
-		with instance_nearest(xx,yy,Wall)
-		{
-			instance_create(x,y,CanSpawnBoss);
-		}
-	}
-	if instance_exists(CanSpawnBoss) && spawned
+	if instance_exists(CanSpawnBoss)
 	{
 		with instance_nearest(target.x,target.y,CanSpawnBoss)
 		{

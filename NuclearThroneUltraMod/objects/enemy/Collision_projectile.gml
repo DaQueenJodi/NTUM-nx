@@ -71,9 +71,9 @@ if ( (Player.race==11)&&(Player.ultra_got[41]==1)   )
     //WEAPON MODS!
 if other.team = Player.team || other.object_index=Disc || other.object_index=ToxicGas || other.object_index=ToxicThrowerGas
 {
-scrModHit();
-
-scrHumphryHit();
+	scrModHit();
+	//debug("daamge taken: ",string(prevhealth-my_health));
+	scrHumphryHit();
 	if Player.ultra_got[100] && team != other.team
 	{
 	//	gunangle=random(360)

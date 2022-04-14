@@ -21,7 +21,7 @@ if ammo > 0
 		{
 			image_angle = ang;
 			team = other.team
-			ammo = 5
+			ammo = 6
 			event_perform(ev_alarm,0)
 			visible = 0
 			with instance_create(x,y,LightningSpawn)

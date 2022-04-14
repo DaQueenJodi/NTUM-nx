@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprHeavyBolt","path":"sprites/sprHeavyBolt/sprHeavyBolt.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprHeavyBolt",
     "tags": [],
     "resourceType": "GMSequence",
   },

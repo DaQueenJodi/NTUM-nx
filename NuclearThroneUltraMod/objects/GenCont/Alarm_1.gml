@@ -42,17 +42,17 @@ if Player.area = 103
     }
 }
 
-if ( Player.area = 101 ) {
+if ( (Player.area = 101 && Player.area = 10)  && Player.subarea == 1) {
     with WeaponChest
     {
-    instance_create(x,y,EliteWeaponChest)
-	instance_destroy(id,false);
+	    instance_create(x,y,EliteWeaponChest)
+		instance_destroy(id,false);
     }
     with BigWeaponChest
     {
-    instance_create(x,y,EliteWeaponChest)
-    instance_create(x+1,y+1,EliteWeaponChest)
-	instance_destroy(id,false);
+	    instance_create(x,y,EliteWeaponChest)
+	    instance_create(x+1,y+1,EliteWeaponChest)
+		instance_destroy(id,false);
     }
 }
 

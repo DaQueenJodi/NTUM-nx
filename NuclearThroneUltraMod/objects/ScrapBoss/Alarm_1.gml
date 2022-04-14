@@ -17,16 +17,45 @@ if instance_exists(Player)
     {
     
     repeat(8)
-{
-with instance_create(x+lengthdir_x(24,gunangle),y+lengthdir_y(16,gunangle),EnemyBullet1)
-{
-motion_add(other.gunangle,2+random(1))
-image_angle = direction
-team = other.team
-}
-gunangle += 360/8
-}
+		{
+		with instance_create(x+lengthdir_x(24,gunangle),y+lengthdir_y(16,gunangle),EnemyBullet1)
+		{
+		motion_add(other.gunangle,2+random(1))
+		image_angle = direction
+		team = other.team
+		}
+		gunangle += 360/8
+		}
+		if Player.loops>1
+	    {
+    
+	    repeat(8)
+			{
+			with instance_create(x+lengthdir_x(24,gunangle),y+lengthdir_y(16,gunangle),EnemyBullet1)
+			{
+			motion_add(other.gunangle,3.1+random(1))
+			image_angle = direction
+			team = other.team
+			}
+			gunangle += 360/8
+			}
 
+	    }
+		if Player.loops>2
+	    {
+    
+	    repeat(8)
+			{
+			with instance_create(x+lengthdir_x(24,gunangle),y+lengthdir_y(16,gunangle),EnemyBullet1)
+			{
+			motion_add(other.gunangle,4.5+random(1))
+			image_angle = direction
+			team = other.team
+			}
+			gunangle += 360/8
+			}
+
+	    }
     }
     else
     { 
