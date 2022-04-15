@@ -41,7 +41,7 @@ if (hundredPercentI) >= array_length(hundredPercent)
 	repeat(racemax)
 	{
 		var dir = 1;
-		repeat(maxstartwep-1)
+		repeat(maxstartwep)
 		{
 			//start_wep_have[27,dir]=0
 			start_wep_have[dir,racedir]=1

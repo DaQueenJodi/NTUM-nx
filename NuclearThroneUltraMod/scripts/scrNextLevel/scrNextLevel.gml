@@ -221,10 +221,8 @@ function scrNextLevel() {
 		    area=7;
 		    subarea=1;
 		    oasis=false
-		    hard+=2;
 	    exit;
 	    }
-	    else if area=101
 	    hard+=1;
 		
 		//Cursed caves to caves 2
@@ -354,7 +352,7 @@ function scrNextLevel() {
 	}
 	else if area == 10 && subarea < 2
 		hard += 2
-	else if (!(area = 7 && subarea == 1) && !(area = 5 && subarea == 1))//Labs 1 and Vulcano 1 don't increase hard
+	else if (!(area = 7 && subarea == 1) && !(area = 5 && subarea == 1) && !(area = 4 && subarea == 1))//Labs 1 and Vulcano 1 don't increase hard
 		hard += 1
 
 

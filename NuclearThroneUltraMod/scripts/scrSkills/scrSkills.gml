@@ -93,7 +93,7 @@ function scrSkills() {
 	skill_msnd[7] =  sndMutBloodlust
 
 	skill_name[8] = "GAMMA GUTS"
-	skill_text[8] = "ENEMIES TOUCHING YOU TAKE DAMAGE#50% ENEMY CONTACT DAMAGE#DONT TAKE DAMAGE FROM#ENEMIES THAT YOU KILL USING GAMMA GUTS"
+	skill_text[8] = "ENEMIES TOUCHING YOU TAKE DAMAGE#DONT TAKE DAMAGE FROM#ENEMIES THAT YOU KILL USING GAMMA GUTS#YOU TAKE 50% LESS ENEMY CONTACT DAMAGE"
 	skill_tips[8] = "skin glows"
 	skill_msnd[8] =  sndMutGammaGuts
 

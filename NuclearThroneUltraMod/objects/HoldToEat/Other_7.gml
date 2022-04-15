@@ -39,7 +39,8 @@ with Player
 			else
 			instance_create(x,y,AmmoPickup)}
 		}
-		scrRaddrop(5);
+		var r = 5;
+		
 		var hasUltra = false;
 		if ultra_got[32]
 		{
@@ -103,12 +104,14 @@ with Player
 
 		if skill_got[5] = 1
 		{
-		snd_play_2d(sndRobotEatUpg)
-		instance_create(x,y,AmmoPickup)
+			snd_play_2d(sndRobotEatUpg)
+			r += 2;
+			instance_create(x,y,AmmoPickup)
 		}
 		else
 		snd_play_2d(sndRobotEat)
 
+		scrRaddrop(r);
 		breload = 0
 		instance_create(x,y,Smoke)
 

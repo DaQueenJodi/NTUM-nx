@@ -1,23 +1,19 @@
 if(instance_exists(Player)){
-if ( (Player.skill_got[5] = 1) && (Player.race=11) && (other.team=2) && (Player.damageboostdelay < 1))//HUNTER THRONEBUTT
+if ( (Player.skill_got[5] = 1) && (Player.race=11) && (other.team=2))//HUNTER THRONEBUTT
 {
-    //if instance_exists(Marker)
-    //{
-    //if (instance_exists(Marker.target))&&sprite_index!=spr_hurt
-        with Marker
-        {
-        if instance_exists(enemy)&&instance_exists(target)
-        {
-        if other.id=target.id
-        {
-        other.my_health-=5
-        Player.damageboostdelay=15;
-        }
-        }
+	var dmgTaken = prevhealth-my_health;
+	if dmgTaken > 0
+    with Marker
+    {
+	    if instance_exists(enemy)&&instance_exists(target)
+	    {
+		    if other.id=target.id
+		    {
+				other.my_health -= dmgTaken*0.35;
+		    }
+	    }
         
-        }
-        
-    //}
+    }
 }
 
 if ( (Player.ultra_got[71] == 1) && (other.team==2)) //ANGEL Ultra tranquility

@@ -104,7 +104,7 @@ function scrUltras() {
 	    ultra_tips[23] = "shells and bullets <3"
     
 	    ultra_name[24] = "IT UR GOD: VEENY"
-	    ultra_text[24] = "RIGHT CLICK SOMETIMES#ALSO FIRES YOUR SECONDARY WEAPON"
+	    ultra_text[24] = "RIGHT CLICK SOMETIMES#ALSO FIRES YOUR SECONDARY WEAPON#CAN POP FULL AUTO YO"
 	    ultra_tips[24] = "blood gamble"
     
 	//STEROIDS 

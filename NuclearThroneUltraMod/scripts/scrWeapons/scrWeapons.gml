@@ -780,7 +780,7 @@ function scrWeapons() {
 	wep_name[70] = "MORPH-O-RAY"
 	wep_type[70] = 5
 	wep_auto[70] = 1
-	wep_load[70] = 7
+	wep_load[70] = 9
 	wep_cost[70] = 1
 	wep_sprt[70] = sprMorphORay
 	wep_area[70] = 7
@@ -1223,7 +1223,7 @@ function scrWeapons() {
 	wep_load[110] = 25
 	wep_cost[110] = 2
 	wep_sprt[110] = sprMiniFlameCannon
-	wep_area[110] = 7
+	wep_area[110] = 6
 	wep_text[110] = "flame family"
 	wep_swap[110] = sndSwapFlame
 	wep_rad[110] = 0;
@@ -4629,7 +4629,7 @@ function scrWeapons() {
 	wep_type[419] = 3
 	wep_auto[419] = 1
 	wep_load[419] = 14
-	wep_cost[419] = 2
+	wep_cost[419] = 1
 	wep_sprt[419] = sprSpinnerYoyoGun
 	wep_area[419] = 5
 	wep_text[419] = "yoyo phases through walls"
@@ -4640,7 +4640,7 @@ function scrWeapons() {
 	wep_type[420] = 3
 	wep_auto[420] = 1
 	wep_load[420] = 25
-	wep_cost[420] = 5
+	wep_cost[420] = 4
 	wep_sprt[420] = sprSuperSpinnerYoyoGun
 	wep_area[420] = 8
 	wep_text[420] = "super dizzy"
@@ -4651,7 +4651,7 @@ function scrWeapons() {
 	wep_type[421] = 3
 	wep_auto[421] = 1
 	wep_load[421] = 20
-	wep_cost[421] = 10
+	wep_cost[421] = 8
 	wep_sprt[421] = sprSpinnerYoyoDisperseGun
 	wep_area[421] = 12
 	wep_text[421] = "once upon a time there was a yoyo that never returned"

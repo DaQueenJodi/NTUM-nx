@@ -32,7 +32,6 @@ rushcrownlevels = 0;
 portalstrikesusedthislevel = 0;
 toxicweaponsfound = 0;
 missedthislevel = false;
-damageboostdelay = 0; //Hunter's damage boost for thronebutt
 
 targetPickup = noone; //weapon pickup refrence
 

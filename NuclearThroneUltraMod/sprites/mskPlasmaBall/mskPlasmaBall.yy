@@ -1,6 +1,6 @@
 {
   "bboxMode": 1,
-  "collisionKind": 0,
+  "collisionKind": 4,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"mskPlasmaBall","path":"sprites/mskPlasmaBall/mskPlasmaBall.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "mskPlasmaBall",
     "tags": [],
     "resourceType": "GMSequence",
   },

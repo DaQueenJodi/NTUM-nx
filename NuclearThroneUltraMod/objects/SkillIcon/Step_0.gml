@@ -129,10 +129,10 @@ if Player.race = 22
 {
 	rogueammo = rogueammomax;	
 }
-armour = maxarmour;
 
 with Player
 {
+	armour = maxarmour;
 	if race==9 || race==12//Chicken maxhealth regain
     {
 		var targetHealth = 8;

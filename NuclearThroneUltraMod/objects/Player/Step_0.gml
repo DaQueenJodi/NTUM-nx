@@ -1543,9 +1543,6 @@ if race = 26
 	}
 }
 
-///Hunter damage boost delay
-if damageboostdelay>0
-damageboostdelay--;
 
 /* */
 ///Elementor fire ultra

@@ -1,7 +1,7 @@
 if other.team != team and other.my_health > 0&&other.id != creator//the thing I hit must not be myself
 {
 	var hit = other;
-	var s = max(0,other.size);
+	var s = max(0,other.size*1.5);
 	with other//enemy
 	{
 		if sprite_index != spr_hurt
@@ -56,7 +56,7 @@ if other.team != team and other.my_health > 0&&other.id != creator//the thing I 
 			if instance_exists(other.creator){
 				direction = point_direction(x,y,other.creator.x,other.creator.y);
 				motion_add(direction,1/s);
-				mp_potential_step(other.creator.x,other.creator.y,2.5/s,false)
+				mp_potential_step(other.creator.x,other.creator.y,2/s,false)
 				if place_meeting(x,y,Wall)
 				{	x = xprevious;
 					y = yprevious;	
