@@ -20,8 +20,8 @@ if other.team != team and other.my_health > 0&&other.id != creator//the thing I 
 			motion_add(other.image_angle,4)
 			if other.ion=true
 			{
-				with instance_create(mouse_x,mouse_y,MeatExplosion)
-						scrCanHumphry();
+				instance_create(mouse_x,mouse_y,MeatExplosion)
+				
 				with instance_create(x,y,BloodStreak){
 					image_angle = random(360);
 					}
@@ -39,8 +39,8 @@ if other.team != team and other.my_health > 0&&other.id != creator//the thing I 
 					var dis = point_distance(x,y,hit.x,hit.y)*0.5;
 					var xx = x+lengthdir_x(dis,dir);
 					var yy = y+lengthdir_y(dis,dir);
-					with instance_create(xx,yy,MeatExplosion)
-						scrCanHumphry();
+					instance_create(xx,yy,MeatExplosion)
+					
 					with instance_create(xx,yy,BloodStreak){
 						image_angle = random(360);
 						}

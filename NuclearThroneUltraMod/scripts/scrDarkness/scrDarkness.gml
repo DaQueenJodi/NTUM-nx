@@ -77,6 +77,8 @@ function scrDarkness() {	if darkness = 1
 	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),48,0)
 	with Bones
 	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),32,0)
+	with JellyFish
+	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 ),24,0)
 	with BigMachine
 	draw_circle(x-__view_get( e__VW.XView, 0 ),y-__view_get( e__VW.YView, 0 )+32,110+random(3),0)
 	with Corpse

@@ -441,7 +441,7 @@ function scrPopEnemies() {
 	                instance_create(x + 12 + random(8), y + 12 + random(8), choose(LavaBallEnemy, FireWorm, FireWorm, FireWorm, LavaBallEnemy, Salamander,SuperFireBaller))
 	            }
 	            else if random(7) < 1
-	            instance_create(x + 16, y + 16, choose(FireWorm, Thief, FireWorm, FireBat, Bandit, BanditSquare, FireWorm, FireWorm,FireBaller))
+	            instance_create(x + 16, y + 16, choose(FireBat, Thief, FireWorm, FireBat, Bandit, BanditSquare, FireBat, FireWorm,FireBaller))
 				else if instance_number(enemy) < 1
 				{
 					instance_create(x + 16, y + 16,LavaBallEnemy);
@@ -465,7 +465,7 @@ function scrPopEnemies() {
 	                }
 	            }
 	            else if random(2) < 1
-					instance_create(x + 16, y + 16, choose(FireBat, FireBat, LavaBallEnemy, FireWorm, FireWorm, FireWorm, Salamander,SuperFireBaller))
+					instance_create(x + 16, y + 16, choose(FireBat, FireBat, LavaBallEnemy, FireBat, FireBat, FireWorm, Salamander,SuperFireBaller))
 				else if instance_number(enemy) < 1
 				{
 					instance_create(x + 16, y + 16,LavaBallEnemy);

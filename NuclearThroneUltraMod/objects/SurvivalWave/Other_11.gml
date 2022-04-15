@@ -253,7 +253,7 @@ switch (UberCont.crownVaultChallenge)
 		repeat(4)
 		{
 			wave[i] = {
-				obj: Bandit,
+				obj: SavannaBandit,
 				time: 22,
 			};
 			i++;
@@ -262,7 +262,7 @@ switch (UberCont.crownVaultChallenge)
 		{
 			wave[i] = {
 				obj: SnowTank,
-				time: 30,
+				time: 40,
 			};
 			i++;
 		};
@@ -270,14 +270,21 @@ switch (UberCont.crownVaultChallenge)
 		repeat(3)
 		{
 			wave[i] = {
-				obj: MeleeBandit,
+				obj: Hyena,
 				time: 2,
 			};
 			i++;
 		};
 		wave[i] = {
-			obj: MeleeBandit,
-			time: 120,
+			obj: Vulture,
+			time: 140,
+		};
+		i++;
+		wave[i] = {
+			obj: BigVulture,
+			time: 60,
+			xx: centerX,
+			yy: centerY
 		};
 		i++;
 		wave[i] = {
@@ -290,8 +297,16 @@ switch (UberCont.crownVaultChallenge)
 		repeat(4)
 		{
 			wave[i] = {
-				obj: Scorpion,
+				obj: Vulture,
 				time: 10,
+			};
+			i++;
+		}
+		repeat(4)
+		{
+			wave[i] = {
+				obj: SavannaBandit,
+				time: 15,
 			};
 			i++;
 		}

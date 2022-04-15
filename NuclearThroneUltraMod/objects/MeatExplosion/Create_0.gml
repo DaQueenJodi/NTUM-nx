@@ -32,7 +32,7 @@ else
 }
 team = 2
 
+HumphryHit=0;//unassigned 0=miss 1=hit 2=dont count as either
 Humphry=false;//gets assigned true when playing as humphry and firing
 HumphryNr=0;
-HumphryHit=0;
 
