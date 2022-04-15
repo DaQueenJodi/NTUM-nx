@@ -32,7 +32,7 @@ target=-1;
 
 if instance_exists(Player)
 {
-    if (Player.skill_got[19] || UberCont.public == 0) && !instance_exists(SpiralCont)
+    if (Player.skill_got[19]) && !instance_exists(SpiralCont)
     {
 		if prevhealth>my_health
 		{

@@ -136,7 +136,7 @@ skeletonlives = 0;
 
 ultimategamble = false;
 
-
+maxhealth = 8
 bettermelee = 0;
 betterlaserbrain = 0;
 betterpluto = 0;
@@ -276,7 +276,6 @@ else {
     ammo[wep_type[wep]] = typ_ammo[wep_type[wep]] * 3
 }
 
-maxhealth = 8
 if UberCont.opt_gamemode == 9
 	maxhealth += UberCont.casualModeHPIncrease;
 maxspeed = 4

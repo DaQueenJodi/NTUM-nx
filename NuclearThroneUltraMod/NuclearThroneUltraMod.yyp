@@ -3032,6 +3032,7 @@
     {"id":{"name":"sprThunderCrack","path":"sprites/sprThunderCrack/sprThunderCrack.yy",},"order":158,},
     {"id":{"name":"sprKrakenGun","path":"sprites/sprKrakenGun/sprKrakenGun.yy",},"order":159,},
     {"id":{"name":"sprKrakenPistol","path":"sprites/sprKrakenPistol/sprKrakenPistol.yy",},"order":160,},
+    {"id":{"name":"sndMutant6No","path":"sounds/sndMutant6No/sndMutant6No.yy",},"order":28,},
     {"id":{"name":"sprBigKrakenGun","path":"sprites/sprBigKrakenGun/sprBigKrakenGun.yy",},"order":161,},
     {"id":{"name":"sprMorphHammer","path":"sprites/sprMorphHammer/sprMorphHammer.yy",},"order":162,},
     {"id":{"name":"sprStick","path":"sprites/sprStick/sprStick.yy",},"order":163,},
