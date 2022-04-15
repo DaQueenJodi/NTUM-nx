@@ -49,35 +49,71 @@ function scrPopEnemies() {
     }
 
     if spawnarea = 10 {
-        theBandit = choose(SavannaBandit, SavannaBandit, SavannaBandit, Bandit, BanditSquare);
-        if styleb = 1 {
-            instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Vulture, GatorSmoke, Hyena, Vulture))
-        }
-        else {
-            if random(8) < 1
-			{
-				repeat(2)//Pack of hyenas
+		if loops > 0
+		{
+			theBandit = choose(SavannaBandit, SavannaBandit, SavannaBandit, Bandit, BanditSquare);
+	        if styleb = 1 {
+	            instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Vulture, Scorpion, SquareBat, Vulture,FireWorm))
+	        }
+	        else {
+	            if random(8) < 1
 				{
-					instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Hyena)
-				}
-			}
-            else {
-	                if random(30) < 1 {
-	                    instance_create(x + 16, y + 16, Barrel)
-	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, SavannaBandit)
-	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
-	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
-	                }
-					else if random(25) < 1
+					repeat(2)//Pack of hyenas
 					{
-						repeat(2+irandom(2))
-						{
-							instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Hyena)
-						}
+						instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Hyena)
 					}
-	                else
-	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(theBandit, theBandit, theBandit, theBandit, GatorSmoke, Exploder, Vulture, Vulture))
-            }
+				}
+	            else {
+		                if random(30) < 1 {
+		                    instance_create(x + 16, y + 16, Barrel)
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, SavannaBandit)
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, SavannaBandit)
+		                }
+						else if random(25) < 1
+						{
+							repeat(2+irandom(2))
+							{
+								instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Hyena)
+							}
+						}
+		                else
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(theBandit, theBandit, SquareBat, FireWorm, GatorSmoke, Exploder, Vulture, Vulture,Scorpion))
+	            }
+			}
+		}
+		else
+		{
+	        theBandit = choose(SavannaBandit, SavannaBandit, SavannaBandit, Bandit, BanditSquare);
+	        if styleb = 1 {
+	            instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Vulture, Hyena, Hyena, Vulture))
+	        }
+	        else {
+	            if random(8) < 1
+				{
+					repeat(2)//Pack of hyenas
+					{
+						instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Hyena)
+					}
+				}
+	            else {
+		                if random(30) < 1 {
+		                    instance_create(x + 16, y + 16, Barrel)
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, SavannaBandit)
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
+		                }
+						else if random(25) < 1
+						{
+							repeat(2+irandom(2))
+							{
+								instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Hyena)
+							}
+						}
+		                else
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(theBandit, theBandit, theBandit, theBandit, GatorSmoke, Exploder, Vulture, Vulture))
+	            }
+			}
         }
     }
 
@@ -854,21 +890,21 @@ function scrPopEnemies() {
         else {
             if random(20) < 1 {
                 repeat(1 + irandom(3))
-                instance_create(x + 16 + irandom(4) - 2, y + 16 + irandom(4) - 2, choose(Bandit, SavannaBandit, JungleBandit, LaserBandit, EraserBandit, BanditInverted, BanditSquare))
+                instance_create(x + 16 + irandom(4) - 2, y + 16 + irandom(4) - 2, choose(Bandit, ScubaBandit, SavannaBandit, JungleBandit, LaserBandit, EraserBandit, BanditInverted, BanditSquare))
             }
             else {
                 if random(30) < 1 {
                     instance_create(x + 16, y + 16, Barrel)
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Bandit, SavannaBandit, JungleBandit, LaserBandit, EraserBandit, BanditInverted, BanditSquare))
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Bandit, SavannaBandit, JungleBandit, LaserBandit, EraserBandit, BanditInverted, BanditSquare))
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Bandit, SavannaBandit, JungleBandit, LaserBandit, EraserBandit, BanditInverted, BanditSquare))
+                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Bandit, ScubaBandit, SavannaBandit, JungleBandit, LaserBandit, EraserBandit, BanditInverted, BanditSquare))
+                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Bandit, ScubaBandit, SavannaBandit, JungleBandit, LaserBandit, EraserBandit, BanditInverted, BanditSquare))
+                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, choose(Bandit, ScubaBandit, SavannaBandit, JungleBandit, LaserBandit, EraserBandit, BanditInverted, BanditSquare))
                 }
                 else if random(20) < 1 {
                     repeat(2 + irandom(6))
                     instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, Bandit)
                 }
                 else
-                    instance_create(x + 16, y + 16, choose(Bandit, SavannaBandit, LaserBandit, EraserBandit, LaserBandit, BanditInverted, Thief, JungleBandit, BanditSquare))
+                    instance_create(x + 16, y + 16, choose(Bandit, SavannaBandit, ScubaBandit, LaserBandit, EraserBandit, LaserBandit, BanditInverted, Thief, JungleBandit, BanditSquare))
             }
         }
     }

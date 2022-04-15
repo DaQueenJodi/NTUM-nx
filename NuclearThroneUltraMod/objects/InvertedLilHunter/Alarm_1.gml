@@ -113,7 +113,7 @@ walk = 8+random(4)
 gunangle = point_direction(x,y,target.x,target.y)
 }
 }
-else if random(30) < 1 && !instance_exists(IDPDSpawn)
+else if ((random(10) < 1 && !instance_exists(IDPDSpawn)) || (random(20) < 1))
 {
 	snd_play_2d(sndLilHunterSummon)
 	with Player

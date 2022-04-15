@@ -18,6 +18,7 @@ if instance_exists(Player) && Player.subarea != 1
 	{
 		loops = 1;
 		alarm[3] = 1;
+		alarm[1]-=200
 	}
 }
 if loops < 1

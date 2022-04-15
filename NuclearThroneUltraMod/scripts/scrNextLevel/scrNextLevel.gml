@@ -225,7 +225,7 @@ function scrNextLevel() {
 	    exit;
 	    }
 	    else if area=101
-	    hard+=2;
+	    hard+=1;
 		
 		//Cursed caves to caves 2
 		if area == 115
