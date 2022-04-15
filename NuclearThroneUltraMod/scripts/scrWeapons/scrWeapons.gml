@@ -2279,7 +2279,7 @@ function scrWeapons() {
 	wep_load[206] = 26
 	wep_cost[206] = 2
 	wep_sprt[206] = sprSmallMissileLauncher
-	wep_area[206] = 7
+	wep_area[206] = 8
 	wep_text[206] = "theres a bigger one"
 	wep_swap[206] = sndSwapExplosive
 	wep_rad[206] = 0;
@@ -2290,7 +2290,7 @@ function scrWeapons() {
 	wep_load[207] = 48
 	wep_cost[207] = 4
 	wep_sprt[207] = sprMissileLauncher
-	wep_area[207] = 9
+	wep_area[207] = 10
 	wep_text[207] = "you should really try eagle eyes#with this gun"
 	wep_swap[207] = sndSwapExplosive
 	wep_rad[207] = 0;
@@ -2320,10 +2320,10 @@ function scrWeapons() {
 	wep_name[210] = "BIG MISSILE LAUNCHER"
 	wep_type[210] = 4
 	wep_auto[210] = 0
-	wep_load[210] = 60
+	wep_load[210] = 50
 	wep_cost[210] = 12
 	wep_sprt[210] = sprBigMissileLauncher
-	wep_area[210] = 13
+	wep_area[210] = 14
 	wep_text[210] = "R.Y.N.O."
 	wep_swap[210] = sndSwapExplosive
 	wep_rad[210] = 0;
@@ -4466,7 +4466,7 @@ function scrWeapons() {
 	wep_load[404] = 48
 	wep_cost[404] = 4
 	wep_sprt[404] = sprMissileBombThrower
-	wep_area[404] = 10
+	wep_area[404] = 11
 	wep_text[404] = "be very carefull"
 	wep_swap[404] = sndSwapExplosive
 	wep_rad[404] = 0;

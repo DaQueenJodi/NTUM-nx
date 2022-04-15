@@ -1,5 +1,5 @@
 /// @description FIRE
-alarm[1] += 10;
+alarm[1] += maxAmmo;
 ammo = maxAmmo;
 shooting = fireRate;
 shooting2 = fireRate2;

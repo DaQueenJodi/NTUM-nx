@@ -1,4 +1,4 @@
-if speed > 0 && other.team != team
+if (speed > 0 || alarm[1] > 0) && other.team != team
 {
 	if !array_contains(hitEntities,other.id)
 	{

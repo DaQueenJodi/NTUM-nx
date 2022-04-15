@@ -56,7 +56,7 @@ instance_create(x-d,y+d,WallBreak);
 instance_create(x-d,y-d,WallBreak);
 
 ammo = 0;
-maxAmmo = 10;
+maxAmmo = 6;
 fireRate = 2;
 shooting = 0;
 

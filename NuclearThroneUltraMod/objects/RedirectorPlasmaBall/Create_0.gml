@@ -8,13 +8,13 @@ they have a FORCE and can be 0 or DIRECTIONAL */
 
 typ = 1 //0 = normal, 1 = deflectable, 2 = destructable, 3 = deflectable
 //friction=0.4;
-dmg = 10
+dmg = 8
 nomscale = 1;
 if instance_exists(Player)
 {
 if Player.skill_got[17] = 1
 {
-dmg = 15+(Player.betterlaserbrain*2)
+dmg = 13+(Player.betterlaserbrain*2)
 nomscale += 0.1;
 }
 }

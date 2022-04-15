@@ -1,7 +1,6 @@
 if other.team != team and other.my_health > 0
 {
-	x += (xprevious - x)*0.8;
-	y += (yprevious - y)*0.8;
+	scrPlasmaPush();
 	if other.sprite_index != other.spr_hurt
 	{
 			BackCont.shake += 2

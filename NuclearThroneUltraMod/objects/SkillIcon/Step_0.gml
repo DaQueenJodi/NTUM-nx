@@ -109,20 +109,28 @@ Player.betterboltmarrow=20;
 }
 else if skill = 18//last wish
 {
-Player.ammo[1] += 200
-Player.ammo[2] += 20
-Player.ammo[3] += 20
-Player.ammo[4] += 20
-Player.ammo[5] += 20
-
-if Player.race=25
+	if Player.race=25
+	{
+		Player.ammo[1] = typ_amax[1]
+		Player.ammo[2] = typ_amax[2]
+		Player.ammo[3] = typ_amax[3]
+		Player.ammo[4] = typ_amax[4]
+		Player.ammo[5] = typ_amax[5]
+	}
+	else
+	{
+		Player.ammo[1] += 200
+		Player.ammo[2] += 20
+		Player.ammo[3] += 20
+		Player.ammo[4] += 20
+		Player.ammo[5] += 20
+	}
+if Player.race = 22
 {
-Player.ammo[1] += 600
-Player.ammo[2] += 60
-Player.ammo[3] += 60
-Player.ammo[4] += 60
-Player.ammo[5] += 60
+	rogueammo = rogueammomax;	
 }
+armour = maxarmour;
+
 with Player
 {
 	if race==9 || race==12//Chicken maxhealth regain

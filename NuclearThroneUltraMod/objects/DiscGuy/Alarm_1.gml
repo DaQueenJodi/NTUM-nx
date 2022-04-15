@@ -24,7 +24,7 @@ sprite_index = spr_fire
 snd_play(sndDiscgun)
 
 with instance_create(x,y,EnemyDisc)
-{motion_add(other.direction+180+(random(6)-3),3)
+{motion_add(other.direction+180+(random(6)-3),3.2)
 image_angle = direction
 team = other.team}
 walk=4;

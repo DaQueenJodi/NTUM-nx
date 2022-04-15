@@ -336,11 +336,24 @@ function scrPopEnemies() {
     //INVERTED FROZEN CITY
     if spawnarea = 107 {
 		
-        if random(3) < 2
-        instance_create(x + 16, y + 16, choose(InvertedDiscGuy, InvertedSnowBot, InvertedSnowBot, InvertedSnowTank, InvertedWolf, InvertedWolf, InvertedDiscGuy))
-		else if instance_number(enemy) < 1
+		if loops > 0 {
+			if random(12) < 2
+			instance_create(x + 16, y + 16, choose(InvertedExploGuardian, InvertedGuardianDog, InvertedCubeGuardian, InvertedNecromancer))
+			else if random(4) > 3
+			instance_create(x + 16, y + 16, choose(InvertedSnowBot, InvertedSnowBot, InvertedSnowBot, InvertedSnowTank, InvertedWolf, InvertedWolf, InvertedDiscGuy, BanditSquare))
+			else if instance_number(enemy) < 1
+			{
+				instance_create(x + 16, y + 16,InvertedDiscGuy);
+			}
+		}
+		else
 		{
-			instance_create(x + 16, y + 16,InvertedDiscGuy);
+	        if random(3) < 2
+	        instance_create(x + 16, y + 16, choose(InvertedDiscGuy, InvertedSnowBot, InvertedSnowBot, InvertedSnowTank, InvertedWolf, InvertedWolf, InvertedDiscGuy))
+			else if instance_number(enemy) < 1
+			{
+				instance_create(x + 16, y + 16,InvertedDiscGuy);
+			}
 		}
     }
 
@@ -350,7 +363,7 @@ function scrPopEnemies() {
 		if loops > 0 {
 	        if subarea = 2 {
 	            if random(22) < 1
-	            instance_create(x + 16, y + 16, choose(Freak, Freak, Freak, Freak, Turret, RhinoFreak));
+	            instance_create(x + 16, y + 16, choose(Freak, Freak, Freak, Freak, Turret, RhinoFreak,LaserCrystal,Ratking));
 
 	        } else {
 	            var ran = random(100);
@@ -405,30 +418,62 @@ function scrPopEnemies() {
 
     //INVERTED LABS
     if spawnarea = 112 {
-        if subarea = 2 {
-            if random(24) < 1
-            instance_create(x + 16, y + 16, choose(InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedTurret, InvertedRhinoFreak));
+		if loops > 0 {
+	        if subarea = 2 {
+	            if random(22) < 1
+	            instance_create(x + 16, y + 16, choose(InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedTurret, InvertedRhinoFreak,LightningCrystal,InvertedRatking));
 
-        }
-        else {
-            var ran = random(100);
-            if ran > 90 {
-                repeat(10)
-                instance_create(x + 12 + random(8), y + 12 + random(8), choose(InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak,
-                    InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedExploFreak, InvertedExploFreak, InvertedRhinoFreak, InvertedFreak, InvertedFreak, InvertedFreak))
-            }
-            else if ran > 80 {
-                instance_create(x + 16, y + 16, choose(InvertedNecromancer, InvertedNecromancer, InvertedNecromancer, InvertedExploFreak, InvertedRhinoFreak, InvertedNecromancer, InvertedNecromancer))
-            }
-            else if ran > 70 && !place_meeting(x, y, InvertedTurret) {
-                instance_create(x + 16, y + 16, InvertedTurret);
-                instance_create(x + 16, y + 16, NOWALLSHEREPLEASE);
-            }
-			else if instance_number(enemy) < 1
-			{
-				instance_create(x + 16, y + 16,InvertedTurret);
-			}
-        }
+	        } else {
+	            var ran = random(100);
+	            if ran > 90 {
+	                repeat(9)//10
+	                instance_create(x + 12 + random(8), y + 12 + random(8), choose(InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, 
+					InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedExploFreak, InvertedExploFreak, InvertedRhinoFreak, InvertedFreak, InvertedFreak, InvertedFreak))
+	            }
+	            else if ran > 80 {
+	                instance_create(x + 16, y + 16, choose(InvertedNecromancer, InvertedNecromancer, InvertedNecromancer, InvertedExploFreak, 
+					InvertedRhinoFreak, InvertedNecromancer, InvertedNecromancer))
+	            }
+	            else if ran > 70 && !place_meeting(x, y, InvertedTurret) {
+	                instance_create(x + 16, y + 16, InvertedTurret);
+	                instance_create(x + 16, y + 16, NOWALLSHEREPLEASE);
+	            }
+				else if ran > 65 {
+					instance_create(x + 16, y + 16, choose(InvertedRatking, LightningCrystal));
+				}
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,InvertedTurret);
+				}
+	        }
+		}
+		else
+		{
+	        if subarea = 2 {
+	            if random(24) < 1
+	            instance_create(x + 16, y + 16, choose(InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedTurret, InvertedRhinoFreak));
+
+	        }
+	        else {
+	            var ran = random(100);
+	            if ran > 90 {
+	                repeat(10)
+	                instance_create(x + 12 + random(8), y + 12 + random(8), choose(InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak,
+	                    InvertedFreak, InvertedFreak, InvertedFreak, InvertedFreak, InvertedExploFreak, InvertedExploFreak, InvertedRhinoFreak, InvertedFreak, InvertedFreak, InvertedFreak))
+	            }
+	            else if ran > 80 {
+	                instance_create(x + 16, y + 16, choose(InvertedNecromancer, InvertedNecromancer, InvertedNecromancer, InvertedExploFreak, InvertedRhinoFreak, InvertedNecromancer, InvertedNecromancer))
+	            }
+	            else if ran > 70 && !place_meeting(x, y, InvertedTurret) {
+	                instance_create(x + 16, y + 16, InvertedTurret);
+	                instance_create(x + 16, y + 16, NOWALLSHEREPLEASE);
+	            }
+				else if instance_number(enemy) < 1
+				{
+					instance_create(x + 16, y + 16,InvertedTurret);
+				}
+	        }
+		}
     }
 
     //VULCANO
@@ -659,50 +704,92 @@ function scrPopEnemies() {
             }
         }
         else {
-            if styleb = 1 {
-                if random(3) < 1
-                instance_create(x + 16, y + 16, choose(CardGuy, CardGuy2, ExplosiveSheep, CardGuy, Sheep, CardGuy2, Sheep, TeaPot, TeaPot))
-            }
-            else {
-                if random(8) < 1
-                instance_create(x + 16, y + 16, choose(TeaPot, ExplosiveSheep))
-                else if random(4) < 2.5 {
-                    instance_create(x + 16, y + 16, choose(TeaPot, CardGuy, CardGuy, CardGuy, CardGuy2, CardGuy2, CardGuy2, Sheep))
-                }
-				else if instance_number(enemy) < 1
+				if loops > 0
 				{
-					instance_create(x + 16, y + 16,CardGuy);
+					if styleb = 1 {
+	                    if random(3) < 1
+	                    instance_create(x + 16, y + 16, choose(CardGuy, CardGuy2, GuardianDog, CardGuy, CardGuy2, ExplosiveSheep, TeaPot, Hyena,Hyena,TeaPot,CubeGuardian))
+	                }
+	                else {
+	                    if random(8) < 1
+	                    instance_create(x + 16, y + 16, choose(TeaPot, ExplosiveSheep, TeaPot, TeaPot, TeaPot, CardGuy, CardGuy2,GuardianDog,Hyena,Hyena))
+	                    else if random(4) < 2.5 {
+	                        instance_create(x + 16, y + 16, choose(TeaPot, CardGuy, CardGuy, CardGuy, CardGuy2, CardGuy2, CardGuy2, Sheep,Hyena,Hyena,GuardianDog,CubeGuardian))
+	                    }
+						else if instance_number(enemy) < 1
+						{
+							instance_create(x + 16, y + 16,CardGuy);
+						}
+	                }
 				}
-            }
+				else
+				{
+		            if styleb = 1 {
+		                if random(3) < 1
+		                instance_create(x + 16, y + 16, choose(CardGuy, CardGuy2, ExplosiveSheep, CardGuy, Sheep, CardGuy2, Sheep, TeaPot, TeaPot))
+		            }
+		            else {
+		                if random(8) < 1
+		                instance_create(x + 16, y + 16, choose(TeaPot, ExplosiveSheep))
+		                else if random(4) < 2.5 {
+		                    instance_create(x + 16, y + 16, choose(TeaPot, CardGuy, CardGuy, CardGuy, CardGuy2, CardGuy2, CardGuy2, Sheep))
+		                }
+						else if instance_number(enemy) < 1
+						{
+							instance_create(x + 16, y + 16,CardGuy);
+						}
+		            }
+				}
         }
     }
 
     if spawnarea = 109 //Inverted Wonderland
     {
         if instance_exists(Player) {
-            if Player.subarea = 3 && Player.area = 109 //WE LOVE BOSSES! in case loop make sure irght area
-            {
-                if !instance_exists(InvertedChesireCat) {
-                    instance_create(x + 16, y + 16, InvertedChesireCat);
-                }
-
-            } else {
-                if styleb = 1 {
-                    if random(3) < 1
-                    instance_create(x + 16, y + 16, choose(InvertedCardGuy, InvertedCardGuy2, ExplosiveSheep, ExplosiveSheep, InvertedCardGuy, InvertedCardGuy2, InvertedTeaPot, InvertedTeaPot))
-                }
-                else {
-                    if random(8) < 1
-                    instance_create(x + 16, y + 16, choose(InvertedTeaPot, InvertedTeaPot, InvertedTeaPot, ExplosiveSheep))
-                    else if random(4) < 2.5 {
-                        instance_create(x + 16, y + 16, choose(InvertedTeaPot, InvertedCardGuy, InvertedCardGuy, InvertedCardGuy, InvertedCardGuy2, InvertedCardGuy2, InvertedCardGuy2))
-                    }
+			if loops > 0
+			{
+				if styleb = 1 {
+	                if random(3) < 1
+	                instance_create(x + 16, y + 16, choose(InvertedCardGuy, InvertedCardGuy2, InvertedGuardianDog, InvertedCardGuy, InvertedCardGuy2, ExplosiveSheep, InvertedTeaPot, Hyena,Hyena,InvertedTeaPot,InvertedCubeGuardian))
+	            }
+	            else {
+	                if random(8) < 1
+	                instance_create(x + 16, y + 16, choose(InvertedTeaPot, ExplosiveSheep, InvertedTeaPot, InvertedTeaPot, InvertedTeaPot, InvertedCardGuy, InvertedCardGuy2,InvertedGuardianDog,Hyena,Hyena))
+	                else if random(4) < 2.5 {
+	                    instance_create(x + 16, y + 16, choose(InvertedTeaPot, InvertedCardGuy, InvertedCardGuy, InvertedCardGuy, InvertedCardGuy2, InvertedCardGuy2, InvertedCardGuy2, Sheep,Hyena,Hyena,InvertedGuardianDog,InvertedCubeGuardian))
+	                }
 					else if instance_number(enemy) < 1
 					{
 						instance_create(x + 16, y + 16,InvertedCardGuy);
 					}
-                }
-            }
+	            }
+			}
+			else
+			{
+		        if Player.subarea = 3 && Player.area = 109 //WE LOVE BOSSES! in case loop make sure irght area
+		        {
+		            if !instance_exists(InvertedChesireCat) {
+		                instance_create(x + 16, y + 16, InvertedChesireCat);
+		            }
+
+		        } else {
+		            if styleb = 1 {
+		                if random(3) < 1
+		                instance_create(x + 16, y + 16, choose(InvertedCardGuy, InvertedCardGuy2, ExplosiveSheep, ExplosiveSheep, InvertedCardGuy, InvertedCardGuy2, InvertedTeaPot, InvertedTeaPot))
+		            }
+		            else {
+		                if random(8) < 1
+		                instance_create(x + 16, y + 16, choose(InvertedTeaPot, InvertedTeaPot, InvertedTeaPot, ExplosiveSheep))
+		                else if random(4) < 2.5 {
+		                    instance_create(x + 16, y + 16, choose(InvertedTeaPot, InvertedCardGuy, InvertedCardGuy, InvertedCardGuy, InvertedCardGuy2, InvertedCardGuy2, InvertedCardGuy2))
+		                }
+						else if instance_number(enemy) < 1
+						{
+							instance_create(x + 16, y + 16,InvertedCardGuy);
+						}
+		            }
+		        }
+			}
         }
         else {
             if styleb = 1 {
@@ -731,16 +818,32 @@ function scrPopEnemies() {
 
     //VENUZ AIRHORN.WAV its OGG now..
     if spawnarea = 103 {
-        if random(5) < 1
-        instance_create(x + 16, y + 16, choose(FireBaller, Jock, FireBaller, Jock, FireBaller, SuperFireBaller))
-        else if random(4) < 1 {
-            if random(5) < 1 && instance_exists(Player) {
-                if point_distance(x, y, Player.x, Player.y) > 64
-                instance_create(x + 16, y + 16, GoldBarrel)
-            }
-            repeat(3)
-            instance_create(x + 16, y + 16, choose(Molefish, Molefish, Molefish, Molefish, Molesarge))
-        }
+		if loops > 0
+		{
+			if random(5) < 1
+	        instance_create(x + 16, y + 16, choose(FireBaller, Jock, FireBaller, Jock, FireBaller, SuperFireBaller,BuffMushroom))
+	        else if random(4) < 1 {
+	            if random(5) < 1 && instance_exists(Player) {
+	                if point_distance(x, y, Player.x, Player.y) > 64
+	                instance_create(x + 16, y + 16, GoldBarrel)
+	            }
+	            repeat(3)
+	            instance_create(x + 16, y + 16, choose(Molefish, Molefish, Molefish, Molefish, Molesarge,SquareBat,JellyFish))
+	        }
+		}
+		else
+		{
+	        if random(5) < 1
+	        instance_create(x + 16, y + 16, choose(FireBaller, Jock, FireBaller, Jock, FireBaller, SuperFireBaller))
+	        else if random(4) < 1 {
+	            if random(5) < 1 && instance_exists(Player) {
+	                if point_distance(x, y, Player.x, Player.y) > 64
+	                instance_create(x + 16, y + 16, GoldBarrel)
+	            }
+	            repeat(3)
+	            instance_create(x + 16, y + 16, choose(Molefish, Molefish, Molefish, Molefish, Molesarge))
+	        }
+		}
     }
 
     //BANDITLAND
@@ -772,33 +875,69 @@ function scrPopEnemies() {
 
     //JUNGLE
     if spawnarea = 114 {
-
-        if styleb = 1 && random(2) < 1 {
-            instance_create(x + 16, y + 16, choose(JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleFly))
-        }
-        else {
-            if random(4) < 1
-            instance_create(x + 16, y + 16, choose(JungleAssassin, JungleBandit, JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleFly))
-            else {
-                if random(30) < 1 {
-                    instance_create(x + 16, y + 16, Barrel)
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, JungleBandit)
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, JungleBandit)
-                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, JungleBandit)
-                }
-                else {
-                    instance_create(x + 16, y + 16, choose(JungleFly, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit));
-                }
-            }
-        }
+		if loops > 0
+		{
+			if subarea != 2 || random(2) < 1
+			{
+		        if styleb = 1 && random(2) < 1 {
+		            instance_create(x + 16, y + 16, choose(JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleFly,BigMaggot,FireWorm,Maggot,FireWorm))
+		        }
+		        else {
+		            if random(4) < 1
+		            instance_create(x + 16, y + 16, choose(JungleAssassin, JungleBandit, JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleBandit, JungleBandit, FireWorm, Scorpion, BigMaggot, JungleFly,Maggot))
+		            else {
+		                if random(30) < 1 {
+		                    instance_create(x + 16, y + 16, Barrel)
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, JungleBandit)
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, JungleBandit)
+		                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, JungleBandit)
+		                }
+		                else {
+		                    instance_create(x + 16, y + 16, choose(JungleFly, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, Scorpion, BigMaggot, FireWorm, Scorpion,Maggot,FireWorm));
+		                }
+		            }
+		        }
+			}
+		}
+		else if subarea != 2 || random(2) < 1
+		{
+	        if styleb = 1 && random(2) < 1 {
+	            instance_create(x + 16, y + 16, choose(JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleFly,MaggotSpawn,MaggotSpawn))
+	        }
+	        else {
+	            if random(4) < 1
+	            instance_create(x + 16, y + 16, choose(JungleAssassin, JungleBandit, JungleAssassinFake, JungleAssassinFake, JungleAssassinFake, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleFly))
+	            else {
+	                if random(30) < 1 {
+	                    instance_create(x + 16, y + 16, Barrel)
+	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, JungleBandit)
+	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, JungleBandit)
+	                    instance_create(x + 16 + random(4) - 2, y + 16 + random(4) - 2, JungleBandit)
+	                }
+	                else {
+	                    instance_create(x + 16, y + 16, choose(JungleFly, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit, JungleBandit));
+	                }
+	            }
+	        }
+		}
     }
 	
 	//MUSHROOM LAND
     if spawnarea = 117 {
-	    if random(9) < 1
-	    instance_create(x + 16, y + 16, choose(Exploder, BuffMushroom, ToxicMushroomGuy, BuffMushroom, Gator, ToxicMushroomGuy, BanditSquare))
-	    else
-	        instance_create(x + 16, y + 16, choose(Gator, GatorSmoke, ToxicMushroomGuy, BuffMushroom, BuffMushroom, ToxicMushroomGuy, ToxicMushroomGuy, BanditSquare,Exploder))
+		if loops > 0
+		{
+		    if random(9) < 1
+		    instance_create(x + 16, y + 16, choose(Exploder, BuffMushroom, ToxicMushroomGuy, BuffMushroom, Gator, ToxicMushroomGuy, BanditSquare,Ratking))
+		    else
+		        instance_create(x + 16, y + 16, choose(Gator, Rat, ToxicMushroomGuy, BuffMushroom, BuffMushroom, ToxicMushroomGuy, ToxicMushroomGuy, BanditSquare,Exploder,Ratking,Ratking,Rat,Rat,LaserBandit,LaserBandit,Spider,Spider,Spider))
+		}
+		else
+		{
+			if random(9) < 1
+				instance_create(x + 16, y + 16, choose(Exploder, BuffMushroom, ToxicMushroomGuy, BuffMushroom, Gator, ToxicMushroomGuy, BanditSquare))
+		    else
+		        instance_create(x + 16, y + 16, choose(Gator, GatorSmoke, ToxicMushroomGuy, BuffMushroom, BuffMushroom, ToxicMushroomGuy, ToxicMushroomGuy, BanditSquare,Exploder))	
+		}
     }
 
 

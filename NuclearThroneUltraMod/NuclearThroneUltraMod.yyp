@@ -2978,6 +2978,7 @@
     {"id":{"name":"sprHyperBurstSlugger","path":"sprites/sprHyperBurstSlugger/sprHyperBurstSlugger.yy",},"order":117,},
     {"id":{"name":"sprHyperBurstShotgun","path":"sprites/sprHyperBurstShotgun/sprHyperBurstShotgun.yy",},"order":118,},
     {"id":{"name":"sprLineNader","path":"sprites/sprLineNader/sprLineNader.yy",},"order":119,},
+    {"id":{"name":"scrPlasmaPush","path":"scripts/scrPlasmaPush/scrPlasmaPush.yy",},"order":6,},
     {"id":{"name":"sprLineBloodNader","path":"sprites/sprLineBloodNader/sprLineBloodNader.yy",},"order":120,},
     {"id":{"name":"sprLineFire","path":"sprites/sprLineFire/sprLineFire.yy",},"order":121,},
     {"id":{"name":"LaserWallDestroyer","path":"objects/LaserWallDestroyer/LaserWallDestroyer.yy",},"order":113,},

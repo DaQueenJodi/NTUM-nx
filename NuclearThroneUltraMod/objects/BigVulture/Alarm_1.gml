@@ -1,5 +1,5 @@
 ///@description AI
-alarm[1] = 9 + random(10)
+alarm[1] = 8 + random(8)
 if isInverted
 	alarm[1] -= 7;
 scrTarget()

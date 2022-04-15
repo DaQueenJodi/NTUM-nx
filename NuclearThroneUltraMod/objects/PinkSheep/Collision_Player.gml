@@ -3,7 +3,8 @@ if KeyCont.key_pick[other.p] = 1
 {
 	KeyCont.key_pick[Player.p] = 2;
 	snd_play(sndSheep);
-	scrUnlockBSkin(13,"SAVE A LOST SHEEP#AS SHEEP",0);
+	if other.race == 13
+		scrUnlockBSkin(13,"SAVE A LOST SHEEP#AS SHEEP",0);
 	if other.area != 8
 	{
 		persistent = true;
