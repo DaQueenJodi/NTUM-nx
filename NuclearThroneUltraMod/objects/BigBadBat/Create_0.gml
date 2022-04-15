@@ -35,7 +35,7 @@ fireOffset = 40;
 laserDuration = 80;
 laserOffset = 32;
 myLasers = [];
-
+ticksBeforeSpiral = 3;
 image_xscale = 1;
 actTime = 14;
 scrTarget();

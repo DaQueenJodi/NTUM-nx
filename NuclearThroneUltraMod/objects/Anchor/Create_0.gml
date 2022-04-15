@@ -1,6 +1,6 @@
 maxhealth = 50
 my_health = maxhealth;
-size = 4
+size = 3
 
 spr_idle = sprAnchor
 spr_hurt = sprAnchorHurt

@@ -32,7 +32,7 @@ target=-1;
 
 if instance_exists(Player)
 {
-    if (Player.skill_got[19]) && !instance_exists(SpiralCont)
+    if (UberCont.opt_dmgindicator && !instance_exists(SpiralCont))
     {
 		if prevhealth>my_health
 		{

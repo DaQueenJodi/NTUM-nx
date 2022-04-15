@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprUpDown",
-    "path": "sprites/sprUpDown/sprUpDown.yy",
+    "name": "sprToggle",
+    "path": "sprites/sprToggle/sprToggle.yy",
   },
   "solid": false,
   "visible": false,
@@ -33,7 +33,7 @@
     "path": "folders/Objects/Menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "BloomUpDown",
+  "name": "DamageIndicatorToggle",
   "tags": [],
   "resourceType": "GMObject",
 }

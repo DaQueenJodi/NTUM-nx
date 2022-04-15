@@ -17,7 +17,7 @@ else if fire && sprite_index == spr_fire
 else if (sprite_index == spr_disappear)
 {
 	fire = false;
-	if instance_exists(Floor) && instance_exists(Player)
+	if instance_exists(Floor) && instance_exists(Player) && !instance_exists(PlayerSpawn)
 	{
 		meleedamage = 0;
 		var tries = 0;

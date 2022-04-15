@@ -30,5 +30,4 @@ gameovertime = 0
 wave = 0
 fogscroll = 0
 
-bloomAlpha=UberCont.opt_bloom;
 gameoverText = "YOU DID NOT REACH THE NUCLEAR THRONE";

@@ -646,7 +646,7 @@ function scrDrawHUD() {
 	var ny = y-30;
 	//Eagle eyes weptier
 		var tier = string(wep_area[wep]);
-		if Player.skill_got[19] && tier >= 0//eagle eyes
+		if tier >= 0//eagle eyes
 		{
 			var spaceBetweenStarAndText = 4;
 			var ty = y-40;

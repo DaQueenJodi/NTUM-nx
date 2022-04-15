@@ -1,7 +1,5 @@
 function scrDrawBloom() {
-	if bloomAlpha=0
-	exit;
-	var ba = bloomAlpha;
+	var ba = 0.1;
 	//if instance_count>2000 emergancy when there is just too much going on
 	//exit;
 

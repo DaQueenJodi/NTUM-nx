@@ -57,8 +57,8 @@ instance_destroy()
 
 instance_activate_all()
 
-with TopCont
-bloomAlpha=UberCont.opt_bloom;
+//with TopCont
+//bloomAlpha=UberCont.opt_bloom;
 
 if(instance_exists(Marker)){
 Cursor.image_index=UberCont.opt_crosshair;
@@ -133,7 +133,7 @@ instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+s
 instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_width(string_hash_to_newline("OFF")),__view_get( e__VW.YView, 0 )+80+optY,FullScreenToggle)
 instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_width(string_hash_to_newline("00")),__view_get( e__VW.YView, 0 )+80+optY,CursorUpDown)
 instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_width(string_hash_to_newline("0")),__view_get( e__VW.YView, 0 )+96+optY,SideArtUpDown)
-instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_width(string_hash_to_newline("100%")),__view_get( e__VW.YView, 0 )+104+optY,BloomUpDown)
+instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_width(string_hash_to_newline("100%")),__view_get( e__VW.YView, 0 )+104+optY,DamageIndicatorToggle)
 instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_width(string_hash_to_newline("OFF")),__view_get( e__VW.YView, 0 )+112+optY,CameraFollowToggle)
 instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )/2+10+string_width(string_hash_to_newline("OFF")),__view_get( e__VW.YView, 0 )+120+optY,HighQualityToggle)
 //instance_create(view_xview+view_wview/2+10+string_width("OFF"),view_yview+136,GamePadToggle)

@@ -14,13 +14,18 @@ typ = 0//2
 
 if instance_exists(Player)
 {//frog
-if Player.race=23
-{
-team = 2;
-//the normal scale
-image_xscale += 0.2
-image_yscale += 0.2
-}
+	if Player.race=23
+	{
+	team = 2;
+	//the normal scale
+	image_xscale += 0.2
+	image_yscale += 0.2
+	}
+	else if Player.skill_got[12]
+	{
+		image_xscale -= 0.1	
+		image_yscale -= 0.1
+	}
 }
 
 dmg=3;

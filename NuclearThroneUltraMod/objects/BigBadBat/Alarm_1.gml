@@ -13,8 +13,9 @@ if target > 0 {
 		ammo = maxAmmo;
 		event_user(0);
 	}
-	else if ran > 60
+	else if ticksBeforeSpiral < 1 && ran > 60
 	{
+		ticksBeforeSpiral = 1;
 		//Do fast spinny attack
 		event_user(1);
 	}
@@ -33,3 +34,4 @@ if target > 0 {
 		rotationSpeed *= -1;	
 	}
 }
+ticksBeforeSpiral --;

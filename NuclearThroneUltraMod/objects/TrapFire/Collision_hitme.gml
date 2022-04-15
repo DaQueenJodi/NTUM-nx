@@ -9,7 +9,7 @@ if other.team != team and other.team != 0 && (other.team!=2 || image_index<5/*no
 	immune = 0
 	if object_index=Player//optimise variable_local_exists("skill_got")
 	{
-		if skill_got[14] = 1 && other.sprite_index!=sprFireLilHunter
+		if skill_got[14] = 1
 		{
 			immune = 1
 

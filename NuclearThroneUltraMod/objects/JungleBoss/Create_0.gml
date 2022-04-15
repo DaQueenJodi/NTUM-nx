@@ -36,4 +36,4 @@ spawnAmount[1] = 2;
 spawnAmount[2] = 1;
 activeMeleDamage = 5;
 halfHealth = false;
-actTime = 12;
+actTime = 14;
