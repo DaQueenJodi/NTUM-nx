@@ -39,17 +39,20 @@ if ( (Player.ultra_got[71] == 1) && (other.team==2)) //ANGEL Ultra tranquility
 if ( (Player.race==11)&&(Player.ultra_got[41]==1)   )
 {
 
-    if other.team=2 && other.alarm[8]<1// && sprite_index!=spr_hurt
+    if other.team=2// && other.alarm[8]<1// && sprite_index!=spr_hurt
     {   
+		var dmgTaken = prevhealth-my_health;
         if point_distance(x,y,Player.x,Player.y)!=0//prevent divide by 0 error this is cheap just multiply but fk it
         {
             if(point_distance(x,y,Player.x,Player.y)<100)
             {
-            my_health-=point_distance(x,y,Player.x,Player.y)/82;//82;
+				var damageDeal = dmgTaken * (point_distance(x,y,Player.x,Player.y)*0.011);
+				my_health -= damageDeal//point_distance(x,y,Player.x,Player.y)/82;//82;
             }
             else
             {
-            my_health-=point_distance(x,y,Player.x,Player.y)/29//28;
+				var damageDeal = dmgTaken * (point_distance(x,y,Player.x,Player.y)*0.003);
+				my_health -= damageDeal;//point_distance(x,y,Player.x,Player.y)/29//28;
             }
             other.alarm[8]=10;//this is the delay before we can deal extra damage again to this enemy
         }

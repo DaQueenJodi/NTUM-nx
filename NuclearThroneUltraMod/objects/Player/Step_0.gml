@@ -587,38 +587,38 @@ if wep_auto[wep] = 0 and clicked = 1
     
     crackshotsfired=instance_number(Marker);//+1;
     with Marker{
-    if MarkerNr=other.crackshotsfired{
-            var mox,moy;
-            var len,dir;
-            if UberCont.opt_fulscrn=1
-            len=point_distance(other.x,other.y,target.x,target.y)*4
-            else{
-            len=point_distance(other.x,other.y,target.x,target.y)
-            len*=(window_get_height())*0.0038;
-            }
+	    if MarkerNr=other.crackshotsfired{
+	            var mox,moy;
+	            var len,dir;
+	            if UberCont.opt_fulscrn=1
+	            len=point_distance(other.x,other.y,target.x,target.y)*4
+	            else{
+	            len=point_distance(other.x,other.y,target.x,target.y)
+	            len*=(window_get_height())*0.0038;
+	            }
             
-            dir=point_direction(other.x,other.y,target.x,target.y);
+	            dir=point_direction(other.x,other.y,target.x,target.y);
             
-            mox=(window_get_x()+window_get_width()*0.5)+lengthdir_x(len,dir);
-            moy=(window_get_y()+window_get_height()*0.5)+lengthdir_y(len,dir);
+	            mox=(window_get_x()+window_get_width()*0.5)+lengthdir_x(len,dir);
+	            moy=(window_get_y()+window_get_height()*0.5)+lengthdir_y(len,dir);
             
-            if mox > window_get_x()+window_get_width()
-            mox = window_get_x()+window_get_width()-8;
-            if mox < window_get_x()
-            mox = window_get_x()+8;
-            if moy > window_get_y()+window_get_height()
-            moy = window_get_y()+window_get_height()-8;
-            if moy < window_get_y()
-            moy = window_get_y()+8;
+	            if mox > window_get_x()+window_get_width()
+	            mox = window_get_x()+window_get_width()-8;
+	            if mox < window_get_x()
+	            mox = window_get_x()+8;
+	            if moy > window_get_y()+window_get_height()
+	            moy = window_get_y()+window_get_height()-8;
+	            if moy < window_get_y()
+	            moy = window_get_y()+8;
             
-            display_mouse_set(mox,moy);
+	            display_mouse_set(mox,moy);
             
-    }
+	    }
     
-            }
-    alarm[11]=1;
-    if instance_number(Marker)>0
-            reload*=instance_number(Marker)*0.5;
+	            }
+	    alarm[11]=1;
+	    if instance_number(Marker)>0
+	            reload*=instance_number(Marker)*0.5;
     
     }
     else {

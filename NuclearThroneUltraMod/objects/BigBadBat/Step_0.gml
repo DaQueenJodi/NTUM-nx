@@ -59,5 +59,10 @@ if target > 0
 		}
 	}
 }
+else
+{
+	if audio_is_playing(sndDragonLoop)
+		audio_stop_sound(sndDragonLoop);	
+}
 if speed > 3
 speed = 3;

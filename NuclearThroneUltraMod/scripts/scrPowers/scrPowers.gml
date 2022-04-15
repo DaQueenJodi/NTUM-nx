@@ -804,7 +804,8 @@ function scrPowers() {
 					var percMax = floor(maxhealth*0.75);
 					var lostHp = maxhealth - percMax;
 					maxhealth=percMax;//0.5
-					my_health = max(1,my_health-lostHp);
+					if my_health > maxhealth
+						my_health = max(1,my_health-lostHp,maxhealth);
 		        }
         
 		        sprite_index = spr_hurt
