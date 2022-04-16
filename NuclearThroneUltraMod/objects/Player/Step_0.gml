@@ -29,9 +29,10 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 		var dangle = random(1)*360;
 		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
 		instance_create(f.x + 16,f.y + 16,BigWallBreak)
-		instance_create(f.x + 16,f.y + 16,PinkSheep)
+		with instance_create(f.x + 16,f.y + 16,WeaponChest)
+			curse = 1;
 		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "PinkSheep";
+		thing.mytext = "CURSED CHEST";
 	}
 	if keyboard_check_pressed(ord("C")) {
 		var dangle = random(1)*360;
@@ -1041,7 +1042,7 @@ if (ultra_got[42]==1)//HUNTER ULTRA B Homing projectiles
 	homeBoost += 4;
 if skill_got[19] == 1
 {
-	homeBoost += 1;
+	homeBoost += 1.5;
 	if race == 25
 		homeBoost += 0.2;
 }

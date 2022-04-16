@@ -654,6 +654,26 @@ function scrDrawHUD() {
 			var sw = string_width(tier)+spaceBetweenStarAndText;
 			var tx = x-(sw*0.25)//string_width(string_hash_to_newline(string(name)));
 			var txa = tx + sw;
+			if curse > 0
+			{
+				var col = draw_set_color(make_colour_rgb(136,36,174));
+				var n = string_hash_to_newline(string(name));
+				
+				draw_text(x+2,ny,n)
+				draw_text(x+2,ny-2,n)
+				draw_text(x+2,ny-1,n)
+				draw_text(x+2,ny+1,n)
+				
+				draw_text(x,ny,n)
+				draw_text(x,ny-2,n)
+				draw_text(x,ny-1,n)
+				draw_text(x,ny+1,n)
+				
+				draw_text(x-1,ny,n)
+				draw_text(x-1,ny-2,n)
+				draw_text(x-1,ny-1,n)
+				draw_text(x-1,ny+1,n)
+			}
 			draw_set_color(c_black)
 			draw_text(x,ny,string_hash_to_newline(string(name)))
 			draw_text(x+1,ny,string_hash_to_newline(string(name)))

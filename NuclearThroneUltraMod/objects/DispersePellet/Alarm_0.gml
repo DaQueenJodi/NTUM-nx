@@ -6,6 +6,7 @@ with instance_create(x,y,Bullet2)
 {motion_add(other.image_angle+90+(random(6)-3),14+random(2))
 image_angle = direction
 team = other.team
+scrCopyWeaponMod(other);
 scrCanHumphry();}
 
 
@@ -13,6 +14,7 @@ with instance_create(x,y,Bullet2)
 {motion_add(other.image_angle-90+(random(6)-3),14+random(2))
 image_angle = direction
 team = other.team
+scrCopyWeaponMod(other);
 scrCanHumphry();}
 
 BackCont.shake += 2

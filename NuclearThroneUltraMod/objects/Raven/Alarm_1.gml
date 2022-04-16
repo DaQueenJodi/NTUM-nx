@@ -48,7 +48,7 @@ with Raven
 {
 if id != other.id and point_distance(x,y,other.x,other.y) < 120
 {
-if collision_line(other.target.x,other.target.y,x,y,Wall,1,1) < 0 and random(3) < 2
+if collision_line(other.target.x,other.target.y,x,y,Wall,1,1) < 0 and random(3) < 1
 scrRavenLift()
 }
 }
@@ -81,13 +81,13 @@ right = 1
 else if hspeed < 0
 right = -1
 }
-else if instance_number(enemy)<5 && random(2)<1
+else if instance_number(enemy)<5 && random(4)<1
 {
 scrRavenLift()
 with instance_furthest(x,y,Raven)
 scrRavenLift()
 }
-else if (my_health < maxhealth or random(50) < 1) and random(2) < 1
+else if (my_health < maxhealth or random(50) < 1) and random(4) < 1
 {
 scrRavenLift()
 with instance_furthest(x,y,Raven)

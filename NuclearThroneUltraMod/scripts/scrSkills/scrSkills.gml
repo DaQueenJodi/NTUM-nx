@@ -1,11 +1,14 @@
 function scrSkills() {
 	var isDoctor = false;
-	if instance_exists(Player)
+	if instance_exists(Player) && Player.race == 25
 	{
-		isDoctor = Player.race == 25
+		isDoctor = true;
 	}
 	skill_name[0] = "HEAVY HEART"
-	skill_text[0] = "MORE WEAPON DROPS"
+	if isDoctor
+		skill_text[0] = "DOUBLE WEAPON DROPRATE#MINIMUM DROPRATE#ON EVERY ENEMY BECOMES 3%"
+	else
+		skill_text[0] = "DOUBLE WEAPON DROPRATE#MINIMUM DROPRATE#ON EVERY ENEMY BECOMES 2%"
 	skill_msnd[0] = sndMutHeavyHeart
 	skill_tips[0] = ""
 

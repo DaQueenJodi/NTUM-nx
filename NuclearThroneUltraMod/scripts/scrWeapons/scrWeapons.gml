@@ -4499,7 +4499,7 @@ function scrWeapons() {
 	wep_load[407] = 13
 	wep_cost[407] = 2
 	wep_sprt[407] = sprMorphOLaser
-	wep_area[407] = 5
+	wep_area[407] = 6
 	wep_text[407] = "sheep blaser"
 	wep_swap[407] = sndSwapPistol
 	wep_rad[407] = 0;
@@ -4510,7 +4510,7 @@ function scrWeapons() {
 	wep_load[408] = 6
 	wep_cost[408] = 1
 	wep_sprt[408] = sprMorphORifle
-	wep_area[408] = 4
+	wep_area[408] = 5
 	wep_text[408] = "sheep shooter"
 	wep_swap[408] = sndSwapPistol
 	wep_rad[408] = 0;

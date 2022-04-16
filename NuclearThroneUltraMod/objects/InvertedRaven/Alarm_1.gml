@@ -30,7 +30,7 @@ with InvertedRaven
 {
 if id != other.id and point_distance(x,y,other.x,other.y) < 120
 {
-if collision_line(other.target.x,other.target.y,x,y,Wall,1,1) < 0 and random(3) < 2
+if collision_line(other.target.x,other.target.y,x,y,Wall,1,1) < 0 and random(3) < 1
 scrInvertedRavenLift()
 }
 }
@@ -63,7 +63,7 @@ right = 1
 else if hspeed < 0
 right = -1
 }
-else if instance_number(enemy)<5 && random(2)<1
+else if instance_number(enemy)<5 && random(4)<1
 {
 scrInvertedRavenLift()
 with instance_furthest(x,y,InvertedRaven)

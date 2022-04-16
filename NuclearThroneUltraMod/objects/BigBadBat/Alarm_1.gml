@@ -34,4 +34,10 @@ if target > 0 {
 		rotationSpeed *= -1;	
 	}
 }
+else
+{
+	if audio_is_playing(sndDragonLoop)
+		audio_stop_sound(sndDragonLoop);
+	motion_add(random(360),0.4);	
+}
 ticksBeforeSpiral --;

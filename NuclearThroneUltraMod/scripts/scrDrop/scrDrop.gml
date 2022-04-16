@@ -23,7 +23,7 @@ function scrDrop(itemdrop, weapondrop) {
 	if Player.skill_got[0] = 1//heavy heart
 	{
 		if Player.race=25
-			weapondrop=(weapondrop*2.1)+3;
+			weapondrop=(weapondrop*2.11)+3;
 		else
 			weapondrop=(weapondrop*2.1)+2;
 	}

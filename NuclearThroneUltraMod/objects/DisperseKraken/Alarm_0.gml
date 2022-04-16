@@ -9,6 +9,7 @@ if owner > -1 && instance_exists(owner)
 	accuracy = owner.accuracy;
 with instance_create(x,y,Tentacle)
 {
+	scrCopyWeaponMod(other);
 	image_angle = other.image_angle-90+(random(30)-15)*accuracy
 	creator=other.id;
 	team = other.team
@@ -29,6 +30,7 @@ with instance_create(x,y,Tentacle)
 }
 with instance_create(x,y,Tentacle)
 {
+	scrCopyWeaponMod(other);
 	image_angle = other.image_angle+90+(random(30)-15)*accuracy
 	creator=other.id;
 	team = other.team

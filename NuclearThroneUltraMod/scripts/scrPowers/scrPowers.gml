@@ -1077,45 +1077,48 @@ function scrPowers() {
 	//HUNTER
 	if (race == 11)
 	{
+		if Player.ultra_got[44]=1{//Hunter Ultra D CRACKSHOT
+			if(instance_exists(enemy)){
+				if(point_distance(mouse_x,mouse_y,instance_nearest(mouse_x,mouse_y,enemy).x,instance_nearest(mouse_x,mouse_y,enemy).y)<48) {
+					snd_play_2d(sndSniperTarget);
 
-	if Player.ultra_got[44]=1{//Hunter Ultra D CRACKSHOT
-	if(instance_exists(enemy)){
-	if(point_distance(mouse_x,mouse_y,instance_nearest(mouse_x,mouse_y,enemy).x,instance_nearest(mouse_x,mouse_y,enemy).y)<48){
-	    snd_play_2d(sndSniperTarget);
-
-	    with instance_create(mouse_x,mouse_y,Marker){
-	    target=instance_nearest(x,y,enemy);
-	    image_angle=30*(MarkerNr-1);
-	        }
+				    with instance_create(mouse_x,mouse_y,Marker) {
+						target=instance_nearest(x,y,enemy);
+						image_angle=30*(MarkerNr-1);
+			        }
         
-	        if instance_number(Marker)>3{//Override markers
-	        with Marker{
-	        if (MarkerNr==1){
-	        instance_destroy();}
-	        MarkerNr-=1;
-	        image_angle=30*MarkerNr;}
-	        }
-	    }
-	    else{with Marker//if you place a marker not near an enemy all markers dissapear?
-	        instance_destroy();}
-	    }
-	}
-	else
-	{// marker ability
-	if (instance_exists(Marker)){
+			        if instance_number(Marker)>3{//Override markers
+						with Marker {
+					        if (MarkerNr==1) {
+								instance_destroy();
+							}
+					        MarkerNr-=1;
+					        image_angle=30*MarkerNr;
+						}
+			        }
+			    }
+			    else {
+					with Marker//if you place a marker not near an enemy all markers dissapear?
+						instance_destroy();
+				}
+		    }
+		}
+		else
+		{// marker ability
+		if (instance_exists(Marker)){
 
-	    with Marker
-	    instance_destroy()
-	}
-	else if(instance_exists(enemy)){
-	if(point_distance(mouse_x,mouse_y,instance_nearest(mouse_x,mouse_y,enemy).x,instance_nearest(mouse_x,mouse_y,enemy).y)<48){
-	    snd_play_2d(sndSniperTarget);
-	    with instance_create(mouse_x,mouse_y,Marker){
-	    target=instance_nearest(x,y,enemy);
-	        }
-	    }}
+		    with Marker
+		    instance_destroy()
+		}
+		else if(instance_exists(enemy)){
+		if(point_distance(mouse_x,mouse_y,instance_nearest(mouse_x,mouse_y,enemy).x,instance_nearest(mouse_x,mouse_y,enemy).y)<48){
+		    snd_play_2d(sndSniperTarget);
+		    with instance_create(mouse_x,mouse_y,Marker){
+		    target=instance_nearest(x,y,enemy);
+		        }
+		    }}
     
-	}
+		}
 	}
 
 	}

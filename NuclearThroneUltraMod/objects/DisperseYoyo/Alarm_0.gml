@@ -3,6 +3,7 @@ snd_play(sndDiscgun,0.1,true)
 var aimDir = image_angle+90;
 with instance_create(x,y,SpinnerYoyo)
 {
+	scrCopyWeaponMod(other);
 	followOwner = false;
 	tx = x;
 	ty = y;
@@ -28,6 +29,7 @@ with instance_create(x,y,SpinnerYoyo)
 aimDir = image_angle-90;
 with instance_create(x,y,SpinnerYoyo)
 {
+	scrCopyWeaponMod(other);
 	followOwner = false;
 	tx = x;
 	ty = y;

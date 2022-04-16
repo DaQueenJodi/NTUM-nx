@@ -15,6 +15,7 @@ with instance_create(x,y,Laser)
 team = other.team
 event_perform(ev_alarm,0)
 scrCanHumphry();
+scrCopyWeaponMod(other);
 }
 
 
@@ -23,6 +24,7 @@ with instance_create(x,y,Laser)
 team = other.team
 event_perform(ev_alarm,0)
 scrCanHumphry();
+scrCopyWeaponMod(other);
 }
 
 BackCont.shake += 2
