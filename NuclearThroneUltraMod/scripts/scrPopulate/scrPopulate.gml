@@ -413,7 +413,7 @@ function scrPopulate() {
     }
 
     if (Player.area = 3 && Player.subarea = 1 && Player.loops > 0) { //SPAWN ASSASSINBOSS
-        repeat(round(Player.loops*0.5))
+        repeat(ceil(Player.loops*0.5))
         instance_create(x, y, WantBoss);
     }
 
