@@ -27,3 +27,4 @@ fireOffset = 14;
 maxAmmo = 4;
 ammo = maxAmmo;
 fireRate = 4;
+instance_create(x,y,BigWallBreak);
