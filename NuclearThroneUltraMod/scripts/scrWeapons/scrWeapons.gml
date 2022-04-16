@@ -4631,7 +4631,7 @@ function scrWeapons() {
 	wep_load[419] = 14
 	wep_cost[419] = 1
 	wep_sprt[419] = sprSpinnerYoyoGun
-	wep_area[419] = 5
+	wep_area[419] = 4
 	wep_text[419] = "yoyo phases through walls"
 	wep_swap[419] = sndSwapBow
 	wep_rad[419] = 0;
