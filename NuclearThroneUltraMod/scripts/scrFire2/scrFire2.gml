@@ -6372,7 +6372,7 @@ function scrFire2() {
 	var exists = false;
 	with PlayerExplosionWazer
 	{
-		if team == other.team
+		if owner == other.id
 			exists = true;
 	}
 	if !exists
@@ -6394,7 +6394,7 @@ function scrFire2() {
 	{
 		with PlayerExplosionWazer
 		{
-			if team == other.team
+			if owner == other.id
 				alarm[0] = 1 + other.wep_load[other.wep];
 		}
 	}
