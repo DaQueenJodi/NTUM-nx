@@ -14,7 +14,7 @@ function scrDrawUpdate() {
 
 	if updatepage=0
 	{
-	txt0 = @"#UPDATE 26 [BETA 0.09]##
+	txt0 = @"#UPDATE 26 [BETA 0.10]##
 	* MASSIVE AREA PROGRESSION RESTRUCTURE#
 	* COMBINED SOME ULTRA MODS#
 	* NEW ULTRA MODS#
