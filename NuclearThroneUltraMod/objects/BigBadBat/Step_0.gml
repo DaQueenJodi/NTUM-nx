@@ -13,7 +13,7 @@ if target > 0
 		right = -1
 	else if target.x > x
 		right = 1
-	if alarm[4] > 0
+	if (alarm[4] > 0 && (loops > 1 || alarm[4] mod 2 == 0))
 	{
 		if sprite_index != spr_hurt
 			sprite_index = spr_fire;

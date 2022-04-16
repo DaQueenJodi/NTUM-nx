@@ -6287,7 +6287,7 @@ function scrFire2() {
 	var exists = false;
 	with PlayerWazer
 	{
-		if team == other.team
+		if owner == other.id
 			exists = true;
 	}
 	if !exists
@@ -6295,6 +6295,7 @@ function scrFire2() {
 		snd_play_2d(sndWazerStart,0,true);
 		with instance_create(x,y,PlayerWazer)
 		{
+			owner = other.id;
 			team = other.team;
 			mywep = other.wep
 			alarm[0] = 1 + other.wep_load[mywep];
@@ -6308,7 +6309,7 @@ function scrFire2() {
 	{
 		with PlayerWazer
 		{
-			if team == other.team
+			if owner == other.id
 				alarm[0] = 1 + other.wep_load[other.wep];
 		}
 	}
@@ -6379,6 +6380,7 @@ function scrFire2() {
 		snd_play_2d(sndWazerStart,0,true);
 		with instance_create(x,y,PlayerExplosionWazer)
 		{
+			owner = other.id;
 			team = other.team;
 			mywep = other.wep
 			alarm[0] = 1 + other.wep_load[mywep];

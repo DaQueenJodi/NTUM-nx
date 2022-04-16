@@ -40,6 +40,7 @@ image_xscale = 1;
 actTime = 14;
 scrTarget();
 angle = random(360);
+loops = GetPlayerLoops();
 if target > 0
 	angle = point_direction(target.x,target.y,x,y);
 

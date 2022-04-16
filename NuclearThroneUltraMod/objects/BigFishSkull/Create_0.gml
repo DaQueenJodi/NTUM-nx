@@ -24,4 +24,4 @@ if instance_exists(Player) && Player.subarea != 1
 if loops < 1
 	alarm[2] = 1
 instance_create(x,y,WallBreak);
-name = "ENTER?"
+name = "?"

@@ -5,7 +5,8 @@ if target > 0
 {
 if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 {
-if point_distance(target.x,target.y,x,y) > 24
+	var dis = point_distance(target.x,target.y,x,y);
+if dis > 24 && dis < 300
 {
 if random(3) < 1
 {
