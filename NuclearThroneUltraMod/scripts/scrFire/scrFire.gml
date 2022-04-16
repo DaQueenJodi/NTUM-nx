@@ -1629,8 +1629,8 @@ function scrFire() {
 	with instance_create(x,y,Ray)
 	{
 	creator = other.id
-	ammo = 7
-	time = 2
+	ammo = 5
+	time = 3
 	team = other.team
 	event_perform(ev_alarm,0) 
 	explosive=2;
@@ -1701,8 +1701,8 @@ function scrFire() {
 	with instance_create(x,y,Ray)
 	{
 	creator = other.id
-	ammo = 7
-	time = 2
+	ammo = 5
+	time = 3
 	team = other.team
 	event_perform(ev_alarm,0)
 	explosive=3;
@@ -2287,8 +2287,8 @@ function scrFire() {
 	with instance_create(x,y,Ray)
 	{
 	creator = other.id
-	ammo = 5
-	time = 2
+	ammo = 3
+	time = 3
 	team = other.team
 	event_perform(ev_alarm,0) 
 	explosive=2;
