@@ -7,7 +7,7 @@ function scrEmpty() {
 	{
 	dir.mytext = "NOT ENOUGH ";
 	dir.sprt = sprAmmoIconsEmpty
-	dir.ii = typ_name[wep_type[wep]]-1;
+	dir.ii = wep_type[wep]-1;
 	}
 	dir.theColour=c_red;
 	wkick = -2

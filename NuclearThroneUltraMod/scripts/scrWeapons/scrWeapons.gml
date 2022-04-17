@@ -3310,10 +3310,10 @@ function scrWeapons() {
 	wep_name[300] = "LASER WAVE GUN"
 	wep_type[300] = 5
 	wep_auto[300] = 1
-	wep_load[300] = 20
-	wep_cost[300] = 6
+	wep_load[300] = 21
+	wep_cost[300] = 5
 	wep_sprt[300] = sprLaserWaveGun
-	wep_area[300] = 12
+	wep_area[300] = 14
 	wep_text[300] = "hands in de aihr"
 	wep_swap[300] = sndSwapEnergy
 	wep_rad[300] = 0;

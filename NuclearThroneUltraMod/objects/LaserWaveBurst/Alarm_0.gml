@@ -6,8 +6,8 @@ alarm[0] = time
 
 if instance_exists(creator)
 {
-	leftang=point_direction(x,y,mouse_x,mouse_y)-(40*creator.accuracy);
-	rightang=point_direction(x,y,mouse_x,mouse_y)+(40*creator.accuracy);
+	leftang=point_direction(x,y,mouse_x,mouse_y)-maxAngle
+	rightang=point_direction(x,y,mouse_x,mouse_y)+maxAngle;
 	x = creator.x
 	y = creator.y
 	//FIRING
@@ -22,14 +22,14 @@ snd_play_fire(sndLaser);
 
 
 with instance_create(x+lengthdir_x(4,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(4,point_direction(x,y,mouse_x,mouse_y)),Laser)
-{image_angle = (other.leftang+other.ang)+(random(2)-1)*other.creator.accuracy
+{image_angle = (other.leftang+other.ang)+(random(2)-1)
 team = other.team
 event_perform(ev_alarm,0)
 image_yscale-=0.1;
 scrCanHumphry();
 }
 with instance_create(x+lengthdir_x(4,point_direction(x,y,mouse_x,mouse_y)),y+lengthdir_y(4,point_direction(x,y,mouse_x,mouse_y)),Laser)
-{image_angle = (other.rightang-other.ang)+(random(2)-1)*other.creator.accuracy
+{image_angle = (other.rightang-other.ang)+(random(2)-1)
 team = other.team
 event_perform(ev_alarm,0)
 image_yscale-=0.1;
@@ -43,16 +43,16 @@ creator.wkick = 2
 
 
 
-if ang >= 80*creator.accuracy
+if ang >= maxAngle
 left=false;
-else if ang<=1*creator.accuracy
+else if ang<=1
 left=true
 
 
 if left
-ang+=angleStep*creator.accuracy;
+ang+=angleStep
 else
-ang-=angleStep*creator.accuracy;
+ang-=angleStep
 }
 
 

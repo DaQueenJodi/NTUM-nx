@@ -2753,9 +2753,10 @@ function scrFire2() {
 	with instance_create(x,y,LaserWaveBurst)
 	{
 	creator = other.id
-	ammo = 20
-	angleStep = 80/10;
-	time = 1
+	ammo = 10+(Player.skill_got[17]+other.betterlaserbrain)*2
+	maxAngle = 30 * other.accuracy
+	angleStep = maxAngle/(ammo*0.25);
+	time = 2
 	team = other.team
 	event_perform(ev_alarm,0) 
 	}
