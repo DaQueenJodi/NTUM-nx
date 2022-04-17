@@ -111,11 +111,11 @@ else if skill = 18//last wish
 {
 	if Player.race=25
 	{
-		Player.ammo[1] = typ_amax[1]
-		Player.ammo[2] = typ_amax[2]
-		Player.ammo[3] = typ_amax[3]
-		Player.ammo[4] = typ_amax[4]
-		Player.ammo[5] = typ_amax[5]
+		Player.ammo[1] = Player.typ_amax[1]
+		Player.ammo[2] = Player.typ_amax[2]
+		Player.ammo[3] = Player.typ_amax[3]
+		Player.ammo[4] = Player.typ_amax[4]
+		Player.ammo[5] = Player.typ_amax[5]
 	}
 	else
 	{

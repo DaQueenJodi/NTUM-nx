@@ -8,7 +8,7 @@ if instance_exists(creator)
 x = creator.x
 y = creator.y
 //FIRING
-snd_play_fire(sndSwarmRapid);
+snd_play(sndSwarmRapid,0.2,true,false,1,false,false,0.7);
 
 
 

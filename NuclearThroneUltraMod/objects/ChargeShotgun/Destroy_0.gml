@@ -1,7 +1,7 @@
 snd_play(sndShotgun)
 if instance_exists(Player) && instance_exists(creator)
 {
-repeat(rate*1.3)
+repeat(ceil(rate*1.6))
 {
 with instance_create(x,y,Bullet2)
 {motion_add(point_direction(x,y,mouse_x,mouse_y)+(random(50)-25)*other.creator.accuracy,12+random(6))

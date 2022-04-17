@@ -28,7 +28,7 @@ if charge
 				var suckDir = point_direction(x,y,target.x,target.y);
 				var suckStrength = pullInStrength
 				if imageIndex > 14
-					suckStrength += 1.4;
+					suckStrength += 1.3;
 				if collision_line(x,y,target.x,target.y,Wall,0,0) < 0
 				{
 					with target

@@ -11,6 +11,7 @@ function scrNextLevel() {
 	if area = 104//YV CRIB
 	{
 		area = lastarea;
+		subarea --;
 		//if subarea==1&&area!=9//LAST AREA
 		//	area+=1;
 	}
@@ -26,6 +27,7 @@ function scrNextLevel() {
 		{
 			area = 9;
 			subarea = 3;
+			inverted = false;
 			exit;
 		}
 	    if area = 113 && subarea=2//banditland
@@ -154,7 +156,6 @@ function scrNextLevel() {
 			//TODO
 	        if inverted && subarea<3
 	        {
-	        //inverted chesire cat
 	        area = 109
 	        subarea = 3;
 	        inverted=true;
@@ -326,6 +327,10 @@ function scrNextLevel() {
 	if ( area=8 && inverted )//inv wonderland
 	{area=109;
 	lastarea = 109}//in case of crownvault
+	
+	if ( area=9 && inverted )//inv wonderland
+	{area=118;
+	lastarea = 118}//in case of crownvault
 
 	if ( area=2 && inverted )//inv sewers
 	{area=110;
@@ -344,7 +349,6 @@ function scrNextLevel() {
 	    }
 	}
 	}
-	debug("area end : ",area);
 
 	if (area=105 || area=106|| area=107 || area = 108 || area = 109 | area = 110 || area = 111 || area = 112)&&subarea<2//inverted curse
 	{

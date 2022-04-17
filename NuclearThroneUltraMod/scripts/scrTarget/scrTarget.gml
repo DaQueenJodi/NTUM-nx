@@ -32,7 +32,7 @@ function scrTarget() {
 				if instance_exists(enemy) && instance_number(enemy) > 1
 				{
 					var nearest = 	instance_nearest_notme(x,y,enemy)
-					if nearest.team != team && team != 0
+					if nearest.team != team && nearest.team != 0
 						target = nearest;
 				}
 			}

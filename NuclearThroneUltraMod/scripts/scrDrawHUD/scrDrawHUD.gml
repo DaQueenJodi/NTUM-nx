@@ -555,13 +555,15 @@ function scrDrawHUD() {
 	snd_play_2d(Player.snd_lowa,0,true,false,10);
 	Player.drawempty -= 1
 
-	txt = "LOW "+string(Player.typ_name[Player.wep_type[Player.wep]])
+	txt = "LOW ";//+string(Player.typ_name[Player.wep_type[Player.wep]])
+	var noenuf = false;
 	if Player.ammo[Player.wep_type[Player.wep]] < Player.wep_cost[Player.wep]
 	{
+		noenuf = true;
 	if Player.ammo[Player.wep_type[Player.wep]] > 0
-	txt = "NOT ENOUGH "+string(Player.typ_name[Player.wep_type[Player.wep]])
+	txt = "NOT ENOUGH ";//+string(Player.typ_name[Player.wep_type[Player.wep]])
 	else
-	txt = "EMPTY"
+	txt = "EMPTY "
 	}
 	draw_set_halign(fa_left)
 	draw_set_color(c_black)
@@ -570,6 +572,19 @@ function scrDrawHUD() {
 	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+35,string_hash_to_newline(string(txt)))
 	draw_set_color(c_red)
 	draw_text(__view_get( e__VW.XView, 0 )+54,__view_get( e__VW.YView, 0 )+34,string_hash_to_newline(string(txt)))
+	if (noenuf)
+	{
+	var cl = camera_get_view_x(view_camera[0])+1;
+	var cr = cl + camera_get_view_width(view_camera[0])-3;
+	var ct = camera_get_view_y(view_camera[0])+1;
+	var cb = ct + camera_get_view_height(view_camera[0])-3;
+	draw_rectangle(cl,ct,cr,cb,true);
+	}
+	draw_set_color(c_white)
+	draw_sprite(sprAmmoIconsEmpty,Player.wep_type[Player.wep] - 1,
+	__view_get( e__VW.XView, 0 )+54+(string_width(string_hash_to_newline(string(txt)))),
+	__view_get( e__VW.YView, 0 )+34);
+	
 	}
 
 
@@ -585,7 +600,14 @@ function scrDrawHUD() {
 	draw_text(__view_get( e__VW.XView, 0 )+111,__view_get( e__VW.YView, 0 )+8,string_hash_to_newline(string(txt)))
 	draw_text(__view_get( e__VW.XView, 0 )+110,__view_get( e__VW.YView, 0 )+8,string_hash_to_newline(string(txt)))
 	draw_set_color(c_red)
+	var cl = camera_get_view_x(view_camera[0])+1;
+	var cr = cl + camera_get_view_width(view_camera[0])-3;
+	var ct = camera_get_view_y(view_camera[0])+1;
+	var cb = ct + camera_get_view_height(view_camera[0])-3;
+	draw_rectangle(cl,ct,cr,cb,true);
+	draw_rectangle(cl+2,ct+2,cr-2,cb-2,true);
 	draw_text(__view_get( e__VW.XView, 0 )+110,__view_get( e__VW.YView, 0 )+7,string_hash_to_newline(string(txt)))
+	draw_set_color(c_white)
 	}
 
 	

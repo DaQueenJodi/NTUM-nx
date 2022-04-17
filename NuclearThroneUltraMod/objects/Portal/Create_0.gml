@@ -55,14 +55,6 @@ if ( (currentarea=105 || currentarea=106|| currentarea=107 || currentarea = 108 
 	with Corpse
 	canspawnportal=false;
 }
-else if instance_exists(Player)
-{
-	with projectile
-	{
-		if team != Player.team
-			instance_destroy()
-	}	
-}
 alarm[2] = 2;
 pullstrength=1;
 

@@ -5,4 +5,4 @@ sprite_index=sprDecoyC;
 else if Player.bskin=1
 sprite_index=sprDecoyB;
 }
-
+team = -1;

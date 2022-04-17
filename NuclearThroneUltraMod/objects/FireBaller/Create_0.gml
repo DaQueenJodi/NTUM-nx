@@ -16,7 +16,7 @@ snd_hurt = sndFireballerHurt
 
 //behavior
 alarm[1] = 30+random(60)
-
+instance_create(x,y,WallBreak);
 if instance_exists(Player)
 motion_add(point_direction(Player.x,Player.y,x,y),1)
 

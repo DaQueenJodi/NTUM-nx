@@ -2500,6 +2500,7 @@
     {"id":{"name":"sprProtoChest","path":"sprites/sprProtoChest/sprProtoChest.yy",},"order":3,},
     {"id":{"name":"sprProtoChestEmpty","path":"sprites/sprProtoChestEmpty/sprProtoChestEmpty.yy",},"order":4,},
     {"id":{"name":"sprProtoChestOpen","path":"sprites/sprProtoChestOpen/sprProtoChestOpen.yy",},"order":5,},
+    {"id":{"name":"sprAmmoIconsEmpty","path":"sprites/sprAmmoIconsEmpty/sprAmmoIconsEmpty.yy",},"order":48,},
     {"id":{"name":"sprProtoStatueCharge","path":"sprites/sprProtoStatueCharge/sprProtoStatueCharge.yy",},"order":6,},
     {"id":{"name":"sprProtoStatueDoneDie","path":"sprites/sprProtoStatueDoneDie/sprProtoStatueDoneDie.yy",},"order":7,},
     {"id":{"name":"sprProtoStatueDoneIdle","path":"sprites/sprProtoStatueDoneIdle/sprProtoStatueDoneIdle.yy",},"order":8,},

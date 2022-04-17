@@ -1,5 +1,6 @@
-/// @description Wazer
-if target > 0
+/// @description Jawebreaker
+scrTarget();
+if target > 0 && instance_exists(target)
 {
 	wkick = 4
 	var dir = point_direction(x,y,target.x,target.y);
