@@ -6,7 +6,7 @@ if(instance_exists(Player)){
 		{
 			with instance_create(x,y,Shell)
 			motion_add(other.image_angle+Player.right*100+random(50)-25,2+random(2))
-			snd_play_fire(sndHeavyMachinegun);
+			
 			if isUltra
 			{
 				snd_play_fire(sndUltraPistol);
@@ -26,6 +26,7 @@ if(instance_exists(Player)){
 			}
 			else
 			{
+				snd_play_fire(sndBouncerFire);
 				var acc = scrGetPlayerAccuracy();
 				with instance_create(x,y,Bullet3)
 				{motion_add(other.image_angle-(5*acc),16)
