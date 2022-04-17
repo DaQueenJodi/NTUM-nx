@@ -16,7 +16,7 @@ spr_dead = sprInvertedFastRatDead
 
 snd_hurt = sndFastRatHit
 snd_dead = sndFastRatDie
-snd_mele = sndFastRatMelee
+snd_melee = sndFastRatMelee
 
 //behavior
 walk = 0

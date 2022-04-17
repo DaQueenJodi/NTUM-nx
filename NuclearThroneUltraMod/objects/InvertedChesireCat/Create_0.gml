@@ -17,7 +17,7 @@ spr_fire = sprInvertedChesireCatPrepLaser
 
 snd_dead = sndBigBanditMeleeHit;
 snd_hurt = sndBigDogHit;
-snd_mele = sndRhinoFreakMelee;
+snd_melee = sndRhinoFreakMelee;
 
 walk=0;
 //behavior

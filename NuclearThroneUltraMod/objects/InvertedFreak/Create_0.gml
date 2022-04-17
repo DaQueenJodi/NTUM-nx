@@ -13,7 +13,7 @@ spr_dead = sprInvertedFreak1Dead
 
 snd_hurt = sndFreakHurt
 snd_dead = sndFreakDead
-snd_mele = sndFreakMelee
+snd_melee = sndFreakMelee
 
 //behavior
 alarm[1] = 40+random(50)

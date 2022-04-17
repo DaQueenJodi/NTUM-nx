@@ -1,4 +1,12 @@
 function scrSkills() {
+	maxskill = 33;
+
+
+	dir = 0
+	repeat(maxskill+1)
+	{skill_got[dir] = 0
+	dir += 1}
+	
 	var isDoctor = false;
 	if instance_exists(Player) && Player.race == 25
 	{
@@ -23,20 +31,32 @@ function scrSkills() {
 
 	if instance_exists(Player)
 	{
-	if Player.race=18 || Player.race = 24
-	{
-	skill_name[2] = "EXTRA WINGS"
-	skill_text[2] = "MORE SPEED#CLOSE DODGES SOMETIMES DROP ITEMS"
-	skill_tips[2] = "fly forever"
-	skill_msnd[2] =  sndMutExtraFeet
-	}
-	else
-	{
-	skill_name[2] = "EXTRA FEET"
-	skill_text[2] = "MORE SPEED,#WALK NORMAL ON ALL TERRAIN#CLOSE DODGES SOMETIMES DROP ITEMS"
-	skill_tips[2] = "run forever"
-	skill_msnd[2] =  sndMutExtraFeet
-	}
+		if Player.race=18 || Player.race = 24
+		{
+		skill_name[2] = "EXTRA WINGS"
+		skill_text[2] = "MORE SPEED#CLOSE DODGES SOMETIMES DROP ITEMS"
+		skill_tips[2] = "fly forever"
+		skill_msnd[2] =  sndMutExtraFeet
+		}
+		else
+		{
+		skill_name[2] = "EXTRA FEET"
+		if Player.race == 1
+		{
+			skill_text[2] = "FASTER ROLL#MORE WALK SPEED#WALK NORMAL ON ALL TERRAIN#CLOSE DODGES SOMETIMES DROP ITEMS"
+		}
+		else if Player.race == 13
+		{
+			
+			skill_text[2] = "FASTER CHARGE#MORE CHARGE CONTROL#MORE WALK SPEED,#WALK NORMAL ON ALL TERRAIN#CLOSE DODGES SOMETIMES DROP ITEMS"
+		}
+		else
+		{
+			skill_text[2] = "MORE SPEED,#WALK NORMAL ON ALL TERRAIN#CLOSE DODGES SOMETIMES DROP ITEMS"	
+		}
+		skill_tips[2] = "run forever"
+		skill_msnd[2] =  sndMutExtraFeet
+		}
 	}
 	else
 	{
@@ -96,7 +116,25 @@ function scrSkills() {
 	skill_msnd[7] =  sndMutBloodlust
 
 	skill_name[8] = "GAMMA GUTS"
-	skill_text[8] = "ENEMIES TOUCHING YOU TAKE DAMAGE#DONT TAKE DAMAGE FROM#ENEMIES THAT YOU KILL USING GAMMA GUTS#YOU TAKE 50% LESS ENEMY CONTACT DAMAGE"
+	if instance_exists(Player)
+	{
+		if Player.race == 13//Sheep
+		{
+			skill_text[8] = "CHARGE DEALS MORE DAMAGE#ENEMIES TOUCHING YOU TAKE DAMAGE#DONT TAKE DAMAGE FROM#ENEMIES THAT YOU KILL USING GAMMA GUTS#YOU TAKE 50% LESS ENEMY CONTACT DAMAGE"
+		}
+		if Player.race == 2//CRYSTAL
+		{
+			skill_text[8] = "#ENEMIES TOUCHING YOU$OR YOUR SHIELD#TAKE DAMAGE#DONT TAKE DAMAGE FROM#ENEMIES THAT YOU KILL USING GAMMA GUTS#YOU TAKE 50% LESS ENEMY CONTACT DAMAGE"
+		}
+		else
+		{
+			skill_text[8] = "ENEMIES TOUCHING YOU TAKE DAMAGE#DONT TAKE DAMAGE FROM#ENEMIES THAT YOU KILL USING GAMMA GUTS#YOU TAKE 50% LESS ENEMY CONTACT DAMAGE"
+		}
+	}
+	else
+	{
+		skill_text[8] = "ENEMIES TOUCHING YOU TAKE DAMAGE#DONT TAKE DAMAGE FROM#ENEMIES THAT YOU KILL USING GAMMA GUTS#YOU TAKE 50% LESS ENEMY CONTACT DAMAGE"
+	}
 	skill_tips[8] = "skin glows"
 	skill_msnd[8] =  sndMutGammaGuts
 
@@ -110,7 +148,14 @@ function scrSkills() {
 	else
 	{
 	skill_name[9] = "SECOND STOMACH"
-	skill_text[9] = "MORE HP FROM MEDKITS & MEDCHESTS"
+	if (isDoctor)
+	{
+		skill_text[9] = "4, SOMETIMES 5 HP# FROM MEDKITS#DOUBLE HP FROM MEDCHESTS"
+	}
+	else
+	{
+		skill_text[9] = "DOUBLE HP FROM MEDKITS & MEDCHESTS"
+	}
 	skill_tips[9] = "stomach rumbles"
 	skill_msnd[9] =  sndMutSecondStomache
 	}
@@ -274,7 +319,32 @@ function scrSkills() {
 	skill_msnd[31] =  sndToughShell
 	
 	skill_name[32] = "ALKALINE SALIVA"
-	skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#WHILE BELOW MAX HP#HEALS YOU INSTEAD"
+	if isDoctor
+	{
+		if instance_exists(Player) && Player.skill_got[9]
+		{
+			skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#WHILE BELOW MAX HP#HEALS YOU INSTEAD (125%)#DOUBLE HEALING WITH SECOND STOMACH"
+		}
+		else
+		{
+			skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#WHILE BELOW MAX HP#HEALS YOU INSTEAD (125%)";
+			if instance_exists(Player) && Player.skill_got[32]
+				skill_text[9] = "4, SOMETIMES 5 HP# FROM MEDKITS#DOUBLE HP FROM MEDCHESTS#AND ALKALINE SALIVA"
+		}
+	}
+	else
+	{
+		if instance_exists(Player) && Player.skill_got[9]
+		{
+			skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#WHILE BELOW MAX HP#HEALS YOU INSTEAD#DOUBLE HEALING WITH SECOND STOMACH";
+		}
+		else
+		{
+			skill_text[32] = "FIRST HIT YOU TAKE IN AN AREA#WHILE BELOW MAX HP#HEALS YOU INSTEAD"
+			if instance_exists(Player) && Player.skill_got[32]
+				skill_text[9] = "DOUBLE HP FROM MEDKITS, MEDCHESTS#AND ALKALINE SALIVA"
+		}
+	}
 	skill_tips[32] = "yes pain yes gain"
 	skill_msnd[32] =  sndMutAlkalineSaliva
 	
@@ -306,15 +376,6 @@ function scrSkills() {
 	skill_text[34] = "THERE ARE NO MORE MUTATIONS LEFT!"
 	skill_tips[34] = ""
 	skill_msnd[34] =  sndPartyHorn
-
-	maxskill = 33;
-
-
-	dir = 0
-	repeat(maxskill+1)
-	{skill_got[dir] = 0
-	dir += 1}
-
 
 
 }

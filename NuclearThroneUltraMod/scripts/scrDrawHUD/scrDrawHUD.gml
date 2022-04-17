@@ -941,37 +941,69 @@ function scrDrawHUD() {
 	}
 
 
-	if instance_exists(enemy) && instance_number(enemy) < 2
+	if instance_exists(enemy) && instance_number(enemy) + instance_number(becomenemy) < instance_number(IDPDVan) + 2
 	{
-		var xx = enemy.x;
-		var yy = enemy.y;
-		var vx = camera_get_view_x(view_camera[0]);
-		var vw = camera_get_view_width(view_camera[0]);
-		var shouldDraw = false;
-		if xx >  vx + vw
+		var t = undefined;
+		if !instance_exists(enemy)
 		{
-			xx = vx + vw-5;
-			shouldDraw = true;
+			if instance_exists(RavenFly)
+			{
+				t = RavenFly;
+			} else if instance_exists(InvertedRavenFly)
+			{
+				t = InvertedRavenFly;
+			} else if instance_exists(LilHunterFly)
+			{
+				t = LilHunterFly;
+			} else if instance_exists(InvertedLilHunterFly)
+			{
+				t = InvertedLilHunterFly;
+			} else if instance_exists(becomenemy) && becomenemy.object_index != WantBoss
+			{
+				t = becomenemy;
+			} else if instance_exists(CanSpawnBoss)
+			{
+				t = CanSpawnBoss;
+			}
 		}
-		else if xx < vx
+		with enemy
 		{
-			xx = vx+5;
-			shouldDraw = true;
+			if object_index != IDPDVan && object_index != IDPDVanVertical
+			{
+				t = id;
+			}
 		}
-		var vy = camera_get_view_y(view_camera[0]);
-		var vh = camera_get_view_height(view_camera[0]);
-		if yy >  vy + vh
+		if t != undefined
 		{
-			yy = vy + vh-5;
-			shouldDraw = true;
+			var xx = t.x;
+			var yy = t.y;
+			var vx = camera_get_view_x(view_camera[0]);
+			var vw = camera_get_view_width(view_camera[0]);
+			var shouldDraw = false;
+			if xx >  vx + vw
+			{
+				xx = vx + vw-5;
+				shouldDraw = true;
+			}
+			else if xx < vx
+			{
+				xx = vx+5;
+				shouldDraw = true;
+			}
+			var vy = camera_get_view_y(view_camera[0]);
+			var vh = camera_get_view_height(view_camera[0]);
+			if yy >  vy + vh
+			{
+				yy = vy + vh-5;
+				shouldDraw = true;
+			}
+			else if yy < vy
+			{
+				yy = vy+5;
+				shouldDraw = true;
+			}
+			if shouldDraw
+				draw_sprite(sprLastEnemyIndicator,0,xx,yy);
 		}
-		else if yy < vy
-		{
-			yy = vy+5;
-			shouldDraw = true;
-		}
-		if shouldDraw
-			draw_sprite(sprLastEnemyIndicator,0,xx,yy);
-	
 	}
 }

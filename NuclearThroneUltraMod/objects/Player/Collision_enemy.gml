@@ -43,7 +43,6 @@ if other.team != team
 		}
 	}
 
-	//if(alarm[0]<1){
 	if other.meleedamage > 0 && other.existTime > 25 && meleeimmunity<1 && alarm[3] < 1//is it a melee enemy?
 	{
 	meleeimmunity=14;
@@ -53,15 +52,15 @@ if other.team != team
 	    else {//if !(KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2){//Ultra D Humphry no contact damage
 	    //enemy deals damage to the player
     
-    
 	        if sprite_index != spr_hurt
 	        {
-		        snd_play(other.snd_mele)
+				debug("melee damage:",other.meleedamage);
+		        snd_play(other.snd_melee)
 		        sprite_index = spr_hurt
 		        image_index = 0
 		        snd_play(snd_hurt, hurt_pitch_variation)
 				if skill_got[8]
-					my_health -= round(other.meleedamage*0.5);
+					my_health -= ceil(other.meleedamage*0.5);
 				else
 					my_health -= other.meleedamage
 		        motion_add(point_direction(other.x,other.y,x,y)+180,8)
@@ -71,7 +70,10 @@ if other.team != team
 				
 				if other.object_index == IDPDVan
 				{
-					scrUnlockGameMode(8,"FOR GETTING HIT BY A VAN#I AM SO SORRY");
+					if my_health <= 0
+						scrUnlockGameMode(8,"FOR GETTING HIT BY A VAN#I AM SO SORRY");
+					else
+						scrUnlockGameMode(8,"FOR GETTING HIT BY A VAN");
 				}
         
 		        Sleep(100)
@@ -79,8 +81,3 @@ if other.team != team
 	    }
 	}
 }
-
-//}
-//alarm[0]=2;
-
-

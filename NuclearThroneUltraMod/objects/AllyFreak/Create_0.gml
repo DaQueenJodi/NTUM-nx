@@ -12,7 +12,7 @@ spr_dead = sprAllyFreakDead
 
 snd_hurt = sndFreakHurt
 snd_dead = sndFreakDead
-snd_mele = sndFreakMelee
+snd_melee = sndFreakMelee
 
 image_speed = 0.4
 friction = 0.4
@@ -38,7 +38,7 @@ team = 2
 
 snd_hurt = sndBanditHit
 snd_dead = sndBanditDie
-snd_mele = sndMaggotBite
+snd_melee = sndMaggotBite
 */
 //behavior
 walk = 0

@@ -32,7 +32,8 @@ with Marker
 }
 
 scrFire();     
-
+if ammo < 0
+	ammo = 0;
 crackshotsfired--;
 
 if crackshotsfired>0

@@ -23,7 +23,7 @@ spr_endfire = sprOasisBossFireEnd
 snd_dead = sndOasisBossDead;
 snd_hurt = sndOasisBossHurt;
 snd_fire = sndOasisBossFire;
-snd_mele = sndOasisBossMelee;
+snd_melee = sndOasisBossMelee;
 snd_tackle = sndOasisBossTackle;
 
 walk=0;

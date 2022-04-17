@@ -18,7 +18,7 @@ spr_dead = sprAllyExploderDead
 
 
 snd_hurt = sndHitFlesh
-snd_mele = sndMaggotBite
+snd_melee = sndMaggotBite
 snd_dead = sndFrogExplode
 
 //behavior

@@ -16,7 +16,7 @@ target = -1
 
 snd_hurt = sndHitFlesh
 snd_dead = sndEnemyDie
-snd_mele = sndMaggotBite
+snd_melee = sndMaggotBite
 hurt_pitch_variation = 0.05;
 
 EnemyHealthAdjustments();

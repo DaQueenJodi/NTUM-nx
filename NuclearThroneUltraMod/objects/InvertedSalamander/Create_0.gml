@@ -17,7 +17,7 @@ spr_fire = sprInvertedSalamanderFire
 
 snd_hurt = sndSalamanderHurt
 snd_dead = sndSalamanderDead
-snd_mele = sndSalamanderFire
+snd_melee = sndSalamanderFire
 
 //behavior
 ammo = 10

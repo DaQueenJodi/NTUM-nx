@@ -23,7 +23,7 @@ if other.meleedamage > 0 and other.team != team//is it a melee enemy?
     
         if sprite_index != spr_hurt
         {
-        snd_play(other.snd_mele)
+        snd_play(other.snd_melee)
         sprite_index = spr_hurt
         image_index = 0
         snd_play(snd_hurt, hurt_pitch_variation)

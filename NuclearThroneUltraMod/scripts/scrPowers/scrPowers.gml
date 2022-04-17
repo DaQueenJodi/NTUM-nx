@@ -382,7 +382,10 @@ function scrPowers() {
 				if skill_got[32] && isAlkaline
 				{
 					isAlkaline = false;
-					my_health = min(2,maxhealth);
+					var h = 2;
+					if (skill_got[9]) //Second stomache
+						h = 4;
+					my_health = min(h,maxhealth);
 					with instance_create(x,y,HealFX)
 					{
 						depth = other.depth - 1;	
@@ -396,7 +399,7 @@ function scrPowers() {
 						if my_health = maxhealth
 							pt.mytext = "MAX";
 						else
-							pt.mytext = "+"+string(1);
+							pt.mytext = "+"+string(h-1);
 				
 						pt.sprt = sprHPIconPickup;
 					}
@@ -405,7 +408,7 @@ function scrPowers() {
 						if my_health = maxhealth
 							pt.mytext = "MAX HP";
 						else
-							pt.mytext = "+"+string(1)+" HP";
+							pt.mytext = "+"+string(h-1)+" HP";
 					}
 			
 					alarm[3]=10;//duration of iframes
@@ -949,20 +952,25 @@ function scrPowers() {
 
 	//FISH
 	if race = 1
-	{if speed < 0.4
-	direction = point_direction(x,y,mouse_x,mouse_y)
-	speed = 4
-	roll = 1
-	rollIframe = 5;
-	if skill_got[5]
-		rollIframe = 8;
-	alarm[3] += rollIframe;
-	snd_play_2d(sndRoll)
-	mask_index = mskPickupThroughWall;
-	if skill_got[5] = 1
-	snd_play_2d(sndFishRollUpg)
+	{
+		if speed < 0.4
+			direction = point_direction(x,y,mouse_x,mouse_y)
+		speed = 4
+		if skill_got[2] == 1
+		{
+			speed = 8;
+		}
+		roll = 1
+		rollIframe = 5;
+		if skill_got[5]
+			rollIframe = 8;
+		alarm[3] += rollIframe;
+		snd_play_2d(sndRoll)
+		mask_index = mskPickupThroughWall;
+		if skill_got[5] = 1
+			snd_play_2d(sndFishRollUpg)
 
-	instance_create(x,y,Dust)
+		instance_create(x,y,Dust)
 	}
 
 	//REBEL
@@ -1713,15 +1721,15 @@ function scrPowers() {
 		}
 		if (skill_got[5])
 		{
-			sheepPower += 0.08;
+			sheepPower += 0.06;
 		}
 		if (skill_got[2])
 		{
-			sheepPower += 0.04;	
+			sheepPower += 0.03;	
 		}
 		if (ultra_got[51])
 		{
-			sheepPower += 0.11;
+			sheepPower += 0.09;
 		}
 		//speed=10;
 		var moveBoost = (skill_got[2]*1.4) + (skill_got[5]*1.4) + (ultra_got[5]*2.3);

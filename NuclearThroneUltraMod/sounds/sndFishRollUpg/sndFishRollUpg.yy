@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndFishRollUpg",
-  "duration": 0.0,
+  "duration": 0.302381,
   "parent": {
     "name": "Fish",
     "path": "folders/Sounds/Player/Fish.yy",

@@ -30,7 +30,7 @@ team = 2
 
 snd_hurt = sndBanditHit
 snd_dead = sndBanditDie
-snd_mele = sndMaggotBite
+snd_melee = sndMaggotBite
 
 //behavior
 walk = 0

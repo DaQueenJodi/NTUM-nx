@@ -14,7 +14,7 @@ spr_fire = sprCrabFire
 
 snd_hurt = sndScorpionHit
 snd_dead = sndScorpionDie
-snd_mele = sndScorpionMelee
+snd_melee = sndScorpionMelee
 
 //behavior
 ammo = 10

@@ -14,7 +14,7 @@ spr_fire = sprFireWormFire;
 snd_dead = sndFrogExplode
 
 snd_hurt = sndBigMaggotHit
-snd_mele = sndBigMaggotBite
+snd_melee = sndBigMaggotBite
 
 //behavior
 walk = 0
@@ -31,6 +31,7 @@ laserOffset = 0;
 laserDir = 1;
 angleStep = 1;
 maxRange = 200;
+maxRange += min(GetPlayerLoops()*20,400);
 lox = 16;//Laser offset X
 instance_create(x,y,BigWallBreak);
 isInverted = false;

@@ -13,7 +13,7 @@ spr_fire = sprGoldScorpionFire
 
 snd_hurt = sndGoldScorpionHurt;
 snd_dead = sndGoldScorpionDead;
-snd_mele = sndGoldScorpionMelee
+snd_melee = sndGoldScorpionMelee
 
 //behavior
 ammo = 10

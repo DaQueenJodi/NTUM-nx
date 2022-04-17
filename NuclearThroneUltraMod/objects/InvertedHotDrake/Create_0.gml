@@ -1,12 +1,13 @@
 raddrop = 120
 maxhealth = 2600
-meleedamage = 0
+meleedamage = 7
 size = 2
 
 if UberCont.loops>1
 maxhealth=3400;
 
 event_inherited()
+existTime = 30;
 alarm[10] = 0;
 /* THIS IN BEGIN STEP!
 if instance_exists(Player){
@@ -24,7 +25,8 @@ spr_prep = sprInvertedHotDrakePrep
 spr_vanish=sprInvertedHotDrakeVanish
 spr_appear=sprInvertedHotDrakeAppear
 
-snd_dead = sndFrogExplode
+snd_dead = sndDragonStop
+snd_melee = sndDragonFire;
 right=-1;
 awake=false;
 atk=0;

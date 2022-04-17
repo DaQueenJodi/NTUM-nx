@@ -183,6 +183,8 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			} else {
 				wep = wep - 1;
 			}
+			if bwep == 0
+				bwep = wep;
 			reload = 0;
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
@@ -197,6 +199,8 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			} else {
 				wep = wep + 1;
 			}
+			if bwep == 0
+				bwep = wep;
 			reload = 0;
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
@@ -211,6 +215,8 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			} else {
 				wep = wep - 50;
 			}
+			if bwep == 0
+				bwep = wep;
 			reload = 0;
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
@@ -225,6 +231,8 @@ if UberCont.public==0 && !keyboard_check(vk_control) {
 			} else {
 				wep = wep + 50;
 			}
+			if bwep == 0
+				bwep = wep;
 			reload = 0;
 			var type = wep_type[wep];
 			ammo[type] = typ_amax[type];
@@ -372,8 +380,8 @@ scrPowers()
 else
 {
 	//rolling
-	speed = 6.3+skill_got[2]*0.5//the rolling speed code is far below
-	angle += 50*right
+	speed = 6.3*max(1,(skill_got[2]*1.3))//the rolling speed code is far below
+	angle += 50*right*max(1,(skill_got[2]*1.3))
 
 	if speed = 0
 	{if sprite_index != spr_hurt
@@ -923,9 +931,19 @@ speed = maxspeed
 
 if roll = 1
 {
-speed = 6.3+skill_got[2]*0.5//xtra feet rolling
-if mask_index == mskPickupThroughWall
-	instance_create(x,y,Dust);
+speed = 6.3*max(1,(skill_got[2]*1.3))//xtra feet rolling
+	if mask_index == mskPickupThroughWall
+	{
+		var msk = mask_index;
+		mask_index = mskPlayer;
+		if place_meeting(x,y,Wall)
+		{
+			x = xprevious;
+			y = yprevious;
+		}
+		mask_index = msk;
+		instance_create(x,y,Dust);
+	}
 }
 
 if ((area = 5 || area = 107) and !instance_exists(GenCont) and !instance_exists(LevCont) and !instance_exists(FloorMaker))

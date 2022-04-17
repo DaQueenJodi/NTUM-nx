@@ -29,6 +29,6 @@ alarm[1] = 30+random(90)
 friction = 1;
 snd_hurt = sndDogGuardianHurt;
 snd_dead = sndDogGuardianDead;
-snd_mele = sndDogGuardianMelee;
+snd_melee = sndDogGuardianMelee;
 justjumped = false;
 instance_create(x,y,BigWallBreak);

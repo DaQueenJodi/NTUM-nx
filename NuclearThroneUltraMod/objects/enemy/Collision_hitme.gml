@@ -5,7 +5,7 @@ with other
 if !(skill_got[8] = 1)||!(other.my_health==0){//gamma guts immunity!
     if sprite_index != spr_hurt
     {
-    snd_play(other.snd_mele)
+    snd_play(other.snd_melee)
     sprite_index = spr_hurt
     image_index = 0
     snd_play(other.snd_hurt, other.hurt_pitch_variation,true)

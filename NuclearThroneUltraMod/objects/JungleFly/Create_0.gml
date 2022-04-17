@@ -12,7 +12,7 @@ spr_dead = sprJungleFlyDead
 
 snd_hurt = sndFlyHurt
 snd_dead = sndFlyDead;
-snd_mele = sndFlyMelee;
+snd_melee = sndFlyMelee;
 //behavior
 gunangle = random(360)
 alarm[1] = 20+random(90)

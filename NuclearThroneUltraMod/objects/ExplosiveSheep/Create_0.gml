@@ -25,7 +25,7 @@ target = -1
 
 snd_hurt = sndHitFlesh
 snd_dead = sndSheepDead
-snd_mele = sndMaggotBite
+snd_melee = sndMaggotBite
 
 
 snd_hurt = sndBanditHit

@@ -6,7 +6,7 @@ if target > 0
 	with Wall
 	{
 		if collision_line(x,y,other.target.x,other.target.y,Wall,true,true) < 0 and point_distance(x,y,other.target.x,other.target.y) > 110 
-		and point_distance(x,y,other.target.x,other.target.y) < 120 and ((!place_free(x-16,y) and !place_free(x+16,y)) or (!place_free(x,y+16) and !place_free(x,y-16)))
+		and point_distance(x,y,other.target.x,other.target.y) < 120 and ((!place_free(x-16,y) and !place_free(x+16,y)) or (!place_free(x,y+16) and !place_free(x,y-16))) || instance_number(enemy) < instance_number(IDPDVan) +3
 		{
 			instance_create(x,y,CanSpawnBoss)
 		}

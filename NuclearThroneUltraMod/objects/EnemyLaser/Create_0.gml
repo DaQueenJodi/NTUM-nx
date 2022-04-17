@@ -10,6 +10,11 @@ typ = 2 //0 = normal, 1 = deflectable, 2 = destructable, 3 = deflectable
 image_yscale = 1.25
 canBeMoved = false;
 img = 0
+laserDecrease = 0.2;
+if instance_exists(Player) && Player.skill_got[12]
+{
+	laserDecrease = 0.3;
+}
 //dir=0;
 
 /* */

@@ -12,7 +12,7 @@ spr_dead = sprBuffMushroomDead
 
 snd_hurt = sndHitPlant
 snd_dead = sndFrogExplode
-snd_mele = sndBigMaggotBite
+snd_melee = sndBigMaggotBite
 
 //behavior
 walk = 0

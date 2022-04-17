@@ -1,8 +1,9 @@
 raddrop = 80
 maxhealth = 4000
-meleedamage = 0
+meleedamage = 7
 size = 2
 event_inherited();
+existTime = 30;
 alarm[10] = 0;
 /* THIS IN BEGIN STEP!
 if instance_exists(Player){
@@ -20,7 +21,8 @@ spr_prep = sprHotDrakePrep
 spr_vanish=sprHotDrakeVanish
 spr_appear=sprHotDrakeAppear
 
-snd_dead = sndFrogExplode
+snd_dead = sndDragonStop
+snd_melee = sndDragonFire;
 right=-1;
 awake=false;
 atk=0;

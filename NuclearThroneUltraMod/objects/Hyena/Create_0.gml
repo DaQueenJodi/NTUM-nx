@@ -14,7 +14,7 @@ spr_dead = sprHyenaDead
 
 snd_hurt = sndHyenaHurt
 snd_dead = sndHyenaDeath
-snd_mele = sndHyenaMelee
+snd_melee = sndHyenaMelee
 //behavior
 walk = 0
 alarm[1] = 30+random(90)

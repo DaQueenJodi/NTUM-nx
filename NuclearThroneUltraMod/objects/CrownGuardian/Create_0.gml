@@ -16,7 +16,7 @@ friction = 1
 
 snd_hurt = sndHitRock
 snd_dead = sndScorpionDie
-snd_mele = sndScorpionMelee
+snd_melee = sndScorpionMelee
 
 //behavior
 walk = 0

@@ -16,7 +16,7 @@ spr_dead = sprBigMaggotDeadInvert
 
 snd_hurt = sndBigMaggotHit
 snd_dead = sndBigMaggotDie
-snd_mele = sndBigMaggotBite
+snd_melee = sndBigMaggotBite
 
 //behavior
 alarm[1] = 60+random(10)

@@ -14,7 +14,7 @@ spr_dead = sprRhinoFreakDead
 
 snd_hurt = sndRhinoFreakHurt
 snd_dead = sndRhinoFreakDead
-snd_mele = sndRhinoFreakMelee
+snd_melee = sndRhinoFreakMelee
 
 
 //behavior
