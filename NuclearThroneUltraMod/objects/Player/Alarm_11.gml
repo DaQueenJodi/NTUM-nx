@@ -32,8 +32,8 @@ with Marker
 }
 
 scrFire();     
-if ammo < 0
-	ammo = 0;
+if ammo[wep_type[wep]] < 0
+	ammo[wep_type[wep]] = 0;
 crackshotsfired--;
 
 if crackshotsfired>0
