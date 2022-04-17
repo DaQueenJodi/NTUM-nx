@@ -18,5 +18,5 @@ instance_create(x-16,y,WallBreak);
 instance_create(x-16,y+16,WallBreak);
 alarm[1] = 120
 
-alarm[2]=930 * clamp(loops*2,1,10)//30 seconds
+alarm[2]=2000 * clamp(loops*1.5,1,10)//90 seconds
 closed = false;

@@ -635,7 +635,7 @@ function scrWeapons() {
 	wep_name[57] = "LIGHTNING PISTOL"
 	wep_type[57] = 5
 	wep_auto[57] = 0
-	wep_load[57] = 10
+	wep_load[57] = 9
 	wep_cost[57] = 1
 	wep_sprt[57] = sprLightningPistol
 	wep_area[57] = 7

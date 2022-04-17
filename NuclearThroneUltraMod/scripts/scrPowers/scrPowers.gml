@@ -377,6 +377,48 @@ function scrPowers() {
 	    {//thronebutt adds 1/3 chance of not taking damage
 			my_health -= 1;
 			exception=true;
+			if my_health == 0
+			{
+				if skill_got[32] && isAlkaline
+				{
+					isAlkaline = false;
+					my_health = min(2,maxhealth);
+					with instance_create(x,y,HealFX)
+					{
+						depth = other.depth - 1;	
+					}
+					with instance_create(x,y,SharpTeeth)
+						owner=other.id;
+					snd_play(sndHealthPickup)
+					var pt = instance_create(x,y,PopupText)
+					if UberCont.opt_ammoicon
+					{
+						if my_health = maxhealth
+							pt.mytext = "MAX";
+						else
+							pt.mytext = "+"+string(1);
+				
+						pt.sprt = sprHPIconPickup;
+					}
+					else
+					{
+						if my_health = maxhealth
+							pt.mytext = "MAX HP";
+						else
+							pt.mytext = "+"+string(1)+" HP";
+					}
+			
+					alarm[3]=10;//duration of iframes
+				}
+				else if skill_got[25] && strongspirit == true && strongspiritused == false
+				{
+					snd_play(sndStrongSpiritLost);
+				    my_health=1;
+				    alarm[1]=20;//invincibility 
+				    strongspiritused=true;
+				    strongspirit=false;
+				}
+			}
     
 			//if my_health<1&&strongspirit
 			image_index=0;
@@ -1079,7 +1121,7 @@ function scrPowers() {
 	{
 		if Player.ultra_got[44]=1{//Hunter Ultra D CRACKSHOT
 			if(instance_exists(enemy)){
-				if(point_distance(mouse_x,mouse_y,instance_nearest(mouse_x,mouse_y,enemy).x,instance_nearest(mouse_x,mouse_y,enemy).y)<48) {
+				if(point_distance(mouse_x,mouse_y,instance_nearest(mouse_x,mouse_y,enemy).x,instance_nearest(mouse_x,mouse_y,enemy).y) < 48) {
 					snd_play_2d(sndSniperTarget);
 
 				    with instance_create(mouse_x,mouse_y,Marker) {

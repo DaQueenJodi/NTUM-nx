@@ -1944,6 +1944,7 @@
     {"id":{"name":"mskShopHPChest","path":"sprites/mskShopHPChest/mskShopHPChest.yy",},"order":73,},
     {"id":{"name":"TripwireStick","path":"objects/TripwireStick/TripwireStick.yy",},"order":178,},
     {"id":{"name":"sprBusinessHog","path":"sprites/sprBusinessHog/sprBusinessHog.yy",},"order":75,},
+    {"id":{"name":"scrHunterCrackshot","path":"scripts/scrHunterCrackshot/scrHunterCrackshot.yy",},"order":56,},
     {"id":{"name":"sprMutant20Hurt","path":"sprites/sprMutant20Hurt/sprMutant20Hurt.yy",},"order":77,},
     {"id":{"name":"sprMutant20Idle","path":"sprites/sprMutant20Idle/sprMutant20Idle.yy",},"order":79,},
     {"id":{"name":"sprMutant20Dead","path":"sprites/sprMutant20Dead/sprMutant20Dead.yy",},"order":81,},

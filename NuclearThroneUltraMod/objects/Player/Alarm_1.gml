@@ -1,3 +1,3 @@
-/// @description Player is invinsible strong spirit
+/// @description Player is invincible strong spirit
 //health will stay at 1
 

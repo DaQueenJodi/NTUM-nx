@@ -423,6 +423,8 @@ rage = 0;
 exception = false;
 sharpteeth = 0; //stress embedded
 crackshotsfired = 0; //hunter ultra d
+ogmx = 0;//Original mouse pos
+ogmy = 0;
 
 //horror
 horrorcharge = 2;

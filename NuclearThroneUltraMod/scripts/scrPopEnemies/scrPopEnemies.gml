@@ -276,7 +276,7 @@ function scrPopEnemies() {
 				repeat(2+irandom(2))
 					instance_create(x + 16, y + 16, SquareBat)
 			}
-			else if random(12) < 1
+			else if random(11) < 1
 			{
 					instance_create(x + 16, y + 16, Spider)
 					instance_create(x + 16, y + 16, choose(Spider,SquareBat,Spider,Spider,FireBat));
@@ -293,8 +293,8 @@ function scrPopEnemies() {
 			}
 			else if random(10) < 1
 			{
-				repeat(2)
-					instance_create(x + 16, y + 16, Spider)
+				instance_create(x + 16, y + 16, Spider)
+				instance_create(x + 16, y + 16, choose(Spider,SquareBat,Spider,Spider,FireBat));
 			}
 	        else
 	            instance_create(x + 16, y + 16, choose(Spider, Spider, Spider, Spider, crystal,
@@ -988,13 +988,13 @@ function scrPopEnemies() {
 
     if spawnarea == 9 && subarea != 3 {
 		if loops > 0 {
-			if styleb = 1 && random(7) < 2 {
+			if styleb = 1 && random(8) < 2 {
 	            instance_create(x + 16, y + 16, choose(GuardianDog, GhostGuardian,PalaceGuardian))
 	        } else {
 	            var ran = random(100);
-	            if ran > 70 {
+	            if ran > 75 {
 	                instance_create(x + 16, y + 16, choose(PalaceGuardian, PalaceGuardian, ExploGuardian, ExploGuardian, GhostGuardian, GuardianDog, CubeGuardian))
-	            } else if ran > 50 {
+	            } else if ran > 55 {
 					instance_create(x + 16, y + 16, choose(Sniper, JungleBandit, ExploFreak))
 				}
 				else if instance_number(enemy) < 1
@@ -1003,12 +1003,12 @@ function scrPopEnemies() {
 				}
 	        }
 		} else {
-			if styleb = 1 && random(7) < 2 {
+			if styleb = 1 && random(8) < 2 {
 	            instance_create(x + 16, y + 16, choose(GuardianDog, GuardianDog, GhostGuardian))
 	        } else {
 	            var ran = random(100);
 
-	            if ran > 70 {
+	            if ran > 75 {
 	                instance_create(x + 16, y + 16, choose(PalaceGuardian, PalaceGuardian, ExploGuardian, CubeGuardian, GhostGuardian, GuardianDog))
 	            }
 				else if instance_number(enemy) < 1

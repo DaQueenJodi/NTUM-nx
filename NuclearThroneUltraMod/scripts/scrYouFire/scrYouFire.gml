@@ -5,7 +5,7 @@ function scrYouFire() {
 	//len=point_distance(Player.x,Player.y,target.x,target.y)*4
 	//else{
 	len=point_distance(Player.x,Player.y,mouse_x,mouse_y)
-	len*=(window_get_height())*0.0037;
+	len*=(window_get_height())*0.005;
 	//}
 
 	dir=point_direction(Player.x,Player.y,mouse_x,mouse_y);
