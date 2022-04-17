@@ -37,7 +37,7 @@ if (UberCont.opt_gamemode == 25)
 }
 else
 {
-	name = "TAKE THE CHALLENGE?";
+	name = "TAKE THE CHALLENGE#FOR AN ULTRA MOD?";
 	instance_create(x - dis,y - dis,Torch);
 	instance_create(x + dis,y - dis,Torch);
 	instance_create(x + dis,y + dis,Torch);
