@@ -184,7 +184,7 @@ function scrTips() {
 	"thanks gun god",
 	"\#verifyvenuz",
 	"\#yv",
-	"venuz still not verified wtf twitter"
+	"venuz still not verified wtf twitter",
 	"guns for fake necklace",
 	"guns that send textses",
 	"guns that make breakfast?",
