@@ -19,3 +19,4 @@ seed[5] = vk_right;
 seed[6] = vk_down;
 seed[7] = vk_left;
 seedI = 0;
+//event_user(2);

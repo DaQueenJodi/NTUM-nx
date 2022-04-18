@@ -1,5 +1,5 @@
 /// @description Spawn popo
-size=0;
+size=1;
 /*
 if team != 2
 team=3;

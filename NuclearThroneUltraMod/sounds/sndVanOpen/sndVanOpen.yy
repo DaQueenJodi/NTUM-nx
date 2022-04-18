@@ -12,7 +12,7 @@
     "path": "audiogroups/agsfx",
   },
   "soundFile": "sndVanOpen",
-  "duration": 0.0,
+  "duration": 0.835781,
   "parent": {
     "name": "Elite",
     "path": "folders/Sounds/IDPD sounds/Elite.yy",

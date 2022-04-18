@@ -199,7 +199,6 @@ function scrModHit() {
 					motion_add(random(360),5.2)
 					image_angle = direction
 					team = 2
-					mask_index=mskPickupThroughWall;
 					alarm[0] = 5;
 				}
 				break;
@@ -214,7 +213,6 @@ function scrModHit() {
 						motion_add(random(360),10+random(5))
 						image_angle = direction
 						team = 2
-						mask_index=mskPickupThroughWall;
 						alarm[0] = 3;
 					}
 				}

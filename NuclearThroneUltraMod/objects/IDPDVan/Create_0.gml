@@ -3,7 +3,7 @@ maxhealth = 262
 meleedamage = 20
 size = 4
 RogueIDPD=false;
-
+scrCrownOfPopoRad(8);
 event_inherited()
 
 team=0;
