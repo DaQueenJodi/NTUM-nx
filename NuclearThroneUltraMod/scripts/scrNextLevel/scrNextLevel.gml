@@ -11,12 +11,18 @@ function scrNextLevel() {
 	if area = 104//YV CRIB
 	{
 		area = lastarea;
-		subarea --;
+		if looping
+		{
+			debug("LOOPING",lastarea);
+			room_restart();
+			exit;
+		}
+		subarea = lastsubarea;
 		//if subarea==1&&area!=9//LAST AREA
 		//	area+=1;
 	}
 	//show_message("inverted: "+ string(inverted)+"#area :"+string(area));
-
+	lastsubarea = subarea;
 	if area < 100
 	{
 		lastarea = area
@@ -344,8 +350,11 @@ function scrNextLevel() {
 	    if /*(ultra_got[21]||ultra_got[22]||ultra_got[23]||ultra_got[24])&&*/(visitedCrib==false)
 	    {
 	    area=104;
+		
+		debug("lastsubarea ",lastsubarea);
 	    visitedCrib=true;
 	    hard -= 1;
+		debug("GO CRIB");
 	    }
 	}
 	}

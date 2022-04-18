@@ -295,6 +295,7 @@ loops = 0
 area = 1
 subarea = 0
 lastarea = 1
+lastsubarea = 1;
 hard = 0
 inverted = false; //for when entering inverted portals
 invertedportalcounter = 0;

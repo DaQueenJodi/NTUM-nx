@@ -226,7 +226,8 @@ horrorcharge=origincharge;
 oasis=false;
 
 ///looping!
-if looping
+debug("now try to loop",area);
+if looping && area != 104
 {
 if scrCheckLoopAll()
 	scrUnlockCSkin(1,"FOR LOOPING WITH EVERY CHARACTER",0);
