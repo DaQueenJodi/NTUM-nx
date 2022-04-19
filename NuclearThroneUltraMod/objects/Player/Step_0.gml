@@ -4,384 +4,351 @@ if UberCont.opt_gamemode == 29 || cheatyinfiniteammo //Infinite ammo
 if unkillable
 	alarm[1] = 2;
 if !instance_exists(GenCont) and !instance_exists(LevCont) and visible = 1
-{if roll = 0
-{if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
-hspeed -= 3
-if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
-hspeed += 3
-if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
-vspeed -= 3
-if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
-vspeed += 3
-
-
-if race=23 && ultra_got[92]=0
-speed=maxspeed;
-
-if alarm[4]>0//boiling veins
 {
-instance_create(x+random(12)-6,y+random(12)-6,Smoke);
-}
-var thing;
-if UberCont.public==0 && !keyboard_check(vk_control) {
-//hacks
-	if keyboard_check_pressed(ord("V")) {
-		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
-		instance_create(f.x + 16,f.y + 16,BigWallBreak)
-		with instance_create(f.x + 16,f.y + 16,WeaponChest)
-			curse = 1;
-		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "CURSED CHEST";
-	}
-	if keyboard_check_pressed(ord("C")) {
-		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
-	    curse = !curse;
-		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "CURSE TOGGLE";
-	}
-	if keyboard_check_pressed(ord("B")) {
-		wepmod1 ++;
-		wepmod2 ++;
-		wepmod3 ++;
-		wepmod4 ++;
-	}
-	if keyboard_check_pressed(ord("N")) {
-		wepmod1 --;
-		wepmod2 --;
-		wepmod3 --;
-		wepmod4 --;
-	}
-	if keyboard_check_pressed(vk_numpad1) {
-		repeat(3) {
-			var dangle = random(1)*360;
-			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		    instance_create(f.x + 16,f.y + 16,CursedSpider);
-			thing = instance_create(f.x + 16,f.y + 16,PopupText);
-			thing.mytext = "GRAPES";
-		}
-	}
-	if keyboard_check_pressed(vk_numpad2) {
-		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		instance_create(f.x + 16,f.y + 16,AssassinBoss);
-		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "BIG ASS";
-	}
-	if keyboard_check_pressed(vk_numpad3) {
-		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		instance_create(f.x + 16,f.y + 16,Thief);
-		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "Thief";
-	}
-	if keyboard_check_pressed(vk_numpad4) {
-		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		instance_create(f.x + 16,f.y + 16,JungleFly);
-		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "FLY";
-	}
-	if keyboard_check_pressed(vk_numpad5) {
-		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		instance_create(f.x + 16,f.y + 16,PalaceGuardian);
-		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "GUARDIAN";
-	}
-	if keyboard_check_pressed(vk_numpad6) {
-		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		instance_create(f.x + 16,f.y + 16,ExploGuardian);
-		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "EXPLODER";
-	}
-	if keyboard_check_pressed(vk_numpad7) {
-		repeat(2) {
-			var dangle = random(1)*360;
-			var f = instance_nearest(x + dcos(dangle)*56,y + dsin(dangle)*56,Floor);
-			instance_create(f.x + 16,f.y + 16,Bandit);
-			var dangle = random(1)*360;
-			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-			instance_create(f.x + 16,f.y + 16,SavannaBandit);
-			var dangle = random(1)*360;
-			var f = instance_nearest(x + dcos(dangle)*72,y + dsin(dangle)*72,Floor);
-			instance_create(f.x + 16,f.y + 16,EraserBandit);
-			var dangle = random(1)*360;
-			var f = instance_nearest(x + dcos(dangle)*80,y + dsin(dangle)*80,Floor);
-			instance_create(f.x + 16,f.y + 16,LaserBandit);
-			var dangle = random(1)*360;
-			var f = instance_nearest(x + dcos(dangle)*88,y + dsin(dangle)*88,Floor);
-			instance_create(f.x + 16,f.y + 16,JungleBandit);
-			var dangle = random(1)*360;
-			var f = instance_nearest(x + dcos(dangle)*96,y + dsin(dangle)*96,Floor);
-			instance_create(f.x + 16,f.y + 16,BanditSquare);
-		}
-		thing = instance_create(x,y,PopupText);
-		thing.mytext = "BANDITLAND PROBABLY";
-	}
-	if keyboard_check_pressed(vk_numpad8) {
-		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		instance_create(f.x + 16,f.y + 16,IDPDSpawn);
-		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "POPO";
-	}
-	if keyboard_check_pressed(vk_numpad9) {
-		var dangle = random(1)*360;
-		var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
-		with TopCont
-		{
-			if darkness = 1
-				darkness = 0;
-			else
-				darkness = 1;
-		}
-		thing = instance_create(f.x + 16,f.y + 16,PopupText);
-		thing.mytext = "DARKNESS TOGGLE";
-	}
-	if keyboard_check_pressed(vk_numpad0) {
-		if unkillable {
-			thing = instance_create(x,y,PopupText)
-			thing.mytext = "NOT UNKILLABLE!";
-			unkillable = false;
-			alarm[1] = 1;
-			snd_play(sndStrongSpiritLost)
-		} else {
-			thing = instance_create(x,y,PopupText)
-			thing.mytext = "UNKILLABLE!";
-			unkillable = true;
-			alarm[1] = 2;
-			snd_play(sndStrongSpiritGain)
-		}
-	}
-	if keyboard_check_pressed(ord("R")) {
-	    thing = instance_create(x,y,PopupText)
-		thing.mytext = "RADS!";
-		rad = GetPlayerMaxRad()*2;
-	}
-	if keyboard_check_pressed(ord("T")) {
-		if instance_exists(Portal) && UberCont.opt_gamemode == 25
-		{
-			subarea++;
-			hard += 1.25;
-			thing = instance_create(x,y,PopupText)
-			thing.mytext = "SUBAREA++! "+string(subarea);
-		}
-		else
-		{
-			instance_create(Player.x,Player.y,Portal);
-			thing = instance_create(x,y,PopupText)
-			thing.mytext = "PORTAL!";
-		}
-	}
-	if (keyboard_check_pressed(ord("1")))
-	    {
-		    if(wep < 1) {
-				wep = maxwep;
-			} else {
-				wep = wep - 1;
-			}
-			if bwep == 0
-				bwep = wep;
-			reload = 0;
-			var type = wep_type[wep];
-			ammo[type] = typ_amax[type];
-			scrWeaponHold();
-			thing = instance_create(x,y,PopupText)
-			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
-	    }
-	if (keyboard_check_pressed(ord("2")))
-	    {
-		    if(wep == maxwep) {
-				wep = 0;
-			} else {
-				wep = wep + 1;
-			}
-			if bwep == 0
-				bwep = wep;
-			reload = 0;
-			var type = wep_type[wep];
-			ammo[type] = typ_amax[type];
-			scrWeaponHold();
-			thing = instance_create(x,y,PopupText)
-			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
-	    }
-	if (keyboard_check_pressed(ord("3")))
-	    {
-		    if(wep - 50 < 0) {
-				wep = maxwep + wep - 50;
-			} else {
-				wep = wep - 50;
-			}
-			if bwep == 0
-				bwep = wep;
-			reload = 0;
-			var type = wep_type[wep];
-			ammo[type] = typ_amax[type];
-			scrWeaponHold();
-			thing = instance_create(x,y,PopupText)
-			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
-	    }
-	if (keyboard_check_pressed(ord("4")))
-	    {
-		    if(wep + 50 > maxwep ) {
-				wep = 50 + wep - maxwep;
-			} else {
-				wep = wep + 50;
-			}
-			if bwep == 0
-				bwep = wep;
-			reload = 0;
-			var type = wep_type[wep];
-			ammo[type] = typ_amax[type];
-			scrWeaponHold();
-			thing = instance_create(x,y,PopupText)
-			thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
-	    }
-	if (keyboard_check_pressed(ord("5")))
-	    {
-			ultramod --;
-			ultramod = max(0,ultramod);
-			thing = instance_create(x,y,PopupText)
-			thing.mytext = "Ultramod -- "+string(ultramod);
-	    }
-	if (keyboard_check_pressed(ord("6")))
-	    {
-			ultramod ++;
-			thing = instance_create(x,y,PopupText)
-			thing.mytext = "Ultramod ++ "+string(ultramod);
-	    }
-	if (keyboard_check_pressed(ord("F")))
-	    {
-	    repeat(3)
-	    instance_create(Player.x,Player.y,AmmoPickup);
-		thing = instance_create(x,y,PopupText)
-		thing.mytext = "AMMO!";
-	    }
-	if (keyboard_check_pressed(vk_tab))
-	    {
-	    repeat(3)
-	    instance_create(Player.x,Player.y,HPPickup);
-		thing = instance_create(x,y,PopupText)
-		thing.mytext = "HEALTH!";
-	    }
-	if (keyboard_check_pressed(ord("H")))
-	    {
-			
-		var dangle = random(1)*360;
-		/*
-	    instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,HealthChest);
-		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
-		thing.mytext = "MORE HEALTH!";
-		*/
-		hard++;
-		thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
-		thing.mytext = "INCREASE TIER/DIFFICULTY! "+string(hard);
-	    }
-	if (keyboard_check_pressed(ord("Y")))
-	    {
-	    wepmod1++
-		thing = instance_create(x,y,PopupText)
-		thing.mytext = "WEAPON MOD "+string(wepmod1)+"!";
-	    }
-	if (keyboard_check_pressed(ord("L")))
-	    {
-		var dangle = random(1)*360;
-		loops++
-		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
-		thing.mytext = "LOOPS++! "+string(loops);
-	    }
-	if (keyboard_check_pressed(ord("G")))
-	    {
-		var dangle = random(1)*360;
-	    with instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,WeaponChest)
-		curse = 1;
-		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
-		thing.mytext = "WEAPON CHEST!";
-	    }
-	if (keyboard_check_pressed(ord("I")))
-	    {
-		var dangle = random(1)*360;
-	    invertedportalcounter=1;
-	    invertedportaldelay=5+random(30);
-		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
-		thing.mytext = "INVERTED PORTAL!";
-	    }
-	if (keyboard_check_pressed(ord("O")))
-	    {
-		var dangle = random(1)*360;
-	    invertedportalcounter=1;
-	    invertedportaldelay=5+random(30);
-		thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,You);
-		thing.mytext = "YOU!?";
-	    }
-	if (keyboard_check_pressed(vk_delete))
-	    {
-		repeat(15) {
-			var dangle = random(1)*360;
-			var explosiondist = 40 + random(50);
-			instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,SmallExplosion);
-		}
-		repeat(10) {
-			var dangle = random(1)*360;
-			var explosiondist = 64 + random(64);
-			instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,Explosion);
-			thing = instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,PopupText);
-			thing.mytext = "EXPLOSIONS!";
-		}
-		repeat(15) {
-			var dangle = random(1)*360;
-			var explosiondist = 64 + random(80);
-			instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,Explosion);
-		}
-		repeat(10) {
-			var dangle = random(1)*360;
-			var explosiondist = 80 + random(80);
-			instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,SmallExplosion);
-		}
-		snd_play(sndExplosionXL,0.05);
-		snd_play(sndExplosionL,0.05);
-		snd_play(sndExplosion,0.05);
-		snd_play(sndExplosionS,0.05);
-	}
-//*/    
-}
+	if roll = 0
+	{if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
+	hspeed -= 3
+	if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
+	hspeed += 3
+	if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
+	vspeed -= 3
+	if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
+	vspeed += 3
 
-if speed = 0
-{if sprite_index != spr_hurt
-sprite_index = spr_idle}
-else
-{if sprite_index != spr_hurt
-sprite_index = spr_walk}
-if sprite_index = spr_hurt
-{	
-	hurtTime++;
-	if (image_index > 2 && hurtTime > hurtDuration)
+
+	if race=23 && ultra_got[92]=0
+	speed=maxspeed;
+
+	if alarm[4]>0//boiling veins
 	{
-		sprite_index = spr_idle
-		hurtTime = 0;
+	instance_create(x+random(12)-6,y+random(12)-6,Smoke);
 	}
-}
-
-if mouse_x < x
-right = -1
-else if mouse_x > x
-right = 1
-
-if mouse_y < y
-back = 1
-else if mouse_y > y
-back = -1
-
-scrPowers()
-}
-else
-{
-	//rolling
-	speed = 6.3*max(1,(skill_got[2]*1.3))//the rolling speed code is far below
-	angle += 50*right*max(1,(skill_got[2]*1.3))
+	var thing;
+	if UberCont.public==0 && !keyboard_check(vk_control) && !keyboard_check(vk_shift){
+	//hacks
+		if keyboard_check_pressed(ord("V")) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
+			instance_create(f.x + 16,f.y + 16,BigWallBreak)
+			with instance_create(f.x + 16,f.y + 16,WeaponChest)
+				curse = 1;
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "CURSED CHEST";
+		}
+		if keyboard_check_pressed(ord("C")) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*128,y + dsin(dangle)*64,Floor);
+		    curse = !curse;
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "CURSE TOGGLE";
+		}
+		if keyboard_check_pressed(ord("B")) {
+			wepmod1 ++;
+			wepmod2 ++;
+			wepmod3 ++;
+			wepmod4 ++;
+		}
+		if keyboard_check_pressed(ord("N")) {
+			wepmod1 --;
+			wepmod2 --;
+			wepmod3 --;
+			wepmod4 --;
+		}
+		if keyboard_check_pressed(vk_numpad1) {
+			repeat(3) {
+				var dangle = random(1)*360;
+				var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+			    instance_create(f.x + 16,f.y + 16,CursedSpider);
+				thing = instance_create(f.x + 16,f.y + 16,PopupText);
+				thing.mytext = "GRAPES";
+			}
+		}
+		if keyboard_check_pressed(vk_numpad2) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+			instance_create(f.x + 16,f.y + 16,AssassinBoss);
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "BIG ASS";
+		}
+		if keyboard_check_pressed(vk_numpad3) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+			instance_create(f.x + 16,f.y + 16,Thief);
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "Thief";
+		}
+		if keyboard_check_pressed(vk_numpad4) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+			instance_create(f.x + 16,f.y + 16,JungleFly);
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "FLY";
+		}
+		if keyboard_check_pressed(vk_numpad5) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+			instance_create(f.x + 16,f.y + 16,PalaceGuardian);
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "GUARDIAN";
+		}
+		if keyboard_check_pressed(vk_numpad6) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+			instance_create(f.x + 16,f.y + 16,ExploGuardian);
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "EXPLODER";
+		}
+		if keyboard_check_pressed(vk_numpad7) {
+			repeat(2) {
+				var dangle = random(1)*360;
+				var f = instance_nearest(x + dcos(dangle)*56,y + dsin(dangle)*56,Floor);
+				instance_create(f.x + 16,f.y + 16,Bandit);
+				var dangle = random(1)*360;
+				var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+				instance_create(f.x + 16,f.y + 16,SavannaBandit);
+				var dangle = random(1)*360;
+				var f = instance_nearest(x + dcos(dangle)*72,y + dsin(dangle)*72,Floor);
+				instance_create(f.x + 16,f.y + 16,EraserBandit);
+				var dangle = random(1)*360;
+				var f = instance_nearest(x + dcos(dangle)*80,y + dsin(dangle)*80,Floor);
+				instance_create(f.x + 16,f.y + 16,LaserBandit);
+				var dangle = random(1)*360;
+				var f = instance_nearest(x + dcos(dangle)*88,y + dsin(dangle)*88,Floor);
+				instance_create(f.x + 16,f.y + 16,JungleBandit);
+				var dangle = random(1)*360;
+				var f = instance_nearest(x + dcos(dangle)*96,y + dsin(dangle)*96,Floor);
+				instance_create(f.x + 16,f.y + 16,BanditSquare);
+			}
+			thing = instance_create(x,y,PopupText);
+			thing.mytext = "BANDITLAND PROBABLY";
+		}
+		if keyboard_check_pressed(vk_numpad8) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+			instance_create(f.x + 16,f.y + 16,IDPDSpawn);
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "POPO";
+		}
+		if keyboard_check_pressed(vk_numpad9) {
+			var dangle = random(1)*360;
+			var f = instance_nearest(x + dcos(dangle)*64,y + dsin(dangle)*64,Floor);
+			with TopCont
+			{
+				if darkness = 1
+					darkness = 0;
+				else
+					darkness = 1;
+			}
+			thing = instance_create(f.x + 16,f.y + 16,PopupText);
+			thing.mytext = "DARKNESS TOGGLE";
+		}
+		if keyboard_check_pressed(vk_numpad0) {
+			if unkillable {
+				thing = instance_create(x,y,PopupText)
+				thing.mytext = "NOT UNKILLABLE!";
+				unkillable = false;
+				alarm[1] = 1;
+				snd_play(sndStrongSpiritLost)
+			} else {
+				thing = instance_create(x,y,PopupText)
+				thing.mytext = "UNKILLABLE!";
+				unkillable = true;
+				alarm[1] = 2;
+				snd_play(sndStrongSpiritGain)
+			}
+		}
+		if keyboard_check_pressed(ord("R")) {
+		    thing = instance_create(x,y,PopupText)
+			thing.mytext = "RADS!";
+			rad = GetPlayerMaxRad()*2;
+		}
+		if keyboard_check_pressed(ord("T")) {
+			if instance_exists(Portal) && UberCont.opt_gamemode == 25
+			{
+				subarea++;
+				hard += 1.25;
+				thing = instance_create(x,y,PopupText)
+				thing.mytext = "SUBAREA++! "+string(subarea);
+			}
+			else
+			{
+				instance_create(Player.x,Player.y,Portal);
+				thing = instance_create(x,y,PopupText)
+				thing.mytext = "PORTAL!";
+			}
+		}
+		if (keyboard_check_pressed(ord("1")))
+		    {
+			    if(wep < 1) {
+					wep = maxwep;
+				} else {
+					wep = wep - 1;
+				}
+				if bwep == 0
+					bwep = wep;
+				reload = 0;
+				var type = wep_type[wep];
+				ammo[type] = typ_amax[type];
+				scrWeaponHold();
+				thing = instance_create(x,y,PopupText)
+				thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
+		    }
+		if (keyboard_check_pressed(ord("2")))
+		    {
+			    if(wep == maxwep) {
+					wep = 0;
+				} else {
+					wep = wep + 1;
+				}
+				if bwep == 0
+					bwep = wep;
+				reload = 0;
+				var type = wep_type[wep];
+				ammo[type] = typ_amax[type];
+				scrWeaponHold();
+				thing = instance_create(x,y,PopupText)
+				thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
+		    }
+		if (keyboard_check_pressed(ord("3")))
+		    {
+			    if(wep - 50 < 0) {
+					wep = maxwep + wep - 50;
+				} else {
+					wep = wep - 50;
+				}
+				if bwep == 0
+					bwep = wep;
+				reload = 0;
+				var type = wep_type[wep];
+				ammo[type] = typ_amax[type];
+				scrWeaponHold();
+				thing = instance_create(x,y,PopupText)
+				thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
+		    }
+		if (keyboard_check_pressed(ord("4")))
+		    {
+			    if(wep + 50 > maxwep ) {
+					wep = 50 + wep - maxwep;
+				} else {
+					wep = wep + 50;
+				}
+				if bwep == 0
+					bwep = wep;
+				reload = 0;
+				var type = wep_type[wep];
+				ammo[type] = typ_amax[type];
+				scrWeaponHold();
+				thing = instance_create(x,y,PopupText)
+				thing.mytext = "WEAPON "+string(wep)+"#"+string(wep_name[wep])+"!";
+		    }
+		if (keyboard_check_pressed(ord("5")))
+		    {
+				ultramod --;
+				ultramod = max(0,ultramod);
+				thing = instance_create(x,y,PopupText)
+				thing.mytext = "Ultramod -- "+string(ultramod);
+		    }
+		if (keyboard_check_pressed(ord("6")))
+		    {
+				ultramod ++;
+				thing = instance_create(x,y,PopupText)
+				thing.mytext = "Ultramod ++ "+string(ultramod);
+		    }
+		if (keyboard_check_pressed(ord("F")))
+		    {
+		    repeat(3)
+		    instance_create(Player.x,Player.y,AmmoPickup);
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "AMMO!";
+		    }
+		if (keyboard_check_pressed(vk_tab))
+		    {
+		    repeat(3)
+		    instance_create(Player.x,Player.y,HPPickup);
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "HEALTH!";
+		    }
+		if (keyboard_check_pressed(ord("H")))
+		    {
+			
+			var dangle = random(1)*360;
+			/*
+		    instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,HealthChest);
+			thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
+			thing.mytext = "MORE HEALTH!";
+			*/
+			hard++;
+			thing = instance_create(x + dcos(dangle)*24,y + dsin(dangle)*24,PopupText);
+			thing.mytext = "INCREASE TIER/DIFFICULTY! "+string(hard);
+		    }
+		if (keyboard_check_pressed(ord("Y")))
+		    {
+		    wepmod1++
+			thing = instance_create(x,y,PopupText)
+			thing.mytext = "WEAPON MOD "+string(wepmod1)+"!";
+		    }
+		if (keyboard_check_pressed(ord("L")))
+		    {
+			var dangle = random(1)*360;
+			loops++
+			thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
+			thing.mytext = "LOOPS++! "+string(loops);
+		    }
+		if (keyboard_check_pressed(ord("G")))
+		    {
+			var dangle = random(1)*360;
+		    with instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,WeaponChest)
+			curse = 1;
+			thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
+			thing.mytext = "WEAPON CHEST!";
+		    }
+		if (keyboard_check_pressed(ord("I")))
+		    {
+			var dangle = random(1)*360;
+		    invertedportalcounter=1;
+		    invertedportaldelay=5+random(30);
+			thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,PopupText);
+			thing.mytext = "INVERTED PORTAL!";
+		    }
+		if (keyboard_check_pressed(ord("O")))
+		    {
+			var dangle = random(1)*360;
+		    invertedportalcounter=1;
+		    invertedportaldelay=5+random(30);
+			thing = instance_create(x + dcos(dangle)*32,y + dsin(dangle)*32,You);
+			thing.mytext = "YOU!?";
+		    }
+		if (keyboard_check_pressed(vk_delete))
+		    {
+			repeat(15) {
+				var dangle = random(1)*360;
+				var explosiondist = 40 + random(50);
+				instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,SmallExplosion);
+			}
+			repeat(10) {
+				var dangle = random(1)*360;
+				var explosiondist = 64 + random(64);
+				instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,Explosion);
+				thing = instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,PopupText);
+				thing.mytext = "EXPLOSIONS!";
+			}
+			repeat(15) {
+				var dangle = random(1)*360;
+				var explosiondist = 64 + random(80);
+				instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,Explosion);
+			}
+			repeat(10) {
+				var dangle = random(1)*360;
+				var explosiondist = 80 + random(80);
+				instance_create(x + dcos(dangle)*explosiondist,y + dsin(dangle)*explosiondist,SmallExplosion);
+			}
+			snd_play(sndExplosionXL,0.05);
+			snd_play(sndExplosionL,0.05);
+			snd_play(sndExplosion,0.05);
+			snd_play(sndExplosionS,0.05);
+		}
+	//*/    
+	}
 
 	if speed = 0
 	{if sprite_index != spr_hurt
@@ -390,272 +357,308 @@ else
 	{if sprite_index != spr_hurt
 	sprite_index = spr_walk}
 	if sprite_index = spr_hurt
-	{if image_index > 2
-	sprite_index = spr_idle}
-
-	if skill_got[5] = 1
-	{
-		var spd = speed;
-		speed = 0;
-		if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
-		hspeed -= 3
-		if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
-		hspeed += 3
-		if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
-		vspeed -= 3
-		if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
-		vspeed += 3
-		instance_create(x,y,FishBoost)
-		speed += spd;
-		/*if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
-		hspeed -= 3
-		if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
-		hspeed += 3
-		if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
-		vspeed -= 3
-		if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
-		vspeed += 3*/
-		if (angle > 360 or -angle > 360) 
+	{	
+		hurtTime++;
+		if (image_index > 2 && hurtTime > hurtDuration)
 		{
-			if !(KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2)
+			sprite_index = spr_idle
+			hurtTime = 0;
+		}
+	}
+
+	if mouse_x < x
+	right = -1
+	else if mouse_x > x
+	right = 1
+
+	if mouse_y < y
+	back = 1
+	else if mouse_y > y
+	back = -1
+
+	scrPowers()
+	}
+	else
+	{
+		//rolling
+		speed = 6.3*max(1,(skill_got[2]*1.3))//the rolling speed code is far below
+		angle += 50*right*max(1,(skill_got[2]*1.3))
+
+		if speed = 0
+		{if sprite_index != spr_hurt
+		sprite_index = spr_idle}
+		else
+		{if sprite_index != spr_hurt
+		sprite_index = spr_walk}
+		if sprite_index = spr_hurt
+		{if image_index > 2
+		sprite_index = spr_idle}
+
+		if skill_got[5] = 1
+		{
+			var spd = speed;
+			speed = 0;
+			if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
+			hspeed -= 3
+			if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
+			hspeed += 3
+			if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
+			vspeed -= 3
+			if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
+			vspeed += 3
+			instance_create(x,y,FishBoost)
+			speed += spd;
+			/*if KeyCont.key_west[p] = 2 or KeyCont.key_west[p] = 1
+			hspeed -= 3
+			if KeyCont.key_east[p] = 2 or KeyCont.key_east[p] = 1
+			hspeed += 3
+			if KeyCont.key_nort[p] = 2 or KeyCont.key_nort[p] = 1
+			vspeed -= 3
+			if KeyCont.key_sout[p] = 2 or KeyCont.key_sout[p] = 1
+			vspeed += 3*/
+			if (angle > 360 or -angle > 360) 
+			{
+				if !(KeyCont.key_spec[p] = 1 or KeyCont.key_spec[p] = 2)
+				{
+					angle = 0
+					roll = 0
+				}
+			}
+		}
+		else{
+		instance_create(x+random(6)-3,y+random(6),Dust)
+			if angle > 360 or -angle > 360
 			{
 				angle = 0
 				roll = 0
 			}
 		}
 	}
-	else{
-	instance_create(x+random(6)-3,y+random(6),Dust)
-		if angle > 360 or -angle > 360
-		{
-			angle = 0
-			roll = 0
-		}
-	}
-}
 
 
-if bleed > 0 and my_health > 0
-{
-audio_stop_sound(sndChickenHeadlessLoop)
-snd_play(sndChickenRegenHead)
-bleed = 0
-if bskin=2
-{
-spr_idle = sprMutant9CIdle
-spr_hurt = sprMutant9CHurt
-spr_walk = sprMutant9CWalk
-}
-else if bskin=1
-{
-spr_idle = sprMutant9BIdle
-spr_hurt = sprMutant9BHurt
-spr_walk = sprMutant9BWalk
-}
-else
-{
-spr_idle = sprMutant9Idle
-spr_hurt = sprMutant9Hurt
-spr_walk = sprMutant9Walk}
-with Corpse{
-if other.bskin=2
-sprite_index = mskPickupThroughWall;//invisible basicly
-else if other.bskin=1
-sprite_index = sprMutant9BHeadIdle
-else
-sprite_index = sprMutant9HeadIdle
-instance_destroy()}
-}
-
-if my_health <= 0
-{
-if race = 9 and bleed < 150
-{
-if bleed = 0
-{
-maxhealth-=2;
-if maxhealth<0
-{maxhealth=0}
-
-snd_play(sndChickenLoseHead)
-snd_loop(sndChickenHeadlessLoop)
-repeat(12){
-with instance_create(x,y,BloodStreak){
-motion_add(random(360),2+random(3))
-image_angle = direction}}
-
-
-
-if bskin=2
-{
-spr_idle = sprMutant9CHeadlessIdle
-spr_hurt = sprMutant9CHeadlessHurt
-spr_walk = sprMutant9CHeadlessWalk
-}
-else{
-spr_idle = sprMutant9HeadlessIdle
-spr_hurt = sprMutant9HeadlessHurt
-spr_walk = sprMutant9HeadlessWalk
-}
-
-
-with instance_create(x,y,Corpse)
-{
-size = 1
-mask_index = other.mask_index
-motion_add(other.direction,other.speed)
-speed += max(0,-other.my_health/5)
-if other.bskin=2
-sprite_index = mskPickupThroughWall;//invisible basicly
-else if other.bskin=1
-sprite_index = sprMutant9BHeadIdle;
-else
-sprite_index = sprMutant9HeadIdle;
-image_xscale = other.right
-if speed > 16
-speed = 16
-}
-
-Sleep(60)
-}
-
-if random(12) < 1{
-with instance_create(x,y-4,BloodStreak){
-motion_add(45+random(90),2+random(3))
-image_angle = direction}}
-
-if bleed > 100
-{
-with instance_create(x,y,BloodStreak){
-motion_add(random(360),2+random(3))
-image_angle = direction}
-}
-
-bleed += 1
-}
-else
-instance_destroy()
-my_health = 0
-}
-
-//SHOOTING!! AWW YEAH
-
-if !(instance_exists(CrystalShield))
-{
-IsShielding=false;
-}
-else if (CrystalShield.sprite_index!=sprShieldDisappear)
-{
-IsShielding=true;
-}
-else{
-IsShielding=false;
-}
-if( (!(IsShielding)||(ultra_got[7]==1))&&(flying=0) && (UberCont.opt_gamemode!=12||instance_exists(Marker)) ){
-if race = 7{//Roids always auto fire
-wep_auto[wep] = 1 wep_auto[bwep] = 1}
-
-
-if (KeyCont.key_fire[p] = 1 or keyfire = 1) and wep_auto[wep] = 0 and ((wep_type[wep] = 0 or wep_type[wep] = 1) or can_shoot = 1) and reload < 15
-	clicked = 1
-
-if (KeyCont.key_fire[p] = 1 or keyfire = 1)
-{
-	if  ammo[wep_type[wep]] < wep_cost[wep] && wep_type[wep] != 0  && alarm[2] < 1//alarm = Fish Ultra B
+	if bleed > 0 and my_health > 0
 	{
-	if wep == 29|| wep==60 || wep==61 || wep==83 || wep==84 || wep==132//|| wep==109//ALL THE BLOOD WEAPONS!
-	{//glove is not included because that shits just to buggy
-	//BLOOD LAUNCHER,Pistol,Shotgun,rifle,triple,bulletshotty
-	ammo[wep_type[wep]] += wep_cost[wep]
-	sprite_index = spr_hurt
-	image_index = 0
-	my_health -= 1
-	snd_play(snd_hurt, hurt_pitch_variation)
-	Sleep(40)
-	alarm[3]=0;//remove immunity from bloodglove
+	audio_stop_sound(sndChickenHeadlessLoop)
+	snd_play(sndChickenRegenHead)
+	bleed = 0
+	if bskin=2
+	{
+	spr_idle = sprMutant9CIdle
+	spr_hurt = sprMutant9CHurt
+	spr_walk = sprMutant9CWalk
+	}
+	else if bskin=1
+	{
+	spr_idle = sprMutant9BIdle
+	spr_hurt = sprMutant9BHurt
+	spr_walk = sprMutant9BWalk
 	}
 	else
-	scrEmpty()
-	}
-	rad = max(rad,0);
-	if rad-wep_rad[wep] < 0 && alarm[2] < 1//alarm = Fish Ultra B
 	{
-		//not enough radiation
-		clicked = 0
-		scrEmptyRad();
-		other.wkick = -2
+	spr_idle = sprMutant9Idle
+	spr_hurt = sprMutant9Hurt
+	spr_walk = sprMutant9Walk}
+	with Corpse{
+	if other.bskin=2
+	sprite_index = mskPickupThroughWall;//invisible basicly
+	else if other.bskin=1
+	sprite_index = sprMutant9BHeadIdle
+	else
+	sprite_index = sprMutant9HeadIdle
+	instance_destroy()}
 	}
-}
 
-if can_shoot = 1 and ((ammo[wep_type[wep]] >= wep_cost[wep] || wep_type[wep] == 0) and rad>=wep_rad[wep] || alarm[2]>0)//alarm = Fish Ultra B
-{
-if wep_auto[wep] = 0 and clicked = 1
-{
-
-    if !scrHunterCrackshot()
-		scrFire()
-    
-clicked = 0
-}
-	if wep_auto[wep] = 1 and (KeyCont.key_fire[p] = 1 or KeyCont.key_fire[p] = 2 or keyfire > 0)
+	if my_health <= 0
 	{
-	    if !scrHunterCrackshot()
+	if race = 9 and bleed < 150
+	{
+	if bleed = 0
+	{
+	maxhealth-=2;
+	if maxhealth<0
+	{maxhealth=0}
+
+	snd_play(sndChickenLoseHead)
+	snd_loop(sndChickenHeadlessLoop)
+	repeat(12){
+	with instance_create(x,y,BloodStreak){
+	motion_add(random(360),2+random(3))
+	image_angle = direction}}
+
+
+
+	if bskin=2
+	{
+	spr_idle = sprMutant9CHeadlessIdle
+	spr_hurt = sprMutant9CHeadlessHurt
+	spr_walk = sprMutant9CHeadlessWalk
+	}
+	else{
+	spr_idle = sprMutant9HeadlessIdle
+	spr_hurt = sprMutant9HeadlessHurt
+	spr_walk = sprMutant9HeadlessWalk
+	}
+
+
+	with instance_create(x,y,Corpse)
+	{
+	size = 1
+	mask_index = other.mask_index
+	motion_add(other.direction,other.speed)
+	speed += max(0,-other.my_health/5)
+	if other.bskin=2
+	sprite_index = mskPickupThroughWall;//invisible basicly
+	else if other.bskin=1
+	sprite_index = sprMutant9BHeadIdle;
+	else
+	sprite_index = sprMutant9HeadIdle;
+	image_xscale = other.right
+	if speed > 16
+	speed = 16
+	}
+
+	Sleep(60)
+	}
+
+	if random(12) < 1{
+	with instance_create(x,y-4,BloodStreak){
+	motion_add(45+random(90),2+random(3))
+	image_angle = direction}}
+
+	if bleed > 100
+	{
+	with instance_create(x,y,BloodStreak){
+	motion_add(random(360),2+random(3))
+	image_angle = direction}
+	}
+
+	bleed += 1
+	}
+	else
+	instance_destroy()
+	my_health = 0
+	}
+
+	//SHOOTING!! AWW YEAH
+
+	if !(instance_exists(CrystalShield))
+	{
+	IsShielding=false;
+	}
+	else if (CrystalShield.sprite_index!=sprShieldDisappear)
+	{
+	IsShielding=true;
+	}
+	else{
+	IsShielding=false;
+	}
+	if( (!(IsShielding)||(ultra_got[7]==1))&&(flying=0) && (UberCont.opt_gamemode!=12||instance_exists(Marker)) ){
+	if race = 7{//Roids always auto fire
+	wep_auto[wep] = 1 wep_auto[bwep] = 1}
+
+
+	if (KeyCont.key_fire[p] = 1 or keyfire = 1) and wep_auto[wep] = 0 and ((wep_type[wep] = 0 or wep_type[wep] = 1) or can_shoot = 1) and reload < 15
+		clicked = 1
+
+	if (KeyCont.key_fire[p] = 1 or keyfire = 1)
+	{
+		if  ammo[wep_type[wep]] < wep_cost[wep] && wep_type[wep] != 0  && alarm[2] < 1//alarm = Fish Ultra B
 		{
-			scrFire();
+		if wep == 29|| wep==60 || wep==61 || wep==83 || wep==84 || wep==132//|| wep==109//ALL THE BLOOD WEAPONS!
+		{//glove is not included because that shits just to buggy
+		//BLOOD LAUNCHER,Pistol,Shotgun,rifle,triple,bulletshotty
+		ammo[wep_type[wep]] += wep_cost[wep]
+		sprite_index = spr_hurt
+		image_index = 0
+		my_health -= 1
+		snd_play(snd_hurt, hurt_pitch_variation)
+		Sleep(40)
+		alarm[3]=0;//remove immunity from bloodglove
+		}
+		else
+		scrEmpty()
+		}
+		rad = max(rad,0);
+		if rad-wep_rad[wep] < 0 && alarm[2] < 1//alarm = Fish Ultra B
+		{
+			//not enough radiation
+			clicked = 0
+			scrEmptyRad();
+			other.wkick = -2
 		}
 	}
-}
 
-}
+	if can_shoot = 1 and ((ammo[wep_type[wep]] >= wep_cost[wep] || wep_type[wep] == 0) and rad>=wep_rad[wep] || alarm[2]>0)//alarm = Fish Ultra B
+	{
+	if wep_auto[wep] = 0 and clicked = 1
+	{
+
+	    if !scrHunterCrackshot()
+			scrFire()
+    
+	clicked = 0
+	}
+		if wep_auto[wep] = 1 and (KeyCont.key_fire[p] = 1 or KeyCont.key_fire[p] = 2 or keyfire > 0)
+		{
+		    if !scrHunterCrackshot()
+			{
+				scrFire();
+			}
+		}
+	}
+
+	}
+
+	
+
+
+	//crown of hatred
+	if crown = 6
+	{
+	decay -= 1
+	if decay <= 0 and my_health > 1 && alarm[3]<1
+	{
+	Sleep(30)
+	my_health -= 1
+
+
+	sprite_index = spr_hurt
+	image_index = 0
+	snd_play(snd_hurt, hurt_pitch_variation)
+
+	repeat(12)
+	{with instance_create(x,y,Rad)
+	motion_add(random(360),2+random(4))}
+
+	decay = 300
+	}
+	}
+}//End of gencont
 
 //SWAP WEPS
 if KeyCont.key_swap[p] = 1 and bwep != 0
 {
-instance_create(x,y,WepSwap)
-scrSwapWeps()
+	instance_create(x,y,WepSwap)
+	scrSwapWeps()
 
-if ultra_got[27]//ROIDS MIRROR HANDS
-{
-	reload *= 0.4;
-	breload *= 0.4;
-}
-snd_play(wep_swap[wep])
-if (curse)
-{
-	snd_play(sndSwapCursed);
-}
-if (scrCheckGold(wep_name[wep]))
-{
-	snd_play(sndSwapGold);	
-}
-if ultra_got[27]
-{
-bwepangle=wepangle;
-}
-}
-
-
-//crown of hatred
-if crown = 6
-{
-decay -= 1
-if decay <= 0 and my_health > 1 && alarm[3]<1
-{
-Sleep(30)
-my_health -= 1
-
-
-sprite_index = spr_hurt
-image_index = 0
-snd_play(snd_hurt, hurt_pitch_variation)
-
-repeat(12)
-{with instance_create(x,y,Rad)
-motion_add(random(360),2+random(4))}
-
-decay = 300
-}
-}
+	if ultra_got[27]//ROIDS MIRROR HANDS
+	{
+		reload *= 0.4;
+		breload *= 0.4;
+	}
+	snd_play(wep_swap[wep])
+	if (curse)
+	{
+		snd_play(sndSwapCursed);
+	}
+	if (scrCheckGold(wep_name[wep]))
+	{
+		snd_play(sndSwapGold);	
+	}
+	if ultra_got[27]
+	{
+	bwepangle=wepangle;
+	}
 }
 
 var mr =GetPlayerMaxRad()

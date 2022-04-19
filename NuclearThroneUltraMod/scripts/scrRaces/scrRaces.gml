@@ -374,9 +374,22 @@ function scrRaces() {
 	race_cskin[26] = 0
 	race_bskin_lock[26] = "COMPLETE A#MAIN AREA#AFTER THE SCRAPYARD#WITHOUT MISSING#AS GOOD OL'HUMPHRY"
 	race_cskin_lock[26] = "REACH 100 SKILL"
+	
+	race_name[27] = "[HANDS]"//RUSTY GRANDPA SOLDIER
+	race_pass[27] = "HIGHER CHANCE FOR#INVERTED PORTALS TO APPEAR"
+	race_acti[27] = "PULL IN CHESTS & ENEMIES"//"SLOW AND SHRINK#ENEMY PROJECTILES#AT THE COST OF#UNEQUIPED AMMO"//DISCIPLINE those bullets
+	race_butt[27] = "PUSH ENEMIES INSTEAD"
+	//race_back[27] = "MORE DAMAGE OR SOMETHING";
+	race_lock[27] = "KILL THE INVERTED THRONE"
+	race_have[27] = 0
+	race_swep[27] = 1
+	race_bskin[27] = 0
+	race_cskin[27] = 0
+	race_bskin_lock[27] = "NUTHIN"
+	race_cskin_lock[27] = "NOPESKY"
 
 
-	racemax = 26;
+	racemax = 27;
 
 
 

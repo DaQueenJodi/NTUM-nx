@@ -50,7 +50,7 @@ function scrPopulate() {
                     {
                         if random(4) < 1
 							scrPopEnemies()
-						else if Player.loop > 0
+						else if Player.loops > 0
 							scrPopEnemies()
                     } else
                         scrPopEnemies()
@@ -69,7 +69,7 @@ function scrPopulate() {
                 {
                     if random(4) < 1 || !instance_exists(enemy)
                     scrPopEnemies()
-					else if Player.loop > 0
+					else if Player.loops > 0
 						scrPopEnemies()
                 } else { //normal procedure
                     scrPopEnemies()

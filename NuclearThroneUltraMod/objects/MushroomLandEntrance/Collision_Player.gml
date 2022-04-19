@@ -8,10 +8,10 @@ if other.wepmod1 != 0
 		snd_play(other.snd_thrn);
 		with other
 		{
+			wepmod4 = wepmod3;
+			wepmod3 = wepmod2;
+			wepmod2 = wepmod1;
 			wepmod1 = 0;
-			wepmod2 = 0;
-			wepmod3 = 0;
-			wepmod4 = 0;
 			area = 117
 			subarea = 0
 		}
