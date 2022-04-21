@@ -8,7 +8,7 @@ sucking = false;
 event_inherited();
 
 if GetPlayerLoops() > 0{
-	maxhealth = 380;
+	maxhealth = 370;
 	my_health = maxhealth;
 }
 

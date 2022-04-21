@@ -1,6 +1,6 @@
 target = -1
 team = 1;
-enemies = instance_number(enemy)
+enemies = max(4,instance_number(enemy));
 
 if instance_exists(Player)
 {
@@ -18,3 +18,4 @@ oasis=false;
 
 
 alarm[1] = 60;
+tries = 0;

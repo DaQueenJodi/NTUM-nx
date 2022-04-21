@@ -374,7 +374,7 @@ function scrRaces() {
 	race_cskin[26] = 0
 	race_bskin_lock[26] = "COMPLETE A#MAIN AREA#AFTER THE SCRAPYARD#WITHOUT MISSING#AS GOOD OL'HUMPHRY"
 	race_cskin_lock[26] = "REACH 100 SKILL"
-	
+	/*
 	race_name[27] = "[HANDS]"//RUSTY GRANDPA SOLDIER
 	race_pass[27] = "HIGHER CHANCE FOR#INVERTED PORTALS TO APPEAR"
 	race_acti[27] = "PULL IN CHESTS & ENEMIES"//"SLOW AND SHRINK#ENEMY PROJECTILES#AT THE COST OF#UNEQUIPED AMMO"//DISCIPLINE those bullets
@@ -387,9 +387,9 @@ function scrRaces() {
 	race_cskin[27] = 0
 	race_bskin_lock[27] = "NUTHIN"
 	race_cskin_lock[27] = "NOPESKY"
+*/
 
-
-	racemax = 27;
+	racemax = 26;
 
 
 

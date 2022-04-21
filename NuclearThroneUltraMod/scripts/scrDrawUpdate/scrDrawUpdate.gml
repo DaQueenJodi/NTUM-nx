@@ -14,7 +14,7 @@ function scrDrawUpdate() {
 
 	if updatepage=0
 	{
-	txt0 = @"#UPDATE 26 [0.03]#
+	txt0 = @"#UPDATE 26 [0.04]#
 	* MASSIVE AREA PROGRESSION RESTRUCTURE
 	* ALTERNATE PATHS B & C
 	* SWAPPED LABS AND CAVES
