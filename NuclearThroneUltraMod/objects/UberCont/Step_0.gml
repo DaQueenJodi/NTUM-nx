@@ -1,7 +1,7 @@
 if isPaused = 1
 {
 //QUICK RESTART
-if (canRestart && isPaused == 1 && !instance_exists(PlayerSpawn) && !instance_exists(Player) && (keyboard_check_pressed(ord("R")) || gamepad_button_check(0,gp_face3)) )//(gamepad_button_check(0,gp_stickl) && gamepad_button_check(0,gp_stickr)) )
+if (canRestart && isPaused == 1 && !instance_exists(PlayerSpawn) && !instance_exists(Player) && (keyboard_check_pressed(ord("R")) || gamepad_button_check(global.GP_ID,gp_face3)) )//(gamepad_button_check(0,gp_stickl) && gamepad_button_check(0,gp_stickr)) )
 {
 	with SurvivalWave
 		instance_destroy();
@@ -50,7 +50,7 @@ with KeyCont{
 scrKeyContStep()}
 //RETURN TO GAME
 if instance_exists(KeyCont) && (keyboard_check_pressed(vk_escape) or keyboard_check_pressed(ord("P")) or keyboard_check_pressed(vk_f1) or mouse_check_button_pressed(mb_right) or KeyCont.key_back[0] = 1
-or gamepad_button_check(0,gp_face2) or gamepad_button_check(0,gp_start) or gamepad_button_check(0,gp_select))
+or gamepad_button_check(global.GP_ID,gp_face2) or gamepad_button_check(global.GP_ID,gp_start) or gamepad_button_check(global.GP_ID, gp_select))
 {
 with option
 instance_destroy()
@@ -68,7 +68,7 @@ Cursor.image_index=UberCont.opt_crosshair;}
 isPaused = 0
 }
 //RETURN TO MENU
-if keyboard_check_pressed(vk_enter) or gamepad_button_check(0,gp_face4) && !instance_exists(PlayerSpawn)
+if keyboard_check_pressed(vk_enter) or gamepad_button_check(global.GP_ID,gp_face4) && !instance_exists(PlayerSpawn)
 {
 	instance_activate_all()
 	isPaused = 0
@@ -81,8 +81,8 @@ if keyboard_check_pressed(vk_enter) or gamepad_button_check(0,gp_face4) && !inst
 	draw_texture_flush();//free texture memory
 }
 //QUIT
-if ( keyboard_check_pressed(ord("Q")) or ( gamepad_button_check(0,gp_shoulderr) && gamepad_button_check(0,gp_shoulderrb) 
-&& gamepad_button_check(0,gp_shoulderl) && gamepad_button_check(0,gp_shoulderlb) ) )
+if ( keyboard_check_pressed(ord("Q")) or ( gamepad_button_check(global.GP_ID,gp_shoulderr) && gamepad_button_check(global.GP_ID,gp_shoulderrb) 
+&& gamepad_button_check(global.GP_ID,gp_shoulderl) && gamepad_button_check(global.GP_ID,gp_shoulderlb) ) )
 {
 draw_texture_flush();//probably not necesary, but may aswell?
 game_end()}
@@ -207,3 +207,4 @@ display_mouse_set(mox,moy);
 }
 with option
 	y+=other.optY;
+
