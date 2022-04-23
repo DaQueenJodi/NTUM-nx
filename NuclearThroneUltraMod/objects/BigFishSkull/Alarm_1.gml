@@ -5,7 +5,10 @@ with BanditBoss
 oasis=false;
 
 with WantBoss
-instance_destroy();
+{
+	if oasis
+		instance_destroy();
+}
 
 spr_idle = sprBigFishSkull
 spr_hurt = sprBigFishSkullHurt

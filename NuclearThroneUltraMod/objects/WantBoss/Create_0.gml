@@ -18,4 +18,3 @@ oasis=false;
 
 
 alarm[1] = 60;
-tries = 0;
