@@ -1347,7 +1347,7 @@ moy = window_get_y()+window_get_height()-8;
 if moy < window_get_y()
 moy = window_get_y()+8;
 
-display_mouse_set(mox,moy);
+window_mouse_set(mox,moy);
 
 //the weirdest aim assist
 with projectile
