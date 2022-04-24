@@ -1,8 +1,8 @@
-room_speed=30*UberCont.opt_loading;
+///room_speed=30*UberCont.opt_loading;
 holdExplainUltraModTimer = 0;
-if UberCont.opt_loading == 4
-	room_speed = 999999;
-
+//if UberCont.opt_loading == 4
+//	room_speed = 9999999;
+game_set_speed(100, gamespeed_fps)
 SetSeed();
 instance_create(10000,10000,FloorMaker)
 instance_create(0,0,TopCont)
