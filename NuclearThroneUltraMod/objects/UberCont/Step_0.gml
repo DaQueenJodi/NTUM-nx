@@ -50,7 +50,7 @@ with KeyCont{
 scrKeyContStep()}
 //RETURN TO GAME
 if instance_exists(KeyCont) && (keyboard_check_pressed(vk_escape) or keyboard_check_pressed(ord("P")) or keyboard_check_pressed(vk_f1) or mouse_check_button_pressed(mb_right) or KeyCont.key_back[0] = 1
-or gamepad_button_check(global.GP_ID,gp_face2) or gamepad_button_check(global.GP_ID,gp_start) or gamepad_button_check(global.GP_ID, gp_select))
+or gamepad_button_check(global.GP_ID,gp_face2)  or gamepad_button_check(global.GP_ID, gp_select))
 {
 with option
 instance_destroy()
@@ -92,7 +92,7 @@ else
 
 //NOT PAUSED
 
-if instance_exists(KeyCont) && (keyboard_check_pressed(vk_escape)or KeyCont.key_paus[0] = 1 || (!instance_exists(Vlambeer)&&(!window_has_focus()) && public == 1) ) and !instance_exists(GenCont)
+if instance_exists(KeyCont) && (keyboard_check_pressed(vk_escape) or KeyCont.key_paus[0] = 1 or gamepad_button_check(global.GP_ID, gp_start) || (!instance_exists(Vlambeer)&&(!window_has_focus()) && public == 1) ) and !instance_exists(GenCont)
 {
 if keyboard_check_pressed(vk_escape) and instance_exists(Menu)
 {
@@ -207,4 +207,6 @@ display_mouse_set(mox,moy);
 }
 with option
 	y+=other.optY;
+
+
 

@@ -1313,8 +1313,8 @@ microseconds=0;
 
 /* */
 ///Gamepad aiming
-var h_point = gamepad_axis_value(0, gp_axisrh);
-var v_point = gamepad_axis_value(0, gp_axisrv);
+var h_point = gamepad_axis_value(global.GP_ID, gp_axisrh);
+var v_point = gamepad_axis_value(global.GP_ID, gp_axisrv);
 
 if ((h_point != 0) || (v_point != 0))//&&!instance_exists(GenCont)&&!instance_exists(LevCont)&&UberCont.isPaused=0
 {
