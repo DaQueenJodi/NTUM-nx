@@ -15,3 +15,6 @@ switch_controller_set_handheld_activation_mode(switch_controller_handheld_activa
 switch_controller_support_set_defaults();
 switch_controller_support_set_singleplayer_only(true);
 switch_controller_support_show(); //show the applet
+
+
+room_goto(romInit)
