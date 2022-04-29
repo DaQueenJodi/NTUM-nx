@@ -1347,8 +1347,9 @@ moy = window_get_y()+window_get_height()-8;
 if moy < window_get_y()
 moy = window_get_y()+8;
 
-window_mouse_set(mox,moy);
-
+if !gamepad_button_check(global.GP_ID, gp_select) {
+	window_mouse_set(mox,moy);
+}
 //the weirdest aim assist
 with projectile
 {

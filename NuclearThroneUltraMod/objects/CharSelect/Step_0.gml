@@ -1,4 +1,14 @@
-if visible && KeyCont.key_fire[p] = 1 and OptionSelect.selected = 0 and OptionSelect2.selected = 0 and StatsSelect.selected = 0 and CreditsSelect.selected = 0
+
+if gamepad_button_check(global.GP_ID, gp_padr) {
+	num += 1
+}
+if gamepad_button_check(global.GP_ID, gp_padl) {
+	num -= 1
+}
+
+
+//if visible && KeyCont.key_fire[p] = 1 and OptionSelect.selected = 0 and OptionSelect2.selected = 0 and StatsSelect.selected = 0 and CreditsSelect.selected = 0
+if visible && gamepad_button_check(global.GP_ID, gp_shoulderr) and OptionSelect.selected = 0 and OptionSelect2.selected = 0 and StatsSelect.selected = 0 and CreditsSelect.selected = 0
 {
 if button = 0
 button = 1
@@ -243,4 +253,5 @@ if button = 1 and mouse_x > x and mouse_x < x+20 and mouse_y > y and mouse_y < y
     
     }
 }
+
 
