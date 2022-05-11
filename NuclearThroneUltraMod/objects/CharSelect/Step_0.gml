@@ -1,9 +1,9 @@
 
 if gamepad_button_check(global.GP_ID, gp_padr) {
-	num += 1
+	race += 1
 }
 if gamepad_button_check(global.GP_ID, gp_padl) {
-	num -= 1
+	race -= 1
 }
 
 
